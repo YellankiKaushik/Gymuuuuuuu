@@ -1,0 +1,12 @@
+{
+  "id": "nutrition_engineering_source_check_2026_10_05",
+  "slug": "nutrition-tracker-engineering-source-check",
+  "sourceRefs": [
+    "usda_fdc_data_docs",
+    "fao_missing_values",
+    "mdn_storage_persist"
+  ],
+  "reviewedAt": "2026-10-05",
+  "reviewer": "Codex engineering source check",
+  "scope": "Engineering conventions for data provenance, missing/trace values, composition basis and browser persistence. Not clinical review, nutrient-content approval or an assessment of individual targets."
+}

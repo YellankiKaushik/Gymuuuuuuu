@@ -4,7 +4,7 @@ import { openWorkoutDatabase } from "../src/features/workout-tracker/storage";
 it("upgrades every prior database version without deleting existing records", async () => {
   const factory = new IDBFactory();
   vi.stubGlobal("window", { indexedDB: factory });
-  for (let version = 1; version < 6; version++) {
+  for (let version = 1; version < 10; version++) {
     const name = `migration-fixture-${version}`;
     const old = await new Promise<IDBDatabase>((resolve, reject) => {
       const request = factory.open(name, version);
@@ -38,20 +38,20 @@ it("upgrades every prior database version without deleting existing records", as
         }
         if (version >= 5)
           db.createObjectStore("activeTimers", { keyPath: "sessionId" });
-        request
-          .transaction!.objectStore("appMeta")
-          .put({
-            key: "synthetic-preservation",
-            unknownField: "Do not delete",
-          });
+        if (version >= 6)
+          db.createObjectStore("derivedPersonalRecords", { keyPath: "id" });
+        request.transaction!.objectStore("appMeta").put({
+          key: "synthetic-preservation",
+          unknownField: "Do not delete",
+        });
       };
       request.onsuccess = () => resolve(request.result);
       request.onerror = () => reject(request.error);
     });
     old.close();
     const upgraded = await openWorkoutDatabase(name);
-    expect(upgraded.version).toBe(6);
-    expect([...upgraded.objectStoreNames]).toHaveLength(8);
+    expect(upgraded.version).toBe(10);
+    expect([...upgraded.objectStoreNames]).toHaveLength(17);
     const record = await new Promise<unknown>((resolve) => {
       const request = upgraded
         .transaction("appMeta")

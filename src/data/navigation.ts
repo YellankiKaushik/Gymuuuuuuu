@@ -42,7 +42,16 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/diet-planning/safety', title: 'Diet planning safety', domain: 'Eat', phase: 9, description: 'Eligibility, unsupported uses and planning boundaries.' },
   { path: '/recipes', title: 'Meals & recipes', domain: 'Eat', phase: 11, description: 'Practical recipes and meal templates connected to food data.' },
   { path: '/recipes/$slug', title: 'Recipe detail', domain: 'Eat', phase: 11, description: 'Ingredients, instructions, substitutions and calculated nutrition.' },
-  { path: '/nutrition-log', title: 'Nutrition log', domain: 'Track', phase: 12, description: 'Optional food logging, saved privately in this browser.' },
+  { path: '/nutrition-log', title: 'Nutrition diary', domain: 'Track', phase: 10, description: 'Open your optional local nutrition diary.' },
+  { path: '/nutrition', title: 'Nutrition diary', domain: 'Eat', phase: 10, description: 'Optional food and fluid snapshots saved in this browser.' },
+  { path: '/nutrition/add', title: 'Add food or fluid', domain: 'Eat', phase: 10, description: 'Record consumed amounts with exact source snapshots.' },
+  { path: '/nutrition/day/$date', title: 'Nutrition diary', domain: 'Eat', phase: 10, description: 'Inspect a device-local day and frozen targets.' },
+  { path: '/nutrition/history', title: 'Nutrition history', domain: 'Eat', phase: 10, description: 'Review local nutrition days.' },
+  { path: '/nutrition/custom-foods', title: 'Custom foods', domain: 'Eat', phase: 10, description: 'Private labels and immutable revisions.' },
+  { path: '/nutrition/custom-foods/$customFoodId', title: 'Custom foods', domain: 'Eat', phase: 10, description: 'Inspect and revise a private food.' },
+  { path: '/nutrition/settings', title: 'Nutrition settings & backup', domain: 'Eat', phase: 10, description: 'Meal slots, targets, export, restore and deletion.' },
+  { path: '/nutrition/methodology', title: 'Nutrition methodology', domain: 'Eat', phase: 10, description: 'Snapshot arithmetic, source statuses and scope.' },
+  { path: '/nutrition/privacy', title: 'Nutrition privacy', domain: 'Eat', phase: 10, description: 'Browser ownership, persistence and backup.' },
   { path: '/recovery', title: 'Recovery & sleep', domain: 'Recover', phase: 13, description: 'Explore sleep, fatigue, rest and optional recovery records.' },
   { path: '/mobility', title: 'Mobility', domain: 'Recover', phase: 14, description: 'Warm-ups, cooldowns and movement-preparation routines.' },
   { path: '/supplements', title: 'Supplement evidence', domain: 'Learn', phase: 15, description: 'A careful reference for evidence, limitations and safety concerns.' },
@@ -54,7 +63,7 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/about/sources', title: 'Sources & methodology', domain: 'System', phase: 0, description: 'How knowledge will be reviewed, attributed and maintained.' },
 ]
 export function findModule(path: string): ModuleDefinition | undefined {
-  return modules.find((module) => module.path === path) ?? modules.find((module) => module.path.includes('$slug') && path.startsWith(module.path.replace('$slug', '')))
+  return modules.find((module) => module.path === path) ?? modules.find((module) => {const parts=module.path.split('/'),actual=path.split('/');return module.path.includes('$')&&parts.length===actual.length&&parts.every((part,index)=>part.startsWith('$')?!!actual[index]:part===actual[index])})
 }
 export const primaryNavigation = [
   { title: 'Home', path: '/', icon: 'home' },
@@ -81,7 +90,7 @@ export interface NavigationItem {
 }
 const groupPaths: Record<string, readonly string[]> = {
   learn: ['/muscles', '/exercises', '/learn/workout-science', '/nutrients', '/supplements'],
-  train: ['/workout', '/workout/history', '/cardio'], eat: ['/diet-planning', '/recipes', '/nutrition-log'], recover: ['/mobility'],
+  train: ['/workout', '/workout/history', '/cardio'], eat: ['/diet-planning', '/recipes', '/nutrition'], recover: ['/mobility'],
 }
 const aliases: Record<string, readonly string[]> = {
   '/diet-planning': ['calorie', 'energy', 'macros', 'targets'], '/tools': ['calorie', 'calculator', 'timer', 'compare'],
@@ -101,7 +110,7 @@ export const navigationItems: readonly NavigationItem[] = [
     id: `${['/train', '/eat', '/track'].includes(module.path) ? 'hub-' : ''}${module.path.slice(1).replaceAll('/', '-').replace('$', '')}`, label: module.title, href: module.path,
     description: module.description, icon: (module.domain === 'Eat' ? 'leaf' : module.domain === 'Train' ? 'dumbbell' : module.domain === 'Recover' ? 'moon' : module.domain === 'Track' ? 'chart' : module.path === '/settings' ? 'settings' : module.path === '/about/sources' ? 'help' : 'book') as NavigationItem['icon'],
     aliases: aliases[module.path] ?? [], groupId: Object.entries(groupPaths).find(([, paths]) => paths.includes(module.path))?.[0],
-    visibility: (module.path.includes('$') || ['/train', '/eat', '/track', '/training-science','/diet'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
+    visibility: (module.path.includes('$') || module.path.startsWith('/nutrition/') || ['/train', '/eat', '/track', '/training-science','/diet','/nutrition-log'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
   })),
 ]
 export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const

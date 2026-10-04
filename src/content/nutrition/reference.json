@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 10 Nutrition Tracker Reference Data",
+    "version": "1.0.0",
+    "date": "2026-08-05",
+    "status": "implementation contract",
+    "notice": "Synthetic test foods are arithmetic fixtures only and must never be published as food content."
+  },
+  "database": {
+    "name": "fitness-os",
+    "targetSchemaVersion": 10,
+    "preserveAllExistingStores": true,
+    "stores": [
+      {
+        "id": "nutritionPreferences",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "nutritionDays",
+        "keyPath": "localDate",
+        "canonical": true
+      },
+      {
+        "id": "foodLogEntries",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "hydrationEntries",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "customFoods",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "customFoodRevisions",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "nutritionFavourites",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "nutritionAuditLog",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "derivedNutritionDayTotals",
+        "keyPath": "localDate",
+        "canonical": false,
+        "rebuildable": true
+      }
+    ],
+    "entryIndexes": [
+      {
+        "name": "byLocalDate",
+        "keyPath": "localDate"
+      },
+      {
+        "name": "byLocalDateMeal",
+        "keyPath": [
+          "localDate",
+          "mealSlotId"
+        ]
+      },
+      {
+        "name": "byOccurredAt",
+        "keyPath": "occurredAtUtc"
+      },
+      {
+        "name": "byCanonicalFoodId",
+        "keyPath": "canonicalFoodRef.foodId"
+      },
+      {
+        "name": "byCustomFoodId",
+        "keyPath": "customFoodRef.customFoodId"
+      },
+      {
+        "name": "byDeletedAt",
+        "keyPath": "deletedAt"
+      }
+    ]
+  },
+  "defaultMealSlots": [
+    {
+      "id": "meal_breakfast",
+      "label": "Breakfast",
+      "order": 10,
+      "visible": true
+    },
+    {
+      "id": "meal_morning_snack",
+      "label": "Morning snack",
+      "order": 20,
+      "visible": true
+    },
+    {
+      "id": "meal_lunch",
+      "label": "Lunch",
+      "order": 30,
+      "visible": true
+    },
+    {
+      "id": "meal_afternoon_snack",
+      "label": "Afternoon snack",
+      "order": 40,
+      "visible": true
+    },
+    {
+      "id": "meal_dinner",
+      "label": "Dinner",
+      "order": 50,
+      "visible": true
+    },
+    {
+      "id": "meal_evening_snack",
+      "label": "Evening snack",
+      "order": 60,
+      "visible": true
+    },
+    {
+      "id": "meal_other",
+      "label": "Other",
+      "order": 70,
+      "visible": true
+    }
+  ],
+  "massConversions": {
+    "kgToGrams": 1000,
+    "ounceToGrams": 28.349523125,
+    "poundToGrams": 453.59237,
+    "prohibitGenericVolumeToMass": true,
+    "calculation": "loggedValue = per100gValue * gramWeight / 100"
+  },
+  "sourceStatuses": [
+    {
+      "id": "measured",
+      "includeNumeric": true,
+      "coverage": "quantified"
+    },
+    {
+      "id": "calculated",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged"
+    },
+    {
+      "id": "imputed",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged"
+    },
+    {
+      "id": "estimated",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged"
+    },
+    {
+      "id": "not_detected",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged",
+      "requiresExplicitZero": true
+    },
+    {
+      "id": "trace",
+      "includeNumeric": false,
+      "coverage": "partial"
+    },
+    {
+      "id": "not_available",
+      "includeNumeric": false,
+      "coverage": "missing"
+    },
+    {
+      "id": "user_entered",
+      "includeNumeric": true,
+      "coverage": "quantified_user_entered"
+    }
+  ],
+  "coverage": {
+    "formula": "quantifiedEligibleEntries / eligibleEntries * 100",
+    "states": [
+      "complete",
+      "partial",
+      "unavailable",
+      "not_applicable"
+    ],
+    "doNotInterpretAsAdequacy": true
+  },
+  "targetBinding": {
+    "bindOnFirstRecordForDate": true,
+    "historicalDaysRemainFrozen": true,
+    "replacementRequiresConfirmation": true,
+    "replacementRequiresAuditReason": true
+  },
+  "copyRules": {
+    "default": "preserve_original_snapshot",
+    "latestProfileRequiresExplicitChoice": true,
+    "newIdsRequired": true,
+    "newTimestampsRequired": true
+  },
+  "displayPrecision": {
+    "energyKcalDecimals": 0,
+    "macroGramDecimals": 1,
+    "massGramDecimals": 1,
+    "storeIntermediatePrecision": true
+  },
+  "backup": {
+    "format": "fitness-os-nutrition-backup",
+    "schemaVersion": 1,
+    "canonicalStores": [
+      "nutritionPreferences",
+      "nutritionDays",
+      "foodLogEntries",
+      "hydrationEntries",
+      "customFoods",
+      "customFoodRevisions",
+      "nutritionFavourites",
+      "nutritionAuditLog"
+    ],
+    "excludedRebuildableStores": [
+      "derivedNutritionDayTotals",
+      "recentFoods"
+    ]
+  },
+  "csvExports": [
+    "food_entries",
+    "daily_energy_macros",
+    "daily_nutrients_completeness",
+    "hydration_entries",
+    "custom_foods"
+  ],
+  "sources": [
+    {
+      "id": "usda_fdc_data_docs",
+      "title": "USDA FoodData Central Data Type Documentation",
+      "url": "https://fdc.nal.usda.gov/data-documentation/"
+    },
+    {
+      "id": "usda_fdc_foundation_docs",
+      "title": "USDA FoodData Central Foundation Foods Documentation",
+      "url": "https://fdc.nal.usda.gov/Foundation_Foods_Documentation/"
+    },
+    {
+      "id": "fao_missing_values",
+      "title": "FAO Food Composition Data - data values and missing values",
+      "url": "https://www.fao.org/4/y4705e/y4705e14.htm"
+    },
+    {
+      "id": "nih_dri",
+      "title": "NIH ODS Nutrient Recommendations and Databases",
+      "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx"
+    },
+    {
+      "id": "mdn_indexeddb",
+      "title": "MDN IndexedDB API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"
+    },
+    {
+      "id": "mdn_storage_persist",
+      "title": "MDN StorageManager.persist",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageManager/persist"
+    }
+  ]
+}

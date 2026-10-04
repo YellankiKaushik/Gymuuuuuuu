@@ -1,3 +1,7 @@
+import {
+  openFitnessDatabase,
+  closeFitnessDatabase,
+} from "../../storage/indexed-db/fitness-database";
 import { publishWorkoutPointer } from "../../components/app-shell/workout-resume";
 import reference from "../../../DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Reference_Data.json";
 import {
@@ -11,78 +15,13 @@ import {
   type ProgramTrackingState,
 } from "./schema";
 export const trackerStores = reference.database.stores.map((item) => item.id);
-export const editorId =
-  typeof window === "undefined" ? "server" : crypto.randomUUID();
-let database: Promise<IDBDatabase> | undefined;
-export function openWorkoutDatabase(name = "fitness-os"): Promise<IDBDatabase> {
-  if (typeof window === "undefined" || !window.indexedDB)
-    return Promise.reject(
-      new Error(
-        "IndexedDB is unavailable. Your workout cannot be saved in this browser.",
-      ),
-    );
-  if (name === "fitness-os" && database) return database;
-  const pending = new Promise<IDBDatabase>((resolve, reject) => {
-    const request = window.indexedDB.open(name, 6);
-    request.onupgradeneeded = (event) => {
-      const db = request.result,
-        tx = request.transaction!;
-      for (let version = event.oldVersion + 1; version <= 6; version++) {
-        if (version === 1) db.createObjectStore("appMeta", { keyPath: "key" });
-        if (version === 2) {
-          db.createObjectStore("workoutPreferences", { keyPath: "id" });
-          db.createObjectStore("programInstances", { keyPath: "instanceId" });
-          db.createObjectStore("programTrackingStates", {
-            keyPath: "programInstanceId",
-          });
-        }
-        if (version === 3)
-          db.createObjectStore("customExercises", { keyPath: "id" });
-        if (version === 4) {
-          const store = db.createObjectStore("workoutSessions", {
-            keyPath: "id",
-          });
-          reference.database.workoutSessionIndexes.forEach((index) =>
-            store.createIndex(index.name, index.keyPath, {
-              multiEntry: "multiEntry" in index && index.multiEntry,
-            }),
-          );
-        }
-        if (version === 5)
-          db.createObjectStore("activeTimers", { keyPath: "sessionId" });
-        if (version === 6)
-          db.createObjectStore("derivedPersonalRecords", { keyPath: "id" });
-        tx.objectStore("appMeta").put({ key: `migration:${version}`, version });
-      }
-    };
-    request.onerror = () =>
-      reject(
-        new Error(
-          "Workout storage could not open. Preserve/export data before clearing browser storage.",
-        ),
-      );
-    request.onblocked = () =>
-      reject(
-        new Error(
-          "Close other Fitness OS tabs before upgrading workout storage.",
-        ),
-      );
-    request.onsuccess = () => {
-      const db = request.result;
-      db.onversionchange = () => {
-        db.close();
-        database = undefined;
-      };
-      resolve(db);
-    };
-  });
-  if (name === "fitness-os") {
-    database = pending;
-    void pending.catch(() => {
-      database = undefined;
-    });
-  }
-  return pending;
+let browserEditorId: string | undefined;
+export function getWorkoutEditorId() {
+  if (typeof window === "undefined") return "server";
+  return (browserEditorId ??= crypto.randomUUID());
+}
+export function openWorkoutDatabase(name = "fitness-os") {
+  return openFitnessDatabase(name);
 }
 export async function readTracker<T>(
   store: string,
@@ -199,7 +138,10 @@ export async function claimWorkout(
       reject(new Error("Editor ownership could not be checked."));
   });
 }
-export async function createWorkout(session: WorkoutSession, owner = editorId) {
+export async function createWorkout(
+  session: WorkoutSession,
+  owner = getWorkoutEditorId(),
+) {
   const valid = workoutSessionSchema.parse(session),
     db = await openWorkoutDatabase();
   await new Promise<void>((resolve, reject) => {
@@ -231,7 +173,7 @@ export async function createWorkout(session: WorkoutSession, owner = editorId) {
 export async function saveWorkout(
   session: WorkoutSession,
   expectedRevision: number,
-  owner = editorId,
+  owner = getWorkoutEditorId(),
 ) {
   const valid = workoutSessionSchema.parse(session),
     db = await openWorkoutDatabase();
@@ -461,6 +403,5 @@ export async function permanentDeleteWorkout(id: string) {
   });
 }
 export function closeWorkoutDatabase() {
-  if (database) void database.then((db) => db.close());
-  database = undefined;
+  closeFitnessDatabase();
 }

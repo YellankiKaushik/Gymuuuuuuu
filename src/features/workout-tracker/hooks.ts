@@ -1,5 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { claimWorkout, editorId, getWorkout, saveWorkout } from "./storage";
+import {
+  claimWorkout,
+  getWorkoutEditorId,
+  getWorkout,
+  saveWorkout,
+} from "./storage";
 import type { WorkoutSession } from "./schema";
 export function useWorkoutEditor(id: string) {
   const [session, setSession] = useState<WorkoutSession>(),
@@ -26,7 +31,7 @@ export function useWorkoutEditor(id: string) {
         draft.current = value;
         revision.current = value.revision;
         setSession(value);
-        const accepted = await claimWorkout(id, editorId);
+        const accepted = await claimWorkout(id, getWorkoutEditorId());
         if (!cancelled) {
           setOwned(accepted);
           setMessage(
@@ -46,7 +51,7 @@ export function useWorkoutEditor(id: string) {
   useEffect(() => {
     if (!owned) return;
     const timer = setInterval(() => {
-      void claimWorkout(id, editorId)
+      void claimWorkout(id, getWorkoutEditorId())
         .then((accepted) => {
           if (!accepted) {
             setOwned(false);
@@ -91,7 +96,11 @@ export function useWorkoutEditor(id: string) {
       waiters.current = [];
       debounce.current = undefined;
       const save = queue.current.then(async () => {
-        const result = await saveWorkout(snapshot, revision.current, editorId);
+        const result = await saveWorkout(
+          snapshot,
+          revision.current,
+          getWorkoutEditorId(),
+        );
         revision.current = result.revision;
         if (draft.current === snapshot) {
           draft.current = result;
@@ -121,7 +130,7 @@ export function useWorkoutEditor(id: string) {
       throw new Error(
         "Wait for pending saves to finish or fail before taking over. Export your unsaved draft if needed.",
       );
-    if (await claimWorkout(id, editorId, true)) {
+    if (await claimWorkout(id, getWorkoutEditorId(), true)) {
       const latest = await getWorkout(id);
       if (latest) {
         draft.current = latest;

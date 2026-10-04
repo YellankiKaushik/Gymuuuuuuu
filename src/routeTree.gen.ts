@@ -20,6 +20,7 @@ import { Route as LearnRouteImport } from './routes/learn'
 import { Route as MobilityRouteImport } from './routes/mobility'
 import { Route as MusclesRouteImport } from './routes/muscles'
 import { Route as NutrientsRouteImport } from './routes/nutrients'
+import { Route as NutritionRouteImport } from './routes/nutrition'
 import { Route as NutritionLogRouteImport } from './routes/nutrition-log'
 import { Route as ProgramsRouteImport } from './routes/programs'
 import { Route as ProgressRouteImport } from './routes/progress'
@@ -56,6 +57,14 @@ import { Route as NutrientsFrameworksRouteImport } from './routes/nutrients_.fra
 import { Route as NutrientsGlossaryRouteImport } from './routes/nutrients_.glossary'
 import { Route as NutrientsMethodologyRouteImport } from './routes/nutrients_.methodology'
 import { Route as NutrientsReferenceIntakesRouteImport } from './routes/nutrients_.reference-intakes'
+import { Route as NutritionIndexRouteImport } from './routes/nutrition.index'
+import { Route as NutritionAddRouteImport } from './routes/nutrition.add'
+import { Route as NutritionCustomFoodsRouteImport } from './routes/nutrition.custom-foods'
+import { Route as NutritionDayRouteImport } from './routes/nutrition.day'
+import { Route as NutritionHistoryRouteImport } from './routes/nutrition.history'
+import { Route as NutritionMethodologyRouteImport } from './routes/nutrition.methodology'
+import { Route as NutritionPrivacyRouteImport } from './routes/nutrition.privacy'
+import { Route as NutritionSettingsRouteImport } from './routes/nutrition.settings'
 import { Route as ProgramsSlugRouteImport } from './routes/programs_.$slug'
 import { Route as ProgramsCompareRouteImport } from './routes/programs_.compare'
 import { Route as ProgramsCurrentRouteImport } from './routes/programs_.current'
@@ -70,6 +79,9 @@ import { Route as LearnWorkoutScienceSlugRouteImport } from './routes/learn_.wor
 import { Route as LearnWorkoutScienceGlossaryRouteImport } from './routes/learn_.workout-science_.glossary'
 import { Route as LearnWorkoutScienceMethodsRouteImport } from './routes/learn_.workout-science_.methods'
 import { Route as NutrientsCategoriesGroupIdRouteImport } from './routes/nutrients_.categories_.$groupId'
+import { Route as NutritionCustomFoodsIndexRouteImport } from './routes/nutrition.custom-foods.index'
+import { Route as NutritionCustomFoodsCustomFoodIdRouteImport } from './routes/nutrition.custom-foods.$customFoodId'
+import { Route as NutritionDayDateRouteImport } from './routes/nutrition.day.$date'
 import { Route as WorkoutHistorySessionIdRouteImport } from './routes/workout_.history_.$sessionId'
 import { Route as WorkoutSessionSessionIdRouteImport } from './routes/workout_.session.$sessionId'
 import { Route as WorkoutSummarySessionIdRouteImport } from './routes/workout_.summary.$sessionId'
@@ -128,6 +140,11 @@ const MusclesRoute = MusclesRouteImport.update({
 const NutrientsRoute = NutrientsRouteImport.update({
   id: '/nutrients',
   path: '/nutrients',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NutritionRoute = NutritionRouteImport.update({
+  id: '/nutrition',
+  path: '/nutrition',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NutritionLogRoute = NutritionLogRouteImport.update({
@@ -312,6 +329,46 @@ const NutrientsReferenceIntakesRoute =
     path: '/nutrients/reference-intakes',
     getParentRoute: () => rootRouteImport,
   } as any)
+const NutritionIndexRoute = NutritionIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => NutritionRoute,
+} as any)
+const NutritionAddRoute = NutritionAddRouteImport.update({
+  id: '/add',
+  path: '/add',
+  getParentRoute: () => NutritionRoute,
+} as any)
+const NutritionCustomFoodsRoute = NutritionCustomFoodsRouteImport.update({
+  id: '/custom-foods',
+  path: '/custom-foods',
+  getParentRoute: () => NutritionRoute,
+} as any)
+const NutritionDayRoute = NutritionDayRouteImport.update({
+  id: '/day',
+  path: '/day',
+  getParentRoute: () => NutritionRoute,
+} as any)
+const NutritionHistoryRoute = NutritionHistoryRouteImport.update({
+  id: '/history',
+  path: '/history',
+  getParentRoute: () => NutritionRoute,
+} as any)
+const NutritionMethodologyRoute = NutritionMethodologyRouteImport.update({
+  id: '/methodology',
+  path: '/methodology',
+  getParentRoute: () => NutritionRoute,
+} as any)
+const NutritionPrivacyRoute = NutritionPrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => NutritionRoute,
+} as any)
+const NutritionSettingsRoute = NutritionSettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => NutritionRoute,
+} as any)
 const ProgramsSlugRoute = ProgramsSlugRouteImport.update({
   id: '/programs_/$slug',
   path: '/programs/$slug',
@@ -386,6 +443,23 @@ const NutrientsCategoriesGroupIdRoute =
     path: '/nutrients/categories/$groupId',
     getParentRoute: () => rootRouteImport,
   } as any)
+const NutritionCustomFoodsIndexRoute =
+  NutritionCustomFoodsIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => NutritionCustomFoodsRoute,
+  } as any)
+const NutritionCustomFoodsCustomFoodIdRoute =
+  NutritionCustomFoodsCustomFoodIdRouteImport.update({
+    id: '/$customFoodId',
+    path: '/$customFoodId',
+    getParentRoute: () => NutritionCustomFoodsRoute,
+  } as any)
+const NutritionDayDateRoute = NutritionDayDateRouteImport.update({
+  id: '/$date',
+  path: '/$date',
+  getParentRoute: () => NutritionDayRoute,
+} as any)
 const WorkoutHistorySessionIdRoute = WorkoutHistorySessionIdRouteImport.update({
   id: '/workout_/history_/$sessionId',
   path: '/workout/history/$sessionId',
@@ -420,6 +494,7 @@ export interface FileRoutesByFullPath {
   '/mobility': typeof MobilityRoute
   '/muscles': typeof MusclesRoute
   '/nutrients': typeof NutrientsRoute
+  '/nutrition': typeof NutritionRouteWithChildren
   '/nutrition-log': typeof NutritionLogRoute
   '/programs': typeof ProgramsRoute
   '/progress': typeof ProgressRoute
@@ -455,6 +530,13 @@ export interface FileRoutesByFullPath {
   '/nutrients/glossary': typeof NutrientsGlossaryRoute
   '/nutrients/methodology': typeof NutrientsMethodologyRoute
   '/nutrients/reference-intakes': typeof NutrientsReferenceIntakesRoute
+  '/nutrition/add': typeof NutritionAddRoute
+  '/nutrition/custom-foods': typeof NutritionCustomFoodsRouteWithChildren
+  '/nutrition/day': typeof NutritionDayRouteWithChildren
+  '/nutrition/history': typeof NutritionHistoryRoute
+  '/nutrition/methodology': typeof NutritionMethodologyRoute
+  '/nutrition/privacy': typeof NutritionPrivacyRoute
+  '/nutrition/settings': typeof NutritionSettingsRoute
   '/programs/$slug': typeof ProgramsSlugRoute
   '/programs/compare': typeof ProgramsCompareRoute
   '/programs/current': typeof ProgramsCurrentRoute
@@ -463,16 +545,20 @@ export interface FileRoutesByFullPath {
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
+  '/nutrition/': typeof NutritionIndexRoute
   '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods/categories/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
   '/nutrients/categories/$groupId': typeof NutrientsCategoriesGroupIdRoute
+  '/nutrition/custom-foods/$customFoodId': typeof NutritionCustomFoodsCustomFoodIdRoute
+  '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
+  '/nutrition/custom-foods/': typeof NutritionCustomFoodsIndexRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRoutesByTo {
@@ -520,6 +606,12 @@ export interface FileRoutesByTo {
   '/nutrients/glossary': typeof NutrientsGlossaryRoute
   '/nutrients/methodology': typeof NutrientsMethodologyRoute
   '/nutrients/reference-intakes': typeof NutrientsReferenceIntakesRoute
+  '/nutrition/add': typeof NutritionAddRoute
+  '/nutrition/day': typeof NutritionDayRouteWithChildren
+  '/nutrition/history': typeof NutritionHistoryRoute
+  '/nutrition/methodology': typeof NutritionMethodologyRoute
+  '/nutrition/privacy': typeof NutritionPrivacyRoute
+  '/nutrition/settings': typeof NutritionSettingsRoute
   '/programs/$slug': typeof ProgramsSlugRoute
   '/programs/compare': typeof ProgramsCompareRoute
   '/programs/current': typeof ProgramsCurrentRoute
@@ -528,16 +620,20 @@ export interface FileRoutesByTo {
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
   '/diet-planning': typeof DietPlanningIndexRoute
+  '/nutrition': typeof NutritionIndexRoute
   '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods/categories/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
   '/nutrients/categories/$groupId': typeof NutrientsCategoriesGroupIdRoute
+  '/nutrition/custom-foods/$customFoodId': typeof NutritionCustomFoodsCustomFoodIdRoute
+  '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans': typeof DietPlanningPlansIndexRoute
+  '/nutrition/custom-foods': typeof NutritionCustomFoodsIndexRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRoutesById {
@@ -553,6 +649,7 @@ export interface FileRoutesById {
   '/mobility': typeof MobilityRoute
   '/muscles': typeof MusclesRoute
   '/nutrients': typeof NutrientsRoute
+  '/nutrition': typeof NutritionRouteWithChildren
   '/nutrition-log': typeof NutritionLogRoute
   '/programs': typeof ProgramsRoute
   '/progress': typeof ProgressRoute
@@ -588,6 +685,13 @@ export interface FileRoutesById {
   '/nutrients_/glossary': typeof NutrientsGlossaryRoute
   '/nutrients_/methodology': typeof NutrientsMethodologyRoute
   '/nutrients_/reference-intakes': typeof NutrientsReferenceIntakesRoute
+  '/nutrition/add': typeof NutritionAddRoute
+  '/nutrition/custom-foods': typeof NutritionCustomFoodsRouteWithChildren
+  '/nutrition/day': typeof NutritionDayRouteWithChildren
+  '/nutrition/history': typeof NutritionHistoryRoute
+  '/nutrition/methodology': typeof NutritionMethodologyRoute
+  '/nutrition/privacy': typeof NutritionPrivacyRoute
+  '/nutrition/settings': typeof NutritionSettingsRoute
   '/programs_/$slug': typeof ProgramsSlugRoute
   '/programs_/compare': typeof ProgramsCompareRoute
   '/programs_/current': typeof ProgramsCurrentRoute
@@ -596,16 +700,20 @@ export interface FileRoutesById {
   '/workout_/history': typeof WorkoutHistoryRoute
   '/workout_/settings': typeof WorkoutSettingsRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
+  '/nutrition/': typeof NutritionIndexRoute
   '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods_/categories_/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn_/workout-science_/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn_/workout-science_/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn_/workout-science_/methods': typeof LearnWorkoutScienceMethodsRoute
   '/nutrients_/categories_/$groupId': typeof NutrientsCategoriesGroupIdRoute
+  '/nutrition/custom-foods/$customFoodId': typeof NutritionCustomFoodsCustomFoodIdRoute
+  '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/workout_/history_/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout_/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout_/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
+  '/nutrition/custom-foods/': typeof NutritionCustomFoodsIndexRoute
   '/workout_/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRouteTypes {
@@ -622,6 +730,7 @@ export interface FileRouteTypes {
     | '/mobility'
     | '/muscles'
     | '/nutrients'
+    | '/nutrition'
     | '/nutrition-log'
     | '/programs'
     | '/progress'
@@ -657,6 +766,13 @@ export interface FileRouteTypes {
     | '/nutrients/glossary'
     | '/nutrients/methodology'
     | '/nutrients/reference-intakes'
+    | '/nutrition/add'
+    | '/nutrition/custom-foods'
+    | '/nutrition/day'
+    | '/nutrition/history'
+    | '/nutrition/methodology'
+    | '/nutrition/privacy'
+    | '/nutrition/settings'
     | '/programs/$slug'
     | '/programs/compare'
     | '/programs/current'
@@ -665,16 +781,20 @@ export interface FileRouteTypes {
     | '/workout/history'
     | '/workout/settings'
     | '/diet-planning/'
+    | '/nutrition/'
     | '/diet-planning/plans/$planId'
     | '/foods/categories/$categoryId'
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
     | '/nutrients/categories/$groupId'
+    | '/nutrition/custom-foods/$customFoodId'
+    | '/nutrition/day/$date'
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
     | '/diet-planning/plans/'
+    | '/nutrition/custom-foods/'
     | '/workout/exercises/$exerciseId/history'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -722,6 +842,12 @@ export interface FileRouteTypes {
     | '/nutrients/glossary'
     | '/nutrients/methodology'
     | '/nutrients/reference-intakes'
+    | '/nutrition/add'
+    | '/nutrition/day'
+    | '/nutrition/history'
+    | '/nutrition/methodology'
+    | '/nutrition/privacy'
+    | '/nutrition/settings'
     | '/programs/$slug'
     | '/programs/compare'
     | '/programs/current'
@@ -730,16 +856,20 @@ export interface FileRouteTypes {
     | '/workout/history'
     | '/workout/settings'
     | '/diet-planning'
+    | '/nutrition'
     | '/diet-planning/plans/$planId'
     | '/foods/categories/$categoryId'
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
     | '/nutrients/categories/$groupId'
+    | '/nutrition/custom-foods/$customFoodId'
+    | '/nutrition/day/$date'
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
     | '/diet-planning/plans'
+    | '/nutrition/custom-foods'
     | '/workout/exercises/$exerciseId/history'
   id:
     | '__root__'
@@ -754,6 +884,7 @@ export interface FileRouteTypes {
     | '/mobility'
     | '/muscles'
     | '/nutrients'
+    | '/nutrition'
     | '/nutrition-log'
     | '/programs'
     | '/progress'
@@ -789,6 +920,13 @@ export interface FileRouteTypes {
     | '/nutrients_/glossary'
     | '/nutrients_/methodology'
     | '/nutrients_/reference-intakes'
+    | '/nutrition/add'
+    | '/nutrition/custom-foods'
+    | '/nutrition/day'
+    | '/nutrition/history'
+    | '/nutrition/methodology'
+    | '/nutrition/privacy'
+    | '/nutrition/settings'
     | '/programs_/$slug'
     | '/programs_/compare'
     | '/programs_/current'
@@ -797,16 +935,20 @@ export interface FileRouteTypes {
     | '/workout_/history'
     | '/workout_/settings'
     | '/diet-planning/'
+    | '/nutrition/'
     | '/diet-planning/plans/$planId'
     | '/foods_/categories_/$categoryId'
     | '/learn_/workout-science_/$slug'
     | '/learn_/workout-science_/glossary'
     | '/learn_/workout-science_/methods'
     | '/nutrients_/categories_/$groupId'
+    | '/nutrition/custom-foods/$customFoodId'
+    | '/nutrition/day/$date'
     | '/workout_/history_/$sessionId'
     | '/workout_/session/$sessionId'
     | '/workout_/summary/$sessionId'
     | '/diet-planning/plans/'
+    | '/nutrition/custom-foods/'
     | '/workout_/exercises/$exerciseId/history'
   fileRoutesById: FileRoutesById
 }
@@ -822,6 +964,7 @@ export interface RootRouteChildren {
   MobilityRoute: typeof MobilityRoute
   MusclesRoute: typeof MusclesRoute
   NutrientsRoute: typeof NutrientsRoute
+  NutritionRoute: typeof NutritionRouteWithChildren
   NutritionLogRoute: typeof NutritionLogRoute
   ProgramsRoute: typeof ProgramsRoute
   ProgressRoute: typeof ProgressRoute
@@ -945,6 +1088,13 @@ declare module '@tanstack/react-router' {
       path: '/nutrients'
       fullPath: '/nutrients'
       preLoaderRoute: typeof NutrientsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nutrition': {
+      id: '/nutrition'
+      path: '/nutrition'
+      fullPath: '/nutrition'
+      preLoaderRoute: typeof NutritionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nutrition-log': {
@@ -1199,6 +1349,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NutrientsReferenceIntakesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nutrition/': {
+      id: '/nutrition/'
+      path: '/'
+      fullPath: '/nutrition/'
+      preLoaderRoute: typeof NutritionIndexRouteImport
+      parentRoute: typeof NutritionRoute
+    }
+    '/nutrition/add': {
+      id: '/nutrition/add'
+      path: '/add'
+      fullPath: '/nutrition/add'
+      preLoaderRoute: typeof NutritionAddRouteImport
+      parentRoute: typeof NutritionRoute
+    }
+    '/nutrition/custom-foods': {
+      id: '/nutrition/custom-foods'
+      path: '/custom-foods'
+      fullPath: '/nutrition/custom-foods'
+      preLoaderRoute: typeof NutritionCustomFoodsRouteImport
+      parentRoute: typeof NutritionRoute
+    }
+    '/nutrition/day': {
+      id: '/nutrition/day'
+      path: '/day'
+      fullPath: '/nutrition/day'
+      preLoaderRoute: typeof NutritionDayRouteImport
+      parentRoute: typeof NutritionRoute
+    }
+    '/nutrition/history': {
+      id: '/nutrition/history'
+      path: '/history'
+      fullPath: '/nutrition/history'
+      preLoaderRoute: typeof NutritionHistoryRouteImport
+      parentRoute: typeof NutritionRoute
+    }
+    '/nutrition/methodology': {
+      id: '/nutrition/methodology'
+      path: '/methodology'
+      fullPath: '/nutrition/methodology'
+      preLoaderRoute: typeof NutritionMethodologyRouteImport
+      parentRoute: typeof NutritionRoute
+    }
+    '/nutrition/privacy': {
+      id: '/nutrition/privacy'
+      path: '/privacy'
+      fullPath: '/nutrition/privacy'
+      preLoaderRoute: typeof NutritionPrivacyRouteImport
+      parentRoute: typeof NutritionRoute
+    }
+    '/nutrition/settings': {
+      id: '/nutrition/settings'
+      path: '/settings'
+      fullPath: '/nutrition/settings'
+      preLoaderRoute: typeof NutritionSettingsRouteImport
+      parentRoute: typeof NutritionRoute
+    }
     '/programs_/$slug': {
       id: '/programs_/$slug'
       path: '/programs/$slug'
@@ -1297,6 +1503,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NutrientsCategoriesGroupIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nutrition/custom-foods/': {
+      id: '/nutrition/custom-foods/'
+      path: '/'
+      fullPath: '/nutrition/custom-foods/'
+      preLoaderRoute: typeof NutritionCustomFoodsIndexRouteImport
+      parentRoute: typeof NutritionCustomFoodsRoute
+    }
+    '/nutrition/custom-foods/$customFoodId': {
+      id: '/nutrition/custom-foods/$customFoodId'
+      path: '/$customFoodId'
+      fullPath: '/nutrition/custom-foods/$customFoodId'
+      preLoaderRoute: typeof NutritionCustomFoodsCustomFoodIdRouteImport
+      parentRoute: typeof NutritionCustomFoodsRoute
+    }
+    '/nutrition/day/$date': {
+      id: '/nutrition/day/$date'
+      path: '/$date'
+      fullPath: '/nutrition/day/$date'
+      preLoaderRoute: typeof NutritionDayDateRouteImport
+      parentRoute: typeof NutritionDayRoute
+    }
     '/workout_/history_/$sessionId': {
       id: '/workout_/history_/$sessionId'
       path: '/workout/history/$sessionId'
@@ -1367,6 +1594,57 @@ const DietPlanningRouteWithChildren = DietPlanningRoute._addFileChildren(
   DietPlanningRouteChildren,
 )
 
+interface NutritionCustomFoodsRouteChildren {
+  NutritionCustomFoodsCustomFoodIdRoute: typeof NutritionCustomFoodsCustomFoodIdRoute
+  NutritionCustomFoodsIndexRoute: typeof NutritionCustomFoodsIndexRoute
+}
+
+const NutritionCustomFoodsRouteChildren: NutritionCustomFoodsRouteChildren = {
+  NutritionCustomFoodsCustomFoodIdRoute: NutritionCustomFoodsCustomFoodIdRoute,
+  NutritionCustomFoodsIndexRoute: NutritionCustomFoodsIndexRoute,
+}
+
+const NutritionCustomFoodsRouteWithChildren =
+  NutritionCustomFoodsRoute._addFileChildren(NutritionCustomFoodsRouteChildren)
+
+interface NutritionDayRouteChildren {
+  NutritionDayDateRoute: typeof NutritionDayDateRoute
+}
+
+const NutritionDayRouteChildren: NutritionDayRouteChildren = {
+  NutritionDayDateRoute: NutritionDayDateRoute,
+}
+
+const NutritionDayRouteWithChildren = NutritionDayRoute._addFileChildren(
+  NutritionDayRouteChildren,
+)
+
+interface NutritionRouteChildren {
+  NutritionAddRoute: typeof NutritionAddRoute
+  NutritionCustomFoodsRoute: typeof NutritionCustomFoodsRouteWithChildren
+  NutritionDayRoute: typeof NutritionDayRouteWithChildren
+  NutritionHistoryRoute: typeof NutritionHistoryRoute
+  NutritionMethodologyRoute: typeof NutritionMethodologyRoute
+  NutritionPrivacyRoute: typeof NutritionPrivacyRoute
+  NutritionSettingsRoute: typeof NutritionSettingsRoute
+  NutritionIndexRoute: typeof NutritionIndexRoute
+}
+
+const NutritionRouteChildren: NutritionRouteChildren = {
+  NutritionAddRoute: NutritionAddRoute,
+  NutritionCustomFoodsRoute: NutritionCustomFoodsRouteWithChildren,
+  NutritionDayRoute: NutritionDayRouteWithChildren,
+  NutritionHistoryRoute: NutritionHistoryRoute,
+  NutritionMethodologyRoute: NutritionMethodologyRoute,
+  NutritionPrivacyRoute: NutritionPrivacyRoute,
+  NutritionSettingsRoute: NutritionSettingsRoute,
+  NutritionIndexRoute: NutritionIndexRoute,
+}
+
+const NutritionRouteWithChildren = NutritionRoute._addFileChildren(
+  NutritionRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CardioRoute: CardioRoute,
@@ -1379,6 +1657,7 @@ const rootRouteChildren: RootRouteChildren = {
   MobilityRoute: MobilityRoute,
   MusclesRoute: MusclesRoute,
   NutrientsRoute: NutrientsRoute,
+  NutritionRoute: NutritionRouteWithChildren,
   NutritionLogRoute: NutritionLogRoute,
   ProgramsRoute: ProgramsRoute,
   ProgressRoute: ProgressRoute,

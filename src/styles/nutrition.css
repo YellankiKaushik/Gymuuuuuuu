@@ -1,0 +1,144 @@
+.nutrition-workspace {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 78rem;
+  margin-inline: auto;
+}
+.nutrition-workspace section {
+  min-width: 0;
+}
+.nutrition-nav,
+.nutrition-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-block: 0.8rem;
+}
+.nutrition-nav {
+  margin-inline: 32px;
+}
+@media (max-width: 600px) {
+  .nutrition-nav {
+    margin-inline: 16px;
+  }
+}
+.nutrition-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+}
+.nutrition-nav a.active {
+  background: var(--accent-soft);
+}
+.nutrition-totals {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.nutrition-workspace .card {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.nutrition-workspace label {
+  display: grid;
+  gap: 0.4rem;
+  max-width: 36rem;
+  margin-block: 0.7rem;
+}
+.nutrition-workspace input,
+.nutrition-workspace select,
+.nutrition-workspace textarea {
+  min-height: 44px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--canvas);
+  color: var(--text);
+}
+.nutrition-workspace input[type="checkbox"] {
+  width: 1.25rem;
+  min-height: 1.25rem;
+}
+.nutrition-workspace button {
+  min-height: 44px;
+  margin: 0.2rem;
+}
+.nutrition-workspace h2,
+.nutrition-workspace h3,
+.nutrition-workspace h4 {
+  margin-block: 0.5rem;
+}
+.nutrition-workspace p {
+  margin-block: 0.65rem;
+}
+.nutrition-workspace details > summary {
+  min-height: 44px;
+  padding-block: 0.7rem;
+  cursor: pointer;
+}
+.nutrition-workspace details ul {
+  padding-left: 1.3rem;
+}
+.nutrition-meal {
+  display: grid;
+  gap: 0.7rem;
+  margin-block: 1.2rem;
+}
+.nutrition-form {
+  display: grid;
+  gap: 0.4rem;
+}
+.nutrition-table {
+  overflow-x: auto;
+}
+.nutrition-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition-table th,
+.nutrition-table td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+.nutrition-slot {
+  border-bottom: 1px solid var(--line);
+  padding-block: 0.7rem;
+}
+.nutrition-nutrient-cards {
+  display: none;
+}
+.nutrition-totals strong {
+  font-size: 1.5rem;
+}
+@media (max-width: 900px) {
+  .nutrition-totals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 420px) {
+  .nutrition-table {
+    display: none;
+  }
+  .nutrition-nutrient-cards {
+    display: grid;
+    gap: 0.65rem;
+  }
+  .nutrition-totals {
+    grid-template-columns: 1fr;
+  }
+  .nutrition-actions > * {
+    width: 100%;
+  }
+  .nutrition-workspace .card {
+    padding: 0.75rem;
+  }
+}

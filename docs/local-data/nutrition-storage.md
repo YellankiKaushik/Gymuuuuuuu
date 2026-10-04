@@ -1,0 +1,11 @@
+# Nutrition storage and migrations
+
+The shared `fitness-os` database upgrades to schema 10. Migrations 1–6 retain the workout stores; 7–9 are reserved. Migration 10 adds nutritionPreferences, nutritionDays, foodLogEntries, hydrationEntries, customFoods, customFoodRevisions, nutritionFavourites, nutritionAuditLog and derivedNutritionDayTotals. Earlier stores and unknown fields are not deleted. Workout and nutrition now borrow one lazy version-10 opener, avoiding older-version open errors. Cached connections are scoped to the browser's IDBFactory and name. Versionchange closes stale connections.
+
+Entry/date/meal/source/time/deletion and custom/favourite indexes follow the supplied contract. Nutrition changes are validated before writing, then validated again against the current graph in one readwrite transaction. Entry changes and only the affected day caches commit atomically. Transaction abort preserves existing canonical records. Totals can always be rebuilt from active entry snapshots and are excluded from canonical backups. UI reads canonical entries rather than trusting stale caches.
+
+Food-entry revisions and custom-food updatedAt detect stale cross-tab saves. Browser events/BroadcastChannel carry only a changed notice, never personal records. Custom revisions cannot be overwritten. Soft deletion supports undo. Individual permanent deletion requires confirmation; deleting all nutrition requires the exact typed phrase and browser confirmation. Workout, diet-planning and generic personal databases remain outside that purge.
+
+Structured records never use localStorage. No personal record is read during SSR, metadata creation or server logging. Persistence requests are explicit, explain limitations and report granted/denied/unsupported. Browser clearing and device loss can still remove records. Anyone using the unlocked browser profile can access its local records.
+
+Phase 17 must include this adapter and the separately owned fitness-os-diet-planning and fitness-os-local databases. Nutrition schema version 1 is independent of IndexedDB schema version 10. Unsupported backup versions fail before a transaction. Physical-device and additional browser-engine testing remain manual release checks.
