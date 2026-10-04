@@ -1,0 +1,1706 @@
+[
+  {
+    "id": "energy_kcal",
+    "slug": "energy",
+    "canonicalName": "Energy",
+    "aliases": [
+      "calories",
+      "kilocalories"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "kcal",
+    "foodDataNutrientIds": [
+      "energy_kcal"
+    ],
+    "essentiality": "not_a_nutrient",
+    "displayKind": "energy",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "energy_kj",
+    "slug": "energy-kilojoules",
+    "canonicalName": "Energy in kilojoules",
+    "aliases": [
+      "kilojoules",
+      "kJ"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "kJ",
+    "foodDataNutrientIds": [
+      "energy_kj"
+    ],
+    "essentiality": "not_a_nutrient",
+    "displayKind": "energy_equivalent",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "water_g",
+    "slug": "water",
+    "canonicalName": "Water",
+    "aliases": [
+      "hydration"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "water_g"
+    ],
+    "essentiality": "essential",
+    "displayKind": "nutrient",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "alcohol_g",
+    "slug": "alcohol",
+    "canonicalName": "Alcohol",
+    "aliases": [
+      "ethanol"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [],
+    "essentiality": "nonessential",
+    "displayKind": "dietary_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "protein_g",
+    "slug": "protein",
+    "canonicalName": "Protein",
+    "aliases": [
+      "dietary protein"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "protein_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "macronutrient",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "carbohydrate_total_g",
+    "slug": "total-carbohydrate",
+    "canonicalName": "Total carbohydrate",
+    "aliases": [
+      "carbohydrates",
+      "carbs"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "carbohydrate_total_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "macronutrient",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "carbohydrate_available_g",
+    "slug": "available-carbohydrate",
+    "canonicalName": "Available carbohydrate",
+    "aliases": [
+      "digestible carbohydrate",
+      "available carbs"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "carbohydrate_available_g"
+    ],
+    "essentiality": "nonessential_measure",
+    "displayKind": "food_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "fiber_total_g",
+    "slug": "dietary-fibre",
+    "canonicalName": "Dietary fibre",
+    "aliases": [
+      "dietary fiber",
+      "fibre",
+      "fiber"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fiber_total_g"
+    ],
+    "essentiality": "beneficial_component",
+    "displayKind": "food_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "sugars_total_g",
+    "slug": "total-sugars",
+    "canonicalName": "Total sugars",
+    "aliases": [
+      "sugars"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "sugars_total_g"
+    ],
+    "essentiality": "nonessential_measure",
+    "displayKind": "food_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "added_sugars_g",
+    "slug": "added-sugars",
+    "canonicalName": "Added sugars",
+    "aliases": [
+      "free sugars in some frameworks"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [],
+    "essentiality": "nonessential",
+    "displayKind": "dietary_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "fat_total_g",
+    "slug": "total-fat",
+    "canonicalName": "Total fat",
+    "aliases": [
+      "dietary fat",
+      "lipids"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_total_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "macronutrient",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "fat_saturated_g",
+    "slug": "saturated-fat",
+    "canonicalName": "Saturated fat",
+    "aliases": [
+      "saturated fatty acids",
+      "SFA"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_saturated_g"
+    ],
+    "essentiality": "nonessential",
+    "displayKind": "fat_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "fat_monounsaturated_g",
+    "slug": "monounsaturated-fat",
+    "canonicalName": "Monounsaturated fat",
+    "aliases": [
+      "MUFA"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_monounsaturated_g"
+    ],
+    "essentiality": "nonessential",
+    "displayKind": "fat_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "fat_polyunsaturated_g",
+    "slug": "polyunsaturated-fat",
+    "canonicalName": "Polyunsaturated fat",
+    "aliases": [
+      "PUFA"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_polyunsaturated_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "fat_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "trans_fat_g",
+    "slug": "trans-fat",
+    "canonicalName": "Trans fat",
+    "aliases": [
+      "trans fatty acids"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [],
+    "essentiality": "nonessential",
+    "displayKind": "dietary_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "omega_3_g",
+    "slug": "omega-3-fatty-acids",
+    "canonicalName": "Omega-3 fatty acids",
+    "aliases": [
+      "n-3 fatty acids",
+      "omega 3"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "omega_3_g"
+    ],
+    "essentiality": "essential_family",
+    "displayKind": "fat_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "omega_6_g",
+    "slug": "omega-6-fatty-acids",
+    "canonicalName": "Omega-6 fatty acids",
+    "aliases": [
+      "n-6 fatty acids",
+      "omega 6"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "omega_6_g"
+    ],
+    "essentiality": "essential_family",
+    "displayKind": "fat_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "cholesterol_mg",
+    "slug": "cholesterol",
+    "canonicalName": "Cholesterol",
+    "aliases": [
+      "dietary cholesterol"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "cholesterol_mg"
+    ],
+    "essentiality": "nonessential",
+    "displayKind": "food_component",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "sodium_mg",
+    "slug": "sodium",
+    "canonicalName": "Sodium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "sodium_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "potassium_mg",
+    "slug": "potassium",
+    "canonicalName": "Potassium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "potassium_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "calcium_mg",
+    "slug": "calcium",
+    "canonicalName": "Calcium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "calcium_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "iron_mg",
+    "slug": "iron",
+    "canonicalName": "Iron",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "iron_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "magnesium_mg",
+    "slug": "magnesium",
+    "canonicalName": "Magnesium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "magnesium_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "phosphorus_mg",
+    "slug": "phosphorus",
+    "canonicalName": "Phosphorus",
+    "aliases": [
+      "phosphate"
+    ],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "phosphorus_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "zinc_mg",
+    "slug": "zinc",
+    "canonicalName": "Zinc",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "zinc_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "copper_mg",
+    "slug": "copper",
+    "canonicalName": "Copper",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "copper_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "manganese_mg",
+    "slug": "manganese",
+    "canonicalName": "Manganese",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "manganese_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "selenium_ug",
+    "slug": "selenium",
+    "canonicalName": "Selenium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "selenium_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "iodine_ug",
+    "slug": "iodine",
+    "canonicalName": "Iodine",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "iodine_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "chloride_mg",
+    "slug": "chloride",
+    "canonicalName": "Chloride",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "chromium_ug",
+    "slug": "chromium",
+    "canonicalName": "Chromium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [],
+    "essentiality": "reference_framework_dependent",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "fluoride_mg",
+    "slug": "fluoride",
+    "canonicalName": "Fluoride",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [],
+    "essentiality": "beneficial_trace_element",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "molybdenum_ug",
+    "slug": "molybdenum",
+    "canonicalName": "Molybdenum",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "vitamin_a_rae_ug",
+    "slug": "vitamin-a",
+    "canonicalName": "Vitamin A",
+    "aliases": [
+      "vitamin A RAE"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg RAE",
+    "foodDataNutrientIds": [
+      "vitamin_a_rae_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "retinol_ug",
+    "slug": "retinol",
+    "canonicalName": "Retinol",
+    "aliases": [
+      "preformed vitamin A"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "retinol_ug"
+    ],
+    "essentiality": "vitamin_form",
+    "displayKind": "vitamin_form",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "beta_carotene_ug",
+    "slug": "beta-carotene",
+    "canonicalName": "Beta-carotene",
+    "aliases": [
+      "provitamin A carotenoid"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "beta_carotene_ug"
+    ],
+    "essentiality": "vitamin_precursor",
+    "displayKind": "vitamin_form",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "thiamin_mg",
+    "slug": "thiamin-vitamin-b1",
+    "canonicalName": "Thiamin (vitamin B1)",
+    "aliases": [
+      "thiamine",
+      "B1"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "thiamin_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "riboflavin_mg",
+    "slug": "riboflavin-vitamin-b2",
+    "canonicalName": "Riboflavin (vitamin B2)",
+    "aliases": [
+      "B2"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "riboflavin_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "niacin_mg",
+    "slug": "niacin-vitamin-b3",
+    "canonicalName": "Niacin (vitamin B3)",
+    "aliases": [
+      "B3",
+      "niacin equivalents"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg NE",
+    "foodDataNutrientIds": [
+      "niacin_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "pantothenic_acid_mg",
+    "slug": "pantothenic-acid-vitamin-b5",
+    "canonicalName": "Pantothenic acid (vitamin B5)",
+    "aliases": [
+      "B5"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "pantothenic_acid_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "vitamin_b6_mg",
+    "slug": "vitamin-b6",
+    "canonicalName": "Vitamin B6",
+    "aliases": [
+      "pyridoxine family",
+      "B6"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "vitamin_b6_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "biotin_ug",
+    "slug": "biotin-vitamin-b7",
+    "canonicalName": "Biotin (vitamin B7)",
+    "aliases": [
+      "B7"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "biotin_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "folate_food_ug",
+    "slug": "food-folate",
+    "canonicalName": "Food folate",
+    "aliases": [
+      "natural folate"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "folate_food_ug"
+    ],
+    "essentiality": "vitamin_form",
+    "displayKind": "vitamin_form",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "folic_acid_ug",
+    "slug": "folic-acid",
+    "canonicalName": "Folic acid",
+    "aliases": [
+      "synthetic folate"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "folic_acid_ug"
+    ],
+    "essentiality": "vitamin_form",
+    "displayKind": "vitamin_form",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "folate_dfe_ug",
+    "slug": "folate-vitamin-b9",
+    "canonicalName": "Folate (vitamin B9)",
+    "aliases": [
+      "dietary folate equivalents",
+      "DFE",
+      "B9"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg DFE",
+    "foodDataNutrientIds": [
+      "folate_dfe_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "vitamin_b12_ug",
+    "slug": "vitamin-b12",
+    "canonicalName": "Vitamin B12",
+    "aliases": [
+      "cobalamin",
+      "B12"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "vitamin_b12_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "vitamin_c_mg",
+    "slug": "vitamin-c",
+    "canonicalName": "Vitamin C",
+    "aliases": [
+      "ascorbic acid"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "vitamin_c_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "vitamin_d_ug",
+    "slug": "vitamin-d",
+    "canonicalName": "Vitamin D",
+    "aliases": [
+      "calciferol"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "vitamin_d_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "vitamin_e_mg",
+    "slug": "vitamin-e",
+    "canonicalName": "Vitamin E",
+    "aliases": [
+      "alpha-tocopherol equivalents"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg alpha-tocopherol",
+    "foodDataNutrientIds": [
+      "vitamin_e_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "vitamin_k_ug",
+    "slug": "vitamin-k",
+    "canonicalName": "Vitamin K",
+    "aliases": [],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "vitamin_k_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  },
+  {
+    "id": "choline_mg",
+    "slug": "choline",
+    "canonicalName": "Choline",
+    "aliases": [],
+    "groupId": "other_essential",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "choline_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "other_nutrient",
+    "status": "draft_identity",
+    "contentStatus": "unpopulated",
+    "forms": [],
+    "functions": [],
+    "referenceValues": [],
+    "foodSourceRules": [],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [],
+    "sources": [],
+    "editorial": {
+      "reviewStatus": "not_started",
+      "reviewedAt": null,
+      "reviewer": null,
+      "notes": "Stable identity only. Do not publish until content and references pass review."
+    }
+  }
+]

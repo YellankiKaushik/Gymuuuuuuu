@@ -1,0 +1,134 @@
+{
+  "groups": [
+    {
+      "id": "energy_hydration",
+      "label": "Energy and hydration",
+      "description": "Energy, water and alcohol-related dietary components."
+    },
+    {
+      "id": "macronutrients",
+      "label": "Macronutrients and major food components",
+      "description": "Protein, carbohydrate, fibre, sugars, fats, fatty-acid classes and cholesterol."
+    },
+    {
+      "id": "minerals_electrolytes",
+      "label": "Minerals and electrolytes",
+      "description": "Major minerals, trace elements and electrolytes with established or commonly used reference frameworks."
+    },
+    {
+      "id": "vitamins",
+      "label": "Vitamins and vitamin forms",
+      "description": "Fat-soluble and water-soluble vitamins, including source-database forms and equivalent systems."
+    },
+    {
+      "id": "other_essential",
+      "label": "Other essential nutrients",
+      "description": "Essential nutrients not grouped above, currently choline."
+    }
+  ],
+  "referenceFrameworks": [
+    {
+      "id": "us_canada_dri",
+      "label": "US/Canada DRI",
+      "valueTypes": [
+        "RDA",
+        "AI",
+        "EAR",
+        "UL",
+        "AMDR",
+        "CDRR"
+      ],
+      "sourceId": "us_canada_dri_tables",
+      "status": "approved_framework",
+      "notes": "Age-, sex- and life-stage-specific values for generally healthy populations."
+    },
+    {
+      "id": "fda_dv_adult_4_plus",
+      "label": "FDA Daily Value - adults and children 4+",
+      "valueTypes": [
+        "DV"
+      ],
+      "sourceId": "fda_daily_values",
+      "status": "approved_framework",
+      "notes": "Single label reference value; not a personal RDA or AI."
+    },
+    {
+      "id": "icmr_nin_2020",
+      "label": "India ICMR-NIN RDA/EAR 2020",
+      "valueTypes": [
+        "RDA",
+        "EAR",
+        "TUL"
+      ],
+      "sourceId": "icmr_nin_rda_ear_2020",
+      "status": "reference_pending_rights_review",
+      "notes": "Preferred for Indian context when lawful structured use is confirmed."
+    },
+    {
+      "id": "efsa_drv",
+      "label": "EFSA DRV",
+      "valueTypes": [
+        "PRI",
+        "AR",
+        "AI",
+        "RI",
+        "UL"
+      ],
+      "sourceId": "efsa_drv",
+      "status": "approved_framework",
+      "notes": "Professional population reference framework; not an individual prescription."
+    }
+  ],
+  "sourceRegistry": [
+    {
+      "id": "nih_ods_fact_sheets",
+      "name": "NIH Office of Dietary Supplements fact sheets",
+      "authority": "US National Institutes of Health",
+      "url": "https://ods.od.nih.gov/factsheets/list-VitaminsMinerals/",
+      "usage": "Primary evidence summaries for functions, food sources, intake tables, safety and interactions.",
+      "rights": "Link and summarize with attribution; do not reproduce large verbatim passages."
+    },
+    {
+      "id": "us_canada_dri_tables",
+      "name": "US/Canada Dietary Reference Intakes",
+      "authority": "National Academies / NIH ODS DRI tables",
+      "url": "https://ods.od.nih.gov/healthinformation/nutrientrecommendations.aspx",
+      "usage": "RDA, AI, EAR, UL, AMDR and related reference values for healthy populations.",
+      "rights": "Use facts with source/version metadata; preserve value type and population."
+    },
+    {
+      "id": "fda_daily_values",
+      "name": "FDA Daily Values",
+      "authority": "US Food and Drug Administration",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+      "usage": "Label-oriented %DV calculations; not a personalized requirement system.",
+      "rights": "Public government information; cite version and intended label population."
+    },
+    {
+      "id": "icmr_nin_rda_ear_2020",
+      "name": "Nutrient Requirements for Indians - RDA and EAR 2020",
+      "authority": "ICMR-National Institute of Nutrition",
+      "url": "https://nin.res.in/RDA_Full_Report_2024.html",
+      "usage": "Preferred Indian reference framework after content and redistribution-rights review.",
+      "rights": "Do not scrape or bulk reproduce paid/copyright tables without confirmed permission."
+    },
+    {
+      "id": "efsa_drv",
+      "name": "EFSA Dietary Reference Values",
+      "authority": "European Food Safety Authority",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/dietary-reference-values",
+      "usage": "Comparative European DRV framework and scientific opinions.",
+      "rights": "Cite opinions and framework; do not merge values with other authorities."
+    },
+    {
+      "id": "usda_fooddata_central",
+      "name": "USDA FoodData Central",
+      "authority": "US Department of Agriculture",
+      "url": "https://fdc.nal.usda.gov/download-datasets/",
+      "usage": "Phase 07 food composition links and source-backed food rankings.",
+      "rights": "CC0 data with requested attribution."
+    }
+  ],
+  "phase07CompatibleCount": 44,
+  "encyclopediaOnlyCount": 7
+}

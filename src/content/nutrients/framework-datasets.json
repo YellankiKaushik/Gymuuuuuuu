@@ -1,0 +1,6 @@
+[
+  {"id":"us_canada_dri","version":null,"authority":"National Academies / NIH ODS","status":"unpopulated","rightsStatus":"pending_review"},
+  {"id":"fda_dv_adult_4_plus","version":null,"authority":"US Food and Drug Administration","status":"unpopulated","rightsStatus":"pending_review"},
+  {"id":"icmr_nin_2020","version":null,"authority":"ICMR-National Institute of Nutrition","status":"unpopulated","rightsStatus":"pending_review"},
+  {"id":"efsa_drv","version":null,"authority":"European Food Safety Authority","status":"unpopulated","rightsStatus":"pending_review"}
+]

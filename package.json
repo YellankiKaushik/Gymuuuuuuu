@@ -12,7 +12,7 @@
     "test": "vitest run",
     "test:browser": "playwright test",
     "check": "npm run typecheck && npm run lint && npm run test && npm run build",
-    "validate:content": "tsx scripts/compile-foods.ts && tsx scripts/validate-content.ts",
+    "validate:content": "tsx scripts/compile-foods.ts && tsx scripts/compile-nutrients.ts && tsx scripts/validate-content.ts",
     "prebuild": "npm run validate:content"
   },
   "dependencies": {

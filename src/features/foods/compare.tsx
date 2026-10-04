@@ -145,6 +145,7 @@ export function FoodComparison({
         Each amount belongs to the displayed preparation state, source release
         and serving basis. Different source methods may affect interpretation.
       </InfoCallout>
+      <a href="/nutrients/frameworks">Reference framework definitions</a>
     </div>
   );
 }

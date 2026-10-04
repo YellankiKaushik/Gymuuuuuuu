@@ -2,6 +2,7 @@ import { localRecordSchema } from '../../domain/schemas/foundation'
 import type { LocalRecord } from '../../domain/types'
 
 export interface RecordStorage {
+  get(id: string): Promise<LocalRecord | undefined>
   list(): Promise<LocalRecord[]>
   put(record: LocalRecord): Promise<void>
   remove(id: string): Promise<void>
@@ -37,6 +38,7 @@ export function createRecordStorage(databaseName = 'fitness-os-local'): RecordSt
     })
   }
   return {
+    async get(id) { const record: unknown = await transact('readonly', (store) => store.get(id)); return record === undefined ? undefined : localRecordSchema.parse(record) },
     async list() {
       const records: unknown[] = await transact('readonly', (store) => store.getAll())
       return records.map((record) => localRecordSchema.parse(record))

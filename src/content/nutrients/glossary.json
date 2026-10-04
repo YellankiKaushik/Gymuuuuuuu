@@ -1,0 +1,198 @@
+[
+  {
+    "term": "RDA",
+    "name": "Recommended Dietary Allowance",
+    "description": "Reference intake covering the needs of nearly all healthy people in a specified population. It is not a universal minimum or treatment dose.",
+    "sourceUrl": "https://ods.od.nih.gov/healthinformation/nutrientrecommendations.aspx",
+    "id": "glossary_rda",
+    "slug": "rda",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "AI",
+    "name": "Adequate Intake",
+    "description": "An intake judged adequate when evidence does not support establishing an RDA. It does not establish an exact individual requirement.",
+    "sourceUrl": "https://ods.od.nih.gov/healthinformation/nutrientrecommendations.aspx",
+    "id": "glossary_ai",
+    "slug": "ai",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "EAR",
+    "name": "Estimated Average Requirement",
+    "description": "A population requirement estimate covering about half of a specified healthy group. It is not a personal daily intake target.",
+    "sourceUrl": "https://ods.od.nih.gov/healthinformation/nutrientrecommendations.aspx",
+    "id": "glossary_ear",
+    "slug": "ear",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "UL",
+    "name": "Tolerable Upper Intake Level",
+    "description": "An upper chronic-intake boundary associated with low adverse-effect risk in its stated population. It is not a goal to reach.",
+    "sourceUrl": "https://ods.od.nih.gov/healthinformation/nutrientrecommendations.aspx",
+    "id": "glossary_ul",
+    "slug": "ul",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "TUL",
+    "name": "Tolerable Upper Limit",
+    "description": "Upper-limit terminology used by a source framework. Its population and food-versus-supplement scope must accompany the value. It is not an intake goal.",
+    "sourceUrl": "https://nin.res.in/popular.html",
+    "id": "glossary_tul",
+    "slug": "tul",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "AMDR",
+    "name": "Acceptable Macronutrient Distribution Range",
+    "description": "A population reference range for macronutrient intake, expressed with an explicit energy basis. It does not produce a gram target without energy context.",
+    "sourceUrl": "https://ods.od.nih.gov/healthinformation/nutrientrecommendations.aspx",
+    "id": "glossary_amdr",
+    "slug": "amdr",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "CDRR",
+    "name": "Chronic Disease Risk Reduction Intake",
+    "description": "An intake reference above which reducing intake is expected to reduce chronic disease risk in the specified population. It is not a toxicity threshold.",
+    "sourceUrl": "https://www.nationalacademies.org/read/25353/chapter/15",
+    "id": "glossary_cdrr",
+    "slug": "cdrr",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "DV",
+    "name": "Daily Value",
+    "description": "A food-label reference used to express the contribution of a serving. It is distinct from an individual RDA or AI.",
+    "sourceUrl": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+    "id": "glossary_dv",
+    "slug": "dv",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "PRI",
+    "name": "Population Reference Intake",
+    "description": "EFSA's reference covering the needs of most people in a specified population. Framework definitions and population must remain visible.",
+    "sourceUrl": "https://www.efsa.europa.eu/en/topics/topic/dietary-reference-values",
+    "id": "glossary_pri",
+    "slug": "pri",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "AR",
+    "name": "Average Requirement",
+    "description": "EFSA's estimate covering the needs of half of a specified population. It is a population concept, not an individual prescription.",
+    "sourceUrl": "https://www.efsa.europa.eu/en/topics/topic/dietary-reference-values",
+    "id": "glossary_ar",
+    "slug": "ar",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "RI",
+    "name": "Reference Intake range",
+    "description": "An EFSA reference range used for macronutrients. Its source and percentage-of-energy basis must accompany the range.",
+    "sourceUrl": "https://www.efsa.europa.eu/en/topics/topic/dietary-reference-values",
+    "id": "glossary_ri",
+    "slug": "ri",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "RAE",
+    "name": "Retinol activity equivalents",
+    "description": "A vitamin A equivalence system accounting for differing activity of forms. Retinol and carotenoid amounts cannot be added as though all units were interchangeable.",
+    "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/",
+    "id": "glossary_rae",
+    "slug": "rae",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "DFE",
+    "name": "Dietary folate equivalents",
+    "description": "A folate equivalence system distinguishing food folate and other forms. Conversion requires the source's form and consumption context.",
+    "sourceUrl": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+    "id": "glossary_dfe",
+    "slug": "dfe",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  },
+  {
+    "term": "NE",
+    "name": "Niacin equivalents",
+    "description": "A reference concept accounting for niacin and its contribution from tryptophan. A composition amount labelled mg cannot automatically be treated as mg NE.",
+    "sourceUrl": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/",
+    "id": "glossary_ne",
+    "slug": "ne",
+    "review": {
+      "note": "Original explanatory summary. This is not scientific review of numeric intake tables.",
+      "status": "source_checked",
+      "checkedAt": "2026-10-05",
+      "reviewer": "Codex primary-source verification"
+    }
+  }
+]

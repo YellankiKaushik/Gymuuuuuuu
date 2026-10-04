@@ -42,6 +42,11 @@ import { Route as FoodsSourcesRouteImport } from './routes/foods_.sources'
 import { Route as LearnWorkoutScienceRouteImport } from './routes/learn_.workout-science'
 import { Route as MusclesSlugRouteImport } from './routes/muscles_.$slug'
 import { Route as NutrientsSlugRouteImport } from './routes/nutrients_.$slug'
+import { Route as NutrientsCompareRouteImport } from './routes/nutrients_.compare'
+import { Route as NutrientsFrameworksRouteImport } from './routes/nutrients_.frameworks'
+import { Route as NutrientsGlossaryRouteImport } from './routes/nutrients_.glossary'
+import { Route as NutrientsMethodologyRouteImport } from './routes/nutrients_.methodology'
+import { Route as NutrientsReferenceIntakesRouteImport } from './routes/nutrients_.reference-intakes'
 import { Route as ProgramsSlugRouteImport } from './routes/programs_.$slug'
 import { Route as ProgramsCompareRouteImport } from './routes/programs_.compare'
 import { Route as ProgramsCurrentRouteImport } from './routes/programs_.current'
@@ -53,6 +58,7 @@ import { Route as FoodsCategoriesCategoryIdRouteImport } from './routes/foods_.c
 import { Route as LearnWorkoutScienceSlugRouteImport } from './routes/learn_.workout-science_.$slug'
 import { Route as LearnWorkoutScienceGlossaryRouteImport } from './routes/learn_.workout-science_.glossary'
 import { Route as LearnWorkoutScienceMethodsRouteImport } from './routes/learn_.workout-science_.methods'
+import { Route as NutrientsCategoriesGroupIdRouteImport } from './routes/nutrients_.categories_.$groupId'
 import { Route as WorkoutHistorySessionIdRouteImport } from './routes/workout_.history_.$sessionId'
 import { Route as WorkoutSessionSessionIdRouteImport } from './routes/workout_.session.$sessionId'
 import { Route as WorkoutSummarySessionIdRouteImport } from './routes/workout_.summary.$sessionId'
@@ -223,6 +229,32 @@ const NutrientsSlugRoute = NutrientsSlugRouteImport.update({
   path: '/nutrients/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NutrientsCompareRoute = NutrientsCompareRouteImport.update({
+  id: '/nutrients_/compare',
+  path: '/nutrients/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NutrientsFrameworksRoute = NutrientsFrameworksRouteImport.update({
+  id: '/nutrients_/frameworks',
+  path: '/nutrients/frameworks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NutrientsGlossaryRoute = NutrientsGlossaryRouteImport.update({
+  id: '/nutrients_/glossary',
+  path: '/nutrients/glossary',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NutrientsMethodologyRoute = NutrientsMethodologyRouteImport.update({
+  id: '/nutrients_/methodology',
+  path: '/nutrients/methodology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NutrientsReferenceIntakesRoute =
+  NutrientsReferenceIntakesRouteImport.update({
+    id: '/nutrients_/reference-intakes',
+    path: '/nutrients/reference-intakes',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProgramsSlugRoute = ProgramsSlugRouteImport.update({
   id: '/programs_/$slug',
   path: '/programs/$slug',
@@ -281,6 +313,12 @@ const LearnWorkoutScienceMethodsRoute =
     path: '/learn/workout-science/methods',
     getParentRoute: () => rootRouteImport,
   } as any)
+const NutrientsCategoriesGroupIdRoute =
+  NutrientsCategoriesGroupIdRouteImport.update({
+    id: '/nutrients_/categories_/$groupId',
+    path: '/nutrients/categories/$groupId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const WorkoutHistorySessionIdRoute = WorkoutHistorySessionIdRouteImport.update({
   id: '/workout_/history_/$sessionId',
   path: '/workout/history/$sessionId',
@@ -337,6 +375,11 @@ export interface FileRoutesByFullPath {
   '/learn/workout-science': typeof LearnWorkoutScienceRoute
   '/muscles/$slug': typeof MusclesSlugRoute
   '/nutrients/$slug': typeof NutrientsSlugRoute
+  '/nutrients/compare': typeof NutrientsCompareRoute
+  '/nutrients/frameworks': typeof NutrientsFrameworksRoute
+  '/nutrients/glossary': typeof NutrientsGlossaryRoute
+  '/nutrients/methodology': typeof NutrientsMethodologyRoute
+  '/nutrients/reference-intakes': typeof NutrientsReferenceIntakesRoute
   '/programs/$slug': typeof ProgramsSlugRoute
   '/programs/compare': typeof ProgramsCompareRoute
   '/programs/current': typeof ProgramsCurrentRoute
@@ -348,6 +391,7 @@ export interface FileRoutesByFullPath {
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
+  '/nutrients/categories/$groupId': typeof NutrientsCategoriesGroupIdRoute
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
@@ -387,6 +431,11 @@ export interface FileRoutesByTo {
   '/learn/workout-science': typeof LearnWorkoutScienceRoute
   '/muscles/$slug': typeof MusclesSlugRoute
   '/nutrients/$slug': typeof NutrientsSlugRoute
+  '/nutrients/compare': typeof NutrientsCompareRoute
+  '/nutrients/frameworks': typeof NutrientsFrameworksRoute
+  '/nutrients/glossary': typeof NutrientsGlossaryRoute
+  '/nutrients/methodology': typeof NutrientsMethodologyRoute
+  '/nutrients/reference-intakes': typeof NutrientsReferenceIntakesRoute
   '/programs/$slug': typeof ProgramsSlugRoute
   '/programs/compare': typeof ProgramsCompareRoute
   '/programs/current': typeof ProgramsCurrentRoute
@@ -398,6 +447,7 @@ export interface FileRoutesByTo {
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
+  '/nutrients/categories/$groupId': typeof NutrientsCategoriesGroupIdRoute
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
@@ -438,6 +488,11 @@ export interface FileRoutesById {
   '/learn_/workout-science': typeof LearnWorkoutScienceRoute
   '/muscles_/$slug': typeof MusclesSlugRoute
   '/nutrients_/$slug': typeof NutrientsSlugRoute
+  '/nutrients_/compare': typeof NutrientsCompareRoute
+  '/nutrients_/frameworks': typeof NutrientsFrameworksRoute
+  '/nutrients_/glossary': typeof NutrientsGlossaryRoute
+  '/nutrients_/methodology': typeof NutrientsMethodologyRoute
+  '/nutrients_/reference-intakes': typeof NutrientsReferenceIntakesRoute
   '/programs_/$slug': typeof ProgramsSlugRoute
   '/programs_/compare': typeof ProgramsCompareRoute
   '/programs_/current': typeof ProgramsCurrentRoute
@@ -449,6 +504,7 @@ export interface FileRoutesById {
   '/learn_/workout-science_/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn_/workout-science_/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn_/workout-science_/methods': typeof LearnWorkoutScienceMethodsRoute
+  '/nutrients_/categories_/$groupId': typeof NutrientsCategoriesGroupIdRoute
   '/workout_/history_/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout_/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout_/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
@@ -490,6 +546,11 @@ export interface FileRouteTypes {
     | '/learn/workout-science'
     | '/muscles/$slug'
     | '/nutrients/$slug'
+    | '/nutrients/compare'
+    | '/nutrients/frameworks'
+    | '/nutrients/glossary'
+    | '/nutrients/methodology'
+    | '/nutrients/reference-intakes'
     | '/programs/$slug'
     | '/programs/compare'
     | '/programs/current'
@@ -501,6 +562,7 @@ export interface FileRouteTypes {
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
+    | '/nutrients/categories/$groupId'
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
@@ -540,6 +602,11 @@ export interface FileRouteTypes {
     | '/learn/workout-science'
     | '/muscles/$slug'
     | '/nutrients/$slug'
+    | '/nutrients/compare'
+    | '/nutrients/frameworks'
+    | '/nutrients/glossary'
+    | '/nutrients/methodology'
+    | '/nutrients/reference-intakes'
     | '/programs/$slug'
     | '/programs/compare'
     | '/programs/current'
@@ -551,6 +618,7 @@ export interface FileRouteTypes {
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
+    | '/nutrients/categories/$groupId'
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
@@ -590,6 +658,11 @@ export interface FileRouteTypes {
     | '/learn_/workout-science'
     | '/muscles_/$slug'
     | '/nutrients_/$slug'
+    | '/nutrients_/compare'
+    | '/nutrients_/frameworks'
+    | '/nutrients_/glossary'
+    | '/nutrients_/methodology'
+    | '/nutrients_/reference-intakes'
     | '/programs_/$slug'
     | '/programs_/compare'
     | '/programs_/current'
@@ -601,6 +674,7 @@ export interface FileRouteTypes {
     | '/learn_/workout-science_/$slug'
     | '/learn_/workout-science_/glossary'
     | '/learn_/workout-science_/methods'
+    | '/nutrients_/categories_/$groupId'
     | '/workout_/history_/$sessionId'
     | '/workout_/session/$sessionId'
     | '/workout_/summary/$sessionId'
@@ -641,6 +715,11 @@ export interface RootRouteChildren {
   LearnWorkoutScienceRoute: typeof LearnWorkoutScienceRoute
   MusclesSlugRoute: typeof MusclesSlugRoute
   NutrientsSlugRoute: typeof NutrientsSlugRoute
+  NutrientsCompareRoute: typeof NutrientsCompareRoute
+  NutrientsFrameworksRoute: typeof NutrientsFrameworksRoute
+  NutrientsGlossaryRoute: typeof NutrientsGlossaryRoute
+  NutrientsMethodologyRoute: typeof NutrientsMethodologyRoute
+  NutrientsReferenceIntakesRoute: typeof NutrientsReferenceIntakesRoute
   ProgramsSlugRoute: typeof ProgramsSlugRoute
   ProgramsCompareRoute: typeof ProgramsCompareRoute
   ProgramsCurrentRoute: typeof ProgramsCurrentRoute
@@ -652,6 +731,7 @@ export interface RootRouteChildren {
   LearnWorkoutScienceSlugRoute: typeof LearnWorkoutScienceSlugRoute
   LearnWorkoutScienceGlossaryRoute: typeof LearnWorkoutScienceGlossaryRoute
   LearnWorkoutScienceMethodsRoute: typeof LearnWorkoutScienceMethodsRoute
+  NutrientsCategoriesGroupIdRoute: typeof NutrientsCategoriesGroupIdRoute
   WorkoutHistorySessionIdRoute: typeof WorkoutHistorySessionIdRoute
   WorkoutSessionSessionIdRoute: typeof WorkoutSessionSessionIdRoute
   WorkoutSummarySessionIdRoute: typeof WorkoutSummarySessionIdRoute
@@ -891,6 +971,41 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NutrientsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nutrients_/compare': {
+      id: '/nutrients_/compare'
+      path: '/nutrients/compare'
+      fullPath: '/nutrients/compare'
+      preLoaderRoute: typeof NutrientsCompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nutrients_/frameworks': {
+      id: '/nutrients_/frameworks'
+      path: '/nutrients/frameworks'
+      fullPath: '/nutrients/frameworks'
+      preLoaderRoute: typeof NutrientsFrameworksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nutrients_/glossary': {
+      id: '/nutrients_/glossary'
+      path: '/nutrients/glossary'
+      fullPath: '/nutrients/glossary'
+      preLoaderRoute: typeof NutrientsGlossaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nutrients_/methodology': {
+      id: '/nutrients_/methodology'
+      path: '/nutrients/methodology'
+      fullPath: '/nutrients/methodology'
+      preLoaderRoute: typeof NutrientsMethodologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nutrients_/reference-intakes': {
+      id: '/nutrients_/reference-intakes'
+      path: '/nutrients/reference-intakes'
+      fullPath: '/nutrients/reference-intakes'
+      preLoaderRoute: typeof NutrientsReferenceIntakesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/programs_/$slug': {
       id: '/programs_/$slug'
       path: '/programs/$slug'
@@ -968,6 +1083,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LearnWorkoutScienceMethodsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nutrients_/categories_/$groupId': {
+      id: '/nutrients_/categories_/$groupId'
+      path: '/nutrients/categories/$groupId'
+      fullPath: '/nutrients/categories/$groupId'
+      preLoaderRoute: typeof NutrientsCategoriesGroupIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/workout_/history_/$sessionId': {
       id: '/workout_/history_/$sessionId'
       path: '/workout/history/$sessionId'
@@ -1033,6 +1155,11 @@ const rootRouteChildren: RootRouteChildren = {
   LearnWorkoutScienceRoute: LearnWorkoutScienceRoute,
   MusclesSlugRoute: MusclesSlugRoute,
   NutrientsSlugRoute: NutrientsSlugRoute,
+  NutrientsCompareRoute: NutrientsCompareRoute,
+  NutrientsFrameworksRoute: NutrientsFrameworksRoute,
+  NutrientsGlossaryRoute: NutrientsGlossaryRoute,
+  NutrientsMethodologyRoute: NutrientsMethodologyRoute,
+  NutrientsReferenceIntakesRoute: NutrientsReferenceIntakesRoute,
   ProgramsSlugRoute: ProgramsSlugRoute,
   ProgramsCompareRoute: ProgramsCompareRoute,
   ProgramsCurrentRoute: ProgramsCurrentRoute,
@@ -1044,6 +1171,7 @@ const rootRouteChildren: RootRouteChildren = {
   LearnWorkoutScienceSlugRoute: LearnWorkoutScienceSlugRoute,
   LearnWorkoutScienceGlossaryRoute: LearnWorkoutScienceGlossaryRoute,
   LearnWorkoutScienceMethodsRoute: LearnWorkoutScienceMethodsRoute,
+  NutrientsCategoriesGroupIdRoute: NutrientsCategoriesGroupIdRoute,
   WorkoutHistorySessionIdRoute: WorkoutHistorySessionIdRoute,
   WorkoutSessionSessionIdRoute: WorkoutSessionSessionIdRoute,
   WorkoutSummarySessionIdRoute: WorkoutSummarySessionIdRoute,

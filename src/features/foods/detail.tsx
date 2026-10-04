@@ -3,6 +3,7 @@ import { PageHeader } from "../../components/common/page-header";
 import { NotFoundState } from "../../components/common/states";
 import { InfoCallout } from "../../components/common/primitives";
 import { foodReference, type Food, type CompositionProfile } from "./schema";
+import { nutrientIndex } from "../nutrients/public-index";
 import {
   dataCompleteness,
   formatNutrient,
@@ -49,7 +50,16 @@ export function NutrientTable({
                 return (
                   <tr key={r.id}>
                     <th scope="row">
-                      {r.label} <small>{r.canonicalUnit}</small>
+                      {nutrientIndex.some((n) => n.id === r.id) ? (
+                        <a
+                          href={`/nutrients/${nutrientIndex.find((n) => n.id === r.id)?.slug}`}
+                        >
+                          {r.label}
+                        </a>
+                      ) : (
+                        r.label
+                      )}{" "}
+                      <small>{r.canonicalUnit}</small>
                     </th>
                     <td>
                       {formatNutrient(n)}
