@@ -1,0 +1,3109 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 03 Seed Exercise Taxonomy",
+    "version": "1.0",
+    "date": "5 August 2026",
+    "status": "draft-identities-only",
+    "recordCount": 184,
+    "notice": "These records establish stable identities and broad classification only. They are not publishable technique guidance. Every record requires source, anatomy, technique, safety and media review before publication."
+  },
+  "movementPatterns": [
+    {
+      "id": "pattern_horizontal_push",
+      "displayName": "Horizontal push"
+    },
+    {
+      "id": "pattern_horizontal_pull",
+      "displayName": "Horizontal pull"
+    },
+    {
+      "id": "pattern_vertical_push",
+      "displayName": "Vertical push"
+    },
+    {
+      "id": "pattern_vertical_pull",
+      "displayName": "Vertical pull"
+    },
+    {
+      "id": "pattern_squat",
+      "displayName": "Squat / knee-dominant"
+    },
+    {
+      "id": "pattern_hinge",
+      "displayName": "Hinge / hip-dominant"
+    },
+    {
+      "id": "pattern_lunge",
+      "displayName": "Lunge / split stance"
+    },
+    {
+      "id": "pattern_knee_flexion",
+      "displayName": "Knee flexion"
+    },
+    {
+      "id": "pattern_knee_extension",
+      "displayName": "Knee extension"
+    },
+    {
+      "id": "pattern_hip_abduction",
+      "displayName": "Hip abduction"
+    },
+    {
+      "id": "pattern_hip_adduction",
+      "displayName": "Hip adduction"
+    },
+    {
+      "id": "pattern_elbow_flexion",
+      "displayName": "Elbow flexion"
+    },
+    {
+      "id": "pattern_elbow_extension",
+      "displayName": "Elbow extension"
+    },
+    {
+      "id": "pattern_shoulder_abduction",
+      "displayName": "Shoulder abduction"
+    },
+    {
+      "id": "pattern_shoulder_flexion",
+      "displayName": "Shoulder flexion"
+    },
+    {
+      "id": "pattern_shoulder_external_rotation",
+      "displayName": "Shoulder external rotation"
+    },
+    {
+      "id": "pattern_scapular_retraction",
+      "displayName": "Scapular retraction"
+    },
+    {
+      "id": "pattern_scapular_elevation",
+      "displayName": "Scapular elevation"
+    },
+    {
+      "id": "pattern_calf_raise",
+      "displayName": "Plantar flexion / calf raise"
+    },
+    {
+      "id": "pattern_dorsiflexion",
+      "displayName": "Dorsiflexion"
+    },
+    {
+      "id": "pattern_trunk_flexion",
+      "displayName": "Trunk flexion"
+    },
+    {
+      "id": "pattern_trunk_extension",
+      "displayName": "Trunk extension"
+    },
+    {
+      "id": "pattern_anti_extension",
+      "displayName": "Anti-extension"
+    },
+    {
+      "id": "pattern_anti_rotation",
+      "displayName": "Anti-rotation"
+    },
+    {
+      "id": "pattern_lateral_flexion",
+      "displayName": "Lateral flexion / anti-lateral flexion"
+    },
+    {
+      "id": "pattern_rotation",
+      "displayName": "Rotation"
+    },
+    {
+      "id": "pattern_carry",
+      "displayName": "Loaded carry"
+    },
+    {
+      "id": "pattern_locomotion",
+      "displayName": "Locomotion"
+    },
+    {
+      "id": "pattern_jump",
+      "displayName": "Jump / landing"
+    },
+    {
+      "id": "pattern_throw",
+      "displayName": "Throw / slam"
+    },
+    {
+      "id": "pattern_conditioning",
+      "displayName": "Cyclical or mixed conditioning"
+    },
+    {
+      "id": "pattern_breathing_bracing",
+      "displayName": "Breathing / bracing"
+    },
+    {
+      "id": "pattern_mobility",
+      "displayName": "Mobility"
+    },
+    {
+      "id": "pattern_flexibility",
+      "displayName": "Flexibility"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "equipment_bodyweight",
+      "displayName": "Bodyweight"
+    },
+    {
+      "id": "equipment_barbell",
+      "displayName": "Barbell"
+    },
+    {
+      "id": "equipment_dumbbell",
+      "displayName": "Dumbbell"
+    },
+    {
+      "id": "equipment_kettlebell",
+      "displayName": "Kettlebell"
+    },
+    {
+      "id": "equipment_cable",
+      "displayName": "Cable station"
+    },
+    {
+      "id": "equipment_machine_selectorized",
+      "displayName": "Selectorized machine"
+    },
+    {
+      "id": "equipment_machine_plate_loaded",
+      "displayName": "Plate-loaded machine"
+    },
+    {
+      "id": "equipment_smith_machine",
+      "displayName": "Smith machine"
+    },
+    {
+      "id": "equipment_resistance_band",
+      "displayName": "Resistance band"
+    },
+    {
+      "id": "equipment_suspension_trainer",
+      "displayName": "Suspension trainer"
+    },
+    {
+      "id": "equipment_pullup_bar",
+      "displayName": "Pull-up bar"
+    },
+    {
+      "id": "equipment_dip_bars",
+      "displayName": "Dip bars"
+    },
+    {
+      "id": "equipment_bench",
+      "displayName": "Bench"
+    },
+    {
+      "id": "equipment_stability_ball",
+      "displayName": "Stability ball"
+    },
+    {
+      "id": "equipment_medicine_ball",
+      "displayName": "Medicine ball"
+    },
+    {
+      "id": "equipment_landmine",
+      "displayName": "Landmine attachment"
+    },
+    {
+      "id": "equipment_trap_bar",
+      "displayName": "Trap bar"
+    },
+    {
+      "id": "equipment_sled",
+      "displayName": "Sled"
+    },
+    {
+      "id": "equipment_battle_rope",
+      "displayName": "Battle rope"
+    },
+    {
+      "id": "equipment_box",
+      "displayName": "Plyometric box / step"
+    },
+    {
+      "id": "equipment_ab_wheel",
+      "displayName": "Ab wheel"
+    },
+    {
+      "id": "equipment_roman_chair",
+      "displayName": "Roman chair / back-extension bench"
+    },
+    {
+      "id": "equipment_treadmill",
+      "displayName": "Treadmill"
+    },
+    {
+      "id": "equipment_stationary_bike",
+      "displayName": "Stationary bike"
+    },
+    {
+      "id": "equipment_rower",
+      "displayName": "Rowing ergometer"
+    },
+    {
+      "id": "equipment_elliptical",
+      "displayName": "Elliptical trainer"
+    },
+    {
+      "id": "equipment_jump_rope",
+      "displayName": "Jump rope"
+    },
+    {
+      "id": "equipment_none",
+      "displayName": "No equipment"
+    }
+  ],
+  "records": [
+    {
+      "id": "exercise_barbell_bench_press",
+      "slug": "barbell-bench-press",
+      "displayName": "Barbell bench press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_bench_press",
+      "slug": "dumbbell-bench-press",
+      "displayName": "Dumbbell bench press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_incline_barbell_bench_press",
+      "slug": "incline-barbell-bench-press",
+      "displayName": "Incline barbell bench press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_incline_dumbbell_bench_press",
+      "slug": "incline-dumbbell-bench-press",
+      "displayName": "Incline dumbbell bench press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_decline_barbell_bench_press",
+      "slug": "decline-barbell-bench-press",
+      "displayName": "Decline barbell bench press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_machine_chest_press",
+      "slug": "machine-chest-press",
+      "displayName": "Machine chest press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_plate_loaded_chest_press",
+      "slug": "plate-loaded-chest-press",
+      "displayName": "Plate-loaded chest press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_smith_machine_bench_press",
+      "slug": "smith-machine-bench-press",
+      "displayName": "Smith machine bench press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_smith_machine",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_push_up",
+      "slug": "push-up",
+      "displayName": "Push-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_push",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_incline_push_up",
+      "slug": "incline-push-up",
+      "displayName": "Incline push-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_push",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_decline_push_up",
+      "slug": "decline-push-up",
+      "displayName": "Decline push-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_push",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_knee_push_up",
+      "slug": "knee-push-up",
+      "displayName": "Knee push-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_chest_dip",
+      "slug": "chest-dip",
+      "displayName": "Chest-focused dip",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_dip_bars"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_chest_fly",
+      "slug": "cable-chest-fly",
+      "displayName": "Cable chest fly",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_chest_fly",
+      "slug": "dumbbell-chest-fly",
+      "displayName": "Dumbbell chest fly",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_pec_deck_fly",
+      "slug": "pec-deck-fly",
+      "displayName": "Pec-deck fly",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_single_arm_cable_press",
+      "slug": "single-arm-cable-press",
+      "displayName": "Single-arm cable chest press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push",
+        "pattern_anti_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_barbell_bent_over_row",
+      "slug": "barbell-bent-over-row",
+      "displayName": "Barbell bent-over row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_pendlay_row",
+      "slug": "pendlay-row",
+      "displayName": "Pendlay row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_one_arm_dumbbell_row",
+      "slug": "one-arm-dumbbell-row",
+      "displayName": "One-arm dumbbell row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_anti_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_chest_supported_dumbbell_row",
+      "slug": "chest-supported-dumbbell-row",
+      "displayName": "Chest-supported dumbbell row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_seated_cable_row",
+      "slug": "seated-cable-row",
+      "displayName": "Seated cable row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_wide_grip_seated_cable_row",
+      "slug": "wide-grip-seated-cable-row",
+      "displayName": "Wide-grip seated cable row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_machine_row",
+      "slug": "machine-row",
+      "displayName": "Machine row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_plate_loaded_row",
+      "slug": "plate-loaded-row",
+      "displayName": "Plate-loaded row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_inverted_row",
+      "slug": "inverted-row",
+      "displayName": "Inverted row",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_suspension_row",
+      "slug": "suspension-row",
+      "displayName": "Suspension row",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_suspension_trainer"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_landmine_row",
+      "slug": "landmine-row",
+      "displayName": "Landmine row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_landmine",
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_t_bar_row",
+      "slug": "t-bar-row",
+      "displayName": "T-bar row",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_face_pull",
+      "slug": "face-pull",
+      "displayName": "Cable face pull",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_shoulder_external_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_reverse_cable_fly",
+      "slug": "reverse-cable-fly",
+      "displayName": "Reverse cable fly",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_reverse_pec_deck",
+      "slug": "reverse-pec-deck",
+      "displayName": "Reverse pec-deck fly",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_band_pull_apart",
+      "slug": "band-pull-apart",
+      "displayName": "Band pull-apart",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_resistance_band"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_pull_up",
+      "slug": "pull-up",
+      "displayName": "Pull-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_pullup_bar"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_chin_up",
+      "slug": "chin-up",
+      "displayName": "Chin-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_vertical_pull",
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_pullup_bar"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_neutral_grip_pull_up",
+      "slug": "neutral-grip-pull-up",
+      "displayName": "Neutral-grip pull-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_pullup_bar"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_assisted_pull_up",
+      "slug": "assisted-pull-up",
+      "displayName": "Assisted pull-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_lat_pulldown",
+      "slug": "lat-pulldown",
+      "displayName": "Lat pulldown",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_neutral_grip_lat_pulldown",
+      "slug": "neutral-grip-lat-pulldown",
+      "displayName": "Neutral-grip lat pulldown",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_single_arm_lat_pulldown",
+      "slug": "single-arm-lat-pulldown",
+      "displayName": "Single-arm lat pulldown",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_straight_arm_pulldown",
+      "slug": "straight-arm-pulldown",
+      "displayName": "Straight-arm cable pulldown",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_pullover",
+      "slug": "cable-pullover",
+      "displayName": "Cable pullover",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_pullover",
+      "slug": "dumbbell-pullover",
+      "displayName": "Dumbbell pullover",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_standing_barbell_overhead_press",
+      "slug": "standing-barbell-overhead-press",
+      "displayName": "Standing barbell overhead press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_push",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_seated_barbell_overhead_press",
+      "slug": "seated-barbell-overhead-press",
+      "displayName": "Seated barbell overhead press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_seated_dumbbell_shoulder_press",
+      "slug": "seated-dumbbell-shoulder-press",
+      "displayName": "Seated dumbbell shoulder press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_standing_dumbbell_shoulder_press",
+      "slug": "standing-dumbbell-shoulder-press",
+      "displayName": "Standing dumbbell shoulder press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_push",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_arnold_press",
+      "slug": "arnold-press",
+      "displayName": "Arnold press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_machine_shoulder_press",
+      "slug": "machine-shoulder-press",
+      "displayName": "Machine shoulder press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_landmine_press",
+      "slug": "landmine-press",
+      "displayName": "Half-kneeling landmine press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_vertical_push",
+        "pattern_anti_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_landmine",
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_pike_push_up",
+      "slug": "pike-push-up",
+      "displayName": "Pike push-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_handstand_push_up",
+      "slug": "handstand-push-up",
+      "displayName": "Handstand push-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_lateral_raise",
+      "slug": "dumbbell-lateral-raise",
+      "displayName": "Dumbbell lateral raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_shoulder_abduction"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_lateral_raise",
+      "slug": "cable-lateral-raise",
+      "displayName": "Cable lateral raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_shoulder_abduction"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_machine_lateral_raise",
+      "slug": "machine-lateral-raise",
+      "displayName": "Machine lateral raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_shoulder_abduction"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_front_raise",
+      "slug": "dumbbell-front-raise",
+      "displayName": "Dumbbell front raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_shoulder_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_rear_delt_dumbbell_fly",
+      "slug": "rear-delt-dumbbell-fly",
+      "displayName": "Bent-over rear-delt dumbbell fly",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_horizontal_pull"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_y_raise",
+      "slug": "cable-y-raise",
+      "displayName": "Cable Y-raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_shoulder_abduction"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_band_external_rotation",
+      "slug": "band-external-rotation",
+      "displayName": "Band shoulder external rotation",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_shoulder_external_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_resistance_band"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_external_rotation",
+      "slug": "cable-external-rotation",
+      "displayName": "Cable shoulder external rotation",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_shoulder_external_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_shrug",
+      "slug": "dumbbell-shrug",
+      "displayName": "Dumbbell shrug",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_scapular_elevation"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_barbell_shrug",
+      "slug": "barbell-shrug",
+      "displayName": "Barbell shrug",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_scapular_elevation"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_barbell_curl",
+      "slug": "barbell-curl",
+      "displayName": "Barbell curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_ez_bar_curl",
+      "slug": "ez-bar-curl",
+      "displayName": "EZ-bar curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_curl",
+      "slug": "dumbbell-curl",
+      "displayName": "Dumbbell curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_alternating_dumbbell_curl",
+      "slug": "alternating-dumbbell-curl",
+      "displayName": "Alternating dumbbell curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_incline_dumbbell_curl",
+      "slug": "incline-dumbbell-curl",
+      "displayName": "Incline dumbbell curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_hammer_curl",
+      "slug": "hammer-curl",
+      "displayName": "Hammer curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_preacher_curl",
+      "slug": "preacher-curl",
+      "displayName": "Preacher curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_curl",
+      "slug": "cable-curl",
+      "displayName": "Cable curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_concentration_curl",
+      "slug": "concentration-curl",
+      "displayName": "Concentration curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_reverse_curl",
+      "slug": "reverse-curl",
+      "displayName": "Reverse curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_close_grip_bench_press",
+      "slug": "close-grip-bench-press",
+      "displayName": "Close-grip bench press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_horizontal_push",
+        "pattern_elbow_extension"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_triceps_dip",
+      "slug": "triceps-dip",
+      "displayName": "Triceps-focused dip",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_elbow_extension",
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_dip_bars"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_triceps_pushdown",
+      "slug": "cable-triceps-pushdown",
+      "displayName": "Cable triceps pushdown",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_extension"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_rope_triceps_pushdown",
+      "slug": "rope-triceps-pushdown",
+      "displayName": "Rope triceps pushdown",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_extension"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_overhead_cable_triceps_extension",
+      "slug": "overhead-cable-triceps-extension",
+      "displayName": "Overhead cable triceps extension",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_extension"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_overhead_triceps_extension",
+      "slug": "dumbbell-overhead-triceps-extension",
+      "displayName": "Dumbbell overhead triceps extension",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_extension"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_lying_triceps_extension",
+      "slug": "lying-triceps-extension",
+      "displayName": "Lying triceps extension",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_extension"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_diamond_push_up",
+      "slug": "diamond-push-up",
+      "displayName": "Diamond push-up",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_horizontal_push",
+        "pattern_elbow_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_wrist_curl",
+      "slug": "dumbbell-wrist-curl",
+      "displayName": "Dumbbell wrist curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_reverse_wrist_curl",
+      "slug": "dumbbell-reverse-wrist-curl",
+      "displayName": "Dumbbell reverse wrist curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_wrist_roller",
+      "slug": "wrist-roller",
+      "displayName": "Wrist roller",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_elbow_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_none"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_back_squat",
+      "slug": "back-squat",
+      "displayName": "Barbell back squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_front_squat",
+      "slug": "front-squat",
+      "displayName": "Barbell front squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_goblet_squat",
+      "slug": "goblet-squat",
+      "displayName": "Goblet squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_bodyweight_squat",
+      "slug": "bodyweight-squat",
+      "displayName": "Bodyweight squat",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_box_squat",
+      "slug": "box-squat",
+      "displayName": "Box squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_box"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_smith_machine_squat",
+      "slug": "smith-machine-squat",
+      "displayName": "Smith machine squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_smith_machine"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_hack_squat",
+      "slug": "hack-squat",
+      "displayName": "Hack squat machine",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_leg_press",
+      "slug": "leg-press",
+      "displayName": "Leg press",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_belt_squat",
+      "slug": "belt-squat",
+      "displayName": "Belt squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_split_squat",
+      "slug": "split-squat",
+      "displayName": "Split squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_lunge"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_bulgarian_split_squat",
+      "slug": "bulgarian-split-squat",
+      "displayName": "Bulgarian split squat",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_lunge"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_forward_lunge",
+      "slug": "forward-lunge",
+      "displayName": "Forward lunge",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_lunge"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_reverse_lunge",
+      "slug": "reverse-lunge",
+      "displayName": "Reverse lunge",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_lunge"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_walking_lunge",
+      "slug": "walking-lunge",
+      "displayName": "Walking lunge",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_lunge",
+        "pattern_locomotion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_lateral_lunge",
+      "slug": "lateral-lunge",
+      "displayName": "Lateral lunge",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_lunge",
+        "pattern_hip_adduction"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_step_up",
+      "slug": "step-up",
+      "displayName": "Step-up",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_lunge"
+      ],
+      "equipmentIds": [
+        "equipment_box",
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_single_leg_squat_to_box",
+      "slug": "single-leg-squat-to-box",
+      "displayName": "Single-leg squat to box",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight",
+        "equipment_box"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_leg_extension",
+      "slug": "leg-extension",
+      "displayName": "Leg extension",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_knee_extension"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_sissy_squat",
+      "slug": "sissy-squat",
+      "displayName": "Assisted sissy squat",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_knee_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_conventional_deadlift",
+      "slug": "conventional-deadlift",
+      "displayName": "Conventional barbell deadlift",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_sumo_deadlift",
+      "slug": "sumo-deadlift",
+      "displayName": "Sumo deadlift",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_trap_bar_deadlift",
+      "slug": "trap-bar-deadlift",
+      "displayName": "Trap-bar deadlift",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_trap_bar"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_romanian_deadlift",
+      "slug": "romanian-deadlift",
+      "displayName": "Romanian deadlift",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_romanian_deadlift",
+      "slug": "dumbbell-romanian-deadlift",
+      "displayName": "Dumbbell Romanian deadlift",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_single_leg_romanian_deadlift",
+      "slug": "single-leg-romanian-deadlift",
+      "displayName": "Single-leg Romanian deadlift",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_anti_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_good_morning",
+      "slug": "good-morning",
+      "displayName": "Barbell good morning",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_barbell_hip_thrust",
+      "slug": "barbell-hip-thrust",
+      "displayName": "Barbell hip thrust",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_glute_bridge",
+      "slug": "glute-bridge",
+      "displayName": "Glute bridge",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_single_leg_glute_bridge",
+      "slug": "single-leg-glute-bridge",
+      "displayName": "Single-leg glute bridge",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_anti_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_pull_through",
+      "slug": "cable-pull-through",
+      "displayName": "Cable pull-through",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_kettlebell_swing",
+      "slug": "kettlebell-swing",
+      "displayName": "Kettlebell swing",
+      "aliases": [],
+      "exerciseType": "power",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_kettlebell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_back_extension",
+      "slug": "back-extension",
+      "displayName": "45-degree back extension",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_trunk_extension"
+      ],
+      "equipmentIds": [
+        "equipment_roman_chair"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_reverse_hyperextension",
+      "slug": "reverse-hyperextension",
+      "displayName": "Reverse hyperextension",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_trunk_extension"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_lying_leg_curl",
+      "slug": "lying-leg-curl",
+      "displayName": "Lying leg curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_knee_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_seated_leg_curl",
+      "slug": "seated-leg-curl",
+      "displayName": "Seated leg curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_knee_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_standing_leg_curl",
+      "slug": "standing-leg-curl",
+      "displayName": "Standing leg curl",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_knee_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_nordic_hamstring_curl",
+      "slug": "nordic-hamstring-curl",
+      "displayName": "Nordic hamstring curl",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_knee_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_stability_ball_leg_curl",
+      "slug": "stability-ball-leg-curl",
+      "displayName": "Stability-ball leg curl",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_knee_flexion",
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_stability_ball"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_machine_hip_abduction",
+      "slug": "machine-hip-abduction",
+      "displayName": "Machine hip abduction",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_hip_abduction"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_hip_abduction",
+      "slug": "cable-hip-abduction",
+      "displayName": "Cable hip abduction",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_hip_abduction"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_side_lying_hip_abduction",
+      "slug": "side-lying-hip-abduction",
+      "displayName": "Side-lying hip abduction",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_hip_abduction"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_band_lateral_walk",
+      "slug": "band-lateral-walk",
+      "displayName": "Band lateral walk",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_hip_abduction",
+        "pattern_locomotion"
+      ],
+      "equipmentIds": [
+        "equipment_resistance_band"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_machine_hip_adduction",
+      "slug": "machine-hip-adduction",
+      "displayName": "Machine hip adduction",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_hip_adduction"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_hip_adduction",
+      "slug": "cable-hip-adduction",
+      "displayName": "Cable hip adduction",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_hip_adduction"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_copenhagen_plank",
+      "slug": "copenhagen-plank",
+      "displayName": "Copenhagen plank",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_hip_adduction"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight",
+        "equipment_bench"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_standing_calf_raise",
+      "slug": "standing-calf-raise",
+      "displayName": "Standing calf raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_calf_raise"
+      ],
+      "equipmentIds": [
+        "equipment_machine_selectorized"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_seated_calf_raise",
+      "slug": "seated-calf-raise",
+      "displayName": "Seated calf raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_calf_raise"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_single_leg_calf_raise",
+      "slug": "single-leg-calf-raise",
+      "displayName": "Single-leg calf raise",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_calf_raise"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_leg_press_calf_raise",
+      "slug": "leg-press-calf-raise",
+      "displayName": "Leg-press calf raise",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_calf_raise"
+      ],
+      "equipmentIds": [
+        "equipment_machine_plate_loaded"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_tibialis_raise",
+      "slug": "tibialis-raise",
+      "displayName": "Tibialis raise",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_dorsiflexion"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_front_plank",
+      "slug": "front-plank",
+      "displayName": "Front plank",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_side_plank",
+      "slug": "side-plank",
+      "displayName": "Side plank",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_lateral_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dead_bug",
+      "slug": "dead-bug",
+      "displayName": "Dead bug",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_anti_extension",
+        "pattern_breathing_bracing"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_bird_dog",
+      "slug": "bird-dog",
+      "displayName": "Bird dog",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_anti_rotation",
+        "pattern_trunk_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_hollow_body_hold",
+      "slug": "hollow-body-hold",
+      "displayName": "Hollow-body hold",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_ab_wheel_rollout",
+      "slug": "ab-wheel-rollout",
+      "displayName": "Ab-wheel rollout",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_ab_wheel"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_stability_ball_rollout",
+      "slug": "stability-ball-rollout",
+      "displayName": "Stability-ball rollout",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_stability_ball"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_crunch",
+      "slug": "cable-crunch",
+      "displayName": "Cable crunch",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_trunk_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_reverse_crunch",
+      "slug": "reverse-crunch",
+      "displayName": "Reverse crunch",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_trunk_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_hanging_knee_raise",
+      "slug": "hanging-knee-raise",
+      "displayName": "Hanging knee raise",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_trunk_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_pullup_bar"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_hanging_leg_raise",
+      "slug": "hanging-leg-raise",
+      "displayName": "Hanging leg raise",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_trunk_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_pullup_bar"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_pallof_press",
+      "slug": "pallof-press",
+      "displayName": "Pallof press",
+      "aliases": [],
+      "exerciseType": "resistance-isolation",
+      "movementPatternIds": [
+        "pattern_anti_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cable_wood_chop",
+      "slug": "cable-wood-chop",
+      "displayName": "Cable wood chop",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_cable"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_russian_twist",
+      "slug": "russian-twist",
+      "displayName": "Russian twist",
+      "aliases": [],
+      "exerciseType": "bodyweight-strength",
+      "movementPatternIds": [
+        "pattern_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_suitcase_carry",
+      "slug": "suitcase-carry",
+      "displayName": "Suitcase carry",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_carry",
+        "pattern_lateral_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_farmers_carry",
+      "slug": "farmers-carry",
+      "displayName": "Farmer carry",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_carry",
+        "pattern_locomotion"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_front_rack_carry",
+      "slug": "front-rack-carry",
+      "displayName": "Front-rack carry",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_carry",
+        "pattern_anti_extension"
+      ],
+      "equipmentIds": [
+        "equipment_kettlebell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_overhead_carry",
+      "slug": "overhead-carry",
+      "displayName": "Overhead carry",
+      "aliases": [],
+      "exerciseType": "resistance-compound",
+      "movementPatternIds": [
+        "pattern_carry",
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_barbell_power_clean",
+      "slug": "barbell-power-clean",
+      "displayName": "Barbell power clean",
+      "aliases": [],
+      "exerciseType": "power",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_jump"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_hang_power_clean",
+      "slug": "hang-power-clean",
+      "displayName": "Hang power clean",
+      "aliases": [],
+      "exerciseType": "power",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_jump"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_push_press",
+      "slug": "push-press",
+      "displayName": "Barbell push press",
+      "aliases": [],
+      "exerciseType": "power",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_barbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_dumbbell_push_press",
+      "slug": "dumbbell-push-press",
+      "displayName": "Dumbbell push press",
+      "aliases": [],
+      "exerciseType": "power",
+      "movementPatternIds": [
+        "pattern_vertical_push"
+      ],
+      "equipmentIds": [
+        "equipment_dumbbell"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_box_jump",
+      "slug": "box-jump",
+      "displayName": "Box jump",
+      "aliases": [],
+      "exerciseType": "plyometric",
+      "movementPatternIds": [
+        "pattern_jump"
+      ],
+      "equipmentIds": [
+        "equipment_box"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_countermovement_jump",
+      "slug": "countermovement-jump",
+      "displayName": "Countermovement jump",
+      "aliases": [],
+      "exerciseType": "plyometric",
+      "movementPatternIds": [
+        "pattern_jump"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_broad_jump",
+      "slug": "broad-jump",
+      "displayName": "Standing broad jump",
+      "aliases": [],
+      "exerciseType": "plyometric",
+      "movementPatternIds": [
+        "pattern_jump"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_jump_squat",
+      "slug": "jump-squat",
+      "displayName": "Jump squat",
+      "aliases": [],
+      "exerciseType": "plyometric",
+      "movementPatternIds": [
+        "pattern_jump",
+        "pattern_squat"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_split_jump",
+      "slug": "split-jump",
+      "displayName": "Split jump",
+      "aliases": [],
+      "exerciseType": "plyometric",
+      "movementPatternIds": [
+        "pattern_jump",
+        "pattern_lunge"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_medicine_ball_slam",
+      "slug": "medicine-ball-slam",
+      "displayName": "Medicine-ball slam",
+      "aliases": [],
+      "exerciseType": "power",
+      "movementPatternIds": [
+        "pattern_throw",
+        "pattern_trunk_flexion"
+      ],
+      "equipmentIds": [
+        "equipment_medicine_ball"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_medicine_ball_chest_pass",
+      "slug": "medicine-ball-chest-pass",
+      "displayName": "Medicine-ball chest pass",
+      "aliases": [],
+      "exerciseType": "power",
+      "movementPatternIds": [
+        "pattern_throw",
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_medicine_ball"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_sled_push",
+      "slug": "sled-push",
+      "displayName": "Sled push",
+      "aliases": [],
+      "exerciseType": "conditioning",
+      "movementPatternIds": [
+        "pattern_locomotion",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_sled"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_sled_drag",
+      "slug": "sled-drag",
+      "displayName": "Backward sled drag",
+      "aliases": [],
+      "exerciseType": "conditioning",
+      "movementPatternIds": [
+        "pattern_locomotion",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_sled"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_battle_rope_waves",
+      "slug": "battle-rope-waves",
+      "displayName": "Battle-rope alternating waves",
+      "aliases": [],
+      "exerciseType": "conditioning",
+      "movementPatternIds": [
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_battle_rope"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_burpee",
+      "slug": "burpee",
+      "displayName": "Burpee",
+      "aliases": [],
+      "exerciseType": "conditioning",
+      "movementPatternIds": [
+        "pattern_horizontal_push",
+        "pattern_squat",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_mountain_climber",
+      "slug": "mountain-climber",
+      "displayName": "Mountain climber",
+      "aliases": [],
+      "exerciseType": "conditioning",
+      "movementPatternIds": [
+        "pattern_anti_extension",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_jump_rope",
+      "slug": "jump-rope",
+      "displayName": "Jump rope",
+      "aliases": [],
+      "exerciseType": "conditioning",
+      "movementPatternIds": [
+        "pattern_locomotion",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_jump_rope"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_treadmill_walk",
+      "slug": "treadmill-walk",
+      "displayName": "Treadmill walking",
+      "aliases": [],
+      "exerciseType": "cardio",
+      "movementPatternIds": [
+        "pattern_locomotion",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_treadmill"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_treadmill_run",
+      "slug": "treadmill-run",
+      "displayName": "Treadmill running",
+      "aliases": [],
+      "exerciseType": "cardio",
+      "movementPatternIds": [
+        "pattern_locomotion",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_treadmill"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_stationary_cycling",
+      "slug": "stationary-cycling",
+      "displayName": "Stationary cycling",
+      "aliases": [],
+      "exerciseType": "cardio",
+      "movementPatternIds": [
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_stationary_bike"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_rowing_ergometer",
+      "slug": "rowing-ergometer",
+      "displayName": "Rowing ergometer",
+      "aliases": [],
+      "exerciseType": "cardio",
+      "movementPatternIds": [
+        "pattern_horizontal_pull",
+        "pattern_hinge",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_rower"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_elliptical_training",
+      "slug": "elliptical-training",
+      "displayName": "Elliptical training",
+      "aliases": [],
+      "exerciseType": "cardio",
+      "movementPatternIds": [
+        "pattern_locomotion",
+        "pattern_conditioning"
+      ],
+      "equipmentIds": [
+        "equipment_elliptical"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_cat_cow",
+      "slug": "cat-cow",
+      "displayName": "Cat-cow",
+      "aliases": [],
+      "exerciseType": "mobility",
+      "movementPatternIds": [
+        "pattern_mobility",
+        "pattern_trunk_flexion",
+        "pattern_trunk_extension"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_thoracic_open_book",
+      "slug": "thoracic-open-book",
+      "displayName": "Thoracic open book",
+      "aliases": [],
+      "exerciseType": "mobility",
+      "movementPatternIds": [
+        "pattern_mobility",
+        "pattern_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_worlds_greatest_stretch",
+      "slug": "worlds-greatest-stretch",
+      "displayName": "World’s greatest stretch",
+      "aliases": [],
+      "exerciseType": "mobility",
+      "movementPatternIds": [
+        "pattern_mobility"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_ankle_dorsiflexion_rock",
+      "slug": "ankle-dorsiflexion-rock",
+      "displayName": "Half-kneeling ankle dorsiflexion rock",
+      "aliases": [],
+      "exerciseType": "mobility",
+      "movementPatternIds": [
+        "pattern_mobility",
+        "pattern_dorsiflexion"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_band_shoulder_dislocate",
+      "slug": "band-shoulder-dislocate",
+      "displayName": "Band shoulder pass-through",
+      "aliases": [],
+      "exerciseType": "mobility",
+      "movementPatternIds": [
+        "pattern_mobility"
+      ],
+      "equipmentIds": [
+        "equipment_resistance_band"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_scapular_push_up",
+      "slug": "scapular-push-up",
+      "displayName": "Scapular push-up",
+      "aliases": [],
+      "exerciseType": "warmup",
+      "movementPatternIds": [
+        "pattern_horizontal_push"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_scapular_pull_up",
+      "slug": "scapular-pull-up",
+      "displayName": "Scapular pull-up",
+      "aliases": [],
+      "exerciseType": "warmup",
+      "movementPatternIds": [
+        "pattern_vertical_pull"
+      ],
+      "equipmentIds": [
+        "equipment_pullup_bar"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_bodyweight_good_morning",
+      "slug": "bodyweight-good-morning",
+      "displayName": "Bodyweight good morning",
+      "aliases": [],
+      "exerciseType": "warmup",
+      "movementPatternIds": [
+        "pattern_hinge"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_glute_bridge_march",
+      "slug": "glute-bridge-march",
+      "displayName": "Glute bridge march",
+      "aliases": [],
+      "exerciseType": "warmup",
+      "movementPatternIds": [
+        "pattern_hinge",
+        "pattern_anti_rotation"
+      ],
+      "equipmentIds": [
+        "equipment_bodyweight"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_diaphragmatic_breathing",
+      "slug": "diaphragmatic-breathing",
+      "displayName": "Diaphragmatic breathing practice",
+      "aliases": [],
+      "exerciseType": "breathing-bracing",
+      "movementPatternIds": [
+        "pattern_breathing_bracing"
+      ],
+      "equipmentIds": [
+        "equipment_none"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    },
+    {
+      "id": "exercise_brace_and_breathe",
+      "slug": "brace-and-breathe",
+      "displayName": "Abdominal brace with controlled breathing",
+      "aliases": [],
+      "exerciseType": "breathing-bracing",
+      "movementPatternIds": [
+        "pattern_breathing_bracing"
+      ],
+      "equipmentIds": [
+        "equipment_none"
+      ],
+      "contentStatus": "draft",
+      "reviewRequired": true
+    }
+  ]
+}

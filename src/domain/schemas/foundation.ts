@@ -44,6 +44,7 @@ export const preferencesSchema = z.object({
   units: z.enum(['metric', 'imperial']),
   sidebarCollapsed: z.boolean().optional(),
   anatomyView: z.enum(['body', 'list']).optional(),
+  exerciseView: z.enum(['cards', 'list']).optional(),
 }).strict()
 
 export const backupSchema = z.object({
