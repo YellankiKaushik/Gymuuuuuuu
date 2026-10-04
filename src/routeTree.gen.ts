@@ -39,6 +39,9 @@ import { Route as LearnWorkoutScienceRouteImport } from './routes/learn_.workout
 import { Route as MusclesSlugRouteImport } from './routes/muscles_.$slug'
 import { Route as NutrientsSlugRouteImport } from './routes/nutrients_.$slug'
 import { Route as ProgramsSlugRouteImport } from './routes/programs_.$slug'
+import { Route as ProgramsCompareRouteImport } from './routes/programs_.compare'
+import { Route as ProgramsCurrentRouteImport } from './routes/programs_.current'
+import { Route as ProgramsFinderRouteImport } from './routes/programs_.finder'
 import { Route as RecipesSlugRouteImport } from './routes/recipes_.$slug'
 import { Route as WorkoutHistoryRouteImport } from './routes/workout_.history'
 import { Route as LearnWorkoutScienceSlugRouteImport } from './routes/learn_.workout-science_.$slug'
@@ -195,6 +198,21 @@ const ProgramsSlugRoute = ProgramsSlugRouteImport.update({
   path: '/programs/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProgramsCompareRoute = ProgramsCompareRouteImport.update({
+  id: '/programs_/compare',
+  path: '/programs/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramsCurrentRoute = ProgramsCurrentRouteImport.update({
+  id: '/programs_/current',
+  path: '/programs/current',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramsFinderRoute = ProgramsFinderRouteImport.update({
+  id: '/programs_/finder',
+  path: '/programs/finder',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RecipesSlugRoute = RecipesSlugRouteImport.update({
   id: '/recipes_/$slug',
   path: '/recipes/$slug',
@@ -254,6 +272,9 @@ export interface FileRoutesByFullPath {
   '/muscles/$slug': typeof MusclesSlugRoute
   '/nutrients/$slug': typeof NutrientsSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/programs/compare': typeof ProgramsCompareRoute
+  '/programs/current': typeof ProgramsCurrentRoute
+  '/programs/finder': typeof ProgramsFinderRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
@@ -291,6 +312,9 @@ export interface FileRoutesByTo {
   '/muscles/$slug': typeof MusclesSlugRoute
   '/nutrients/$slug': typeof NutrientsSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
+  '/programs/compare': typeof ProgramsCompareRoute
+  '/programs/current': typeof ProgramsCurrentRoute
+  '/programs/finder': typeof ProgramsFinderRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
@@ -329,6 +353,9 @@ export interface FileRoutesById {
   '/muscles_/$slug': typeof MusclesSlugRoute
   '/nutrients_/$slug': typeof NutrientsSlugRoute
   '/programs_/$slug': typeof ProgramsSlugRoute
+  '/programs_/compare': typeof ProgramsCompareRoute
+  '/programs_/current': typeof ProgramsCurrentRoute
+  '/programs_/finder': typeof ProgramsFinderRoute
   '/recipes_/$slug': typeof RecipesSlugRoute
   '/workout_/history': typeof WorkoutHistoryRoute
   '/learn_/workout-science_/$slug': typeof LearnWorkoutScienceSlugRoute
@@ -368,6 +395,9 @@ export interface FileRouteTypes {
     | '/muscles/$slug'
     | '/nutrients/$slug'
     | '/programs/$slug'
+    | '/programs/compare'
+    | '/programs/current'
+    | '/programs/finder'
     | '/recipes/$slug'
     | '/workout/history'
     | '/learn/workout-science/$slug'
@@ -405,6 +435,9 @@ export interface FileRouteTypes {
     | '/muscles/$slug'
     | '/nutrients/$slug'
     | '/programs/$slug'
+    | '/programs/compare'
+    | '/programs/current'
+    | '/programs/finder'
     | '/recipes/$slug'
     | '/workout/history'
     | '/learn/workout-science/$slug'
@@ -442,6 +475,9 @@ export interface FileRouteTypes {
     | '/muscles_/$slug'
     | '/nutrients_/$slug'
     | '/programs_/$slug'
+    | '/programs_/compare'
+    | '/programs_/current'
+    | '/programs_/finder'
     | '/recipes_/$slug'
     | '/workout_/history'
     | '/learn_/workout-science_/$slug'
@@ -480,6 +516,9 @@ export interface RootRouteChildren {
   MusclesSlugRoute: typeof MusclesSlugRoute
   NutrientsSlugRoute: typeof NutrientsSlugRoute
   ProgramsSlugRoute: typeof ProgramsSlugRoute
+  ProgramsCompareRoute: typeof ProgramsCompareRoute
+  ProgramsCurrentRoute: typeof ProgramsCurrentRoute
+  ProgramsFinderRoute: typeof ProgramsFinderRoute
   RecipesSlugRoute: typeof RecipesSlugRoute
   WorkoutHistoryRoute: typeof WorkoutHistoryRoute
   LearnWorkoutScienceSlugRoute: typeof LearnWorkoutScienceSlugRoute
@@ -699,6 +738,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProgramsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/programs_/compare': {
+      id: '/programs_/compare'
+      path: '/programs/compare'
+      fullPath: '/programs/compare'
+      preLoaderRoute: typeof ProgramsCompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programs_/current': {
+      id: '/programs_/current'
+      path: '/programs/current'
+      fullPath: '/programs/current'
+      preLoaderRoute: typeof ProgramsCurrentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programs_/finder': {
+      id: '/programs_/finder'
+      path: '/programs/finder'
+      fullPath: '/programs/finder'
+      preLoaderRoute: typeof ProgramsFinderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/recipes_/$slug': {
       id: '/recipes_/$slug'
       path: '/recipes/$slug'
@@ -768,6 +828,9 @@ const rootRouteChildren: RootRouteChildren = {
   MusclesSlugRoute: MusclesSlugRoute,
   NutrientsSlugRoute: NutrientsSlugRoute,
   ProgramsSlugRoute: ProgramsSlugRoute,
+  ProgramsCompareRoute: ProgramsCompareRoute,
+  ProgramsCurrentRoute: ProgramsCurrentRoute,
+  ProgramsFinderRoute: ProgramsFinderRoute,
   RecipesSlugRoute: RecipesSlugRoute,
   WorkoutHistoryRoute: WorkoutHistoryRoute,
   LearnWorkoutScienceSlugRoute: LearnWorkoutScienceSlugRoute,

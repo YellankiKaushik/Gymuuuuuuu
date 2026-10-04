@@ -1,6 +1,6 @@
+import { createFileRoute, stripSearchParams } from '@tanstack/react-router'
 import { metadataFor } from '../lib/route-metadata'
-import { createFileRoute } from '@tanstack/react-router'
-import { ModulePage } from '../components/module-page'
-import { modules } from '../data/navigation'
-export const Route = createFileRoute('/programs')({ head: () => metadataFor('/programs'), component: Page })
-function Page() { const module = modules.find((item) => item.path === '/programs'); return module ? <ModulePage module={module} /> : null }
+import { ProgramCatalogue } from '../features/programs/pages'
+import { parseProgramQuery, programQueryParams, validateProgramSearch } from '../features/programs/query'
+export const Route = createFileRoute('/programs')({ validateSearch: validateProgramSearch, search: { middlewares: [stripSearchParams(parseProgramQuery({}))] }, head: () => metadataFor('/programs'), component: Page })
+function Page() { const query=Route.useSearch(),navigate=Route.useNavigate();return <ProgramCatalogue query={query} change={(next) => { void navigate({ search:programQueryParams(next) }) }} /> }

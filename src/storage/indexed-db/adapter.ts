@@ -5,6 +5,7 @@ export interface RecordStorage {
   list(): Promise<LocalRecord[]>
   put(record: LocalRecord): Promise<void>
   remove(id: string): Promise<void>
+  commit(change: { put?: readonly LocalRecord[]; remove?: readonly string[] }): Promise<void>
   close(): void
 }
 
@@ -42,6 +43,18 @@ export function createRecordStorage(databaseName = 'fitness-os-local'): RecordSt
     },
     async put(record) { const valid = localRecordSchema.parse(record); await transact('readwrite', (store) => store.put(valid)) },
     async remove(id) { await transact('readwrite', (store) => store.delete(id)) },
+    async commit(change) {
+      const records = (change.put ?? []).map((record) => localRecordSchema.parse(record))
+      const db = await open()
+      await new Promise<void>((resolve, reject) => {
+        const transaction = db.transaction('records', 'readwrite'), recordStore = transaction.objectStore('records')
+        transaction.oncomplete = () => resolve()
+        transaction.onerror = () => reject(new Error('Local data changes failed. Existing records were preserved.'))
+        transaction.onabort = () => reject(new Error('Local changes were aborted. Nothing was saved.'))
+        try { records.forEach((record) => recordStore.put(record)); (change.remove ?? []).forEach((id) => recordStore.delete(id)) }
+        catch { transaction.abort() }
+      })
+    },
     close() { if (database) { void database.then((db) => db.close()).catch(() => undefined); database = undefined } },
   }
 }

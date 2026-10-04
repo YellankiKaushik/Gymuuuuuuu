@@ -3,7 +3,8 @@ import { sourceSchema } from '../src/domain/schemas/foundation'
 import { sourceRegistry } from '../src/data/sources'
 import { exerciseCoverage, exerciseIdentities, exerciseRecords, validateExercises } from '../src/features/exercises/repository'
 import { scienceCoverage, scienceIdentities, scienceRecords, validateScience } from '../src/features/workout-science/repository'
-const errors = [...validateAnatomy(muscleRecords), ...validateExercises(exerciseIdentities), ...validateExercises(exerciseRecords), ...validateScience(scienceIdentities), ...validateScience(scienceRecords)]
+import { programIdentities, programRecords, validatePrograms } from '../src/features/programs/repository'
+const errors = [...validateAnatomy(muscleRecords), ...validateExercises(exerciseIdentities), ...validateExercises(exerciseRecords), ...validateScience(scienceIdentities), ...validateScience(scienceRecords), ...validatePrograms(programIdentities), ...validatePrograms(programRecords)]
 sourceSchema.array().parse(sourceRegistry)
 for (const [name, entries] of [['regions', anatomyTaxonomy.regions], ['groups', anatomyTaxonomy.trainingGroups], ['identities', anatomyTaxonomy.records]] as const) {
   if (new Set(entries.map((entry) => entry.id)).size !== entries.length) errors.push(`Duplicate taxonomy ${name} IDs`)
