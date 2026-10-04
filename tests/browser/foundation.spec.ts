@@ -6,7 +6,8 @@ test('contract routes render server-side without personal data', async ({ reques
   for (const module of [{ path: '/', title: 'Your fitness, connected.' }, ...modules]) {
     const response = await request.get(module.path.replace('$slug', 'foundation-placeholder'))
     expect(response.ok(), module.path).toBe(true)
-    expect(await response.text(), module.path).toContain(module.title.replace('&', '&amp;'))
+    expect(await response.text(), module.path).toContain((module.path === '/training-science' ? 'Workout science' : module.title).replace('&', '&amp;'))
+    if (module.path === '/training-science') expect(response.url()).toContain('/learn/workout-science')
   }
 })
 test('desktop navigation, module finder and preference persistence', async ({ page }) => {

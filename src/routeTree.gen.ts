@@ -35,11 +35,15 @@ import { Route as WorkoutRouteImport } from './routes/workout'
 import { Route as AboutSourcesRouteImport } from './routes/about.sources'
 import { Route as ExercisesSlugRouteImport } from './routes/exercises_.$slug'
 import { Route as FoodsSlugRouteImport } from './routes/foods_.$slug'
+import { Route as LearnWorkoutScienceRouteImport } from './routes/learn_.workout-science'
 import { Route as MusclesSlugRouteImport } from './routes/muscles_.$slug'
 import { Route as NutrientsSlugRouteImport } from './routes/nutrients_.$slug'
 import { Route as ProgramsSlugRouteImport } from './routes/programs_.$slug'
 import { Route as RecipesSlugRouteImport } from './routes/recipes_.$slug'
 import { Route as WorkoutHistoryRouteImport } from './routes/workout_.history'
+import { Route as LearnWorkoutScienceSlugRouteImport } from './routes/learn_.workout-science_.$slug'
+import { Route as LearnWorkoutScienceGlossaryRouteImport } from './routes/learn_.workout-science_.glossary'
+import { Route as LearnWorkoutScienceMethodsRouteImport } from './routes/learn_.workout-science_.methods'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -171,6 +175,11 @@ const FoodsSlugRoute = FoodsSlugRouteImport.update({
   path: '/foods/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LearnWorkoutScienceRoute = LearnWorkoutScienceRouteImport.update({
+  id: '/learn_/workout-science',
+  path: '/learn/workout-science',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MusclesSlugRoute = MusclesSlugRouteImport.update({
   id: '/muscles_/$slug',
   path: '/muscles/$slug',
@@ -196,6 +205,23 @@ const WorkoutHistoryRoute = WorkoutHistoryRouteImport.update({
   path: '/workout/history',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LearnWorkoutScienceSlugRoute = LearnWorkoutScienceSlugRouteImport.update({
+  id: '/learn_/workout-science_/$slug',
+  path: '/learn/workout-science/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearnWorkoutScienceGlossaryRoute =
+  LearnWorkoutScienceGlossaryRouteImport.update({
+    id: '/learn_/workout-science_/glossary',
+    path: '/learn/workout-science/glossary',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LearnWorkoutScienceMethodsRoute =
+  LearnWorkoutScienceMethodsRouteImport.update({
+    id: '/learn_/workout-science_/methods',
+    path: '/learn/workout-science/methods',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -224,11 +250,15 @@ export interface FileRoutesByFullPath {
   '/about/sources': typeof AboutSourcesRoute
   '/exercises/$slug': typeof ExercisesSlugRoute
   '/foods/$slug': typeof FoodsSlugRoute
+  '/learn/workout-science': typeof LearnWorkoutScienceRoute
   '/muscles/$slug': typeof MusclesSlugRoute
   '/nutrients/$slug': typeof NutrientsSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
+  '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
+  '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
+  '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -257,11 +287,15 @@ export interface FileRoutesByTo {
   '/about/sources': typeof AboutSourcesRoute
   '/exercises/$slug': typeof ExercisesSlugRoute
   '/foods/$slug': typeof FoodsSlugRoute
+  '/learn/workout-science': typeof LearnWorkoutScienceRoute
   '/muscles/$slug': typeof MusclesSlugRoute
   '/nutrients/$slug': typeof NutrientsSlugRoute
   '/programs/$slug': typeof ProgramsSlugRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
+  '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
+  '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
+  '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -291,11 +325,15 @@ export interface FileRoutesById {
   '/about/sources': typeof AboutSourcesRoute
   '/exercises_/$slug': typeof ExercisesSlugRoute
   '/foods_/$slug': typeof FoodsSlugRoute
+  '/learn_/workout-science': typeof LearnWorkoutScienceRoute
   '/muscles_/$slug': typeof MusclesSlugRoute
   '/nutrients_/$slug': typeof NutrientsSlugRoute
   '/programs_/$slug': typeof ProgramsSlugRoute
   '/recipes_/$slug': typeof RecipesSlugRoute
   '/workout_/history': typeof WorkoutHistoryRoute
+  '/learn_/workout-science_/$slug': typeof LearnWorkoutScienceSlugRoute
+  '/learn_/workout-science_/glossary': typeof LearnWorkoutScienceGlossaryRoute
+  '/learn_/workout-science_/methods': typeof LearnWorkoutScienceMethodsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -326,11 +364,15 @@ export interface FileRouteTypes {
     | '/about/sources'
     | '/exercises/$slug'
     | '/foods/$slug'
+    | '/learn/workout-science'
     | '/muscles/$slug'
     | '/nutrients/$slug'
     | '/programs/$slug'
     | '/recipes/$slug'
     | '/workout/history'
+    | '/learn/workout-science/$slug'
+    | '/learn/workout-science/glossary'
+    | '/learn/workout-science/methods'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -359,11 +401,15 @@ export interface FileRouteTypes {
     | '/about/sources'
     | '/exercises/$slug'
     | '/foods/$slug'
+    | '/learn/workout-science'
     | '/muscles/$slug'
     | '/nutrients/$slug'
     | '/programs/$slug'
     | '/recipes/$slug'
     | '/workout/history'
+    | '/learn/workout-science/$slug'
+    | '/learn/workout-science/glossary'
+    | '/learn/workout-science/methods'
   id:
     | '__root__'
     | '/'
@@ -392,11 +438,15 @@ export interface FileRouteTypes {
     | '/about/sources'
     | '/exercises_/$slug'
     | '/foods_/$slug'
+    | '/learn_/workout-science'
     | '/muscles_/$slug'
     | '/nutrients_/$slug'
     | '/programs_/$slug'
     | '/recipes_/$slug'
     | '/workout_/history'
+    | '/learn_/workout-science_/$slug'
+    | '/learn_/workout-science_/glossary'
+    | '/learn_/workout-science_/methods'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -426,11 +476,15 @@ export interface RootRouteChildren {
   AboutSourcesRoute: typeof AboutSourcesRoute
   ExercisesSlugRoute: typeof ExercisesSlugRoute
   FoodsSlugRoute: typeof FoodsSlugRoute
+  LearnWorkoutScienceRoute: typeof LearnWorkoutScienceRoute
   MusclesSlugRoute: typeof MusclesSlugRoute
   NutrientsSlugRoute: typeof NutrientsSlugRoute
   ProgramsSlugRoute: typeof ProgramsSlugRoute
   RecipesSlugRoute: typeof RecipesSlugRoute
   WorkoutHistoryRoute: typeof WorkoutHistoryRoute
+  LearnWorkoutScienceSlugRoute: typeof LearnWorkoutScienceSlugRoute
+  LearnWorkoutScienceGlossaryRoute: typeof LearnWorkoutScienceGlossaryRoute
+  LearnWorkoutScienceMethodsRoute: typeof LearnWorkoutScienceMethodsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -617,6 +671,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FoodsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/learn_/workout-science': {
+      id: '/learn_/workout-science'
+      path: '/learn/workout-science'
+      fullPath: '/learn/workout-science'
+      preLoaderRoute: typeof LearnWorkoutScienceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/muscles_/$slug': {
       id: '/muscles_/$slug'
       path: '/muscles/$slug'
@@ -652,6 +713,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkoutHistoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/learn_/workout-science_/$slug': {
+      id: '/learn_/workout-science_/$slug'
+      path: '/learn/workout-science/$slug'
+      fullPath: '/learn/workout-science/$slug'
+      preLoaderRoute: typeof LearnWorkoutScienceSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learn_/workout-science_/glossary': {
+      id: '/learn_/workout-science_/glossary'
+      path: '/learn/workout-science/glossary'
+      fullPath: '/learn/workout-science/glossary'
+      preLoaderRoute: typeof LearnWorkoutScienceGlossaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learn_/workout-science_/methods': {
+      id: '/learn_/workout-science_/methods'
+      path: '/learn/workout-science/methods'
+      fullPath: '/learn/workout-science/methods'
+      preLoaderRoute: typeof LearnWorkoutScienceMethodsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -682,11 +764,15 @@ const rootRouteChildren: RootRouteChildren = {
   AboutSourcesRoute: AboutSourcesRoute,
   ExercisesSlugRoute: ExercisesSlugRoute,
   FoodsSlugRoute: FoodsSlugRoute,
+  LearnWorkoutScienceRoute: LearnWorkoutScienceRoute,
   MusclesSlugRoute: MusclesSlugRoute,
   NutrientsSlugRoute: NutrientsSlugRoute,
   ProgramsSlugRoute: ProgramsSlugRoute,
   RecipesSlugRoute: RecipesSlugRoute,
   WorkoutHistoryRoute: WorkoutHistoryRoute,
+  LearnWorkoutScienceSlugRoute: LearnWorkoutScienceSlugRoute,
+  LearnWorkoutScienceGlossaryRoute: LearnWorkoutScienceGlossaryRoute,
+  LearnWorkoutScienceMethodsRoute: LearnWorkoutScienceMethodsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

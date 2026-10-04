@@ -7,6 +7,10 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/exercises', title: 'Exercise library', domain: 'Learn', phase: 3, description: 'Discover exercises by muscle, equipment and movement pattern.' },
   { path: '/exercises/$slug', title: 'Exercise detail', domain: 'Learn', phase: 3, description: 'Setup, execution, cues, variations and reviewed demonstration links.' },
   { path: '/training-science', title: 'Training science', domain: 'Learn', phase: 4, description: 'Understand the principles behind training and programming.' },
+  { path: '/learn/workout-science', title: 'Workout science', domain: 'Learn', phase: 4, description: 'Explore training principles, evidence, learning paths and limitations.' },
+  { path: '/learn/workout-science/$slug', title: 'Science topic', domain: 'Learn', phase: 4, description: 'Practical training concepts with sourced claims and population limits.' },
+  { path: '/learn/workout-science/methods', title: 'Advanced training methods', domain: 'Learn', phase: 4, description: 'Reviewed methods, costs, prerequisites and evidence.' },
+  { path: '/learn/workout-science/glossary', title: 'Training glossary', domain: 'Learn', phase: 4, description: 'Reviewed terminology and abbreviations.' },
   { path: '/train', title: 'Train', domain: 'Train', phase: 1, description: 'Connect training knowledge with planning and execution.' },
   { path: '/programs', title: 'Workout programs', domain: 'Train', phase: 5, description: 'Find programs and build a schedule around your goals.' },
   { path: '/programs/$slug', title: 'Program detail', domain: 'Train', phase: 5, description: 'Weekly schedules, progression and exercise substitutions.' },
@@ -59,13 +63,14 @@ export interface NavigationItem {
   order: number
 }
 const groupPaths: Record<string, readonly string[]> = {
-  learn: ['/muscles', '/exercises', '/training-science', '/nutrients', '/supplements'],
+  learn: ['/muscles', '/exercises', '/learn/workout-science', '/nutrients', '/supplements'],
   train: ['/workout', '/workout/history', '/cardio'], eat: ['/diet', '/recipes', '/nutrition-log'], recover: ['/mobility'],
 }
 const aliases: Record<string, readonly string[]> = {
   '/diet': ['calorie', 'energy', 'macros', 'targets'], '/tools': ['calorie', 'calculator', 'timer', 'compare'],
   '/nutrients': ['vitamin', 'vitamins', 'minerals', 'protein'], '/recovery': ['sleep', 'rest', 'soreness'],
   '/workout': ['log workout', 'sets', 'session'], '/workout/history': ['history', 'past sessions'], '/exercises': ['exercise', 'movement'],
+  '/learn/workout-science': ['training science', 'rpe', 'rir', 'volume', 'progressive overload', 'methods'],
 }
 const groupIds: Record<string, string> = { Home: 'home', Learn: 'learn', Train: 'train', Eat: 'eat', Recover: 'recover', Progress: 'progress', Tools: 'tools', Saved: 'saved' }
 export const navigationItems: readonly NavigationItem[] = [
@@ -79,7 +84,7 @@ export const navigationItems: readonly NavigationItem[] = [
     id: `${['/train', '/eat', '/track'].includes(module.path) ? 'hub-' : ''}${module.path.slice(1).replaceAll('/', '-').replace('$', '')}`, label: module.title, href: module.path,
     description: module.description, icon: (module.domain === 'Eat' ? 'leaf' : module.domain === 'Train' ? 'dumbbell' : module.domain === 'Recover' ? 'moon' : module.domain === 'Track' ? 'chart' : module.path === '/settings' ? 'settings' : module.path === '/about/sources' ? 'help' : 'book') as NavigationItem['icon'],
     aliases: aliases[module.path] ?? [], groupId: Object.entries(groupPaths).find(([, paths]) => paths.includes(module.path))?.[0],
-    visibility: (module.path.includes('$') || ['/train', '/eat', '/track'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
+    visibility: (module.path.includes('$') || ['/train', '/eat', '/track', '/training-science'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
   })),
 ]
 export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const
@@ -90,6 +95,8 @@ export function navigationFor(path: string): NavigationItem | undefined {
 export function groupFor(path: string): string | undefined {
   const entry = navigationFor(path)
   if (entry?.groupId) return entry.groupId
+  const ancestor = navigationItems.filter((item) => item.groupId && item.href !== path && path.startsWith(`${item.href}/`)).sort((a, b) => b.href.length - a.href.length)[0]
+  if (ancestor) return ancestor.groupId
   if (findModule(path)?.path.includes('$slug')) {
     const catalogue = navigationFor(path.slice(0, path.lastIndexOf('/')))
     return catalogue?.groupId ?? catalogue?.id

@@ -1,0 +1,9 @@
+# Phase 04 engineering checkpoint
+
+Read all six Phase 04 files completely, including every seed identity and schema field. All 1199 DOCX paragraphs match Markdown. Original reference documents remain unchanged.
+
+Implemented all four canonical routes and the compatibility redirect; strict publication/claim/numeric schemas; cross-file references and prerequisite cycles; source/claim/relationship/glossary indexes and coverage; local search and URL multi-select filters with clean resets/history restoration; goal/experience learning paths; methods catalogue; glossary; practical-first detail, decisions, claim evidence, populations, limitations, comparisons, myths, examples and sources; exercise reverse links; current Learn hub and navigation.
+
+Verification: strict TypeScript, ESLint, 37 unit/component tests, content validation and production build pass. Browser regression suite had 11 passing tests and one URL-default failure; router middleware fixed the cause and both science tests passed on the targeted rerun. The synthetic detail and comparison passed five widths (320, 375, 768, 1024, 1440), both themes, expanded evidence, axe checks and no overflow. Catalogue/methods/glossary were scanned in light/dark and 320px reflow. Screenshots were inspected. A 320px layout covers the equivalent content width required for 400% reflow at 1280px. No live factual or third-party evidence claim was tested because no record is published.
+
+Public content: **0 topics**. The required launch article set and independent claim/source review remain outstanding. Optional personal saved-topic/history behavior is deferred to Phase 16's generic contract. Local checkpoint: `phase-04-science-infrastructure-verified`. No remote GitHub checkpoint or deployment exists. Phase 05 can reference the 98 stable IDs without changing ownership of training-science content; do not label factual launch coverage complete.
