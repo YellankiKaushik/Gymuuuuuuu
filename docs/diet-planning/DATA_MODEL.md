@@ -1,0 +1,9 @@
+# Device-local data model and handoff
+
+Database fitness-os-diet-planning version 1: dietPlans (stable dietplan_ ID), dietPlannerSettings (settings record), dietPlanAuditLog (audit ID). Initial migration creates all three stores transactionally; strict snapshot reading validates current and historical records without recalculating them. Unknown/corrupt fields produce a recoverable error and are never silently removed.
+
+Every plan preserves goal, target/range/meal values, warnings, model/formula/reference versions, source IDs and calculation timestamp. Inputs are optional through the documented strict local extension. The current plan is a status in the same transactional plan store; backup currentPlanId is derived and validated. Historical plans are not deleted when selection changes. Metadata edits check updatedAt; duplicate/recalculate creates a new plan and keeps the original.
+
+Module JSON export includes all plans/settings/audit and optionally stored inputs. Default redaction removes input snapshots and protein calculation-weight text. CSV exports target summaries with spreadsheet-formula escaping. Import preview checks schema, versions, duplicate/current consistency, source IDs, units, calculation consistency and meal reconciliation before opening a write transaction. Keep-existing restore retains current selection, including no current selection. Replace-conflicts restore requires confirmation and may select the imported current plan. Unrelated plans remain. Delete and archive require confirmation; storage errors preserve existing records.
+
+Phase 10 uses readDietBackup plus currentDietTargets to consume the current snapshot's target calories, protein range/selection, fat/carbohydrate/fibre, meal slots, warnings, framework ID and provenance. It must not recompute these values. Phase 17 must include this database alongside the pre-existing workout and generic databases.

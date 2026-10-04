@@ -30,7 +30,16 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/nutrients/frameworks', title: 'Reference frameworks', domain: 'Eat', phase: 8, description: 'Separate authorities, versions and value definitions.' },
   { path: '/nutrients/glossary', title: 'Nutrient glossary', domain: 'Eat', phase: 8, description: 'Reference terminology, units and equivalents.' },
   { path: '/nutrients/methodology', title: 'Nutrient methodology', domain: 'Eat', phase: 8, description: 'Source-backed claims, food ranking and conversion safeguards.' },
-  { path: '/diet', title: 'Diet planning', domain: 'Eat', phase: 10, description: 'Transparent planning estimates with methods, units and assumptions.' },
+  { path: '/diet', title: 'Diet planning', domain: 'Eat', phase: 9, description: 'Open the healthy-adult target planner.' },
+  { path: '/diet-planning', title: 'Diet planning', domain: 'Eat', phase: 9, description: 'Transparent starting targets and optional local snapshots.' },
+  { path: '/diet-planning/energy', title: 'Energy planner', domain: 'Eat', phase: 9, description: 'Adult NASEM energy estimates with model uncertainty.' },
+  { path: '/diet-planning/goal', title: 'Goal planner', domain: 'Eat', phase: 9, description: 'Explicit goal adjustments and BMI safety context.' },
+  { path: '/diet-planning/macros', title: 'Macro planner', domain: 'Eat', phase: 9, description: 'Contextual protein, fat, carbohydrate and fibre targets.' },
+  { path: '/diet-planning/meal-distribution', title: 'Meal distribution', domain: 'Eat', phase: 9, description: 'Reconciled target allocations across planning slots.' },
+  { path: '/diet-planning/plans', title: 'Saved diet plans', domain: 'Eat', phase: 9, description: 'Device-local target snapshots, comparison and backup.' },
+  { path: '/diet-planning/plans/$planId', title: 'Saved diet plan', domain: 'Eat', phase: 9, description: 'Private saved target and formula provenance.' },
+  { path: '/diet-planning/methodology', title: 'Diet planning methodology', domain: 'Eat', phase: 9, description: 'Exact formulas, references and versioning.' },
+  { path: '/diet-planning/safety', title: 'Diet planning safety', domain: 'Eat', phase: 9, description: 'Eligibility, unsupported uses and planning boundaries.' },
   { path: '/recipes', title: 'Meals & recipes', domain: 'Eat', phase: 11, description: 'Practical recipes and meal templates connected to food data.' },
   { path: '/recipes/$slug', title: 'Recipe detail', domain: 'Eat', phase: 11, description: 'Ingredients, instructions, substitutions and calculated nutrition.' },
   { path: '/nutrition-log', title: 'Nutrition log', domain: 'Track', phase: 12, description: 'Optional food logging, saved privately in this browser.' },
@@ -72,10 +81,10 @@ export interface NavigationItem {
 }
 const groupPaths: Record<string, readonly string[]> = {
   learn: ['/muscles', '/exercises', '/learn/workout-science', '/nutrients', '/supplements'],
-  train: ['/workout', '/workout/history', '/cardio'], eat: ['/diet', '/recipes', '/nutrition-log'], recover: ['/mobility'],
+  train: ['/workout', '/workout/history', '/cardio'], eat: ['/diet-planning', '/recipes', '/nutrition-log'], recover: ['/mobility'],
 }
 const aliases: Record<string, readonly string[]> = {
-  '/diet': ['calorie', 'energy', 'macros', 'targets'], '/tools': ['calorie', 'calculator', 'timer', 'compare'],
+  '/diet-planning': ['calorie', 'energy', 'macros', 'targets'], '/tools': ['calorie', 'calculator', 'timer', 'compare'],
   '/nutrients': ['vitamin', 'vitamins', 'minerals', 'protein'], '/recovery': ['sleep', 'rest', 'soreness'],
   '/workout': ['log workout', 'sets', 'session'], '/workout/history': ['history', 'past sessions'], '/exercises': ['exercise', 'movement'],
   '/learn/workout-science': ['training science', 'rpe', 'rir', 'volume', 'progressive overload', 'methods'],
@@ -92,7 +101,7 @@ export const navigationItems: readonly NavigationItem[] = [
     id: `${['/train', '/eat', '/track'].includes(module.path) ? 'hub-' : ''}${module.path.slice(1).replaceAll('/', '-').replace('$', '')}`, label: module.title, href: module.path,
     description: module.description, icon: (module.domain === 'Eat' ? 'leaf' : module.domain === 'Train' ? 'dumbbell' : module.domain === 'Recover' ? 'moon' : module.domain === 'Track' ? 'chart' : module.path === '/settings' ? 'settings' : module.path === '/about/sources' ? 'help' : 'book') as NavigationItem['icon'],
     aliases: aliases[module.path] ?? [], groupId: Object.entries(groupPaths).find(([, paths]) => paths.includes(module.path))?.[0],
-    visibility: (module.path.includes('$') || ['/train', '/eat', '/track', '/training-science'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
+    visibility: (module.path.includes('$') || ['/train', '/eat', '/track', '/training-science','/diet'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
   })),
 ]
 export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const
@@ -111,3 +120,4 @@ export function groupFor(path: string): string | undefined {
   }
   return entry?.id
 }
+

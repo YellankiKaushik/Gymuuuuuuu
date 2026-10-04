@@ -1,0 +1,9 @@
+# Verification coverage
+
+Unit tests check independent numerical expectations for all eight equations, supplied vectors, exact unit conversion, energy rounding, all allowed goal percentages, eligibility/boundary acknowledgement, low intake/BMI/goal weight, protein presets, macro conflicts, AMDR, fibre, even/custom meals, provenance, historical snapshots, input redaction, unknown-field rejection, backup conflicts and CSV safety. Fake IndexedDB integration checks initial migration, CRUD/audit, concurrent current selection, stale metadata rejection, failed-import preservation and keep-existing restore.
+
+Browser flows exercise the full multi-step calculator, optional input withholding, current selection, metadata edits, cross-tab notifications, JSON download/invalid preview/restore, transient reload and unsafe inputs. Live populated UI uses axe and horizontal-reflow checks at 320/768/1440 in both themes. Every route is exercised. Screenshots are visual review evidence using synthetic test inputs, not real personal records.
+
+The first focused browser run found invalid definition-list markup and a test trying to inspect closed calculation details; the markup was fixed and the test now opens the details. A full dev-server regression encountered a transient ECONNRESET overlay and is rerun before the checkpoint. Physical devices, human screen-reader and additional-browser checks remain manual release checks.
+
+Final checkpoint: 96 unit/integration tests pass. The complete 22-test browser rerun passed 21; the /diet redirect's manifest label was corrected and all three foundation browser tests then passed. All four Phase 09 browser tests subsequently pass (23 distinct browser tests overall), including imperial/manual/custom-gram flow, consent and recalculation audit. Final typecheck/lint/build pass. Screenshots are taken after clearing axe's temporary focus and scrolling to the top, then visually inspected.

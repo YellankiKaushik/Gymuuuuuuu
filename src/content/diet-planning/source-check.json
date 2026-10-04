@@ -1,0 +1,8 @@
+{
+  "id": "phase09_formula_source_check_20261005",
+  "slug": "diet-target-formula-source-check",
+  "formulaSetId": "phase09_diet_targets",
+  "formulaSetVersion": "1.0.0",
+  "sourceIds": ["nasem_energy_2023", "niddk_body_weight_planner", "issn_protein_2017", "nasem_macronutrients_2005", "acsm_nutrition_performance_2016"],
+  "review": {"status": "engineering_source_checked", "checkedAt": "2026-10-05", "reviewer": "Codex primary-source verification", "scope": "All energy equations, PAL ranges, model RMSE, NIDDK low-intake boundary and ISSN exercise-protein context checked. Other supplied macronutrient constants retain their documented source references; independent full-table review is not claimed. This is not individual clinical review."}
+}

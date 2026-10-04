@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CardioRouteImport } from './routes/cardio'
 import { Route as DietRouteImport } from './routes/diet'
+import { Route as DietPlanningRouteImport } from './routes/diet-planning'
 import { Route as EatRouteImport } from './routes/eat'
 import { Route as ExercisesRouteImport } from './routes/exercises'
 import { Route as FoodsRouteImport } from './routes/foods'
@@ -33,6 +34,14 @@ import { Route as TrainRouteImport } from './routes/train'
 import { Route as TrainingScienceRouteImport } from './routes/training-science'
 import { Route as WorkoutRouteImport } from './routes/workout'
 import { Route as AboutSourcesRouteImport } from './routes/about.sources'
+import { Route as DietPlanningIndexRouteImport } from './routes/diet-planning.index'
+import { Route as DietPlanningEnergyRouteImport } from './routes/diet-planning.energy'
+import { Route as DietPlanningGoalRouteImport } from './routes/diet-planning.goal'
+import { Route as DietPlanningMacrosRouteImport } from './routes/diet-planning.macros'
+import { Route as DietPlanningMealDistributionRouteImport } from './routes/diet-planning.meal-distribution'
+import { Route as DietPlanningMethodologyRouteImport } from './routes/diet-planning.methodology'
+import { Route as DietPlanningPlansRouteImport } from './routes/diet-planning.plans'
+import { Route as DietPlanningSafetyRouteImport } from './routes/diet-planning.safety'
 import { Route as ExercisesSlugRouteImport } from './routes/exercises_.$slug'
 import { Route as FoodsSlugRouteImport } from './routes/foods_.$slug'
 import { Route as FoodsCategoriesRouteImport } from './routes/foods_.categories'
@@ -54,6 +63,8 @@ import { Route as ProgramsFinderRouteImport } from './routes/programs_.finder'
 import { Route as RecipesSlugRouteImport } from './routes/recipes_.$slug'
 import { Route as WorkoutHistoryRouteImport } from './routes/workout_.history'
 import { Route as WorkoutSettingsRouteImport } from './routes/workout_.settings'
+import { Route as DietPlanningPlansIndexRouteImport } from './routes/diet-planning.plans.index'
+import { Route as DietPlanningPlansPlanIdRouteImport } from './routes/diet-planning.plans.$planId'
 import { Route as FoodsCategoriesCategoryIdRouteImport } from './routes/foods_.categories_.$categoryId'
 import { Route as LearnWorkoutScienceSlugRouteImport } from './routes/learn_.workout-science_.$slug'
 import { Route as LearnWorkoutScienceGlossaryRouteImport } from './routes/learn_.workout-science_.glossary'
@@ -77,6 +88,11 @@ const CardioRoute = CardioRouteImport.update({
 const DietRoute = DietRouteImport.update({
   id: '/diet',
   path: '/diet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DietPlanningRoute = DietPlanningRouteImport.update({
+  id: '/diet-planning',
+  path: '/diet-planning',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EatRoute = EatRouteImport.update({
@@ -184,6 +200,47 @@ const AboutSourcesRoute = AboutSourcesRouteImport.update({
   path: '/about/sources',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DietPlanningIndexRoute = DietPlanningIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => DietPlanningRoute,
+} as any)
+const DietPlanningEnergyRoute = DietPlanningEnergyRouteImport.update({
+  id: '/energy',
+  path: '/energy',
+  getParentRoute: () => DietPlanningRoute,
+} as any)
+const DietPlanningGoalRoute = DietPlanningGoalRouteImport.update({
+  id: '/goal',
+  path: '/goal',
+  getParentRoute: () => DietPlanningRoute,
+} as any)
+const DietPlanningMacrosRoute = DietPlanningMacrosRouteImport.update({
+  id: '/macros',
+  path: '/macros',
+  getParentRoute: () => DietPlanningRoute,
+} as any)
+const DietPlanningMealDistributionRoute =
+  DietPlanningMealDistributionRouteImport.update({
+    id: '/meal-distribution',
+    path: '/meal-distribution',
+    getParentRoute: () => DietPlanningRoute,
+  } as any)
+const DietPlanningMethodologyRoute = DietPlanningMethodologyRouteImport.update({
+  id: '/methodology',
+  path: '/methodology',
+  getParentRoute: () => DietPlanningRoute,
+} as any)
+const DietPlanningPlansRoute = DietPlanningPlansRouteImport.update({
+  id: '/plans',
+  path: '/plans',
+  getParentRoute: () => DietPlanningRoute,
+} as any)
+const DietPlanningSafetyRoute = DietPlanningSafetyRouteImport.update({
+  id: '/safety',
+  path: '/safety',
+  getParentRoute: () => DietPlanningRoute,
+} as any)
 const ExercisesSlugRoute = ExercisesSlugRouteImport.update({
   id: '/exercises_/$slug',
   path: '/exercises/$slug',
@@ -290,6 +347,16 @@ const WorkoutSettingsRoute = WorkoutSettingsRouteImport.update({
   path: '/workout/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DietPlanningPlansIndexRoute = DietPlanningPlansIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => DietPlanningPlansRoute,
+} as any)
+const DietPlanningPlansPlanIdRoute = DietPlanningPlansPlanIdRouteImport.update({
+  id: '/$planId',
+  path: '/$planId',
+  getParentRoute: () => DietPlanningPlansRoute,
+} as any)
 const FoodsCategoriesCategoryIdRoute =
   FoodsCategoriesCategoryIdRouteImport.update({
     id: '/foods_/categories_/$categoryId',
@@ -345,6 +412,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cardio': typeof CardioRoute
   '/diet': typeof DietRoute
+  '/diet-planning': typeof DietPlanningRouteWithChildren
   '/eat': typeof EatRoute
   '/exercises': typeof ExercisesRoute
   '/foods': typeof FoodsRoute
@@ -366,6 +434,13 @@ export interface FileRoutesByFullPath {
   '/training-science': typeof TrainingScienceRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/diet-planning/energy': typeof DietPlanningEnergyRoute
+  '/diet-planning/goal': typeof DietPlanningGoalRoute
+  '/diet-planning/macros': typeof DietPlanningMacrosRoute
+  '/diet-planning/meal-distribution': typeof DietPlanningMealDistributionRoute
+  '/diet-planning/methodology': typeof DietPlanningMethodologyRoute
+  '/diet-planning/plans': typeof DietPlanningPlansRouteWithChildren
+  '/diet-planning/safety': typeof DietPlanningSafetyRoute
   '/exercises/$slug': typeof ExercisesSlugRoute
   '/foods/$slug': typeof FoodsSlugRoute
   '/foods/categories': typeof FoodsCategoriesRoute
@@ -387,6 +462,8 @@ export interface FileRoutesByFullPath {
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
+  '/diet-planning/': typeof DietPlanningIndexRoute
+  '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods/categories/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
@@ -395,6 +472,7 @@ export interface FileRoutesByFullPath {
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
+  '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRoutesByTo {
@@ -422,6 +500,12 @@ export interface FileRoutesByTo {
   '/training-science': typeof TrainingScienceRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/diet-planning/energy': typeof DietPlanningEnergyRoute
+  '/diet-planning/goal': typeof DietPlanningGoalRoute
+  '/diet-planning/macros': typeof DietPlanningMacrosRoute
+  '/diet-planning/meal-distribution': typeof DietPlanningMealDistributionRoute
+  '/diet-planning/methodology': typeof DietPlanningMethodologyRoute
+  '/diet-planning/safety': typeof DietPlanningSafetyRoute
   '/exercises/$slug': typeof ExercisesSlugRoute
   '/foods/$slug': typeof FoodsSlugRoute
   '/foods/categories': typeof FoodsCategoriesRoute
@@ -443,6 +527,8 @@ export interface FileRoutesByTo {
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
+  '/diet-planning': typeof DietPlanningIndexRoute
+  '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods/categories/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
@@ -451,6 +537,7 @@ export interface FileRoutesByTo {
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
+  '/diet-planning/plans': typeof DietPlanningPlansIndexRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRoutesById {
@@ -458,6 +545,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/cardio': typeof CardioRoute
   '/diet': typeof DietRoute
+  '/diet-planning': typeof DietPlanningRouteWithChildren
   '/eat': typeof EatRoute
   '/exercises': typeof ExercisesRoute
   '/foods': typeof FoodsRoute
@@ -479,6 +567,13 @@ export interface FileRoutesById {
   '/training-science': typeof TrainingScienceRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/diet-planning/energy': typeof DietPlanningEnergyRoute
+  '/diet-planning/goal': typeof DietPlanningGoalRoute
+  '/diet-planning/macros': typeof DietPlanningMacrosRoute
+  '/diet-planning/meal-distribution': typeof DietPlanningMealDistributionRoute
+  '/diet-planning/methodology': typeof DietPlanningMethodologyRoute
+  '/diet-planning/plans': typeof DietPlanningPlansRouteWithChildren
+  '/diet-planning/safety': typeof DietPlanningSafetyRoute
   '/exercises_/$slug': typeof ExercisesSlugRoute
   '/foods_/$slug': typeof FoodsSlugRoute
   '/foods_/categories': typeof FoodsCategoriesRoute
@@ -500,6 +595,8 @@ export interface FileRoutesById {
   '/recipes_/$slug': typeof RecipesSlugRoute
   '/workout_/history': typeof WorkoutHistoryRoute
   '/workout_/settings': typeof WorkoutSettingsRoute
+  '/diet-planning/': typeof DietPlanningIndexRoute
+  '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods_/categories_/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn_/workout-science_/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn_/workout-science_/glossary': typeof LearnWorkoutScienceGlossaryRoute
@@ -508,6 +605,7 @@ export interface FileRoutesById {
   '/workout_/history_/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout_/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout_/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
+  '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
   '/workout_/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRouteTypes {
@@ -516,6 +614,7 @@ export interface FileRouteTypes {
     | '/'
     | '/cardio'
     | '/diet'
+    | '/diet-planning'
     | '/eat'
     | '/exercises'
     | '/foods'
@@ -537,6 +636,13 @@ export interface FileRouteTypes {
     | '/training-science'
     | '/workout'
     | '/about/sources'
+    | '/diet-planning/energy'
+    | '/diet-planning/goal'
+    | '/diet-planning/macros'
+    | '/diet-planning/meal-distribution'
+    | '/diet-planning/methodology'
+    | '/diet-planning/plans'
+    | '/diet-planning/safety'
     | '/exercises/$slug'
     | '/foods/$slug'
     | '/foods/categories'
@@ -558,6 +664,8 @@ export interface FileRouteTypes {
     | '/recipes/$slug'
     | '/workout/history'
     | '/workout/settings'
+    | '/diet-planning/'
+    | '/diet-planning/plans/$planId'
     | '/foods/categories/$categoryId'
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
@@ -566,6 +674,7 @@ export interface FileRouteTypes {
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
+    | '/diet-planning/plans/'
     | '/workout/exercises/$exerciseId/history'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -593,6 +702,12 @@ export interface FileRouteTypes {
     | '/training-science'
     | '/workout'
     | '/about/sources'
+    | '/diet-planning/energy'
+    | '/diet-planning/goal'
+    | '/diet-planning/macros'
+    | '/diet-planning/meal-distribution'
+    | '/diet-planning/methodology'
+    | '/diet-planning/safety'
     | '/exercises/$slug'
     | '/foods/$slug'
     | '/foods/categories'
@@ -614,6 +729,8 @@ export interface FileRouteTypes {
     | '/recipes/$slug'
     | '/workout/history'
     | '/workout/settings'
+    | '/diet-planning'
+    | '/diet-planning/plans/$planId'
     | '/foods/categories/$categoryId'
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
@@ -622,12 +739,14 @@ export interface FileRouteTypes {
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
+    | '/diet-planning/plans'
     | '/workout/exercises/$exerciseId/history'
   id:
     | '__root__'
     | '/'
     | '/cardio'
     | '/diet'
+    | '/diet-planning'
     | '/eat'
     | '/exercises'
     | '/foods'
@@ -649,6 +768,13 @@ export interface FileRouteTypes {
     | '/training-science'
     | '/workout'
     | '/about/sources'
+    | '/diet-planning/energy'
+    | '/diet-planning/goal'
+    | '/diet-planning/macros'
+    | '/diet-planning/meal-distribution'
+    | '/diet-planning/methodology'
+    | '/diet-planning/plans'
+    | '/diet-planning/safety'
     | '/exercises_/$slug'
     | '/foods_/$slug'
     | '/foods_/categories'
@@ -670,6 +796,8 @@ export interface FileRouteTypes {
     | '/recipes_/$slug'
     | '/workout_/history'
     | '/workout_/settings'
+    | '/diet-planning/'
+    | '/diet-planning/plans/$planId'
     | '/foods_/categories_/$categoryId'
     | '/learn_/workout-science_/$slug'
     | '/learn_/workout-science_/glossary'
@@ -678,6 +806,7 @@ export interface FileRouteTypes {
     | '/workout_/history_/$sessionId'
     | '/workout_/session/$sessionId'
     | '/workout_/summary/$sessionId'
+    | '/diet-planning/plans/'
     | '/workout_/exercises/$exerciseId/history'
   fileRoutesById: FileRoutesById
 }
@@ -685,6 +814,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CardioRoute: typeof CardioRoute
   DietRoute: typeof DietRoute
+  DietPlanningRoute: typeof DietPlanningRouteWithChildren
   EatRoute: typeof EatRoute
   ExercisesRoute: typeof ExercisesRoute
   FoodsRoute: typeof FoodsRoute
@@ -759,6 +889,13 @@ declare module '@tanstack/react-router' {
       path: '/diet'
       fullPath: '/diet'
       preLoaderRoute: typeof DietRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diet-planning': {
+      id: '/diet-planning'
+      path: '/diet-planning'
+      fullPath: '/diet-planning'
+      preLoaderRoute: typeof DietPlanningRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/eat': {
@@ -908,6 +1045,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutSourcesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/diet-planning/': {
+      id: '/diet-planning/'
+      path: '/'
+      fullPath: '/diet-planning/'
+      preLoaderRoute: typeof DietPlanningIndexRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
+    '/diet-planning/energy': {
+      id: '/diet-planning/energy'
+      path: '/energy'
+      fullPath: '/diet-planning/energy'
+      preLoaderRoute: typeof DietPlanningEnergyRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
+    '/diet-planning/goal': {
+      id: '/diet-planning/goal'
+      path: '/goal'
+      fullPath: '/diet-planning/goal'
+      preLoaderRoute: typeof DietPlanningGoalRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
+    '/diet-planning/macros': {
+      id: '/diet-planning/macros'
+      path: '/macros'
+      fullPath: '/diet-planning/macros'
+      preLoaderRoute: typeof DietPlanningMacrosRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
+    '/diet-planning/meal-distribution': {
+      id: '/diet-planning/meal-distribution'
+      path: '/meal-distribution'
+      fullPath: '/diet-planning/meal-distribution'
+      preLoaderRoute: typeof DietPlanningMealDistributionRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
+    '/diet-planning/methodology': {
+      id: '/diet-planning/methodology'
+      path: '/methodology'
+      fullPath: '/diet-planning/methodology'
+      preLoaderRoute: typeof DietPlanningMethodologyRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
+    '/diet-planning/plans': {
+      id: '/diet-planning/plans'
+      path: '/plans'
+      fullPath: '/diet-planning/plans'
+      preLoaderRoute: typeof DietPlanningPlansRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
+    '/diet-planning/safety': {
+      id: '/diet-planning/safety'
+      path: '/safety'
+      fullPath: '/diet-planning/safety'
+      preLoaderRoute: typeof DietPlanningSafetyRouteImport
+      parentRoute: typeof DietPlanningRoute
+    }
     '/exercises_/$slug': {
       id: '/exercises_/$slug'
       path: '/exercises/$slug'
@@ -1055,6 +1248,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkoutSettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/diet-planning/plans/': {
+      id: '/diet-planning/plans/'
+      path: '/'
+      fullPath: '/diet-planning/plans/'
+      preLoaderRoute: typeof DietPlanningPlansIndexRouteImport
+      parentRoute: typeof DietPlanningPlansRoute
+    }
+    '/diet-planning/plans/$planId': {
+      id: '/diet-planning/plans/$planId'
+      path: '/$planId'
+      fullPath: '/diet-planning/plans/$planId'
+      preLoaderRoute: typeof DietPlanningPlansPlanIdRouteImport
+      parentRoute: typeof DietPlanningPlansRoute
+    }
     '/foods_/categories_/$categoryId': {
       id: '/foods_/categories_/$categoryId'
       path: '/foods/categories/$categoryId'
@@ -1121,10 +1328,50 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface DietPlanningPlansRouteChildren {
+  DietPlanningPlansPlanIdRoute: typeof DietPlanningPlansPlanIdRoute
+  DietPlanningPlansIndexRoute: typeof DietPlanningPlansIndexRoute
+}
+
+const DietPlanningPlansRouteChildren: DietPlanningPlansRouteChildren = {
+  DietPlanningPlansPlanIdRoute: DietPlanningPlansPlanIdRoute,
+  DietPlanningPlansIndexRoute: DietPlanningPlansIndexRoute,
+}
+
+const DietPlanningPlansRouteWithChildren =
+  DietPlanningPlansRoute._addFileChildren(DietPlanningPlansRouteChildren)
+
+interface DietPlanningRouteChildren {
+  DietPlanningEnergyRoute: typeof DietPlanningEnergyRoute
+  DietPlanningGoalRoute: typeof DietPlanningGoalRoute
+  DietPlanningMacrosRoute: typeof DietPlanningMacrosRoute
+  DietPlanningMealDistributionRoute: typeof DietPlanningMealDistributionRoute
+  DietPlanningMethodologyRoute: typeof DietPlanningMethodologyRoute
+  DietPlanningPlansRoute: typeof DietPlanningPlansRouteWithChildren
+  DietPlanningSafetyRoute: typeof DietPlanningSafetyRoute
+  DietPlanningIndexRoute: typeof DietPlanningIndexRoute
+}
+
+const DietPlanningRouteChildren: DietPlanningRouteChildren = {
+  DietPlanningEnergyRoute: DietPlanningEnergyRoute,
+  DietPlanningGoalRoute: DietPlanningGoalRoute,
+  DietPlanningMacrosRoute: DietPlanningMacrosRoute,
+  DietPlanningMealDistributionRoute: DietPlanningMealDistributionRoute,
+  DietPlanningMethodologyRoute: DietPlanningMethodologyRoute,
+  DietPlanningPlansRoute: DietPlanningPlansRouteWithChildren,
+  DietPlanningSafetyRoute: DietPlanningSafetyRoute,
+  DietPlanningIndexRoute: DietPlanningIndexRoute,
+}
+
+const DietPlanningRouteWithChildren = DietPlanningRoute._addFileChildren(
+  DietPlanningRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CardioRoute: CardioRoute,
   DietRoute: DietRoute,
+  DietPlanningRoute: DietPlanningRouteWithChildren,
   EatRoute: EatRoute,
   ExercisesRoute: ExercisesRoute,
   FoodsRoute: FoodsRoute,

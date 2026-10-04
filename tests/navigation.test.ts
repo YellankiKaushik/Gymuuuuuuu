@@ -15,7 +15,7 @@ describe('shell manifest', () => {
     expect(navigationItems.filter((item) => item.mobilePrimary).map((item) => item.href)).toEqual(['/', '/learn', '/programs', '/foods', '/progress'])
   })
   it('matches navigation aliases and keeps detail routes out of navigation search', () => {
-    for (const [query, href] of [['calorie', '/diet'], ['vitamins', '/nutrients'], ['sleep', '/recovery'], ['log workout', '/workout'], ['history', '/workout/history']]) expect(searchNavigation(query ?? '').some((item) => item.href === href)).toBe(true)
+    for (const [query, href] of [['calorie', '/diet-planning'], ['vitamins', '/nutrients'], ['sleep', '/recovery'], ['log workout', '/workout'], ['history', '/workout/history']]) expect(searchNavigation(query ?? '').some((item) => item.href === href)).toBe(true)
     expect(searchNavigation('').some((item) => item.href.includes('$'))).toBe(false)
     expect(searchNavigation('not-a-real-module')).toEqual([])
   })
@@ -26,3 +26,4 @@ describe('shell manifest', () => {
     expect(preferencesSchema.safeParse({ theme: 'system', units: 'metric', sidebarCollapsed: 'yes' }).success).toBe(false)
   })
 })
+
