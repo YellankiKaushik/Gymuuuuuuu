@@ -1,0 +1,41 @@
+PHASE 15 — QUICK IMPLEMENTATION REFERENCE
+
+UPLOAD TO LOVABLE
+1. Phase_15_Body_Progress_Dashboard_Analytics.md
+2. Phase_15_Body_Progress_Analytics_Data_Schema.json
+3. Phase_15_Body_Progress_Analytics_Reference_Data.json
+4. Phase_15_Lovable_Prompt_Package.txt
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+
+DEPENDENCIES
+- Phase 02 Muscle schema/taxonomy
+- Phase 03 Exercise schema/taxonomy
+- Phase 05 Program schema/taxonomy
+- Phase 06 Workout Tracker schema/reference
+- Phase 07 Food schema/taxonomy
+- Phase 08 Nutrient schema/taxonomy
+- Phase 09 Diet Planning schema/reference
+- Phase 10 Nutrition Tracker schema/reference
+- Phase 12 Recovery/Sleep/Mobility schema/reference
+- Phase 13 Cardio/Conditioning schema/reference
+- Phase 14 Supplements schema/reference only if implemented
+
+CORE RULES
+- Raw records are canonical; analytics are rebuildable.
+- Every metric exposes formula, version, sample count and exclusions.
+- No body-fat calculator.
+- No photo analysis or body rating.
+- No composite health, fitness, recovery, nutrition or body score.
+- No causal claims.
+- No calories burned or VO2max.
+- No goal-completion prediction.
+- Circumference protocols and body-composition methods remain separate.
+- Nutrition averages require user-declared complete days.
+- Missing data stays missing.
+- Photos are sanitized locally; default JSON excludes binaries.
+- No personal values leave the browser.
+
+SEED STATUS
+All knowledge topics, measurement protocols and widget identities are draft contracts. Lovable must not generate factual articles from titles.

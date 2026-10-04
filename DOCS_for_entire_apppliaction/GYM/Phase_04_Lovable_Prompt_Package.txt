@@ -1,0 +1,104 @@
+FITNESS OS — PHASE 04 LOVABLE PROMPT PACKAGE
+Workout Science
+Version 1.0 — 5 August 2026
+
+FILES TO ATTACH
+
+Permanent context:
+- Phase_00_Master_Foundation_Lovable_Specification.md
+- Phase_00 project knowledge already pasted into Lovable Project Knowledge
+
+Previous-phase contracts:
+- Phase_01_Application_Shell_Navigation_Design_System.md
+- Phase_02_Muscle_Functional_Anatomy_Library.md
+- Phase_02_Muscle_Data_Schema.json
+- Phase_02_Seed_Taxonomy.json
+- Phase_03_Exercise_Encyclopedia.md
+- Phase_03_Exercise_Data_Schema.json
+- Phase_03_Seed_Exercise_Taxonomy.json
+
+Current phase:
+- Phase_04_Workout_Science.md
+- Phase_04_Workout_Science_Data_Schema.json
+- Phase_04_Seed_Workout_Science_Taxonomy.json
+- Phase_04_Lovable_Prompt_Package.txt
+
+Do not attach DOCX or quick-reference files to Lovable unless needed for human review.
+
+============================================================
+PROMPT 1 — PLAN MODE
+============================================================
+
+Read all attached Phase 00–04 documents and JSON files completely. Do not modify code.
+
+Prepare a formal implementation plan for Phase 04 only. Audit the existing framework, Phase 01 shell, Phase 02 anatomy contracts, Phase 03 exercise contracts, routes, shared components, validation and tests. List exact files to create, modify and protect. Map the Phase 04 JSON Schema into strict TypeScript validation without weakening publication gates. Define repository-owned topic/source loading, atomic claim validation, evidence and population metadata, topic/exercise relationship checks, coverage reports, catalogue search/filter/sort with URL state, learning paths, glossary, advanced-method catalogue, practical-first detail template, evidence/decision/comparison components, draft/deprecated handling, documentation and tests mapped to every acceptance criterion.
+
+Non-negotiable: no authentication, backend, Supabase, Lovable Cloud, runtime CMS, personalized program generation, workout logging, AI coaching, medical diagnosis, injury treatment, unsourced numeric prescriptions, universal “best” claims, fabricated publishable science or rewriting Phase 03 exercise technique. Preserve Phases 00–03 and all stable IDs.
+
+End with every Phase 04 acceptance criterion and request approval.
+
+============================================================
+PLAN REVIEW CHECKLIST
+============================================================
+
+Reject the plan unless it:
+
+1. Builds only Workout Science.
+2. Preserves all Phase 00–03 behavior and stable IDs.
+3. Uses repository-owned static data and build-time validation.
+4. Treats the 98 seed records as draft identities only.
+5. Implements atomic claims with source, population, evidence, confidence and limitations.
+6. Adds /learn/workout-science, topic detail, methods and glossary routes.
+7. Implements catalogue search, filters, sorting and URL restoration.
+8. Implements learning paths and practical-first topic pages.
+9. Builds evidence, decision-framework, goal-context, myth and comparison components.
+10. Validates relationships to Phase 03 exercises.
+11. Blocks unpublished records from public routes.
+12. Includes accessibility, responsive, data and production-build testing.
+13. Does not add programs, tracking, calculators, a backend or authentication.
+14. Does not generate publishable training-science content.
+
+============================================================
+PROMPT 2 — AGENT MODE
+============================================================
+
+Implement the approved Phase 04 plan exactly. Build only the Workout Science module on top of Phases 00–03.
+
+Use repository-owned validated data and the attached draft seed taxonomy. Do not fabricate missing factual articles or mark draft identities published. Implement the catalogue, learning paths, URL filters, search, sorting, topic template, glossary, advanced-method catalogue, evidence confidence, atomic claims, population and limitation display, decision frameworks, goal-context matrices, comparisons, myths, sources, review metadata, relationships and safe status states. Reference Phase 03 exercise IDs directly and never duplicate exercise technique.
+
+Run schema and cross-file validation, type-check, lint, automated tests, production build, accessibility checks and responsive inspection. Update docs/workout-science.md, docs/content-governance/workout-science-evidence.md and docs/phases/phase-04.md. Report exact files changed, commands/results, known limitations and acceptance status.
+
+============================================================
+PROMPT 3 — VERIFICATION
+============================================================
+
+Audit the implementation against the complete Phase 04 specification. Produce a table with criterion, pass/fail, evidence, files and required fix.
+
+Verify scope boundaries; no backend/authentication/program generator/logger; schema publication gates; atomic claim sources, populations and limitations; Phase 03 ID integrity; search and URL restoration; practical-first detail pages; correct terminology distinctions; qualified goal context; no universal prescriptions or medical advice; periodization and advanced-method nuance; glossary and comparison accessibility; draft/deprecated states; mobile, dark mode, keyboard, focus, zoom and reflow; and all validation/test/build results.
+
+Fix only verified Phase 04 defects. Preserve passing Phase 00–03 behavior and rerun the relevant checks.
+
+============================================================
+PROMPT 4 — REVIEWED CONTENT INGESTION
+============================================================
+
+Import only the reviewed Workout Science records and source records I attach. Validate every topic against the Phase 04 schema and all related exercise IDs against Phase 03. Do not rewrite factual fields, infer missing evidence levels, invent numeric ranges, omit population limits, create new conclusions, or mark a record published when required claim, source, limitation, review or relationship fields are incomplete.
+
+Before changing the application, return a rejected-record report listing record ID, exact field path, error, missing dependency and corrective action. Import only records that pass every publication gate.
+
+============================================================
+PROMPT 5 — FOCUSED CORRECTION
+============================================================
+
+Correct only the verified Phase 04 defects below. Preserve all passing Phase 00–04 behavior. Identify root cause, exact file impact, smallest fix and regression test. Run relevant content validation, relationship validation, type-check, lint, tests and production build. Do not redesign, migrate frameworks, add a backend or expand into workout programs or tracking.
+
+[PASTE VERIFIED DEFECTS]
+
+============================================================
+GITHUB CHECKPOINT
+============================================================
+
+After all acceptance criteria pass, create or verify a checkpoint named:
+phase-04-workout-science-complete
+
+Do not begin Phase 05 until the checkpoint exists and Phase 04 verification is clean.

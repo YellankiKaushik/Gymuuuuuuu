@@ -1,0 +1,974 @@
+{
+  "referenceDataVersion": 1,
+  "reviewedThrough": "2026-08-05",
+  "moduleId": "phase_18",
+  "sources": [
+    {
+      "id": "src_lovable_github",
+      "title": "Sync your Lovable project with GitHub",
+      "publisher": "Lovable",
+      "reviewed": "2026-08-05",
+      "url": "https://docs.lovable.dev/integrations/github",
+      "roles": [
+        "lovable_git_sync",
+        "branch_workflow",
+        "repository_portability"
+      ],
+      "note": "Lovable syncs one active branch at a time. Changes on that branch sync in both directions. Connecting creates a private repository by default. Transferring the repository or renaming the owner breaks sync; repository renames are tracked."
+    },
+    {
+      "id": "src_vercel_git",
+      "title": "Deploying Git Repositories with Vercel",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/git",
+      "roles": [
+        "git_deployments",
+        "preview_deployments",
+        "production_branch"
+      ],
+      "note": "Branch pushes create previews and production-branch changes create production deployments."
+    },
+    {
+      "id": "src_vercel_github",
+      "title": "Deploying GitHub Projects with Vercel",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/git/vercel-for-github",
+      "roles": [
+        "github_integration",
+        "preview_urls",
+        "fork_authorization"
+      ],
+      "note": "Vercel posts preview deployments for pull requests and protects fork previews from unapproved access to deployment secrets."
+    },
+    {
+      "id": "src_vercel_environments",
+      "title": "Environments",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/deployments/environments",
+      "roles": [
+        "local",
+        "preview",
+        "production"
+      ],
+      "note": "Vercel provides Local, Preview and Production environments; environment-specific behavior must be verified separately."
+    },
+    {
+      "id": "src_vercel_deployment_checks",
+      "title": "Deployment Checks",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/deployment-checks",
+      "roles": [
+        "release_gating",
+        "github_status_checks"
+      ],
+      "note": "Where available, deployment checks can gate production promotion on selected GitHub checks. The release must not assume plan availability."
+    },
+    {
+      "id": "src_vercel_rollback",
+      "title": "Rolling back a production deployment",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/deployments/rollback-production-deployment",
+      "roles": [
+        "rollback",
+        "incident_recovery"
+      ],
+      "note": "Vercel can reassign production traffic to an earlier deployment, but code rollback does not reverse browser-side data migrations."
+    },
+    {
+      "id": "src_vercel_promote",
+      "title": "Promoting a preview deployment to production",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/deployments/promote-preview-to-production",
+      "roles": [
+        "preview_verification",
+        "production_promotion"
+      ],
+      "note": "Promotion rebuilds with production environment variables, so production must be rechecked even after preview passes."
+    },
+    {
+      "id": "src_vercel_domain",
+      "title": "Setting up a custom domain",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/domains/set-up-custom-domain",
+      "roles": [
+        "custom_domain",
+        "dns",
+        "tls"
+      ],
+      "note": "Inspect the exact DNS records shown for the project; Vercel provisions TLS after verification."
+    },
+    {
+      "id": "src_vercel_env",
+      "title": "Environment variables",
+      "publisher": "Vercel",
+      "reviewed": "2026-08-05",
+      "url": "https://vercel.com/docs/environment-variables",
+      "roles": [
+        "environment_variables",
+        "secret_separation"
+      ],
+      "note": "Variables can differ across Development, Preview and Production. This local-first app should have no secrets unless a later approved feature requires them."
+    },
+    {
+      "id": "src_github_protection",
+      "title": "About protected branches",
+      "publisher": "GitHub",
+      "reviewed": "2026-08-05",
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "roles": [
+        "branch_protection",
+        "required_checks",
+        "pull_requests"
+      ],
+      "note": "Required status checks can prevent merges until checks pass. Feature availability depends on repository visibility and account plan."
+    },
+    {
+      "id": "src_github_dependabot",
+      "title": "Dependabot quickstart guide",
+      "publisher": "GitHub",
+      "reviewed": "2026-08-05",
+      "url": "https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart",
+      "roles": [
+        "dependency_alerts",
+        "security_updates",
+        "version_updates"
+      ],
+      "note": "Dependabot alerts, security updates and version updates are distinct capabilities."
+    },
+    {
+      "id": "src_github_codeql",
+      "title": "Configuring default setup for code scanning",
+      "publisher": "GitHub",
+      "reviewed": "2026-08-05",
+      "url": "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning",
+      "roles": [
+        "static_security_analysis",
+        "codeql"
+      ],
+      "note": "Code scanning availability depends on repository visibility and GitHub plan. It is conditional, not a universal release gate."
+    },
+    {
+      "id": "src_setup_node",
+      "title": "actions/setup-node",
+      "publisher": "GitHub Actions",
+      "reviewed": "2026-08-05",
+      "url": "https://github.com/actions/setup-node",
+      "roles": [
+        "node_version",
+        "dependency_cache",
+        "ci_install"
+      ],
+      "note": "Specify the project Node version, commit the package-manager lockfile and use the immutable CI install command for the detected package manager."
+    },
+    {
+      "id": "src_next_testing",
+      "title": "Testing overview",
+      "publisher": "Next.js",
+      "reviewed": "2026-08-05",
+      "url": "https://nextjs.org/docs/app/guides/testing",
+      "roles": [
+        "test_layers",
+        "framework_testing"
+      ],
+      "note": "Test-tool choice must follow the actual Lovable scaffold; do not migrate the framework for this phase."
+    },
+    {
+      "id": "src_next_vitest",
+      "title": "Testing with Vitest",
+      "publisher": "Next.js",
+      "reviewed": "2026-08-05",
+      "url": "https://nextjs.org/docs/app/guides/testing/vitest",
+      "roles": [
+        "unit_tests",
+        "component_tests"
+      ],
+      "note": "Vitest and Testing Library are suitable when compatible with the actual scaffold; async server behavior requires browser-level coverage where unit support is incomplete."
+    },
+    {
+      "id": "src_testing_library",
+      "title": "React Testing Library",
+      "publisher": "Testing Library",
+      "reviewed": "2026-08-05",
+      "url": "https://testing-library.com/docs/react-testing-library/intro/",
+      "roles": [
+        "component_testing",
+        "user_behavior"
+      ],
+      "note": "Tests should interact with accessible DOM behavior instead of component implementation details."
+    },
+    {
+      "id": "src_vitest_coverage",
+      "title": "Coverage",
+      "publisher": "Vitest",
+      "reviewed": "2026-08-05",
+      "url": "https://vitest.dev/guide/coverage.html",
+      "roles": [
+        "code_coverage",
+        "v8_coverage"
+      ],
+      "note": "Coverage is a diagnostic and release input, not proof of correctness. Critical calculation and migration code receives stricter coverage than ordinary presentation code."
+    },
+    {
+      "id": "src_next_playwright",
+      "title": "Testing with Playwright",
+      "publisher": "Next.js",
+      "reviewed": "2026-08-05",
+      "url": "https://nextjs.org/docs/app/guides/testing/playwright",
+      "roles": [
+        "e2e",
+        "production_build_testing"
+      ],
+      "note": "Run browser tests against a production-like build and cover real navigation and persistence flows."
+    },
+    {
+      "id": "src_playwright_projects",
+      "title": "Playwright projects",
+      "publisher": "Playwright",
+      "reviewed": "2026-08-05",
+      "url": "https://playwright.dev/docs/test-projects",
+      "roles": [
+        "browser_matrix",
+        "device_matrix",
+        "environment_matrix"
+      ],
+      "note": "Projects can run the same tests across Chromium, Firefox, WebKit and emulated devices."
+    },
+    {
+      "id": "src_playwright_ci",
+      "title": "Continuous Integration",
+      "publisher": "Playwright",
+      "reviewed": "2026-08-05",
+      "url": "https://playwright.dev/docs/ci",
+      "roles": [
+        "e2e_ci",
+        "browser_install",
+        "failure_artifacts"
+      ],
+      "note": "CI must install browser dependencies and retain traces/reports only when they contain synthetic test data."
+    },
+    {
+      "id": "src_wcag",
+      "title": "Web Content Accessibility Guidelines 2.2",
+      "publisher": "W3C",
+      "reviewed": "2026-08-05",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "roles": [
+        "accessibility_standard",
+        "manual_evaluation"
+      ],
+      "note": "WCAG conformance requires automated and human evaluation; automated tools alone cannot prove conformance."
+    },
+    {
+      "id": "src_axe",
+      "title": "axe-core",
+      "publisher": "Deque Systems",
+      "reviewed": "2026-08-05",
+      "url": "https://github.com/dequelabs/axe-core",
+      "roles": [
+        "automated_accessibility",
+        "wcag_rules"
+      ],
+      "note": "Automated accessibility testing finds a subset of issues; manual keyboard, zoom, screen-reader and cognitive review remains required."
+    },
+    {
+      "id": "src_next_production",
+      "title": "Production checklist",
+      "publisher": "Next.js",
+      "reviewed": "2026-08-05",
+      "url": "https://nextjs.org/docs/app/guides/production-checklist",
+      "roles": [
+        "production_build",
+        "security",
+        "performance",
+        "metadata"
+      ],
+      "note": "The actual framework may differ; apply equivalent production checks without migrating scaffolds."
+    },
+    {
+      "id": "src_next_csp",
+      "title": "Content Security Policy",
+      "publisher": "Next.js",
+      "reviewed": "2026-08-05",
+      "url": "https://nextjs.org/docs/app/guides/content-security-policy",
+      "roles": [
+        "csp",
+        "xss_mitigation",
+        "third_party_sources"
+      ],
+      "note": "CSP must be tested against the actual rendering mode and approved external resources; do not copy a nonce-based pattern into a static app blindly."
+    },
+    {
+      "id": "src_lighthouse_ci",
+      "title": "Lighthouse CI",
+      "publisher": "Google Chrome",
+      "reviewed": "2026-08-05",
+      "url": "https://github.com/GoogleChrome/lighthouse-ci",
+      "roles": [
+        "performance_regression",
+        "resource_budgets",
+        "lab_audits"
+      ],
+      "note": "Use lab audits and budgets as regression controls; they are not production field data."
+    },
+    {
+      "id": "src_web_vitals",
+      "title": "Web Vitals",
+      "publisher": "Google web.dev",
+      "reviewed": "2026-08-05",
+      "url": "https://web.dev/articles/vitals",
+      "roles": [
+        "core_web_vitals",
+        "field_metrics"
+      ],
+      "note": "LCP, INP and CLS are field metrics with recommended thresholds. Without privacy-approved field telemetry, the app must not claim production CWV compliance from Lighthouse alone."
+    }
+  ],
+  "testSuites": [
+    {
+      "id": "repo_contract",
+      "name": "Repository contract",
+      "layer": "static",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "one supported package manager and lockfile",
+        "declared runtime version",
+        "strict TypeScript configuration",
+        "no generated secrets or personal data",
+        "required scripts exist"
+      ]
+    },
+    {
+      "id": "format_lint",
+      "name": "Formatting and lint",
+      "layer": "static",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "formatter check",
+        "framework lint",
+        "accessibility lint",
+        "no ignored errors without documented waiver"
+      ]
+    },
+    {
+      "id": "typecheck",
+      "name": "Type checking",
+      "layer": "static",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "strict typecheck",
+        "no emit",
+        "no unchecked schema casts"
+      ]
+    },
+    {
+      "id": "data_validation",
+      "name": "Static data validation",
+      "layer": "data",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "all JSON validates",
+        "stable IDs and slugs unique",
+        "relationships resolve",
+        "draft content excluded",
+        "source and license fields complete",
+        "no missing-as-zero conversion"
+      ]
+    },
+    {
+      "id": "unit",
+      "name": "Unit calculations",
+      "layer": "unit",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "formula vectors from phases 06-17",
+        "unit conversions",
+        "date and timezone behavior",
+        "aggregation",
+        "comparison",
+        "search ranking",
+        "export escaping"
+      ]
+    },
+    {
+      "id": "component",
+      "name": "Component behavior",
+      "layer": "component",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "forms and validation",
+        "keyboard interactions",
+        "empty/error/loading states",
+        "accessible labels and status messages",
+        "no implementation-detail assertions"
+      ]
+    },
+    {
+      "id": "storage_integration",
+      "name": "Storage integration",
+      "layer": "integration",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "IndexedDB transactions",
+        "migrations",
+        "cross-tab locks",
+        "quota errors",
+        "persistence denial",
+        "backup and restore",
+        "rollback compatibility"
+      ]
+    },
+    {
+      "id": "e2e_smoke",
+      "name": "Critical E2E smoke",
+      "layer": "e2e",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "public navigation",
+        "exercise and food search",
+        "start and finish workout",
+        "nutrition entry",
+        "sleep/recovery entry",
+        "backup export and preview restore",
+        "fresh-browser startup"
+      ]
+    },
+    {
+      "id": "e2e_full",
+      "name": "Full browser regression",
+      "layer": "e2e",
+      "requiredOn": [
+        "main",
+        "release",
+        "scheduled"
+      ],
+      "checks": [
+        "module-specific journeys",
+        "history editing",
+        "offline/local persistence where implemented",
+        "restore conflicts",
+        "custom domain preview"
+      ]
+    },
+    {
+      "id": "accessibility_auto",
+      "name": "Automated accessibility",
+      "layer": "accessibility",
+      "requiredOn": [
+        "pull_request",
+        "main",
+        "release"
+      ],
+      "checks": [
+        "axe on representative states",
+        "semantic landmarks",
+        "form names",
+        "contrast rules where deterministic",
+        "dialog and live-region checks"
+      ]
+    },
+    {
+      "id": "accessibility_manual",
+      "name": "Manual accessibility",
+      "layer": "manual",
+      "requiredOn": [
+        "release"
+      ],
+      "checks": [
+        "keyboard-only",
+        "visible focus",
+        "200% and 400% zoom/reflow",
+        "screen-reader smoke",
+        "reduced motion",
+        "touch target and dragging alternatives"
+      ]
+    },
+    {
+      "id": "privacy_network",
+      "name": "Privacy and network audit",
+      "layer": "security",
+      "requiredOn": [
+        "main",
+        "release"
+      ],
+      "checks": [
+        "approved request allowlist",
+        "no personal records in requests",
+        "no search or note telemetry",
+        "no unapproved analytics",
+        "external embeds are user-triggered where required"
+      ]
+    },
+    {
+      "id": "security_headers",
+      "name": "Security headers and supply chain",
+      "layer": "security",
+      "requiredOn": [
+        "main",
+        "release"
+      ],
+      "checks": [
+        "CSP or equivalent reviewed policy",
+        "referrer and permissions policy",
+        "no committed secrets",
+        "dependency alerts reviewed",
+        "lockfile integrity",
+        "external link isolation"
+      ]
+    },
+    {
+      "id": "performance",
+      "name": "Performance regression",
+      "layer": "performance",
+      "requiredOn": [
+        "main",
+        "release"
+      ],
+      "checks": [
+        "production build",
+        "representative Lighthouse CI routes",
+        "route resource budgets",
+        "bundle inspection",
+        "no blocking index work on main thread"
+      ]
+    },
+    {
+      "id": "production_smoke",
+      "name": "Production smoke",
+      "layer": "deployment",
+      "requiredOn": [
+        "release"
+      ],
+      "checks": [
+        "canonical domain and TLS",
+        "home and critical routes",
+        "fresh local database",
+        "existing compatible database",
+        "backup download",
+        "no production console errors",
+        "no unexpected network calls"
+      ]
+    }
+  ],
+  "browserMatrix": [
+    {
+      "id": "pr_chromium_desktop",
+      "cadence": "pull_request",
+      "engine": "chromium",
+      "profile": "desktop",
+      "required": true
+    },
+    {
+      "id": "pr_chromium_mobile",
+      "cadence": "pull_request",
+      "engine": "chromium",
+      "profile": "mobile_android",
+      "required": true
+    },
+    {
+      "id": "main_firefox_desktop",
+      "cadence": "main",
+      "engine": "firefox",
+      "profile": "desktop",
+      "required": true
+    },
+    {
+      "id": "main_webkit_desktop",
+      "cadence": "main",
+      "engine": "webkit",
+      "profile": "desktop",
+      "required": true
+    },
+    {
+      "id": "release_webkit_mobile",
+      "cadence": "release",
+      "engine": "webkit",
+      "profile": "mobile_safari_emulation",
+      "required": true
+    },
+    {
+      "id": "manual_real_ios",
+      "cadence": "release",
+      "engine": "safari",
+      "profile": "real_ios_device",
+      "required": true,
+      "automation": false
+    },
+    {
+      "id": "manual_real_android",
+      "cadence": "release",
+      "engine": "chrome",
+      "profile": "real_android_device",
+      "required": true,
+      "automation": false
+    }
+  ],
+  "releaseGates": [
+    {
+      "id": "gate_repository_clean",
+      "name": "Repository and toolchain are reproducible",
+      "blocking": true
+    },
+    {
+      "id": "gate_static",
+      "name": "Formatting, lint and strict typecheck pass",
+      "blocking": true
+    },
+    {
+      "id": "gate_data",
+      "name": "All static data and relationships validate",
+      "blocking": true
+    },
+    {
+      "id": "gate_unit",
+      "name": "Critical formulas, migrations and export logic pass",
+      "blocking": true
+    },
+    {
+      "id": "gate_e2e",
+      "name": "Critical E2E journeys pass on required browsers",
+      "blocking": true
+    },
+    {
+      "id": "gate_accessibility",
+      "name": "Automated checks and manual release review pass",
+      "blocking": true
+    },
+    {
+      "id": "gate_privacy",
+      "name": "No personal data leaves the browser",
+      "blocking": true
+    },
+    {
+      "id": "gate_security",
+      "name": "No unresolved release-blocking secret, CSP or dependency issue",
+      "blocking": true
+    },
+    {
+      "id": "gate_performance",
+      "name": "No unapproved performance-budget regression",
+      "blocking": true
+    },
+    {
+      "id": "gate_storage",
+      "name": "Backup, restore, migration and rollback compatibility pass",
+      "blocking": true
+    },
+    {
+      "id": "gate_preview",
+      "name": "Vercel preview acceptance checklist passes",
+      "blocking": true
+    },
+    {
+      "id": "gate_domain",
+      "name": "Canonical production domain and TLS are valid",
+      "blocking": true
+    },
+    {
+      "id": "gate_manifest",
+      "name": "Release manifest and changelog are complete",
+      "blocking": true
+    },
+    {
+      "id": "gate_owner_backup",
+      "name": "Owner creates an external Phase 17 backup before first production upgrade with schema changes",
+      "blocking": true
+    },
+    {
+      "id": "gate_production_smoke",
+      "name": "Production smoke checks pass after release",
+      "blocking": true
+    }
+  ],
+  "requiredPackageScripts": [
+    "format:check",
+    "lint",
+    "typecheck",
+    "validate:data",
+    "test:unit",
+    "test:coverage",
+    "test:e2e",
+    "test:a11y",
+    "build",
+    "check"
+  ],
+  "githubWorkflows": [
+    {
+      "id": "ci",
+      "trigger": [
+        "pull_request",
+        "push:main"
+      ],
+      "jobs": [
+        "repository_contract",
+        "format_lint_typecheck",
+        "data_validation",
+        "unit_component",
+        "build"
+      ]
+    },
+    {
+      "id": "e2e",
+      "trigger": [
+        "pull_request",
+        "push:main",
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        "chromium_smoke",
+        "full_browser_matrix_on_main",
+        "artifact_upload_on_failure"
+      ]
+    },
+    {
+      "id": "quality",
+      "trigger": [
+        "push:main",
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        "accessibility",
+        "privacy_network",
+        "performance"
+      ]
+    },
+    {
+      "id": "scheduled_maintenance",
+      "trigger": [
+        "weekly"
+      ],
+      "jobs": [
+        "dependency_review",
+        "external_link_check",
+        "full_browser_regression",
+        "data_freshness_report"
+      ]
+    },
+    {
+      "id": "release",
+      "trigger": [
+        "tag:v*",
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        "all_release_gates",
+        "release_manifest",
+        "artifact_archive"
+      ]
+    }
+  ],
+  "vercelEnvironments": [
+    {
+      "id": "development",
+      "purpose": "Local development against synthetic data; no production personal data."
+    },
+    {
+      "id": "preview",
+      "purpose": "Every branch and pull request; full smoke and visual acceptance without touching the production origin."
+    },
+    {
+      "id": "production",
+      "purpose": "Canonical custom domain; real personal data may exist only after Phase 17 backup and restore are verified."
+    }
+  ],
+  "originContinuityRules": [
+    "Choose one canonical custom production domain before using real personal records.",
+    "Redirect alternate hostnames to the canonical host; do not use both as separate app origins.",
+    "Changing domain, protocol or port creates a different browser-storage origin.",
+    "To move origins: export from the old origin, verify the file, open the new origin, preview restore, then restore.",
+    "Never delete or detach the old origin until the migrated backup is verified on the new origin."
+  ],
+  "dataCompatibilityPolicy": {
+    "migrationStyle": "additive_copy_on_write_first",
+    "destructiveMigration": "requires_explicit_release_approval_and_external_backup",
+    "previousReleaseCompatibility": "test at least the immediately previous production version against the candidate database state",
+    "rollbackRule": "Vercel code rollback is allowed only when the target code can read the current local data schema. Otherwise ship a forward fix.",
+    "manifestFields": [
+      "moduleSchemaVersions",
+      "minimumReadableVersions",
+      "maximumReadableVersions",
+      "migrationIds",
+      "rollbackSafe"
+    ]
+  },
+  "artifactRetention": {
+    "allowed": [
+      "synthetic_test_reports",
+      "playwright_traces_with_synthetic_data",
+      "coverage_reports",
+      "lighthouse_reports_without_private_urls",
+      "release_manifest",
+      "build_logs_without_secrets"
+    ],
+    "prohibited": [
+      "real_workout_data",
+      "real_nutrition_data",
+      "progress_photos",
+      "symptom_notes",
+      "backup_files",
+      "environment_secrets",
+      "private_search_queries"
+    ],
+    "defaultDays": 30
+  },
+  "integrityTests": [
+    {
+      "id": "t_repo_detect",
+      "expect": "CI detects the actual package manager, lockfile, framework and runtime before generating workflows."
+    },
+    {
+      "id": "t_no_framework_migration",
+      "expect": "Phase 18 does not migrate the Lovable-native framework."
+    },
+    {
+      "id": "t_lockfile",
+      "expect": "CI uses the immutable install command and fails if the lockfile is inconsistent."
+    },
+    {
+      "id": "t_synthetic_only",
+      "expect": "All automated fixtures and uploaded artifacts contain synthetic records only."
+    },
+    {
+      "id": "t_data_schema",
+      "expect": "Every public and personal-data schema test passes without converting missing values to zero."
+    },
+    {
+      "id": "t_migration_previous",
+      "expect": "Candidate code reads a database produced by the previous production version."
+    },
+    {
+      "id": "t_rollback_compat",
+      "expect": "Previous production code is tested against the candidate-migrated database before declaring rollback safe."
+    },
+    {
+      "id": "t_quota",
+      "expect": "Quota errors preserve existing data and produce a recoverable UI state."
+    },
+    {
+      "id": "t_restore_zero_write",
+      "expect": "Restore preview performs zero canonical writes."
+    },
+    {
+      "id": "t_cross_origin",
+      "expect": "The runbook does not claim automatic browser-data transfer across origins."
+    },
+    {
+      "id": "t_private_network",
+      "expect": "No personal field appears in captured network requests."
+    },
+    {
+      "id": "t_no_analytics",
+      "expect": "No analytics SDK exists unless separately approved and documented."
+    },
+    {
+      "id": "t_accessibility_manual",
+      "expect": "Release cannot claim WCAG compliance solely from axe or Lighthouse."
+    },
+    {
+      "id": "t_mobile_real",
+      "expect": "Release includes manual smoke on one real iOS and one real Android device."
+    },
+    {
+      "id": "t_preview",
+      "expect": "Every feature release is verified on a Vercel preview before main is merged."
+    },
+    {
+      "id": "t_prod_env",
+      "expect": "Production is rechecked because production environment variables and origin differ from preview."
+    },
+    {
+      "id": "t_custom_domain",
+      "expect": "Canonical domain, redirects and TLS pass before real personal use."
+    },
+    {
+      "id": "t_actions_permissions",
+      "expect": "GitHub Actions workflows use least-privilege permissions and no write token on untrusted PR code."
+    },
+    {
+      "id": "t_action_pinning",
+      "expect": "Third-party actions are pinned according to repository policy and updated through reviewed Dependabot PRs."
+    },
+    {
+      "id": "t_dependabot",
+      "expect": "Dependency alerts are enabled; version-update cadence is documented."
+    },
+    {
+      "id": "t_codeql_conditional",
+      "expect": "CodeQL is required only where repository visibility and plan support it."
+    },
+    {
+      "id": "t_release_manifest",
+      "expect": "Every production release records commit, app version, content versions, schema compatibility and deployment URL."
+    },
+    {
+      "id": "t_rollback_runbook",
+      "expect": "Rollback runbook distinguishes code rollback, data recovery and origin migration."
+    },
+    {
+      "id": "t_artifact_privacy",
+      "expect": "CI artifacts never include real personal data or backup files."
+    },
+    {
+      "id": "t_build_clean",
+      "expect": "A fresh clone can install, validate, test and build without Lovable access."
+    },
+    {
+      "id": "t_vercel_portability",
+      "expect": "Deployment does not depend on Lovable runtime services or hidden cloud resources."
+    },
+    {
+      "id": "t_source_registry",
+      "expect": "Official source URLs and review dates are stored in the Phase 18 reference package."
+    },
+    {
+      "id": "t_no_field_claim",
+      "expect": "Lighthouse lab scores are not described as production Core Web Vitals field compliance."
+    },
+    {
+      "id": "t_no_silent_prod",
+      "expect": "A failed required check cannot be documented as release-ready."
+    },
+    {
+      "id": "t_owner_recovery",
+      "expect": "Owner can restore from GitHub, Vercel history and a Phase 17 data backup using written runbooks."
+    }
+  ]
+}

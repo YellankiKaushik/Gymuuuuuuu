@@ -1,0 +1,1129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fitness-os-workout-tracker-backup.schema.json",
+  "title": "Fitness OS Workout Tracker Backup Envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaVersion",
+    "exportedAt",
+    "appVersion",
+    "data"
+  ],
+  "properties": {
+    "format": {
+      "const": "fitness-os-workout-backup"
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "appVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "sourceDeviceLabel": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 120
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workoutPreferences",
+        "programTrackingStates",
+        "customExercises",
+        "workoutSessions"
+      ],
+      "properties": {
+        "workoutPreferences": {
+          "$ref": "#/$defs/workoutPreferences"
+        },
+        "programTrackingStates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/programTrackingState"
+          }
+        },
+        "customExercises": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/customExercise"
+          }
+        },
+        "workoutSessions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/workoutSession"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "workoutPreferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schemaVersion",
+        "weightUnit",
+        "distanceUnit",
+        "effortMode",
+        "defaultRestSeconds",
+        "autoStartRestTimer",
+        "timerSound",
+        "showPreviousPerformance",
+        "confirmBeforeDiscard",
+        "weekStartsOn",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "const": "workout-preferences"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "weightUnit": {
+          "enum": [
+            "kg",
+            "lb"
+          ]
+        },
+        "distanceUnit": {
+          "enum": [
+            "km",
+            "mi"
+          ]
+        },
+        "effortMode": {
+          "enum": [
+            "none",
+            "rir",
+            "rpe"
+          ]
+        },
+        "defaultRestSeconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "autoStartRestTimer": {
+          "type": "boolean"
+        },
+        "timerSound": {
+          "enum": [
+            "off",
+            "beep"
+          ]
+        },
+        "showPreviousPerformance": {
+          "type": "boolean"
+        },
+        "confirmBeforeDiscard": {
+          "type": "boolean"
+        },
+        "weekStartsOn": {
+          "enum": [
+            "monday",
+            "sunday"
+          ]
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "programTrackingState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "programInstanceId",
+        "schemaVersion",
+        "sequenceCursor",
+        "completedSessionCount",
+        "lastStartedCanonicalSessionId",
+        "lastCompletedCanonicalSessionId",
+        "lastCompletedAt",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "programInstanceId": {
+          "type": "string",
+          "pattern": "^program_instance_[a-z0-9_-]+$"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sequenceCursor": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "completedSessionCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "lastStartedCanonicalSessionId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^session_[a-z0-9_]+$"
+        },
+        "lastCompletedCanonicalSessionId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^session_[a-z0-9_]+$"
+        },
+        "lastCompletedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "customExercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schemaVersion",
+        "displayName",
+        "performanceMode",
+        "loadScope",
+        "createdAt",
+        "updatedAt",
+        "archivedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^custom_exercise_[a-z0-9_-]+$"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "performanceMode": {
+          "$ref": "#/$defs/performanceMode"
+        },
+        "loadScope": {
+          "$ref": "#/$defs/loadScope"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1000
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "archivedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "programRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "programInstanceId",
+        "canonicalProgramId",
+        "canonicalProgramVersion",
+        "canonicalSessionId",
+        "canonicalSessionNameSnapshot",
+        "scheduleSequenceIndex"
+      ],
+      "properties": {
+        "programInstanceId": {
+          "type": "string",
+          "pattern": "^program_instance_[a-z0-9_-]+$"
+        },
+        "canonicalProgramId": {
+          "type": "string",
+          "pattern": "^program_[a-z0-9_]+$"
+        },
+        "canonicalProgramVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "canonicalSessionId": {
+          "type": "string",
+          "pattern": "^session_[a-z0-9_]+$"
+        },
+        "canonicalSessionNameSnapshot": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "scheduleSequenceIndex": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "exerciseRef": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "exerciseId"
+          ],
+          "properties": {
+            "kind": {
+              "const": "canonical"
+            },
+            "exerciseId": {
+              "type": "string",
+              "pattern": "^exercise_[a-z0-9_]+$"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "customExerciseId"
+          ],
+          "properties": {
+            "kind": {
+              "const": "local_custom"
+            },
+            "customExerciseId": {
+              "type": "string",
+              "pattern": "^custom_exercise_[a-z0-9_-]+$"
+            }
+          }
+        }
+      ]
+    },
+    "plannedTarget": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "repsMin": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "repsMax": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "durationSecondsMin": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "durationSecondsMax": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "distanceMetersMin": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "distanceMetersMax": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "effortMode": {
+          "enum": [
+            "none",
+            "rir",
+            "rpe",
+            null
+          ]
+        },
+        "effortMin": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10
+        },
+        "effortMax": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10
+        },
+        "restSecondsMin": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "restSecondsMax": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "performanceMode": {
+      "enum": [
+        "load_reps",
+        "bodyweight_reps",
+        "reps_only",
+        "duration",
+        "distance_duration",
+        "load_duration",
+        "assisted_reps"
+      ]
+    },
+    "loadScope": {
+      "enum": [
+        "total_external",
+        "per_hand",
+        "machine_stack",
+        "added_load",
+        "assistance",
+        "bodyweight",
+        "not_applicable"
+      ]
+    },
+    "performance": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "loadGrams",
+            "reps"
+          ],
+          "properties": {
+            "mode": {
+              "const": "load_reps"
+            },
+            "loadGrams": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reps": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 10000
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "reps",
+            "addedLoadGrams"
+          ],
+          "properties": {
+            "mode": {
+              "const": "bodyweight_reps"
+            },
+            "reps": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 10000
+            },
+            "addedLoadGrams": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "reps"
+          ],
+          "properties": {
+            "mode": {
+              "const": "reps_only"
+            },
+            "reps": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 10000
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "durationSeconds"
+          ],
+          "properties": {
+            "mode": {
+              "const": "duration"
+            },
+            "durationSeconds": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "distanceMeters",
+            "durationSeconds"
+          ],
+          "properties": {
+            "mode": {
+              "const": "distance_duration"
+            },
+            "distanceMeters": {
+              "type": "number",
+              "minimum": 0
+            },
+            "durationSeconds": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "loadGrams",
+            "durationSeconds"
+          ],
+          "properties": {
+            "mode": {
+              "const": "load_duration"
+            },
+            "loadGrams": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "durationSeconds": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "assistanceGrams",
+            "reps"
+          ],
+          "properties": {
+            "mode": {
+              "const": "assisted_reps"
+            },
+            "assistanceGrams": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reps": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 10000
+            }
+          }
+        }
+      ]
+    },
+    "effort": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode"
+          ],
+          "properties": {
+            "mode": {
+              "const": "none"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "value"
+          ],
+          "properties": {
+            "mode": {
+              "const": "rir"
+            },
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "value"
+          ],
+          "properties": {
+            "mode": {
+              "const": "rpe"
+            },
+            "value": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 10
+            }
+          }
+        }
+      ]
+    },
+    "workoutSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "order",
+        "setType",
+        "status",
+        "plannedTarget",
+        "performance",
+        "effort",
+        "loadScope",
+        "restTargetSeconds",
+        "actualRestSeconds",
+        "completedAt",
+        "note",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^set_[a-z0-9_-]+$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "setType": {
+          "enum": [
+            "warmup",
+            "working",
+            "backoff",
+            "drop",
+            "amrap",
+            "technique",
+            "timed",
+            "distance",
+            "other"
+          ]
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "completed",
+            "skipped"
+          ]
+        },
+        "plannedTarget": {
+          "$ref": "#/$defs/plannedTarget"
+        },
+        "performance": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/performance"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "effort": {
+          "$ref": "#/$defs/effort"
+        },
+        "loadScope": {
+          "$ref": "#/$defs/loadScope"
+        },
+        "restTargetSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 7200
+        },
+        "actualRestSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 86400
+        },
+        "completedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1000
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "prescriptionSnapshot": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "canonicalPrescriptionId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 160
+        },
+        "canonicalBlockId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^block_[a-z0-9_]+$"
+        },
+        "programVersion": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 40
+        },
+        "role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "plannedSetCount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "progressionRuleId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^progression_[a-z0-9_]+$"
+        },
+        "substitutionGroupId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^substitution_[a-z0-9_]+$"
+        },
+        "notesSnapshot": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          }
+        }
+      }
+    },
+    "workoutExercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "order",
+        "exerciseRef",
+        "displayNameSnapshot",
+        "performanceMode",
+        "loadScope",
+        "prescriptionSnapshot",
+        "originalExerciseId",
+        "isProgramDeviation",
+        "sets",
+        "note",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^workout_exercise_[a-z0-9_-]+$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "exerciseRef": {
+          "$ref": "#/$defs/exerciseRef"
+        },
+        "displayNameSnapshot": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "performanceMode": {
+          "$ref": "#/$defs/performanceMode"
+        },
+        "loadScope": {
+          "$ref": "#/$defs/loadScope"
+        },
+        "prescriptionSnapshot": {
+          "$ref": "#/$defs/prescriptionSnapshot"
+        },
+        "originalExerciseId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^exercise_[a-z0-9_]+$"
+        },
+        "isProgramDeviation": {
+          "type": "boolean"
+        },
+        "sets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/workoutSet"
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 2000
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "workoutSession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schemaVersion",
+        "revision",
+        "status",
+        "source",
+        "title",
+        "localDate",
+        "timeZone",
+        "startedAt",
+        "pausedAt",
+        "completedAt",
+        "abandonedAt",
+        "accumulatedPausedSeconds",
+        "programRef",
+        "exerciseIds",
+        "exercises",
+        "sessionNote",
+        "sessionRpe",
+        "discomfortFlag",
+        "createdAt",
+        "updatedAt",
+        "deletedAt",
+        "dataOrigin",
+        "importBatchId"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^workout_[a-z0-9_-]+$"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "enum": [
+            "active",
+            "paused",
+            "completed",
+            "abandoned"
+          ]
+        },
+        "source": {
+          "enum": [
+            "program",
+            "ad_hoc",
+            "repeat",
+            "import"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "localDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "timeZone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "startedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "pausedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "completedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "abandonedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accumulatedPausedSeconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "programRef": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/programRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exerciseIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 160
+          },
+          "uniqueItems": true
+        },
+        "exercises": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/workoutExercise"
+          }
+        },
+        "sessionNote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 5000
+        },
+        "sessionRpe": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 10
+        },
+        "discomfortFlag": {
+          "enum": [
+            "none",
+            "noticed",
+            "stopped_set",
+            "stopped_session"
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "deletedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "dataOrigin": {
+          "enum": [
+            "local",
+            "imported"
+          ]
+        },
+        "importBatchId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 160
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+FITNESS OS - PHASE 10 LOVABLE PROMPT PACKAGE
+Version 1.0 - 5 August 2026
+
+============================================================
+PROMPT 1 - PLAN MODE
+============================================================
+Read the attached Phase 10 Nutrition Tracker specification, JSON Schema and reference-data file completely. Keep the Phase 00 Project Knowledge active. Read the Phase 07 food, Phase 08 nutrient and Phase 09 diet-planning contracts because Phase 10 depends on their stable IDs, units, source metadata and target semantics.
+
+Do not change code yet.
+
+Produce a precise implementation plan that:
+1. Lists every route, component, pure domain function, IndexedDB store, index, migration, repository, documentation file and test file to create or change.
+2. Preserves the no-authentication, local-only and no-runtime-API architecture.
+3. Explains the canonical food-profile eligibility gate.
+4. Explains exact mass and verified-portion conversion, including prohibited generic volume conversions.
+5. Explains immutable source and nutrient snapshots on every entry.
+6. Explains status-aware nutrient aggregation, missing values, trace values, not-detected values and completeness.
+7. Explains frozen Phase 09 target snapshots and optional Phase 08 reference snapshots.
+8. Explains custom foods, immutable revisions and quick-add limitations.
+9. Explains day/time-zone anchoring, meal slots, copy behavior and historical preservation.
+10. Explains IndexedDB transactions, migration, storage persistence, backup, restore and CSV export.
+11. Explains the Phase 11, Phase 15 and Phase 17 handoff contracts.
+12. Maps every acceptance criterion to automated or manual tests.
+
+Explicitly list what you will not build: authentication, backend, cloud health storage, barcode lookup, photo recognition, AI food estimation, generic volume-to-mass conversion, clinical diets, deficiency diagnosis, supplement dosing, exercise-calorie add-back, target auto-adjustment, recipes or meal plans.
+
+Wait for plan approval before implementation.
+
+============================================================
+PROMPT 2 - AGENT MODE IMPLEMENTATION
+============================================================
+Implement the approved Phase 10 plan exactly.
+
+Non-negotiable constraints:
+- Preserve Phases 00-09.
+- Use published Phase 07 food profiles only for canonical entries.
+- Do not fabricate a food profile or nutrient value.
+- Do not treat missing or trace values as zero.
+- Do not convert cups, tablespoons or millilitres to grams unless that exact food/profile has a verified gram weight.
+- Snapshot the exact canonical profile, source release, portion and nutrient values into every entry.
+- Do not silently recalculate historical entries after canonical data updates.
+- Freeze Phase 09 targets and Phase 08 references per day.
+- Do not diagnose deficiency, excess or dehydration.
+- Do not add authentication, Supabase, Firebase, remote APIs or cloud storage.
+- Store all personal nutrition data in IndexedDB.
+- Make derived daily totals rebuildable.
+- Add every required test and documentation file.
+
+If verified data is unavailable, show a neutral unavailable state and block canonical logging rather than inventing data.
+
+============================================================
+PROMPT 3 - VERIFICATION
+============================================================
+Audit the Phase 10 implementation against every requirement and acceptance criterion.
+
+Report PASS, FAIL or NOT TESTED for:
+- Routes and navigation.
+- Published-profile eligibility.
+- Exact mass conversions.
+- Verified portion conversion.
+- Prohibited generic volume conversion.
+- Source/profile/nutrient snapshot integrity.
+- Historical immutability after Phase 07 updates.
+- Status-aware aggregation.
+- Missing, trace and not-detected behavior.
+- Daily target freeze.
+- Reference scope rules.
+- Custom-food immutable revisions.
+- Quick-add missing-data behavior.
+- Meal copy and day copy.
+- Time-zone anchoring.
+- Editing, soft deletion and undo.
+- IndexedDB CRUD, transactions and migration.
+- Storage persistence states.
+- JSON backup, restore conflicts and CSV exports.
+- No remote request containing personal nutrition data.
+- Mobile, desktop, dark mode and accessibility.
+- Regression of Phases 00, 01, 06, 07, 08 and 09.
+
+Run every attached test vector. For each failure, name the exact file, expected result, observed result and correction. Do not claim completion while a blocking failure remains.
+
+============================================================
+PROMPT 4 - DATA INTEGRITY AUDIT
+============================================================
+Inspect the Phase 10 implementation specifically for nutrition-data corruption risks.
+
+Verify:
+1. No code path converts null, undefined, not_available or trace to numeric zero.
+2. No code path derives canonical energy from macros when source energy exists.
+3. No household measure is accepted without a profile-specific gram weight.
+4. Every entry stores source and profile snapshots.
+5. Canonical data updates do not rewrite stored entry snapshots.
+6. Custom-food edits create revisions rather than mutating historical revisions.
+7. Cached daily totals can be deleted and rebuilt exactly.
+8. Target and reference replacements require explicit user action and audit records.
+9. Copy defaults to the original snapshot.
+10. CSV and JSON exports preserve units, statuses and provenance.
+
+Report every violation by file and line. Fix none until the correction prompt is approved.
+
+============================================================
+PROMPT 5 - CORRECTION
+============================================================
+Fix only the Phase 10 failures identified in the verification and data-integrity reports.
+
+Do not redesign the application shell, rewrite canonical Phase 07 data, change Phase 08 reference semantics, replace Phase 09 formulas, add new scope or refactor unrelated completed modules.
+
+After corrections, rerun all Phase 10 tests and the Phase 00/01/06/07/08/09 regression suite. Return a final acceptance matrix.
+
+============================================================
+PROMPT 6 - PRIVACY AND NETWORK AUDIT
+============================================================
+Audit the built application for runtime network requests that could expose food logs, quantities, targets, notes, custom foods or nutrition history.
+
+Requirements:
+- Static application assets and user-clicked external source links are allowed.
+- No personal nutrition record may be sent to analytics, logging, AI, database, storage, API or error-reporting services.
+- Imported backups must be parsed locally.
+- Exports must be generated locally.
+
+List every runtime request origin and payload category. Remove any request that violates the Phase 10 privacy contract, then rerun tests.

@@ -1,0 +1,844 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fitness-os-exercise-record.schema.json",
+  "title": "Fitness OS Exercise Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "displayName",
+    "exerciseType",
+    "contentStatus",
+    "movementPatternIds",
+    "equipmentIds",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^exercise_[a-z0-9_]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 2
+    },
+    "canonicalName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "exerciseType": {
+      "enum": [
+        "resistance-compound",
+        "resistance-isolation",
+        "bodyweight-strength",
+        "power",
+        "plyometric",
+        "conditioning",
+        "cardio",
+        "mobility",
+        "flexibility",
+        "warmup",
+        "balance-stability",
+        "breathing-bracing"
+      ]
+    },
+    "contentStatus": {
+      "enum": [
+        "draft",
+        "review-needed",
+        "reviewed",
+        "published",
+        "deprecated"
+      ]
+    },
+    "reviewRequired": {
+      "type": "boolean"
+    },
+    "difficulty": {
+      "enum": [
+        "foundation",
+        "beginner",
+        "intermediate",
+        "advanced",
+        "specialist"
+      ]
+    },
+    "mechanics": {
+      "enum": [
+        "compound",
+        "isolation",
+        "cyclical",
+        "isometric",
+        "mixed",
+        "not-applicable"
+      ]
+    },
+    "laterality": {
+      "enum": [
+        "bilateral",
+        "unilateral",
+        "alternating",
+        "single-side",
+        "not-applicable"
+      ]
+    },
+    "kineticChain": {
+      "enum": [
+        "open",
+        "closed",
+        "mixed",
+        "not-applicable"
+      ]
+    },
+    "movementPatternIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^pattern_[a-z0-9_]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "equipmentIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^equipment_[a-z0-9_]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "environmentTags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "commercial-gym",
+          "home",
+          "outdoors",
+          "limited-space",
+          "rack-required",
+          "spotter-recommended"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "goalTags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "general-fitness",
+          "strength",
+          "hypertrophy",
+          "power",
+          "muscular-endurance",
+          "conditioning",
+          "skill",
+          "mobility",
+          "warmup"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 20
+    },
+    "muscleRoles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "muscleId",
+          "role",
+          "sourceIds"
+        ],
+        "properties": {
+          "muscleId": {
+            "type": "string",
+            "pattern": "^muscle_[a-z0-9_]+$"
+          },
+          "role": {
+            "enum": [
+              "primary",
+              "secondary",
+              "stabilizer",
+              "dynamic-stabilizer",
+              "context-dependent"
+            ]
+          },
+          "qualifier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      },
+      "uniqueItems": true
+    },
+    "jointActions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "joint",
+          "action",
+          "phase",
+          "sourceIds"
+        ],
+        "properties": {
+          "joint": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "phase": {
+            "enum": [
+              "concentric",
+              "eccentric",
+              "isometric",
+              "cyclical",
+              "multiple"
+            ]
+          },
+          "qualifier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "technique": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "setup": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "executionSteps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2
+        },
+        "finishOrReset": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breathing": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rangeOfMotion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tempoNotes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "keyCheckpoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "coachingCues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "spottingNotes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "mistakes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "mistake",
+          "whyItMatters",
+          "correction",
+          "sourceIds"
+        ],
+        "properties": {
+          "mistake": {
+            "type": "string"
+          },
+          "whyItMatters": {
+            "type": "string"
+          },
+          "correction": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "minor",
+              "performance",
+              "safety"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "regressionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^exercise_[a-z0-9_]+$"
+          },
+          "uniqueItems": true
+        },
+        "progressionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^exercise_[a-z0-9_]+$"
+          },
+          "uniqueItems": true
+        },
+        "variationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^exercise_[a-z0-9_]+$"
+          },
+          "uniqueItems": true
+        },
+        "substitutionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^exercise_[a-z0-9_]+$"
+          },
+          "uniqueItems": true
+        },
+        "prerequisiteExerciseIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^exercise_[a-z0-9_]+$"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "programmingGuidance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "context",
+          "guidanceStatus",
+          "sourceIds"
+        ],
+        "properties": {
+          "context": {
+            "enum": [
+              "skill-learning",
+              "general-fitness",
+              "strength",
+              "hypertrophy",
+              "power",
+              "muscular-endurance",
+              "conditioning",
+              "warmup",
+              "mobility"
+            ]
+          },
+          "guidanceStatus": {
+            "enum": [
+              "general-range",
+              "context-dependent",
+              "not-applicable",
+              "insufficient-evidence"
+            ]
+          },
+          "setRange": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "min": {
+                "type": "number",
+                "minimum": 0
+              },
+              "max": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "min",
+              "max"
+            ],
+            "additionalProperties": false
+          },
+          "repRange": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "min": {
+                "type": "number",
+                "minimum": 0
+              },
+              "max": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "min",
+              "max"
+            ],
+            "additionalProperties": false
+          },
+          "durationSeconds": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "min": {
+                "type": "number",
+                "minimum": 0
+              },
+              "max": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "min",
+              "max"
+            ],
+            "additionalProperties": false
+          },
+          "restSeconds": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "min": {
+                "type": "number",
+                "minimum": 0
+              },
+              "max": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "min",
+              "max"
+            ],
+            "additionalProperties": false
+          },
+          "effortNotes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "loadNotes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "qualifier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "moderate",
+              "limited"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cautionTags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "stopSignals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notMedicalAdvice": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "provider",
+          "url",
+          "reviewStatus"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "video",
+              "image",
+              "diagram",
+              "animation"
+            ]
+          },
+          "provider": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "embedUrl": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "embedAllowed": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "captionsAvailable": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "startSeconds": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "endSeconds": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "credit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reviewStatus": {
+            "enum": [
+              "unreviewed",
+              "reviewed",
+              "unavailable",
+              "rejected"
+            ]
+          },
+          "reviewedAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "whySelected": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "publisher",
+          "sourceType",
+          "url",
+          "reviewedAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "sourceType": {
+            "enum": [
+              "position-stand",
+              "systematic-review",
+              "primary-study",
+              "textbook",
+              "government-guideline",
+              "professional-technique-guide",
+              "manufacturer-manual",
+              "video-review",
+              "other"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publicationYear": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "reviewedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "minItems": 0
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "contentReviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "techniqueReviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "anatomyReviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "safetyReviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "mediaReviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "nextReviewDue": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "contentStatus": {
+            "const": "published"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "difficulty",
+          "mechanics",
+          "laterality",
+          "summary",
+          "muscleRoles",
+          "technique",
+          "mistakes",
+          "programmingGuidance",
+          "safety",
+          "media",
+          "sources",
+          "review"
+        ],
+        "properties": {
+          "sources": {
+            "minItems": 1
+          },
+          "muscleRoles": {
+            "minItems": 1
+          },
+          "media": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

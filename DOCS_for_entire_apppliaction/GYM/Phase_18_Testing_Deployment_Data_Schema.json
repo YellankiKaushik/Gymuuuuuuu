@@ -1,0 +1,400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase-18-release-manifest.schema.json",
+  "title": "Fitness OS Phase 18 Release Manifest",
+  "type": "object",
+  "required": [
+    "format",
+    "manifestVersion",
+    "releaseId",
+    "version",
+    "generatedAt",
+    "source",
+    "toolchain",
+    "testSummary",
+    "contentVersions",
+    "dataCompatibility",
+    "deployment",
+    "rollback"
+  ],
+  "properties": {
+    "format": {
+      "const": "fitness-os-release-manifest"
+    },
+    "manifestVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "releaseId": {
+      "type": "string",
+      "minLength": 8
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v?[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "$ref": "#/$defs/source"
+    },
+    "toolchain": {
+      "$ref": "#/$defs/toolchain"
+    },
+    "testSummary": {
+      "$ref": "#/$defs/testSummary"
+    },
+    "contentVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contentVersion"
+      }
+    },
+    "dataCompatibility": {
+      "$ref": "#/$defs/dataCompatibility"
+    },
+    "deployment": {
+      "$ref": "#/$defs/deployment"
+    },
+    "rollback": {
+      "$ref": "#/$defs/rollback"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": [
+        "repository",
+        "commitSha",
+        "branch",
+        "tag"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commitSha": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lovableProjectId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "toolchain": {
+      "type": "object",
+      "required": [
+        "framework",
+        "frameworkVersion",
+        "nodeVersion",
+        "packageManager",
+        "packageManagerVersion",
+        "lockfileHash"
+      ],
+      "properties": {
+        "framework": {
+          "type": "string"
+        },
+        "frameworkVersion": {
+          "type": "string"
+        },
+        "nodeVersion": {
+          "type": "string"
+        },
+        "packageManager": {
+          "enum": [
+            "npm",
+            "pnpm",
+            "yarn",
+            "bun"
+          ]
+        },
+        "packageManagerVersion": {
+          "type": "string"
+        },
+        "lockfileHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "gate": {
+      "type": "object",
+      "required": [
+        "id",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "passed",
+            "failed",
+            "waived",
+            "not_applicable"
+          ]
+        },
+        "details": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "artifact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "testSummary": {
+      "type": "object",
+      "required": [
+        "status",
+        "gates",
+        "startedAt",
+        "completedAt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "passed",
+            "failed"
+          ]
+        },
+        "gates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/gate"
+          }
+        },
+        "startedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "completedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ciRunUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "contentVersion": {
+      "type": "object",
+      "required": [
+        "moduleId",
+        "dataVersion",
+        "schemaVersion"
+      ],
+      "properties": {
+        "moduleId": {
+          "type": "string",
+          "pattern": "^phase_[0-9]{2}$"
+        },
+        "dataVersion": {
+          "type": "string"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sourceRegistryReviewedThrough": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "moduleCompatibility": {
+      "type": "object",
+      "required": [
+        "moduleId",
+        "schemaVersion",
+        "minimumReadableVersion",
+        "rollbackSafe"
+      ],
+      "properties": {
+        "moduleId": {
+          "type": "string",
+          "pattern": "^phase_[0-9]{2}$"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minimumReadableVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maximumReadableVersion": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "migrationIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rollbackSafe": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "dataCompatibility": {
+      "type": "object",
+      "required": [
+        "modules",
+        "destructiveMigration",
+        "externalBackupRequired"
+      ],
+      "properties": {
+        "modules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/moduleCompatibility"
+          }
+        },
+        "destructiveMigration": {
+          "type": "boolean"
+        },
+        "externalBackupRequired": {
+          "type": "boolean"
+        },
+        "testedFromPreviousVersion": {
+          "type": "boolean"
+        },
+        "testedRollbackToPreviousVersion": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "deployment": {
+      "type": "object",
+      "required": [
+        "provider",
+        "environment",
+        "deploymentUrl",
+        "canonicalUrl",
+        "deploymentId",
+        "deployedAt"
+      ],
+      "properties": {
+        "provider": {
+          "const": "vercel"
+        },
+        "environment": {
+          "enum": [
+            "preview",
+            "production"
+          ]
+        },
+        "deploymentUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "canonicalUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "deploymentId": {
+          "type": "string"
+        },
+        "deployedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "domainVerified": {
+          "type": "boolean"
+        },
+        "tlsVerified": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "rollback": {
+      "type": "object",
+      "required": [
+        "codeRollbackSupported",
+        "dataRollbackSupported",
+        "previousDeploymentId",
+        "runbookPath"
+      ],
+      "properties": {
+        "codeRollbackSupported": {
+          "type": "boolean"
+        },
+        "dataRollbackSupported": {
+          "const": false
+        },
+        "previousDeploymentId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rollbackCompatibilityTested": {
+          "type": "boolean"
+        },
+        "runbookPath": {
+          "type": "string"
+        },
+        "forwardFixRequiredWhenIncompatible": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

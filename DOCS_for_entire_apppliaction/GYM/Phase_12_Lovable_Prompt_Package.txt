@@ -1,0 +1,161 @@
+PHASE 12 - LOVABLE PROMPT PACKAGE
+
+============================================================
+PROMPT 1 - PLAN MODE
+============================================================
+Read Phase 00 Project Knowledge and the attached Phase 12 specification, schema and reference data. Also inspect the implemented Phase 01 shell and the Phase 02, 03, 04 and 06 contracts.
+
+Do not change code yet.
+
+Produce a precise implementation plan that:
+1. Lists every route, component, pure calculation function, IndexedDB store/index/migration, content file and test file to create or change.
+2. Preserves the no-authentication, local-only and no-runtime-health-API architecture.
+3. Explains the sleep diary fields and exact time-zone-safe calculations.
+4. Explains incomplete, impossible and device-estimate states.
+5. Confirms there will be no sleep-stage interpretation or diagnosis.
+6. Explains separate recovery dimensions and confirms no calculated readiness score.
+7. Explains pain/illness safety boundaries without diagnosis.
+8. Explains regional soreness relationships to Phase 02 IDs.
+9. Explains the recovery knowledge publication gate and claim-to-source mapping.
+10. Explains warm-up/mobility routine identities, immutable versions and Phase 03 exercise references.
+11. Explains routine execution, pause/resume, history and snapshot integrity.
+12. Explains Phase 06 workout linking without mutation.
+13. Explains backup, restore, CSV export, privacy and runtime network rules.
+14. Maps every acceptance criterion to automated or manual tests.
+
+Explicitly list what you will not build: authentication, Supabase, wearable integrations, sleep stages, diagnosis, injury rehabilitation, AI recovery coach, opaque readiness score, automatic program changes, camera form analysis or cloud sync.
+
+Wait for plan approval before implementation.
+
+============================================================
+PROMPT 2 - AGENT MODE IMPLEMENTATION
+============================================================
+Implement the approved Phase 12 plan exactly.
+
+Non-negotiable constraints:
+- Preserve Phases 00-06.
+- Use the attached schema and reference data as the source of truth.
+- Do not invent topic content, recovery claims, routine steps or safety rules.
+- Do not publish draft taxonomy records.
+- Use exact timestamps and IANA time zones for sleep calculations.
+- Missing sleep fields must remain unavailable.
+- Do not calculate or display sleep stages.
+- Do not calculate a recovery/readiness score.
+- Do not diagnose sleep disorder, injury, illness or overtraining.
+- Do not automatically change a Phase 05 program or Phase 06 workout.
+- Store personal data only in IndexedDB.
+- Keep routine versions immutable.
+- Make derived summaries disposable and rebuildable.
+- Add every required automated and manual test artifact.
+
+If evidence, data, source rights or safety content is incomplete, show a neutral unavailable/draft state instead of generating content.
+
+============================================================
+PROMPT 3 - VERIFICATION
+============================================================
+Audit Phase 12 against every requirement and acceptance criterion.
+
+Report PASS, FAIL or NOT TESTED for:
+- Routes and navigation.
+- Sleep diary fields.
+- Cross-midnight and time-zone behavior.
+- Sleep calculations and test vectors.
+- Incomplete and impossible-entry states.
+- Device-estimate limitation.
+- Absence of sleep-stage diagnosis.
+- Recovery dimensions and absence of composite score.
+- Regional soreness and Phase 02 references.
+- Pain/illness safety boundaries.
+- Recovery knowledge outcome separation.
+- Cold-water adaptation trade-off.
+- Stretching and foam-rolling claims.
+- Warm-up/mobility routine publication gate.
+- Phase 03 exercise references.
+- Routine versioning and session snapshots.
+- IndexedDB CRUD, migration and rollback.
+- Backup, restore conflicts and CSV exports.
+- Runtime privacy and network behavior.
+- Mobile, desktop, dark mode and accessibility.
+- Regression of Phases 00-06.
+
+Run every attached test vector. For each failure, provide the exact file, expected result, observed result and correction. Do not claim completion while a blocking failure remains.
+
+============================================================
+PROMPT 4 - SLEEP CALCULATION AND DEVICE AUDIT
+============================================================
+Inspect Phase 12 specifically for sleep-data corruption and false precision.
+
+Verify:
+1. Wake-date and IANA time zone are stored.
+2. Exact timestamps handle overnight sleep.
+3. Sleep opportunity, terminal wake, total sleep and efficiency use the locked formulas.
+4. Missing inputs return null/unavailable rather than zero.
+5. Impossible chronology is rejected or saved only as incomplete with a warning.
+6. Naps remain separate from main-sleep efficiency.
+7. Goal difference is not labelled physiological sleep debt.
+8. Schedule variability uses local clock time and warns across time-zone changes.
+9. Device entries remain estimates.
+10. Sleep stages are not used for diagnosis or readiness.
+11. No clinical cutoffs are used to diagnose insomnia.
+12. Historical entries are not rewritten by setting changes.
+
+Return violations by file and line. Do not fix until the correction prompt is approved.
+
+============================================================
+PROMPT 5 - RECOVERY SAFETY AND EVIDENCE AUDIT
+============================================================
+Audit all recovery check-in and knowledge behavior.
+
+Verify:
+- No computed readiness/recovery score exists.
+- Scale directions are consistent.
+- Pain and soreness are separate.
+- Pain/illness flags suppress training prescriptions.
+- No diagnosis or rehabilitation routine is generated.
+- Recovery methods are compared by distinct outcomes.
+- Post-exercise stretching is not claimed to reduce DOMS or restore strength.
+- Foam rolling claims remain modest and outcome-specific.
+- Cold-water content includes repeated-use adaptation trade-offs.
+- Every factual claim has an approved source, population and limitation.
+
+Unpublish content that fails the evidence gate. Do not replace it with AI-generated copy.
+
+============================================================
+PROMPT 6 - MOBILITY AND ROUTINE INTEGRITY AUDIT
+============================================================
+Verify:
+1. Every public routine has an immutable identity and version.
+2. Every Phase 03 exercise reference resolves.
+3. Every step has dose, cue and stop-signal fields.
+4. Routine context and purpose are explicit.
+5. No routine claims to diagnose, treat or rehabilitate an injury.
+6. Custom edits create a new version.
+7. Historical sessions retain the performed version.
+8. Pause/resume and refresh do not duplicate sessions.
+9. Timer state uses timestamps rather than assuming uninterrupted intervals.
+10. Keyboard and screen-reader controls work.
+
+Return a violation report by file, line and impact.
+
+============================================================
+PROMPT 7 - PRIVACY AND NETWORK AUDIT
+============================================================
+List every runtime request origin and payload category.
+
+Requirements:
+- Static application assets and user-clicked source links are allowed.
+- No sleep, stress, soreness, pain, illness, mood, readiness, routine or note data may be transmitted.
+- No analytics or error-reporting payload may contain Phase 12 values.
+- Imports, exports and calculations must be local.
+- No wearable, AI, database, storage or health API request is allowed.
+
+Remove violations and rerun the audit.
+
+============================================================
+PROMPT 8 - CORRECTION
+============================================================
+Fix only failures identified in the approved Phase 12 verification and audit reports.
+
+Do not redesign the Phase 01 shell, rewrite Phase 02 anatomy, duplicate Phase 03 exercise content, change Phase 04 science, mutate Phase 05 programs or alter Phase 06 history.
+
+After correction, rerun all Phase 12 tests and the Phase 00-06 regression suite. Return a final acceptance matrix.

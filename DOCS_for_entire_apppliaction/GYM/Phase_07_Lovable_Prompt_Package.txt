@@ -1,0 +1,79 @@
+FITNESS OS — PHASE 07 LOVABLE PROMPT PACKAGE
+Version 1.0 — 5 August 2026
+
+============================================================
+PROMPT 1 — PLAN MODE
+============================================================
+Read the attached Phase 07 Food Encyclopedia specification, schema and seed taxonomy completely. Keep the existing Phase 00 Project Knowledge active.
+
+Do not change code yet.
+
+Produce a precise implementation plan that:
+1. Confirms the application remains no-authentication, no-remote-database and static-data-first.
+2. Lists every route, component, domain module, data loader, transform script, documentation file and test file to create or change.
+3. Explains how published food profiles are separated from draft seed identities.
+4. Explains how raw/cooked profiles, 100 g basis, portions, nutrient states and source provenance are represented.
+5. Explains the static JSON sharding and build-time search-index strategy.
+6. States that no USDA API key or runtime FDC request will be used.
+7. States that ICMR-NIN will not be scraped or bulk reproduced without permission.
+8. Identifies all potential conflicts with Phases 00–06.
+9. Preserves the Phase 01 design system and navigation behavior.
+10. Maps every acceptance criterion to implementation and tests.
+
+Explicitly list what you will not build: daily intake recommendations, meal plans, food logging, recipes, branded foods, authentication, backend and fabricated nutrient data.
+
+Wait for plan approval before implementation.
+
+============================================================
+PROMPT 2 — AGENT MODE IMPLEMENTATION
+============================================================
+Implement the approved Phase 07 plan exactly.
+
+Non-negotiable constraints:
+- Preserve Phases 00–06.
+- No auth, profiles, remote database or cloud sync.
+- No runtime food API.
+- No API key in code.
+- No fabricated nutrient values.
+- No ICMR-NIN scraping or unlicensed IFCT redistribution.
+- Keep every draft seed identity hidden from production public views.
+- Publish only source-backed, approved profiles.
+- Keep raw, cooked and processed profiles separate.
+- Never treat missing data as zero.
+- Use the attached JSON Schema as the canonical content contract.
+- Add catalogue, detail, comparison, sources and methodology routes.
+- Add build-time search and lazy profile loading.
+- Add complete domain, UI, schema and accessibility tests.
+- Create all required documentation.
+
+Use neutral content when production profiles are absent. Do not generate demo nutrient numbers.
+
+============================================================
+PROMPT 3 — VERIFICATION
+============================================================
+Audit the completed Phase 07 implementation against every requirement and acceptance criterion.
+
+Report PASS, FAIL or NOT TESTED for:
+- Routes and navigation.
+- Draft/published separation.
+- Static-data behavior.
+- Search and filters.
+- Food detail profile switching.
+- 100 g and portion scaling.
+- Missing/trace/not-detected states.
+- Source provenance.
+- Comparison basis.
+- Rights and licensing controls.
+- No runtime API or API key.
+- Schema validation.
+- Mobile and desktop layouts.
+- Light and dark themes.
+- Keyboard and screen-reader accessibility.
+- Regression of Phases 00–06.
+
+For each failure, name the exact file and correction. Do not claim completion while any blocking failure remains.
+
+============================================================
+PROMPT 4 — CORRECTION
+============================================================
+Correct only the Phase 07 verification failures. Do not redesign earlier phases or expand scope. Re-run the relevant tests and provide a final acceptance matrix.

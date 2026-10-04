@@ -1,0 +1,2365 @@
+{
+  "referenceDataVersion": 1,
+  "reviewedThrough": "2026-08-05",
+  "moduleId": "phase_17",
+  "sources": [
+    {
+      "id": "src_mdn_indexeddb",
+      "title": "IndexedDB API",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+      "roles": [
+        "structured_local_storage",
+        "transactions",
+        "files_and_blobs"
+      ],
+      "note": "Use IndexedDB for canonical structured personal records and binary objects; all writes occur inside transactions."
+    },
+    {
+      "id": "src_mdn_using_indexeddb",
+      "title": "Using IndexedDB",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB",
+      "roles": [
+        "versioned_migrations",
+        "transaction_safety",
+        "unexpected_shutdown"
+      ],
+      "note": "Do not split a destructive clear-and-rewrite operation across transactions and do not rely on unload-time writes."
+    },
+    {
+      "id": "src_mdn_storage_api",
+      "title": "Storage API",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API",
+      "roles": [
+        "origin_storage",
+        "persistence",
+        "quota_estimates",
+        "eviction"
+      ],
+      "note": "Browser-managed storage is origin-scoped; best-effort storage may be evicted and persistent storage must be requested."
+    },
+    {
+      "id": "src_mdn_storage_quota",
+      "title": "Storage quotas and eviction criteria",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria",
+      "roles": [
+        "quota_variability",
+        "eviction",
+        "private_browsing",
+        "quota_errors"
+      ],
+      "note": "Quotas differ by browser and device; estimate values are approximate and the app must handle QuotaExceededError."
+    },
+    {
+      "id": "src_mdn_storage_estimate",
+      "title": "StorageManager.estimate()",
+      "publisher": "Mozilla Developer Network",
+      "year": 2025,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageManager/estimate",
+      "roles": [
+        "usage_estimate",
+        "quota_estimate"
+      ],
+      "note": "Displayed usage and quota values are approximations and must be labelled as such."
+    },
+    {
+      "id": "src_mdn_storage_persist",
+      "title": "StorageManager.persist()",
+      "publisher": "Mozilla Developer Network",
+      "year": 2024,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageManager/persist",
+      "roles": [
+        "persistent_storage_request"
+      ],
+      "note": "A request can be accepted or rejected by the browser; rejection must not break the app."
+    },
+    {
+      "id": "src_mdn_broadcast_channel",
+      "title": "Broadcast Channel API",
+      "publisher": "Mozilla Developer Network",
+      "year": 2025,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API",
+      "roles": [
+        "cross_tab_coordination",
+        "restore_lock",
+        "migration_notice"
+      ],
+      "note": "Use same-origin messages to coordinate tabs; the protocol and conflict rules remain application responsibilities."
+    },
+    {
+      "id": "src_mdn_structured_clone",
+      "title": "The structured clone algorithm",
+      "publisher": "Mozilla Developer Network",
+      "year": 2025,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm",
+      "roles": [
+        "indexeddb_value_types",
+        "worker_transfer",
+        "clone_limits"
+      ],
+      "note": "Backups must explicitly serialize values that JSON does not preserve, including Date, Map, Set, typed arrays and blobs."
+    },
+    {
+      "id": "src_mdn_compression",
+      "title": "Compression Streams API",
+      "publisher": "Mozilla Developer Network",
+      "year": 2025,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API",
+      "roles": [
+        "gzip_backup",
+        "decompression"
+      ],
+      "note": "Use feature detection; plain JSON remains the compatibility fallback."
+    },
+    {
+      "id": "src_mdn_crypto_digest",
+      "title": "SubtleCrypto.digest()",
+      "publisher": "Mozilla Developer Network",
+      "year": 2025,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest",
+      "roles": [
+        "sha256_integrity",
+        "file_hash"
+      ],
+      "note": "SHA-256 detects accidental corruption; it is not proof of authorship or secrecy."
+    },
+    {
+      "id": "src_mdn_crypto_encrypt",
+      "title": "SubtleCrypto.encrypt() and AES-GCM parameters",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt",
+      "roles": [
+        "optional_backup_encryption"
+      ],
+      "note": "Encrypted backup is optional and requires secure-context feature detection, unique IVs and explicit password-loss warnings."
+    },
+    {
+      "id": "src_mdn_crypto_derive",
+      "title": "SubtleCrypto.deriveKey()",
+      "publisher": "Mozilla Developer Network",
+      "year": 2025,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey",
+      "roles": [
+        "pbkdf2_password_key_derivation"
+      ],
+      "note": "If encrypted export is implemented, parameters are versioned inside the envelope and never hidden in code defaults."
+    },
+    {
+      "id": "src_rfc_csv",
+      "title": "RFC 4180: Common Format and MIME Type for CSV Files",
+      "publisher": "RFC Editor",
+      "year": 2005,
+      "type": "format_reference",
+      "url": "https://www.rfc-editor.org/rfc/rfc4180.html",
+      "roles": [
+        "csv_quoting",
+        "text_csv"
+      ],
+      "note": "Use consistent comma-separated UTF-8 output, CRLF row endings and double-quote escaping."
+    },
+    {
+      "id": "src_owasp_csv",
+      "title": "CSV Injection",
+      "publisher": "OWASP Foundation",
+      "year": 2026,
+      "type": "security_guidance",
+      "url": "https://owasp.org/www-community/attacks/CSV_Injection",
+      "roles": [
+        "spreadsheet_formula_injection",
+        "safe_csv_mode"
+      ],
+      "note": "Human-view CSV exports require an explicit spreadsheet-safe mode for user-entered text; raw machine CSV remains separately labelled."
+    },
+    {
+      "id": "src_w3c_wcag22",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "publisher": "World Wide Web Consortium",
+      "year": 2024,
+      "type": "accessibility_standard",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "roles": [
+        "keyboard_access",
+        "status_messages",
+        "focus_management",
+        "error_identification"
+      ],
+      "note": "Data-management, import, destructive reset and progress interfaces target WCAG 2.2 AA."
+    }
+  ],
+  "moduleRegistry": [
+    {
+      "moduleId": "phase_06",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 8,
+      "canonicalStoreCount": 6,
+      "defaultBackupStoreCount": 6,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_09",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 3,
+      "canonicalStoreCount": 3,
+      "defaultBackupStoreCount": 3,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_10",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 9,
+      "canonicalStoreCount": 8,
+      "defaultBackupStoreCount": 8,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_11",
+      "expectedDatabases": [
+        "fitness-os-recipes-meal-plans"
+      ],
+      "storeCount": 10,
+      "canonicalStoreCount": 10,
+      "defaultBackupStoreCount": 10,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_12",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 10,
+      "canonicalStoreCount": 9,
+      "defaultBackupStoreCount": 9,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_13",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 10,
+      "canonicalStoreCount": 9,
+      "defaultBackupStoreCount": 9,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_14",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 12,
+      "canonicalStoreCount": 11,
+      "defaultBackupStoreCount": 11,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_15",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 13,
+      "canonicalStoreCount": 12,
+      "defaultBackupStoreCount": 11,
+      "binaryStoreCount": 1,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_16",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 11,
+      "canonicalStoreCount": 10,
+      "defaultBackupStoreCount": 8,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    },
+    {
+      "moduleId": "phase_17",
+      "expectedDatabases": [
+        "fitness-os"
+      ],
+      "storeCount": 6,
+      "canonicalStoreCount": 5,
+      "defaultBackupStoreCount": 4,
+      "binaryStoreCount": 0,
+      "implementationDiscoveryRequired": true
+    }
+  ],
+  "storeRegistry": [
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "appMeta",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": false,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Database versions, migration receipts and global metadata; only registered keys are exported.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "workoutPreferences",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Workout tracker preferences.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "programInstances",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Locally selected and customised Phase 05 program instances.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "programTrackingStates",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Program position and tracker-only state.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "customExercises",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Local logging-only exercise identities.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "workoutSessions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Active, completed, abandoned and soft-deleted workout sessions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "activeTimers",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": false,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Ephemeral timer state; excluded from backups.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_06",
+      "databaseName": "fitness-os",
+      "storeId": "derivedPersonalRecords",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable personal-record cache.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_09",
+      "databaseName": "fitness-os",
+      "storeId": "dietPlans",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Saved diet-target plans with frozen formula metadata.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_09",
+      "databaseName": "fitness-os",
+      "storeId": "dietPlannerSettings",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Diet-planner settings.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_09",
+      "databaseName": "fitness-os",
+      "storeId": "dietPlanAuditLog",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Diet-plan audit trail.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "nutritionPreferences",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Nutrition tracker preferences.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "nutritionDays",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Daily diary state and target snapshots.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "foodLogEntries",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Source-snapshot food log entries.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "hydrationEntries",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Water and fluid entries.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "customFoods",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Local custom food identities.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "customFoodRevisions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Immutable custom food revisions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "nutritionFavourites",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Nutrition-specific favourites.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "nutritionAuditLog",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Nutrition audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_10",
+      "databaseName": "fitness-os",
+      "storeId": "derivedNutritionDayTotals",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable daily totals.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "recipeIdentities",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Personal recipe identities.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "recipeVersions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Immutable recipe versions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "mealPlanIdentities",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Personal meal-plan identities.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "mealPlanVersions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Immutable meal-plan versions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "batchInstances",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Batch-preparation instances and leftover allocation.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "groceryLists",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Generated and edited grocery lists.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "recipeFavourites",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Recipe-specific favourites.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "mealPlanPreferences",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Meal-planning preferences.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "recipeMealAuditLog",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Recipe and meal-plan audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_11",
+      "databaseName": "fitness-os-recipes-meal-plans",
+      "storeId": "recipeMealMigrationState",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Migration receipts for this module.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_sleep_logs",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Sleep diary entries.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_recovery_checkins",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Recovery check-ins.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_mobility_sessions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Mobility and routine sessions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_custom_routine_identities",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Local routine identities.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_custom_routine_versions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Immutable local routine versions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_settings",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Recovery module settings.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_audit_events",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Recovery audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_deleted_records",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Recovery deletion tombstones.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_import_conflicts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Unresolved module import conflicts.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_12",
+      "databaseName": "fitness-os",
+      "storeId": "phase12_derived_summaries",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable recovery summaries.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "cardioSessions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Cardio session records and immutable snapshots.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "customCardioPlanIdentities",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Local cardio-plan identities.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "customCardioPlanVersions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Immutable cardio-plan versions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "customConditioningRoutineIdentities",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Local conditioning-routine identities.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "customConditioningRoutineVersions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Immutable conditioning-routine versions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "cardioSettings",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Cardio module settings.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "cardioAuditEvents",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Cardio audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "cardioDeletedRecords",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Cardio deletion tombstones.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "cardioImportConflicts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Unresolved cardio import conflicts.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_13",
+      "databaseName": "fitness-os",
+      "storeId": "cardioDerivedSummaries",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable cardio summaries.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "personalSupplementProducts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Personal supplement products.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "supplementProductLabelVersions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Immutable product-label versions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "supplementTrials",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Personal supplement trials.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "supplementIntakeLogs",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Supplement intake logs.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "supplementAdverseEvents",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Adverse-event records.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "supplementSafetyContexts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Personal safety-context flags.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "phase14SavedComparisons",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Supplement-specific saved comparisons.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "phase14Settings",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Supplement settings.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "phase14AuditEvents",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Supplement audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "phase14DeletedRecords",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Supplement deletion tombstones.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "phase14ImportConflicts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Unresolved supplement import conflicts.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_14",
+      "databaseName": "fitness-os",
+      "storeId": "phase14DerivedSummaries",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable supplement summaries.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "bodyWeightLogs",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Canonical body-weight measurements.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "circumferenceSessions",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Protocol-specific circumference sessions.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "bodyCompositionMeasurements",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "External body-composition measurements.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "progressPhotos",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Sanitized progress-photo metadata.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "progressPhotoBlobs",
+      "canonical": true,
+      "backupByDefault": false,
+      "rebuildable": false,
+      "containsBinary": true,
+      "sensitive": true,
+      "defaultProfile": "full_with_media",
+      "supportsImportAsCopy": true,
+      "purpose": "Sanitized progress-photo binaries.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "progressGoals",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Optional progress goals.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "nutritionDayReviews",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "User-declared nutrition-day completeness.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "dashboardLayouts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Dashboard widget layouts.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "phase15Settings",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Progress and analytics settings.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "phase15AuditEvents",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Progress audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "phase15DeletedRecords",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Progress deletion tombstones.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "phase15ImportConflicts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Unresolved progress import conflicts.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_15",
+      "databaseName": "fitness-os",
+      "storeId": "derivedAnalyticsCache",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable metric cache.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16Favourites",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Canonical saved entity references.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16Collections",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Local named collections.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16CollectionItems",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Ordered collection items and local notes.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16RecentQueries",
+      "canonical": true,
+      "backupByDefault": false,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Optional recent-query history.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16RecentViews",
+      "canonical": true,
+      "backupByDefault": false,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Optional recently viewed history.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16SavedComparisons",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": true,
+      "purpose": "Saved comparison configurations.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16Settings",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Search and privacy settings.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16AuditEvents",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Search/save audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16DeletedRecords",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Phase 16 deletion tombstones.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16ImportConflicts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Unresolved Phase 16 import conflicts.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_16",
+      "databaseName": "fitness-os",
+      "storeId": "phase16PrivateSearchCache",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable private search cache.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_17",
+      "databaseName": "fitness-os",
+      "storeId": "phase17Settings",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Global data-management settings and backup-reminder preferences.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_17",
+      "databaseName": "fitness-os",
+      "storeId": "phase17BackupReceipts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Metadata about successful user-initiated exports; no backup contents.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_17",
+      "databaseName": "fitness-os",
+      "storeId": "phase17RestoreJournal",
+      "canonical": true,
+      "backupByDefault": false,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Recoverable restore/migration state; excluded after completed cleanup.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_17",
+      "databaseName": "fitness-os",
+      "storeId": "phase17AuditEvents",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Global backup, restore, clear and repair audit events.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_17",
+      "databaseName": "fitness-os",
+      "storeId": "phase17ImportConflicts",
+      "canonical": true,
+      "backupByDefault": true,
+      "rebuildable": false,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Unresolved global restore conflicts.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    },
+    {
+      "moduleId": "phase_17",
+      "databaseName": "fitness-os",
+      "storeId": "phase17DataHealthCache",
+      "canonical": false,
+      "backupByDefault": false,
+      "rebuildable": true,
+      "containsBinary": false,
+      "sensitive": true,
+      "defaultProfile": "portable",
+      "supportsImportAsCopy": false,
+      "purpose": "Rebuildable data-health report cache.",
+      "registrySource": "phase_document",
+      "actualImplementationNameMustBeDiscovered": true
+    }
+  ],
+  "backupProfiles": [
+    {
+      "id": "portable",
+      "title": "Portable backup",
+      "required": true,
+      "includes": "All default canonical JSON records and registered shell preferences.",
+      "excludes": [
+        "Rebuildable caches",
+        "Active timers",
+        "Progress-photo binaries",
+        "Static public knowledge datasets"
+      ],
+      "extension": ".fitnessos.json"
+    },
+    {
+      "id": "portable_gzip",
+      "title": "Compressed portable backup",
+      "required": false,
+      "includes": "Same logical payload as portable backup.",
+      "excludes": [
+        "Same exclusions as portable backup"
+      ],
+      "extension": ".fitnessos.json.gz"
+    },
+    {
+      "id": "full_with_media",
+      "title": "Full backup with media",
+      "required": true,
+      "includes": "Portable data plus explicitly selected progress-photo binaries and registered local attachments.",
+      "excludes": [
+        "Rebuildable caches",
+        "Static public knowledge datasets"
+      ],
+      "extension": ".fitnessos.zip"
+    },
+    {
+      "id": "selected_modules",
+      "title": "Selected-module backup",
+      "required": true,
+      "includes": "User-selected canonical modules and mandatory dependency metadata.",
+      "excludes": [
+        "Unselected modules",
+        "Rebuildable caches"
+      ],
+      "extension": ".fitnessos.json"
+    },
+    {
+      "id": "encrypted_portable",
+      "title": "Encrypted portable backup",
+      "required": false,
+      "includes": "Portable payload encrypted locally with a user password.",
+      "excludes": [
+        "Progress-photo binaries unless full encrypted package is separately implemented"
+      ],
+      "extension": ".fitnessos.enc"
+    }
+  ],
+  "restoreModes": [
+    {
+      "id": "preview_only",
+      "writes": false,
+      "description": "Validate, migrate in memory and display counts, warnings and conflicts."
+    },
+    {
+      "id": "keep_existing",
+      "writes": true,
+      "description": "Keep conflicting local records; import only new non-conflicting records."
+    },
+    {
+      "id": "import_as_copy",
+      "writes": true,
+      "description": "Generate new IDs only for registered user-created entity types and remap internal references."
+    },
+    {
+      "id": "replace_selected_modules",
+      "writes": true,
+      "description": "Clear and replace only explicitly selected modules after a rollback snapshot."
+    },
+    {
+      "id": "replace_all_local",
+      "writes": true,
+      "description": "Replace all registered personal data after typed confirmation and rollback snapshot."
+    }
+  ],
+  "restoreStates": [
+    "idle",
+    "reading",
+    "decrypting",
+    "decompressing",
+    "parsing",
+    "validating",
+    "integrity_check",
+    "migrating_in_memory",
+    "preview_ready",
+    "awaiting_confirmation",
+    "locking_tabs",
+    "creating_rollback_snapshot",
+    "writing",
+    "rebuilding_caches",
+    "verifying",
+    "completed",
+    "failed",
+    "rollback_required",
+    "rolling_back",
+    "rolled_back"
+  ],
+  "conflictActions": [
+    "skip_identical",
+    "keep_existing",
+    "replace_existing",
+    "import_as_copy",
+    "quarantine",
+    "cancel_restore"
+  ],
+  "csvExports": [
+    {
+      "id": "workout_sessions",
+      "moduleId": "phase_06",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per session",
+      "sensitive": true
+    },
+    {
+      "id": "workout_sets",
+      "moduleId": "phase_06",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per logged set",
+      "sensitive": true
+    },
+    {
+      "id": "diet_plans",
+      "moduleId": "phase_09",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per saved target plan",
+      "sensitive": true
+    },
+    {
+      "id": "nutrition_days",
+      "moduleId": "phase_10",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per diary day",
+      "sensitive": true
+    },
+    {
+      "id": "food_log_entries",
+      "moduleId": "phase_10",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per food entry",
+      "sensitive": true
+    },
+    {
+      "id": "hydration_entries",
+      "moduleId": "phase_10",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per hydration entry",
+      "sensitive": true
+    },
+    {
+      "id": "custom_foods",
+      "moduleId": "phase_10",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per custom-food revision",
+      "sensitive": true
+    },
+    {
+      "id": "recipes",
+      "moduleId": "phase_11",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per recipe version",
+      "sensitive": true
+    },
+    {
+      "id": "recipe_ingredients",
+      "moduleId": "phase_11",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per ingredient",
+      "sensitive": true
+    },
+    {
+      "id": "meal_plans",
+      "moduleId": "phase_11",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per planned meal item",
+      "sensitive": true
+    },
+    {
+      "id": "grocery_list",
+      "moduleId": "phase_11",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per grocery item",
+      "sensitive": true
+    },
+    {
+      "id": "sleep_diary",
+      "moduleId": "phase_12",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per sleep log",
+      "sensitive": true
+    },
+    {
+      "id": "recovery_checkins",
+      "moduleId": "phase_12",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per check-in",
+      "sensitive": true
+    },
+    {
+      "id": "mobility_sessions",
+      "moduleId": "phase_12",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per mobility session",
+      "sensitive": true
+    },
+    {
+      "id": "cardio_sessions",
+      "moduleId": "phase_13",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per cardio session",
+      "sensitive": true
+    },
+    {
+      "id": "cardio_segments",
+      "moduleId": "phase_13",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per cardio segment",
+      "sensitive": true
+    },
+    {
+      "id": "supplement_products",
+      "moduleId": "phase_14",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per product label version",
+      "sensitive": true
+    },
+    {
+      "id": "supplement_trials",
+      "moduleId": "phase_14",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per trial",
+      "sensitive": true
+    },
+    {
+      "id": "supplement_intakes",
+      "moduleId": "phase_14",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per intake",
+      "sensitive": true
+    },
+    {
+      "id": "supplement_adverse_events",
+      "moduleId": "phase_14",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per adverse event",
+      "sensitive": true
+    },
+    {
+      "id": "body_weight",
+      "moduleId": "phase_15",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per measurement",
+      "sensitive": true
+    },
+    {
+      "id": "circumference_sessions",
+      "moduleId": "phase_15",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per protocol-specific measurement session",
+      "sensitive": true
+    },
+    {
+      "id": "body_composition",
+      "moduleId": "phase_15",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per external estimate",
+      "sensitive": true
+    },
+    {
+      "id": "saved_content",
+      "moduleId": "phase_16",
+      "mode": "spreadsheet_safe",
+      "rows": "one row per favourite or collection item",
+      "sensitive": true
+    }
+  ],
+  "csvModes": [
+    {
+      "id": "spreadsheet_safe",
+      "default": true,
+      "description": "RFC-style quoting plus protection for cells that spreadsheet software may interpret as formulas."
+    },
+    {
+      "id": "raw_machine",
+      "default": false,
+      "description": "Exact textual values for programmatic use; prominent formula-execution warning required."
+    }
+  ],
+  "webStoragePolicy": {
+    "localStorageAllowedOnlyFor": [
+      "theme",
+      "sidebar_state",
+      "non_sensitive_ui_preferences",
+      "last_successful_backup_timestamp_if_not_sensitive"
+    ],
+    "sessionStorageAllowedOnlyFor": [
+      "ephemeral_route_state",
+      "one_tab_wizard_state"
+    ],
+    "prohibited": [
+      "health_records",
+      "workout_records",
+      "nutrition_records",
+      "measurements",
+      "notes",
+      "photos",
+      "supplement_records",
+      "restore_payloads"
+    ],
+    "implementationMustDiscoverActualKeys": true
+  },
+  "binaryAssetPolicy": {
+    "defaultJsonIncludesBinary": false,
+    "fullPackageRequiresExplicitSelection": true,
+    "assetManifestFields": [
+      "assetId",
+      "moduleId",
+      "recordId",
+      "mediaType",
+      "byteLength",
+      "sha256",
+      "originalFilenameRemoved",
+      "createdAt"
+    ],
+    "maxSingleAssetBytesIsConfigurationNotUniversalConstant": true,
+    "missingAssetDoesNotDeleteMetadata": true
+  },
+  "integrityPolicy": {
+    "hashAlgorithm": "SHA-256",
+    "hashPurpose": "Accidental corruption detection only.",
+    "canonicalPayloadSerialization": "UTF-8 JSON with recursively sorted object keys, preserved array order and explicit type tags for non-JSON values.",
+    "fullArchiveHashOptionalForLargeMedia": true,
+    "perPayloadAndPerAssetHashesRequired": true
+  },
+  "encryptionPolicy": {
+    "requiredForMvp": false,
+    "algorithm": "AES-GCM-256",
+    "passwordKdf": "PBKDF2-SHA-256",
+    "parametersStoredInEnvelope": [
+      "salt",
+      "iterations",
+      "iv",
+      "tagLength",
+      "kdf",
+      "cipher",
+      "formatVersion"
+    ],
+    "randomSaltAndIvPerExport": true,
+    "passwordStoredByApp": false,
+    "recoveryKeyExists": false,
+    "wrongPasswordMustNotWrite": true,
+    "iterationCountMustBeBenchmarkedAndVersioned": true
+  },
+  "globalRules": {
+    "browserStorageIsNotBackup": true,
+    "persistentStorageRequestCanFail": true,
+    "quotaValuesAreApproximate": true,
+    "noAutomaticDiskBackupWithoutUserChosenDestination": true,
+    "noUnloadTimeBackup": true,
+    "staticKnowledgeExcludedFromPersonalBackup": true,
+    "derivedCachesExcluded": true,
+    "restoreValidatedBeforeWrite": true,
+    "multiDatabaseRestoreIsRecoverableNotAtomic": true,
+    "unknownFutureDataQuarantinedNotDiscarded": true,
+    "noFieldLevelAutoMerge": true,
+    "noCloudSync": true,
+    "noAuthentication": true,
+    "noRuntimePersonalDataTransmission": true
+  },
+  "testVectors": [
+    {
+      "id": "canonical_vs_derived",
+      "input": {
+        "canonical": [
+          "workoutSessions"
+        ],
+        "derived": [
+          "derivedPersonalRecords"
+        ]
+      },
+      "expected": {
+        "backupIncludes": [
+          "workoutSessions"
+        ],
+        "backupExcludes": [
+          "derivedPersonalRecords"
+        ]
+      }
+    },
+    {
+      "id": "quota_estimate_is_approximate",
+      "input": {
+        "usage": 1000000,
+        "quota": 10000000
+      },
+      "expected": {
+        "displayApproximate": true,
+        "guaranteeAvailableBytes": false
+      }
+    },
+    {
+      "id": "persistent_storage_rejected",
+      "input": {
+        "persistResult": false
+      },
+      "expected": {
+        "appContinues": true,
+        "warningShown": true,
+        "backupRecommended": true
+      }
+    },
+    {
+      "id": "quota_exceeded_write",
+      "input": {
+        "errorName": "QuotaExceededError"
+      },
+      "expected": {
+        "transactionAborted": true,
+        "existingDataPreserved": true,
+        "storageHelpShown": true
+      }
+    },
+    {
+      "id": "unknown_future_backup_version",
+      "input": {
+        "formatVersion": 99
+      },
+      "expected": {
+        "writeAttempted": false,
+        "status": "unsupported_future_version"
+      }
+    },
+    {
+      "id": "corrupt_payload_hash",
+      "input": {
+        "storedHash": "abc",
+        "calculatedHash": "def"
+      },
+      "expected": {
+        "writeAttempted": false,
+        "status": "integrity_failed"
+      }
+    },
+    {
+      "id": "duplicate_same_hash",
+      "input": {
+        "existingId": "x",
+        "importedId": "x",
+        "existingHash": "h",
+        "importedHash": "h"
+      },
+      "expected": {
+        "conflict": false,
+        "action": "skip_identical"
+      }
+    },
+    {
+      "id": "duplicate_different_hash_keep_existing",
+      "input": {
+        "existingId": "x",
+        "importedId": "x",
+        "existingHash": "a",
+        "importedHash": "b",
+        "mode": "keep_existing"
+      },
+      "expected": {
+        "conflict": true,
+        "existingPreserved": true
+      }
+    },
+    {
+      "id": "import_as_copy_supported",
+      "input": {
+        "entity": "customRecipe",
+        "supportsImportAsCopy": true
+      },
+      "expected": {
+        "newIdGenerated": true,
+        "referencesRemapped": true,
+        "originalIdPreservedInImportMetadata": true
+      }
+    },
+    {
+      "id": "import_as_copy_unsupported",
+      "input": {
+        "entity": "auditEvent",
+        "supportsImportAsCopy": false
+      },
+      "expected": {
+        "action": "keep_or_replace_only"
+      }
+    },
+    {
+      "id": "multi_database_restore_failure",
+      "input": {
+        "database1": "committed",
+        "database2": "failed"
+      },
+      "expected": {
+        "claimAtomic": false,
+        "restoreJournalState": "rollback_required",
+        "appWriteMode": "blocked_until_recovery"
+      }
+    },
+    {
+      "id": "binary_excluded_default",
+      "input": {
+        "store": "progressPhotoBlobs",
+        "profile": "portable"
+      },
+      "expected": {
+        "included": false,
+        "manifestWarning": true
+      }
+    },
+    {
+      "id": "binary_included_full",
+      "input": {
+        "store": "progressPhotoBlobs",
+        "profile": "full_with_media"
+      },
+      "expected": {
+        "included": true,
+        "separateAssetManifest": true
+      }
+    },
+    {
+      "id": "missing_blob",
+      "input": {
+        "metadataExists": true,
+        "blobExists": false
+      },
+      "expected": {
+        "recordDeleted": false,
+        "healthIssue": "missing_binary",
+        "repairAutomatic": false
+      }
+    },
+    {
+      "id": "csv_formula_safe",
+      "input": {
+        "cell": "=HYPERLINK(\"x\")",
+        "mode": "spreadsheet_safe"
+      },
+      "expected": {
+        "cellBeginsWithTabOrApostropheInsideQuotes": true,
+        "warningInManifest": true
+      }
+    },
+    {
+      "id": "csv_raw_machine",
+      "input": {
+        "cell": "=1+1",
+        "mode": "raw_machine"
+      },
+      "expected": {
+        "preserved": true,
+        "userWarningRequired": true
+      }
+    },
+    {
+      "id": "json_date_round_trip",
+      "input": {
+        "type": "Date",
+        "value": "2026-08-05T00:00:00.000Z"
+      },
+      "expected": {
+        "typeTagPreserved": true,
+        "restoredAsDateOrDocumentedString": true
+      }
+    },
+    {
+      "id": "restore_dry_run",
+      "input": {
+        "mode": "preview"
+      },
+      "expected": {
+        "databaseWrites": 0,
+        "countsAndConflictsShown": true
+      }
+    },
+    {
+      "id": "clear_all_requires_backup_choice",
+      "input": {
+        "action": "clear_all"
+      },
+      "expected": {
+        "typedConfirmation": true,
+        "backupPromptShown": true,
+        "singleClickDelete": false
+      }
+    },
+    {
+      "id": "private_browsing",
+      "input": {
+        "ephemeralStorageLikely": true
+      },
+      "expected": {
+        "prominentWarning": true,
+        "backupReminder": true
+      }
+    },
+    {
+      "id": "cross_tab_restore_lock",
+      "input": {
+        "anotherTabActive": true
+      },
+      "expected": {
+        "restoreBlocked": true,
+        "broadcastNotice": true
+      }
+    },
+    {
+      "id": "no_unload_backup",
+      "input": {
+        "event": "beforeunload"
+      },
+      "expected": {
+        "newAsyncBackupStarted": false
+      }
+    },
+    {
+      "id": "unknown_store_in_backup",
+      "input": {
+        "storeId": "futureStore",
+        "moduleId": "phase_99"
+      },
+      "expected": {
+        "quarantined": true,
+        "silentlyDiscarded": false
+      }
+    },
+    {
+      "id": "audit_log_missing",
+      "input": {
+        "profile": "minimal",
+        "auditIncluded": false
+      },
+      "expected": {
+        "restorable": true,
+        "warning": "history_not_included"
+      }
+    },
+    {
+      "id": "encrypted_wrong_password",
+      "input": {
+        "decryptResult": "OperationError"
+      },
+      "expected": {
+        "databaseWrites": 0,
+        "message": "unable_to_decrypt_or_file_corrupt"
+      }
+    }
+  ]
+}

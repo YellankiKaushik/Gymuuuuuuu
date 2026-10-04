@@ -1,0 +1,39 @@
+PHASE 01 — QUICK IMPLEMENTATION REFERENCE
+
+WORKING NAME
+Fitness OS. Keep in one config constant.
+
+MOBILE PRIMARY NAVIGATION (EXACTLY FIVE)
+1. Home /
+2. Learn /learn
+3. Train /programs
+4. Eat /foods
+5. Progress /progress
+
+MOBILE MORE
+Recovery /recovery
+Mobility /mobility
+Tools /tools
+Saved /saved
+Settings /settings
+Sources /about/sources
+
+DESKTOP SIDEBAR
+Expanded 272 px; collapsed 80 px; persistent preference; tooltips in collapsed mode.
+
+TOP BAR
+64 px target. Current context, global search, theme toggle, future action slot. No profile, login, alerts or upgrade.
+
+THEMES
+System, Light, Dark. Use semantic tokens. Restrained neutral/forest direction.
+
+CORE BREAKPOINT BEHAVIOR
+<640: mobile top bar + bottom navigation
+640–1023: tablet drawer
+>=1024: persistent sidebar
+
+NO-GO ITEMS
+No authentication. No backend. No Supabase/Lovable Cloud/Firebase. No payments. No analytics SDK. No fake fitness/nutrition data. No final trackers/calculators/charts. No framework migration.
+
+PHASE CHECKPOINT
+phase-01-shell-complete

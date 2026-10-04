@@ -1,0 +1,395 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fitness-os-muscle-record.schema.json",
+  "title": "Fitness OS Muscle Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "displayName",
+    "anatomicalName",
+    "entityType",
+    "contentStatus",
+    "regions",
+    "summary",
+    "sources",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^muscle_[a-z0-9_]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 2
+    },
+    "anatomicalName": {
+      "type": "string",
+      "minLength": 2
+    },
+    "latinName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "entityType": {
+      "enum": [
+        "region",
+        "training-group",
+        "anatomical-group",
+        "muscle",
+        "subdivision"
+      ]
+    },
+    "contentStatus": {
+      "enum": [
+        "draft",
+        "review-needed",
+        "reviewed",
+        "published",
+        "deprecated"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "moderate",
+        "limited"
+      ]
+    },
+    "laterality": {
+      "enum": [
+        "midline",
+        "bilateral",
+        "left",
+        "right",
+        "not-applicable"
+      ]
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^region_[a-z0-9_]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "trainingGroups": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^group_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "parentIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "childIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "visibility": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "anterior",
+          "posterior",
+          "lateral",
+          "deep",
+          "multiple"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20
+    },
+    "locationSummary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "practicalImportance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "subdivisions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "proximalAttachmentSummary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "distalAttachmentSummary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "jointCrossings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fiberDirection": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "innervationSummary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "jointActions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "joint",
+          "motion",
+          "contributionLevel",
+          "sourceIds"
+        ],
+        "properties": {
+          "joint": {
+            "type": "string"
+          },
+          "motion": {
+            "type": "string"
+          },
+          "plane": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contributionLevel": {
+            "enum": [
+              "primary",
+              "secondary",
+              "supporting",
+              "stabilizing",
+              "context-dependent"
+            ]
+          },
+          "qualifier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "movementPatterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "trainingRelevance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "compoundCategories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isolationCategories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "stabilizationContexts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relatedMuscleId",
+          "context",
+          "role",
+          "sourceIds"
+        ],
+        "properties": {
+          "relatedMuscleId": {
+            "type": "string"
+          },
+          "context": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "agonist",
+              "antagonist",
+              "synergist",
+              "stabilizer",
+              "neighbor",
+              "commonly-confused"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "misconceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim",
+          "correction",
+          "severity",
+          "sourceIds"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "correction": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "minor",
+              "misleading",
+              "safety-relevant"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "cautions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mediaIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "reviewedBy": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "replacementId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

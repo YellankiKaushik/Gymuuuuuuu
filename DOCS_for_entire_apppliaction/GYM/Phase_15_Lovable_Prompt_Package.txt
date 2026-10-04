@@ -1,0 +1,87 @@
+PHASE 15 — LOVABLE PROMPT PACKAGE
+
+========================================
+PROMPT 1 — PLAN MODE
+========================================
+Read all attached Phase 15 files and the active Phase 00 Project Knowledge. Do not modify code yet.
+
+Produce a detailed implementation plan for Phase 15 — Body Progress, Dashboard and Analytics.
+
+The plan must identify:
+1. Existing Phase 01, 02, 03, 05, 06, 07, 08, 09, 10, 12, 13 and optional 14 integration points.
+2. Exact routes, components, IndexedDB stores, migrations and metric services.
+3. How raw source records remain immutable.
+4. How metric definitions and calculation receipts are versioned.
+5. How body-weight, circumference and body-composition compatibility rules work.
+6. How progress photos are sanitized locally and excluded from default JSON backup.
+7. How nutrition complete-day reviews affect analytics.
+8. How charts remain accessible.
+9. Privacy and network-audit tests.
+10. Every acceptance criterion and the test that proves it.
+
+Non-negotiable boundaries:
+- no body-fat calculator;
+- no photo or physique analysis;
+- no composite score;
+- no causality claim;
+- no calories burned or VO2max;
+- no goal-completion prediction;
+- no authentication or cloud backend;
+- no personal values in network requests or URLs;
+- no publication of draft seed content as factual articles;
+- no changes to completed modules except documented integration adapters.
+
+Stop after the plan and wait for approval.
+
+========================================
+PROMPT 2 — AGENT MODE IMPLEMENTATION
+========================================
+Implement the approved Phase 15 plan exactly.
+
+Implementation rules:
+- Preserve all completed phases.
+- Raw source records are canonical; analytics caches are rebuildable.
+- Every metric shows formula, version, sample count, inclusions, exclusions and quality flags.
+- Never infer missing values or complete nutrition days.
+- Never merge incompatible circumference protocols or body-composition methods silently.
+- Sanitize progress photos locally and never upload them.
+- Default JSON backup excludes photo binaries.
+- Cross-domain charts include a no-causality notice.
+- No hidden or composite score.
+- No AI-generated explanations or recommendations.
+- No runtime transmission of personal values.
+
+After implementation report:
+1. Files created and changed.
+2. Routes implemented.
+3. IndexedDB migration version and stores.
+4. Metric IDs and method versions.
+5. Test results mapped to acceptance criteria.
+6. Privacy/network audit.
+7. Intentionally unavailable metrics and why.
+
+========================================
+PROMPT 3 — VERIFICATION
+========================================
+Audit Phase 15 without adding features. Verify:
+- source-record immutability;
+- metric-version receipts;
+- weight trend sample gates;
+- circumference protocol separation;
+- body-composition method/device separation;
+- no body-fat calculation;
+- photo metadata removal and no upload;
+- no composite scores;
+- nutrition complete-day filtering;
+- no deficiency, causality, calorie-burn or VO2max claims;
+- accessible charts and data tables;
+- local backup/restore;
+- 320 px responsive behavior;
+- no regressions in earlier phases.
+
+Return a pass/fail table for every acceptance criterion. Fix only confirmed Phase 15 defects.
+
+========================================
+PROMPT 4 — CORRECTION GUARDRAIL
+========================================
+Correct only the confirmed Phase 15 defects. Do not redesign the application, replace shared components, add authentication, add a backend, create body-fat formulas, add photo analysis, create composite scores, invent analytics, or alter earlier phase contracts without a documented compatibility requirement. Re-run the failed tests and report results.

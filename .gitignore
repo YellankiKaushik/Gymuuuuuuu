@@ -1,0 +1,12 @@
+node_modules/
+.output/
+.vercel/
+dist/
+.tanstack/
+coverage/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+*.log

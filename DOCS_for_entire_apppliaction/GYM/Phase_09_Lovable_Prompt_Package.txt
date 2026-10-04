@@ -1,0 +1,100 @@
+FITNESS OS - PHASE 09 LOVABLE PROMPT PACKAGE
+Version 1.0 - 5 August 2026
+
+============================================================
+PROMPT 1 - PLAN MODE
+============================================================
+Read the attached Phase 09 Diet Planning and Target Calculators specification, JSON Schema and reference-data file completely. Keep the Phase 00 Project Knowledge active. Read the Phase 07 food and Phase 08 nutrient contracts because Phase 09 depends on their stable IDs, units and reference-framework semantics.
+
+Do not change code yet.
+
+Produce a precise implementation plan that:
+1. Lists every route, component, domain function, IndexedDB store, migration, documentation file and test file to create or change.
+2. Preserves the no-authentication, local-only and no-runtime-API architecture.
+3. Implements the eight 2023 National Academies adult EER equations exactly from the attached reference data.
+4. Explains PAL selection, metric conversion, rounding and model-error display.
+5. Explains goal adjustments without target-date predictions or calorie-burn add-back.
+6. Explains protein, fat, carbohydrate and fibre calculations and conflicts.
+7. Explains low-intake, low-BMI, pregnancy, lactation and unsupported-use boundaries.
+8. Explains saved-plan provenance and how old formula versions remain unchanged.
+9. Explains Phase 10 handoff.
+10. Maps every acceptance criterion to automated or manual tests.
+
+Explicitly list what you will not build: authentication, backend, cloud health storage, medical diets, paediatric or pregnancy calculators, AI recommendations, meal menus, food logging, supplement doses, deficiency diagnosis, target-date weight prediction and exercise-calorie add-back.
+
+Wait for plan approval before implementation.
+
+============================================================
+PROMPT 2 - AGENT MODE IMPLEMENTATION
+============================================================
+Implement the approved Phase 09 plan exactly.
+
+Non-negotiable constraints:
+- Preserve Phases 00-08.
+- Use the attached reference data as the only calculator constants.
+- Do not replace the NASEM 2023 EER equations with Mifflin plus activity multipliers.
+- Do not fabricate a calorie target or protein range.
+- Do not add authentication, Supabase, Firebase, server database or remote health-data calls.
+- Block under-19, pregnancy and lactation use.
+- Block targets below 1,000 kcal/day.
+- Do not predict a goal date.
+- Do not add calories burned from workouts.
+- Keep all saved inputs and plans in IndexedDB.
+- Preserve formula version and source IDs in every saved plan.
+- Never silently recalculate old plans.
+- Add every required test and documentation file.
+
+If reviewed Phase 08 reference data is unavailable, show a neutral unavailable state rather than inventing a value.
+
+============================================================
+PROMPT 3 - VERIFICATION
+============================================================
+Audit the Phase 09 implementation against every requirement and acceptance criterion.
+
+Report PASS, FAIL or NOT TESTED for:
+- Routes and navigation.
+- All eight EER equations.
+- Metric and imperial conversion.
+- Nearest-25 rounding.
+- PAL selection and descriptions.
+- RMSE and uncertainty display.
+- Goal adjustments.
+- No target-date forecast.
+- 1,000-kcal block.
+- BMI safety checks.
+- Protein ranges and calculation basis.
+- Fat range.
+- Carbohydrate remainder and conflict handling.
+- Fibre benchmark.
+- No bodyweight water formula.
+- Meal distribution.
+- Saved-plan versioning.
+- IndexedDB CRUD and migration.
+- JSON/CSV export and restore.
+- No remote request.
+- Mobile, desktop, dark mode and accessibility.
+- Regression of Phases 00, 01, 07 and 08.
+
+Run the attached numerical test vectors. For each failure, name the exact file, expected value, observed value and correction. Do not claim completion while a blocking failure remains.
+
+============================================================
+PROMPT 4 - CORRECTION
+============================================================
+Fix only the Phase 09 failures identified in the verification report.
+
+Do not redesign the application shell, rewrite Phase 07 or Phase 08 data, replace formulas, add new scope or refactor unrelated completed modules.
+
+After corrections, rerun all Phase 09 tests and the Phase 00/01/07/08 regression suite. Return a final acceptance matrix.
+
+============================================================
+PROMPT 5 - FORMULA INTEGRITY CHECK
+============================================================
+Inspect the implementation for duplicated or hidden formula constants.
+
+Requirements:
+- All calculator constants come from one versioned reference-data module.
+- UI components contain no independent EER coefficients, AMDR values, protein ranges, fibre factor or safety thresholds.
+- Saved plans include formula and reference-data versions.
+- Test vectors match the attached expected values within 0.01 before headline rounding.
+
+Report every duplicate or divergent constant by file and line, then remove it without changing the approved formula set.

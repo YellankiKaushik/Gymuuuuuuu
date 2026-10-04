@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 10 Nutrition Tracker Reference Data",
+    "version": "1.0.0",
+    "date": "2026-08-05",
+    "status": "implementation contract",
+    "notice": "Synthetic test foods are arithmetic fixtures only and must never be published as food content."
+  },
+  "database": {
+    "name": "fitness-os",
+    "targetSchemaVersion": 10,
+    "preserveAllExistingStores": true,
+    "stores": [
+      {
+        "id": "nutritionPreferences",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "nutritionDays",
+        "keyPath": "localDate",
+        "canonical": true
+      },
+      {
+        "id": "foodLogEntries",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "hydrationEntries",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "customFoods",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "customFoodRevisions",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "nutritionFavourites",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "nutritionAuditLog",
+        "keyPath": "id",
+        "canonical": true
+      },
+      {
+        "id": "derivedNutritionDayTotals",
+        "keyPath": "localDate",
+        "canonical": false,
+        "rebuildable": true
+      }
+    ],
+    "entryIndexes": [
+      {
+        "name": "byLocalDate",
+        "keyPath": "localDate"
+      },
+      {
+        "name": "byLocalDateMeal",
+        "keyPath": [
+          "localDate",
+          "mealSlotId"
+        ]
+      },
+      {
+        "name": "byOccurredAt",
+        "keyPath": "occurredAtUtc"
+      },
+      {
+        "name": "byCanonicalFoodId",
+        "keyPath": "canonicalFoodRef.foodId"
+      },
+      {
+        "name": "byCustomFoodId",
+        "keyPath": "customFoodRef.customFoodId"
+      },
+      {
+        "name": "byDeletedAt",
+        "keyPath": "deletedAt"
+      }
+    ]
+  },
+  "defaultMealSlots": [
+    {
+      "id": "meal_breakfast",
+      "label": "Breakfast",
+      "order": 10,
+      "visible": true
+    },
+    {
+      "id": "meal_morning_snack",
+      "label": "Morning snack",
+      "order": 20,
+      "visible": true
+    },
+    {
+      "id": "meal_lunch",
+      "label": "Lunch",
+      "order": 30,
+      "visible": true
+    },
+    {
+      "id": "meal_afternoon_snack",
+      "label": "Afternoon snack",
+      "order": 40,
+      "visible": true
+    },
+    {
+      "id": "meal_dinner",
+      "label": "Dinner",
+      "order": 50,
+      "visible": true
+    },
+    {
+      "id": "meal_evening_snack",
+      "label": "Evening snack",
+      "order": 60,
+      "visible": true
+    },
+    {
+      "id": "meal_other",
+      "label": "Other",
+      "order": 70,
+      "visible": true
+    }
+  ],
+  "massConversions": {
+    "kgToGrams": 1000,
+    "ounceToGrams": 28.349523125,
+    "poundToGrams": 453.59237,
+    "prohibitGenericVolumeToMass": true,
+    "calculation": "loggedValue = per100gValue * gramWeight / 100"
+  },
+  "sourceStatuses": [
+    {
+      "id": "measured",
+      "includeNumeric": true,
+      "coverage": "quantified"
+    },
+    {
+      "id": "calculated",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged"
+    },
+    {
+      "id": "imputed",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged"
+    },
+    {
+      "id": "estimated",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged"
+    },
+    {
+      "id": "not_detected",
+      "includeNumeric": true,
+      "coverage": "quantified_flagged",
+      "requiresExplicitZero": true
+    },
+    {
+      "id": "trace",
+      "includeNumeric": false,
+      "coverage": "partial"
+    },
+    {
+      "id": "not_available",
+      "includeNumeric": false,
+      "coverage": "missing"
+    },
+    {
+      "id": "user_entered",
+      "includeNumeric": true,
+      "coverage": "quantified_user_entered"
+    }
+  ],
+  "coverage": {
+    "formula": "quantifiedEligibleEntries / eligibleEntries * 100",
+    "states": [
+      "complete",
+      "partial",
+      "unavailable",
+      "not_applicable"
+    ],
+    "doNotInterpretAsAdequacy": true
+  },
+  "targetBinding": {
+    "bindOnFirstRecordForDate": true,
+    "historicalDaysRemainFrozen": true,
+    "replacementRequiresConfirmation": true,
+    "replacementRequiresAuditReason": true
+  },
+  "copyRules": {
+    "default": "preserve_original_snapshot",
+    "latestProfileRequiresExplicitChoice": true,
+    "newIdsRequired": true,
+    "newTimestampsRequired": true
+  },
+  "displayPrecision": {
+    "energyKcalDecimals": 0,
+    "macroGramDecimals": 1,
+    "massGramDecimals": 1,
+    "storeIntermediatePrecision": true
+  },
+  "backup": {
+    "format": "fitness-os-nutrition-backup",
+    "schemaVersion": 1,
+    "canonicalStores": [
+      "nutritionPreferences",
+      "nutritionDays",
+      "foodLogEntries",
+      "hydrationEntries",
+      "customFoods",
+      "customFoodRevisions",
+      "nutritionFavourites",
+      "nutritionAuditLog"
+    ],
+    "excludedRebuildableStores": [
+      "derivedNutritionDayTotals",
+      "recentFoods"
+    ]
+  },
+  "csvExports": [
+    "food_entries",
+    "daily_energy_macros",
+    "daily_nutrients_completeness",
+    "hydration_entries",
+    "custom_foods"
+  ],
+  "sources": [
+    {
+      "id": "usda_fdc_data_docs",
+      "title": "USDA FoodData Central Data Type Documentation",
+      "url": "https://fdc.nal.usda.gov/data-documentation/"
+    },
+    {
+      "id": "usda_fdc_foundation_docs",
+      "title": "USDA FoodData Central Foundation Foods Documentation",
+      "url": "https://fdc.nal.usda.gov/Foundation_Foods_Documentation/"
+    },
+    {
+      "id": "fao_missing_values",
+      "title": "FAO Food Composition Data - data values and missing values",
+      "url": "https://www.fao.org/4/y4705e/y4705e14.htm"
+    },
+    {
+      "id": "nih_dri",
+      "title": "NIH ODS Nutrient Recommendations and Databases",
+      "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx"
+    },
+    {
+      "id": "mdn_indexeddb",
+      "title": "MDN IndexedDB API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"
+    },
+    {
+      "id": "mdn_storage_persist",
+      "title": "MDN StorageManager.persist",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageManager/persist"
+    }
+  ],
+  "testVectors": [
+    {
+      "id": "canonical_150g",
+      "input": {
+        "grams": 150,
+        "per100g": {
+          "energy_kcal": 100,
+          "protein_g": 10,
+          "carbohydrate_total_g": 20,
+          "fat_total_g": 2,
+          "fiber_total_g": 5
+        }
+      },
+      "expected": {
+        "energy_kcal": 150,
+        "protein_g": 15,
+        "carbohydrate_total_g": 30,
+        "fat_total_g": 3,
+        "fiber_total_g": 7.5
+      }
+    },
+    {
+      "id": "two_entry_day",
+      "input": {
+        "entries": [
+          {
+            "energy_kcal": 150,
+            "protein_g": 15,
+            "carbohydrate_total_g": 30,
+            "fat_total_g": 3,
+            "fiber_total_g": 7.5
+          },
+          {
+            "energy_kcal": 250,
+            "protein_g": 20,
+            "carbohydrate_total_g": 25,
+            "fat_total_g": 8,
+            "fiber_total_g": 4
+          }
+        ]
+      },
+      "expected": {
+        "energy_kcal": 400,
+        "protein_g": 35,
+        "carbohydrate_total_g": 55,
+        "fat_total_g": 11,
+        "fiber_total_g": 11.5
+      }
+    },
+    {
+      "id": "partial_iron_coverage",
+      "input": {
+        "entries": [
+          {
+            "nutrientId": "iron_mg",
+            "status": "measured",
+            "loggedValue": 2.4
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "not_available",
+            "loggedValue": null
+          }
+        ]
+      },
+      "expected": {
+        "knownTotal": 2.4,
+        "eligibleEntries": 2,
+        "quantifiedEntries": 1,
+        "coveragePercent": 50,
+        "completeness": "partial"
+      }
+    },
+    {
+      "id": "trace_not_zero",
+      "input": {
+        "entries": [
+          {
+            "nutrientId": "selenium_ug",
+            "status": "measured",
+            "loggedValue": 8
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "trace",
+            "loggedValue": null
+          }
+        ]
+      },
+      "expected": {
+        "knownTotal": 8,
+        "traceEntries": 1,
+        "completeness": "partial"
+      }
+    },
+    {
+      "id": "custom_two_servings",
+      "input": {
+        "servingGrams": 40,
+        "servings": 2,
+        "perServing": {
+          "energy_kcal": 120,
+          "protein_g": 5
+        }
+      },
+      "expected": {
+        "gramWeight": 80,
+        "energy_kcal": 240,
+        "protein_g": 10
+      }
+    },
+    {
+      "id": "target_snapshot_frozen",
+      "input": {
+        "dayTargetKcal": 2200,
+        "newCurrentPlanKcal": 2400
+      },
+      "expected": {
+        "existingDayTargetKcal": 2200,
+        "futureDayTargetKcal": 2400
+      }
+    },
+    {
+      "id": "copy_preserves_snapshot",
+      "input": {
+        "originalEntryId": "nentry_original",
+        "profileVersion": "2026-04",
+        "latestProfileVersion": "2026-10",
+        "mode": "default"
+      },
+      "expected": {
+        "newIdDifferent": true,
+        "copiedProfileVersion": "2026-04"
+      }
+    },
+    {
+      "id": "deleted_excluded",
+      "input": {
+        "entries": [
+          {
+            "energy_kcal": 100,
+            "deletedAt": null
+          },
+          {
+            "energy_kcal": 200,
+            "deletedAt": "2026-08-05T10:00:00Z"
+          }
+        ]
+      },
+      "expected": {
+        "energy_kcal": 100
+      }
+    }
+  ]
+}

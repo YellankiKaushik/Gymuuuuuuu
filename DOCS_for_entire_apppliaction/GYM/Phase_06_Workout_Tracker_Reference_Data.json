@@ -1,0 +1,324 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 06 Workout Tracker Reference Data",
+    "version": "1.0.0",
+    "date": "5 August 2026",
+    "status": "implementation-reference",
+    "notice": "This file defines stable local tracker enums, labels, database stores and defaults. It contains no user workout records and no exercise prescriptions."
+  },
+  "database": {
+    "name": "fitness-os",
+    "schemaVersion": 6,
+    "stores": [
+      {
+        "id": "appMeta",
+        "keyPath": "key",
+        "purpose": "Database version, migration receipts and backup metadata."
+      },
+      {
+        "id": "workoutPreferences",
+        "keyPath": "id",
+        "purpose": "Singleton workout-tracker preferences."
+      },
+      {
+        "id": "programInstances",
+        "keyPath": "instanceId",
+        "purpose": "Phase 05 local program instances; preserved and migrated, not replaced."
+      },
+      {
+        "id": "programTrackingStates",
+        "keyPath": "programInstanceId",
+        "purpose": "Phase 06 sequence cursor and tracker-only state for a program instance."
+      },
+      {
+        "id": "customExercises",
+        "keyPath": "id",
+        "purpose": "Local label-only custom exercises used only for logging."
+      },
+      {
+        "id": "workoutSessions",
+        "keyPath": "id",
+        "purpose": "Active and completed workout-session documents."
+      },
+      {
+        "id": "activeTimers",
+        "keyPath": "sessionId",
+        "purpose": "At most one persisted rest timer per session."
+      },
+      {
+        "id": "derivedPersonalRecords",
+        "keyPath": "id",
+        "purpose": "Rebuildable cache. Excluded from canonical backups."
+      }
+    ],
+    "workoutSessionIndexes": [
+      {
+        "name": "byStatus",
+        "keyPath": "status"
+      },
+      {
+        "name": "byStartedAt",
+        "keyPath": "startedAt"
+      },
+      {
+        "name": "byLocalDate",
+        "keyPath": "localDate"
+      },
+      {
+        "name": "byProgramInstanceId",
+        "keyPath": "programRef.programInstanceId"
+      },
+      {
+        "name": "byExerciseIds",
+        "keyPath": "exerciseIds",
+        "multiEntry": true
+      },
+      {
+        "name": "byDeletedAt",
+        "keyPath": "deletedAt"
+      }
+    ]
+  },
+  "sessionStatuses": [
+    {
+      "id": "active",
+      "label": "Active"
+    },
+    {
+      "id": "paused",
+      "label": "Paused"
+    },
+    {
+      "id": "completed",
+      "label": "Completed"
+    },
+    {
+      "id": "abandoned",
+      "label": "Ended without completion"
+    }
+  ],
+  "sessionSources": [
+    {
+      "id": "program",
+      "label": "Program session"
+    },
+    {
+      "id": "ad_hoc",
+      "label": "Ad hoc workout"
+    },
+    {
+      "id": "repeat",
+      "label": "Repeated past workout"
+    },
+    {
+      "id": "import",
+      "label": "Imported record"
+    }
+  ],
+  "exerciseReferenceKinds": [
+    {
+      "id": "canonical",
+      "label": "Exercise Encyclopedia record"
+    },
+    {
+      "id": "local_custom",
+      "label": "Local custom tracker label"
+    }
+  ],
+  "setTypes": [
+    {
+      "id": "warmup",
+      "label": "Warm-up"
+    },
+    {
+      "id": "working",
+      "label": "Working"
+    },
+    {
+      "id": "backoff",
+      "label": "Back-off"
+    },
+    {
+      "id": "drop",
+      "label": "Drop"
+    },
+    {
+      "id": "amrap",
+      "label": "AMRAP"
+    },
+    {
+      "id": "technique",
+      "label": "Technique"
+    },
+    {
+      "id": "timed",
+      "label": "Timed"
+    },
+    {
+      "id": "distance",
+      "label": "Distance"
+    },
+    {
+      "id": "other",
+      "label": "Other"
+    }
+  ],
+  "setStatuses": [
+    {
+      "id": "planned",
+      "label": "Not completed"
+    },
+    {
+      "id": "completed",
+      "label": "Completed"
+    },
+    {
+      "id": "skipped",
+      "label": "Skipped"
+    }
+  ],
+  "performanceModes": [
+    {
+      "id": "load_reps",
+      "label": "Load and repetitions"
+    },
+    {
+      "id": "bodyweight_reps",
+      "label": "Bodyweight repetitions"
+    },
+    {
+      "id": "reps_only",
+      "label": "Repetitions only"
+    },
+    {
+      "id": "duration",
+      "label": "Duration"
+    },
+    {
+      "id": "distance_duration",
+      "label": "Distance and duration"
+    },
+    {
+      "id": "load_duration",
+      "label": "Load and duration"
+    },
+    {
+      "id": "assisted_reps",
+      "label": "Assistance and repetitions"
+    }
+  ],
+  "loadScopes": [
+    {
+      "id": "total_external",
+      "label": "Total external load"
+    },
+    {
+      "id": "per_hand",
+      "label": "Load per hand"
+    },
+    {
+      "id": "machine_stack",
+      "label": "Machine stack"
+    },
+    {
+      "id": "added_load",
+      "label": "Added load"
+    },
+    {
+      "id": "assistance",
+      "label": "Assistance"
+    },
+    {
+      "id": "bodyweight",
+      "label": "Bodyweight only"
+    },
+    {
+      "id": "not_applicable",
+      "label": "Not applicable"
+    }
+  ],
+  "effortModes": [
+    {
+      "id": "none",
+      "label": "Do not record effort"
+    },
+    {
+      "id": "rir",
+      "label": "Repetitions in reserve"
+    },
+    {
+      "id": "rpe",
+      "label": "Rate of perceived exertion"
+    }
+  ],
+  "personalRecordTypes": [
+    {
+      "id": "max_load",
+      "label": "Heaviest comparable completed working set"
+    },
+    {
+      "id": "max_reps_at_load",
+      "label": "Most repetitions at the same canonical load"
+    },
+    {
+      "id": "max_reps",
+      "label": "Most repetitions"
+    },
+    {
+      "id": "longest_duration",
+      "label": "Longest completed duration"
+    },
+    {
+      "id": "longest_distance",
+      "label": "Longest completed distance"
+    },
+    {
+      "id": "best_set_external_volume",
+      "label": "Highest load x repetitions for a comparable set"
+    }
+  ],
+  "weekStartsOnOptions": [
+    {
+      "id": "monday",
+      "label": "Monday"
+    },
+    {
+      "id": "sunday",
+      "label": "Sunday"
+    }
+  ],
+  "defaultPreferences": {
+    "id": "workout-preferences",
+    "schemaVersion": 1,
+    "weightUnit": "kg",
+    "distanceUnit": "km",
+    "effortMode": "rir",
+    "defaultRestSeconds": 120,
+    "autoStartRestTimer": false,
+    "timerSound": "beep",
+    "showPreviousPerformance": true,
+    "confirmBeforeDiscard": true,
+    "weekStartsOn": "monday"
+  },
+  "restTimerPresetsSeconds": [
+    60,
+    90,
+    120,
+    180,
+    300
+  ],
+  "backupFormat": {
+    "format": "fitness-os-workout-backup",
+    "schemaVersion": 1,
+    "canonicalStores": [
+      "workoutPreferences",
+      "programTrackingStates",
+      "customExercises",
+      "workoutSessions"
+    ],
+    "excludedRebuildableStores": [
+      "derivedPersonalRecords",
+      "activeTimers"
+    ]
+  }
+}

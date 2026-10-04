@@ -1,0 +1,592 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase09-diet-planning-backup.schema.json",
+  "title": "Fitness OS Phase 09 Diet Planning Backup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "exportedAt",
+    "plans",
+    "settings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "currentPlanId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "settings": {
+      "$ref": "#/$defs/settings"
+    },
+    "plans": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/plan"
+      }
+    },
+    "auditLog": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/audit"
+      }
+    }
+  },
+  "$defs": {
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unitSystem",
+        "referenceFrameworkId",
+        "storeInputsInSavedPlans"
+      ],
+      "properties": {
+        "unitSystem": {
+          "enum": [
+            "metric",
+            "imperial"
+          ]
+        },
+        "referenceFrameworkId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 80
+        },
+        "storeInputsInSavedPlans": {
+          "type": "boolean"
+        },
+        "defaultMealCount": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 6
+        },
+        "lastBackupAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "status",
+        "createdAt",
+        "updatedAt",
+        "goal",
+        "inputs",
+        "energy",
+        "macros",
+        "mealDistribution",
+        "warnings",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^dietplan_[a-z0-9_-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "status": {
+          "enum": [
+            "current",
+            "saved",
+            "archived"
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "goal": {
+          "enum": [
+            "maintenance",
+            "fat_loss",
+            "muscle_gain",
+            "recomposition",
+            "manual"
+          ]
+        },
+        "inputs": {
+          "$ref": "#/$defs/inputs"
+        },
+        "energy": {
+          "$ref": "#/$defs/energy"
+        },
+        "macros": {
+          "$ref": "#/$defs/macros"
+        },
+        "mealDistribution": {
+          "$ref": "#/$defs/mealDistribution"
+        },
+        "dietPreferences": {
+          "$ref": "#/$defs/dietPreferences"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/warning"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 2000
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ageYears",
+        "sexForEquation",
+        "heightCm",
+        "weightKg",
+        "activityCategory",
+        "pregnancyOrLactation"
+      ],
+      "properties": {
+        "ageYears": {
+          "type": "number",
+          "minimum": 19,
+          "maximum": 100
+        },
+        "sexForEquation": {
+          "enum": [
+            "male",
+            "female"
+          ]
+        },
+        "heightCm": {
+          "type": "number",
+          "minimum": 120,
+          "maximum": 230
+        },
+        "weightKg": {
+          "type": "number",
+          "minimum": 30,
+          "maximum": 350
+        },
+        "activityCategory": {
+          "enum": [
+            "inactive",
+            "low_active",
+            "active",
+            "very_active"
+          ]
+        },
+        "pregnancyOrLactation": {
+          "type": "boolean"
+        },
+        "targetWeightKg": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 30,
+          "maximum": 350
+        },
+        "calculationWeightKg": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 30,
+          "maximum": 350
+        },
+        "professionalReviewAcknowledged": {
+          "type": "boolean"
+        }
+      }
+    },
+    "energy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modelId",
+        "modelVersion",
+        "unroundedMaintenanceKcal",
+        "maintenanceKcal",
+        "modelRmseKcal",
+        "adjustmentPercent",
+        "targetKcal"
+      ],
+      "properties": {
+        "modelId": {
+          "const": "nasem_2023_adult_eer"
+        },
+        "modelVersion": {
+          "const": "2023.1"
+        },
+        "unroundedMaintenanceKcal": {
+          "type": "number",
+          "minimum": 500,
+          "maximum": 10000
+        },
+        "maintenanceKcal": {
+          "type": "integer",
+          "multipleOf": 25,
+          "minimum": 500,
+          "maximum": 10000
+        },
+        "modelRmseKcal": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "adjustmentPercent": {
+          "type": "number",
+          "minimum": -20,
+          "maximum": 15
+        },
+        "targetKcal": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 10000
+        },
+        "manualOverrideKcal": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1000,
+          "maximum": 10000
+        },
+        "manualOverrideReason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    },
+    "targetRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max",
+        "selected",
+        "unit"
+      ],
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max": {
+          "type": "number",
+          "minimum": 0
+        },
+        "selected": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30
+        },
+        "basis": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 100
+        }
+      }
+    },
+    "macros": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protein",
+        "fat",
+        "carbohydrate",
+        "fiber",
+        "energyCheckKcal"
+      ],
+      "properties": {
+        "protein": {
+          "$ref": "#/$defs/targetRange"
+        },
+        "fat": {
+          "$ref": "#/$defs/targetRange"
+        },
+        "carbohydrate": {
+          "$ref": "#/$defs/targetRange"
+        },
+        "fiber": {
+          "$ref": "#/$defs/targetRange"
+        },
+        "proteinPresetId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 80
+        },
+        "fatPercentEnergy": {
+          "type": "number",
+          "minimum": 20,
+          "maximum": 35
+        },
+        "carbohydratePercentEnergy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "energyCheckKcal": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "amdrStatus": {
+          "type": "object",
+          "additionalProperties": {
+            "enum": [
+              "within",
+              "below",
+              "above",
+              "not_applicable"
+            ]
+          }
+        }
+      }
+    },
+    "mealDistribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mealCount",
+        "mode",
+        "meals"
+      ],
+      "properties": {
+        "mealCount": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 6
+        },
+        "mode": {
+          "enum": [
+            "even",
+            "custom"
+          ]
+        },
+        "meals": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "energyKcal",
+              "proteinGrams",
+              "carbohydrateGrams",
+              "fatGrams"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 50
+              },
+              "energyKcal": {
+                "type": "number",
+                "minimum": 0
+              },
+              "proteinGrams": {
+                "type": "number",
+                "minimum": 0
+              },
+              "carbohydrateGrams": {
+                "type": "number",
+                "minimum": 0
+              },
+              "fatGrams": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "dietPreferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pattern": {
+          "enum": [
+            "omnivore",
+            "vegetarian",
+            "vegan",
+            "pescatarian",
+            "eggetarian",
+            "unspecified"
+          ]
+        },
+        "excludedFoodIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "allergenNotes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "cuisinePreferences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "warning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "severity": {
+          "enum": [
+            "info",
+            "caution",
+            "block"
+          ]
+        },
+        "message": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 500
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "formulaSetId",
+        "formulaSetVersion",
+        "referenceDataVersion",
+        "sourceIds",
+        "calculatedAt"
+      ],
+      "properties": {
+        "formulaSetId": {
+          "const": "phase09_diet_targets"
+        },
+        "formulaSetVersion": {
+          "const": "1.0.0"
+        },
+        "referenceDataVersion": {
+          "const": "1.0.0"
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "calculatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "planId",
+        "timestamp",
+        "action"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "planId": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "action": {
+          "enum": [
+            "created",
+            "updated",
+            "set_current",
+            "archived",
+            "deleted",
+            "exported",
+            "imported"
+          ]
+        },
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    }
+  }
+}

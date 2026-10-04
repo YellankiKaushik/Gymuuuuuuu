@@ -1,0 +1,34 @@
+PHASE 08 — NUTRIENT ENCYCLOPEDIA QUICK REFERENCE
+Date: 5 August 2026
+
+UPLOAD TO LOVABLE
+1. Phase_08_Nutrient_Encyclopedia.md
+2. Phase_08_Nutrient_Data_Schema.json
+3. Phase_08_Seed_Nutrient_Taxonomy.json
+4. Phase_08_Lovable_Prompt_Package.txt
+
+ALSO ATTACH
+- Phase_07_Food_Data_Schema.json
+- Phase_07_Seed_Food_Taxonomy.json
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+- Phase 01 shell/design system
+
+CORE DECISIONS
+- 51 stable nutrient/dietary-component identities.
+- Reference frameworks stay separate and versioned.
+- DRI/DV/ICMR/EFSA values are not interchangeable.
+- No invented intake values or deficiency diagnosis.
+- No supplement dosage generator.
+- Verified Phase 07 foods are the only food-source data.
+- Missing values stay missing.
+- User reference selections are optional and local only.
+
+SEED STATUS
+- All identities are draft.
+- Educational content and population tables are intentionally absent.
+- Draft identities must not appear publicly.
+
+GITHUB CHECKPOINT
+phase-08-nutrient-encyclopedia-complete

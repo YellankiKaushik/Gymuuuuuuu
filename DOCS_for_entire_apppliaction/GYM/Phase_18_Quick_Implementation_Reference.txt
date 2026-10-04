@@ -1,0 +1,43 @@
+PHASE 18 — QUICK IMPLEMENTATION REFERENCE
+
+PRIMARY UPLOADS
+- Phase_18_Testing_GitHub_Vercel_Deployment.md
+- Phase_18_Testing_Deployment_Data_Schema.json
+- Phase_18_Testing_Deployment_Reference_Data.json
+- Phase_18_Lovable_Prompt_Package.txt
+
+PERMANENT RULES
+- Inspect actual repository first.
+- No framework or package-manager migration.
+- Synthetic test data only.
+- GitHub owns durable code history.
+- Feature branch -> PR -> Vercel Preview -> checks -> main -> Production.
+- One stable custom production domain before real personal use.
+- Browser data does not move across origins automatically.
+- Code rollback is not data rollback.
+- Additive/copy-on-write migrations first.
+- If old code cannot read migrated data, ship a forward fix.
+- No analytics, session replay or personal-data telemetry.
+- No production promotion while any blocking gate fails.
+
+BLOCKING GATES
+1. Reproducible repository/toolchain
+2. Format, lint and strict typecheck
+3. Data validation
+4. Formula and migration tests
+5. E2E browser journeys
+6. Automated + manual accessibility
+7. Privacy/network audit
+8. Security/dependency review
+9. Performance regression review
+10. Backup/restore and compatibility
+11. Vercel Preview acceptance
+12. Canonical domain/TLS
+13. Release manifest
+14. External owner backup before destructive schema change
+15. Production smoke
+
+DO NOT UPLOAD TO LOVABLE
+- DOCX
+- Quick reference
+unless you need them for manual reading.

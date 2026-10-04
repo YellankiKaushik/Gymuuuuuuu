@@ -1,0 +1,66 @@
+PHASE 00 — PLAN MODE PROMPT
+
+You are in PLAN MODE. Read the attached document “Phase 00 — Master Foundation and Lovable Operating Specification” completely before responding.
+
+Do not modify code.
+
+Produce a formal implementation plan for PHASE 00 ONLY. The purpose of this phase is to establish the project foundation, repository rules, type-safe architecture, design tokens, route placeholders and local-data interfaces. It is not to build the full fitness application or populate the exercise/nutrition datasets.
+
+Your plan must include:
+1. Confirmed interpretation of the product and all non-negotiable exclusions.
+2. The native Lovable framework and current project structure you will retain.
+3. Exact files to create, modify or protect.
+4. Proposed folder structure and naming conventions.
+5. Global design tokens and accessibility baseline.
+6. Static content-data conventions and source metadata types.
+7. Client-only personal-data boundary and IndexedDB/localStorage adapter interfaces.
+8. Placeholder route map without final feature implementation.
+9. Validation, error-boundary and import/export foundations.
+10. Build, type-check, lint and browser-test steps.
+11. Risks, assumptions and any conflicts you detect.
+12. Acceptance criteria copied as a checkable list.
+
+Guardrails:
+- No authentication.
+- No Supabase, Lovable Cloud, Firebase or external database.
+- No payments, subscriptions, social features or admin dashboard.
+- No invented fitness or nutrition content.
+- Do not implement later phases.
+- Do not replace the native Lovable framework.
+
+Stop after presenting the plan. Wait for approval before implementation.
+
+
+PHASE 00 — AGENT MODE PROMPT
+
+Implement the approved Phase 00 plan exactly.
+
+Build only the foundation defined in the approved plan and attached Phase 00 specification. Do not build full muscle, exercise, food, diet, recovery or tracking modules yet.
+
+Mandatory outcomes:
+- Retain Lovable’s native framework and TypeScript/Tailwind setup.
+- Enable strict, typed domain models for shared metadata, sources, units and local records.
+- Add repository-level instructions (AGENTS.md) containing the permanent guardrails.
+- Create the agreed folder structure, design tokens, shared layout primitives and placeholder routes.
+- Add client-safe storage interfaces for IndexedDB and localStorage without creating cloud persistence.
+- Add data-validation utilities and typed import/export envelope definitions.
+- Add global error, empty and loading-state primitives.
+- Add basic accessible light/dark theme support.
+- Include a minimal home/foundation screen that clearly states the project is under phased construction.
+- Add automated checks/tests defined by the approved plan.
+
+Prohibited:
+- Authentication or profiles.
+- Supabase, Lovable Cloud, Firebase, database tables or server-side user storage.
+- Payments, social/community functionality or notifications.
+- Final feature modules or large placeholder datasets.
+- Framework migration or broad dependency churn.
+
+After implementation, report:
+1. Files changed.
+2. Tests/checks run and results.
+3. Acceptance criteria status.
+4. Any unresolved issue.
+5. A concise handoff note for Phase 01.
+
+Do not begin Phase 01.

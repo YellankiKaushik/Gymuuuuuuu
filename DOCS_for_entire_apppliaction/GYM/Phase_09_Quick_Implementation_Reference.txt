@@ -1,0 +1,29 @@
+PHASE 09 - QUICK IMPLEMENTATION REFERENCE
+
+Upload to Lovable:
+1. Phase_09_Diet_Planning_and_Target_Calculators.md
+2. Phase_09_Diet_Planning_Data_Schema.json
+3. Phase_09_Diet_Planning_Reference_Data.json
+4. Phase_09_Lovable_Prompt_Package.txt
+
+Keep Phase 00 Project Knowledge active.
+Also attach Phase 07 food and Phase 08 nutrient schema/reference files.
+
+Core decisions:
+- Adults 19+ only.
+- No pregnancy or lactation.
+- NASEM 2023 adult EER equations are primary.
+- No Mifflin activity-multiplier target.
+- Explicit goal adjustment percentages.
+- Minimum target 1,000 kcal/day.
+- Protein ranges are contextual and source-backed.
+- Fat 20-35% planning range.
+- Carbohydrate is remaining energy.
+- Fibre benchmark 14 g/1000 kcal.
+- No water-per-kg formula.
+- No target-date prediction.
+- No exercise-calorie add-back.
+- All plans local in IndexedDB with formula provenance.
+
+GitHub checkpoint:
+phase-09-diet-planning-complete

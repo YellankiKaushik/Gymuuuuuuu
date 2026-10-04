@@ -1,0 +1,25 @@
+PHASE 05 — QUICK IMPLEMENTATION REFERENCE
+
+Lovable uploads:
+1. Phase_05_Workout_Programs.md
+2. Phase_05_Workout_Program_Data_Schema.json
+3. Phase_05_Seed_Workout_Program_Taxonomy.json
+4. Phase_05_Lovable_Prompt_Package.txt
+
+Also attach Phase 02–04 schemas/taxonomies. Keep Phase 00 Project Knowledge active.
+
+Core routes:
+/programs
+/programs/$slug
+/programs/finder
+/programs/compare
+/programs/current
+
+Core rule:
+Only reviewed predefined programs. No AI generator, no authentication/backend, no medical personalization and no workout logging in this phase.
+
+Seed status:
+50 stable draft identities. They are not ready-to-follow plans.
+
+Checkpoint:
+phase-05-workout-programs-complete

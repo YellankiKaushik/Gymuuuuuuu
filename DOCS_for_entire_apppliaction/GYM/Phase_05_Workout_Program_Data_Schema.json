@@ -1,0 +1,1502 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fitness-os-workout-program-record.schema.json",
+  "title": "Fitness OS Workout Program Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "displayName",
+    "category",
+    "programType",
+    "contentStatus",
+    "primaryGoal",
+    "experienceLevels",
+    "routineStyle",
+    "trainingDaysPerWeek",
+    "equipmentProfileId",
+    "durationMode",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^program_[a-z0-9_]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 3
+    },
+    "shortName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "category": {
+      "enum": [
+        "general-fitness",
+        "strength",
+        "hypertrophy",
+        "strength-hypertrophy",
+        "power",
+        "muscular-endurance",
+        "home-minimal",
+        "time-efficient",
+        "return-maintenance",
+        "body-composition-support",
+        "specialization"
+      ]
+    },
+    "programType": {
+      "enum": [
+        "template",
+        "educational-example",
+        "starter-plan",
+        "maintenance-plan",
+        "specialization-plan",
+        "conditioning-plan",
+        "power-plan"
+      ]
+    },
+    "contentStatus": {
+      "enum": [
+        "draft",
+        "review-needed",
+        "reviewed",
+        "published",
+        "deprecated"
+      ]
+    },
+    "contentStatusNote": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primaryGoal": {
+      "enum": [
+        "general-fitness",
+        "strength",
+        "hypertrophy",
+        "strength-hypertrophy",
+        "power",
+        "muscular-endurance",
+        "body-composition-support",
+        "maintenance",
+        "skill"
+      ]
+    },
+    "secondaryGoals": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "general-fitness",
+          "strength",
+          "hypertrophy",
+          "strength-hypertrophy",
+          "power",
+          "muscular-endurance",
+          "body-composition-support",
+          "maintenance",
+          "skill"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "experienceLevels": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "foundation",
+          "beginner",
+          "intermediate",
+          "advanced",
+          "specialist"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "populationScope": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "healthy-adults",
+          "resistance-trained-adults",
+          "untrained-adults",
+          "older-adults-general",
+          "mixed-healthy-adults"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "routineStyle": {
+      "enum": [
+        "full-body",
+        "upper-lower",
+        "push-pull-legs",
+        "upper-lower-ppl",
+        "body-part-split",
+        "alternating-a-b",
+        "circuit",
+        "specialization",
+        "mixed"
+      ]
+    },
+    "trainingDaysPerWeek": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7
+    },
+    "sessionDurationMinutes": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/integerRange"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "durationMode": {
+      "enum": [
+        "fixed-weeks",
+        "open-ended",
+        "block-based"
+      ]
+    },
+    "durationWeeks": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 52
+    },
+    "equipmentProfileId": {
+      "type": "string",
+      "pattern": "^equipment_profile_[a-z0-9_]+$"
+    },
+    "requiredEquipmentIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^equipment_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "optionalEquipmentIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^equipment_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "environmentTags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "gym",
+          "home",
+          "outdoors",
+          "travel",
+          "limited-space",
+          "mixed"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 40
+    },
+    "outcomesAndLimits": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "designedToSupport",
+        "doesNotGuarantee",
+        "notDesignedFor"
+      ],
+      "properties": {
+        "designedToSupport": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "doesNotGuarantee": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "notDesignedFor": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "audience": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "bestFor",
+        "notFor",
+        "prerequisites",
+        "assumptions"
+      ],
+      "properties": {
+        "bestFor": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "notFor": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "scheduleModel": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "sessions",
+        "restDayGuidance"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "fixed-week",
+            "rotating-sequence",
+            "flexible-week",
+            "block-calendar"
+          ]
+        },
+        "sessions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/session"
+          }
+        },
+        "restDayGuidance": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "calendarExamples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/calendarExample"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/programBlock"
+      }
+    },
+    "progressionRules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/progressionRule"
+      }
+    },
+    "deloadStrategy": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "triggerType",
+        "implementation",
+        "limitations",
+        "scienceTopicIds",
+        "sourceIds"
+      ],
+      "properties": {
+        "triggerType": {
+          "enum": [
+            "scheduled",
+            "readiness-guided",
+            "performance-guided",
+            "none",
+            "context-dependent"
+          ]
+        },
+        "implementation": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "scienceTopicIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^science_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^source_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "substitutionGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/substitutionGroup"
+      }
+    },
+    "weeklySummary": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sessionCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14
+        },
+        "estimatedWeeklyMinutes": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/integerRange"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "movementPatternExposure": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "movementPatternId",
+              "sessionCount"
+            ],
+            "properties": {
+              "movementPatternId": {
+                "type": "string",
+                "pattern": "^pattern_[a-z0-9_]+$"
+              },
+              "sessionCount": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        },
+        "muscleSetEstimates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "muscleId",
+              "directSetRange",
+              "method"
+            ],
+            "properties": {
+              "muscleId": {
+                "type": "string",
+                "pattern": "^muscle_[a-z0-9_]+$"
+              },
+              "directSetRange": {
+                "$ref": "#/$defs/integerRange"
+              },
+              "method": {
+                "enum": [
+                  "direct-only",
+                  "fractional-estimate",
+                  "not-calculated"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "scienceRationale": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "decision",
+          "scienceTopicIds",
+          "sourceIds",
+          "qualifiers"
+        ],
+        "properties": {
+          "decision": {
+            "type": "string",
+            "minLength": 15
+          },
+          "scienceTopicIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^science_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^source_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "qualifiers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 8
+            }
+          }
+        }
+      }
+    },
+    "measurementGuidance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "metric",
+          "howToUse",
+          "limitations",
+          "scienceTopicIds"
+        ],
+        "properties": {
+          "metric": {
+            "enum": [
+              "completed-sessions",
+              "load-repetitions",
+              "estimated-1rm",
+              "repetition-quality",
+              "rir-rpe",
+              "body-mass",
+              "circumference",
+              "subjective-readiness",
+              "other"
+            ]
+          },
+          "howToUse": {
+            "type": "string",
+            "minLength": 15
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 8
+            },
+            "minItems": 1
+          },
+          "scienceTopicIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^science_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "safety": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "generalBoundaries",
+        "stopSignals",
+        "professionalReviewTriggers",
+        "notMedicalAdvice"
+      ],
+      "properties": {
+        "generalBoundaries": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "stopSignals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "professionalReviewTriggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "notMedicalAdvice": {
+          "const": true
+        }
+      }
+    },
+    "relatedProgramIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^program_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "review": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "programReviewerRole",
+        "scienceReviewerRole",
+        "editorialReviewerRole",
+        "reviewedAt",
+        "nextReviewDue",
+        "crossReferenceReviewComplete"
+      ],
+      "properties": {
+        "programReviewerRole": {
+          "type": "string",
+          "minLength": 3
+        },
+        "scienceReviewerRole": {
+          "type": "string",
+          "minLength": 3
+        },
+        "editorialReviewerRole": {
+          "type": "string",
+          "minLength": 3
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "nextReviewDue": {
+          "type": "string",
+          "format": "date"
+        },
+        "crossReferenceReviewComplete": {
+          "const": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "deprecation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "replacementProgramId",
+        "migrationNote"
+      ],
+      "properties": {
+        "replacementProgramId": {
+          "type": "string",
+          "pattern": "^program_[a-z0-9_]+$"
+        },
+        "migrationNote": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "updatedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "learningOrder": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "$defs": {
+    "integerRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "numberRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        }
+      }
+    },
+    "calendarExample": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "days"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 3
+        },
+        "days": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "day",
+              "sessionId"
+            ],
+            "properties": {
+              "day": {
+                "enum": [
+                  "monday",
+                  "tuesday",
+                  "wednesday",
+                  "thursday",
+                  "friday",
+                  "saturday",
+                  "sunday"
+                ]
+              },
+              "sessionId": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^session_[a-z0-9_]+$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "focusTags",
+        "exerciseBlocks",
+        "estimatedDurationMinutes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^session_[a-z0-9_]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 3
+        },
+        "shortLabel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "focusTags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "estimatedDurationMinutes": {
+          "$ref": "#/$defs/integerRange"
+        },
+        "exerciseBlocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/exerciseBlock"
+          }
+        },
+        "sessionNotes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        }
+      }
+    },
+    "exerciseBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "blockType",
+        "order",
+        "prescriptions"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^block_[a-z0-9_]+$"
+        },
+        "blockType": {
+          "enum": [
+            "warmup",
+            "power",
+            "primary",
+            "secondary",
+            "accessory",
+            "superset",
+            "circuit",
+            "conditioning",
+            "mobility",
+            "cooldown"
+          ]
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "scienceTopicIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^science_[a-z0-9_]+$"
+          },
+          "uniqueItems": true
+        },
+        "prescriptions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/exercisePrescription"
+          }
+        },
+        "rounds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "betweenExerciseRestSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "betweenRoundRestSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "exercisePrescription": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exerciseId",
+        "role",
+        "sets",
+        "repetitionTarget",
+        "effortTarget",
+        "restSeconds",
+        "progressionRuleId"
+      ],
+      "properties": {
+        "exerciseId": {
+          "type": "string",
+          "pattern": "^exercise_[a-z0-9_]+$"
+        },
+        "role": {
+          "enum": [
+            "skill",
+            "power",
+            "primary",
+            "secondary",
+            "accessory",
+            "isolation",
+            "conditioning",
+            "warmup",
+            "mobility"
+          ]
+        },
+        "sets": {
+          "$ref": "#/$defs/integerRange"
+        },
+        "repetitionTarget": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "repetitions",
+                "seconds",
+                "distance",
+                "technical-quality",
+                "amrap-capped"
+              ]
+            },
+            "range": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/integerRange"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "unit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "cap": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            }
+          }
+        },
+        "effortTarget": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "method",
+            "target"
+          ],
+          "properties": {
+            "method": {
+              "enum": [
+                "rir",
+                "rpe",
+                "percent-1rm",
+                "velocity-intent",
+                "technical-stop",
+                "comfortable-effort",
+                "not-applicable"
+              ]
+            },
+            "target": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/numberRange"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "qualifier": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "scienceTopicIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^science_[a-z0-9_]+$"
+              },
+              "uniqueItems": true
+            }
+          }
+        },
+        "restSeconds": {
+          "$ref": "#/$defs/integerRange"
+        },
+        "tempo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^(controlled|explosive|self-selected|[0-9Xx]{4})$"
+        },
+        "progressionRuleId": {
+          "type": "string",
+          "pattern": "^progression_[a-z0-9_]+$"
+        },
+        "substitutionGroupId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^substitution_[a-z0-9_]+$"
+        },
+        "optional": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        }
+      }
+    },
+    "programBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "weekRange",
+        "purpose",
+        "scheduleSessionIds",
+        "transitionRules",
+        "scienceTopicIds",
+        "sourceIds"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^program_block_[a-z0-9_]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 3
+        },
+        "weekRange": {
+          "$ref": "#/$defs/integerRange"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 15
+        },
+        "scheduleSessionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^session_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "transitionRules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "scienceTopicIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^science_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^source_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "progressionRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "type",
+        "trigger",
+        "action",
+        "stallResponse",
+        "scienceTopicIds",
+        "sourceIds"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^progression_[a-z0-9_]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 3
+        },
+        "type": {
+          "enum": [
+            "double-progression",
+            "load-progression",
+            "repetition-progression",
+            "set-progression",
+            "density-progression",
+            "technical-progression",
+            "autoregulated-progression",
+            "block-transition",
+            "maintenance"
+          ]
+        },
+        "trigger": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "action": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "ceiling": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          }
+        },
+        "floor": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          }
+        },
+        "stallResponse": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "scienceTopicIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^science_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^source_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "substitutionGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "originalExerciseIds",
+        "candidateExerciseIds",
+        "matchingRules",
+        "disallowedChanges",
+        "reviewRequired"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^substitution_[a-z0-9_]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 3
+        },
+        "originalExerciseIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^exercise_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "candidateExerciseIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^exercise_[a-z0-9_]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "matchingRules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "disallowedChanges": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "reviewRequired": {
+          "const": true
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "sourceType",
+        "year",
+        "url",
+        "accessedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^source_[a-z0-9_]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "authorsOrOrganization": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceType": {
+          "enum": [
+            "position-stand",
+            "guideline",
+            "umbrella-review",
+            "systematic-review-meta-analysis",
+            "systematic-review",
+            "randomized-trial",
+            "controlled-trial",
+            "consensus-statement",
+            "practice-framework"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmid": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]+$"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "contentStatus": {
+            "const": "published"
+          }
+        },
+        "required": [
+          "contentStatus"
+        ]
+      },
+      "then": {
+        "required": [
+          "populationScope",
+          "sessionDurationMinutes",
+          "summary",
+          "outcomesAndLimits",
+          "audience",
+          "scheduleModel",
+          "progressionRules",
+          "substitutionGroups",
+          "scienceRationale",
+          "measurementGuidance",
+          "safety",
+          "sources",
+          "review",
+          "updatedAt"
+        ],
+        "properties": {
+          "populationScope": {
+            "minItems": 1
+          },
+          "progressionRules": {
+            "minItems": 1
+          },
+          "substitutionGroups": {
+            "minItems": 1
+          },
+          "scienceRationale": {
+            "minItems": 1
+          },
+          "measurementGuidance": {
+            "minItems": 1
+          },
+          "sources": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "contentStatus": {
+            "const": "published"
+          },
+          "durationMode": {
+            "const": "fixed-weeks"
+          }
+        },
+        "required": [
+          "contentStatus",
+          "durationMode"
+        ]
+      },
+      "then": {
+        "required": [
+          "durationWeeks"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "contentStatus": {
+            "const": "published"
+          },
+          "durationMode": {
+            "const": "block-based"
+          }
+        },
+        "required": [
+          "contentStatus",
+          "durationMode"
+        ]
+      },
+      "then": {
+        "required": [
+          "blocks"
+        ],
+        "properties": {
+          "blocks": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "contentStatus": {
+            "const": "deprecated"
+          }
+        },
+        "required": [
+          "contentStatus"
+        ]
+      },
+      "then": {
+        "required": [
+          "deprecation"
+        ]
+      }
+    }
+  ]
+}

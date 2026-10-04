@@ -1,0 +1,163 @@
+FITNESS OS - PHASE 11 LOVABLE PROMPT PACKAGE
+Version 1.0 - 5 August 2026
+
+============================================================
+PROMPT 1 - PLAN MODE
+============================================================
+Read the attached Phase 11 Recipes and Meal Plans specification, JSON Schema and reference-data file completely. Keep the Phase 00 Project Knowledge active. Read the Phase 07 food, Phase 08 nutrient, Phase 09 target-plan and Phase 10 nutrition-tracker contracts because Phase 11 depends on their stable IDs, units, snapshots and local-storage semantics.
+
+Do not change code yet.
+
+Produce a precise implementation plan that:
+1. Lists every route, component, pure domain function, IndexedDB store, index, migration, repository document and test file to create or change.
+2. Preserves the no-authentication, local-only and no-runtime-nutrition-API architecture.
+3. Explains recipe identities and immutable versions.
+4. Explains exact gram-based ingredient resolution and prohibited generic volume conversions.
+5. Explains measured yield, serving reconciliation, retention-factor application and double-adjustment prevention.
+6. Explains batch, per-100-g and per-serving nutrient calculations, missing values, trace values and completeness.
+7. Explains recipe calculation grades and source provenance.
+8. Explains manual meal-plan construction and reviewed template matching without AI generation.
+9. Explains Phase 09 target comparison and Phase 08 reference comparison.
+10. Explains batches, leftovers and conservative grocery aggregation.
+11. Explains explicit Phase 10 logging and historical snapshot integrity.
+12. Explains source licensing, media rights, allergen limitations and food-safety sourcing.
+13. Explains backup, restore, CSV/JSON export and privacy controls.
+14. Maps every acceptance criterion to automated or manual tests.
+
+Explicitly list what you will not build: AI recipes, AI menus, medical diets, allergy guarantees, recipe scraping, live grocery prices, store ordering, cloud sync, authentication, backend, pregnancy/paediatric planning, barcode lookup or photo recognition.
+
+Wait for plan approval before implementation.
+
+============================================================
+PROMPT 2 - AGENT MODE IMPLEMENTATION
+============================================================
+Implement the approved Phase 11 plan exactly.
+
+Non-negotiable constraints:
+- Preserve Phases 00-10.
+- Use published Phase 07 food profiles or explicitly labelled local custom-food revisions.
+- Never fabricate ingredient weights, nutrient values, serving weights, yields or retention factors.
+- Do not treat missing or trace values as zero.
+- Do not use generic cup-to-gram or millilitre-to-gram conversions.
+- Apply retention factors only with exact source, food-group, cooking-method and nutrient scope.
+- Do not apply cooking retention to a profile already representing the same cooked state.
+- Store immutable recipe and meal-plan versions.
+- Do not mutate historical Phase 10 entries.
+- Do not auto-log planned meals as consumed.
+- Merge grocery items only when canonical profile and state are compatible.
+- Do not claim allergen-free safety or medical suitability.
+- Do not copy unlicensed recipe text or images.
+- Store all personal data in IndexedDB.
+- Make derived summaries rebuildable.
+- Add every required test and documentation file.
+
+If data or rights are unavailable, show a neutral unavailable state and block publication rather than inventing content.
+
+============================================================
+PROMPT 3 - VERIFICATION
+============================================================
+Audit the Phase 11 implementation against every requirement and acceptance criterion.
+
+Report PASS, FAIL or NOT TESTED for:
+- Routes and navigation.
+- Recipe identity and immutable versioning.
+- Ingredient profile eligibility.
+- Exact mass and verified portion conversion.
+- Measured yield and serving reconciliation.
+- Retention-factor provenance and double-application prevention.
+- Batch, per-100-g and per-serving calculations.
+- Missing, trace and unavailable behavior.
+- Calculation-quality grading.
+- Recipe scaling and rounding.
+- Nested recipes and circular-dependency blocking.
+- Manual meal-plan builder.
+- Reviewed template matching.
+- Phase 09 target comparison.
+- Phase 08 reference comparison.
+- Batch and leftover allocation.
+- Grocery merge and non-merge rules.
+- Explicit Phase 10 logging.
+- Source licensing and media rights.
+- Allergen and food-safety boundaries.
+- IndexedDB CRUD, migrations and transactions.
+- Backup, restore conflicts and exports.
+- Runtime privacy and network behavior.
+- Mobile, desktop, print and accessibility.
+- Regression of Phases 00, 01, 07, 08, 09 and 10.
+
+Run every attached test vector. For each failure, name the exact file, expected result, observed result and correction. Do not claim completion while a blocking failure remains.
+
+============================================================
+PROMPT 4 - RECIPE CALCULATION AUDIT
+============================================================
+Inspect the implementation specifically for recipe-calculation corruption risks.
+
+Verify:
+1. Every nutritive ingredient resolves to grams.
+2. No generic volume conversion exists.
+3. Every canonical ingredient stores a food/profile/source snapshot.
+4. Retention is applied to nutrient amount before final-yield density.
+5. A cooked profile is never adjusted for the same cooking step twice.
+6. Missing values remain missing.
+7. Trace values are not silently converted to zero.
+8. Source energy is not replaced by macro-derived energy.
+9. Final batch weight excludes container weight.
+10. Serving and batch weights reconcile or show a downgrade warning.
+11. Cached calculation summaries can be deleted and rebuilt exactly.
+12. Historical versions are independent of current Phase 07 data.
+
+Report every violation by file and line. Fix none until the correction prompt is approved.
+
+============================================================
+PROMPT 5 - MEAL PLAN AND GROCERY INTEGRITY AUDIT
+============================================================
+Verify:
+1. Plans use immutable recipe/food/custom-food snapshots.
+2. Placeholders reduce completeness rather than counting as zero.
+3. Planned items are never automatically consumed.
+4. Batch allocations cannot exceed available servings.
+5. Leftovers reference the original batch instead of creating duplicate production.
+6. Grocery merging requires compatible canonical profile and state.
+7. Raw and cooked versions never merge.
+8. Plan edits create versions and preserve old grocery lists.
+9. Target and reference snapshots remain frozen.
+10. Phase 10 log entries preserve the exact recipe version used.
+
+Return a violation report with file, line and impact.
+
+============================================================
+PROMPT 6 - LICENSING, SAFETY AND CONTENT AUDIT
+============================================================
+Audit every public recipe, instruction, image and safety statement.
+
+Verify:
+- Original authorship, public-domain status, licence or permission is documented.
+- Attribution is rendered where required.
+- No arbitrary web recipe was copied.
+- No image lacks rights metadata.
+- Food-safety statements cite approved official sources.
+- Allergen labels state declared-ingredient scope and cross-contamination limitations.
+- No recipe or template claims to treat disease or guarantee results.
+
+Unpublish any record that fails a blocking rights or safety check. Do not replace it with AI-generated content.
+
+============================================================
+PROMPT 7 - PRIVACY AND NETWORK AUDIT
+============================================================
+Audit runtime requests that could expose personal recipes, ingredient quantities, exclusions, meal plans, targets, notes, grocery lists or nutrition history.
+
+Requirements:
+- Static assets and user-clicked source links are allowed.
+- No personal Phase 11 record may be sent to analytics, logging, AI, database, storage, API or error-reporting services.
+- Imports and exports must be processed locally.
+
+List every runtime request origin and payload category. Remove any request that violates the Phase 11 privacy contract, then rerun tests.
+
+============================================================
+PROMPT 8 - CORRECTION
+============================================================
+Fix only the Phase 11 failures identified in the verification and audit reports.
+
+Do not redesign the shell, rewrite Phase 07 food data, change Phase 08 reference semantics, replace Phase 09 formulas, mutate Phase 10 logs, add new scope or refactor unrelated completed modules.
+
+After corrections, rerun all Phase 11 tests and the Phase 00/01/07/08/09/10 regression suite. Return a final acceptance matrix.

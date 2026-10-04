@@ -1,0 +1,53 @@
+PHASE 17 — QUICK IMPLEMENTATION REFERENCE
+
+UPLOAD TO LOVABLE
+1. Phase_17_Local_Storage_Backup_and_Export.md
+2. Phase_17_Local_Storage_Backup_Export_Data_Schema.json
+3. Phase_17_Local_Storage_Backup_Export_Reference_Data.json
+4. Phase_17_Lovable_Prompt_Package.txt
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+- Implemented Phase 06 and Phase 09–16 schemas/reference files
+
+CORE RULES
+- Browser storage is not a backup.
+- IndexedDB canonical; localStorage only approved non-sensitive preferences.
+- Discover actual stores; do not guess or rename blindly.
+- Back up canonical records; exclude derived caches and active timers.
+- Default portable JSON excludes photo binaries.
+- Full-media package is explicit.
+- Validate and hash before download.
+- Restore preflight writes nothing.
+- No field-level auto-merge.
+- Multi-database restore is recoverable, not atomic.
+- Persistent-storage request may be denied.
+- Quota is approximate.
+- No unload-time backup.
+- CSV is not a restore format.
+- Spreadsheet-safe CSV is default.
+- No cloud sync, backend or personal-data transmission.
+
+REQUIRED ROUTES
+/settings/data
+/settings/data/backup
+/settings/data/restore
+/settings/data/export
+/settings/data/storage
+/settings/data/health
+/settings/data/reset
+/settings/data/history
+
+BACKUP PROFILES
+- Portable JSON
+- Optional gzip portable
+- Full package with selected media
+- Selected modules
+- Optional encrypted portable
+
+RESTORE MODES
+- Preview only
+- Keep existing
+- Import as copy for registered types
+- Replace selected modules
+- Replace all local data

@@ -1,0 +1,180 @@
+PHASE 13 - LOVABLE PROMPT PACKAGE
+
+============================================================
+PROMPT 1 - PLAN MODE
+============================================================
+Read Phase 00 Project Knowledge and the attached Phase 13 specification, schema and reference data. Inspect the implemented Phase 01 shell and Phase 03, 04, 05, 06 and 12 contracts.
+
+Do not change code yet.
+
+Produce a precise implementation plan that:
+1. Lists every route, component, pure formula function, IndexedDB store/index/migration, content file and test file to create or change.
+2. Preserves the no-authentication, local-only and no-runtime-health-API architecture.
+3. Explains the distinction between public-health guidance and individualized training.
+4. Explains talk test, perceived effort, percent HRmax, HRR, pace and power without merging them.
+5. Confirms there will be no universal Zone 1–5 or Zone 2 calculation.
+6. Explains age-predicted HRmax, measured HRmax and clinician-supplied HRmax provenance.
+7. Explains pace, speed, interval-duration and guideline-equivalent-minute functions.
+8. Explains modality identities and Phase 03 references.
+9. Explains reviewed cardio plans, deterministic matching and publication gates.
+10. Explains interval and mixed-modal routine integrity.
+11. Explains active-session state, timestamp timers and segment idempotency.
+12. Explains immutable historical snapshots.
+13. Explains concurrent-training context without Phase 05/06 mutation.
+14. Explains stop signals and Phase 12 pain/illness boundaries without diagnosis.
+15. Explains backup, restore, CSV export and privacy rules.
+16. Maps every acceptance criterion to automated or manual tests.
+
+Explicitly list what you will not build: authentication, Supabase, GPS, maps, wearables, live heart-rate streaming, VO2max, fitness age, calorie burn, AI plans, universal zones, medical diagnosis, cardiac rehabilitation or cloud sync.
+
+Wait for plan approval before implementation.
+
+============================================================
+PROMPT 2 - AGENT MODE IMPLEMENTATION
+============================================================
+Implement the approved Phase 13 plan exactly.
+
+Non-negotiable constraints:
+- Preserve Phases 00-12.
+- Use the attached schema and reference data as the source of truth.
+- Do not invent topic content, modality guidance, plans, interval prescriptions or safety rules.
+- Do not publish draft taxonomy records.
+- Label every intensity method.
+- Do not generate universal Zone 1-5 or Zone 2 values.
+- Label age-predicted HRmax as an estimate.
+- Do not infer VO2max, fitness age, threshold or calorie burn.
+- Do not auto-credit Phase 09 or Phase 10 calories.
+- Do not diagnose disease or issue medical clearance.
+- Do not mutate Phase 05 programs or Phase 06 history.
+- Store personal data only in IndexedDB.
+- Keep plan, routine and session snapshots immutable.
+- Make derived summaries disposable and rebuildable.
+- Add every required automated and manual test artifact.
+
+If evidence, data, source rights or safety content is incomplete, show a neutral unavailable/draft state instead of generating content.
+
+============================================================
+PROMPT 3 - VERIFICATION
+============================================================
+Audit Phase 13 against every requirement and acceptance criterion.
+
+Report PASS, FAIL or NOT TESTED for:
+- Routes and navigation.
+- Public-health guidance.
+- Intensity-method separation.
+- Absence of universal zones.
+- HRmax and HRR provenance.
+- Pace, speed and interval formulas.
+- Guideline-equivalent minutes.
+- Modality publication gates.
+- Plan finder determinism.
+- Routine versioning.
+- Active-session timers and segments.
+- Historical snapshot immutability.
+- Heart-rate source labels.
+- No VO2max, fitness age or calorie burn.
+- Concurrent-training boundaries.
+- Stop signals and Phase 12 integration.
+- IndexedDB CRUD, migrations and rollback.
+- Backup, restore conflicts and CSV exports.
+- Runtime privacy and network behavior.
+- Mobile, desktop, dark mode and accessibility.
+- Regression of Phases 00-12.
+
+Run every attached test vector. For each failure, provide the exact file, expected result, observed result and correction. Do not claim completion while a blocking failure remains.
+
+============================================================
+PROMPT 4 - FORMULA AND UNIT AUDIT
+============================================================
+Inspect every Phase 13 calculation.
+
+Verify:
+1. SI values are canonical internally.
+2. Pace and speed require positive time and distance.
+3. Missing distance returns unavailable, not zero.
+4. Exact mile and kilometer conversions use the reference data.
+5. Tanaka HRmax uses 208 - 0.7 x age and is labelled estimated.
+6. HRR uses resting HR + fraction x (max HR - resting HR).
+7. Historical targets preserve method version and HRmax source.
+8. Guideline-equivalent minutes use moderate + 2 x vigorous only.
+9. Interval totals handle final recovery correctly.
+10. No MET-to-calorie calculation exists.
+11. Display rounding does not mutate stored values.
+12. Date and weekly summaries use local dates and IANA time zones.
+
+Return violations by file and line.
+
+============================================================
+PROMPT 5 - INTENSITY AND ZONE AUDIT
+============================================================
+Search the Phase 13 implementation for false precision.
+
+Verify:
+- Every target names a method.
+- Talk test and perceived effort remain subjective observations.
+- Heart-rate methods show required inputs and limitations.
+- Device values are labelled estimates.
+- Medication and condition cautions are visible.
+- No universal Zone 1-5 or Zone 2 values exist.
+- No lactate threshold, ventilatory threshold or VO2max is inferred.
+- Absolute MET intensity does not override relative symptoms.
+- Unclassified minutes remain unclassified.
+
+Remove any fabricated or methodless intensity target.
+
+============================================================
+PROMPT 6 - CARDIO SESSION INTEGRITY AUDIT
+============================================================
+Verify:
+1. Active timer derives from timestamps.
+2. Refresh and background suspension do not double count.
+3. Segment completion is idempotent.
+4. Planned and actual segment values remain separate.
+5. Skips and modifications do not mutate routine versions.
+6. Completed sessions preserve plan/routine/method snapshots.
+7. Editing creates an audit event.
+8. Deletion is soft and undoable.
+9. Cross-tab active-session conflicts are blocked.
+10. Urgent stop signals suppress continue and celebration prompts.
+
+Return a violation report by file, line and impact.
+
+============================================================
+PROMPT 7 - CONCURRENT TRAINING AND SAFETY AUDIT
+============================================================
+Audit all cardio-strength and safety behavior.
+
+Verify:
+- Concurrent training is not described as universally harmful.
+- Explosive-strength trade-offs are qualified.
+- Same-session order follows user priority rather than a universal rule.
+- Phase 05 and Phase 06 records are read-only.
+- Phase 12 pain and illness flags suppress hard-session suggestions.
+- No diagnosis, rehabilitation or medical clearance is generated.
+- Chest pressure, unusual breathlessness, dizziness/fainting, symptomatic palpitations, severe pain, neurological symptoms and heat concern trigger stop messaging.
+- Outdoor heat and air-quality content does not use stale live recommendations.
+
+Unpublish content that fails the evidence or safety gate.
+
+============================================================
+PROMPT 8 - PRIVACY AND NETWORK AUDIT
+============================================================
+List every runtime request origin and payload category.
+
+Requirements:
+- Static application assets and user-clicked source links are allowed.
+- No session, heart-rate, distance, pace, power, cadence, symptom, note or plan data may be transmitted.
+- No analytics payload may contain Phase 13 values.
+- Imports, exports and calculations must be local.
+- No GPS, map, wearable, AI, database, storage or health API request is allowed.
+
+Remove violations and rerun the audit.
+
+============================================================
+PROMPT 9 - CORRECTION
+============================================================
+Fix only failures identified in the approved Phase 13 verification and audit reports.
+
+Do not redesign the Phase 01 shell, duplicate Phase 03 technique content, rewrite Phase 04 science, mutate Phase 05 programs, alter Phase 06 history or weaken Phase 12 safety boundaries.
+
+After correction, rerun all Phase 13 tests and the Phase 00-12 regression suite. Return a final acceptance matrix.

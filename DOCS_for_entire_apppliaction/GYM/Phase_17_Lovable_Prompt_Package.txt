@@ -1,0 +1,82 @@
+PHASE 17 — LOVABLE PROMPT PACKAGE
+
+Use these prompts in order. Keep Phase 00 Project Knowledge active. Attach the Phase 17 Markdown specification, data schema, reference data and all implemented local-data schemas from Phases 06 and 09–16.
+
+=== PROMPT 1 — PLAN MODE: STORAGE INVENTORY AND IMPLEMENTATION PLAN ===
+
+Read all attached Phase 17 files completely. Do not modify code. Inspect the existing repository and produce a detailed implementation plan for Phase 17 — Local Storage, Backup and Export.
+
+First report the actual implementation, not assumptions:
+1. Every IndexedDB database name.
+2. Every object store, key path, index and schema version.
+3. Every localStorage and sessionStorage key.
+4. Every existing migration, backup, restore, export and cache-clearing function.
+5. Every discrepancy from the Phase 06 and Phase 09–16 documents and the Phase 17 expected registry.
+6. Any unknown store or key that must be preserved.
+
+Then propose:
+- StorageRegistry and module-adapter architecture.
+- Canonical vs rebuildable classification.
+- Routes and UI components.
+- Portable backup, full-media backup and selected-module backup.
+- Manifest, canonical serialization and SHA-256 integrity.
+- Restore preflight with zero writes.
+- Conflict rules and reference remapping.
+- Multi-database restore journal, resume and rollback.
+- Storage estimate and persistence flow.
+- CSV export catalogue and spreadsheet-safe mode.
+- Data-health and reset flows.
+- Accessibility, privacy, performance and tests.
+
+List every file to create or modify. Explain every new dependency. Do not claim cross-database atomicity. Do not rename stores without a tested migration and rollback. Do not add authentication, Supabase, cloud sync or remote storage.
+
+=== PROMPT 2 — AGENT MODE: IMPLEMENT APPROVED PHASE 17 PLAN ===
+
+Implement the approved Phase 17 plan exactly. Preserve all completed Phase 00–16 functionality and routes.
+
+Non-negotiable implementation rules:
+- Browser storage is the working copy, not the backup.
+- Discover actual stores from code and register them explicitly.
+- Back up canonical records only; exclude derived caches and active timers.
+- Exclude photo binaries from the default portable JSON.
+- Validate and hash the complete backup before download.
+- Restore preflight must perform zero writes.
+- Validate, integrity-check and migrate before restore write.
+- Use a recoverable journal across databases; never claim one atomic global transaction.
+- Do not auto-merge conflicting records.
+- Import as copy only for registered types with complete reference remapping.
+- Unknown future data is quarantined, not discarded.
+- Persistent-storage denial is supported.
+- Quota values are labelled approximate.
+- No unload-time backup.
+- No personal data leaves the browser.
+- CSV is export-only and spreadsheet-safe mode is default.
+- Destructive reset requires typed confirmation and an export offer.
+
+Run the supplied test vectors and the existing regression suite.
+
+=== PROMPT 3 — VERIFICATION MODE ===
+
+Do not add features. Audit the Phase 17 implementation against every acceptance criterion in the specification. Return a table with: criterion, status, evidence, files, and corrective action.
+
+Explicitly verify:
+- Actual store inventory and unknown-store preservation.
+- Canonical/derived separation.
+- Approximate quota wording.
+- Persistence denial behavior.
+- Default media exclusion.
+- Payload and asset hashes.
+- Zero-write preflight.
+- Future-version rejection.
+- Conflict preview.
+- Import-as-copy remapping.
+- Multi-database failure journal, resume and rollback.
+- Derived rebuild.
+- Spreadsheet formula-injection protection.
+- Typed-confirmation reset.
+- Runtime network audit.
+- Keyboard, screen-reader and 320 px behavior.
+
+=== PROMPT 4 — CORRECTION MODE ===
+
+Fix only the failed or partial Phase 17 verification items. Preserve every passing feature. Do not refactor unrelated modules. After corrections, rerun Phase 17 tests and the Phase 00–16 regression suite, and report exact results.

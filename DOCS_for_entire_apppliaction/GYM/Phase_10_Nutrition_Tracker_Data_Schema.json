@@ -1,0 +1,1222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase-10-nutrition-tracker.schema.json",
+  "title": "Fitness OS Phase 10 Nutrition Tracker Backup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaVersion",
+    "module",
+    "exportedAt",
+    "preferences",
+    "days",
+    "foodEntries",
+    "hydrationEntries",
+    "customFoods",
+    "customFoodRevisions",
+    "favourites",
+    "auditLog"
+  ],
+  "properties": {
+    "format": {
+      "const": "fitness-os-nutrition-backup"
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "module": {
+      "const": "nutrition-tracker"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "appVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "preferences": {
+      "$ref": "#/$defs/preferences"
+    },
+    "days": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nutritionDay"
+      }
+    },
+    "foodEntries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/foodEntry"
+      }
+    },
+    "hydrationEntries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/hydrationEntry"
+      }
+    },
+    "customFoods": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/customFood"
+      }
+    },
+    "customFoodRevisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/customFoodRevision"
+      }
+    },
+    "favourites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/favourite"
+      }
+    },
+    "auditLog": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/auditRecord"
+      }
+    }
+  },
+  "$defs": {
+    "preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schemaVersion",
+        "massUnit",
+        "energyUnit",
+        "mealSlots",
+        "currentDietPlanId",
+        "referenceProfileId",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "const": "nutrition-preferences"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "massUnit": {
+          "enum": [
+            "g",
+            "oz"
+          ]
+        },
+        "energyUnit": {
+          "enum": [
+            "kcal",
+            "kJ"
+          ]
+        },
+        "mealSlots": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "$ref": "#/$defs/mealSlot"
+          }
+        },
+        "currentDietPlanId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "referenceProfileId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "showMicronutrients": {
+          "type": "boolean",
+          "default": true
+        },
+        "requestPersistentStorage": {
+          "type": "boolean",
+          "default": false
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "mealSlot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "order",
+        "visible"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^meal_[a-z0-9_]+$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "visible": {
+          "type": "boolean"
+        }
+      }
+    },
+    "nutritionDay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "localDate",
+        "schemaVersion",
+        "timeZone",
+        "targetSnapshot",
+        "referenceSnapshots",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "localDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "timeZone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "targetSnapshot": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/targetSnapshot"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "referenceSnapshots": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/referenceSnapshot"
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 2000
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "targetSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "planId",
+        "planVersion",
+        "title",
+        "energyKcal",
+        "proteinGrams",
+        "fatGrams",
+        "carbohydrateGrams",
+        "fiberGrams",
+        "formulaVersion",
+        "referenceDataVersion",
+        "snapshottedAt"
+      ],
+      "properties": {
+        "planId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "planVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "energyKcal": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "proteinGrams": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "proteinRangeGrams": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "fatGrams": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "carbohydrateGrams": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "fiberGrams": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "formulaVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "referenceDataVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshottedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "referenceSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nutrientId",
+        "frameworkId",
+        "frameworkVersion",
+        "referenceType",
+        "value",
+        "unit",
+        "scope",
+        "sourceId",
+        "snapshottedAt"
+      ],
+      "properties": {
+        "nutrientId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frameworkId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frameworkVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "populationLabel": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "referenceType": {
+          "enum": [
+            "RDA",
+            "AI",
+            "EAR",
+            "UL",
+            "TUL",
+            "DV",
+            "PRI",
+            "AR",
+            "RI",
+            "CDRR"
+          ]
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        "scope": {
+          "enum": [
+            "total_intake",
+            "food_only",
+            "supplemental_only",
+            "label_reference",
+            "other"
+          ]
+        },
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshottedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "foodEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schemaVersion",
+        "sourceKind",
+        "localDate",
+        "occurredAtUtc",
+        "timeZone",
+        "mealSlotId",
+        "displayNameSnapshot",
+        "amount",
+        "nutrients",
+        "createdAt",
+        "updatedAt",
+        "deletedAt",
+        "revision"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^nentry_[a-zA-Z0-9_-]+$"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sourceKind": {
+          "enum": [
+            "canonical_food",
+            "custom_food",
+            "quick_add",
+            "recipe"
+          ]
+        },
+        "localDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "occurredAtUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timeZone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "localTime": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+        },
+        "mealSlotId": {
+          "type": "string",
+          "pattern": "^meal_[a-z0-9_]+$"
+        },
+        "mealLabelSnapshot": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 60
+        },
+        "displayNameSnapshot": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "canonicalFoodRef": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/canonicalFoodRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customFoodRef": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/customFoodRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "recipeRef": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "quickAdd": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/quickAdd"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "amount": {
+          "$ref": "#/$defs/amount"
+        },
+        "nutrients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/loggedNutrient"
+          }
+        },
+        "dataQualityFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1000
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "deletedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "sourceKind": {
+                "const": "canonical_food"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "canonicalFoodRef"
+            ],
+            "properties": {
+              "canonicalFoodRef": {
+                "$ref": "#/$defs/canonicalFoodRef"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "sourceKind": {
+                "const": "custom_food"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "customFoodRef"
+            ],
+            "properties": {
+              "customFoodRef": {
+                "$ref": "#/$defs/customFoodRef"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "sourceKind": {
+                "const": "quick_add"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "quickAdd"
+            ],
+            "properties": {
+              "quickAdd": {
+                "$ref": "#/$defs/quickAdd"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "canonicalFoodRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "foodId",
+        "foodSlug",
+        "foodName",
+        "profileId",
+        "profileState",
+        "sourceRecordId",
+        "sourceDatabase",
+        "sourceRelease",
+        "profileReviewedAt"
+      ],
+      "properties": {
+        "foodId": {
+          "type": "string",
+          "pattern": "^food_[a-z0-9_]+$"
+        },
+        "foodSlug": {
+          "type": "string",
+          "minLength": 1
+        },
+        "foodName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "profileId": {
+          "type": "string",
+          "pattern": "^profile_[a-z0-9_]+$"
+        },
+        "profileState": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "sourceRecordId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 180
+        },
+        "sourceDatabase": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "sourceRelease": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "sourceLicence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "profileReviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "customFoodRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "customFoodId",
+        "revisionId",
+        "name",
+        "sourceType"
+      ],
+      "properties": {
+        "customFoodId": {
+          "type": "string",
+          "pattern": "^custom_food_[a-zA-Z0-9_-]+$"
+        },
+        "revisionId": {
+          "type": "string",
+          "pattern": "^custom_food_revision_[a-zA-Z0-9_-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "brand": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "sourceType": {
+          "enum": [
+            "nutrition_label",
+            "manufacturer_document",
+            "personal_calculation",
+            "other"
+          ]
+        }
+      }
+    },
+    "quickAdd": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      }
+    },
+    "amount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "quantity",
+        "inputUnit",
+        "gramWeight",
+        "conversionKind"
+      ],
+      "properties": {
+        "quantity": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "inputUnit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "portionId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "portionDescription": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 160
+        },
+        "gramsPerUnit": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "gramWeight": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "conversionKind": {
+          "enum": [
+            "exact_mass",
+            "verified_source_portion",
+            "custom_food_serving",
+            "manual_grams"
+          ]
+        }
+      }
+    },
+    "loggedNutrient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nutrientId",
+        "unit",
+        "sourceStatus",
+        "per100gValue",
+        "loggedValue",
+        "sourceRecordId"
+      ],
+      "properties": {
+        "nutrientId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        "sourceStatus": {
+          "enum": [
+            "measured",
+            "calculated",
+            "imputed",
+            "estimated",
+            "trace",
+            "not_detected",
+            "not_available",
+            "user_entered"
+          ]
+        },
+        "per100gValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "loggedValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "minValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maxValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "sourceRecordId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 180
+        },
+        "methodNote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    },
+    "hydrationEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schemaVersion",
+        "localDate",
+        "occurredAtUtc",
+        "timeZone",
+        "kind",
+        "volumeMl",
+        "createdAt",
+        "updatedAt",
+        "deletedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^hydration_[a-zA-Z0-9_-]+$"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "localDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "occurredAtUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timeZone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "kind": {
+          "enum": [
+            "plain_water",
+            "other_noncaloric_fluid"
+          ]
+        },
+        "volumeMl": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 10000
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "deletedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "customFood": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "currentRevisionId",
+        "name",
+        "normalizedName",
+        "status",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^custom_food_[a-zA-Z0-9_-]+$"
+        },
+        "currentRevisionId": {
+          "type": "string",
+          "pattern": "^custom_food_revision_[a-zA-Z0-9_-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "normalizedName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "brand": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "status": {
+          "enum": [
+            "active",
+            "archived"
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "customFoodRevision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "customFoodId",
+        "revisionNumber",
+        "basis",
+        "serving",
+        "nutrients",
+        "sourceType",
+        "createdAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^custom_food_revision_[a-zA-Z0-9_-]+$"
+        },
+        "customFoodId": {
+          "type": "string",
+          "pattern": "^custom_food_[a-zA-Z0-9_-]+$"
+        },
+        "revisionNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "basis": {
+          "enum": [
+            "per_serving",
+            "per_100g"
+          ]
+        },
+        "serving": {
+          "$ref": "#/$defs/customServing"
+        },
+        "nutrients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/customNutrient"
+          }
+        },
+        "sourceType": {
+          "enum": [
+            "nutrition_label",
+            "manufacturer_document",
+            "personal_calculation",
+            "other"
+          ]
+        },
+        "sourceNote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1000
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "customServing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "gramWeight"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "gramWeight": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "customNutrient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nutrientId",
+        "value",
+        "unit"
+      ],
+      "properties": {
+        "nutrientId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20
+        }
+      }
+    },
+    "favourite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sourceKind",
+        "displayName",
+        "amount",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^nutrition_favourite_[a-zA-Z0-9_-]+$"
+        },
+        "sourceKind": {
+          "enum": [
+            "canonical_food",
+            "custom_food"
+          ]
+        },
+        "canonicalFoodRef": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/canonicalFoodRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "customFoodRef": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/customFoodRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "amount": {
+          "$ref": "#/$defs/amount"
+        },
+        "defaultMealSlotId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^meal_[a-z0-9_]+$"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "auditRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "action",
+        "occurredAt",
+        "summary"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^nutrition_audit_[a-zA-Z0-9_-]+$"
+        },
+        "action": {
+          "enum": [
+            "target_snapshot_replaced",
+            "reference_snapshot_replaced",
+            "restore_merge",
+            "restore_duplicate",
+            "restore_skip",
+            "purge",
+            "migration"
+          ]
+        },
+        "occurredAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "localDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1000
+        }
+      }
+    }
+  }
+}

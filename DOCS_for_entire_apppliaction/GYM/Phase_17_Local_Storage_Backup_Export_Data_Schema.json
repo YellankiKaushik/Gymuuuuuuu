@@ -1,0 +1,499 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase-17-backup.schema.json",
+  "title": "Fitness OS Phase 17 Backup and Restore Schema",
+  "type": "object",
+  "required": [
+    "format",
+    "formatVersion",
+    "backupId",
+    "createdAt",
+    "appVersion",
+    "registryVersion",
+    "profile",
+    "payload",
+    "manifest",
+    "integrity"
+  ],
+  "properties": {
+    "format": {
+      "const": "fitness-os-backup"
+    },
+    "formatVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "backupId": {
+      "type": "string",
+      "minLength": 8
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "appVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registryVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "profile": {
+      "enum": [
+        "portable",
+        "portable_gzip",
+        "full_with_media",
+        "selected_modules",
+        "encrypted_portable"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "origin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timeZone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "browserFamily": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "payload": {
+      "$ref": "#/$defs/payload"
+    },
+    "manifest": {
+      "$ref": "#/$defs/manifest"
+    },
+    "integrity": {
+      "$ref": "#/$defs/integrity"
+    },
+    "encryption": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/encryption"
+        }
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "jsonValue": {},
+    "typedRecord": {
+      "type": "object",
+      "required": [
+        "recordId",
+        "recordHash",
+        "value"
+      ],
+      "properties": {
+        "recordId": {
+          "type": "string"
+        },
+        "recordHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "value": {},
+        "typeTags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "type"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "date",
+                  "map",
+                  "set",
+                  "array_buffer",
+                  "typed_array",
+                  "blob",
+                  "bigint"
+                ]
+              },
+              "metadata": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "importMetadata": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "storePayload": {
+      "type": "object",
+      "required": [
+        "databaseName",
+        "storeId",
+        "schemaVersion",
+        "recordCount",
+        "records",
+        "storeHash"
+      ],
+      "properties": {
+        "databaseName": {
+          "type": "string"
+        },
+        "storeId": {
+          "type": "string"
+        },
+        "schemaVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "recordCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/typedRecord"
+          }
+        },
+        "storeHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "modulePayload": {
+      "type": "object",
+      "required": [
+        "moduleId",
+        "moduleSchemaVersion",
+        "stores"
+      ],
+      "properties": {
+        "moduleId": {
+          "type": "string",
+          "pattern": "^phase_[0-9]{2}$"
+        },
+        "moduleSchemaVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stores": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/storePayload"
+          }
+        },
+        "moduleMetadata": {
+          "type": "object"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "shellPreference": {
+      "type": "object",
+      "required": [
+        "key",
+        "value"
+      ],
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "value": {},
+        "source": {
+          "enum": [
+            "localStorage",
+            "indexedDB"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "binaryAssetManifest": {
+      "type": "object",
+      "required": [
+        "assetId",
+        "moduleId",
+        "recordId",
+        "mediaType",
+        "byteLength",
+        "sha256",
+        "included"
+      ],
+      "properties": {
+        "assetId": {
+          "type": "string"
+        },
+        "moduleId": {
+          "type": "string"
+        },
+        "recordId": {
+          "type": "string"
+        },
+        "mediaType": {
+          "type": "string"
+        },
+        "byteLength": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "included": {
+          "type": "boolean"
+        },
+        "archivePath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "createdAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "payload": {
+      "type": "object",
+      "required": [
+        "modules",
+        "shellPreferences",
+        "binaryAssets"
+      ],
+      "properties": {
+        "modules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/modulePayload"
+          }
+        },
+        "shellPreferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shellPreference"
+          }
+        },
+        "binaryAssets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/binaryAssetManifest"
+          }
+        },
+        "tombstonePolicy": {
+          "type": "string"
+        },
+        "staticContentVersions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "moduleCount": {
+      "type": "object",
+      "required": [
+        "moduleId",
+        "storeCount",
+        "recordCount"
+      ],
+      "properties": {
+        "moduleId": {
+          "type": "string"
+        },
+        "storeCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "recordCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "binaryAssetCount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "manifest": {
+      "type": "object",
+      "required": [
+        "moduleCounts",
+        "totalStoreCount",
+        "totalRecordCount",
+        "totalBinaryAssetCount",
+        "payloadByteLength",
+        "excludedCategories"
+      ],
+      "properties": {
+        "moduleCounts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/moduleCount"
+          }
+        },
+        "totalStoreCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "totalRecordCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "totalBinaryAssetCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "payloadByteLength": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "excludedCategories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "selectedModules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "humanSummary": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "payloadSha256"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "SHA-256"
+        },
+        "payloadSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "archiveSha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "canonicalSerializerVersion": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "encryption": {
+      "type": "object",
+      "required": [
+        "cipher",
+        "kdf",
+        "saltBase64",
+        "ivBase64",
+        "iterations",
+        "tagLength",
+        "ciphertextBase64"
+      ],
+      "properties": {
+        "cipher": {
+          "const": "AES-GCM-256"
+        },
+        "kdf": {
+          "const": "PBKDF2-SHA-256"
+        },
+        "saltBase64": {
+          "type": "string"
+        },
+        "ivBase64": {
+          "type": "string"
+        },
+        "iterations": {
+          "type": "integer",
+          "minimum": 100000
+        },
+        "tagLength": {
+          "type": "integer",
+          "enum": [
+            96,
+            104,
+            112,
+            120,
+            128
+          ]
+        },
+        "ciphertextBase64": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

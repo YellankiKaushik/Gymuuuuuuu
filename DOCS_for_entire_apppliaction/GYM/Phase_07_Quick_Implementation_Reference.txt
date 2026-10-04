@@ -1,0 +1,32 @@
+PHASE 07 — FOOD ENCYCLOPEDIA QUICK REFERENCE
+Date: 5 August 2026
+
+UPLOAD TO LOVABLE
+1. Phase_07_Food_Encyclopedia.md
+2. Phase_07_Food_Data_Schema.json
+3. Phase_07_Seed_Food_Taxonomy.json
+4. Phase_07_Lovable_Prompt_Package.txt
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+- Phase 01 shell/design system
+
+CORE DECISIONS
+- Static repository JSON; no runtime food API.
+- No API key.
+- USDA FoodData Central CC0 downloads are preferred.
+- ICMR-NIN IFCT is reference-only unless reproduction rights are confirmed.
+- 100 g edible portion is canonical.
+- Raw/cooked states are separate profiles.
+- Missing is not zero.
+- No daily values or diet advice until Phase 08.
+- No food logging until Phase 10.
+- No branded-food import in MVP.
+
+SEED STATUS
+- 342 stable draft identities.
+- Zero nutrient measurements.
+- Draft identities must not appear publicly.
+
+GITHUB CHECKPOINT
+phase-07-food-encyclopedia-complete

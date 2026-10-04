@@ -1,0 +1,19 @@
+import { useSyncExternalStore } from 'react'
+import { usePreferences } from '../../components/app-shell/preferences'
+import { Icon } from '../../components/common/icon'
+import { UnavailableState } from '../../components/common/states'
+import type { Preferences } from '../../domain/types'
+
+const subscribeToSupport = () => () => undefined
+const browserStorageSupport = () => typeof window !== 'undefined' && Boolean(window.indexedDB)
+const serverStorageSupport = () => null
+export function SettingsPage() {
+  const { preferences, hydrated, message, update } = usePreferences()
+  const storageAvailable = useSyncExternalStore(subscribeToSupport, browserStorageSupport, serverStorageSupport)
+  const themes: { value: Preferences['theme']; label: string; icon: 'sun' | 'moon' | 'settings' }[] = [{ value: 'light', label: 'Light', icon: 'sun' }, { value: 'dark', label: 'Dark', icon: 'moon' }, { value: 'system', label: 'System', icon: 'settings' }]
+  return <div className="page settings-page"><div className="page-heading"><div><span className="eyebrow">MAKE IT YOURS</span><h1>Settings</h1><p>Your preferences. Saved in this browser.</p></div><span className="phase-chip"><Icon name="lock" size={14} />Device local</span></div>
+    <div className="settings-grid"><div><section className="settings-card"><h2>Appearance</h2><p>Choose a theme, or follow your device’s setting.</p><fieldset className="theme-options" disabled={!hydrated}><legend className="sr-only">Color theme</legend>{themes.map((theme) => <label className={`theme-option ${preferences.theme === theme.value ? 'selected' : ''}`} key={theme.value}><input type="radio" name="theme" value={theme.value} checked={preferences.theme === theme.value} onChange={() => update({ theme: theme.value })} /><span className={`theme-preview preview-${theme.value}`}><span /><span /><span /></span><span><Icon name={theme.icon} size={16} />{theme.label}{preferences.theme === theme.value && <Icon name="check" size={16} />}</span></label>)}</fieldset></section>
+    <section className="settings-card"><h2>Display units</h2><p>Future tools will use your preferred display units. Canonical values remain unchanged.</p><fieldset className="unit-options" disabled={!hydrated}><legend className="sr-only">Preferred display units</legend><label><input type="radio" name="units" checked={preferences.units === 'metric'} onChange={() => update({ units: 'metric' })} /><span><strong>Metric</strong><small>Kilograms · centimetres · metres</small></span></label><label><input type="radio" name="units" checked={preferences.units === 'imperial'} onChange={() => update({ units: 'imperial' })} /><span><strong>Imperial</strong><small>Pounds · inches · miles</small></span></label></fieldset></section><p className="preference-feedback" role="status" aria-live="polite">{message}</p></div>
+    <aside><section className="settings-card data-card"><span className="privacy-icon"><Icon name="shield" size={27} /></span><h2>Your local data</h2><p>Each browser profile has its own personal space. People sharing a browser profile also share that space.</p><dl><div><dt>Small preferences</dt><dd>localStorage</dd></div><div><dt>Future personal records</dt><dd>IndexedDB</dd></div><div><dt>Automatic cloud sync</dt><dd>None</dd></div></dl><UnavailableState message={storageAvailable === null ? 'Checking browser storage support…' : storageAvailable ? 'IndexedDB is supported. No tracking records are created in this phase.' : 'IndexedDB is unavailable. Future tracking will require a supported browser.'} /><div className="storage-caution"><strong>Browser storage is not a backup.</strong><p>Clearing site data can erase saved records and preferences. JSON backup/restore and CSV exports will arrive before tracking is production-ready.</p></div><span className="planned-label">Data management · Phase 18</span></section></aside></div>
+  </div>
+}

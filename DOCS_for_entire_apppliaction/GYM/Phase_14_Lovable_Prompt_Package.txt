@@ -1,0 +1,89 @@
+PHASE 14 — LOVABLE PROMPT PACKAGE
+Version 1.0 — 5 August 2026
+
+========================================
+PROMPT 1 — PLAN MODE
+========================================
+Read the attached Phase 14 specification, data schema and reference data completely. Also inspect the implemented Phase 00 Project Knowledge and existing Phase 01, 07, 08, 09, 10, 12 and 13 code/contracts.
+
+Do not modify code yet. Produce a detailed implementation plan that includes:
+1. Existing files and components to reuse.
+2. New routes, files, IndexedDB stores, TypeScript types and validators.
+3. Dependency IDs from earlier phases.
+4. Static public-content architecture versus local personal-data architecture.
+5. Claim-level evidence model.
+6. Safety, interaction, product-quality and anti-doping architecture.
+7. Immutable product-label and intake snapshots.
+8. Backup, restore and CSV-export work.
+9. Accessibility, responsive and privacy tests.
+10. Exact guardrails preventing invented claims, doses, interactions, WADA status, certifications or product recommendations.
+11. Risks, unresolved dependencies and explicit non-goals.
+12. Acceptance-criterion mapping.
+
+Your plan must explicitly confirm:
+- no authentication or backend;
+- no global works/does-not-work badge;
+- no supplement prescription or stack generator;
+- no automatic product or certification lookup;
+- no brand recommendation or affiliate link;
+- no steroid, SARM, peptide or research-chemical protocol;
+- no publication of draft seed identities as factual content;
+- no changes to completed modules unless this specification requires an integration point.
+
+Stop after the plan and wait for approval.
+
+========================================
+PROMPT 2 — AGENT MODE IMPLEMENTATION
+========================================
+Implement the approved Phase 14 plan exactly.
+
+Non-negotiable implementation rules:
+- Preserve all completed phases.
+- Use static, reviewed content contracts and local IndexedDB personal records.
+- Keep evidence direction, confidence, safety, quality and anti-doping status as separate dimensions.
+- Do not invent missing scientific content or dosage data.
+- Treat external classifications as dated snapshots.
+- Keep WADA status versioned by list year.
+- Require registry evidence before marking a certification verified.
+- Create immutable product-label versions and immutable intake snapshots.
+- Unknown values remain unknown, not zero.
+- Implement urgent adverse-event suppression and reporting-resource links.
+- No runtime transmission of personal product, symptom or trial data.
+- Exclude draft seed content from production search and public pages.
+
+After implementation, provide:
+1. Files created and changed.
+2. Routes implemented.
+3. IndexedDB schema and migration version.
+4. Test results mapped to Phase 14 acceptance criteria.
+5. Any intentionally unavailable content and why it remains unavailable.
+6. Network/privacy audit results.
+
+========================================
+PROMPT 3 — VERIFICATION
+========================================
+Audit the implemented Phase 14 module without adding new features.
+
+Verify:
+- claim-level evidence specificity;
+- no global ingredient verdict;
+- no invented doses or interactions;
+- jurisdiction separation;
+- WADA list-year versioning;
+- certification verification limits;
+- proprietary-blend handling;
+- immutable label and intake snapshots;
+- adverse-event stop signals;
+- no product recommendation or shopping links;
+- local-only storage;
+- backup/restore validation;
+- 320 px responsive behavior;
+- keyboard and screen-reader accessibility;
+- no regressions in earlier phases.
+
+Return a pass/fail table for every acceptance criterion. Fix only confirmed defects that are within Phase 14 scope.
+
+========================================
+PROMPT 4 — CORRECTION GUARDRAIL
+========================================
+Correct the identified Phase 14 defects only. Do not redesign the application, replace working shared components, add authentication, add a backend, create supplement recommendations, populate draft scientific articles, or alter earlier phase contracts without a documented compatibility requirement. Re-run the exact failed tests and report the result.

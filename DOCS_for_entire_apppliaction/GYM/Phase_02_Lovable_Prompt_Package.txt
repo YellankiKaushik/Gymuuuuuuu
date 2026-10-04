@@ -1,0 +1,40 @@
+PHASE 02 — LOVABLE PROMPT PACKAGE
+=================================
+
+Use only after Phase 00 and Phase 01 are complete and stable.
+Attach:
+- Phase_00_Master_Foundation_Lovable_Specification.md
+- Phase_01_Application_Shell_Navigation_Design_System.md
+- Phase_02_Muscle_Functional_Anatomy_Library.md
+- Phase_02_Muscle_Data_Schema.json
+- Phase_02_Seed_Taxonomy.json
+
+A. PLAN MODE
+-------------
+Read every attached file completely. Do not modify code yet.
+
+Prepare a formal implementation plan for Phase 02 only. Confirm the current framework, Phase 01 shell, routes, design tokens, shared source/content types and tests. List exact files to create/modify/protect. Map the Phase 02 schema into strict TypeScript validation. Define repository-owned content, build-time integrity checks, slug/alias indexes, /muscles catalogue, URL filters, accessible front/back region selector and synchronized text alternative, /muscles/$slug detail template, source/media governance and tests mapped to every acceptance criterion.
+
+Non-negotiable: no authentication, backend, Supabase, Lovable Cloud, database, personal profiles, exercise pages, workout logic, nutrition features, generated anatomy facts, exact activation percentages, set/rep prescriptions, medical diagnosis, treatment advice or proprietary/unverified images. Preserve Phase 00/01.
+
+End with all Phase 02 acceptance criteria and request approval.
+
+B. AGENT MODE
+--------------
+Implement the approved Phase 02 plan exactly. Build only the Muscle and Functional Anatomy Library. Use repository-owned validated data, Phase 01 components and the attached draft taxonomy. Publish only records with completed sources/review/media clearance; do not fabricate missing content. Implement catalogue, body/list views, accessible anterior/posterior selector plus text equivalent, search, filters, sort, URL state, detail pages, actions, relationships, misconceptions, cautions, sources and safe errors.
+
+Run type-check, content validation, tests, build, accessibility checks and responsive inspection. Update docs/muscle-library.md, docs/content-governance/anatomy-sources.md and docs/phases/phase-02.md. Report exact files, results, limitations and acceptance status.
+
+C. VERIFICATION
+---------------
+Audit the implementation against the complete Phase 02 specification. Produce a criterion/pass-fail/evidence/files/fix table. Verify no backend or scope creep; schema integrity; source/review/media requirements; alias search; URL restoration; keyboard body selector and text equivalent; responsive/zoom/dark mode; safe slugs; no fake precision or medical advice; test/build/accessibility results; and Phase 03 stable-ID readiness. Fix only verified Phase 02 defects and rerun checks.
+
+D. CONTENT INGESTION
+--------------------
+Import only the reviewed muscle records I attach. Validate each record against the Phase 02 schema. Do not rewrite factual fields, add unsourced facts or mark a record published when required sources, review metadata or media clearance are missing. Return a rejected-record report with exact field errors before changing the application.
+
+E. FOCUSED CORRECTION
+----------------------
+Correct only the verified Phase 02 defects below. Preserve all passing Phase 00/01/02 behavior. Identify root cause, exact file impact, smallest fix and regression test. Run relevant validation, type-check, test and build commands. Do not redesign, migrate, add a backend or expand into Phase 03.
+
+[PASTE VERIFIED DEFECTS]

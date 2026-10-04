@@ -1,0 +1,43 @@
+PHASE 04 — QUICK IMPLEMENTATION REFERENCE
+
+PURPOSE
+Build the evidence-governed Workout Science learning module. Do not build programs or tracking.
+
+UPLOAD TO LOVABLE
+1. Phase_04_Workout_Science.md
+2. Phase_04_Workout_Science_Data_Schema.json
+3. Phase_04_Seed_Workout_Science_Taxonomy.json
+4. Phase_04_Lovable_Prompt_Package.txt
+
+KEEP AVAILABLE
+- Phase 00 Project Knowledge
+- Phase 02 muscle schema/taxonomy
+- Phase 03 exercise schema/taxonomy
+
+ROUTES
+- /learn/workout-science
+- /learn/workout-science/$slug
+- /learn/workout-science/methods
+- /learn/workout-science/glossary
+
+CORE CONTENT
+- Volume, load, frequency, reps, sets, rest, ROM, tempo, order and density
+- RPE, RIR, failure, fatigue and soreness
+- Progression, plateaus, periodization, deloading and autoregulation
+- Supersets, drop sets, rest-pause, clusters and other advanced methods
+- Measurement concepts and evidence limitations
+
+NON-NEGOTIABLE
+- No authentication or backend
+- No program generator or workout logger
+- No AI-generated publishable science
+- No unsourced numeric prescriptions
+- No universal “best” claims
+- No medical diagnosis or treatment
+- Preserve Phase 02 and Phase 03 IDs
+
+SEED DATA
+98 draft topic identities. Draft means not public.
+
+DONE WHEN
+All 22 acceptance criteria pass and GitHub checkpoint phase-04-workout-science-complete exists.

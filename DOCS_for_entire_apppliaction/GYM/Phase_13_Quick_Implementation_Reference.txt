@@ -1,0 +1,31 @@
+PHASE 13 - QUICK IMPLEMENTATION REFERENCE
+
+Upload to Lovable:
+1. Phase_13_Cardio_and_Conditioning.md
+2. Phase_13_Cardio_Conditioning_Data_Schema.json
+3. Phase_13_Cardio_Conditioning_Reference_Data.json
+4. Phase_13_Lovable_Prompt_Package.txt
+
+Keep Phase 00 Project Knowledge active.
+
+Dependencies:
+- Phase 03 exercise schema and taxonomy
+- Phase 04 Workout Science schema and taxonomy
+- Phase 05 Workout Program schema and taxonomy
+- Phase 06 Workout Tracker schema and reference data
+- Phase 12 Recovery, Sleep and Mobility schema and reference data
+
+Blocking rules:
+- No universal Zone 2 or numbered zones.
+- No VO2max, threshold, fitness age or calorie-burn inference.
+- Age-predicted HRmax must be labelled estimated.
+- Every intensity target must name its method.
+- Device heart-rate values must be labelled estimates.
+- No AI-generated plans or routines.
+- No GPS, wearables, cloud sync or authentication.
+- No medical diagnosis or clearance.
+- No mutation of Phase 05 or Phase 06 records.
+- All personal data stays in IndexedDB.
+
+Workflow:
+Plan mode -> approve plan -> Agent mode -> formula audit -> intensity audit -> session audit -> concurrent/safety audit -> privacy audit -> regression tests -> GitHub checkpoint.

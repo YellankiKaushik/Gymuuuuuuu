@@ -1,0 +1,114 @@
+PHASE 18 — LOVABLE PROMPT PACKAGE
+
+FILES TO ATTACH
+1. Phase_18_Testing_GitHub_Vercel_Deployment.md
+2. Phase_18_Testing_Deployment_Data_Schema.json
+3. Phase_18_Testing_Deployment_Reference_Data.json
+4. Relevant implemented schemas and reference data from Phases 06–17
+
+Keep Phase 00 Project Knowledge active.
+
+============================================================
+PROMPT A — PLAN MODE
+============================================================
+Read all attached files completely. Do not modify code.
+
+This is the final release-control phase for Fitness OS. Inspect the actual repository before selecting tools or commands. Preserve the existing Lovable-native framework, router, package manager, lockfile, rendering mode, data stores and design system.
+
+Produce a detailed plan containing:
+- Current framework, versions, package manager, lockfile and runtime.
+- Current scripts and missing standard scripts.
+- Existing tests and recommended compatible test tools.
+- Every IndexedDB database, schema version and migration risk.
+- Current external runtime domains and environment variables.
+- GitHub sync status and active branch.
+- Existing CI and Vercel configuration.
+- Exact files to create or modify.
+- Test layers and representative routes.
+- Release gates and job names.
+- GitHub plan/visibility limitations affecting branch protection or CodeQL.
+- Vercel plan limitations affecting deployment checks or rollback selection.
+- Custom-domain and browser-origin plan.
+- Candidate/previous data-compatibility testing.
+- Rollback and forward-fix strategy.
+- Staged implementation and verification sequence.
+
+Do not introduce authentication, Supabase, a cloud database, analytics, a framework migration, a second package manager, unapproved external services, or destructive migrations.
+
+Stop after the plan. Wait for approval.
+
+============================================================
+PROMPT B — AGENT MODE
+============================================================
+Implement the approved Phase 18 plan only.
+
+Guardrails:
+- Preserve all Phase 00–17 functionality.
+- Inspect before editing.
+- Use synthetic fixtures only.
+- Never include personal records or backups in code, screenshots or CI artifacts.
+- Keep runtime personal data local.
+- Use least-privilege workflow permissions.
+- Do not expose secrets to untrusted pull requests.
+- Do not claim automated WCAG certification.
+- Do not claim Lighthouse is field Core Web Vitals.
+- Do not claim Vercel code rollback reverses local data migrations.
+- Do not create a Vercel production deployment automatically.
+
+Implement in this order:
+1. Repository contract and standard scripts.
+2. Static data validation.
+3. Unit/component/integration tests.
+4. Storage, migration and backup/restore compatibility tests.
+5. Playwright or existing E2E configuration.
+6. Automated accessibility and manual-check documentation.
+7. Privacy/network and security checks.
+8. Performance budgets based on measured baseline.
+9. GitHub Actions, Dependabot and PR templates.
+10. Release manifest schema/generator.
+11. Deployment, rollback, origin-migration and maintenance runbooks.
+12. Vercel Preview configuration and verification.
+
+At the end, report:
+- Files changed.
+- Commands run and exact results.
+- Tests passed, failed or skipped.
+- Current coverage for registered critical modules.
+- Preview URL.
+- Network allowlist.
+- Data-compatibility result.
+- Rollback-safe result.
+- Remaining manual checks.
+- Exact steps the owner must perform for custom domain and production release.
+
+Do not mark Phase 18 complete while any blocking gate is unresolved.
+
+============================================================
+PROMPT C — RELEASE-CANDIDATE VERIFICATION
+============================================================
+Do not change product scope. Audit the Phase 18 implementation against every acceptance criterion.
+
+Verify:
+- Fresh clone reproducibility.
+- Immutable dependency install.
+- Formatting, lint, strict typecheck and build.
+- All schemas and cross-phase relationships.
+- Critical formula/migration coverage.
+- E2E journeys on required browsers.
+- Axe results and manual accessibility checklist status.
+- Network allowlist and no personal-data transmission.
+- Security headers and dependency alerts.
+- Performance baseline and budgets.
+- Backup, restore and migration compatibility.
+- Candidate-to-previous rollback test.
+- GitHub branch and status-check configuration.
+- Vercel Preview acceptance.
+- Custom-domain readiness.
+- Release manifest validity.
+
+List every failure precisely. Do not auto-fix unrelated code. Do not promote to production.
+
+============================================================
+PROMPT D — CORRECTION
+============================================================
+Fix only the failures listed in the approved verification report. Preserve all passing behavior. Add regression tests for every corrected defect. Re-run the affected checks and then the complete blocking release gates. Do not deploy to production.

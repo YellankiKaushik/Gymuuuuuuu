@@ -1,0 +1,1914 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 04 Seed Workout Science Taxonomy",
+    "version": "1.0",
+    "date": "5 August 2026",
+    "status": "draft-identities-only",
+    "recordCount": 98,
+    "notice": "These records establish stable identities, categories and learning order only. They are not publishable science articles. Each record requires claim-level sources, population limits, evidence review, practical review and editorial review before publication."
+  },
+  "categories": [
+    {
+      "id": "foundations",
+      "displayName": "Foundations"
+    },
+    {
+      "id": "adaptations-goals",
+      "displayName": "Adaptations and goals"
+    },
+    {
+      "id": "training-variables",
+      "displayName": "Training variables"
+    },
+    {
+      "id": "effort-fatigue",
+      "displayName": "Effort and fatigue"
+    },
+    {
+      "id": "progression",
+      "displayName": "Progression"
+    },
+    {
+      "id": "program-design",
+      "displayName": "Program design"
+    },
+    {
+      "id": "periodization-autoregulation",
+      "displayName": "Periodization and autoregulation"
+    },
+    {
+      "id": "advanced-methods",
+      "displayName": "Advanced methods"
+    },
+    {
+      "id": "measurement-interpretation",
+      "displayName": "Measurement and interpretation"
+    },
+    {
+      "id": "safety-boundaries",
+      "displayName": "Safety boundaries"
+    }
+  ],
+  "evidenceLevels": [
+    {
+      "id": "high",
+      "displayName": "Higher confidence"
+    },
+    {
+      "id": "moderate",
+      "displayName": "Moderate confidence"
+    },
+    {
+      "id": "low",
+      "displayName": "Limited evidence"
+    },
+    {
+      "id": "very-low",
+      "displayName": "Very limited or uncertain evidence"
+    },
+    {
+      "id": "consensus-practice",
+      "displayName": "Practice framework or consensus"
+    }
+  ],
+  "records": [
+    {
+      "id": "science_training_adaptation",
+      "slug": "training-adaptation",
+      "displayName": "Training adaptation",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 1,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_specificity",
+      "slug": "specificity",
+      "displayName": "Specificity",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 2,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_progressive_overload",
+      "slug": "progressive-overload",
+      "displayName": "Progressive overload",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 3,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_individual_response",
+      "slug": "individual-response",
+      "displayName": "Individual response",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 4,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_stimulus_fatigue_recovery",
+      "slug": "stimulus-fatigue-recovery",
+      "displayName": "Stimulus, fatigue and recovery",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 5,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_consistency_adherence",
+      "slug": "consistency-adherence",
+      "displayName": "Consistency and adherence",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 6,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_technique_skill_learning",
+      "slug": "technique-skill-learning",
+      "displayName": "Technique and skill learning",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 7,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_detraining_retraining",
+      "slug": "detraining-retraining",
+      "displayName": "Detraining and retraining",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "foundations",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 8,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_strength_adaptation",
+      "slug": "strength-adaptation",
+      "displayName": "Strength adaptation",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "adaptations-goals",
+      "contentType": "adaptation",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 9,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_hypertrophy_adaptation",
+      "slug": "hypertrophy-adaptation",
+      "displayName": "Muscle hypertrophy",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "adaptations-goals",
+      "contentType": "adaptation",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 10,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_power_adaptation",
+      "slug": "power-adaptation",
+      "displayName": "Power development",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "adaptations-goals",
+      "contentType": "adaptation",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 11,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_muscular_endurance_adaptation",
+      "slug": "muscular-endurance-adaptation",
+      "displayName": "Muscular endurance",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "adaptations-goals",
+      "contentType": "adaptation",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 12,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_physical_function_adaptation",
+      "slug": "physical-function-adaptation",
+      "displayName": "Physical function",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "adaptations-goals",
+      "contentType": "adaptation",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 13,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_training_volume",
+      "slug": "training-volume",
+      "displayName": "Training volume",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 14,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_direct_indirect_sets",
+      "slug": "direct-indirect-sets",
+      "displayName": "Direct and indirect sets",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 15,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_volume_load",
+      "slug": "volume-load",
+      "displayName": "Volume load and tonnage",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "measurement",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 16,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_load_relative_intensity",
+      "slug": "load-relative-intensity",
+      "displayName": "Load and relative intensity",
+      "aliases": [
+        "intensity of load"
+      ],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "strength",
+        "hypertrophy",
+        "power"
+      ],
+      "experienceTags": [
+        "foundation",
+        "beginner",
+        "intermediate"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 17,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_repetitions_rep_ranges",
+      "slug": "repetitions-rep-ranges",
+      "displayName": "Repetitions and rep ranges",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 18,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_working_sets",
+      "slug": "working-sets",
+      "displayName": "Working sets and set types",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 19,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_training_frequency",
+      "slug": "training-frequency",
+      "displayName": "Training frequency",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 20,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_rest_intervals",
+      "slug": "rest-intervals",
+      "displayName": "Rest intervals",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 21,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_range_of_motion",
+      "slug": "range-of-motion",
+      "displayName": "Range of motion",
+      "aliases": [
+        "ROM"
+      ],
+      "abbreviations": [
+        "ROM"
+      ],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness",
+        "strength",
+        "hypertrophy",
+        "physical-function"
+      ],
+      "experienceTags": [
+        "foundation",
+        "beginner",
+        "intermediate"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 22,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_tempo_repetition_duration",
+      "slug": "tempo-repetition-duration",
+      "displayName": "Tempo and repetition duration",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 23,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_velocity_intent",
+      "slug": "velocity-intent",
+      "displayName": "Velocity intent",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 24,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_exercise_order",
+      "slug": "exercise-order",
+      "displayName": "Exercise order",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 25,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_exercise_selection",
+      "slug": "exercise-selection",
+      "displayName": "Exercise selection",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 26,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_training_density",
+      "slug": "training-density",
+      "displayName": "Training density",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "training-variables",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 27,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_set_rpe",
+      "slug": "set-rpe",
+      "displayName": "Set RPE",
+      "aliases": [
+        "rating of perceived exertion"
+      ],
+      "abbreviations": [
+        "RPE"
+      ],
+      "category": "effort-fatigue",
+      "contentType": "measurement",
+      "goalTags": [
+        "general-fitness",
+        "strength",
+        "hypertrophy"
+      ],
+      "experienceTags": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 28,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_repetitions_in_reserve",
+      "slug": "repetitions-in-reserve",
+      "displayName": "Repetitions in reserve",
+      "aliases": [
+        "reps in reserve"
+      ],
+      "abbreviations": [
+        "RIR"
+      ],
+      "category": "effort-fatigue",
+      "contentType": "measurement",
+      "goalTags": [
+        "general-fitness",
+        "strength",
+        "hypertrophy"
+      ],
+      "experienceTags": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 29,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_proximity_to_failure",
+      "slug": "proximity-to-failure",
+      "displayName": "Proximity to failure",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "effort-fatigue",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 30,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_muscular_failure",
+      "slug": "muscular-failure",
+      "displayName": "Training to muscular failure",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "effort-fatigue",
+      "contentType": "training-variable",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 31,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_technical_failure",
+      "slug": "technical-failure",
+      "displayName": "Technical failure",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "effort-fatigue",
+      "contentType": "glossary-term",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 32,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_velocity_loss",
+      "slug": "velocity-loss",
+      "displayName": "Velocity loss",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "effort-fatigue",
+      "contentType": "measurement",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 33,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_acute_fatigue",
+      "slug": "acute-fatigue",
+      "displayName": "Acute training fatigue",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "effort-fatigue",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 34,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_soreness_doms",
+      "slug": "soreness-doms",
+      "displayName": "Soreness and DOMS",
+      "aliases": [
+        "delayed-onset muscle soreness"
+      ],
+      "abbreviations": [
+        "DOMS"
+      ],
+      "category": "effort-fatigue",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation",
+        "beginner"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 35,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_readiness_autoregulation",
+      "slug": "readiness-autoregulation",
+      "displayName": "Readiness and autoregulation",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "effort-fatigue",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 36,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_single_progression",
+      "slug": "single-progression",
+      "displayName": "Single progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 37,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_double_progression",
+      "slug": "double-progression",
+      "displayName": "Double progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 38,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_rep_progression",
+      "slug": "rep-progression",
+      "displayName": "Repetition progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 39,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_load_progression",
+      "slug": "load-progression",
+      "displayName": "Load progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 40,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_set_progression",
+      "slug": "set-progression",
+      "displayName": "Set progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 41,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_range_progression",
+      "slug": "range-progression",
+      "displayName": "Range-of-motion progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 42,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_technical_progression",
+      "slug": "technical-progression",
+      "displayName": "Technical progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 43,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_density_progression",
+      "slug": "density-progression",
+      "displayName": "Density progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 44,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_exercise_progression_regression",
+      "slug": "exercise-progression-regression",
+      "displayName": "Exercise progression and regression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 45,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_plateau_troubleshooting",
+      "slug": "plateau-troubleshooting",
+      "displayName": "Training plateau troubleshooting",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "progression",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 46,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_session_design",
+      "slug": "session-design",
+      "displayName": "Session design principles",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 47,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_movement_balance",
+      "slug": "movement-balance",
+      "displayName": "Movement-pattern balance",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 48,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_priority_sequencing",
+      "slug": "priority-sequencing",
+      "displayName": "Priority and sequencing",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 49,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_warmup_working_backoff_sets",
+      "slug": "warmup-working-backoff-sets",
+      "displayName": "Warm-up, working and back-off sets",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 50,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_training_split",
+      "slug": "training-split",
+      "displayName": "Training splits",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 51,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_weekly_volume_distribution",
+      "slug": "weekly-volume-distribution",
+      "displayName": "Weekly volume distribution",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 52,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_program_variation",
+      "slug": "program-variation",
+      "displayName": "Exercise and program variation",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 53,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_minimum_effective_dose",
+      "slug": "minimum-effective-dose",
+      "displayName": "Minimum effective dose",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "program-design",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 54,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_periodization",
+      "slug": "periodization",
+      "displayName": "Periodization",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 55,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_microcycle",
+      "slug": "microcycle",
+      "displayName": "Microcycle",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "glossary-term",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 56,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_mesocycle",
+      "slug": "mesocycle",
+      "displayName": "Mesocycle",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "glossary-term",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 57,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_macrocycle",
+      "slug": "macrocycle",
+      "displayName": "Macrocycle",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "glossary-term",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 58,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_linear_periodization",
+      "slug": "linear-periodization",
+      "displayName": "Linear periodization",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 59,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_undulating_periodization",
+      "slug": "undulating-periodization",
+      "displayName": "Undulating periodization",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 60,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_block_periodization",
+      "slug": "block-periodization",
+      "displayName": "Block periodization",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 61,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_specialization_phase",
+      "slug": "specialization-phase",
+      "displayName": "Specialization phase",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 62,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_maintenance_phase",
+      "slug": "maintenance-phase",
+      "displayName": "Maintenance phase",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 63,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_deload",
+      "slug": "deload",
+      "displayName": "Deloading",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 64,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_taper",
+      "slug": "taper",
+      "displayName": "Tapering",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 65,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_autoregulated_progression",
+      "slug": "autoregulated-progression",
+      "displayName": "Autoregulated progression",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "periodization-autoregulation",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 66,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_superset",
+      "slug": "superset",
+      "displayName": "Superset",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 67,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_antagonist_superset",
+      "slug": "antagonist-superset",
+      "displayName": "Antagonist superset",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 68,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_compound_set",
+      "slug": "compound-set",
+      "displayName": "Compound set",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 69,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_tri_set",
+      "slug": "tri-set",
+      "displayName": "Tri-set",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 70,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_giant_set",
+      "slug": "giant-set",
+      "displayName": "Giant set",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 71,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_drop_set",
+      "slug": "drop-set",
+      "displayName": "Drop set",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 72,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_rest_pause",
+      "slug": "rest-pause",
+      "displayName": "Rest-pause training",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 73,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_cluster_set",
+      "slug": "cluster-set",
+      "displayName": "Cluster set",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 74,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_myo_reps",
+      "slug": "myo-reps",
+      "displayName": "Myo-reps",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 75,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_pyramid_set",
+      "slug": "pyramid-set",
+      "displayName": "Pyramid set",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 76,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_reverse_pyramid",
+      "slug": "reverse-pyramid",
+      "displayName": "Reverse pyramid",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 77,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_pre_exhaustion",
+      "slug": "pre-exhaustion",
+      "displayName": "Pre-exhaustion",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 78,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_post_exhaustion",
+      "slug": "post-exhaustion",
+      "displayName": "Post-exhaustion",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 79,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_circuit_training",
+      "slug": "circuit-training",
+      "displayName": "Circuit training",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 80,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_amrap",
+      "slug": "amrap",
+      "displayName": "AMRAP sets",
+      "aliases": [
+        "as many reps as possible"
+      ],
+      "abbreviations": [
+        "AMRAP"
+      ],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "muscular-endurance",
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "intermediate",
+        "advanced"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 81,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_emom",
+      "slug": "emom",
+      "displayName": "EMOM training",
+      "aliases": [
+        "every minute on the minute"
+      ],
+      "abbreviations": [
+        "EMOM"
+      ],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness",
+        "power",
+        "muscular-endurance"
+      ],
+      "experienceTags": [
+        "intermediate",
+        "advanced"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 82,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_isometric_emphasis",
+      "slug": "isometric-emphasis",
+      "displayName": "Isometric emphasis",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 83,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_eccentric_emphasis",
+      "slug": "eccentric-emphasis",
+      "displayName": "Eccentric emphasis and overload",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 84,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_paused_repetitions",
+      "slug": "paused-repetitions",
+      "displayName": "Paused repetitions",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 85,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_partial_range_overload",
+      "slug": "partial-range-overload",
+      "displayName": "Partial-range overload",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 86,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_blood_flow_restriction",
+      "slug": "blood-flow-restriction",
+      "displayName": "Blood-flow restriction training",
+      "aliases": [
+        "occlusion training"
+      ],
+      "abbreviations": [
+        "BFR"
+      ],
+      "category": "advanced-methods",
+      "contentType": "method",
+      "goalTags": [
+        "hypertrophy",
+        "strength",
+        "physical-function"
+      ],
+      "experienceTags": [
+        "advanced",
+        "coach-research"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 87,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_one_repetition_maximum",
+      "slug": "one-repetition-maximum",
+      "displayName": "One-repetition maximum",
+      "aliases": [
+        "one rep max"
+      ],
+      "abbreviations": [
+        "1RM"
+      ],
+      "category": "measurement-interpretation",
+      "contentType": "measurement",
+      "goalTags": [
+        "strength"
+      ],
+      "experienceTags": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 88,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_estimated_one_rep_max",
+      "slug": "estimated-one-rep-max",
+      "displayName": "Estimated one-repetition maximum",
+      "aliases": [
+        "estimated 1RM"
+      ],
+      "abbreviations": [
+        "e1RM"
+      ],
+      "category": "measurement-interpretation",
+      "contentType": "measurement",
+      "goalTags": [
+        "strength"
+      ],
+      "experienceTags": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 89,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_repetition_maximum",
+      "slug": "repetition-maximum",
+      "displayName": "Repetition maximum",
+      "aliases": [
+        "rep max"
+      ],
+      "abbreviations": [
+        "RM"
+      ],
+      "category": "measurement-interpretation",
+      "contentType": "measurement",
+      "goalTags": [
+        "strength",
+        "hypertrophy"
+      ],
+      "experienceTags": [
+        "foundation",
+        "beginner"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 90,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_relative_strength",
+      "slug": "relative-strength",
+      "displayName": "Relative strength",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "measurement-interpretation",
+      "contentType": "measurement",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 91,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_performance_trend",
+      "slug": "performance-trend",
+      "displayName": "Performance trend interpretation",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "measurement-interpretation",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 92,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_technique_consistency_metric",
+      "slug": "technique-consistency-metric",
+      "displayName": "Technique consistency as a progress marker",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "measurement-interpretation",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 93,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_range_consistency_metric",
+      "slug": "range-consistency-metric",
+      "displayName": "Range-of-motion consistency as a progress marker",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "measurement-interpretation",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 94,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_tonnage_limitations",
+      "slug": "tonnage-limitations",
+      "displayName": "Limitations of tonnage comparisons",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "measurement-interpretation",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 95,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_stop_signals",
+      "slug": "stop-signals",
+      "displayName": "Stop signals during training",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "safety-boundaries",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 96,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_pain_vs_effort",
+      "slug": "pain-vs-effort",
+      "displayName": "Pain, discomfort and effort",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "safety-boundaries",
+      "contentType": "concept",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 97,
+      "version": "0.1.0"
+    },
+    {
+      "id": "science_specialist_methods_boundary",
+      "slug": "specialist-methods-boundary",
+      "displayName": "Specialist-method boundaries",
+      "aliases": [],
+      "abbreviations": [],
+      "category": "safety-boundaries",
+      "contentType": "decision-guide",
+      "goalTags": [
+        "general-fitness"
+      ],
+      "experienceTags": [
+        "foundation"
+      ],
+      "contentStatus": "draft",
+      "learningOrder": 98,
+      "version": "0.1.0"
+    }
+  ]
+}

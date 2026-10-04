@@ -1,0 +1,1420 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 05 Seed Workout Program Taxonomy",
+    "version": "1.0",
+    "date": "5 August 2026",
+    "status": "draft-identities-only",
+    "recordCount": 50,
+    "notice": "These records establish stable program identities and discovery metadata only. They are not ready-to-follow workout plans. Every public program requires a complete schedule, valid Phase 03 exercise references, Phase 04 science rationale, progression and substitution logic, safety boundaries, sources and review approval."
+  },
+  "categories": [
+    {
+      "id": "general-fitness",
+      "displayName": "General fitness"
+    },
+    {
+      "id": "strength",
+      "displayName": "Strength"
+    },
+    {
+      "id": "hypertrophy",
+      "displayName": "Hypertrophy"
+    },
+    {
+      "id": "strength-hypertrophy",
+      "displayName": "Strength and hypertrophy"
+    },
+    {
+      "id": "power",
+      "displayName": "Power"
+    },
+    {
+      "id": "muscular-endurance",
+      "displayName": "Muscular endurance and circuits"
+    },
+    {
+      "id": "home-minimal",
+      "displayName": "Home and minimal equipment"
+    },
+    {
+      "id": "time-efficient",
+      "displayName": "Time-efficient"
+    },
+    {
+      "id": "return-maintenance",
+      "displayName": "Return and maintenance"
+    },
+    {
+      "id": "body-composition-support",
+      "displayName": "Body-composition support"
+    },
+    {
+      "id": "specialization",
+      "displayName": "Specialization"
+    }
+  ],
+  "routineStyles": [
+    {
+      "id": "full-body",
+      "displayName": "Full body"
+    },
+    {
+      "id": "upper-lower",
+      "displayName": "Upper/lower"
+    },
+    {
+      "id": "push-pull-legs",
+      "displayName": "Push/pull/legs"
+    },
+    {
+      "id": "upper-lower-ppl",
+      "displayName": "Upper/lower plus PPL"
+    },
+    {
+      "id": "body-part-split",
+      "displayName": "Body-part split"
+    },
+    {
+      "id": "circuit",
+      "displayName": "Circuit"
+    },
+    {
+      "id": "specialization",
+      "displayName": "Specialization"
+    }
+  ],
+  "equipmentProfiles": [
+    {
+      "id": "equipment_profile_full_gym",
+      "displayName": "Full commercial gym",
+      "requiredEquipmentIds": [
+        "equipment_barbell",
+        "equipment_dumbbell",
+        "equipment_cable",
+        "equipment_machine_selectorized",
+        "equipment_bench"
+      ]
+    },
+    {
+      "id": "equipment_profile_barbell_rack_bench",
+      "displayName": "Barbell, rack and bench",
+      "requiredEquipmentIds": [
+        "equipment_barbell",
+        "equipment_bench"
+      ]
+    },
+    {
+      "id": "equipment_profile_barbell_basic",
+      "displayName": "Basic barbell setup",
+      "requiredEquipmentIds": [
+        "equipment_barbell"
+      ]
+    },
+    {
+      "id": "equipment_profile_dumbbell_bench",
+      "displayName": "Dumbbells and bench",
+      "requiredEquipmentIds": [
+        "equipment_dumbbell",
+        "equipment_bench"
+      ]
+    },
+    {
+      "id": "equipment_profile_dumbbell_only",
+      "displayName": "Dumbbells only",
+      "requiredEquipmentIds": [
+        "equipment_dumbbell"
+      ]
+    },
+    {
+      "id": "equipment_profile_machines_cables",
+      "displayName": "Machines and cables",
+      "requiredEquipmentIds": [
+        "equipment_cable",
+        "equipment_machine_selectorized"
+      ]
+    },
+    {
+      "id": "equipment_profile_bodyweight",
+      "displayName": "Bodyweight only",
+      "requiredEquipmentIds": [
+        "equipment_bodyweight"
+      ]
+    },
+    {
+      "id": "equipment_profile_resistance_bands",
+      "displayName": "Resistance bands",
+      "requiredEquipmentIds": [
+        "equipment_resistance_band"
+      ]
+    },
+    {
+      "id": "equipment_profile_home_hybrid",
+      "displayName": "Home hybrid",
+      "requiredEquipmentIds": [
+        "equipment_dumbbell",
+        "equipment_resistance_band",
+        "equipment_bodyweight"
+      ]
+    },
+    {
+      "id": "equipment_profile_minimal_travel",
+      "displayName": "Minimal travel",
+      "requiredEquipmentIds": [
+        "equipment_bodyweight",
+        "equipment_resistance_band"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "program_full_body_2_day_foundation",
+      "slug": "full-body-2-day-foundation",
+      "displayName": "Two-Day Full-Body Foundation",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 2,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 1,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_full_body_3_day_foundation",
+      "slug": "full-body-3-day-foundation",
+      "displayName": "Three-Day Full-Body Foundation",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 2,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_full_body_3_day_intermediate",
+      "slug": "full-body-3-day-intermediate",
+      "displayName": "Three-Day Full-Body Intermediate",
+      "aliases": [],
+      "category": "strength-hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength-hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 3,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_full_body_4_day_high_frequency",
+      "slug": "full-body-4-day-high-frequency",
+      "displayName": "Four-Day Full-Body High-Frequency",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 4,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_upper_lower_3_day_rotating",
+      "slug": "upper-lower-3-day-rotating",
+      "displayName": "Three-Day Rotating Upper/Lower",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 5,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_upper_lower_4_day_foundation",
+      "slug": "upper-lower-4-day-foundation",
+      "displayName": "Four-Day Upper/Lower Foundation",
+      "aliases": [],
+      "category": "strength-hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength-hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 6,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_upper_lower_4_day_intermediate",
+      "slug": "upper-lower-4-day-intermediate",
+      "displayName": "Four-Day Upper/Lower Intermediate",
+      "aliases": [],
+      "category": "strength-hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength-hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 7,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_upper_lower_5_day",
+      "slug": "upper-lower-5-day",
+      "displayName": "Five-Day Upper/Lower Rotation",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 5,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 8,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_push_pull_legs_3_day",
+      "slug": "push-pull-legs-3-day",
+      "displayName": "Three-Day Push/Pull/Legs",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "push-pull-legs",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 9,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_push_pull_legs_4_day_rotating",
+      "slug": "push-pull-legs-4-day-rotating",
+      "displayName": "Four-Day Rotating Push/Pull/Legs",
+      "aliases": [],
+      "category": "strength-hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength-hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "push-pull-legs",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 10,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_push_pull_legs_6_day",
+      "slug": "push-pull-legs-6-day",
+      "displayName": "Six-Day Push/Pull/Legs",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "push-pull-legs",
+      "trainingDaysPerWeek": 6,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 11,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_upper_lower_ppl_5_day",
+      "slug": "upper-lower-ppl-5-day",
+      "displayName": "Five-Day Upper/Lower plus Push/Pull/Legs",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower-ppl",
+      "trainingDaysPerWeek": 5,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 12,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_body_part_split_4_day",
+      "slug": "body-part-split-4-day",
+      "displayName": "Four-Day Body-Part Split",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "body-part-split",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 13,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_body_part_split_5_day",
+      "slug": "body-part-split-5-day",
+      "displayName": "Five-Day Body-Part Split",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "body-part-split",
+      "trainingDaysPerWeek": 5,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 14,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_strength_3_day_foundation",
+      "slug": "strength-3-day-foundation",
+      "displayName": "Three-Day Strength Foundation",
+      "aliases": [],
+      "category": "strength",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_barbell_rack_bench",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 15,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_strength_4_day_intermediate",
+      "slug": "strength-4-day-intermediate",
+      "displayName": "Four-Day Intermediate Strength",
+      "aliases": [],
+      "category": "strength",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_barbell_rack_bench",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 16,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_strength_5_day_advanced",
+      "slug": "strength-5-day-advanced",
+      "displayName": "Five-Day Advanced Strength",
+      "aliases": [],
+      "category": "strength",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "specialization",
+      "trainingDaysPerWeek": 5,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_barbell_rack_bench",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 17,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_strength_hypertrophy_4_day",
+      "slug": "strength-hypertrophy-4-day",
+      "displayName": "Four-Day Strength and Hypertrophy",
+      "aliases": [],
+      "category": "strength-hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength-hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 18,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_powerbuilding_4_day",
+      "slug": "powerbuilding-4-day",
+      "displayName": "Four-Day Powerbuilding",
+      "aliases": [],
+      "category": "strength-hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "strength-hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 19,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_hypertrophy_full_body_3_day",
+      "slug": "hypertrophy-full-body-3-day",
+      "displayName": "Three-Day Full-Body Hypertrophy",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 20,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_hypertrophy_upper_lower_4_day",
+      "slug": "hypertrophy-upper-lower-4-day",
+      "displayName": "Four-Day Upper/Lower Hypertrophy",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 21,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_hypertrophy_5_day",
+      "slug": "hypertrophy-5-day",
+      "displayName": "Five-Day Hypertrophy",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "body-part-split",
+      "trainingDaysPerWeek": 5,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 22,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_hypertrophy_6_day",
+      "slug": "hypertrophy-6-day",
+      "displayName": "Six-Day Hypertrophy",
+      "aliases": [],
+      "category": "hypertrophy",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "push-pull-legs",
+      "trainingDaysPerWeek": 6,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 23,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_power_foundation_3_day",
+      "slug": "power-foundation-3-day",
+      "displayName": "Three-Day Power Foundation",
+      "aliases": [],
+      "category": "power",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "power",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 24,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_power_strength_4_day",
+      "slug": "power-strength-4-day",
+      "displayName": "Four-Day Power and Strength",
+      "aliases": [],
+      "category": "power",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "power",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 25,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_muscular_endurance_full_body_3_day",
+      "slug": "muscular-endurance-full-body-3-day",
+      "displayName": "Three-Day Full-Body Muscular Endurance",
+      "aliases": [],
+      "category": "muscular-endurance",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "muscular-endurance",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 26,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_circuit_foundation_3_day",
+      "slug": "circuit-foundation-3-day",
+      "displayName": "Three-Day Circuit Foundation",
+      "aliases": [],
+      "category": "muscular-endurance",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "muscular-endurance",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "circuit",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_home_hybrid",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 27,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_general_fitness_2_day",
+      "slug": "general-fitness-2-day",
+      "displayName": "Two-Day General Fitness",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 2,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 28,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_general_fitness_3_day",
+      "slug": "general-fitness-3-day",
+      "displayName": "Three-Day General Fitness",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 29,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_general_fitness_4_day",
+      "slug": "general-fitness-4-day",
+      "displayName": "Four-Day General Fitness",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 30,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_dumbbell_only_2_day",
+      "slug": "dumbbell-only-2-day",
+      "displayName": "Two-Day Dumbbell-Only",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 2,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_dumbbell_only",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 31,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_dumbbell_only_3_day",
+      "slug": "dumbbell-only-3-day",
+      "displayName": "Three-Day Dumbbell-Only",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_dumbbell_only",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 32,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_dumbbell_only_4_day",
+      "slug": "dumbbell-only-4-day",
+      "displayName": "Four-Day Dumbbell-Only",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_dumbbell_bench",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 33,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_bodyweight_2_day_foundation",
+      "slug": "bodyweight-2-day-foundation",
+      "displayName": "Two-Day Bodyweight Foundation",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 2,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_bodyweight",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 34,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_bodyweight_3_day_progressive",
+      "slug": "bodyweight-3-day-progressive",
+      "displayName": "Three-Day Progressive Bodyweight",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_bodyweight",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 35,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_resistance_band_3_day",
+      "slug": "resistance-band-3-day",
+      "displayName": "Three-Day Resistance-Band Program",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_resistance_bands",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 36,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_home_hybrid_3_day",
+      "slug": "home-hybrid-3-day",
+      "displayName": "Three-Day Home Hybrid",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_home_hybrid",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 37,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_travel_minimal_3_day",
+      "slug": "travel-minimal-3-day",
+      "displayName": "Three-Day Minimal Travel Program",
+      "aliases": [],
+      "category": "home-minimal",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_minimal_travel",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "home"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 38,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_short_session_3_day_30_minute",
+      "slug": "short-session-3-day-30-minute",
+      "displayName": "Three-Day 30-Minute Program",
+      "aliases": [],
+      "category": "time-efficient",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 39,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_short_session_4_day_30_minute",
+      "slug": "short-session-4-day-30-minute",
+      "displayName": "Four-Day 30-Minute Program",
+      "aliases": [],
+      "category": "time-efficient",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 40,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_machine_only_3_day_foundation",
+      "slug": "machine-only-3-day-foundation",
+      "displayName": "Three-Day Machine Foundation",
+      "aliases": [],
+      "category": "general-fitness",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_machines_cables",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 41,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_return_to_training_2_day",
+      "slug": "return-to-training-2-day",
+      "displayName": "Two-Day Return to Training",
+      "aliases": [],
+      "category": "return-maintenance",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "foundation"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 2,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 42,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_return_to_training_3_day",
+      "slug": "return-to-training-3-day",
+      "displayName": "Three-Day Return to Training",
+      "aliases": [],
+      "category": "return-maintenance",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 43,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_maintenance_2_day",
+      "slug": "maintenance-2-day",
+      "displayName": "Two-Day Maintenance",
+      "aliases": [],
+      "category": "return-maintenance",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 2,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 44,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_maintenance_3_day",
+      "slug": "maintenance-3-day",
+      "displayName": "Three-Day Maintenance",
+      "aliases": [],
+      "category": "return-maintenance",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "general-fitness",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "open-ended",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 45,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_body_composition_support_3_day",
+      "slug": "body-composition-support-3-day",
+      "displayName": "Three-Day Body-Composition Support",
+      "aliases": [],
+      "category": "body-composition-support",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "body-composition-support",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "beginner"
+      ],
+      "routineStyle": "full-body",
+      "trainingDaysPerWeek": 3,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 46,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_body_composition_support_4_day",
+      "slug": "body-composition-support-4-day",
+      "displayName": "Four-Day Body-Composition Support",
+      "aliases": [],
+      "category": "body-composition-support",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "body-composition-support",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "intermediate"
+      ],
+      "routineStyle": "upper-lower",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "fixed-weeks",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 47,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_upper_body_specialization_4_day",
+      "slug": "upper-body-specialization-4-day",
+      "displayName": "Four-Day Upper-Body Specialization",
+      "aliases": [],
+      "category": "specialization",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "specialization",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 48,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_lower_body_specialization_4_day",
+      "slug": "lower-body-specialization-4-day",
+      "displayName": "Four-Day Lower-Body Specialization",
+      "aliases": [],
+      "category": "specialization",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "specialization",
+      "trainingDaysPerWeek": 4,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 49,
+      "version": "0.1.0"
+    },
+    {
+      "id": "program_arms_shoulders_specialization_5_day",
+      "slug": "arms-shoulders-specialization-5-day",
+      "displayName": "Five-Day Arms and Shoulders Specialization",
+      "aliases": [],
+      "category": "specialization",
+      "programType": "template",
+      "contentStatus": "draft",
+      "primaryGoal": "hypertrophy",
+      "secondaryGoals": [],
+      "experienceLevels": [
+        "advanced"
+      ],
+      "routineStyle": "specialization",
+      "trainingDaysPerWeek": 5,
+      "sessionDurationMinutes": null,
+      "equipmentProfileId": "equipment_profile_full_gym",
+      "durationMode": "block-based",
+      "environmentTags": [
+        "gym"
+      ],
+      "contentStatusNote": "Stable identity only. Schedule, prescriptions, progression, safety, sources and review are required before publication.",
+      "learningOrder": 50,
+      "version": "0.1.0"
+    }
+  ]
+}

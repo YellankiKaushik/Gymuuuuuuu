@@ -1,0 +1,34 @@
+PHASE 10 - QUICK IMPLEMENTATION REFERENCE
+
+UPLOAD TO LOVABLE
+1. Phase_10_Nutrition_Tracker.md
+2. Phase_10_Nutrition_Tracker_Data_Schema.json
+3. Phase_10_Nutrition_Tracker_Reference_Data.json
+4. Phase_10_Lovable_Prompt_Package.txt
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+
+DEPENDENCY FILES
+- Phase_07_Food_Data_Schema.json
+- Phase_07_Seed_Food_Taxonomy.json
+- Phase_08_Nutrient_Data_Schema.json
+- Phase_08_Seed_Nutrient_Taxonomy.json
+- Phase_09_Diet_Planning_Data_Schema.json
+- Phase_09_Diet_Planning_Reference_Data.json
+
+CORE RULES
+- Local-only IndexedDB; no auth/backend.
+- Canonical gram-based calculation.
+- Household portion requires verified gram weight.
+- Snapshot food/profile/source/nutrients on every entry.
+- Missing and trace are never numeric zero.
+- Historical entries never update silently.
+- Day target/reference snapshots are frozen.
+- Custom food edits create revisions.
+- Quick add contains only user-entered nutrients.
+- No deficiency diagnosis or supplement advice.
+- Derived totals are rebuildable.
+
+CHECKPOINT
+phase-10-nutrition-tracker-complete

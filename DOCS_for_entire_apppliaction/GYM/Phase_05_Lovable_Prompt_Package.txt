@@ -1,0 +1,99 @@
+PHASE 05 — WORKOUT PROGRAMS — LOVABLE PROMPT PACKAGE
+Version 1.0 | 5 August 2026
+
+UPLOAD FOR THIS PHASE
+1. Phase_05_Workout_Programs.md
+2. Phase_05_Workout_Program_Data_Schema.json
+3. Phase_05_Seed_Workout_Program_Taxonomy.json
+4. This prompt package
+Keep Phase 00 Project Knowledge active. Also attach the Phase 02, Phase 03 and Phase 04 schemas/taxonomies because Phase 05 validates their IDs.
+
+============================================================
+PROMPT 1 — PLAN MODE
+============================================================
+Read every attached Phase 00–05 specification and data file completely. Work in Plan mode only. Do not modify code.
+
+Prepare a formal implementation plan for Phase 05 — Workout Programs. Audit the existing framework, Phase 01 shell, Phase 02 muscle contracts, Phase 03 exercise contracts, Phase 04 science contracts, routes, shared components, local-storage helpers, content validation and tests.
+
+The plan must include:
+- exact files to create, modify and protect;
+- route implementation for /programs, /programs/$slug, /programs/finder, /programs/compare and /programs/current;
+- JSON Schema to strict TypeScript validation without weakening publication gates;
+- cross-file validation for program, exercise, equipment, muscle and science IDs;
+- derived weekly summaries;
+- catalogue search/filter/sort and URL restoration;
+- deterministic Program Finder rules and explainable match reasons;
+- neutral two/three-program comparison;
+- practical-first program detail, schedule and responsive session prescriptions;
+- progression, deload, substitution, evidence, safety, review and deprecated states;
+- local program-instance storage with version mismatch handling;
+- print styling;
+- automated tests mapped to every acceptance criterion;
+- documentation updates and GitHub checkpoint.
+
+Non-negotiable: no authentication, backend, Supabase, Lovable Cloud database, AI/free-text program generator, medical screening, injury personalization, workout logging, fabricated program facts, automatic publication, duplicated Phase 03 technique, rewritten Phase 04 science, silent canonical-program mutation, opaque compatibility scores, “best” rankings or outcome guarantees.
+
+Identify conflicts, ambiguous implementation choices and missing prerequisites. Recommend the smallest compatible solution. End with a criterion-by-criterion implementation matrix. Do not write code until I approve the plan.
+
+============================================================
+PROMPT 2 — AGENT MODE
+============================================================
+Implement the approved Phase 05 plan exactly. Preserve every passing Phase 00–04 behavior and stable ID.
+
+Use repository-owned validated data and the attached draft seed taxonomy. Draft identities are not usable workout plans. Do not fabricate schedules, sets, repetitions, progression, substitutions, safety or sources, and do not mark them published.
+
+Build:
+- program catalogue, search, filters, sorting and URL state;
+- canonical detail template;
+- schedule/session/prescription components;
+- progression, deload, substitution, evidence, safety and review sections;
+- deterministic finder over published records only;
+- neutral comparison;
+- local current-program instance and version handling;
+- print stylesheet;
+- schema and cross-file validation;
+- automated tests and documentation.
+
+Run content validation, relationship validation, type-check, lint, tests, accessibility checks and production build. Fix failures within Phase 05 scope. Report exact files changed, commands run, results, known limitations and the GitHub checkpoint recommendation.
+
+============================================================
+PROMPT 3 — VERIFICATION
+============================================================
+Audit the implemented Phase 05 against every acceptance criterion in Phase_05_Workout_Programs.md.
+
+Verify:
+- no backend/authentication/AI generator/workout logger;
+- draft exclusion and publication gates;
+- Phase 03 exercise and Phase 04 science ID integrity;
+- catalogue search/filter/sort and URL restoration;
+- deterministic finder constraints, tie handling and explanations;
+- no opaque scores or best-program claims;
+- comparison accessibility;
+- complete program detail and safe unavailable/deprecated states;
+- progression and substitution reference integrity;
+- local current-program selection without completed-set fields;
+- version mismatch behavior;
+- print output;
+- mobile, dark mode, keyboard, focus, zoom and reflow;
+- all validation, type-check, lint, tests, accessibility checks and production build.
+
+Return PASS/FAIL for every criterion with evidence. Do not change code during this audit.
+
+============================================================
+PROMPT 4 — REVIEWED PROGRAM IMPORT
+============================================================
+Import only the reviewed program records I attach. Validate every record against the Phase 05 schema and all Phase 02–04 reference taxonomies.
+
+Do not rewrite factual fields, invent missing schedules, infer exercise prescriptions, create sources, change numeric targets, add substitutions, or mark a record published when required audience, outcomes, schedule, progression, substitutions, science rationale, safety, sources or review fields are incomplete.
+
+Return an import report listing accepted records, rejected records, exact validation errors and missing reference IDs. Do not weaken validation to make records pass.
+
+============================================================
+PROMPT 5 — FOCUSED CORRECTION
+============================================================
+Correct only the verified Phase 05 defects listed below. Preserve all passing Phase 00–05 behavior and stable IDs.
+
+For each defect: identify root cause, exact file impact, smallest fix and regression test. Run relevant content validation, relationship validation, type-check, lint, tests and production build. Do not redesign the module, migrate frameworks, add a backend, generate programs, alter reviewed content without instruction, or expand into Phase 06 workout tracking.
+
+DEFECTS:
+[PASTE VERIFIED DEFECTS HERE]

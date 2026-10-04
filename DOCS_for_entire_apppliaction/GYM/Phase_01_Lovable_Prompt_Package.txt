@@ -1,0 +1,108 @@
+PHASE 01 — LOVABLE PROMPT PACKAGE
+
+Use this package only after Phase 00 Project Knowledge is installed.
+Attach:
+- Phase_00_Master_Foundation_Lovable_Specification.md
+- Phase_01_Application_Shell_Navigation_Design_System.md
+
+============================================================
+1. PLAN MODE
+============================================================
+
+Read the attached Phase 00 Master Foundation and Phase 01 Application Shell, Navigation and Design System specification completely. Do not modify code yet.
+
+Inspect the current project and prepare a formal implementation plan for Phase 01 only.
+
+The plan must:
+1. Confirm the existing native framework, routing method, TypeScript settings, styling system, current dependencies and Phase 00 foundation files.
+2. List every file that will be created, modified or intentionally left unchanged.
+3. Define how one typed navigation manifest will drive desktop navigation, mobile navigation, breadcrumbs and navigation search.
+4. Define the responsive behavior for desktop sidebar, tablet drawer, mobile top bar, five-item bottom navigation and More sheet.
+5. Define the semantic light/dark design tokens and how theme preference will be safely initialized and stored locally.
+6. Define the reusable shared components and prevent duplicated mobile/desktop page content.
+7. Define route placeholders, home screen, 404, dynamic unavailable and route-error behavior without fabricating fitness or nutrition data.
+8. Define keyboard, focus, WCAG 2.2 AA and reduced-motion behavior.
+9. Define automated and manual tests mapped directly to the Phase 01 acceptance criteria.
+10. Identify risks, conflicts with the existing codebase and any necessary deviation from the specification.
+
+Non-negotiable constraints:
+- No authentication, accounts, profiles, cloud backend, Supabase, Lovable Cloud, Firebase, payment, analytics SDK or server-side personal-data storage.
+- Do not migrate frameworks.
+- Do not generate exercise, muscle, food, nutrient, program, recipe or progress datasets.
+- Do not build final trackers, calculators or charts.
+- Preserve Phase 00 types, docs and constraints unless a change is explicitly justified in the plan.
+- Preserve all completed modules. Do not refactor, redesign, delete or replace previous functionality unless Phase 01 explicitly requires it and the plan identifies the affected files.
+
+End the plan with a checklist matching every Phase 01 acceptance criterion. Ask for approval before implementation.
+
+============================================================
+2. AGENT MODE
+============================================================
+
+Implement the approved Phase 01 plan exactly.
+
+Build the responsive application shell, typed navigation system, design tokens, light/dark/system themes, desktop sidebar, tablet drawer, mobile top bar, five-item mobile bottom navigation, More sheet, top bar, breadcrumbs, PageHeader, navigation search, Phase 01 home screen, neutral module placeholders, loading/empty/unavailable/error primitives, 404 and safe dynamic-slug unavailable states.
+
+Implementation rules:
+- Retain the existing Lovable-native framework and strict TypeScript.
+- Use one typed navigation manifest as the source of truth.
+- Store only small UI preferences locally; validate malformed values.
+- Keep browser APIs inside safe client boundaries.
+- Use semantic HTML and accessible primitives.
+- Meet the responsive and WCAG requirements in the specification.
+- Do not add authentication, profiles, backend/database services, payments, analytics, final trackers, calculators, charts or fabricated domain data.
+- Do not refactor Phase 00 foundations beyond the approved plan.
+- Preserve all completed modules and report any unavoidable deviation before making it.
+
+After implementation:
+1. Run type-check, build, tests and the available accessibility checks.
+2. Inspect the required mobile, tablet and desktop viewports.
+3. Fix failures within Phase 01 scope.
+4. Update docs/design-system.md, docs/navigation.md and docs/phases/phase-01.md.
+5. Report exact files changed, commands/tests run, results, known limitations and the Phase 01 acceptance checklist status.
+
+============================================================
+3. VERIFICATION
+============================================================
+
+Audit the current project against the attached Phase 01 specification. Do not add new features.
+
+Verify every acceptance criterion and return a table with:
+- criterion
+- pass/fail
+- evidence in the code or UI
+- exact file(s)
+- corrective action for any failure
+
+Specifically inspect:
+- no authentication/backend/payment/analytics dependencies
+- route manifest uniqueness and route coverage
+- desktop, tablet and mobile navigation behavior
+- exactly five mobile-primary destinations
+- search keyboard behavior and no-result state
+- theme persistence and malformed-preference fallback
+- 320 px width, 200% zoom and visible focus
+- 404, dynamic unavailable and route-error states
+- no fabricated exercises, foods, metrics or charts
+- build, type-check, tests and console errors
+- design-system and navigation documentation accuracy
+
+Do not claim a pass without evidence. Fix only clear Phase 01 defects after listing them, then rerun the relevant checks and provide the final status.
+
+============================================================
+4. FOCUSED CORRECTION
+============================================================
+
+Fix only the Phase 01 defects listed below. Preserve all working behavior and do not redesign unrelated components.
+
+For each defect:
+1. Identify the root cause.
+2. State the minimal files that must change.
+3. Apply the smallest reliable fix.
+4. Add or update a regression test where practical.
+5. Re-run the relevant checks.
+
+Do not introduce authentication, backend services, fabricated fitness/nutrition data, final tracking logic, new visual direction or framework changes.
+
+Defects:
+[PASTE VERIFIED DEFECT LIST]

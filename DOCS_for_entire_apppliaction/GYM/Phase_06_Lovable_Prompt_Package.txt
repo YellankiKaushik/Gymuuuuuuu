@@ -1,0 +1,106 @@
+PHASE 06 - WORKOUT TRACKER
+LOVABLE PROMPT PACKAGE
+
+Use these prompts in order. Keep Phase 00 Project Knowledge active. Attach the Phase 06 specification, data schema and reference data, plus the Phase 03 and Phase 05 schemas/taxonomies.
+
+============================================================
+PROMPT 1 - PLAN MODE
+============================================================
+Read every attached Phase 00-06 specification and data file completely. Work in Plan mode only. Do not modify code.
+
+Prepare a formal implementation plan for Phase 06 - Workout Tracker. Audit the existing framework, Phase 01 shell, Phase 03 exercise contracts, Phase 05 program and LocalProgramInstance contracts, local-storage helpers, routes, validation, tests and current dependencies.
+
+The plan must include:
+- exact files to create, modify and protect;
+- route implementation for /workout, /workout/session/$sessionId, /workout/summary/$sessionId, /workout/history, /workout/history/$sessionId, /workout/exercises/$exerciseId/history and /workout/settings;
+- IndexedDB database name, version, stores, indexes, repository interfaces and sequential migrations;
+- transaction boundaries and rollback behavior;
+- TypeScript mapping from the attached JSON Schema without weakening validation;
+- start-from-program, ad hoc and repeat-session creation;
+- canonical prescription snapshot rules;
+- active focus mode and responsive set-entry components;
+- unit conversion and load-scope handling;
+- previous-performance lookup;
+- timestamp-based elapsed and rest timers;
+- autosave queue, revision control, refresh recovery and write-failure recovery;
+- BroadcastChannel or safe fallback for cross-tab conflicts;
+- finish, abandon, history edit, soft delete and undo;
+- deterministic personal-record derivation and rebuildable cache;
+- workout-specific JSON backup/restore and CSV export;
+- storage status and persistence-request UX;
+- automated tests mapped to every acceptance criterion;
+- documentation updates and GitHub checkpoint.
+
+Non-negotiable: no authentication, backend, Supabase, Firebase, Lovable Cloud database, remote sync, AI coach, adaptive programming, calorie-burn estimates, injury diagnosis, canonical program mutation, canonical exercise mutation, silent import merge, workout data in URLs, workout data in analytics, localStorage as the primary database, or decrement-only timer logic.
+
+Identify conflicts, ambiguous implementation choices and missing prerequisites. Recommend the smallest compatible solution. End with a criterion-by-criterion implementation matrix. Do not write code until I approve the plan.
+
+============================================================
+PROMPT 2 - AGENT MODE
+============================================================
+Implement the approved Phase 06 plan exactly. Preserve every passing Phase 00-05 behavior and stable ID.
+
+Build:
+- IndexedDB repositories, indexes, migrations and transaction helpers;
+- program, ad hoc and repeat workout creation;
+- active workout focus mode;
+- all defined set types, performance modes, load scopes and effort modes;
+- previous-performance context;
+- timestamp-based workout and rest timers;
+- autosave, refresh recovery and cross-tab protection;
+- finish, abandon, summary and program-tracking updates;
+- history, detail, edit, soft delete, undo and exercise history;
+- deterministic PR derivation and rebuildable cache;
+- local custom exercise management;
+- workout settings, storage status and data-protection messaging;
+- JSON backup/restore and CSV exports;
+- error, migration, corrupt-data and quota states;
+- automated tests and documentation.
+
+Do not fabricate user workout data. Do not change canonical Phase 03 or Phase 05 records. Do not add a backend or remote sync.
+
+Run content/reference validation, schema tests, migration tests, type-check, lint, unit tests, component tests, end-to-end tests, accessibility checks and production build. Fix failures within Phase 06 scope. Report exact files changed, commands run, results, known limitations and the GitHub checkpoint recommendation.
+
+============================================================
+PROMPT 3 - VERIFICATION
+============================================================
+Audit the implemented Phase 06 against every acceptance criterion in Phase_06_Workout_Tracker.md. Do not change code during this audit.
+
+Verify:
+- no backend, authentication, remote sync, AI coach or calorie estimates;
+- IndexedDB stores, indexes and migrations;
+- canonical exercise/program immutability;
+- start from program, ad hoc and repeat flows;
+- all set/performance/load-scope/effort modes;
+- unit conversion and previous-performance comparability;
+- timestamp-based elapsed and rest timers after refresh and hidden-tab time;
+- autosave states and failed-write recovery;
+- cross-tab takeover behavior;
+- finish, summary, history edit, soft delete and undo;
+- deterministic PR rules and recalculation;
+- JSON backup validation, merge conflicts, replace safety backup and transactional restore;
+- CSV correctness and formula safety;
+- storage, corrupt-data and unsupported-version states;
+- privacy, mobile, keyboard, focus, zoom and dark mode;
+- validation, type-check, lint, tests, accessibility checks and production build.
+
+Return PASS/FAIL for every criterion with evidence. List exact unresolved defects. Do not redesign anything.
+
+============================================================
+PROMPT 4 - BACKUP RESTORE TEST
+============================================================
+Use the attached workout backup fixture only for local validation. Do not upload or transmit its contents.
+
+Validate the file against the Phase 06 schema, run supported in-memory migrations, show a dry-run import report, identify duplicate and conflicting record IDs, and prove that merge and replace use atomic transactions. Do not weaken validation, silently merge nested sets or modify canonical exercise/program data.
+
+Return accepted, skipped, conflicted and rejected counts with exact errors. Do not perform the final import until I explicitly approve it.
+
+============================================================
+PROMPT 5 - FOCUSED CORRECTION
+============================================================
+Correct only the verified Phase 06 defects listed below. Preserve all passing Phase 00-06 behavior and stable IDs.
+
+For each defect: identify root cause, exact file impact, smallest fix and regression test. Run relevant schema validation, migration tests, type-check, lint, unit tests, end-to-end tests, accessibility checks and production build. Do not redesign the module, migrate frameworks, add a backend, alter canonical content, expand into nutrition or advanced analytics, or change the data schema without an explicit migration.
+
+DEFECTS:
+[PASTE VERIFIED DEFECTS HERE]

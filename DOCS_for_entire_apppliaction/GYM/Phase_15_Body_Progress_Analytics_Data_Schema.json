@@ -1,0 +1,1002 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase-15-body-progress-dashboard-analytics.json",
+  "title": "Fitness OS Phase 15 Body Progress, Dashboard and Analytics Backup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "exportedAt",
+    "moduleId",
+    "bodyWeightLogs",
+    "circumferenceSessions",
+    "bodyCompositionMeasurements",
+    "progressPhotos",
+    "progressGoals",
+    "nutritionDayReviews",
+    "dashboardLayouts",
+    "settings",
+    "auditEvents",
+    "deletedRecords"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "exportedAt": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "moduleId": {
+      "const": "phase_15_body_progress_dashboard_analytics"
+    },
+    "bodyWeightLogs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/bodyWeightLog"
+      }
+    },
+    "circumferenceSessions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/circumferenceSession"
+      }
+    },
+    "bodyCompositionMeasurements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/bodyCompositionMeasurement"
+      }
+    },
+    "progressPhotos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/progressPhoto"
+      }
+    },
+    "progressGoals": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/progressGoal"
+      }
+    },
+    "nutritionDayReviews": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nutritionDayReview"
+      }
+    },
+    "dashboardLayouts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/dashboardLayout"
+      }
+    },
+    "settings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/setting"
+      }
+    },
+    "auditEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/auditEvent"
+      }
+    },
+    "deletedRecords": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/deletedRecord"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "localDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 1000
+    },
+    "bodyWeightLog": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "measuredAt",
+        "localDate",
+        "timezone",
+        "valueKg",
+        "source",
+        "scaleId",
+        "context",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "measuredAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "localDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "valueKg": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1000
+        },
+        "source": {
+          "enum": [
+            "manual",
+            "csv_import"
+          ]
+        },
+        "scaleId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 160
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "timeContext",
+            "fastingState",
+            "clothing",
+            "afterBathroom",
+            "retrospectiveEntry"
+          ],
+          "properties": {
+            "timeContext": {
+              "enum": [
+                "morning",
+                "afternoon",
+                "evening",
+                "night",
+                "unknown"
+              ]
+            },
+            "fastingState": {
+              "enum": [
+                "fasted",
+                "not_fasted",
+                "unknown"
+              ]
+            },
+            "clothing": {
+              "enum": [
+                "none_or_minimal",
+                "light",
+                "normal",
+                "heavy",
+                "unknown"
+              ]
+            },
+            "afterBathroom": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "retrospectiveEntry": {
+              "type": "boolean"
+            }
+          }
+        },
+        "notes": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "deletedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "circumferenceSession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "measuredAt",
+        "localDate",
+        "timezone",
+        "siteId",
+        "protocolId",
+        "protocolVersion",
+        "side",
+        "posture",
+        "breathingPhase",
+        "replicatesMm",
+        "canonicalMm",
+        "operator",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "measuredAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "localDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "siteId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "protocolId": {
+          "type": "string",
+          "pattern": "^protocol_[a-z0-9_]+$"
+        },
+        "protocolVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "side": {
+          "enum": [
+            "not_applicable",
+            "left",
+            "right",
+            "bilateral"
+          ]
+        },
+        "posture": {
+          "enum": [
+            "standing",
+            "seated",
+            "supine",
+            "other"
+          ]
+        },
+        "breathingPhase": {
+          "enum": [
+            "normal_end_expiration",
+            "relaxed_unspecified",
+            "inspired",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "replicatesMm": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 5000
+          }
+        },
+        "canonicalMm": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 5000
+        },
+        "operator": {
+          "enum": [
+            "self",
+            "other_person",
+            "professional",
+            "unknown"
+          ]
+        },
+        "tapeId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 160
+        },
+        "notes": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "deletedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "bodyCompositionMeasurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "measuredAt",
+        "localDate",
+        "timezone",
+        "method",
+        "protocolId",
+        "methodVersion",
+        "device",
+        "values",
+        "conditions",
+        "sourceType",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "measuredAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "localDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "method": {
+          "enum": [
+            "dxa",
+            "bia",
+            "skinfold",
+            "air_displacement",
+            "hydrostatic",
+            "ultrasound",
+            "three_d_optical",
+            "other"
+          ]
+        },
+        "protocolId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "methodVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "device": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "manufacturer",
+            "model",
+            "softwareVersion",
+            "facility"
+          ],
+          "properties": {
+            "manufacturer": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "model": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "softwareVersion": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "facility": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "values": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bodyFatPercent",
+            "fatMassKg",
+            "fatFreeMassKg",
+            "leanSoftTissueKg",
+            "skeletalMuscleEstimateKg"
+          ],
+          "properties": {
+            "bodyFatPercent": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            },
+            "fatMassKg": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "fatFreeMassKg": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "leanSoftTissueKg": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "skeletalMuscleEstimateKg": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1000
+            }
+          }
+        },
+        "conditions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hydrationContext",
+            "recentFood",
+            "recentExercise",
+            "timeContext",
+            "notes"
+          ],
+          "properties": {
+            "hydrationContext": {
+              "enum": [
+                "standardized",
+                "not_standardized",
+                "unknown"
+              ]
+            },
+            "recentFood": {
+              "enum": [
+                "standardized",
+                "not_standardized",
+                "unknown"
+              ]
+            },
+            "recentExercise": {
+              "enum": [
+                "standardized",
+                "not_standardized",
+                "unknown"
+              ]
+            },
+            "timeContext": {
+              "enum": [
+                "morning",
+                "afternoon",
+                "evening",
+                "night",
+                "unknown"
+              ]
+            },
+            "notes": {
+              "$ref": "#/$defs/nullableString"
+            }
+          }
+        },
+        "sourceType": {
+          "enum": [
+            "user_entered_report",
+            "csv_import"
+          ]
+        },
+        "sourceDocumentName": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 255
+        },
+        "notes": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "deletedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "progressPhoto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "setId",
+        "takenAt",
+        "localDate",
+        "timezone",
+        "view",
+        "blobKey",
+        "mimeType",
+        "widthPx",
+        "heightPx",
+        "sanitizedCopy",
+        "originalMetadataRemoved",
+        "includeBinaryInBackup",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "setId": {
+          "$ref": "#/$defs/id"
+        },
+        "takenAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "localDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "view": {
+          "enum": [
+            "front",
+            "back",
+            "side_left",
+            "side_right",
+            "custom"
+          ]
+        },
+        "pose": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "clothing": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "lighting": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "cameraDistance": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "background": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "blobKey": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "mimeType": {
+          "enum": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ]
+        },
+        "widthPx": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000
+        },
+        "heightPx": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20000
+        },
+        "sanitizedCopy": {
+          "const": true
+        },
+        "originalMetadataRemoved": {
+          "const": true
+        },
+        "includeBinaryInBackup": {
+          "type": "boolean"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "notes": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "deletedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "progressGoal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "metricId",
+        "direction",
+        "unit",
+        "startDate",
+        "status",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "metricId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 180
+        },
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "maintain",
+            "range",
+            "consistency"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "baselineValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "targetValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "targetLower": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "targetUpper": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "startDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "targetDate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/localDate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "active",
+            "completed",
+            "paused",
+            "archived"
+          ]
+        },
+        "notes": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "nutritionDayReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "localDate",
+        "timezone",
+        "status",
+        "reviewedAt",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "localDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "complete_for_analysis",
+            "partial",
+            "unknown"
+          ]
+        },
+        "reviewedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "notes": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "dashboardLayout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "isDefault",
+        "widgets",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "isDefault": {
+          "type": "boolean"
+        },
+        "widgets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "widgetId",
+              "order",
+              "visible",
+              "size",
+              "settings"
+            ],
+            "properties": {
+              "widgetId": {
+                "type": "string",
+                "pattern": "^widget_[a-z0-9_]+$"
+              },
+              "order": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "visible": {
+                "type": "boolean"
+              },
+              "size": {
+                "enum": [
+                  "small",
+                  "medium",
+                  "large",
+                  "full"
+                ]
+              },
+              "settings": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "setting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value",
+        "updatedAt"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "value": {},
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "auditEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "eventType",
+        "entityType",
+        "entityId",
+        "occurredAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "eventType": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "entityType": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "entityId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 180
+        },
+        "occurredAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    },
+    "deletedRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entityType",
+        "entityId",
+        "deletedAt"
+      ],
+      "properties": {
+        "entityType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entityId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deletedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    }
+  }
+}

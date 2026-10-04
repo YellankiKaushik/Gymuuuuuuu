@@ -1,0 +1,493 @@
+{
+  "phase": "11",
+  "version": "1.0",
+  "releasedAt": "2026-08-05",
+  "methodologyVersion": "recipe-calc-1.0",
+  "schemaVersion": 1,
+  "exactMassConversions": {
+    "g_to_g": 1,
+    "kg_to_g": 1000,
+    "oz_to_g": 28.349523125,
+    "lb_to_g": 453.59237
+  },
+  "yieldModes": [
+    {
+      "id": "analytical_source",
+      "label": "Analysed source",
+      "rank": 1
+    },
+    {
+      "id": "measured_final_weight",
+      "label": "Measured final batch weight",
+      "rank": 2
+    },
+    {
+      "id": "measured_servings",
+      "label": "Measured servings",
+      "rank": 3
+    },
+    {
+      "id": "estimated_sum_ingredients",
+      "label": "Estimated from ingredient mass",
+      "rank": 4
+    },
+    {
+      "id": "serving_count_only",
+      "label": "Serving count only",
+      "rank": 5
+    },
+    {
+      "id": "unavailable",
+      "label": "Yield unavailable",
+      "rank": 6
+    }
+  ],
+  "calculationGrades": [
+    {
+      "id": "A",
+      "label": "Analysed composite recipe",
+      "description": "Authoritative analysed recipe matching the preparation and serving basis."
+    },
+    {
+      "id": "B",
+      "label": "Measured yield with complete factors",
+      "description": "Verified ingredients, measured yield and complete source-backed cooking factors."
+    },
+    {
+      "id": "C",
+      "label": "Measured yield with limitations",
+      "description": "Verified ingredients and measured yield, with incomplete or estimated cooking factors."
+    },
+    {
+      "id": "D",
+      "label": "Estimated yield",
+      "description": "Verified ingredients but estimated yield or serving measurement."
+    },
+    {
+      "id": "E",
+      "label": "Incomplete",
+      "description": "Material unresolved ingredients, missing data or unusable yield."
+    }
+  ],
+  "mealTypes": [
+    "breakfast",
+    "morning_snack",
+    "lunch",
+    "afternoon_snack",
+    "dinner",
+    "evening_snack",
+    "dessert",
+    "beverage",
+    "side",
+    "sauce",
+    "batch_component"
+  ],
+  "dietaryTags": [
+    "vegetarian",
+    "vegan",
+    "contains_dairy",
+    "contains_egg",
+    "contains_fish",
+    "contains_shellfish",
+    "contains_gluten_ingredients",
+    "contains_peanuts",
+    "contains_tree_nuts",
+    "contains_soy",
+    "contains_sesame"
+  ],
+  "allergenStates": [
+    "contains",
+    "may_contain_or_uncertain",
+    "not_declared",
+    "unknown"
+  ],
+  "cookingMethods": [
+    "no_cook",
+    "boil",
+    "steam",
+    "simmer",
+    "bake",
+    "roast",
+    "grill",
+    "pan_fry",
+    "deep_fry",
+    "pressure_cook",
+    "microwave",
+    "saute",
+    "stew",
+    "other"
+  ],
+  "grocerySections": [
+    "produce",
+    "grains_and_bakery",
+    "pulses_and_legumes",
+    "dairy_and_alternatives",
+    "eggs",
+    "meat_and_poultry",
+    "fish_and_seafood",
+    "frozen",
+    "canned_and_jarred",
+    "nuts_and_seeds",
+    "oils_and_condiments",
+    "spices",
+    "beverages",
+    "other"
+  ],
+  "sourceRegistry": [
+    {
+      "id": "fao_recipe_appendix",
+      "title": "FAO Calculation of the composition of dishes prepared from recipes",
+      "url": "https://www.fao.org/4/y4705e/y4705E23.htm",
+      "use": "Recipe calculation sequence, yield and serving basis."
+    },
+    {
+      "id": "fao_composite_dishes",
+      "title": "FAO Calculation of composition of composite prepared dishes",
+      "url": "https://www.fao.org/4/y4705e/y4705e15.htm",
+      "use": "Composite-dish calculation limitations and retention factors."
+    },
+    {
+      "id": "fao_infoods_recipes",
+      "title": "FAO/INFOODS Recipes",
+      "url": "https://www.fao.org/infoods/infoods/recipes/en/",
+      "use": "Recipe calculation training and tools."
+    },
+    {
+      "id": "usda_retention_6",
+      "title": "USDA Table of Nutrient Retention Factors Release 6",
+      "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/methods-and-application-of-food-composition-laboratory/mafcl-site-pages/nutrient-retention-factors/",
+      "release": "6 (2007)",
+      "use": "Approved nutrient-retention factors."
+    },
+    {
+      "id": "usda_fndds",
+      "title": "USDA FNDDS documentation and cooking-yield resources",
+      "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/fndds-download-databases/",
+      "use": "Food yields, portions and ingredient resources."
+    },
+    {
+      "id": "dga_2025_2030",
+      "title": "Dietary Guidelines for Americans 2025-2030 resources",
+      "url": "https://www.realfood.gov/",
+      "use": "Current general dietary-pattern context."
+    },
+    {
+      "id": "myplate_plan",
+      "title": "USDA MyPlate Make a Plan",
+      "url": "https://www.myplate.gov/eathealthy/budget/budget-weekly-meals",
+      "use": "Practical weekly planning, leftovers and grocery-list workflow."
+    },
+    {
+      "id": "fda_storage",
+      "title": "FDA Are You Storing Food Safely?",
+      "url": "https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
+      "use": "General storage temperatures and two-hour rule."
+    },
+    {
+      "id": "fda_kitchen",
+      "title": "FDA Food Safety in Your Kitchen",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/food-safety-your-kitchen",
+      "use": "Recipe-writer food-safety context."
+    }
+  ],
+  "retentionPolicy": {
+    "approvedSourceIds": [
+      "usda_retention_6"
+    ],
+    "factorMinimum": 0,
+    "factorMaximum": 2,
+    "requiredMatchFields": [
+      "nutrientId",
+      "foodGroup",
+      "cookingMethod",
+      "sourceRelease"
+    ],
+    "doubleApplicationBlocked": true,
+    "unavailableFactorBehavior": "preserve as limited only when methodology permits; otherwise mark nutrient unavailable"
+  },
+  "foodSafetyReference": {
+    "roomTemperatureLimitHours": 2,
+    "hotWeatherThresholdC": 32,
+    "hotWeatherLimitHours": 1,
+    "refrigeratorMaxC": 4,
+    "freezerMaxC": -18,
+    "leftoverReheatC": 74,
+    "sourceIds": [
+      "fda_storage",
+      "fda_kitchen"
+    ]
+  },
+  "database": {
+    "name": "fitness-os-recipes-meal-plans",
+    "version": 1,
+    "stores": [
+      {
+        "id": "recipeIdentities",
+        "keyPath": "id",
+        "indexes": [
+          "title",
+          "status",
+          "updatedAt"
+        ]
+      },
+      {
+        "id": "recipeVersions",
+        "keyPath": "id",
+        "indexes": [
+          "recipeId",
+          "versionNumber",
+          "createdAt"
+        ]
+      },
+      {
+        "id": "mealPlanIdentities",
+        "keyPath": "id",
+        "indexes": [
+          "title",
+          "status",
+          "updatedAt"
+        ]
+      },
+      {
+        "id": "mealPlanVersions",
+        "keyPath": "id",
+        "indexes": [
+          "mealPlanId",
+          "startDate",
+          "createdAt"
+        ]
+      },
+      {
+        "id": "batchInstances",
+        "keyPath": "id",
+        "indexes": [
+          "mealPlanVersionId",
+          "recipeVersionId",
+          "productionDate"
+        ]
+      },
+      {
+        "id": "groceryLists",
+        "keyPath": "id",
+        "indexes": [
+          "mealPlanVersionId",
+          "generatedAt",
+          "status"
+        ]
+      },
+      {
+        "id": "recipeFavourites",
+        "keyPath": "id",
+        "indexes": [
+          "kind",
+          "referenceId"
+        ]
+      },
+      {
+        "id": "mealPlanPreferences",
+        "keyPath": "id",
+        "indexes": [
+          "updatedAt"
+        ]
+      },
+      {
+        "id": "recipeMealAuditLog",
+        "keyPath": "id",
+        "indexes": [
+          "entityType",
+          "entityId",
+          "occurredAt"
+        ]
+      },
+      {
+        "id": "recipeMealMigrationState",
+        "keyPath": "id",
+        "indexes": [
+          "updatedAt"
+        ]
+      }
+    ]
+  },
+  "testVectors": [
+    {
+      "id": "no_cook_two_ingredient",
+      "input": {
+        "ingredients": [
+          {
+            "grams": 100,
+            "per100g": {
+              "energy_kcal": 100,
+              "protein_g": 10
+            }
+          },
+          {
+            "grams": 50,
+            "per100g": {
+              "energy_kcal": 200,
+              "protein_g": 4
+            }
+          }
+        ],
+        "finalWeightGrams": 150,
+        "servings": 3
+      },
+      "expected": {
+        "batch": {
+          "energy_kcal": 200,
+          "protein_g": 12
+        },
+        "per100g": {
+          "energy_kcal": 133.3333333333,
+          "protein_g": 8
+        },
+        "perServing": {
+          "energy_kcal": 66.6666666667,
+          "protein_g": 4
+        }
+      }
+    },
+    {
+      "id": "measured_cooked_yield",
+      "input": {
+        "batchNutrient": 500,
+        "finalWeightGrams": 400
+      },
+      "expected": {
+        "per100g": 125
+      }
+    },
+    {
+      "id": "retention_before_density",
+      "input": {
+        "preCookingNutrient": 100,
+        "retentionFactor": 0.6,
+        "finalWeightGrams": 300
+      },
+      "expected": {
+        "retainedBatch": 60,
+        "per100g": 20
+      }
+    },
+    {
+      "id": "already_cooked_no_double_retention",
+      "input": {
+        "profileState": "boiled",
+        "preCookingNutrient": 50,
+        "requestedFactor": 0.7,
+        "samePreparationStep": true
+      },
+      "expected": {
+        "factorApplied": false,
+        "retainedBatch": 50
+      }
+    },
+    {
+      "id": "partial_mass_coverage",
+      "input": {
+        "ingredients": [
+          {
+            "grams": 100,
+            "nutrientValue": 2
+          },
+          {
+            "grams": 100,
+            "nutrientValue": null
+          }
+        ]
+      },
+      "expected": {
+        "knownTotal": 2,
+        "massCoveragePercent": 50,
+        "status": "partial"
+      }
+    },
+    {
+      "id": "scale_four_to_six",
+      "input": {
+        "originalServings": 4,
+        "desiredServings": 6,
+        "ingredientGrams": 200
+      },
+      "expected": {
+        "scaleFactor": 1.5,
+        "scaledGrams": 300
+      }
+    },
+    {
+      "id": "grocery_merge_same_profile",
+      "input": {
+        "items": [
+          {
+            "mergeKey": "food_rice|profile_raw",
+            "grams": 500
+          },
+          {
+            "mergeKey": "food_rice|profile_raw",
+            "grams": 250
+          }
+        ]
+      },
+      "expected": {
+        "groups": [
+          {
+            "mergeKey": "food_rice|profile_raw",
+            "grams": 750
+          }
+        ]
+      }
+    },
+    {
+      "id": "grocery_do_not_merge_states",
+      "input": {
+        "items": [
+          {
+            "mergeKey": "food_rice|profile_raw",
+            "grams": 500
+          },
+          {
+            "mergeKey": "food_rice|profile_cooked",
+            "grams": 250
+          }
+        ]
+      },
+      "expected": {
+        "groupCount": 2
+      }
+    },
+    {
+      "id": "leftover_allocation",
+      "input": {
+        "availableServings": 6,
+        "allocations": [
+          4,
+          2
+        ]
+      },
+      "expected": {
+        "remainingServings": 0,
+        "additionalOneAllowed": false
+      }
+    },
+    {
+      "id": "recipe_version_frozen",
+      "input": {
+        "mealPlanRecipeVersion": "rver_1",
+        "newCurrentRecipeVersion": "rver_2"
+      },
+      "expected": {
+        "existingMealPlanRecipeVersion": "rver_1",
+        "newPlanMayUse": "rver_2"
+      }
+    },
+    {
+      "id": "planned_vs_target",
+      "input": {
+        "plannedKcal": 2100,
+        "targetKcal": 2200
+      },
+      "expected": {
+        "differenceKcal": -100
+      }
+    }
+  ]
+}

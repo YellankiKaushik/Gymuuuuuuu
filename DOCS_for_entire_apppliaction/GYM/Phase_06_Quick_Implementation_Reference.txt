@@ -1,0 +1,38 @@
+PHASE 06 - WORKOUT TRACKER
+QUICK IMPLEMENTATION REFERENCE
+
+Upload to Lovable:
+1. Phase_06_Workout_Tracker.md
+2. Phase_06_Workout_Tracker_Data_Schema.json
+3. Phase_06_Workout_Tracker_Reference_Data.json
+4. Phase_06_Lovable_Prompt_Package.txt
+
+Also keep attached:
+- Phase 00 Project Knowledge
+- Phase 03 exercise schema and taxonomy
+- Phase 05 workout-program schema and taxonomy
+
+Build routes:
+/workout
+/workout/session/$sessionId
+/workout/summary/$sessionId
+/workout/history
+/workout/history/$sessionId
+/workout/exercises/$exerciseId/history
+/workout/settings
+
+Core rule:
+All personal workout data is optional, device-local and stored in IndexedDB. No authentication, backend, cloud sync, calorie estimation, AI coach or canonical-content mutation.
+
+Critical production gates:
+- autosave and refresh recovery
+- timestamp-based timers
+- cross-tab protection
+- edit/delete/recalculate
+- JSON backup/restore
+- CSV export
+- versioned migrations
+- privacy and storage warnings
+
+Checkpoint:
+phase-06-workout-tracker-complete

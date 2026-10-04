@@ -1,0 +1,36 @@
+PHASE 14 — QUICK IMPLEMENTATION REFERENCE
+
+UPLOAD TO LOVABLE
+1. Phase_14_Supplements_and_Evidence_Library.md
+2. Phase_14_Supplements_Evidence_Data_Schema.json
+3. Phase_14_Supplements_Evidence_Reference_Data.json
+4. Phase_14_Lovable_Prompt_Package.txt
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+
+DEPENDENCIES
+- Phase 07 Food schema and taxonomy
+- Phase 08 Nutrient schema and taxonomy
+- Phase 09 Diet Planning schema/reference
+- Phase 10 Nutrition Tracker schema/reference
+- Phase 12 Recovery/Sleep/Mobility schema/reference
+- Phase 13 Cardio/Conditioning schema/reference
+
+CORE RULES
+- Claim-level evidence, never one global verdict.
+- No invented claims, doses, interactions or anti-doping status.
+- Study protocol is not personal prescription.
+- Efficacy, safety, product quality and anti-doping remain separate.
+- Certification must be checked in the official registry.
+- Certification reduces defined risks; it never proves efficacy or zero risk.
+- WADA status includes list year and expires when the year changes.
+- Proprietary-blend amounts remain unknown.
+- Product label edits create immutable versions.
+- Intake logs snapshot the exact label version.
+- Severe adverse-event signals stop normal guidance.
+- No brand recommendations, shopping links, stacks or drug-like protocols.
+- Personal records remain local.
+
+SEED STATUS
+All seed ingredient, knowledge, high-risk and framework identities are draft. They are not automatically publishable scientific content.

@@ -1,0 +1,98 @@
+PHASE 16 — LOVABLE PROMPT PACKAGE
+
+========================================
+PROMPT 1 — PLAN MODE
+========================================
+Read all attached Phase 16 files and the active Phase 00 Project Knowledge. Inspect the implemented Phase 01–15 code and data contracts. Do not modify code yet.
+
+Produce a detailed implementation plan for Phase 16 — Global Search, Favourites and Comparison.
+
+The plan must identify:
+1. The existing Phase 01 GlobalSearchDialog and route metadata to upgrade rather than duplicate.
+2. Every enabled public and private entity adapter, stable ID, publication gate and route builder.
+3. Build-time search-document generation, serialized index, manifest hashes and validation failures.
+4. The replaceable local search adapter and Web Worker boundary.
+5. Exact ranking, normalization and fuzzy rules from the reference data.
+6. Public URL state and private-state exclusion.
+7. IndexedDB migration and all Phase 16 stores.
+8. Favourite, collection, recent and saved-comparison behavior.
+9. All ten comparison families and their compatibility rules.
+10. Accessibility, performance, security, privacy and network tests.
+11. Exact files to create or modify and every acceptance criterion.
+
+Non-negotiable boundaries:
+- no external search service;
+- no query telemetry;
+- no backend or authentication;
+- no AI answer box, embeddings or auto-generated synonyms;
+- no draft or quarantined records in public search;
+- no private records or query text in URLs;
+- no sensitive free-text indexing by default;
+- no universal comparison winner;
+- no missing-value zero;
+- no changes to completed module facts or stable IDs except typed integration adapters.
+
+Stop after the plan and wait for approval.
+
+========================================
+PROMPT 2 — AGENT MODE IMPLEMENTATION
+========================================
+Implement the approved Phase 16 plan exactly.
+
+Implementation rules:
+- Upgrade the Phase 01 search shell; do not create a competing global search.
+- Use owning-module records and stable IDs as canonical truth.
+- Index only published public records.
+- Keep public and private indexes separate.
+- Keep private search off by default.
+- Use the exact normalization, ranking, fuzzy and query-limit contracts.
+- Validate index and manifest hashes.
+- Escape all highlights and snippets.
+- Preserve missing and unavailable states.
+- Enforce comparison family, context and item limits.
+- Do not rank a universal winner.
+- Persist canonical local records transactionally in IndexedDB.
+- Exclude search caches from backup.
+- Send no query, favourite, collection, comparison or private record over the network.
+
+After implementation report:
+1. Files created and changed.
+2. Public document counts by entity type.
+3. Publication exclusions and validation failures.
+4. Search adapter/package version and index hashes.
+5. IndexedDB migration version and stores.
+6. Comparison-family coverage.
+7. Test results mapped to acceptance criteria.
+8. Accessibility and 320 px results.
+9. Performance budgets and measured results.
+10. Runtime network/privacy audit.
+
+========================================
+PROMPT 3 — VERIFICATION
+========================================
+Audit Phase 16 without adding features. Verify:
+- exact-title, alias, prefix and fuzzy ranking;
+- short/numeric token protection;
+- draft exclusion;
+- stable route resolution;
+- URL state and browser navigation;
+- private search default-off and no URL leakage;
+- no external search calls or telemetry;
+- transactional favourites and collections;
+- orphan and stable-ID migration behavior;
+- recent-history controls;
+- compare family lock and two-to-four limit;
+- food, nutrient, recovery and supplement context rules;
+- missing values remain unavailable;
+- no winner/recommendation language;
+- keyboard, screen-reader and focus behavior;
+- 200% zoom and 320 px layout;
+- search cache excluded from backup;
+- no regressions in Phases 00–15.
+
+Return a pass/fail table for every acceptance criterion. Fix only confirmed Phase 16 defects.
+
+========================================
+PROMPT 4 — CORRECTION GUARDRAIL
+========================================
+Correct only confirmed Phase 16 defects. Do not redesign the application, replace stable IDs, add a backend, add authentication, add external search, add analytics, add embeddings, generate synonyms, index sensitive notes by default, publish draft content, create comparison winners, invent missing values or rewrite earlier phase data contracts. Re-run failed tests and report the results.

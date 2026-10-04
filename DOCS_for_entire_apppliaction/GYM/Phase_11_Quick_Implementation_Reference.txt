@@ -1,0 +1,36 @@
+PHASE 11 - QUICK IMPLEMENTATION REFERENCE
+
+UPLOAD TO LOVABLE
+1. Phase_11_Recipes_and_Meal_Plans.md
+2. Phase_11_Recipes_Meal_Plans_Data_Schema.json
+3. Phase_11_Recipes_Meal_Plans_Reference_Data.json
+4. Phase_11_Lovable_Prompt_Package.txt
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+
+DEPENDENCY FILES
+- Phase_07_Food_Data_Schema.json
+- Phase_07_Seed_Food_Taxonomy.json
+- Phase_08_Nutrient_Data_Schema.json
+- Phase_08_Seed_Nutrient_Taxonomy.json
+- Phase_09_Diet_Planning_Data_Schema.json
+- Phase_09_Diet_Planning_Reference_Data.json
+- Phase_10_Nutrition_Tracker_Data_Schema.json
+- Phase_10_Nutrition_Tracker_Reference_Data.json
+
+CORE RULES
+- Local-only IndexedDB; no auth/backend.
+- Ingredient mass and food state are explicit.
+- Measured final yield is preferred.
+- Retention factors require exact source and scope.
+- Never double-apply cooking adjustment.
+- Missing and trace are not zero.
+- Recipe and meal-plan versions are immutable.
+- Planned is not consumed.
+- Grocery merging is conservative.
+- No AI menus, medical diets or allergy guarantees.
+- Public recipe text and media require rights documentation.
+
+CHECKPOINT
+phase-11-recipes-meal-plans-complete

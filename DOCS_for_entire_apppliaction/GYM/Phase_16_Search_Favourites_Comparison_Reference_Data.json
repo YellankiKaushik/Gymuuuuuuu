@@ -1,0 +1,902 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 16 Global Search, Favourites and Comparison Reference Data",
+    "version": "1.0.0",
+    "date": "5 August 2026",
+    "status": "implementation-reference",
+    "notice": "This file defines search, ranking, favourites, recents and comparison contracts. It contains no user queries, favourites, private notes or fabricated domain content."
+  },
+  "database": {
+    "name": "fitness-os",
+    "schemaVersion": 16,
+    "stores": [
+      {
+        "id": "phase16Favourites",
+        "keyPath": "id",
+        "purpose": "One canonical favourite per stable entity reference."
+      },
+      {
+        "id": "phase16Collections",
+        "keyPath": "id",
+        "purpose": "Local named collections of saved public or private references."
+      },
+      {
+        "id": "phase16CollectionItems",
+        "keyPath": "id",
+        "purpose": "Ordered collection membership with optional local notes."
+      },
+      {
+        "id": "phase16RecentQueries",
+        "keyPath": "id",
+        "purpose": "Optional local query history; never transmitted."
+      },
+      {
+        "id": "phase16RecentViews",
+        "keyPath": "id",
+        "purpose": "Optional local recently viewed entity history."
+      },
+      {
+        "id": "phase16SavedComparisons",
+        "keyPath": "id",
+        "purpose": "Saved comparison configurations, not copied factual content."
+      },
+      {
+        "id": "phase16Settings",
+        "keyPath": "key",
+        "purpose": "Search, history, privacy and display preferences."
+      },
+      {
+        "id": "phase16AuditEvents",
+        "keyPath": "id",
+        "purpose": "Save, remove, clear, migrate, import and restore events."
+      },
+      {
+        "id": "phase16DeletedRecords",
+        "keyPath": [
+          "entityType",
+          "entityId"
+        ],
+        "purpose": "Soft-deletion tombstones for local Phase 16 records."
+      },
+      {
+        "id": "phase16ImportConflicts",
+        "keyPath": "id",
+        "purpose": "Conflict previews during restoration."
+      },
+      {
+        "id": "phase16PrivateSearchCache",
+        "keyPath": "cacheKey",
+        "purpose": "Rebuildable on-device index for opted-in private records; excluded from backup."
+      }
+    ]
+  },
+  "entityRegistry": [
+    {
+      "id": "route",
+      "title": "Navigation route",
+      "ownerPhase": "phase_01",
+      "visibility": "public",
+      "searchGroup": "route",
+      "comparisonFamily": "route"
+    },
+    {
+      "id": "muscle",
+      "title": "Muscle or training-facing anatomy record",
+      "ownerPhase": "phase_02",
+      "visibility": "public",
+      "searchGroup": "muscle",
+      "comparisonFamily": "muscles"
+    },
+    {
+      "id": "exercise",
+      "title": "Exercise record",
+      "ownerPhase": "phase_03",
+      "visibility": "public",
+      "searchGroup": "exercise",
+      "comparisonFamily": "exercises"
+    },
+    {
+      "id": "workout_science_topic",
+      "title": "Workout Science topic",
+      "ownerPhase": "phase_04",
+      "visibility": "public",
+      "searchGroup": "workout_science",
+      "comparisonFamily": "workout_science_topics"
+    },
+    {
+      "id": "workout_program",
+      "title": "Reviewed workout program",
+      "ownerPhase": "phase_05",
+      "visibility": "public",
+      "searchGroup": "workout_program",
+      "comparisonFamily": "workout_programs"
+    },
+    {
+      "id": "workout_session",
+      "title": "Personal workout session",
+      "ownerPhase": "phase_06",
+      "visibility": "private_opt_in",
+      "searchGroup": "private_record",
+      "comparisonFamily": "none"
+    },
+    {
+      "id": "food",
+      "title": "Published food-composition profile",
+      "ownerPhase": "phase_07",
+      "visibility": "public",
+      "searchGroup": "food",
+      "comparisonFamily": "foods"
+    },
+    {
+      "id": "nutrient",
+      "title": "Nutrient encyclopedia record",
+      "ownerPhase": "phase_08",
+      "visibility": "public",
+      "searchGroup": "nutrient",
+      "comparisonFamily": "nutrients"
+    },
+    {
+      "id": "diet_plan",
+      "title": "Locally saved diet target plan",
+      "ownerPhase": "phase_09",
+      "visibility": "private_opt_in",
+      "searchGroup": "private_record",
+      "comparisonFamily": "none"
+    },
+    {
+      "id": "recipe",
+      "title": "Published or local personal recipe",
+      "ownerPhase": "phase_11",
+      "visibility": "mixed",
+      "searchGroup": "recipe",
+      "comparisonFamily": "recipes"
+    },
+    {
+      "id": "meal_plan",
+      "title": "Local meal-plan version",
+      "ownerPhase": "phase_11",
+      "visibility": "private_opt_in",
+      "searchGroup": "private_record",
+      "comparisonFamily": "none"
+    },
+    {
+      "id": "recovery_topic",
+      "title": "Recovery, sleep or mobility topic",
+      "ownerPhase": "phase_12",
+      "visibility": "public",
+      "searchGroup": "recovery_topic",
+      "comparisonFamily": "recovery_methods"
+    },
+    {
+      "id": "recovery_routine",
+      "title": "Reviewed warm-up, mobility or recovery routine",
+      "ownerPhase": "phase_12",
+      "visibility": "public",
+      "searchGroup": "recovery_routine",
+      "comparisonFamily": "recovery_routines"
+    },
+    {
+      "id": "sleep_entry",
+      "title": "Personal sleep diary entry",
+      "ownerPhase": "phase_12",
+      "visibility": "private_opt_in",
+      "searchGroup": "private_record",
+      "comparisonFamily": "none"
+    },
+    {
+      "id": "recovery_checkin",
+      "title": "Personal recovery check-in",
+      "ownerPhase": "phase_12",
+      "visibility": "private_opt_in",
+      "searchGroup": "private_record",
+      "comparisonFamily": "none"
+    },
+    {
+      "id": "cardio_topic",
+      "title": "Cardio and conditioning knowledge topic",
+      "ownerPhase": "phase_13",
+      "visibility": "public",
+      "searchGroup": "cardio_topic",
+      "comparisonFamily": "cardio_topics"
+    },
+    {
+      "id": "cardio_modality",
+      "title": "Cardio modality",
+      "ownerPhase": "phase_13",
+      "visibility": "public",
+      "searchGroup": "cardio_modality",
+      "comparisonFamily": "cardio_modalities"
+    },
+    {
+      "id": "cardio_plan",
+      "title": "Reviewed cardio plan",
+      "ownerPhase": "phase_13",
+      "visibility": "public",
+      "searchGroup": "cardio_plan",
+      "comparisonFamily": "cardio_plans"
+    },
+    {
+      "id": "conditioning_routine",
+      "title": "Reviewed conditioning routine",
+      "ownerPhase": "phase_13",
+      "visibility": "public",
+      "searchGroup": "conditioning_routine",
+      "comparisonFamily": "conditioning_routines"
+    },
+    {
+      "id": "supplement_ingredient",
+      "title": "Supplement ingredient identity",
+      "ownerPhase": "phase_14",
+      "visibility": "public",
+      "searchGroup": "supplement",
+      "comparisonFamily": "supplements"
+    },
+    {
+      "id": "supplement_evidence_topic",
+      "title": "Supplement evidence or safety topic",
+      "ownerPhase": "phase_14",
+      "visibility": "public",
+      "searchGroup": "supplement_topic",
+      "comparisonFamily": "supplement_topics"
+    },
+    {
+      "id": "measurement_protocol",
+      "title": "Body-measurement protocol",
+      "ownerPhase": "phase_15",
+      "visibility": "public",
+      "searchGroup": "measurement_protocol",
+      "comparisonFamily": "measurement_protocols"
+    },
+    {
+      "id": "progress_topic",
+      "title": "Body-progress or analytics knowledge topic",
+      "ownerPhase": "phase_15",
+      "visibility": "public",
+      "searchGroup": "progress_topic",
+      "comparisonFamily": "progress_topics"
+    },
+    {
+      "id": "body_measurement",
+      "title": "Personal body measurement",
+      "ownerPhase": "phase_15",
+      "visibility": "private_opt_in",
+      "searchGroup": "private_record",
+      "comparisonFamily": "none"
+    },
+    {
+      "id": "dashboard_widget",
+      "title": "Dashboard widget destination",
+      "ownerPhase": "phase_15",
+      "visibility": "public",
+      "searchGroup": "dashboard_widget",
+      "comparisonFamily": "none"
+    }
+  ],
+  "searchIndexContract": {
+    "engineAdapter": "MiniSearch-compatible local full-text adapter; pin exact version and keep replaceable.",
+    "publicArtifacts": [
+      "search-documents.public.json",
+      "search-index.public.json",
+      "search-manifest.json"
+    ],
+    "privateArtifact": "Rebuildable in-browser cache created only after explicit opt-in.",
+    "canonicalSource": "Published repository-owned records from owning modules.",
+    "publicationGate": "Only published records with valid routes and stable IDs enter the public index.",
+    "indexVersion": "sha256 over canonical searchable documents plus adapter configuration.",
+    "loadStrategy": "Load after idle or first search; use a dedicated worker if measured main-thread work exceeds the defined budget.",
+    "cachePolicy": "Search caches are disposable and excluded from backups."
+  },
+  "rankingRules": {
+    "fieldBoosts": {
+      "title": 8,
+      "aliases": 6,
+      "keywords": 4,
+      "summary": 2,
+      "headings": 1.5,
+      "body": 1
+    },
+    "deterministicBonuses": {
+      "exactNormalizedTitle": 100,
+      "exactNormalizedAlias": 80,
+      "titlePrefix": 40,
+      "aliasPrefix": 30,
+      "routeAliasExact": 20
+    },
+    "penalties": {
+      "fuzzyMatchMultiplier": 0.6,
+      "unreviewedOrDraft": "excluded",
+      "stalePrivateIndexMultiplier": 0.8
+    },
+    "tieBreakers": [
+      "higher final score",
+      "earlier canonical entity-type priority only when user selected All",
+      "locale-aware title sort using one configured Intl.Collator",
+      "stable entity ID"
+    ],
+    "prohibitedSignals": [
+      "hidden popularity",
+      "commercial placement",
+      "affiliate status",
+      "unexplained personalization",
+      "page-view count",
+      "user body data",
+      "medical-risk inference"
+    ]
+  },
+  "normalizationRules": {
+    "displayText": "Never modify canonical display text.",
+    "matchPipeline": [
+      "convert to well-formed string",
+      "Unicode NFKC normalization",
+      "normalize apostrophe and hyphen variants",
+      "case folding",
+      "optional diacritic-folded secondary field",
+      "Unicode-aware tokenization",
+      "collapse repeated whitespace"
+    ],
+    "preserveTokens": [
+      "B12",
+      "omega-3",
+      "5x5",
+      "RPE",
+      "RIR",
+      "VO2max",
+      "1RM"
+    ],
+    "noAutomaticStemming": true,
+    "aliasPolicy": "Only aliases explicitly stored by owning modules or reviewed Phase 16 alias records are indexed.",
+    "numericPolicy": "Numeric and mixed alphanumeric tokens do not use fuzzy matching by default."
+  },
+  "queryLimits": {
+    "maximumCharacters": 120,
+    "maximumTokens": 16,
+    "minimumAutocompleteCharacters": 2,
+    "maximumAutocompleteSuggestions": 8,
+    "maximumResultsPerPage": 50,
+    "defaultResultsPerPage": 20,
+    "defaultRecentQueryLimit": 30,
+    "hardRecentQueryLimit": 100,
+    "defaultRecentViewLimit": 100,
+    "hardRecentViewLimit": 500,
+    "fuzzyRules": [
+      {
+        "tokenLength": "0-3",
+        "behavior": "exact and prefix only"
+      },
+      {
+        "tokenLength": "4-7",
+        "behavior": "maximum one edit or explicit fuzzy ratio no greater than 0.15"
+      },
+      {
+        "tokenLength": "8+",
+        "behavior": "maximum two edits or explicit fuzzy ratio no greater than 0.20"
+      },
+      {
+        "tokenLength": "contains digits",
+        "behavior": "fuzzy disabled unless a reviewed alias explicitly covers the form"
+      }
+    ]
+  },
+  "comparisonFamilies": [
+    {
+      "id": "muscles",
+      "title": "Muscles",
+      "allowedEntityTypes": [
+        "muscle"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "canonical_record",
+      "rules": [
+        "Use current published versions.",
+        "Compare anatomy, functions, joint actions and linked exercises.",
+        "Do not rank muscles by importance, size or growth potential."
+      ]
+    },
+    {
+      "id": "exercises",
+      "title": "Exercises",
+      "allowedEntityTypes": [
+        "exercise"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "canonical_record",
+      "rules": [
+        "Compare movement pattern, equipment, difficulty, muscle relationships, setup and constraints.",
+        "Do not claim one exercise is universally best.",
+        "Do not invent activation percentages."
+      ]
+    },
+    {
+      "id": "workout_programs",
+      "title": "Workout programs",
+      "allowedEntityTypes": [
+        "workout_program"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "program_version",
+      "rules": [
+        "Show goal, level, days, duration, equipment, progression, deload and substitutions.",
+        "Do not declare a universal winner.",
+        "Draft program identities are ineligible."
+      ]
+    },
+    {
+      "id": "foods",
+      "title": "Foods",
+      "allowedEntityTypes": [
+        "food"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "per_100_g_edible_portion",
+      "rules": [
+        "Use exact food profile and preparation state.",
+        "Missing nutrient values remain unavailable.",
+        "Serving comparison is enabled only when every selected profile has a verified gram weight."
+      ]
+    },
+    {
+      "id": "nutrients",
+      "title": "Nutrients",
+      "allowedEntityTypes": [
+        "nutrient"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "encyclopedia_record",
+      "rules": [
+        "Compare functions, forms, food sources and framework definitions.",
+        "Reference values can be compared only within the same framework, age, sex and life-stage selection.",
+        "Do not rank nutrient importance."
+      ]
+    },
+    {
+      "id": "recipes",
+      "title": "Recipes",
+      "allowedEntityTypes": [
+        "recipe"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "per_100_g",
+      "rules": [
+        "Show recipe version, yield method, calculation grade and nutrient completeness.",
+        "Per-serving comparison requires explicit serving grams.",
+        "Do not compare unresolved recipes as exact nutrition."
+      ]
+    },
+    {
+      "id": "recovery_methods",
+      "title": "Recovery methods",
+      "allowedEntityTypes": [
+        "recovery_topic"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "selected_outcome",
+      "rules": [
+        "Require one selected outcome such as soreness, perceived recovery, strength, power or range of motion.",
+        "Keep evidence direction and confidence separate.",
+        "Do not create one recovery ranking."
+      ]
+    },
+    {
+      "id": "cardio_modalities",
+      "title": "Cardio modalities",
+      "allowedEntityTypes": [
+        "cardio_modality"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "modality_capabilities",
+      "rules": [
+        "Compare equipment, skill, impact, environment and trackable metrics.",
+        "Do not compare pace across different modalities.",
+        "Do not estimate calories or VO2max."
+      ]
+    },
+    {
+      "id": "cardio_plans",
+      "title": "Cardio plans",
+      "allowedEntityTypes": [
+        "cardio_plan"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "plan_version",
+      "rules": [
+        "Compare goal, level, duration, frequency, modality and progression.",
+        "Do not declare one plan universally superior.",
+        "Draft plans are ineligible."
+      ]
+    },
+    {
+      "id": "supplements",
+      "title": "Supplement ingredients",
+      "allowedEntityTypes": [
+        "supplement_ingredient"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "defaultBasis": "selected_outcome_population_form",
+      "rules": [
+        "Require the same selected outcome and population context.",
+        "Show exact form, protocol source, evidence direction, confidence, safety and anti-doping status.",
+        "Never recommend a winner or product."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_w3c_wcag22",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "publisher": "World Wide Web Consortium",
+      "year": 2024,
+      "type": "accessibility_standard",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "roles": [
+        "keyboard_access",
+        "focus_visibility",
+        "status_messages",
+        "target_size",
+        "accessible_names"
+      ],
+      "note": "Use WCAG 2.2 AA as the product target."
+    },
+    {
+      "id": "src_w3c_apg_combobox",
+      "title": "WAI-ARIA Authoring Practices: Combobox Pattern",
+      "publisher": "World Wide Web Consortium",
+      "year": 2026,
+      "type": "accessibility_pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
+      "roles": [
+        "search_autocomplete",
+        "keyboard_navigation",
+        "aria_controls",
+        "active_option"
+      ],
+      "note": "Implement only after validating behavior with real keyboard and screen-reader tests."
+    },
+    {
+      "id": "src_w3c_apg_dialog",
+      "title": "WAI-ARIA Authoring Practices: Modal Dialog Pattern",
+      "publisher": "World Wide Web Consortium",
+      "year": 2026,
+      "type": "accessibility_pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "roles": [
+        "search_dialog",
+        "focus_entry",
+        "focus_trap",
+        "focus_return"
+      ],
+      "note": "Use for the global search dialog and destructive confirmation dialogs."
+    },
+    {
+      "id": "src_w3c_apg_table",
+      "title": "WAI-ARIA Authoring Practices: Table Pattern",
+      "publisher": "World Wide Web Consortium",
+      "year": 2026,
+      "type": "accessibility_pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/table/",
+      "roles": [
+        "comparison_tables",
+        "semantic_headers",
+        "native_html_preference"
+      ],
+      "note": "Prefer native HTML tables for non-editable comparison data."
+    },
+    {
+      "id": "src_w3c_status_messages",
+      "title": "Understanding WCAG 2.2 Success Criterion 4.1.3: Status Messages",
+      "publisher": "World Wide Web Consortium",
+      "year": 2025,
+      "type": "accessibility_guidance",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages",
+      "roles": [
+        "result_count_announcements",
+        "filter_status",
+        "save_status"
+      ],
+      "note": "Result counts and important changes must be programmatically announced without stealing focus."
+    },
+    {
+      "id": "src_mdn_indexeddb",
+      "title": "IndexedDB API",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+      "roles": [
+        "local_structured_storage",
+        "transactional_favourites",
+        "recent_items",
+        "saved_comparisons"
+      ],
+      "note": "Canonical local records use IndexedDB. Rebuildable search caches are not canonical backups."
+    },
+    {
+      "id": "src_mdn_web_workers",
+      "title": "Web Workers API",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API",
+      "roles": [
+        "background_index_loading",
+        "non_blocking_query_processing"
+      ],
+      "note": "Use a dedicated worker when index initialization or query execution would block the main thread."
+    },
+    {
+      "id": "src_mdn_urlsearchparams",
+      "title": "URLSearchParams",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams",
+      "roles": [
+        "shareable_public_search_state",
+        "filter_state",
+        "comparison_deep_links"
+      ],
+      "note": "Only public, non-sensitive state is placed in URLs."
+    },
+    {
+      "id": "src_mdn_string_normalize",
+      "title": "String.prototype.normalize()",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize",
+      "roles": [
+        "unicode_normalization"
+      ],
+      "note": "Normalize matching text without changing displayed canonical text."
+    },
+    {
+      "id": "src_mdn_intl_collator",
+      "title": "Intl.Collator",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator",
+      "roles": [
+        "stable_human_sorting",
+        "locale_aware_tie_breaking"
+      ],
+      "note": "Use a configured collator for deterministic title sorting after relevance ties."
+    },
+    {
+      "id": "src_minisearch_docs",
+      "title": "MiniSearch Documentation",
+      "publisher": "MiniSearch Project",
+      "year": 2026,
+      "type": "library_documentation",
+      "url": "https://lucaong.github.io/minisearch/",
+      "roles": [
+        "local_full_text_index",
+        "prefix_search",
+        "fuzzy_search",
+        "field_boosting",
+        "serialized_index"
+      ],
+      "note": "Pin an exact dependency version in the repository and preserve an adapter boundary so the library can be replaced."
+    },
+    {
+      "id": "src_minisearch_api",
+      "title": "MiniSearch API Reference",
+      "publisher": "MiniSearch Project",
+      "year": 2026,
+      "type": "library_documentation",
+      "url": "https://lucaong.github.io/minisearch/classes/MiniSearch.MiniSearch.html",
+      "roles": [
+        "search_options",
+        "autosuggest",
+        "serialization",
+        "index_loading"
+      ],
+      "note": "Do not rely on undocumented defaults; define all scoring and fuzzy options explicitly."
+    }
+  ],
+  "testVectors": [
+    {
+      "id": "exact_title_beats_alias",
+      "purpose": "Exact canonical title outranks exact alias and fuzzy matches.",
+      "input": {
+        "query": "Bench press"
+      },
+      "expected": "canonical Bench press result is first when published"
+    },
+    {
+      "id": "exact_alias_resolves_once",
+      "purpose": "An alias returns one canonical record rather than duplicate alias rows.",
+      "input": {
+        "query": "garbanzo"
+      },
+      "expected": "one canonical chickpea food record appears with alias-match explanation"
+    },
+    {
+      "id": "short_token_no_fuzzy",
+      "purpose": "Short technical tokens avoid destructive typo expansion.",
+      "input": {
+        "query": "B12"
+      },
+      "expected": "exact/prefix matches only; no unrelated fuzzy result"
+    },
+    {
+      "id": "draft_excluded",
+      "purpose": "Draft and quarantined records never appear in public search.",
+      "input": {
+        "publicationStatus": "draft"
+      },
+      "expected": "record absent from public index and suggestions"
+    },
+    {
+      "id": "query_state_roundtrip",
+      "purpose": "Public search state survives refresh and back navigation.",
+      "input": {
+        "url": "/search?q=squat&type=exercise&sort=relevance&page=2"
+      },
+      "expected": "same validated state after reload"
+    },
+    {
+      "id": "private_default_off",
+      "purpose": "Personal notes and logs are never globally searched by default.",
+      "input": {
+        "includePrivateRecords": false
+      },
+      "expected": "private record absent"
+    },
+    {
+      "id": "private_no_url_leak",
+      "purpose": "Private query text or record IDs are not written to the URL.",
+      "input": {
+        "includePrivateRecords": true,
+        "query": "knee pain note"
+      },
+      "expected": "private mode uses local state; URL omits private text and private record IDs"
+    },
+    {
+      "id": "no_network_query",
+      "purpose": "Typing and searching cause no external request.",
+      "input": {
+        "query": "protein"
+      },
+      "expected": "zero runtime search or analytics network calls"
+    },
+    {
+      "id": "mixed_compare_rejected",
+      "purpose": "Incompatible entity types cannot share a comparison.",
+      "input": {
+        "family": "foods",
+        "entities": [
+          "food:banana",
+          "exercise:squat"
+        ]
+      },
+      "expected": "exercise rejected with an accessible explanation"
+    },
+    {
+      "id": "food_state_and_basis",
+      "purpose": "Food comparisons preserve state and basis.",
+      "input": {
+        "foods": [
+          "rice_raw",
+          "rice_cooked"
+        ],
+        "basis": "per_100_g"
+      },
+      "expected": "distinct profile labels and no silent raw-to-cooked conversion"
+    },
+    {
+      "id": "missing_not_zero",
+      "purpose": "Unavailable comparison values remain unavailable.",
+      "input": {
+        "valueStatus": "not_available"
+      },
+      "expected": "cell displays Not available and is excluded from difference calculations"
+    },
+    {
+      "id": "supplement_context_required",
+      "purpose": "Supplement comparison cannot combine different outcomes or populations.",
+      "input": {
+        "outcomes": [
+          "strength",
+          "sleep"
+        ]
+      },
+      "expected": "comparison blocked until one shared context is selected"
+    },
+    {
+      "id": "orphaned_favourite",
+      "purpose": "Removed content does not silently retarget a favourite.",
+      "input": {
+        "entityId": "old_food_id",
+        "replacement": null
+      },
+      "expected": "favourite marked unavailable with remove and review actions"
+    },
+    {
+      "id": "migration_map",
+      "purpose": "Approved stable-ID migration can update a favourite transparently.",
+      "input": {
+        "oldId": "old_slug",
+        "newId": "stable_new_id"
+      },
+      "expected": "entity reference migrated, audit event written, user informed"
+    },
+    {
+      "id": "index_hash_mismatch",
+      "purpose": "Stale serialized index is rebuilt rather than used silently.",
+      "input": {
+        "manifestHash": "A",
+        "indexHash": "B"
+      },
+      "expected": "index rejected and rebuilt from canonical search documents"
+    },
+    {
+      "id": "keyboard_combobox",
+      "purpose": "Search autocomplete follows keyboard interaction.",
+      "input": {
+        "keys": [
+          "Ctrl+K",
+          "b",
+          "Down",
+          "Enter",
+          "Escape"
+        ]
+      },
+      "expected": "dialog opens, suggestion is announced, selection navigates, focus returns on close"
+    },
+    {
+      "id": "status_announcement",
+      "purpose": "Result-count changes are announced without moving focus.",
+      "input": {
+        "query": "protein"
+      },
+      "expected": "polite status message reports count and active filters"
+    },
+    {
+      "id": "highlight_sanitization",
+      "purpose": "Search highlighting cannot inject markup.",
+      "input": {
+        "title": "<img src=x onerror=alert(1)>"
+      },
+      "expected": "literal escaped text or rejected record; no HTML execution"
+    },
+    {
+      "id": "comparison_limit",
+      "purpose": "Compare tray enforces the family limit.",
+      "input": {
+        "family": "exercises",
+        "count": 5
+      },
+      "expected": "fifth item rejected with max-four explanation"
+    },
+    {
+      "id": "cache_excluded_backup",
+      "purpose": "Rebuildable search indexes are not canonical backup data.",
+      "input": {
+        "export": "phase16"
+      },
+      "expected": "favourites and settings included; public/private search caches excluded"
+    }
+  ],
+  "globalRules": {
+    "noExternalSearchService": true,
+    "noSearchQueryAnalytics": true,
+    "noPrivateRecordsInUrl": true,
+    "noDraftPublication": true,
+    "missingValuesNeverZero": true,
+    "noUniversalCompareWinner": true,
+    "stableIdsRequired": true,
+    "searchCachesRebuildable": true,
+    "favouritesIncludedInBackup": true,
+    "recentHistoryUserControllable": true
+  }
+}

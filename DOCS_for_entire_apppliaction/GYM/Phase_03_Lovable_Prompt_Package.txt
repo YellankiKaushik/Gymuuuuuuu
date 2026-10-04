@@ -1,0 +1,44 @@
+PHASE 03 — LOVABLE PROMPT PACKAGE
+=================================
+
+Use only after Phases 00, 01 and 02 are complete and stable.
+
+Attach:
+- Phase_00_Master_Foundation_Lovable_Specification.md
+- Phase_01_Application_Shell_Navigation_Design_System.md
+- Phase_02_Muscle_Functional_Anatomy_Library.md
+- Phase_02_Muscle_Data_Schema.json
+- Phase_02_Seed_Taxonomy.json
+- Phase_03_Exercise_Encyclopedia.md
+- Phase_03_Exercise_Data_Schema.json
+- Phase_03_Seed_Exercise_Taxonomy.json
+
+A. PLAN MODE
+-------------
+Read every attached file completely. Do not modify code yet.
+
+Prepare a formal implementation plan for Phase 03 only. Audit the current framework, Phase 01 shell, Phase 02 anatomy contracts, routes, shared components, content validation and tests. List exact files to create/modify/protect. Map the Phase 03 schema into strict TypeScript validation, including cross-file muscle and relationship checks. Define repository-owned data, derived indexes, /exercises catalogue, URL filters, search, sort, practical-first /exercises/$slug detail page, technique, mistakes/corrections, relationships, contextual programming, click-to-load privacy-enhanced media, safe status handling, documentation and tests mapped to every acceptance criterion.
+
+Non-negotiable: no authentication, backend, Supabase, Lovable Cloud, runtime CMS, scraping, automatic YouTube search, unlicensed database import, generated publishable technique, EMG rankings, medical diagnosis/treatment, workout plans or workout logging. Preserve Phases 00–02 and all stable IDs.
+
+End with all Phase 03 acceptance criteria and request approval.
+
+B. AGENT MODE
+--------------
+Implement the approved Phase 03 plan exactly. Build only the Exercise Encyclopedia. Use repository-owned validated data and the attached draft identities. Do not fabricate missing facts or publish draft records. Reference Phase 02 muscle IDs directly. Implement catalogue, search, URL filters, sort, detail pages, setup/execution, muscles, mistakes/corrections, relationships, contextual programming, safety, sources, review metadata and click-to-load reviewed media. Preserve text when video fails.
+
+Run schema/cross-file validation, type-check, lint, tests, production build, accessibility checks and responsive inspection. Update docs/exercise-encyclopedia.md, docs/content-governance/exercise-sources.md and docs/phases/phase-03.md. Report exact files, results, limitations and acceptance status.
+
+C. VERIFICATION
+---------------
+Audit against the full Phase 03 specification. Produce criterion/pass-fail/evidence/files/fix. Verify no backend/scope creep; Phase 02 ID integrity; publication gates; alias/muscle search; URL restoration; written technique; sourced contextual ranges; no EMG rankings/medical advice; relationship integrity; click-to-load privacy-enhanced media; safe media failure; mobile/dark/keyboard/focus/zoom/reflow; and test/build results. Fix only verified Phase 03 defects and rerun checks.
+
+D. CONTENT INGESTION
+--------------------
+Import only reviewed exercise records I attach. Validate against Phase 03 and Phase 02. Do not rewrite facts, infer missing muscle roles, add unsourced technique or numbers, or publish incomplete records. Return a rejected-record report with exact field paths before changing the app.
+
+E. FOCUSED CORRECTION
+----------------------
+Correct only the verified Phase 03 defects below. Preserve passing Phase 00–03 behavior. Identify root cause, exact files, smallest fix and regression test. Run relevant validation, type-check, lint, tests and build. Do not redesign, migrate, add a backend or expand into Phase 04.
+
+[PASTE VERIFIED DEFECTS]

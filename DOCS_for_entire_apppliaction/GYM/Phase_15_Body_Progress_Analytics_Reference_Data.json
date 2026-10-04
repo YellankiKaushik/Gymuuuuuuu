@@ -1,0 +1,1982 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 15 Body Progress, Dashboard and Analytics Reference Data",
+    "version": "1.0.0",
+    "date": "5 August 2026",
+    "status": "implementation-reference",
+    "notice": "This file defines metric contracts, measurement protocols, dashboard widgets, data-quality flags and draft knowledge identities. It contains no user measurements, photos or inferred health conclusions."
+  },
+  "database": {
+    "name": "fitness-os",
+    "schemaVersion": 15,
+    "stores": [
+      {
+        "id": "bodyWeightLogs",
+        "keyPath": "id",
+        "purpose": "Canonical body-weight measurements."
+      },
+      {
+        "id": "circumferenceSessions",
+        "keyPath": "id",
+        "purpose": "Protocol-specific circumference sessions with replicates."
+      },
+      {
+        "id": "bodyCompositionMeasurements",
+        "keyPath": "id",
+        "purpose": "User-entered external body-composition estimates."
+      },
+      {
+        "id": "progressPhotos",
+        "keyPath": "id",
+        "purpose": "Sanitized local progress-photo metadata."
+      },
+      {
+        "id": "progressPhotoBlobs",
+        "keyPath": "blobKey",
+        "purpose": "Sanitized local image binaries; excluded from default JSON backup."
+      },
+      {
+        "id": "progressGoals",
+        "keyPath": "id",
+        "purpose": "Optional transparent progress goals."
+      },
+      {
+        "id": "nutritionDayReviews",
+        "keyPath": "id",
+        "purpose": "User-declared completeness status for nutrition analytics."
+      },
+      {
+        "id": "dashboardLayouts",
+        "keyPath": "id",
+        "purpose": "Widget order and visibility."
+      },
+      {
+        "id": "phase15Settings",
+        "keyPath": "key",
+        "purpose": "Units, date ranges, privacy and display settings."
+      },
+      {
+        "id": "phase15AuditEvents",
+        "keyPath": "id",
+        "purpose": "Edits, imports, deletes and photo operations."
+      },
+      {
+        "id": "phase15DeletedRecords",
+        "keyPath": [
+          "entityType",
+          "entityId"
+        ],
+        "purpose": "Soft-deletion tombstones."
+      },
+      {
+        "id": "phase15ImportConflicts",
+        "keyPath": "id",
+        "purpose": "Restore conflict previews."
+      },
+      {
+        "id": "derivedAnalyticsCache",
+        "keyPath": "cacheKey",
+        "purpose": "Rebuildable derived metrics; excluded from canonical backup."
+      }
+    ]
+  },
+  "measurementProtocols": [
+    {
+      "id": "protocol_body_weight_consistent",
+      "title": "Body weight - consistent personal protocol",
+      "domain": "body_weight",
+      "summary": "Record scale, time context, clothing and measurement conditions; compare repeated measurements using the same setup.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_height_standing",
+      "title": "Standing height",
+      "domain": "height",
+      "summary": "Record measured standing height, measurement date and method. Height is not inferred from user profile text.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_waist_who_midpoint",
+      "title": "Waist - WHO midpoint",
+      "domain": "circumference",
+      "summary": "Horizontal measurement near the midpoint between the last palpable rib and top of iliac crest; store breathing phase and protocol version.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_waist_iliac_crest",
+      "title": "Waist - superior iliac crest",
+      "domain": "circumference",
+      "summary": "Distinct protocol. Never merge automatically with WHO midpoint or umbilical waist records.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_waist_umbilicus",
+      "title": "Waist - umbilical level",
+      "domain": "circumference",
+      "summary": "Personal tracking site only. Keep separate from WHO and NHANES-style protocols.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_hip_maximum",
+      "title": "Hip - maximum circumference",
+      "domain": "circumference",
+      "summary": "Horizontal circumference at the maximum buttock extension; store posture and tape method.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_chest_relaxed",
+      "title": "Chest - relaxed",
+      "domain": "circumference",
+      "summary": "User-defined landmark and breathing phase must remain consistent.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_chest_inspired",
+      "title": "Chest - inspired",
+      "domain": "circumference",
+      "summary": "Separate from relaxed chest measurements.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_upper_arm_relaxed",
+      "title": "Upper arm - relaxed",
+      "domain": "circumference",
+      "summary": "Store left or right side and landmark.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_upper_arm_flexed",
+      "title": "Upper arm - flexed",
+      "domain": "circumference",
+      "summary": "Store side, pose and landmark; never merge with relaxed arm.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_forearm_maximum",
+      "title": "Forearm - maximum circumference",
+      "domain": "circumference",
+      "summary": "Store side and landmark.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_thigh_midpoint",
+      "title": "Thigh - midpoint",
+      "domain": "circumference",
+      "summary": "Store side and exact midpoint definition.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_thigh_maximum",
+      "title": "Thigh - maximum circumference",
+      "domain": "circumference",
+      "summary": "Distinct from midpoint thigh.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_calf_maximum",
+      "title": "Calf - maximum circumference",
+      "domain": "circumference",
+      "summary": "Store side and posture.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_neck_standard",
+      "title": "Neck circumference",
+      "domain": "circumference",
+      "summary": "Store landmark and head position; educational tracking only.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_skinfold_external",
+      "title": "Skinfold assessment - external result",
+      "domain": "body_composition",
+      "summary": "Store the reported result and protocol; the application does not calculate body fat from skinfolds.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_bia_external",
+      "title": "Bioelectrical impedance - external result",
+      "domain": "body_composition",
+      "summary": "Store device, model, software, conditions and reported estimates; do not merge across devices by default.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_dxa_external",
+      "title": "DXA - external report",
+      "domain": "body_composition",
+      "summary": "Store facility, device, software and report date; values are user-entered from the report.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_air_displacement_external",
+      "title": "Air displacement plethysmography - external result",
+      "domain": "body_composition",
+      "summary": "Store device and protocol metadata.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_hydrostatic_external",
+      "title": "Hydrostatic weighing - external result",
+      "domain": "body_composition",
+      "summary": "Store laboratory and protocol metadata.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_ultrasound_external",
+      "title": "Ultrasound body composition - external result",
+      "domain": "body_composition",
+      "summary": "Store operator, device and measurement site metadata.",
+      "status": "draft"
+    },
+    {
+      "id": "protocol_3d_optical_external",
+      "title": "3D optical estimate - external result",
+      "domain": "body_composition",
+      "summary": "Store device and software version; label as an estimate.",
+      "status": "draft"
+    }
+  ],
+  "metricDefinitions": [
+    {
+      "id": "metric_weight_daily_median",
+      "domain": "body_weight",
+      "label": "Daily weight",
+      "unit": "kg",
+      "formula": "Median of all non-deleted weight records for one local date after conversion to kilograms.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Show same-day record count",
+        "Do not delete possible outliers automatically"
+      ]
+    },
+    {
+      "id": "metric_weight_7d_mean",
+      "domain": "body_weight",
+      "label": "7-day weight trend",
+      "unit": "kg",
+      "formula": "Arithmetic mean of available daily medians in the trailing 7 local dates.",
+      "minimumSamples": 3,
+      "qualityRules": [
+        "Require at least 3 measured days",
+        "Display measured-day count"
+      ]
+    },
+    {
+      "id": "metric_weight_28d_mean",
+      "domain": "body_weight",
+      "label": "28-day weight trend",
+      "unit": "kg",
+      "formula": "Arithmetic mean of available daily medians in the trailing 28 local dates.",
+      "minimumSamples": 10,
+      "qualityRules": [
+        "Require at least 10 measured days",
+        "Display measured-day count"
+      ]
+    },
+    {
+      "id": "metric_weight_weekly_change",
+      "domain": "body_weight",
+      "label": "Weekly trend change",
+      "unit": "kg/week",
+      "formula": "Latest complete or qualifying 7-day mean minus the immediately preceding qualifying 7-day mean.",
+      "minimumSamples": 6,
+      "qualityRules": [
+        "Each 7-day window requires at least 3 measured days",
+        "No future projection"
+      ]
+    },
+    {
+      "id": "metric_circumference_change",
+      "domain": "circumference",
+      "label": "Circumference change",
+      "unit": "mm",
+      "formula": "Latest canonical session value minus selected baseline session value for the same site, protocol version, side and posture.",
+      "minimumSamples": 2,
+      "qualityRules": [
+        "Block mixed protocols by default",
+        "Show replicate values"
+      ]
+    },
+    {
+      "id": "metric_body_comp_change",
+      "domain": "body_composition",
+      "label": "Body-composition estimate change",
+      "unit": "method_specific",
+      "formula": "Latest value minus baseline only when method, device/model and protocol compatibility rules pass.",
+      "minimumSamples": 2,
+      "qualityRules": [
+        "Always label as estimate",
+        "Do not merge methods by default"
+      ]
+    },
+    {
+      "id": "metric_workout_sessions",
+      "domain": "workout",
+      "label": "Completed workout sessions",
+      "unit": "sessions",
+      "formula": "Count of non-deleted Phase 06 sessions with status completed in the selected date range.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Separate abandoned sessions",
+        "Date range uses session local date"
+      ]
+    },
+    {
+      "id": "metric_workout_duration",
+      "domain": "workout",
+      "label": "Workout duration",
+      "unit": "minutes",
+      "formula": "Sum or median of completed-session active duration according to the selected view.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Use Phase 06 canonical duration",
+        "Do not infer missing duration"
+      ]
+    },
+    {
+      "id": "metric_completed_sets",
+      "domain": "workout",
+      "label": "Completed sets",
+      "unit": "sets",
+      "formula": "Count completed sets after applying visible set-type filters.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Default excludes warm-up and technique sets",
+        "Filter state remains visible"
+      ]
+    },
+    {
+      "id": "metric_volume_load",
+      "domain": "workout",
+      "label": "Volume load",
+      "unit": "kg_repetitions",
+      "formula": "Sum of normalized external load in kilograms multiplied by completed repetitions for compatible load-and-repetition sets.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Exclude bodyweight-only, assistance, duration and distance modes",
+        "Never compare incompatible load scopes without warning"
+      ]
+    },
+    {
+      "id": "metric_e1rm_trend",
+      "domain": "strength",
+      "label": "Estimated 1RM trend",
+      "unit": "kg",
+      "formula": "Consume the exact Phase 06 estimated-1RM method and method version; compare only the same canonical exercise and compatible equipment/load scope.",
+      "minimumSamples": 2,
+      "qualityRules": [
+        "Label as estimate",
+        "Show formula version",
+        "No cross-exercise comparison"
+      ]
+    },
+    {
+      "id": "metric_personal_records",
+      "domain": "strength",
+      "label": "Personal records",
+      "unit": "count",
+      "formula": "Count canonical Phase 06 personal-record events after rebuild using the active PR definition version.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Show PR type",
+        "A PR is not proof of long-term adaptation"
+      ]
+    },
+    {
+      "id": "metric_program_adherence",
+      "domain": "workout",
+      "label": "Program adherence",
+      "unit": "percent",
+      "formula": "Completed scheduled sessions divided by scheduled sessions whose due date has passed for an active Phase 05 program instance.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Unavailable when no dated schedule exists",
+        "Do not infer missed sessions from program sequence alone"
+      ]
+    },
+    {
+      "id": "metric_nutrition_logged_days",
+      "domain": "nutrition",
+      "label": "Days with nutrition entries",
+      "unit": "days",
+      "formula": "Count local dates containing at least one non-deleted Phase 10 entry.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Does not imply a complete diary"
+      ]
+    },
+    {
+      "id": "metric_nutrition_complete_days",
+      "domain": "nutrition",
+      "label": "Reviewed complete nutrition days",
+      "unit": "days",
+      "formula": "Count dates explicitly marked complete-for-analysis by the user.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Never infer completeness automatically"
+      ]
+    },
+    {
+      "id": "metric_energy_average",
+      "domain": "nutrition",
+      "label": "Average recorded energy",
+      "unit": "kcal/day",
+      "formula": "Arithmetic mean of Phase 10 recorded energy totals on dates marked complete-for-analysis.",
+      "minimumSamples": 3,
+      "qualityRules": [
+        "Show number of complete days",
+        "Label partial nutrient coverage separately"
+      ]
+    },
+    {
+      "id": "metric_macro_average",
+      "domain": "nutrition",
+      "label": "Average recorded macronutrient",
+      "unit": "g/day",
+      "formula": "Arithmetic mean for the selected macronutrient on complete-for-analysis dates.",
+      "minimumSamples": 3,
+      "qualityRules": [
+        "Missing values remain unavailable",
+        "Do not reconstruct energy from macros"
+      ]
+    },
+    {
+      "id": "metric_target_difference",
+      "domain": "nutrition",
+      "label": "Difference from saved target",
+      "unit": "target_specific",
+      "formula": "Recorded daily value minus the frozen Phase 09 target snapshot for that date.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "No good/bad score",
+        "Target version and completeness visible"
+      ]
+    },
+    {
+      "id": "metric_nutrient_coverage",
+      "domain": "nutrition",
+      "label": "Nutrient data coverage",
+      "unit": "percent",
+      "formula": "Consume Phase 10 nutrient-coverage fields; aggregate numerator and denominator according to the same method version.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Coverage is not intake adequacy",
+        "Low coverage blocks deficiency language"
+      ]
+    },
+    {
+      "id": "metric_sleep_duration_median",
+      "domain": "sleep",
+      "label": "Median sleep duration",
+      "unit": "minutes/night",
+      "formula": "Median Phase 12 calculated total-sleep duration for complete sleep records in range.",
+      "minimumSamples": 3,
+      "qualityRules": [
+        "Diary and device-estimated sources remain labelled",
+        "No sleep score"
+      ]
+    },
+    {
+      "id": "metric_sleep_schedule_variability",
+      "domain": "sleep",
+      "label": "Sleep schedule variability",
+      "unit": "minutes",
+      "formula": "Method-versioned variability of selected clock-time feature after circular-time handling; exact method shown in UI.",
+      "minimumSamples": 7,
+      "qualityRules": [
+        "Do not apply universal risk cutoff",
+        "Time-zone changes create warnings"
+      ]
+    },
+    {
+      "id": "metric_recovery_dimension",
+      "domain": "recovery",
+      "label": "Recovery dimension trend",
+      "unit": "scale_specific",
+      "formula": "Median or distribution of one selected Phase 12 dimension such as energy, fatigue, stress, motivation or soreness.",
+      "minimumSamples": 3,
+      "qualityRules": [
+        "Dimensions remain separate",
+        "No composite readiness score"
+      ]
+    },
+    {
+      "id": "metric_cardio_minutes",
+      "domain": "cardio",
+      "label": "Cardio duration",
+      "unit": "minutes",
+      "formula": "Sum completed Phase 13 session duration for the selected modality or intensity classification.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Unclassified minutes remain separate",
+        "No calorie estimate"
+      ]
+    },
+    {
+      "id": "metric_cardio_distance",
+      "domain": "cardio",
+      "label": "Cardio distance",
+      "unit": "km",
+      "formula": "Sum completed session distance after exact unit conversion, grouped by modality.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "Do not merge incompatible modalities"
+      ]
+    },
+    {
+      "id": "metric_pace_trend",
+      "domain": "cardio",
+      "label": "Pace trend",
+      "unit": "seconds_per_km",
+      "formula": "Median pace for comparable completed sessions of the same modality and environment filter.",
+      "minimumSamples": 2,
+      "qualityRules": [
+        "Display terrain/environment filters",
+        "No VO2max inference"
+      ]
+    },
+    {
+      "id": "metric_supplement_adherence",
+      "domain": "supplements",
+      "label": "Recorded supplement-trial adherence",
+      "unit": "percent",
+      "formula": "Recorded scheduled intake events divided by user-entered planned events for one Phase 14 trial.",
+      "minimumSamples": 1,
+      "qualityRules": [
+        "No efficacy conclusion",
+        "Unknown plan schedule makes metric unavailable"
+      ]
+    }
+  ],
+  "chartTypes": [
+    {
+      "id": "line_raw_and_trend",
+      "label": "Raw values plus trend line",
+      "accessibility": "Provide data table, point labels on focus and text summary."
+    },
+    {
+      "id": "bar_period_totals",
+      "label": "Period totals",
+      "accessibility": "Provide exact values and date range outside color encoding."
+    },
+    {
+      "id": "distribution",
+      "label": "Distribution",
+      "accessibility": "Provide median, range and record count in text."
+    },
+    {
+      "id": "calendar_presence",
+      "label": "Calendar presence",
+      "accessibility": "Never use color alone; provide icons and list view."
+    },
+    {
+      "id": "comparison_table",
+      "label": "Comparison table",
+      "accessibility": "Use semantic headers and sortable-button labels."
+    },
+    {
+      "id": "photo_pair",
+      "label": "Manual photo pair",
+      "accessibility": "Provide dates, view labels and keyboard-operable selection; no image analysis."
+    }
+  ],
+  "dataQualityFlags": [
+    {
+      "id": "insufficient_samples",
+      "label": "Not enough records",
+      "severity": "info"
+    },
+    {
+      "id": "mixed_protocol",
+      "label": "Measurement protocols differ",
+      "severity": "warning"
+    },
+    {
+      "id": "mixed_method",
+      "label": "Body-composition methods differ",
+      "severity": "warning"
+    },
+    {
+      "id": "mixed_device",
+      "label": "Devices or software versions differ",
+      "severity": "warning"
+    },
+    {
+      "id": "mixed_source",
+      "label": "Measurement sources differ",
+      "severity": "info"
+    },
+    {
+      "id": "incomplete_nutrition_day",
+      "label": "Nutrition day not marked complete",
+      "severity": "warning"
+    },
+    {
+      "id": "partial_nutrient_coverage",
+      "label": "Nutrient values are incomplete",
+      "severity": "warning"
+    },
+    {
+      "id": "timezone_change",
+      "label": "Time-zone change affects date grouping",
+      "severity": "warning"
+    },
+    {
+      "id": "possible_input_error",
+      "label": "Value may be an input error",
+      "severity": "warning"
+    },
+    {
+      "id": "manual_backfill",
+      "label": "Record was entered retrospectively",
+      "severity": "info"
+    },
+    {
+      "id": "estimated_value",
+      "label": "Value is an estimate",
+      "severity": "info"
+    },
+    {
+      "id": "stale_metric_version",
+      "label": "Metric definition has changed",
+      "severity": "warning"
+    },
+    {
+      "id": "photo_binary_missing",
+      "label": "Photo file is unavailable",
+      "severity": "warning"
+    },
+    {
+      "id": "deleted_source_record",
+      "label": "Source record was deleted",
+      "severity": "warning"
+    }
+  ],
+  "seedRecords": [
+    {
+      "id": "protocol_body_weight_consistent",
+      "slug": "protocol-body-weight-consistent",
+      "entityType": "measurement_protocol",
+      "category": "body_weight",
+      "title": "Body weight - consistent personal protocol",
+      "summary": "Record scale, time context, clothing and measurement conditions; compare repeated measurements using the same setup.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_height_standing",
+      "slug": "protocol-height-standing",
+      "entityType": "measurement_protocol",
+      "category": "height",
+      "title": "Standing height",
+      "summary": "Record measured standing height, measurement date and method. Height is not inferred from user profile text.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_waist_who_midpoint",
+      "slug": "protocol-waist-who-midpoint",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Waist - WHO midpoint",
+      "summary": "Horizontal measurement near the midpoint between the last palpable rib and top of iliac crest; store breathing phase and protocol version.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_waist_iliac_crest",
+      "slug": "protocol-waist-iliac-crest",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Waist - superior iliac crest",
+      "summary": "Distinct protocol. Never merge automatically with WHO midpoint or umbilical waist records.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_waist_umbilicus",
+      "slug": "protocol-waist-umbilicus",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Waist - umbilical level",
+      "summary": "Personal tracking site only. Keep separate from WHO and NHANES-style protocols.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_hip_maximum",
+      "slug": "protocol-hip-maximum",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Hip - maximum circumference",
+      "summary": "Horizontal circumference at the maximum buttock extension; store posture and tape method.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_chest_relaxed",
+      "slug": "protocol-chest-relaxed",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Chest - relaxed",
+      "summary": "User-defined landmark and breathing phase must remain consistent.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_chest_inspired",
+      "slug": "protocol-chest-inspired",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Chest - inspired",
+      "summary": "Separate from relaxed chest measurements.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_upper_arm_relaxed",
+      "slug": "protocol-upper-arm-relaxed",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Upper arm - relaxed",
+      "summary": "Store left or right side and landmark.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_upper_arm_flexed",
+      "slug": "protocol-upper-arm-flexed",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Upper arm - flexed",
+      "summary": "Store side, pose and landmark; never merge with relaxed arm.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_forearm_maximum",
+      "slug": "protocol-forearm-maximum",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Forearm - maximum circumference",
+      "summary": "Store side and landmark.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_thigh_midpoint",
+      "slug": "protocol-thigh-midpoint",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Thigh - midpoint",
+      "summary": "Store side and exact midpoint definition.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_thigh_maximum",
+      "slug": "protocol-thigh-maximum",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Thigh - maximum circumference",
+      "summary": "Distinct from midpoint thigh.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_calf_maximum",
+      "slug": "protocol-calf-maximum",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Calf - maximum circumference",
+      "summary": "Store side and posture.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_neck_standard",
+      "slug": "protocol-neck-standard",
+      "entityType": "measurement_protocol",
+      "category": "circumference",
+      "title": "Neck circumference",
+      "summary": "Store landmark and head position; educational tracking only.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_skinfold_external",
+      "slug": "protocol-skinfold-external",
+      "entityType": "measurement_protocol",
+      "category": "body_composition",
+      "title": "Skinfold assessment - external result",
+      "summary": "Store the reported result and protocol; the application does not calculate body fat from skinfolds.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_bia_external",
+      "slug": "protocol-bia-external",
+      "entityType": "measurement_protocol",
+      "category": "body_composition",
+      "title": "Bioelectrical impedance - external result",
+      "summary": "Store device, model, software, conditions and reported estimates; do not merge across devices by default.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_dxa_external",
+      "slug": "protocol-dxa-external",
+      "entityType": "measurement_protocol",
+      "category": "body_composition",
+      "title": "DXA - external report",
+      "summary": "Store facility, device, software and report date; values are user-entered from the report.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_air_displacement_external",
+      "slug": "protocol-air-displacement-external",
+      "entityType": "measurement_protocol",
+      "category": "body_composition",
+      "title": "Air displacement plethysmography - external result",
+      "summary": "Store device and protocol metadata.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_hydrostatic_external",
+      "slug": "protocol-hydrostatic-external",
+      "entityType": "measurement_protocol",
+      "category": "body_composition",
+      "title": "Hydrostatic weighing - external result",
+      "summary": "Store laboratory and protocol metadata.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_ultrasound_external",
+      "slug": "protocol-ultrasound-external",
+      "entityType": "measurement_protocol",
+      "category": "body_composition",
+      "title": "Ultrasound body composition - external result",
+      "summary": "Store operator, device and measurement site metadata.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "protocol_3d_optical_external",
+      "slug": "protocol-3d-optical-external",
+      "entityType": "measurement_protocol",
+      "category": "body_composition",
+      "title": "3D optical estimate - external result",
+      "summary": "Store device and software version; label as an estimate.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_measurement_consistency",
+      "slug": "knowledge-measurement-consistency",
+      "entityType": "knowledge_topic",
+      "category": "measurement",
+      "title": "Measurement consistency",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_scale_variation",
+      "slug": "knowledge-scale-variation",
+      "entityType": "knowledge_topic",
+      "category": "measurement",
+      "title": "Scale and day-to-day weight variation",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_same_day_duplicates",
+      "slug": "knowledge-same-day-duplicates",
+      "entityType": "knowledge_topic",
+      "category": "measurement",
+      "title": "Multiple measurements on one day",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_circumference_landmarks",
+      "slug": "knowledge-circumference-landmarks",
+      "entityType": "knowledge_topic",
+      "category": "measurement",
+      "title": "Circumference landmarks",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_tape_tension",
+      "slug": "knowledge-tape-tension",
+      "entityType": "knowledge_topic",
+      "category": "measurement",
+      "title": "Tape tension and posture",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_replicates",
+      "slug": "knowledge-replicates",
+      "entityType": "knowledge_topic",
+      "category": "measurement",
+      "title": "Replicate measurements",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_measurement_error",
+      "slug": "knowledge-measurement-error",
+      "entityType": "knowledge_topic",
+      "category": "measurement",
+      "title": "Measurement error and detectable change",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_bmi_boundary",
+      "slug": "knowledge-bmi-boundary",
+      "entityType": "knowledge_topic",
+      "category": "body_composition",
+      "title": "BMI as a screening measure",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_body_comp_methods",
+      "slug": "knowledge-body-comp-methods",
+      "entityType": "knowledge_topic",
+      "category": "body_composition",
+      "title": "Body-composition methods",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_bia_conditions",
+      "slug": "knowledge-bia-conditions",
+      "entityType": "knowledge_topic",
+      "category": "body_composition",
+      "title": "BIA conditions and hydration",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_dxa_reporting",
+      "slug": "knowledge-dxa-reporting",
+      "entityType": "knowledge_topic",
+      "category": "body_composition",
+      "title": "DXA reporting and method consistency",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_skinfold_limits",
+      "slug": "knowledge-skinfold-limits",
+      "entityType": "knowledge_topic",
+      "category": "body_composition",
+      "title": "Skinfold estimate limitations",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_cross_method_comparison",
+      "slug": "knowledge-cross-method-comparison",
+      "entityType": "knowledge_topic",
+      "category": "body_composition",
+      "title": "Why methods should not be mixed",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_progress_photos",
+      "slug": "knowledge-progress-photos",
+      "entityType": "knowledge_topic",
+      "category": "photos",
+      "title": "Progress-photo consistency",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_photo_privacy",
+      "slug": "knowledge-photo-privacy",
+      "entityType": "knowledge_topic",
+      "category": "photos",
+      "title": "Progress-photo privacy",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_goal_setting",
+      "slug": "knowledge-goal-setting",
+      "entityType": "knowledge_topic",
+      "category": "goals",
+      "title": "Measurement and behavior goals",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_weight_trends",
+      "slug": "knowledge-weight-trends",
+      "entityType": "knowledge_topic",
+      "category": "analytics",
+      "title": "Raw weight versus trend",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_rolling_windows",
+      "slug": "knowledge-rolling-windows",
+      "entityType": "knowledge_topic",
+      "category": "analytics",
+      "title": "Rolling-window calculations",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_missing_data",
+      "slug": "knowledge-missing-data",
+      "entityType": "knowledge_topic",
+      "category": "analytics",
+      "title": "Missing and incomplete data",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_outliers",
+      "slug": "knowledge-outliers",
+      "entityType": "knowledge_topic",
+      "category": "analytics",
+      "title": "Potential outliers and input errors",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_sample_size",
+      "slug": "knowledge-sample-size",
+      "entityType": "knowledge_topic",
+      "category": "analytics",
+      "title": "Minimum samples for summaries",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_data_quality",
+      "slug": "knowledge-data-quality",
+      "entityType": "knowledge_topic",
+      "category": "analytics",
+      "title": "Data-quality flags",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_metric_versions",
+      "slug": "knowledge-metric-versions",
+      "entityType": "knowledge_topic",
+      "category": "analytics",
+      "title": "Metric-definition versioning",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_strength_trends",
+      "slug": "knowledge-strength-trends",
+      "entityType": "knowledge_topic",
+      "category": "workout_analytics",
+      "title": "Strength-trend interpretation",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_volume_load",
+      "slug": "knowledge-volume-load",
+      "entityType": "knowledge_topic",
+      "category": "workout_analytics",
+      "title": "Volume-load limitations",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_muscle_set_associations",
+      "slug": "knowledge-muscle-set-associations",
+      "entityType": "knowledge_topic",
+      "category": "workout_analytics",
+      "title": "Muscle set-association limitations",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_program_adherence",
+      "slug": "knowledge-program-adherence",
+      "entityType": "knowledge_topic",
+      "category": "workout_analytics",
+      "title": "Program adherence definitions",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_personal_records",
+      "slug": "knowledge-personal-records",
+      "entityType": "knowledge_topic",
+      "category": "workout_analytics",
+      "title": "Personal records and measurement variation",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_nutrition_completeness",
+      "slug": "knowledge-nutrition-completeness",
+      "entityType": "knowledge_topic",
+      "category": "nutrition_analytics",
+      "title": "Nutrition-log completeness",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_nutrient_coverage",
+      "slug": "knowledge-nutrient-coverage",
+      "entityType": "knowledge_topic",
+      "category": "nutrition_analytics",
+      "title": "Nutrient coverage versus intake",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_target_comparison",
+      "slug": "knowledge-target-comparison",
+      "entityType": "knowledge_topic",
+      "category": "nutrition_analytics",
+      "title": "Target comparison boundaries",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_sleep_trends",
+      "slug": "knowledge-sleep-trends",
+      "entityType": "knowledge_topic",
+      "category": "recovery_analytics",
+      "title": "Sleep trends without a sleep score",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_recovery_dimensions",
+      "slug": "knowledge-recovery-dimensions",
+      "entityType": "knowledge_topic",
+      "category": "recovery_analytics",
+      "title": "Separate recovery dimensions",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_cardio_trends",
+      "slug": "knowledge-cardio-trends",
+      "entityType": "knowledge_topic",
+      "category": "cardio_analytics",
+      "title": "Cardio trends by modality",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_hr_source",
+      "slug": "knowledge-hr-source",
+      "entityType": "knowledge_topic",
+      "category": "cardio_analytics",
+      "title": "Heart-rate source labels",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_no_calorie_burn",
+      "slug": "knowledge-no-calorie-burn",
+      "entityType": "knowledge_topic",
+      "category": "cardio_analytics",
+      "title": "Why exercise calorie burn is excluded",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_cross_domain_overlays",
+      "slug": "knowledge-cross-domain-overlays",
+      "entityType": "knowledge_topic",
+      "category": "cross_domain",
+      "title": "Cross-domain overlays",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_no_causality",
+      "slug": "knowledge-no-causality",
+      "entityType": "knowledge_topic",
+      "category": "cross_domain",
+      "title": "Association is not causation",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_dashboard_customization",
+      "slug": "knowledge-dashboard-customization",
+      "entityType": "knowledge_topic",
+      "category": "dashboard",
+      "title": "Dashboard customization",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_chart_accessibility",
+      "slug": "knowledge-chart-accessibility",
+      "entityType": "knowledge_topic",
+      "category": "dashboard",
+      "title": "Accessible charts and tables",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_date_ranges",
+      "slug": "knowledge-date-ranges",
+      "entityType": "knowledge_topic",
+      "category": "dashboard",
+      "title": "Date ranges and time zones",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_export_methodology",
+      "slug": "knowledge-export-methodology",
+      "entityType": "knowledge_topic",
+      "category": "data",
+      "title": "Exporting metric methodology",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_photo_backup",
+      "slug": "knowledge-photo-backup",
+      "entityType": "knowledge_topic",
+      "category": "data",
+      "title": "Photo backup choices",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_local_storage_limits",
+      "slug": "knowledge-local-storage-limits",
+      "entityType": "knowledge_topic",
+      "category": "data",
+      "title": "Browser storage limits",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_data_deletion",
+      "slug": "knowledge-data-deletion",
+      "entityType": "knowledge_topic",
+      "category": "data",
+      "title": "Deletion and undo",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_import_conflicts",
+      "slug": "knowledge-import-conflicts",
+      "entityType": "knowledge_topic",
+      "category": "data",
+      "title": "Import conflicts",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_privacy_no_cloud",
+      "slug": "knowledge-privacy-no-cloud",
+      "entityType": "knowledge_topic",
+      "category": "privacy",
+      "title": "Local-only privacy model",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_no_health_score",
+      "slug": "knowledge-no-health-score",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "title": "Why there is no health score",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_no_body_rating",
+      "slug": "knowledge-no-body-rating",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "title": "Why photos are not rated",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_no_prediction",
+      "slug": "knowledge-no-prediction",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "title": "Why goal-date prediction is excluded",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "knowledge_no_diagnosis",
+      "slug": "knowledge-no-diagnosis",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "title": "Why analytics are not diagnosis",
+      "summary": "Draft identity. Factual content requires review and sources.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_today",
+      "slug": "widget-today",
+      "entityType": "dashboard_widget",
+      "category": "dashboard",
+      "title": "Today overview",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_active_program",
+      "slug": "widget-active-program",
+      "entityType": "dashboard_widget",
+      "category": "workout",
+      "title": "Active workout program",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_next_workout",
+      "slug": "widget-next-workout",
+      "entityType": "dashboard_widget",
+      "category": "workout",
+      "title": "Next workout",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_workout_consistency",
+      "slug": "widget-workout-consistency",
+      "entityType": "dashboard_widget",
+      "category": "workout",
+      "title": "Workout consistency",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_strength_trend",
+      "slug": "widget-strength-trend",
+      "entityType": "dashboard_widget",
+      "category": "workout",
+      "title": "Strength trend",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_personal_records",
+      "slug": "widget-personal-records",
+      "entityType": "dashboard_widget",
+      "category": "workout",
+      "title": "Recent personal records",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_body_weight",
+      "slug": "widget-body-weight",
+      "entityType": "dashboard_widget",
+      "category": "body_progress",
+      "title": "Body-weight trend",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_circumference",
+      "slug": "widget-circumference",
+      "entityType": "dashboard_widget",
+      "category": "body_progress",
+      "title": "Selected circumference trend",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_body_composition",
+      "slug": "widget-body-composition",
+      "entityType": "dashboard_widget",
+      "category": "body_progress",
+      "title": "Body-composition estimate",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_progress_photos",
+      "slug": "widget-progress-photos",
+      "entityType": "dashboard_widget",
+      "category": "body_progress",
+      "title": "Progress-photo shortcut",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_energy_intake",
+      "slug": "widget-energy-intake",
+      "entityType": "dashboard_widget",
+      "category": "nutrition",
+      "title": "Energy-intake summary",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_protein_intake",
+      "slug": "widget-protein-intake",
+      "entityType": "dashboard_widget",
+      "category": "nutrition",
+      "title": "Protein-intake summary",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_macro_summary",
+      "slug": "widget-macro-summary",
+      "entityType": "dashboard_widget",
+      "category": "nutrition",
+      "title": "Macronutrient summary",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_nutrient_coverage",
+      "slug": "widget-nutrient-coverage",
+      "entityType": "dashboard_widget",
+      "category": "nutrition",
+      "title": "Nutrient-data coverage",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_sleep_duration",
+      "slug": "widget-sleep-duration",
+      "entityType": "dashboard_widget",
+      "category": "recovery",
+      "title": "Sleep-duration trend",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_recovery_checkin",
+      "slug": "widget-recovery-checkin",
+      "entityType": "dashboard_widget",
+      "category": "recovery",
+      "title": "Recovery dimensions",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_cardio_minutes",
+      "slug": "widget-cardio-minutes",
+      "entityType": "dashboard_widget",
+      "category": "cardio",
+      "title": "Cardio minutes",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_cardio_distance",
+      "slug": "widget-cardio-distance",
+      "entityType": "dashboard_widget",
+      "category": "cardio",
+      "title": "Cardio distance by modality",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_goal_progress",
+      "slug": "widget-goal-progress",
+      "entityType": "dashboard_widget",
+      "category": "goals",
+      "title": "Selected goal progress",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    },
+    {
+      "id": "widget_data_quality",
+      "slug": "widget-data-quality",
+      "entityType": "dashboard_widget",
+      "category": "data",
+      "title": "Data-quality notices",
+      "summary": "Dashboard widget identity and contract; not a populated metric.",
+      "publicationStatus": "draft",
+      "sourceIds": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_cdc_bmi_about_2025",
+      "title": "About Body Mass Index (BMI)",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/bmi/about/index.html",
+      "roles": [
+        "bmi_definition",
+        "screening_boundary",
+        "limitations"
+      ],
+      "licenseNote": "Link and summarize. BMI is a screening measure and does not directly measure body fat."
+    },
+    {
+      "id": "src_cdc_nhanes_anthro_2021",
+      "title": "National Health and Nutrition Examination Survey: 2021 Anthropometry Procedures Manual",
+      "publisher": "U.S. Centers for Disease Control and Prevention / NCHS",
+      "year": 2021,
+      "type": "government_measurement_manual",
+      "url": "https://stacks.cdc.gov/view/cdc/127207",
+      "roles": [
+        "weight_measurement",
+        "circumference_protocols",
+        "quality_control",
+        "equipment"
+      ],
+      "licenseNote": "Use measurement principles and link to the manual; do not reproduce large copyrighted sections."
+    },
+    {
+      "id": "src_cdc_nhanes_bodycomp_2021",
+      "title": "National Health and Nutrition Examination Survey: 2021 Body Composition Procedures Manual",
+      "publisher": "U.S. Centers for Disease Control and Prevention / NCHS",
+      "year": 2021,
+      "type": "government_measurement_manual",
+      "url": "https://stacks.cdc.gov/view/cdc/127204",
+      "roles": [
+        "dexa_protocol",
+        "body_composition_reporting",
+        "quality_control"
+      ],
+      "licenseNote": "Use as a method and reporting reference, not as a consumer diagnosis guide."
+    },
+    {
+      "id": "src_who_waist_2011",
+      "title": "Waist Circumference and Waist-Hip Ratio: Report of a WHO Expert Consultation",
+      "publisher": "World Health Organization",
+      "year": 2011,
+      "type": "expert_report",
+      "url": "https://www.who.int/publications/i/item/9789241501491",
+      "roles": [
+        "waist_protocol",
+        "waist_hip_ratio",
+        "protocol_comparability",
+        "population_cutoff_caution"
+      ],
+      "licenseNote": "Store measurement protocol separately from risk thresholds. Threshold interpretation is population- and context-dependent."
+    },
+    {
+      "id": "src_bodycomp_standards_2026",
+      "title": "Methodological standards for body composition assessment: bioimpedance, DXA, CT and ultrasound",
+      "publisher": "International expert working group / Nutrition",
+      "year": 2026,
+      "type": "expert_endorsed_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41864542/",
+      "roles": [
+        "method_specific_reporting",
+        "longitudinal_monitoring",
+        "device_and_protocol_consistency",
+        "minimal_detectable_change"
+      ],
+      "licenseNote": "Summarize method limitations. Do not reproduce copyrighted tables."
+    },
+    {
+      "id": "src_bodycomp_limitations_2022",
+      "title": "Assessment of body composition: Intrinsic methodological limitations and statistical pitfalls",
+      "publisher": "Nutrition",
+      "year": 2022,
+      "type": "peer_reviewed_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35810580/",
+      "roles": [
+        "cross_method_limitations",
+        "statistical_pitfalls",
+        "population_assumptions"
+      ],
+      "licenseNote": "Use to justify method-specific longitudinal comparisons and uncertainty labels."
+    },
+    {
+      "id": "src_acsm_rt_2026",
+      "title": "ACSM Position Stand: Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults",
+      "publisher": "American College of Sports Medicine",
+      "year": 2026,
+      "type": "position_stand",
+      "url": "https://doi.org/10.1249/MSS.0000000000003897",
+      "roles": [
+        "strength_progress",
+        "training_consistency",
+        "goal_specific_outcomes"
+      ],
+      "licenseNote": "Use outcome and monitoring principles; Phase 04 remains the owner of training guidance."
+    },
+    {
+      "id": "src_1rm_reliability_2020",
+      "title": "Test-Retest Reliability of the One-Repetition Maximum Strength Assessment: A Systematic Review",
+      "publisher": "Sports Medicine - Open",
+      "year": 2020,
+      "type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32681399/",
+      "roles": [
+        "strength_measurement_reliability",
+        "familiarization",
+        "measurement_variation"
+      ],
+      "licenseNote": "Use to explain that strength tests and estimates still have measurement variation."
+    },
+    {
+      "id": "src_mdn_indexeddb",
+      "title": "IndexedDB API",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+      "roles": [
+        "local_structured_storage",
+        "transactions",
+        "offline_records"
+      ],
+      "licenseNote": "Implementation reference only."
+    },
+    {
+      "id": "src_mdn_storage",
+      "title": "StorageManager.persist()",
+      "publisher": "Mozilla Developer Network",
+      "year": 2026,
+      "type": "web_platform_documentation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/StorageManager/persist",
+      "roles": [
+        "persistent_storage_request",
+        "browser_denial_boundary"
+      ],
+      "licenseNote": "The browser may deny persistence; backup remains mandatory."
+    },
+    {
+      "id": "src_wcag_22",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "publisher": "World Wide Web Consortium",
+      "year": 2023,
+      "type": "accessibility_standard",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "roles": [
+        "accessible_charts",
+        "keyboard_access",
+        "contrast",
+        "status_announcements"
+      ],
+      "licenseNote": "Use WCAG 2.2 AA as the product target."
+    }
+  ],
+  "testVectors": [
+    {
+      "id": "weight_daily_median",
+      "input": {
+        "valuesKg": [
+          80.2,
+          80.0,
+          80.4
+        ]
+      },
+      "expected": {
+        "dailyMedianKg": 80.2
+      }
+    },
+    {
+      "id": "weight_7d_minimum",
+      "input": {
+        "dailyMediansKg": [
+          80.0,
+          79.8
+        ]
+      },
+      "expected": {
+        "status": "insufficient_samples"
+      }
+    },
+    {
+      "id": "weight_7d_mean",
+      "input": {
+        "dailyMediansKg": [
+          80.0,
+          79.8,
+          79.9,
+          79.7
+        ]
+      },
+      "expected": {
+        "meanKg": 79.85,
+        "sampleDays": 4
+      }
+    },
+    {
+      "id": "weekly_change",
+      "input": {
+        "latest7MeanKg": 79.5,
+        "prior7MeanKg": 80.1
+      },
+      "expected": {
+        "changeKgPerWeek": -0.6
+      }
+    },
+    {
+      "id": "circumference_mixed_protocol",
+      "input": {
+        "baselineProtocol": "protocol_waist_who_midpoint",
+        "latestProtocol": "protocol_waist_umbilicus"
+      },
+      "expected": {
+        "status": "blocked_mixed_protocol"
+      }
+    },
+    {
+      "id": "circumference_replicate_median",
+      "input": {
+        "replicatesMm": [
+          812,
+          808,
+          810
+        ]
+      },
+      "expected": {
+        "canonicalMm": 810
+      }
+    },
+    {
+      "id": "bodycomp_mixed_device",
+      "input": {
+        "baselineDevice": "bia_a",
+        "latestDevice": "bia_b"
+      },
+      "expected": {
+        "defaultComparison": "blocked_or_warned"
+      }
+    },
+    {
+      "id": "volume_load",
+      "input": {
+        "sets": [
+          {
+            "loadKg": 100,
+            "reps": 5
+          },
+          {
+            "loadKg": 100,
+            "reps": 5
+          },
+          {
+            "loadKg": 90,
+            "reps": 8
+          }
+        ]
+      },
+      "expected": {
+        "volumeLoad": 1720
+      }
+    },
+    {
+      "id": "volume_load_excludes_bodyweight",
+      "input": {
+        "mode": "bodyweight_reps",
+        "reps": 20
+      },
+      "expected": {
+        "volumeLoad": null
+      }
+    },
+    {
+      "id": "nutrition_incomplete_excluded",
+      "input": {
+        "days": [
+          {
+            "energy": 2000,
+            "review": "complete"
+          },
+          {
+            "energy": 900,
+            "review": "partial"
+          },
+          {
+            "energy": 2100,
+            "review": "complete"
+          }
+        ]
+      },
+      "expected": {
+        "averageEnergy": 2050,
+        "includedDays": 2
+      }
+    },
+    {
+      "id": "nutrient_coverage_not_adequacy",
+      "input": {
+        "coveragePercent": 60,
+        "recordedIronMg": 8
+      },
+      "expected": {
+        "message": "partial_coverage",
+        "deficiencyLabel": false
+      }
+    },
+    {
+      "id": "sleep_no_score",
+      "input": {
+        "sleepMinutes": [
+          420,
+          450,
+          390
+        ]
+      },
+      "expected": {
+        "medianMinutes": 420,
+        "compositeScore": null
+      }
+    },
+    {
+      "id": "cardio_no_calories",
+      "input": {
+        "durationMinutes": 45,
+        "distanceKm": 6
+      },
+      "expected": {
+        "calories": null
+      }
+    },
+    {
+      "id": "cross_domain_no_causality",
+      "input": {
+        "weightDown": true,
+        "trainingVolumeUp": true
+      },
+      "expected": {
+        "causalStatement": null
+      }
+    },
+    {
+      "id": "photo_exif_removed",
+      "input": {
+        "originalHasGps": true
+      },
+      "expected": {
+        "storedSanitizedCopyHasGps": false,
+        "originalStored": false
+      }
+    },
+    {
+      "id": "photo_backup_default",
+      "input": {
+        "includePhotoBinaries": false
+      },
+      "expected": {
+        "metadataIncluded": true,
+        "binaryIncluded": false
+      }
+    },
+    {
+      "id": "goal_no_prediction",
+      "input": {
+        "baseline": 80,
+        "target": 75,
+        "recentRate": -0.5
+      },
+      "expected": {
+        "predictedCompletionDate": null
+      }
+    },
+    {
+      "id": "method_version_visible",
+      "input": {
+        "metricId": "metric_weight_7d_mean",
+        "methodVersion": "1.0.0"
+      },
+      "expected": {
+        "detailsVisible": true
+      }
+    }
+  ],
+  "globalRules": {
+    "noCompositeHealthScore": true,
+    "noAutomaticCausalClaims": true,
+    "noBodyFatCalculator": true,
+    "noPhotoAnalysis": true,
+    "noExerciseCalories": true,
+    "historicalSourceRecordsRemainImmutable": true,
+    "derivedCachesExcludedFromBackup": true,
+    "photoBinariesExcludedFromDefaultJsonBackup": true
+  }
+}

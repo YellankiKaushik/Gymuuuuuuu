@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0.0",
+  "module": "phase09_diet_planning",
+  "effectiveDate": "2026-08-05",
+  "populationScope": {
+    "minimumAgeYears": 19,
+    "maximumAgeYears": 100,
+    "supportedLifeStages": [
+      "nonpregnant_nonlactating_adult"
+    ],
+    "hardExclusions": [
+      "under_19",
+      "pregnancy",
+      "lactation"
+    ],
+    "professionalReviewFlags": [
+      "diagnosed_eating_disorder",
+      "chronic_kidney_disease",
+      "liver_disease",
+      "diabetes_using_glucose_lowering_medication",
+      "bariatric_surgery_history",
+      "unintentional_weight_loss",
+      "medical_diet_prescription",
+      "elite_or_extreme_endurance_training"
+    ]
+  },
+  "sources": [
+    {
+      "id": "nasem_energy_2023",
+      "title": "Dietary Reference Intakes for Energy",
+      "publisher": "National Academies of Sciences, Engineering, and Medicine",
+      "year": 2023,
+      "url": "https://doi.org/10.17226/26818",
+      "use": "Primary adult EER equations, PAL categories, model performance and limitations."
+    },
+    {
+      "id": "niddk_body_weight_planner",
+      "title": "Body Weight Planner",
+      "publisher": "National Institute of Diabetes and Digestive and Kidney Diseases",
+      "year": 2017,
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/body-weight-planner",
+      "use": "Adult-only boundary, dynamic-weight-change precedent, low-intake and low-BMI warnings."
+    },
+    {
+      "id": "cdc_gradual_weight_loss_2025",
+      "title": "Steps for Losing Weight",
+      "publisher": "Centers for Disease Control and Prevention",
+      "year": 2025,
+      "url": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html",
+      "use": "Gradual, steady weight-loss context and non-calculator lifestyle framing."
+    },
+    {
+      "id": "acsm_nutrition_performance_2016",
+      "title": "Nutrition and Athletic Performance - Joint Position Statement",
+      "publisher": "Academy of Nutrition and Dietetics, Dietitians of Canada, and American College of Sports Medicine",
+      "year": 2016,
+      "url": "https://doi.org/10.1249/MSS.0000000000000852",
+      "use": "Exercise-related protein and carbohydrate context; referral boundary for individualised sports nutrition."
+    },
+    {
+      "id": "issn_protein_2017",
+      "title": "International Society of Sports Nutrition Position Stand: Protein and Exercise",
+      "publisher": "International Society of Sports Nutrition",
+      "year": 2017,
+      "url": "https://doi.org/10.1186/s12970-017-0177-8",
+      "use": "Resistance-training protein range and meal-distribution context for healthy exercising adults."
+    },
+    {
+      "id": "nasem_macronutrients_2005",
+      "title": "Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids",
+      "publisher": "Institute of Medicine / National Academies",
+      "year": 2005,
+      "url": "https://doi.org/10.17226/10490",
+      "use": "Adult AMDR ranges, protein RDA and fibre planning benchmark."
+    },
+    {
+      "id": "dga_2025_2030",
+      "title": "Dietary Guidelines for Americans, 2025-2030",
+      "publisher": "USDA and HHS",
+      "year": 2026,
+      "url": "https://www.realfood.gov/",
+      "use": "Current food-pattern principle: flexible, whole-food-focused planning rather than exact universal menus."
+    },
+    {
+      "id": "mifflin_1990",
+      "title": "A New Predictive Equation for Resting Energy Expenditure in Healthy Individuals",
+      "publisher": "American Journal of Clinical Nutrition",
+      "year": 1990,
+      "url": "https://doi.org/10.1093/ajcn/51.2.241",
+      "use": "Optional educational comparison only; not the primary Phase 09 calorie-target method."
+    }
+  ],
+  "activityCategories": [
+    {
+      "id": "inactive",
+      "label": "Inactive",
+      "palMin": 1.0,
+      "palMaxExclusive": 1.53,
+      "description": "Daily living with minimal additional physical activity. Selection is an approximation, not a measured PAL."
+    },
+    {
+      "id": "low_active",
+      "label": "Low active",
+      "palMin": 1.53,
+      "palMaxExclusive": 1.68,
+      "description": "Daily living plus some routine movement or planned activity."
+    },
+    {
+      "id": "active",
+      "label": "Active",
+      "palMin": 1.68,
+      "palMaxExclusive": 1.85,
+      "description": "Daily living plus regular moderate-to-vigorous activity."
+    },
+    {
+      "id": "very_active",
+      "label": "Very active",
+      "palMin": 1.85,
+      "palMaxExclusive": 2.5,
+      "description": "High sustained occupational, transport or training activity. Extreme athletes are outside this calculator's intended population."
+    }
+  ],
+  "energyModel": {
+    "id": "nasem_2023_adult_eer",
+    "version": "2023.1",
+    "sourceId": "nasem_energy_2023",
+    "inputUnits": {
+      "age": "years",
+      "height": "cm",
+      "weight": "kg"
+    },
+    "sexVariableLabel": "Sex used by the source equation",
+    "equations": {
+      "male": {
+        "inactive": {
+          "intercept": 753.07,
+          "ageCoefficient": -10.83,
+          "heightCoefficient": 6.5,
+          "weightCoefficient": 14.1
+        },
+        "low_active": {
+          "intercept": 581.47,
+          "ageCoefficient": -10.83,
+          "heightCoefficient": 8.3,
+          "weightCoefficient": 14.94
+        },
+        "active": {
+          "intercept": 1004.82,
+          "ageCoefficient": -10.83,
+          "heightCoefficient": 6.52,
+          "weightCoefficient": 15.91
+        },
+        "very_active": {
+          "intercept": -517.88,
+          "ageCoefficient": -10.83,
+          "heightCoefficient": 15.61,
+          "weightCoefficient": 19.11
+        }
+      },
+      "female": {
+        "inactive": {
+          "intercept": 584.9,
+          "ageCoefficient": -7.01,
+          "heightCoefficient": 5.72,
+          "weightCoefficient": 11.71
+        },
+        "low_active": {
+          "intercept": 575.77,
+          "ageCoefficient": -7.01,
+          "heightCoefficient": 6.6,
+          "weightCoefficient": 12.14
+        },
+        "active": {
+          "intercept": 710.25,
+          "ageCoefficient": -7.01,
+          "heightCoefficient": 6.54,
+          "weightCoefficient": 12.34
+        },
+        "very_active": {
+          "intercept": 511.83,
+          "ageCoefficient": -7.01,
+          "heightCoefficient": 9.07,
+          "weightCoefficient": 12.56
+        }
+      }
+    },
+    "performance": {
+      "male": {
+        "rmseKcalPerDay": 339,
+        "mapePercent": 9,
+        "maeKcalPerDay": 266
+      },
+      "female": {
+        "rmseKcalPerDay": 246,
+        "mapePercent": 9,
+        "maeKcalPerDay": 191
+      }
+    },
+    "resultRule": "Round the headline estimate to the nearest 25 kcal/day, retain the unrounded value internally, and display model error separately rather than as a guaranteed confidence interval."
+  },
+  "goalAdjustments": {
+    "maintenance": {
+      "allowedPercents": [
+        0
+      ],
+      "defaultPercent": 0
+    },
+    "fat_loss": {
+      "allowedPercents": [
+        -5,
+        -10,
+        -15,
+        -20
+      ],
+      "defaultPercent": -10,
+      "hardMinPercent": -20
+    },
+    "muscle_gain": {
+      "allowedPercents": [
+        5,
+        10,
+        15
+      ],
+      "defaultPercent": 5,
+      "hardMaxPercent": 15
+    },
+    "recomposition": {
+      "allowedPercents": [
+        -5,
+        0
+      ],
+      "defaultPercent": 0
+    },
+    "manual": {
+      "minPercent": -20,
+      "maxPercent": 15,
+      "requiresReason": true
+    }
+  },
+  "safetyRules": {
+    "absoluteMinimumKcalPerDay": 1000,
+    "blockLossGoalWhenCurrentBmiBelow": 18.5,
+    "blockGoalWeightBmiBelow": 18.5,
+    "warnGoalWeightBmiAbove": 30,
+    "warnWhenTargetBelowMaintenanceByPercent": 15,
+    "warnWhenTargetAboveMaintenanceByPercent": 10,
+    "noTargetDatePrediction": true,
+    "noExerciseCalorieAddBack": true,
+    "noAutomaticWeeklyAdjustment": true
+  },
+  "proteinPresets": [
+    {
+      "id": "general_adult_reference",
+      "label": "General adult reference",
+      "minGPerKg": 0.8,
+      "maxGPerKg": 0.8,
+      "defaultGPerKg": 0.8,
+      "sourceIds": [
+        "nasem_macronutrients_2005"
+      ],
+      "notes": "Population reference for healthy adults; not an athletic optimisation target."
+    },
+    {
+      "id": "regular_exercise",
+      "label": "Regular exercise",
+      "minGPerKg": 1.2,
+      "maxGPerKg": 1.6,
+      "defaultGPerKg": 1.4,
+      "sourceIds": [
+        "acsm_nutrition_performance_2016"
+      ],
+      "notes": "Planning range for healthy adults engaged in regular training."
+    },
+    {
+      "id": "strength_hypertrophy",
+      "label": "Strength or hypertrophy training",
+      "minGPerKg": 1.4,
+      "maxGPerKg": 2.0,
+      "defaultGPerKg": 1.6,
+      "sourceIds": [
+        "issn_protein_2017",
+        "acsm_nutrition_performance_2016"
+      ],
+      "notes": "Use as a range. Higher is not automatically better."
+    },
+    {
+      "id": "endurance_or_mixed",
+      "label": "Endurance or mixed training",
+      "minGPerKg": 1.2,
+      "maxGPerKg": 2.0,
+      "defaultGPerKg": 1.4,
+      "sourceIds": [
+        "acsm_nutrition_performance_2016"
+      ],
+      "notes": "The suitable point depends on training load, energy availability and recovery demands."
+    }
+  ],
+  "macroRules": {
+    "energyPerGramKcal": {
+      "protein": 4,
+      "carbohydrate": 4,
+      "fat": 9,
+      "alcohol": 7
+    },
+    "adultAmdrPercentEnergy": {
+      "protein": {
+        "min": 10,
+        "max": 35
+      },
+      "carbohydrate": {
+        "min": 45,
+        "max": 65
+      },
+      "fat": {
+        "min": 20,
+        "max": 35
+      }
+    },
+    "defaultFatPercent": 25,
+    "fiberGramsPer1000Kcal": 14,
+    "carbohydrateCalculation": "remaining_energy_after_selected_protein_and_fat",
+    "doNotForceAthleteCarbRangeAndCalorieBudgetSimultaneously": true
+  },
+  "mealDistribution": {
+    "allowedMealCount": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "defaultMealCount": 4,
+    "modes": [
+      "even",
+      "custom"
+    ],
+    "proteinDistributionNote": "Even distribution is a planning convenience, not a claim that every meal must be identical."
+  },
+  "storage": {
+    "database": "fitness-os",
+    "stores": [
+      "dietPlans",
+      "dietPlannerSettings",
+      "dietPlanAuditLog"
+    ],
+    "localOnly": true,
+    "exportFormats": [
+      "json",
+      "csv"
+    ],
+    "formulaMetadataRequired": true
+  },
+  "testVectors": [
+    {
+      "id": "eer_male_active",
+      "inputs": {
+        "sex": "male",
+        "ageYears": 30,
+        "heightCm": 175,
+        "weightKg": 75,
+        "activityCategory": "active"
+      },
+      "expectedEerKcal": 3014.17,
+      "headlineRoundedKcal": 3025
+    },
+    {
+      "id": "eer_female_low_active",
+      "inputs": {
+        "sex": "female",
+        "ageYears": 28,
+        "heightCm": 165,
+        "weightKg": 60,
+        "activityCategory": "low_active"
+      },
+      "expectedEerKcal": 2196.89,
+      "headlineRoundedKcal": 2200
+    },
+    {
+      "id": "macro_plan_example",
+      "inputs": {
+        "targetEnergyKcal": 2500,
+        "weightKg": 75,
+        "proteinGPerKg": 1.6,
+        "fatPercentEnergy": 30
+      },
+      "expected": {
+        "proteinGrams": 120,
+        "proteinKcal": 480,
+        "fatGrams": 83.33,
+        "fatKcal": 750,
+        "carbohydrateGrams": 317.5,
+        "carbohydrateKcal": 1270,
+        "fiberGrams": 35
+      }
+    }
+  ]
+}

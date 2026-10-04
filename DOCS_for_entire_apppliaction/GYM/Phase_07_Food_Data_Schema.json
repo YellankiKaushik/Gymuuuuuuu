@@ -1,0 +1,715 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fitness-os-food-record.schema.json",
+  "title": "Fitness OS Food Encyclopedia Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "canonicalName",
+    "aliases",
+    "categoryId",
+    "subgroupId",
+    "status",
+    "compositionStatus",
+    "compositionProfiles",
+    "editorial"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^food_[a-z0-9_]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "canonicalName": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 160
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 120
+      }
+    },
+    "regionalNames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/regionalName"
+      }
+    },
+    "scientificName": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 180
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 1200
+    },
+    "categoryId": {
+      "enum": [
+        "fruits",
+        "vegetables",
+        "leafy_greens",
+        "legumes_pulses",
+        "grains_cereals_millets",
+        "nuts_seeds",
+        "dairy_eggs",
+        "meat_poultry",
+        "fish_seafood",
+        "fats_oils",
+        "spices_herbs",
+        "beverages",
+        "fungi_algae",
+        "sweeteners"
+      ]
+    },
+    "subgroupId": {
+      "enum": [
+        "citrus",
+        "berries",
+        "tropical_fruits",
+        "stone_fruits",
+        "pome_fruits",
+        "melons",
+        "dried_fruits",
+        "roots_tubers",
+        "gourds_squashes",
+        "cruciferous",
+        "alliums",
+        "fruiting_vegetables",
+        "pods_stems",
+        "leafy_indian",
+        "leafy_global",
+        "dry_beans",
+        "lentils",
+        "peas_grams",
+        "soy_legumes",
+        "rice",
+        "wheat_related",
+        "millets",
+        "other_grains",
+        "tree_nuts",
+        "seeds",
+        "milk_cultured",
+        "cheese_paneer",
+        "eggs",
+        "poultry",
+        "red_meat",
+        "organ_meat",
+        "finfish",
+        "shellfish",
+        "plant_oils",
+        "animal_fats",
+        "whole_spices",
+        "fresh_herbs_aromatics",
+        "powdered_spices",
+        "tea_coffee",
+        "other_beverages",
+        "mushrooms",
+        "sea_vegetables",
+        "sugars_syrups"
+      ]
+    },
+    "status": {
+      "enum": [
+        "draft_identity",
+        "staged",
+        "reviewed",
+        "published",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "compositionStatus": {
+      "enum": [
+        "unpopulated",
+        "partial",
+        "complete_for_mvp",
+        "superseded"
+      ]
+    },
+    "defaultProfileId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^profile_[a-z0-9_]+$"
+    },
+    "dietaryTags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "allergenTags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "sourceSearchTerms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160
+      }
+    },
+    "preferredSourceOrder": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "usda_fdc_foundation_2026_04",
+          "usda_fdc_fndds_2021_2023",
+          "usda_fdc_sr_legacy_2018",
+          "icmr_nin_ifct_2017_reference",
+          "fao_infoods_guidelines"
+        ]
+      }
+    },
+    "indiaReferenceCandidate": {
+      "type": "boolean"
+    },
+    "compositionProfiles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/compositionProfile"
+      }
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mediaAsset"
+      }
+    },
+    "editorial": {
+      "$ref": "#/$defs/editorial"
+    }
+  },
+  "$defs": {
+    "regionalName": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "language",
+        "name"
+      ],
+      "properties": {
+        "language": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 40
+        },
+        "script": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 40
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        }
+      }
+    },
+    "compositionProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profileId",
+        "label",
+        "foodState",
+        "processingLevel",
+        "basis",
+        "ediblePortion",
+        "nutrients",
+        "portions",
+        "sourceRecords",
+        "review"
+      ],
+      "properties": {
+        "profileId": {
+          "type": "string",
+          "pattern": "^profile_[a-z0-9_]+$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 180
+        },
+        "foodState": {
+          "enum": [
+            "raw",
+            "boiled",
+            "steamed",
+            "baked",
+            "roasted",
+            "fried",
+            "grilled",
+            "dried",
+            "canned",
+            "frozen",
+            "fermented",
+            "pasteurized",
+            "powdered",
+            "refined",
+            "unrefined",
+            "other"
+          ]
+        },
+        "processingLevel": {
+          "enum": [
+            "unprocessed",
+            "minimally_processed",
+            "processed_ingredient",
+            "processed_food",
+            "not_classified"
+          ]
+        },
+        "preparationNotes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "basis": {
+          "const": "per_100g_edible_portion"
+        },
+        "ediblePortion": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "percent",
+            "status"
+          ],
+          "properties": {
+            "percent": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            },
+            "status": {
+              "enum": [
+                "source_reported",
+                "compiler_calculated",
+                "not_available"
+              ]
+            }
+          }
+        },
+        "nutrients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nutrientMeasurement"
+          }
+        },
+        "portions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/portion"
+          }
+        },
+        "sourceRecords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/sourceRecord"
+          }
+        },
+        "review": {
+          "$ref": "#/$defs/profileReview"
+        }
+      }
+    },
+    "nutrientMeasurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nutrientId",
+        "status",
+        "unit",
+        "value",
+        "sourceRecordId"
+      ],
+      "properties": {
+        "nutrientId": {
+          "enum": [
+            "energy_kcal",
+            "energy_kj",
+            "water_g",
+            "protein_g",
+            "carbohydrate_total_g",
+            "carbohydrate_available_g",
+            "fiber_total_g",
+            "sugars_total_g",
+            "fat_total_g",
+            "fat_saturated_g",
+            "fat_monounsaturated_g",
+            "fat_polyunsaturated_g",
+            "omega_3_g",
+            "omega_6_g",
+            "cholesterol_mg",
+            "sodium_mg",
+            "potassium_mg",
+            "calcium_mg",
+            "iron_mg",
+            "magnesium_mg",
+            "phosphorus_mg",
+            "zinc_mg",
+            "copper_mg",
+            "manganese_mg",
+            "selenium_ug",
+            "iodine_ug",
+            "vitamin_a_rae_ug",
+            "retinol_ug",
+            "beta_carotene_ug",
+            "thiamin_mg",
+            "riboflavin_mg",
+            "niacin_mg",
+            "pantothenic_acid_mg",
+            "vitamin_b6_mg",
+            "biotin_ug",
+            "folate_food_ug",
+            "folic_acid_ug",
+            "folate_dfe_ug",
+            "vitamin_b12_ug",
+            "vitamin_c_mg",
+            "vitamin_d_ug",
+            "vitamin_e_mg",
+            "vitamin_k_ug",
+            "choline_mg"
+          ]
+        },
+        "status": {
+          "enum": [
+            "measured",
+            "calculated",
+            "imputed",
+            "estimated",
+            "trace",
+            "not_detected",
+            "not_available"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "minValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maxValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "sourceRecordId": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 180
+        },
+        "methodNote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "significantFigures": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 8
+        }
+      }
+    },
+    "portion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "portionId",
+        "label",
+        "grams",
+        "status",
+        "sourceRecordId"
+      ],
+      "properties": {
+        "portionId": {
+          "type": "string",
+          "pattern": "^portion_[a-z0-9_]+$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "grams": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 10000
+        },
+        "status": {
+          "enum": [
+            "source_reported",
+            "measured",
+            "estimated"
+          ]
+        },
+        "sourceRecordId": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 180
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        }
+      }
+    },
+    "sourceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceRecordId",
+        "sourceId",
+        "externalFoodId",
+        "release",
+        "accessedAt",
+        "matchType"
+      ],
+      "properties": {
+        "sourceRecordId": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 180
+        },
+        "sourceId": {
+          "enum": [
+            "usda_fdc_foundation_2026_04",
+            "usda_fdc_fndds_2021_2023",
+            "usda_fdc_sr_legacy_2018",
+            "icmr_nin_ifct_2017_reference",
+            "fao_infoods_guidelines"
+          ]
+        },
+        "externalFoodId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "externalDescription": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "release": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 80
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "matchType": {
+          "enum": [
+            "exact",
+            "close_match",
+            "compiled",
+            "manual_entry"
+          ]
+        },
+        "licenseNote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 800
+        }
+      }
+    },
+    "mediaAsset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "src",
+        "alt",
+        "license",
+        "attribution",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^media_[a-z0-9_]+$"
+        },
+        "kind": {
+          "enum": [
+            "image",
+            "illustration"
+          ]
+        },
+        "src": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 500
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 240
+        },
+        "license": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 500
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "rights_verified",
+            "rejected"
+          ]
+        }
+      }
+    },
+    "profileReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reviewedAt",
+        "reviewer",
+        "qualityNotes"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "not_started",
+            "source_checked",
+            "numeric_checked",
+            "approved",
+            "rejected"
+          ]
+        },
+        "reviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "qualityNotes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          }
+        }
+      }
+    },
+    "editorial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewStatus",
+        "reviewedAt",
+        "reviewer",
+        "notes"
+      ],
+      "properties": {
+        "reviewStatus": {
+          "enum": [
+            "not_started",
+            "identity_checked",
+            "profiles_checked",
+            "approved",
+            "rejected"
+          ]
+        },
+        "reviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 1200
+        }
+      }
+    }
+  }
+}

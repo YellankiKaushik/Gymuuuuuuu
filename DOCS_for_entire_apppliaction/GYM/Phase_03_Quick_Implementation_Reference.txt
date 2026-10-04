@@ -1,0 +1,44 @@
+PHASE 03 — QUICK IMPLEMENTATION REFERENCE
+==========================================
+
+PURPOSE
+Build the Exercise Encyclopedia only. Do not build workout programs or tracking.
+
+UPLOAD TO LOVABLE
+1. Phase 03 Markdown specification.
+2. Phase 03 Exercise Data Schema JSON.
+3. Phase 03 Seed Exercise Taxonomy JSON.
+4. Phase 03 Lovable Prompt Package.
+Keep Phase 00 Project Knowledge active and attach prior phase specifications/data when Lovable needs cross-phase context.
+
+CORE ROUTES
+- /exercises
+- /exercises/$slug
+
+CORE DATA RULES
+- Stable exercise_* IDs.
+- All published muscle references must resolve to Phase 02 muscle IDs.
+- Draft identities are not public content.
+- No unknown or broken relationship IDs.
+- No numeric guidance without source IDs and confidence.
+- No muscle-activation percentages in the MVP.
+
+CORE DETAIL SECTIONS
+Overview; muscles/actions; setup; numbered execution; checkpoints/cues; mistakes/corrections; variations/regressions/progressions/substitutions; contextual programming; safety; media; sources.
+
+MEDIA RULES
+- Reviewed links only.
+- Click-to-load; no autoplay.
+- Prefer youtube-nocookie.com.
+- Captions when available.
+- External fallback.
+- Text remains usable when media fails.
+
+SEED COVERAGE
+184 draft identities. Publish only the first 100–120 records that fully pass source, technique, anatomy, safety and media review.
+
+HARD EXCLUSIONS
+No authentication, backend, Supabase, cloud CMS, scraping, automatic YouTube search, copied exercise database, medical treatment, camera form analysis, workout plans, logs or fabricated content.
+
+SHIP GATE
+Schema validation, Phase 02 cross-file validation, type-check, lint, tests, accessibility review, responsive review and production build must pass before Phase 04.

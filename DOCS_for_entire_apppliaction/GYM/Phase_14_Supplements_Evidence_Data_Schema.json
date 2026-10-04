@@ -1,0 +1,897 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase-14-supplements-evidence.json",
+  "title": "Fitness OS Phase 14 Supplements and Evidence Library Backup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "exportedAt",
+    "moduleId",
+    "personalProducts",
+    "productLabelVersions",
+    "supplementTrials",
+    "intakeLogs",
+    "adverseEvents",
+    "safetyContexts",
+    "savedComparisons",
+    "settings",
+    "auditEvents",
+    "deletedRecords"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "exportedAt": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "moduleId": {
+      "const": "phase_14_supplements_evidence"
+    },
+    "personalProducts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/personalProduct"
+      }
+    },
+    "productLabelVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/productLabelVersion"
+      }
+    },
+    "supplementTrials": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/supplementTrial"
+      }
+    },
+    "intakeLogs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/intakeLog"
+      }
+    },
+    "adverseEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/adverseEvent"
+      }
+    },
+    "safetyContexts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/safetyContext"
+      }
+    },
+    "savedComparisons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/savedComparison"
+      }
+    },
+    "settings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/setting"
+      }
+    },
+    "auditEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/auditEvent"
+      }
+    },
+    "deletedRecords": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/deletedRecord"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "localDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "ingredientAmount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ingredientIdentityId",
+        "labelName",
+        "form",
+        "amount",
+        "unit",
+        "amountDisclosure",
+        "sourceText"
+      ],
+      "properties": {
+        "ingredientIdentityId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "labelName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "form": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "amount": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 40
+        },
+        "amountDisclosure": {
+          "enum": [
+            "exact",
+            "proprietary_blend_total_only",
+            "not_disclosed",
+            "unknown"
+          ]
+        },
+        "sourceText": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      }
+    },
+    "certificationVerification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemeId",
+        "status",
+        "productOrLotIdentifier",
+        "verifiedAt",
+        "registryUrl",
+        "evidenceNote"
+      ],
+      "properties": {
+        "schemeId": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "verified_current",
+            "verified_historical",
+            "not_found",
+            "not_checked",
+            "registry_unavailable",
+            "uncertain"
+          ]
+        },
+        "productOrLotIdentifier": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        },
+        "verifiedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "registryUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "evidenceNote": {
+          "type": "string",
+          "maxLength": 2000
+        }
+      }
+    },
+    "personalProduct": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "brand",
+        "currentLabelVersionId",
+        "purchaseCountry",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "brand": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "currentLabelVersionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "purchaseCountry": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 100
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "productLabelVersion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "personalProductId",
+        "versionNumber",
+        "capturedAt",
+        "servingSizeText",
+        "servingsPerContainer",
+        "ingredients",
+        "otherIngredientsText",
+        "lotNumber",
+        "expiryDate",
+        "certifications",
+        "warningsText",
+        "labelImageReferences",
+        "notes",
+        "immutable"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "personalProductId": {
+          "$ref": "#/$defs/id"
+        },
+        "versionNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "capturedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "servingSizeText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        },
+        "servingsPerContainer": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "ingredients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ingredientAmount"
+          }
+        },
+        "otherIngredientsText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 5000
+        },
+        "lotNumber": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "expiryDate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/localDate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/certificationVerification"
+          }
+        },
+        "warningsText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 5000
+        },
+        "labelImageReferences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 10000
+        },
+        "immutable": {
+          "const": true
+        }
+      }
+    },
+    "supplementTrial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "labelVersionId",
+        "ingredientIdentityIds",
+        "reasonForTrial",
+        "primaryOutcomeIds",
+        "baselineStartDate",
+        "trialStartDate",
+        "plannedEndDate",
+        "actualEndDate",
+        "status",
+        "plannedProtocolText",
+        "professionalReview",
+        "stopRules",
+        "notes",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "labelVersionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ingredientIdentityIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "reasonForTrial": {
+          "type": "string",
+          "maxLength": 3000
+        },
+        "primaryOutcomeIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "baselineStartDate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/localDate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "trialStartDate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/localDate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "plannedEndDate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/localDate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actualEndDate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/localDate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "baseline",
+            "active",
+            "paused",
+            "completed",
+            "stopped_for_adverse_event",
+            "abandoned"
+          ]
+        },
+        "plannedProtocolText": {
+          "type": "string",
+          "maxLength": 5000
+        },
+        "professionalReview": {
+          "enum": [
+            "not_recorded",
+            "not_reviewed",
+            "doctor",
+            "pharmacist",
+            "registered_dietitian",
+            "sports_dietitian",
+            "other_qualified_professional"
+          ]
+        },
+        "stopRules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 10000
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "intakeLog": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "localDate",
+        "timezone",
+        "takenAt",
+        "trialId",
+        "labelVersionId",
+        "servings",
+        "servingText",
+        "ingredientSnapshot",
+        "contextTags",
+        "notes",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "localDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "takenAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "trialId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "labelVersionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "servings": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "servingText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        },
+        "ingredientSnapshot": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ingredientAmount"
+          }
+        },
+        "contextTags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 5000
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "adverseEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "localDate",
+        "timezone",
+        "onsetAt",
+        "severity",
+        "symptoms",
+        "relatedIntakeLogIds",
+        "suspectedProductIds",
+        "actionTaken",
+        "resolvedAt",
+        "professionalCare",
+        "reportingJurisdiction",
+        "externalReportReference",
+        "notes",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "localDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "onsetAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "severity": {
+          "enum": [
+            "mild",
+            "moderate",
+            "severe",
+            "urgent_or_emergency",
+            "unknown"
+          ]
+        },
+        "symptoms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "relatedIntakeLogIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "suspectedProductIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "actionTaken": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "resolvedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "professionalCare": {
+          "enum": [
+            "none",
+            "planned",
+            "pharmacist",
+            "doctor",
+            "urgent_care",
+            "emergency_department",
+            "hospitalized",
+            "unknown"
+          ]
+        },
+        "reportingJurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "externalReportReference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 10000
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "safetyContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "contextType",
+        "active",
+        "userLabel",
+        "details",
+        "professionalAdviceRecorded",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "contextType": {
+          "enum": [
+            "under_18",
+            "pregnancy_or_lactation",
+            "medication_use",
+            "kidney_condition",
+            "liver_condition",
+            "cardiovascular_condition",
+            "bleeding_risk",
+            "scheduled_surgery",
+            "allergy_or_intolerance",
+            "tested_athlete",
+            "other_professional_review_needed"
+          ]
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "userLabel": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "details": {
+          "type": "string",
+          "maxLength": 5000
+        },
+        "professionalAdviceRecorded": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "savedComparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "ingredientIdentityIds",
+        "claimIds",
+        "createdAt",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "ingredientIdentityIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 5000
+        }
+      }
+    },
+    "setting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value",
+        "updatedAt"
+      ],
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "value": {},
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "auditEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "eventType",
+        "entityType",
+        "entityId",
+        "occurredAt",
+        "details"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "eventType": {
+          "type": "string"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "entityId": {
+          "type": "string"
+        },
+        "occurredAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    },
+    "deletedRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entityType",
+        "entityId",
+        "deletedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "entityId": {
+          "type": "string"
+        },
+        "deletedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    }
+  }
+}

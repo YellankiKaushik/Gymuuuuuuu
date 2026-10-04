@@ -1,0 +1,3430 @@
+{
+  "referenceDataVersion": "1.0.0",
+  "reviewedThrough": "5 August 2026",
+  "moduleId": "phase_14_supplements_evidence",
+  "seedRecords": [
+    {
+      "id": "topic_supplement_definition",
+      "slug": "topic-supplement-definition",
+      "title": "What Counts as a Dietary Supplement",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_food_first_principle",
+      "slug": "topic-food-first-principle",
+      "title": "Food-First Decision Making",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_need_before_product",
+      "slug": "topic-need-before-product",
+      "title": "Define the Need Before Choosing a Product",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_ingredient_vs_product",
+      "slug": "topic-ingredient-vs-product",
+      "title": "Ingredient Evidence vs Product Evidence",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_single_vs_multi_ingredient",
+      "slug": "topic-single-vs-multi-ingredient",
+      "title": "Single-Ingredient vs Multi-Ingredient Products",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_supplement_not_medicine",
+      "slug": "topic-supplement-not-medicine",
+      "title": "Supplement, Food and Medicine Boundaries",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_jurisdiction_matters",
+      "slug": "topic-jurisdiction-matters",
+      "title": "Why Legal Status Depends on Jurisdiction",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_label_claims_not_proof",
+      "slug": "topic-label-claims-not-proof",
+      "title": "Why Label Claims Are Not Proof",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_natural_not_safe",
+      "slug": "topic-natural-not-safe",
+      "title": "Why Natural Does Not Mean Safe",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_more_not_better",
+      "slug": "topic-more-not-better",
+      "title": "Why More Is Not Better",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_short_term_vs_long_term",
+      "slug": "topic-short-term-vs-long-term",
+      "title": "Short-Term Performance vs Long-Term Health",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_response_variability",
+      "slug": "topic-response-variability",
+      "title": "Why Responses Differ Between People",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_dietary_gap_vs_ergogenic_use",
+      "slug": "topic-dietary-gap-vs-ergogenic-use",
+      "title": "Correcting a Deficiency vs Seeking an Ergogenic Effect",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_cost_opportunity",
+      "slug": "topic-cost-opportunity",
+      "title": "Cost, Convenience and Opportunity Cost",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_professional_roles",
+      "slug": "topic-professional-roles",
+      "title": "When to Use a Doctor, Pharmacist or Sports Dietitian",
+      "entityType": "knowledge_topic",
+      "category": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_claim_level_evidence",
+      "slug": "topic-claim-level-evidence",
+      "title": "Claim-Level Evidence Model",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_outcome_specificity",
+      "slug": "topic-outcome-specificity",
+      "title": "Outcome-Specific Evidence",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_population_specificity",
+      "slug": "topic-population-specificity",
+      "title": "Population-Specific Evidence",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_formulation_specificity",
+      "slug": "topic-formulation-specificity",
+      "title": "Formulation and Chemical Form Matter",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_dose_protocol_specificity",
+      "slug": "topic-dose-protocol-specificity",
+      "title": "Dose, Timing and Protocol Matter",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_acute_vs_chronic",
+      "slug": "topic-acute-vs-chronic",
+      "title": "Acute vs Chronic Supplementation",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_surrogate_vs_meaningful",
+      "slug": "topic-surrogate-vs-meaningful",
+      "title": "Surrogate Outcomes vs Meaningful Outcomes",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_statistical_vs_practical",
+      "slug": "topic-statistical-vs-practical",
+      "title": "Statistical vs Practical Significance",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_effect_size_context",
+      "slug": "topic-effect-size-context",
+      "title": "Effect Size and Baseline Context",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_heterogeneity",
+      "slug": "topic-heterogeneity",
+      "title": "Heterogeneity and Individual Response",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_publication_bias",
+      "slug": "topic-publication-bias",
+      "title": "Publication Bias",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_industry_funding",
+      "slug": "topic-industry-funding",
+      "title": "Industry Funding and Conflict of Interest",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_systematic_reviews",
+      "slug": "topic-systematic-reviews",
+      "title": "How to Read Systematic Reviews",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_randomized_trials",
+      "slug": "topic-randomized-trials",
+      "title": "How to Read Randomized Trials",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_mechanistic_evidence",
+      "slug": "topic-mechanistic-evidence",
+      "title": "Limits of Mechanistic Evidence",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_evidence_confidence",
+      "slug": "topic-evidence-confidence",
+      "title": "Evidence Confidence Labels",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_effect_direction",
+      "slug": "topic-effect-direction",
+      "title": "Effect Direction Labels",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_no_global_works_badge",
+      "slug": "topic-no-global-works-badge",
+      "title": "Why There Is No Global Works Badge",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_framework_snapshots",
+      "slug": "topic-framework-snapshots",
+      "title": "External Framework Classifications as Dated Snapshots",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_review_expiry",
+      "slug": "topic-review-expiry",
+      "title": "Evidence Review Dates and Expiry",
+      "entityType": "knowledge_topic",
+      "category": "evidence",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_contraindications",
+      "slug": "topic-contraindications",
+      "title": "Contraindications",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_medication_interactions",
+      "slug": "topic-medication-interactions",
+      "title": "Medication Interactions",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_supplement_interactions",
+      "slug": "topic-supplement-interactions",
+      "title": "Supplement-Supplement Interactions",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_dose_related_harm",
+      "slug": "topic-dose-related-harm",
+      "title": "Dose-Related Harm",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_upper_limits",
+      "slug": "topic-upper-limits",
+      "title": "Nutrient Upper Limits and Total Intake",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_duplicate_fortification",
+      "slug": "topic-duplicate-fortification",
+      "title": "Duplicate Nutrients Across Products",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_pregnancy_lactation",
+      "slug": "topic-pregnancy-lactation",
+      "title": "Pregnancy and Lactation Boundary",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_children_adolescents",
+      "slug": "topic-children-adolescents",
+      "title": "Children and Adolescent Boundary",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_kidney_liver_conditions",
+      "slug": "topic-kidney-liver-conditions",
+      "title": "Kidney and Liver Condition Boundary",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_cardiovascular_conditions",
+      "slug": "topic-cardiovascular-conditions",
+      "title": "Cardiovascular Condition Boundary",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_surgery_anesthesia",
+      "slug": "topic-surgery-anesthesia",
+      "title": "Surgery and Anesthesia Boundary",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_allergy_cross_reactivity",
+      "slug": "topic-allergy-cross-reactivity",
+      "title": "Allergy and Cross-Reactivity",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_botanical_identity",
+      "slug": "topic-botanical-identity",
+      "title": "Botanical Species and Plant-Part Identity",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_microbial_strain_identity",
+      "slug": "topic-microbial-strain-identity",
+      "title": "Probiotic Strain Specificity",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_stimulant_stacking",
+      "slug": "topic-stimulant-stacking",
+      "title": "Stimulant Stacking",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_serotonergic_stacking",
+      "slug": "topic-serotonergic-stacking",
+      "title": "Serotonergic Stacking",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_sedative_stacking",
+      "slug": "topic-sedative-stacking",
+      "title": "Sedative Stacking",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_bleeding_risk",
+      "slug": "topic-bleeding-risk",
+      "title": "Bleeding-Risk Interactions",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_lab_test_interference",
+      "slug": "topic-lab-test-interference",
+      "title": "Laboratory-Test Interference",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_adverse_event_recognition",
+      "slug": "topic-adverse-event-recognition",
+      "title": "Recognizing Adverse Events",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_stop_use_boundary",
+      "slug": "topic-stop-use-boundary",
+      "title": "When to Stop Use and Seek Help",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_adverse_event_reporting",
+      "slug": "topic-adverse-event-reporting",
+      "title": "Adverse-Event Reporting",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_trial_one_change",
+      "slug": "topic-trial-one-change",
+      "title": "Trial One Change at a Time",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_washout_and_baseline",
+      "slug": "topic-washout-and-baseline",
+      "title": "Baseline, Washout and Rechallenge Limits",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_no_safe_combination_claim",
+      "slug": "topic-no-safe-combination-claim",
+      "title": "Why the App Cannot Declare a Combination Safe",
+      "entityType": "knowledge_topic",
+      "category": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_supplement_facts_label",
+      "slug": "topic-supplement-facts-label",
+      "title": "Reading a Supplement Facts Label",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_serving_vs_daily_dose",
+      "slug": "topic-serving-vs-daily-dose",
+      "title": "Serving Size vs Daily Dose",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_proprietary_blends",
+      "slug": "topic-proprietary-blends",
+      "title": "Proprietary Blends",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_ingredient_synonyms",
+      "slug": "topic-ingredient-synonyms",
+      "title": "Ingredient Synonyms and Hidden Duplicates",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_active_vs_other_ingredients",
+      "slug": "topic-active-vs-other-ingredients",
+      "title": "Active vs Other Ingredients",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_lot_batch_expiry",
+      "slug": "topic-lot-batch-expiry",
+      "title": "Lot, Batch and Expiry Records",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_certificate_lookup",
+      "slug": "topic-certificate-lookup",
+      "title": "Checking a Certification Registry",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_certification_limits",
+      "slug": "topic-certification-limits",
+      "title": "What Third-Party Certification Does Not Prove",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_gmp_limits",
+      "slug": "topic-gmp-limits",
+      "title": "Good Manufacturing Practice Limits",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_identity_potency_purity",
+      "slug": "topic-identity-potency-purity",
+      "title": "Identity, Potency, Purity and Contaminants",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_stability_storage",
+      "slug": "topic-stability-storage",
+      "title": "Stability and Storage",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_counterfeit_risk",
+      "slug": "topic-counterfeit-risk",
+      "title": "Counterfeit and Marketplace Risk",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_red_flag_marketing",
+      "slug": "topic-red-flag-marketing",
+      "title": "Marketing Red Flags",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_product_recall_alerts",
+      "slug": "topic-product-recall-alerts",
+      "title": "Recalls and Safety Alerts",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_historical_product_snapshot",
+      "slug": "topic-historical-product-snapshot",
+      "title": "Preserving Historical Product Labels",
+      "entityType": "knowledge_topic",
+      "category": "quality",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_strict_liability",
+      "slug": "topic-strict-liability",
+      "title": "Strict Liability in Anti-Doping",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_wada_list_structure",
+      "slug": "topic-wada-list-structure",
+      "title": "How the WADA Prohibited List Is Structured",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_in_competition_vs_all_times",
+      "slug": "topic-in-competition-vs-all-times",
+      "title": "In-Competition vs At-All-Times Prohibition",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_sport_specific_prohibition",
+      "slug": "topic-sport-specific-prohibition",
+      "title": "Sport-Specific Prohibition",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_annual_wada_updates",
+      "slug": "topic-annual-wada-updates",
+      "title": "Annual WADA List Updates",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_ingredient_name_not_enough",
+      "slug": "topic-ingredient-name-not-enough",
+      "title": "Why Ingredient-Name Checks Are Not Enough",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_contamination_risk",
+      "slug": "topic-contamination-risk",
+      "title": "Contamination and Undeclared Ingredients",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_batch_testing",
+      "slug": "topic-batch-testing",
+      "title": "Batch Testing",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_certification_not_guarantee",
+      "slug": "topic-certification-not-guarantee",
+      "title": "Certification Reduces Risk but Is Not a Guarantee",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_keep_evidence",
+      "slug": "topic-keep-evidence",
+      "title": "Keeping Product, Batch and Lookup Evidence",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_declare_on_doping_control",
+      "slug": "topic-declare-on-doping-control",
+      "title": "Declaring Supplements During Doping Control",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_high_risk_categories",
+      "slug": "topic-high-risk-categories",
+      "title": "High-Risk Product Categories",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_therapeutic_use_exemption_boundary",
+      "slug": "topic-therapeutic-use-exemption-boundary",
+      "title": "Therapeutic Use Exemption Boundary",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_wada_status_not_medical_safety",
+      "slug": "topic-wada-status-not-medical-safety",
+      "title": "Anti-Doping Status Is Not Medical Safety",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "topic_not_listed_not_safe",
+      "slug": "topic-not-listed-not-safe",
+      "title": "Not Identified on the List Does Not Mean Safe",
+      "entityType": "knowledge_topic",
+      "category": "antidoping",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sports_drink",
+      "slug": "ingredient-sports-drink",
+      "title": "Sports Drink",
+      "entityType": "ingredient",
+      "category": "sports_food",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sports_gel",
+      "slug": "ingredient-sports-gel",
+      "title": "Sports Gel",
+      "entityType": "ingredient",
+      "category": "sports_food",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sports_chew",
+      "slug": "ingredient-sports-chew",
+      "title": "Sports Confectionery or Chew",
+      "entityType": "ingredient",
+      "category": "sports_food",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sports_bar",
+      "slug": "ingredient-sports-bar",
+      "title": "Sports or Energy Bar",
+      "entityType": "ingredient",
+      "category": "sports_food",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_electrolyte_supplement",
+      "slug": "ingredient-electrolyte-supplement",
+      "title": "Electrolyte Supplement",
+      "entityType": "ingredient",
+      "category": "sports_food",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_isolated_protein",
+      "slug": "ingredient-isolated-protein",
+      "title": "Isolated Protein Supplement",
+      "entityType": "ingredient",
+      "category": "sports_food",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_mixed_macronutrient",
+      "slug": "ingredient-mixed-macronutrient",
+      "title": "Mixed Macronutrient Supplement",
+      "entityType": "ingredient",
+      "category": "sports_food",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_creatine_monohydrate",
+      "slug": "ingredient-creatine-monohydrate",
+      "title": "Creatine Monohydrate",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_caffeine",
+      "slug": "ingredient-caffeine",
+      "title": "Caffeine",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_beta_alanine",
+      "slug": "ingredient-beta-alanine",
+      "title": "Beta-Alanine",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sodium_bicarbonate",
+      "slug": "ingredient-sodium-bicarbonate",
+      "title": "Sodium Bicarbonate",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_dietary_nitrate",
+      "slug": "ingredient-dietary-nitrate",
+      "title": "Dietary Nitrate or Beetroot Juice",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_glycerol",
+      "slug": "ingredient-glycerol",
+      "title": "Glycerol",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sodium_citrate",
+      "slug": "ingredient-sodium-citrate",
+      "title": "Sodium Citrate",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_carbohydrate_mouth_rinse",
+      "slug": "ingredient-carbohydrate-mouth-rinse",
+      "title": "Carbohydrate Mouth Rinse",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_phosphate",
+      "slug": "ingredient-phosphate",
+      "title": "Phosphate Loading",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_ketone_ester",
+      "slug": "ingredient-ketone-ester",
+      "title": "Ketone Ester",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_ketone_salt",
+      "slug": "ingredient-ketone-salt",
+      "title": "Ketone Salt",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_menthol",
+      "slug": "ingredient-menthol",
+      "title": "Menthol",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_pickle_juice",
+      "slug": "ingredient-pickle-juice",
+      "title": "Pickle Juice",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_quinine",
+      "slug": "ingredient-quinine",
+      "title": "Quinine",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_ammonia_inhalant",
+      "slug": "ingredient-ammonia-inhalant",
+      "title": "Ammonia Inhalant",
+      "entityType": "ingredient",
+      "category": "performance",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_whey_protein",
+      "slug": "ingredient-whey-protein",
+      "title": "Whey Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_casein_protein",
+      "slug": "ingredient-casein-protein",
+      "title": "Casein Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_milk_protein",
+      "slug": "ingredient-milk-protein",
+      "title": "Milk Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_egg_protein",
+      "slug": "ingredient-egg-protein",
+      "title": "Egg Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_soy_protein",
+      "slug": "ingredient-soy-protein",
+      "title": "Soy Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_pea_protein",
+      "slug": "ingredient-pea-protein",
+      "title": "Pea Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_rice_protein",
+      "slug": "ingredient-rice-protein",
+      "title": "Rice Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_hemp_protein",
+      "slug": "ingredient-hemp-protein",
+      "title": "Hemp Protein",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_essential_amino_acids",
+      "slug": "ingredient-essential-amino-acids",
+      "title": "Essential Amino Acids",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_branched_chain_amino_acids",
+      "slug": "ingredient-branched-chain-amino-acids",
+      "title": "Branched-Chain Amino Acids",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_leucine",
+      "slug": "ingredient-leucine",
+      "title": "Leucine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_glutamine",
+      "slug": "ingredient-glutamine",
+      "title": "Glutamine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_arginine",
+      "slug": "ingredient-arginine",
+      "title": "L-Arginine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_citrulline",
+      "slug": "ingredient-citrulline",
+      "title": "L-Citrulline",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_citrulline_malate",
+      "slug": "ingredient-citrulline-malate",
+      "title": "Citrulline Malate",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_ornithine",
+      "slug": "ingredient-ornithine",
+      "title": "L-Ornithine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_taurine",
+      "slug": "ingredient-taurine",
+      "title": "Taurine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_hmb",
+      "slug": "ingredient-hmb",
+      "title": "Beta-Hydroxy-Beta-Methylbutyrate",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_betaine",
+      "slug": "ingredient-betaine",
+      "title": "Betaine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_glycine",
+      "slug": "ingredient-glycine",
+      "title": "Glycine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_multivitamin_mineral",
+      "slug": "ingredient-multivitamin-mineral",
+      "title": "Multivitamin-Mineral",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_a",
+      "slug": "ingredient-vitamin-a",
+      "title": "Vitamin A",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_b1",
+      "slug": "ingredient-vitamin-b1",
+      "title": "Thiamin",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_b2",
+      "slug": "ingredient-vitamin-b2",
+      "title": "Riboflavin",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_b3",
+      "slug": "ingredient-vitamin-b3",
+      "title": "Niacin",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_b6",
+      "slug": "ingredient-vitamin-b6",
+      "title": "Vitamin B6",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_folate",
+      "slug": "ingredient-folate",
+      "title": "Folate or Folic Acid",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_b12",
+      "slug": "ingredient-vitamin-b12",
+      "title": "Vitamin B12",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_biotin",
+      "slug": "ingredient-biotin",
+      "title": "Biotin",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_c",
+      "slug": "ingredient-vitamin-c",
+      "title": "Vitamin C",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_d",
+      "slug": "ingredient-vitamin-d",
+      "title": "Vitamin D",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_e",
+      "slug": "ingredient-vitamin-e",
+      "title": "Vitamin E",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_vitamin_k",
+      "slug": "ingredient-vitamin-k",
+      "title": "Vitamin K",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_calcium",
+      "slug": "ingredient-calcium",
+      "title": "Calcium",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_iron",
+      "slug": "ingredient-iron",
+      "title": "Iron",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_magnesium",
+      "slug": "ingredient-magnesium",
+      "title": "Magnesium",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_zinc",
+      "slug": "ingredient-zinc",
+      "title": "Zinc",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_selenium",
+      "slug": "ingredient-selenium",
+      "title": "Selenium",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_iodine",
+      "slug": "ingredient-iodine",
+      "title": "Iodine",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_potassium",
+      "slug": "ingredient-potassium",
+      "title": "Potassium",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sodium",
+      "slug": "ingredient-sodium",
+      "title": "Sodium",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_phosphorus",
+      "slug": "ingredient-phosphorus",
+      "title": "Phosphorus",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_copper",
+      "slug": "ingredient-copper",
+      "title": "Copper",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_manganese",
+      "slug": "ingredient-manganese",
+      "title": "Manganese",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_chromium",
+      "slug": "ingredient-chromium",
+      "title": "Chromium",
+      "entityType": "ingredient",
+      "category": "vitamin_mineral",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_fish_oil",
+      "slug": "ingredient-fish-oil",
+      "title": "Fish Oil",
+      "entityType": "ingredient",
+      "category": "fatty_acid_lipid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_epa",
+      "slug": "ingredient-epa",
+      "title": "Eicosapentaenoic Acid",
+      "entityType": "ingredient",
+      "category": "fatty_acid_lipid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_dha",
+      "slug": "ingredient-dha",
+      "title": "Docosahexaenoic Acid",
+      "entityType": "ingredient",
+      "category": "fatty_acid_lipid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_algal_omega3",
+      "slug": "ingredient-algal-omega3",
+      "title": "Algal Omega-3",
+      "entityType": "ingredient",
+      "category": "fatty_acid_lipid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_krill_oil",
+      "slug": "ingredient-krill-oil",
+      "title": "Krill Oil",
+      "entityType": "ingredient",
+      "category": "fatty_acid_lipid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_mct_oil",
+      "slug": "ingredient-mct-oil",
+      "title": "Medium-Chain Triglyceride Oil",
+      "entityType": "ingredient",
+      "category": "fatty_acid_lipid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_cla",
+      "slug": "ingredient-cla",
+      "title": "Conjugated Linoleic Acid",
+      "entityType": "ingredient",
+      "category": "fatty_acid_lipid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_collagen_peptides",
+      "slug": "ingredient-collagen-peptides",
+      "title": "Collagen Peptides",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_gelatin",
+      "slug": "ingredient-gelatin",
+      "title": "Gelatin",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_undenatured_collagen_ii",
+      "slug": "ingredient-undenatured-collagen-ii",
+      "title": "Undenatured Type II Collagen",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_glucosamine",
+      "slug": "ingredient-glucosamine",
+      "title": "Glucosamine",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_chondroitin",
+      "slug": "ingredient-chondroitin",
+      "title": "Chondroitin",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_msm",
+      "slug": "ingredient-msm",
+      "title": "Methylsulfonylmethane",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_hyaluronic_acid",
+      "slug": "ingredient-hyaluronic-acid",
+      "title": "Hyaluronic Acid",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_eggshell_membrane",
+      "slug": "ingredient-eggshell-membrane",
+      "title": "Eggshell Membrane",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_boswellia",
+      "slug": "ingredient-boswellia",
+      "title": "Boswellia",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_curcumin",
+      "slug": "ingredient-curcumin",
+      "title": "Curcumin",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_turmeric",
+      "slug": "ingredient-turmeric",
+      "title": "Turmeric",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_ginger",
+      "slug": "ingredient-ginger",
+      "title": "Ginger",
+      "entityType": "ingredient",
+      "category": "joint_connective_tissue",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_ashwagandha",
+      "slug": "ingredient-ashwagandha",
+      "title": "Ashwagandha",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_rhodiola",
+      "slug": "ingredient-rhodiola",
+      "title": "Rhodiola rosea",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_panax_ginseng",
+      "slug": "ingredient-panax-ginseng",
+      "title": "Panax Ginseng",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_american_ginseng",
+      "slug": "ingredient-american-ginseng",
+      "title": "American Ginseng",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_eleuthero",
+      "slug": "ingredient-eleuthero",
+      "title": "Eleuthero",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_tribulus",
+      "slug": "ingredient-tribulus",
+      "title": "Tribulus terrestris",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_fenugreek",
+      "slug": "ingredient-fenugreek",
+      "title": "Fenugreek",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_tongkat_ali",
+      "slug": "ingredient-tongkat-ali",
+      "title": "Tongkat Ali",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_maca",
+      "slug": "ingredient-maca",
+      "title": "Maca",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_cordyceps",
+      "slug": "ingredient-cordyceps",
+      "title": "Cordyceps",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_shilajit",
+      "slug": "ingredient-shilajit",
+      "title": "Shilajit",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_saffron",
+      "slug": "ingredient-saffron",
+      "title": "Saffron",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_green_tea_extract",
+      "slug": "ingredient-green-tea-extract",
+      "title": "Green Tea Extract",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_grape_seed_extract",
+      "slug": "ingredient-grape-seed-extract",
+      "title": "Grape Seed Extract",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_pomegranate_extract",
+      "slug": "ingredient-pomegranate-extract",
+      "title": "Pomegranate Extract",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_tart_cherry",
+      "slug": "ingredient-tart-cherry",
+      "title": "Tart Cherry",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_blackcurrant",
+      "slug": "ingredient-blackcurrant",
+      "title": "Blackcurrant",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_quercetin",
+      "slug": "ingredient-quercetin",
+      "title": "Quercetin",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_resveratrol",
+      "slug": "ingredient-resveratrol",
+      "title": "Resveratrol",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_alpha_lipoic_acid",
+      "slug": "ingredient-alpha-lipoic-acid",
+      "title": "Alpha-Lipoic Acid",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_coenzyme_q10",
+      "slug": "ingredient-coenzyme-q10",
+      "title": "Coenzyme Q10",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_beetroot_powder",
+      "slug": "ingredient-beetroot-powder",
+      "title": "Beetroot Powder",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_spirulina",
+      "slug": "ingredient-spirulina",
+      "title": "Spirulina",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_chlorella",
+      "slug": "ingredient-chlorella",
+      "title": "Chlorella",
+      "entityType": "ingredient",
+      "category": "botanical_adaptogen",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_probiotic",
+      "slug": "ingredient-probiotic",
+      "title": "Probiotic",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_prebiotic",
+      "slug": "ingredient-prebiotic",
+      "title": "Prebiotic",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_inulin",
+      "slug": "ingredient-inulin",
+      "title": "Inulin",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_fos",
+      "slug": "ingredient-fos",
+      "title": "Fructooligosaccharides",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_gos",
+      "slug": "ingredient-gos",
+      "title": "Galactooligosaccharides",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_resistant_starch",
+      "slug": "ingredient-resistant-starch",
+      "title": "Resistant Starch",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_digestive_enzymes",
+      "slug": "ingredient-digestive-enzymes",
+      "title": "Digestive Enzymes",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_lactase",
+      "slug": "ingredient-lactase",
+      "title": "Lactase",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_psyllium",
+      "slug": "ingredient-psyllium",
+      "title": "Psyllium",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_beta_glucan",
+      "slug": "ingredient-beta-glucan",
+      "title": "Beta-Glucan",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_n_acetylcysteine",
+      "slug": "ingredient-n-acetylcysteine",
+      "title": "N-Acetylcysteine",
+      "entityType": "ingredient",
+      "category": "gut_immune",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_melatonin",
+      "slug": "ingredient-melatonin",
+      "title": "Melatonin",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_l_theanine",
+      "slug": "ingredient-l-theanine",
+      "title": "L-Theanine",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_valerian",
+      "slug": "ingredient-valerian",
+      "title": "Valerian",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_passionflower",
+      "slug": "ingredient-passionflower",
+      "title": "Passionflower",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_chamomile_extract",
+      "slug": "ingredient-chamomile-extract",
+      "title": "Chamomile Extract",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_gaba",
+      "slug": "ingredient-gaba",
+      "title": "Gamma-Aminobutyric Acid",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_apigenin",
+      "slug": "ingredient-apigenin",
+      "title": "Apigenin",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_bacopa",
+      "slug": "ingredient-bacopa",
+      "title": "Bacopa monnieri",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_phosphatidylserine",
+      "slug": "ingredient-phosphatidylserine",
+      "title": "Phosphatidylserine",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_alpha_gpc",
+      "slug": "ingredient-alpha-gpc",
+      "title": "Alpha-GPC",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_citicoline",
+      "slug": "ingredient-citicoline",
+      "title": "Citicoline",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_5_htp",
+      "slug": "ingredient-5-htp",
+      "title": "5-Hydroxytryptophan",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_sam_e",
+      "slug": "ingredient-sam-e",
+      "title": "S-Adenosylmethionine",
+      "entityType": "ingredient",
+      "category": "sleep_stress_cognition",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_glucomannan",
+      "slug": "ingredient-glucomannan",
+      "title": "Glucomannan",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_berberine",
+      "slug": "ingredient-berberine",
+      "title": "Berberine",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_bitter_orange",
+      "slug": "ingredient-bitter-orange",
+      "title": "Bitter Orange or Synephrine",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_yohimbe",
+      "slug": "ingredient-yohimbe",
+      "title": "Yohimbe",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_yohimbine",
+      "slug": "ingredient-yohimbine",
+      "title": "Yohimbine",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_capsaicin",
+      "slug": "ingredient-capsaicin",
+      "title": "Capsaicin",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_garcinia_cambogia",
+      "slug": "ingredient-garcinia-cambogia",
+      "title": "Garcinia cambogia",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_raspberry_ketone",
+      "slug": "ingredient-raspberry-ketone",
+      "title": "Raspberry Ketone",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_apple_cider_vinegar",
+      "slug": "ingredient-apple-cider-vinegar",
+      "title": "Apple Cider Vinegar Supplement",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_white_kidney_bean_extract",
+      "slug": "ingredient-white-kidney-bean-extract",
+      "title": "White Kidney Bean Extract",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_green_coffee_extract",
+      "slug": "ingredient-green-coffee-extract",
+      "title": "Green Coffee Extract",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_dhea",
+      "slug": "ingredient-dhea",
+      "title": "DHEA",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_7_keto_dhea",
+      "slug": "ingredient-7-keto-dhea",
+      "title": "7-Keto-DHEA",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_exogenous_raspberry_ketones",
+      "slug": "ingredient-exogenous-raspberry-ketones",
+      "title": "Synthetic Raspberry Ketones",
+      "entityType": "ingredient",
+      "category": "weight_metabolic",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "risk_dmaa",
+      "slug": "risk-dmaa",
+      "title": "DMAA or 1,3-Dimethylamylamine",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_dmha",
+      "slug": "risk-dmha",
+      "title": "DMHA or Octodrine",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_bmpea",
+      "slug": "risk-bmpea",
+      "title": "BMPEA",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_ephedra",
+      "slug": "risk-ephedra",
+      "title": "Ephedra",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_ephedrine",
+      "slug": "risk-ephedrine",
+      "title": "Ephedrine",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_sibutramine",
+      "slug": "risk-sibutramine",
+      "title": "Sibutramine",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_clenbuterol",
+      "slug": "risk-clenbuterol",
+      "title": "Clenbuterol",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_ostarine",
+      "slug": "risk-ostarine",
+      "title": "Ostarine or MK-2866",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_ligandrol",
+      "slug": "risk-ligandrol",
+      "title": "Ligandrol or LGD-4033",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_testolone",
+      "slug": "risk-testolone",
+      "title": "Testolone or RAD-140",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_andarine",
+      "slug": "risk-andarine",
+      "title": "Andarine or S-4",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_cardarine",
+      "slug": "risk-cardarine",
+      "title": "Cardarine or GW501516",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_ibutamoren",
+      "slug": "risk-ibutamoren",
+      "title": "Ibutamoren or MK-677",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_yk11",
+      "slug": "risk-yk11",
+      "title": "YK-11",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_prohormones",
+      "slug": "risk-prohormones",
+      "title": "Prohormones",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_designer_steroids",
+      "slug": "risk-designer-steroids",
+      "title": "Designer Steroids",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_higenamine",
+      "slug": "risk-higenamine",
+      "title": "Higenamine",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_methylhexaneamine",
+      "slug": "risk-methylhexaneamine",
+      "title": "Methylhexaneamine",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_deer_antler_spray",
+      "slug": "risk-deer-antler-spray",
+      "title": "Deer Antler Velvet or IGF-1 Claims",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "risk_peptide_products",
+      "slug": "risk-peptide-products",
+      "title": "Peptide and Research-Chemical Products",
+      "entityType": "high_risk_substance",
+      "category": "high_risk",
+      "publicationStatus": "draft",
+      "tags": [
+        "anti_doping_review_required"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "framework_wada_prohibited_list",
+      "slug": "framework-wada-prohibited-list",
+      "title": "WADA Prohibited List",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_ais_abcd",
+      "slug": "framework-ais-abcd",
+      "title": "AIS ABCD Classification",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_nih_ods",
+      "slug": "framework-nih-ods",
+      "title": "NIH ODS Fact Sheets",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_fda_us",
+      "slug": "framework-fda-us",
+      "title": "United States Dietary Supplement Regulation",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_fssai_india",
+      "slug": "framework-fssai-india",
+      "title": "India Health Supplement and Nutraceutical Regulation",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_nsf_certified_sport",
+      "slug": "framework-nsf-certified-sport",
+      "title": "NSF Certified for Sport",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_usp_verified",
+      "slug": "framework-usp-verified",
+      "title": "USP Verified",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_informed_sport",
+      "slug": "framework-informed-sport",
+      "title": "Informed Sport",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_hasta",
+      "slug": "framework-hasta",
+      "title": "HASTA",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_opss_scorecard",
+      "slug": "framework-opss-scorecard",
+      "title": "OPSS Supplement Scorecard",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_usada_high_risk",
+      "slug": "framework-usada-high-risk",
+      "title": "USADA High Risk List",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "framework_sport_integrity_app",
+      "slug": "framework-sport-integrity-app",
+      "title": "Sport Integrity Australia App",
+      "entityType": "framework",
+      "category": "quality_and_regulation",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_l_carnitine",
+      "slug": "ingredient-l-carnitine",
+      "title": "L-Carnitine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    },
+    {
+      "id": "ingredient_tyrosine",
+      "slug": "ingredient-tyrosine",
+      "title": "L-Tyrosine",
+      "entityType": "ingredient",
+      "category": "protein_amino_acid",
+      "publicationStatus": "draft",
+      "tags": [],
+      "aliases": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_nih_ods_fact_sheets",
+      "title": "Dietary Supplement Fact Sheets",
+      "publisher": "NIH Office of Dietary Supplements",
+      "year": 2026,
+      "type": "government_evidence_hub",
+      "url": "https://ods.od.nih.gov/factsheets/list-all/",
+      "roles": [
+        "ingredient_monographs",
+        "safety",
+        "interactions",
+        "consumer_and_professional_versions"
+      ],
+      "licenseNote": "Link and summarize. Do not bulk-copy copyrighted prose."
+    },
+    {
+      "id": "src_nih_ods_performance_hp",
+      "title": "Dietary Supplements for Exercise and Athletic Performance - Health Professional",
+      "publisher": "NIH Office of Dietary Supplements",
+      "year": 2026,
+      "type": "government_evidence_review",
+      "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+      "roles": [
+        "performance_ingredients",
+        "efficacy",
+        "safety",
+        "dose_context"
+      ],
+      "licenseNote": "Use claim-level paraphrases with source date and population context."
+    },
+    {
+      "id": "src_nih_ods_wyntk",
+      "title": "Dietary Supplements: What You Need to Know",
+      "publisher": "NIH Office of Dietary Supplements",
+      "year": 2025,
+      "type": "government_consumer_guidance",
+      "url": "https://ods.od.nih.gov/factsheets/WYNTK-Consumer/",
+      "roles": [
+        "consumer_safety",
+        "label_reading",
+        "healthcare_discussion",
+        "adverse_reactions"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_fda_supplements",
+      "title": "Dietary Supplements",
+      "publisher": "U.S. Food and Drug Administration",
+      "year": 2026,
+      "type": "regulatory_hub",
+      "url": "https://www.fda.gov/food/dietary-supplements",
+      "roles": [
+        "us_regulation",
+        "manufacturer_responsibility",
+        "safety_alerts"
+      ],
+      "licenseNote": "Regulatory status is jurisdiction- and date-specific."
+    },
+    {
+      "id": "src_fda_consumer_qa",
+      "title": "Questions and Answers on Dietary Supplements",
+      "publisher": "U.S. Food and Drug Administration",
+      "year": 2024,
+      "type": "regulatory_guidance",
+      "url": "https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements",
+      "roles": [
+        "premarket_approval_boundary",
+        "claims",
+        "definitions"
+      ],
+      "licenseNote": "Do not generalize U.S. law to other jurisdictions."
+    },
+    {
+      "id": "src_fda_adverse_events",
+      "title": "How to Report a Problem with Dietary Supplements",
+      "publisher": "U.S. Food and Drug Administration",
+      "year": 2026,
+      "type": "government_safety_guidance",
+      "url": "https://www.fda.gov/food/dietary-supplements/how-report-problem-dietary-supplements",
+      "roles": [
+        "adverse_event_signals",
+        "reporting",
+        "stop_use"
+      ],
+      "licenseNote": "Emergency and reporting links must be localized where deployed."
+    },
+    {
+      "id": "src_fda_bodybuilding_risk",
+      "title": "Caution: Bodybuilding Products Can Be Risky",
+      "publisher": "U.S. Food and Drug Administration",
+      "year": 2026,
+      "type": "government_safety_warning",
+      "url": "https://www.fda.gov/consumers/consumer-updates/caution-bodybuilding-products-can-be-risky",
+      "roles": [
+        "adulteration",
+        "steroid_like_products",
+        "liver_injury",
+        "red_flags"
+      ],
+      "licenseNote": "Do not imply all products in a category are adulterated; explain category risk."
+    },
+    {
+      "id": "src_nccih_bodybuilding",
+      "title": "Bodybuilding and Performance Enhancement Supplements",
+      "publisher": "National Center for Complementary and Integrative Health",
+      "year": 2026,
+      "type": "government_evidence_summary",
+      "url": "https://www.nccih.nih.gov/health/bodybuilding-and-performance-enhancement-supplements",
+      "roles": [
+        "bodybuilding_claims",
+        "hidden_ingredients",
+        "harm",
+        "insufficient_evidence"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_ioc_consensus_2018",
+      "title": "IOC consensus statement: dietary supplements and the high-performance athlete",
+      "publisher": "International Olympic Committee / British Journal of Sports Medicine",
+      "year": 2018,
+      "type": "consensus_statement",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29540367/",
+      "roles": [
+        "decision_framework",
+        "performance_evidence",
+        "food_first",
+        "anti_doping_risk"
+      ],
+      "licenseNote": "Summarize; copyrighted full text must not be reproduced."
+    },
+    {
+      "id": "src_ais_framework",
+      "title": "AIS Sports Supplement Framework",
+      "publisher": "Australian Institute of Sport",
+      "year": 2026,
+      "type": "expert_framework",
+      "url": "https://www.ausport.gov.au/ais/nutrition/supplements/about-the-ais-sports-supplement-framework",
+      "roles": [
+        "abcd_framework",
+        "ingredient_classification",
+        "safe_permitted_effective"
+      ],
+      "licenseNote": "Classifications are snapshots and can change. Store review date and source URL."
+    },
+    {
+      "id": "src_ais_group_a",
+      "title": "AIS Supplement Framework - Group A",
+      "publisher": "Australian Institute of Sport",
+      "year": 2026,
+      "type": "expert_framework_page",
+      "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_a",
+      "roles": [
+        "strong_evidence_specific_situations",
+        "sports_foods",
+        "medical_supplements",
+        "performance_supplements"
+      ],
+      "licenseNote": "Do not copy practitioner fact sheets. Link and paraphrase."
+    },
+    {
+      "id": "src_ais_group_b",
+      "title": "AIS Supplement Framework - Group B",
+      "publisher": "Australian Institute of Sport",
+      "year": 2026,
+      "type": "expert_framework_page",
+      "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_b",
+      "roles": [
+        "emerging_or_mixed_evidence",
+        "monitored_use"
+      ],
+      "licenseNote": "Store classification date because classifications evolve."
+    },
+    {
+      "id": "src_ais_group_c",
+      "title": "AIS Supplement Framework - Group C",
+      "publisher": "Australian Institute of Sport",
+      "year": 2026,
+      "type": "expert_framework_page",
+      "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_c",
+      "roles": [
+        "not_supported_or_insufficient_evidence",
+        "not_advocated"
+      ],
+      "licenseNote": "Classification is not a universal legal or medical status."
+    },
+    {
+      "id": "src_ais_group_d",
+      "title": "AIS Supplement Framework - Group D",
+      "publisher": "Australian Institute of Sport",
+      "year": 2026,
+      "type": "expert_framework_page",
+      "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_d",
+      "roles": [
+        "prohibited_or_high_risk",
+        "athlete_avoidance"
+      ],
+      "licenseNote": "Do not equate AIS Group D with the complete WADA List."
+    },
+    {
+      "id": "src_wada_2026_list",
+      "title": "2026 List of Prohibited Substances and Methods",
+      "publisher": "World Anti-Doping Agency",
+      "year": 2026,
+      "type": "anti_doping_standard",
+      "url": "https://www.wada-ama.org/en/resources/world-anti-doping-program/prohibited-list",
+      "roles": [
+        "prohibited_status",
+        "competition_context",
+        "annual_versioning"
+      ],
+      "licenseNote": "The 2026 List took effect 1 January 2026. Recheck annually and never infer status from absence of a common name."
+    },
+    {
+      "id": "src_sia_supplements",
+      "title": "Supplements in Sport",
+      "publisher": "Sport Integrity Australia",
+      "year": 2026,
+      "type": "anti_doping_guidance",
+      "url": "https://www.sportintegrity.gov.au/what-we-do/anti-doping/substances/supplements-sport",
+      "roles": [
+        "strict_liability",
+        "batch_testing",
+        "contamination_risk",
+        "product_records"
+      ],
+      "licenseNote": "No certification guarantees zero risk."
+    },
+    {
+      "id": "src_sia_risk_analysis",
+      "title": "Supplement Risk Analysis",
+      "publisher": "Sport Integrity Australia",
+      "year": 2026,
+      "type": "anti_doping_risk_framework",
+      "url": "https://www.sportintegrity.gov.au/what-we-do/anti-doping/substance-education/supplement-risk-analysis",
+      "roles": [
+        "product_risk_tiers",
+        "batch_testing",
+        "jurisdictional_registration"
+      ],
+      "licenseNote": "Australian regulatory categories must not be applied globally."
+    },
+    {
+      "id": "src_usada_high_risk",
+      "title": "Supplement Connect High Risk List",
+      "publisher": "U.S. Anti-Doping Agency",
+      "year": 2026,
+      "type": "anti_doping_risk_resource",
+      "url": "https://www.usada.org/substances/supplement-connect/high-risk-list/",
+      "roles": [
+        "high_risk_products",
+        "red_flags",
+        "athlete_education"
+      ],
+      "licenseNote": "Do not scrape or republish brand lists without permission; link to the live resource."
+    },
+    {
+      "id": "src_nsf_certified_sport",
+      "title": "Certified for Sport Program",
+      "publisher": "NSF",
+      "year": 2026,
+      "type": "third_party_certification",
+      "url": "https://www.nsf.org/consumer-resources/articles/certified-for-sport-program",
+      "roles": [
+        "product_testing",
+        "banned_substance_screening",
+        "label_verification",
+        "certification_lookup"
+      ],
+      "licenseNote": "Verification must be product- and lot-specific where the registry provides that detail."
+    },
+    {
+      "id": "src_usp_verification",
+      "title": "Dietary Supplements Verification Program",
+      "publisher": "United States Pharmacopeia",
+      "year": 2026,
+      "type": "third_party_verification",
+      "url": "https://www.usp.org/node/10776",
+      "roles": [
+        "quality_verification",
+        "manufacturing_audit",
+        "identity_strength_purity"
+      ],
+      "licenseNote": "A mark verifies defined quality criteria; it does not prove clinical efficacy for every use."
+    },
+    {
+      "id": "src_opss",
+      "title": "Operation Supplement Safety",
+      "publisher": "U.S. Department of Defense",
+      "year": 2026,
+      "type": "government_supplement_safety_program",
+      "url": "https://www.opss.org/",
+      "roles": [
+        "ingredient_index",
+        "prohibited_list",
+        "scorecard",
+        "adverse_effect_reporting"
+      ],
+      "licenseNote": "Link to live tools; do not clone constantly updated prohibited lists."
+    },
+    {
+      "id": "src_fssai_health_supplements",
+      "title": "Health Supplements and Nutraceuticals",
+      "publisher": "Food Safety and Standards Authority of India",
+      "year": 2026,
+      "type": "india_regulatory_hub",
+      "url": "https://fssai.gov.in/cms/health-supplements.php",
+      "roles": [
+        "india_regulation",
+        "category_definitions",
+        "official_resources"
+      ],
+      "licenseNote": "Use current gazette notifications and amendments for legal conclusions; the app provides education, not legal advice."
+    },
+    {
+      "id": "src_fssai_regulations",
+      "title": "Food Safety and Standards Regulations",
+      "publisher": "Food Safety and Standards Authority of India",
+      "year": 2026,
+      "type": "india_regulatory_index",
+      "url": "https://www.fssai.gov.in/cms/food-safety-and-standards-regulations.php",
+      "roles": [
+        "india_health_supplement_rules",
+        "amendments",
+        "compendium_warning"
+      ],
+      "licenseNote": "FSSAI states that compendia are reference aids and original notifications prevail."
+    },
+    {
+      "id": "src_fssai_claims",
+      "title": "Food Safety and Standards Advertising and Claims Regulations",
+      "publisher": "Food Safety and Standards Authority of India",
+      "year": 2026,
+      "type": "india_claims_regulation",
+      "url": "https://www.fssai.gov.in/cms/Amendment-FSS-Advertising-Claims.php",
+      "roles": [
+        "india_claims",
+        "advertising_boundaries"
+      ],
+      "licenseNote": "Do not turn the app into a product-claim compliance tool."
+    },
+    {
+      "id": "src_sport_integrity_survey_2025",
+      "title": "Sports Supplements Survey Finds Banned Substances",
+      "publisher": "Sport Integrity Australia",
+      "year": 2025,
+      "type": "market_surveillance_report",
+      "url": "https://www.sportintegrity.gov.au/news/media-statements/2025-04/sport-supplements-survey",
+      "roles": [
+        "contamination_examples",
+        "high_risk_categories",
+        "undeclared_substances"
+      ],
+      "licenseNote": "Describe this as one survey, not a universal contamination rate."
+    }
+  ],
+  "entityTypes": [
+    "knowledge_topic",
+    "ingredient",
+    "high_risk_substance",
+    "framework"
+  ],
+  "ingredientCategories": [
+    "sports_food",
+    "performance",
+    "protein_amino_acid",
+    "vitamin_mineral",
+    "fatty_acid_lipid",
+    "joint_connective_tissue",
+    "botanical_adaptogen",
+    "gut_immune",
+    "sleep_stress_cognition",
+    "weight_metabolic"
+  ],
+  "evidenceClaimContract": {
+    "requiredFields": [
+      "id",
+      "ingredientIdentityId",
+      "outcomeId",
+      "population",
+      "formulation",
+      "protocol",
+      "comparator",
+      "timeframe",
+      "effectDirection",
+      "evidenceConfidence",
+      "assessmentMethod",
+      "magnitude",
+      "harms",
+      "sourceIds",
+      "limitations",
+      "reviewedAt",
+      "reviewStatus"
+    ],
+    "effectDirections": [
+      "beneficial",
+      "no_clear_benefit",
+      "harmful",
+      "mixed",
+      "insufficient_evidence",
+      "not_applicable"
+    ],
+    "evidenceConfidence": [
+      "high",
+      "moderate",
+      "low",
+      "very_low",
+      "not_assessed"
+    ],
+    "assessmentWarning": "High/moderate/low/very low are editorial confidence labels unless a source explicitly used a formal grading method. Never label an internal assessment as formal GRADE unless the process was actually performed.",
+    "rule": "No ingredient receives one global efficacy verdict. Each claim is outcome-, population-, formulation-, protocol- and timeframe-specific."
+  },
+  "doseProtocolContract": {
+    "fields": [
+      "amountLower",
+      "amountUpper",
+      "unit",
+      "basis",
+      "frequency",
+      "timing",
+      "duration",
+      "loadingProtocol",
+      "maintenanceProtocol",
+      "formulation",
+      "sourceIds",
+      "applicablePopulation",
+      "safetyLimits",
+      "reviewedAt"
+    ],
+    "allowedBasis": [
+      "absolute_per_serving",
+      "per_kg_body_mass",
+      "per_day",
+      "per_hour",
+      "concentration",
+      "food_equivalent",
+      "source_specific_other"
+    ],
+    "rule": "Dose fields remain unavailable unless directly supported by reviewed sources. A dose used in a study is not automatically a personal recommendation."
+  },
+  "safetySeverity": [
+    "informational",
+    "caution",
+    "professional_review",
+    "avoid_without_medical_supervision",
+    "urgent_stop_signal"
+  ],
+  "interactionTypes": [
+    "medication",
+    "condition",
+    "supplement",
+    "food",
+    "laboratory_test",
+    "surgery_anesthesia",
+    "pregnancy_lactation",
+    "allergy"
+  ],
+  "antiDopingStatuses": [
+    "not_assessed",
+    "not_identified_on_current_list",
+    "prohibited_at_all_times",
+    "prohibited_in_competition",
+    "prohibited_in_specific_sports",
+    "monitoring_program",
+    "high_contamination_risk",
+    "unclear_manual_review_required"
+  ],
+  "antiDopingWarning": "Not identified on the current WADA list is not a guarantee of permission, safety or contamination-free status. Check current rules, metabolites, sport and product batch.",
+  "certificationSchemes": [
+    {
+      "id": "nsf_certified_sport",
+      "displayName": "NSF Certified for Sport",
+      "sourceId": "src_nsf_certified_sport",
+      "scope": "product quality and banned-substance risk reduction",
+      "guarantee": false
+    },
+    {
+      "id": "usp_verified",
+      "displayName": "USP Verified",
+      "sourceId": "src_usp_verification",
+      "scope": "identity, strength, purity, manufacturing and quality verification",
+      "guarantee": false
+    },
+    {
+      "id": "informed_sport",
+      "displayName": "Informed Sport",
+      "sourceId": "src_sia_supplements",
+      "scope": "batch-tested sport supplement program",
+      "guarantee": false
+    },
+    {
+      "id": "hasta",
+      "displayName": "HASTA",
+      "sourceId": "src_sia_supplements",
+      "scope": "batch-tested sport supplement program",
+      "guarantee": false
+    }
+  ],
+  "aisClassificationSnapshot": {
+    "asOf": "5 August 2026",
+    "sourceIds": [
+      "src_ais_framework",
+      "src_ais_group_a",
+      "src_ais_group_b",
+      "src_ais_group_c",
+      "src_ais_group_d"
+    ],
+    "groupA": [
+      "ingredient_sports_drink",
+      "ingredient_sports_gel",
+      "ingredient_sports_chew",
+      "ingredient_sports_bar",
+      "ingredient_electrolyte_supplement",
+      "ingredient_isolated_protein",
+      "ingredient_mixed_macronutrient",
+      "ingredient_calcium",
+      "ingredient_folate",
+      "ingredient_iron",
+      "ingredient_vitamin_d",
+      "ingredient_zinc",
+      "ingredient_caffeine",
+      "ingredient_beta_alanine",
+      "ingredient_dietary_nitrate",
+      "ingredient_sodium_bicarbonate",
+      "ingredient_creatine_monohydrate",
+      "ingredient_glycerol"
+    ],
+    "groupB": [
+      "ingredient_tart_cherry",
+      "ingredient_blackcurrant",
+      "ingredient_pomegranate_extract",
+      "ingredient_vitamin_c",
+      "ingredient_menthol",
+      "ingredient_pickle_juice",
+      "ingredient_quinine",
+      "ingredient_l_carnitine",
+      "ingredient_collagen_peptides",
+      "ingredient_curcumin",
+      "ingredient_eggshell_membrane",
+      "ingredient_fish_oil",
+      "ingredient_ketone_ester",
+      "ingredient_multivitamin_mineral",
+      "ingredient_n_acetylcysteine",
+      "ingredient_probiotic",
+      "ingredient_prebiotic"
+    ],
+    "groupC": [
+      "ingredient_magnesium",
+      "ingredient_alpha_lipoic_acid",
+      "ingredient_hmb",
+      "ingredient_branched_chain_amino_acids",
+      "ingredient_phosphate",
+      "ingredient_sam_e",
+      "ingredient_tyrosine",
+      "ingredient_vitamin_e"
+    ],
+    "warning": "This is a dated external-framework snapshot, not the app's own evidence grade. Revalidate before publication and whenever AIS changes its framework."
+  },
+  "jurisdictions": [
+    "global_education",
+    "united_states",
+    "india",
+    "australia",
+    "world_anti_doping_code",
+    "other"
+  ],
+  "adverseEventStopSignals": [
+    "throat_lip_or_tongue_swelling",
+    "wheezing_or_breathing_difficulty",
+    "fainting_or_very_low_blood_pressure",
+    "chest_pain",
+    "shortness_of_breath",
+    "palpitations_or_irregular_heartbeat",
+    "severe_persistent_vomiting_or_diarrhea",
+    "dark_or_reduced_urine",
+    "blood_in_vomit_stool_urine_or_sputum",
+    "abnormal_bleeding",
+    "yellow_skin_or_eyes",
+    "severe_joint_or_muscle_pain",
+    "marked_mood_cognitive_or_behavior_change",
+    "suicidal_thoughts",
+    "stroke_like_symptoms",
+    "other_urgent_concern"
+  ],
+  "productRiskRedFlags": [
+    "proprietary_blend_without_amounts",
+    "extreme_or_drug_like_claims",
+    "rapid_fat_loss_claim",
+    "steroid_or_hormone_like_claim",
+    "research_chemical_language",
+    "sarm_or_prohormone_language",
+    "no_responsible_company_contact",
+    "missing_lot_or_expiry",
+    "tampered_seal",
+    "unverified_certification_logo",
+    "multiple_stimulants",
+    "undeclared_or_ambiguous_ingredient_names",
+    "marketplace_seller_without_traceability"
+  ],
+  "testVectors": [
+    {
+      "id": "claim_specificity",
+      "expected": "Creatine may have separate claims for repeated high-intensity performance, strength, cognition and safety; no single global verdict."
+    },
+    {
+      "id": "missing_dose",
+      "expected": "A reviewed efficacy claim with no supported dose protocol displays dose unavailable rather than inventing one."
+    },
+    {
+      "id": "study_dose_not_prescription",
+      "expected": "A study protocol is labelled research protocol, not personal recommendation."
+    },
+    {
+      "id": "wada_not_listed",
+      "expected": "Status not_identified_on_current_list still displays anti-doping and contamination warnings."
+    },
+    {
+      "id": "annual_wada_expiry",
+      "expected": "A WADA status reviewed for 2026 becomes stale when the configured list year changes."
+    },
+    {
+      "id": "batch_specific_certification",
+      "expected": "Brand-level certification does not certify an unmatched lot when lot-specific evidence is required."
+    },
+    {
+      "id": "historical_label",
+      "expected": "Editing a product label creates a new immutable version and does not rewrite old intake logs."
+    },
+    {
+      "id": "proprietary_blend",
+      "expected": "Unknown individual amounts remain unknown; the total blend mass is not allocated across ingredients."
+    },
+    {
+      "id": "duplicate_nutrients",
+      "expected": "The app can display duplicate vitamin D across products but does not calculate medical safety without complete intake and context."
+    },
+    {
+      "id": "interaction_boundary",
+      "expected": "An interaction record triggers professional-review language and never returns safe_to_combine."
+    },
+    {
+      "id": "adverse_event",
+      "expected": "Urgent stop signals suppress normal trial guidance and surface localized emergency/reporting resources."
+    },
+    {
+      "id": "no_product_recommendation",
+      "expected": "Comparison ranks evidence and quality dimensions but does not recommend a brand or purchase."
+    },
+    {
+      "id": "certification_limit",
+      "expected": "A verified quality mark does not upgrade clinical-efficacy confidence."
+    },
+    {
+      "id": "ais_snapshot",
+      "expected": "AIS classification displays source and review date and remains separate from internal claim confidence."
+    },
+    {
+      "id": "jurisdiction",
+      "expected": "FDA and FSSAI regulatory summaries remain separated and date-labelled."
+    }
+  ]
+}

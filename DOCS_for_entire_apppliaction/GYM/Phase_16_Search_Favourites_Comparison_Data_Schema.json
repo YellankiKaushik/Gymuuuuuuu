@@ -1,0 +1,555 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase-16-search-favourites-comparison.json",
+  "title": "Fitness OS Phase 16 Local Data Backup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "exportedAt",
+    "moduleId",
+    "favourites",
+    "collections",
+    "collectionItems",
+    "recentQueries",
+    "recentViews",
+    "savedComparisons",
+    "settings",
+    "auditEvents",
+    "deletedRecords"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "exportedAt": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "moduleId": {
+      "const": "phase_16_search_favourites_comparison"
+    },
+    "favourites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/favourite"
+      }
+    },
+    "collections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/collection"
+      }
+    },
+    "collectionItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/collectionItem"
+      }
+    },
+    "recentQueries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/recentQuery"
+      }
+    },
+    "recentViews": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/recentView"
+      }
+    },
+    "savedComparisons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/savedComparison"
+      }
+    },
+    "settings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/setting"
+      }
+    },
+    "auditEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/auditEvent"
+      }
+    },
+    "deletedRecords": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/deletedRecord"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entityType": {
+      "enum": [
+        "route",
+        "muscle",
+        "exercise",
+        "workout_science_topic",
+        "workout_program",
+        "workout_session",
+        "food",
+        "nutrient",
+        "diet_plan",
+        "recipe",
+        "meal_plan",
+        "recovery_topic",
+        "recovery_routine",
+        "sleep_entry",
+        "recovery_checkin",
+        "cardio_topic",
+        "cardio_modality",
+        "cardio_plan",
+        "conditioning_routine",
+        "supplement_ingredient",
+        "supplement_evidence_topic",
+        "measurement_protocol",
+        "progress_topic",
+        "body_measurement",
+        "dashboard_widget"
+      ]
+    },
+    "entityRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entityType",
+        "entityId",
+        "sourceModule",
+        "lastKnownTitle",
+        "lastKnownRoute",
+        "referenceStatus"
+      ],
+      "properties": {
+        "entityType": {
+          "$ref": "#/$defs/entityType"
+        },
+        "entityId": {
+          "$ref": "#/$defs/id"
+        },
+        "entityVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceModule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lastKnownTitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "lastKnownRoute": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "referenceStatus": {
+          "enum": [
+            "active",
+            "orphaned",
+            "migrated",
+            "unavailable",
+            "private"
+          ]
+        },
+        "migrationFromId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "favourite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entity",
+        "savedAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "entity": {
+          "$ref": "#/$defs/entityRef"
+        },
+        "savedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "collection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "createdAt",
+        "updatedAt",
+        "sortMode"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1000
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "sortMode": {
+          "enum": [
+            "manual",
+            "title",
+            "saved_newest",
+            "saved_oldest"
+          ]
+        }
+      }
+    },
+    "collectionItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "collectionId",
+        "entity",
+        "position",
+        "addedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "collectionId": {
+          "$ref": "#/$defs/id"
+        },
+        "entity": {
+          "$ref": "#/$defs/entityRef"
+        },
+        "position": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 3000
+        },
+        "addedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "recentQuery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "normalizedQuery",
+        "displayQuery",
+        "scope",
+        "searchedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "normalizedQuery": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "displayQuery": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "scope": {
+          "enum": [
+            "public",
+            "public_and_private"
+          ]
+        },
+        "publicFilters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "array",
+              "null"
+            ]
+          }
+        },
+        "resultCount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "searchedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "recentView": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entity",
+        "viewedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "entity": {
+          "$ref": "#/$defs/entityRef"
+        },
+        "viewedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "comparisonEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entity",
+        "position"
+      ],
+      "properties": {
+        "entity": {
+          "$ref": "#/$defs/entityRef"
+        },
+        "position": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        }
+      }
+    },
+    "savedComparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "family",
+        "entities",
+        "basis",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "family": {
+          "enum": [
+            "muscles",
+            "exercises",
+            "workout_programs",
+            "foods",
+            "nutrients",
+            "recipes",
+            "recovery_methods",
+            "cardio_modalities",
+            "cardio_plans",
+            "supplements"
+          ]
+        },
+        "entities": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/comparisonEntity"
+          }
+        },
+        "basis": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "selectedMetricIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "lastOpenedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "status": {
+          "enum": [
+            "active",
+            "contains_orphan",
+            "incompatible_after_update"
+          ]
+        }
+      }
+    },
+    "setting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value",
+        "updatedAt"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "value": {},
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "auditEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "eventType",
+        "occurredAt",
+        "entityType",
+        "entityId"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "eventType": {
+          "enum": [
+            "favourite_added",
+            "favourite_removed",
+            "collection_created",
+            "collection_updated",
+            "collection_deleted",
+            "collection_item_added",
+            "collection_item_removed",
+            "recent_history_cleared",
+            "comparison_saved",
+            "comparison_updated",
+            "comparison_deleted",
+            "entity_reference_migrated",
+            "imported",
+            "restored",
+            "deleted"
+          ]
+        },
+        "occurredAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "entityId": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    },
+    "deletedRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entityType",
+        "entityId",
+        "deletedAt"
+      ],
+      "properties": {
+        "entityType": {
+          "type": "string"
+        },
+        "entityId": {
+          "type": "string"
+        },
+        "deletedAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    }
+  }
+}

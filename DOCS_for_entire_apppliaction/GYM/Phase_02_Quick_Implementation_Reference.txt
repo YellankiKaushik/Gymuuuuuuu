@@ -1,0 +1,43 @@
+PHASE 02 QUICK IMPLEMENTATION REFERENCE
+=======================================
+
+Goal
+----
+Build a sourced, accessible, repository-owned Muscle and Functional Anatomy Library that becomes the canonical anatomy layer for later exercise and workout modules.
+
+Routes
+------
+/muscles
+/muscles/$slug
+
+Core UI
+-------
+- Search by anatomical and gym terminology
+- Body/List view
+- Front/back region selector
+- Equivalent keyboard-accessible text region list
+- Region/entity/joint/action/movement filters
+- URL-restored filter state
+- Structured muscle/group detail page
+- Sources, review date and media attribution
+
+Never add
+---------
+Authentication, profiles, cloud database, runtime anatomy API, exercise pages, workout prescriptions, EMG percentages, injury diagnosis, treatment protocols, copied proprietary images or generated factual filler.
+
+Required upload order
+---------------------
+1. Phase 00 foundation
+2. Phase 01 shell
+3. Phase 02 specification
+4. Phase 02 data schema
+5. Phase 02 seed taxonomy
+6. Plan-mode prompt
+7. Approve plan
+8. Agent-mode prompt
+9. Verification prompt
+10. GitHub checkpoint: phase-02-muscle-library-complete
+
+Publication rule
+----------------
+The taxonomy file contains draft identities only. A muscle record becomes public only after factual content, sources, review status and media licensing are complete and validation passes.

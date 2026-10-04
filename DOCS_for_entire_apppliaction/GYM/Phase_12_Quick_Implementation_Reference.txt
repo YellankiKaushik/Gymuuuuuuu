@@ -1,0 +1,37 @@
+PHASE 12 - QUICK IMPLEMENTATION REFERENCE
+
+UPLOAD TO LOVABLE
+1. Phase_12_Recovery_Sleep_Mobility.md
+2. Phase_12_Recovery_Sleep_Mobility_Data_Schema.json
+3. Phase_12_Recovery_Sleep_Mobility_Reference_Data.json
+4. Phase_12_Lovable_Prompt_Package.txt
+
+KEEP ACTIVE
+- Phase 00 Project Knowledge
+
+DEPENDENCY FILES
+- Phase_02_Muscle_Data_Schema.json
+- Phase_02_Seed_Taxonomy.json
+- Phase_03_Exercise_Data_Schema.json
+- Phase_03_Seed_Exercise_Taxonomy.json
+- Phase_04_Workout_Science_Data_Schema.json
+- Phase_04_Seed_Workout_Science_Taxonomy.json
+- Phase_06_Workout_Tracker_Data_Schema.json
+- Phase_06_Workout_Tracker_Reference_Data.json
+
+CORE RULES
+- Local-only IndexedDB; no authentication/backend.
+- No sleep-stage inference or diagnosis.
+- Device records are labelled estimates.
+- Exact timestamp and time-zone-safe sleep calculations.
+- Missing is not zero.
+- No opaque recovery/readiness score.
+- Pain is separate from soreness.
+- No automatic program changes.
+- Recovery outcomes remain separate.
+- Routine versions are immutable.
+- Published content requires sources and review.
+- No personal health data leaves the browser.
+
+CHECKPOINT
+phase-12-recovery-sleep-mobility-complete

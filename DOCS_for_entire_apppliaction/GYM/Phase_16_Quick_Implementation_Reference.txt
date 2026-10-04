@@ -1,0 +1,24 @@
+PHASE 16 — QUICK IMPLEMENTATION REFERENCE
+
+Upload to Lovable:
+1. Phase_16_Global_Search_Favourites_Comparison.md
+2. Phase_16_Search_Favourites_Comparison_Data_Schema.json
+3. Phase_16_Search_Favourites_Comparison_Reference_Data.json
+4. Phase_16_Lovable_Prompt_Package.txt
+
+Keep Phase 00 Project Knowledge active.
+Attach the schemas/taxonomies of every implemented module that should participate in global search, especially Phases 02–15.
+
+Core rules:
+- Public local index only; no external search service.
+- Upgrade Phase 01 search shell.
+- Stable IDs and published records only.
+- Exact title > exact alias > prefix > controlled fuzzy.
+- Public and private indexes separate.
+- Private search off by default; no private URL state.
+- Favourites and collections store references, not copied facts.
+- Recent history is optional and clearable.
+- Compare only compatible families, 2–4 items.
+- No universal winner and no missing-value zero.
+- Search caches are rebuildable and excluded from backup.
+- Run Plan mode first.

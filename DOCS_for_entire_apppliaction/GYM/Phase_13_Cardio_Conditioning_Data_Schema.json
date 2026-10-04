@@ -1,0 +1,728 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fitness-os.local/schemas/phase-13-cardio-conditioning.json",
+  "title": "Fitness OS Phase 13 Cardio and Conditioning Backup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "exportedAt",
+    "moduleId",
+    "cardioSessions",
+    "customPlanVersions",
+    "customRoutineVersions",
+    "settings",
+    "auditEvents",
+    "deletedRecords"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^1\\.0\\.0$"
+    },
+    "exportedAt": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "moduleId": {
+      "const": "phase_13_cardio_conditioning"
+    },
+    "cardioSessions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/cardioSession"
+      }
+    },
+    "customPlanVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/customPlanVersion"
+      }
+    },
+    "customRoutineVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/customRoutineVersion"
+      }
+    },
+    "settings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/setting"
+      }
+    },
+    "auditEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/auditEvent"
+      }
+    },
+    "deletedRecords": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/deletedRecord"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "localDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "nullableNumber": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "intensityPrescription": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "methodVersion",
+        "lower",
+        "upper",
+        "unit",
+        "instruction",
+        "maxHrSource"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "talk_test",
+            "perceived_effort_0_10",
+            "percent_hrmax",
+            "heart_rate_reserve",
+            "pace",
+            "power",
+            "manual_text"
+          ]
+        },
+        "methodVersion": {
+          "type": "string"
+        },
+        "lower": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "upper": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "instruction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maxHrSource": {
+          "enum": [
+            "not_applicable",
+            "measured",
+            "age_predicted_tanaka",
+            "clinician_supplied"
+          ]
+        }
+      }
+    },
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "order",
+        "segmentType",
+        "targetMode",
+        "targetValue",
+        "targetUnit",
+        "actualDurationSeconds",
+        "actualDistanceMeters",
+        "intensity",
+        "completed"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "segmentType": {
+          "enum": [
+            "warm_up",
+            "steady",
+            "work",
+            "recovery",
+            "lap",
+            "transition",
+            "cool_down"
+          ]
+        },
+        "targetMode": {
+          "enum": [
+            "duration",
+            "distance",
+            "repetitions",
+            "open"
+          ]
+        },
+        "targetValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "targetUnit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "actualDurationSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "actualDistanceMeters": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "intensity": {
+          "$ref": "#/$defs/intensityPrescription"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "locationType",
+        "surface",
+        "temperatureCelsius",
+        "humidityPercent",
+        "elevationGainMeters",
+        "tags"
+      ],
+      "properties": {
+        "locationType": {
+          "enum": [
+            "indoor",
+            "outdoor",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "surface": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "temperatureCelsius": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -80,
+          "maximum": 80
+        },
+        "humidityPercent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "elevationGainMeters": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "cardioSession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sessionDate",
+        "timezone",
+        "status",
+        "modalityId",
+        "phase03ExerciseId",
+        "sessionTypeId",
+        "startedAt",
+        "endedAt",
+        "elapsedSeconds",
+        "distanceMeters",
+        "averageHeartRateBpm",
+        "maximumHeartRateBpm",
+        "heartRateSource",
+        "averagePowerWatts",
+        "averageCadence",
+        "perceivedEffort0to10",
+        "talkTest",
+        "segments",
+        "environment",
+        "stopSignals",
+        "notes",
+        "sourcePlanSnapshot",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "sessionDate": {
+          "$ref": "#/$defs/localDate"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "active",
+            "paused",
+            "completed",
+            "abandoned",
+            "draft"
+          ]
+        },
+        "modalityId": {
+          "$ref": "#/$defs/id"
+        },
+        "phase03ExerciseId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sessionTypeId": {
+          "type": "string"
+        },
+        "startedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "endedAt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "elapsedSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "distanceMeters": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "averageHeartRateBpm": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 20,
+          "maximum": 260
+        },
+        "maximumHeartRateBpm": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 20,
+          "maximum": 280
+        },
+        "heartRateSource": {
+          "enum": [
+            "none",
+            "manual_pulse",
+            "chest_strap_estimate",
+            "wrist_device_estimate",
+            "machine_estimate",
+            "other_device_estimate"
+          ]
+        },
+        "averagePowerWatts": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "averageCadence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "perceivedEffort0to10": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10
+        },
+        "talkTest": {
+          "enum": [
+            "not_recorded",
+            "comfortable_conversation",
+            "talk_but_not_sing",
+            "few_words_only",
+            "unable_to_speak_comfortably"
+          ]
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/segment"
+          }
+        },
+        "environment": {
+          "$ref": "#/$defs/environment"
+        },
+        "stopSignals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 10000
+        },
+        "sourcePlanSnapshot": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/planSnapshot"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "planSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "planId",
+        "planVersionId",
+        "weekNumber",
+        "sessionId",
+        "title"
+      ],
+      "properties": {
+        "planId": {
+          "$ref": "#/$defs/id"
+        },
+        "planVersionId": {
+          "$ref": "#/$defs/id"
+        },
+        "weekNumber": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "sessionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    },
+    "planSession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "dayIndex",
+        "title",
+        "modalityId",
+        "sessionTypeId",
+        "segments",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "dayIndex": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14
+        },
+        "title": {
+          "type": "string"
+        },
+        "modalityId": {
+          "$ref": "#/$defs/id"
+        },
+        "sessionTypeId": {
+          "type": "string"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/segment"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "customPlanVersion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "planIdentityId",
+        "versionNumber",
+        "title",
+        "goal",
+        "durationWeeks",
+        "sessions",
+        "publicationStatus",
+        "createdAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "planIdentityId": {
+          "$ref": "#/$defs/id"
+        },
+        "versionNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "goal": {
+          "type": "string"
+        },
+        "durationWeeks": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 52
+        },
+        "sessions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/planSession"
+          }
+        },
+        "publicationStatus": {
+          "const": "local_active"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "customRoutineVersion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "routineIdentityId",
+        "versionNumber",
+        "title",
+        "modalityId",
+        "sessionTypeId",
+        "segments",
+        "publicationStatus",
+        "createdAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "routineIdentityId": {
+          "$ref": "#/$defs/id"
+        },
+        "versionNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "modalityId": {
+          "$ref": "#/$defs/id"
+        },
+        "sessionTypeId": {
+          "type": "string"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/segment"
+          }
+        },
+        "publicationStatus": {
+          "const": "local_active"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "setting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "key",
+        "value",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "key": {
+          "type": "string"
+        },
+        "value": {},
+        "updatedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "auditEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entityType",
+        "entityId",
+        "action",
+        "at",
+        "details"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "entityId": {
+          "$ref": "#/$defs/id"
+        },
+        "action": {
+          "type": "string"
+        },
+        "at": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    },
+    "deletedRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entityType",
+        "entityId",
+        "deletedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "entityId": {
+          "$ref": "#/$defs/id"
+        },
+        "deletedAt": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+FITNESS OS — PHASE 08 LOVABLE PROMPT PACKAGE
+Version 1.0 — 5 August 2026
+
+============================================================
+PROMPT 1 — PLAN MODE
+============================================================
+Read the attached Phase 08 Nutrient Encyclopedia specification, schema and seed taxonomy completely. Keep the Phase 00 Project Knowledge active. Also read the Phase 07 food schema and taxonomy because Phase 08 depends on their stable nutrient IDs and verified composition profiles.
+
+Do not change code yet.
+
+Produce a precise implementation plan that:
+1. Lists every route, component, domain module, content loader, reference-framework file, food-ranking transform, documentation file and test file to create or change.
+2. Preserves the no-authentication, local-first and static-data architecture.
+3. Explains draft/published separation for 51 stable nutrient identities.
+4. Explains how US/Canada DRI, FDA DV, ICMR-NIN and EFSA frameworks remain separate and versioned.
+5. Explains RDA, AI, EAR, UL, AMDR, CDRR, DV, PRI, AR, RI and TUL handling.
+6. Explains the Reference Intake Explorer without turning it into a medical recommendation tool.
+7. Explains unit, RAE, DFE, NE and other equivalence handling.
+8. Explains how verified Phase 07 food profiles generate nutrient-source rankings.
+9. Explains deficiency, excess and interaction safety boundaries.
+10. Identifies conflicts with existing phases and maps every acceptance criterion to tests.
+
+Explicitly list what you will not build: diet targets, meal plans, food logging, deficiency diagnosis, blood-test interpretation, supplement doses, authentication, backend and fabricated content.
+
+Wait for plan approval before implementation.
+
+============================================================
+PROMPT 2 — AGENT MODE IMPLEMENTATION
+============================================================
+Implement the approved Phase 08 plan exactly.
+
+Non-negotiable constraints:
+- Preserve Phases 00–07.
+- No authentication, profile, remote database or cloud health storage.
+- No runtime nutrient API.
+- No fabricated reference values, symptoms, interactions or athletic claims.
+- Keep all draft seed records hidden from public production views.
+- Use the attached JSON Schema as the canonical content contract.
+- Keep every reference framework isolated, labelled and versioned.
+- Never present EAR as a personal target or UL as a goal.
+- Never diagnose deficiency from symptoms or food data.
+- Never recommend changing medication.
+- Use verified Phase 07 food data only.
+- Preserve missing, trace and estimated states.
+- Add all required tests and documentation.
+
+Use neutral incomplete-content states where reviewed production content is absent.
+
+============================================================
+PROMPT 3 — VERIFICATION
+============================================================
+Audit the Phase 08 implementation against every requirement and acceptance criterion.
+
+Report PASS, FAIL or NOT TESTED for:
+- Routes and navigation.
+- Draft/published separation.
+- Framework isolation and version labels.
+- Reference value type definitions.
+- Reference Intake Explorer population selection.
+- Unit and equivalent conversions.
+- Percent-reference calculations.
+- Phase 07 food-source integration.
+- Missing data handling.
+- Deficiency and interaction safety boundaries.
+- No diagnosis or supplement prescription.
+- Search, filters and comparison.
+- Mobile and desktop layouts.
+- Light and dark themes.
+- Keyboard and screen-reader accessibility.
+- Schema validation and source governance.
+- No backend or remote personal-data request.
+- Regression of Phases 00–07.
+
+For each failure, name the exact file and correction. Do not claim completion while any blocking failure remains.
+
+============================================================
+PROMPT 4 — CORRECTION
+============================================================
+Correct only the Phase 08 verification failures. Do not redesign earlier phases or expand scope. Re-run the relevant tests and provide a final acceptance matrix.

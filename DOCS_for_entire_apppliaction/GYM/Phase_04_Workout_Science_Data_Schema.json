@@ -1,0 +1,869 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fitness-os-workout-science-record.schema.json",
+  "title": "Fitness OS Workout Science Topic Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "displayName",
+    "category",
+    "contentType",
+    "contentStatus",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^science_[a-z0-9_]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 2
+    },
+    "shortTitle": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "abbreviations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "category": {
+      "enum": [
+        "foundations",
+        "adaptations-goals",
+        "training-variables",
+        "effort-fatigue",
+        "progression",
+        "program-design",
+        "periodization-autoregulation",
+        "advanced-methods",
+        "measurement-interpretation",
+        "safety-boundaries"
+      ]
+    },
+    "contentType": {
+      "enum": [
+        "concept",
+        "training-variable",
+        "adaptation",
+        "method",
+        "measurement",
+        "decision-guide",
+        "glossary-term"
+      ]
+    },
+    "goalTags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "general-fitness",
+          "strength",
+          "hypertrophy",
+          "power",
+          "muscular-endurance",
+          "physical-function",
+          "skill-acquisition"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "experienceTags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "foundation",
+          "beginner",
+          "intermediate",
+          "advanced",
+          "coach-research"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "contentStatus": {
+      "enum": [
+        "draft",
+        "review-needed",
+        "reviewed",
+        "published",
+        "deprecated"
+      ]
+    },
+    "definition": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 20
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 30
+    },
+    "whyItMatters": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 30
+    },
+    "keyTakeaways": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 10
+      },
+      "uniqueItems": true
+    },
+    "howItWorks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 15
+      }
+    },
+    "goalContexts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "goal",
+          "interpretation",
+          "qualifiers",
+          "sourceIds"
+        ],
+        "properties": {
+          "goal": {
+            "enum": [
+              "general-fitness",
+              "strength",
+              "hypertrophy",
+              "power",
+              "muscular-endurance",
+              "physical-function",
+              "skill-acquisition"
+            ]
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 20
+          },
+          "qualifiers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 8
+            }
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^source_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "decisionFramework": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "solves",
+        "prioritizeWhen",
+        "deprioritizeWhen",
+        "adjustmentLevers",
+        "watchFor",
+        "cannotTellYou"
+      ],
+      "properties": {
+        "solves": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "prioritizeWhen": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "deprioritizeWhen": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "adjustmentLevers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 3
+          },
+          "minItems": 1
+        },
+        "watchFor": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "cannotTellYou": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "claimText",
+          "claimType",
+          "outcome",
+          "population",
+          "evidenceLevel",
+          "confidence",
+          "direction",
+          "sourceIds",
+          "limitations",
+          "lastVerified"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^claim_[a-z0-9_]+$"
+          },
+          "claimText": {
+            "type": "string",
+            "minLength": 20
+          },
+          "claimType": {
+            "enum": [
+              "definition",
+              "association",
+              "comparative-effect",
+              "dose-response",
+              "null-or-inconsistent",
+              "safety-boundary",
+              "practice-framework"
+            ]
+          },
+          "outcome": {
+            "enum": [
+              "strength",
+              "hypertrophy",
+              "power",
+              "muscular-endurance",
+              "physical-function",
+              "fatigue",
+              "adherence",
+              "skill",
+              "safety",
+              "mixed",
+              "not-applicable"
+            ]
+          },
+          "population": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "healthy-adults",
+                "resistance-trained-adults",
+                "untrained-adults",
+                "older-adults",
+                "youth-athletes",
+                "clinical-rehabilitation",
+                "mixed-population",
+                "not-applicable"
+              ]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "evidenceLevel": {
+            "enum": [
+              "high",
+              "moderate",
+              "low",
+              "very-low",
+              "consensus-practice"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "higher",
+              "moderate",
+              "limited",
+              "uncertain"
+            ]
+          },
+          "direction": {
+            "enum": [
+              "benefit",
+              "harm-or-cost",
+              "no-consistent-difference",
+              "mixed",
+              "context-dependent",
+              "not-applicable"
+            ]
+          },
+          "effectQualifier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^source_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 8
+            },
+            "minItems": 1
+          },
+          "lastVerified": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "uniqueItems": true
+    },
+    "practicalGuidance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "context",
+          "guidanceText",
+          "qualifiers",
+          "sourceIds"
+        ],
+        "properties": {
+          "context": {
+            "type": "string",
+            "minLength": 8
+          },
+          "guidanceText": {
+            "type": "string",
+            "minLength": 15
+          },
+          "numericValue": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "valueType",
+              "unit"
+            ],
+            "properties": {
+              "valueType": {
+                "enum": [
+                  "single",
+                  "range",
+                  "upper-bound",
+                  "lower-bound"
+                ]
+              },
+              "minimum": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "maximum": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "qualifiers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 8
+            },
+            "minItems": 1
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^source_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "scenario",
+          "steps",
+          "nonPrescriptionNotice"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "scenario": {
+            "type": "string",
+            "minLength": 15
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 8
+            },
+            "minItems": 1
+          },
+          "relatedExerciseIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^exercise_[a-z0-9_]+$"
+            },
+            "uniqueItems": true
+          },
+          "nonPrescriptionNotice": {
+            "const": true
+          }
+        }
+      }
+    },
+    "commonMistakes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "mistake",
+          "whyItMatters",
+          "correction",
+          "sourceIds"
+        ],
+        "properties": {
+          "mistake": {
+            "type": "string",
+            "minLength": 8
+          },
+          "whyItMatters": {
+            "type": "string",
+            "minLength": 15
+          },
+          "correction": {
+            "type": "string",
+            "minLength": 15
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^source_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "myths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "myth",
+          "correction",
+          "evidenceLevel",
+          "sourceIds",
+          "limitations"
+        ],
+        "properties": {
+          "myth": {
+            "type": "string",
+            "minLength": 8
+          },
+          "correction": {
+            "type": "string",
+            "minLength": 20
+          },
+          "evidenceLevel": {
+            "enum": [
+              "high",
+              "moderate",
+              "low",
+              "very-low",
+              "consensus-practice"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^source_[a-z0-9_]+$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 8
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "prerequisiteTopicIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^science_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "relatedTopicIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^science_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "commonlyConfusedTopicIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^science_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "comparedTopicIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^science_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "relatedExerciseIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^exercise_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "relatedMuscleIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^muscle_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "futureProgramIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^program_[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "sourceType",
+          "year",
+          "url",
+          "accessedAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^source_[a-z0-9_]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 8
+          },
+          "authorsOrOrganization": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceType": {
+            "enum": [
+              "position-stand",
+              "guideline",
+              "umbrella-review",
+              "systematic-review-meta-analysis",
+              "systematic-review",
+              "randomized-trial",
+              "controlled-trial",
+              "consensus-statement",
+              "textbook-definition",
+              "mechanistic-study",
+              "practice-interpretation"
+            ]
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 1900,
+            "maximum": 2100
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9]+$"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "accessedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "review": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "subjectReviewerRole",
+        "editorialReviewerRole",
+        "reviewedAt",
+        "nextReviewDue",
+        "claimReviewComplete"
+      ],
+      "properties": {
+        "subjectReviewerRole": {
+          "type": "string",
+          "minLength": 3
+        },
+        "editorialReviewerRole": {
+          "type": "string",
+          "minLength": 3
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "nextReviewDue": {
+          "type": "string",
+          "format": "date"
+        },
+        "claimReviewComplete": {
+          "const": true
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "deprecation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "replacementTopicId",
+        "migrationNote"
+      ],
+      "properties": {
+        "replacementTopicId": {
+          "type": "string",
+          "pattern": "^science_[a-z0-9_]+$"
+        },
+        "migrationNote": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "updatedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "learningOrder": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "contentStatus": {
+            "const": "published"
+          }
+        },
+        "required": [
+          "contentStatus"
+        ]
+      },
+      "then": {
+        "required": [
+          "definition",
+          "summary",
+          "whyItMatters",
+          "keyTakeaways",
+          "decisionFramework",
+          "claims",
+          "limitations",
+          "sources",
+          "review",
+          "updatedAt"
+        ],
+        "properties": {
+          "keyTakeaways": {
+            "minItems": 3
+          },
+          "claims": {
+            "minItems": 1
+          },
+          "limitations": {
+            "minItems": 1
+          },
+          "sources": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "contentStatus": {
+            "const": "deprecated"
+          }
+        },
+        "required": [
+          "contentStatus"
+        ]
+      },
+      "then": {
+        "required": [
+          "deprecation"
+        ]
+      }
+    }
+  ]
+}

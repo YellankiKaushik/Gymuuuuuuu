@@ -1,0 +1,922 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fitness-os-nutrient-record.schema.json",
+  "title": "Fitness OS Nutrient Encyclopedia Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "canonicalName",
+    "aliases",
+    "groupId",
+    "canonicalUnit",
+    "foodDataNutrientIds",
+    "essentiality",
+    "displayKind",
+    "status",
+    "contentStatus",
+    "forms",
+    "functions",
+    "referenceValues",
+    "foodSourceRules",
+    "absorptionFactors",
+    "interactions",
+    "athleticRelevance",
+    "claims",
+    "sources",
+    "editorial"
+  ],
+  "properties": {
+    "id": {
+      "enum": [
+        "energy_kcal",
+        "energy_kj",
+        "water_g",
+        "alcohol_g",
+        "protein_g",
+        "carbohydrate_total_g",
+        "carbohydrate_available_g",
+        "fiber_total_g",
+        "sugars_total_g",
+        "added_sugars_g",
+        "fat_total_g",
+        "fat_saturated_g",
+        "fat_monounsaturated_g",
+        "fat_polyunsaturated_g",
+        "trans_fat_g",
+        "omega_3_g",
+        "omega_6_g",
+        "cholesterol_mg",
+        "sodium_mg",
+        "potassium_mg",
+        "calcium_mg",
+        "iron_mg",
+        "magnesium_mg",
+        "phosphorus_mg",
+        "zinc_mg",
+        "copper_mg",
+        "manganese_mg",
+        "selenium_ug",
+        "iodine_ug",
+        "chloride_mg",
+        "chromium_ug",
+        "fluoride_mg",
+        "molybdenum_ug",
+        "vitamin_a_rae_ug",
+        "retinol_ug",
+        "beta_carotene_ug",
+        "thiamin_mg",
+        "riboflavin_mg",
+        "niacin_mg",
+        "pantothenic_acid_mg",
+        "vitamin_b6_mg",
+        "biotin_ug",
+        "folate_food_ug",
+        "folic_acid_ug",
+        "folate_dfe_ug",
+        "vitamin_b12_ug",
+        "vitamin_c_mg",
+        "vitamin_d_ug",
+        "vitamin_e_mg",
+        "vitamin_k_ug",
+        "choline_mg"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "canonicalName": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 160
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 120
+      }
+    },
+    "groupId": {
+      "enum": [
+        "energy_hydration",
+        "macronutrients",
+        "minerals_electrolytes",
+        "vitamins",
+        "other_essential"
+      ]
+    },
+    "canonicalUnit": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32
+    },
+    "foodDataNutrientIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
+    "essentiality": {
+      "enum": [
+        "essential",
+        "essential_class",
+        "essential_family",
+        "vitamin_form",
+        "vitamin_precursor",
+        "beneficial_component",
+        "beneficial_trace_element",
+        "reference_framework_dependent",
+        "nonessential",
+        "nonessential_measure",
+        "not_a_nutrient"
+      ]
+    },
+    "displayKind": {
+      "enum": [
+        "energy",
+        "energy_equivalent",
+        "nutrient",
+        "macronutrient",
+        "food_component",
+        "dietary_component",
+        "fat_component",
+        "mineral",
+        "vitamin",
+        "vitamin_form",
+        "other_nutrient"
+      ]
+    },
+    "status": {
+      "enum": [
+        "draft_identity",
+        "staged",
+        "reviewed",
+        "published",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "contentStatus": {
+      "enum": [
+        "unpopulated",
+        "partial",
+        "complete_for_mvp",
+        "superseded"
+      ]
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 700
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nutrientForm"
+      }
+    },
+    "functions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/functionClaim"
+      }
+    },
+    "referenceValues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/referenceValue"
+      }
+    },
+    "foodSourceRules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/foodSourceRule"
+      }
+    },
+    "absorptionFactors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/absorptionFactor"
+      }
+    },
+    "deficiency": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/deficiencyExcess"
+        }
+      ]
+    },
+    "excess": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/deficiencyExcess"
+        }
+      ]
+    },
+    "interactions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/interaction"
+      }
+    },
+    "athleticRelevance": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/athleticItem"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidenceClaim"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceCitation"
+      }
+    },
+    "editorial": {
+      "$ref": "#/$defs/editorial"
+    }
+  },
+  "$defs": {
+    "nutrientForm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "relationship"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "relationship": {
+          "enum": [
+            "active_form",
+            "precursor",
+            "dietary_form",
+            "supplement_form",
+            "measurement_equivalent",
+            "metabolite",
+            "family_member"
+          ]
+        },
+        "conversionRule": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "nih_ods_fact_sheets",
+              "us_canada_dri_tables",
+              "fda_daily_values",
+              "icmr_nin_rda_ear_2020",
+              "efsa_drv",
+              "usda_fooddata_central"
+            ]
+          }
+        }
+      }
+    },
+    "functionClaim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "description",
+        "sourceIds"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "description": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 700
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "nih_ods_fact_sheets",
+              "us_canada_dri_tables",
+              "fda_daily_values",
+              "icmr_nin_rda_ear_2020",
+              "efsa_drv",
+              "usda_fooddata_central"
+            ]
+          }
+        }
+      }
+    },
+    "population": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ageMinMonths",
+        "ageMaxMonths",
+        "sex",
+        "lifeStage"
+      ],
+      "properties": {
+        "ageMinMonths": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1800
+        },
+        "ageMaxMonths": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1800
+        },
+        "sex": {
+          "enum": [
+            "all",
+            "male",
+            "female"
+          ]
+        },
+        "lifeStage": {
+          "enum": [
+            "general",
+            "pregnancy",
+            "lactation"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        }
+      }
+    },
+    "referenceValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frameworkId",
+        "valueType",
+        "population",
+        "unit",
+        "sourceId",
+        "status"
+      ],
+      "properties": {
+        "frameworkId": {
+          "enum": [
+            "us_canada_dri",
+            "fda_dv_adult_4_plus",
+            "icmr_nin_2020",
+            "efsa_drv"
+          ]
+        },
+        "valueType": {
+          "enum": [
+            "RDA",
+            "AI",
+            "EAR",
+            "UL",
+            "AMDR",
+            "CDRR",
+            "DV",
+            "PRI",
+            "AR",
+            "RI",
+            "TUL",
+            "no_value_established"
+          ]
+        },
+        "population": {
+          "$ref": "#/$defs/population"
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "minValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maxValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "basis": {
+          "enum": [
+            "per_day",
+            "percent_energy",
+            "per_kg_body_weight_day",
+            "label_reference",
+            "other"
+          ]
+        },
+        "sourceId": {
+          "enum": [
+            "nih_ods_fact_sheets",
+            "us_canada_dri_tables",
+            "fda_daily_values",
+            "icmr_nin_rda_ear_2020",
+            "efsa_drv",
+            "usda_fooddata_central"
+          ]
+        },
+        "status": {
+          "enum": [
+            "source_verified",
+            "manually_verified",
+            "pending_review",
+            "not_applicable"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 600
+        }
+      }
+    },
+    "foodSourceRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rankingBasis",
+        "phase07NutrientId",
+        "status"
+      ],
+      "properties": {
+        "rankingBasis": {
+          "enum": [
+            "per_100g",
+            "per_100kcal",
+            "per_verified_portion",
+            "qualitative_only"
+          ]
+        },
+        "phase07NutrientId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "minimumDataStatus": {
+          "enum": [
+            "measured_only",
+            "measured_or_calculated",
+            "include_imputed",
+            "any_verified"
+          ]
+        },
+        "status": {
+          "enum": [
+            "enabled",
+            "disabled",
+            "future"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 400
+        }
+      }
+    },
+    "absorptionFactor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "factorType",
+        "description",
+        "direction",
+        "sourceIds"
+      ],
+      "properties": {
+        "factorType": {
+          "enum": [
+            "enhancer",
+            "inhibitor",
+            "form_difference",
+            "meal_context",
+            "physiological_state",
+            "medication",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 700
+        },
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "variable",
+            "context_dependent"
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "nih_ods_fact_sheets",
+              "us_canada_dri_tables",
+              "fda_daily_values",
+              "icmr_nin_rda_ear_2020",
+              "efsa_drv",
+              "usda_fooddata_central"
+            ]
+          }
+        },
+        "limitations": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    },
+    "deficiencyExcess": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "overview",
+        "riskGroups",
+        "signsAndSymptoms",
+        "medicalBoundary",
+        "sourceIds"
+      ],
+      "properties": {
+        "overview": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 900
+        },
+        "riskGroups": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 300
+          }
+        },
+        "signsAndSymptoms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 300
+          }
+        },
+        "medicalBoundary": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 500
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "nih_ods_fact_sheets",
+              "us_canada_dri_tables",
+              "fda_daily_values",
+              "icmr_nin_rda_ear_2020",
+              "efsa_drv",
+              "usda_fooddata_central"
+            ]
+          }
+        }
+      }
+    },
+    "interaction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "counterparty",
+        "description",
+        "severity",
+        "sourceIds"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "nutrient_nutrient",
+            "nutrient_medication",
+            "nutrient_condition",
+            "supplement_food"
+          ]
+        },
+        "counterparty": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 160
+        },
+        "description": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 800
+        },
+        "severity": {
+          "enum": [
+            "informational",
+            "caution",
+            "professional_review",
+            "urgent"
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "nih_ods_fact_sheets",
+              "us_canada_dri_tables",
+              "fda_daily_values",
+              "icmr_nin_rda_ear_2020",
+              "efsa_drv",
+              "usda_fooddata_central"
+            ]
+          }
+        },
+        "limitations": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    },
+    "athleticItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context",
+        "description",
+        "evidenceLevel",
+        "sourceIds"
+      ],
+      "properties": {
+        "context": {
+          "enum": [
+            "strength",
+            "hypertrophy",
+            "endurance",
+            "power",
+            "recovery",
+            "hydration",
+            "general_training"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 700
+        },
+        "evidenceLevel": {
+          "enum": [
+            "high",
+            "moderate",
+            "low",
+            "insufficient",
+            "context_dependent"
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "nih_ods_fact_sheets",
+              "us_canada_dri_tables",
+              "fda_daily_values",
+              "icmr_nin_rda_ear_2020",
+              "efsa_drv",
+              "usda_fooddata_central"
+            ]
+          }
+        }
+      }
+    },
+    "evidenceClaim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claimId",
+        "text",
+        "category",
+        "evidenceLevel",
+        "population",
+        "sourceIds",
+        "reviewStatus"
+      ],
+      "properties": {
+        "claimId": {
+          "type": "string",
+          "pattern": "^claim_[a-z0-9_]+$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 900
+        },
+        "category": {
+          "enum": [
+            "function",
+            "requirement",
+            "food_source",
+            "absorption",
+            "deficiency",
+            "excess",
+            "interaction",
+            "athletic_relevance",
+            "conversion",
+            "other"
+          ]
+        },
+        "evidenceLevel": {
+          "enum": [
+            "authoritative_reference",
+            "high",
+            "moderate",
+            "low",
+            "insufficient",
+            "not_applicable"
+          ]
+        },
+        "population": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 200
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "nih_ods_fact_sheets",
+              "us_canada_dri_tables",
+              "fda_daily_values",
+              "icmr_nin_rda_ear_2020",
+              "efsa_drv",
+              "usda_fooddata_central"
+            ]
+          }
+        },
+        "limitations": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 600
+        },
+        "reviewStatus": {
+          "enum": [
+            "draft",
+            "reviewed",
+            "approved",
+            "rejected"
+          ]
+        }
+      }
+    },
+    "sourceCitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "locator",
+        "accessedAt"
+      ],
+      "properties": {
+        "sourceId": {
+          "enum": [
+            "nih_ods_fact_sheets",
+            "us_canada_dri_tables",
+            "fda_daily_values",
+            "icmr_nin_rda_ear_2020",
+            "efsa_drv",
+            "usda_fooddata_central"
+          ]
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 500
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        }
+      }
+    },
+    "editorial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewStatus",
+        "reviewedAt",
+        "reviewer",
+        "notes"
+      ],
+      "properties": {
+        "reviewStatus": {
+          "enum": [
+            "not_started",
+            "in_progress",
+            "scientific_review",
+            "editorial_review",
+            "approved",
+            "changes_required"
+          ]
+        },
+        "reviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 800
+        }
+      }
+    }
+  }
+}
