@@ -1,0 +1,9 @@
+# Muscle library
+
+Phase 02's 70 immutable anatomy identities, 13 regions and 20 training groups live in content/muscles/taxonomy.json, copied from the owner-supplied draft taxonomy. No unreviewed identity is automatically promoted to factual public content. records.json is currently empty. getPublishedMuscles/getMuscleBySlug enforce the public gate. repository.ts validates references, sources, unique IDs/slugs, normalized alias collisions and parent cycles. The record schema requires publishing review metadata, summaries, sourced actions and muscle attachment fields.
+
+Catalogue: body/list view; original front/back abstract silhouette; synchronized text region list; search; region/type/visibility/joint/action/movement/depth filters; relevance/A–Z/region sort; individually removable chips; reset. Search/filter/sort/view state lives in the route URL and back/forward works through TanStack. Optional anatomyView is a small validated UI preference. The region buttons are disabled until client hydration is ready, keyboard operable and visibly selected beyond color.
+
+Detail template: identity/review badges, overview/location, progressive deeper anatomy, sourced action table, movement/training context, parent/child/relationship lists, misconceptions, cautions, sources and usage information. Unknown/draft slugs remain unavailable; deprecated records expose a replacement link. Optional facts do not produce empty boxes. No exercise cards, medical advice, prescribed sets/reps or activation percentages are fabricated.
+
+Run npm run validate:content; it is also a prebuild gate. Phase 03 resolves these canonical IDs without renaming them. Domain facts require real sources and review before ingestion. Current public factual count is zero; engineering completeness must not be mistaken for content coverage.

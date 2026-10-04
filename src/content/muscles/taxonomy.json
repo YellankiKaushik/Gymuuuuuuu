@@ -1,0 +1,1156 @@
+{
+  "metadata": {
+    "title": "Phase 02 Seed Taxonomy",
+    "purpose": "Stable identifiers and hierarchy for interface implementation. This is not a completed factual content dataset.",
+    "version": "1.0.0",
+    "date": "2026-08-05",
+    "publicationRule": "Do not mark records published until factual fields, source IDs, review status and media licensing are complete."
+  },
+  "regions": [
+    {
+      "id": "region_neck",
+      "displayName": "Neck",
+      "defaultVisibility": "multiple"
+    },
+    {
+      "id": "region_shoulder",
+      "displayName": "Shoulder",
+      "defaultVisibility": "multiple"
+    },
+    {
+      "id": "region_chest",
+      "displayName": "Chest",
+      "defaultVisibility": "anterior"
+    },
+    {
+      "id": "region_upper_back",
+      "displayName": "Upper back",
+      "defaultVisibility": "posterior"
+    },
+    {
+      "id": "region_lower_back",
+      "displayName": "Lower back",
+      "defaultVisibility": "posterior"
+    },
+    {
+      "id": "region_upper_arm",
+      "displayName": "Upper arm",
+      "defaultVisibility": "multiple"
+    },
+    {
+      "id": "region_forearm_grip",
+      "displayName": "Forearm and grip",
+      "defaultVisibility": "multiple"
+    },
+    {
+      "id": "region_core_trunk",
+      "displayName": "Core and trunk",
+      "defaultVisibility": "multiple"
+    },
+    {
+      "id": "region_hip_gluteal",
+      "displayName": "Hip and gluteal",
+      "defaultVisibility": "multiple"
+    },
+    {
+      "id": "region_front_thigh",
+      "displayName": "Front thigh",
+      "defaultVisibility": "anterior"
+    },
+    {
+      "id": "region_back_thigh",
+      "displayName": "Back thigh",
+      "defaultVisibility": "posterior"
+    },
+    {
+      "id": "region_inner_outer_thigh",
+      "displayName": "Inner and outer thigh",
+      "defaultVisibility": "multiple"
+    },
+    {
+      "id": "region_lower_leg",
+      "displayName": "Lower leg and calf",
+      "defaultVisibility": "multiple"
+    }
+  ],
+  "trainingGroups": [
+    {
+      "id": "group_neck",
+      "displayName": "Neck",
+      "regionIds": [
+        "region_neck"
+      ]
+    },
+    {
+      "id": "group_shoulders",
+      "displayName": "Shoulders",
+      "regionIds": [
+        "region_shoulder"
+      ]
+    },
+    {
+      "id": "group_rotator_cuff",
+      "displayName": "Rotator cuff",
+      "regionIds": [
+        "region_shoulder"
+      ]
+    },
+    {
+      "id": "group_chest",
+      "displayName": "Chest",
+      "regionIds": [
+        "region_chest"
+      ]
+    },
+    {
+      "id": "group_upper_back",
+      "displayName": "Upper back",
+      "regionIds": [
+        "region_upper_back"
+      ]
+    },
+    {
+      "id": "group_lats",
+      "displayName": "Lats",
+      "regionIds": [
+        "region_upper_back",
+        "region_lower_back"
+      ]
+    },
+    {
+      "id": "group_lower_back",
+      "displayName": "Lower back",
+      "regionIds": [
+        "region_lower_back"
+      ]
+    },
+    {
+      "id": "group_biceps",
+      "displayName": "Biceps",
+      "regionIds": [
+        "region_upper_arm"
+      ]
+    },
+    {
+      "id": "group_triceps",
+      "displayName": "Triceps",
+      "regionIds": [
+        "region_upper_arm"
+      ]
+    },
+    {
+      "id": "group_forearms_grip",
+      "displayName": "Forearms and grip",
+      "regionIds": [
+        "region_forearm_grip"
+      ]
+    },
+    {
+      "id": "group_core",
+      "displayName": "Core",
+      "regionIds": [
+        "region_core_trunk"
+      ]
+    },
+    {
+      "id": "group_obliques",
+      "displayName": "Obliques",
+      "regionIds": [
+        "region_core_trunk"
+      ]
+    },
+    {
+      "id": "group_glutes",
+      "displayName": "Glutes",
+      "regionIds": [
+        "region_hip_gluteal"
+      ]
+    },
+    {
+      "id": "group_hip_flexors",
+      "displayName": "Hip flexors",
+      "regionIds": [
+        "region_hip_gluteal"
+      ]
+    },
+    {
+      "id": "group_hip_adductors",
+      "displayName": "Hip adductors",
+      "regionIds": [
+        "region_inner_outer_thigh"
+      ]
+    },
+    {
+      "id": "group_hip_abductors",
+      "displayName": "Hip abductors",
+      "regionIds": [
+        "region_hip_gluteal",
+        "region_inner_outer_thigh"
+      ]
+    },
+    {
+      "id": "group_quadriceps",
+      "displayName": "Quadriceps",
+      "regionIds": [
+        "region_front_thigh"
+      ]
+    },
+    {
+      "id": "group_hamstrings",
+      "displayName": "Hamstrings",
+      "regionIds": [
+        "region_back_thigh"
+      ]
+    },
+    {
+      "id": "group_calves",
+      "displayName": "Calves",
+      "regionIds": [
+        "region_lower_leg"
+      ]
+    },
+    {
+      "id": "group_shin_ankle",
+      "displayName": "Shin and ankle stabilizers",
+      "regionIds": [
+        "region_lower_leg"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "muscle_sternocleidomastoid",
+      "slug": "sternocleidomastoid",
+      "displayName": "Sternocleidomastoid",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_neck"
+      ],
+      "trainingGroupIds": [
+        "group_neck"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_levator_scapulae",
+      "slug": "levator-scapulae",
+      "displayName": "Levator scapulae",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_neck",
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_neck",
+        "group_upper_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_deltoid",
+      "slug": "deltoid",
+      "displayName": "Deltoid",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_shoulder"
+      ],
+      "trainingGroupIds": [
+        "group_shoulders"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_deltoid_anterior",
+      "slug": "anterior-deltoid",
+      "displayName": "Anterior deltoid",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_shoulder"
+      ],
+      "trainingGroupIds": [
+        "group_shoulders"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_deltoid_middle",
+      "slug": "middle-deltoid",
+      "displayName": "Middle/lateral deltoid",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_shoulder"
+      ],
+      "trainingGroupIds": [
+        "group_shoulders"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_deltoid_posterior",
+      "slug": "posterior-deltoid",
+      "displayName": "Posterior deltoid",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_shoulder"
+      ],
+      "trainingGroupIds": [
+        "group_shoulders"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_supraspinatus",
+      "slug": "supraspinatus",
+      "displayName": "Supraspinatus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_shoulder"
+      ],
+      "trainingGroupIds": [
+        "group_rotator_cuff"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_infraspinatus",
+      "slug": "infraspinatus",
+      "displayName": "Infraspinatus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_shoulder",
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_rotator_cuff"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_teres_minor",
+      "slug": "teres-minor",
+      "displayName": "Teres minor",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_shoulder",
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_rotator_cuff"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_subscapularis",
+      "slug": "subscapularis",
+      "displayName": "Subscapularis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_shoulder"
+      ],
+      "trainingGroupIds": [
+        "group_rotator_cuff"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_pectoralis_major",
+      "slug": "pectoralis-major",
+      "displayName": "Pectoralis major",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_chest"
+      ],
+      "trainingGroupIds": [
+        "group_chest"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_pectoralis_major_clavicular",
+      "slug": "pectoralis-major-clavicular-portion",
+      "displayName": "Pectoralis major \u2014 clavicular portion",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_chest"
+      ],
+      "trainingGroupIds": [
+        "group_chest"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_pectoralis_major_sternocostal",
+      "slug": "pectoralis-major-sternocostal-portion",
+      "displayName": "Pectoralis major \u2014 sternocostal portion",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_chest"
+      ],
+      "trainingGroupIds": [
+        "group_chest"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_pectoralis_minor",
+      "slug": "pectoralis-minor",
+      "displayName": "Pectoralis minor",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_chest"
+      ],
+      "trainingGroupIds": [
+        "group_chest"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_serratus_anterior",
+      "slug": "serratus-anterior",
+      "displayName": "Serratus anterior",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_chest"
+      ],
+      "trainingGroupIds": [
+        "group_chest",
+        "group_upper_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_latissimus_dorsi",
+      "slug": "latissimus-dorsi",
+      "displayName": "Latissimus dorsi",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_upper_back",
+        "region_lower_back"
+      ],
+      "trainingGroupIds": [
+        "group_lats"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_trapezius",
+      "slug": "trapezius",
+      "displayName": "Trapezius",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_neck",
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_upper_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_trapezius_upper",
+      "slug": "upper-trapezius",
+      "displayName": "Upper trapezius",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_neck",
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_neck",
+        "group_upper_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_trapezius_middle",
+      "slug": "middle-trapezius",
+      "displayName": "Middle trapezius",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_upper_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_trapezius_lower",
+      "slug": "lower-trapezius",
+      "displayName": "Lower trapezius",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_upper_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_rhomboid_group",
+      "slug": "rhomboids",
+      "displayName": "Rhomboid group",
+      "entityType": "anatomical-group",
+      "regionIds": [
+        "region_upper_back"
+      ],
+      "trainingGroupIds": [
+        "group_upper_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_teres_major",
+      "slug": "teres-major",
+      "displayName": "Teres major",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_upper_back",
+        "region_shoulder"
+      ],
+      "trainingGroupIds": [
+        "group_upper_back",
+        "group_lats"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_erector_spinae_group",
+      "slug": "erector-spinae",
+      "displayName": "Erector spinae group",
+      "entityType": "anatomical-group",
+      "regionIds": [
+        "region_lower_back"
+      ],
+      "trainingGroupIds": [
+        "group_lower_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_multifidus",
+      "slug": "multifidus",
+      "displayName": "Multifidus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_lower_back"
+      ],
+      "trainingGroupIds": [
+        "group_lower_back",
+        "group_core"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_biceps_brachii",
+      "slug": "biceps-brachii",
+      "displayName": "Biceps brachii",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_biceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_biceps_brachii_long_head",
+      "slug": "biceps-brachii-long-head",
+      "displayName": "Biceps brachii \u2014 long head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_biceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_biceps_brachii_short_head",
+      "slug": "biceps-brachii-short-head",
+      "displayName": "Biceps brachii \u2014 short head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_biceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_brachialis",
+      "slug": "brachialis",
+      "displayName": "Brachialis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_biceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_coracobrachialis",
+      "slug": "coracobrachialis",
+      "displayName": "Coracobrachialis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_biceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_triceps_brachii",
+      "slug": "triceps-brachii",
+      "displayName": "Triceps brachii",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_triceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_triceps_long_head",
+      "slug": "triceps-brachii-long-head",
+      "displayName": "Triceps brachii \u2014 long head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_triceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_triceps_lateral_head",
+      "slug": "triceps-brachii-lateral-head",
+      "displayName": "Triceps brachii \u2014 lateral head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_triceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_triceps_medial_head",
+      "slug": "triceps-brachii-medial-head",
+      "displayName": "Triceps brachii \u2014 medial head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_upper_arm"
+      ],
+      "trainingGroupIds": [
+        "group_triceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_brachioradialis",
+      "slug": "brachioradialis",
+      "displayName": "Brachioradialis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_upper_arm",
+        "region_forearm_grip"
+      ],
+      "trainingGroupIds": [
+        "group_biceps",
+        "group_forearms_grip"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_forearm_flexor_group",
+      "slug": "forearm-flexors",
+      "displayName": "Wrist and finger flexor group",
+      "entityType": "anatomical-group",
+      "regionIds": [
+        "region_forearm_grip"
+      ],
+      "trainingGroupIds": [
+        "group_forearms_grip"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_forearm_extensor_group",
+      "slug": "forearm-extensors",
+      "displayName": "Wrist and finger extensor group",
+      "entityType": "anatomical-group",
+      "regionIds": [
+        "region_forearm_grip"
+      ],
+      "trainingGroupIds": [
+        "group_forearms_grip"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_rectus_abdominis",
+      "slug": "rectus-abdominis",
+      "displayName": "Rectus abdominis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_core_trunk"
+      ],
+      "trainingGroupIds": [
+        "group_core"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_external_oblique",
+      "slug": "external-oblique",
+      "displayName": "External oblique",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_core_trunk"
+      ],
+      "trainingGroupIds": [
+        "group_obliques",
+        "group_core"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_internal_oblique",
+      "slug": "internal-oblique",
+      "displayName": "Internal oblique",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_core_trunk"
+      ],
+      "trainingGroupIds": [
+        "group_obliques",
+        "group_core"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_transversus_abdominis",
+      "slug": "transversus-abdominis",
+      "displayName": "Transversus abdominis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_core_trunk"
+      ],
+      "trainingGroupIds": [
+        "group_core"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_quadratus_lumborum",
+      "slug": "quadratus-lumborum",
+      "displayName": "Quadratus lumborum",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_core_trunk",
+        "region_lower_back"
+      ],
+      "trainingGroupIds": [
+        "group_core",
+        "group_lower_back"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_diaphragm",
+      "slug": "diaphragm",
+      "displayName": "Diaphragm",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_core_trunk"
+      ],
+      "trainingGroupIds": [
+        "group_core"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_gluteus_maximus",
+      "slug": "gluteus-maximus",
+      "displayName": "Gluteus maximus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_hip_gluteal"
+      ],
+      "trainingGroupIds": [
+        "group_glutes"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_gluteus_medius",
+      "slug": "gluteus-medius",
+      "displayName": "Gluteus medius",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_hip_gluteal"
+      ],
+      "trainingGroupIds": [
+        "group_glutes",
+        "group_hip_abductors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_gluteus_minimus",
+      "slug": "gluteus-minimus",
+      "displayName": "Gluteus minimus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_hip_gluteal"
+      ],
+      "trainingGroupIds": [
+        "group_glutes",
+        "group_hip_abductors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_tensor_fasciae_latae",
+      "slug": "tensor-fasciae-latae",
+      "displayName": "Tensor fasciae latae",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_hip_gluteal",
+        "region_inner_outer_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hip_abductors",
+        "group_hip_flexors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_iliopsoas_group",
+      "slug": "iliopsoas",
+      "displayName": "Iliopsoas group",
+      "entityType": "anatomical-group",
+      "regionIds": [
+        "region_hip_gluteal"
+      ],
+      "trainingGroupIds": [
+        "group_hip_flexors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_deep_hip_rotator_group",
+      "slug": "deep-hip-external-rotators",
+      "displayName": "Deep hip external rotator group",
+      "entityType": "anatomical-group",
+      "regionIds": [
+        "region_hip_gluteal"
+      ],
+      "trainingGroupIds": [
+        "group_glutes"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_adductor_magnus",
+      "slug": "adductor-magnus",
+      "displayName": "Adductor magnus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_inner_outer_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hip_adductors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_adductor_longus",
+      "slug": "adductor-longus",
+      "displayName": "Adductor longus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_inner_outer_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hip_adductors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_adductor_brevis",
+      "slug": "adductor-brevis",
+      "displayName": "Adductor brevis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_inner_outer_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hip_adductors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_gracilis",
+      "slug": "gracilis",
+      "displayName": "Gracilis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_inner_outer_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hip_adductors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_pectineus",
+      "slug": "pectineus",
+      "displayName": "Pectineus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_inner_outer_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hip_adductors",
+        "group_hip_flexors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_rectus_femoris",
+      "slug": "rectus-femoris",
+      "displayName": "Rectus femoris",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_front_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_quadriceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_vastus_lateralis",
+      "slug": "vastus-lateralis",
+      "displayName": "Vastus lateralis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_front_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_quadriceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_vastus_medialis",
+      "slug": "vastus-medialis",
+      "displayName": "Vastus medialis",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_front_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_quadriceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_vastus_intermedius",
+      "slug": "vastus-intermedius",
+      "displayName": "Vastus intermedius",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_front_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_quadriceps"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_sartorius",
+      "slug": "sartorius",
+      "displayName": "Sartorius",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_front_thigh",
+        "region_inner_outer_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hip_flexors"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_biceps_femoris",
+      "slug": "biceps-femoris",
+      "displayName": "Biceps femoris",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_back_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hamstrings"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_biceps_femoris_long_head",
+      "slug": "biceps-femoris-long-head",
+      "displayName": "Biceps femoris \u2014 long head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_back_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hamstrings"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_biceps_femoris_short_head",
+      "slug": "biceps-femoris-short-head",
+      "displayName": "Biceps femoris \u2014 short head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_back_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hamstrings"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_semitendinosus",
+      "slug": "semitendinosus",
+      "displayName": "Semitendinosus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_back_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hamstrings"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_semimembranosus",
+      "slug": "semimembranosus",
+      "displayName": "Semimembranosus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_back_thigh"
+      ],
+      "trainingGroupIds": [
+        "group_hamstrings"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_gastrocnemius",
+      "slug": "gastrocnemius",
+      "displayName": "Gastrocnemius",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_lower_leg"
+      ],
+      "trainingGroupIds": [
+        "group_calves"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_gastrocnemius_medial_head",
+      "slug": "gastrocnemius-medial-head",
+      "displayName": "Gastrocnemius \u2014 medial head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_lower_leg"
+      ],
+      "trainingGroupIds": [
+        "group_calves"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_gastrocnemius_lateral_head",
+      "slug": "gastrocnemius-lateral-head",
+      "displayName": "Gastrocnemius \u2014 lateral head",
+      "entityType": "subdivision",
+      "regionIds": [
+        "region_lower_leg"
+      ],
+      "trainingGroupIds": [
+        "group_calves"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_soleus",
+      "slug": "soleus",
+      "displayName": "Soleus",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_lower_leg"
+      ],
+      "trainingGroupIds": [
+        "group_calves"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_tibialis_anterior",
+      "slug": "tibialis-anterior",
+      "displayName": "Tibialis anterior",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_lower_leg"
+      ],
+      "trainingGroupIds": [
+        "group_shin_ankle"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_tibialis_posterior",
+      "slug": "tibialis-posterior",
+      "displayName": "Tibialis posterior",
+      "entityType": "muscle",
+      "regionIds": [
+        "region_lower_leg"
+      ],
+      "trainingGroupIds": [
+        "group_shin_ankle"
+      ],
+      "contentStatus": "draft"
+    },
+    {
+      "id": "muscle_fibularis_group",
+      "slug": "fibularis-muscles",
+      "displayName": "Fibularis/peroneal group",
+      "entityType": "anatomical-group",
+      "regionIds": [
+        "region_lower_leg"
+      ],
+      "trainingGroupIds": [
+        "group_shin_ankle"
+      ],
+      "contentStatus": "draft"
+    }
+  ]
+}

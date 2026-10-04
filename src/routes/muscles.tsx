@@ -1,6 +1,6 @@
 import { metadataFor } from '../lib/route-metadata'
 import { createFileRoute } from '@tanstack/react-router'
-import { ModulePage } from '../components/module-page'
-import { modules } from '../data/navigation'
-export const Route = createFileRoute('/muscles')({ head: () => metadataFor('/muscles'), component: Page })
-function Page() { const module = modules.find((item) => item.path === '/muscles'); return module ? <ModulePage module={module} /> : null }
+import { MuscleCatalogue } from '../features/muscles/catalogue'
+import { parseMuscleQuery } from '../features/muscles/query'
+export const Route = createFileRoute('/muscles')({ head: () => metadataFor('/muscles'), validateSearch: parseMuscleQuery, component: Page })
+function Page() { const query = Route.useSearch(); const navigate = Route.useNavigate(); return <MuscleCatalogue query={query} onChange={(next) => { void navigate({ search: next }) }} /> }

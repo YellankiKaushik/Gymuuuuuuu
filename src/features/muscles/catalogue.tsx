@@ -1,0 +1,40 @@
+import { useEffect, useRef, useState } from 'react'
+import { useRouterState } from '@tanstack/react-router'
+import { PageHeader } from '../../components/common/page-header'
+import { EmptyState } from '../../components/common/states'
+import { InfoCallout, StatusBadge } from '../../components/common/primitives'
+import { Icon } from '../../components/common/icon'
+import { usePreferences } from '../../components/app-shell/preferences'
+import { anatomyTaxonomy, getPublishedMuscles } from './repository'
+import { BodyRegionSelector } from './body-selector'
+import { entityTypeSchema, movementPatterns, visibilitySchema } from './schema'
+import { parseMuscleQuery, searchMuscles, type MuscleQuery } from './query'
+
+function FilterFields({ query, change }: { query: MuscleQuery; change: (next: Partial<MuscleQuery>) => void }) {
+  const records = getPublishedMuscles()
+  const options: { key: keyof MuscleQuery; label: string; values: readonly { id: string; label: string }[] }[] = [
+    { key: 'region', label: 'Body region', values: anatomyTaxonomy.regions.map((item) => ({ id: item.id, label: item.displayName })) },
+    { key: 'type', label: 'Entity type', values: entityTypeSchema.options.map((id) => ({ id, label: id.replaceAll('-', ' ') })) },
+    { key: 'visibility', label: 'Visibility', values: visibilitySchema.options.map((id) => ({ id, label: id })) },
+    { key: 'joint', label: 'Joint', values: [...new Set(records.flatMap((item) => item.jointActions.map((action) => action.joint)))].map((id) => ({ id, label: id })) },
+    { key: 'action', label: 'Joint action', values: [...new Set(records.flatMap((item) => item.jointActions.map((action) => action.motion)))].map((id) => ({ id, label: id })) },
+    { key: 'movement', label: 'Movement pattern', values: movementPatterns.map((id) => ({ id, label: id.replaceAll('-', ' ') })) },
+    { key: 'depth', label: 'Content depth', values: ['foundation', 'practical', 'advanced'].map((id) => ({ id, label: id })) },
+  ]
+  return <div className="filter-fields">{options.map((option) => <label key={option.key}>{option.label}<select value={query[option.key]} onChange={(event) => change({ [option.key]: event.target.value })}><option value="">All</option>{option.values.map((value) => <option key={value.id} value={value.id}>{value.label}</option>)}</select></label>)}</div>
+}
+function FilterDialog({ query, change, close }: { query: MuscleQuery; change: (next: Partial<MuscleQuery>) => void; close: () => void }) {
+  const ref = useRef<HTMLDialogElement>(null)
+  useEffect(() => { const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null; const dialog = ref.current; dialog?.showModal(); return () => { dialog?.close(); opener?.focus() } }, [])
+  return <dialog className="filter-dialog" ref={ref} aria-labelledby="filter-title" onCancel={close}><div className="dialog-heading"><h2 id="filter-title">Filter the library</h2><button className="icon-button" aria-label="Close filters" onClick={close}><Icon name="close" /></button></div><FilterFields query={query} change={change} /><button className="button primary" onClick={close}>Show results</button></dialog>
+}
+export function MuscleCatalogue({ query, onChange }: { query: MuscleQuery; onChange: (next: MuscleQuery) => void }) {
+  const { preferences, hydrated, update } = usePreferences()
+  const hasView = useRouterState({ select: (state) => new URLSearchParams(state.location.searchStr).has('view') })
+  const [filtersOpen, setFiltersOpen] = useState(false)
+  useEffect(() => { if (hydrated && !hasView && preferences.anatomyView && preferences.anatomyView !== query.view) onChange({ ...query, view: preferences.anatomyView }) }, [hydrated, hasView, preferences.anatomyView, query, onChange])
+  const results = searchMuscles(query)
+  function change(next: Partial<MuscleQuery>) { onChange({ ...query, ...next }) }
+  const activeFilters = (['region', 'type', 'visibility', 'joint', 'action', 'movement', 'depth'] as const).filter((key) => query[key])
+  return <div className="page catalogue-page"><PageHeader title="Muscle library" eyebrow="LEARN / FUNCTIONAL ANATOMY" description="Explore the muscles and functional groups involved in training movements. Start with a body region or search by anatomical or gym terminology." /><InfoCallout>Training-oriented education, with practical summaries first and deeper anatomy when you need it. No personal information is required.</InfoCallout><div className="catalogue-toolbar"><label className="search-field"><Icon name="search" /><input value={query.q} onChange={(event) => change({ q: event.target.value })} aria-label="Search muscles" placeholder="Search muscles, aliases or movements…" /></label><div className="segmented" aria-label="Catalogue view">{(['body', 'list'] as const).map((view) => <button key={view} aria-pressed={query.view === view} onClick={() => { change({ view }); update({ anatomyView: view }) }}>{view === 'body' ? 'Body' : 'List'}</button>)}</div><button className="button secondary" onClick={() => setFiltersOpen(true)}><Icon name="tools" size={18} />Filters{activeFilters.length ? ` (${activeFilters.length})` : ''}</button></div>{query.view === 'body' && <BodyRegionSelector selected={query.region} onSelect={(region) => change({ region })} />}<div className="desktop-filter-fields"><FilterFields query={query} change={change} /></div>{activeFilters.length > 0 && <div className="active-filters" aria-label="Active filters">{activeFilters.map((key) => <button className="filter-chip" key={key} onClick={() => change({ [key]: '' })}>Remove {key}: {query[key].replace('region_', '').replaceAll('_', ' ')}<Icon name="close" size={14} /></button>)}<button className="text-button" onClick={() => onChange({ ...parseMuscleQuery({}), view: query.view })}>Clear all filters</button></div>}<div className="results-bar"><p role="status" aria-live="polite">{results.length} reviewed {results.length === 1 ? 'record' : 'records'}{query.q ? ` matching “${query.q}”` : ''}</p><label>Sort<select value={query.sort} onChange={(event) => change({ sort: event.target.value as MuscleQuery['sort'] })}><option value="relevance">Relevance</option><option value="az">A–Z</option><option value="region">Body region</option></select></label></div>{results.length ? <div className="entity-grid">{results.map((record) => <a className="entity-card" key={record.id} href={`/muscles/${record.slug}`}><span className="entity-card-icon"><Icon name="target" size={25} /></span><StatusBadge>{record.entityType.replaceAll('-', ' ')}</StatusBadge><h2>{record.displayName}</h2>{record.displayName !== record.anatomicalName && <span className="anatomical-name">{record.anatomicalName}</span>}<p>{record.summary}</p><div className="tag-row">{record.jointActions.slice(0, 3).map((action) => <span key={`${action.joint}-${action.motion}`}>{action.motion}</span>)}</div><div className="entity-card-footer"><span>{record.regions.map((id) => anatomyTaxonomy.regions.find((region) => region.id === id)?.displayName).join(' · ')}</span><Icon name="arrow" size={17} /></div><small>Sources available · Checked {record.reviewedAt}</small></a>)}</div> : <EmptyState title={activeFilters.length || query.q ? 'No reviewed records match.' : 'Verified anatomy is being prepared.'} description={activeFilters.length || query.q ? 'Try another anatomical name or clear a filter. Unreviewed records are kept out of the public library.' : 'The region browser is ready. Factual records will appear here after their sources, review and content validation are complete.'}><button className="button secondary" onClick={() => onChange({ ...parseMuscleQuery({}), view: query.view })}>Browse all muscles</button></EmptyState>}<InfoCallout title="Precise names, familiar language">Muscles, muscle portions, anatomical groups and body regions are labelled separately. Common gym terms are search aliases; they do not create new anatomical structures.</InfoCallout><a className="methodology-link" href="/about/sources">Sources & methodology<Icon name="external" size={17} /></a>{filtersOpen && <FilterDialog query={query} change={change} close={() => setFiltersOpen(false)} />}</div>
+}
