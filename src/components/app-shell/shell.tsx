@@ -1,32 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouterState } from '@tanstack/react-router'
-import { findModule, primaryNavigation } from '../../data/navigation'
 import { Icon } from '../common/icon'
 import { ModuleFinder } from './module-finder'
 import { usePreferences } from './preferences'
+import { Brand, Breadcrumbs, DesktopSidebar, MobileBottomNav, ResponsiveNavDialog } from './navigation'
 
-export function AppShell({ children }: { children: React.ReactNode }) {
+export function AppShell({ children, actions }: { children: React.ReactNode; actions?: React.ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname })
-  const module = findModule(pathname)
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [navigation, setNavigation] = useState<'tablet' | 'more' | null>(null)
   const [finderOpen, setFinderOpen] = useState(false)
   const { preferences, hydrated, update } = usePreferences()
-  return <div className="app-layout">
-    <a className="skip-link" href="#main-content">Skip to content</a>
-    {mobileOpen && <button className="nav-backdrop" aria-label="Close navigation" onClick={() => setMobileOpen(false)} />}
-    <aside id="primary-navigation" className={`sidebar ${mobileOpen ? 'is-open' : ''}`}>
-      <a href="/" className="brand" aria-label="Fitness OS overview"><span className="brand-mark"><span /><span /><span /></span><span>fitness<span className="brand-os">OS</span><small>KNOWLEDGE MEETS ACTION</small></span></a>
-      <button className="mobile-nav-close icon-button" onClick={() => setMobileOpen(false)} aria-label="Close navigation"><Icon name="close" /></button>
-      <span className="nav-label">YOUR WORKSPACE</span>
-      <nav aria-label="Primary navigation">{primaryNavigation.map((item) => {
-        const active = item.path === '/' ? pathname === '/' : pathname === item.path || module?.domain === item.title
-        return <a key={item.path} href={item.path} className={`nav-item ${active ? 'active' : ''}`} aria-current={active ? 'page' : undefined} onClick={() => setMobileOpen(false)}><Icon name={item.icon} size={20} /><span>{item.title}</span>{active && <span className="nav-active-dot" />}</a>
-      })}</nav>
-      <div className="sidebar-bottom"><div className="local-note"><Icon name="shield" size={21} /><div><strong>Your space. Your data.</strong><p>Private by design.<br />Stored on your device.</p></div></div><a href="/settings" className={`nav-item ${pathname === '/settings' ? 'active' : ''}`} aria-current={pathname === '/settings' ? 'page' : undefined}><Icon name="settings" /><span>Settings</span></a><a href="/about/sources" className={`nav-item ${pathname === '/about/sources' ? 'active' : ''}`} aria-current={pathname === '/about/sources' ? 'page' : undefined}><Icon name="help" /><span>Sources & methodology</span></a><div className="sidebar-version"><span className="status-dot" />Phase 00 · Foundation<span>v0.0</span></div></div>
-    </aside>
-    <div className="main-column"><header className="topbar"><div className="breadcrumb"><button className="mobile-menu icon-button" disabled={!hydrated} aria-label="Open navigation" aria-expanded={mobileOpen} aria-controls="primary-navigation" onClick={() => setMobileOpen(true)}><Icon name="menu" /></button><span>Workspace</span><Icon name="chevron" size={14} /><strong>{module?.title ?? (pathname === '/' ? 'Overview' : 'Page unavailable')}</strong></div><div className="topbar-actions"><button className="finder-trigger" aria-label="Find a module" disabled={!hydrated} onClick={() => setFinderOpen(true)}><Icon name="search" size={17} /><span>Find a module</span><span className="search-hint">/</span></button><div className="topbar-divider" /><button className="icon-button theme-toggle" aria-label={`Switch to ${preferences.theme === 'dark' ? 'light' : 'dark'} theme`} onClick={() => update({ theme: preferences.theme === 'dark' ? 'light' : 'dark' })}><Icon name={preferences.theme === 'dark' ? 'sun' : 'moon'} size={19} /></button><span className="local-badge"><Icon name="lock" size={13} />Device local</span></div></header>
-      <main id="main-content" tabIndex={-1}>{children}</main>
-      <footer className="site-footer"><span>Built for knowledge. Designed for ownership.</span><a href="/about/sources">Evidence & methodology<Icon name="external" size={13} /></a></footer>
-    </div>{finderOpen && <ModuleFinder close={() => setFinderOpen(false)} />}
-  </div>
+  useEffect(() => {
+    function shortcut(event: KeyboardEvent) {
+      const target = event.target
+      const editable = target instanceof HTMLElement && (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName))
+      if (((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') || (event.key === '/' && !editable)) { event.preventDefault(); setFinderOpen(true) }
+    }
+    window.addEventListener('keydown', shortcut)
+    const openSearch = () => setFinderOpen(true)
+    window.addEventListener('fitness-os:open-search', openSearch)
+    return () => { window.removeEventListener('keydown', shortcut); window.removeEventListener('fitness-os:open-search', openSearch) }
+  }, [])
+  return <div className={`app-layout ${preferences.sidebarCollapsed ? 'sidebar-collapsed' : ''}`}><a className="skip-link" href="#main-content">Skip to content</a><DesktopSidebar pathname={pathname} /><div className="main-column"><header className="topbar"><div className="desktop-context"><button className="tablet-menu icon-button" disabled={!hydrated} aria-label="Open navigation" onClick={() => setNavigation('tablet')}><Icon name="menu" /></button><Breadcrumbs pathname={pathname} /></div><div className="mobile-brand"><Brand /></div><div className="topbar-actions"><button className="finder-trigger" aria-label="Find a module" disabled={!hydrated} onClick={() => setFinderOpen(true)}><Icon name="search" size={19} /><span>Find a module</span><kbd className="search-hint">Ctrl K</kbd></button><div className="topbar-divider" /><button className="icon-button theme-toggle" disabled={!hydrated} title={`Theme: ${preferences.theme}`} aria-label={`Switch to ${preferences.theme === 'dark' ? 'light' : 'dark'} theme`} onClick={() => update({ theme: preferences.theme === 'dark' ? 'light' : 'dark' })}><Icon name={preferences.theme === 'dark' ? 'sun' : 'moon'} size={20} /></button><span className="local-badge"><Icon name="lock" size={14} />Device local</span><button className="more-trigger icon-button" aria-label="More destinations" disabled={!hydrated} onClick={() => setNavigation('more')}><Icon name="menu" /></button>{actions}</div></header><main id="main-content" tabIndex={-1}>{children}</main><footer className="site-footer"><span>Built for knowledge. Designed for ownership.</span><a href="/about/sources">Evidence & methodology<Icon name="external" size={15} /></a></footer></div><MobileBottomNav pathname={pathname} />{finderOpen && <ModuleFinder close={() => setFinderOpen(false)} />}{navigation && <ResponsiveNavDialog pathname={pathname} mode={navigation} close={() => setNavigation(null)} />}</div>
 }

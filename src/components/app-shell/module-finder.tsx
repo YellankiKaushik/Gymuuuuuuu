@@ -1,16 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { modules } from '../../data/navigation'
+import { searchNavigation } from '../../lib/navigation-search'
 import { Icon } from '../common/icon'
 
 export function ModuleFinder({ close }: { close: () => void }) {
   const ref = useRef<HTMLDialogElement>(null)
   const [query, setQuery] = useState('')
-  const results = modules.filter((module) => !module.path.includes('$') && `${module.title} ${module.domain}`.toLowerCase().includes(query.toLowerCase()))
-  useEffect(() => { const dialog = ref.current; dialog?.showModal(); return () => dialog?.close() }, [])
-  return <dialog ref={ref} className="finder" onCancel={close} onClick={(event) => { if (event.target === event.currentTarget) close() }} aria-labelledby="finder-title">
-    <div className="finder-heading"><div><span className="eyebrow">WORKSPACE DIRECTORY</span><h2 id="finder-title">Find a module</h2></div><button className="icon-button" onClick={close} aria-label="Close module finder"><Icon name="close" /></button></div>
-    <label className="search-field"><Icon name="search" /><input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search module names…" aria-label="Search module names" /></label>
-    <p className="finder-note">Feature pages are placeholders during Phase 00.</p>
-    <div className="finder-results">{results.length ? results.map((module) => <a href={module.path} key={module.path} onClick={close}><span>{module.title}<small>{module.domain}</small></span><Icon name="arrow" size={18} /></a>) : <p className="no-results">No modules match “{query}”. Try another name.</p>}</div>
-  </dialog>
+  const [selected, setSelected] = useState(0)
+  const results = searchNavigation(query)
+  useEffect(() => { const dialog = ref.current; const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null; dialog?.showModal(); return () => { dialog?.close(); opener?.focus() } }, [])
+  return <dialog ref={ref} className="finder" onCancel={close} onClick={(event) => { const b = event.currentTarget.getBoundingClientRect(); if (event.clientX < b.left || event.clientX > b.right || event.clientY < b.top || event.clientY > b.bottom) close() }} aria-labelledby="finder-title"><div className="finder-heading"><div><span className="eyebrow">WORKSPACE DIRECTORY</span><h2 id="finder-title">Find a module</h2></div><button className="icon-button" onClick={close} aria-label="Close module finder"><Icon name="close" /></button></div><label className="search-field"><Icon name="search" /><input autoFocus role="combobox" aria-expanded="true" aria-controls="module-results" aria-activedescendant={results[selected] ? `result-${results[selected].id}` : undefined} value={query} onChange={(event) => { setQuery(event.target.value); setSelected(0) }} onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setSelected((index) => Math.min(index + 1, results.length - 1)) } if (event.key === 'ArrowUp') { event.preventDefault(); setSelected((index) => Math.max(index - 1, 0)) } if (event.key === 'Enter' && results[selected]) { event.preventDefault(); window.location.assign(results[selected].href) } }} placeholder="Search modules, topics or tools…" aria-label="Search module names" /></label><p className="finder-note" role="status" aria-live="polite">{results.length} {results.length === 1 ? 'module' : 'modules'} · Use ↑ ↓ to select, Enter to open, Esc to close.</p><div className="finder-results" id="module-results" role="listbox" aria-label="Module results">{results.length ? results.map((item, index) => <a role="option" aria-selected={selected === index} id={`result-${item.id}`} href={item.href} key={item.id} onMouseEnter={() => setSelected(index)} onClick={close}><span>{item.label}<small>{item.description}</small></span><Icon name="arrow" size={18} /></a>) : <div className="no-results"><p>No modules match “{query}”. Try another name.</p><button className="button secondary" onClick={() => { setQuery(''); setSelected(0) }}>Clear search</button></div>}</div></dialog>
 }

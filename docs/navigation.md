@@ -1,0 +1,7 @@
+# Navigation
+
+src/data/navigation.ts is the canonical route/module and typed navigation manifest. IDs, paths, group references, icon keys, aliases, order and mobile visibility drive desktop, tablet, mobile, search and breadcrumbs. Central app identity/origin is src/config/app.ts; set origin to the deployment URL before production indexing. metadataFor generates titles, descriptions and canonical URLs. Dynamic placeholders are noindex.
+
+Desktop >=1024 px: persistent 272 px sidebar or 80 px collapsed sidebar, preference saved locally. Learn/Train/Eat/Recover expose children. Current group remains visible. Collapsed controls provide title tooltips and accessible names. 640–1023 px: topbar and temporary native-dialog drawer. <640 px: brand/search/More topbar and exactly five bottom destinations Home /, Learn /learn, Train /programs, Eat /foods, Progress /progress. More includes Recovery, Mobility, Tools, Saved, Settings and Sources. Safe-area bottom spacing prevents covered content.
+
+Search is navigation-only in Phase 01. Ctrl/Cmd K or slash outside editable controls opens; arrows select, Enter navigates, Escape closes. Aliases include calorie, vitamins, sleep, log workout and history. Results count announces changes. No external service or stored queries. Breadcrumbs derive hierarchy from metadata rather than raw slugs. Native dialogs trap focus and restore the trigger after close. Unknown routes expose home/search/back; unknown entities link to their catalogue without fabricating records.

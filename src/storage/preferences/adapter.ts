@@ -10,7 +10,9 @@ export function readPreferences(): StorageResult<Preferences> {
   try {
     const raw = window.localStorage.getItem(PREFERENCE_KEY)
     if (!raw) return { ok: true, value: defaultPreferences }
-    const parsed = preferencesSchema.safeParse(JSON.parse(raw) as unknown)
+    let input: unknown
+    try { input = JSON.parse(raw) as unknown } catch { return { ok: false, error: 'Saved preferences are invalid. Choose your preferences again.' } }
+    const parsed = preferencesSchema.safeParse(input)
     return parsed.success ? { ok: true, value: parsed.data } : { ok: false, error: 'Saved preferences are invalid. Choose your preferences again.' }
   } catch { return { ok: false, error: 'Browser preferences are unavailable. Changes will apply only until this page is closed.' } }
 }

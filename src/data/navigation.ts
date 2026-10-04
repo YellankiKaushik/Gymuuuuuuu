@@ -36,12 +36,63 @@ export function findModule(path: string): ModuleDefinition | undefined {
   return modules.find((module) => module.path === path) ?? modules.find((module) => module.path.includes('$slug') && path.startsWith(module.path.replace('$slug', '')))
 }
 export const primaryNavigation = [
-  { title: 'Overview', path: '/', icon: 'home' },
+  { title: 'Home', path: '/', icon: 'home' },
   { title: 'Learn', path: '/learn', icon: 'book' },
-  { title: 'Train', path: '/train', icon: 'dumbbell' },
-  { title: 'Eat', path: '/eat', icon: 'leaf' },
+  { title: 'Train', path: '/programs', icon: 'dumbbell' },
+  { title: 'Eat', path: '/foods', icon: 'leaf' },
   { title: 'Recover', path: '/recovery', icon: 'moon' },
-  { title: 'Track', path: '/track', icon: 'chart' },
+  { title: 'Progress', path: '/progress', icon: 'chart' },
   { title: 'Tools', path: '/tools', icon: 'tools' },
   { title: 'Saved', path: '/saved', icon: 'bookmark' },
 ] as const
+
+export interface NavigationItem {
+  id: string
+  label: string
+  href: string
+  description: string
+  icon: import('../components/common/icon').IconName
+  aliases: readonly string[]
+  groupId?: string
+  visibility: 'primary' | 'secondary' | 'contextual'
+  mobilePrimary: boolean
+  order: number
+}
+const groupPaths: Record<string, readonly string[]> = {
+  learn: ['/muscles', '/exercises', '/training-science', '/nutrients', '/supplements'],
+  train: ['/workout', '/workout/history', '/cardio'], eat: ['/diet', '/recipes', '/nutrition-log'], recover: ['/mobility'],
+}
+const aliases: Record<string, readonly string[]> = {
+  '/diet': ['calorie', 'energy', 'macros', 'targets'], '/tools': ['calorie', 'calculator', 'timer', 'compare'],
+  '/nutrients': ['vitamin', 'vitamins', 'minerals', 'protein'], '/recovery': ['sleep', 'rest', 'soreness'],
+  '/workout': ['log workout', 'sets', 'session'], '/workout/history': ['history', 'past sessions'], '/exercises': ['exercise', 'movement'],
+}
+const groupIds: Record<string, string> = { Home: 'home', Learn: 'learn', Train: 'train', Eat: 'eat', Recover: 'recover', Progress: 'progress', Tools: 'tools', Saved: 'saved' }
+export const navigationItems: readonly NavigationItem[] = [
+  ...primaryNavigation.map((entry, index) => ({
+    id: groupIds[entry.title] ?? entry.title.toLowerCase(), label: entry.title, href: entry.path, icon: entry.icon,
+    description: findModule(entry.path)?.description ?? 'Your fitness workspace overview.', aliases: aliases[entry.path] ?? [],
+    visibility: (index < 6 ? 'primary' : 'secondary') as 'primary' | 'secondary',
+    mobilePrimary: ['Home', 'Learn', 'Train', 'Eat', 'Progress'].includes(entry.title), order: index,
+  })),
+  ...modules.filter((module) => !primaryNavigation.some((entry) => entry.path === module.path)).map((module, index) => ({
+    id: `${['/train', '/eat', '/track'].includes(module.path) ? 'hub-' : ''}${module.path.slice(1).replaceAll('/', '-').replace('$', '')}`, label: module.title, href: module.path,
+    description: module.description, icon: (module.domain === 'Eat' ? 'leaf' : module.domain === 'Train' ? 'dumbbell' : module.domain === 'Recover' ? 'moon' : module.domain === 'Track' ? 'chart' : module.path === '/settings' ? 'settings' : module.path === '/about/sources' ? 'help' : 'book') as NavigationItem['icon'],
+    aliases: aliases[module.path] ?? [], groupId: Object.entries(groupPaths).find(([, paths]) => paths.includes(module.path))?.[0],
+    visibility: (module.path.includes('$') || ['/train', '/eat', '/track'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
+  })),
+]
+export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const
+export function navigationFor(path: string): NavigationItem | undefined {
+  const module = findModule(path)
+  return navigationItems.find((entry) => entry.href === (module?.path ?? path))
+}
+export function groupFor(path: string): string | undefined {
+  const entry = navigationFor(path)
+  if (entry?.groupId) return entry.groupId
+  if (findModule(path)?.path.includes('$slug')) {
+    const catalogue = navigationFor(path.slice(0, path.lastIndexOf('/')))
+    return catalogue?.groupId ?? catalogue?.id
+  }
+  return entry?.id
+}
