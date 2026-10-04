@@ -1,0 +1,648 @@
+// Generated from DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Data_Schema.json; do not hand edit.
+import { z } from "zod";
+export const foodNormativeSchema = z.strictObject({
+  id: z.string().regex(new RegExp("^food_[a-z0-9_]+$")),
+  slug: z.string().regex(new RegExp("^[a-z0-9]+(?:-[a-z0-9]+)*$")),
+  canonicalName: z.string().min(2).max(160),
+  aliases: z
+    .array(z.string().min(1).max(120))
+    .refine(
+      (v) => new Set(v.map((i) => JSON.stringify(i))).size === v.length,
+      "Duplicate array value",
+    ),
+  regionalNames: z
+    .array(
+      z.strictObject({
+        language: z.string().min(2).max(40),
+        script: z.string().max(40).nullable().optional(),
+        name: z.string().min(1).max(120),
+      }),
+    )
+    .optional(),
+  scientificName: z.string().max(180).nullable().optional(),
+  description: z.string().max(1200).nullable().optional(),
+  categoryId: z.enum([
+    "fruits",
+    "vegetables",
+    "leafy_greens",
+    "legumes_pulses",
+    "grains_cereals_millets",
+    "nuts_seeds",
+    "dairy_eggs",
+    "meat_poultry",
+    "fish_seafood",
+    "fats_oils",
+    "spices_herbs",
+    "beverages",
+    "fungi_algae",
+    "sweeteners",
+  ]),
+  subgroupId: z.enum([
+    "citrus",
+    "berries",
+    "tropical_fruits",
+    "stone_fruits",
+    "pome_fruits",
+    "melons",
+    "dried_fruits",
+    "roots_tubers",
+    "gourds_squashes",
+    "cruciferous",
+    "alliums",
+    "fruiting_vegetables",
+    "pods_stems",
+    "leafy_indian",
+    "leafy_global",
+    "dry_beans",
+    "lentils",
+    "peas_grams",
+    "soy_legumes",
+    "rice",
+    "wheat_related",
+    "millets",
+    "other_grains",
+    "tree_nuts",
+    "seeds",
+    "milk_cultured",
+    "cheese_paneer",
+    "eggs",
+    "poultry",
+    "red_meat",
+    "organ_meat",
+    "finfish",
+    "shellfish",
+    "plant_oils",
+    "animal_fats",
+    "whole_spices",
+    "fresh_herbs_aromatics",
+    "powdered_spices",
+    "tea_coffee",
+    "other_beverages",
+    "mushrooms",
+    "sea_vegetables",
+    "sugars_syrups",
+  ]),
+  status: z.enum([
+    "draft_identity",
+    "staged",
+    "reviewed",
+    "published",
+    "deprecated",
+    "archived",
+  ]),
+  compositionStatus: z.enum([
+    "unpopulated",
+    "partial",
+    "complete_for_mvp",
+    "superseded",
+  ]),
+  defaultProfileId: z
+    .string()
+    .regex(new RegExp("^profile_[a-z0-9_]+$"))
+    .nullable()
+    .optional(),
+  dietaryTags: z
+    .array(z.string())
+    .refine(
+      (v) => new Set(v.map((i) => JSON.stringify(i))).size === v.length,
+      "Duplicate array value",
+    )
+    .optional(),
+  allergenTags: z
+    .array(z.string())
+    .refine(
+      (v) => new Set(v.map((i) => JSON.stringify(i))).size === v.length,
+      "Duplicate array value",
+    )
+    .optional(),
+  sourceSearchTerms: z.array(z.string().min(1).max(160)).optional(),
+  preferredSourceOrder: z
+    .array(
+      z.enum([
+        "usda_fdc_foundation_2026_04",
+        "usda_fdc_fndds_2021_2023",
+        "usda_fdc_sr_legacy_2018",
+        "icmr_nin_ifct_2017_reference",
+        "fao_infoods_guidelines",
+      ]),
+    )
+    .optional(),
+  indiaReferenceCandidate: z.boolean().optional(),
+  compositionProfiles: z.array(
+    z.strictObject({
+      profileId: z.string().regex(new RegExp("^profile_[a-z0-9_]+$")),
+      label: z.string().min(2).max(180),
+      foodState: z.enum([
+        "raw",
+        "boiled",
+        "steamed",
+        "baked",
+        "roasted",
+        "fried",
+        "grilled",
+        "dried",
+        "canned",
+        "frozen",
+        "fermented",
+        "pasteurized",
+        "powdered",
+        "refined",
+        "unrefined",
+        "other",
+      ]),
+      processingLevel: z.enum([
+        "unprocessed",
+        "minimally_processed",
+        "processed_ingredient",
+        "processed_food",
+        "not_classified",
+      ]),
+      preparationNotes: z.string().max(500).nullable().optional(),
+      basis: z.literal("per_100g_edible_portion"),
+      ediblePortion: z.strictObject({
+        percent: z.number().finite().min(0).max(100).nullable(),
+        status: z.enum([
+          "source_reported",
+          "compiler_calculated",
+          "not_available",
+        ]),
+      }),
+      nutrients: z.array(
+        z.strictObject({
+          nutrientId: z.enum([
+            "energy_kcal",
+            "energy_kj",
+            "water_g",
+            "protein_g",
+            "carbohydrate_total_g",
+            "carbohydrate_available_g",
+            "fiber_total_g",
+            "sugars_total_g",
+            "fat_total_g",
+            "fat_saturated_g",
+            "fat_monounsaturated_g",
+            "fat_polyunsaturated_g",
+            "omega_3_g",
+            "omega_6_g",
+            "cholesterol_mg",
+            "sodium_mg",
+            "potassium_mg",
+            "calcium_mg",
+            "iron_mg",
+            "magnesium_mg",
+            "phosphorus_mg",
+            "zinc_mg",
+            "copper_mg",
+            "manganese_mg",
+            "selenium_ug",
+            "iodine_ug",
+            "vitamin_a_rae_ug",
+            "retinol_ug",
+            "beta_carotene_ug",
+            "thiamin_mg",
+            "riboflavin_mg",
+            "niacin_mg",
+            "pantothenic_acid_mg",
+            "vitamin_b6_mg",
+            "biotin_ug",
+            "folate_food_ug",
+            "folic_acid_ug",
+            "folate_dfe_ug",
+            "vitamin_b12_ug",
+            "vitamin_c_mg",
+            "vitamin_d_ug",
+            "vitamin_e_mg",
+            "vitamin_k_ug",
+            "choline_mg",
+          ]),
+          status: z.enum([
+            "measured",
+            "calculated",
+            "imputed",
+            "estimated",
+            "trace",
+            "not_detected",
+            "not_available",
+          ]),
+          unit: z.string().min(1).max(20),
+          value: z.number().finite().min(0).nullable(),
+          minValue: z.number().finite().min(0).nullable().optional(),
+          maxValue: z.number().finite().min(0).nullable().optional(),
+          sourceRecordId: z.string().min(3).max(180),
+          methodNote: z.string().max(500).nullable().optional(),
+          significantFigures: z
+            .number()
+            .finite()
+            .int()
+            .min(0)
+            .max(8)
+            .nullable()
+            .optional(),
+        }),
+      ),
+      portions: z.array(
+        z.strictObject({
+          portionId: z.string().regex(new RegExp("^portion_[a-z0-9_]+$")),
+          label: z.string().min(1).max(100),
+          grams: z.number().finite().max(10000).gt(0),
+          status: z.enum(["source_reported", "measured", "estimated"]),
+          sourceRecordId: z.string().min(3).max(180),
+          notes: z.string().max(300).nullable().optional(),
+        }),
+      ),
+      sourceRecords: z
+        .array(
+          z.strictObject({
+            sourceRecordId: z.string().min(3).max(180),
+            sourceId: z.enum([
+              "usda_fdc_foundation_2026_04",
+              "usda_fdc_fndds_2021_2023",
+              "usda_fdc_sr_legacy_2018",
+              "icmr_nin_ifct_2017_reference",
+              "fao_infoods_guidelines",
+            ]),
+            externalFoodId: z.string().max(120).nullable(),
+            externalDescription: z.string().max(500).nullable().optional(),
+            release: z.string().min(2).max(80),
+            accessedAt: z
+              .string()
+              .refine(
+                (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+                "Invalid timestamp",
+              ),
+            matchType: z.enum([
+              "exact",
+              "close_match",
+              "compiled",
+              "manual_entry",
+            ]),
+            licenseNote: z.string().max(500).nullable().optional(),
+            citation: z.string().min(3).max(800).optional(),
+          }),
+        )
+        .min(1),
+      review: z.strictObject({
+        status: z.enum([
+          "not_started",
+          "source_checked",
+          "numeric_checked",
+          "approved",
+          "rejected",
+        ]),
+        reviewedAt: z
+          .string()
+          .refine(
+            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+            "Invalid timestamp",
+          )
+          .nullable(),
+        reviewer: z.string().max(120).nullable(),
+        qualityNotes: z.array(z.string().max(500)),
+      }),
+    }),
+  ),
+  media: z
+    .array(
+      z.strictObject({
+        id: z.string().regex(new RegExp("^media_[a-z0-9_]+$")),
+        kind: z.enum(["image", "illustration"]),
+        src: z.string().min(3).max(500),
+        alt: z.string().min(3).max(240),
+        license: z.string().min(2).max(120),
+        attribution: z.string().min(2).max(500),
+        status: z.enum(["draft", "rights_verified", "rejected"]),
+      }),
+    )
+    .optional(),
+  editorial: z.strictObject({
+    reviewStatus: z.enum([
+      "not_started",
+      "identity_checked",
+      "profiles_checked",
+      "approved",
+      "rejected",
+    ]),
+    reviewedAt: z
+      .string()
+      .refine(
+        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+        "Invalid timestamp",
+      )
+      .nullable(),
+    reviewer: z.string().max(120).nullable(),
+    notes: z.string().max(1200),
+  }),
+});
+export const regionalNameNormativeSchema = z.strictObject({
+  language: z.string().min(2).max(40),
+  script: z.string().max(40).nullable().optional(),
+  name: z.string().min(1).max(120),
+});
+export const compositionProfileNormativeSchema = z.strictObject({
+  profileId: z.string().regex(new RegExp("^profile_[a-z0-9_]+$")),
+  label: z.string().min(2).max(180),
+  foodState: z.enum([
+    "raw",
+    "boiled",
+    "steamed",
+    "baked",
+    "roasted",
+    "fried",
+    "grilled",
+    "dried",
+    "canned",
+    "frozen",
+    "fermented",
+    "pasteurized",
+    "powdered",
+    "refined",
+    "unrefined",
+    "other",
+  ]),
+  processingLevel: z.enum([
+    "unprocessed",
+    "minimally_processed",
+    "processed_ingredient",
+    "processed_food",
+    "not_classified",
+  ]),
+  preparationNotes: z.string().max(500).nullable().optional(),
+  basis: z.literal("per_100g_edible_portion"),
+  ediblePortion: z.strictObject({
+    percent: z.number().finite().min(0).max(100).nullable(),
+    status: z.enum(["source_reported", "compiler_calculated", "not_available"]),
+  }),
+  nutrients: z.array(
+    z.strictObject({
+      nutrientId: z.enum([
+        "energy_kcal",
+        "energy_kj",
+        "water_g",
+        "protein_g",
+        "carbohydrate_total_g",
+        "carbohydrate_available_g",
+        "fiber_total_g",
+        "sugars_total_g",
+        "fat_total_g",
+        "fat_saturated_g",
+        "fat_monounsaturated_g",
+        "fat_polyunsaturated_g",
+        "omega_3_g",
+        "omega_6_g",
+        "cholesterol_mg",
+        "sodium_mg",
+        "potassium_mg",
+        "calcium_mg",
+        "iron_mg",
+        "magnesium_mg",
+        "phosphorus_mg",
+        "zinc_mg",
+        "copper_mg",
+        "manganese_mg",
+        "selenium_ug",
+        "iodine_ug",
+        "vitamin_a_rae_ug",
+        "retinol_ug",
+        "beta_carotene_ug",
+        "thiamin_mg",
+        "riboflavin_mg",
+        "niacin_mg",
+        "pantothenic_acid_mg",
+        "vitamin_b6_mg",
+        "biotin_ug",
+        "folate_food_ug",
+        "folic_acid_ug",
+        "folate_dfe_ug",
+        "vitamin_b12_ug",
+        "vitamin_c_mg",
+        "vitamin_d_ug",
+        "vitamin_e_mg",
+        "vitamin_k_ug",
+        "choline_mg",
+      ]),
+      status: z.enum([
+        "measured",
+        "calculated",
+        "imputed",
+        "estimated",
+        "trace",
+        "not_detected",
+        "not_available",
+      ]),
+      unit: z.string().min(1).max(20),
+      value: z.number().finite().min(0).nullable(),
+      minValue: z.number().finite().min(0).nullable().optional(),
+      maxValue: z.number().finite().min(0).nullable().optional(),
+      sourceRecordId: z.string().min(3).max(180),
+      methodNote: z.string().max(500).nullable().optional(),
+      significantFigures: z
+        .number()
+        .finite()
+        .int()
+        .min(0)
+        .max(8)
+        .nullable()
+        .optional(),
+    }),
+  ),
+  portions: z.array(
+    z.strictObject({
+      portionId: z.string().regex(new RegExp("^portion_[a-z0-9_]+$")),
+      label: z.string().min(1).max(100),
+      grams: z.number().finite().max(10000).gt(0),
+      status: z.enum(["source_reported", "measured", "estimated"]),
+      sourceRecordId: z.string().min(3).max(180),
+      notes: z.string().max(300).nullable().optional(),
+    }),
+  ),
+  sourceRecords: z
+    .array(
+      z.strictObject({
+        sourceRecordId: z.string().min(3).max(180),
+        sourceId: z.enum([
+          "usda_fdc_foundation_2026_04",
+          "usda_fdc_fndds_2021_2023",
+          "usda_fdc_sr_legacy_2018",
+          "icmr_nin_ifct_2017_reference",
+          "fao_infoods_guidelines",
+        ]),
+        externalFoodId: z.string().max(120).nullable(),
+        externalDescription: z.string().max(500).nullable().optional(),
+        release: z.string().min(2).max(80),
+        accessedAt: z
+          .string()
+          .refine(
+            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+            "Invalid timestamp",
+          ),
+        matchType: z.enum(["exact", "close_match", "compiled", "manual_entry"]),
+        licenseNote: z.string().max(500).nullable().optional(),
+        citation: z.string().min(3).max(800).optional(),
+      }),
+    )
+    .min(1),
+  review: z.strictObject({
+    status: z.enum([
+      "not_started",
+      "source_checked",
+      "numeric_checked",
+      "approved",
+      "rejected",
+    ]),
+    reviewedAt: z
+      .string()
+      .refine(
+        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+        "Invalid timestamp",
+      )
+      .nullable(),
+    reviewer: z.string().max(120).nullable(),
+    qualityNotes: z.array(z.string().max(500)),
+  }),
+});
+export const nutrientMeasurementNormativeSchema = z.strictObject({
+  nutrientId: z.enum([
+    "energy_kcal",
+    "energy_kj",
+    "water_g",
+    "protein_g",
+    "carbohydrate_total_g",
+    "carbohydrate_available_g",
+    "fiber_total_g",
+    "sugars_total_g",
+    "fat_total_g",
+    "fat_saturated_g",
+    "fat_monounsaturated_g",
+    "fat_polyunsaturated_g",
+    "omega_3_g",
+    "omega_6_g",
+    "cholesterol_mg",
+    "sodium_mg",
+    "potassium_mg",
+    "calcium_mg",
+    "iron_mg",
+    "magnesium_mg",
+    "phosphorus_mg",
+    "zinc_mg",
+    "copper_mg",
+    "manganese_mg",
+    "selenium_ug",
+    "iodine_ug",
+    "vitamin_a_rae_ug",
+    "retinol_ug",
+    "beta_carotene_ug",
+    "thiamin_mg",
+    "riboflavin_mg",
+    "niacin_mg",
+    "pantothenic_acid_mg",
+    "vitamin_b6_mg",
+    "biotin_ug",
+    "folate_food_ug",
+    "folic_acid_ug",
+    "folate_dfe_ug",
+    "vitamin_b12_ug",
+    "vitamin_c_mg",
+    "vitamin_d_ug",
+    "vitamin_e_mg",
+    "vitamin_k_ug",
+    "choline_mg",
+  ]),
+  status: z.enum([
+    "measured",
+    "calculated",
+    "imputed",
+    "estimated",
+    "trace",
+    "not_detected",
+    "not_available",
+  ]),
+  unit: z.string().min(1).max(20),
+  value: z.number().finite().min(0).nullable(),
+  minValue: z.number().finite().min(0).nullable().optional(),
+  maxValue: z.number().finite().min(0).nullable().optional(),
+  sourceRecordId: z.string().min(3).max(180),
+  methodNote: z.string().max(500).nullable().optional(),
+  significantFigures: z
+    .number()
+    .finite()
+    .int()
+    .min(0)
+    .max(8)
+    .nullable()
+    .optional(),
+});
+export const portionNormativeSchema = z.strictObject({
+  portionId: z.string().regex(new RegExp("^portion_[a-z0-9_]+$")),
+  label: z.string().min(1).max(100),
+  grams: z.number().finite().max(10000).gt(0),
+  status: z.enum(["source_reported", "measured", "estimated"]),
+  sourceRecordId: z.string().min(3).max(180),
+  notes: z.string().max(300).nullable().optional(),
+});
+export const sourceRecordNormativeSchema = z.strictObject({
+  sourceRecordId: z.string().min(3).max(180),
+  sourceId: z.enum([
+    "usda_fdc_foundation_2026_04",
+    "usda_fdc_fndds_2021_2023",
+    "usda_fdc_sr_legacy_2018",
+    "icmr_nin_ifct_2017_reference",
+    "fao_infoods_guidelines",
+  ]),
+  externalFoodId: z.string().max(120).nullable(),
+  externalDescription: z.string().max(500).nullable().optional(),
+  release: z.string().min(2).max(80),
+  accessedAt: z
+    .string()
+    .refine(
+      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+      "Invalid timestamp",
+    ),
+  matchType: z.enum(["exact", "close_match", "compiled", "manual_entry"]),
+  licenseNote: z.string().max(500).nullable().optional(),
+  citation: z.string().min(3).max(800).optional(),
+});
+export const mediaAssetNormativeSchema = z.strictObject({
+  id: z.string().regex(new RegExp("^media_[a-z0-9_]+$")),
+  kind: z.enum(["image", "illustration"]),
+  src: z.string().min(3).max(500),
+  alt: z.string().min(3).max(240),
+  license: z.string().min(2).max(120),
+  attribution: z.string().min(2).max(500),
+  status: z.enum(["draft", "rights_verified", "rejected"]),
+});
+export const profileReviewNormativeSchema = z.strictObject({
+  status: z.enum([
+    "not_started",
+    "source_checked",
+    "numeric_checked",
+    "approved",
+    "rejected",
+  ]),
+  reviewedAt: z
+    .string()
+    .refine(
+      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+      "Invalid timestamp",
+    )
+    .nullable(),
+  reviewer: z.string().max(120).nullable(),
+  qualityNotes: z.array(z.string().max(500)),
+});
+export const editorialNormativeSchema = z.strictObject({
+  reviewStatus: z.enum([
+    "not_started",
+    "identity_checked",
+    "profiles_checked",
+    "approved",
+    "rejected",
+  ]),
+  reviewedAt: z
+    .string()
+    .refine(
+      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
+      "Invalid timestamp",
+    )
+    .nullable(),
+  reviewer: z.string().max(120).nullable(),
+  notes: z.string().max(1200),
+});

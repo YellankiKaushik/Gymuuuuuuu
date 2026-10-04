@@ -1,0 +1,715 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 07 Food Encyclopedia Reference Data",
+    "version": "1.0.0",
+    "date": "5 August 2026",
+    "status": "implementation-reference",
+    "notice": "Defines stable categories, nutrient identifiers, source policies, quality flags and UI defaults. It does not contain verified nutrient values."
+  },
+  "foodCategories": [
+    {
+      "id": "fruits",
+      "label": "Fruits",
+      "description": "Fresh, frozen, dried or otherwise minimally processed fruits."
+    },
+    {
+      "id": "vegetables",
+      "label": "Vegetables",
+      "description": "Non-leafy vegetables, roots, tubers, gourds and pods."
+    },
+    {
+      "id": "leafy_greens",
+      "label": "Leafy greens",
+      "description": "Leaves and tender shoots commonly eaten as vegetables."
+    },
+    {
+      "id": "legumes_pulses",
+      "label": "Legumes and pulses",
+      "description": "Dry pulses, beans, peas and related minimally processed foods."
+    },
+    {
+      "id": "grains_cereals_millets",
+      "label": "Grains, cereals and millets",
+      "description": "Whole or refined cereal grains and millets."
+    },
+    {
+      "id": "nuts_seeds",
+      "label": "Nuts and seeds",
+      "description": "Tree nuts, groundnuts and edible seeds."
+    },
+    {
+      "id": "dairy_eggs",
+      "label": "Dairy and eggs",
+      "description": "Milk, cultured dairy, cheeses and eggs."
+    },
+    {
+      "id": "meat_poultry",
+      "label": "Meat and poultry",
+      "description": "Unprocessed or minimally processed animal meats and organ meats."
+    },
+    {
+      "id": "fish_seafood",
+      "label": "Fish and seafood",
+      "description": "Fish, shellfish and other aquatic animal foods."
+    },
+    {
+      "id": "fats_oils",
+      "label": "Fats and oils",
+      "description": "Culinary fats and oils."
+    },
+    {
+      "id": "spices_herbs",
+      "label": "Spices and herbs",
+      "description": "Culinary spices, herbs and aromatics."
+    },
+    {
+      "id": "beverages",
+      "label": "Beverages",
+      "description": "Unsweetened or minimally formulated beverages."
+    },
+    {
+      "id": "fungi_algae",
+      "label": "Fungi and algae",
+      "description": "Edible mushrooms, fungi and sea vegetables."
+    },
+    {
+      "id": "sweeteners",
+      "label": "Sweeteners",
+      "description": "Single-ingredient caloric sweeteners."
+    }
+  ],
+  "foodSubgroups": [
+    {
+      "id": "citrus",
+      "categoryId": "fruits",
+      "label": "Citrus"
+    },
+    {
+      "id": "berries",
+      "categoryId": "fruits",
+      "label": "Berries"
+    },
+    {
+      "id": "tropical_fruits",
+      "categoryId": "fruits",
+      "label": "Tropical fruits"
+    },
+    {
+      "id": "stone_fruits",
+      "categoryId": "fruits",
+      "label": "Stone fruits"
+    },
+    {
+      "id": "pome_fruits",
+      "categoryId": "fruits",
+      "label": "Pome fruits"
+    },
+    {
+      "id": "melons",
+      "categoryId": "fruits",
+      "label": "Melons"
+    },
+    {
+      "id": "dried_fruits",
+      "categoryId": "fruits",
+      "label": "Dried fruits"
+    },
+    {
+      "id": "roots_tubers",
+      "categoryId": "vegetables",
+      "label": "Roots and tubers"
+    },
+    {
+      "id": "gourds_squashes",
+      "categoryId": "vegetables",
+      "label": "Gourds and squashes"
+    },
+    {
+      "id": "cruciferous",
+      "categoryId": "vegetables",
+      "label": "Cruciferous vegetables"
+    },
+    {
+      "id": "alliums",
+      "categoryId": "vegetables",
+      "label": "Alliums"
+    },
+    {
+      "id": "fruiting_vegetables",
+      "categoryId": "vegetables",
+      "label": "Fruiting vegetables"
+    },
+    {
+      "id": "pods_stems",
+      "categoryId": "vegetables",
+      "label": "Pods and stems"
+    },
+    {
+      "id": "leafy_indian",
+      "categoryId": "leafy_greens",
+      "label": "Indian leafy greens"
+    },
+    {
+      "id": "leafy_global",
+      "categoryId": "leafy_greens",
+      "label": "Other leafy greens"
+    },
+    {
+      "id": "dry_beans",
+      "categoryId": "legumes_pulses",
+      "label": "Dry beans"
+    },
+    {
+      "id": "lentils",
+      "categoryId": "legumes_pulses",
+      "label": "Lentils"
+    },
+    {
+      "id": "peas_grams",
+      "categoryId": "legumes_pulses",
+      "label": "Peas and grams"
+    },
+    {
+      "id": "soy_legumes",
+      "categoryId": "legumes_pulses",
+      "label": "Soy and related foods"
+    },
+    {
+      "id": "rice",
+      "categoryId": "grains_cereals_millets",
+      "label": "Rice"
+    },
+    {
+      "id": "wheat_related",
+      "categoryId": "grains_cereals_millets",
+      "label": "Wheat and related grains"
+    },
+    {
+      "id": "millets",
+      "categoryId": "grains_cereals_millets",
+      "label": "Millets"
+    },
+    {
+      "id": "other_grains",
+      "categoryId": "grains_cereals_millets",
+      "label": "Other grains"
+    },
+    {
+      "id": "tree_nuts",
+      "categoryId": "nuts_seeds",
+      "label": "Tree nuts"
+    },
+    {
+      "id": "seeds",
+      "categoryId": "nuts_seeds",
+      "label": "Seeds"
+    },
+    {
+      "id": "milk_cultured",
+      "categoryId": "dairy_eggs",
+      "label": "Milk and cultured dairy"
+    },
+    {
+      "id": "cheese_paneer",
+      "categoryId": "dairy_eggs",
+      "label": "Cheese and paneer"
+    },
+    {
+      "id": "eggs",
+      "categoryId": "dairy_eggs",
+      "label": "Eggs"
+    },
+    {
+      "id": "poultry",
+      "categoryId": "meat_poultry",
+      "label": "Poultry"
+    },
+    {
+      "id": "red_meat",
+      "categoryId": "meat_poultry",
+      "label": "Red meat"
+    },
+    {
+      "id": "organ_meat",
+      "categoryId": "meat_poultry",
+      "label": "Organ meat"
+    },
+    {
+      "id": "finfish",
+      "categoryId": "fish_seafood",
+      "label": "Finfish"
+    },
+    {
+      "id": "shellfish",
+      "categoryId": "fish_seafood",
+      "label": "Shellfish"
+    },
+    {
+      "id": "plant_oils",
+      "categoryId": "fats_oils",
+      "label": "Plant oils"
+    },
+    {
+      "id": "animal_fats",
+      "categoryId": "fats_oils",
+      "label": "Animal and dairy fats"
+    },
+    {
+      "id": "whole_spices",
+      "categoryId": "spices_herbs",
+      "label": "Whole spices"
+    },
+    {
+      "id": "fresh_herbs_aromatics",
+      "categoryId": "spices_herbs",
+      "label": "Fresh herbs and aromatics"
+    },
+    {
+      "id": "powdered_spices",
+      "categoryId": "spices_herbs",
+      "label": "Powdered spices"
+    },
+    {
+      "id": "tea_coffee",
+      "categoryId": "beverages",
+      "label": "Tea and coffee"
+    },
+    {
+      "id": "other_beverages",
+      "categoryId": "beverages",
+      "label": "Other beverages"
+    },
+    {
+      "id": "mushrooms",
+      "categoryId": "fungi_algae",
+      "label": "Mushrooms"
+    },
+    {
+      "id": "sea_vegetables",
+      "categoryId": "fungi_algae",
+      "label": "Sea vegetables"
+    },
+    {
+      "id": "sugars_syrups",
+      "categoryId": "sweeteners",
+      "label": "Sugars and syrups"
+    }
+  ],
+  "nutrientRegistry": [
+    {
+      "id": "energy_kcal",
+      "label": "Energy",
+      "canonicalUnit": "kcal",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "energy_kj",
+      "label": "Energy",
+      "canonicalUnit": "kJ",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "water_g",
+      "label": "Water",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "protein_g",
+      "label": "Protein",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "carbohydrate_total_g",
+      "label": "Total carbohydrate",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "carbohydrate_available_g",
+      "label": "Available carbohydrate",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "fiber_total_g",
+      "label": "Dietary fibre",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "sugars_total_g",
+      "label": "Total sugars",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "fat_total_g",
+      "label": "Total fat",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "fat_saturated_g",
+      "label": "Saturated fat",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "fat_monounsaturated_g",
+      "label": "Monounsaturated fat",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "fat_polyunsaturated_g",
+      "label": "Polyunsaturated fat",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "omega_3_g",
+      "label": "Omega-3 fatty acids",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "omega_6_g",
+      "label": "Omega-6 fatty acids",
+      "canonicalUnit": "g",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "cholesterol_mg",
+      "label": "Cholesterol",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "sodium_mg",
+      "label": "Sodium",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "potassium_mg",
+      "label": "Potassium",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "calcium_mg",
+      "label": "Calcium",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "iron_mg",
+      "label": "Iron",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "magnesium_mg",
+      "label": "Magnesium",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "phosphorus_mg",
+      "label": "Phosphorus",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "zinc_mg",
+      "label": "Zinc",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "copper_mg",
+      "label": "Copper",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "manganese_mg",
+      "label": "Manganese",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "selenium_ug",
+      "label": "Selenium",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "iodine_ug",
+      "label": "Iodine",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "vitamin_a_rae_ug",
+      "label": "Vitamin A, RAE",
+      "canonicalUnit": "µg RAE",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "retinol_ug",
+      "label": "Retinol",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "beta_carotene_ug",
+      "label": "Beta-carotene",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "thiamin_mg",
+      "label": "Thiamin (B1)",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "riboflavin_mg",
+      "label": "Riboflavin (B2)",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "niacin_mg",
+      "label": "Niacin (B3)",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "pantothenic_acid_mg",
+      "label": "Pantothenic acid (B5)",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "vitamin_b6_mg",
+      "label": "Vitamin B6",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "biotin_ug",
+      "label": "Biotin (B7)",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "folate_food_ug",
+      "label": "Food folate",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "folic_acid_ug",
+      "label": "Folic acid",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "folate_dfe_ug",
+      "label": "Folate, DFE",
+      "canonicalUnit": "µg DFE",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "vitamin_b12_ug",
+      "label": "Vitamin B12",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "vitamin_c_mg",
+      "label": "Vitamin C",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "vitamin_d_ug",
+      "label": "Vitamin D",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "vitamin_e_mg",
+      "label": "Vitamin E",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "vitamin_k_ug",
+      "label": "Vitamin K",
+      "canonicalUnit": "µg",
+      "ownerPhase": "Phase 08"
+    },
+    {
+      "id": "choline_mg",
+      "label": "Choline",
+      "canonicalUnit": "mg",
+      "ownerPhase": "Phase 08"
+    }
+  ],
+  "compositionStatuses": [
+    {
+      "id": "measured",
+      "label": "Measured / analytical"
+    },
+    {
+      "id": "calculated",
+      "label": "Calculated by source"
+    },
+    {
+      "id": "imputed",
+      "label": "Imputed by source"
+    },
+    {
+      "id": "estimated",
+      "label": "Estimated by compiler"
+    },
+    {
+      "id": "trace",
+      "label": "Trace amount"
+    },
+    {
+      "id": "not_detected",
+      "label": "Not detected"
+    },
+    {
+      "id": "not_available",
+      "label": "Not available or not measured"
+    }
+  ],
+  "foodStates": [
+    "raw",
+    "boiled",
+    "steamed",
+    "baked",
+    "roasted",
+    "fried",
+    "grilled",
+    "dried",
+    "canned",
+    "frozen",
+    "fermented",
+    "pasteurized",
+    "powdered",
+    "refined",
+    "unrefined",
+    "other"
+  ],
+  "processingLevels": [
+    "unprocessed",
+    "minimally_processed",
+    "processed_ingredient",
+    "processed_food",
+    "not_classified"
+  ],
+  "dietaryTags": [
+    "plant_based",
+    "animal_based",
+    "vegetarian",
+    "vegan",
+    "contains_gluten",
+    "gluten_free_by_nature",
+    "contains_dairy",
+    "contains_egg",
+    "contains_fish",
+    "contains_shellfish",
+    "contains_meat"
+  ],
+  "allergenTags": [
+    "milk",
+    "egg",
+    "fish",
+    "crustacean_shellfish",
+    "tree_nut",
+    "peanut",
+    "wheat",
+    "soy",
+    "sesame",
+    "mustard",
+    "sulphites",
+    "none_known",
+    "unknown"
+  ],
+  "sourceRegistry": [
+    {
+      "id": "usda_fdc_foundation_2026_04",
+      "name": "USDA FoodData Central - Foundation Foods",
+      "release": "April 2026",
+      "usage": "preferred distributable composition source",
+      "url": "https://fdc.nal.usda.gov/download-datasets/",
+      "license": "CC0 1.0 Universal",
+      "redistribution": "allowed with requested attribution",
+      "notes": "Analytical values and extensive metadata; not all nutrients exist for every food."
+    },
+    {
+      "id": "usda_fdc_fndds_2021_2023",
+      "name": "USDA Food and Nutrient Database for Dietary Studies",
+      "release": "2021-2023, published October 2024",
+      "usage": "prepared-food and portion fallback",
+      "url": "https://fdc.nal.usda.gov/data-documentation/",
+      "license": "CC0 1.0 Universal",
+      "redistribution": "allowed with requested attribution",
+      "notes": "Useful for foods and beverages reported in dietary surveys; values may be compiled from other FDC types."
+    },
+    {
+      "id": "usda_fdc_sr_legacy_2018",
+      "name": "USDA Standard Reference Legacy",
+      "release": "April 2018 final",
+      "usage": "historical fallback only",
+      "url": "https://fdc.nal.usda.gov/data-documentation/",
+      "license": "CC0 1.0 Universal",
+      "redistribution": "allowed with requested attribution",
+      "notes": "Final historical release; prefer newer analytical sources when available."
+    },
+    {
+      "id": "icmr_nin_ifct_2017_reference",
+      "name": "Indian Food Composition Tables / NVIF 2017",
+      "release": "2017",
+      "usage": "Indian food identity, research and manual validation reference",
+      "url": "https://www.nin.res.in/downloads/",
+      "license": "copyright / permission required for reproduction",
+      "redistribution": "do not scrape or bulk redistribute without written permission",
+      "notes": "Official Indian source is valuable, but the NIN website states reproduction and automated scraping require prior written permission."
+    },
+    {
+      "id": "fao_infoods_guidelines",
+      "name": "FAO/INFOODS standards and guidelines",
+      "release": "maintained guidance collection",
+      "usage": "food matching, unit conversion, data quality and nomenclature rules",
+      "url": "https://www.fao.org/infoods/infoods/standards-guidelines/en/",
+      "license": "guidance reference",
+      "redistribution": "cite guidance; do not treat it as a composition dataset",
+      "notes": "Use to govern compilation and quality checks."
+    }
+  ],
+  "displayDefaults": {
+    "basis": "per_100g_edible_portion",
+    "energyUnit": "kcal",
+    "massUnit": "g",
+    "showDataStatus": true,
+    "showSourceRelease": true,
+    "dailyValueDisplay": "disabled_until_phase_08"
+  },
+  "publicationStatuses": [
+    "draft_identity",
+    "staged",
+    "reviewed",
+    "published",
+    "deprecated",
+    "archived"
+  ]
+}

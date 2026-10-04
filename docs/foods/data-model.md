@@ -1,0 +1,7 @@
+# Food identity and composition model
+
+The generated strict Zod schemas mirror the supplied JSON Schema, including positive portion grams, required source arrays, finite nonnegative values, enumerations and bounded strings. `scripts/generate-food-schema.mjs` regenerates them from the original document. Semantic wrappers validate category/subgroup relations, taxonomy tags, profile/nutrient/source uniqueness, source references, canonical units, bounds, methods, pinned releases, review signoff and publication prerequisites.
+
+Each food owns distinct composition profiles, a default approved profile and editorial review. Each profile records preparation state, processing, edible portion, a per-100-g basis, nutrient measurements, household portions, complete provenance and review notes. Canonical identifiers survive future dataset changes. Source-reported zeros stay numeric; trace, not detected and unavailable stay null. Missing rows are never created as zero.
+
+`src/content/foods/identities.json` retains the supplied drafts. `records.json` is a separate editorial release input. The compiler publishes only signed-off foods and approved profiles into category shards. The application imports only the compact public index, manifest and lazy shard loaders, not detailed draft records. Scale functions retain numeric precision and round only in display. Transient serving changes never mutate public JSON or private storage.
