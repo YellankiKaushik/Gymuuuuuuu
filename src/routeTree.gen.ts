@@ -44,9 +44,14 @@ import { Route as ProgramsCurrentRouteImport } from './routes/programs_.current'
 import { Route as ProgramsFinderRouteImport } from './routes/programs_.finder'
 import { Route as RecipesSlugRouteImport } from './routes/recipes_.$slug'
 import { Route as WorkoutHistoryRouteImport } from './routes/workout_.history'
+import { Route as WorkoutSettingsRouteImport } from './routes/workout_.settings'
 import { Route as LearnWorkoutScienceSlugRouteImport } from './routes/learn_.workout-science_.$slug'
 import { Route as LearnWorkoutScienceGlossaryRouteImport } from './routes/learn_.workout-science_.glossary'
 import { Route as LearnWorkoutScienceMethodsRouteImport } from './routes/learn_.workout-science_.methods'
+import { Route as WorkoutHistorySessionIdRouteImport } from './routes/workout_.history_.$sessionId'
+import { Route as WorkoutSessionSessionIdRouteImport } from './routes/workout_.session.$sessionId'
+import { Route as WorkoutSummarySessionIdRouteImport } from './routes/workout_.summary.$sessionId'
+import { Route as WorkoutExercisesExerciseIdHistoryRouteImport } from './routes/workout_.exercises.$exerciseId.history'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -223,6 +228,11 @@ const WorkoutHistoryRoute = WorkoutHistoryRouteImport.update({
   path: '/workout/history',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkoutSettingsRoute = WorkoutSettingsRouteImport.update({
+  id: '/workout_/settings',
+  path: '/workout/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LearnWorkoutScienceSlugRoute = LearnWorkoutScienceSlugRouteImport.update({
   id: '/learn_/workout-science_/$slug',
   path: '/learn/workout-science/$slug',
@@ -238,6 +248,27 @@ const LearnWorkoutScienceMethodsRoute =
   LearnWorkoutScienceMethodsRouteImport.update({
     id: '/learn_/workout-science_/methods',
     path: '/learn/workout-science/methods',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WorkoutHistorySessionIdRoute = WorkoutHistorySessionIdRouteImport.update({
+  id: '/workout_/history_/$sessionId',
+  path: '/workout/history/$sessionId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkoutSessionSessionIdRoute = WorkoutSessionSessionIdRouteImport.update({
+  id: '/workout_/session/$sessionId',
+  path: '/workout/session/$sessionId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkoutSummarySessionIdRoute = WorkoutSummarySessionIdRouteImport.update({
+  id: '/workout_/summary/$sessionId',
+  path: '/workout/summary/$sessionId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkoutExercisesExerciseIdHistoryRoute =
+  WorkoutExercisesExerciseIdHistoryRouteImport.update({
+    id: '/workout_/exercises/$exerciseId/history',
+    path: '/workout/exercises/$exerciseId/history',
     getParentRoute: () => rootRouteImport,
   } as any)
 
@@ -277,9 +308,14 @@ export interface FileRoutesByFullPath {
   '/programs/finder': typeof ProgramsFinderRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
+  '/workout/settings': typeof WorkoutSettingsRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
+  '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
+  '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
+  '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
+  '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -317,9 +353,14 @@ export interface FileRoutesByTo {
   '/programs/finder': typeof ProgramsFinderRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
+  '/workout/settings': typeof WorkoutSettingsRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
+  '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
+  '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
+  '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
+  '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -358,9 +399,14 @@ export interface FileRoutesById {
   '/programs_/finder': typeof ProgramsFinderRoute
   '/recipes_/$slug': typeof RecipesSlugRoute
   '/workout_/history': typeof WorkoutHistoryRoute
+  '/workout_/settings': typeof WorkoutSettingsRoute
   '/learn_/workout-science_/$slug': typeof LearnWorkoutScienceSlugRoute
   '/learn_/workout-science_/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn_/workout-science_/methods': typeof LearnWorkoutScienceMethodsRoute
+  '/workout_/history_/$sessionId': typeof WorkoutHistorySessionIdRoute
+  '/workout_/session/$sessionId': typeof WorkoutSessionSessionIdRoute
+  '/workout_/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
+  '/workout_/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -400,9 +446,14 @@ export interface FileRouteTypes {
     | '/programs/finder'
     | '/recipes/$slug'
     | '/workout/history'
+    | '/workout/settings'
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
+    | '/workout/history/$sessionId'
+    | '/workout/session/$sessionId'
+    | '/workout/summary/$sessionId'
+    | '/workout/exercises/$exerciseId/history'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -440,9 +491,14 @@ export interface FileRouteTypes {
     | '/programs/finder'
     | '/recipes/$slug'
     | '/workout/history'
+    | '/workout/settings'
     | '/learn/workout-science/$slug'
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
+    | '/workout/history/$sessionId'
+    | '/workout/session/$sessionId'
+    | '/workout/summary/$sessionId'
+    | '/workout/exercises/$exerciseId/history'
   id:
     | '__root__'
     | '/'
@@ -480,9 +536,14 @@ export interface FileRouteTypes {
     | '/programs_/finder'
     | '/recipes_/$slug'
     | '/workout_/history'
+    | '/workout_/settings'
     | '/learn_/workout-science_/$slug'
     | '/learn_/workout-science_/glossary'
     | '/learn_/workout-science_/methods'
+    | '/workout_/history_/$sessionId'
+    | '/workout_/session/$sessionId'
+    | '/workout_/summary/$sessionId'
+    | '/workout_/exercises/$exerciseId/history'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -521,9 +582,14 @@ export interface RootRouteChildren {
   ProgramsFinderRoute: typeof ProgramsFinderRoute
   RecipesSlugRoute: typeof RecipesSlugRoute
   WorkoutHistoryRoute: typeof WorkoutHistoryRoute
+  WorkoutSettingsRoute: typeof WorkoutSettingsRoute
   LearnWorkoutScienceSlugRoute: typeof LearnWorkoutScienceSlugRoute
   LearnWorkoutScienceGlossaryRoute: typeof LearnWorkoutScienceGlossaryRoute
   LearnWorkoutScienceMethodsRoute: typeof LearnWorkoutScienceMethodsRoute
+  WorkoutHistorySessionIdRoute: typeof WorkoutHistorySessionIdRoute
+  WorkoutSessionSessionIdRoute: typeof WorkoutSessionSessionIdRoute
+  WorkoutSummarySessionIdRoute: typeof WorkoutSummarySessionIdRoute
+  WorkoutExercisesExerciseIdHistoryRoute: typeof WorkoutExercisesExerciseIdHistoryRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -773,6 +839,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkoutHistoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/workout_/settings': {
+      id: '/workout_/settings'
+      path: '/workout/settings'
+      fullPath: '/workout/settings'
+      preLoaderRoute: typeof WorkoutSettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/learn_/workout-science_/$slug': {
       id: '/learn_/workout-science_/$slug'
       path: '/learn/workout-science/$slug'
@@ -792,6 +865,34 @@ declare module '@tanstack/react-router' {
       path: '/learn/workout-science/methods'
       fullPath: '/learn/workout-science/methods'
       preLoaderRoute: typeof LearnWorkoutScienceMethodsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/workout_/history_/$sessionId': {
+      id: '/workout_/history_/$sessionId'
+      path: '/workout/history/$sessionId'
+      fullPath: '/workout/history/$sessionId'
+      preLoaderRoute: typeof WorkoutHistorySessionIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/workout_/session/$sessionId': {
+      id: '/workout_/session/$sessionId'
+      path: '/workout/session/$sessionId'
+      fullPath: '/workout/session/$sessionId'
+      preLoaderRoute: typeof WorkoutSessionSessionIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/workout_/summary/$sessionId': {
+      id: '/workout_/summary/$sessionId'
+      path: '/workout/summary/$sessionId'
+      fullPath: '/workout/summary/$sessionId'
+      preLoaderRoute: typeof WorkoutSummarySessionIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/workout_/exercises/$exerciseId/history': {
+      id: '/workout_/exercises/$exerciseId/history'
+      path: '/workout/exercises/$exerciseId/history'
+      fullPath: '/workout/exercises/$exerciseId/history'
+      preLoaderRoute: typeof WorkoutExercisesExerciseIdHistoryRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -833,9 +934,15 @@ const rootRouteChildren: RootRouteChildren = {
   ProgramsFinderRoute: ProgramsFinderRoute,
   RecipesSlugRoute: RecipesSlugRoute,
   WorkoutHistoryRoute: WorkoutHistoryRoute,
+  WorkoutSettingsRoute: WorkoutSettingsRoute,
   LearnWorkoutScienceSlugRoute: LearnWorkoutScienceSlugRoute,
   LearnWorkoutScienceGlossaryRoute: LearnWorkoutScienceGlossaryRoute,
   LearnWorkoutScienceMethodsRoute: LearnWorkoutScienceMethodsRoute,
+  WorkoutHistorySessionIdRoute: WorkoutHistorySessionIdRoute,
+  WorkoutSessionSessionIdRoute: WorkoutSessionSessionIdRoute,
+  WorkoutSummarySessionIdRoute: WorkoutSummarySessionIdRoute,
+  WorkoutExercisesExerciseIdHistoryRoute:
+    WorkoutExercisesExerciseIdHistoryRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

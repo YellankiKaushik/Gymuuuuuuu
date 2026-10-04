@@ -1,0 +1,9 @@
+# Phase 06 engineering verification
+
+All six supplied Phase 06 documents were read before implementation; the 930 DOCX paragraphs match the Markdown. The tracker now supports start/resume, reviewed-program snapshots, ad hoc personal labels, repeat, all seven performance modes and nine set types, canonical units, optional effort, previous performance, timestamp timers, debounced autosave, refresh recovery, cross-tab ownership/revision protection, completion/abandon, summary, indexed history, editing, deletion/restoration, custom-label management, local settings, persistence requests, validated JSON backup/restore and three CSV exports.
+
+Verification: `npm run check` passes strict TypeScript, lint, 53 unit tests, content validation and production build. `npm run test:browser` passes all 14 browser tests, including the complete tracker flow. Migration fixtures preserve data across database versions 1–5. Indexed-query fixtures contain 5,000 sessions and 100,000 sets. Active UI passes automated axe checks and horizontal reflow checks at 320, 375, 768, 1024 and 1440 px in light and dark themes. Tests use synthetic private browser data, never user records or production factual content.
+
+The current program and exercise publication prerequisites remain outstanding from Phases 03–05; no reviewed templates are invented. The tracker remains usable with personal labels. There is no configured Git remote, so a local checkpoint is created instead of claiming a GitHub push. Windows Edge is verified; physical Android/iOS devices, Safari/Firefox and human screen-reader review remain manual release checks. No cloud storage, authentication, AI coaching, calorie estimate, wearable integration or medical feature was added.
+
+Next: read every Phase 07 file, then implement the Food Encyclopedia without modifying workout ownership or treating missing composition values as zero.

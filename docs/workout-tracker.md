@@ -1,0 +1,13 @@
+# Workout tracker
+
+The optional tracker stores personal activity in this browser. Start from a reviewed current program, create an ad hoc log with reviewed exercises or personal labels, or repeat a historical workout. Canonical exercises, science and programs are never modified. Public exercise/program content is still gated by its own review requirements; personal labels keep the tracker usable without pretending draft content is reviewed.
+
+Sets support load/repetitions, bodyweight/repetitions, repetitions, duration, distance/duration, load/duration and assistance/repetitions. All nine supplied set types are retained. Completing a set requires mode-appropriate finite values. RIR and RPE remain separate, optional fields; selecting an effort preference does not invent a personal effort value. Weight is stored in integer grams, duration in seconds and distance in meters. Display changes preserve canonical values.
+
+Active logs use a 120 ms debounce and a single-flight save queue. Saving, Saved and failure states are visible. Wait for Saved before closing the page; a pending-write browser warning cannot save data after you explicitly discard it. Partial numeric input is saved separately as local draft metadata until its complete performance record validates. Refresh recovers committed sessions and timer timestamps. A stale editor must explicitly take over or wait for its lease to expire; all writes also check the stored revision transactionally.
+
+History can be filtered, paginated, edited, repeated, soft-deleted, restored and permanently deleted. Historical names and prescriptions are snapshots. Previous performance respects identity, mode and scope and is shown with its date. Records derive from completed non-deleted sessions; warm-ups are excluded. Load/volume compare only external-load repetition sets, bodyweight repetitions also separate added load, and assistance is never treated as higher-is-better. There is no estimated 1RM, calorie estimate, readiness score or medical interpretation.
+
+Program completion tracking belongs to this phase in a separate record. Canonical program versions remain unchanged. Counts rebuild from non-deleted completed program-source logs; deleting a log does not silently rewind the sequence. Repeated historical logs retain references without advancing the current program sequence.
+
+Analytics handoff: read canonical session documents, including timestamps, deletion state, exercise references, set status/type, performance mode, load scope, grams/meters/seconds and optional effort. Derive summaries; never rewrite the log. Notes and discomfort markers are sensitive local data and must remain absent from analytics telemetry or external requests.

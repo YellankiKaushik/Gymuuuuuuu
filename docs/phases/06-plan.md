@@ -1,0 +1,7 @@
+# Phase 06 read and implementation plan
+
+All six Phase 06 files fully read before implementation. All 930 DOCX paragraphs match the Markdown. The normative backup schema includes seven performance modes, nine set types, custom labels, program snapshots, revisioned sessions and settings. No user records or exercise prescriptions are supplied.
+
+Use a client-only `fitness-os` database v6 with the prescribed stores and session indexes. Sequential initialization migrations are guarded by oldVersion; unknown future record versions block writes. Preserve Phase 05's existing database and read program selections through its adapter; snapshot them into tracker ownership without deleting earlier data. New program instance IDs will use the prescribed prefix. Session revision checks and an IDB editor lease prevent stale-tab overwrites; explicit takeover replaces the editor lease. Active pointer and session creation share a transaction. Timers use timestamps. History uses cursors and index selection, not whole-database reads for every keystroke.
+
+Build schema mapping, semantic validation, domain services, storage, start/editor/history/settings routes, staged restore and CSV export; test atomic conflicts, modes, timers, refresh, completion/edit/delete/repeat and backup. Earlier documents' references to Phase 11/12 analytics/backup numbering are superseded by the individual Phase 15/17 packages when reached. No cloud checkpoint is claimed without a configured remote.
