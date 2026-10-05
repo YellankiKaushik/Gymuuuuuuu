@@ -1,0 +1,11 @@
+# Phase 18: wait for the streamed document before hydration
+
+The completion audit reproduced intermittent blank documents in production WebKit. The trace contained a TanStack hydration exception while initializing serialization adapters: the inline `window.$_TSR` bootstrap was absent. The default cached client module could begin hydration while the streamed document was still being parsed. Waiting for `DOMContentLoaded` before invoking the normal `StartClient` removes that ordering race without changing SSR, weakening CSP, adding a server store or accessing personal records on the server.
+
+The application uses the supported custom client entry point described in [TanStack's client entry documentation](https://tanstack.com/start/latest/docs/framework/react/guide/client-entry-point). Browser globals are accessed inside the client bootstrap function. Initial HTML remains server rendered. The new regression exercises repeated cached full-document visits, visible headings, titles, interactive search and uncaught errors on public and private routes.
+
+Production Playwright uses two workers to bound local and CI resource use. Assertions and timeouts remain unchanged. Firefox installation was retried with the official Playwright installer; Windows still could not launch it and reported a SideBySide `mozglue` dependency failure. This is an unverified browser gate, not a passing test or a waiver.
+
+The owner explicitly authorized integration into main without deployment when PR creation is unavailable. The GitHub connector returned HTTP 403, `Resource not accessible by integration`, on PR creation. Integration uses a clean fast-forward, preserving the existing Phase 18 branch and both original commits. No production deployment or domain connection is authorized.
+
+`vercel.json` explicitly sets `git.deploymentEnabled` to `false`, and the repository audit enforces that setting. This prevents these Git pushes from initiating an automatic deployment even if the repository is subsequently linked. It uses [Vercel's documented Git configuration](https://vercel.com/docs/project-configuration/git-configuration). Enabling deployment requires a later owner-authorized release change; no Vercel CLI deployment is performed.

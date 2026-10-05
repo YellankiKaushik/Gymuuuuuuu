@@ -12,7 +12,7 @@
     "dev": "vite --host 127.0.0.1 --port 3000",
     "build": "vite build",
     "start": "node .output/server/index.mjs",
-    "format:check": "prettier --check package.json tsconfig.json vercel.json playwright.config.ts playwright.production.config.ts vitest.config.ts src/config/app.ts src/start.ts src/router.tsx src/routes/__root.tsx scripts/phase18-*.ts tests/phase18-*.test.ts tests/browser/security-headers.spec.ts",
+    "format:check": "prettier --check package.json tsconfig.json vercel.json playwright.config.ts playwright.production.config.ts vitest.config.ts src/config/app.ts src/start.ts src/client.tsx src/router.tsx src/routes/__root.tsx scripts/phase18-*.ts tests/phase18-*.test.ts tests/browser/security-headers.spec.ts tests/browser/hydration.spec.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",

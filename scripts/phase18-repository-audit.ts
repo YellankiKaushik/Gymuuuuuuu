@@ -44,8 +44,13 @@ const trackedEnvironmentFiles = tracked.filter(
 );
 const failures: string[] = [];
 const vercel = JSON.parse(await readFile("vercel.json", "utf8")) as {
+  git?: { deploymentEnabled?: boolean };
   headers?: { headers?: { key: string; value: string }[] }[];
 };
+if (vercel.git?.deploymentEnabled !== false)
+  failures.push(
+    "Automatic Vercel Git deployment must remain disabled until an owner-authorized release.",
+  );
 const configuredHeaderNames = new Set(
   vercel.headers?.flatMap(
     (entry) => entry.headers?.map((header) => header.key) ?? [],
