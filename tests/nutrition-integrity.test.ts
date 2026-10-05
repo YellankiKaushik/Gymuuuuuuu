@@ -115,7 +115,7 @@ it("keeps frozen targets through concurrent writes, aborts queued writes on cach
       "derivedNutritionDayTotals",
     );
     const db = await openFitnessDatabase();
-    expect((await openFitnessDatabase()).version).toBe(15);
+    expect((await openFitnessDatabase()).version).toBe(16);
     await new Promise<void>((resolve, reject) => {
       const tx = db.transaction("foodLogEntries", "readwrite");
       tx.objectStore("foodLogEntries").put({

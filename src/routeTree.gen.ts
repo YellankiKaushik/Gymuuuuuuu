@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AnalyticsRouteImport } from './routes/analytics'
 import { Route as CardioRouteImport } from './routes/cardio'
+import { Route as CompareRouteImport } from './routes/compare'
 import { Route as ConditioningRouteImport } from './routes/conditioning'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as DietRouteImport } from './routes/diet'
@@ -28,9 +29,11 @@ import { Route as NutritionRouteImport } from './routes/nutrition'
 import { Route as NutritionLogRouteImport } from './routes/nutrition-log'
 import { Route as ProgramsRouteImport } from './routes/programs'
 import { Route as ProgressRouteImport } from './routes/progress'
+import { Route as RecentRouteImport } from './routes/recent'
 import { Route as RecipesRouteImport } from './routes/recipes'
 import { Route as RecoveryRouteImport } from './routes/recovery'
 import { Route as SavedRouteImport } from './routes/saved'
+import { Route as SearchRouteImport } from './routes/search'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as SleepRouteImport } from './routes/sleep'
 import { Route as SupplementsRouteImport } from './routes/supplements'
@@ -57,6 +60,8 @@ import { Route as CardioPlansRouteImport } from './routes/cardio_.plans'
 import { Route as CardioPrivacyRouteImport } from './routes/cardio_.privacy'
 import { Route as CardioProgressRouteImport } from './routes/cardio_.progress'
 import { Route as CardioSettingsRouteImport } from './routes/cardio_.settings'
+import { Route as CompareIndexRouteImport } from './routes/compare.index'
+import { Route as CompareFamilyRouteImport } from './routes/compare.$family'
 import { Route as ConditioningCustomRouteImport } from './routes/conditioning_.custom'
 import { Route as DietPlanningIndexRouteImport } from './routes/diet-planning.index'
 import { Route as DietPlanningEnergyRouteImport } from './routes/diet-planning.energy'
@@ -114,6 +119,10 @@ import { Route as RecoveryHistoryRouteImport } from './routes/recovery_.history'
 import { Route as RecoveryPrivacyRouteImport } from './routes/recovery_.privacy'
 import { Route as RecoverySettingsRouteImport } from './routes/recovery_.settings'
 import { Route as RecoveryTopicsRouteImport } from './routes/recovery_.topics'
+import { Route as SavedIndexRouteImport } from './routes/saved.index'
+import { Route as SavedCollectionsRouteImport } from './routes/saved.collections'
+import { Route as SavedFavouritesRouteImport } from './routes/saved.favourites'
+import { Route as SearchSettingsRouteImport } from './routes/search_.settings'
 import { Route as SleepHistoryRouteImport } from './routes/sleep_.history'
 import { Route as SleepLogRouteImport } from './routes/sleep_.log'
 import { Route as SleepMethodologyRouteImport } from './routes/sleep_.methodology'
@@ -159,6 +168,8 @@ import { Route as NutritionCustomFoodsCustomFoodIdRouteImport } from './routes/n
 import { Route as NutritionDayDateRouteImport } from './routes/nutrition.day.$date'
 import { Route as RecipesLocalRecipeIdRouteImport } from './routes/recipes_.local.$recipeId'
 import { Route as RecoveryTopicsTopicSlugRouteImport } from './routes/recovery_.topics_.$topicSlug'
+import { Route as SavedCollectionsIndexRouteImport } from './routes/saved.collections.index'
+import { Route as SavedCollectionsCollectionIdRouteImport } from './routes/saved.collections.$collectionId'
 import { Route as SupplementsEvidenceClaimSlugRouteImport } from './routes/supplements_.evidence_.$claimSlug'
 import { Route as SupplementsIngredientsIngredientSlugRouteImport } from './routes/supplements_.ingredients_.$ingredientSlug'
 import { Route as SupplementsProductsProductIdRouteImport } from './routes/supplements_.products_.$productId'
@@ -184,6 +195,11 @@ const AnalyticsRoute = AnalyticsRouteImport.update({
 const CardioRoute = CardioRouteImport.update({
   id: '/cardio',
   path: '/cardio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompareRoute = CompareRouteImport.update({
+  id: '/compare',
+  path: '/compare',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConditioningRoute = ConditioningRouteImport.update({
@@ -266,6 +282,11 @@ const ProgressRoute = ProgressRouteImport.update({
   path: '/progress',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RecentRoute = RecentRouteImport.update({
+  id: '/recent',
+  path: '/recent',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RecipesRoute = RecipesRouteImport.update({
   id: '/recipes',
   path: '/recipes',
@@ -279,6 +300,11 @@ const RecoveryRoute = RecoveryRouteImport.update({
 const SavedRoute = SavedRouteImport.update({
   id: '/saved',
   path: '/saved',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsRoute = SettingsRouteImport.update({
@@ -410,6 +436,16 @@ const CardioSettingsRoute = CardioSettingsRouteImport.update({
   id: '/cardio_/settings',
   path: '/cardio/settings',
   getParentRoute: () => rootRouteImport,
+} as any)
+const CompareIndexRoute = CompareIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => CompareRoute,
+} as any)
+const CompareFamilyRoute = CompareFamilyRouteImport.update({
+  id: '/$family',
+  path: '/$family',
+  getParentRoute: () => CompareRoute,
 } as any)
 const ConditioningCustomRoute = ConditioningCustomRouteImport.update({
   id: '/conditioning_/custom',
@@ -698,6 +734,26 @@ const RecoveryTopicsRoute = RecoveryTopicsRouteImport.update({
   path: '/recovery/topics',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SavedIndexRoute = SavedIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => SavedRoute,
+} as any)
+const SavedCollectionsRoute = SavedCollectionsRouteImport.update({
+  id: '/collections',
+  path: '/collections',
+  getParentRoute: () => SavedRoute,
+} as any)
+const SavedFavouritesRoute = SavedFavouritesRouteImport.update({
+  id: '/favourites',
+  path: '/favourites',
+  getParentRoute: () => SavedRoute,
+} as any)
+const SearchSettingsRoute = SearchSettingsRouteImport.update({
+  id: '/search_/settings',
+  path: '/search/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SleepHistoryRoute = SleepHistoryRouteImport.update({
   id: '/sleep_/history',
   path: '/sleep/history',
@@ -936,6 +992,17 @@ const RecoveryTopicsTopicSlugRoute = RecoveryTopicsTopicSlugRouteImport.update({
   path: '/recovery/topics/$topicSlug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SavedCollectionsIndexRoute = SavedCollectionsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => SavedCollectionsRoute,
+} as any)
+const SavedCollectionsCollectionIdRoute =
+  SavedCollectionsCollectionIdRouteImport.update({
+    id: '/$collectionId',
+    path: '/$collectionId',
+    getParentRoute: () => SavedCollectionsRoute,
+  } as any)
 const SupplementsEvidenceClaimSlugRoute =
   SupplementsEvidenceClaimSlugRouteImport.update({
     id: '/supplements_/evidence_/$claimSlug',
@@ -1003,6 +1070,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/cardio': typeof CardioRoute
+  '/compare': typeof CompareRouteWithChildren
   '/conditioning': typeof ConditioningRoute
   '/dashboard': typeof DashboardRoute
   '/diet': typeof DietRoute
@@ -1019,9 +1087,11 @@ export interface FileRoutesByFullPath {
   '/nutrition-log': typeof NutritionLogRoute
   '/programs': typeof ProgramsRoute
   '/progress': typeof ProgressRoute
+  '/recent': typeof RecentRoute
   '/recipes': typeof RecipesRoute
   '/recovery': typeof RecoveryRoute
-  '/saved': typeof SavedRoute
+  '/saved': typeof SavedRouteWithChildren
+  '/search': typeof SearchRoute
   '/settings': typeof SettingsRoute
   '/sleep': typeof SleepRoute
   '/supplements': typeof SupplementsRoute
@@ -1048,6 +1118,7 @@ export interface FileRoutesByFullPath {
   '/cardio/privacy': typeof CardioPrivacyRoute
   '/cardio/progress': typeof CardioProgressRoute
   '/cardio/settings': typeof CardioSettingsRoute
+  '/compare/$family': typeof CompareFamilyRoute
   '/conditioning/custom': typeof ConditioningCustomRoute
   '/diet-planning/energy': typeof DietPlanningEnergyRoute
   '/diet-planning/goal': typeof DietPlanningGoalRoute
@@ -1103,6 +1174,9 @@ export interface FileRoutesByFullPath {
   '/recovery/privacy': typeof RecoveryPrivacyRoute
   '/recovery/settings': typeof RecoverySettingsRoute
   '/recovery/topics': typeof RecoveryTopicsRoute
+  '/saved/collections': typeof SavedCollectionsRouteWithChildren
+  '/saved/favourites': typeof SavedFavouritesRoute
+  '/search/settings': typeof SearchSettingsRoute
   '/sleep/history': typeof SleepHistoryRoute
   '/sleep/log': typeof SleepLogRoute
   '/sleep/methodology': typeof SleepMethodologyRoute
@@ -1122,8 +1196,10 @@ export interface FileRoutesByFullPath {
   '/warm-ups/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
+  '/compare/': typeof CompareIndexRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
   '/nutrition/': typeof NutritionIndexRoute
+  '/saved/': typeof SavedIndexRoute
   '/cardio/calculators/intensity': typeof CardioCalculatorsIntensityRoute
   '/cardio/calculators/pace': typeof CardioCalculatorsPaceRoute
   '/cardio/custom-plans/create': typeof CardioCustomPlansCreateRoute
@@ -1148,6 +1224,7 @@ export interface FileRoutesByFullPath {
   '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/recipes/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery/topics/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
+  '/saved/collections/$collectionId': typeof SavedCollectionsCollectionIdRoute
   '/supplements/evidence/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
   '/supplements/ingredients/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
   '/supplements/products/$productId': typeof SupplementsProductsProductIdRoute
@@ -1159,6 +1236,7 @@ export interface FileRoutesByFullPath {
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
   '/nutrition/custom-foods/': typeof NutritionCustomFoodsIndexRoute
+  '/saved/collections/': typeof SavedCollectionsIndexRoute
   '/recipes/local/$recipeId/edit': typeof RecipesLocalRecipeIdEditRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
@@ -1180,9 +1258,10 @@ export interface FileRoutesByTo {
   '/nutrition-log': typeof NutritionLogRoute
   '/programs': typeof ProgramsRoute
   '/progress': typeof ProgressRoute
+  '/recent': typeof RecentRoute
   '/recipes': typeof RecipesRoute
   '/recovery': typeof RecoveryRoute
-  '/saved': typeof SavedRoute
+  '/search': typeof SearchRoute
   '/settings': typeof SettingsRoute
   '/sleep': typeof SleepRoute
   '/supplements': typeof SupplementsRoute
@@ -1209,6 +1288,7 @@ export interface FileRoutesByTo {
   '/cardio/privacy': typeof CardioPrivacyRoute
   '/cardio/progress': typeof CardioProgressRoute
   '/cardio/settings': typeof CardioSettingsRoute
+  '/compare/$family': typeof CompareFamilyRoute
   '/conditioning/custom': typeof ConditioningCustomRoute
   '/diet-planning/energy': typeof DietPlanningEnergyRoute
   '/diet-planning/goal': typeof DietPlanningGoalRoute
@@ -1262,6 +1342,8 @@ export interface FileRoutesByTo {
   '/recovery/privacy': typeof RecoveryPrivacyRoute
   '/recovery/settings': typeof RecoverySettingsRoute
   '/recovery/topics': typeof RecoveryTopicsRoute
+  '/saved/favourites': typeof SavedFavouritesRoute
+  '/search/settings': typeof SearchSettingsRoute
   '/sleep/history': typeof SleepHistoryRoute
   '/sleep/log': typeof SleepLogRoute
   '/sleep/methodology': typeof SleepMethodologyRoute
@@ -1281,8 +1363,10 @@ export interface FileRoutesByTo {
   '/warm-ups/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
+  '/compare': typeof CompareIndexRoute
   '/diet-planning': typeof DietPlanningIndexRoute
   '/nutrition': typeof NutritionIndexRoute
+  '/saved': typeof SavedIndexRoute
   '/cardio/calculators/intensity': typeof CardioCalculatorsIntensityRoute
   '/cardio/calculators/pace': typeof CardioCalculatorsPaceRoute
   '/cardio/custom-plans/create': typeof CardioCustomPlansCreateRoute
@@ -1307,6 +1391,7 @@ export interface FileRoutesByTo {
   '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/recipes/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery/topics/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
+  '/saved/collections/$collectionId': typeof SavedCollectionsCollectionIdRoute
   '/supplements/evidence/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
   '/supplements/ingredients/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
   '/supplements/products/$productId': typeof SupplementsProductsProductIdRoute
@@ -1318,6 +1403,7 @@ export interface FileRoutesByTo {
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans': typeof DietPlanningPlansIndexRoute
   '/nutrition/custom-foods': typeof NutritionCustomFoodsIndexRoute
+  '/saved/collections': typeof SavedCollectionsIndexRoute
   '/recipes/local/$recipeId/edit': typeof RecipesLocalRecipeIdEditRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
@@ -1326,6 +1412,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/cardio': typeof CardioRoute
+  '/compare': typeof CompareRouteWithChildren
   '/conditioning': typeof ConditioningRoute
   '/dashboard': typeof DashboardRoute
   '/diet': typeof DietRoute
@@ -1342,9 +1429,11 @@ export interface FileRoutesById {
   '/nutrition-log': typeof NutritionLogRoute
   '/programs': typeof ProgramsRoute
   '/progress': typeof ProgressRoute
+  '/recent': typeof RecentRoute
   '/recipes': typeof RecipesRoute
   '/recovery': typeof RecoveryRoute
-  '/saved': typeof SavedRoute
+  '/saved': typeof SavedRouteWithChildren
+  '/search': typeof SearchRoute
   '/settings': typeof SettingsRoute
   '/sleep': typeof SleepRoute
   '/supplements': typeof SupplementsRoute
@@ -1371,6 +1460,7 @@ export interface FileRoutesById {
   '/cardio_/privacy': typeof CardioPrivacyRoute
   '/cardio_/progress': typeof CardioProgressRoute
   '/cardio_/settings': typeof CardioSettingsRoute
+  '/compare/$family': typeof CompareFamilyRoute
   '/conditioning_/custom': typeof ConditioningCustomRoute
   '/diet-planning/energy': typeof DietPlanningEnergyRoute
   '/diet-planning/goal': typeof DietPlanningGoalRoute
@@ -1426,6 +1516,9 @@ export interface FileRoutesById {
   '/recovery_/privacy': typeof RecoveryPrivacyRoute
   '/recovery_/settings': typeof RecoverySettingsRoute
   '/recovery_/topics': typeof RecoveryTopicsRoute
+  '/saved/collections': typeof SavedCollectionsRouteWithChildren
+  '/saved/favourites': typeof SavedFavouritesRoute
+  '/search_/settings': typeof SearchSettingsRoute
   '/sleep_/history': typeof SleepHistoryRoute
   '/sleep_/log': typeof SleepLogRoute
   '/sleep_/methodology': typeof SleepMethodologyRoute
@@ -1445,8 +1538,10 @@ export interface FileRoutesById {
   '/warm-ups_/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout_/history': typeof WorkoutHistoryRoute
   '/workout_/settings': typeof WorkoutSettingsRoute
+  '/compare/': typeof CompareIndexRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
   '/nutrition/': typeof NutritionIndexRoute
+  '/saved/': typeof SavedIndexRoute
   '/cardio_/calculators_/intensity': typeof CardioCalculatorsIntensityRoute
   '/cardio_/calculators_/pace': typeof CardioCalculatorsPaceRoute
   '/cardio_/custom-plans_/create': typeof CardioCustomPlansCreateRoute
@@ -1471,6 +1566,7 @@ export interface FileRoutesById {
   '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/recipes_/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery_/topics_/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
+  '/saved/collections/$collectionId': typeof SavedCollectionsCollectionIdRoute
   '/supplements_/evidence_/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
   '/supplements_/ingredients_/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
   '/supplements_/products_/$productId': typeof SupplementsProductsProductIdRoute
@@ -1482,6 +1578,7 @@ export interface FileRoutesById {
   '/workout_/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
   '/nutrition/custom-foods/': typeof NutritionCustomFoodsIndexRoute
+  '/saved/collections/': typeof SavedCollectionsIndexRoute
   '/recipes_/local_/$recipeId_/edit': typeof RecipesLocalRecipeIdEditRoute
   '/workout_/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
 }
@@ -1491,6 +1588,7 @@ export interface FileRouteTypes {
     | '/'
     | '/analytics'
     | '/cardio'
+    | '/compare'
     | '/conditioning'
     | '/dashboard'
     | '/diet'
@@ -1507,9 +1605,11 @@ export interface FileRouteTypes {
     | '/nutrition-log'
     | '/programs'
     | '/progress'
+    | '/recent'
     | '/recipes'
     | '/recovery'
     | '/saved'
+    | '/search'
     | '/settings'
     | '/sleep'
     | '/supplements'
@@ -1536,6 +1636,7 @@ export interface FileRouteTypes {
     | '/cardio/privacy'
     | '/cardio/progress'
     | '/cardio/settings'
+    | '/compare/$family'
     | '/conditioning/custom'
     | '/diet-planning/energy'
     | '/diet-planning/goal'
@@ -1591,6 +1692,9 @@ export interface FileRouteTypes {
     | '/recovery/privacy'
     | '/recovery/settings'
     | '/recovery/topics'
+    | '/saved/collections'
+    | '/saved/favourites'
+    | '/search/settings'
     | '/sleep/history'
     | '/sleep/log'
     | '/sleep/methodology'
@@ -1610,8 +1714,10 @@ export interface FileRouteTypes {
     | '/warm-ups/$routineSlug'
     | '/workout/history'
     | '/workout/settings'
+    | '/compare/'
     | '/diet-planning/'
     | '/nutrition/'
+    | '/saved/'
     | '/cardio/calculators/intensity'
     | '/cardio/calculators/pace'
     | '/cardio/custom-plans/create'
@@ -1636,6 +1742,7 @@ export interface FileRouteTypes {
     | '/nutrition/day/$date'
     | '/recipes/local/$recipeId'
     | '/recovery/topics/$topicSlug'
+    | '/saved/collections/$collectionId'
     | '/supplements/evidence/$claimSlug'
     | '/supplements/ingredients/$ingredientSlug'
     | '/supplements/products/$productId'
@@ -1647,6 +1754,7 @@ export interface FileRouteTypes {
     | '/workout/summary/$sessionId'
     | '/diet-planning/plans/'
     | '/nutrition/custom-foods/'
+    | '/saved/collections/'
     | '/recipes/local/$recipeId/edit'
     | '/workout/exercises/$exerciseId/history'
   fileRoutesByTo: FileRoutesByTo
@@ -1668,9 +1776,10 @@ export interface FileRouteTypes {
     | '/nutrition-log'
     | '/programs'
     | '/progress'
+    | '/recent'
     | '/recipes'
     | '/recovery'
-    | '/saved'
+    | '/search'
     | '/settings'
     | '/sleep'
     | '/supplements'
@@ -1697,6 +1806,7 @@ export interface FileRouteTypes {
     | '/cardio/privacy'
     | '/cardio/progress'
     | '/cardio/settings'
+    | '/compare/$family'
     | '/conditioning/custom'
     | '/diet-planning/energy'
     | '/diet-planning/goal'
@@ -1750,6 +1860,8 @@ export interface FileRouteTypes {
     | '/recovery/privacy'
     | '/recovery/settings'
     | '/recovery/topics'
+    | '/saved/favourites'
+    | '/search/settings'
     | '/sleep/history'
     | '/sleep/log'
     | '/sleep/methodology'
@@ -1769,8 +1881,10 @@ export interface FileRouteTypes {
     | '/warm-ups/$routineSlug'
     | '/workout/history'
     | '/workout/settings'
+    | '/compare'
     | '/diet-planning'
     | '/nutrition'
+    | '/saved'
     | '/cardio/calculators/intensity'
     | '/cardio/calculators/pace'
     | '/cardio/custom-plans/create'
@@ -1795,6 +1909,7 @@ export interface FileRouteTypes {
     | '/nutrition/day/$date'
     | '/recipes/local/$recipeId'
     | '/recovery/topics/$topicSlug'
+    | '/saved/collections/$collectionId'
     | '/supplements/evidence/$claimSlug'
     | '/supplements/ingredients/$ingredientSlug'
     | '/supplements/products/$productId'
@@ -1806,6 +1921,7 @@ export interface FileRouteTypes {
     | '/workout/summary/$sessionId'
     | '/diet-planning/plans'
     | '/nutrition/custom-foods'
+    | '/saved/collections'
     | '/recipes/local/$recipeId/edit'
     | '/workout/exercises/$exerciseId/history'
   id:
@@ -1813,6 +1929,7 @@ export interface FileRouteTypes {
     | '/'
     | '/analytics'
     | '/cardio'
+    | '/compare'
     | '/conditioning'
     | '/dashboard'
     | '/diet'
@@ -1829,9 +1946,11 @@ export interface FileRouteTypes {
     | '/nutrition-log'
     | '/programs'
     | '/progress'
+    | '/recent'
     | '/recipes'
     | '/recovery'
     | '/saved'
+    | '/search'
     | '/settings'
     | '/sleep'
     | '/supplements'
@@ -1858,6 +1977,7 @@ export interface FileRouteTypes {
     | '/cardio_/privacy'
     | '/cardio_/progress'
     | '/cardio_/settings'
+    | '/compare/$family'
     | '/conditioning_/custom'
     | '/diet-planning/energy'
     | '/diet-planning/goal'
@@ -1913,6 +2033,9 @@ export interface FileRouteTypes {
     | '/recovery_/privacy'
     | '/recovery_/settings'
     | '/recovery_/topics'
+    | '/saved/collections'
+    | '/saved/favourites'
+    | '/search_/settings'
     | '/sleep_/history'
     | '/sleep_/log'
     | '/sleep_/methodology'
@@ -1932,8 +2055,10 @@ export interface FileRouteTypes {
     | '/warm-ups_/$routineSlug'
     | '/workout_/history'
     | '/workout_/settings'
+    | '/compare/'
     | '/diet-planning/'
     | '/nutrition/'
+    | '/saved/'
     | '/cardio_/calculators_/intensity'
     | '/cardio_/calculators_/pace'
     | '/cardio_/custom-plans_/create'
@@ -1958,6 +2083,7 @@ export interface FileRouteTypes {
     | '/nutrition/day/$date'
     | '/recipes_/local/$recipeId'
     | '/recovery_/topics_/$topicSlug'
+    | '/saved/collections/$collectionId'
     | '/supplements_/evidence_/$claimSlug'
     | '/supplements_/ingredients_/$ingredientSlug'
     | '/supplements_/products_/$productId'
@@ -1969,6 +2095,7 @@ export interface FileRouteTypes {
     | '/workout_/summary/$sessionId'
     | '/diet-planning/plans/'
     | '/nutrition/custom-foods/'
+    | '/saved/collections/'
     | '/recipes_/local_/$recipeId_/edit'
     | '/workout_/exercises/$exerciseId/history'
   fileRoutesById: FileRoutesById
@@ -1977,6 +2104,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AnalyticsRoute: typeof AnalyticsRoute
   CardioRoute: typeof CardioRoute
+  CompareRoute: typeof CompareRouteWithChildren
   ConditioningRoute: typeof ConditioningRoute
   DashboardRoute: typeof DashboardRoute
   DietRoute: typeof DietRoute
@@ -1993,9 +2121,11 @@ export interface RootRouteChildren {
   NutritionLogRoute: typeof NutritionLogRoute
   ProgramsRoute: typeof ProgramsRoute
   ProgressRoute: typeof ProgressRoute
+  RecentRoute: typeof RecentRoute
   RecipesRoute: typeof RecipesRoute
   RecoveryRoute: typeof RecoveryRoute
-  SavedRoute: typeof SavedRoute
+  SavedRoute: typeof SavedRouteWithChildren
+  SearchRoute: typeof SearchRoute
   SettingsRoute: typeof SettingsRoute
   SleepRoute: typeof SleepRoute
   SupplementsRoute: typeof SupplementsRoute
@@ -2063,6 +2193,7 @@ export interface RootRouteChildren {
   RecoveryPrivacyRoute: typeof RecoveryPrivacyRoute
   RecoverySettingsRoute: typeof RecoverySettingsRoute
   RecoveryTopicsRoute: typeof RecoveryTopicsRoute
+  SearchSettingsRoute: typeof SearchSettingsRoute
   SleepHistoryRoute: typeof SleepHistoryRoute
   SleepLogRoute: typeof SleepLogRoute
   SleepMethodologyRoute: typeof SleepMethodologyRoute
@@ -2137,6 +2268,13 @@ declare module '@tanstack/react-router' {
       path: '/cardio'
       fullPath: '/cardio'
       preLoaderRoute: typeof CardioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compare': {
+      id: '/compare'
+      path: '/compare'
+      fullPath: '/compare'
+      preLoaderRoute: typeof CompareRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/conditioning': {
@@ -2251,6 +2389,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProgressRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/recent': {
+      id: '/recent'
+      path: '/recent'
+      fullPath: '/recent'
+      preLoaderRoute: typeof RecentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/recipes': {
       id: '/recipes'
       path: '/recipes'
@@ -2270,6 +2415,13 @@ declare module '@tanstack/react-router' {
       path: '/saved'
       fullPath: '/saved'
       preLoaderRoute: typeof SavedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings': {
@@ -2453,6 +2605,20 @@ declare module '@tanstack/react-router' {
       fullPath: '/cardio/settings'
       preLoaderRoute: typeof CardioSettingsRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/compare/': {
+      id: '/compare/'
+      path: '/'
+      fullPath: '/compare/'
+      preLoaderRoute: typeof CompareIndexRouteImport
+      parentRoute: typeof CompareRoute
+    }
+    '/compare/$family': {
+      id: '/compare/$family'
+      path: '/$family'
+      fullPath: '/compare/$family'
+      preLoaderRoute: typeof CompareFamilyRouteImport
+      parentRoute: typeof CompareRoute
     }
     '/conditioning_/custom': {
       id: '/conditioning_/custom'
@@ -2853,6 +3019,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RecoveryTopicsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/saved/': {
+      id: '/saved/'
+      path: '/'
+      fullPath: '/saved/'
+      preLoaderRoute: typeof SavedIndexRouteImport
+      parentRoute: typeof SavedRoute
+    }
+    '/saved/collections': {
+      id: '/saved/collections'
+      path: '/collections'
+      fullPath: '/saved/collections'
+      preLoaderRoute: typeof SavedCollectionsRouteImport
+      parentRoute: typeof SavedRoute
+    }
+    '/saved/favourites': {
+      id: '/saved/favourites'
+      path: '/favourites'
+      fullPath: '/saved/favourites'
+      preLoaderRoute: typeof SavedFavouritesRouteImport
+      parentRoute: typeof SavedRoute
+    }
+    '/search_/settings': {
+      id: '/search_/settings'
+      path: '/search/settings'
+      fullPath: '/search/settings'
+      preLoaderRoute: typeof SearchSettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sleep_/history': {
       id: '/sleep_/history'
       path: '/sleep/history'
@@ -3168,6 +3362,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RecoveryTopicsTopicSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/saved/collections/': {
+      id: '/saved/collections/'
+      path: '/'
+      fullPath: '/saved/collections/'
+      preLoaderRoute: typeof SavedCollectionsIndexRouteImport
+      parentRoute: typeof SavedCollectionsRoute
+    }
+    '/saved/collections/$collectionId': {
+      id: '/saved/collections/$collectionId'
+      path: '/$collectionId'
+      fullPath: '/saved/collections/$collectionId'
+      preLoaderRoute: typeof SavedCollectionsCollectionIdRouteImport
+      parentRoute: typeof SavedCollectionsRoute
+    }
     '/supplements_/evidence_/$claimSlug': {
       id: '/supplements_/evidence_/$claimSlug'
       path: '/supplements/evidence/$claimSlug'
@@ -3247,6 +3455,19 @@ declare module '@tanstack/react-router' {
     }
   }
 }
+
+interface CompareRouteChildren {
+  CompareFamilyRoute: typeof CompareFamilyRoute
+  CompareIndexRoute: typeof CompareIndexRoute
+}
+
+const CompareRouteChildren: CompareRouteChildren = {
+  CompareFamilyRoute: CompareFamilyRoute,
+  CompareIndexRoute: CompareIndexRoute,
+}
+
+const CompareRouteWithChildren =
+  CompareRoute._addFileChildren(CompareRouteChildren)
 
 interface DietPlanningPlansRouteChildren {
   DietPlanningPlansPlanIdRoute: typeof DietPlanningPlansPlanIdRoute
@@ -3338,10 +3559,38 @@ const NutritionRouteWithChildren = NutritionRoute._addFileChildren(
   NutritionRouteChildren,
 )
 
+interface SavedCollectionsRouteChildren {
+  SavedCollectionsCollectionIdRoute: typeof SavedCollectionsCollectionIdRoute
+  SavedCollectionsIndexRoute: typeof SavedCollectionsIndexRoute
+}
+
+const SavedCollectionsRouteChildren: SavedCollectionsRouteChildren = {
+  SavedCollectionsCollectionIdRoute: SavedCollectionsCollectionIdRoute,
+  SavedCollectionsIndexRoute: SavedCollectionsIndexRoute,
+}
+
+const SavedCollectionsRouteWithChildren =
+  SavedCollectionsRoute._addFileChildren(SavedCollectionsRouteChildren)
+
+interface SavedRouteChildren {
+  SavedCollectionsRoute: typeof SavedCollectionsRouteWithChildren
+  SavedFavouritesRoute: typeof SavedFavouritesRoute
+  SavedIndexRoute: typeof SavedIndexRoute
+}
+
+const SavedRouteChildren: SavedRouteChildren = {
+  SavedCollectionsRoute: SavedCollectionsRouteWithChildren,
+  SavedFavouritesRoute: SavedFavouritesRoute,
+  SavedIndexRoute: SavedIndexRoute,
+}
+
+const SavedRouteWithChildren = SavedRoute._addFileChildren(SavedRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AnalyticsRoute: AnalyticsRoute,
   CardioRoute: CardioRoute,
+  CompareRoute: CompareRouteWithChildren,
   ConditioningRoute: ConditioningRoute,
   DashboardRoute: DashboardRoute,
   DietRoute: DietRoute,
@@ -3358,9 +3607,11 @@ const rootRouteChildren: RootRouteChildren = {
   NutritionLogRoute: NutritionLogRoute,
   ProgramsRoute: ProgramsRoute,
   ProgressRoute: ProgressRoute,
+  RecentRoute: RecentRoute,
   RecipesRoute: RecipesRoute,
   RecoveryRoute: RecoveryRoute,
-  SavedRoute: SavedRoute,
+  SavedRoute: SavedRouteWithChildren,
+  SearchRoute: SearchRoute,
   SettingsRoute: SettingsRoute,
   SleepRoute: SleepRoute,
   SupplementsRoute: SupplementsRoute,
@@ -3428,6 +3679,7 @@ const rootRouteChildren: RootRouteChildren = {
   RecoveryPrivacyRoute: RecoveryPrivacyRoute,
   RecoverySettingsRoute: RecoverySettingsRoute,
   RecoveryTopicsRoute: RecoveryTopicsRoute,
+  SearchSettingsRoute: SearchSettingsRoute,
   SleepHistoryRoute: SleepHistoryRoute,
   SleepLogRoute: SleepLogRoute,
   SleepMethodologyRoute: SleepMethodologyRoute,

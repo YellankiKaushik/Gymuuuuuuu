@@ -1,0 +1,3538 @@
+[
+  {
+    "documentId": "route:/",
+    "entityType": "route",
+    "entityId": "/",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/",
+    "title": "Home",
+    "normalizedTitle": "home",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Your fitness workspace overview.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "primary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "a0e5f5b7673cdee3e273c1578768bcf4a1cb0c02665866e5dd2ec6ecf0e2637e"
+  },
+  {
+    "documentId": "route:/learn",
+    "entityType": "route",
+    "entityId": "/learn",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/learn",
+    "title": "Learn",
+    "normalizedTitle": "learn",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "A connected home for fitness and nutrition knowledge.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "primary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "6a915579f63678de73265e9c615dce37082c292932fba028f4966abcfa81bd67"
+  },
+  {
+    "documentId": "route:/programs",
+    "entityType": "route",
+    "entityId": "/programs",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/programs",
+    "title": "Train",
+    "normalizedTitle": "train",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Find programs and build a schedule around your goals.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "primary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "3c8890e19348419e7363f3fd974c7d39b3330deaa3045b796690231e4fde5837"
+  },
+  {
+    "documentId": "route:/foods",
+    "entityType": "route",
+    "entityId": "/foods",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/foods",
+    "title": "Eat",
+    "normalizedTitle": "eat",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Discover foods with transparent composition data and sources.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "primary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f611c4b14adb11237a47f5380dcddd308e01ec24a7a8fdb1375af306bf09350e"
+  },
+  {
+    "documentId": "route:/recovery",
+    "entityType": "route",
+    "entityId": "/recovery",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recovery",
+    "title": "Recover",
+    "normalizedTitle": "recover",
+    "aliases": [
+      "sleep",
+      "rest",
+      "soreness"
+    ],
+    "normalizedAliases": [
+      "sleep",
+      "rest",
+      "soreness"
+    ],
+    "summary": "Explore sleep, fatigue, rest and optional recovery records.",
+    "keywords": [
+      "sleep",
+      "rest",
+      "soreness"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "primary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "bca0f053e5ea361cf9b7aaa4e64009ac50413e75b11ce9148a5cf7f317e73064"
+  },
+  {
+    "documentId": "route:/progress",
+    "entityType": "route",
+    "entityId": "/progress",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress",
+    "title": "Progress",
+    "normalizedTitle": "progress",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "primary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "d861c3e4cb70f5c32217a62f80ee9d3ec6eeaec16b3ef443974b3dbd6b6ed718"
+  },
+  {
+    "documentId": "route:/tools",
+    "entityType": "route",
+    "entityId": "/tools",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/tools",
+    "title": "Tools",
+    "normalizedTitle": "tools",
+    "aliases": [
+      "calorie",
+      "calculator",
+      "timer",
+      "compare"
+    ],
+    "normalizedAliases": [
+      "calorie",
+      "calculator",
+      "timer",
+      "compare"
+    ],
+    "summary": "Calculators, timers, unit converters and comparisons.",
+    "keywords": [
+      "calorie",
+      "calculator",
+      "timer",
+      "compare"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f4937b9958923c4bc36d954ca9232fa76831adf8059bf5b38246cb21375c87b8"
+  },
+  {
+    "documentId": "route:/saved",
+    "entityType": "route",
+    "entityId": "/saved",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/saved",
+    "title": "Saved",
+    "normalizedTitle": "saved",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Manage favourites, collections, comparisons and recent history on this device.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "86706836b2596e5f6cbed5d4a409dbc52ced6edf1a3d39ac37e5211c6162301c"
+  },
+  {
+    "documentId": "route:/search",
+    "entityType": "route",
+    "entityId": "/search",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/search",
+    "title": "Search Fitness OS",
+    "normalizedTitle": "search fitness os",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Search the verified local index of published Fitness OS content.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b9e8a4687362d37d87e93bbb27c1d090fc055cdb351d78f6540bb7b2dd060fe7"
+  },
+  {
+    "documentId": "route:/search/settings",
+    "entityType": "route",
+    "entityId": "/search/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/search/settings",
+    "title": "Search settings",
+    "normalizedTitle": "search settings",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Control optional private indexing, saved history, exports and device-local search data.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f7b8383a16ca0709f225235c4ca79a8c73fd553a8db04237e389eb6ebd0cd63b"
+  },
+  {
+    "documentId": "route:/saved/favourites",
+    "entityType": "route",
+    "entityId": "/saved/favourites",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/saved/favourites",
+    "title": "Favourites",
+    "normalizedTitle": "favourites",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Return to stable references saved on this device.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "e7331f889ac086e0c1f2250faf776ba1fcbe018e499eac63b0ff676d29035f1e"
+  },
+  {
+    "documentId": "route:/saved/collections",
+    "entityType": "route",
+    "entityId": "/saved/collections",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/saved/collections",
+    "title": "Saved collections",
+    "normalizedTitle": "saved collections",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Organize stable references into browser-local collections.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "acc903dbc082c76efc37afdc74aefc76e941458fbb7d3e9caab3f2823c5f57b9"
+  },
+  {
+    "documentId": "route:/recent",
+    "entityType": "route",
+    "entityId": "/recent",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recent",
+    "title": "Recent activity",
+    "normalizedTitle": "recent activity",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Review and clear optional local search and viewing history.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "fea9da21197d443ccb8664ebc6558fdd5c5d6a813ed13abdd7f47839b0010585"
+  },
+  {
+    "documentId": "route:/compare",
+    "entityType": "route",
+    "entityId": "/compare",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/compare",
+    "title": "Saved comparisons",
+    "normalizedTitle": "saved comparisons",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Compare two to four compatible items without selecting a winner.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "e14166f0a73c22fa5197723f0465cd39b7aba5f7e7187b17962aff725ea433bf"
+  },
+  {
+    "documentId": "route:/dashboard",
+    "entityType": "route",
+    "entityId": "/dashboard",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/dashboard",
+    "title": "Body progress dashboard",
+    "normalizedTitle": "body progress dashboard",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "1f01c60794901296e1ef2ff77ee5be0e8af6d40f6bd8fb57093c1330f8c57411"
+  },
+  {
+    "documentId": "route:/progress/weight",
+    "entityType": "route",
+    "entityId": "/progress/weight",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress/weight",
+    "title": "Body weight",
+    "normalizedTitle": "body weight",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "6f6aab0ae973c376bb196959a19aa34d6de994dcf925e60d899971fd76bdaa82"
+  },
+  {
+    "documentId": "route:/progress/measurements",
+    "entityType": "route",
+    "entityId": "/progress/measurements",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress/measurements",
+    "title": "Circumference measurements",
+    "normalizedTitle": "circumference measurements",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "a5231efddbd917ab1213686ac62c4974962a2ac33ca292b757d91b823a15089d"
+  },
+  {
+    "documentId": "route:/progress/body-composition",
+    "entityType": "route",
+    "entityId": "/progress/body-composition",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress/body-composition",
+    "title": "External body composition reports",
+    "normalizedTitle": "external body composition reports",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "6d51789f007b2b091c2fff5ac01550144cf70133f1218d5e0a9be2a133b6be7e"
+  },
+  {
+    "documentId": "route:/progress/photos",
+    "entityType": "route",
+    "entityId": "/progress/photos",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress/photos",
+    "title": "Private progress photos",
+    "normalizedTitle": "private progress photos",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "419b6a8e2d0e1dbe80c4229402fa9ada9aa6bccbf67fb554dd700ba6996fd5a0"
+  },
+  {
+    "documentId": "route:/progress/goals",
+    "entityType": "route",
+    "entityId": "/progress/goals",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress/goals",
+    "title": "Progress goals",
+    "normalizedTitle": "progress goals",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "982f5d16323929b3550e7b753cd7511d12f6200834a9e322b4a71c486abb7e2b"
+  },
+  {
+    "documentId": "route:/analytics",
+    "entityType": "route",
+    "entityId": "/analytics",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics",
+    "title": "Analytics",
+    "normalizedTitle": "analytics",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "2e8bbdc357fc4782b2603cf3b00ea1168d4345ce18a06c8cf137b20bafc8aa3d"
+  },
+  {
+    "documentId": "route:/analytics/workouts",
+    "entityType": "route",
+    "entityId": "/analytics/workouts",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics/workouts",
+    "title": "Workout analytics",
+    "normalizedTitle": "workout analytics",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "7a25a69fea1289da69adae2098d364dcccd3533457f63176f34f917955c59652"
+  },
+  {
+    "documentId": "route:/analytics/strength",
+    "entityType": "route",
+    "entityId": "/analytics/strength",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics/strength",
+    "title": "Strength analytics",
+    "normalizedTitle": "strength analytics",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b1c30fbe17d3353a1ce44c08125f0ed52fc764a00a213b780c0dd808719898d8"
+  },
+  {
+    "documentId": "route:/analytics/nutrition",
+    "entityType": "route",
+    "entityId": "/analytics/nutrition",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics/nutrition",
+    "title": "Nutrition analytics",
+    "normalizedTitle": "nutrition analytics",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "8a588f9fff50227f6e95abf2bd2bca6969c9c724265fdfa34bc855b026f2484e"
+  },
+  {
+    "documentId": "route:/analytics/recovery",
+    "entityType": "route",
+    "entityId": "/analytics/recovery",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics/recovery",
+    "title": "Recovery analytics",
+    "normalizedTitle": "recovery analytics",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "602cc8a8682c310157a16b19cfe3e7612442b777c791d97a34ae72d1c36512af"
+  },
+  {
+    "documentId": "route:/analytics/cardio",
+    "entityType": "route",
+    "entityId": "/analytics/cardio",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics/cardio",
+    "title": "Cardio analytics",
+    "normalizedTitle": "cardio analytics",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "4a48d7e7324d7db73ead538bf63053f3380fa904ca5338817452e5796145a9f1"
+  },
+  {
+    "documentId": "route:/analytics/data-quality",
+    "entityType": "route",
+    "entityId": "/analytics/data-quality",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics/data-quality",
+    "title": "Data quality",
+    "normalizedTitle": "data quality",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "49c3eec4379421a1d804f6d2afcc02a8f7e605569dd076c6c41bbeb7cabd0c45"
+  },
+  {
+    "documentId": "route:/analytics/methodology",
+    "entityType": "route",
+    "entityId": "/analytics/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/analytics/methodology",
+    "title": "Metric methodology",
+    "normalizedTitle": "metric methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "4300d3385e0cb9d9d25613cbc5727ed3a8cedd13be02b39621d64c37f913ec5a"
+  },
+  {
+    "documentId": "route:/progress/settings",
+    "entityType": "route",
+    "entityId": "/progress/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress/settings",
+    "title": "Progress backup & settings",
+    "normalizedTitle": "progress backup & settings",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "41fb61185189f8bdfc9f8b79a99efba2714c5e84e3936d99b78ff68b987d3c35"
+  },
+  {
+    "documentId": "route:/progress/privacy",
+    "entityType": "route",
+    "entityId": "/progress/privacy",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/progress/privacy",
+    "title": "Progress privacy",
+    "normalizedTitle": "progress privacy",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional browser-local body progress records and source-labelled analytics.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "e59843ab33573ef3f0006118820c688c1b4be4ee5a43ca14896145721194abf4"
+  },
+  {
+    "documentId": "route:/supplements/ingredients",
+    "entityType": "route",
+    "entityId": "/supplements/ingredients",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/ingredients",
+    "title": "Ingredient library",
+    "normalizedTitle": "ingredient library",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "9d3daef50af69772b356ae660d09d82b9002b35f26d17f991dc27b484b0d12cb"
+  },
+  {
+    "documentId": "route:/supplements/compare",
+    "entityType": "route",
+    "entityId": "/supplements/compare",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/compare",
+    "title": "Compare supplement evidence",
+    "normalizedTitle": "compare supplement evidence",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "8e11fd8d7958a8eafaf791f1ef32858ace3aad963c0e4f5ccbb012469e44101a"
+  },
+  {
+    "documentId": "route:/supplements/evidence",
+    "entityType": "route",
+    "entityId": "/supplements/evidence",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/evidence",
+    "title": "Claim-level evidence",
+    "normalizedTitle": "claim-level evidence",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "1a6e33749776e2e91f5ee6a8bd9db86d6eddfef038ddbec7350ad5a6c0093073"
+  },
+  {
+    "documentId": "route:/supplements/safety",
+    "entityType": "route",
+    "entityId": "/supplements/safety",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/safety",
+    "title": "Supplement safety",
+    "normalizedTitle": "supplement safety",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "dc92fcf9e31550c957240ac45c44772c4a1df7908fd55a7efd78722b28cb570a"
+  },
+  {
+    "documentId": "route:/supplements/quality",
+    "entityType": "route",
+    "entityId": "/supplements/quality",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/quality",
+    "title": "Supplement quality",
+    "normalizedTitle": "supplement quality",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "e160d40af7f6d21305a9d5cb51e5c30217d3181368bda3fda081d8970c8edd47"
+  },
+  {
+    "documentId": "route:/supplements/anti-doping",
+    "entityType": "route",
+    "entityId": "/supplements/anti-doping",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/anti-doping",
+    "title": "Supplement anti-doping",
+    "normalizedTitle": "supplement anti-doping",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "7f98a73fd26e0230a0929d486a4dbd81909bd1a2ac2f9d692aafe493fb3d7355"
+  },
+  {
+    "documentId": "route:/supplements/frameworks",
+    "entityType": "route",
+    "entityId": "/supplements/frameworks",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/frameworks",
+    "title": "Supplement frameworks",
+    "normalizedTitle": "supplement frameworks",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "cb3a4b39ea852553066d195541113789d8f2fc7ecd242569780935f31fa87938"
+  },
+  {
+    "documentId": "route:/supplements/methodology",
+    "entityType": "route",
+    "entityId": "/supplements/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/methodology",
+    "title": "Supplement methodology",
+    "normalizedTitle": "supplement methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "531fb987df31f6e08ba77c41f03a30d3d574eab5dc3b10be900e3262a396a272"
+  },
+  {
+    "documentId": "route:/supplements/privacy",
+    "entityType": "route",
+    "entityId": "/supplements/privacy",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/privacy",
+    "title": "Supplement privacy",
+    "normalizedTitle": "supplement privacy",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "341e18c94302fa2cbc328f5613ba65f01fb7205d611090ba763d6cffaad29df8"
+  },
+  {
+    "documentId": "route:/supplements/products",
+    "entityType": "route",
+    "entityId": "/supplements/products",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/products",
+    "title": "My products & intake",
+    "normalizedTitle": "my products & intake",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "16ddb7f86b655dd165f7934697f1acfe7259a75b34f24782054fc99cc0eb301a"
+  },
+  {
+    "documentId": "route:/supplements/products/create",
+    "entityType": "route",
+    "entityId": "/supplements/products/create",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/products/create",
+    "title": "Capture product label",
+    "normalizedTitle": "capture product label",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "d3966a5d8a2ccb437778ce846893841882dfd4435e880199da08cb7c086b21a6"
+  },
+  {
+    "documentId": "route:/supplements/trials",
+    "entityType": "route",
+    "entityId": "/supplements/trials",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/trials",
+    "title": "Personal supplement trials",
+    "normalizedTitle": "personal supplement trials",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f675d729719712eb35d89ec92e3b4e1e79c7195b58e02ce98dfa217e36cbd8d6"
+  },
+  {
+    "documentId": "route:/supplements/trials/create",
+    "entityType": "route",
+    "entityId": "/supplements/trials/create",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/trials/create",
+    "title": "Create personal trial",
+    "normalizedTitle": "create personal trial",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "66c67ede7ce3f37b7cfd858345890020c5927cbb43d020a19ed44da99cbaf5bd"
+  },
+  {
+    "documentId": "route:/supplements/adverse-events",
+    "entityType": "route",
+    "entityId": "/supplements/adverse-events",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/adverse-events",
+    "title": "Suspected adverse events",
+    "normalizedTitle": "suspected adverse events",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "16bb511ebb3968971ea41c5eddfc9170aae145edc5b933395d73e226d21bc437"
+  },
+  {
+    "documentId": "route:/supplements/settings",
+    "entityType": "route",
+    "entityId": "/supplements/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements/settings",
+    "title": "Supplement backup & settings",
+    "normalizedTitle": "supplement backup & settings",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Claim-specific evidence and optional browser-local supplement records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "661ef2e8d8f666e33fa62022a525c30e4f97005aae4b8d43982ec7c272f594f3"
+  },
+  {
+    "documentId": "route:/cardio/learn",
+    "entityType": "route",
+    "entityId": "/cardio/learn",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/learn",
+    "title": "Cardio learning library",
+    "normalizedTitle": "cardio learning library",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "28d6c772ce8d04a49ac292e6f37d794a56378074061e02d0ffeb1673ccb8a54c"
+  },
+  {
+    "documentId": "route:/cardio/modalities",
+    "entityType": "route",
+    "entityId": "/cardio/modalities",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/modalities",
+    "title": "Reviewed activity guidance",
+    "normalizedTitle": "reviewed activity guidance",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "53f359481207cee08ae33b05fc6ec760f3f8cddad54a15d79b2f11332de9d300"
+  },
+  {
+    "documentId": "route:/cardio/plans",
+    "entityType": "route",
+    "entityId": "/cardio/plans",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/plans",
+    "title": "Reviewed cardio plan finder",
+    "normalizedTitle": "reviewed cardio plan finder",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "4b8ef83199f2f3ab9b5de355c8d9d65a6e143b8144583bf1129210410eb280c5"
+  },
+  {
+    "documentId": "route:/cardio/custom-plans",
+    "entityType": "route",
+    "entityId": "/cardio/custom-plans",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/custom-plans",
+    "title": "My cardio plans",
+    "normalizedTitle": "my cardio plans",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "45032c9fb339bb58e582c518d2a64da80be34b26bae2c690b42645612b4fb1d7"
+  },
+  {
+    "documentId": "route:/cardio/custom-plans/create",
+    "entityType": "route",
+    "entityId": "/cardio/custom-plans/create",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/custom-plans/create",
+    "title": "Build my cardio plan",
+    "normalizedTitle": "build my cardio plan",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "abf6c69e45301f8c4736aa6871598f6c279d5f1f098eb891508a1ddb39641bb7"
+  },
+  {
+    "documentId": "route:/conditioning",
+    "entityType": "route",
+    "entityId": "/conditioning",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/conditioning",
+    "title": "Conditioning routines",
+    "normalizedTitle": "conditioning routines",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "train"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b738b389a551576aa613dd3a9638d8690493d62515a1edd28caf7ac4b109a2f0"
+  },
+  {
+    "documentId": "route:/conditioning/custom",
+    "entityType": "route",
+    "entityId": "/conditioning/custom",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/conditioning/custom",
+    "title": "Build my conditioning routine",
+    "normalizedTitle": "build my conditioning routine",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f05a1f69cacd7c2b9785f332df1cae9a510318195a8d51c783c0601540b1e8be"
+  },
+  {
+    "documentId": "route:/cardio/session/new",
+    "entityType": "route",
+    "entityId": "/cardio/session/new",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/session/new",
+    "title": "Start or record cardio",
+    "normalizedTitle": "start or record cardio",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "11dc4bd839514b483630923005535dbed3d86de3be0b86a1ebd157bd9decb68f"
+  },
+  {
+    "documentId": "route:/cardio/session/active",
+    "entityType": "route",
+    "entityId": "/cardio/session/active",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/session/active",
+    "title": "Active cardio session",
+    "normalizedTitle": "active cardio session",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "77118d3edbdb86cb73fef3b85f769bee5a5f496f297e8243b1be035f09a309ec"
+  },
+  {
+    "documentId": "route:/cardio/history",
+    "entityType": "route",
+    "entityId": "/cardio/history",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/history",
+    "title": "Cardio history",
+    "normalizedTitle": "cardio history",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "0c5c815ee8e0302d65a934f3da00d4a26972c74ae981e75d547bd0d684fce342"
+  },
+  {
+    "documentId": "route:/cardio/progress",
+    "entityType": "route",
+    "entityId": "/cardio/progress",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/progress",
+    "title": "Cardio observations over time",
+    "normalizedTitle": "cardio observations over time",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "352b59599d8f7efd4981b550a0f4995c06e5733f1775880e5005e56afe2f7c56"
+  },
+  {
+    "documentId": "route:/cardio/calculators/pace",
+    "entityType": "route",
+    "entityId": "/cardio/calculators/pace",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/calculators/pace",
+    "title": "Pace & speed calculator",
+    "normalizedTitle": "pace & speed calculator",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "5260a500a191633da64c495240d7da76c831ece1d6084268fa55e5cb7be30853"
+  },
+  {
+    "documentId": "route:/cardio/calculators/intensity",
+    "entityType": "route",
+    "entityId": "/cardio/calculators/intensity",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/calculators/intensity",
+    "title": "Intensity methods",
+    "normalizedTitle": "intensity methods",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b92c0a17e76f293f8788eaa4b8b1aa4f53643197cba8b697eba3743a0d2b366a"
+  },
+  {
+    "documentId": "route:/cardio/methodology",
+    "entityType": "route",
+    "entityId": "/cardio/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/methodology",
+    "title": "Cardio methodology",
+    "normalizedTitle": "cardio methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "27c7cd1d8cf67fb4f1361b831af9e1e84178740e95d3e14901c1821576b53dac"
+  },
+  {
+    "documentId": "route:/cardio/settings",
+    "entityType": "route",
+    "entityId": "/cardio/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/settings",
+    "title": "Cardio settings & backup",
+    "normalizedTitle": "cardio settings & backup",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "bf86b939b9b8ba1c753a052718541353e14bbaf21842680980a7d3a055bff906"
+  },
+  {
+    "documentId": "route:/cardio/privacy",
+    "entityType": "route",
+    "entityId": "/cardio/privacy",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio/privacy",
+    "title": "Cardio local data & privacy",
+    "normalizedTitle": "cardio local data & privacy",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Method-labelled cardio tools and optional browser-local activity records.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b498ea4811f6eee2c117351bbc865d874d2fac1c5840b3ea7ba88d24c2733abc"
+  },
+  {
+    "documentId": "route:/recovery/check-in",
+    "entityType": "route",
+    "entityId": "/recovery/check-in",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recovery/check-in",
+    "title": "Daily recovery check-in",
+    "normalizedTitle": "daily recovery check-in",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "1e2e8f9c69649651b7338b49d00f743b0ce2f07c9f0a67bfb9ebf279ec19a55f"
+  },
+  {
+    "documentId": "route:/recovery/history",
+    "entityType": "route",
+    "entityId": "/recovery/history",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recovery/history",
+    "title": "Recovery history",
+    "normalizedTitle": "recovery history",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "0fc729dbad29ea0e478c980f00218e88ab0b65c319c5fca33ff938c51ba85161"
+  },
+  {
+    "documentId": "route:/recovery/topics",
+    "entityType": "route",
+    "entityId": "/recovery/topics",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recovery/topics",
+    "title": "Recovery topics",
+    "normalizedTitle": "recovery topics",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "bcfddd11dc27c326b4ad9317d8d42a6f2aa6e24413b4f407f6dece4b1fdad895"
+  },
+  {
+    "documentId": "route:/sleep",
+    "entityType": "route",
+    "entityId": "/sleep",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/sleep",
+    "title": "Sleep",
+    "normalizedTitle": "sleep",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "83cc0de23d5a9054da91e990fc31182d2be858611f678e1d2d3e821f4c3b2dd7"
+  },
+  {
+    "documentId": "route:/sleep/log",
+    "entityType": "route",
+    "entityId": "/sleep/log",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/sleep/log",
+    "title": "Sleep diary",
+    "normalizedTitle": "sleep diary",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "c845766ce752d78c1ebee9a4fc1efa96c1e03951d4d89e2ecd8d4b535c3fadb3"
+  },
+  {
+    "documentId": "route:/sleep/history",
+    "entityType": "route",
+    "entityId": "/sleep/history",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/sleep/history",
+    "title": "Sleep history",
+    "normalizedTitle": "sleep history",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "a9b3a82228ee5615f2e493cfa3abd693559098d5c0107eadb4957506ed7c8608"
+  },
+  {
+    "documentId": "route:/sleep/methodology",
+    "entityType": "route",
+    "entityId": "/sleep/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/sleep/methodology",
+    "title": "Sleep methodology",
+    "normalizedTitle": "sleep methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "21b388ae0c835a23d9ada490bddd5784d273cfd57864515d25e92ddedd8eb2b4"
+  },
+  {
+    "documentId": "route:/mobility/history",
+    "entityType": "route",
+    "entityId": "/mobility/history",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/mobility/history",
+    "title": "Mobility history",
+    "normalizedTitle": "mobility history",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "17338ba043e1fa02e46eb5b0951b1cf6c57b75dc7c5c55bb8c1733472b307fed"
+  },
+  {
+    "documentId": "route:/mobility/custom",
+    "entityType": "route",
+    "entityId": "/mobility/custom",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/mobility/custom",
+    "title": "My mobility routines",
+    "normalizedTitle": "my mobility routines",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "5f8a473759e86c30a03e1caedde5c9874b064f29a312b46dc5bfcb78bbf400de"
+  },
+  {
+    "documentId": "route:/mobility/custom/create",
+    "entityType": "route",
+    "entityId": "/mobility/custom/create",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/mobility/custom/create",
+    "title": "Build a local routine",
+    "normalizedTitle": "build a local routine",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "1ca67dbfa50990cd77bbc58ad96fab5b863aaa4a20a6be6de79aa88f6077fc84"
+  },
+  {
+    "documentId": "route:/warm-ups",
+    "entityType": "route",
+    "entityId": "/warm-ups",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/warm-ups",
+    "title": "Warm-ups",
+    "normalizedTitle": "warm-ups",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "c6ea077156c9d284589452b300cba108c725c29bd3d93e2ed16f7cbd6af890af"
+  },
+  {
+    "documentId": "route:/recovery/settings",
+    "entityType": "route",
+    "entityId": "/recovery/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recovery/settings",
+    "title": "Recovery backup and settings",
+    "normalizedTitle": "recovery backup and settings",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "70af9a3a360e8c27e742984f833b1929d15d230a9fa720c4a3246ef481e70f95"
+  },
+  {
+    "documentId": "route:/recovery/privacy",
+    "entityType": "route",
+    "entityId": "/recovery/privacy",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recovery/privacy",
+    "title": "Recovery privacy",
+    "normalizedTitle": "recovery privacy",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional device-local recovery, sleep and routine tools.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "3b359d815ff158fcddaf2907b1f40d2fce8f6699038038ecde5b559d9d3f88fe"
+  },
+  {
+    "documentId": "route:/muscles",
+    "entityType": "route",
+    "entityId": "/muscles",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/muscles",
+    "title": "Muscle library",
+    "normalizedTitle": "muscle library",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Explore muscle groups, anatomy and their relationship to movement.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "learn"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "4f130f8cf1626fd7ec2464d26c7067ae4c70487eb36e6ddb4fe34ed011aba16a"
+  },
+  {
+    "documentId": "route:/exercises",
+    "entityType": "route",
+    "entityId": "/exercises",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/exercises",
+    "title": "Exercise library",
+    "normalizedTitle": "exercise library",
+    "aliases": [
+      "exercise",
+      "movement"
+    ],
+    "normalizedAliases": [
+      "exercise",
+      "movement"
+    ],
+    "summary": "Discover exercises by muscle, equipment and movement pattern.",
+    "keywords": [
+      "exercise",
+      "movement"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "learn"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "1a673acab3ced2e57c7805256b6e27f0a17fa3aba9d1a0ebf853b9e6fa38b926"
+  },
+  {
+    "documentId": "route:/training-science",
+    "entityType": "route",
+    "entityId": "/training-science",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/training-science",
+    "title": "Training science",
+    "normalizedTitle": "training science",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Understand the principles behind training and programming.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "5f5e59d2ceba3459efe15a55d747d6a7ff6dcdd388e75e18ccf0a2e0a0dc8eb4"
+  },
+  {
+    "documentId": "route:/learn/workout-science",
+    "entityType": "route",
+    "entityId": "/learn/workout-science",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/learn/workout-science",
+    "title": "Workout science",
+    "normalizedTitle": "workout science",
+    "aliases": [
+      "training science",
+      "rpe",
+      "rir",
+      "volume",
+      "progressive overload",
+      "methods"
+    ],
+    "normalizedAliases": [
+      "training science",
+      "rpe",
+      "rir",
+      "volume",
+      "progressive overload",
+      "methods"
+    ],
+    "summary": "Explore training principles, evidence, learning paths and limitations.",
+    "keywords": [
+      "training science",
+      "rpe",
+      "rir",
+      "volume",
+      "progressive overload",
+      "methods"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "learn"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "ae8effcc6da243c6defb0a7e26b407d52f109c41030f13083d8033cd377926ba"
+  },
+  {
+    "documentId": "route:/learn/workout-science/methods",
+    "entityType": "route",
+    "entityId": "/learn/workout-science/methods",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/learn/workout-science/methods",
+    "title": "Advanced training methods",
+    "normalizedTitle": "advanced training methods",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Reviewed methods, costs, prerequisites and evidence.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "e3a4037d5d1c0be1de03aba50acee1760bad88c7855a7770068c54ef9a68426f"
+  },
+  {
+    "documentId": "route:/learn/workout-science/glossary",
+    "entityType": "route",
+    "entityId": "/learn/workout-science/glossary",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/learn/workout-science/glossary",
+    "title": "Training glossary",
+    "normalizedTitle": "training glossary",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Reviewed terminology and abbreviations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "8b26cd336b16f8f675b3bbe1fa5e0776c5a867cdf503add7d059236fefdcd7ff"
+  },
+  {
+    "documentId": "route:/train",
+    "entityType": "route",
+    "entityId": "/train",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/train",
+    "title": "Train",
+    "normalizedTitle": "train",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Connect training knowledge with planning and execution.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "113494d090261cdd7cf3d32cd106e275156f185e641a19d232286197bda88e74"
+  },
+  {
+    "documentId": "route:/workout",
+    "entityType": "route",
+    "entityId": "/workout",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/workout",
+    "title": "Workout workspace",
+    "normalizedTitle": "workout workspace",
+    "aliases": [
+      "log workout",
+      "sets",
+      "session"
+    ],
+    "normalizedAliases": [
+      "log workout",
+      "sets",
+      "session"
+    ],
+    "summary": "A future home for your sessions, sets and optional training logs.",
+    "keywords": [
+      "log workout",
+      "sets",
+      "session"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "train"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "c3cdf48e084d441371e7b609aeefac6fc6e19867eb68dcf1937c53445ca95953"
+  },
+  {
+    "documentId": "route:/workout/history",
+    "entityType": "route",
+    "entityId": "/workout/history",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/workout/history",
+    "title": "Workout history",
+    "normalizedTitle": "workout history",
+    "aliases": [
+      "history",
+      "past sessions"
+    ],
+    "normalizedAliases": [
+      "history",
+      "past sessions"
+    ],
+    "summary": "Review your device-local sessions and training records.",
+    "keywords": [
+      "history",
+      "past sessions"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "train"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b86f7f02ff34e2ae77521b2d0eb73d3ae87ceb444b8ce0ae63998f218dc0d7b9"
+  },
+  {
+    "documentId": "route:/cardio",
+    "entityType": "route",
+    "entityId": "/cardio",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/cardio",
+    "title": "Cardio & conditioning",
+    "normalizedTitle": "cardio & conditioning",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Explore conditioning methods, planning and optional session logs.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "train"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "95ba55228d014b1f9e084cf909e2d856fdc8752fc747458f99cd8144ea9ddda8"
+  },
+  {
+    "documentId": "route:/eat",
+    "entityType": "route",
+    "entityId": "/eat",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/eat",
+    "title": "Eat",
+    "normalizedTitle": "eat",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Connect food knowledge with practical nutrition planning.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b3eadd2cc1f7f637573f8061681ec92639fe9ce66e1e605b21250e659799b0b5"
+  },
+  {
+    "documentId": "route:/foods/categories",
+    "entityType": "route",
+    "entityId": "/foods/categories",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/foods/categories",
+    "title": "Food categories",
+    "normalizedTitle": "food categories",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Browse reviewed foods by category.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "2723bd39c67c916306752605cef4065c333e19ff23a2db8c725958ce9c654c3c"
+  },
+  {
+    "documentId": "route:/foods/compare",
+    "entityType": "route",
+    "entityId": "/foods/compare",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/foods/compare",
+    "title": "Compare food profiles",
+    "normalizedTitle": "compare food profiles",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Compare preparation profiles on an explicit serving basis.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "077b36c72219ab15c4b28582135bc6ae2971ffaffdc501e56612a1a5fe2421b8"
+  },
+  {
+    "documentId": "route:/foods/sources",
+    "entityType": "route",
+    "entityId": "/foods/sources",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/foods/sources",
+    "title": "Food composition sources",
+    "normalizedTitle": "food composition sources",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Dataset releases and reuse policies.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f0b8d4d3d2cc2cae319eafe636747f7377ef09ceb6c895dbc04de8a8465d19dd"
+  },
+  {
+    "documentId": "route:/foods/methodology",
+    "entityType": "route",
+    "entityId": "/foods/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/foods/methodology",
+    "title": "Food data methodology",
+    "normalizedTitle": "food data methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Matching, units, missing data and review.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "4fca0e95cd3dcece6be723766c9b4fde43bb490c07fcbfd998d0bb70c40faece"
+  },
+  {
+    "documentId": "route:/nutrients",
+    "entityType": "route",
+    "entityId": "/nutrients",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrients",
+    "title": "Nutrient encyclopedia",
+    "normalizedTitle": "nutrient encyclopedia",
+    "aliases": [
+      "vitamin",
+      "vitamins",
+      "minerals",
+      "protein"
+    ],
+    "normalizedAliases": [
+      "vitamin",
+      "vitamins",
+      "minerals",
+      "protein"
+    ],
+    "summary": "Explore nutrients, food relationships and source limitations.",
+    "keywords": [
+      "vitamin",
+      "vitamins",
+      "minerals",
+      "protein"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "learn"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "590f839e69974d619a99c07526d36286bce79bc4e51897b5419f0f644829c381"
+  },
+  {
+    "documentId": "route:/nutrients/reference-intakes",
+    "entityType": "route",
+    "entityId": "/nutrients/reference-intakes",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrients/reference-intakes",
+    "title": "Reference Intake Explorer",
+    "normalizedTitle": "reference intake explorer",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Inspect source-reviewed population references.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "6a3b95103f8cd6ff3a9cb530f0d1397fbfe157dd9e1ee541d72420fc2b85ca88"
+  },
+  {
+    "documentId": "route:/nutrients/frameworks",
+    "entityType": "route",
+    "entityId": "/nutrients/frameworks",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrients/frameworks",
+    "title": "Reference frameworks",
+    "normalizedTitle": "reference frameworks",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Separate authorities, versions and value definitions.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "265fcf82e0445a81aa854dc67a430693f4c38bca206ff14928d5ff4f5efc2dfe"
+  },
+  {
+    "documentId": "route:/nutrients/glossary",
+    "entityType": "route",
+    "entityId": "/nutrients/glossary",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrients/glossary",
+    "title": "Nutrient glossary",
+    "normalizedTitle": "nutrient glossary",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Reference terminology, units and equivalents.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "53b806d173da3409e2e23cfd1f636dc2468afa49d74efbaa1677ae218ef76c40"
+  },
+  {
+    "documentId": "route:/nutrients/methodology",
+    "entityType": "route",
+    "entityId": "/nutrients/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrients/methodology",
+    "title": "Nutrient methodology",
+    "normalizedTitle": "nutrient methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Source-backed claims, food ranking and conversion safeguards.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "c1cbe6cad8279ce6eea41722f0d5a89f96863b8a95546b540d45ce20c60f2582"
+  },
+  {
+    "documentId": "route:/diet",
+    "entityType": "route",
+    "entityId": "/diet",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet",
+    "title": "Diet planning",
+    "normalizedTitle": "diet planning",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Open the healthy-adult target planner.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "308c166725042e00605b190eb212b61f8655b1f69ec11e2a32d38e65754f6f9a"
+  },
+  {
+    "documentId": "route:/diet-planning",
+    "entityType": "route",
+    "entityId": "/diet-planning",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning",
+    "title": "Diet planning",
+    "normalizedTitle": "diet planning",
+    "aliases": [
+      "calorie",
+      "energy",
+      "macros",
+      "targets"
+    ],
+    "normalizedAliases": [
+      "calorie",
+      "energy",
+      "macros",
+      "targets"
+    ],
+    "summary": "Transparent starting targets and optional local snapshots.",
+    "keywords": [
+      "calorie",
+      "energy",
+      "macros",
+      "targets"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "eat"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "c31103ec172eef97b27ef63ac5885099f49f07fa59377e5c3775d5fa74bb5040"
+  },
+  {
+    "documentId": "route:/diet-planning/energy",
+    "entityType": "route",
+    "entityId": "/diet-planning/energy",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning/energy",
+    "title": "Energy planner",
+    "normalizedTitle": "energy planner",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Adult NASEM energy estimates with model uncertainty.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "23cf9b5c8c499b8b5c85c10fc28615f23b6f4a5ed0005aa15f6113b8185fadd2"
+  },
+  {
+    "documentId": "route:/diet-planning/goal",
+    "entityType": "route",
+    "entityId": "/diet-planning/goal",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning/goal",
+    "title": "Goal planner",
+    "normalizedTitle": "goal planner",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Explicit goal adjustments and BMI safety context.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "7297f801d3e46d37bf88261eb4831fe5fabbc50398689bddf34e349a1292a3b5"
+  },
+  {
+    "documentId": "route:/diet-planning/macros",
+    "entityType": "route",
+    "entityId": "/diet-planning/macros",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning/macros",
+    "title": "Macro planner",
+    "normalizedTitle": "macro planner",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Contextual protein, fat, carbohydrate and fibre targets.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "7e8ee29d5159e6251dd3cf2e29253cf76c4f0472639ef7a4bbec123e171b626a"
+  },
+  {
+    "documentId": "route:/diet-planning/meal-distribution",
+    "entityType": "route",
+    "entityId": "/diet-planning/meal-distribution",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning/meal-distribution",
+    "title": "Meal distribution",
+    "normalizedTitle": "meal distribution",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Reconciled target allocations across planning slots.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "350209de5a35bdc490063bb639e5a38147cd6ecc964577d86fd9e8b94a34c523"
+  },
+  {
+    "documentId": "route:/diet-planning/plans",
+    "entityType": "route",
+    "entityId": "/diet-planning/plans",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning/plans",
+    "title": "Saved diet plans",
+    "normalizedTitle": "saved diet plans",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Device-local target snapshots, comparison and backup.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "0ae27560740bd2202e23a2bb4e211f066497088959027fe618e76f0d1ef7efd2"
+  },
+  {
+    "documentId": "route:/diet-planning/methodology",
+    "entityType": "route",
+    "entityId": "/diet-planning/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning/methodology",
+    "title": "Diet planning methodology",
+    "normalizedTitle": "diet planning methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Exact formulas, references and versioning.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "10b8a9277b4cf3829d65cd5a6f95e74713d304e2ec08927596f4ac74df446e58"
+  },
+  {
+    "documentId": "route:/diet-planning/safety",
+    "entityType": "route",
+    "entityId": "/diet-planning/safety",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/diet-planning/safety",
+    "title": "Diet planning safety",
+    "normalizedTitle": "diet planning safety",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Eligibility, unsupported uses and planning boundaries.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "cb32db2b5b923bdce8b33cd9db45b605ed29059244f5b6a553787bc209936dc0"
+  },
+  {
+    "documentId": "route:/recipes",
+    "entityType": "route",
+    "entityId": "/recipes",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recipes",
+    "title": "Meals & recipes",
+    "normalizedTitle": "meals & recipes",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Practical recipes and meal templates connected to food data.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "eat"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "ca96b73b72c6e34e2f5caad44035582b85a0d1b67f751a9ec5fc60074eac6f33"
+  },
+  {
+    "documentId": "route:/recipes/create",
+    "entityType": "route",
+    "entityId": "/recipes/create",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recipes/create",
+    "title": "Create recipe",
+    "normalizedTitle": "create recipe",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Local recipes, immutable meal planning and source-aware calculations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "a62b15bafbade3732d413e36ff99ca8b6e5ec9ae84ca8f6e022bb9ec8dde574c"
+  },
+  {
+    "documentId": "route:/recipes/methodology",
+    "entityType": "route",
+    "entityId": "/recipes/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/recipes/methodology",
+    "title": "Recipe methodology",
+    "normalizedTitle": "recipe methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Local recipes, immutable meal planning and source-aware calculations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "9f30c517ff8284bb6da0f335538e7230a4380ca858bba15d5da84c475ceaa575"
+  },
+  {
+    "documentId": "route:/meal-plans",
+    "entityType": "route",
+    "entityId": "/meal-plans",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/meal-plans",
+    "title": "Meal plans",
+    "normalizedTitle": "meal plans",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Local recipes, immutable meal planning and source-aware calculations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "da53c302746d736efbe5005fd2a6b9297ee40fcf4c98b54b9f3e817b709db426"
+  },
+  {
+    "documentId": "route:/meal-plans/create",
+    "entityType": "route",
+    "entityId": "/meal-plans/create",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/meal-plans/create",
+    "title": "Create meal plan",
+    "normalizedTitle": "create meal plan",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Local recipes, immutable meal planning and source-aware calculations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "ab573816562bd19ea317f1cc80d9bf29d4615963933bb052a5202cdd4ead44ea"
+  },
+  {
+    "documentId": "route:/meal-plans/templates",
+    "entityType": "route",
+    "entityId": "/meal-plans/templates",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/meal-plans/templates",
+    "title": "Meal-plan templates",
+    "normalizedTitle": "meal-plan templates",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Local recipes, immutable meal planning and source-aware calculations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "a8e1d2ba339be26b02c7620559f29fd74bb99488bf8def510fd1d2757814331f"
+  },
+  {
+    "documentId": "route:/meal-plans/settings",
+    "entityType": "route",
+    "entityId": "/meal-plans/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/meal-plans/settings",
+    "title": "Meal-plan settings & backup",
+    "normalizedTitle": "meal-plan settings & backup",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Local recipes, immutable meal planning and source-aware calculations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "29c6490e501f25941056fc2155b50f5d688401172c65f9e141091be44b87f7af"
+  },
+  {
+    "documentId": "route:/meal-plans/privacy",
+    "entityType": "route",
+    "entityId": "/meal-plans/privacy",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/meal-plans/privacy",
+    "title": "Meal-plan privacy",
+    "normalizedTitle": "meal-plan privacy",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Local recipes, immutable meal planning and source-aware calculations.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "946189dcf46753ab0c481d743012fd7e4bed086ec28276392d9855406265f24a"
+  },
+  {
+    "documentId": "route:/nutrition-log",
+    "entityType": "route",
+    "entityId": "/nutrition-log",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition-log",
+    "title": "Nutrition diary",
+    "normalizedTitle": "nutrition diary",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Open your optional local nutrition diary.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "558900c081908d4b1f0af70a76c34200214e750ae606903018e93c3c243e1bb4"
+  },
+  {
+    "documentId": "route:/nutrition",
+    "entityType": "route",
+    "entityId": "/nutrition",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition",
+    "title": "Nutrition diary",
+    "normalizedTitle": "nutrition diary",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional food and fluid snapshots saved in this browser.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "eat"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "c41fa335f6b400f05e7144e8120d4b9f05693ec2e7e8221c6f7b77b0c27312c7"
+  },
+  {
+    "documentId": "route:/nutrition/add",
+    "entityType": "route",
+    "entityId": "/nutrition/add",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition/add",
+    "title": "Add food or fluid",
+    "normalizedTitle": "add food or fluid",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Record consumed amounts with exact source snapshots.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "10617eec5ba7bda15e4d7eaa0d6cc40202bb10dcfd32673d608fd7f6c936aa04"
+  },
+  {
+    "documentId": "route:/nutrition/history",
+    "entityType": "route",
+    "entityId": "/nutrition/history",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition/history",
+    "title": "Nutrition history",
+    "normalizedTitle": "nutrition history",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Review local nutrition days.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f933b5ff92f3d561fe6b3203267f03fdf47c20b7b3063c5c66937cf62737b3c3"
+  },
+  {
+    "documentId": "route:/nutrition/custom-foods",
+    "entityType": "route",
+    "entityId": "/nutrition/custom-foods",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition/custom-foods",
+    "title": "Custom foods",
+    "normalizedTitle": "custom foods",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Private labels and immutable revisions.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "935537a1ff51be29a809f80056ec865bd7803956a98196e264202990ce673db6"
+  },
+  {
+    "documentId": "route:/nutrition/settings",
+    "entityType": "route",
+    "entityId": "/nutrition/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition/settings",
+    "title": "Nutrition settings & backup",
+    "normalizedTitle": "nutrition settings & backup",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Meal slots, targets, export, restore and deletion.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "7b4b5528268182912ffcd5bd6f588cffdc5354c4f375d370a2223c5beb129d50"
+  },
+  {
+    "documentId": "route:/nutrition/methodology",
+    "entityType": "route",
+    "entityId": "/nutrition/methodology",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition/methodology",
+    "title": "Nutrition methodology",
+    "normalizedTitle": "nutrition methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Snapshot arithmetic, source statuses and scope.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "c5ec356af408c6279d74c5dc2e54f40701069b60d276bb4cc2e92b0e12a02312"
+  },
+  {
+    "documentId": "route:/nutrition/privacy",
+    "entityType": "route",
+    "entityId": "/nutrition/privacy",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/nutrition/privacy",
+    "title": "Nutrition privacy",
+    "normalizedTitle": "nutrition privacy",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Browser ownership, persistence and backup.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "e168b961bf5735f2af90ee52f3ba30ac71a69aaaad2a14bb570991f9c701ed43"
+  },
+  {
+    "documentId": "route:/mobility",
+    "entityType": "route",
+    "entityId": "/mobility",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/mobility",
+    "title": "Mobility",
+    "normalizedTitle": "mobility",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Warm-ups, cooldowns and movement-preparation routines.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "recover"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "200ae892bd64af7efa2e5caca78d46687ae0ed7b4be6dce883ef6348fb3bca85"
+  },
+  {
+    "documentId": "route:/supplements",
+    "entityType": "route",
+    "entityId": "/supplements",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/supplements",
+    "title": "Supplement evidence",
+    "normalizedTitle": "supplement evidence",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "A careful reference for evidence, limitations and safety concerns.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "learn"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "7fe81b4c0ea02ba5cad1ce9fb37bff91584affb35933d22b035c626a6f3cff08"
+  },
+  {
+    "documentId": "route:/track",
+    "entityType": "route",
+    "entityId": "/track",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/track",
+    "title": "Track",
+    "normalizedTitle": "track",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Your optional, device-local personal space.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "contextual"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "037d67ef74ecb69cf9cb8fbd3f544737cbefd92e9ddcca328d7083cbc506b1d5"
+  },
+  {
+    "documentId": "route:/settings",
+    "entityType": "route",
+    "entityId": "/settings",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/settings",
+    "title": "Settings",
+    "normalizedTitle": "settings",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Appearance, display units and your local data boundaries.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f7ffdc87a96adeea38a46382058cd3df2eb4afffa49e97487d20cdca34412618"
+  },
+  {
+    "documentId": "route:/about/sources",
+    "entityType": "route",
+    "entityId": "/about/sources",
+    "entityVersion": null,
+    "sourceModule": "phase_01_navigation",
+    "route": "/about/sources",
+    "title": "Sources & methodology",
+    "normalizedTitle": "sources & methodology",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "How knowledge will be reviewed, attributed and maintained.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {
+      "domain": [
+        "navigation"
+      ],
+      "visibility": [
+        "secondary"
+      ]
+    },
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "99abf93d995470754bead789a90a9f6edf1be42bec45df307fcf3df7488935b7"
+  },
+  {
+    "documentId": "dashboard_widget:weight_progress",
+    "entityType": "dashboard_widget",
+    "entityId": "weight_progress",
+    "entityVersion": null,
+    "sourceModule": "phase_15_progress",
+    "route": "/progress/weight",
+    "title": "Body-weight trend",
+    "normalizedTitle": "body-weight trend",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional destination in your device-local progress workspace.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "1e822c1ff3df6f2eb5414638e65ea939580f7c82645c5dc2a700f24d71c35978"
+  },
+  {
+    "documentId": "dashboard_widget:circumference",
+    "entityType": "dashboard_widget",
+    "entityId": "circumference",
+    "entityVersion": null,
+    "sourceModule": "phase_15_progress",
+    "route": "/progress/measurements",
+    "title": "Circumference measurements",
+    "normalizedTitle": "circumference measurements",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional destination in your device-local progress workspace.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "f79c8f20ee20f41df352ee4c355d06f451eedbdefd9013848654b125cecec5c6"
+  },
+  {
+    "documentId": "dashboard_widget:composition",
+    "entityType": "dashboard_widget",
+    "entityId": "composition",
+    "entityVersion": null,
+    "sourceModule": "phase_15_progress",
+    "route": "/progress/body-composition",
+    "title": "Body-composition reports",
+    "normalizedTitle": "body-composition reports",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional destination in your device-local progress workspace.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "11bc8836799fc583d5be32833a0864485f80a6f4cda7b83543d40a2f7d65c859"
+  },
+  {
+    "documentId": "dashboard_widget:goals",
+    "entityType": "dashboard_widget",
+    "entityId": "goals",
+    "entityVersion": null,
+    "sourceModule": "phase_15_progress",
+    "route": "/progress/goals",
+    "title": "Progress goals",
+    "normalizedTitle": "progress goals",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "Optional destination in your device-local progress workspace.",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "84b3af2e1cab3da2be3857ebda294df97a68afef3e4a192ac97d78f176dc8b3d"
+  }
+]

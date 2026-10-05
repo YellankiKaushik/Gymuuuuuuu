@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 test('exercise multiselect, URL restoration, dialog focus and safe content gates', async ({ page }) => {
   await page.goto('/exercises')
-  await expect(page.getByRole('button', { name: 'Find a module' })).toBeEnabled()
+  await expect(page.getByRole('button', { name: 'Search Fitness OS' })).toBeEnabled()
   await page.getByRole('button', { name: 'Horizontal push', exact: true }).click()
   await page.getByRole('button', { name: 'Horizontal pull', exact: true }).click()
   await page.getByRole('button', { name: 'Dumbbell', exact: true }).click()
@@ -23,7 +23,7 @@ test('exercise multiselect, URL restoration, dialog focus and safe content gates
 test('exercise mobile, dark, zoom reflow and invalid queries', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 568 })
   await page.goto('/exercises?type=fake&equipment=fake')
-  await expect(page.getByRole('button', { name: 'Find a module' })).toBeEnabled()
+  await expect(page.getByRole('button', { name: 'Search Fitness OS' })).toBeEnabled()
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   await page.getByRole('button', { name: 'Filters', exact: true }).click()
   await page.getByRole('dialog').locator('summary').filter({ hasText: /^equipment/ }).click()

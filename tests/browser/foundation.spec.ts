@@ -4,7 +4,7 @@ import { modules } from '../../src/data/navigation'
 
 test('contract routes render server-side without personal data', async ({ request }) => {
   for (const module of [{ path: '/', title: 'Your fitness, connected.' }, ...modules]) {
-    const response = await request.get(module.path.replace('$slug', 'foundation-placeholder'))
+    const response = await request.get(module.path.replace(/\$[A-Za-z]+/g, 'foundation-placeholder'))
     expect(response.ok(), module.path).toBe(true)
     expect(await response.text(), module.path).toContain((module.path === '/training-science' ? 'Workout science' : module.title).replace('&', '&amp;'))
     if (module.path === '/training-science') expect(response.url()).toContain('/learn/workout-science')
@@ -16,10 +16,10 @@ test('desktop navigation, module finder and preference persistence', async ({ pa
   page.on('pageerror', (error) => errors.push(error.message))
   await page.goto('/')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Your fitness, connected.')
-  await page.getByRole('button', { name: 'Find a module' }).click()
-  await page.getByRole('combobox', { name: 'Search module names' }).fill('food')
-  await page.getByRole('option').filter({ hasText: 'Eat' }).first().click()
-  await expect(page).toHaveURL(/\/foods$/)
+  await page.getByRole('button', { name: 'Search Fitness OS' }).click()
+  await page.getByRole('combobox', { name: 'Search Fitness OS on this device' }).fill('food')
+  await page.getByRole('option').first().click()
+  await expect(page).toHaveURL(/\/foods\/categories$/)
   await page.getByRole('link', { name: 'Settings', exact: true }).click()
   await page.getByRole('radio', { name: 'Dark', exact: true }).check()
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')

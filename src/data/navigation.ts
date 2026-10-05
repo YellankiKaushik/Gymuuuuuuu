@@ -1,6 +1,14 @@
 export type Domain = 'Learn' | 'Train' | 'Eat' | 'Recover' | 'Track' | 'Tools' | 'Saved' | 'System'
 export interface ModuleDefinition { path: string; title: string; domain: Domain; phase: number; description: string }
 export const modules: readonly ModuleDefinition[] = [
+{path:"/search",title:"Search Fitness OS",domain:'Tools',phase:16,description:'Search the verified local index of published Fitness OS content.'},
+{path:"/search/settings",title:"Search settings",domain:'System',phase:16,description:'Control optional private indexing, saved history, exports and device-local search data.'},
+{path:"/saved/favourites",title:"Favourites",domain:'Saved',phase:16,description:'Return to stable references saved on this device.'},
+{path:"/saved/collections",title:"Saved collections",domain:'Saved',phase:16,description:'Organize stable references into browser-local collections.'},
+{path:"/saved/collections/$collectionId",title:"Saved collection",domain:'Saved',phase:16,description:'Review and organize a browser-local collection.'},
+{path:"/recent",title:"Recent activity",domain:'Saved',phase:16,description:'Review and clear optional local search and viewing history.'},
+{path:"/compare",title:"Saved comparisons",domain:'Saved',phase:16,description:'Compare two to four compatible items without selecting a winner.'},
+{path:"/compare/$family",title:"Compare one item family",domain:'Saved',phase:16,description:'Compare two to four references in the same evidence family.'},
 {path:"/dashboard",title:"Body progress dashboard",domain:'Track',phase:15,description:'Optional browser-local body progress records and source-labelled analytics.'},
 {path:"/progress/weight",title:"Body weight",domain:'Track',phase:15,description:'Optional browser-local body progress records and source-labelled analytics.'},
 {path:"/progress/measurements",title:"Circumference measurements",domain:'Track',phase:15,description:'Optional browser-local body progress records and source-labelled analytics.'},
@@ -142,7 +150,7 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/track', title: 'Track', domain: 'Track', phase: 1, description: 'Your optional, device-local personal space.' },
   { path: '/progress', title: 'Progress', domain: 'Track', phase: 15, description: 'Optional body progress records and source-labelled analytics.' },
   { path: '/tools', title: 'Tools', domain: 'Tools', phase: 17, description: 'Calculators, timers, unit converters and comparisons.' },
-  { path: '/saved', title: 'Saved items', domain: 'Saved', phase: 17, description: 'A future home for your favourites and saved plans.' },
+  { path: '/saved', title: 'Saved items', domain: 'Saved', phase: 16, description: 'Manage favourites, collections, comparisons and recent history on this device.' },
   { path: '/settings', title: 'Settings', domain: 'System', phase: 0, description: 'Appearance, display units and your local data boundaries.' },
   { path: '/about/sources', title: 'Sources & methodology', domain: 'System', phase: 0, description: 'How knowledge will be reviewed, attributed and maintained.' },
 ]

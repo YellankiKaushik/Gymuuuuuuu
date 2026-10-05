@@ -2,11 +2,11 @@ import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 test('science URL filters, history, methods and glossary are accessible', async ({ page }) => {
   await page.goto('/training-science'); await expect(page).toHaveURL(/\/learn\/workout-science$/)
-  await expect(page.getByRole('button', { name: 'Find a module' })).toBeEnabled()
+  await expect(page.getByRole('button', { name: 'Search Fitness OS' })).toBeEnabled()
   await page.getByRole('button', { name: 'Foundations', exact: true }).click()
   await page.getByRole('button', { name: 'Training variables', exact: true }).click()
   await page.reload(); await expect(page.getByRole('button', { name: 'Foundations', exact: true })).toHaveAttribute('aria-pressed','true')
-  await expect(page.getByRole('button', { name: 'Find a module' })).toBeEnabled()
+  await expect(page.getByRole('button', { name: 'Search Fitness OS' })).toBeEnabled()
   await page.getByRole('button', { name: 'Training variables', exact: true }).click()
   await page.goBack(); await expect(page.getByRole('button', { name: 'Training variables', exact: true })).toHaveAttribute('aria-pressed','true')
   await page.getByRole('button', { name: 'Clear science filters' }).click(); await expect(page).toHaveURL(/\/learn\/workout-science$/)

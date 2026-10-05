@@ -1,7 +1,7 @@
 import workoutReference from "../../../DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Reference_Data.json";
 import nutritionReference from "../../content/nutrition/reference.json";
 export const fitnessDatabaseVersion =
-  15;
+  16;
 const connections = new WeakMap<
   IDBFactory,
   Map<string, Promise<IDBDatabase>>
@@ -95,6 +95,26 @@ export function migrateFitnessDatabase(
         tx.objectStore(name).createIndex("byLocalDate", "localDate");
       tx.objectStore("progressPhotos").createIndex("bySetId", "setId");
       tx.objectStore("metricCalculationReceipts").createIndex("byMetricId", "metricId");
+    }
+    if (version === 16) {
+      const definitions: Array<{ name: string; keyPath: string | string[] }> = [
+        { name: "phase16Favourites", keyPath: "id" }, { name: "phase16Collections", keyPath: "id" },
+        { name: "phase16CollectionItems", keyPath: "id" }, { name: "phase16RecentQueries", keyPath: "id" },
+        { name: "phase16RecentViews", keyPath: "id" }, { name: "phase16SavedComparisons", keyPath: "id" },
+        { name: "phase16Settings", keyPath: "key" }, { name: "phase16AuditEvents", keyPath: "id" },
+        { name: "phase16DeletedRecords", keyPath: ["entityType", "entityId"] },
+        { name: "phase16ImportConflicts", keyPath: "id" }, { name: "phase16PrivateSearchCache", keyPath: "cacheKey" },
+      ];
+      for (const { name, keyPath } of definitions)
+        if (!db.objectStoreNames.contains(name)) db.createObjectStore(name, { keyPath });
+      tx.objectStore("phase16Favourites").createIndex("byEntityType", "entity.entityType");
+      tx.objectStore("phase16Favourites").createIndex("byEntityId", ["entity.entityType", "entity.entityId"], { unique: true });
+      tx.objectStore("phase16CollectionItems").createIndex("byCollectionId", "collectionId");
+      tx.objectStore("phase16CollectionItems").createIndex("byEntityId", ["entity.entityType", "entity.entityId"]);
+      tx.objectStore("phase16RecentQueries").createIndex("bySearchedAt", "searchedAt");
+      tx.objectStore("phase16RecentViews").createIndex("byViewedAt", "viewedAt");
+      tx.objectStore("phase16SavedComparisons").createIndex("byFamily", "family");
+      tx.objectStore("phase16AuditEvents").createIndex("byOccurredAt", "occurredAt");
     }
     tx.objectStore("appMeta").put({ key: `migration:${version}`, version });
   }

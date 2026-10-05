@@ -1,0 +1,11 @@
+# Phase 16 search publication and index decisions
+
+The Phase 16 documents remain normative for search privacy, matching, saved references, backups, comparison compatibility and accessibility. These implementation decisions preserve those contracts while matching the repository's current data state.
+
+1. Use a small repository-owned inverted index behind the `SearchEngineAdapter` boundary instead of adding a runtime search dependency. The builder emits normalized documents, token postings and a manifest with content and index hashes. Runtime validation rejects stale or mismatched projections and rebuilds them locally from the canonical public documents. The adapter boundary permits a future engine replacement without changing routes or saved-record schemas.
+2. Admit content only through owning-module public adapters after the explicit published-state gate. At this checkpoint the owners publish no factual exercise, food, nutrient, program, science, recovery, cardio, supplement or progress records. The index therefore contains canonical route destinations and four public dashboard-widget entries, with zero factual library documents. Draft identities are excluded rather than promoted to create search results.
+3. Keep the shell finder as the single search dialog and add the public `/search` route for filters, saved results and comparisons. Public query and filter state is validated route state; private query text and private record identifiers remain in local component state and are never added to a URL or request.
+4. Phase 16 adds the eleven stores specified by its reference schema to the shared IndexedDB database at version 16. Private search is opt-in, uses a strict allowlist of structured fields, and its disposable index cache is excluded from backups. Public index files contain no personal data.
+5. Comparisons are reference configurations that resolve through the owning modules. Empty or unavailable values stay unavailable; no score, winner, inferred value, cross-family comparison or unsupported public fact is introduced.
+
+These choices change the internal index implementation and transparently reflect the absence of published factual source data. They do not change the specified public/private boundary or scientific and nutrition content contracts.

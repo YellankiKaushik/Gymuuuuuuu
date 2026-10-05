@@ -6,7 +6,7 @@ test('anatomy selector, shared URL filters and public content gate', async ({ pa
   await expect(page.getByRole('heading', { name: 'Muscle library', exact: true })).toBeVisible()
   const region = page.getByRole('button', { name: 'Select Chest on body map' })
   await expect(region).toBeEnabled()
-  await expect(page.getByRole('button', { name: 'Find a module' })).toBeEnabled()
+  await expect(page.getByRole('button', { name: 'Search Fitness OS' })).toBeEnabled()
   await region.focus()
   await page.keyboard.press('Space')
   await expect(page).toHaveURL(/region=region_chest/)
