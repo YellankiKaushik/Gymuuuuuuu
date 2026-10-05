@@ -1,6 +1,15 @@
-import { metadataFor } from '../lib/route-metadata'
-import { createFileRoute } from '@tanstack/react-router'
-import { ModulePage } from '../components/module-page'
-import { modules } from '../data/navigation'
-export const Route = createFileRoute('/recovery')({ head: () => metadataFor('/recovery'), component: Page })
-function Page() { const module = modules.find((item) => item.path === '/recovery'); return module ? <ModulePage module={module} /> : null }
+import { createFileRoute } from "@tanstack/react-router";
+import { recoveryMetadata } from "../features/recovery/metadata";
+import { RecoveryPage } from "../features/recovery/workspace";
+import { RecoveryOverview } from "../features/recovery/pages";
+export const Route = createFileRoute("/recovery")({
+  head: () => recoveryMetadata("/recovery"),
+  component: Page,
+});
+function Page() {
+  return (
+    <RecoveryPage title="Recovery">
+      <RecoveryOverview />
+    </RecoveryPage>
+  );
+}

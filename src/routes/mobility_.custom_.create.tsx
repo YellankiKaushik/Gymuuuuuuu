@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { recoveryMetadata } from "../features/recovery/metadata";
 import { RecoveryPage } from "../features/recovery/workspace";
-import { RecoveryKnowledge } from "../features/recovery/info-pages";
-export const Route = createFileRoute("/mobility")({
-  head: () => recoveryMetadata("/mobility"),
+import { RoutineBuilder } from "../features/recovery/routines";
+export const Route = createFileRoute("/mobility_/custom_/create")({
+  head: () => recoveryMetadata("/mobility/custom/create"),
   component: Page,
 });
 function Page() {
   return (
-    <RecoveryPage title="Mobility">
-      <RecoveryKnowledge domain="mobility" routines />
+    <RecoveryPage title="Build a local routine">
+      <RoutineBuilder />
     </RecoveryPage>
   );
 }

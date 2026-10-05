@@ -1,6 +1,23 @@
 export type Domain = 'Learn' | 'Train' | 'Eat' | 'Recover' | 'Track' | 'Tools' | 'Saved' | 'System'
 export interface ModuleDefinition { path: string; title: string; domain: Domain; phase: number; description: string }
 export const modules: readonly ModuleDefinition[] = [
+  { path: '/recovery/check-in', title: 'Daily recovery check-in', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/recovery/history', title: 'Recovery history', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/recovery/topics', title: 'Recovery topics', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/recovery/topics/$topicSlug', title: 'Recovery topic', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/sleep', title: 'Sleep', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/sleep/log', title: 'Sleep diary', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/sleep/history', title: 'Sleep history', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/sleep/methodology', title: 'Sleep methodology', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/mobility/routines/$routineSlug', title: 'Reviewed mobility routine', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/mobility/session/$routineId', title: 'Routine session', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/mobility/history', title: 'Mobility history', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/mobility/custom', title: 'My mobility routines', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/mobility/custom/create', title: 'Build a local routine', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/warm-ups', title: 'Warm-ups', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/warm-ups/$routineSlug', title: 'Reviewed warm-up', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/recovery/settings', title: 'Recovery backup and settings', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
+  { path: '/recovery/privacy', title: 'Recovery privacy', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
   { path: '/learn', title: 'Learn', domain: 'Learn', phase: 1, description: 'A connected home for fitness and nutrition knowledge.' },
   { path: '/muscles', title: 'Muscle library', domain: 'Learn', phase: 2, description: 'Explore muscle groups, anatomy and their relationship to movement.' },
   { path: '/muscles/$slug', title: 'Muscle detail', domain: 'Learn', phase: 2, description: 'Anatomy, function, related exercises and reviewed sources.' },
@@ -63,8 +80,8 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/nutrition/settings', title: 'Nutrition settings & backup', domain: 'Eat', phase: 10, description: 'Meal slots, targets, export, restore and deletion.' },
   { path: '/nutrition/methodology', title: 'Nutrition methodology', domain: 'Eat', phase: 10, description: 'Snapshot arithmetic, source statuses and scope.' },
   { path: '/nutrition/privacy', title: 'Nutrition privacy', domain: 'Eat', phase: 10, description: 'Browser ownership, persistence and backup.' },
-  { path: '/recovery', title: 'Recovery & sleep', domain: 'Recover', phase: 13, description: 'Explore sleep, fatigue, rest and optional recovery records.' },
-  { path: '/mobility', title: 'Mobility', domain: 'Recover', phase: 14, description: 'Warm-ups, cooldowns and movement-preparation routines.' },
+  { path: '/recovery', title: 'Recovery & sleep', domain: 'Recover', phase: 12, description: 'Explore sleep, fatigue, rest and optional recovery records.' },
+  { path: '/mobility', title: 'Mobility', domain: 'Recover', phase: 12, description: 'Warm-ups, cooldowns and movement-preparation routines.' },
   { path: '/supplements', title: 'Supplement evidence', domain: 'Learn', phase: 15, description: 'A careful reference for evidence, limitations and safety concerns.' },
   { path: '/track', title: 'Track', domain: 'Track', phase: 1, description: 'Your optional, device-local personal space.' },
   { path: '/progress', title: 'Progress', domain: 'Track', phase: 16, description: 'Connect body, training, nutrition and recovery trends.' },
@@ -121,7 +138,7 @@ export const navigationItems: readonly NavigationItem[] = [
     id: `${['/train', '/eat', '/track'].includes(module.path) ? 'hub-' : ''}${module.path.slice(1).replaceAll('/', '-').replace('$', '')}`, label: module.title, href: module.path,
     description: module.description, icon: (module.domain === 'Eat' ? 'leaf' : module.domain === 'Train' ? 'dumbbell' : module.domain === 'Recover' ? 'moon' : module.domain === 'Track' ? 'chart' : module.path === '/settings' ? 'settings' : module.path === '/about/sources' ? 'help' : 'book') as NavigationItem['icon'],
     aliases: aliases[module.path] ?? [], groupId: Object.entries(groupPaths).find(([, paths]) => paths.includes(module.path))?.[0],
-    visibility: (module.path.includes('$') || module.path.startsWith('/nutrition/') || module.path.startsWith('/recipes/') || module.path.startsWith('/meal-plans/') || ['/train', '/eat', '/track', '/training-science','/diet','/nutrition-log'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
+    visibility: (module.path.includes('$') || module.path.startsWith('/recovery/') || module.path.startsWith('/sleep/') || module.path.startsWith('/mobility/') || module.path.startsWith('/warm-ups/') || module.path.startsWith('/nutrition/') || module.path.startsWith('/recipes/') || module.path.startsWith('/meal-plans/') || ['/train', '/eat', '/track', '/training-science','/diet','/nutrition-log'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
   })),
 ]
 export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const

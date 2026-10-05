@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { recoveryMetadata } from "../features/recovery/metadata";
 import { RecoveryPage } from "../features/recovery/workspace";
-import { RecoveryKnowledge } from "../features/recovery/info-pages";
-export const Route = createFileRoute("/mobility")({
-  head: () => recoveryMetadata("/mobility"),
+import { RecoveryHistory } from "../features/recovery/pages";
+export const Route = createFileRoute("/sleep_/history")({
+  head: () => recoveryMetadata("/sleep/history"),
   component: Page,
 });
 function Page() {
   return (
-    <RecoveryPage title="Mobility">
-      <RecoveryKnowledge domain="mobility" routines />
+    <RecoveryPage title="Sleep history">
+      <RecoveryHistory kind="sleep" />
     </RecoveryPage>
   );
 }

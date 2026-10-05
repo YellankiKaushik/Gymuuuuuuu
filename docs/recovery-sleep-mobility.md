@@ -1,0 +1,13 @@
+# Recovery, sleep and mobility methodology
+
+Personal tracking is optional, adult-oriented, manually entered and device local. Seven check-in dimensions stay separate; overall readiness is entered by the user. Pain, illness and sleep concerns have neutral boundaries, without program edits or automated prescriptions. Regional soreness uses the existing Phase 02 IDs and explicit side; zero is a reported value, while an absent rating is not measured.
+
+Sleep opportunity is elapsed time from attempting sleep to leaving bed. Main sleep subtracts sleep-onset latency, awake time after onset and final-wake-to-out-of-bed time. Efficiency uses only manual main sleep divided by its opportunity. Daily total adds non-overlapping naps; a missing main duration leaves the daily total unavailable. Seconds are preserved as fractional minutes. Impossible chronology is rejected rather than clamped. The record's date is its wake date in its selected IANA timezone; explicit offsets must agree with that zone. UTC timestamps remain unambiguous. Both valid offsets in a daylight-saving fold are accepted, and nonexistent local clocks are rejected.
+
+Device duration is a labelled estimate with no manual efficiency or stage analysis. A personal goal is an optional user setting, compared separately with each known daily total. No sleep-debt calculation or diagnostic threshold is introduced. Schedule summaries unwrap clocks near midnight and withhold combined regularity when zones differ.
+
+Histories offer 7/28/90-day windows, known/missing counts and separate dimension/regional summaries. Initial reads use indexes and at most 500 recent personal records per collection; explicit history loads can read older selected windows. Cards are paginated by 20. Routine history windows use UTC start dates and display each session's original timezone. Audit events are read for backup rather than at startup.
+
+Custom routines contain local text instructions and explicit doses in seconds, metres or counts. Version IDs are immutable; editing creates the next version. Each session stores the exact routine snapshot. Pause/resume uses persisted timestamps and active seconds; per-second display ticks do not write records or announce continuously. Left/right routines record each side before completing a step. Completed session performance is immutable; feedback can be edited. Screen wake lock requires an explicit user action and may be declined by the browser.
+
+No draft taxonomy title is expanded into an invented article or prescription. Public content requires stable IDs/slugs, claim-level sources, population, outcomes, evidence strength, limitations, rights and real editorial review. All 124 supplied identities remain draft.
