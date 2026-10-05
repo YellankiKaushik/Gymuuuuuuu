@@ -1,0 +1,42 @@
+.data-management-page { max-width: 1200px; }
+.data-management-page .page-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:20px; margin-bottom:26px; }
+.data-management-page .page-heading h1 { margin:8px 0; }
+.data-tabs { display:flex; gap:8px; overflow-x:auto; padding:4px 0 16px; margin-bottom:16px; }
+.data-tabs a { flex:0 0 auto; min-height:42px; display:inline-flex; align-items:center; padding:0 14px; border:1px solid var(--border,#d8dfd8); border-radius:10px; color:inherit; text-decoration:none; }
+.data-tabs a.active { background:var(--surface-2,#edf3ed); border-color:var(--focus,#285a3c); font-weight:650; }
+.data-panel,.data-action-card { background:var(--surface,#fff); color:var(--text,#202821); border:1px solid var(--border,#d8dfd8); border-radius:16px; padding:24px; }
+.data-panel { display:grid; gap:18px; }
+.data-panel h2 { margin:0; font-size:20px; }
+.data-panel p { margin:0; line-height:1.65; }
+.data-card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+.data-action-card { min-height:120px; display:flex; flex-direction:column; gap:8px; text-decoration:none; }
+.data-action-card:hover { border-color:var(--focus,#285a3c); transform:translateY(-1px); }
+.data-action-card span,.data-options small { color:var(--muted,#5b665d); font-size:14px; line-height:1.5; }
+.data-alert { margin:12px 0; padding:13px 16px; border-radius:10px; background:#e9f4e8; color:#183e24; }
+.data-alert.error { background:#fff0ed; color:#762a22; }
+:root[data-theme="dark"] .data-alert { background:#203b27; color:#daefdc; }
+:root[data-theme="dark"] .data-alert.error { background:#482721; color:#ffd9d1; }
+.data-estimate { display:flex; align-items:baseline; gap:12px; padding:18px; border-radius:12px; background:var(--surface-2,#f2f5f1); }
+.data-estimate strong { font-size:30px; }
+.data-estimate span,.data-footnote { color:var(--muted,#5b665d); font-size:13px; line-height:1.6; }
+.data-options { border:1px solid var(--border,#d8dfd8); border-radius:12px; padding:16px; display:grid; gap:12px; }
+.data-options legend { padding:0 6px; font-weight:650; }
+.data-options label { display:flex; align-items:flex-start; gap:10px; min-height:36px; }
+.data-options input { margin-top:4px; accent-color:var(--focus,#285a3c); }
+.data-options label span { display:grid; gap:2px; }
+.data-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.file-picker,.typed-confirm { display:grid; gap:8px; font-weight:650; }
+.file-picker input,.typed-confirm input { max-width:100%; padding:12px; border:1px solid var(--border,#aab4aa); border-radius:8px; background:var(--surface,#fff); color:inherit; }
+.restore-preview { display:grid; gap:14px; border-top:1px solid var(--border,#d8dfd8); padding-top:18px; }
+.inventory-table { max-width:100%; overflow:auto; border:1px solid var(--border,#d8dfd8); border-radius:10px; }
+.inventory-table table { border-collapse:collapse; min-width:620px; width:100%; }
+.inventory-table th,.inventory-table td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--border,#d8dfd8); font-size:13px; }
+.inventory-table th { position:sticky; top:0; background:var(--surface-2,#f2f5f1); }
+.storage-metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:0; }
+.storage-metrics div { padding:14px; background:var(--surface-2,#f2f5f1); border-radius:10px; }
+.storage-metrics dt { color:var(--muted,#5b665d); font-size:13px; }.storage-metrics dd { margin:5px 0 0; font-weight:650; }
+.danger-panel { border-color:#c87a70; }.danger-panel .button.danger { background:#a43128; color:white; }
+.data-history { list-style:none; padding:0; margin:0; display:grid; gap:8px; }.data-history li { display:flex; flex-wrap:wrap; justify-content:space-between; padding:10px; background:var(--surface-2,#f2f5f1); border-radius:8px; }
+.data-management-page :focus-visible { outline:3px solid var(--focus,#285a3c); outline-offset:3px; }
+@media(max-width:700px) { .data-management-page.page { padding:22px 16px; }.data-management-page .page-heading { flex-direction:column; }.data-panel { padding:16px; }.data-actions>* { width:100%; justify-content:center; }.data-tabs { margin-right:-16px; }.inventory-table table { min-width:560px; } }
+@media(prefers-reduced-motion:reduce) { .data-action-card { transition:none; }.data-action-card:hover { transform:none; } }

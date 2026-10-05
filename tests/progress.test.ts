@@ -14,7 +14,7 @@ function weight(id: string, date: string, valueKg: number) {
 it("upgrades the shared database to v15 without losing existing canonical stores", async () => {
   const factory = new IDBFactory(); vi.stubGlobal("window", { indexedDB: factory });
   const db = await openFitnessDatabase();
-  expect(fitnessDatabaseVersion).toBe(16);
+  expect(fitnessDatabaseVersion).toBe(17);
   expect(db.objectStoreNames.contains("workoutSessions")).toBe(true);
   expect(db.objectStoreNames.contains("nutritionDays")).toBe(true);
   for (const name of phase15StoreNames) expect(db.objectStoreNames.contains(name)).toBe(true);

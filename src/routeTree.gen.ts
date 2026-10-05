@@ -123,6 +123,7 @@ import { Route as SavedIndexRouteImport } from './routes/saved.index'
 import { Route as SavedCollectionsRouteImport } from './routes/saved.collections'
 import { Route as SavedFavouritesRouteImport } from './routes/saved.favourites'
 import { Route as SearchSettingsRouteImport } from './routes/search_.settings'
+import { Route as SettingsDataRouteImport } from './routes/settings.data'
 import { Route as SleepHistoryRouteImport } from './routes/sleep_.history'
 import { Route as SleepLogRouteImport } from './routes/sleep_.log'
 import { Route as SleepMethodologyRouteImport } from './routes/sleep_.methodology'
@@ -170,6 +171,13 @@ import { Route as RecipesLocalRecipeIdRouteImport } from './routes/recipes_.loca
 import { Route as RecoveryTopicsTopicSlugRouteImport } from './routes/recovery_.topics_.$topicSlug'
 import { Route as SavedCollectionsIndexRouteImport } from './routes/saved.collections.index'
 import { Route as SavedCollectionsCollectionIdRouteImport } from './routes/saved.collections.$collectionId'
+import { Route as SettingsDataBackupRouteImport } from './routes/settings.data.backup'
+import { Route as SettingsDataExportRouteImport } from './routes/settings.data.export'
+import { Route as SettingsDataHealthRouteImport } from './routes/settings.data.health'
+import { Route as SettingsDataHistoryRouteImport } from './routes/settings.data.history'
+import { Route as SettingsDataResetRouteImport } from './routes/settings.data.reset'
+import { Route as SettingsDataRestoreRouteImport } from './routes/settings.data.restore'
+import { Route as SettingsDataStorageRouteImport } from './routes/settings.data.storage'
 import { Route as SupplementsEvidenceClaimSlugRouteImport } from './routes/supplements_.evidence_.$claimSlug'
 import { Route as SupplementsIngredientsIngredientSlugRouteImport } from './routes/supplements_.ingredients_.$ingredientSlug'
 import { Route as SupplementsProductsProductIdRouteImport } from './routes/supplements_.products_.$productId'
@@ -754,6 +762,11 @@ const SearchSettingsRoute = SearchSettingsRouteImport.update({
   path: '/search/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SettingsDataRoute = SettingsDataRouteImport.update({
+  id: '/data',
+  path: '/data',
+  getParentRoute: () => SettingsRoute,
+} as any)
 const SleepHistoryRoute = SleepHistoryRouteImport.update({
   id: '/sleep_/history',
   path: '/sleep/history',
@@ -1003,6 +1016,41 @@ const SavedCollectionsCollectionIdRoute =
     path: '/$collectionId',
     getParentRoute: () => SavedCollectionsRoute,
   } as any)
+const SettingsDataBackupRoute = SettingsDataBackupRouteImport.update({
+  id: '/backup',
+  path: '/backup',
+  getParentRoute: () => SettingsDataRoute,
+} as any)
+const SettingsDataExportRoute = SettingsDataExportRouteImport.update({
+  id: '/export',
+  path: '/export',
+  getParentRoute: () => SettingsDataRoute,
+} as any)
+const SettingsDataHealthRoute = SettingsDataHealthRouteImport.update({
+  id: '/health',
+  path: '/health',
+  getParentRoute: () => SettingsDataRoute,
+} as any)
+const SettingsDataHistoryRoute = SettingsDataHistoryRouteImport.update({
+  id: '/history',
+  path: '/history',
+  getParentRoute: () => SettingsDataRoute,
+} as any)
+const SettingsDataResetRoute = SettingsDataResetRouteImport.update({
+  id: '/reset',
+  path: '/reset',
+  getParentRoute: () => SettingsDataRoute,
+} as any)
+const SettingsDataRestoreRoute = SettingsDataRestoreRouteImport.update({
+  id: '/restore',
+  path: '/restore',
+  getParentRoute: () => SettingsDataRoute,
+} as any)
+const SettingsDataStorageRoute = SettingsDataStorageRouteImport.update({
+  id: '/storage',
+  path: '/storage',
+  getParentRoute: () => SettingsDataRoute,
+} as any)
 const SupplementsEvidenceClaimSlugRoute =
   SupplementsEvidenceClaimSlugRouteImport.update({
     id: '/supplements_/evidence_/$claimSlug',
@@ -1092,7 +1140,7 @@ export interface FileRoutesByFullPath {
   '/recovery': typeof RecoveryRoute
   '/saved': typeof SavedRouteWithChildren
   '/search': typeof SearchRoute
-  '/settings': typeof SettingsRoute
+  '/settings': typeof SettingsRouteWithChildren
   '/sleep': typeof SleepRoute
   '/supplements': typeof SupplementsRoute
   '/tools': typeof ToolsRoute
@@ -1177,6 +1225,7 @@ export interface FileRoutesByFullPath {
   '/saved/collections': typeof SavedCollectionsRouteWithChildren
   '/saved/favourites': typeof SavedFavouritesRoute
   '/search/settings': typeof SearchSettingsRoute
+  '/settings/data': typeof SettingsDataRouteWithChildren
   '/sleep/history': typeof SleepHistoryRoute
   '/sleep/log': typeof SleepLogRoute
   '/sleep/methodology': typeof SleepMethodologyRoute
@@ -1225,6 +1274,13 @@ export interface FileRoutesByFullPath {
   '/recipes/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery/topics/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
   '/saved/collections/$collectionId': typeof SavedCollectionsCollectionIdRoute
+  '/settings/data/backup': typeof SettingsDataBackupRoute
+  '/settings/data/export': typeof SettingsDataExportRoute
+  '/settings/data/health': typeof SettingsDataHealthRoute
+  '/settings/data/history': typeof SettingsDataHistoryRoute
+  '/settings/data/reset': typeof SettingsDataResetRoute
+  '/settings/data/restore': typeof SettingsDataRestoreRoute
+  '/settings/data/storage': typeof SettingsDataStorageRoute
   '/supplements/evidence/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
   '/supplements/ingredients/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
   '/supplements/products/$productId': typeof SupplementsProductsProductIdRoute
@@ -1262,7 +1318,7 @@ export interface FileRoutesByTo {
   '/recipes': typeof RecipesRoute
   '/recovery': typeof RecoveryRoute
   '/search': typeof SearchRoute
-  '/settings': typeof SettingsRoute
+  '/settings': typeof SettingsRouteWithChildren
   '/sleep': typeof SleepRoute
   '/supplements': typeof SupplementsRoute
   '/tools': typeof ToolsRoute
@@ -1344,6 +1400,7 @@ export interface FileRoutesByTo {
   '/recovery/topics': typeof RecoveryTopicsRoute
   '/saved/favourites': typeof SavedFavouritesRoute
   '/search/settings': typeof SearchSettingsRoute
+  '/settings/data': typeof SettingsDataRouteWithChildren
   '/sleep/history': typeof SleepHistoryRoute
   '/sleep/log': typeof SleepLogRoute
   '/sleep/methodology': typeof SleepMethodologyRoute
@@ -1392,6 +1449,13 @@ export interface FileRoutesByTo {
   '/recipes/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery/topics/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
   '/saved/collections/$collectionId': typeof SavedCollectionsCollectionIdRoute
+  '/settings/data/backup': typeof SettingsDataBackupRoute
+  '/settings/data/export': typeof SettingsDataExportRoute
+  '/settings/data/health': typeof SettingsDataHealthRoute
+  '/settings/data/history': typeof SettingsDataHistoryRoute
+  '/settings/data/reset': typeof SettingsDataResetRoute
+  '/settings/data/restore': typeof SettingsDataRestoreRoute
+  '/settings/data/storage': typeof SettingsDataStorageRoute
   '/supplements/evidence/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
   '/supplements/ingredients/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
   '/supplements/products/$productId': typeof SupplementsProductsProductIdRoute
@@ -1434,7 +1498,7 @@ export interface FileRoutesById {
   '/recovery': typeof RecoveryRoute
   '/saved': typeof SavedRouteWithChildren
   '/search': typeof SearchRoute
-  '/settings': typeof SettingsRoute
+  '/settings': typeof SettingsRouteWithChildren
   '/sleep': typeof SleepRoute
   '/supplements': typeof SupplementsRoute
   '/tools': typeof ToolsRoute
@@ -1519,6 +1583,7 @@ export interface FileRoutesById {
   '/saved/collections': typeof SavedCollectionsRouteWithChildren
   '/saved/favourites': typeof SavedFavouritesRoute
   '/search_/settings': typeof SearchSettingsRoute
+  '/settings/data': typeof SettingsDataRouteWithChildren
   '/sleep_/history': typeof SleepHistoryRoute
   '/sleep_/log': typeof SleepLogRoute
   '/sleep_/methodology': typeof SleepMethodologyRoute
@@ -1567,6 +1632,13 @@ export interface FileRoutesById {
   '/recipes_/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery_/topics_/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
   '/saved/collections/$collectionId': typeof SavedCollectionsCollectionIdRoute
+  '/settings/data/backup': typeof SettingsDataBackupRoute
+  '/settings/data/export': typeof SettingsDataExportRoute
+  '/settings/data/health': typeof SettingsDataHealthRoute
+  '/settings/data/history': typeof SettingsDataHistoryRoute
+  '/settings/data/reset': typeof SettingsDataResetRoute
+  '/settings/data/restore': typeof SettingsDataRestoreRoute
+  '/settings/data/storage': typeof SettingsDataStorageRoute
   '/supplements_/evidence_/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
   '/supplements_/ingredients_/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
   '/supplements_/products_/$productId': typeof SupplementsProductsProductIdRoute
@@ -1695,6 +1767,7 @@ export interface FileRouteTypes {
     | '/saved/collections'
     | '/saved/favourites'
     | '/search/settings'
+    | '/settings/data'
     | '/sleep/history'
     | '/sleep/log'
     | '/sleep/methodology'
@@ -1743,6 +1816,13 @@ export interface FileRouteTypes {
     | '/recipes/local/$recipeId'
     | '/recovery/topics/$topicSlug'
     | '/saved/collections/$collectionId'
+    | '/settings/data/backup'
+    | '/settings/data/export'
+    | '/settings/data/health'
+    | '/settings/data/history'
+    | '/settings/data/reset'
+    | '/settings/data/restore'
+    | '/settings/data/storage'
     | '/supplements/evidence/$claimSlug'
     | '/supplements/ingredients/$ingredientSlug'
     | '/supplements/products/$productId'
@@ -1862,6 +1942,7 @@ export interface FileRouteTypes {
     | '/recovery/topics'
     | '/saved/favourites'
     | '/search/settings'
+    | '/settings/data'
     | '/sleep/history'
     | '/sleep/log'
     | '/sleep/methodology'
@@ -1910,6 +1991,13 @@ export interface FileRouteTypes {
     | '/recipes/local/$recipeId'
     | '/recovery/topics/$topicSlug'
     | '/saved/collections/$collectionId'
+    | '/settings/data/backup'
+    | '/settings/data/export'
+    | '/settings/data/health'
+    | '/settings/data/history'
+    | '/settings/data/reset'
+    | '/settings/data/restore'
+    | '/settings/data/storage'
     | '/supplements/evidence/$claimSlug'
     | '/supplements/ingredients/$ingredientSlug'
     | '/supplements/products/$productId'
@@ -2036,6 +2124,7 @@ export interface FileRouteTypes {
     | '/saved/collections'
     | '/saved/favourites'
     | '/search_/settings'
+    | '/settings/data'
     | '/sleep_/history'
     | '/sleep_/log'
     | '/sleep_/methodology'
@@ -2084,6 +2173,13 @@ export interface FileRouteTypes {
     | '/recipes_/local/$recipeId'
     | '/recovery_/topics_/$topicSlug'
     | '/saved/collections/$collectionId'
+    | '/settings/data/backup'
+    | '/settings/data/export'
+    | '/settings/data/health'
+    | '/settings/data/history'
+    | '/settings/data/reset'
+    | '/settings/data/restore'
+    | '/settings/data/storage'
     | '/supplements_/evidence_/$claimSlug'
     | '/supplements_/ingredients_/$ingredientSlug'
     | '/supplements_/products_/$productId'
@@ -2126,7 +2222,7 @@ export interface RootRouteChildren {
   RecoveryRoute: typeof RecoveryRoute
   SavedRoute: typeof SavedRouteWithChildren
   SearchRoute: typeof SearchRoute
-  SettingsRoute: typeof SettingsRoute
+  SettingsRoute: typeof SettingsRouteWithChildren
   SleepRoute: typeof SleepRoute
   SupplementsRoute: typeof SupplementsRoute
   ToolsRoute: typeof ToolsRoute
@@ -3047,6 +3143,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SearchSettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/settings/data': {
+      id: '/settings/data'
+      path: '/data'
+      fullPath: '/settings/data'
+      preLoaderRoute: typeof SettingsDataRouteImport
+      parentRoute: typeof SettingsRoute
+    }
     '/sleep_/history': {
       id: '/sleep_/history'
       path: '/sleep/history'
@@ -3376,6 +3479,55 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SavedCollectionsCollectionIdRouteImport
       parentRoute: typeof SavedCollectionsRoute
     }
+    '/settings/data/backup': {
+      id: '/settings/data/backup'
+      path: '/backup'
+      fullPath: '/settings/data/backup'
+      preLoaderRoute: typeof SettingsDataBackupRouteImport
+      parentRoute: typeof SettingsDataRoute
+    }
+    '/settings/data/export': {
+      id: '/settings/data/export'
+      path: '/export'
+      fullPath: '/settings/data/export'
+      preLoaderRoute: typeof SettingsDataExportRouteImport
+      parentRoute: typeof SettingsDataRoute
+    }
+    '/settings/data/health': {
+      id: '/settings/data/health'
+      path: '/health'
+      fullPath: '/settings/data/health'
+      preLoaderRoute: typeof SettingsDataHealthRouteImport
+      parentRoute: typeof SettingsDataRoute
+    }
+    '/settings/data/history': {
+      id: '/settings/data/history'
+      path: '/history'
+      fullPath: '/settings/data/history'
+      preLoaderRoute: typeof SettingsDataHistoryRouteImport
+      parentRoute: typeof SettingsDataRoute
+    }
+    '/settings/data/reset': {
+      id: '/settings/data/reset'
+      path: '/reset'
+      fullPath: '/settings/data/reset'
+      preLoaderRoute: typeof SettingsDataResetRouteImport
+      parentRoute: typeof SettingsDataRoute
+    }
+    '/settings/data/restore': {
+      id: '/settings/data/restore'
+      path: '/restore'
+      fullPath: '/settings/data/restore'
+      preLoaderRoute: typeof SettingsDataRestoreRouteImport
+      parentRoute: typeof SettingsDataRoute
+    }
+    '/settings/data/storage': {
+      id: '/settings/data/storage'
+      path: '/storage'
+      fullPath: '/settings/data/storage'
+      preLoaderRoute: typeof SettingsDataStorageRouteImport
+      parentRoute: typeof SettingsDataRoute
+    }
     '/supplements_/evidence_/$claimSlug': {
       id: '/supplements_/evidence_/$claimSlug'
       path: '/supplements/evidence/$claimSlug'
@@ -3586,6 +3738,42 @@ const SavedRouteChildren: SavedRouteChildren = {
 
 const SavedRouteWithChildren = SavedRoute._addFileChildren(SavedRouteChildren)
 
+interface SettingsDataRouteChildren {
+  SettingsDataBackupRoute: typeof SettingsDataBackupRoute
+  SettingsDataExportRoute: typeof SettingsDataExportRoute
+  SettingsDataHealthRoute: typeof SettingsDataHealthRoute
+  SettingsDataHistoryRoute: typeof SettingsDataHistoryRoute
+  SettingsDataResetRoute: typeof SettingsDataResetRoute
+  SettingsDataRestoreRoute: typeof SettingsDataRestoreRoute
+  SettingsDataStorageRoute: typeof SettingsDataStorageRoute
+}
+
+const SettingsDataRouteChildren: SettingsDataRouteChildren = {
+  SettingsDataBackupRoute: SettingsDataBackupRoute,
+  SettingsDataExportRoute: SettingsDataExportRoute,
+  SettingsDataHealthRoute: SettingsDataHealthRoute,
+  SettingsDataHistoryRoute: SettingsDataHistoryRoute,
+  SettingsDataResetRoute: SettingsDataResetRoute,
+  SettingsDataRestoreRoute: SettingsDataRestoreRoute,
+  SettingsDataStorageRoute: SettingsDataStorageRoute,
+}
+
+const SettingsDataRouteWithChildren = SettingsDataRoute._addFileChildren(
+  SettingsDataRouteChildren,
+)
+
+interface SettingsRouteChildren {
+  SettingsDataRoute: typeof SettingsDataRouteWithChildren
+}
+
+const SettingsRouteChildren: SettingsRouteChildren = {
+  SettingsDataRoute: SettingsDataRouteWithChildren,
+}
+
+const SettingsRouteWithChildren = SettingsRoute._addFileChildren(
+  SettingsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AnalyticsRoute: AnalyticsRoute,
@@ -3612,7 +3800,7 @@ const rootRouteChildren: RootRouteChildren = {
   RecoveryRoute: RecoveryRoute,
   SavedRoute: SavedRouteWithChildren,
   SearchRoute: SearchRoute,
-  SettingsRoute: SettingsRoute,
+  SettingsRoute: SettingsRouteWithChildren,
   SleepRoute: SleepRoute,
   SupplementsRoute: SupplementsRoute,
   ToolsRoute: ToolsRoute,

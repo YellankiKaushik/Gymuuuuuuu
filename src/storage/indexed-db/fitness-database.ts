@@ -1,7 +1,7 @@
 import workoutReference from "../../../DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Reference_Data.json";
 import nutritionReference from "../../content/nutrition/reference.json";
 export const fitnessDatabaseVersion =
-  16;
+  17;
 const connections = new WeakMap<
   IDBFactory,
   Map<string, Promise<IDBDatabase>>
@@ -115,6 +115,21 @@ export function migrateFitnessDatabase(
       tx.objectStore("phase16RecentViews").createIndex("byViewedAt", "viewedAt");
       tx.objectStore("phase16SavedComparisons").createIndex("byFamily", "family");
       tx.objectStore("phase16AuditEvents").createIndex("byOccurredAt", "occurredAt");
+    }
+    if (version === 17) {
+      const definitions: Array<{ name: string; keyPath: string | string[] }> = [
+        { name: "phase17Settings", keyPath: "key" },
+        { name: "phase17BackupReceipts", keyPath: "id" },
+        { name: "phase17RestoreJournal", keyPath: "id" },
+        { name: "phase17AuditEvents", keyPath: "id" },
+        { name: "phase17ImportConflicts", keyPath: "id" },
+        { name: "phase17DataHealthCache", keyPath: "id" },
+      ];
+      for (const { name, keyPath } of definitions)
+        if (!db.objectStoreNames.contains(name)) db.createObjectStore(name, { keyPath });
+      tx.objectStore("phase17BackupReceipts").createIndex("byCreatedAt", "createdAt");
+      tx.objectStore("phase17AuditEvents").createIndex("byOccurredAt", "occurredAt");
+      tx.objectStore("phase17RestoreJournal").createIndex("byStatus", "status");
     }
     tx.objectStore("appMeta").put({ key: `migration:${version}`, version });
   }
