@@ -48,6 +48,9 @@ export function KnowledgePage({
     (e) =>
       e.entityType === entityType &&
       (!slug || e.slug === slug) &&
+      (!domain ||
+        cardioReference.seedTaxonomy.find((seed) => seed.id === e.id)
+          ?.domain === domain) &&
       e.title.toLowerCase().includes(query.toLowerCase()),
   );
   return (
@@ -181,7 +184,7 @@ export function KnowledgePage({
               : "No reviewed entries released"}
           </h2>
           <p>
-            The supplied 202 identities are drafts. Claims, suitability,
+            Unpublished entries remain unavailable. Claims, suitability,
             training doses and comparisons await sources, rights checks and
             actual reviewer approval.
           </p>
@@ -194,12 +197,38 @@ export function KnowledgePage({
       ) : (
         entries.map((e) => (
           <article key={e.id} className="card">
-            <h2>{e.title}</h2>
+            <h2>
+              <a
+                href={
+                  kind === "routine"
+                    ? `/conditioning/routines/${e.slug}`
+                    : `/cardio/${kind}/${e.slug}`
+                }
+              >
+                {e.title}
+              </a>
+            </h2>
             <p>{e.population}</p>
             {e.claims.map((c) => (
               <p key={c.id}>{c.text}</p>
             ))}
             <p>{e.limitations.join(" ")}</p>
+            <p>
+              Personal-use publication · machine source verification · no
+              independent human review.
+            </p>
+            <ul>
+              {e.sourceIds.map((id) => {
+                const source = cardioReference.sources.find(
+                  (s) => s.id === id,
+                )!;
+                return (
+                  <li key={id}>
+                    <a href={source.url}>{source.title}</a> ({source.year})
+                  </li>
+                );
+              })}
+            </ul>
             <p>
               Reviewed {e.review.reviewedAt} by {e.review.reviewer}
             </p>
@@ -278,7 +307,7 @@ export function MethodologyPage() {
         <p>
           The registry below preserves the supplied source records. Engineering
           verification of the narrow arithmetic contracts does not approve the
-          202 draft articles, modalities or training templates. No invented
+          unpublished articles, modalities or training templates. No invented
           reviewer or review date is supplied.
         </p>
         <ul>

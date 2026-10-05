@@ -466,7 +466,8 @@ export function NutrientDetail({
       <section id="nutrient-sources">
         <h2>Sources and review</h2>
         <p>
-          Reviewed {n.editorial.reviewedAt} · {n.editorial.reviewer}
+          Personal-use publication · source checked {n.editorial.reviewedAt} ·{" "}
+          {n.editorial.reviewer}
         </p>
         {n.sources.map((s, i) => (
           <article

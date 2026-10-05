@@ -166,6 +166,7 @@ import { Route as MobilitySessionRoutineIdRouteImport } from './routes/mobility_
 import { Route as NutrientsCategoriesGroupIdRouteImport } from './routes/nutrients_.categories_.$groupId'
 import { Route as NutritionCustomFoodsIndexRouteImport } from './routes/nutrition.custom-foods.index'
 import { Route as NutritionCustomFoodsCustomFoodIdRouteImport } from './routes/nutrition.custom-foods.$customFoodId'
+import { Route as NutritionDayIndexRouteImport } from './routes/nutrition.day.index'
 import { Route as NutritionDayDateRouteImport } from './routes/nutrition.day.$date'
 import { Route as RecipesLocalRecipeIdRouteImport } from './routes/recipes_.local.$recipeId'
 import { Route as RecoveryTopicsTopicSlugRouteImport } from './routes/recovery_.topics_.$topicSlug'
@@ -990,6 +991,11 @@ const NutritionCustomFoodsCustomFoodIdRoute =
     path: '/$customFoodId',
     getParentRoute: () => NutritionCustomFoodsRoute,
   } as any)
+const NutritionDayIndexRoute = NutritionDayIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => NutritionDayRoute,
+} as any)
 const NutritionDayDateRoute = NutritionDayDateRouteImport.update({
   id: '/$date',
   path: '/$date',
@@ -1292,6 +1298,7 @@ export interface FileRoutesByFullPath {
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
   '/nutrition/custom-foods/': typeof NutritionCustomFoodsIndexRoute
+  '/nutrition/day/': typeof NutritionDayIndexRoute
   '/saved/collections/': typeof SavedCollectionsIndexRoute
   '/recipes/local/$recipeId/edit': typeof RecipesLocalRecipeIdEditRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
@@ -1374,7 +1381,6 @@ export interface FileRoutesByTo {
   '/nutrients/methodology': typeof NutrientsMethodologyRoute
   '/nutrients/reference-intakes': typeof NutrientsReferenceIntakesRoute
   '/nutrition/add': typeof NutritionAddRoute
-  '/nutrition/day': typeof NutritionDayRouteWithChildren
   '/nutrition/history': typeof NutritionHistoryRoute
   '/nutrition/methodology': typeof NutritionMethodologyRoute
   '/nutrition/privacy': typeof NutritionPrivacyRoute
@@ -1467,6 +1473,7 @@ export interface FileRoutesByTo {
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans': typeof DietPlanningPlansIndexRoute
   '/nutrition/custom-foods': typeof NutritionCustomFoodsIndexRoute
+  '/nutrition/day': typeof NutritionDayIndexRoute
   '/saved/collections': typeof SavedCollectionsIndexRoute
   '/recipes/local/$recipeId/edit': typeof RecipesLocalRecipeIdEditRoute
   '/workout/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
@@ -1650,6 +1657,7 @@ export interface FileRoutesById {
   '/workout_/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
   '/diet-planning/plans/': typeof DietPlanningPlansIndexRoute
   '/nutrition/custom-foods/': typeof NutritionCustomFoodsIndexRoute
+  '/nutrition/day/': typeof NutritionDayIndexRoute
   '/saved/collections/': typeof SavedCollectionsIndexRoute
   '/recipes_/local_/$recipeId_/edit': typeof RecipesLocalRecipeIdEditRoute
   '/workout_/exercises/$exerciseId/history': typeof WorkoutExercisesExerciseIdHistoryRoute
@@ -1834,6 +1842,7 @@ export interface FileRouteTypes {
     | '/workout/summary/$sessionId'
     | '/diet-planning/plans/'
     | '/nutrition/custom-foods/'
+    | '/nutrition/day/'
     | '/saved/collections/'
     | '/recipes/local/$recipeId/edit'
     | '/workout/exercises/$exerciseId/history'
@@ -1916,7 +1925,6 @@ export interface FileRouteTypes {
     | '/nutrients/methodology'
     | '/nutrients/reference-intakes'
     | '/nutrition/add'
-    | '/nutrition/day'
     | '/nutrition/history'
     | '/nutrition/methodology'
     | '/nutrition/privacy'
@@ -2009,6 +2017,7 @@ export interface FileRouteTypes {
     | '/workout/summary/$sessionId'
     | '/diet-planning/plans'
     | '/nutrition/custom-foods'
+    | '/nutrition/day'
     | '/saved/collections'
     | '/recipes/local/$recipeId/edit'
     | '/workout/exercises/$exerciseId/history'
@@ -2191,6 +2200,7 @@ export interface FileRouteTypes {
     | '/workout_/summary/$sessionId'
     | '/diet-planning/plans/'
     | '/nutrition/custom-foods/'
+    | '/nutrition/day/'
     | '/saved/collections/'
     | '/recipes_/local_/$recipeId_/edit'
     | '/workout_/exercises/$exerciseId/history'
@@ -3444,6 +3454,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NutritionCustomFoodsCustomFoodIdRouteImport
       parentRoute: typeof NutritionCustomFoodsRoute
     }
+    '/nutrition/day/': {
+      id: '/nutrition/day/'
+      path: '/'
+      fullPath: '/nutrition/day/'
+      preLoaderRoute: typeof NutritionDayIndexRouteImport
+      parentRoute: typeof NutritionDayRoute
+    }
     '/nutrition/day/$date': {
       id: '/nutrition/day/$date'
       path: '/$date'
@@ -3675,10 +3692,12 @@ const NutritionCustomFoodsRouteWithChildren =
 
 interface NutritionDayRouteChildren {
   NutritionDayDateRoute: typeof NutritionDayDateRoute
+  NutritionDayIndexRoute: typeof NutritionDayIndexRoute
 }
 
 const NutritionDayRouteChildren: NutritionDayRouteChildren = {
   NutritionDayDateRoute: NutritionDayDateRoute,
+  NutritionDayIndexRoute: NutritionDayIndexRoute,
 }
 
 const NutritionDayRouteWithChildren = NutritionDayRoute._addFileChildren(
@@ -3927,11 +3946,15 @@ export const routeTree = rootRouteImport
   ._addFileTypes<FileRouteTypes>()
 
 import type { getRouter } from './router.tsx'
+
 import type { startInstance } from './start.ts'
+
 declare module '@tanstack/react-start' {
   interface Register {
     ssr: true
+
     router: Awaited<ReturnType<typeof getRouter>>
+
     config: Awaited<ReturnType<typeof startInstance.getOptions>>
   }
 }

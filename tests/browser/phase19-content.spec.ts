@@ -1,0 +1,78 @@
+import { test, expect } from "@playwright/test";
+import AxeBuilder from "@axe-core/playwright";
+
+const publicRoutes = [
+  ["/muscles/biceps-brachii", "Biceps brachii"],
+  ["/exercises/dumbbell-curl", "Dumbbell curl"],
+  ["/foods/apple", "Apple"],
+  ["/nutrients/iron", "Iron"],
+  ["/recipes/chickpea-cucumber-bowl", "Chickpea and cucumber bowl"],
+  ["/recovery/topics/sleep-duration-adults", "Adult Sleep Duration"],
+  ["/cardio/learn/topic-talk-test", "Talk Test"],
+  [
+    "/supplements/ingredients/ingredient-creatine-monohydrate",
+    "Creatine Monohydrate",
+  ],
+] as const;
+for (const [path, title] of publicRoutes) {
+  test(`@a11y Phase 19 published content ${path}`, async ({ page }) => {
+    const errors: string[] = [];
+    const remote: string[] = [];
+    page.on("pageerror", (error) => errors.push(error.message));
+    page.on("request", (request) => {
+      if (!request.url().startsWith("http://127.0.0.1:3000"))
+        remote.push(request.url());
+    });
+    await page.goto(path);
+    await expect(
+      page.getByRole("heading", { name: title, exact: true }).first(),
+    ).toBeVisible();
+    await expect(
+      page
+        .getByText(/personal.use publication|published_personal_use/i)
+        .first(),
+    ).toBeVisible();
+    for (const width of [320, 768, 1440]) {
+      await page.setViewportSize({ width, height: 1000 });
+      for (const theme of ["light", "dark"]) {
+        await page.evaluate((value) => {
+          document.documentElement.dataset.theme = value;
+        }, theme);
+        expect(
+          await page.evaluate(
+            () => document.documentElement.scrollWidth <= innerWidth,
+          ),
+        ).toBe(true);
+        expect(
+          (
+            await new AxeBuilder({ page })
+              .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
+              .analyze()
+          ).violations,
+        ).toEqual([]);
+      }
+    }
+    expect(errors).toEqual([]);
+    expect(remote).toEqual([]);
+  });
+}
+test("public recipe loads independently of personal databases and rejects unknown slugs", async ({
+  page,
+}) => {
+  await page.goto("/recipes/chickpea-cucumber-bowl");
+  await expect(
+    page.getByRole("heading", { name: "Exact ingredients" }),
+  ).toBeVisible();
+  await expect(page.getByText(/estimated batch mass/)).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Exact food profile" }).first(),
+  ).toHaveAttribute("href", "/foods/chickpea");
+  await page.goto("/recipes/unpublished-example");
+  await expect(
+    page.getByRole("heading", { name: "Public recipe unavailable" }),
+  ).toBeVisible();
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    "content",
+    "noindex",
+  );
+});

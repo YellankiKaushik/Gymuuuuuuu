@@ -1,0 +1,39 @@
+[
+  {
+    "id": "topic_talk_test",
+    "slug": "topic-talk-test",
+    "title": "Talk Test",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults using subjective relative-intensity guidance",
+    "prerequisites": [
+      "Observe how speaking feels during the activity; do not manufacture a measurement."
+    ],
+    "limitations": [
+      "This is a practical relative-effort method, not a VO2max estimate, calorie calculation or universal heart-rate zone. Activity speeds and heart rates are not interchangeable between people."
+    ],
+    "stopRules": [
+      "Stop and seek appropriate help for concerning symptoms; the talk test does not grant medical clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_talk_test_relative_intensity",
+        "text": "The CDC talk test describes relative aerobic effort: moderate effort generally allows conversation but not singing; vigorous effort generally allows only a few words before pausing for breath.",
+        "sourceIds": [
+          "src_cdc_intensity_2025"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "src_cdc_intensity_2025"
+    ],
+    "relatedIds": [],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-05",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "sourceId": "gray_1918_upper_arm",
+    "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443\u2013445)",
+    "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+    "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
+    "sourceType": "academic",
+    "datasetVersion": "1918; pp. 443\u2013445",
+    "accessedAt": "2026-10-05",
+    "reviewedAt": "2026-10-05",
+    "usageNote": "Public-domain historical book; original brief summaries. Licence evidence: https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+    "quality": "limited",
+    "supportedFields": [
+      "location",
+      "attachments",
+      "joint actions",
+      "anatomical relationships"
+    ],
+    "limitations": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review.",
+    "reviewerStatus": "verified"
+  }
+]

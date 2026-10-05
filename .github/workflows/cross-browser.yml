@@ -2,8 +2,10 @@ name: Cross-browser regression
 
 on:
   pull_request:
+  push:
+    branches: [main, codex/phase-19-verified-content]
   schedule:
-    - cron: '23 7 * * 1'
+    - cron: "23 7 * * 1"
   workflow_dispatch:
 
 permissions:

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ingredient_creatine_monohydrate",
+    "slug": "ingredient-creatine-monohydrate",
+    "title": "Creatine Monohydrate",
+    "entityType": "ingredient",
+    "category": "performance",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "context",
+        "heading": "Evidence context",
+        "content": {
+          "text": "NIH ODS distinguishes repeated short, intense efforts such as sprinting or weight lifting from distance endurance activity: creatine may help the former, with little value reported for the latter. Monohydrate is the commonly used supplement form.",
+          "sourceIds": [
+            "src_nih_ods_faq"
+          ]
+        }
+      },
+      {
+        "id": "quality",
+        "heading": "Product quality and anti-doping",
+        "content": {
+          "text": "No product certification, batch quality, jurisdictional approval or current WADA status has been verified on this page. Ingredient education is separate from those checks.",
+          "sourceIds": [
+            "src_nih_ods_faq"
+          ]
+        }
+      }
+    ],
+    "claims": [],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "professional_review",
+        "interactionType": null,
+        "content": {
+          "text": "NIH ODS notes water retention and weight gain. Its healthy-adult safety context does not establish suitability for an individual or for other clinical populations.",
+          "sourceIds": [
+            "src_nih_ods_faq"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_faq"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-05",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "ingredient_caffeine",
+    "slug": "ingredient-caffeine",
+    "title": "Caffeine",
+    "entityType": "ingredient",
+    "category": "performance",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "context",
+        "heading": "Evidence context",
+        "content": {
+          "text": "NIH ODS notes possible performance enhancement in athletes, while emphasizing that caffeine content in energy drinks varies. This page does not supply a personal amount or product recommendation.",
+          "sourceIds": [
+            "src_nih_ods_faq"
+          ]
+        }
+      },
+      {
+        "id": "quality",
+        "heading": "Product quality and anti-doping",
+        "content": {
+          "text": "No product certification, batch quality, jurisdictional approval or current WADA status has been verified on this page. Ingredient education is separate from those checks.",
+          "sourceIds": [
+            "src_nih_ods_faq"
+          ]
+        }
+      }
+    ],
+    "claims": [],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "professional_review",
+        "interactionType": null,
+        "content": {
+          "text": "NIH ODS describes nervousness, jitteriness and sleep difficulty; very high amounts can cause serious heart problems. The adult context must not be applied to children or teenagers.",
+          "sourceIds": [
+            "src_nih_ods_faq"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_faq"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-05",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  }
+]

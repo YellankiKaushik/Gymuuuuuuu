@@ -1,3 +1,3 @@
-import type { SourceMetadata } from '../../domain/types'
-// Intentionally empty: add reviewed domain sources in the relevant content phase.
-export const sourceRegistry: readonly SourceMetadata[] = []
+import rawSources from "../../content/muscles/sources.json";
+import { sourceSchema } from "../../domain/schemas/foundation";
+export const sourceRegistry = sourceSchema.array().parse(rawSources);

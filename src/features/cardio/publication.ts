@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { cardioReference } from "./schema";
+import records from "../../content/cardio/records.json";
 export const publishedCardioSchema = z.strictObject({
   id: z.string().min(1),
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
@@ -42,7 +43,8 @@ export const publishedCardioSchema = z.strictObject({
   }),
 });
 export type PublicCardioEntity = z.infer<typeof publishedCardioSchema>;
-export const publicCardioEntities: readonly PublicCardioEntity[] = [];
+export const publicCardioEntities: readonly PublicCardioEntity[] =
+  publishedCardioSchema.array().parse(records);
 export function validateCardioRelease(
   entries: readonly PublicCardioEntity[] = publicCardioEntities,
 ) {

@@ -191,9 +191,13 @@ export function FoodDetail({
         <p>{sourceBadge(p)}</p>
         <small>
           {complete.numeric} of {complete.total} registered nutrients have
-          numeric data. Reviewed {p.review.reviewedAt?.slice(0, 10)}.
+          numeric data. Source checked {p.review.reviewedAt?.slice(0, 10)}.
         </small>
       </div>
+      <InfoCallout title="Publication review level">
+        Personal-use publication after source matching and machine validation.
+        No independent human or clinical review is claimed. {p.review.reviewer}
+      </InfoCallout>
       {food.media
         ?.filter((m) => m.status === "rights_verified")
         .map((m) => (

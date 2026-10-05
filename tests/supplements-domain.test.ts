@@ -32,7 +32,12 @@ const root = () => ({
   intakeLogs: [structuredClone(intake)],
 });
 it("keeps all draft ingredient claims and doses hidden; requires atomic claim scope", () => {
-  expect(publicSupplements).toEqual([]);
+  expect(publicSupplements.map((r) => r.id)).toEqual([
+    "ingredient_creatine_monohydrate",
+    "ingredient_caffeine",
+  ]);
+  expect(publicSupplements.flatMap((r) => r.claims)).toEqual([]);
+  expect(publicSupplements.every((r) => r.antiDoping === null)).toBe(true);
   expect(() => validateSupplementsRelease()).not.toThrow();
   expect(
     claimSchema.safeParse({

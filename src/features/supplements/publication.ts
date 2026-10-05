@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { supplementReference } from "./schema";
+import records from "../../content/supplements/records.json";
 const sourced = z.strictObject({
   text: z.string().min(1),
   sourceIds: z.array(z.string()).min(1),
@@ -119,7 +120,9 @@ export const publicEntitySchema = z.strictObject({
   review,
 });
 export type PublicEntity = z.infer<typeof publicEntitySchema>;
-export const publicSupplements: readonly PublicEntity[] = [];
+export const publicSupplements: readonly PublicEntity[] = publicEntitySchema
+  .array()
+  .parse(records);
 export function validateSupplementsRelease(
   entries: readonly PublicEntity[] = publicSupplements,
 ) {

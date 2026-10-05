@@ -1,0 +1,472 @@
+[
+  {
+    "foodId": "food_apple",
+    "fdcId": 1750341,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Apples, gala, with skin, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "fae10bd80417af45a47da6723e68e74af12f83c9bba40ad5869216172602579b"
+  },
+  {
+    "foodId": "food_banana",
+    "fdcId": 1105314,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Bananas, ripe and slightly ripe, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "258c1dcfe6e132b79bb8b883740d828a39d3fcf6633a1c0c4d31938c080511d0"
+  },
+  {
+    "foodId": "food_carrot",
+    "fdcId": 2258586,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Carrots, mature, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "704a3458d5c701d21607e8570d116ce486f062bb586d483ae5d770f0b50bec3d"
+  },
+  {
+    "foodId": "food_spinach",
+    "fdcId": 1999633,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Spinach, mature",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "b5b12383bb9523849d9a92137079fefad2b327ca661683faf0930e89863b994e"
+  },
+  {
+    "foodId": "food_almond",
+    "fdcId": 2346393,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Nuts, almonds, whole, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "8dcfec4e6a9ccb948fc6764fc02f1bb36f45de70f91d02e7c5fa7da24983a47b"
+  },
+  {
+    "foodId": "food_pineapple",
+    "fdcId": 2346398,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Pineapple, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "8da9828890bf9508b37e211566d7dc1da0336907abc7bcc2bd47dcd26189ca37"
+  },
+  {
+    "foodId": "food_strawberry",
+    "fdcId": 2346409,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Strawberries, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "ccef47f2ad9f7953997526704aec586d9811aa89b767df676724899542b99f9d"
+  },
+  {
+    "foodId": "food_pear",
+    "fdcId": 169118,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Pears, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "2055b601fa05d66aaee45cf333ddf7b13f22ddbd31fec44e12de20b913e13f37"
+  },
+  {
+    "foodId": "food_quince",
+    "fdcId": 168163,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Quinces, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "c0f3ccbff4371c4a62fd3b1e02a94342853200d86641b84b9ad26ee39ac03c76"
+  },
+  {
+    "foodId": "food_lime",
+    "fdcId": 168155,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Limes, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "b353fb1ccb5fd65875c3e4336af71e19b35713eda19cb3c4f57412783989deaf"
+  },
+  {
+    "foodId": "food_pomelo",
+    "fdcId": 167754,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Pummelo, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "1658ba51ba2000e9d1de85e17a22205f46808b9a59e9aa54d6ceece030281aa3"
+  },
+  {
+    "foodId": "food_mango",
+    "fdcId": 169910,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mangos, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "0ab4ec4217caa38b8e448f182060728077da9c3108f9ac5fefdf2ac037f17cf3"
+  },
+  {
+    "foodId": "food_pomegranate",
+    "fdcId": 169134,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Pomegranates, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "77c67e5e98dfb741d200429e6836d5452b297178af73ca6d6e52977a71d47a3c"
+  },
+  {
+    "foodId": "food_sapodilla",
+    "fdcId": 167759,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Sapodilla, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "b98aad554652ca70200a1cd7d5fcff005419a0233ebab0455be3cc32850cd564"
+  },
+  {
+    "foodId": "food_passion_fruit",
+    "fdcId": 169108,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Passion-fruit, (granadilla), purple, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "806f6cbd0a1c150892c6cdd4fe39bae7bea1b3f30c875cd240f91868ae7e6c83"
+  },
+  {
+    "foodId": "food_lychee",
+    "fdcId": 169086,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Litchis, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "3bdba9697406bc4a18e7ccfd7ffcb7bd983cfc7ec54187b6a58861bf5352bc00"
+  },
+  {
+    "foodId": "food_jamun",
+    "fdcId": 168150,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Java-plum, (jambolan), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "f0ac5cc119cd1e55eba050e41f25f7bc9d7a24b0ec7606b2cd6c8b034cabab98"
+  },
+  {
+    "foodId": "food_mandarin",
+    "fdcId": 169105,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Tangerines, (mandarin oranges), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "6014a8a47f018b082826b913282bb4cfc894fa253ca4273040394b737a271ba8"
+  },
+  {
+    "foodId": "food_watermelon",
+    "fdcId": 167765,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Watermelon, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "ea6363a6b23b9f52b22590138cf5aba8c8a5906986550b610d58ab34808049da"
+  },
+  {
+    "foodId": "food_muskmelon",
+    "fdcId": 169092,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Melons, cantaloupe, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "a11c04ad677add6317aeda438538021897a9f820cf0289c9b79bb03362ef165d"
+  },
+  {
+    "foodId": "food_raspberry",
+    "fdcId": 167755,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Raspberries, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "ca48ae73b6c0d352eec19761c94ccacc85eaf2fbdef52cba913d75920c247e89"
+  },
+  {
+    "foodId": "food_plantain",
+    "fdcId": 169130,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Plantains, yellow, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "aa38e069e4562345a7f73fe4350f6bd37343ab218e37a7de571b19a4033e6fbe"
+  },
+  {
+    "foodId": "food_cucumber",
+    "fdcId": 168409,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cucumber, with peel, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "df6153a92a0dcb69c5c4d948aea89ea9dcd1654b59159a501ba399ab159c19e3"
+  },
+  {
+    "foodId": "food_pumpkin",
+    "fdcId": 168448,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Pumpkin, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "a20795e88605a35dbece7bac6743dbffd8f87d08c24ae742057a1a057abdc31e"
+  },
+  {
+    "foodId": "food_kohlrabi",
+    "fdcId": 168424,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Kohlrabi, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "52527fd52b7afee796a7c58b27b6d930a1e8505445e16853e1754cb731173290"
+  },
+  {
+    "foodId": "food_beetroot",
+    "fdcId": 169145,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beets, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "5f70382c26f06274488e8c3d10edfdd38e11e70c761b821e0aaca6ab601641e7"
+  },
+  {
+    "foodId": "food_asparagus",
+    "fdcId": 168389,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Asparagus, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "230c66bd7b0312bde04bf09b06c2a9d27ccac75f6d601c9f6fcb1198c9a35b93"
+  },
+  {
+    "foodId": "food_eggplant",
+    "fdcId": 169228,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Eggplant, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "131ee1be85879a73c3f86d64b1040526bc55d4116e9f821730ce5c96db71bc16"
+  },
+  {
+    "foodId": "food_garlic",
+    "fdcId": 169230,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Garlic, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "227e8b6b77873c4dc523135d8b39ba9cafd0b76f8a9e5205839a36a2fc792833"
+  },
+  {
+    "foodId": "food_leek",
+    "fdcId": 169246,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Leeks, (bulb and lower leaf-portion), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "e8c24ee34ffac4eb76ea9bb2885374dbae00c3604b3695e504294ffaed0d9906"
+  },
+  {
+    "foodId": "food_romaine_lettuce",
+    "fdcId": 169247,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Lettuce, cos or romaine, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "ea15a3e54356095564e1f20da85434bed51d383ce7271c614c414407d50ff7fc"
+  },
+  {
+    "foodId": "food_mustard_greens",
+    "fdcId": 169256,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mustard greens, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "cc68e004321cfd45790de88041ee69b6710c487531fcd303611ca7cfe0760084"
+  },
+  {
+    "foodId": "food_okra",
+    "fdcId": 169260,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Okra, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "c19f9b6e251703f0c810f999a7657cbdea43f415a9766e0a06276102b39c443e"
+  },
+  {
+    "foodId": "food_arugula",
+    "fdcId": 169387,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Arugula, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "9595e87e7692558bfe80a170018713fc23f98968b89f1138f6a030aed035983c"
+  },
+  {
+    "foodId": "food_endive",
+    "fdcId": 168412,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Endive, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "4d3a4b4eeff21f6fb995ac4ca0aa5bed28b84e4e7547066e0ae3d9b6ca18c8dd"
+  },
+  {
+    "foodId": "food_amaranth_leaves",
+    "fdcId": 168385,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Amaranth leaves, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "db4c1789435d7bfb6cfe12d01dbcbaf1afd4479f52a41c52b9f344a1802bcebe"
+  },
+  {
+    "foodId": "food_drumstick_leaves",
+    "fdcId": 168416,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Drumstick leaves, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "57715a4959fa8c611264dad2ff8dfd52736cda1b59b2beb3049687b89afec3ee"
+  },
+  {
+    "foodId": "food_colocasia_leaves",
+    "fdcId": 168487,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Taro leaves, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "d60c8d56ba400956ba9211fcb7430e342292de9578eddf4673086c9d5a794a56"
+  },
+  {
+    "foodId": "food_taro_root",
+    "fdcId": 169308,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Taro, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "f03d2a5bfc7f9bcee9c8c944f13573e47118a26007ed5395354318317d08b4b6"
+  },
+  {
+    "foodId": "food_zucchini",
+    "fdcId": 169291,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Squash, summer, zucchini, includes skin, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "ca0c8966bd8654e03c5a1e85cff87832de72cdc5a8e11d1cb8cc58d8604a9821"
+  },
+  {
+    "foodId": "food_butternut_squash",
+    "fdcId": 169295,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Squash, winter, butternut, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "e24cb0b20bb8ffb73f0eac8b0f7dfcab95fcfc4d8504a36b7e9fd846b254fb22"
+  },
+  {
+    "foodId": "food_chicken_egg_whole",
+    "fdcId": 171287,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Egg, whole, raw, fresh",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "0045a06752db703608b89b7104ca5c18d7fceb5164f26d7073b40367f1894ad2"
+  },
+  {
+    "foodId": "food_white_rice",
+    "fdcId": 168878,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Rice, white, long-grain, regular, enriched, cooked",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "109e34eccef47e2c3d4d8b0a6d096574d082614e330fc35efd10d802c56af1a9"
+  },
+  {
+    "foodId": "food_olive_oil",
+    "fdcId": 171413,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, olive, salad or cooking",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "78c4e6c42cb1983ab44b78822278cc87b699316119b8f0022b0bdf384dc51cc4"
+  },
+  {
+    "foodId": "food_potato",
+    "fdcId": 170440,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Potatoes, boiled, cooked without skin, flesh, without salt",
+    "foodState": "boiled",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "6e2bb0ff3e6f74c8135c4ed7468747186026a7ff3376f43857323d366aa0b5e2"
+  },
+  {
+    "foodId": "food_chickpea",
+    "fdcId": 173756,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "f5dceec8203a69df4ec5cc3bfc7179975b41f8fcbf24dfcafd30e3112b918365"
+  },
+  {
+    "foodId": "food_chickpea",
+    "fdcId": 173757,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt",
+    "foodState": "boiled",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
+    "sourceSnapshotSha256": "c57328562a322158d4d9ea186e7f7fcfc376ec63ad47709ca745e516aa2772b4"
+  }
+]

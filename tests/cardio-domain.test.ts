@@ -129,7 +129,10 @@ it("validates backup graphs and keep/copy semantics before storage", () => {
 });
 it("keeps all 202 draft identities out of the public release", () => {
   expect(cardioReference.seedTaxonomy).toHaveLength(202);
-  expect(publicCardioEntities).toHaveLength(0);
+  expect(publicCardioEntities.map((r) => r.id)).toEqual(["topic_talk_test"]);
+  expect(
+    publicCardioEntities.every((r) => r.publicationStatus === "published"),
+  ).toBe(true);
   expect(() => validateCardioRelease()).not.toThrow();
 });
 it("exports seven CSV datasets with null blanks and spreadsheet escaping", () => {

@@ -3120,6 +3120,18 @@
         "undeclared_substances"
       ],
       "licenseNote": "Describe this as one survey, not a universal contamination rate."
+    },
+    {
+      "id": "src_nih_ods_faq",
+      "title": "ODS Frequently Asked Questions — Exercise and Athletic Performance",
+      "publisher": "NIH Office of Dietary Supplements",
+      "type": "government_evidence_review",
+      "url": "https://ods.od.nih.gov/HealthInformation/ODS_Frequently_Asked_Questions.aspx",
+      "roles": [
+        "ingredient_education",
+        "safety"
+      ],
+      "licenseNote": "Brief factual paraphrases with attribution; no images or bulk copied prose."
     }
   ],
   "entityTypes": [

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "sleep_duration_adults",
+    "slug": "sleep-duration-adults",
+    "title": "Adult Sleep Duration",
+    "status": "published",
+    "domain": "sleep",
+    "population": "Adults; general education, not sleep-disorder treatment",
+    "context": "Consensus guidance; self-reported logs cannot diagnose a disorder",
+    "definition": "The AASM/SRS consensus recommends at least seven hours of sleep regularly for healthy adults. This is a population recommendation, not a personal diagnosis or a maximum.",
+    "sourceIds": [
+      "src_aasm_sleep_duration_2015"
+    ],
+    "claims": [
+      {
+        "id": "claim_sleep_duration_adults",
+        "text": "The AASM/SRS consensus recommends at least seven hours of sleep regularly for healthy adults. This is a population recommendation, not a personal diagnosis or a maximum.",
+        "outcome": "sleep",
+        "sourceIds": [
+          "src_aasm_sleep_duration_2015"
+        ]
+      }
+    ],
+    "evidenceStrength": "consensus",
+    "limitations": [
+      "The consensus focuses on adults aged 18\u201360. Individual needs vary; longer sleep can be appropriate during recovery from sleep debt or illness. Persistent concerns require a healthcare professional."
+    ],
+    "contraindications": [
+      "Seek professional help for persistent sleep concerns. This page does not provide diagnosis or change medication."
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-05",
+      "status": "approved",
+      "rightsReviewed": true
+    },
+    "relatedIds": [
+      "sleep_regularity"
+    ]
+  },
+  {
+    "id": "sleep_regularity",
+    "slug": "sleep-regularity",
+    "title": "Sleep Timing Regularity",
+    "status": "published",
+    "domain": "sleep",
+    "population": "Adults; general education, not sleep-disorder treatment",
+    "context": "Consensus guidance; self-reported logs cannot diagnose a disorder",
+    "definition": "Sleep regularity describes consistency in the timing of falling asleep and waking. The NSF panel concluded that consistent timing matters for health, safety and performance.",
+    "sourceIds": [
+      "src_sleep_regularity_consensus_2023"
+    ],
+    "claims": [
+      {
+        "id": "claim_sleep_regularity",
+        "text": "Sleep regularity describes consistency in the timing of falling asleep and waking. The NSF panel concluded that consistent timing matters for health, safety and performance.",
+        "outcome": "sleep",
+        "sourceIds": [
+          "src_sleep_regularity_consensus_2023"
+        ]
+      }
+    ],
+    "evidenceStrength": "consensus",
+    "limitations": [
+      "Consensus based on available evidence does not establish a universal clock time or an exact allowable variation. Catch-up sleep may help after insufficient weekday sleep; it is not proof of complete recovery."
+    ],
+    "contraindications": [
+      "Seek professional help for persistent sleep concerns. This page does not provide diagnosis or change medication."
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-05",
+      "status": "approved",
+      "rightsReviewed": true
+    },
+    "relatedIds": [
+      "sleep_duration_adults"
+    ]
+  }
+]

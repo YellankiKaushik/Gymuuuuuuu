@@ -38,9 +38,10 @@ export function FoodSources() {
         description="Source policies guide what can be compiled and published in the food library."
       />
       <InfoCallout title="Current public release">
-        {foodReleaseReport.publishedFoods} reviewed foods and{" "}
-        {foodReleaseReport.publishedProfiles} approved profiles are published.
-        No composition dataset has been imported into this release.
+        {foodReleaseReport.publishedFoods} source-backed foods and{" "}
+        {foodReleaseReport.publishedProfiles} machine-validated profiles are
+        published for personal use. Source matching and automated checks do not
+        constitute independent human or clinical review.
       </InfoCallout>
       {foodReference.sourceRegistry.map((s) => (
         <section className="food-source-record" key={s.id}>

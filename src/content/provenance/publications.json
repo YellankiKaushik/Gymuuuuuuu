@@ -1,0 +1,2072 @@
+[
+  {
+    "module": "foods",
+    "id": "food_apple",
+    "slug": "apple",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_apple_fdc_1750341",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_banana",
+    "slug": "banana",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_banana_fdc_1105314",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_carrot",
+    "slug": "carrot",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_carrot_fdc_2258586",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_spinach",
+    "slug": "spinach",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_spinach_fdc_1999633",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_almond",
+    "slug": "almond",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_almond_fdc_2346393",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_pineapple",
+    "slug": "pineapple",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_pineapple_fdc_2346398",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_strawberry",
+    "slug": "strawberry",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_strawberry_fdc_2346409",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_pear",
+    "slug": "pear",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_pear_fdc_169118",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_quince",
+    "slug": "quince",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_quince_fdc_168163",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_lime",
+    "slug": "lime",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_lime_fdc_168155",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_pomelo",
+    "slug": "pomelo",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_pomelo_fdc_167754",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_mango",
+    "slug": "mango",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_mango_fdc_169910",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_pomegranate",
+    "slug": "pomegranate",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_pomegranate_fdc_169134",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_sapodilla",
+    "slug": "sapodilla",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_sapodilla_fdc_167759",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_passion_fruit",
+    "slug": "passion-fruit",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_passion_fruit_fdc_169108",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_lychee",
+    "slug": "lychee",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_lychee_fdc_169086",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_jamun",
+    "slug": "jamun",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_jamun_fdc_168150",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_mandarin",
+    "slug": "mandarin",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_mandarin_fdc_169105",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_watermelon",
+    "slug": "watermelon",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_watermelon_fdc_167765",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_muskmelon",
+    "slug": "muskmelon",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_muskmelon_fdc_169092",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_raspberry",
+    "slug": "raspberry",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_raspberry_fdc_167755",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_plantain",
+    "slug": "plantain",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_plantain_fdc_169130",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_cucumber",
+    "slug": "cucumber",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_cucumber_fdc_168409",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_pumpkin",
+    "slug": "pumpkin",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_pumpkin_fdc_168448",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_kohlrabi",
+    "slug": "kohlrabi",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_kohlrabi_fdc_168424",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_beetroot",
+    "slug": "beetroot",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_beetroot_fdc_169145",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_asparagus",
+    "slug": "asparagus",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_asparagus_fdc_168389",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_eggplant",
+    "slug": "eggplant",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_eggplant_fdc_169228",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_garlic",
+    "slug": "garlic",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_garlic_fdc_169230",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_leek",
+    "slug": "leek",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_leek_fdc_169246",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_romaine_lettuce",
+    "slug": "romaine-lettuce",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_romaine_lettuce_fdc_169247",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_mustard_greens",
+    "slug": "mustard-greens",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_mustard_greens_fdc_169256",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_okra",
+    "slug": "okra",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_okra_fdc_169260",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_arugula",
+    "slug": "arugula",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_arugula_fdc_169387",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_endive",
+    "slug": "endive",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_endive_fdc_168412",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_amaranth_leaves",
+    "slug": "amaranth-leaves",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_amaranth_leaves_fdc_168385",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_drumstick_leaves",
+    "slug": "drumstick-leaves",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_drumstick_leaves_fdc_168416",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_colocasia_leaves",
+    "slug": "colocasia-leaves",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_colocasia_leaves_fdc_168487",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_taro_root",
+    "slug": "taro-root",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_taro_root_fdc_169308",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_zucchini",
+    "slug": "zucchini",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_zucchini_fdc_169291",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_butternut_squash",
+    "slug": "butternut-squash",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_butternut_squash_fdc_169295",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_chicken_egg_whole",
+    "slug": "chicken-egg-whole",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_chicken_egg_whole_fdc_171287",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_white_rice",
+    "slug": "white-rice",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_white_rice_fdc_168878",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_olive_oil",
+    "slug": "olive-oil",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_olive_oil_fdc_171413",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_potato",
+    "slug": "potato",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_potato_fdc_170440",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_chickpea",
+    "slug": "chickpea",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_chickpea_fdc_173756",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_chickpea_fdc_173757",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "iron_mg",
+    "slug": "iron",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nih_ods_iron_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "calcium_mg",
+    "slug": "calcium",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nih_ods_calcium_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "vitamin_c_mg",
+    "slug": "vitamin-c",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nih_ods_vitamin_c_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_consistency_adherence",
+    "slug": "consistency-adherence",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_hypertrophy_adaptation",
+    "slug": "hypertrophy-adaptation",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_muscular_failure",
+    "slug": "muscular-failure",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_chickpea_cucumber_bowl",
+    "slug": "chickpea-cucumber-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_chickpea_cucumber_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_chickpea_cucumber_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_chickpea_cucumber_bowl_2",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_potato_cucumber_bowl",
+    "slug": "potato-cucumber-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_potato_cucumber_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_potato_cucumber_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_potato_cucumber_bowl_2",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_rice_chickpea_bowl",
+    "slug": "rice-chickpea-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_rice_chickpea_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_rice_chickpea_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_rice_chickpea_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_chickpea_carrot_salad",
+    "slug": "chickpea-carrot-salad",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_chickpea_carrot_salad_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_chickpea_carrot_salad_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_chickpea_carrot_salad_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_apple_banana_bowl",
+    "slug": "apple-banana-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_apple_banana_bowl_0",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_apple_banana_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_mango_pineapple_bowl",
+    "slug": "mango-pineapple-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_mango_pineapple_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_mango_pineapple_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_strawberry_banana_bowl",
+    "slug": "strawberry-banana-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_strawberry_banana_bowl_0",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_strawberry_banana_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_pear_apple_bowl",
+    "slug": "pear-apple-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_pear_apple_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_pear_apple_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_watermelon_pomegranate_bowl",
+    "slug": "watermelon-pomegranate-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_watermelon_pomegranate_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_watermelon_pomegranate_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_pineapple_raspberry_bowl",
+    "slug": "pineapple-raspberry-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_pineapple_raspberry_bowl_0",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_pineapple_raspberry_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_mandarin_mango_bowl",
+    "slug": "mandarin-mango-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_mandarin_mango_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_mandarin_mango_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_cucumber_carrot_salad",
+    "slug": "cucumber-carrot-salad",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_cucumber_carrot_salad_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_cucumber_carrot_salad_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "sleep_duration_adults",
+    "slug": "sleep-duration-adults",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "aasm_sleep_2015"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "sleep_regularity",
+    "slug": "sleep-regularity",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nsf_regularity_2023"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_talk_test",
+    "slug": "topic-talk-test",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_talk_test"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_creatine_monohydrate",
+    "slug": "ingredient-creatine-monohydrate",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections",
+        "sourceIds": [
+          "nih_ods_faq"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_caffeine",
+    "slug": "ingredient-caffeine",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections",
+        "sourceIds": [
+          "nih_ods_faq"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_biceps_brachii",
+    "slug": "biceps-brachii",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_brachialis",
+    "slug": "brachialis",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_triceps_brachii",
+    "slug": "triceps-brachii",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_dumbbell_curl",
+    "slug": "dumbbell-curl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "public_strength_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "public_video_safety_2023"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_curl_diagram_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  }
+]

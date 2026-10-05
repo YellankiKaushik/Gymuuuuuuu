@@ -1,1 +1,198 @@
-[]
+[
+  {
+    "id": "muscle_biceps_brachii",
+    "slug": "biceps-brachii",
+    "displayName": "Biceps brachii",
+    "anatomicalName": "Biceps brachii",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_biceps"
+    ],
+    "summary": "A two-headed muscle on the front of the upper arm. It contributes to elbow bending and turning the forearm palm-up.",
+    "locationSummary": "Anterior upper arm.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. This record does not quantify exercise activation or establish an isolation strategy.",
+    "structure": {
+      "proximalAttachmentSummary": "Short head: scapular coracoid apex. Long head: supraglenoid attachment with continuity to the glenoid labrum.",
+      "distalAttachmentSummary": "Radial tuberosity; a bicipital aponeurosis connects with forearm fascia."
+    },
+    "jointActions": [
+      {
+        "joint": "elbow",
+        "motion": "flexion",
+        "contributionLevel": "primary",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      },
+      {
+        "joint": "radioulnar joints",
+        "motion": "supination",
+        "contributionLevel": "primary",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "flexion",
+        "contributionLevel": "secondary",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "relatedMuscleId": "muscle_brachialis",
+        "context": "Elbow movement",
+        "role": "synergist",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      },
+      {
+        "relatedMuscleId": "muscle_triceps_brachii",
+        "context": "Elbow movement",
+        "role": "antagonist",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No activation percentages or clinical conclusions are provided."
+    ],
+    "sources": [
+      "gray_1918_upper_arm"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_brachialis",
+    "slug": "brachialis",
+    "displayName": "Brachialis",
+    "anatomicalName": "Brachialis",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_biceps"
+    ],
+    "summary": "An elbow flexor located across the front of the lower upper arm and elbow. Its distal attachment is on the ulna.",
+    "locationSummary": "Anterior lower humerus and elbow.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. This record does not quantify exercise activation or establish an isolation strategy.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior lower half of the humerus, with intermuscular septal attachments.",
+      "distalAttachmentSummary": "Ulnar tuberosity and anterior coronoid region."
+    },
+    "jointActions": [
+      {
+        "joint": "elbow",
+        "motion": "flexion",
+        "contributionLevel": "primary",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "relatedMuscleId": "muscle_biceps_brachii",
+        "context": "Elbow movement",
+        "role": "synergist",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      },
+      {
+        "relatedMuscleId": "muscle_triceps_brachii",
+        "context": "Elbow movement",
+        "role": "antagonist",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No activation percentages or clinical conclusions are provided."
+    ],
+    "sources": [
+      "gray_1918_upper_arm"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_triceps_brachii",
+    "slug": "triceps-brachii",
+    "displayName": "Triceps brachii",
+    "anatomicalName": "Triceps brachii",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_triceps"
+    ],
+    "summary": "The three-headed muscle along the back of the upper arm contributes to straightening the elbow.",
+    "locationSummary": "Posterior upper arm.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. This record does not quantify exercise activation or establish an isolation strategy.",
+    "structure": {
+      "proximalAttachmentSummary": "Long head: infraglenoid scapular attachment. Lateral and medial heads: posterior humerus, respectively above and below the radial groove, with septal attachments.",
+      "distalAttachmentSummary": "Main tendon reaches the olecranon; associated fibres blend with forearm fascia."
+    },
+    "jointActions": [
+      {
+        "joint": "elbow",
+        "motion": "extension",
+        "contributionLevel": "primary",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "relatedMuscleId": "muscle_biceps_brachii",
+        "context": "Elbow movement",
+        "role": "antagonist",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      },
+      {
+        "relatedMuscleId": "muscle_brachialis",
+        "context": "Elbow movement",
+        "role": "antagonist",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No activation percentages or clinical conclusions are provided."
+    ],
+    "sources": [
+      "gray_1918_upper_arm"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  }
+]

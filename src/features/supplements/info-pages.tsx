@@ -31,9 +31,11 @@ export function HomePage() {
           remain separate.
         </p>
         <p>
-          No reviewed ingredient claims are available yet. Draft titles are
-          hidden; doses and protocols are unavailable.
+          Source-backed ingredient education is available in the ingredient
+          library. Detailed efficacy claims and research protocols remain
+          unavailable.
         </p>
+        <a href="/supplements/ingredients">Browse ingredient education</a>{" "}
         <a className="button primary" href="/supplements/products/create">
           Capture a product label
         </a>{" "}
@@ -60,8 +62,15 @@ export function LibraryPage({
   slug?: string;
 }) {
   const [query, setQuery] = useState("");
-  const entries = publicSupplements.filter((e) =>
-    e.title.toLowerCase().includes(query.toLowerCase()),
+  const entries = publicSupplements.filter(
+    (e) =>
+      (kind === "ingredients"
+        ? e.entityType === "ingredient"
+        : e.entityType !== "ingredient") &&
+      (!slug || e.slug === slug) &&
+      [e.title, ...e.aliases].some((value) =>
+        value.toLowerCase().includes(query.toLowerCase()),
+      ),
   );
   return (
     <Frame
@@ -74,44 +83,28 @@ export function LibraryPage({
       }
     >
       <section className="card">
-        <h2>{slug ? "Record unavailable" : "Reviewed records"}</h2>
-        {slug ? (
+        <h2>
+          {slug && !entries.length
+            ? "Record unavailable"
+            : "Source-backed records"}
+        </h2>
+        {slug && !entries.length ? (
           <p>
             This record has no approved publication. No dose, efficacy or safety
             verdict is inferred from its draft identity.
           </p>
         ) : (
           <>
-            <form method="get">
+            <form onSubmit={(event) => event.preventDefault()}>
               <TextField
                 label="Search canonical names and aliases"
                 value={query}
                 onChange={setQuery}
               />
-              {[
-                "category",
-                "outcome",
-                "population",
-                "formulation",
-                "confidence",
-                "direction",
-                "safety",
-                "framework",
-                "antiDoping",
-                "quality",
-                "review",
-              ].map((filter) => (
-                <Field key={filter} label={readable(filter)}>
-                  <select name={filter}>
-                    <option value="">
-                      All reviewed {readable(filter)} values
-                    </option>
-                  </select>
-                </Field>
-              ))}
-              <button className="button secondary" type="submit">
-                Apply URL filters
-              </button>
+              <p>
+                Filter by name above. Claim-level filters will appear when
+                supported records are available.
+              </p>
             </form>
             <p>
               {entries.length} reviewed records. Protocol unavailable until
@@ -121,6 +114,52 @@ export function LibraryPage({
         )}
         <a href="/supplements/methodology">How publication is reviewed</a>
       </section>
+      {entries.map((e) => (
+        <article className="card" key={e.id}>
+          <h2>
+            <a
+              href={`/supplements/${e.entityType === "ingredient" ? "ingredients" : "evidence"}/${e.slug}`}
+            >
+              {e.title}
+            </a>
+          </h2>
+          <p>
+            Personal-use publication · machine source verification · no
+            independent human or clinical review.
+          </p>
+          {e.sections.map((s) => (
+            <section key={s.id}>
+              <h3>{s.heading}</h3>
+              <p>{s.content.text}</p>
+            </section>
+          ))}
+          <h3>Safety context</h3>
+          <ul>
+            {e.safety.map((s) => (
+              <li key={s.id}>{s.content.text}</li>
+            ))}
+          </ul>
+          <p>
+            No personal protocol, product-quality certification or current
+            anti-doping verdict is supplied.
+          </p>
+          <p>
+            Source checked {e.review.reviewedAt} by {e.review.reviewer}.
+          </p>
+          <ul>
+            {e.sourceIds.map((id) => {
+              const source = supplementReference.sources.find(
+                (s) => s.id === id,
+              )!;
+              return (
+                <li key={id}>
+                  <a href={source.url}>{source.title}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </article>
+      ))}
     </Frame>
   );
 }

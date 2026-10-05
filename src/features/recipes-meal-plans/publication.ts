@@ -70,7 +70,6 @@ export const publicTemplateSchema = z
   );
 export type PublicRecipe = z.infer<typeof publicRecipeSchema>;
 export type PublicTemplate = z.infer<typeof publicTemplateSchema>;
-export const publicRecipes: readonly PublicRecipe[] = [];
 export const publicTemplates: readonly PublicTemplate[] = [];
 export function validatePublicRelease(
   recipes: readonly PublicRecipe[],

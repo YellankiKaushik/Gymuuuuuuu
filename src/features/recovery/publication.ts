@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { recoveryReference, routineSchema } from "./schema";
+import records from "../../content/recovery/records.json";
 export const recoveryArticleSchema = z.strictObject({
   id: z.string().min(1),
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
@@ -47,7 +48,8 @@ export const recoveryArticleSchema = z.strictObject({
   relatedIds: z.array(z.string()),
 });
 export type RecoveryArticle = z.infer<typeof recoveryArticleSchema>;
-export const publicRecoveryArticles: readonly RecoveryArticle[] = [];
+export const publicRecoveryArticles: readonly RecoveryArticle[] =
+  recoveryArticleSchema.array().parse(records);
 export const publicRecoveryRoutines: readonly {
   article: RecoveryArticle;
   routine: z.infer<typeof routineSchema>;

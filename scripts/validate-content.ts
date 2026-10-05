@@ -1,3 +1,4 @@
+import { publicRecipes } from "../src/features/recipes-meal-plans/public-records";
 import {
   anatomyTaxonomy,
   muscleRecords,
@@ -6,7 +7,6 @@ import {
 import { sourceSchema } from "../src/domain/schemas/foundation";
 import {
   validatePublicRelease,
-  publicRecipes,
   publicTemplates,
 } from "../src/features/recipes-meal-plans/publication";
 import { sourceRegistry } from "../src/data/sources";

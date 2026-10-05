@@ -1,3 +1,4 @@
+import { publicRecipes } from "../src/features/recipes-meal-plans/public-records";
 import { describe, it, expect } from "vitest";
 import { dietPlanFixture } from "./fixtures/diet";
 import { bindDayTargetSnapshot } from "../src/features/nutrition-tracker/domain";
@@ -10,7 +11,6 @@ import {
 import {
   matchReviewedTemplates,
   validatePublicRelease,
-  publicRecipes,
   publicTemplates,
   recipeExclusionWarnings,
 } from "../src/features/recipes-meal-plans/publication";

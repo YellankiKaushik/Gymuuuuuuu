@@ -224,7 +224,7 @@ export function RecipeCatalogue() {
         </div>
       </details>
       <p className="notice">
-        No reviewed public recipes are published yet. Your own recipes stay on
+        Explore the source-backed public recipes above. Your own recipes stay on
         this browser. <a href="/nutrition/custom-foods">Create a custom food</a>{" "}
         to enter values from your own source.
       </p>
@@ -813,7 +813,12 @@ export function RecipeCalculation({ recipe }: { recipe: RecipeVersion }) {
         Grades describe calculation evidence, not the healthfulness of a recipe.
         Known totals can omit unmeasured nutrients.
       </p>
-      <div className="recipe-table-wrap">
+      <div
+        className="recipe-table-wrap"
+        tabIndex={0}
+        role="region"
+        aria-label="Recipe nutrient values"
+      >
         <table>
           <caption>
             Recipe nutrient values and known ingredient mass coverage

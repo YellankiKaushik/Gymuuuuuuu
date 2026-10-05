@@ -1,1 +1,284 @@
-[]
+[
+  {
+    "id": "science_consistency_adherence",
+    "slug": "consistency-adherence",
+    "displayName": "Consistency and adherence",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "foundations",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 6,
+    "version": "1.0.0",
+    "definition": "Regular participation is the practical focus of adherence in this ACSM summary.",
+    "summary": "ACSM emphasizes regular resistance-training participation for healthy adults, with goals, enjoyment and safety guiding an achievable routine.",
+    "whyItMatters": "This source distinguishes general adult guidance from individual or sport-specific programming. Use its stated scope when interpreting a training choice.",
+    "keyTakeaways": [
+      "ACSM emphasizes regular resistance-training participation for healthy adults, with goals, enjoyment and safety guiding an achievable routine.",
+      "The source population is healthy adults; sport and clinical contexts need separate evidence.",
+      "This is a brief source summary, not a personalised prescription or a universal rule."
+    ],
+    "claims": [
+      {
+        "id": "claim_science_consistency_adherence_acsm2026",
+        "claimText": "ACSM emphasizes regular resistance-training participation for healthy adults, with goals, enjoyment and safety guiding an achievable routine.",
+        "claimType": "practice-framework",
+        "outcome": "adherence",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "consensus-practice",
+        "confidence": "limited",
+        "direction": "context-dependent",
+        "effectQualifier": "Editorial confidence is limited because this record uses the professional-body summary, not an independent appraisal of every underlying review.",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ],
+        "limitations": [
+          "Healthy-adult overview; not a clinical, youth or sport-specific prescription.",
+          "The summary does not supply an individual response estimate."
+        ],
+        "lastVerified": "2026-10-05"
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Helps distinguish a general source recommendation from a personal training decision."
+      ],
+      "prioritizeWhen": [
+        "When considering whether the source population and your question match."
+      ],
+      "deprioritizeWhen": [
+        "When a clinical or sport-specific decision requires separate qualified guidance."
+      ],
+      "adjustmentLevers": [
+        "Your selected goal",
+        "Your available equipment"
+      ],
+      "watchFor": [
+        "A claim applied beyond its studied population or reported outcome."
+      ],
+      "cannotTellYou": [
+        "Your individual response or which programme is optimal for you."
+      ]
+    },
+    "limitations": [
+      "Professional-body summary only; confidence is an explicit machine editorial judgement, not a formal evidence grade."
+    ],
+    "sources": [
+      {
+        "id": "source_acsm_2026_summary",
+        "title": "ACSM Unveils Landmark 2026 Resistance Training Guidelines",
+        "authorsOrOrganization": "American College of Sports Medicine",
+        "sourceType": "practice-interpretation",
+        "year": 2026,
+        "url": "https://acsm.org/resistance-training-guidelines-update-2026/",
+        "accessedAt": "2026-10-05",
+        "notes": "Published 2026-03-17. Brief factual paraphrase of the ACSM summary; no copied infographic or clinical prescription."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Codex machine source verification; no human subject reviewer",
+      "editorialReviewerRole": "Codex machine validation; personal-use publication",
+      "reviewedAt": "2026-10-05",
+      "nextReviewDue": "2027-10-05",
+      "claimReviewComplete": true,
+      "notes": "published_personal_use; no independent human scientific review. The next date is a scheduled recheck, not a completed future review."
+    },
+    "updatedAt": "2026-10-05"
+  },
+  {
+    "id": "science_hypertrophy_adaptation",
+    "slug": "hypertrophy-adaptation",
+    "displayName": "Muscle hypertrophy",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "adaptations-goals",
+    "contentType": "adaptation",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 10,
+    "version": "1.0.0",
+    "definition": "Hypertrophy refers to increased muscle size in the ACSM resistance-training framework.",
+    "summary": "The ACSM summary distinguishes muscle-size goals from strength and power, and describes weekly training volume as a goal-dependent variable.",
+    "whyItMatters": "This source distinguishes general adult guidance from individual or sport-specific programming. Use its stated scope when interpreting a training choice.",
+    "keyTakeaways": [
+      "The ACSM summary distinguishes muscle-size goals from strength and power, and describes weekly training volume as a goal-dependent variable.",
+      "The source population is healthy adults; sport and clinical contexts need separate evidence.",
+      "This is a brief source summary, not a personalised prescription or a universal rule."
+    ],
+    "claims": [
+      {
+        "id": "claim_science_hypertrophy_adaptation_acsm2026",
+        "claimText": "The ACSM summary distinguishes muscle-size goals from strength and power, and describes weekly training volume as a goal-dependent variable.",
+        "claimType": "practice-framework",
+        "outcome": "hypertrophy",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "consensus-practice",
+        "confidence": "limited",
+        "direction": "context-dependent",
+        "effectQualifier": "Editorial confidence is limited because this record uses the professional-body summary, not an independent appraisal of every underlying review.",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ],
+        "limitations": [
+          "Healthy-adult overview; not a clinical, youth or sport-specific prescription.",
+          "The summary does not supply an individual response estimate."
+        ],
+        "lastVerified": "2026-10-05"
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Helps distinguish a general source recommendation from a personal training decision."
+      ],
+      "prioritizeWhen": [
+        "When considering whether the source population and your question match."
+      ],
+      "deprioritizeWhen": [
+        "When a clinical or sport-specific decision requires separate qualified guidance."
+      ],
+      "adjustmentLevers": [
+        "Your selected goal",
+        "Your available equipment"
+      ],
+      "watchFor": [
+        "A claim applied beyond its studied population or reported outcome."
+      ],
+      "cannotTellYou": [
+        "Your individual response or which programme is optimal for you."
+      ]
+    },
+    "limitations": [
+      "Professional-body summary only; confidence is an explicit machine editorial judgement, not a formal evidence grade."
+    ],
+    "sources": [
+      {
+        "id": "source_acsm_2026_summary",
+        "title": "ACSM Unveils Landmark 2026 Resistance Training Guidelines",
+        "authorsOrOrganization": "American College of Sports Medicine",
+        "sourceType": "practice-interpretation",
+        "year": 2026,
+        "url": "https://acsm.org/resistance-training-guidelines-update-2026/",
+        "accessedAt": "2026-10-05",
+        "notes": "Published 2026-03-17. Brief factual paraphrase of the ACSM summary; no copied infographic or clinical prescription."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Codex machine source verification; no human subject reviewer",
+      "editorialReviewerRole": "Codex machine validation; personal-use publication",
+      "reviewedAt": "2026-10-05",
+      "nextReviewDue": "2027-10-05",
+      "claimReviewComplete": true,
+      "notes": "published_personal_use; no independent human scientific review. The next date is a scheduled recheck, not a completed future review."
+    },
+    "updatedAt": "2026-10-05"
+  },
+  {
+    "id": "science_muscular_failure",
+    "slug": "muscular-failure",
+    "displayName": "Training to muscular failure",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "effort-fatigue",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 31,
+    "version": "1.0.0",
+    "definition": "Momentary muscular failure is considered as a training variable rather than a required endpoint in the ACSM summary.",
+    "summary": "ACSM reports that reaching fatigue or momentary failure did not consistently change outcomes for the average healthy adult in its reviewed evidence.",
+    "whyItMatters": "This source distinguishes general adult guidance from individual or sport-specific programming. Use its stated scope when interpreting a training choice.",
+    "keyTakeaways": [
+      "ACSM reports that reaching fatigue or momentary failure did not consistently change outcomes for the average healthy adult in its reviewed evidence.",
+      "The source population is healthy adults; sport and clinical contexts need separate evidence.",
+      "This is a brief source summary, not a personalised prescription or a universal rule."
+    ],
+    "claims": [
+      {
+        "id": "claim_science_muscular_failure_acsm2026",
+        "claimText": "ACSM reports that reaching fatigue or momentary failure did not consistently change outcomes for the average healthy adult in its reviewed evidence.",
+        "claimType": "null-or-inconsistent",
+        "outcome": "mixed",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "consensus-practice",
+        "confidence": "limited",
+        "direction": "no-consistent-difference",
+        "effectQualifier": "Editorial confidence is limited because this record uses the professional-body summary, not an independent appraisal of every underlying review.",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ],
+        "limitations": [
+          "Healthy-adult overview; not a clinical, youth or sport-specific prescription.",
+          "The summary does not supply an individual response estimate."
+        ],
+        "lastVerified": "2026-10-05"
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Helps distinguish a general source recommendation from a personal training decision."
+      ],
+      "prioritizeWhen": [
+        "When considering whether the source population and your question match."
+      ],
+      "deprioritizeWhen": [
+        "When a clinical or sport-specific decision requires separate qualified guidance."
+      ],
+      "adjustmentLevers": [
+        "Your selected goal",
+        "Your available equipment"
+      ],
+      "watchFor": [
+        "A claim applied beyond its studied population or reported outcome."
+      ],
+      "cannotTellYou": [
+        "Your individual response or which programme is optimal for you."
+      ]
+    },
+    "limitations": [
+      "Professional-body summary only; confidence is an explicit machine editorial judgement, not a formal evidence grade."
+    ],
+    "sources": [
+      {
+        "id": "source_acsm_2026_summary",
+        "title": "ACSM Unveils Landmark 2026 Resistance Training Guidelines",
+        "authorsOrOrganization": "American College of Sports Medicine",
+        "sourceType": "practice-interpretation",
+        "year": 2026,
+        "url": "https://acsm.org/resistance-training-guidelines-update-2026/",
+        "accessedAt": "2026-10-05",
+        "notes": "Published 2026-03-17. Brief factual paraphrase of the ACSM summary; no copied infographic or clinical prescription."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Codex machine source verification; no human subject reviewer",
+      "editorialReviewerRole": "Codex machine validation; personal-use publication",
+      "reviewedAt": "2026-10-05",
+      "nextReviewDue": "2027-10-05",
+      "claimReviewComplete": true,
+      "notes": "published_personal_use; no independent human scientific review. The next date is a scheduled recheck, not a completed future review."
+    },
+    "updatedAt": "2026-10-05"
+  }
+]

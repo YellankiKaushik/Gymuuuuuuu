@@ -44,16 +44,19 @@ export function RecoveryKnowledge({
   );
   return (
     <>
-      <section className="recovery-card">
-        <h2>{slug ? "Reviewed detail unavailable" : "Reviewed knowledge"}</h2>
-        <p>
-          The supplied {recoveryReference.seedTaxonomy.length} records are draft
-          taxonomy, without complete claims, sources and review approval. No
-          reviewed {routines ? "routines" : "articles"} are available yet.
-        </p>
-        <p>Local routines are independent of this publication gate.</p>
-        <a href="/mobility/custom">Create or use your own routine</a>
-      </section>
+      {articles.length === 0 && (
+        <section className="recovery-card">
+          <h2>{slug ? "Reviewed detail unavailable" : "Reviewed knowledge"}</h2>
+          <p>
+            The supplied {recoveryReference.seedTaxonomy.length} records are
+            draft taxonomy, without complete claims, sources and review
+            approval. No reviewed {routines ? "routines" : "articles"} are
+            available yet.
+          </p>
+          <p>Local routines are independent of this publication gate.</p>
+          <a href="/mobility/custom">Create or use your own routine</a>
+        </section>
+      )}
       {!slug && (
         <>
           <div className="recovery-grid">
@@ -106,8 +109,40 @@ export function RecoveryKnowledge({
       )}
       {articles.map((article) => (
         <article className="recovery-card" key={article.id}>
-          <h2>{article.title}</h2>
+          <h2>
+            <a href={`/recovery/topics/${article.slug}`}>{article.title}</a>
+          </h2>
           <p>{article.definition}</p>
+          <p>
+            Personal-use publication · machine source verification · no
+            independent human review.
+          </p>
+          <ul>
+            {article.limitations.map((text) => (
+              <li key={text}>{text}</li>
+            ))}
+          </ul>
+          <ul>
+            {article.contraindications.map((text) => (
+              <li key={text}>{text}</li>
+            ))}
+          </ul>
+          <p>
+            Source checked {article.review.reviewedAt} by{" "}
+            {article.review.reviewer}.
+          </p>
+          <ul>
+            {article.sourceIds.map((id) => {
+              const source = recoveryReference.sources.find(
+                (s) => s.id === id,
+              )!;
+              return (
+                <li key={id}>
+                  <a href={source.url}>{source.title}</a> ({source.year})
+                </li>
+              );
+            })}
+          </ul>
           <p>
             {article.population} · {article.context}
           </p>

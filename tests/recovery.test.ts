@@ -223,7 +223,13 @@ it("exports five CSV families without missing-as-zero or spreadsheet formula exe
   expect(csv).toContain(",,");
   for (const kind of ["checkins", "soreness", "sessions", "routines"] as const)
     expect(recoveryCsv(root, kind)).toContain("id");
-  expect(publicRecoveryArticles).toHaveLength(0);
+  expect(publicRecoveryArticles.map((r) => r.id)).toEqual([
+    "sleep_duration_adults",
+    "sleep_regularity",
+  ]);
+  expect(publicRecoveryArticles.every((r) => r.sourceIds.length > 0)).toBe(
+    true,
+  );
   expect(() => validateRecoveryRelease()).not.toThrow();
 });
 it("records each side explicitly and rejects unknown exercise references", () => {

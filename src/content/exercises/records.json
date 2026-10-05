@@ -1,1 +1,143 @@
-[]
+[
+  {
+    "id": "exercise_dumbbell_curl",
+    "slug": "dumbbell-curl",
+    "displayName": "Dumbbell curl",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "movementPatternIds": [
+      "pattern_elbow_flexion"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A light-weight elbow-bending exercise. This version follows a gentle public-sector strength routine, with standing or seated execution.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_biceps_brachii",
+        "role": "primary",
+        "qualifier": "Elbow flexion role; no activation percentage or exact isolation claim.",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Hold light weights with feet about hip-width apart."
+      ],
+      "executionSteps": [
+        "Keep upper arms beside the body and bend the elbows slowly, bringing the weights toward the shoulders.",
+        "Lower slowly back to the starting position."
+      ],
+      "finishOrReset": "Return to the start under control; the source also allows sitting.",
+      "keyCheckpoints": [
+        "Upper arms remain beside the body; move slowly."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Moving the upper arms away from the sides during the described curl.",
+        "whyItMatters": "This changes the setup described by the source.",
+        "correction": "Return to the stated arm position and use the light-weight version.",
+        "severity": "minor",
+        "sourceIds": [
+          "public_strength_2024"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 3,
+          "max": 3
+        },
+        "repRange": {
+          "min": 5,
+          "max": 5
+        },
+        "restSeconds": null,
+        "confidence": "limited",
+        "loadNotes": "The source uses light weights.",
+        "qualifier": "This gentle source routine gives three sets of five curls per arm. It is not a universal strength or hypertrophy prescription. Rest and breathing timing are not specified by this source.",
+        "sourceIds": [
+          "public_strength_2024"
+        ]
+      }
+    ],
+    "safety": {
+      "notMedicalAdvice": true,
+      "stopSignals": [
+        "Stop if exercise produces pain or you become unwell."
+      ],
+      "notes": "Seek qualified advice when unsure about suitability, with a health problem, injury, symptoms, recent surgery, pregnancy or other concerns. Source video safety context; no individual clearance."
+    },
+    "media": [
+      {
+        "id": "diagram_curl_elbow_flexion_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/curl-elbow-flexion.svg",
+        "alt": "Original movement schematic showing the upper arm beside the body as the elbow bends; not an anatomical model.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-05",
+        "whySelected": "Machine-checked against the stated written movement cue. No human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "gray_1918_upper_arm",
+        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443\u2013445)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
+        "sourceType": "textbook",
+        "reviewedAt": "2026-10-05",
+        "notes": "Public-domain historical anatomy; not training-effect evidence."
+      },
+      {
+        "id": "public_strength_2024",
+        "title": "Public-sector strength exercise guidance",
+        "publisher": "Department of Health and Social Care",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "sourceType": "government-guideline",
+        "reviewedAt": "2026-10-05",
+        "notes": "Contains public sector information licensed under the Open Government Licence v3.0."
+      },
+      {
+        "id": "public_video_safety_2023",
+        "title": "Public-sector exercise safety information",
+        "publisher": "Department of Health and Social Care",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-and-resistance/body-blast-arms/",
+        "sourceType": "government-guideline",
+        "reviewedAt": "2026-10-05",
+        "notes": "Contains public sector information licensed under the Open Government Licence v3.0."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-05",
+      "anatomyReviewedAt": "2026-10-05",
+      "safetyReviewedAt": "2026-10-05",
+      "mediaReviewedAt": "2026-10-05",
+      "nextReviewDue": "2027-02-28",
+      "notes": "Source facts and original diagram machine-validated. No independent human or clinical review. Publication does not establish individual suitability."
+    }
+  }
+]

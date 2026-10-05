@@ -7,7 +7,7 @@
 .progress-page .progress-field, .progress-page form > label, .progress-page > label { display: grid; gap: .4rem; font-weight: 600; }
 .progress-page input:not([type=checkbox]), .progress-page select, .progress-page textarea { width: 100%; min-height: 2.75rem; border: 1px solid var(--border, #9caaba); border-radius: .5rem; padding: .55rem .7rem; color: inherit; background: var(--surface, #fff); font: inherit; }
 .progress-page input[type=checkbox] { min-width: 1.2rem; min-height: 1.2rem; }
-.progress-page button { min-height: 2.75rem; border: 1px solid var(--border, #8a98aa); border-radius: .55rem; padding: .55rem .85rem; background: var(--accent, #075985); color: #fff; font: inherit; font-weight: 650; cursor: pointer; }
+.progress-page button { min-height: 2.75rem; border: 1px solid var(--border, #8a98aa); border-radius: .55rem; padding: .55rem .85rem; background: var(--accent, #075985); color: var(--surface, #fff); font: inherit; font-weight: 650; cursor: pointer; }
 .progress-page button:disabled { opacity: .65; cursor: wait; }
 .progress-page :is(a,button,input,select,textarea):focus-visible { outline: 3px solid #0e7490; outline-offset: 3px; }
 .progress-page .progress-table-wrap { overflow-x: auto; max-width: 100%; }

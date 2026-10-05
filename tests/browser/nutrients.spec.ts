@@ -13,7 +13,7 @@ test("nutrient routes, filters, framework isolation and hidden draft topics", as
   await expect(page).toHaveURL(/q=B12/);
   await expect(
     page.getByRole("heading", {
-      name: "Reviewed nutrient articles are being prepared.",
+      name: "No reviewed topics match.",
     }),
   ).toBeVisible();
   await page
