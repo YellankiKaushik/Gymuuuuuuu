@@ -1,6 +1,27 @@
 export type Domain = 'Learn' | 'Train' | 'Eat' | 'Recover' | 'Track' | 'Tools' | 'Saved' | 'System'
 export interface ModuleDefinition { path: string; title: string; domain: Domain; phase: number; description: string }
 export const modules: readonly ModuleDefinition[] = [
+  {path:"/cardio/learn",title:"Cardio learning library",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/learn/$topicSlug",title:"Reviewed cardio topic",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/modalities",title:"Reviewed activity guidance",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/modalities/$modalitySlug",title:"Reviewed modality",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/plans",title:"Reviewed cardio plan finder",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/plans/$planSlug",title:"Reviewed cardio plan",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/custom-plans",title:"My cardio plans",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/custom-plans/create",title:"Build my cardio plan",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/conditioning",title:"Conditioning routines",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/conditioning/routines/$routineSlug",title:"Reviewed conditioning routine",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/conditioning/custom",title:"Build my conditioning routine",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/session/new",title:"Start or record cardio",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/session/active",title:"Active cardio session",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/history",title:"Cardio history",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/history/$sessionId",title:"Cardio session record",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/progress",title:"Cardio observations over time",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/calculators/pace",title:"Pace & speed calculator",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/calculators/intensity",title:"Intensity methods",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/methodology",title:"Cardio methodology",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/settings",title:"Cardio settings & backup",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
+  {path:"/cardio/privacy",title:"Cardio local data & privacy",domain:'Train',phase:13,description:'Method-labelled cardio tools and optional browser-local activity records.'},
   { path: '/recovery/check-in', title: 'Daily recovery check-in', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
   { path: '/recovery/history', title: 'Recovery history', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
   { path: '/recovery/topics', title: 'Recovery topics', domain: 'Recover', phase: 12, description: 'Optional device-local recovery, sleep and routine tools.' },
@@ -33,7 +54,7 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/programs/$slug', title: 'Program detail', domain: 'Train', phase: 5, description: 'Weekly schedules, progression and exercise substitutions.' },
   { path: '/workout', title: 'Workout workspace', domain: 'Train', phase: 6, description: 'A future home for your sessions, sets and optional training logs.' },
   { path: '/workout/history', title: 'Workout history', domain: 'Track', phase: 6, description: 'Review your device-local sessions and training records.' },
-  { path: '/cardio', title: 'Cardio & conditioning', domain: 'Train', phase: 7, description: 'Explore conditioning methods, planning and optional session logs.' },
+  { path: '/cardio', title: 'Cardio & conditioning', domain: 'Train', phase: 13, description: 'Explore conditioning methods, planning and optional session logs.' },
   { path: '/eat', title: 'Eat', domain: 'Eat', phase: 1, description: 'Connect food knowledge with practical nutrition planning.' },
   { path: '/foods', title: 'Food encyclopedia', domain: 'Eat', phase: 7, description: 'Discover foods with transparent composition data and sources.' },
   { path: '/foods/$slug', title: 'Food detail', domain: 'Eat', phase: 7, description: 'Food composition per 100 g and clearly defined serving masses.' },
@@ -118,7 +139,7 @@ export interface NavigationItem {
 }
 const groupPaths: Record<string, readonly string[]> = {
   learn: ['/muscles', '/exercises', '/learn/workout-science', '/nutrients', '/supplements'],
-  train: ['/workout', '/workout/history', '/cardio'], eat: ['/diet-planning', '/recipes', '/nutrition'], recover: ['/mobility'],
+  train: ['/workout', '/workout/history', '/cardio', '/conditioning'], eat: ['/diet-planning', '/recipes', '/nutrition'], recover: ['/mobility'],
 }
 const aliases: Record<string, readonly string[]> = {
   '/diet-planning': ['calorie', 'energy', 'macros', 'targets'], '/tools': ['calorie', 'calculator', 'timer', 'compare'],
@@ -138,7 +159,7 @@ export const navigationItems: readonly NavigationItem[] = [
     id: `${['/train', '/eat', '/track'].includes(module.path) ? 'hub-' : ''}${module.path.slice(1).replaceAll('/', '-').replace('$', '')}`, label: module.title, href: module.path,
     description: module.description, icon: (module.domain === 'Eat' ? 'leaf' : module.domain === 'Train' ? 'dumbbell' : module.domain === 'Recover' ? 'moon' : module.domain === 'Track' ? 'chart' : module.path === '/settings' ? 'settings' : module.path === '/about/sources' ? 'help' : 'book') as NavigationItem['icon'],
     aliases: aliases[module.path] ?? [], groupId: Object.entries(groupPaths).find(([, paths]) => paths.includes(module.path))?.[0],
-    visibility: (module.path.includes('$') || module.path.startsWith('/recovery/') || module.path.startsWith('/sleep/') || module.path.startsWith('/mobility/') || module.path.startsWith('/warm-ups/') || module.path.startsWith('/nutrition/') || module.path.startsWith('/recipes/') || module.path.startsWith('/meal-plans/') || ['/train', '/eat', '/track', '/training-science','/diet','/nutrition-log'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
+    visibility: (module.path.includes('$') || module.path.startsWith('/cardio/') || module.path.startsWith('/conditioning/') || module.path.startsWith('/recovery/') || module.path.startsWith('/sleep/') || module.path.startsWith('/mobility/') || module.path.startsWith('/warm-ups/') || module.path.startsWith('/nutrition/') || module.path.startsWith('/recipes/') || module.path.startsWith('/meal-plans/') || ['/train', '/eat', '/track', '/training-science','/diet','/nutrition-log'].includes(module.path) ? 'contextual' : 'secondary') as 'contextual' | 'secondary', mobilePrimary: false, order: index + 20,
   })),
 ]
 export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const

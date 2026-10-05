@@ -1,6 +1,5 @@
-import { metadataFor } from '../lib/route-metadata'
-import { createFileRoute } from '@tanstack/react-router'
-import { ModulePage } from '../components/module-page'
-import { modules } from '../data/navigation'
-export const Route = createFileRoute('/cardio')({ head: () => metadataFor('/cardio'), component: Page })
-function Page() { const module = modules.find((item) => item.path === '/cardio'); return module ? <ModulePage module={module} /> : null }
+import {createFileRoute} from '@tanstack/react-router';
+import {cardioMetadata} from '../features/cardio/metadata';
+import {HomePage} from '../features/cardio/pages';
+export const Route=createFileRoute('/cardio')({head:()=>cardioMetadata('/cardio'),component:Page});
+function Page(){return <HomePage />;}

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CardioRouteImport } from './routes/cardio'
+import { Route as ConditioningRouteImport } from './routes/conditioning'
 import { Route as DietRouteImport } from './routes/diet'
 import { Route as DietPlanningRouteImport } from './routes/diet-planning'
 import { Route as EatRouteImport } from './routes/eat'
@@ -38,6 +39,16 @@ import { Route as TrainingScienceRouteImport } from './routes/training-science'
 import { Route as WarmUpsRouteImport } from './routes/warm-ups'
 import { Route as WorkoutRouteImport } from './routes/workout'
 import { Route as AboutSourcesRouteImport } from './routes/about.sources'
+import { Route as CardioCustomPlansRouteImport } from './routes/cardio_.custom-plans'
+import { Route as CardioHistoryRouteImport } from './routes/cardio_.history'
+import { Route as CardioLearnRouteImport } from './routes/cardio_.learn'
+import { Route as CardioMethodologyRouteImport } from './routes/cardio_.methodology'
+import { Route as CardioModalitiesRouteImport } from './routes/cardio_.modalities'
+import { Route as CardioPlansRouteImport } from './routes/cardio_.plans'
+import { Route as CardioPrivacyRouteImport } from './routes/cardio_.privacy'
+import { Route as CardioProgressRouteImport } from './routes/cardio_.progress'
+import { Route as CardioSettingsRouteImport } from './routes/cardio_.settings'
+import { Route as ConditioningCustomRouteImport } from './routes/conditioning_.custom'
 import { Route as DietPlanningIndexRouteImport } from './routes/diet-planning.index'
 import { Route as DietPlanningEnergyRouteImport } from './routes/diet-planning.energy'
 import { Route as DietPlanningGoalRouteImport } from './routes/diet-planning.goal'
@@ -93,6 +104,16 @@ import { Route as SleepMethodologyRouteImport } from './routes/sleep_.methodolog
 import { Route as WarmUpsRoutineSlugRouteImport } from './routes/warm-ups_.$routineSlug'
 import { Route as WorkoutHistoryRouteImport } from './routes/workout_.history'
 import { Route as WorkoutSettingsRouteImport } from './routes/workout_.settings'
+import { Route as CardioCalculatorsIntensityRouteImport } from './routes/cardio_.calculators_.intensity'
+import { Route as CardioCalculatorsPaceRouteImport } from './routes/cardio_.calculators_.pace'
+import { Route as CardioCustomPlansCreateRouteImport } from './routes/cardio_.custom-plans_.create'
+import { Route as CardioHistorySessionIdRouteImport } from './routes/cardio_.history_.$sessionId'
+import { Route as CardioLearnTopicSlugRouteImport } from './routes/cardio_.learn_.$topicSlug'
+import { Route as CardioModalitiesModalitySlugRouteImport } from './routes/cardio_.modalities_.$modalitySlug'
+import { Route as CardioPlansPlanSlugRouteImport } from './routes/cardio_.plans_.$planSlug'
+import { Route as CardioSessionActiveRouteImport } from './routes/cardio_.session_.active'
+import { Route as CardioSessionNewRouteImport } from './routes/cardio_.session_.new'
+import { Route as ConditioningRoutinesRoutineSlugRouteImport } from './routes/conditioning_.routines_.$routineSlug'
 import { Route as DietPlanningPlansIndexRouteImport } from './routes/diet-planning.plans.index'
 import { Route as DietPlanningPlansPlanIdRouteImport } from './routes/diet-planning.plans.$planId'
 import { Route as FoodsCategoriesCategoryIdRouteImport } from './routes/foods_.categories_.$categoryId'
@@ -123,6 +144,11 @@ const IndexRoute = IndexRouteImport.update({
 const CardioRoute = CardioRouteImport.update({
   id: '/cardio',
   path: '/cardio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConditioningRoute = ConditioningRouteImport.update({
+  id: '/conditioning',
+  path: '/conditioning',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DietRoute = DietRouteImport.update({
@@ -258,6 +284,56 @@ const WorkoutRoute = WorkoutRouteImport.update({
 const AboutSourcesRoute = AboutSourcesRouteImport.update({
   id: '/about/sources',
   path: '/about/sources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioCustomPlansRoute = CardioCustomPlansRouteImport.update({
+  id: '/cardio_/custom-plans',
+  path: '/cardio/custom-plans',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioHistoryRoute = CardioHistoryRouteImport.update({
+  id: '/cardio_/history',
+  path: '/cardio/history',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioLearnRoute = CardioLearnRouteImport.update({
+  id: '/cardio_/learn',
+  path: '/cardio/learn',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioMethodologyRoute = CardioMethodologyRouteImport.update({
+  id: '/cardio_/methodology',
+  path: '/cardio/methodology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioModalitiesRoute = CardioModalitiesRouteImport.update({
+  id: '/cardio_/modalities',
+  path: '/cardio/modalities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioPlansRoute = CardioPlansRouteImport.update({
+  id: '/cardio_/plans',
+  path: '/cardio/plans',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioPrivacyRoute = CardioPrivacyRouteImport.update({
+  id: '/cardio_/privacy',
+  path: '/cardio/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioProgressRoute = CardioProgressRouteImport.update({
+  id: '/cardio_/progress',
+  path: '/cardio/progress',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioSettingsRoute = CardioSettingsRouteImport.update({
+  id: '/cardio_/settings',
+  path: '/cardio/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConditioningCustomRoute = ConditioningCustomRouteImport.update({
+  id: '/conditioning_/custom',
+  path: '/conditioning/custom',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DietPlanningIndexRoute = DietPlanningIndexRouteImport.update({
@@ -537,6 +613,59 @@ const WorkoutSettingsRoute = WorkoutSettingsRouteImport.update({
   path: '/workout/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CardioCalculatorsIntensityRoute =
+  CardioCalculatorsIntensityRouteImport.update({
+    id: '/cardio_/calculators_/intensity',
+    path: '/cardio/calculators/intensity',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CardioCalculatorsPaceRoute = CardioCalculatorsPaceRouteImport.update({
+  id: '/cardio_/calculators_/pace',
+  path: '/cardio/calculators/pace',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioCustomPlansCreateRoute = CardioCustomPlansCreateRouteImport.update({
+  id: '/cardio_/custom-plans_/create',
+  path: '/cardio/custom-plans/create',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioHistorySessionIdRoute = CardioHistorySessionIdRouteImport.update({
+  id: '/cardio_/history_/$sessionId',
+  path: '/cardio/history/$sessionId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioLearnTopicSlugRoute = CardioLearnTopicSlugRouteImport.update({
+  id: '/cardio_/learn_/$topicSlug',
+  path: '/cardio/learn/$topicSlug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioModalitiesModalitySlugRoute =
+  CardioModalitiesModalitySlugRouteImport.update({
+    id: '/cardio_/modalities_/$modalitySlug',
+    path: '/cardio/modalities/$modalitySlug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CardioPlansPlanSlugRoute = CardioPlansPlanSlugRouteImport.update({
+  id: '/cardio_/plans_/$planSlug',
+  path: '/cardio/plans/$planSlug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioSessionActiveRoute = CardioSessionActiveRouteImport.update({
+  id: '/cardio_/session_/active',
+  path: '/cardio/session/active',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardioSessionNewRoute = CardioSessionNewRouteImport.update({
+  id: '/cardio_/session_/new',
+  path: '/cardio/session/new',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConditioningRoutinesRoutineSlugRoute =
+  ConditioningRoutinesRoutineSlugRouteImport.update({
+    id: '/conditioning_/routines_/$routineSlug',
+    path: '/conditioning/routines/$routineSlug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const DietPlanningPlansIndexRoute = DietPlanningPlansIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -657,6 +786,7 @@ const WorkoutExercisesExerciseIdHistoryRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cardio': typeof CardioRoute
+  '/conditioning': typeof ConditioningRoute
   '/diet': typeof DietRoute
   '/diet-planning': typeof DietPlanningRouteWithChildren
   '/eat': typeof EatRoute
@@ -684,6 +814,16 @@ export interface FileRoutesByFullPath {
   '/warm-ups': typeof WarmUpsRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/cardio/custom-plans': typeof CardioCustomPlansRoute
+  '/cardio/history': typeof CardioHistoryRoute
+  '/cardio/learn': typeof CardioLearnRoute
+  '/cardio/methodology': typeof CardioMethodologyRoute
+  '/cardio/modalities': typeof CardioModalitiesRoute
+  '/cardio/plans': typeof CardioPlansRoute
+  '/cardio/privacy': typeof CardioPrivacyRoute
+  '/cardio/progress': typeof CardioProgressRoute
+  '/cardio/settings': typeof CardioSettingsRoute
+  '/conditioning/custom': typeof ConditioningCustomRoute
   '/diet-planning/energy': typeof DietPlanningEnergyRoute
   '/diet-planning/goal': typeof DietPlanningGoalRoute
   '/diet-planning/macros': typeof DietPlanningMacrosRoute
@@ -739,6 +879,16 @@ export interface FileRoutesByFullPath {
   '/workout/settings': typeof WorkoutSettingsRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
   '/nutrition/': typeof NutritionIndexRoute
+  '/cardio/calculators/intensity': typeof CardioCalculatorsIntensityRoute
+  '/cardio/calculators/pace': typeof CardioCalculatorsPaceRoute
+  '/cardio/custom-plans/create': typeof CardioCustomPlansCreateRoute
+  '/cardio/history/$sessionId': typeof CardioHistorySessionIdRoute
+  '/cardio/learn/$topicSlug': typeof CardioLearnTopicSlugRoute
+  '/cardio/modalities/$modalitySlug': typeof CardioModalitiesModalitySlugRoute
+  '/cardio/plans/$planSlug': typeof CardioPlansPlanSlugRoute
+  '/cardio/session/active': typeof CardioSessionActiveRoute
+  '/cardio/session/new': typeof CardioSessionNewRoute
+  '/conditioning/routines/$routineSlug': typeof ConditioningRoutinesRoutineSlugRoute
   '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods/categories/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
@@ -764,6 +914,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cardio': typeof CardioRoute
+  '/conditioning': typeof ConditioningRoute
   '/diet': typeof DietRoute
   '/eat': typeof EatRoute
   '/exercises': typeof ExercisesRoute
@@ -789,6 +940,16 @@ export interface FileRoutesByTo {
   '/warm-ups': typeof WarmUpsRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/cardio/custom-plans': typeof CardioCustomPlansRoute
+  '/cardio/history': typeof CardioHistoryRoute
+  '/cardio/learn': typeof CardioLearnRoute
+  '/cardio/methodology': typeof CardioMethodologyRoute
+  '/cardio/modalities': typeof CardioModalitiesRoute
+  '/cardio/plans': typeof CardioPlansRoute
+  '/cardio/privacy': typeof CardioPrivacyRoute
+  '/cardio/progress': typeof CardioProgressRoute
+  '/cardio/settings': typeof CardioSettingsRoute
+  '/conditioning/custom': typeof ConditioningCustomRoute
   '/diet-planning/energy': typeof DietPlanningEnergyRoute
   '/diet-planning/goal': typeof DietPlanningGoalRoute
   '/diet-planning/macros': typeof DietPlanningMacrosRoute
@@ -842,6 +1003,16 @@ export interface FileRoutesByTo {
   '/workout/settings': typeof WorkoutSettingsRoute
   '/diet-planning': typeof DietPlanningIndexRoute
   '/nutrition': typeof NutritionIndexRoute
+  '/cardio/calculators/intensity': typeof CardioCalculatorsIntensityRoute
+  '/cardio/calculators/pace': typeof CardioCalculatorsPaceRoute
+  '/cardio/custom-plans/create': typeof CardioCustomPlansCreateRoute
+  '/cardio/history/$sessionId': typeof CardioHistorySessionIdRoute
+  '/cardio/learn/$topicSlug': typeof CardioLearnTopicSlugRoute
+  '/cardio/modalities/$modalitySlug': typeof CardioModalitiesModalitySlugRoute
+  '/cardio/plans/$planSlug': typeof CardioPlansPlanSlugRoute
+  '/cardio/session/active': typeof CardioSessionActiveRoute
+  '/cardio/session/new': typeof CardioSessionNewRoute
+  '/conditioning/routines/$routineSlug': typeof ConditioningRoutinesRoutineSlugRoute
   '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods/categories/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn/workout-science/$slug': typeof LearnWorkoutScienceSlugRoute
@@ -868,6 +1039,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cardio': typeof CardioRoute
+  '/conditioning': typeof ConditioningRoute
   '/diet': typeof DietRoute
   '/diet-planning': typeof DietPlanningRouteWithChildren
   '/eat': typeof EatRoute
@@ -895,6 +1067,16 @@ export interface FileRoutesById {
   '/warm-ups': typeof WarmUpsRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/cardio_/custom-plans': typeof CardioCustomPlansRoute
+  '/cardio_/history': typeof CardioHistoryRoute
+  '/cardio_/learn': typeof CardioLearnRoute
+  '/cardio_/methodology': typeof CardioMethodologyRoute
+  '/cardio_/modalities': typeof CardioModalitiesRoute
+  '/cardio_/plans': typeof CardioPlansRoute
+  '/cardio_/privacy': typeof CardioPrivacyRoute
+  '/cardio_/progress': typeof CardioProgressRoute
+  '/cardio_/settings': typeof CardioSettingsRoute
+  '/conditioning_/custom': typeof ConditioningCustomRoute
   '/diet-planning/energy': typeof DietPlanningEnergyRoute
   '/diet-planning/goal': typeof DietPlanningGoalRoute
   '/diet-planning/macros': typeof DietPlanningMacrosRoute
@@ -950,6 +1132,16 @@ export interface FileRoutesById {
   '/workout_/settings': typeof WorkoutSettingsRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
   '/nutrition/': typeof NutritionIndexRoute
+  '/cardio_/calculators_/intensity': typeof CardioCalculatorsIntensityRoute
+  '/cardio_/calculators_/pace': typeof CardioCalculatorsPaceRoute
+  '/cardio_/custom-plans_/create': typeof CardioCustomPlansCreateRoute
+  '/cardio_/history_/$sessionId': typeof CardioHistorySessionIdRoute
+  '/cardio_/learn_/$topicSlug': typeof CardioLearnTopicSlugRoute
+  '/cardio_/modalities_/$modalitySlug': typeof CardioModalitiesModalitySlugRoute
+  '/cardio_/plans_/$planSlug': typeof CardioPlansPlanSlugRoute
+  '/cardio_/session_/active': typeof CardioSessionActiveRoute
+  '/cardio_/session_/new': typeof CardioSessionNewRoute
+  '/conditioning_/routines_/$routineSlug': typeof ConditioningRoutinesRoutineSlugRoute
   '/diet-planning/plans/$planId': typeof DietPlanningPlansPlanIdRoute
   '/foods_/categories_/$categoryId': typeof FoodsCategoriesCategoryIdRoute
   '/learn_/workout-science_/$slug': typeof LearnWorkoutScienceSlugRoute
@@ -977,6 +1169,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/cardio'
+    | '/conditioning'
     | '/diet'
     | '/diet-planning'
     | '/eat'
@@ -1004,6 +1197,16 @@ export interface FileRouteTypes {
     | '/warm-ups'
     | '/workout'
     | '/about/sources'
+    | '/cardio/custom-plans'
+    | '/cardio/history'
+    | '/cardio/learn'
+    | '/cardio/methodology'
+    | '/cardio/modalities'
+    | '/cardio/plans'
+    | '/cardio/privacy'
+    | '/cardio/progress'
+    | '/cardio/settings'
+    | '/conditioning/custom'
     | '/diet-planning/energy'
     | '/diet-planning/goal'
     | '/diet-planning/macros'
@@ -1059,6 +1262,16 @@ export interface FileRouteTypes {
     | '/workout/settings'
     | '/diet-planning/'
     | '/nutrition/'
+    | '/cardio/calculators/intensity'
+    | '/cardio/calculators/pace'
+    | '/cardio/custom-plans/create'
+    | '/cardio/history/$sessionId'
+    | '/cardio/learn/$topicSlug'
+    | '/cardio/modalities/$modalitySlug'
+    | '/cardio/plans/$planSlug'
+    | '/cardio/session/active'
+    | '/cardio/session/new'
+    | '/conditioning/routines/$routineSlug'
     | '/diet-planning/plans/$planId'
     | '/foods/categories/$categoryId'
     | '/learn/workout-science/$slug'
@@ -1084,6 +1297,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/cardio'
+    | '/conditioning'
     | '/diet'
     | '/eat'
     | '/exercises'
@@ -1109,6 +1323,16 @@ export interface FileRouteTypes {
     | '/warm-ups'
     | '/workout'
     | '/about/sources'
+    | '/cardio/custom-plans'
+    | '/cardio/history'
+    | '/cardio/learn'
+    | '/cardio/methodology'
+    | '/cardio/modalities'
+    | '/cardio/plans'
+    | '/cardio/privacy'
+    | '/cardio/progress'
+    | '/cardio/settings'
+    | '/conditioning/custom'
     | '/diet-planning/energy'
     | '/diet-planning/goal'
     | '/diet-planning/macros'
@@ -1162,6 +1386,16 @@ export interface FileRouteTypes {
     | '/workout/settings'
     | '/diet-planning'
     | '/nutrition'
+    | '/cardio/calculators/intensity'
+    | '/cardio/calculators/pace'
+    | '/cardio/custom-plans/create'
+    | '/cardio/history/$sessionId'
+    | '/cardio/learn/$topicSlug'
+    | '/cardio/modalities/$modalitySlug'
+    | '/cardio/plans/$planSlug'
+    | '/cardio/session/active'
+    | '/cardio/session/new'
+    | '/conditioning/routines/$routineSlug'
     | '/diet-planning/plans/$planId'
     | '/foods/categories/$categoryId'
     | '/learn/workout-science/$slug'
@@ -1187,6 +1421,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/cardio'
+    | '/conditioning'
     | '/diet'
     | '/diet-planning'
     | '/eat'
@@ -1214,6 +1449,16 @@ export interface FileRouteTypes {
     | '/warm-ups'
     | '/workout'
     | '/about/sources'
+    | '/cardio_/custom-plans'
+    | '/cardio_/history'
+    | '/cardio_/learn'
+    | '/cardio_/methodology'
+    | '/cardio_/modalities'
+    | '/cardio_/plans'
+    | '/cardio_/privacy'
+    | '/cardio_/progress'
+    | '/cardio_/settings'
+    | '/conditioning_/custom'
     | '/diet-planning/energy'
     | '/diet-planning/goal'
     | '/diet-planning/macros'
@@ -1269,6 +1514,16 @@ export interface FileRouteTypes {
     | '/workout_/settings'
     | '/diet-planning/'
     | '/nutrition/'
+    | '/cardio_/calculators_/intensity'
+    | '/cardio_/calculators_/pace'
+    | '/cardio_/custom-plans_/create'
+    | '/cardio_/history_/$sessionId'
+    | '/cardio_/learn_/$topicSlug'
+    | '/cardio_/modalities_/$modalitySlug'
+    | '/cardio_/plans_/$planSlug'
+    | '/cardio_/session_/active'
+    | '/cardio_/session_/new'
+    | '/conditioning_/routines_/$routineSlug'
     | '/diet-planning/plans/$planId'
     | '/foods_/categories_/$categoryId'
     | '/learn_/workout-science_/$slug'
@@ -1295,6 +1550,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CardioRoute: typeof CardioRoute
+  ConditioningRoute: typeof ConditioningRoute
   DietRoute: typeof DietRoute
   DietPlanningRoute: typeof DietPlanningRouteWithChildren
   EatRoute: typeof EatRoute
@@ -1322,6 +1578,16 @@ export interface RootRouteChildren {
   WarmUpsRoute: typeof WarmUpsRoute
   WorkoutRoute: typeof WorkoutRoute
   AboutSourcesRoute: typeof AboutSourcesRoute
+  CardioCustomPlansRoute: typeof CardioCustomPlansRoute
+  CardioHistoryRoute: typeof CardioHistoryRoute
+  CardioLearnRoute: typeof CardioLearnRoute
+  CardioMethodologyRoute: typeof CardioMethodologyRoute
+  CardioModalitiesRoute: typeof CardioModalitiesRoute
+  CardioPlansRoute: typeof CardioPlansRoute
+  CardioPrivacyRoute: typeof CardioPrivacyRoute
+  CardioProgressRoute: typeof CardioProgressRoute
+  CardioSettingsRoute: typeof CardioSettingsRoute
+  ConditioningCustomRoute: typeof ConditioningCustomRoute
   ExercisesSlugRoute: typeof ExercisesSlugRoute
   FoodsSlugRoute: typeof FoodsSlugRoute
   FoodsCategoriesRoute: typeof FoodsCategoriesRoute
@@ -1361,6 +1627,16 @@ export interface RootRouteChildren {
   WarmUpsRoutineSlugRoute: typeof WarmUpsRoutineSlugRoute
   WorkoutHistoryRoute: typeof WorkoutHistoryRoute
   WorkoutSettingsRoute: typeof WorkoutSettingsRoute
+  CardioCalculatorsIntensityRoute: typeof CardioCalculatorsIntensityRoute
+  CardioCalculatorsPaceRoute: typeof CardioCalculatorsPaceRoute
+  CardioCustomPlansCreateRoute: typeof CardioCustomPlansCreateRoute
+  CardioHistorySessionIdRoute: typeof CardioHistorySessionIdRoute
+  CardioLearnTopicSlugRoute: typeof CardioLearnTopicSlugRoute
+  CardioModalitiesModalitySlugRoute: typeof CardioModalitiesModalitySlugRoute
+  CardioPlansPlanSlugRoute: typeof CardioPlansPlanSlugRoute
+  CardioSessionActiveRoute: typeof CardioSessionActiveRoute
+  CardioSessionNewRoute: typeof CardioSessionNewRoute
+  ConditioningRoutinesRoutineSlugRoute: typeof ConditioningRoutinesRoutineSlugRoute
   FoodsCategoriesCategoryIdRoute: typeof FoodsCategoriesCategoryIdRoute
   LearnWorkoutScienceSlugRoute: typeof LearnWorkoutScienceSlugRoute
   LearnWorkoutScienceGlossaryRoute: typeof LearnWorkoutScienceGlossaryRoute
@@ -1393,6 +1669,13 @@ declare module '@tanstack/react-router' {
       path: '/cardio'
       fullPath: '/cardio'
       preLoaderRoute: typeof CardioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conditioning': {
+      id: '/conditioning'
+      path: '/conditioning'
+      fullPath: '/conditioning'
+      preLoaderRoute: typeof ConditioningRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/diet': {
@@ -1582,6 +1865,76 @@ declare module '@tanstack/react-router' {
       path: '/about/sources'
       fullPath: '/about/sources'
       preLoaderRoute: typeof AboutSourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/custom-plans': {
+      id: '/cardio_/custom-plans'
+      path: '/cardio/custom-plans'
+      fullPath: '/cardio/custom-plans'
+      preLoaderRoute: typeof CardioCustomPlansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/history': {
+      id: '/cardio_/history'
+      path: '/cardio/history'
+      fullPath: '/cardio/history'
+      preLoaderRoute: typeof CardioHistoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/learn': {
+      id: '/cardio_/learn'
+      path: '/cardio/learn'
+      fullPath: '/cardio/learn'
+      preLoaderRoute: typeof CardioLearnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/methodology': {
+      id: '/cardio_/methodology'
+      path: '/cardio/methodology'
+      fullPath: '/cardio/methodology'
+      preLoaderRoute: typeof CardioMethodologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/modalities': {
+      id: '/cardio_/modalities'
+      path: '/cardio/modalities'
+      fullPath: '/cardio/modalities'
+      preLoaderRoute: typeof CardioModalitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/plans': {
+      id: '/cardio_/plans'
+      path: '/cardio/plans'
+      fullPath: '/cardio/plans'
+      preLoaderRoute: typeof CardioPlansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/privacy': {
+      id: '/cardio_/privacy'
+      path: '/cardio/privacy'
+      fullPath: '/cardio/privacy'
+      preLoaderRoute: typeof CardioPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/progress': {
+      id: '/cardio_/progress'
+      path: '/cardio/progress'
+      fullPath: '/cardio/progress'
+      preLoaderRoute: typeof CardioProgressRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/settings': {
+      id: '/cardio_/settings'
+      path: '/cardio/settings'
+      fullPath: '/cardio/settings'
+      preLoaderRoute: typeof CardioSettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conditioning_/custom': {
+      id: '/conditioning_/custom'
+      path: '/conditioning/custom'
+      fullPath: '/conditioning/custom'
+      preLoaderRoute: typeof ConditioningCustomRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/diet-planning/': {
@@ -1969,6 +2322,76 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkoutSettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cardio_/calculators_/intensity': {
+      id: '/cardio_/calculators_/intensity'
+      path: '/cardio/calculators/intensity'
+      fullPath: '/cardio/calculators/intensity'
+      preLoaderRoute: typeof CardioCalculatorsIntensityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/calculators_/pace': {
+      id: '/cardio_/calculators_/pace'
+      path: '/cardio/calculators/pace'
+      fullPath: '/cardio/calculators/pace'
+      preLoaderRoute: typeof CardioCalculatorsPaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/custom-plans_/create': {
+      id: '/cardio_/custom-plans_/create'
+      path: '/cardio/custom-plans/create'
+      fullPath: '/cardio/custom-plans/create'
+      preLoaderRoute: typeof CardioCustomPlansCreateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/history_/$sessionId': {
+      id: '/cardio_/history_/$sessionId'
+      path: '/cardio/history/$sessionId'
+      fullPath: '/cardio/history/$sessionId'
+      preLoaderRoute: typeof CardioHistorySessionIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/learn_/$topicSlug': {
+      id: '/cardio_/learn_/$topicSlug'
+      path: '/cardio/learn/$topicSlug'
+      fullPath: '/cardio/learn/$topicSlug'
+      preLoaderRoute: typeof CardioLearnTopicSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/modalities_/$modalitySlug': {
+      id: '/cardio_/modalities_/$modalitySlug'
+      path: '/cardio/modalities/$modalitySlug'
+      fullPath: '/cardio/modalities/$modalitySlug'
+      preLoaderRoute: typeof CardioModalitiesModalitySlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/plans_/$planSlug': {
+      id: '/cardio_/plans_/$planSlug'
+      path: '/cardio/plans/$planSlug'
+      fullPath: '/cardio/plans/$planSlug'
+      preLoaderRoute: typeof CardioPlansPlanSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/session_/active': {
+      id: '/cardio_/session_/active'
+      path: '/cardio/session/active'
+      fullPath: '/cardio/session/active'
+      preLoaderRoute: typeof CardioSessionActiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cardio_/session_/new': {
+      id: '/cardio_/session_/new'
+      path: '/cardio/session/new'
+      fullPath: '/cardio/session/new'
+      preLoaderRoute: typeof CardioSessionNewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conditioning_/routines_/$routineSlug': {
+      id: '/conditioning_/routines_/$routineSlug'
+      path: '/conditioning/routines/$routineSlug'
+      fullPath: '/conditioning/routines/$routineSlug'
+      preLoaderRoute: typeof ConditioningRoutinesRoutineSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/diet-planning/plans/': {
       id: '/diet-planning/plans/'
       path: '/'
@@ -2212,6 +2635,7 @@ const NutritionRouteWithChildren = NutritionRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CardioRoute: CardioRoute,
+  ConditioningRoute: ConditioningRoute,
   DietRoute: DietRoute,
   DietPlanningRoute: DietPlanningRouteWithChildren,
   EatRoute: EatRoute,
@@ -2239,6 +2663,16 @@ const rootRouteChildren: RootRouteChildren = {
   WarmUpsRoute: WarmUpsRoute,
   WorkoutRoute: WorkoutRoute,
   AboutSourcesRoute: AboutSourcesRoute,
+  CardioCustomPlansRoute: CardioCustomPlansRoute,
+  CardioHistoryRoute: CardioHistoryRoute,
+  CardioLearnRoute: CardioLearnRoute,
+  CardioMethodologyRoute: CardioMethodologyRoute,
+  CardioModalitiesRoute: CardioModalitiesRoute,
+  CardioPlansRoute: CardioPlansRoute,
+  CardioPrivacyRoute: CardioPrivacyRoute,
+  CardioProgressRoute: CardioProgressRoute,
+  CardioSettingsRoute: CardioSettingsRoute,
+  ConditioningCustomRoute: ConditioningCustomRoute,
   ExercisesSlugRoute: ExercisesSlugRoute,
   FoodsSlugRoute: FoodsSlugRoute,
   FoodsCategoriesRoute: FoodsCategoriesRoute,
@@ -2278,6 +2712,16 @@ const rootRouteChildren: RootRouteChildren = {
   WarmUpsRoutineSlugRoute: WarmUpsRoutineSlugRoute,
   WorkoutHistoryRoute: WorkoutHistoryRoute,
   WorkoutSettingsRoute: WorkoutSettingsRoute,
+  CardioCalculatorsIntensityRoute: CardioCalculatorsIntensityRoute,
+  CardioCalculatorsPaceRoute: CardioCalculatorsPaceRoute,
+  CardioCustomPlansCreateRoute: CardioCustomPlansCreateRoute,
+  CardioHistorySessionIdRoute: CardioHistorySessionIdRoute,
+  CardioLearnTopicSlugRoute: CardioLearnTopicSlugRoute,
+  CardioModalitiesModalitySlugRoute: CardioModalitiesModalitySlugRoute,
+  CardioPlansPlanSlugRoute: CardioPlansPlanSlugRoute,
+  CardioSessionActiveRoute: CardioSessionActiveRoute,
+  CardioSessionNewRoute: CardioSessionNewRoute,
+  ConditioningRoutinesRoutineSlugRoute: ConditioningRoutinesRoutineSlugRoute,
   FoodsCategoriesCategoryIdRoute: FoodsCategoriesCategoryIdRoute,
   LearnWorkoutScienceSlugRoute: LearnWorkoutScienceSlugRoute,
   LearnWorkoutScienceGlossaryRoute: LearnWorkoutScienceGlossaryRoute,

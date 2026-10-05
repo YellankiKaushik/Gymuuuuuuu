@@ -1,0 +1,2723 @@
+{
+  "metadata": {
+    "title": "Fitness OS Phase 13 Cardio and Conditioning Reference Data",
+    "version": "1.0.0",
+    "date": "5 August 2026",
+    "status": "review-contracts-and-draft-identities",
+    "seedRecordCount": 202,
+    "notice": "Seed records establish identities only. Lovable must not fabricate training prescriptions or publish draft records."
+  },
+  "publicHealthGuidance": {
+    "frameworkId": "who_hhs_adult_aerobic",
+    "population": "adults",
+    "moderateMinutesRangePerWeek": [
+      150,
+      300
+    ],
+    "vigorousMinutesRangePerWeek": [
+      75,
+      150
+    ],
+    "vigorousMinuteEquivalentModerateMinutes": 2,
+    "minimumBoutMinutes": 0,
+    "notes": [
+      "These are public-health ranges, not an individualized program.",
+      "Inactive users should start with tolerable amounts and progress.",
+      "More than the minimum can provide additional benefit, but recovery and medical context matter."
+    ],
+    "sourceIds": [
+      "src_who_pa_guidelines_2020",
+      "src_hhs_pa_guidelines_2018"
+    ]
+  },
+  "intensityMethods": [
+    {
+      "id": "talk_test",
+      "displayName": "Talk test",
+      "outputs": [
+        "comfortable_conversation",
+        "talk_but_not_sing",
+        "few_words_only",
+        "unable_to_speak_comfortably"
+      ],
+      "notes": "Practical relative-intensity method; not ideal for every interval format."
+    },
+    {
+      "id": "perceived_effort_0_10",
+      "displayName": "Generic perceived effort 0–10",
+      "outputs": [
+        "0_to_10"
+      ],
+      "notes": "User-reported; do not label as a proprietary clinical scale."
+    },
+    {
+      "id": "percent_hrmax",
+      "displayName": "Percentage of maximum heart rate",
+      "outputs": [
+        "lower_bpm",
+        "upper_bpm"
+      ],
+      "notes": "Requires measured or explicitly estimated HRmax."
+    },
+    {
+      "id": "heart_rate_reserve",
+      "displayName": "Heart-rate reserve",
+      "outputs": [
+        "lower_bpm",
+        "upper_bpm"
+      ],
+      "notes": "Requires resting HR and measured or explicitly estimated HRmax."
+    },
+    {
+      "id": "pace",
+      "displayName": "Pace",
+      "outputs": [
+        "seconds_per_km",
+        "seconds_per_mile"
+      ],
+      "notes": "Mode-specific; terrain and environment affect comparability."
+    },
+    {
+      "id": "power",
+      "displayName": "Power",
+      "outputs": [
+        "watts"
+      ],
+      "notes": "Use only when the device provides a defined power metric."
+    },
+    {
+      "id": "manual_text",
+      "displayName": "Reviewed text instruction",
+      "outputs": [
+        "instruction"
+      ],
+      "notes": "Must identify the method and source."
+    }
+  ],
+  "absoluteIntensity": {
+    "light": {
+      "metMin": 1.6,
+      "metMax": 2.9
+    },
+    "moderate": {
+      "metMin": 3,
+      "metMax": 5.9
+    },
+    "vigorous": {
+      "metMin": 6,
+      "metMax": null
+    },
+    "warning": "Absolute MET categories do not account for individual fitness, age, disability or disease and must not override relative symptoms or perceived effort.",
+    "sourceId": "src_cdc_intensity_2025"
+  },
+  "heartRateContracts": {
+    "agePredictedHrmax": {
+      "formulaId": "tanaka_2001",
+      "formula": "208 - (0.7 × ageYears)",
+      "rounding": "nearest_whole_bpm",
+      "sourceId": "src_tanaka_hrmax_2001",
+      "warning": "Population estimate with substantial individual error; measured HRmax is preferred when safely obtained."
+    },
+    "heartRateReserve": {
+      "formula": "restingHR + fraction × (maxHR - restingHR)",
+      "requiredInputs": [
+        "restingHeartRateBpm",
+        "maxHeartRateBpm",
+        "fraction"
+      ],
+      "warning": "Do not use when heart-rate response is unreliable or a clinician supplied a different target."
+    },
+    "percentHrmax": {
+      "formula": "fraction × maxHeartRateBpm",
+      "warning": "Do not present as a precise physiological threshold."
+    }
+  },
+  "sessionTypes": [
+    "easy_continuous",
+    "moderate_continuous",
+    "long_easy",
+    "tempo_sustained",
+    "fartlek",
+    "aerobic_intervals",
+    "hiit",
+    "sprint_interval",
+    "repeat_sprint",
+    "recovery_cardio",
+    "walk_jog",
+    "hill_session",
+    "circuit",
+    "mixed_modal",
+    "shuttle",
+    "sled_conditioning",
+    "sport_session",
+    "race_or_time_trial",
+    "warm_up_only",
+    "cool_down_only",
+    "manual_other"
+  ],
+  "segmentTypes": [
+    "warm_up",
+    "steady",
+    "work",
+    "recovery",
+    "lap",
+    "transition",
+    "cool_down"
+  ],
+  "targetModes": [
+    "duration",
+    "distance",
+    "repetitions",
+    "open"
+  ],
+  "talkTestStates": [
+    "not_recorded",
+    "comfortable_conversation",
+    "talk_but_not_sing",
+    "few_words_only",
+    "unable_to_speak_comfortably"
+  ],
+  "heartRateSources": [
+    "none",
+    "manual_pulse",
+    "chest_strap_estimate",
+    "wrist_device_estimate",
+    "machine_estimate",
+    "other_device_estimate"
+  ],
+  "environmentTags": [
+    "indoor",
+    "outdoor",
+    "treadmill",
+    "track",
+    "road",
+    "trail",
+    "pool",
+    "hot",
+    "humid",
+    "cold",
+    "windy",
+    "high_altitude",
+    "poor_air_quality",
+    "unknown"
+  ],
+  "stopSignalCategories": [
+    "chest_pressure_or_pain",
+    "unusual_or_extreme_shortness_of_breath",
+    "dizziness_fainting_or_confusion",
+    "fast_or_irregular_heartbeat",
+    "new_severe_pain",
+    "new_neurological_symptom",
+    "heat_illness_concern",
+    "other_urgent_concern"
+  ],
+  "unitConversions": {
+    "kilometersPerMile": 1.609344,
+    "metersPerMile": 1609.344,
+    "metersPerKilometer": 1000,
+    "secondsPerMinute": 60,
+    "minutesPerHour": 60
+  },
+  "modalities": [
+    {
+      "id": "modality_walking_outdoor",
+      "displayName": "Outdoor Walking",
+      "phase03ExerciseId": null,
+      "tags": [
+        "low_impact",
+        "beginner"
+      ]
+    },
+    {
+      "id": "modality_treadmill_walking",
+      "displayName": "Treadmill Walking",
+      "phase03ExerciseId": "exercise_treadmill_walk",
+      "tags": [
+        "low_impact",
+        "indoor"
+      ]
+    },
+    {
+      "id": "modality_incline_walking",
+      "displayName": "Incline Walking",
+      "phase03ExerciseId": "exercise_treadmill_walk",
+      "tags": [
+        "low_impact"
+      ]
+    },
+    {
+      "id": "modality_hiking",
+      "displayName": "Hiking",
+      "phase03ExerciseId": null,
+      "tags": [
+        "outdoor"
+      ]
+    },
+    {
+      "id": "modality_running_outdoor",
+      "displayName": "Outdoor Running",
+      "phase03ExerciseId": null,
+      "tags": [
+        "impact"
+      ]
+    },
+    {
+      "id": "modality_treadmill_running",
+      "displayName": "Treadmill Running",
+      "phase03ExerciseId": "exercise_treadmill_run",
+      "tags": [
+        "impact",
+        "indoor"
+      ]
+    },
+    {
+      "id": "modality_walk_jog",
+      "displayName": "Walk–Jog",
+      "phase03ExerciseId": null,
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "modality_cycling_outdoor",
+      "displayName": "Outdoor Cycling",
+      "phase03ExerciseId": null,
+      "tags": [
+        "low_impact",
+        "outdoor"
+      ]
+    },
+    {
+      "id": "modality_stationary_cycling",
+      "displayName": "Stationary Cycling",
+      "phase03ExerciseId": "exercise_stationary_cycling",
+      "tags": [
+        "low_impact",
+        "indoor"
+      ]
+    },
+    {
+      "id": "modality_air_bike",
+      "displayName": "Air Bike",
+      "phase03ExerciseId": null,
+      "tags": [
+        "mixed_modal",
+        "indoor"
+      ]
+    },
+    {
+      "id": "modality_rowing_ergometer",
+      "displayName": "Rowing Ergometer",
+      "phase03ExerciseId": "exercise_rowing_ergometer",
+      "tags": [
+        "low_impact",
+        "skill"
+      ]
+    },
+    {
+      "id": "modality_elliptical",
+      "displayName": "Elliptical Trainer",
+      "phase03ExerciseId": "exercise_elliptical_training",
+      "tags": [
+        "low_impact",
+        "indoor"
+      ]
+    },
+    {
+      "id": "modality_stair_climber",
+      "displayName": "Stair Climber",
+      "phase03ExerciseId": null,
+      "tags": [
+        "indoor"
+      ]
+    },
+    {
+      "id": "modality_stair_walking",
+      "displayName": "Stair Walking",
+      "phase03ExerciseId": null,
+      "tags": [
+        "impact"
+      ]
+    },
+    {
+      "id": "modality_swimming",
+      "displayName": "Swimming",
+      "phase03ExerciseId": null,
+      "tags": [
+        "low_impact",
+        "skill"
+      ]
+    },
+    {
+      "id": "modality_deep_water_running",
+      "displayName": "Deep-Water Running",
+      "phase03ExerciseId": null,
+      "tags": [
+        "low_impact"
+      ]
+    },
+    {
+      "id": "modality_jump_rope",
+      "displayName": "Jump Rope",
+      "phase03ExerciseId": "exercise_jump_rope",
+      "tags": [
+        "impact",
+        "skill"
+      ]
+    },
+    {
+      "id": "modality_sled_push",
+      "displayName": "Sled Push",
+      "phase03ExerciseId": "exercise_sled_push",
+      "tags": [
+        "conditioning"
+      ]
+    },
+    {
+      "id": "modality_sled_drag",
+      "displayName": "Sled Drag",
+      "phase03ExerciseId": "exercise_sled_drag",
+      "tags": [
+        "conditioning"
+      ]
+    },
+    {
+      "id": "modality_battle_rope",
+      "displayName": "Battle Rope",
+      "phase03ExerciseId": null,
+      "tags": [
+        "conditioning"
+      ]
+    },
+    {
+      "id": "modality_dance_cardio",
+      "displayName": "Dance Cardio",
+      "phase03ExerciseId": null,
+      "tags": [
+        "skill"
+      ]
+    },
+    {
+      "id": "modality_field_court_sport",
+      "displayName": "Field or Court Sport",
+      "phase03ExerciseId": null,
+      "tags": [
+        "variable_intensity"
+      ]
+    },
+    {
+      "id": "modality_mixed_modal_circuit",
+      "displayName": "Mixed-Modal Circuit",
+      "phase03ExerciseId": null,
+      "tags": [
+        "conditioning"
+      ]
+    },
+    {
+      "id": "modality_wheelchair_cardio",
+      "displayName": "Wheelchair Cardio",
+      "phase03ExerciseId": null,
+      "tags": [
+        "adaptive"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_who_pa_guidelines_2020",
+      "title": "WHO guidelines on physical activity and sedentary behaviour",
+      "publisher": "World Health Organization",
+      "year": 2020,
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "roles": [
+        "public_health_volume",
+        "sedentary_behavior",
+        "adult_guidance"
+      ],
+      "licenseNote": "CC BY-NC-SA 3.0 IGO; summarize with attribution and preserve licence constraints."
+    },
+    {
+      "id": "src_hhs_pa_guidelines_2018",
+      "title": "Physical Activity Guidelines for Americans, 2nd edition",
+      "publisher": "U.S. Department of Health and Human Services",
+      "year": 2018,
+      "type": "government_guideline",
+      "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines",
+      "roles": [
+        "public_health_volume",
+        "progression",
+        "bouts",
+        "adult_guidance"
+      ],
+      "licenseNote": "U.S. government guidance; cite the current official page and edition."
+    },
+    {
+      "id": "src_cdc_intensity_2025",
+      "title": "How to Measure Physical Activity Intensity",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+      "roles": [
+        "talk_test",
+        "absolute_met_intensity",
+        "moderate_vigorous_examples"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_compendium_2024",
+      "title": "2024 Adult Compendium of Physical Activities: A third update of the energy costs of human activities",
+      "publisher": "Journal of Sport and Health Science",
+      "year": 2024,
+      "type": "systematic_compendium",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38242596/",
+      "roles": [
+        "met_reference",
+        "activity_classification",
+        "energy_cost_limitations"
+      ],
+      "licenseNote": "Do not bulk-copy the Compendium without confirming reuse rights. Store source codes only when licensed and reviewed."
+    },
+    {
+      "id": "src_tanaka_hrmax_2001",
+      "title": "Age-predicted maximal heart rate revisited",
+      "publisher": "Journal of the American College of Cardiology",
+      "year": 2001,
+      "type": "primary_research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11153730/",
+      "roles": [
+        "age_predicted_hrmax"
+      ],
+      "licenseNote": "Use the equation with citation; label as an estimate with substantial individual error."
+    },
+    {
+      "id": "src_talk_test_review_2014",
+      "title": "The talk test: a useful tool for prescribing and monitoring exercise intensity",
+      "publisher": "Current Opinion in Cardiology",
+      "year": 2014,
+      "type": "review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25010379/",
+      "roles": [
+        "talk_test",
+        "relative_intensity"
+      ],
+      "licenseNote": "Summarize; do not reproduce copyrighted protocols verbatim."
+    },
+    {
+      "id": "src_talk_test_regulation_2015",
+      "title": "Evidence that the talk test can be used to regulate exercise intensity",
+      "publisher": "Journal of Strength and Conditioning Research",
+      "year": 2015,
+      "type": "validation_study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25536539/",
+      "roles": [
+        "talk_test_regulation"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_hiit_umbrella_2024",
+      "title": "High-intensity interval training and cardiorespiratory fitness in adults: an umbrella review",
+      "publisher": "Scandinavian Journal of Medicine & Science in Sports",
+      "year": 2024,
+      "type": "umbrella_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38760916/",
+      "roles": [
+        "hiit_effectiveness",
+        "evidence_quality",
+        "population_variability"
+      ],
+      "licenseNote": "Summarize effect direction and limitations; do not claim universal superiority."
+    },
+    {
+      "id": "src_concurrent_meta_2022",
+      "title": "Compatibility of Concurrent Aerobic and Strength Training for Skeletal Muscle Size and Function",
+      "publisher": "Sports Medicine",
+      "year": 2022,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34757594/",
+      "roles": [
+        "concurrent_training",
+        "strength_hypertrophy",
+        "explosive_strength"
+      ],
+      "licenseNote": "Summarize with population and protocol limitations."
+    },
+    {
+      "id": "src_concurrent_fiber_meta_2022",
+      "title": "Effects of Concurrent Aerobic and Strength Training on Muscle Fiber Hypertrophy",
+      "publisher": "Sports Medicine",
+      "year": 2022,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35476184/",
+      "roles": [
+        "concurrent_training",
+        "fiber_hypertrophy",
+        "running_cycling_context"
+      ],
+      "licenseNote": "Use only as qualified context; avoid deterministic modality claims."
+    },
+    {
+      "id": "src_acsm_screening_2015",
+      "title": "Updating ACSM's Recommendations for Exercise Preparticipation Health Screening",
+      "publisher": "Medicine & Science in Sports & Exercise",
+      "year": 2015,
+      "type": "consensus_update",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26473759/",
+      "roles": [
+        "preparticipation_screening",
+        "medical_clearance_boundary"
+      ],
+      "licenseNote": "Use conceptual factors; do not reproduce proprietary questionnaires."
+    },
+    {
+      "id": "src_aha_target_hr_2024",
+      "title": "Target Heart Rates Chart",
+      "publisher": "American Heart Association",
+      "year": 2024,
+      "type": "professional_guidance",
+      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/target-heart-rates",
+      "roles": [
+        "heart_rate_guidance",
+        "medication_caution"
+      ],
+      "licenseNote": "Summarize and label age-predicted values as general guides."
+    },
+    {
+      "id": "src_aha_warning_signs_2024",
+      "title": "Develop a Physical Activity Plan for You",
+      "publisher": "American Heart Association",
+      "year": 2024,
+      "type": "professional_guidance",
+      "url": "https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/develop-a-physical-activity-plan-for-you",
+      "roles": [
+        "exercise_stop_signals",
+        "urgent_symptoms"
+      ],
+      "licenseNote": "Summarize with citation; emergency wording must be localized where deployed."
+    },
+    {
+      "id": "src_cdc_heat_athletes_2024",
+      "title": "Heat and Athletes",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html",
+      "roles": [
+        "heat_safety",
+        "outdoor_exercise"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_cdc_heatrisk_aqi_2025",
+      "title": "How to use the HeatRisk Tool and Air Quality Index",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/heat-health/hcp/clinical-guidance/how-to-use-the-heatrisk-tool-and-air-quality-index.html",
+      "roles": [
+        "air_quality",
+        "heat_risk",
+        "outdoor_modification"
+      ],
+      "licenseNote": "Do not hard-code local advisories without a current approved data source."
+    },
+    {
+      "id": "src_aha_pa_recommendations",
+      "title": "American Heart Association Recommendations for Physical Activity in Adults",
+      "publisher": "American Heart Association",
+      "year": 2024,
+      "type": "professional_guidance",
+      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults",
+      "roles": [
+        "public_health_volume",
+        "talk_test_examples",
+        "beginner_progression"
+      ],
+      "licenseNote": "Summarize with citation."
+    }
+  ],
+  "seedTaxonomy": [
+    {
+      "id": "topic_cardio_definition",
+      "slug": "topic-cardio-definition",
+      "title": "Cardio, Aerobic Exercise and Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cardiorespiratory_fitness",
+      "slug": "topic-cardiorespiratory-fitness",
+      "title": "Cardiorespiratory Fitness",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_fitt_vp",
+      "slug": "topic-fitt-vp",
+      "title": "FITT-VP Programming Framework",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_physical_activity_vs_exercise",
+      "slug": "topic-physical-activity-vs-exercise",
+      "title": "Physical Activity vs Structured Exercise",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_health_guidelines_vs_training_plan",
+      "slug": "topic-health-guidelines-vs-training-plan",
+      "title": "Public-Health Guidelines vs Individual Training",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_every_move_counts",
+      "slug": "topic-every-move-counts",
+      "title": "Why Short Bouts Still Count",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_aerobic_base",
+      "slug": "topic-aerobic-base",
+      "title": "Aerobic Base Development",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_specificity_cardio",
+      "slug": "topic-specificity-cardio",
+      "title": "Specificity in Cardio Training",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_overload_cardio",
+      "slug": "topic-overload-cardio",
+      "title": "Progressive Overload for Cardio",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_reversibility_cardio",
+      "slug": "topic-reversibility-cardio",
+      "title": "Detraining and Reversibility",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_individual_response_cardio",
+      "slug": "topic-individual-response-cardio",
+      "title": "Individual Response and Baseline Fitness",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cardio_adherence",
+      "slug": "topic-cardio-adherence",
+      "title": "Adherence and Modality Preference",
+      "entityType": "knowledge_topic",
+      "domain": "foundations",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_absolute_vs_relative_intensity",
+      "slug": "topic-absolute-vs-relative-intensity",
+      "title": "Absolute vs Relative Intensity",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_met_definition",
+      "slug": "topic-met-definition",
+      "title": "Metabolic Equivalent of Task",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_met_limitations",
+      "slug": "topic-met-limitations",
+      "title": "Limitations of MET Values",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_talk_test",
+      "slug": "topic-talk-test",
+      "title": "Talk Test",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_perceived_exertion_0_10",
+      "slug": "topic-perceived-exertion-0-10",
+      "title": "Generic 0–10 Perceived Exertion",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_heart_rate_response",
+      "slug": "topic-heart-rate-response",
+      "title": "Heart-Rate Response to Exercise",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_heart_rate_reserve",
+      "slug": "topic-heart-rate-reserve",
+      "title": "Heart-Rate Reserve",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_percent_hrmax",
+      "slug": "topic-percent-hrmax",
+      "title": "Percentage of Maximum Heart Rate",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_measured_vs_estimated_hrmax",
+      "slug": "topic-measured-vs-estimated-hrmax",
+      "title": "Measured vs Age-Predicted Maximum Heart Rate",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_tanaka_hrmax_estimate",
+      "slug": "topic-tanaka-hrmax-estimate",
+      "title": "Tanaka Age-Predicted HRmax Estimate",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_heart_rate_medication_limits",
+      "slug": "topic-heart-rate-medication-limits",
+      "title": "Medications and Heart-Rate Limits",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_heat_dehydration_hr",
+      "slug": "topic-heat-dehydration-hr",
+      "title": "Heat, Dehydration and Heart Rate",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_pace_as_intensity",
+      "slug": "topic-pace-as-intensity",
+      "title": "Pace as an Intensity Metric",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_power_as_intensity",
+      "slug": "topic-power-as-intensity",
+      "title": "Power as an Intensity Metric",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_threshold_concepts",
+      "slug": "topic-threshold-concepts",
+      "title": "Ventilatory and Lactate Threshold Concepts",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_zone_systems_differ",
+      "slug": "topic-zone-systems-differ",
+      "title": "Why Training-Zone Systems Differ",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_zone_two_boundary",
+      "slug": "topic-zone-two-boundary",
+      "title": "Why “Zone 2” Is Not One Universal Number",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cross_method_disagreement",
+      "slug": "topic-cross-method-disagreement",
+      "title": "When Intensity Methods Disagree",
+      "entityType": "knowledge_topic",
+      "domain": "intensity",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_continuous_easy",
+      "slug": "topic-continuous-easy",
+      "title": "Easy Continuous Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_moderate_continuous",
+      "slug": "topic-moderate-continuous",
+      "title": "Moderate-Intensity Continuous Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_tempo_training",
+      "slug": "topic-tempo-training",
+      "title": "Tempo or Sustained-Hard Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_fartlek_training",
+      "slug": "topic-fartlek-training",
+      "title": "Fartlek Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_aerobic_intervals",
+      "slug": "topic-aerobic-intervals",
+      "title": "Aerobic Intervals",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_hiit_definition",
+      "slug": "topic-hiit-definition",
+      "title": "High-Intensity Interval Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_sprint_interval_training",
+      "slug": "topic-sprint-interval-training",
+      "title": "Sprint Interval Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_repeat_sprint_training",
+      "slug": "topic-repeat-sprint-training",
+      "title": "Repeated-Sprint Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_short_intervals",
+      "slug": "topic-short-intervals",
+      "title": "Short Intervals",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_long_intervals",
+      "slug": "topic-long-intervals",
+      "title": "Long Intervals",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_work_recovery_ratio",
+      "slug": "topic-work-recovery-ratio",
+      "title": "Work-to-Recovery Ratio",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_active_vs_passive_recovery",
+      "slug": "topic-active-vs-passive-recovery",
+      "title": "Active vs Passive Interval Recovery",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_interval_progression",
+      "slug": "topic-interval-progression",
+      "title": "Progressing Interval Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_circuit_conditioning",
+      "slug": "topic-circuit-conditioning",
+      "title": "Circuit Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_mixed_modal_conditioning",
+      "slug": "topic-mixed-modal-conditioning",
+      "title": "Mixed-Modal Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_shuttle_training",
+      "slug": "topic-shuttle-training",
+      "title": "Shuttle Training",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_sled_conditioning",
+      "slug": "topic-sled-conditioning",
+      "title": "Sled Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_jump_rope_conditioning",
+      "slug": "topic-jump-rope-conditioning",
+      "title": "Jump-Rope Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_amrap_conditioning",
+      "slug": "topic-amrap-conditioning",
+      "title": "AMRAP Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_emom_conditioning",
+      "slug": "topic-emom-conditioning",
+      "title": "EMOM Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_density_conditioning",
+      "slug": "topic-density-conditioning",
+      "title": "Training Density in Conditioning",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_skill_fatigue_tradeoff",
+      "slug": "topic-skill-fatigue-tradeoff",
+      "title": "Skill and Fatigue Trade-Offs",
+      "entityType": "knowledge_topic",
+      "domain": "formats",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_weekly_minutes",
+      "slug": "topic-weekly-minutes",
+      "title": "Weekly Aerobic Minutes",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_moderate_vigorous_equivalence",
+      "slug": "topic-moderate-vigorous-equivalence",
+      "title": "Moderate–Vigorous Minute Equivalence",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_frequency_cardio",
+      "slug": "topic-frequency-cardio",
+      "title": "Cardio Frequency",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_session_duration",
+      "slug": "topic-session-duration",
+      "title": "Session Duration",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cardio_progression_order",
+      "slug": "topic-cardio-progression-order",
+      "title": "Progress Duration, Frequency or Intensity?",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_beginner_progression",
+      "slug": "topic-beginner-progression",
+      "title": "Starting After Inactivity",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_base_before_intensity",
+      "slug": "topic-base-before-intensity",
+      "title": "Building Tolerance Before Intensity",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_hard_easy_distribution",
+      "slug": "topic-hard-easy-distribution",
+      "title": "Hard and Easy Session Distribution",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_recovery_between_intervals",
+      "slug": "topic-recovery-between-intervals",
+      "title": "Recovery Between Interval Sessions",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cardio_deload",
+      "slug": "topic-cardio-deload",
+      "title": "Cardio Deloads and Reduced Weeks",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cardio_taper",
+      "slug": "topic-cardio-taper",
+      "title": "Tapering for an Endurance Event",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cross_training",
+      "slug": "topic-cross-training",
+      "title": "Cross-Training",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_low_impact_substitution",
+      "slug": "topic-low-impact-substitution",
+      "title": "Low-Impact Substitution",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_surface_and_terrain",
+      "slug": "topic-surface-and-terrain",
+      "title": "Surface and Terrain",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_incline_and_grade",
+      "slug": "topic-incline-and-grade",
+      "title": "Incline and Grade",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cadence_context",
+      "slug": "topic-cadence-context",
+      "title": "Cadence as Context",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_pace_progress",
+      "slug": "topic-pace-progress",
+      "title": "Pace Progress Without Racing Every Session",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_distance_progress",
+      "slug": "topic-distance-progress",
+      "title": "Distance Progression",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_time_progress",
+      "slug": "topic-time-progress",
+      "title": "Time-Based Progression",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_event_specificity",
+      "slug": "topic-event-specificity",
+      "title": "Event-Specific Preparation",
+      "entityType": "knowledge_topic",
+      "domain": "programming",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_concurrent_training_overview",
+      "slug": "topic-concurrent-training-overview",
+      "title": "Combining Cardio and Strength Training",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_same_session_order",
+      "slug": "topic-same-session-order",
+      "title": "Same-Session Exercise Order",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_separating_sessions",
+      "slug": "topic-separating-sessions",
+      "title": "Separating Cardio and Strength Sessions",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_explosive_strength_interference",
+      "slug": "topic-explosive-strength-interference",
+      "title": "Explosive-Strength Interference",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_hypertrophy_concurrent_context",
+      "slug": "topic-hypertrophy-concurrent-context",
+      "title": "Hypertrophy and Concurrent Training",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_lower_body_fatigue",
+      "slug": "topic-lower-body-fatigue",
+      "title": "Lower-Body Fatigue Management",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_running_vs_cycling_concurrent",
+      "slug": "topic-running-vs-cycling-concurrent",
+      "title": "Running vs Cycling in Concurrent Training",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_priority_based_scheduling",
+      "slug": "topic-priority-based-scheduling",
+      "title": "Schedule by Training Priority",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cardio_on_rest_days",
+      "slug": "topic-cardio-on-rest-days",
+      "title": "Cardio on Strength Rest Days",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_conditioning_after_lifting",
+      "slug": "topic-conditioning-after-lifting",
+      "title": "Conditioning After Lifting",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_strength_after_cardio",
+      "slug": "topic-strength-after-cardio",
+      "title": "Strength After Cardio",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_recovery_cost_by_modality",
+      "slug": "topic-recovery-cost-by-modality",
+      "title": "Recovery Cost by Modality",
+      "entityType": "knowledge_topic",
+      "domain": "concurrent",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_distance_time_pace",
+      "slug": "topic-distance-time-pace",
+      "title": "Distance, Time and Pace",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_pace_vs_speed",
+      "slug": "topic-pace-vs-speed",
+      "title": "Pace vs Speed",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_average_vs_best_pace",
+      "slug": "topic-average-vs-best-pace",
+      "title": "Average Pace vs Best Pace",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_moving_vs_elapsed_time",
+      "slug": "topic-moving-vs-elapsed-time",
+      "title": "Moving Time vs Elapsed Time",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_heart_rate_average_max",
+      "slug": "topic-heart-rate-average-max",
+      "title": "Average vs Maximum Heart Rate",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_session_rpe",
+      "slug": "topic-session-rpe",
+      "title": "Session Perceived Exertion",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_interval_completion",
+      "slug": "topic-interval-completion",
+      "title": "Interval Completion",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_weekly_cardio_volume",
+      "slug": "topic-weekly-cardio-volume",
+      "title": "Weekly Cardio Volume",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_modality_specific_trends",
+      "slug": "topic-modality-specific-trends",
+      "title": "Modality-Specific Trends",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_no_vo2max_inference",
+      "slug": "topic-no-vo2max-inference",
+      "title": "Why the App Does Not Infer VO₂max",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_no_fitness_age",
+      "slug": "topic-no-fitness-age",
+      "title": "Why the App Does Not Calculate Fitness Age",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_no_calorie_credit",
+      "slug": "topic-no-calorie-credit",
+      "title": "Why Exercise Calories Are Not Credited Automatically",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_device_estimate_limits",
+      "slug": "topic-device-estimate-limits",
+      "title": "Consumer Device Estimate Limitations",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_manual_data_provenance",
+      "slug": "topic-manual-data-provenance",
+      "title": "Manual Data and Provenance",
+      "entityType": "knowledge_topic",
+      "domain": "measurement",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_preparticipation_screening",
+      "slug": "topic-preparticipation-screening",
+      "title": "Preparticipation Screening",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_stop_signals",
+      "slug": "topic-stop-signals",
+      "title": "Stop Signals During Exercise",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_chest_pain_boundary",
+      "slug": "topic-chest-pain-boundary",
+      "title": "Chest Pain or Pressure",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_unusual_breathlessness",
+      "slug": "topic-unusual-breathlessness",
+      "title": "Unusual Breathlessness",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_dizziness_syncope",
+      "slug": "topic-dizziness-syncope",
+      "title": "Dizziness, Fainting or Confusion",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_palpitations_boundary",
+      "slug": "topic-palpitations-boundary",
+      "title": "Fast or Irregular Heartbeat",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_pain_gait_change",
+      "slug": "topic-pain-gait-change",
+      "title": "Pain or Gait Change",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_heat_safety",
+      "slug": "topic-heat-safety",
+      "title": "Exercise in Heat",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_heat_acclimatization",
+      "slug": "topic-heat-acclimatization",
+      "title": "Heat Acclimatization",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_air_quality_exercise",
+      "slug": "topic-air-quality-exercise",
+      "title": "Air Quality and Outdoor Exercise",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_cold_weather_cardio",
+      "slug": "topic-cold-weather-cardio",
+      "title": "Cold-Weather Cardio",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_altitude_cardio",
+      "slug": "topic-altitude-cardio",
+      "title": "Altitude and Cardio",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_outdoor_visibility",
+      "slug": "topic-outdoor-visibility",
+      "title": "Visibility and Route Safety",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_hydration_context",
+      "slug": "topic-hydration-context",
+      "title": "Hydration Context",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_illness_and_cardio",
+      "slug": "topic-illness-and-cardio",
+      "title": "Illness and Cardio",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "topic_return_after_break",
+      "slug": "topic-return-after-break",
+      "title": "Returning After a Break",
+      "entityType": "knowledge_topic",
+      "domain": "safety",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_walking_outdoor",
+      "slug": "modality-walking-outdoor",
+      "title": "Outdoor Walking",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact",
+        "beginner"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_treadmill_walking",
+      "slug": "modality-treadmill-walking",
+      "title": "Treadmill Walking",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact",
+        "indoor"
+      ],
+      "phase03ExerciseId": "exercise_treadmill_walk"
+    },
+    {
+      "id": "modality_incline_walking",
+      "slug": "modality-incline-walking",
+      "title": "Incline Walking",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact"
+      ],
+      "phase03ExerciseId": "exercise_treadmill_walk"
+    },
+    {
+      "id": "modality_hiking",
+      "slug": "modality-hiking",
+      "title": "Hiking",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "outdoor"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_running_outdoor",
+      "slug": "modality-running-outdoor",
+      "title": "Outdoor Running",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "impact"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_treadmill_running",
+      "slug": "modality-treadmill-running",
+      "title": "Treadmill Running",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "impact",
+        "indoor"
+      ],
+      "phase03ExerciseId": "exercise_treadmill_run"
+    },
+    {
+      "id": "modality_walk_jog",
+      "slug": "modality-walk-jog",
+      "title": "Walk–Jog",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "beginner"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_cycling_outdoor",
+      "slug": "modality-cycling-outdoor",
+      "title": "Outdoor Cycling",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact",
+        "outdoor"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_stationary_cycling",
+      "slug": "modality-stationary-cycling",
+      "title": "Stationary Cycling",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact",
+        "indoor"
+      ],
+      "phase03ExerciseId": "exercise_stationary_cycling"
+    },
+    {
+      "id": "modality_air_bike",
+      "slug": "modality-air-bike",
+      "title": "Air Bike",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "mixed_modal",
+        "indoor"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_rowing_ergometer",
+      "slug": "modality-rowing-ergometer",
+      "title": "Rowing Ergometer",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact",
+        "skill"
+      ],
+      "phase03ExerciseId": "exercise_rowing_ergometer"
+    },
+    {
+      "id": "modality_elliptical",
+      "slug": "modality-elliptical",
+      "title": "Elliptical Trainer",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact",
+        "indoor"
+      ],
+      "phase03ExerciseId": "exercise_elliptical_training"
+    },
+    {
+      "id": "modality_stair_climber",
+      "slug": "modality-stair-climber",
+      "title": "Stair Climber",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "indoor"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_stair_walking",
+      "slug": "modality-stair-walking",
+      "title": "Stair Walking",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "impact"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_swimming",
+      "slug": "modality-swimming",
+      "title": "Swimming",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact",
+        "skill"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_deep_water_running",
+      "slug": "modality-deep-water-running",
+      "title": "Deep-Water Running",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "low_impact"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_jump_rope",
+      "slug": "modality-jump-rope",
+      "title": "Jump Rope",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "impact",
+        "skill"
+      ],
+      "phase03ExerciseId": "exercise_jump_rope"
+    },
+    {
+      "id": "modality_sled_push",
+      "slug": "modality-sled-push",
+      "title": "Sled Push",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "conditioning"
+      ],
+      "phase03ExerciseId": "exercise_sled_push"
+    },
+    {
+      "id": "modality_sled_drag",
+      "slug": "modality-sled-drag",
+      "title": "Sled Drag",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "conditioning"
+      ],
+      "phase03ExerciseId": "exercise_sled_drag"
+    },
+    {
+      "id": "modality_battle_rope",
+      "slug": "modality-battle-rope",
+      "title": "Battle Rope",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "conditioning"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_dance_cardio",
+      "slug": "modality-dance-cardio",
+      "title": "Dance Cardio",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "skill"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_field_court_sport",
+      "slug": "modality-field-court-sport",
+      "title": "Field or Court Sport",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "variable_intensity"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_mixed_modal_circuit",
+      "slug": "modality-mixed-modal-circuit",
+      "title": "Mixed-Modal Circuit",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "conditioning"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "modality_wheelchair_cardio",
+      "slug": "modality-wheelchair-cardio",
+      "title": "Wheelchair Cardio",
+      "entityType": "cardio_modality",
+      "domain": "modality",
+      "publicationStatus": "draft",
+      "tags": [
+        "adaptive"
+      ],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_beginner_walk_4w",
+      "slug": "plan-beginner-walk-4w",
+      "title": "Four-Week Beginner Walking Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_walk_progression_8w",
+      "slug": "plan-walk-progression-8w",
+      "title": "Eight-Week Walking Progression",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_walk_jog_intro_6w",
+      "slug": "plan-walk-jog-intro-6w",
+      "title": "Six-Week Walk–Jog Introduction",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_general_health_3d",
+      "slug": "plan-general-health-3d",
+      "title": "Three-Day General Cardio Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_general_health_5d",
+      "slug": "plan-general-health-5d",
+      "title": "Five-Day General Cardio Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_low_impact_base_4w",
+      "slug": "plan-low-impact-base-4w",
+      "title": "Four-Week Low-Impact Base Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_stationary_bike_beginner",
+      "slug": "plan-stationary-bike-beginner",
+      "title": "Beginner Stationary-Bike Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_rowing_beginner",
+      "slug": "plan-rowing-beginner",
+      "title": "Beginner Rowing-Ergometer Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_elliptical_beginner",
+      "slug": "plan-elliptical-beginner",
+      "title": "Beginner Elliptical Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_swimming_beginner",
+      "slug": "plan-swimming-beginner",
+      "title": "Beginner Swim-Conditioning Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_hiking_preparation",
+      "slug": "plan-hiking-preparation",
+      "title": "Hiking Preparation Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_jump_rope_intro",
+      "slug": "plan-jump-rope-intro",
+      "title": "Jump-Rope Introduction Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_base_building_6w",
+      "slug": "plan-base-building-6w",
+      "title": "Six-Week Aerobic Base Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_base_building_12w",
+      "slug": "plan-base-building-12w",
+      "title": "Twelve-Week Aerobic Base Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_one_interval_day",
+      "slug": "plan-one-interval-day",
+      "title": "One-Interval-Day Weekly Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_two_quality_days",
+      "slug": "plan-two-quality-days",
+      "title": "Two-Quality-Day Weekly Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_time_efficient_3x20",
+      "slug": "plan-time-efficient-3x20",
+      "title": "Three-by-Twenty-Minute Cardio Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_time_efficient_5x10",
+      "slug": "plan-time-efficient-5x10",
+      "title": "Five-by-Ten-Minute Cardio Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_strength_priority_cardio",
+      "slug": "plan-strength-priority-cardio",
+      "title": "Strength-Priority Cardio Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_hypertrophy_priority_cardio",
+      "slug": "plan-hypertrophy-priority-cardio",
+      "title": "Hypertrophy-Priority Cardio Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_cardio_priority_strength_support",
+      "slug": "plan-cardio-priority-strength-support",
+      "title": "Cardio-Priority Strength-Support Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_recomposition_cardio",
+      "slug": "plan-recomposition-cardio",
+      "title": "Body-Composition Support Cardio Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_recovery_cardio",
+      "slug": "plan-recovery-cardio",
+      "title": "Easy Recovery-Cardio Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_return_after_break_4w",
+      "slug": "plan-return-after-break-4w",
+      "title": "Four-Week Return-to-Cardio Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_treadmill_incline_4w",
+      "slug": "plan-treadmill-incline-4w",
+      "title": "Four-Week Incline-Walking Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_bike_interval_4w",
+      "slug": "plan-bike-interval-4w",
+      "title": "Four-Week Cycling-Interval Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_row_interval_4w",
+      "slug": "plan-row-interval-4w",
+      "title": "Four-Week Rowing-Interval Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_mixed_modal_conditioning_4w",
+      "slug": "plan-mixed-modal-conditioning-4w",
+      "title": "Four-Week Mixed-Modal Conditioning Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_sled_conditioning_4w",
+      "slug": "plan-sled-conditioning-4w",
+      "title": "Four-Week Sled-Conditioning Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_5k_general_foundation",
+      "slug": "plan-5k-general-foundation",
+      "title": "General 5K Foundation Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_10k_general_foundation",
+      "slug": "plan-10k-general-foundation",
+      "title": "General 10K Foundation Plan",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "plan_cardio_maintenance",
+      "slug": "plan-cardio-maintenance",
+      "title": "Cardio Maintenance Template",
+      "entityType": "cardio_plan_template",
+      "domain": "plan",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_easy_walk_20",
+      "slug": "routine-easy-walk-20",
+      "title": "20-Minute Easy Walk",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_brisk_walk_30",
+      "slug": "routine-brisk-walk-30",
+      "title": "30-Minute Brisk Walk",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_incline_walk_intervals",
+      "slug": "routine-incline-walk-intervals",
+      "title": "Incline-Walk Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_walk_jog_1_1",
+      "slug": "routine-walk-jog-1-1",
+      "title": "One-Minute Walk–Jog Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_easy_run_20",
+      "slug": "routine-easy-run-20",
+      "title": "20-Minute Easy Run",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_fartlek_20",
+      "slug": "routine-fartlek-20",
+      "title": "20-Minute Fartlek",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_tempo_intro",
+      "slug": "routine-tempo-intro",
+      "title": "Introductory Tempo Session",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_aerobic_intervals_4x4",
+      "slug": "routine-aerobic-intervals-4x4",
+      "title": "Four-by-Four Aerobic Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_short_intervals_10x1",
+      "slug": "routine-short-intervals-10x1",
+      "title": "Ten-by-One-Minute Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_bike_easy_30",
+      "slug": "routine-bike-easy-30",
+      "title": "30-Minute Easy Bike",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_bike_intervals_8x1",
+      "slug": "routine-bike-intervals-8x1",
+      "title": "Eight-by-One-Minute Bike Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_row_easy_20",
+      "slug": "routine-row-easy-20",
+      "title": "20-Minute Easy Row",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_row_intervals_6x2",
+      "slug": "routine-row-intervals-6x2",
+      "title": "Six-by-Two-Minute Row Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_elliptical_easy_30",
+      "slug": "routine-elliptical-easy-30",
+      "title": "30-Minute Easy Elliptical",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_stair_intervals_10x1",
+      "slug": "routine-stair-intervals-10x1",
+      "title": "Stair-Climber Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_swim_easy_skill",
+      "slug": "routine-swim-easy-skill",
+      "title": "Easy Technique-Focused Swim",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_jump_rope_10x30",
+      "slug": "routine-jump-rope-10x30",
+      "title": "Jump-Rope Ten-by-Thirty-Second Session",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_sled_push_intervals",
+      "slug": "routine-sled-push-intervals",
+      "title": "Sled-Push Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_sled_drag_aerobic",
+      "slug": "routine-sled-drag-aerobic",
+      "title": "Continuous Sled-Drag Session",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_battle_rope_intervals",
+      "slug": "routine-battle-rope-intervals",
+      "title": "Battle-Rope Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_air_bike_10x30",
+      "slug": "routine-air-bike-10x30",
+      "title": "Air-Bike Ten-by-Thirty-Second Session",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_mixed_modal_10_min",
+      "slug": "routine-mixed-modal-10-min",
+      "title": "Ten-Minute Mixed-Modal Circuit",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_mixed_modal_20_min",
+      "slug": "routine-mixed-modal-20-min",
+      "title": "Twenty-Minute Mixed-Modal Circuit",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_bodyweight_conditioning",
+      "slug": "routine-bodyweight-conditioning",
+      "title": "Bodyweight Conditioning Circuit",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_low_impact_conditioning",
+      "slug": "routine-low-impact-conditioning",
+      "title": "Low-Impact Conditioning Circuit",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_strength_cardio_finisher",
+      "slug": "routine-strength-cardio-finisher",
+      "title": "Short Post-Strength Conditioning Finisher",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_recovery_cycle_20",
+      "slug": "routine-recovery-cycle-20",
+      "title": "20-Minute Recovery Cycle",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_recovery_walk_20",
+      "slug": "routine-recovery-walk-20",
+      "title": "20-Minute Recovery Walk",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_shuttle_intro",
+      "slug": "routine-shuttle-intro",
+      "title": "Introductory Shuttle Session",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_hill_walk_intervals",
+      "slug": "routine-hill-walk-intervals",
+      "title": "Hill-Walk Intervals",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_hill_run_intro",
+      "slug": "routine-hill-run-intro",
+      "title": "Introductory Hill-Run Session",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    },
+    {
+      "id": "routine_long_easy_duration",
+      "slug": "routine-long-easy-duration",
+      "title": "Long Easy-Duration Session",
+      "entityType": "conditioning_routine",
+      "domain": "routine",
+      "publicationStatus": "draft",
+      "tags": [],
+      "phase03ExerciseId": null
+    }
+  ]
+}
