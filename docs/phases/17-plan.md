@@ -44,4 +44,6 @@
 
 ## Handoff
 
+Phase implementation commit: `e5432e9`.
+
 After this checkpoint is pushed, read all Phase 18 documents before implementation. Phase 17 adds no accounts, cloud storage, telemetry or public fitness facts. Preserve its encryption deferral, full-media packaging note and import-as-copy limitation when Phase 18 adds deployment and release checks.
