@@ -10,8 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AnalyticsRouteImport } from './routes/analytics'
 import { Route as CardioRouteImport } from './routes/cardio'
 import { Route as ConditioningRouteImport } from './routes/conditioning'
+import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as DietRouteImport } from './routes/diet'
 import { Route as DietPlanningRouteImport } from './routes/diet-planning'
 import { Route as EatRouteImport } from './routes/eat'
@@ -39,6 +41,13 @@ import { Route as TrainingScienceRouteImport } from './routes/training-science'
 import { Route as WarmUpsRouteImport } from './routes/warm-ups'
 import { Route as WorkoutRouteImport } from './routes/workout'
 import { Route as AboutSourcesRouteImport } from './routes/about.sources'
+import { Route as AnalyticsCardioRouteImport } from './routes/analytics_.cardio'
+import { Route as AnalyticsDataQualityRouteImport } from './routes/analytics_.data-quality'
+import { Route as AnalyticsMethodologyRouteImport } from './routes/analytics_.methodology'
+import { Route as AnalyticsNutritionRouteImport } from './routes/analytics_.nutrition'
+import { Route as AnalyticsRecoveryRouteImport } from './routes/analytics_.recovery'
+import { Route as AnalyticsStrengthRouteImport } from './routes/analytics_.strength'
+import { Route as AnalyticsWorkoutsRouteImport } from './routes/analytics_.workouts'
 import { Route as CardioCustomPlansRouteImport } from './routes/cardio_.custom-plans'
 import { Route as CardioHistoryRouteImport } from './routes/cardio_.history'
 import { Route as CardioLearnRouteImport } from './routes/cardio_.learn'
@@ -90,6 +99,13 @@ import { Route as ProgramsSlugRouteImport } from './routes/programs_.$slug'
 import { Route as ProgramsCompareRouteImport } from './routes/programs_.compare'
 import { Route as ProgramsCurrentRouteImport } from './routes/programs_.current'
 import { Route as ProgramsFinderRouteImport } from './routes/programs_.finder'
+import { Route as ProgressBodyCompositionRouteImport } from './routes/progress_.body-composition'
+import { Route as ProgressGoalsRouteImport } from './routes/progress_.goals'
+import { Route as ProgressMeasurementsRouteImport } from './routes/progress_.measurements'
+import { Route as ProgressPhotosRouteImport } from './routes/progress_.photos'
+import { Route as ProgressPrivacyRouteImport } from './routes/progress_.privacy'
+import { Route as ProgressSettingsRouteImport } from './routes/progress_.settings'
+import { Route as ProgressWeightRouteImport } from './routes/progress_.weight'
 import { Route as RecipesSlugRouteImport } from './routes/recipes_.$slug'
 import { Route as RecipesCreateRouteImport } from './routes/recipes_.create'
 import { Route as RecipesMethodologyRouteImport } from './routes/recipes_.methodology'
@@ -160,6 +176,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AnalyticsRoute = AnalyticsRouteImport.update({
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CardioRoute = CardioRouteImport.update({
   id: '/cardio',
   path: '/cardio',
@@ -168,6 +189,11 @@ const CardioRoute = CardioRouteImport.update({
 const ConditioningRoute = ConditioningRouteImport.update({
   id: '/conditioning',
   path: '/conditioning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DietRoute = DietRouteImport.update({
@@ -303,6 +329,41 @@ const WorkoutRoute = WorkoutRouteImport.update({
 const AboutSourcesRoute = AboutSourcesRouteImport.update({
   id: '/about/sources',
   path: '/about/sources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsCardioRoute = AnalyticsCardioRouteImport.update({
+  id: '/analytics_/cardio',
+  path: '/analytics/cardio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsDataQualityRoute = AnalyticsDataQualityRouteImport.update({
+  id: '/analytics_/data-quality',
+  path: '/analytics/data-quality',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsMethodologyRoute = AnalyticsMethodologyRouteImport.update({
+  id: '/analytics_/methodology',
+  path: '/analytics/methodology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsNutritionRoute = AnalyticsNutritionRouteImport.update({
+  id: '/analytics_/nutrition',
+  path: '/analytics/nutrition',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsRecoveryRoute = AnalyticsRecoveryRouteImport.update({
+  id: '/analytics_/recovery',
+  path: '/analytics/recovery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsStrengthRoute = AnalyticsStrengthRouteImport.update({
+  id: '/analytics_/strength',
+  path: '/analytics/strength',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsWorkoutsRoute = AnalyticsWorkoutsRouteImport.update({
+  id: '/analytics_/workouts',
+  path: '/analytics/workouts',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CardioCustomPlansRoute = CardioCustomPlansRouteImport.update({
@@ -560,6 +621,41 @@ const ProgramsCurrentRoute = ProgramsCurrentRouteImport.update({
 const ProgramsFinderRoute = ProgramsFinderRouteImport.update({
   id: '/programs_/finder',
   path: '/programs/finder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressBodyCompositionRoute = ProgressBodyCompositionRouteImport.update({
+  id: '/progress_/body-composition',
+  path: '/progress/body-composition',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressGoalsRoute = ProgressGoalsRouteImport.update({
+  id: '/progress_/goals',
+  path: '/progress/goals',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressMeasurementsRoute = ProgressMeasurementsRouteImport.update({
+  id: '/progress_/measurements',
+  path: '/progress/measurements',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressPhotosRoute = ProgressPhotosRouteImport.update({
+  id: '/progress_/photos',
+  path: '/progress/photos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressPrivacyRoute = ProgressPrivacyRouteImport.update({
+  id: '/progress_/privacy',
+  path: '/progress/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressSettingsRoute = ProgressSettingsRouteImport.update({
+  id: '/progress_/settings',
+  path: '/progress/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressWeightRoute = ProgressWeightRouteImport.update({
+  id: '/progress_/weight',
+  path: '/progress/weight',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RecipesSlugRoute = RecipesSlugRouteImport.update({
@@ -905,8 +1001,10 @@ const WorkoutExercisesExerciseIdHistoryRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/analytics': typeof AnalyticsRoute
   '/cardio': typeof CardioRoute
   '/conditioning': typeof ConditioningRoute
+  '/dashboard': typeof DashboardRoute
   '/diet': typeof DietRoute
   '/diet-planning': typeof DietPlanningRouteWithChildren
   '/eat': typeof EatRoute
@@ -934,6 +1032,13 @@ export interface FileRoutesByFullPath {
   '/warm-ups': typeof WarmUpsRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/analytics/cardio': typeof AnalyticsCardioRoute
+  '/analytics/data-quality': typeof AnalyticsDataQualityRoute
+  '/analytics/methodology': typeof AnalyticsMethodologyRoute
+  '/analytics/nutrition': typeof AnalyticsNutritionRoute
+  '/analytics/recovery': typeof AnalyticsRecoveryRoute
+  '/analytics/strength': typeof AnalyticsStrengthRoute
+  '/analytics/workouts': typeof AnalyticsWorkoutsRoute
   '/cardio/custom-plans': typeof CardioCustomPlansRoute
   '/cardio/history': typeof CardioHistoryRoute
   '/cardio/learn': typeof CardioLearnRoute
@@ -983,6 +1088,13 @@ export interface FileRoutesByFullPath {
   '/programs/compare': typeof ProgramsCompareRoute
   '/programs/current': typeof ProgramsCurrentRoute
   '/programs/finder': typeof ProgramsFinderRoute
+  '/progress/body-composition': typeof ProgressBodyCompositionRoute
+  '/progress/goals': typeof ProgressGoalsRoute
+  '/progress/measurements': typeof ProgressMeasurementsRoute
+  '/progress/photos': typeof ProgressPhotosRoute
+  '/progress/privacy': typeof ProgressPrivacyRoute
+  '/progress/settings': typeof ProgressSettingsRoute
+  '/progress/weight': typeof ProgressWeightRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/recipes/create': typeof RecipesCreateRoute
   '/recipes/methodology': typeof RecipesMethodologyRoute
@@ -1052,8 +1164,10 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/analytics': typeof AnalyticsRoute
   '/cardio': typeof CardioRoute
   '/conditioning': typeof ConditioningRoute
+  '/dashboard': typeof DashboardRoute
   '/diet': typeof DietRoute
   '/eat': typeof EatRoute
   '/exercises': typeof ExercisesRoute
@@ -1079,6 +1193,13 @@ export interface FileRoutesByTo {
   '/warm-ups': typeof WarmUpsRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/analytics/cardio': typeof AnalyticsCardioRoute
+  '/analytics/data-quality': typeof AnalyticsDataQualityRoute
+  '/analytics/methodology': typeof AnalyticsMethodologyRoute
+  '/analytics/nutrition': typeof AnalyticsNutritionRoute
+  '/analytics/recovery': typeof AnalyticsRecoveryRoute
+  '/analytics/strength': typeof AnalyticsStrengthRoute
+  '/analytics/workouts': typeof AnalyticsWorkoutsRoute
   '/cardio/custom-plans': typeof CardioCustomPlansRoute
   '/cardio/history': typeof CardioHistoryRoute
   '/cardio/learn': typeof CardioLearnRoute
@@ -1126,6 +1247,13 @@ export interface FileRoutesByTo {
   '/programs/compare': typeof ProgramsCompareRoute
   '/programs/current': typeof ProgramsCurrentRoute
   '/programs/finder': typeof ProgramsFinderRoute
+  '/progress/body-composition': typeof ProgressBodyCompositionRoute
+  '/progress/goals': typeof ProgressGoalsRoute
+  '/progress/measurements': typeof ProgressMeasurementsRoute
+  '/progress/photos': typeof ProgressPhotosRoute
+  '/progress/privacy': typeof ProgressPrivacyRoute
+  '/progress/settings': typeof ProgressSettingsRoute
+  '/progress/weight': typeof ProgressWeightRoute
   '/recipes/$slug': typeof RecipesSlugRoute
   '/recipes/create': typeof RecipesCreateRoute
   '/recipes/methodology': typeof RecipesMethodologyRoute
@@ -1196,8 +1324,10 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/analytics': typeof AnalyticsRoute
   '/cardio': typeof CardioRoute
   '/conditioning': typeof ConditioningRoute
+  '/dashboard': typeof DashboardRoute
   '/diet': typeof DietRoute
   '/diet-planning': typeof DietPlanningRouteWithChildren
   '/eat': typeof EatRoute
@@ -1225,6 +1355,13 @@ export interface FileRoutesById {
   '/warm-ups': typeof WarmUpsRoute
   '/workout': typeof WorkoutRoute
   '/about/sources': typeof AboutSourcesRoute
+  '/analytics_/cardio': typeof AnalyticsCardioRoute
+  '/analytics_/data-quality': typeof AnalyticsDataQualityRoute
+  '/analytics_/methodology': typeof AnalyticsMethodologyRoute
+  '/analytics_/nutrition': typeof AnalyticsNutritionRoute
+  '/analytics_/recovery': typeof AnalyticsRecoveryRoute
+  '/analytics_/strength': typeof AnalyticsStrengthRoute
+  '/analytics_/workouts': typeof AnalyticsWorkoutsRoute
   '/cardio_/custom-plans': typeof CardioCustomPlansRoute
   '/cardio_/history': typeof CardioHistoryRoute
   '/cardio_/learn': typeof CardioLearnRoute
@@ -1274,6 +1411,13 @@ export interface FileRoutesById {
   '/programs_/compare': typeof ProgramsCompareRoute
   '/programs_/current': typeof ProgramsCurrentRoute
   '/programs_/finder': typeof ProgramsFinderRoute
+  '/progress_/body-composition': typeof ProgressBodyCompositionRoute
+  '/progress_/goals': typeof ProgressGoalsRoute
+  '/progress_/measurements': typeof ProgressMeasurementsRoute
+  '/progress_/photos': typeof ProgressPhotosRoute
+  '/progress_/privacy': typeof ProgressPrivacyRoute
+  '/progress_/settings': typeof ProgressSettingsRoute
+  '/progress_/weight': typeof ProgressWeightRoute
   '/recipes_/$slug': typeof RecipesSlugRoute
   '/recipes_/create': typeof RecipesCreateRoute
   '/recipes_/methodology': typeof RecipesMethodologyRoute
@@ -1345,8 +1489,10 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/analytics'
     | '/cardio'
     | '/conditioning'
+    | '/dashboard'
     | '/diet'
     | '/diet-planning'
     | '/eat'
@@ -1374,6 +1520,13 @@ export interface FileRouteTypes {
     | '/warm-ups'
     | '/workout'
     | '/about/sources'
+    | '/analytics/cardio'
+    | '/analytics/data-quality'
+    | '/analytics/methodology'
+    | '/analytics/nutrition'
+    | '/analytics/recovery'
+    | '/analytics/strength'
+    | '/analytics/workouts'
     | '/cardio/custom-plans'
     | '/cardio/history'
     | '/cardio/learn'
@@ -1423,6 +1576,13 @@ export interface FileRouteTypes {
     | '/programs/compare'
     | '/programs/current'
     | '/programs/finder'
+    | '/progress/body-composition'
+    | '/progress/goals'
+    | '/progress/measurements'
+    | '/progress/photos'
+    | '/progress/privacy'
+    | '/progress/settings'
+    | '/progress/weight'
     | '/recipes/$slug'
     | '/recipes/create'
     | '/recipes/methodology'
@@ -1492,8 +1652,10 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/analytics'
     | '/cardio'
     | '/conditioning'
+    | '/dashboard'
     | '/diet'
     | '/eat'
     | '/exercises'
@@ -1519,6 +1681,13 @@ export interface FileRouteTypes {
     | '/warm-ups'
     | '/workout'
     | '/about/sources'
+    | '/analytics/cardio'
+    | '/analytics/data-quality'
+    | '/analytics/methodology'
+    | '/analytics/nutrition'
+    | '/analytics/recovery'
+    | '/analytics/strength'
+    | '/analytics/workouts'
     | '/cardio/custom-plans'
     | '/cardio/history'
     | '/cardio/learn'
@@ -1566,6 +1735,13 @@ export interface FileRouteTypes {
     | '/programs/compare'
     | '/programs/current'
     | '/programs/finder'
+    | '/progress/body-composition'
+    | '/progress/goals'
+    | '/progress/measurements'
+    | '/progress/photos'
+    | '/progress/privacy'
+    | '/progress/settings'
+    | '/progress/weight'
     | '/recipes/$slug'
     | '/recipes/create'
     | '/recipes/methodology'
@@ -1635,8 +1811,10 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/analytics'
     | '/cardio'
     | '/conditioning'
+    | '/dashboard'
     | '/diet'
     | '/diet-planning'
     | '/eat'
@@ -1664,6 +1842,13 @@ export interface FileRouteTypes {
     | '/warm-ups'
     | '/workout'
     | '/about/sources'
+    | '/analytics_/cardio'
+    | '/analytics_/data-quality'
+    | '/analytics_/methodology'
+    | '/analytics_/nutrition'
+    | '/analytics_/recovery'
+    | '/analytics_/strength'
+    | '/analytics_/workouts'
     | '/cardio_/custom-plans'
     | '/cardio_/history'
     | '/cardio_/learn'
@@ -1713,6 +1898,13 @@ export interface FileRouteTypes {
     | '/programs_/compare'
     | '/programs_/current'
     | '/programs_/finder'
+    | '/progress_/body-composition'
+    | '/progress_/goals'
+    | '/progress_/measurements'
+    | '/progress_/photos'
+    | '/progress_/privacy'
+    | '/progress_/settings'
+    | '/progress_/weight'
     | '/recipes_/$slug'
     | '/recipes_/create'
     | '/recipes_/methodology'
@@ -1783,8 +1975,10 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AnalyticsRoute: typeof AnalyticsRoute
   CardioRoute: typeof CardioRoute
   ConditioningRoute: typeof ConditioningRoute
+  DashboardRoute: typeof DashboardRoute
   DietRoute: typeof DietRoute
   DietPlanningRoute: typeof DietPlanningRouteWithChildren
   EatRoute: typeof EatRoute
@@ -1812,6 +2006,13 @@ export interface RootRouteChildren {
   WarmUpsRoute: typeof WarmUpsRoute
   WorkoutRoute: typeof WorkoutRoute
   AboutSourcesRoute: typeof AboutSourcesRoute
+  AnalyticsCardioRoute: typeof AnalyticsCardioRoute
+  AnalyticsDataQualityRoute: typeof AnalyticsDataQualityRoute
+  AnalyticsMethodologyRoute: typeof AnalyticsMethodologyRoute
+  AnalyticsNutritionRoute: typeof AnalyticsNutritionRoute
+  AnalyticsRecoveryRoute: typeof AnalyticsRecoveryRoute
+  AnalyticsStrengthRoute: typeof AnalyticsStrengthRoute
+  AnalyticsWorkoutsRoute: typeof AnalyticsWorkoutsRoute
   CardioCustomPlansRoute: typeof CardioCustomPlansRoute
   CardioHistoryRoute: typeof CardioHistoryRoute
   CardioLearnRoute: typeof CardioLearnRoute
@@ -1847,6 +2048,13 @@ export interface RootRouteChildren {
   ProgramsCompareRoute: typeof ProgramsCompareRoute
   ProgramsCurrentRoute: typeof ProgramsCurrentRoute
   ProgramsFinderRoute: typeof ProgramsFinderRoute
+  ProgressBodyCompositionRoute: typeof ProgressBodyCompositionRoute
+  ProgressGoalsRoute: typeof ProgressGoalsRoute
+  ProgressMeasurementsRoute: typeof ProgressMeasurementsRoute
+  ProgressPhotosRoute: typeof ProgressPhotosRoute
+  ProgressPrivacyRoute: typeof ProgressPrivacyRoute
+  ProgressSettingsRoute: typeof ProgressSettingsRoute
+  ProgressWeightRoute: typeof ProgressWeightRoute
   RecipesSlugRoute: typeof RecipesSlugRoute
   RecipesCreateRoute: typeof RecipesCreateRoute
   RecipesMethodologyRoute: typeof RecipesMethodologyRoute
@@ -1917,6 +2125,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/analytics': {
+      id: '/analytics'
+      path: '/analytics'
+      fullPath: '/analytics'
+      preLoaderRoute: typeof AnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cardio': {
       id: '/cardio'
       path: '/cardio'
@@ -1929,6 +2144,13 @@ declare module '@tanstack/react-router' {
       path: '/conditioning'
       fullPath: '/conditioning'
       preLoaderRoute: typeof ConditioningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/diet': {
@@ -2118,6 +2340,55 @@ declare module '@tanstack/react-router' {
       path: '/about/sources'
       fullPath: '/about/sources'
       preLoaderRoute: typeof AboutSourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics_/cardio': {
+      id: '/analytics_/cardio'
+      path: '/analytics/cardio'
+      fullPath: '/analytics/cardio'
+      preLoaderRoute: typeof AnalyticsCardioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics_/data-quality': {
+      id: '/analytics_/data-quality'
+      path: '/analytics/data-quality'
+      fullPath: '/analytics/data-quality'
+      preLoaderRoute: typeof AnalyticsDataQualityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics_/methodology': {
+      id: '/analytics_/methodology'
+      path: '/analytics/methodology'
+      fullPath: '/analytics/methodology'
+      preLoaderRoute: typeof AnalyticsMethodologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics_/nutrition': {
+      id: '/analytics_/nutrition'
+      path: '/analytics/nutrition'
+      fullPath: '/analytics/nutrition'
+      preLoaderRoute: typeof AnalyticsNutritionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics_/recovery': {
+      id: '/analytics_/recovery'
+      path: '/analytics/recovery'
+      fullPath: '/analytics/recovery'
+      preLoaderRoute: typeof AnalyticsRecoveryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics_/strength': {
+      id: '/analytics_/strength'
+      path: '/analytics/strength'
+      fullPath: '/analytics/strength'
+      preLoaderRoute: typeof AnalyticsStrengthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics_/workouts': {
+      id: '/analytics_/workouts'
+      path: '/analytics/workouts'
+      fullPath: '/analytics/workouts'
+      preLoaderRoute: typeof AnalyticsWorkoutsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cardio_/custom-plans': {
@@ -2475,6 +2746,55 @@ declare module '@tanstack/react-router' {
       path: '/programs/finder'
       fullPath: '/programs/finder'
       preLoaderRoute: typeof ProgramsFinderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress_/body-composition': {
+      id: '/progress_/body-composition'
+      path: '/progress/body-composition'
+      fullPath: '/progress/body-composition'
+      preLoaderRoute: typeof ProgressBodyCompositionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress_/goals': {
+      id: '/progress_/goals'
+      path: '/progress/goals'
+      fullPath: '/progress/goals'
+      preLoaderRoute: typeof ProgressGoalsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress_/measurements': {
+      id: '/progress_/measurements'
+      path: '/progress/measurements'
+      fullPath: '/progress/measurements'
+      preLoaderRoute: typeof ProgressMeasurementsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress_/photos': {
+      id: '/progress_/photos'
+      path: '/progress/photos'
+      fullPath: '/progress/photos'
+      preLoaderRoute: typeof ProgressPhotosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress_/privacy': {
+      id: '/progress_/privacy'
+      path: '/progress/privacy'
+      fullPath: '/progress/privacy'
+      preLoaderRoute: typeof ProgressPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress_/settings': {
+      id: '/progress_/settings'
+      path: '/progress/settings'
+      fullPath: '/progress/settings'
+      preLoaderRoute: typeof ProgressSettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress_/weight': {
+      id: '/progress_/weight'
+      path: '/progress/weight'
+      fullPath: '/progress/weight'
+      preLoaderRoute: typeof ProgressWeightRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/recipes_/$slug': {
@@ -3020,8 +3340,10 @@ const NutritionRouteWithChildren = NutritionRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AnalyticsRoute: AnalyticsRoute,
   CardioRoute: CardioRoute,
   ConditioningRoute: ConditioningRoute,
+  DashboardRoute: DashboardRoute,
   DietRoute: DietRoute,
   DietPlanningRoute: DietPlanningRouteWithChildren,
   EatRoute: EatRoute,
@@ -3049,6 +3371,13 @@ const rootRouteChildren: RootRouteChildren = {
   WarmUpsRoute: WarmUpsRoute,
   WorkoutRoute: WorkoutRoute,
   AboutSourcesRoute: AboutSourcesRoute,
+  AnalyticsCardioRoute: AnalyticsCardioRoute,
+  AnalyticsDataQualityRoute: AnalyticsDataQualityRoute,
+  AnalyticsMethodologyRoute: AnalyticsMethodologyRoute,
+  AnalyticsNutritionRoute: AnalyticsNutritionRoute,
+  AnalyticsRecoveryRoute: AnalyticsRecoveryRoute,
+  AnalyticsStrengthRoute: AnalyticsStrengthRoute,
+  AnalyticsWorkoutsRoute: AnalyticsWorkoutsRoute,
   CardioCustomPlansRoute: CardioCustomPlansRoute,
   CardioHistoryRoute: CardioHistoryRoute,
   CardioLearnRoute: CardioLearnRoute,
@@ -3084,6 +3413,13 @@ const rootRouteChildren: RootRouteChildren = {
   ProgramsCompareRoute: ProgramsCompareRoute,
   ProgramsCurrentRoute: ProgramsCurrentRoute,
   ProgramsFinderRoute: ProgramsFinderRoute,
+  ProgressBodyCompositionRoute: ProgressBodyCompositionRoute,
+  ProgressGoalsRoute: ProgressGoalsRoute,
+  ProgressMeasurementsRoute: ProgressMeasurementsRoute,
+  ProgressPhotosRoute: ProgressPhotosRoute,
+  ProgressPrivacyRoute: ProgressPrivacyRoute,
+  ProgressSettingsRoute: ProgressSettingsRoute,
+  ProgressWeightRoute: ProgressWeightRoute,
   RecipesSlugRoute: RecipesSlugRoute,
   RecipesCreateRoute: RecipesCreateRoute,
   RecipesMethodologyRoute: RecipesMethodologyRoute,

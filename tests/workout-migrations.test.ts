@@ -1,6 +1,7 @@
 import { expect, it, vi } from "vitest";
 import { IDBFactory } from "fake-indexeddb";
 import { openWorkoutDatabase } from "../src/features/workout-tracker/storage";
+import { fitnessDatabaseVersion } from "../src/storage/indexed-db/fitness-database";
 it("upgrades every prior database version without deleting existing records", async () => {
   const factory = new IDBFactory();
   vi.stubGlobal("window", { indexedDB: factory });
@@ -50,8 +51,9 @@ it("upgrades every prior database version without deleting existing records", as
     });
     old.close();
     const upgraded = await openWorkoutDatabase(name);
-    expect(upgraded.version).toBe(10);
-    expect([...upgraded.objectStoreNames]).toHaveLength(17);
+    expect(upgraded.version).toBe(fitnessDatabaseVersion);
+    expect([...upgraded.objectStoreNames]).toContain("bodyWeightLogs");
+    expect([...upgraded.objectStoreNames]).toContain("metricCalculationReceipts");
     const record = await new Promise<unknown>((resolve) => {
       const request = upgraded
         .transaction("appMeta")

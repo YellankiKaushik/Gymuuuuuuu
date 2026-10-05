@@ -1,7 +1,7 @@
 import workoutReference from "../../../DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Reference_Data.json";
 import nutritionReference from "../../content/nutrition/reference.json";
 export const fitnessDatabaseVersion =
-  nutritionReference.database.targetSchemaVersion;
+  15;
 const connections = new WeakMap<
   IDBFactory,
   Map<string, Promise<IDBDatabase>>
@@ -18,12 +18,17 @@ export function migrateFitnessDatabase(
   tx: IDBTransaction,
   oldVersion: number,
 ) {
+  // Some early local installs may have skipped the foundation metadata store.
+  // Recreate only this required bookkeeping store during the next upgrade.
+  if (!db.objectStoreNames.contains("appMeta"))
+    db.createObjectStore("appMeta", { keyPath: "key" });
   for (
     let version = oldVersion + 1;
     version <= fitnessDatabaseVersion;
     version++
   ) {
-    if (version === 1) db.createObjectStore("appMeta", { keyPath: "key" });
+    if (version === 1 && !db.objectStoreNames.contains("appMeta"))
+      db.createObjectStore("appMeta", { keyPath: "key" });
     if (version === 2) {
       db.createObjectStore("workoutPreferences", { keyPath: "id" });
       db.createObjectStore("programInstances", { keyPath: "instanceId" });
@@ -70,6 +75,26 @@ export function migrateFitnessDatabase(
       const favourites = tx.objectStore("nutritionFavourites");
       favourites.createIndex("byCanonicalFoodId", "canonicalFoodRef.foodId");
       favourites.createIndex("byCustomFoodId", "customFoodRef.customFoodId");
+    }
+    // Phase 15 body progress. Versions 11–14 were reserved by the phase sequence.
+    if (version === 15) {
+      const definitions: Array<{ name: string; keyPath: string | string[] }> = [
+        { name: "bodyWeightLogs", keyPath: "id" }, { name: "circumferenceSessions", keyPath: "id" },
+        { name: "bodyCompositionMeasurements", keyPath: "id" }, { name: "progressPhotos", keyPath: "id" },
+        { name: "progressPhotoBlobs", keyPath: "blobKey" }, { name: "heightMeasurements", keyPath: "id" },
+        { name: "progressGoals", keyPath: "id" }, { name: "nutritionDayReviews", keyPath: "id" },
+        { name: "dashboardLayouts", keyPath: "id" }, { name: "phase15Settings", keyPath: "key" },
+        { name: "phase15AuditEvents", keyPath: "id" }, { name: "phase15DeletedRecords", keyPath: ["entityType", "entityId"] },
+        { name: "phase15ImportConflicts", keyPath: "id" }, { name: "derivedAnalyticsCache", keyPath: "cacheKey" },
+        { name: "metricCalculationReceipts", keyPath: "id" },
+      ];
+      for (const { name, keyPath } of definitions)
+        if (!db.objectStoreNames.contains(name))
+          db.createObjectStore(name, { keyPath });
+      for (const name of ["bodyWeightLogs", "circumferenceSessions", "bodyCompositionMeasurements", "progressPhotos", "heightMeasurements", "progressGoals", "nutritionDayReviews"])
+        tx.objectStore(name).createIndex("byLocalDate", "localDate");
+      tx.objectStore("progressPhotos").createIndex("bySetId", "setId");
+      tx.objectStore("metricCalculationReceipts").createIndex("byMetricId", "metricId");
     }
     tx.objectStore("appMeta").put({ key: `migration:${version}`, version });
   }

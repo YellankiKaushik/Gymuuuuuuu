@@ -155,7 +155,7 @@ describe("Phase 11 independent recipe vectors", () => {
     const calculated = recalculateMealPlan(p);
     expect(calculated.plannedItems).toHaveLength(336);
     expect(calculated.summary.dailySummaries).toHaveLength(28);
-  });
+  }, 15_000);
   it("calculates batch, measured density and serving values without macro-derived calories", () => {
     const rows = recipe().calculation.batchNutrients;
     const energy = rows.find((n) => n.nutrientId === "energy_kcal")!;

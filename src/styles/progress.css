@@ -1,0 +1,24 @@
+.progress-page { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; min-width: 0; }
+.progress-page > * { min-width: 0; }
+.progress-page .progress-workspace-fields { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; min-width: 0; margin: 0; padding: 0; border: 0; }
+.progress-page .progress-card { border: 1px solid var(--border, #d5dce5); border-radius: 1rem; padding: clamp(1rem, 3vw, 1.5rem); background: var(--surface, #fff); color: var(--text, #172033); }
+.progress-page .progress-card h2 { margin-top: 0; }
+.progress-page form { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; align-items: end; }
+.progress-page .progress-field, .progress-page form > label, .progress-page > label { display: grid; gap: .4rem; font-weight: 600; }
+.progress-page input:not([type=checkbox]), .progress-page select, .progress-page textarea { width: 100%; min-height: 2.75rem; border: 1px solid var(--border, #9caaba); border-radius: .5rem; padding: .55rem .7rem; color: inherit; background: var(--surface, #fff); font: inherit; }
+.progress-page input[type=checkbox] { min-width: 1.2rem; min-height: 1.2rem; }
+.progress-page button { min-height: 2.75rem; border: 1px solid var(--border, #8a98aa); border-radius: .55rem; padding: .55rem .85rem; background: var(--accent, #075985); color: #fff; font: inherit; font-weight: 650; cursor: pointer; }
+.progress-page button:disabled { opacity: .65; cursor: wait; }
+.progress-page :is(a,button,input,select,textarea):focus-visible { outline: 3px solid #0e7490; outline-offset: 3px; }
+.progress-page .progress-table-wrap { overflow-x: auto; max-width: 100%; }
+.progress-page table { width: 100%; border-collapse: collapse; text-align: left; }
+.progress-page caption { text-align: left; padding: .5rem 0; }
+.progress-page th, .progress-page td { padding: .65rem; border-bottom: 1px solid var(--border, #d5dce5); vertical-align: top; }
+.progress-page .progress-save-state { min-height: 1.5rem; }
+.progress-page .progress-stat-grid, .progress-page .progress-photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 1rem; }
+.progress-page .progress-stat-grid article, .progress-page figure { margin: 0; padding: 1rem; border: 1px solid var(--border, #d5dce5); border-radius: .8rem; }
+.progress-page figure img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: contain; background: #111; }
+.progress-page figcaption { margin-top: .6rem; }
+.progress-page .progress-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1rem; }
+@media (prefers-reduced-motion: reduce) { .progress-page *, .progress-page *::before, .progress-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+@media (max-width: 360px) { .progress-page .progress-card { padding: .8rem; } .progress-page table { min-width: 34rem; } }
