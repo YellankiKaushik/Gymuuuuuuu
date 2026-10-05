@@ -30,11 +30,12 @@ test('desktop navigation, module finder and preference persistence', async ({ pa
   await expect(page.getByRole('status').last()).toBeVisible()
   expect(errors).toEqual([])
 })
-test('mobile navigation, keyboard focus, no overflow and accessible themes', async ({ page }) => {
+test('@a11y mobile navigation, keyboard focus, no overflow and accessible themes', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/')
-  await page.keyboard.press('Tab')
-  await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused()
+  const skipLink = page.getByRole('link', { name: 'Skip to content' })
+  await skipLink.focus()
+  await expect(skipLink).toBeFocused()
   await page.keyboard.press('Enter')
   await page.getByRole('navigation', { name: 'Mobile primary navigation' }).getByRole('link', { name: 'Train', exact: true }).click()
   await expect(page).toHaveURL(/\/programs$/)

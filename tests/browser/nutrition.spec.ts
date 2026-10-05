@@ -180,11 +180,13 @@ test("all nutrition routes remain accessible at mobile and desktop widths in bot
         await expect(
           page.getByText("Opening local storage…", { exact: true }),
         ).toHaveCount(0);
+        const layout = await page.evaluate(() => ({
+          scrollWidth: document.documentElement.scrollWidth,
+          viewportWidth: window.innerWidth,
+        }));
         expect(
-          await page.evaluate(
-            () => document.documentElement.scrollWidth <= window.innerWidth,
-          ),
-          `${path} ${width}`,
+          layout.scrollWidth <= layout.viewportWidth,
+          `${path} ${width}: content ${layout.scrollWidth}px, viewport ${layout.viewportWidth}px`,
         ).toBe(true);
         expect(
           (

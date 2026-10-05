@@ -1087,7 +1087,7 @@ function NutritionAddForm() {
             }}
           >
             <option value="quick">
-              Quick add · explicit calories and optional macros
+              Quick add · explicit calories
             </option>
             <option value="canonical">Reviewed food profile</option>
             <option value="custom">

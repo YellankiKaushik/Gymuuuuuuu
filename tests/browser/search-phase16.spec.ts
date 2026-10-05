@@ -49,6 +49,7 @@ test("favourites persist locally and saved pages remain private across reload", 
   const favourite = page.getByRole("button", { name: "Favourite" }).first();
   await expect(favourite).toBeVisible();
   await favourite.click();
+  await expect(page.getByText("Favourite saved on this device.", { exact: true })).toBeVisible();
   await page.goto("/saved/favourites");
   await expect(page.getByRole("heading", { name: "Favourites" })).toBeVisible();
   await expect(page.getByRole("link", { name: /Nutrient encyclopedia/ })).toBeVisible();
@@ -69,10 +70,12 @@ test("collections support rename, private notes, sorting, filtering and moving r
   await page.getByRole("button", { name: "Save name" }).click();
   await page.getByLabel("New collection name").fill("Later");
   await page.getByRole("button", { name: "Create collection" }).click();
+  await expect(page.getByRole("link", { name: "Later", exact: true })).toBeVisible();
   await page.goto("/search?q=vitamins");
   const collection = page.getByLabel("Choose collection for Nutrient encyclopedia");
   await collection.selectOption({ label: "Training list" });
   await page.getByRole("button", { name: "Add to collection" }).click();
+  await expect(page.getByText("Reference added to the selected collection.", { exact: true })).toBeVisible();
   await page.goto("/saved/collections");
   await page.getByRole("link", { name: "Training list" }).click();
   await expect(page.getByRole("link", { name: "Nutrient encyclopedia" })).toBeVisible();

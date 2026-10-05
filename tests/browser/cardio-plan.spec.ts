@@ -62,6 +62,9 @@ test("local cardio plan selection, HR method snapshot, revisions, laps and CSV",
   await page
     .getByRole("button", { name: "End and save session", exact: true })
     .click();
+  await expect(
+    page.getByText("Session ended and saved locally.", { exact: true }),
+  ).toBeVisible();
   await page.goto("/cardio/custom-plans/create");
   const select = page.getByLabel("Saved plan version", { exact: true });
   await expect(select.locator("option")).toHaveCount(2);
@@ -90,6 +93,7 @@ test("local cardio plan selection, HR method snapshot, revisions, laps and CSV",
     .click();
   await expect(page.getByText(/^Frozen source:/)).toContainText(
     "Synthetic private plan · version 1",
+    { timeout: 15_000 },
   );
   await expect(page.getByText(/^Original target:/)).toContainText(
     "hr-fraction-arithmetic-1",

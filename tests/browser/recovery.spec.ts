@@ -118,6 +118,9 @@ test("local sleep, check-in, routine revision, resumable session and backup work
     .getByRole("button", { name: "Start routine", exact: true })
     .click();
   await page.getByRole("button", { name: "Resume", exact: true }).click();
+  await expect(
+    page.getByRole("status").filter({ hasText: "Routine resume saved." }),
+  ).toBeVisible();
   await page.reload();
   await expect(
     page.getByRole("button", { name: "Pause", exact: true }),
@@ -164,6 +167,9 @@ test("local sleep, check-in, routine revision, resumable session and backup work
   await page
     .getByRole("button", { name: "Complete step", exact: true })
     .click();
+  await expect(
+    page.getByRole("status").filter({ hasText: "Routine complete step saved." }),
+  ).toBeVisible();
   await page.goto("/mobility/history");
   await expect(page.getByText(/completed · version 1/)).toBeVisible();
   await page

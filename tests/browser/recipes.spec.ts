@@ -188,10 +188,13 @@ test("Phase 11 routes remain accessible without private records at desktop and n
             /Loading (local recipe records|recipe editor|meal plans|meal-plan settings|meal plan|grocery lists)/,
           ),
         ).toHaveCount(0);
+        const layout = await page.evaluate(() => ({
+          scrollWidth: document.documentElement.scrollWidth,
+          viewportWidth: innerWidth,
+        }));
         expect(
-          await page.evaluate(
-            () => document.documentElement.scrollWidth <= innerWidth,
-          ),
+          layout.scrollWidth <= layout.viewportWidth,
+          `${path} ${width}: content ${layout.scrollWidth}px, viewport ${layout.viewportWidth}px`,
         ).toBe(true);
         const results = await new AxeBuilder({ page })
           .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])

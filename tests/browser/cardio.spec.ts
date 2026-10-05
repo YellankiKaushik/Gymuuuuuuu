@@ -341,6 +341,9 @@ test("cardio cross-tab ownership, keyboard, quota and storage denial", async ({
   await page
     .getByRole("button", { name: "End and save session", exact: true })
     .click();
+  await expect(
+    page.getByRole("status").filter({ hasText: "Session ended and saved locally." }),
+  ).toBeVisible();
   await page.goto("/cardio/session/new");
   await page
     .getByLabel("Session title", { exact: true })

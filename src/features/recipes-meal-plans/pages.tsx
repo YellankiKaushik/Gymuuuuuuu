@@ -553,7 +553,7 @@ function RecipeBuilderForm({ previous }: { previous?: RecipeVersion }) {
             Ingredient source
             <select value={picker} onChange={(e) => setPicker(e.target.value)}>
               <option value="unresolved">
-                Unresolved ingredient — no nutrient values
+                Unresolved · no nutrient values
               </option>
               {foodIndex.flatMap((f) =>
                 f.profiles.map((p) => (

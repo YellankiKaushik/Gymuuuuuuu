@@ -162,7 +162,9 @@ function FilterDialog({
     dialog?.showModal();
     return () => {
       dialog?.close();
-      opener?.focus();
+      window.setTimeout(() => {
+        if (opener?.isConnected) opener.focus();
+      }, 0);
     };
   }, []);
   return (
@@ -222,7 +224,7 @@ export function FoodCatalogue({
             onChange={(e) => change({ q: e.target.value })}
           />
         </label>
-        <button className="button secondary" onClick={() => setFilters(true)}>
+        <button className="button secondary" onClick={(event) => { event.currentTarget.focus(); setFilters(true) }}>
           Food filters
         </button>
         <label>

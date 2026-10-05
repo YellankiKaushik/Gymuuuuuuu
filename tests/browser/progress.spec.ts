@@ -44,9 +44,11 @@ test("all Phase 15 routes load with private-page metadata and a working analytic
     ["/analytics/methodology", "Metric methodology"], ["/progress/settings", "Progress backup & settings"], ["/progress/privacy", "Progress privacy"],
   ];
   for (const [path, heading] of routes) {
-    await page.goto(path!);
+    const response = await page.goto(path!);
     await expect(page.getByRole("heading", { name: heading! }).first()).toBeVisible();
-    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex,nofollow");
+    // Check the server-rendered document: crawler privacy must not depend on client head hydration.
+    const html = await response?.text();
+    expect(html).toMatch(/<meta(?=[^>]*name="robots")(?=[^>]*content="noindex,nofollow")[^>]*>/);
   }
   await page.goto("/analytics/workouts");
   await expect(page.getByText("Saved in this browser")).toBeVisible();
