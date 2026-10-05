@@ -38,7 +38,8 @@
 - [x] IndexedDB migration and collection operations tested with fake-indexeddb.
 - [x] Phase 16 browser scenarios: keyboard search, URL/private-query boundaries, persisted favourites, collection management, axe scans, 320px and desktop layouts.
 - [x] Full existing browser regression suite: initial run **47/48**, sole failure was an outdated `/foods` assertion; updated to the registered `/foods/categories` destination and rerun successfully. Focused Phase 16 browser scenarios and corrected foundation test pass.
-- [ ] Phase 16 commit/tag push to `main` (checkpoint step after documentation and final regression).
+- [x] Full Playwright regression: **49/49** browser tests pass, including the added collection workflow and corrected foundation navigation expectation.
+- [x] Phase 16 commit `96b72fe` and tag `phase-16-global-search-saved-compare-complete` pushed to `main` and `origin` before opening Phase 17 documents.
 
 ## Handoff
 

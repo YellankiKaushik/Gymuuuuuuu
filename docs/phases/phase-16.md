@@ -1,6 +1,6 @@
 # Phase 16 — Global search, favourites and comparison
 
-Status: implementation and verification passed; checkpoint push is completed before Phase 17 begins.
+Status: implementation, verification and remote checkpoint are complete. Commit `96b72fe` and tag `phase-16-global-search-saved-compare-complete` are pushed to `main` before Phase 17 review.
 
 ## Requirements reviewed
 
@@ -30,10 +30,10 @@ Reference vectors whose expected behavior depends on source facts or an approved
 ## Verification
 
 - Strict TypeScript, ESLint, full unit suite (184 tests, 32 files), content validation and production build pass.
-- Full Playwright regression: 47/48 passed initially; the only failure expected the obsolete `/foods` path instead of current canonical `/foods/categories`. Updated that expectation and its focused regression passes.
+- Full Playwright regression: **49/49 pass**. The foundation test now expects the registered `/foods/categories` canonical destination.
 - Phase 16 browser scenarios cover keyboard navigation, public filters, private-query URL isolation, favourite persistence, collection rename/order/filter/note/move/copy, axe checks and 320px/desktop layouts.
 - No external search service or query telemetry was introduced. Public search and private search remain in the local runtime.
 
 ## Handoff
 
-Phase 17 may extend data portability across the modules. It must preserve Phase 16's import validation before writes, private search cache exclusion, browser-only personal data, explicit replace confirmation, source-owned records and collection notes as local-only fields. Do not start Phase 17 until the Phase 16 commit and tag are pushed.
+Phase 17 may extend data portability across the modules. It must preserve Phase 16's import validation before writes, private search cache exclusion, browser-only personal data, explicit replace confirmation, source-owned records and collection notes as local-only fields. Phase 16 has been pushed and tagged before Phase 17 document review.
