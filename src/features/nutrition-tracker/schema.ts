@@ -3,6 +3,7 @@ import { foodReference } from "../foods/schema";
 import { compositionProfileNormativeSchema } from "../foods/schema.generated";
 import * as normative from "./schema.generated";
 import reference from "../../content/nutrition/reference.json";
+import { recipeLogReferenceSchema } from "../../domain/schemas/recipe-log";
 export const nutritionReference = reference;
 export const nutritionNutrients = foodReference.nutrientRegistry;
 export function nutrientDefinition(id: string) {
@@ -26,8 +27,11 @@ const supportedVersion = z.literal(1),
 const unique = (ids: readonly string[]) => new Set(ids).size === ids.length;
 const sourceRecordSchema =
   compositionProfileNormativeSchema.shape.sourceRecords.element;
-export const loggedNutrientSchema =
-  normative.loggedNutrientNormativeSchema.superRefine((n, ctx) => {
+export const loggedNutrientSchema = normative.loggedNutrientNormativeSchema
+  .extend({
+    dataCompleteness: z.enum(["complete", "partial", "unavailable"]).optional(),
+  })
+  .superRefine((n, ctx) => {
     const definition = nutrientDefinition(n.nutrientId);
     if (!definition || definition.canonicalUnit !== n.unit)
       ctx.addIssue({
@@ -92,16 +96,41 @@ export const foodEntrySchema = normative.foodEntryNormativeSchema
     nutrients: z.array(loggedNutrientSchema),
     sourceRecordsSnapshot: z.array(sourceRecordSchema).optional(),
     foodCategoryIdSnapshot: z.string().min(1).max(100).nullable().optional(),
+    recipeRef: recipeLogReferenceSchema.nullable().optional(),
   })
   .superRefine((entry, ctx) => {
     const issue = (message: string) =>
       ctx.addIssue({ code: "custom", message });
     if (!unique(entry.nutrients.map((n) => n.nutrientId)))
       issue("Duplicate nutrient IDs.");
-    if (entry.sourceKind === "recipe")
-      issue(
-        "Recipe entries require the Phase 11 verified recipe adapter, not available yet.",
-      );
+    if (entry.sourceKind === "recipe") {
+      if (
+        !entry.recipeRef ||
+        entry.customFoodRef ||
+        entry.canonicalFoodRef ||
+        entry.quickAdd
+      )
+        issue(
+          "Recipe entries need their verified version/methodology snapshot only.",
+        );
+      else
+        for (const nutrient of entry.nutrients) {
+          const quality = entry.recipeRef.nutrientQuality.find(
+            (n) => n.nutrientId === nutrient.nutrientId,
+          );
+          if (
+            !quality ||
+            nutrient.sourceRecordId !== entry.recipeRef.recipeVersionId ||
+            nutrient.dataCompleteness !==
+              (quality.status === "not_applicable"
+                ? "unavailable"
+                : quality.status)
+          )
+            issue(
+              "Recipe nutrient quality or source version disagrees with the stored reference.",
+            );
+        }
+    }
     if (entry.sourceKind !== "recipe" && entry.recipeRef)
       issue("Unexpected recipe reference on a non-recipe entry.");
     if (entry.amount.gramWeight !== null && entry.amount.gramWeight > 10000)

@@ -1,0 +1,3 @@
+# Recipe and meal-plan versions
+Stable identity IDs point to current versions. Saving creates a new version ID with the next sequence number, reason and timestamp. Optimistic updatedAt checks reject stale concurrent edits. Version IDs cannot be overwritten. Components, plans, groceries and diary entries keep frozen source/version data. Archived identities retain historical versions and can be reactivated.
+Consumed log associations are audit/journal records rather than changes to immutable planned nutrition. Personal module clearing preserves the nutrition database and its self-contained recipe/source snapshots.

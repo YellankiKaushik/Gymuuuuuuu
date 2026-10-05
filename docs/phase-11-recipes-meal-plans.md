@@ -1,0 +1,3 @@
+# Phase 11 architecture
+Personal recipe and meal-plan records live in fitness-os-recipes-meal-plans v1, using the ten supplied stores and indexes. Canonical identities point to immutable versions. Calculations are pure and validated before local transactions. React reads private data after hydration only; route metadata is static and noindex. Public recipe/template/factor releases are empty until source and licensing reviews exist.
+Recipe imports preserve source snapshots and verify arithmetic against immutable inputs. Planned meals remain distinct from consumed diary entries. A pending consumption intent is a recoverable cross-database journal; retry uses its fixed nutrition-entry identity.

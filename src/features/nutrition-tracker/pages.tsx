@@ -473,7 +473,9 @@ export function NutritionDayPage({ selectedDate }: { selectedDate?: string }) {
                         ? `${e.canonicalFoodRef.profileState} · ${e.canonicalFoodRef.sourceDatabase} · ${e.canonicalFoodRef.sourceRelease} · reviewed ${e.canonicalFoodRef.profileReviewedAt}`
                         : e.customFoodRef
                           ? `Custom revision ${e.customFoodRef.revisionId} · ${e.customFoodRef.sourceType}`
-                          : "Quick add: explicitly entered values only; no composition source."}
+                          : e.recipeRef
+                            ? `Recipe version ${e.recipeRef.versionNumber} · ${e.recipeRef.recipeVersionId} · Grade ${e.recipeRef.calculationGrade} · ${e.recipeRef.methodologyVersion}`
+                            : "Quick add: explicitly entered values only; no composition source."}
                     </p>
                     <p>{e.note}</p>
                     <ul>
@@ -481,7 +483,7 @@ export function NutritionDayPage({ selectedDate }: { selectedDate?: string }) {
                         <li key={n.nutrientId}>
                           {nutritionLabel(n.nutrientId)}:{" "}
                           {formatNutritionValue(n.loggedValue, n.unit)} ·{" "}
-                          {n.sourceStatus} · {n.sourceRecordId}
+                          {n.sourceStatus} · {n.dataCompleteness ?? "source snapshot"} · {n.sourceRecordId}
                         </li>
                       ))}
                     </ul>

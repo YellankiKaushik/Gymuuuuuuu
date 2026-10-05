@@ -352,6 +352,7 @@ export type NutrientTotal = {
   traceEntries: number;
   unavailableEntries: number;
   flaggedEntries: number;
+  partialEntries: number;
   coveragePercent: number | null;
   completeness: "complete" | "partial" | "unavailable" | "not_applicable";
 };
@@ -380,12 +381,14 @@ export function aggregateNutritionDay(
       trace = 0,
       missing = 0,
       flagged = 0,
+      partial = 0,
       total = 0;
     for (const e of active) {
       const n = e.nutrients.find((n) => n.nutrientId === def.id);
       if (e.sourceKind === "quick_add" && !n) continue;
       eligible++;
       if (n?.loggedValue != null) {
+        if (n.dataCompleteness === "partial") partial++;
         total += n.loggedValue;
         quantified++;
         if (
@@ -410,7 +413,9 @@ export function aggregateNutritionDay(
       traceEntries: trace,
       unavailableEntries: missing,
       flaggedEntries: flagged,
+      partialEntries: partial,
       ...computeNutrientCoverage(eligible, quantified),
+      ...(partial ? { completeness: "partial" as const } : {}),
     };
   });
 }

@@ -1,0 +1,3 @@
+# Grocery list rules
+Canonical merge keys include food ID, exact profile ID, source state, purchasing role and canonical mass unit. Custom keys include immutable revision ID. Raw/cooked variants remain separate. Unresolved ingredients and placeholders retain independent keys. Each owned production batch counts once, including batches with zero allocations. Leftovers do not multiply shopping requirements.
+Remaining mass is max(0, required minus on hand), only when both are known. Package quantities, store sections, purchased state and notes are user-entered; no prices or package weights are invented. Regeneration keeps earlier lists and copies compatible pantry states only after confirmation.
