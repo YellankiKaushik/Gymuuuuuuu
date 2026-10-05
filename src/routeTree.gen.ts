@@ -101,6 +101,19 @@ import { Route as RecoveryTopicsRouteImport } from './routes/recovery_.topics'
 import { Route as SleepHistoryRouteImport } from './routes/sleep_.history'
 import { Route as SleepLogRouteImport } from './routes/sleep_.log'
 import { Route as SleepMethodologyRouteImport } from './routes/sleep_.methodology'
+import { Route as SupplementsAdverseEventsRouteImport } from './routes/supplements_.adverse-events'
+import { Route as SupplementsAntiDopingRouteImport } from './routes/supplements_.anti-doping'
+import { Route as SupplementsCompareRouteImport } from './routes/supplements_.compare'
+import { Route as SupplementsEvidenceRouteImport } from './routes/supplements_.evidence'
+import { Route as SupplementsFrameworksRouteImport } from './routes/supplements_.frameworks'
+import { Route as SupplementsIngredientsRouteImport } from './routes/supplements_.ingredients'
+import { Route as SupplementsMethodologyRouteImport } from './routes/supplements_.methodology'
+import { Route as SupplementsPrivacyRouteImport } from './routes/supplements_.privacy'
+import { Route as SupplementsProductsRouteImport } from './routes/supplements_.products'
+import { Route as SupplementsQualityRouteImport } from './routes/supplements_.quality'
+import { Route as SupplementsSafetyRouteImport } from './routes/supplements_.safety'
+import { Route as SupplementsSettingsRouteImport } from './routes/supplements_.settings'
+import { Route as SupplementsTrialsRouteImport } from './routes/supplements_.trials'
 import { Route as WarmUpsRoutineSlugRouteImport } from './routes/warm-ups_.$routineSlug'
 import { Route as WorkoutHistoryRouteImport } from './routes/workout_.history'
 import { Route as WorkoutSettingsRouteImport } from './routes/workout_.settings'
@@ -130,6 +143,12 @@ import { Route as NutritionCustomFoodsCustomFoodIdRouteImport } from './routes/n
 import { Route as NutritionDayDateRouteImport } from './routes/nutrition.day.$date'
 import { Route as RecipesLocalRecipeIdRouteImport } from './routes/recipes_.local.$recipeId'
 import { Route as RecoveryTopicsTopicSlugRouteImport } from './routes/recovery_.topics_.$topicSlug'
+import { Route as SupplementsEvidenceClaimSlugRouteImport } from './routes/supplements_.evidence_.$claimSlug'
+import { Route as SupplementsIngredientsIngredientSlugRouteImport } from './routes/supplements_.ingredients_.$ingredientSlug'
+import { Route as SupplementsProductsProductIdRouteImport } from './routes/supplements_.products_.$productId'
+import { Route as SupplementsProductsCreateRouteImport } from './routes/supplements_.products_.create'
+import { Route as SupplementsTrialsTrialIdRouteImport } from './routes/supplements_.trials_.$trialId'
+import { Route as SupplementsTrialsCreateRouteImport } from './routes/supplements_.trials_.create'
 import { Route as WorkoutHistorySessionIdRouteImport } from './routes/workout_.history_.$sessionId'
 import { Route as WorkoutSessionSessionIdRouteImport } from './routes/workout_.session.$sessionId'
 import { Route as WorkoutSummarySessionIdRouteImport } from './routes/workout_.summary.$sessionId'
@@ -598,6 +617,72 @@ const SleepMethodologyRoute = SleepMethodologyRouteImport.update({
   path: '/sleep/methodology',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SupplementsAdverseEventsRoute =
+  SupplementsAdverseEventsRouteImport.update({
+    id: '/supplements_/adverse-events',
+    path: '/supplements/adverse-events',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SupplementsAntiDopingRoute = SupplementsAntiDopingRouteImport.update({
+  id: '/supplements_/anti-doping',
+  path: '/supplements/anti-doping',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsCompareRoute = SupplementsCompareRouteImport.update({
+  id: '/supplements_/compare',
+  path: '/supplements/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsEvidenceRoute = SupplementsEvidenceRouteImport.update({
+  id: '/supplements_/evidence',
+  path: '/supplements/evidence',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsFrameworksRoute = SupplementsFrameworksRouteImport.update({
+  id: '/supplements_/frameworks',
+  path: '/supplements/frameworks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsIngredientsRoute = SupplementsIngredientsRouteImport.update({
+  id: '/supplements_/ingredients',
+  path: '/supplements/ingredients',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsMethodologyRoute = SupplementsMethodologyRouteImport.update({
+  id: '/supplements_/methodology',
+  path: '/supplements/methodology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsPrivacyRoute = SupplementsPrivacyRouteImport.update({
+  id: '/supplements_/privacy',
+  path: '/supplements/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsProductsRoute = SupplementsProductsRouteImport.update({
+  id: '/supplements_/products',
+  path: '/supplements/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsQualityRoute = SupplementsQualityRouteImport.update({
+  id: '/supplements_/quality',
+  path: '/supplements/quality',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsSafetyRoute = SupplementsSafetyRouteImport.update({
+  id: '/supplements_/safety',
+  path: '/supplements/safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsSettingsRoute = SupplementsSettingsRouteImport.update({
+  id: '/supplements_/settings',
+  path: '/supplements/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementsTrialsRoute = SupplementsTrialsRouteImport.update({
+  id: '/supplements_/trials',
+  path: '/supplements/trials',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WarmUpsRoutineSlugRoute = WarmUpsRoutineSlugRouteImport.update({
   id: '/warm-ups_/$routineSlug',
   path: '/warm-ups/$routineSlug',
@@ -755,6 +840,41 @@ const RecoveryTopicsTopicSlugRoute = RecoveryTopicsTopicSlugRouteImport.update({
   path: '/recovery/topics/$topicSlug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SupplementsEvidenceClaimSlugRoute =
+  SupplementsEvidenceClaimSlugRouteImport.update({
+    id: '/supplements_/evidence_/$claimSlug',
+    path: '/supplements/evidence/$claimSlug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SupplementsIngredientsIngredientSlugRoute =
+  SupplementsIngredientsIngredientSlugRouteImport.update({
+    id: '/supplements_/ingredients_/$ingredientSlug',
+    path: '/supplements/ingredients/$ingredientSlug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SupplementsProductsProductIdRoute =
+  SupplementsProductsProductIdRouteImport.update({
+    id: '/supplements_/products_/$productId',
+    path: '/supplements/products/$productId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SupplementsProductsCreateRoute =
+  SupplementsProductsCreateRouteImport.update({
+    id: '/supplements_/products_/create',
+    path: '/supplements/products/create',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SupplementsTrialsTrialIdRoute =
+  SupplementsTrialsTrialIdRouteImport.update({
+    id: '/supplements_/trials_/$trialId',
+    path: '/supplements/trials/$trialId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SupplementsTrialsCreateRoute = SupplementsTrialsCreateRouteImport.update({
+  id: '/supplements_/trials_/create',
+  path: '/supplements/trials/create',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkoutHistorySessionIdRoute = WorkoutHistorySessionIdRouteImport.update({
   id: '/workout_/history_/$sessionId',
   path: '/workout/history/$sessionId',
@@ -874,6 +994,19 @@ export interface FileRoutesByFullPath {
   '/sleep/history': typeof SleepHistoryRoute
   '/sleep/log': typeof SleepLogRoute
   '/sleep/methodology': typeof SleepMethodologyRoute
+  '/supplements/adverse-events': typeof SupplementsAdverseEventsRoute
+  '/supplements/anti-doping': typeof SupplementsAntiDopingRoute
+  '/supplements/compare': typeof SupplementsCompareRoute
+  '/supplements/evidence': typeof SupplementsEvidenceRoute
+  '/supplements/frameworks': typeof SupplementsFrameworksRoute
+  '/supplements/ingredients': typeof SupplementsIngredientsRoute
+  '/supplements/methodology': typeof SupplementsMethodologyRoute
+  '/supplements/privacy': typeof SupplementsPrivacyRoute
+  '/supplements/products': typeof SupplementsProductsRoute
+  '/supplements/quality': typeof SupplementsQualityRoute
+  '/supplements/safety': typeof SupplementsSafetyRoute
+  '/supplements/settings': typeof SupplementsSettingsRoute
+  '/supplements/trials': typeof SupplementsTrialsRoute
   '/warm-ups/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
@@ -903,6 +1036,12 @@ export interface FileRoutesByFullPath {
   '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/recipes/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery/topics/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
+  '/supplements/evidence/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
+  '/supplements/ingredients/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
+  '/supplements/products/$productId': typeof SupplementsProductsProductIdRoute
+  '/supplements/products/create': typeof SupplementsProductsCreateRoute
+  '/supplements/trials/$trialId': typeof SupplementsTrialsTrialIdRoute
+  '/supplements/trials/create': typeof SupplementsTrialsCreateRoute
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
@@ -998,6 +1137,19 @@ export interface FileRoutesByTo {
   '/sleep/history': typeof SleepHistoryRoute
   '/sleep/log': typeof SleepLogRoute
   '/sleep/methodology': typeof SleepMethodologyRoute
+  '/supplements/adverse-events': typeof SupplementsAdverseEventsRoute
+  '/supplements/anti-doping': typeof SupplementsAntiDopingRoute
+  '/supplements/compare': typeof SupplementsCompareRoute
+  '/supplements/evidence': typeof SupplementsEvidenceRoute
+  '/supplements/frameworks': typeof SupplementsFrameworksRoute
+  '/supplements/ingredients': typeof SupplementsIngredientsRoute
+  '/supplements/methodology': typeof SupplementsMethodologyRoute
+  '/supplements/privacy': typeof SupplementsPrivacyRoute
+  '/supplements/products': typeof SupplementsProductsRoute
+  '/supplements/quality': typeof SupplementsQualityRoute
+  '/supplements/safety': typeof SupplementsSafetyRoute
+  '/supplements/settings': typeof SupplementsSettingsRoute
+  '/supplements/trials': typeof SupplementsTrialsRoute
   '/warm-ups/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
   '/workout/settings': typeof WorkoutSettingsRoute
@@ -1027,6 +1179,12 @@ export interface FileRoutesByTo {
   '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/recipes/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery/topics/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
+  '/supplements/evidence/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
+  '/supplements/ingredients/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
+  '/supplements/products/$productId': typeof SupplementsProductsProductIdRoute
+  '/supplements/products/create': typeof SupplementsProductsCreateRoute
+  '/supplements/trials/$trialId': typeof SupplementsTrialsTrialIdRoute
+  '/supplements/trials/create': typeof SupplementsTrialsCreateRoute
   '/workout/history/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
@@ -1127,6 +1285,19 @@ export interface FileRoutesById {
   '/sleep_/history': typeof SleepHistoryRoute
   '/sleep_/log': typeof SleepLogRoute
   '/sleep_/methodology': typeof SleepMethodologyRoute
+  '/supplements_/adverse-events': typeof SupplementsAdverseEventsRoute
+  '/supplements_/anti-doping': typeof SupplementsAntiDopingRoute
+  '/supplements_/compare': typeof SupplementsCompareRoute
+  '/supplements_/evidence': typeof SupplementsEvidenceRoute
+  '/supplements_/frameworks': typeof SupplementsFrameworksRoute
+  '/supplements_/ingredients': typeof SupplementsIngredientsRoute
+  '/supplements_/methodology': typeof SupplementsMethodologyRoute
+  '/supplements_/privacy': typeof SupplementsPrivacyRoute
+  '/supplements_/products': typeof SupplementsProductsRoute
+  '/supplements_/quality': typeof SupplementsQualityRoute
+  '/supplements_/safety': typeof SupplementsSafetyRoute
+  '/supplements_/settings': typeof SupplementsSettingsRoute
+  '/supplements_/trials': typeof SupplementsTrialsRoute
   '/warm-ups_/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout_/history': typeof WorkoutHistoryRoute
   '/workout_/settings': typeof WorkoutSettingsRoute
@@ -1156,6 +1327,12 @@ export interface FileRoutesById {
   '/nutrition/day/$date': typeof NutritionDayDateRoute
   '/recipes_/local/$recipeId': typeof RecipesLocalRecipeIdRoute
   '/recovery_/topics_/$topicSlug': typeof RecoveryTopicsTopicSlugRoute
+  '/supplements_/evidence_/$claimSlug': typeof SupplementsEvidenceClaimSlugRoute
+  '/supplements_/ingredients_/$ingredientSlug': typeof SupplementsIngredientsIngredientSlugRoute
+  '/supplements_/products_/$productId': typeof SupplementsProductsProductIdRoute
+  '/supplements_/products_/create': typeof SupplementsProductsCreateRoute
+  '/supplements_/trials_/$trialId': typeof SupplementsTrialsTrialIdRoute
+  '/supplements_/trials_/create': typeof SupplementsTrialsCreateRoute
   '/workout_/history_/$sessionId': typeof WorkoutHistorySessionIdRoute
   '/workout_/session/$sessionId': typeof WorkoutSessionSessionIdRoute
   '/workout_/summary/$sessionId': typeof WorkoutSummarySessionIdRoute
@@ -1257,6 +1434,19 @@ export interface FileRouteTypes {
     | '/sleep/history'
     | '/sleep/log'
     | '/sleep/methodology'
+    | '/supplements/adverse-events'
+    | '/supplements/anti-doping'
+    | '/supplements/compare'
+    | '/supplements/evidence'
+    | '/supplements/frameworks'
+    | '/supplements/ingredients'
+    | '/supplements/methodology'
+    | '/supplements/privacy'
+    | '/supplements/products'
+    | '/supplements/quality'
+    | '/supplements/safety'
+    | '/supplements/settings'
+    | '/supplements/trials'
     | '/warm-ups/$routineSlug'
     | '/workout/history'
     | '/workout/settings'
@@ -1286,6 +1476,12 @@ export interface FileRouteTypes {
     | '/nutrition/day/$date'
     | '/recipes/local/$recipeId'
     | '/recovery/topics/$topicSlug'
+    | '/supplements/evidence/$claimSlug'
+    | '/supplements/ingredients/$ingredientSlug'
+    | '/supplements/products/$productId'
+    | '/supplements/products/create'
+    | '/supplements/trials/$trialId'
+    | '/supplements/trials/create'
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
@@ -1381,6 +1577,19 @@ export interface FileRouteTypes {
     | '/sleep/history'
     | '/sleep/log'
     | '/sleep/methodology'
+    | '/supplements/adverse-events'
+    | '/supplements/anti-doping'
+    | '/supplements/compare'
+    | '/supplements/evidence'
+    | '/supplements/frameworks'
+    | '/supplements/ingredients'
+    | '/supplements/methodology'
+    | '/supplements/privacy'
+    | '/supplements/products'
+    | '/supplements/quality'
+    | '/supplements/safety'
+    | '/supplements/settings'
+    | '/supplements/trials'
     | '/warm-ups/$routineSlug'
     | '/workout/history'
     | '/workout/settings'
@@ -1410,6 +1619,12 @@ export interface FileRouteTypes {
     | '/nutrition/day/$date'
     | '/recipes/local/$recipeId'
     | '/recovery/topics/$topicSlug'
+    | '/supplements/evidence/$claimSlug'
+    | '/supplements/ingredients/$ingredientSlug'
+    | '/supplements/products/$productId'
+    | '/supplements/products/create'
+    | '/supplements/trials/$trialId'
+    | '/supplements/trials/create'
     | '/workout/history/$sessionId'
     | '/workout/session/$sessionId'
     | '/workout/summary/$sessionId'
@@ -1509,6 +1724,19 @@ export interface FileRouteTypes {
     | '/sleep_/history'
     | '/sleep_/log'
     | '/sleep_/methodology'
+    | '/supplements_/adverse-events'
+    | '/supplements_/anti-doping'
+    | '/supplements_/compare'
+    | '/supplements_/evidence'
+    | '/supplements_/frameworks'
+    | '/supplements_/ingredients'
+    | '/supplements_/methodology'
+    | '/supplements_/privacy'
+    | '/supplements_/products'
+    | '/supplements_/quality'
+    | '/supplements_/safety'
+    | '/supplements_/settings'
+    | '/supplements_/trials'
     | '/warm-ups_/$routineSlug'
     | '/workout_/history'
     | '/workout_/settings'
@@ -1538,6 +1766,12 @@ export interface FileRouteTypes {
     | '/nutrition/day/$date'
     | '/recipes_/local/$recipeId'
     | '/recovery_/topics_/$topicSlug'
+    | '/supplements_/evidence_/$claimSlug'
+    | '/supplements_/ingredients_/$ingredientSlug'
+    | '/supplements_/products_/$productId'
+    | '/supplements_/products_/create'
+    | '/supplements_/trials_/$trialId'
+    | '/supplements_/trials_/create'
     | '/workout_/history_/$sessionId'
     | '/workout_/session/$sessionId'
     | '/workout_/summary/$sessionId'
@@ -1624,6 +1858,19 @@ export interface RootRouteChildren {
   SleepHistoryRoute: typeof SleepHistoryRoute
   SleepLogRoute: typeof SleepLogRoute
   SleepMethodologyRoute: typeof SleepMethodologyRoute
+  SupplementsAdverseEventsRoute: typeof SupplementsAdverseEventsRoute
+  SupplementsAntiDopingRoute: typeof SupplementsAntiDopingRoute
+  SupplementsCompareRoute: typeof SupplementsCompareRoute
+  SupplementsEvidenceRoute: typeof SupplementsEvidenceRoute
+  SupplementsFrameworksRoute: typeof SupplementsFrameworksRoute
+  SupplementsIngredientsRoute: typeof SupplementsIngredientsRoute
+  SupplementsMethodologyRoute: typeof SupplementsMethodologyRoute
+  SupplementsPrivacyRoute: typeof SupplementsPrivacyRoute
+  SupplementsProductsRoute: typeof SupplementsProductsRoute
+  SupplementsQualityRoute: typeof SupplementsQualityRoute
+  SupplementsSafetyRoute: typeof SupplementsSafetyRoute
+  SupplementsSettingsRoute: typeof SupplementsSettingsRoute
+  SupplementsTrialsRoute: typeof SupplementsTrialsRoute
   WarmUpsRoutineSlugRoute: typeof WarmUpsRoutineSlugRoute
   WorkoutHistoryRoute: typeof WorkoutHistoryRoute
   WorkoutSettingsRoute: typeof WorkoutSettingsRoute
@@ -1648,6 +1895,12 @@ export interface RootRouteChildren {
   NutrientsCategoriesGroupIdRoute: typeof NutrientsCategoriesGroupIdRoute
   RecipesLocalRecipeIdRoute: typeof RecipesLocalRecipeIdRoute
   RecoveryTopicsTopicSlugRoute: typeof RecoveryTopicsTopicSlugRoute
+  SupplementsEvidenceClaimSlugRoute: typeof SupplementsEvidenceClaimSlugRoute
+  SupplementsIngredientsIngredientSlugRoute: typeof SupplementsIngredientsIngredientSlugRoute
+  SupplementsProductsProductIdRoute: typeof SupplementsProductsProductIdRoute
+  SupplementsProductsCreateRoute: typeof SupplementsProductsCreateRoute
+  SupplementsTrialsTrialIdRoute: typeof SupplementsTrialsTrialIdRoute
+  SupplementsTrialsCreateRoute: typeof SupplementsTrialsCreateRoute
   WorkoutHistorySessionIdRoute: typeof WorkoutHistorySessionIdRoute
   WorkoutSessionSessionIdRoute: typeof WorkoutSessionSessionIdRoute
   WorkoutSummarySessionIdRoute: typeof WorkoutSummarySessionIdRoute
@@ -2301,6 +2554,97 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SleepMethodologyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/supplements_/adverse-events': {
+      id: '/supplements_/adverse-events'
+      path: '/supplements/adverse-events'
+      fullPath: '/supplements/adverse-events'
+      preLoaderRoute: typeof SupplementsAdverseEventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/anti-doping': {
+      id: '/supplements_/anti-doping'
+      path: '/supplements/anti-doping'
+      fullPath: '/supplements/anti-doping'
+      preLoaderRoute: typeof SupplementsAntiDopingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/compare': {
+      id: '/supplements_/compare'
+      path: '/supplements/compare'
+      fullPath: '/supplements/compare'
+      preLoaderRoute: typeof SupplementsCompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/evidence': {
+      id: '/supplements_/evidence'
+      path: '/supplements/evidence'
+      fullPath: '/supplements/evidence'
+      preLoaderRoute: typeof SupplementsEvidenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/frameworks': {
+      id: '/supplements_/frameworks'
+      path: '/supplements/frameworks'
+      fullPath: '/supplements/frameworks'
+      preLoaderRoute: typeof SupplementsFrameworksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/ingredients': {
+      id: '/supplements_/ingredients'
+      path: '/supplements/ingredients'
+      fullPath: '/supplements/ingredients'
+      preLoaderRoute: typeof SupplementsIngredientsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/methodology': {
+      id: '/supplements_/methodology'
+      path: '/supplements/methodology'
+      fullPath: '/supplements/methodology'
+      preLoaderRoute: typeof SupplementsMethodologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/privacy': {
+      id: '/supplements_/privacy'
+      path: '/supplements/privacy'
+      fullPath: '/supplements/privacy'
+      preLoaderRoute: typeof SupplementsPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/products': {
+      id: '/supplements_/products'
+      path: '/supplements/products'
+      fullPath: '/supplements/products'
+      preLoaderRoute: typeof SupplementsProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/quality': {
+      id: '/supplements_/quality'
+      path: '/supplements/quality'
+      fullPath: '/supplements/quality'
+      preLoaderRoute: typeof SupplementsQualityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/safety': {
+      id: '/supplements_/safety'
+      path: '/supplements/safety'
+      fullPath: '/supplements/safety'
+      preLoaderRoute: typeof SupplementsSafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/settings': {
+      id: '/supplements_/settings'
+      path: '/supplements/settings'
+      fullPath: '/supplements/settings'
+      preLoaderRoute: typeof SupplementsSettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/trials': {
+      id: '/supplements_/trials'
+      path: '/supplements/trials'
+      fullPath: '/supplements/trials'
+      preLoaderRoute: typeof SupplementsTrialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/warm-ups_/$routineSlug': {
       id: '/warm-ups_/$routineSlug'
       path: '/warm-ups/$routineSlug'
@@ -2502,6 +2846,48 @@ declare module '@tanstack/react-router' {
       path: '/recovery/topics/$topicSlug'
       fullPath: '/recovery/topics/$topicSlug'
       preLoaderRoute: typeof RecoveryTopicsTopicSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/evidence_/$claimSlug': {
+      id: '/supplements_/evidence_/$claimSlug'
+      path: '/supplements/evidence/$claimSlug'
+      fullPath: '/supplements/evidence/$claimSlug'
+      preLoaderRoute: typeof SupplementsEvidenceClaimSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/ingredients_/$ingredientSlug': {
+      id: '/supplements_/ingredients_/$ingredientSlug'
+      path: '/supplements/ingredients/$ingredientSlug'
+      fullPath: '/supplements/ingredients/$ingredientSlug'
+      preLoaderRoute: typeof SupplementsIngredientsIngredientSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/products_/$productId': {
+      id: '/supplements_/products_/$productId'
+      path: '/supplements/products/$productId'
+      fullPath: '/supplements/products/$productId'
+      preLoaderRoute: typeof SupplementsProductsProductIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/products_/create': {
+      id: '/supplements_/products_/create'
+      path: '/supplements/products/create'
+      fullPath: '/supplements/products/create'
+      preLoaderRoute: typeof SupplementsProductsCreateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/trials_/$trialId': {
+      id: '/supplements_/trials_/$trialId'
+      path: '/supplements/trials/$trialId'
+      fullPath: '/supplements/trials/$trialId'
+      preLoaderRoute: typeof SupplementsTrialsTrialIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplements_/trials_/create': {
+      id: '/supplements_/trials_/create'
+      path: '/supplements/trials/create'
+      fullPath: '/supplements/trials/create'
+      preLoaderRoute: typeof SupplementsTrialsCreateRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/workout_/history_/$sessionId': {
@@ -2709,6 +3095,19 @@ const rootRouteChildren: RootRouteChildren = {
   SleepHistoryRoute: SleepHistoryRoute,
   SleepLogRoute: SleepLogRoute,
   SleepMethodologyRoute: SleepMethodologyRoute,
+  SupplementsAdverseEventsRoute: SupplementsAdverseEventsRoute,
+  SupplementsAntiDopingRoute: SupplementsAntiDopingRoute,
+  SupplementsCompareRoute: SupplementsCompareRoute,
+  SupplementsEvidenceRoute: SupplementsEvidenceRoute,
+  SupplementsFrameworksRoute: SupplementsFrameworksRoute,
+  SupplementsIngredientsRoute: SupplementsIngredientsRoute,
+  SupplementsMethodologyRoute: SupplementsMethodologyRoute,
+  SupplementsPrivacyRoute: SupplementsPrivacyRoute,
+  SupplementsProductsRoute: SupplementsProductsRoute,
+  SupplementsQualityRoute: SupplementsQualityRoute,
+  SupplementsSafetyRoute: SupplementsSafetyRoute,
+  SupplementsSettingsRoute: SupplementsSettingsRoute,
+  SupplementsTrialsRoute: SupplementsTrialsRoute,
   WarmUpsRoutineSlugRoute: WarmUpsRoutineSlugRoute,
   WorkoutHistoryRoute: WorkoutHistoryRoute,
   WorkoutSettingsRoute: WorkoutSettingsRoute,
@@ -2733,6 +3132,13 @@ const rootRouteChildren: RootRouteChildren = {
   NutrientsCategoriesGroupIdRoute: NutrientsCategoriesGroupIdRoute,
   RecipesLocalRecipeIdRoute: RecipesLocalRecipeIdRoute,
   RecoveryTopicsTopicSlugRoute: RecoveryTopicsTopicSlugRoute,
+  SupplementsEvidenceClaimSlugRoute: SupplementsEvidenceClaimSlugRoute,
+  SupplementsIngredientsIngredientSlugRoute:
+    SupplementsIngredientsIngredientSlugRoute,
+  SupplementsProductsProductIdRoute: SupplementsProductsProductIdRoute,
+  SupplementsProductsCreateRoute: SupplementsProductsCreateRoute,
+  SupplementsTrialsTrialIdRoute: SupplementsTrialsTrialIdRoute,
+  SupplementsTrialsCreateRoute: SupplementsTrialsCreateRoute,
   WorkoutHistorySessionIdRoute: WorkoutHistorySessionIdRoute,
   WorkoutSessionSessionIdRoute: WorkoutSessionSessionIdRoute,
   WorkoutSummarySessionIdRoute: WorkoutSummarySessionIdRoute,

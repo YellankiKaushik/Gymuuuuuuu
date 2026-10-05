@@ -29,6 +29,7 @@ import {
 } from "../src/features/programs/repository";
 import { validateRecoveryRelease } from "../src/features/recovery/publication";
 import { validateCardioRelease } from "../src/features/cardio/publication";
+import { validateSupplementsRelease } from "../src/features/supplements/publication";
 const errors = [
   ...validateAnatomy(muscleRecords),
   ...validateExercises(exerciseIdentities),
@@ -42,6 +43,7 @@ sourceSchema.array().parse(sourceRegistry);
 validatePublicRelease(publicRecipes, publicTemplates);
 validateRecoveryRelease();
 validateCardioRelease();
+validateSupplementsRelease();
 for (const [name, entries] of [
   ["regions", anatomyTaxonomy.regions],
   ["groups", anatomyTaxonomy.trainingGroups],
