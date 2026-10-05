@@ -16,7 +16,7 @@
 - [x] Add dependency update configuration, repository templates, security headers and an SSR nonce-based CSP, privacy/request checks, and release/data rollback runbooks.
 - [x] Implement and test release-manifest generation against the supplied Phase 18 schema. Require observed deployment and verification inputs; never invent deployment, TLS, backup, test or compatibility results.
 - [x] Run formatting, strict typecheck, lint, data validation, all unit tests, coverage, production build, browser E2E and accessibility checks. Record results and remaining gates.
-- [ ] Push this checkpoint to a review branch and record the exact commit and CI handoff.
+- [x] Push this checkpoint to the review branch `codex/phase-18-release-controls`; implementation commit `c899933f6d7b90e556e4da842ef03a14e279a73a`.
 
 ### Verified implementation checkpoint
 
@@ -26,7 +26,8 @@
 - Production Chromium: 52/52 browser tests passed. Production WebKit: 52/52 browser tests passed, including responsive and accessibility checks.
 - Local Firefox could not start because the installed Playwright Firefox executable lacks a Windows Side-by-Side runtime. The pull-request cross-browser workflow runs Chromium, Firefox and WebKit on Ubuntu, so Firefox will be verified in GitHub Actions.
 - Built browser JavaScript measured 625,834 gzip bytes total and 146,709 gzip bytes for the largest chunk, within the configured 700 KiB total and 200 KiB per-chunk budgets.
-- `git diff --check` passed. The workflow cross-browser matrix is configured for pull requests, but GitHub CI has not yet run for this checkpoint.
+- `git diff --check` passed. The workflow cross-browser matrix is configured for pull requests. GitHub Actions results are not verified from this workspace.
+- Creating the PR was attempted, but the GitHub connector returned 404 and the available browser session was signed out. The pushed branch is intact; its prefilled PR page is https://github.com/YellankiKaushik/Gymuuuuuuu/pull/new/codex/phase-18-release-controls.
 - The Vercel/domain/TLS, real-device/manual accessibility, owner backup/restore, prior-version data compatibility and production smoke gates below remain open.
 
 ## Owner-controlled gates still required for a production release
