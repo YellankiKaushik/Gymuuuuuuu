@@ -1,0 +1,53 @@
+{
+  "sourceId": "fda_daily_values",
+  "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+  "locator": "Reference Guide: Daily Values for Nutrients",
+  "sourceVersion": null,
+  "sourceDate": null,
+  "extractedAt": "2026-10-05T19:49:43.027832Z",
+  "reviewMethod": "Explicit transcription from the official FDA reference table and machine validation; no independent human review",
+  "rows": [
+    {
+      "nutrientId": "iron_mg",
+      "sourceName": "Iron",
+      "value": 18,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "calcium_mg",
+      "sourceName": "Calcium",
+      "value": 1300,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "vitamin_c_mg",
+      "sourceName": "Vitamin C",
+      "value": 90,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "magnesium_mg",
+      "sourceName": "Magnesium",
+      "value": 420,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "zinc_mg",
+      "sourceName": "Zinc",
+      "value": 11,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "vitamin_d_ug",
+      "sourceName": "Vitamin D",
+      "value": 20,
+      "sourceUnit": "mcg"
+    },
+    {
+      "nutrientId": "vitamin_b12_ug",
+      "sourceName": "Vitamin B12",
+      "value": 2.4,
+      "sourceUnit": "mcg"
+    }
+  ]
+}

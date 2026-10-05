@@ -42,18 +42,30 @@ for (const food of foodSchema
     module: "foods",
     id: food.id,
     slug: food.slug,
-    fields: food.compositionProfiles.map((p) =>
-      field(
-        `compositionProfiles.${p.profileId}`,
-        p.sourceRecords.map((s) => s.sourceId),
-        "dataset_value",
+    fields: [
+      ...(food.id === "food_green_gram"
+        ? [field("identity", ["tnau_green_gram_identity"])]
+        : []),
+      ...(food.id === "food_groundnut_oil"
+        ? [field("identity", ["fao_groundnut_oil_identity"])]
+        : []),
+      ...food.compositionProfiles.map((p) =>
+        field(
+          `compositionProfiles.${p.profileId}`,
+          p.sourceRecords.map((s) => s.sourceId),
+          "dataset_value",
+        ),
       ),
-    ),
+    ],
   });
 const nutrientSources: Readonly<Record<string, string>> = {
   iron_mg: "nih_ods_iron_consumer",
   calcium_mg: "nih_ods_calcium_consumer",
   vitamin_c_mg: "nih_ods_vitamin_c_consumer",
+  magnesium_mg: "nih_ods_magnesium_consumer",
+  zinc_mg: "nih_ods_zinc_consumer",
+  vitamin_d_ug: "nih_ods_vitamin_d_consumer",
+  vitamin_b12_ug: "nih_ods_vitamin_b12_consumer",
 };
 for (const n of nutrientJson.filter((n) => n.status === "published"))
   records.push({

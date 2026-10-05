@@ -14,6 +14,7 @@ import {
 import { frameworkDatasetSchema } from "../src/features/nutrients/frameworks";
 import { rankVerifiedFoodSources } from "../src/features/nutrients/ranking";
 import { foodSchema, normalizeFoodTerm } from "../src/features/foods/schema";
+import { verifyFdaReferenceValues } from "./content/fda";
 const root = "src/content/nutrients",
   identities = nutrientSchema
     .array()
@@ -31,6 +32,12 @@ const datasets = frameworkDatasetSchema
 if (new Set(datasets.map((d) => d.id)).size !== datasets.length)
   throw Error("Duplicate framework datasets");
 const published = records.filter((r) => r.status === "published");
+verifyFdaReferenceValues(
+  published,
+  JSON.parse(
+    readFileSync("src/content/provenance/fda-daily-values.json", "utf8"),
+  ),
+);
 for (const n of published)
   for (const r of n.referenceValues) {
     const dataset = datasets.find((d) => d.id === r.frameworkId);

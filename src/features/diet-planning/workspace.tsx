@@ -890,9 +890,9 @@ export function DietPlanner({
                 >
                   Population references for fibre, fat and total water
                 </Link>
-                <InfoCallout title="Reference values unavailable">
-                  No approved Phase 08 numeric intake dataset is currently
-                  published. The fibre planning benchmark is shown separately.
+                <InfoCallout title="Population references unavailable">
+                  Population-specific fibre, fat and total-water references are
+                  not yet available for these frameworks. The fibre planning benchmark is shown separately.
                   Total water includes food and beverages; needs vary with
                   circumstances.
                 </InfoCallout>

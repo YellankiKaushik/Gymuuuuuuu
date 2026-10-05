@@ -1,3 +1,5 @@
+import { routeAuditInventory } from "./content/route-inventory";
+import { collectBrowserEvidence } from "./content/browser-report";
 import { publicRecipes } from "../src/features/recipes-meal-plans/public-records";
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
@@ -187,6 +189,10 @@ const sourceCoverage = groups.map((g) => ({
 }));
 if (sourceCoverage.some((m) => m.missingSourceProvenance.length))
   throw Error("Published record lacks verified provenance.");
+const browserEvidence = collectBrowserEvidence(
+  routeAuditInventory(tree, expectedSearch),
+  read("src/data/search/search-manifest.json"),
+);
 const report = {
   schemaVersion: 1,
   milestone: "Phase 19 — Verified Content Completion",
@@ -206,7 +212,10 @@ const report = {
     route,
     dynamic: route.includes("$"),
     staticInventory: "implemented",
-    browserAudit: "pending_phase19",
+    browserAudit:
+      browserEvidence.routes.find(
+        (r) => r.path === route.replace(/\$[^/]+/g, "audit-unknown-record"),
+      )?.result ?? "unmeasured",
   })),
   routeFiles,
   implementedTrackers: features(
@@ -259,12 +268,24 @@ const report = {
     .filter((m) => m.publishedIdentities === 0)
     .map((m) => m.module),
   missingFoodMedia: foods.filter((f) => !f.media?.length).map((f) => f.id),
+  browserAudit: browserEvidence,
   verification: {
     sourceAndRelationshipValidation: "npm run validate:content",
     staleSearchValidation: "npm run content:audit after npm run build",
-    unreachableRoutes: "not yet measured across the complete route inventory",
-    inaccessibleUiStates:
-      "not yet measured across the complete route inventory",
+    unreachableRoutes: browserEvidence.routes
+      .filter(
+        (r) =>
+          r.evidence &&
+          (r.evidence.status === null ||
+            r.evidence.status >= (r.kind === "missing_record" ? 500 : 400)),
+      )
+      .map((r) => r.path),
+    inaccessibleUiStates: browserEvidence.routes.flatMap(
+      (r) =>
+        r.evidence?.states
+          .filter((s) => s.overflow || s.violations.length)
+          .map((state) => ({ path: r.path, ...state })) ?? [],
+    ),
     missingSourceReferences: sourceCoverage.flatMap(
       (m) => m.missingSourceProvenance,
     ),
@@ -280,10 +301,18 @@ writeFileSync(
 );
 writeFileSync(
   "docs/reports/content-completion.md",
-  `# Content completion audit\n\nStatus: **in progress**. Production deployment remains disabled. Counts are recomputed from production adapters and identity seeds.\n\n| Module | Identities | Published | Blocked |\n| --- | ---: | ---: | ---: |\n${modules.map((m) => `| ${m.module} | ${m.totalIdentities} | ${m.publishedIdentities} | ${m.draftIdentities} |`).join("\n")}\n\n${routes.length} route patterns implemented; full Phase 19 browser traversal remains pending. ${report.foodProfiles} food profiles, ${report.numericFoodValues} numeric food values. Every remaining identity and its block reason appears in the JSON report.\n\nNo independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. This report does not certify completion.\n`,
+  `# Content completion audit\n\nStatus: **in progress**. Production deployment remains disabled. Counts are recomputed from production adapters and identity seeds.\n\n| Module | Identities | Published | Blocked |\n| --- | ---: | ---: | ---: |\n${modules.map((m) => `| ${m.module} | ${m.totalIdentities} | ${m.publishedIdentities} | ${m.draftIdentities} |`).join("\n")}\n\n${routes.length} route patterns implemented. Current-build browser evidence: ${browserEvidence.passed} passed, ${browserEvidence.failed} failed, ${browserEvidence.unmeasured} unmeasured out of ${browserEvidence.expected} route/record URLs. Stale build or content reports are excluded. ${report.foodProfiles} food profiles, ${report.numericFoodValues} numeric food values. Every remaining identity and its block reason appears in the JSON report.\n\nNo independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. This report does not certify completion.\n`,
 );
 console.log(
   modules
     .map((m) => `${m.module}: ${m.publishedIdentities}/${m.totalIdentities}`)
     .join("\n"),
 );
+
+if (
+  process.argv.includes("--require-browser-pass") &&
+  (browserEvidence.failed || browserEvidence.unmeasured)
+)
+  throw Error(
+    "Current-build browser inventory has failed or unmeasured routes; inspect the generated report.",
+  );

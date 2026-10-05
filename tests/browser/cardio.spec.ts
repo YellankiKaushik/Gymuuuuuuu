@@ -277,7 +277,15 @@ test("cardio manual entry, audit correction, immutable routine versions, resumab
     page
       .getByRole("status")
       .filter({ hasText: "Read-only local context loaded" }),
-  ).toBeVisible();
+  )
+    .toBeVisible()
+    .catch(async (error: unknown) => {
+      console.error(
+        "Concurrent context diagnostics",
+        await page.locator("main").innerText(),
+      );
+      throw error;
+    });
   await page.evaluate(() => {
     if (document.activeElement instanceof HTMLElement)
       document.activeElement.blur();
@@ -342,7 +350,9 @@ test("cardio cross-tab ownership, keyboard, quota and storage denial", async ({
     .getByRole("button", { name: "End and save session", exact: true })
     .click();
   await expect(
-    page.getByRole("status").filter({ hasText: "Session ended and saved locally." }),
+    page
+      .getByRole("status")
+      .filter({ hasText: "Session ended and saved locally." }),
   ).toBeVisible();
   await page.goto("/cardio/session/new");
   await page

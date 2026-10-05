@@ -76,3 +76,34 @@ test("public recipe loads independently of personal databases and rejects unknow
     "noindex",
   );
 });
+test("public food data retries safely in the local diary without saving consumed records", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.route("**/assets/fruits-*.json", (route) => route.abort());
+  await page.goto("/nutrition/add");
+  await page
+    .getByRole("combobox", { name: "Entry type", exact: true })
+    .selectOption("canonical");
+  await page.getByLabel("Search reviewed foods").fill("apple");
+  await page
+    .getByRole("combobox", { name: "Exact food profile", exact: true })
+    .selectOption("profile_apple_fdc_1750341");
+  await expect(page.getByRole("alert")).toContainText(
+    "Your saved records have not changed",
+  );
+  await expect(
+    page.getByRole("button", { name: "Save consumed entry", exact: true }),
+  ).toBeDisabled();
+  await page.unroute("**/assets/fruits-*.json");
+  await page.getByRole("button", { name: "Retry food data" }).click();
+  await page.getByLabel("Consumed mass", { exact: true }).fill("100");
+  await expect(
+    page.getByRole("heading", { name: "Nutrient preview" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Save consumed entry", exact: true }),
+  ).toBeEnabled();
+  expect(errors).toEqual([]);
+});

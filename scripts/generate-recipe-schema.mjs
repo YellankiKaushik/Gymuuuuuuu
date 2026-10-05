@@ -1,3 +1,4 @@
+import process from "node:process";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 const path =
     "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Data_Schema.json",
@@ -13,15 +14,15 @@ function convert(s) {
   if (s.type === "null") return "z.null()";
   if (s.type === "boolean") return "z.boolean()";
   if (s.type === "string") {
-    c = "z.string()";
+    c =
+      s.format === "date-time"
+        ? "z.iso.datetime({offset:true})"
+        : s.format === "date"
+          ? "z.iso.date()"
+          : "z.string()";
     if (s.minLength !== undefined) c += `.min(${s.minLength})`;
     if (s.maxLength !== undefined) c += `.max(${s.maxLength})`;
     if (s.pattern) c += `.regex(new RegExp(${JSON.stringify(s.pattern)}))`;
-    if (s.format === "date-time")
-      c +=
-        '.refine(v=>z.iso.datetime({offset:true}).safeParse(v).success,"Invalid timestamp")';
-    if (s.format === "date")
-      c += '.refine(v=>z.iso.date().safeParse(v).success,"Invalid date")';
   } else if (["integer", "number"].includes(s.type)) {
     c = "z.number().finite()";
     if (s.type === "integer") c += ".int()";
@@ -54,15 +55,17 @@ writeFileSync(
       .map(([name, s]) => `export const ${name}NormativeSchema=${convert(s)}\n`)
       .join(""),
 );
-mkdirSync("src/content/recipes", { recursive: true });
-const reference = JSON.parse(
-  readFileSync(
-    "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Reference_Data.json",
-    "utf8",
-  ),
-);
-delete reference.testVectors;
-writeFileSync(
-  "src/content/recipes/reference.json",
-  JSON.stringify(reference, null, 2) + "\n",
-);
+if (!process.argv.includes("--schema-only")) {
+  mkdirSync("src/content/recipes", { recursive: true });
+  const reference = JSON.parse(
+    readFileSync(
+      "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Reference_Data.json",
+      "utf8",
+    ),
+  );
+  delete reference.testVectors;
+  writeFileSync(
+    "src/content/recipes/reference.json",
+    JSON.stringify(reference, null, 2) + "\n",
+  );
+}

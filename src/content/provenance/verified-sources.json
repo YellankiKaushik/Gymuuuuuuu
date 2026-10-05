@@ -103,7 +103,7 @@
   },
   {
     "id": "nih_ods_iron_consumer",
-    "title": "Iron \u2014 Consumer",
+    "title": "Iron — Consumer",
     "publisher": "NIH Office of Dietary Supplements",
     "url": "https://ods.od.nih.gov/factsheets/iron-Consumer/",
     "sourceVersion": null,
@@ -120,7 +120,7 @@
   },
   {
     "id": "nih_ods_calcium_consumer",
-    "title": "Calcium \u2014 Consumer",
+    "title": "Calcium — Consumer",
     "publisher": "NIH Office of Dietary Supplements",
     "url": "https://ods.od.nih.gov/factsheets/Calcium-Consumer/",
     "sourceVersion": "Updated September 14, 2023",
@@ -137,7 +137,7 @@
   },
   {
     "id": "nih_ods_vitamin_c_consumer",
-    "title": "Vitamin C \u2014 Consumer",
+    "title": "Vitamin C — Consumer",
     "publisher": "NIH Office of Dietary Supplements",
     "url": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/",
     "sourceVersion": "Updated March 22, 2021",
@@ -190,7 +190,7 @@
     "id": "original_recipes_v1",
     "title": "Original Fitness OS assembly recipes, version 1",
     "publisher": "Fitness OS repository",
-    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/recipes",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/f42f637747ea53694eea522aeaeae2ccbdcb34ab/scripts/compile-original-recipes.ts",
     "sourceVersion": "1.0.0",
     "sourceDate": "2026-10-05",
     "evidenceType": "original_repository_work",
@@ -205,10 +205,10 @@
   },
   {
     "id": "gray_1918_upper_arm",
-    "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443\u2013445)",
+    "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
     "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
     "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
-    "sourceVersion": "1918 historical edition; pp. 443\u2013445",
+    "sourceVersion": "1918 historical edition; pp. 443–445",
     "sourceDate": null,
     "evidenceType": "historical_anatomy",
     "extractedAt": "2026-10-05T14:59:24Z",
@@ -261,7 +261,7 @@
     "id": "original_curl_diagram_v1",
     "title": "Original elbow-flexion schematic",
     "publisher": "Fitness OS repository",
-    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/public/media/curl-elbow-flexion.svg",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/f42f637747ea53694eea522aeaeae2ccbdcb34ab/public/media/curl-elbow-flexion.svg",
     "sourceVersion": "1.0.0",
     "sourceDate": "2026-10-05",
     "evidenceType": "original_repository_work",
@@ -271,6 +271,108 @@
     "rightsReference": "Original repository vector drawing; no copied third-party artwork.",
     "limitations": [
       "Movement cue only, not an anatomical image or human technique review."
+    ]
+  },
+  {
+    "id": "tnau_green_gram_identity",
+    "title": "Greengram — botanical crop identity",
+    "publisher": "Tamil Nadu Agricultural University",
+    "url": "https://agritech.tnau.ac.in/agriculture/pulses_greengram.html",
+    "sourceVersion": null,
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-05T19:10:51Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "https://agritech.tnau.ac.in/agriculture/pulses_greengram.html",
+    "limitations": [
+      "Only the Vigna radiata naming equivalence is used. No agricultural doses, Indian food composition or cultivar equivalence is imported.",
+      "Brief factual paraphrase only; no copying of protected images or bulk text."
+    ]
+  },
+  {
+    "id": "fao_groundnut_oil_identity",
+    "title": "Codex named vegetable oils — arachis, peanut and groundnut naming",
+    "publisher": "FAO / Codex Alimentarius",
+    "url": "https://www.fao.org/4/W3963E/W3963E06.htm",
+    "sourceVersion": null,
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-05T19:10:51Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "https://www.fao.org/4/W3963E/W3963E06.htm",
+    "limitations": [
+      "Only the oil naming equivalence is used. This historical committee report does not establish current regulatory limits or composition.",
+      "Brief factual paraphrase only; no copying of protected images or bulk text."
+    ]
+  },
+  {
+    "id": "nih_ods_magnesium_consumer",
+    "title": "NIH ODS Magnesium consumer fact sheet",
+    "publisher": "National Institutes of Health Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/magnesium-Consumer/",
+    "sourceVersion": "Consumer fact sheet updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-05T19:44:43.741274Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+    "limitations": [
+      "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+      "Source date is the displayed update date, not a new clinical review by this application."
+    ]
+  },
+  {
+    "id": "nih_ods_zinc_consumer",
+    "title": "NIH ODS Zinc consumer fact sheet",
+    "publisher": "National Institutes of Health Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/",
+    "sourceVersion": "Consumer fact sheet updated 2022-10-04",
+    "sourceDate": "2022-10-04",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-05T19:44:43.741327Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+    "limitations": [
+      "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+      "Source date is the displayed update date, not a new clinical review by this application."
+    ]
+  },
+  {
+    "id": "nih_ods_vitamin_d_consumer",
+    "title": "NIH ODS Vitamin D consumer fact sheet",
+    "publisher": "National Institutes of Health Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer/",
+    "sourceVersion": "Consumer fact sheet updated 2022-11-08",
+    "sourceDate": "2022-11-08",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-05T19:44:43.741364Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+    "limitations": [
+      "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+      "Source date is the displayed update date, not a new clinical review by this application."
+    ]
+  },
+  {
+    "id": "nih_ods_vitamin_b12_consumer",
+    "title": "NIH ODS Vitamin B12 consumer fact sheet",
+    "publisher": "National Institutes of Health Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/vitaminb12-Consumer/",
+    "sourceVersion": "Consumer fact sheet updated 2023-12-15",
+    "sourceDate": "2023-12-15",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-05T19:44:43.741398Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+    "limitations": [
+      "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+      "Source date is the displayed update date, not a new clinical review by this application."
     ]
   }
 ]

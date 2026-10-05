@@ -6,12 +6,22 @@ import reference from "../../content/nutrition/reference.json";
 import { recipeLogReferenceSchema } from "../../domain/schemas/recipe-log";
 export const nutritionReference = reference;
 export const nutritionNutrients = foodReference.nutrientRegistry;
+const nutrientDefinitions = new Map(nutritionNutrients.map((n) => [n.id, n]));
 export function nutrientDefinition(id: string) {
-  return nutritionNutrients.find((n) => n.id === id);
+  return nutrientDefinitions.get(id);
 }
+const validatedTimeZones = new Set<string>();
 export const validTimeZone = (value: string) => {
+  if (validatedTimeZones.has(value)) return true;
   try {
     new Intl.DateTimeFormat("en", { timeZone: value });
+    // ICU's identifier registry is stable during this process. Avoid repeating
+    // formatter construction for every nested ingredient snapshot in a plan.
+    if (validatedTimeZones.size >= 64) {
+      const oldest = validatedTimeZones.values().next().value;
+      if (oldest !== undefined) validatedTimeZones.delete(oldest);
+    }
+    validatedTimeZones.add(value);
     return true;
   } catch {
     return false;

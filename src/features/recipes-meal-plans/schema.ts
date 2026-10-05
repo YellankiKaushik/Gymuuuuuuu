@@ -7,7 +7,7 @@ import {
   customRevisionSchema,
   targetSnapshotSchema,
   referenceSnapshotSchema,
-  nutritionNutrients,
+  nutrientDefinition,
   validTimeZone,
 } from "../nutrition-tracker/schema";
 export const recipeReference = reference;
@@ -46,51 +46,51 @@ export const retentionFactorSchema =
     reviewer: z.string().min(1).max(120),
     approved: z.literal(true),
   });
+const quantifiedIngredientStates = new Set([
+  "measured",
+  "calculated",
+  "estimated",
+  "user_entered",
+  "assumed_zero",
+]);
 export const ingredientNutrientSchema =
   n.ingredientNutrientNormativeSchema.superRefine((value, ctx) => {
-    const definition = nutritionNutrients.find(
-      (n) => n.id === value.nutrientId,
-    );
-    if (!definition || definition.canonicalUnit !== value.unit)
+    if (nutrientDefinition(value.nutrientId)?.canonicalUnit !== value.unit)
       ctx.addIssue({
         code: "custom",
         message:
           "Ingredient nutrient needs a known ID and compatible canonical unit.",
       });
-    if (
-      [
-        "measured",
-        "calculated",
-        "estimated",
-        "user_entered",
-        "assumed_zero",
-      ].includes(value.sourceStatus) &&
-      (value.per100gValue === null || value.preCookingAmount === null)
-    )
-      ctx.addIssue({
-        code: "custom",
-        message: "Quantified source status requires a numeric source amount.",
-      });
-    if (
-      ["trace", "not_available"].includes(value.sourceStatus) &&
-      (value.per100gValue !== null ||
+    if (quantifiedIngredientStates.has(value.sourceStatus)) {
+      if (value.per100gValue === null || value.preCookingAmount === null)
+        ctx.addIssue({
+          code: "custom",
+          message: "Quantified source status requires a numeric source amount.",
+        });
+    } else if (
+      value.sourceStatus === "trace" ||
+      value.sourceStatus === "not_available"
+    ) {
+      if (
+        value.per100gValue !== null ||
         value.preCookingAmount !== null ||
-        value.retainedAmount !== null)
-    )
-      ctx.addIssue({
-        code: "custom",
-        message: "Trace and missing ingredient values must remain null.",
-      });
-    if (
-      value.sourceStatus === "not_detected" &&
-      [value.per100gValue, value.preCookingAmount, value.retainedAmount].some(
-        (v) => v !== null && v !== 0,
+        value.retainedAmount !== null
       )
-    )
-      ctx.addIssue({
-        code: "custom",
-        message: "Not-detected is unquantified or explicit zero.",
-      });
+        ctx.addIssue({
+          code: "custom",
+          message: "Trace and missing ingredient values must remain null.",
+        });
+    } else if (value.sourceStatus === "not_detected") {
+      if (
+        (value.per100gValue !== null && value.per100gValue !== 0) ||
+        (value.preCookingAmount !== null && value.preCookingAmount !== 0) ||
+        (value.retainedAmount !== null && value.retainedAmount !== 0)
+      )
+        ctx.addIssue({
+          code: "custom",
+          message: "Not-detected is unquantified or explicit zero.",
+        });
+    }
   });
 export const recipeNutrientSchema = n.recipeNutrientNormativeSchema
   .extend({
@@ -103,11 +103,7 @@ export const recipeNutrientSchema = n.recipeNutrientNormativeSchema
     unknownMassIngredients: z.number().int().nonnegative(),
   })
   .superRefine((r, ctx) => {
-    if (
-      !nutritionNutrients.some(
-        (n) => n.id === r.nutrientId && n.canonicalUnit === r.unit,
-      )
-    )
+    if (nutrientDefinition(r.nutrientId)?.canonicalUnit !== r.unit)
       ctx.addIssue({
         code: "custom",
         message: "Unknown recipe nutrient/unit.",
@@ -335,10 +331,7 @@ export const plannedNutrientSchema = n.plannedNutrientNormativeSchema
     totalDays: z.number().int().min(1).max(28).optional(),
   })
   .refine(
-    (v) =>
-      nutritionNutrients.some(
-        (n) => n.id === v.nutrientId && n.canonicalUnit === v.unit,
-      ),
+    (v) => nutrientDefinition(v.nutrientId)?.canonicalUnit === v.unit,
     "Unknown planned nutrient/unit",
   );
 export const plannedItemSchema = n.plannedItemNormativeSchema

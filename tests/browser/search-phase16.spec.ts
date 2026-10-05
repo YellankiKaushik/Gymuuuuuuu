@@ -16,6 +16,16 @@ test("local search dialog supports keyboard suggestions, navigation and focus-sa
   await input.fill("vitamins");
   await expect(page.getByRole("option").first()).toBeVisible();
   await page.keyboard.press("ArrowDown");
+  await expect(page.getByRole("option").nth(1)).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
+  await page.keyboard.press("ArrowUp");
+  await expect(page.getByRole("option").first()).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
+  await input.fill("vitamin c");
   await expect(page.getByRole("option", { selected: true })).toContainText(
     "Vitamin C",
   );

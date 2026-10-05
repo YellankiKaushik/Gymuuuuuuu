@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { routeAuditInventory } from "../../scripts/content/route-inventory";
 import type { PublicSearchDocument } from "../../src/features/search/domain";
 const documents = JSON.parse(
   readFileSync("src/data/search/search-documents.public.json", "utf8"),
@@ -11,23 +12,10 @@ const manifest: unknown = JSON.parse(
 );
 
 const tree = readFileSync("src/routeTree.gen.ts", "utf8");
-const inventory = tree
-  .split("export interface FileRoutesByFullPath {")[1]!
-  .split("\n}")[0]!;
-const patterns = [...inventory.matchAll(/'([^']+)': typeof /g)].map(
-  (m) => m[1]!,
-);
-const cases = new Map<string, "route" | "public_record" | "missing_record">();
-for (const path of patterns) {
-  cases.set(
-    path.replace(/\$[^/]+/g, "audit-unknown-record"),
-    path.includes("$") ? "missing_record" : "route",
-  );
-}
-for (const d of documents) {
-  if (d.entityType !== "route" && d.entityType !== "dashboard_widget")
-    cases.set(d.route, "public_record");
-}
+const cases = routeAuditInventory(tree, documents);
+const buildDate = (
+  JSON.parse(readFileSync(".output/nitro.json", "utf8")) as { date: string }
+).date;
 
 for (const [path, kind] of cases) {
   test(`route audit ${path}`, async ({ page, browserName }) => {
@@ -99,6 +87,7 @@ for (const [path, kind] of cases) {
             browserName,
             generatedAt: new Date().toISOString(),
             contentManifest: manifest,
+            buildDate,
             status,
             finalUrl: page.url(),
             errors,

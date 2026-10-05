@@ -23,7 +23,7 @@ npm run test:e2e
 npm run test:a11y
 ```
 
-`npm run check` includes formatting for release and content tooling, lint, strict types, source-data validation, unit tests, privacy/repository audits, the production build, measured bundle-size budgets and a fresh completion audit. The coverage report is diagnostic; its current line coverage is about 74% and is not a correctness claim. GitHub Actions run the Chromium/Firefox/WebKit matrix on pull requests, the Phase 19 branch, main and the weekly schedule. `npm run test:routes` audits every route pattern and published factual link at mobile, tablet and desktop widths.
+`npm run check` includes formatting for release and content tooling, lint, strict types, source-data validation, unit tests, privacy/repository audits, the production build, measured bundle-size budgets and a fresh completion audit. The coverage report is diagnostic; its current line coverage is about 75% and is not a correctness claim. GitHub Actions run the Chromium/Firefox/WebKit matrix on pull requests, the Phase 19 branch, main and the weekly schedule. `npm run test:routes` audits every route pattern and published factual link at mobile, tablet and desktop widths. `npm run test:route-report` rejects failed or unmeasured current-build routes; evidence from an older build or content index is excluded.
 
 Set the public `VITE_PUBLIC_APP_ORIGIN` to the approved canonical domain in Vercel's Production environment. It must contain only the HTTP(S) origin (no path or query), and it is not a secret. Keep the same production origin before users save local data; browser IndexedDB does not move when origins change. `.env.example` shows the local default.
 
@@ -39,9 +39,9 @@ Vercel configuration is prepared with Nitro, per-request CSP nonces and browser 
 
 Phase 18 is integrated. Phase 19 is **in progress**, and this application is not yet certified as engineering/content complete. The generated [completion audit](docs/reports/content-completion.md) and its [JSON inventory](docs/reports/content-completion.json) list every identity, publication count and remaining content gap.
 
-Current personal-use publications: muscles 3/70, exercises 1/184, workout science 3/98, programs 0/50, foods 46/342 (47 preparation profiles), nutrients 3/51 (3 FDA Daily Value rows), recovery 2/124, cardio 1/202 and supplements 2/272. Twelve original recipes are available; public meal templates and reviewed recovery/cardio routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
+Current personal-use publications: muscles 3/70, exercises 1/184, workout science 3/98, programs 0/50, foods 226/342 (227 preparation profiles), nutrients 7/51 (7 FDA Daily Value rows), recovery 2/124, cardio 1/202 and supplements 2/272. Twelve original recipes are available; public meal templates and reviewed recovery/cardio routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
 
-Public search contains 73 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
+Public search contains 257 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
 
 ## Source policy and review levels
 
@@ -75,4 +75,4 @@ Importers parse and validate the whole proposed release before writes. Release c
 
 After the engineering/content completion checkpoint is actually issued, run the production build locally and test with synthetic records. Check real-device keyboard/touch use, screen readers, reduced motion, light/dark themes, 320px layout, tablet and desktop, print output, save/edit/delete feedback and storage-disabled behavior. Export a backup, restore it in a separate test browser profile and compare records before attempting any destructive operation. Test CSV escaping and invalid imports. Verify personal records remain on the device and that sources and review levels are understandable.
 
-Manual device and assistive-technology testing has not been performed. The local Windows Firefox runtime currently has a SideBySide/mozglue launch failure; that browser remains unverified until it runs successfully on a supported host. Do not connect a production domain or deploy production during this testing preparation.
+Manual device and assistive-technology testing has not been performed. The local Windows Firefox runtime currently has a SideBySide/mozglue launch failure; Linux CI at the first Phase 19 checkpoint passed 63/64 Firefox tests, with zoom reflow still failing; WebKit also passed 63/64 with one local-context loading failure. These remain open gates; no complete cross-browser pass is claimed. Do not connect a production domain or deploy production during this testing preparation.

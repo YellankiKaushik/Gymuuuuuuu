@@ -4,12 +4,7 @@ export const backupNormativeSchema = z.strictObject({
   format: z.literal("fitness-os-recipes-meal-plans-backup"),
   schemaVersion: z.number().finite().int().min(1),
   module: z.literal("recipes-meal-plans"),
-  exportedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  exportedAt: z.iso.datetime({ offset: true }),
   appVersion: z.string().nullable().optional(),
   preferences: z.strictObject({
     id: z.literal("recipe-meal-preferences"),
@@ -43,12 +38,7 @@ export const backupNormativeSchema = z.strictObject({
       )
       .optional(),
     requestPersistentStorage: z.boolean().optional(),
-    updatedAt: z
-      .string()
-      .refine(
-        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-        "Invalid timestamp",
-      ),
+    updatedAt: z.iso.datetime({ offset: true }),
   }),
   recipeIdentities: z.array(
     z.strictObject({
@@ -63,18 +53,8 @@ export const backupNormativeSchema = z.strictObject({
         .optional(),
       currentVersionId: z.string().regex(new RegExp("^rver_[a-zA-Z0-9_-]+$")),
       status: z.enum(["active", "archived"]),
-      createdAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
-      updatedAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
+      createdAt: z.iso.datetime({ offset: true }),
+      updatedAt: z.iso.datetime({ offset: true }),
     }),
   ),
   recipeVersions: z.array(
@@ -106,14 +86,7 @@ export const backupNormativeSchema = z.strictObject({
         ]),
         licenceText: z.string().max(1000).nullable().optional(),
         adapted: z.boolean().optional(),
-        reviewedAt: z
-          .string()
-          .refine(
-            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-            "Invalid timestamp",
-          )
-          .nullable()
-          .optional(),
+        reviewedAt: z.iso.datetime({ offset: true }).nullable().optional(),
       }),
       ingredients: z
         .array(
@@ -152,13 +125,8 @@ export const backupNormativeSchema = z.strictObject({
                   sourceRecordId: z.string().min(1).max(160),
                   sourceDatabase: z.string().min(1).max(160),
                   sourceRelease: z.string().min(1).max(100),
-                  profileReviewedAt: z
-                    .string()
-                    .refine(
-                      (v) =>
-                        z.iso.datetime({ offset: true }).safeParse(v).success,
-                      "Invalid timestamp",
-                    )
+                  profileReviewedAt: z.iso
+                    .datetime({ offset: true })
                     .nullable()
                     .optional(),
                 }),
@@ -290,13 +258,7 @@ export const backupNormativeSchema = z.strictObject({
         servingWeightGrams: z.number().finite().gt(0).nullable(),
         yieldFactor: z.number().finite().gt(0).nullable().optional(),
         tolerancePercent: z.number().finite().min(0).max(25),
-        measuredAt: z
-          .string()
-          .refine(
-            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-            "Invalid timestamp",
-          )
-          .nullable(),
+        measuredAt: z.iso.datetime({ offset: true }).nullable(),
         note: z.string().max(1000).nullable().optional(),
       }),
       calculation: z.strictObject({
@@ -343,12 +305,7 @@ export const backupNormativeSchema = z.strictObject({
               .optional(),
           }),
         ),
-        calculatedAt: z
-          .string()
-          .refine(
-            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-            "Invalid timestamp",
-          ),
+        calculatedAt: z.iso.datetime({ offset: true }),
         warnings: z.array(z.string().max(500)).optional(),
       }),
       tags: z.strictObject({
@@ -423,12 +380,7 @@ export const backupNormativeSchema = z.strictObject({
           }),
         )
         .optional(),
-      createdAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
+      createdAt: z.iso.datetime({ offset: true }),
       revisionReason: z.string().min(1).max(500),
     }),
   ),
@@ -439,18 +391,8 @@ export const backupNormativeSchema = z.strictObject({
       title: z.string().min(1).max(200),
       currentVersionId: z.string().regex(new RegExp("^mpver_[a-zA-Z0-9_-]+$")),
       status: z.enum(["active", "archived"]),
-      createdAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
-      updatedAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
+      createdAt: z.iso.datetime({ offset: true }),
+      updatedAt: z.iso.datetime({ offset: true }),
     }),
   ),
   mealPlanVersions: z.array(
@@ -460,9 +402,7 @@ export const backupNormativeSchema = z.strictObject({
       mealPlanId: z.string().regex(new RegExp("^mplan_[a-zA-Z0-9_-]+$")),
       versionNumber: z.number().finite().int().min(1),
       title: z.string().min(1).max(200),
-      startDate: z
-        .string()
-        .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+      startDate: z.iso.date(),
       dayCount: z.number().finite().int().min(1).max(28),
       timeZone: z.string().min(1).max(80),
       targetSnapshot: z.record(z.string(), z.json()).nullable(),
@@ -488,9 +428,7 @@ export const backupNormativeSchema = z.strictObject({
       plannedItems: z.array(
         z.strictObject({
           id: z.string().regex(new RegExp("^pitem_[a-zA-Z0-9_-]+$")),
-          localDate: z
-            .string()
-            .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+          localDate: z.iso.date(),
           mealSlotId: z.string().regex(new RegExp("^meal_[a-z0-9_]+$")),
           kind: z.enum([
             "recipe",
@@ -548,24 +486,14 @@ export const backupNormativeSchema = z.strictObject({
           }),
         ),
         completeness: z.enum(["complete", "partial", "unavailable"]),
-        calculatedAt: z
-          .string()
-          .refine(
-            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-            "Invalid timestamp",
-          ),
+        calculatedAt: z.iso.datetime({ offset: true }),
       }),
       groceryListId: z
         .string()
         .regex(new RegExp("^glist_[a-zA-Z0-9_-]+$"))
         .nullable()
         .optional(),
-      createdAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
+      createdAt: z.iso.datetime({ offset: true }),
       revisionReason: z.string().min(1).max(500),
     }),
   ),
@@ -574,9 +502,7 @@ export const backupNormativeSchema = z.strictObject({
       id: z.string().regex(new RegExp("^batch_[a-zA-Z0-9_-]+$")),
       mealPlanVersionId: z.string().regex(new RegExp("^mpver_[a-zA-Z0-9_-]+$")),
       recipeVersionId: z.string().regex(new RegExp("^rver_[a-zA-Z0-9_-]+$")),
-      productionDate: z
-        .string()
-        .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+      productionDate: z.iso.date(),
       totalServingEquivalents: z.number().finite().gt(0),
       allocations: z.array(
         z.strictObject({
@@ -593,12 +519,7 @@ export const backupNormativeSchema = z.strictObject({
       id: z.string().regex(new RegExp("^glist_[a-zA-Z0-9_-]+$")),
       schemaVersion: z.number().finite().int().min(1),
       mealPlanVersionId: z.string().regex(new RegExp("^mpver_[a-zA-Z0-9_-]+$")),
-      generatedAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
+      generatedAt: z.iso.datetime({ offset: true }),
       items: z.array(
         z.strictObject({
           id: z.string().regex(new RegExp("^gitem_[a-zA-Z0-9_-]+$")),
@@ -629,12 +550,7 @@ export const backupNormativeSchema = z.strictObject({
       id: z.string().regex(new RegExp("^fav_[a-zA-Z0-9_-]+$")),
       kind: z.enum(["recipe", "meal_plan_template"]),
       referenceId: z.string().min(1),
-      createdAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
+      createdAt: z.iso.datetime({ offset: true }),
     }),
   ),
   auditLog: z.array(
@@ -644,12 +560,7 @@ export const backupNormativeSchema = z.strictObject({
       entityType: z.string().min(1).max(100),
       entityId: z.string().min(1).max(160),
       detail: z.string().max(2000).nullable().optional(),
-      occurredAt: z
-        .string()
-        .refine(
-          (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-          "Invalid timestamp",
-        ),
+      occurredAt: z.iso.datetime({ offset: true }),
     }),
   ),
 });
@@ -685,12 +596,7 @@ export const preferencesNormativeSchema = z.strictObject({
     )
     .optional(),
   requestPersistentStorage: z.boolean().optional(),
-  updatedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  updatedAt: z.iso.datetime({ offset: true }),
 });
 export const recipeIdentityNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^recipe_[a-zA-Z0-9_-]+$")),
@@ -704,18 +610,8 @@ export const recipeIdentityNormativeSchema = z.strictObject({
     .optional(),
   currentVersionId: z.string().regex(new RegExp("^rver_[a-zA-Z0-9_-]+$")),
   status: z.enum(["active", "archived"]),
-  createdAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
-  updatedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  createdAt: z.iso.datetime({ offset: true }),
+  updatedAt: z.iso.datetime({ offset: true }),
 });
 export const recipeVersionNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^rver_[a-zA-Z0-9_-]+$")),
@@ -745,14 +641,7 @@ export const recipeVersionNormativeSchema = z.strictObject({
     ]),
     licenceText: z.string().max(1000).nullable().optional(),
     adapted: z.boolean().optional(),
-    reviewedAt: z
-      .string()
-      .refine(
-        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-        "Invalid timestamp",
-      )
-      .nullable()
-      .optional(),
+    reviewedAt: z.iso.datetime({ offset: true }).nullable().optional(),
   }),
   ingredients: z
     .array(
@@ -791,12 +680,8 @@ export const recipeVersionNormativeSchema = z.strictObject({
               sourceRecordId: z.string().min(1).max(160),
               sourceDatabase: z.string().min(1).max(160),
               sourceRelease: z.string().min(1).max(100),
-              profileReviewedAt: z
-                .string()
-                .refine(
-                  (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-                  "Invalid timestamp",
-                )
+              profileReviewedAt: z.iso
+                .datetime({ offset: true })
                 .nullable()
                 .optional(),
             }),
@@ -924,13 +809,7 @@ export const recipeVersionNormativeSchema = z.strictObject({
     servingWeightGrams: z.number().finite().gt(0).nullable(),
     yieldFactor: z.number().finite().gt(0).nullable().optional(),
     tolerancePercent: z.number().finite().min(0).max(25),
-    measuredAt: z
-      .string()
-      .refine(
-        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-        "Invalid timestamp",
-      )
-      .nullable(),
+    measuredAt: z.iso.datetime({ offset: true }).nullable(),
     note: z.string().max(1000).nullable().optional(),
   }),
   calculation: z.strictObject({
@@ -976,12 +855,7 @@ export const recipeVersionNormativeSchema = z.strictObject({
           .optional(),
       }),
     ),
-    calculatedAt: z
-      .string()
-      .refine(
-        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-        "Invalid timestamp",
-      ),
+    calculatedAt: z.iso.datetime({ offset: true }),
     warnings: z.array(z.string().max(500)).optional(),
   }),
   tags: z.strictObject({
@@ -1056,12 +930,7 @@ export const recipeVersionNormativeSchema = z.strictObject({
       }),
     )
     .optional(),
-  createdAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  createdAt: z.iso.datetime({ offset: true }),
   revisionReason: z.string().min(1).max(500),
 });
 export const sourceMetadataNormativeSchema = z.strictObject({
@@ -1085,14 +954,7 @@ export const sourceMetadataNormativeSchema = z.strictObject({
   ]),
   licenceText: z.string().max(1000).nullable().optional(),
   adapted: z.boolean().optional(),
-  reviewedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    )
-    .nullable()
-    .optional(),
+  reviewedAt: z.iso.datetime({ offset: true }).nullable().optional(),
 });
 export const ingredientLineNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^ing_[a-zA-Z0-9_-]+$")),
@@ -1129,12 +991,8 @@ export const ingredientLineNormativeSchema = z.strictObject({
         sourceRecordId: z.string().min(1).max(160),
         sourceDatabase: z.string().min(1).max(160),
         sourceRelease: z.string().min(1).max(100),
-        profileReviewedAt: z
-          .string()
-          .refine(
-            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-            "Invalid timestamp",
-          )
+        profileReviewedAt: z.iso
+          .datetime({ offset: true })
           .nullable()
           .optional(),
       }),
@@ -1226,14 +1084,7 @@ export const canonicalFoodRefNormativeSchema = z.strictObject({
   sourceRecordId: z.string().min(1).max(160),
   sourceDatabase: z.string().min(1).max(160),
   sourceRelease: z.string().min(1).max(100),
-  profileReviewedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    )
-    .nullable()
-    .optional(),
+  profileReviewedAt: z.iso.datetime({ offset: true }).nullable().optional(),
 });
 export const customFoodRefNormativeSchema = z.strictObject({
   customFoodId: z.string().min(1),
@@ -1311,13 +1162,7 @@ export const yieldModelNormativeSchema = z.strictObject({
   servingWeightGrams: z.number().finite().gt(0).nullable(),
   yieldFactor: z.number().finite().gt(0).nullable().optional(),
   tolerancePercent: z.number().finite().min(0).max(25),
-  measuredAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    )
-    .nullable(),
+  measuredAt: z.iso.datetime({ offset: true }).nullable(),
   note: z.string().max(1000).nullable().optional(),
 });
 export const recipeCalculationNormativeSchema = z.strictObject({
@@ -1358,12 +1203,7 @@ export const recipeCalculationNormativeSchema = z.strictObject({
         .optional(),
     }),
   ),
-  calculatedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  calculatedAt: z.iso.datetime({ offset: true }),
   warnings: z.array(z.string().max(500)).optional(),
 });
 export const recipeNutrientNormativeSchema = z.strictObject({
@@ -1437,18 +1277,8 @@ export const mealPlanIdentityNormativeSchema = z.strictObject({
   title: z.string().min(1).max(200),
   currentVersionId: z.string().regex(new RegExp("^mpver_[a-zA-Z0-9_-]+$")),
   status: z.enum(["active", "archived"]),
-  createdAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
-  updatedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  createdAt: z.iso.datetime({ offset: true }),
+  updatedAt: z.iso.datetime({ offset: true }),
 });
 export const mealPlanVersionNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^mpver_[a-zA-Z0-9_-]+$")),
@@ -1456,9 +1286,7 @@ export const mealPlanVersionNormativeSchema = z.strictObject({
   mealPlanId: z.string().regex(new RegExp("^mplan_[a-zA-Z0-9_-]+$")),
   versionNumber: z.number().finite().int().min(1),
   title: z.string().min(1).max(200),
-  startDate: z
-    .string()
-    .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+  startDate: z.iso.date(),
   dayCount: z.number().finite().int().min(1).max(28),
   timeZone: z.string().min(1).max(80),
   targetSnapshot: z.record(z.string(), z.json()).nullable(),
@@ -1484,9 +1312,7 @@ export const mealPlanVersionNormativeSchema = z.strictObject({
   plannedItems: z.array(
     z.strictObject({
       id: z.string().regex(new RegExp("^pitem_[a-zA-Z0-9_-]+$")),
-      localDate: z
-        .string()
-        .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+      localDate: z.iso.date(),
       mealSlotId: z.string().regex(new RegExp("^meal_[a-z0-9_]+$")),
       kind: z.enum(["recipe", "canonical_food", "custom_food", "placeholder"]),
       displayNameSnapshot: z.string().min(1).max(200),
@@ -1536,31 +1362,19 @@ export const mealPlanVersionNormativeSchema = z.strictObject({
       }),
     ),
     completeness: z.enum(["complete", "partial", "unavailable"]),
-    calculatedAt: z
-      .string()
-      .refine(
-        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-        "Invalid timestamp",
-      ),
+    calculatedAt: z.iso.datetime({ offset: true }),
   }),
   groceryListId: z
     .string()
     .regex(new RegExp("^glist_[a-zA-Z0-9_-]+$"))
     .nullable()
     .optional(),
-  createdAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  createdAt: z.iso.datetime({ offset: true }),
   revisionReason: z.string().min(1).max(500),
 });
 export const plannedItemNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^pitem_[a-zA-Z0-9_-]+$")),
-  localDate: z
-    .string()
-    .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+  localDate: z.iso.date(),
   mealSlotId: z.string().regex(new RegExp("^meal_[a-z0-9_]+$")),
   kind: z.enum(["recipe", "canonical_food", "custom_food", "placeholder"]),
   displayNameSnapshot: z.string().min(1).max(200),
@@ -1609,20 +1423,13 @@ export const planSummaryNormativeSchema = z.strictObject({
     }),
   ),
   completeness: z.enum(["complete", "partial", "unavailable"]),
-  calculatedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  calculatedAt: z.iso.datetime({ offset: true }),
 });
 export const batchInstanceNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^batch_[a-zA-Z0-9_-]+$")),
   mealPlanVersionId: z.string().regex(new RegExp("^mpver_[a-zA-Z0-9_-]+$")),
   recipeVersionId: z.string().regex(new RegExp("^rver_[a-zA-Z0-9_-]+$")),
-  productionDate: z
-    .string()
-    .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+  productionDate: z.iso.date(),
   totalServingEquivalents: z.number().finite().gt(0),
   allocations: z.array(
     z.strictObject({
@@ -1642,12 +1449,7 @@ export const groceryListNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^glist_[a-zA-Z0-9_-]+$")),
   schemaVersion: z.number().finite().int().min(1),
   mealPlanVersionId: z.string().regex(new RegExp("^mpver_[a-zA-Z0-9_-]+$")),
-  generatedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  generatedAt: z.iso.datetime({ offset: true }),
   items: z.array(
     z.strictObject({
       id: z.string().regex(new RegExp("^gitem_[a-zA-Z0-9_-]+$")),
@@ -1696,12 +1498,7 @@ export const favouriteNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^fav_[a-zA-Z0-9_-]+$")),
   kind: z.enum(["recipe", "meal_plan_template"]),
   referenceId: z.string().min(1),
-  createdAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  createdAt: z.iso.datetime({ offset: true }),
 });
 export const auditRecordNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^audit_[a-zA-Z0-9_-]+$")),
@@ -1709,10 +1506,5 @@ export const auditRecordNormativeSchema = z.strictObject({
   entityType: z.string().min(1).max(100),
   entityId: z.string().min(1).max(160),
   detail: z.string().max(2000).nullable().optional(),
-  occurredAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  occurredAt: z.iso.datetime({ offset: true }),
 });

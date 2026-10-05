@@ -483,7 +483,9 @@ export function NutritionDayPage({ selectedDate }: { selectedDate?: string }) {
                         <li key={n.nutrientId}>
                           {nutritionLabel(n.nutrientId)}:{" "}
                           {formatNutritionValue(n.loggedValue, n.unit)} ·{" "}
-                          {n.sourceStatus} · {n.dataCompleteness ?? "source snapshot"} · {n.sourceRecordId}
+                          {n.sourceStatus} ·{" "}
+                          {n.dataCompleteness ?? "source snapshot"} ·{" "}
+                          {n.sourceRecordId}
                         </li>
                       ))}
                     </ul>
@@ -921,6 +923,8 @@ function NutritionAddForm() {
     [selectedProfile, setSelectedProfile] = useState<CompositionProfile | null>(
       null,
     ),
+    [profileError, setProfileError] = useState<string | null>(null),
+    [profileAttempt, setProfileAttempt] = useState(0),
     [quantity, setQuantity] = useState(""),
     [unit, setUnit] = useState<string>(w.data?.preferences.massUnit ?? "g"),
     [note, setNote] = useState(""),
@@ -933,13 +937,26 @@ function NutritionAddForm() {
   }, [search]);
   useEffect(() => {
     let cancelled = false;
-    void getFoodProfile(profileId).then((result) => {
-      if (!cancelled) setSelectedProfile(result?.profile ?? null);
-    });
+    void getFoodProfile(profileId).then(
+      (result) => {
+        if (!cancelled) {
+          setSelectedProfile(result?.profile ?? null);
+          setProfileError(null);
+        }
+      },
+      () => {
+        if (!cancelled) {
+          setSelectedProfile(null);
+          setProfileError(
+            "Public food data could not be loaded. Your saved records have not changed.",
+          );
+        }
+      },
+    );
     return () => {
       cancelled = true;
     };
-  }, [profileId]);
+  }, [profileId, profileAttempt]);
   if (!w.data)
     return (
       <>
@@ -1086,9 +1103,7 @@ function NutritionAddForm() {
               setQuantity("");
             }}
           >
-            <option value="quick">
-              Quick add · explicit calories
-            </option>
+            <option value="quick">Quick add · explicit calories</option>
             <option value="canonical">Reviewed food profile</option>
             <option value="custom">
               Custom food · label or personal calculation
@@ -1179,8 +1194,8 @@ function NutritionAddForm() {
             </label>
             {matches.length === 0 ? (
               <p>
-                No reviewed food profiles have been published. You can enter
-                your own label as a custom food or use quick add.
+                No reviewed food profiles match this search. You can enter your
+                own label as a custom food or use quick add.
               </p>
             ) : (
               <label>
@@ -1188,7 +1203,11 @@ function NutritionAddForm() {
                 <select
                   required
                   value={profileId}
-                  onChange={(e) => setProfileId(e.target.value)}
+                  onChange={(e) => {
+                    setSelectedProfile(null);
+                    setProfileError(null);
+                    setProfileId(e.target.value);
+                  }}
                 >
                   <option value="">Choose a profile</option>
                   {matches.map(({ food: f, profile: p }) => (
@@ -1199,6 +1218,23 @@ function NutritionAddForm() {
                 </select>
               </label>
             )}
+            {profileError ? (
+              <div role="alert">
+                <p>{profileError}</p>
+                <button
+                  type="button"
+                  className="button secondary"
+                  onClick={() => {
+                    setProfileError(null);
+                    setProfileAttempt((attempt) => attempt + 1);
+                  }}
+                >
+                  Retry food data
+                </button>
+              </div>
+            ) : profileId && selectedProfile?.profileId !== profileId ? (
+              <p role="status">Loading public food data…</p>
+            ) : null}
             {searchResult.total > 30 && (
               <>
                 <p>
@@ -1357,7 +1393,12 @@ function NutritionAddForm() {
             </ul>
           </section>
         )}
-        <button className="button primary">Save consumed entry</button>
+        <button
+          className="button primary"
+          disabled={kind === "canonical" && !preview}
+        >
+          Save consumed entry
+        </button>
       </form>
       <section>
         <h2>Favourites</h2>

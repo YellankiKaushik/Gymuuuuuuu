@@ -1,16 +1,240 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "../common/icon";
-import { loadPublicSearchRuntime } from "../../features/search/runtime";
-import { searchDocuments, type SearchResult } from "../../features/search/engine";
+import {
+  searchDocuments,
+  type SearchResult,
+} from "../../features/search/engine";
 import { buildPrivateSearchDocuments } from "../../features/search/private-index";
-import { readSearchSettings, recordRecentView } from "../../features/saved/storage";
+import {
+  readSearchSettings,
+  recordRecentView,
+} from "../../features/saved/storage";
 import type { EntityReference } from "../../features/saved/schema";
+async function loadPublicSearchRuntime() {
+  const runtime = await import("../../features/search/runtime");
+  return runtime.loadPublicSearchRuntime();
+}
 
 export function ModuleFinder({ close }: { close: () => void }) {
-  const ref = useRef<HTMLDialogElement>(null), input = useRef<HTMLInputElement>(null), engineRef = useRef<Awaited<ReturnType<typeof loadPublicSearchRuntime>>["engine"] | null>(null);
-  const [query, setQuery] = useState(""), [selected, setSelected] = useState(0), [results, setResults] = useState<SearchResult[]>([]), [error, setError] = useState(""), [engine, setEngine] = useState<Awaited<ReturnType<typeof loadPublicSearchRuntime>>["engine"] | null>(null), [privateDocs, setPrivateDocs] = useState<SearchResult["document"][]>([]), [privateSuggestionsEnabled, setPrivateSuggestionsEnabled] = useState(false);
-  useEffect(() => { const dialog = ref.current, opener = document.activeElement instanceof HTMLElement ? document.activeElement : null; dialog?.showModal(); input.current?.focus(); let active = true; void Promise.all([loadPublicSearchRuntime(), readSearchSettings()]).then(async ([loaded, settings]) => { if (!active) return; engineRef.current = loaded.engine; setEngine(loaded.engine); if (settings.privateSearchEnabled && settings.privateSuggestionsEnabled) { const privateIndex = await buildPrivateSearchDocuments(); if (active) { setPrivateDocs(privateIndex.documents); setPrivateSuggestionsEnabled(true); } } }).catch(() => { if (active) setError("The local search index could not be loaded."); }); return () => { active = false; dialog?.close(); window.setTimeout(() => { if (opener?.isConnected) opener.focus() }, 0); engineRef.current?.dispose(); }; }, []);
-  useEffect(() => { let active = true; if (!engine) return () => { active = false; }; void (async () => { const publicItems = await engine.suggest(query); const privateItems = privateSuggestionsEnabled ? searchDocuments(privateDocs, { query, pageSize: 8 }).results : []; if (active) { setResults([...publicItems, ...privateItems].sort((left, right) => right.score - left.score || left.document.title.localeCompare(right.document.title)).slice(0, 8)); setSelected(0); } })().catch(() => { if (active) setResults([]); }); return () => { active = false; }; }, [engine, query, privateDocs, privateSuggestionsEnabled]);
-  const openResult = async (result: SearchResult) => { const document = result.document, isPrivate = "private" in document && document.private === true, entity: EntityReference = { entityType: document.entityType, entityId: document.entityId, entityVersion: document.entityVersion, sourceModule: document.sourceModule, lastKnownTitle: document.title, lastKnownRoute: document.route, referenceStatus: isPrivate ? "private" : "active" }; await recordRecentView(entity).catch(() => undefined); window.location.assign(document.route); close(); };
-  return <dialog ref={ref} className="finder" onCancel={close} onClick={(event) => { const b = event.currentTarget.getBoundingClientRect(); if (event.clientX < b.left || event.clientX > b.right || event.clientY < b.top || event.clientY > b.bottom) close(); }} aria-labelledby="finder-title"><div className="finder-heading"><div><span className="eyebrow">LOCAL FITNESS OS SEARCH</span><h2 id="finder-title">Search Fitness OS</h2></div><button className="icon-button" onClick={close} aria-label="Close search"><Icon name="close" /></button></div><label className="search-field"><Icon name="search" /><input ref={input} role="combobox" aria-expanded="true" aria-controls="module-results" aria-activedescendant={results[selected] ? `result-${selected}` : undefined} value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => { if (event.key === "ArrowDown") { event.preventDefault(); setSelected((index) => Math.min(index + 1, Math.max(0, results.length - 1))); } if (event.key === "ArrowUp") { event.preventDefault(); setSelected((index) => Math.max(index - 1, 0)); } if (event.key === "Enter") { event.preventDefault(); if (results[selected]) void openResult(results[selected]!); else if (query.trim()) window.location.assign(privateSuggestionsEnabled ? "/search" : `/search?q=${encodeURIComponent(query.trim())}`); } }} placeholder="Search modules, topics, tools, foods…" aria-label="Search Fitness OS on this device" /></label><p className="finder-note" role="status" aria-live="polite">{error || `${results.length} suggestions · ↑ ↓ to select · Enter to open · Esc to close`}</p><div className="finder-results" id="module-results" role="listbox" aria-label="Search suggestions">{results.map((result, index) => <button role="option" aria-selected={selected === index} id={`result-${index}`} className="finder-option" key={`${result.document.entityType}:${result.document.entityId}`} onMouseEnter={() => setSelected(index)} onClick={() => void openResult(result)}><span>{result.document.title}{"private" in result.document && result.document.private ? <small>On this device · private</small> : <small>{result.document.summary || result.document.sourceModule.replaceAll("_", " ")}</small>}</span><Icon name="arrow" size={18} /></button>)}{query.length >= 2 && results.length === 0 && <p className="no-results">No published items match “{query}”.</p>}</div><a className="button secondary" href={query.trim() && !privateSuggestionsEnabled ? `/search?q=${encodeURIComponent(query.trim())}` : "/search"} onClick={close}>View all results</a><a href="/search/settings" onClick={close}>Search settings</a></dialog>;
+  const ref = useRef<HTMLDialogElement>(null),
+    input = useRef<HTMLInputElement>(null),
+    engineRef = useRef<
+      Awaited<ReturnType<typeof loadPublicSearchRuntime>>["engine"] | null
+    >(null);
+  const [query, setQuery] = useState(""),
+    [selected, setSelected] = useState(0),
+    [results, setResults] = useState<SearchResult[]>([]),
+    [error, setError] = useState(""),
+    [engine, setEngine] = useState<
+      Awaited<ReturnType<typeof loadPublicSearchRuntime>>["engine"] | null
+    >(null),
+    [privateDocs, setPrivateDocs] = useState<SearchResult["document"][]>([]),
+    [privateSuggestionsEnabled, setPrivateSuggestionsEnabled] = useState(false);
+  useEffect(() => {
+    const dialog = ref.current,
+      opener =
+        document.activeElement instanceof HTMLElement
+          ? document.activeElement
+          : null;
+    dialog?.showModal();
+    input.current?.focus();
+    let active = true;
+    void Promise.all([loadPublicSearchRuntime(), readSearchSettings()])
+      .then(async ([loaded, settings]) => {
+        if (!active) return;
+        engineRef.current = loaded.engine;
+        setEngine(loaded.engine);
+        if (
+          settings.privateSearchEnabled &&
+          settings.privateSuggestionsEnabled
+        ) {
+          const privateIndex = await buildPrivateSearchDocuments();
+          if (active) {
+            setPrivateDocs(privateIndex.documents);
+            setPrivateSuggestionsEnabled(true);
+          }
+        }
+      })
+      .catch(() => {
+        if (active) setError("The local search index could not be loaded.");
+      });
+    return () => {
+      active = false;
+      dialog?.close();
+      window.setTimeout(() => {
+        if (opener?.isConnected) opener.focus();
+      }, 0);
+      engineRef.current?.dispose();
+    };
+  }, []);
+  useEffect(() => {
+    let active = true;
+    if (!engine)
+      return () => {
+        active = false;
+      };
+    void (async () => {
+      const publicItems = await engine.suggest(query);
+      const privateItems = privateSuggestionsEnabled
+        ? searchDocuments(privateDocs, { query, pageSize: 8 }).results
+        : [];
+      if (active) {
+        setResults(
+          [...publicItems, ...privateItems]
+            .sort(
+              (left, right) =>
+                right.score - left.score ||
+                left.document.title.localeCompare(right.document.title),
+            )
+            .slice(0, 8),
+        );
+        setSelected(0);
+      }
+    })().catch(() => {
+      if (active) setResults([]);
+    });
+    return () => {
+      active = false;
+    };
+  }, [engine, query, privateDocs, privateSuggestionsEnabled]);
+  const openResult = async (result: SearchResult) => {
+    const document = result.document,
+      isPrivate = "private" in document && document.private === true,
+      entity: EntityReference = {
+        entityType: document.entityType,
+        entityId: document.entityId,
+        entityVersion: document.entityVersion,
+        sourceModule: document.sourceModule,
+        lastKnownTitle: document.title,
+        lastKnownRoute: document.route,
+        referenceStatus: isPrivate ? "private" : "active",
+      };
+    await recordRecentView(entity).catch(() => undefined);
+    window.location.assign(document.route);
+    close();
+  };
+  return (
+    <dialog
+      ref={ref}
+      className="finder"
+      onCancel={close}
+      onClick={(event) => {
+        const b = event.currentTarget.getBoundingClientRect();
+        if (
+          event.clientX < b.left ||
+          event.clientX > b.right ||
+          event.clientY < b.top ||
+          event.clientY > b.bottom
+        )
+          close();
+      }}
+      aria-labelledby="finder-title"
+    >
+      <div className="finder-heading">
+        <div>
+          <span className="eyebrow">LOCAL FITNESS OS SEARCH</span>
+          <h2 id="finder-title">Search Fitness OS</h2>
+        </div>
+        <button
+          className="icon-button"
+          onClick={close}
+          aria-label="Close search"
+        >
+          <Icon name="close" />
+        </button>
+      </div>
+      <label className="search-field">
+        <Icon name="search" />
+        <input
+          ref={input}
+          role="combobox"
+          aria-expanded="true"
+          aria-controls="module-results"
+          aria-activedescendant={
+            results[selected] ? `result-${selected}` : undefined
+          }
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "ArrowDown") {
+              event.preventDefault();
+              setSelected((index) =>
+                Math.min(index + 1, Math.max(0, results.length - 1)),
+              );
+            }
+            if (event.key === "ArrowUp") {
+              event.preventDefault();
+              setSelected((index) => Math.max(index - 1, 0));
+            }
+            if (event.key === "Enter") {
+              event.preventDefault();
+              if (results[selected]) void openResult(results[selected]!);
+              else if (query.trim())
+                window.location.assign(
+                  privateSuggestionsEnabled
+                    ? "/search"
+                    : `/search?q=${encodeURIComponent(query.trim())}`,
+                );
+            }
+          }}
+          placeholder="Search modules, topics, tools, foods…"
+          aria-label="Search Fitness OS on this device"
+        />
+      </label>
+      <p className="finder-note" role="status" aria-live="polite">
+        {error ||
+          (!engine
+            ? "Loading the local search index…"
+            : `${results.length} suggestions · ↑ ↓ to select · Enter to open · Esc to close`)}
+      </p>
+      <div
+        className="finder-results"
+        id="module-results"
+        role="listbox"
+        aria-label="Search suggestions"
+      >
+        {results.map((result, index) => (
+          <button
+            role="option"
+            aria-selected={selected === index}
+            id={`result-${index}`}
+            className="finder-option"
+            key={`${result.document.entityType}:${result.document.entityId}`}
+            onMouseEnter={() => setSelected(index)}
+            onClick={() => void openResult(result)}
+          >
+            <span>
+              {result.document.title}
+              {"private" in result.document && result.document.private ? (
+                <small>On this device · private</small>
+              ) : (
+                <small>
+                  {result.document.summary ||
+                    result.document.sourceModule.replaceAll("_", " ")}
+                </small>
+              )}
+            </span>
+            <Icon name="arrow" size={18} />
+          </button>
+        ))}
+        {engine && !error && query.length >= 2 && results.length === 0 && (
+          <p className="no-results">No published items match “{query}”.</p>
+        )}
+      </div>
+      <a
+        className="button secondary"
+        href={
+          query.trim() && !privateSuggestionsEnabled
+            ? `/search?q=${encodeURIComponent(query.trim())}`
+            : "/search"
+        }
+        onClick={close}
+      >
+        View all results
+      </a>
+      <a href="/search/settings" onClick={close}>
+        Search settings
+      </a>
+    </dialog>
+  );
 }

@@ -20,6 +20,16 @@ test("sidebar preference, keyboard search and missing routes", async ({
     page.getByRole("option", { name: /Nutrient encyclopedia/ }),
   ).toBeVisible();
   await page.keyboard.press("ArrowDown");
+  await expect(page.getByRole("option").nth(1)).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
+  await page.keyboard.press("ArrowUp");
+  await expect(page.getByRole("option").first()).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
+  await input.fill("vitamin c");
   await expect(page.getByRole("option", { selected: true })).toContainText(
     "Vitamin C",
   );

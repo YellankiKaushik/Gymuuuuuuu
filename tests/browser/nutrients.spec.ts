@@ -13,7 +13,7 @@ test("nutrient routes, filters, framework isolation and hidden draft topics", as
   await expect(page).toHaveURL(/q=B12/);
   await expect(
     page.getByRole("heading", {
-      name: "No reviewed topics match.",
+      name: "Vitamin B12",
     }),
   ).toBeVisible();
   await page
@@ -27,6 +27,13 @@ test("nutrient routes, filters, framework isolation and hidden draft topics", as
   await dialog.getByRole("button", { name: "Show topics" }).click();
   await expect(page).toHaveURL(/group=vitamins/);
   await page.goto("/nutrients/vitamin-b12");
+  await expect(
+    page.getByRole("heading", { name: "Vitamin B12", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.locator('meta[name="robots"][content="noindex"]'),
+  ).toHaveCount(0);
+  await page.goto("/nutrients/protein");
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
     "content",
     "noindex",

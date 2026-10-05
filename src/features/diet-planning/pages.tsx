@@ -208,7 +208,7 @@ export function DietInformation({ kind }: { kind: "methodology" | "safety" }) {
             </p>
             <p>
               Fibre benchmark: {dietReference.macroRules.fiberGramsPer1000Kcal}{" "}
-              g per 1000 kcal. This is separate from unavailable Phase 08
+              g per 1000 kcal. This is separate from population-specific
               age/sex reference data. No bodyweight water formula is used.
             </p>
             <p>

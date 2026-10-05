@@ -264,12 +264,7 @@ export const foodNormativeSchema = z.strictObject({
             externalFoodId: z.string().max(120).nullable(),
             externalDescription: z.string().max(500).nullable().optional(),
             release: z.string().min(2).max(80),
-            accessedAt: z
-              .string()
-              .refine(
-                (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-                "Invalid timestamp",
-              ),
+            accessedAt: z.iso.datetime({ offset: true }),
             matchType: z.enum([
               "exact",
               "close_match",
@@ -289,13 +284,7 @@ export const foodNormativeSchema = z.strictObject({
           "approved",
           "rejected",
         ]),
-        reviewedAt: z
-          .string()
-          .refine(
-            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-            "Invalid timestamp",
-          )
-          .nullable(),
+        reviewedAt: z.iso.datetime({ offset: true }).nullable(),
         reviewer: z.string().max(120).nullable(),
         qualityNotes: z.array(z.string().max(500)),
       }),
@@ -322,13 +311,7 @@ export const foodNormativeSchema = z.strictObject({
       "approved",
       "rejected",
     ]),
-    reviewedAt: z
-      .string()
-      .refine(
-        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-        "Invalid timestamp",
-      )
-      .nullable(),
+    reviewedAt: z.iso.datetime({ offset: true }).nullable(),
     reviewer: z.string().max(120).nullable(),
     notes: z.string().max(1200),
   }),
@@ -469,12 +452,7 @@ export const compositionProfileNormativeSchema = z.strictObject({
         externalFoodId: z.string().max(120).nullable(),
         externalDescription: z.string().max(500).nullable().optional(),
         release: z.string().min(2).max(80),
-        accessedAt: z
-          .string()
-          .refine(
-            (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-            "Invalid timestamp",
-          ),
+        accessedAt: z.iso.datetime({ offset: true }),
         matchType: z.enum(["exact", "close_match", "compiled", "manual_entry"]),
         licenseNote: z.string().max(500).nullable().optional(),
         citation: z.string().min(3).max(800).optional(),
@@ -489,13 +467,7 @@ export const compositionProfileNormativeSchema = z.strictObject({
       "approved",
       "rejected",
     ]),
-    reviewedAt: z
-      .string()
-      .refine(
-        (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-        "Invalid timestamp",
-      )
-      .nullable(),
+    reviewedAt: z.iso.datetime({ offset: true }).nullable(),
     reviewer: z.string().max(120).nullable(),
     qualityNotes: z.array(z.string().max(500)),
   }),
@@ -591,12 +563,7 @@ export const sourceRecordNormativeSchema = z.strictObject({
   externalFoodId: z.string().max(120).nullable(),
   externalDescription: z.string().max(500).nullable().optional(),
   release: z.string().min(2).max(80),
-  accessedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    ),
+  accessedAt: z.iso.datetime({ offset: true }),
   matchType: z.enum(["exact", "close_match", "compiled", "manual_entry"]),
   licenseNote: z.string().max(500).nullable().optional(),
   citation: z.string().min(3).max(800).optional(),
@@ -618,13 +585,7 @@ export const profileReviewNormativeSchema = z.strictObject({
     "approved",
     "rejected",
   ]),
-  reviewedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    )
-    .nullable(),
+  reviewedAt: z.iso.datetime({ offset: true }).nullable(),
   reviewer: z.string().max(120).nullable(),
   qualityNotes: z.array(z.string().max(500)),
 });
@@ -636,13 +597,7 @@ export const editorialNormativeSchema = z.strictObject({
     "approved",
     "rejected",
   ]),
-  reviewedAt: z
-    .string()
-    .refine(
-      (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
-      "Invalid timestamp",
-    )
-    .nullable(),
+  reviewedAt: z.iso.datetime({ offset: true }).nullable(),
   reviewer: z.string().max(120).nullable(),
   notes: z.string().max(1200),
 });

@@ -6,6 +6,7 @@
     "scripts/compile-original-recipes.ts",
     "scripts/content-audit.ts",
     "scripts/verify-publication-reviews.ts",
-    "scripts/build-search-index.ts"
+    "scripts/build-search-index.ts",
+    "scripts/phase19-*.ts"
   ]
 }

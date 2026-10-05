@@ -2417,45 +2417,9 @@
     {
       "module": "foods",
       "totalIdentities": 342,
-      "publishedIdentities": 46,
-      "draftIdentities": 296,
+      "publishedIdentities": 226,
+      "draftIdentities": 116,
       "blockedIdentities": [
-        {
-          "id": "food_orange",
-          "slug": "orange",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_lemon",
-          "slug": "lemon",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_grapefruit",
-          "slug": "grapefruit",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_papaya",
-          "slug": "papaya",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_guava",
-          "slug": "guava",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_jackfruit",
-          "slug": "jackfruit",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
         {
           "id": "food_custard_apple",
           "slug": "custard-apple",
@@ -2471,12 +2435,6 @@
         {
           "id": "food_rambutan",
           "slug": "rambutan",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_star_fruit",
-          "slug": "star-fruit",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -2499,146 +2457,14 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_coconut_flesh",
-          "slug": "coconut-flesh",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_avocado",
-          "slug": "avocado",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_peach",
-          "slug": "peach",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_plum",
-          "slug": "plum",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_apricot",
-          "slug": "apricot",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_cherry",
           "slug": "cherry",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_nectarine",
-          "slug": "nectarine",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_date",
-          "slug": "date",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_blueberry",
-          "slug": "blueberry",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_blackberry",
-          "slug": "blackberry",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cranberry",
-          "slug": "cranberry",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_grape",
-          "slug": "grape",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_honeydew_melon",
-          "slug": "honeydew-melon",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_raisin",
-          "slug": "raisin",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_dried_fig",
-          "slug": "dried-fig",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_dried_apricot",
-          "slug": "dried-apricot",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_prune",
-          "slug": "prune",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sweet_potato",
-          "slug": "sweet-potato",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cassava",
-          "slug": "cassava",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_yam",
-          "slug": "yam",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_elephant_foot_yam",
           "slug": "elephant-foot-yam",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_radish",
-          "slug": "radish",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_turnip",
-          "slug": "turnip",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_parsnip",
-          "slug": "parsnip",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -2691,68 +2517,14 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_cauliflower",
-          "slug": "cauliflower",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_broccoli",
-          "slug": "broccoli",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cabbage",
-          "slug": "cabbage",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_red_cabbage",
           "slug": "red-cabbage",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_brussels_sprouts",
-          "slug": "brussels-sprouts",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_onion",
-          "slug": "onion",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_red_onion",
           "slug": "red-onion",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_spring_onion",
-          "slug": "spring-onion",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_shallot",
-          "slug": "shallot",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_tomato",
-          "slug": "tomato",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_bell_pepper",
-          "slug": "bell-pepper",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -2769,18 +2541,6 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_green_peas",
-          "slug": "green-peas",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sweet_corn",
-          "slug": "sweet-corn",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_raw_jackfruit",
           "slug": "raw-jackfruit",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2793,44 +2553,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_french_beans",
-          "slug": "french-beans",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_cluster_beans",
           "slug": "cluster-beans",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_broad_beans",
-          "slug": "broad-beans",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_drumstick_pods",
-          "slug": "drumstick-pods",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_celery_stalk",
-          "slug": "celery-stalk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_bamboo_shoots",
-          "slug": "bamboo-shoots",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_artichoke",
-          "slug": "artichoke",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -2859,56 +2583,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_turnip_greens",
-          "slug": "turnip-greens",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_beet_greens",
-          "slug": "beet-greens",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_dill_leaves",
           "slug": "dill-leaves",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_kale",
-          "slug": "kale",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_swiss_chard",
-          "slug": "swiss-chard",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_lettuce",
-          "slug": "lettuce",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_watercress",
-          "slug": "watercress",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_bok_choy",
-          "slug": "bok-choy",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_collard_greens",
-          "slug": "collard-greens",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -2937,24 +2613,6 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_green_gram",
-          "slug": "green-gram",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_pigeon_pea",
-          "slug": "pigeon-pea",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cowpea",
-          "slug": "cowpea",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_dry_green_peas",
           "slug": "dry-green-peas",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2963,12 +2621,6 @@
         {
           "id": "food_yellow_split_peas",
           "slug": "yellow-split-peas",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_red_lentil",
-          "slug": "red-lentil",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -2991,38 +2643,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_kidney_bean",
-          "slug": "kidney-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_black_bean",
-          "slug": "black-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_navy_bean",
-          "slug": "navy-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_pinto_bean",
-          "slug": "pinto-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_cannellini_bean",
           "slug": "cannellini-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_lima_bean",
-          "slug": "lima-bean",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3039,42 +2661,6 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_adzuki_bean",
-          "slug": "adzuki-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_hyacinth_bean",
-          "slug": "hyacinth-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_soybean",
-          "slug": "soybean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_edamame",
-          "slug": "edamame",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_tofu",
-          "slug": "tofu",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_tempeh",
-          "slug": "tempeh",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_textured_soy_protein",
           "slug": "textured-soy-protein",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -3083,18 +2669,6 @@
         {
           "id": "food_soy_milk",
           "slug": "soy-milk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_peanut",
-          "slug": "peanut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_brown_rice",
-          "slug": "brown-rice",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3117,12 +2691,6 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_parboiled_rice",
-          "slug": "parboiled-rice",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_flattened_rice",
           "slug": "flattened-rice",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -3135,68 +2703,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_rice_flour",
-          "slug": "rice-flour",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_whole_wheat_grain",
-          "slug": "whole-wheat-grain",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_whole_wheat_flour",
-          "slug": "whole-wheat-flour",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_refined_wheat_flour",
           "slug": "refined-wheat-flour",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_semolina",
-          "slug": "semolina",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_durum_wheat",
-          "slug": "durum-wheat",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_barley",
-          "slug": "barley",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_rye",
-          "slug": "rye",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_spelt",
-          "slug": "spelt",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_bulgur",
-          "slug": "bulgur",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_couscous",
-          "slug": "couscous",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3209,12 +2717,6 @@
         {
           "id": "food_finger_millet",
           "slug": "finger-millet",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sorghum",
-          "slug": "sorghum",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3249,32 +2751,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_oats",
-          "slug": "oats",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_rolled_oats",
           "slug": "rolled-oats",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_quinoa",
-          "slug": "quinoa",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_buckwheat",
-          "slug": "buckwheat",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_amaranth_grain",
-          "slug": "amaranth-grain",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3291,80 +2769,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_cashew",
-          "slug": "cashew",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_walnut",
-          "slug": "walnut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_pistachio",
-          "slug": "pistachio",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_hazelnut",
-          "slug": "hazelnut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_pecan",
-          "slug": "pecan",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_brazil_nut",
-          "slug": "brazil-nut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_macadamia_nut",
-          "slug": "macadamia-nut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_pine_nut",
-          "slug": "pine-nut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_chestnut",
           "slug": "chestnut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sesame_seed",
-          "slug": "sesame-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_flaxseed",
-          "slug": "flaxseed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_chia_seed",
-          "slug": "chia-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sunflower_seed",
-          "slug": "sunflower-seed",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3375,32 +2781,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_watermelon_seed",
-          "slug": "watermelon-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_hemp_seed",
-          "slug": "hemp-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_poppy_seed",
           "slug": "poppy-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_lotus_seed",
-          "slug": "lotus-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_mustard_seed",
-          "slug": "mustard-seed",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3417,32 +2799,14 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_goat_milk",
-          "slug": "goat-milk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_skim_milk",
           "slug": "skim-milk",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_whole_milk",
-          "slug": "whole-milk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_curd",
           "slug": "curd",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_greek_yogurt",
-          "slug": "greek-yogurt",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3461,60 +2825,6 @@
         {
           "id": "food_paneer",
           "slug": "paneer",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cottage_cheese",
-          "slug": "cottage-cheese",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cheddar_cheese",
-          "slug": "cheddar-cheese",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_mozzarella_cheese",
-          "slug": "mozzarella-cheese",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_feta_cheese",
-          "slug": "feta-cheese",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_chicken_egg_white",
-          "slug": "chicken-egg-white",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_chicken_egg_yolk",
-          "slug": "chicken-egg-yolk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_duck_egg",
-          "slug": "duck-egg",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_quail_egg",
-          "slug": "quail-egg",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_chicken_breast",
-          "slug": "chicken-breast",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3645,60 +2955,6 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_sardine",
-          "slug": "sardine",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_anchovy",
-          "slug": "anchovy",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_tuna",
-          "slug": "tuna",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_salmon",
-          "slug": "salmon",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cod",
-          "slug": "cod",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_tilapia",
-          "slug": "tilapia",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sea_bass",
-          "slug": "sea-bass",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_trout",
-          "slug": "trout",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_catfish",
-          "slug": "catfish",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_seer_fish",
           "slug": "seer-fish",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -3723,164 +2979,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_crab",
-          "slug": "crab",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_lobster",
-          "slug": "lobster",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_mussel",
-          "slug": "mussel",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_oyster",
-          "slug": "oyster",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_clam",
-          "slug": "clam",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_squid",
-          "slug": "squid",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_octopus",
-          "slug": "octopus",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_mustard_oil",
           "slug": "mustard-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_groundnut_oil",
-          "slug": "groundnut-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sesame_oil",
-          "slug": "sesame-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_coconut_oil",
-          "slug": "coconut-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_rice_bran_oil",
-          "slug": "rice-bran-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_sunflower_oil",
-          "slug": "sunflower-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_soybean_oil",
-          "slug": "soybean-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_canola_oil",
-          "slug": "canola-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_corn_oil",
-          "slug": "corn-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_safflower_oil",
-          "slug": "safflower-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_palm_oil",
-          "slug": "palm-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_ghee",
-          "slug": "ghee",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_butter",
-          "slug": "butter",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_lard",
-          "slug": "lard",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cumin_seed",
-          "slug": "cumin-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_coriander_seed",
-          "slug": "coriander-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_fennel_seed",
-          "slug": "fennel-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_fenugreek_seed",
-          "slug": "fenugreek-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_black_pepper",
-          "slug": "black-pepper",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_clove",
-          "slug": "clove",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3893,12 +2993,6 @@
         {
           "id": "food_black_cardamom",
           "slug": "black-cardamom",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_cinnamon",
-          "slug": "cinnamon",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -3921,68 +3015,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_nutmeg",
-          "slug": "nutmeg",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_mace",
-          "slug": "mace",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_bay_leaf",
-          "slug": "bay-leaf",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_fresh_coriander_leaves",
-          "slug": "fresh-coriander-leaves",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_mint_leaves",
-          "slug": "mint-leaves",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_basil_leaves",
-          "slug": "basil-leaves",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_parsley",
-          "slug": "parsley",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_rosemary",
-          "slug": "rosemary",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_thyme",
-          "slug": "thyme",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_oregano",
           "slug": "oregano",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_ginger",
-          "slug": "ginger",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -4023,12 +3057,6 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_dry_ginger_powder",
-          "slug": "dry-ginger-powder",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_asafoetida",
           "slug": "asafoetida",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -4037,36 +3065,6 @@
         {
           "id": "food_paprika",
           "slug": "paprika",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_black_tea_brewed",
-          "slug": "black-tea-brewed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_green_tea_brewed",
-          "slug": "green-tea-brewed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_coffee_brewed",
-          "slug": "coffee-brewed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_espresso",
-          "slug": "espresso",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_coconut_water",
-          "slug": "coconut-water",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -4101,68 +3099,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_button_mushroom",
-          "slug": "button-mushroom",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_oyster_mushroom",
-          "slug": "oyster-mushroom",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_shiitake_mushroom",
-          "slug": "shiitake-mushroom",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_portobello_mushroom",
-          "slug": "portobello-mushroom",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_enoki_mushroom",
-          "slug": "enoki-mushroom",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_morel_mushroom",
-          "slug": "morel-mushroom",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_nori",
           "slug": "nori",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_kelp",
-          "slug": "kelp",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_wakame",
-          "slug": "wakame",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_white_sugar",
-          "slug": "white-sugar",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_brown_sugar",
-          "slug": "brown-sugar",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         },
@@ -4173,26 +3111,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "food_honey",
-          "slug": "honey",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_maple_syrup",
-          "slug": "maple-syrup",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "food_date_syrup",
           "slug": "date-syrup",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "food_molasses",
-          "slug": "molasses",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "incomplete_source_review"
         }
@@ -4203,8 +3123,8 @@
     {
       "module": "nutrients",
       "totalIdentities": 51,
-      "publishedIdentities": 3,
-      "draftIdentities": 48,
+      "publishedIdentities": 7,
+      "draftIdentities": 44,
       "blockedIdentities": [
         {
           "id": "energy_kcal",
@@ -4327,20 +3247,8 @@
           "classification": "incomplete_source_review"
         },
         {
-          "id": "magnesium_mg",
-          "slug": "magnesium",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "incomplete_source_review"
-        },
-        {
           "id": "phosphorus_mg",
           "slug": "phosphorus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "zinc_mg",
-          "slug": "zinc",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "incomplete_source_review"
         },
@@ -4461,18 +3369,6 @@
         {
           "id": "folate_dfe_ug",
           "slug": "folate-vitamin-b9",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "vitamin_b12_ug",
-          "slug": "vitamin-b12",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "incomplete_source_review"
-        },
-        {
-          "id": "vitamin_d_ug",
-          "slug": "vitamin-d",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "incomplete_source_review"
         },
@@ -8136,16 +7032,16 @@
     },
     {
       "module": "foods",
-      "published": 46,
-      "withPublicationProvenance": 46,
-      "inSearch": 46,
+      "published": 226,
+      "withPublicationProvenance": 226,
+      "inSearch": 226,
       "missingSourceProvenance": []
     },
     {
       "module": "nutrients",
-      "published": 3,
-      "withPublicationProvenance": 3,
-      "inSearch": 3,
+      "published": 7,
+      "withPublicationProvenance": 7,
+      "inSearch": 7,
       "missingSourceProvenance": []
     },
     {
@@ -8275,7 +7171,7 @@
     },
     {
       "id": "original_recipes_v1",
-      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/recipes",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/f42f637747ea53694eea522aeaeae2ccbdcb34ab/scripts/compile-original-recipes.ts",
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-05T14:44:18Z",
@@ -8307,10 +7203,58 @@
     },
     {
       "id": "original_curl_diagram_v1",
-      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/public/media/curl-elbow-flexion.svg",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/f42f637747ea53694eea522aeaeae2ccbdcb34ab/public/media/curl-elbow-flexion.svg",
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-05T14:59:24Z",
+      "reviewDate": "2026-10-05"
+    },
+    {
+      "id": "tnau_green_gram_identity",
+      "url": "https://agritech.tnau.ac.in/agriculture/pulses_greengram.html",
+      "version": null,
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-05T19:10:51Z",
+      "reviewDate": "2026-10-05"
+    },
+    {
+      "id": "fao_groundnut_oil_identity",
+      "url": "https://www.fao.org/4/W3963E/W3963E06.htm",
+      "version": null,
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-05T19:10:51Z",
+      "reviewDate": "2026-10-05"
+    },
+    {
+      "id": "nih_ods_magnesium_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/magnesium-Consumer/",
+      "version": "Consumer fact sheet updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-05T19:44:43.741274Z",
+      "reviewDate": "2026-10-05"
+    },
+    {
+      "id": "nih_ods_zinc_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/",
+      "version": "Consumer fact sheet updated 2022-10-04",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-05T19:44:43.741327Z",
+      "reviewDate": "2026-10-05"
+    },
+    {
+      "id": "nih_ods_vitamin_d_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer/",
+      "version": "Consumer fact sheet updated 2022-11-08",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-05T19:44:43.741364Z",
+      "reviewDate": "2026-10-05"
+    },
+    {
+      "id": "nih_ods_vitamin_b12_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/vitaminb12-Consumer/",
+      "version": "Consumer fact sheet updated 2023-12-15",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-05T19:44:43.741398Z",
       "reviewDate": "2026-10-05"
     }
   ],
@@ -8319,1081 +7263,1087 @@
       "route": "/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/compare",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/conditioning",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/dashboard",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/eat",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/exercises",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/foods",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/learn",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/meal-plans",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/mobility",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/muscles",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition-log",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/programs",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recent",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recipes",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recovery",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/saved",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/search",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/sleep",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/tools",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/track",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/train",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/training-science",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/warm-ups",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/workout",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/about/sources",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics/cardio",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics/data-quality",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics/nutrition",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics/recovery",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics/strength",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/analytics/workouts",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/custom-plans",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/history",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/learn",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/modalities",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/plans",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/privacy",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/progress",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/compare/$family",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/conditioning/custom",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/energy",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/goal",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/macros",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/meal-distribution",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/plans",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/safety",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/exercises/$slug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/foods/$slug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/foods/categories",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/foods/compare",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/foods/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/foods/sources",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/learn/workout-science",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/meal-plans/$planId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/meal-plans/create",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/meal-plans/privacy",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/meal-plans/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/meal-plans/templates",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/mobility/custom",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/mobility/history",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/muscles/$slug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients/$slug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients/compare",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients/frameworks",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients/glossary",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients/reference-intakes",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/add",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/custom-foods",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/day",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/history",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/privacy",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/programs/$slug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/programs/compare",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/programs/current",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/programs/finder",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress/body-composition",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress/goals",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress/measurements",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress/photos",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress/privacy",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/progress/weight",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recipes/$slug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recipes/create",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recipes/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recovery/check-in",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recovery/history",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recovery/privacy",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recovery/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recovery/topics",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/saved/collections",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/saved/favourites",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/search/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/sleep/history",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/sleep/log",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/sleep/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/adverse-events",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/anti-doping",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/compare",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/evidence",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/frameworks",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/ingredients",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/methodology",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/privacy",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/products",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/quality",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/safety",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/trials",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/warm-ups/$routineSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/workout/history",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/workout/settings",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/compare/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/saved/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/calculators/intensity",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/calculators/pace",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/custom-plans/create",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/history/$sessionId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/learn/$topicSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/modalities/$modalitySlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/plans/$planSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/session/active",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/cardio/session/new",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/conditioning/routines/$routineSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/plans/$planId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/foods/categories/$categoryId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/learn/workout-science/$slug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/learn/workout-science/glossary",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/learn/workout-science/methods",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/meal-plans/$planId/grocery-list",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/mobility/custom/create",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/mobility/routines/$routineSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/mobility/session/$routineId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrients/categories/$groupId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/custom-foods/$customFoodId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/day/$date",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recipes/local/$recipeId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recovery/topics/$topicSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/saved/collections/$collectionId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data/backup",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data/export",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data/health",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data/history",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data/reset",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data/restore",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/settings/data/storage",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/evidence/$claimSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/ingredients/$ingredientSlug",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/products/$productId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/products/create",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/trials/$trialId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/supplements/trials/create",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/workout/history/$sessionId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/workout/session/$sessionId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/workout/summary/$sessionId",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/diet-planning/plans/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/nutrition/custom-foods/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
+    },
+    {
+      "route": "/nutrition/day/",
+      "dynamic": false,
+      "staticInventory": "implemented",
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/saved/collections/",
       "dynamic": false,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/recipes/local/$recipeId/edit",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     },
     {
       "route": "/workout/exercises/$exerciseId/history",
       "dynamic": true,
       "staticInventory": "implemented",
-      "browserAudit": "pending_phase19"
+      "browserAudit": "unmeasured"
     }
   ],
   "routeFiles": [
@@ -9489,6 +8439,7 @@
     "nutrition.custom-foods.index.tsx",
     "nutrition.custom-foods.tsx",
     "nutrition.day.$date.tsx",
+    "nutrition.day.index.tsx",
     "nutrition.day.tsx",
     "nutrition.history.tsx",
     "nutrition.index.tsx",
@@ -9607,13 +8558,13 @@
     "src/features/supplements\\export.ts",
     "src/features/workout-tracker\\backup.ts"
   ],
-  "foodProfiles": 47,
-  "numericFoodValues": 1651,
+  "foodProfiles": 227,
+  "numericFoodValues": 8355,
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 201,
-    "factualRecords": 73
+    "documents": 385,
+    "factualRecords": 257
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -9678,13 +8629,2836 @@
     "food_white_rice",
     "food_olive_oil",
     "food_potato",
-    "food_chickpea"
+    "food_chickpea",
+    "food_orange",
+    "food_lemon",
+    "food_grapefruit",
+    "food_papaya",
+    "food_guava",
+    "food_jackfruit",
+    "food_avocado",
+    "food_peach",
+    "food_plum",
+    "food_apricot",
+    "food_nectarine",
+    "food_date",
+    "food_blueberry",
+    "food_blackberry",
+    "food_cranberry",
+    "food_grape",
+    "food_raisin",
+    "food_prune",
+    "food_sweet_potato",
+    "food_cassava",
+    "food_yam",
+    "food_turnip",
+    "food_parsnip",
+    "food_cauliflower",
+    "food_broccoli",
+    "food_cabbage",
+    "food_brussels_sprouts",
+    "food_onion",
+    "food_spring_onion",
+    "food_shallot",
+    "food_tomato",
+    "food_bell_pepper",
+    "food_drumstick_pods",
+    "food_bamboo_shoots",
+    "food_artichoke",
+    "food_turnip_greens",
+    "food_beet_greens",
+    "food_kale",
+    "food_lettuce",
+    "food_watercress",
+    "food_cowpea",
+    "food_lima_bean",
+    "food_hyacinth_bean",
+    "food_soybean",
+    "food_edamame",
+    "food_tofu",
+    "food_tempeh",
+    "food_peanut",
+    "food_red_lentil",
+    "food_kidney_bean",
+    "food_rice_flour",
+    "food_whole_wheat_flour",
+    "food_semolina",
+    "food_barley",
+    "food_spelt",
+    "food_bulgur",
+    "food_couscous",
+    "food_quinoa",
+    "food_buckwheat",
+    "food_amaranth_grain",
+    "food_oats",
+    "food_sorghum",
+    "food_lard",
+    "food_parsley",
+    "food_rosemary",
+    "food_thyme",
+    "food_honey",
+    "food_molasses",
+    "food_cashew",
+    "food_walnut",
+    "food_pistachio",
+    "food_hazelnut",
+    "food_pecan",
+    "food_brazil_nut",
+    "food_macadamia_nut",
+    "food_pine_nut",
+    "food_coconut_flesh",
+    "food_sesame_seed",
+    "food_flaxseed",
+    "food_chia_seed",
+    "food_sunflower_seed",
+    "food_watermelon_seed",
+    "food_hemp_seed",
+    "food_lotus_seed",
+    "food_goat_milk",
+    "food_whole_milk",
+    "food_greek_yogurt",
+    "food_cottage_cheese",
+    "food_cheddar_cheese",
+    "food_mozzarella_cheese",
+    "food_feta_cheese",
+    "food_chicken_egg_white",
+    "food_chicken_egg_yolk",
+    "food_duck_egg",
+    "food_quail_egg",
+    "food_chicken_breast",
+    "food_salmon",
+    "food_sardine",
+    "food_anchovy",
+    "food_tuna",
+    "food_cod",
+    "food_tilapia",
+    "food_sea_bass",
+    "food_trout",
+    "food_catfish",
+    "food_crab",
+    "food_lobster",
+    "food_mussel",
+    "food_oyster",
+    "food_clam",
+    "food_squid",
+    "food_octopus",
+    "food_groundnut_oil",
+    "food_sesame_oil",
+    "food_coconut_oil",
+    "food_rice_bran_oil",
+    "food_sunflower_oil",
+    "food_soybean_oil",
+    "food_canola_oil",
+    "food_corn_oil",
+    "food_safflower_oil",
+    "food_palm_oil",
+    "food_ghee",
+    "food_butter",
+    "food_cumin_seed",
+    "food_coriander_seed",
+    "food_fennel_seed",
+    "food_fenugreek_seed",
+    "food_black_pepper",
+    "food_clove",
+    "food_cinnamon",
+    "food_nutmeg",
+    "food_mace",
+    "food_bay_leaf",
+    "food_dry_ginger_powder",
+    "food_mustard_seed",
+    "food_fresh_coriander_leaves",
+    "food_mint_leaves",
+    "food_basil_leaves",
+    "food_ginger",
+    "food_radish",
+    "food_celery_stalk",
+    "food_green_peas",
+    "food_sweet_corn",
+    "food_french_beans",
+    "food_broad_beans",
+    "food_pigeon_pea",
+    "food_green_gram",
+    "food_adzuki_bean",
+    "food_black_bean",
+    "food_navy_bean",
+    "food_pinto_bean",
+    "food_swiss_chard",
+    "food_collard_greens",
+    "food_bok_choy",
+    "food_honeydew_melon",
+    "food_star_fruit",
+    "food_dried_fig",
+    "food_dried_apricot",
+    "food_brown_rice",
+    "food_parboiled_rice",
+    "food_whole_wheat_grain",
+    "food_durum_wheat",
+    "food_rye",
+    "food_button_mushroom",
+    "food_oyster_mushroom",
+    "food_shiitake_mushroom",
+    "food_portobello_mushroom",
+    "food_enoki_mushroom",
+    "food_morel_mushroom",
+    "food_kelp",
+    "food_wakame",
+    "food_white_sugar",
+    "food_brown_sugar",
+    "food_maple_syrup",
+    "food_black_tea_brewed",
+    "food_green_tea_brewed",
+    "food_coffee_brewed",
+    "food_espresso",
+    "food_coconut_water"
   ],
+  "browserAudit": {
+    "browser": "chromium",
+    "buildDate": "2026-10-05T19:52:00.404Z",
+    "expected": 438,
+    "passed": 0,
+    "failed": 0,
+    "unmeasured": 438,
+    "ignoredStaleReports": 434,
+    "limitations": [
+      "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
+      "No manual devices, screen-reader interaction, print output or complete interactive-state traversal is claimed."
+    ],
+    "routes": [
+      {
+        "path": "/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/compare",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/conditioning",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/dashboard",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/eat",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition-log",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recent",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/saved",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/search",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/sleep",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/tools",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/track",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/train",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/training-science",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/warm-ups",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/workout",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/about/sources",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics/cardio",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics/data-quality",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics/nutrition",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics/recovery",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics/strength",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/analytics/workouts",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/custom-plans",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/history",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/learn",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/modalities",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/plans",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/privacy",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/progress",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/compare/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/conditioning/custom",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/energy",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/goal",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/macros",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/meal-distribution",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/plans",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/safety",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/categories",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/compare",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sources",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/create",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/privacy",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/templates",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/custom",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/history",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/compare",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/frameworks",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/glossary",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/reference-intakes",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/add",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/custom-foods",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/day",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/history",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/privacy",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs/compare",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs/current",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs/finder",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress/body-composition",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress/goals",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress/measurements",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress/photos",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress/privacy",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/progress/weight",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/create",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/check-in",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/history",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/privacy",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/saved/collections",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/saved/favourites",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/search/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/sleep/history",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/sleep/log",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/sleep/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/adverse-events",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/anti-doping",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/compare",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/evidence",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/frameworks",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/methodology",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/privacy",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/products",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/quality",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/safety",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/trials",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/warm-ups/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/workout/history",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/workout/settings",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/compare/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/saved/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/calculators/intensity",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/calculators/pace",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/custom-plans/create",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/history/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/learn/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/modalities/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/plans/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/session/active",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/session/new",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/conditioning/routines/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/plans/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/categories/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/glossary",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/methods",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/audit-unknown-record/grocery-list",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/custom/create",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/routines/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/session/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/categories/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/custom-foods/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/day/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/local/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/saved/collections/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data/backup",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data/export",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data/health",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data/history",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data/reset",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data/restore",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/settings/data/storage",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/evidence/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/products/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/products/create",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/trials/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/trials/create",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/workout/history/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/workout/session/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/workout/summary/audit-unknown-record",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/diet-planning/plans/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/custom-foods/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrition/day/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/saved/collections/",
+        "kind": "route",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/local/audit-unknown-record/edit",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/workout/exercises/audit-unknown-record/history",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/biceps-brachii",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/brachialis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/triceps-brachii",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/dumbbell-curl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/consistency-adherence",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/hypertrophy-adaptation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/muscular-failure",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/apple",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/banana",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/carrot",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/spinach",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/almond",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pineapple",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/strawberry",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pear",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/quince",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lime",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pomelo",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mango",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pomegranate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sapodilla",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/passion-fruit",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lychee",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/jamun",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mandarin",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/watermelon",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/muskmelon",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/raspberry",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/plantain",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cucumber",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pumpkin",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/kohlrabi",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/beetroot",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/asparagus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/eggplant",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/garlic",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/leek",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/romaine-lettuce",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mustard-greens",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/okra",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/arugula",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/endive",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/amaranth-leaves",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/drumstick-leaves",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/colocasia-leaves",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/taro-root",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/zucchini",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/butternut-squash",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-egg-whole",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/white-rice",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/olive-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/potato",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chickpea",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/orange",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lemon",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/grapefruit",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/papaya",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/guava",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/jackfruit",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/avocado",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/peach",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/plum",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/apricot",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/nectarine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/date",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/blueberry",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/blackberry",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cranberry",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/grape",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/raisin",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/prune",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sweet-potato",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cassava",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/yam",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/turnip",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/parsnip",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cauliflower",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/broccoli",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cabbage",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/brussels-sprouts",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/onion",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/spring-onion",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/shallot",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/tomato",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/bell-pepper",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/drumstick-pods",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/bamboo-shoots",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/artichoke",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/turnip-greens",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/beet-greens",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/kale",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lettuce",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/watercress",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cowpea",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lima-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/hyacinth-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/soybean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/edamame",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/tofu",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/tempeh",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/peanut",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/red-lentil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/kidney-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/rice-flour",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/whole-wheat-flour",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/semolina",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/barley",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/spelt",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/bulgur",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/couscous",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/quinoa",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/buckwheat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/amaranth-grain",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/oats",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sorghum",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lard",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/parsley",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/rosemary",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/thyme",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/honey",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/molasses",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cashew",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/walnut",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pistachio",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/hazelnut",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pecan",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/brazil-nut",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/macadamia-nut",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pine-nut",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/coconut-flesh",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sesame-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/flaxseed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chia-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sunflower-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/watermelon-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/hemp-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lotus-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/goat-milk",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/whole-milk",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/greek-yogurt",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cottage-cheese",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cheddar-cheese",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mozzarella-cheese",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/feta-cheese",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-egg-white",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-egg-yolk",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/duck-egg",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/quail-egg",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-breast",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/salmon",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sardine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/anchovy",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/tuna",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cod",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/tilapia",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sea-bass",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/trout",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/catfish",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/crab",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/lobster",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mussel",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/oyster",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/clam",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/squid",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/octopus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/groundnut-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sesame-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/coconut-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/rice-bran-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sunflower-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/soybean-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/canola-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/corn-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/safflower-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/palm-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/ghee",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/butter",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cumin-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/coriander-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/fennel-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/fenugreek-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/black-pepper",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/clove",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cinnamon",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/nutmeg",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mace",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/bay-leaf",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/dry-ginger-powder",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mustard-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/fresh-coriander-leaves",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mint-leaves",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/basil-leaves",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/ginger",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/radish",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/celery-stalk",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/green-peas",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/sweet-corn",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/french-beans",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/broad-beans",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pigeon-pea",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/green-gram",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/adzuki-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/black-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/navy-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pinto-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/swiss-chard",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/collard-greens",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/bok-choy",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/honeydew-melon",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/star-fruit",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/dried-fig",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/dried-apricot",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/brown-rice",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/parboiled-rice",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/whole-wheat-grain",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/durum-wheat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/rye",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/button-mushroom",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/oyster-mushroom",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/shiitake-mushroom",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/portobello-mushroom",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/enoki-mushroom",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/morel-mushroom",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/kelp",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/wakame",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/white-sugar",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/brown-sugar",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/maple-syrup",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/black-tea-brewed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/green-tea-brewed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/coffee-brewed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/espresso",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/coconut-water",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/iron",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/calcium",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/vitamin-c",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/magnesium",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/zinc",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/vitamin-d",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/vitamin-b12",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/chickpea-cucumber-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/potato-cucumber-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/rice-chickpea-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/chickpea-carrot-salad",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/apple-banana-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/mango-pineapple-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/strawberry-banana-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/pear-apple-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/watermelon-pomegranate-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/pineapple-raspberry-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/mandarin-mango-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/cucumber-carrot-salad",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/sleep-duration-adults",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/sleep-regularity",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/learn/topic-talk-test",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-creatine-monohydrate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-caffeine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      }
+    ]
+  },
   "verification": {
     "sourceAndRelationshipValidation": "npm run validate:content",
     "staleSearchValidation": "npm run content:audit after npm run build",
-    "unreachableRoutes": "not yet measured across the complete route inventory",
-    "inaccessibleUiStates": "not yet measured across the complete route inventory",
+    "unreachableRoutes": [],
+    "inaccessibleUiStates": [],
     "missingSourceReferences": [],
     "manualDevices": "not performed",
     "firefox": "blocked: Windows mozglue SideBySide launch error"

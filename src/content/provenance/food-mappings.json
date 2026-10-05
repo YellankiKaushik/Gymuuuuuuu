@@ -468,5 +468,1805 @@
     "reviewLevel": "published_personal_use",
     "matchRationale": "Exact food kind; source description and preparation qualifiers retained. Cultivar/maturity and geographic variation limit generalisation.",
     "sourceSnapshotSha256": "c57328562a322158d4d9ea186e7f7fcfc376ec63ad47709ca745e516aa2772b4"
+  },
+  {
+    "foodId": "food_orange",
+    "fdcId": 169097,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oranges, raw, all commercial varieties",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "802ac555658b8aafcb679d2eff5b1d152062c58ddf50e13de5b1e6cf050fd8c0"
+  },
+  {
+    "foodId": "food_lemon",
+    "fdcId": 167746,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Lemons, raw, without peel",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "4eb01feae6cc25943a5eb307ae1df796f7772e705055a91c844a440629262a9a"
+  },
+  {
+    "foodId": "food_grapefruit",
+    "fdcId": 173033,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Grapefruit, raw, pink and red and white, all areas",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "be5c1c8e4e851c0b56a58e780f1e4fbff8b07b3d09e00ff21646d0d3353fc7bd"
+  },
+  {
+    "foodId": "food_papaya",
+    "fdcId": 169926,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Papayas, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "696572f65d7eb957cda5dde0bc9aa971fee1ea78fb4f345556e495fa4e5d5494"
+  },
+  {
+    "foodId": "food_guava",
+    "fdcId": 173044,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Guavas, common, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b5fa76dc748acda3bc764f5f3482cc5f0161b699e4ac8a082462ee7c20c02fb8"
+  },
+  {
+    "foodId": "food_jackfruit",
+    "fdcId": 174687,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Jackfruit, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "423e49d22211e4c7c864ccbac05581d057f4708bc2f4b9dcf77808e5a96c8bd7"
+  },
+  {
+    "foodId": "food_avocado",
+    "fdcId": 171705,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Avocados, raw, all commercial varieties",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "aef5f5fe44c81c8f99650f9e92e308ef450db7532314c0dc307c1ba9e1ca1170"
+  },
+  {
+    "foodId": "food_peach",
+    "fdcId": 169928,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Peaches, yellow, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d6dad8b3755e016b4dfa66f0250967a31f74eeb831b36ca3212fd08c7ee6a211"
+  },
+  {
+    "foodId": "food_plum",
+    "fdcId": 169949,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Plums, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "4a04c3789c387ef01dda1957b85eff6ca504970d888e169a3df52066ffb7d467"
+  },
+  {
+    "foodId": "food_apricot",
+    "fdcId": 171697,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Apricots, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "794c7a64c2a229427290eb1ea594438914f70472540e91391d836da3192d903f"
+  },
+  {
+    "foodId": "food_nectarine",
+    "fdcId": 169914,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nectarines, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d7faa62da28ba3b8ef5147f89234b245d25f3a84ccaf4844a5002d101d17830c"
+  },
+  {
+    "foodId": "food_date",
+    "fdcId": 168191,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Dates, medjool",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "083eb54ed3c44bcba2de4fa9aa12ab44d9f85286f15d4e5d6f14a8318f75ce60"
+  },
+  {
+    "foodId": "food_blueberry",
+    "fdcId": 171711,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Blueberries, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a89c33c736cfc3ac80720f1f23b5cc463c41f6586348a50ad9528b40bebf170b"
+  },
+  {
+    "foodId": "food_blackberry",
+    "fdcId": 173946,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Blackberries, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ae753f5e2c654fcf5aefd69309d98e2a1a1298b96d8bc7f109cd73f7c4c2d95b"
+  },
+  {
+    "foodId": "food_cranberry",
+    "fdcId": 171722,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cranberries, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "531589db945c14f1bc43035501c997709f36a1449de735a0328d881383843fcd"
+  },
+  {
+    "foodId": "food_grape",
+    "fdcId": 174683,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Grapes, red or green (European type, such as Thompson seedless), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "8bb70dcd00dbcaabceb70d23aa96dd0032e594e2bf8f06797d7a0d8b982677d4"
+  },
+  {
+    "foodId": "food_raisin",
+    "fdcId": 168164,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Raisins, golden, seedless",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c9ad5d08ad5b44c6d221dedc59ef044af96b108f6ef305abbf6be6b8083556b4"
+  },
+  {
+    "foodId": "food_prune",
+    "fdcId": 168160,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Prunes, dehydrated (low-moisture), uncooked",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "1dcd73b0c4f4dbc3e1c40b53b880e12953f4682933ca203cf91c455fc8e690a6"
+  },
+  {
+    "foodId": "food_sweet_potato",
+    "fdcId": 168482,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b22a5f0f8c5e725043f68e3ae185be73cadde2db8f846193e07df054ee68892e"
+  },
+  {
+    "foodId": "food_cassava",
+    "fdcId": 169985,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cassava, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e1e5a6a89ff25e1c32da555fb52195a36fd6ab83e91b69e597e664c991dd0e9d"
+  },
+  {
+    "foodId": "food_yam",
+    "fdcId": 170071,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Yam, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a56c9b8f7c910ee8fcab823e2c7989dbd2b7848402ea676ef13b417e0f2f9512"
+  },
+  {
+    "foodId": "food_turnip",
+    "fdcId": 170465,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Turnips, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "341735d319012b9a90e74553d60ee31c9e552a91eb3948cea7774d03a9656b27"
+  },
+  {
+    "foodId": "food_parsnip",
+    "fdcId": 170417,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Parsnips, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e3138b3fa22342acccb0ad8a5d63bb6fc7832aad135807a88c4c0e05ec3933de"
+  },
+  {
+    "foodId": "food_cauliflower",
+    "fdcId": 169986,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cauliflower, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ed7a00fd083dd8e63f3444eea5abe5ff5fa7335d5816c5d81a3577c04bddc318"
+  },
+  {
+    "foodId": "food_broccoli",
+    "fdcId": 169330,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Broccoli, flower clusters, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "fe9f8508acc932ef3448ae0c4824bb25e745f614482ddbce67c78b4d455f46d3"
+  },
+  {
+    "foodId": "food_cabbage",
+    "fdcId": 169975,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cabbage, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "f56a89fd288640e9b3eba2ef1c7d083b51512596fa8621f5ee2b18d5620881c8"
+  },
+  {
+    "foodId": "food_brussels_sprouts",
+    "fdcId": 170383,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Brussels sprouts, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "8aacf1540872b05154083b8fbd9f93eb21ef0cf1b75f8f4f3916f284e20eb4d4"
+  },
+  {
+    "foodId": "food_onion",
+    "fdcId": 170000,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Onions, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "848501ec13fab089dc1f5e26588aaa04740c8e2e3fddcdf903e90de8569ffbad"
+  },
+  {
+    "foodId": "food_spring_onion",
+    "fdcId": 170005,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Onions, spring or scallions (includes tops and bulb), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ab4686a26dfb8ce9705b24b6abfb1af0d8468944cf95ebf37b04f164fabae851"
+  },
+  {
+    "foodId": "food_shallot",
+    "fdcId": 170499,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Shallots, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a7d476c3ece072920b124586e230dd91b8dd631879bb802ea5ab7a270a1e5b59"
+  },
+  {
+    "foodId": "food_tomato",
+    "fdcId": 170457,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Tomatoes, red, ripe, raw, year round average",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "2c261779f114e220c9e7d1815f93f816f18b5f262e8437a76a3dcc62e9a0efc1"
+  },
+  {
+    "foodId": "food_bell_pepper",
+    "fdcId": 169383,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Peppers, sweet, yellow, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "fddc8a57c060c8fe23c72feb1fcd9dafec09bfbf2cd54b79668aa3806d119f4a"
+  },
+  {
+    "foodId": "food_drumstick_pods",
+    "fdcId": 170483,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Drumstick pods, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "bb31dda1310a04a92c6b0fc77d8d595c295f45d952560d8da7f227512e158117"
+  },
+  {
+    "foodId": "food_bamboo_shoots",
+    "fdcId": 169210,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Bamboo shoots, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c3a3aa38c4072aab432e1941b646fd9000b6d24f1031ee82be2d09814a1f549a"
+  },
+  {
+    "foodId": "food_artichoke",
+    "fdcId": 169205,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Artichokes, (globe or french), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "543e3497f1a8e957d9a15c1b6fe3b7cf8eff6b1b2f9a14d8f8a481825706541f"
+  },
+  {
+    "foodId": "food_turnip_greens",
+    "fdcId": 170061,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Turnip greens, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b0e83f132773b3bb46b53030296356d32a0822b99d24b23fdef680bd2c9d2e89"
+  },
+  {
+    "foodId": "food_beet_greens",
+    "fdcId": 170375,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beet greens, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "60f1245d3a19bd97c5fe2c380fa81e4b5892549a784757110e99f17e569cadaa"
+  },
+  {
+    "foodId": "food_kale",
+    "fdcId": 168421,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Kale, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "12ea4da82a0d0823f104b908522829ad958d867e0881d3f90174da3c7f26b438"
+  },
+  {
+    "foodId": "food_lettuce",
+    "fdcId": 168429,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Lettuce, butterhead (includes boston and bibb types), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ae721e7319c0d56fbbafc44db1b3af8138dbb09c1677e340d65b3853dca4d872"
+  },
+  {
+    "foodId": "food_watercress",
+    "fdcId": 170068,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Watercress, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "619f5e2b7d03525cb136cec9be032ef29e48a0b37f14984a64e3bf2610531f4a"
+  },
+  {
+    "foodId": "food_cowpea",
+    "fdcId": 173758,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cowpeas, common (blackeyes, crowder, southern), mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "bc4783d016215ce75ba419d12d7a442317e9e825a721bf588ea90e6ff47b6389"
+  },
+  {
+    "foodId": "food_lima_bean",
+    "fdcId": 174252,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Lima beans, large, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "0474cb7d7e3e576d4531c2afc66a0d9932fead35d618ca7df51a32bb955bb8be"
+  },
+  {
+    "foodId": "food_hyacinth_bean",
+    "fdcId": 175210,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Hyacinth beans, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c2139a736acbde1cccc4436990a596db6b1359361196b5a7c2ce1a48b9d09b75"
+  },
+  {
+    "foodId": "food_soybean",
+    "fdcId": 174270,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Soybeans, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "aa48050aa31f589f3cd99e35bbb09f8278e17e00b6b83b4f45895c13fe9dcd8d"
+  },
+  {
+    "foodId": "food_edamame",
+    "fdcId": 168410,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Edamame, frozen, unprepared",
+    "foodState": "frozen",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "af79b31ceee815c8b21bb3962e664a2b1e92f5f587fd295befcc479a6c9eb07f"
+  },
+  {
+    "foodId": "food_tofu",
+    "fdcId": 172475,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Tofu, raw, firm, prepared with calcium sulfate",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "35c7ec98e3875dc4f014d1a9a4f1776cbd211d8343cf9386f7686fe76919f0e8"
+  },
+  {
+    "foodId": "food_tempeh",
+    "fdcId": 172467,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Tempeh, cooked",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "fa23322e202d21a89aa90a5799731e322162fec4b93388432f44b906daf2a974"
+  },
+  {
+    "foodId": "food_peanut",
+    "fdcId": 172430,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Peanuts, all types, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e71d55899df48f869ee53223128510b2a48da73612f8f1b3124f06972127482a"
+  },
+  {
+    "foodId": "food_red_lentil",
+    "fdcId": 174284,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Lentils, pink or red, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b52b5d7b3fdac584f0033fab4be5017405c419f0b895ad360f225b7b6cc60fa0"
+  },
+  {
+    "foodId": "food_kidney_bean",
+    "fdcId": 175193,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beans, kidney, all types, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "1686c4e80615366ab23e211b2c8d864ed1b3101b0d35f94431456b13b3570f2e"
+  },
+  {
+    "foodId": "food_rice_flour",
+    "fdcId": 169714,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Rice flour, white, unenriched",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "2c11e69917c69317f5b344b62f7b8b4a87becd69dd786a31c93af276b67e990c"
+  },
+  {
+    "foodId": "food_whole_wheat_flour",
+    "fdcId": 168893,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "0852bcd360aea33ca706b2c35be29b0cf8df136b1558ccbf1ad4b70a018ddefb"
+  },
+  {
+    "foodId": "food_semolina",
+    "fdcId": 168933,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Semolina, unenriched",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "8cf8116640fda2a0f273f85fedc732a96cf066c725bc715f088ea9b3997c3da6"
+  },
+  {
+    "foodId": "food_barley",
+    "fdcId": 170284,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Barley, pearled, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "58be0a4d2d1a7835a207782d8975df2aeac1081867a02b0cbb5555c27528fade"
+  },
+  {
+    "foodId": "food_spelt",
+    "fdcId": 169745,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spelt, uncooked",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c4d7d17dd492f6cc5669734febda0e7f959be6ca294800002d3972ec3bcbb888"
+  },
+  {
+    "foodId": "food_bulgur",
+    "fdcId": 170688,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Bulgur, dry",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "dbb252ba1f71c3fdcf6fb245a263d2f454bffda3e6a09166d0ede43397e75b00"
+  },
+  {
+    "foodId": "food_couscous",
+    "fdcId": 169699,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Couscous, dry",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "502e1f55ae712b1f7fdd16c7752c4f31dfb0bf365d29679e2f6c64e8ee344f24"
+  },
+  {
+    "foodId": "food_quinoa",
+    "fdcId": 168874,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Quinoa, uncooked",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a10e576b7789bef58743ac0371129d2b78a2fe80ad308746368c50fcb70d1026"
+  },
+  {
+    "foodId": "food_buckwheat",
+    "fdcId": 170286,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Buckwheat",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "071c7842dcd25378eb29a336274742e3221fcf1337a571370bfa5b7dee363318"
+  },
+  {
+    "foodId": "food_amaranth_grain",
+    "fdcId": 170682,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Amaranth grain, uncooked",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "21df8748c59c954d32f9767b91decb60b41799ec9b3ce40d38fc0058f554f3bd"
+  },
+  {
+    "foodId": "food_oats",
+    "fdcId": 169705,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oats (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "58aeee41fbb0815202e49ff8d689156a538c50ecaad0e6d32cfbae6706806935"
+  },
+  {
+    "foodId": "food_sorghum",
+    "fdcId": 169716,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Sorghum grain",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "77a44aec1c94e499066fc900b703ede2830cc17c71851779e267a16d6d1fc621"
+  },
+  {
+    "foodId": "food_lard",
+    "fdcId": 171401,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Lard",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b6e3481fc6a06f806896941bb9340b9c3b60b3523636493541da3cc95f0055ed"
+  },
+  {
+    "foodId": "food_parsley",
+    "fdcId": 170416,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Parsley, fresh",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "05cb5a8e356d3c51c25e5f4495154b93ee33f019808f61cf213b8802793f7490"
+  },
+  {
+    "foodId": "food_rosemary",
+    "fdcId": 173473,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Rosemary, fresh",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "34f739feb093971af233e09e37e18f73b7d81ca46e1a33064338f265798d935b"
+  },
+  {
+    "foodId": "food_thyme",
+    "fdcId": 173470,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Thyme, fresh",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "2c4ebc47a649e78d7767be123ef8129fdf0a83d46034292915b21f93c8725375"
+  },
+  {
+    "foodId": "food_honey",
+    "fdcId": 169640,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Honey",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "76f59df5e2744354e15f8f8e72d85fde0251780bda0a137473df88455d0e4385"
+  },
+  {
+    "foodId": "food_molasses",
+    "fdcId": 168820,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Molasses",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "66798d202d88a8342606182f529a6e6b6a409099d0d3a7805934c7270b79ede9"
+  },
+  {
+    "foodId": "food_cashew",
+    "fdcId": 170162,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, cashew nuts, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "dc5f812e165b129a9698358314c2f600f7e17b3cffe2f4d835ab3d8031fa46e0"
+  },
+  {
+    "foodId": "food_walnut",
+    "fdcId": 170187,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, walnuts, english",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "dc84685c0b00425f95e57e3028950c073dec38ae8325d323779bba7012de5ff3"
+  },
+  {
+    "foodId": "food_pistachio",
+    "fdcId": 170184,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, pistachio nuts, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "f08c74f968d4c580e59c64afa7c381d8deeaec03e1f262c9afec1f8a50c5c720"
+  },
+  {
+    "foodId": "food_hazelnut",
+    "fdcId": 170581,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, hazelnuts or filberts",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b9202ae4179c8a5c02f8f0c329b44e9fa92fa4dc60c92275a19a1da1098dad8c"
+  },
+  {
+    "foodId": "food_pecan",
+    "fdcId": 170182,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, pecans",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "7b978ba0db8c2334c327127bc18331c2f3123b946689422fc4081a28eb831a73"
+  },
+  {
+    "foodId": "food_brazil_nut",
+    "fdcId": 170569,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, brazilnuts, dried, unblanched",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "51d8792565b03c2ef568eb86a647d3e7a31778f739323ac4da8a10190a1ffb23"
+  },
+  {
+    "foodId": "food_macadamia_nut",
+    "fdcId": 170178,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, macadamia nuts, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "fde7cf50abc7fcc15224ac461d32ce73b87d33babfb960835743483005327e93"
+  },
+  {
+    "foodId": "food_pine_nut",
+    "fdcId": 170591,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, pine nuts, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "cad4540021a92650c1352aeb1a15d588184eb6fcfbcb6a383a47960caee9993a"
+  },
+  {
+    "foodId": "food_coconut_flesh",
+    "fdcId": 170169,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, coconut meat, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b063102d9c792694c2f2a9545fc3ff8287d6012479856a4d625b65c317dc1fff"
+  },
+  {
+    "foodId": "food_sesame_seed",
+    "fdcId": 170150,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, sesame seeds, whole, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "dd24baa0fda1b59bceb5c3e5de94061d6c3a962da0bdc59802a54a34d8baeaf4"
+  },
+  {
+    "foodId": "food_flaxseed",
+    "fdcId": 169414,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, flaxseed",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "19ed2ea3de194587701e96608a43e3377adfb3e36063d390ca995f7361be2fd5"
+  },
+  {
+    "foodId": "food_chia_seed",
+    "fdcId": 170554,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, chia seeds, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "4ca5e0d6b829dd17116ce9150ec258de8ba6032af0c30d1ec653fb0d2b9ae143"
+  },
+  {
+    "foodId": "food_sunflower_seed",
+    "fdcId": 170562,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, sunflower seed kernels, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "cb07a7fd8463b0c55b595202b039caee23d333d2dac64104ce5af53273af9be9"
+  },
+  {
+    "foodId": "food_watermelon_seed",
+    "fdcId": 169407,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, watermelon seed kernels, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "49e70d4e8e8c4209762650dfe3668f1d6c840b378a4f23253d5b193699a4725e"
+  },
+  {
+    "foodId": "food_hemp_seed",
+    "fdcId": 170148,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, hemp seed, hulled",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e2b8ead53c023dc895b5d041ae51f6cbdf4b8efeaaa3e1c7b983ffb090ebd6a0"
+  },
+  {
+    "foodId": "food_lotus_seed",
+    "fdcId": 170149,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, lotus seeds, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "17c1ca8d15183c06af47e586a2239e52404d352d51b4491305ff70bb77fb4043"
+  },
+  {
+    "foodId": "food_goat_milk",
+    "fdcId": 171278,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Milk, goat, fluid, with added vitamin D",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ff35b34ee90ab8082299bc72dc324b6da394fdcc7f21a85f98198a0eae15dc0d"
+  },
+  {
+    "foodId": "food_whole_milk",
+    "fdcId": 172217,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c1120b1e7649c14d8a47365d54fd1de7a8706683390e4cc7c1eb1aac6ee77f2b"
+  },
+  {
+    "foodId": "food_greek_yogurt",
+    "fdcId": 170894,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "1fbb6c4214928cc0da93ff7ffc576d0b61567597ea1c8e29fb2139e730ec23aa"
+  },
+  {
+    "foodId": "food_cottage_cheese",
+    "fdcId": 172179,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cheese, cottage, creamed, large or small curd",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "760c37ffd416947935136a0fbc2170a8d19dba89c1b1c37f94ec2dde5cd08dd6"
+  },
+  {
+    "foodId": "food_cheddar_cheese",
+    "fdcId": 173414,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cheese, cheddar (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "586885f7e3cef27ff87130ad25c969778af98c45eba1bcfcde167e4168b7e05f"
+  },
+  {
+    "foodId": "food_mozzarella_cheese",
+    "fdcId": 170845,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cheese, mozzarella, whole milk",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "df0931814d53f397a8fdcc60746b019c5c252375b71e546778f4df71c3215f21"
+  },
+  {
+    "foodId": "food_feta_cheese",
+    "fdcId": 173420,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cheese, feta",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ccfe023c4652343678dbb480680a2e21b47c5d5a046cd69759de65b356992c0c"
+  },
+  {
+    "foodId": "food_chicken_egg_white",
+    "fdcId": 172183,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Egg, white, raw, fresh",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "57fd68cff00ae7f706b81fffd45ec6e864b23db9282bc8003ce9b3707c0d6fb0"
+  },
+  {
+    "foodId": "food_chicken_egg_yolk",
+    "fdcId": 172184,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Egg, yolk, raw, fresh",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "20afee4924af2d53ea9609179c9e2117047a9e3636e8aed3a62a844868f60d8b"
+  },
+  {
+    "foodId": "food_duck_egg",
+    "fdcId": 172189,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Egg, duck, whole, fresh, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "749d4eb2255250b44380a4f6da15ff7712f8096a7f9f3c2d2612ef08522642ef"
+  },
+  {
+    "foodId": "food_quail_egg",
+    "fdcId": 172191,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Egg, quail, whole, fresh, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d86451f05eb0ee808d835f676a869f68b7508132c78473801277edaa4dc15aa9"
+  },
+  {
+    "foodId": "food_chicken_breast",
+    "fdcId": 171474,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chicken, broilers or fryers, breast, meat and skin, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a8b0639ccc7d6caa08f253b79a66f8f94ca0c41748f41f1d1d935b368990c6f0"
+  },
+  {
+    "foodId": "food_salmon",
+    "fdcId": 173686,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, salmon, Atlantic, wild, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "3f2c7bab04f0881331d6303486a8a504743243661d81be1c420ef78d9e106a3d"
+  },
+  {
+    "foodId": "food_sardine",
+    "fdcId": 175139,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, sardine, Atlantic, canned in oil, drained solids with bone",
+    "foodState": "canned",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ae8c657c65a22bbf109d00a52475b1cd69e18b37bd9b44ec136fa53426fc4411"
+  },
+  {
+    "foodId": "food_anchovy",
+    "fdcId": 174182,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, anchovy, european, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d805528ef84476b25035efff29bf0bc29416621ce61629c18183a90636ff485d"
+  },
+  {
+    "foodId": "food_tuna",
+    "fdcId": 175156,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, tuna, fresh, skipjack, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "2735adc0168e06b5e453820468622367818a99c1681544b4ff877bfda81cf12d"
+  },
+  {
+    "foodId": "food_cod",
+    "fdcId": 171955,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, cod, Atlantic, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a6181d811882e5b6a7577ed51d8e4e661bdcbcb7216fd70fc476cc0d97d3ef97"
+  },
+  {
+    "foodId": "food_tilapia",
+    "fdcId": 175176,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, tilapia, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "8cb8f3f3fee29cd92b4d3e1a0f5dc0c50662eaeb7e13150cf1f2801d7f998255"
+  },
+  {
+    "foodId": "food_sea_bass",
+    "fdcId": 175142,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, sea bass, mixed species, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e9a647e35314e71a0733ea0ec61634e327b1efaefc096dd788aa6ee5fdacb9c1"
+  },
+  {
+    "foodId": "food_trout",
+    "fdcId": 175154,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, trout, rainbow, wild, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "cd7876537a1f5db070cc15d57a8d6d4634e203689ff30ce220dbbbdab4f4040f"
+  },
+  {
+    "foodId": "food_catfish",
+    "fdcId": 174186,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, catfish, channel, wild, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "db5618927d1b39e9afde1eaecf58cdd01d9be033f191d36534eb3f3cfab4a109"
+  },
+  {
+    "foodId": "food_crab",
+    "fdcId": 174204,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Crustaceans, crab, blue, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "45d8dd99e8a2b726b3b5735a226cdfe7abee683a15bcfad9a509fb865edbb772"
+  },
+  {
+    "foodId": "food_lobster",
+    "fdcId": 174208,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Crustaceans, lobster, northern, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ad82673f1caa8662b23ddb69c7e0abfe02d276ed0985a649bc1c11964ecc7459"
+  },
+  {
+    "foodId": "food_mussel",
+    "fdcId": 174216,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mollusks, mussel, blue, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c1ab7f61e765099413ad85c1661072bf7f0adff9eb46844b9a377172c94dbbf6"
+  },
+  {
+    "foodId": "food_oyster",
+    "fdcId": 171978,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mollusks, oyster, eastern, wild, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "5fd1408b77f1f7646d878f3140a344de3754e0fbdaa2cf2d63f2a1e7b00925db"
+  },
+  {
+    "foodId": "food_clam",
+    "fdcId": 174214,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mollusks, clam, mixed species, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "6d44dba24ade35cdca8194fd62fb570d8e6a287907d9c689e004d67c32eedb4c"
+  },
+  {
+    "foodId": "food_squid",
+    "fdcId": 174223,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mollusks, squid, mixed species, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d2603bc53635b6c8a0e8deff905032e97f8e6ac7554ece3f8699e0beda4a4e59"
+  },
+  {
+    "foodId": "food_octopus",
+    "fdcId": 174218,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mollusks, octopus, common, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "3816df8f39fc6791ed9ad79525156414e59d76404ef25f103f3f033307311344"
+  },
+  {
+    "foodId": "food_groundnut_oil",
+    "fdcId": 171410,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, peanut, salad or cooking",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw. FAO/Codex lists arachis, peanut and groundnut oil as equivalent names: https://www.fao.org/4/W3963E/W3963E06.htm .",
+    "sourceSnapshotSha256": "d669a989e96b1b6dba1bb8f9a5a104d22c5e95c7ade0bff81e0515d83404f49e"
+  },
+  {
+    "foodId": "food_sesame_oil",
+    "fdcId": 171016,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, sesame, salad or cooking",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "eff3db34fc4b4a042c6f62ade165bf58e197438fc1eb7cc92342524ecadb0cf1"
+  },
+  {
+    "foodId": "food_coconut_oil",
+    "fdcId": 171412,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, coconut",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a3b106e7abedce77cce2f9eba38bd5f56c5b97d0a3d57cf8f2a6b1d95eb6379d"
+  },
+  {
+    "foodId": "food_rice_bran_oil",
+    "fdcId": 171013,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, rice bran",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a7448019642e114b719f4c699861e8df7fa7c295e6a81a782ec708c4678e11a0"
+  },
+  {
+    "foodId": "food_sunflower_oil",
+    "fdcId": 171025,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, sunflower, linoleic, (approx. 65%)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "660373bb58769f2b8480150ae1712b346bdaca39b000c78bf648b27300076fd0"
+  },
+  {
+    "foodId": "food_soybean_oil",
+    "fdcId": 171411,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, soybean, salad or cooking",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "3e62a2b09969308afd148033e18e775f51250f74bb488980125b0e1c8e097f8b"
+  },
+  {
+    "foodId": "food_canola_oil",
+    "fdcId": 172336,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, canola",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "0038f5a11213fb57b7f9dd44453d4ff09d2ab894f2d080924c42c27bd2a95898"
+  },
+  {
+    "foodId": "food_corn_oil",
+    "fdcId": 171029,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, corn, industrial and retail, all purpose salad or cooking",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e25a84017f409027610ae0d4f68fc934e29df5c783101aa827b6af90a9fa2162"
+  },
+  {
+    "foodId": "food_safflower_oil",
+    "fdcId": 171026,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, safflower, salad or cooking, linoleic, (over 70%)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b22e03619b0b954d32d1f1ae1671f0987870cd4df52308f5fb3c9df7f7829fcc"
+  },
+  {
+    "foodId": "food_palm_oil",
+    "fdcId": 171015,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, palm",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "067f0c8285c72d8dcc917e8c834a4787e70fd2751fdb8444a7706fd006fb6ef6"
+  },
+  {
+    "foodId": "food_ghee",
+    "fdcId": 171314,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Butter, Clarified butter (ghee)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "07ed2b6f00f07a32e898893758058950ad16438f5b13ce51ca14da6ebfe4e6db"
+  },
+  {
+    "foodId": "food_butter",
+    "fdcId": 173410,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Butter, salted",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "8259fbeb27f812607a135ef6b0f5dbd26c92053c810d0c9a8b028e035bf59c97"
+  },
+  {
+    "foodId": "food_cumin_seed",
+    "fdcId": 170923,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, cumin seed",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "9e85aa1d0ce51b7fb035b428a8a860e19d7edc969dd60206e1cfc33c3b89dc90"
+  },
+  {
+    "foodId": "food_coriander_seed",
+    "fdcId": 170922,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, coriander seed",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "3eb0601ebd373194ea4215cbbba3db1f7eea6cf3fea884e37551a6ccd745ea3c"
+  },
+  {
+    "foodId": "food_fennel_seed",
+    "fdcId": 171323,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, fennel seed",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b4597a6c54dde6d38a605b4151f4e566ebb0e225f9a08b2461d97ab00f3005e9"
+  },
+  {
+    "foodId": "food_fenugreek_seed",
+    "fdcId": 171324,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, fenugreek seed",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c3400949e3d3537b672d7a99f896894637a52f1faf82d36be33a3cb7cb9d5d65"
+  },
+  {
+    "foodId": "food_black_pepper",
+    "fdcId": 170931,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, pepper, black",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "76d337734af8d8621e4f507a6e33498b3ed641444d95fa62a6ce78f86557a6a1"
+  },
+  {
+    "foodId": "food_clove",
+    "fdcId": 171321,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, cloves, ground",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d26d74650fb0f234589896f8d52c7c812fa1c45e074243fa2ad010b7bb8b626b"
+  },
+  {
+    "foodId": "food_cinnamon",
+    "fdcId": 171320,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, cinnamon, ground",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "cdae37c01ffe382c843e4683eb2573be3caeb24df53cbeb55976c7b7d10601d7"
+  },
+  {
+    "foodId": "food_nutmeg",
+    "fdcId": 171326,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, nutmeg, ground",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "4c653229d2eb9784105a23edc0a1dd7eab62f3b530042990521d0f55eee264c3"
+  },
+  {
+    "foodId": "food_mace",
+    "fdcId": 170927,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, mace, ground",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "51b7c4ebda4b67d2db05eec31ea3260ba79dba45b35032bf9d586a1c03f2d1dc"
+  },
+  {
+    "foodId": "food_bay_leaf",
+    "fdcId": 170917,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, bay leaf",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a54e2b93ce237ba6e9a38adcf5e883250bde3b2313a77ee1ab4e9d5cb68057da"
+  },
+  {
+    "foodId": "food_dry_ginger_powder",
+    "fdcId": 170926,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, ginger, ground",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "1db7598558cfc2a53f470e0b56a5042b9817e88091eec191dea9b124237ff516"
+  },
+  {
+    "foodId": "food_mustard_seed",
+    "fdcId": 170929,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, mustard seed, ground",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "1d45df8c49c9a8c3bf64dd5293aaded83f825ac5cad6ac1ab5036a025ce5bde9"
+  },
+  {
+    "foodId": "food_fresh_coriander_leaves",
+    "fdcId": 169997,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Coriander (cilantro) leaves, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "1d45f8ef7a7147ece9b5bcea81eb4b5f3b7f54d126d9498e7f940458a8074c6c"
+  },
+  {
+    "foodId": "food_mint_leaves",
+    "fdcId": 173475,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spearmint, fresh",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "72911348669aeac9ff3f9845aad10f7df87e31599c2ceac1deddef375627980d"
+  },
+  {
+    "foodId": "food_basil_leaves",
+    "fdcId": 172232,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Basil, fresh",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d5c34b942dca2c6648c871f427087408f75c58e1a54d4e6ad0ac18fe3da30e22"
+  },
+  {
+    "foodId": "food_ginger",
+    "fdcId": 169231,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Ginger root, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a197837284c6ff13c830de49e6e883e1cc8b07dd6322294f530a78b084fd38e2"
+  },
+  {
+    "foodId": "food_radish",
+    "fdcId": 169276,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Radishes, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e8ef8a8a67097fb0ed503ea68f2110cda0abe112a47dded14c6db1429f0cd681"
+  },
+  {
+    "foodId": "food_celery_stalk",
+    "fdcId": 169988,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Celery, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e4d64f877e0cd8b2df4bd089dd62227bd62b34458d0f3923772df6fece33b846"
+  },
+  {
+    "foodId": "food_green_peas",
+    "fdcId": 170419,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Peas, green, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ee1c37cc5b0a77f887c88e855618753c6de15f6235b4b0702635ed6f12d78296"
+  },
+  {
+    "foodId": "food_sweet_corn",
+    "fdcId": 169998,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Corn, sweet, yellow, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "07ac6c274bc8492dde062f5f5b5e5ac45f3ad70162b2b205558a20fa26d9b5f1"
+  },
+  {
+    "foodId": "food_french_beans",
+    "fdcId": 169961,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beans, snap, green, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "f87d6cd62d4bfe48bf851817da3886059c797f275d2d3c18d36ea828fd0a1b17"
+  },
+  {
+    "foodId": "food_broad_beans",
+    "fdcId": 170377,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Broadbeans, immature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c30bffbb0c5e7f5d052e430e3e3a32c3c0b22a1fdc4f4bfa45707d14fe6dbf29"
+  },
+  {
+    "foodId": "food_pigeon_pea",
+    "fdcId": 172436,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Pigeon peas (red gram), mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "5849e281e8b7496e61bbc76c452285e71b0f121b5135c6b4845809527139a633"
+  },
+  {
+    "foodId": "food_green_gram",
+    "fdcId": 174256,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mung beans, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw. TNAU identifies greengram as Vigna radiata, matching the USDA scientificName: https://agritech.tnau.ac.in/agriculture/pulses_greengram.html .",
+    "sourceSnapshotSha256": "0c593d7ad47c841eae187bc9882f272ef41da73ec8cb8381f15ccf0a0e25faf2"
+  },
+  {
+    "foodId": "food_adzuki_bean",
+    "fdcId": 173727,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beans, adzuki, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "40e70e7b5d1c708fb16b07a45f8605a9dfd8f4cbd671aa53a7fa78034f39d926"
+  },
+  {
+    "foodId": "food_black_bean",
+    "fdcId": 173734,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beans, black, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "54d605b1d3bfa91f3bd15b37ed6fd4e242870450db91a3b5ae60c99f3085942e"
+  },
+  {
+    "foodId": "food_navy_bean",
+    "fdcId": 173745,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beans, navy, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "1144562557c8a656a37c27427d6f5d74c97371d6bc04794728e0a579a7e80651"
+  },
+  {
+    "foodId": "food_pinto_bean",
+    "fdcId": 175199,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beans, pinto, mature seeds, raw (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c4cbb60f2e93e834e2c7dbfa0769c55ef5b6ec344002de026590a0ec6931cbda"
+  },
+  {
+    "foodId": "food_swiss_chard",
+    "fdcId": 169991,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chard, swiss, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "0ccba2d6834452e0e022fcf3a4f2bfd5b6696ed10c9775bef717c9f11e6bdc85"
+  },
+  {
+    "foodId": "food_collard_greens",
+    "fdcId": 170406,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Collards, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "82f5cefb334e06dc321e2a655061eeb869231c154d770a06791c2f2c96d1d326"
+  },
+  {
+    "foodId": "food_bok_choy",
+    "fdcId": 170390,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cabbage, chinese (pak-choi), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "0e86dd78428c99e4a69749f227da99f25ab31ba3375f7fd76e0e4e8e8ed83836"
+  },
+  {
+    "foodId": "food_honeydew_melon",
+    "fdcId": 169911,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Melons, honeydew, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d60b24a2b3d6c53c437290d92ef64be5701782c4a4cfdfa0ddd98400df2cc41b"
+  },
+  {
+    "foodId": "food_star_fruit",
+    "fdcId": 171715,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Carambola, (starfruit), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "48775d82b97383b0dc56c63850a7cb587fb77ac5f365a2ee5dc4a55aec39a8c2"
+  },
+  {
+    "foodId": "food_dried_fig",
+    "fdcId": 174665,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Figs, dried, uncooked",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "10473fc3a057dff3cec26598708f6649ea72960a7bec7c9b9ade7ed687da2bac"
+  },
+  {
+    "foodId": "food_dried_apricot",
+    "fdcId": 173941,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Apricots, dried, sulfured, uncooked",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "fb2ef15452a7cfd4573181517669a3457bfac14ffc3f3e742d296486fc441805"
+  },
+  {
+    "foodId": "food_brown_rice",
+    "fdcId": 169703,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "22a203694e65776322e2bfc5448bdfec5a3ccd10c615f3bc3235c5cca38b8e08"
+  },
+  {
+    "foodId": "food_parboiled_rice",
+    "fdcId": 169758,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Rice, white, long-grain, parboiled, unenriched, dry",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "7288d9cbb6822c2f156de04de21855752016e46ca85604bc87030e4db1cd3bf8"
+  },
+  {
+    "foodId": "food_whole_wheat_grain",
+    "fdcId": 168889,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Wheat, hard red spring",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "90b9f4f312ce70c145e61b4b5b2b6c71d5ecb74877419ec11bab475baf099bca"
+  },
+  {
+    "foodId": "food_durum_wheat",
+    "fdcId": 169721,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Wheat, durum",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c0efbe7dafd4fb263d20a1b9c254bc99cc171c185f6c4d78d7d6724e2b75f23c"
+  },
+  {
+    "foodId": "food_rye",
+    "fdcId": 168884,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Rye grain",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "8c7a8bce9b96e9a9a80476422aa561a8a71f88aadfa08da9221d08999f03b788"
+  },
+  {
+    "foodId": "food_button_mushroom",
+    "fdcId": 169251,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mushrooms, white, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "9c1641c6b626f349149465d76167d64f366113dad422e05eb2ab54a680f50e8b"
+  },
+  {
+    "foodId": "food_oyster_mushroom",
+    "fdcId": 168580,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mushrooms, oyster, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "edd930f93cea3c4cd80ad7810c04c4a0c7a29786d3656d5e6905113e91e2dd45"
+  },
+  {
+    "foodId": "food_shiitake_mushroom",
+    "fdcId": 169242,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mushrooms, shiitake, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "903864b5a4894c6684dc94ea67bf14a53f2b97bfce073ce59f625bfbce107e5e"
+  },
+  {
+    "foodId": "food_portobello_mushroom",
+    "fdcId": 169255,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mushrooms, portabella, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "9fc9972233b9b2d2a8deba87a8bc6863189be25102f3d8f4635c485b59009e6e"
+  },
+  {
+    "foodId": "food_enoki_mushroom",
+    "fdcId": 169382,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mushrooms, enoki, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "09489b6c89bfdb1ceb8a7d24f5e4904092adbb047ea8aff4026d6f96877d78ea"
+  },
+  {
+    "foodId": "food_morel_mushroom",
+    "fdcId": 168423,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mushrooms, morel, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "b283b9c2ea264fd6c556d0880fad06cc4d2e5208fbd2696be482db60736f78bf"
+  },
+  {
+    "foodId": "food_kelp",
+    "fdcId": 168457,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seaweed, kelp, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "e068e6030e0733b762f9d437f7dbed982ca4cd5227aeada4c3ece6f44e70ae41"
+  },
+  {
+    "foodId": "food_wakame",
+    "fdcId": 170496,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seaweed, wakame, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "5203deaf9b5442413770bf56c92a8abf39a239043c59366bd6219efd3c30761c"
+  },
+  {
+    "foodId": "food_white_sugar",
+    "fdcId": 169655,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Sugars, granulated",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "ba2dd31e9ddb08b779e350b72c733590d14c8ad384ee957166c77a96dd7eb064"
+  },
+  {
+    "foodId": "food_brown_sugar",
+    "fdcId": 168833,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Sugars, brown",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "953fdbbfa566ebf8f37b0af29a4f8ea5aa02ea753a04bb983fe92fcc336005a3"
+  },
+  {
+    "foodId": "food_maple_syrup",
+    "fdcId": 169661,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Syrups, maple",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "d2eedc19210fc76afe1af4973d984f2b2130302be1b0adebb0da80d8f1db3c0f"
+  },
+  {
+    "foodId": "food_black_tea_brewed",
+    "fdcId": 173227,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beverages, tea, black, brewed, prepared with tap water",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "8d7574655436799f8a8c77dcb444822f5fd1ef068c18e18cc943db22250c1443"
+  },
+  {
+    "foodId": "food_green_tea_brewed",
+    "fdcId": 171917,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beverages, tea, green, brewed, regular",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "a2e90f99cd19b82dd43cb13d2b0dda12b18301ee08630c1953c28a985039b1a8"
+  },
+  {
+    "foodId": "food_coffee_brewed",
+    "fdcId": 171890,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beverages, coffee, brewed, prepared with tap water",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "c1aa54327253615a779093b0b92cb1164812babff39ab7726ac979263d519414"
+  },
+  {
+    "foodId": "food_espresso",
+    "fdcId": 171891,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beverages, coffee, brewed, espresso, restaurant-prepared",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "960f8d27af3ea0b54be94a79911eba8c8aaffdd89e233b21131403c181868823"
+  },
+  {
+    "foodId": "food_coconut_water",
+    "fdcId": 174831,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beverages, Coconut water, ready-to-drink, unsweetened",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+    "sourceSnapshotSha256": "964758712d1dd71787325e0dc90c174698a1b045ea4ab477b6c7e8fd9db2041e"
   }
 ]
