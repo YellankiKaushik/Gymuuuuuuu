@@ -607,7 +607,8 @@
     "powdered",
     "refined",
     "unrefined",
-    "other"
+    "other",
+    "cooked"
   ],
   "processingLevels": [
     "unprocessed",

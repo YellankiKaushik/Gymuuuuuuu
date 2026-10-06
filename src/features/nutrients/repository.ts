@@ -14,8 +14,9 @@ export {
   type NutrientIndexEntry,
 } from "./public-index";
 const manifest = manifestJson as Record<string, string>;
-const topics = import.meta.glob<{ default: unknown }>(
+const topicUrls = import.meta.glob<string>(
     "../../content/nutrients/topics/*.json",
+    { query: "?url", import: "default", eager: true },
   ),
   frameworks = import.meta.glob<{ default: unknown }>(
     "../../content/nutrients/frameworks/*.json",
@@ -29,11 +30,25 @@ export async function getNutrientBySlug(slug: string) {
   if (!nutrientIndex.some((n) => n.slug === slug)) return undefined;
   let pending = topicCache.get(slug);
   if (!pending) {
-    const loader = topics[`../../content/nutrients/topics/${slug}.json`];
-    if (!loader) return undefined;
-    pending = loader().then((module) => {
-      const n = nutrientSchema.parse(module.default);
+    const path = `../../content/nutrients/topics/${slug}.json`;
+    pending = (async () => {
+      let n: Nutrient;
+      if (import.meta.env.SSR) {
+        const serverTopics = import.meta.glob<{ default: unknown }>(
+          "../../content/nutrients/topics/*.json",
+        );
+        const loader = serverTopics[path];
+        if (!loader) return undefined;
+        n = nutrientSchema.parse((await loader()).default);
+      } else {
+        const url = topicUrls[path];
+        if (!url) return undefined;
+        n = await loadPublicJson(url, nutrientSchema);
+      }
       return n.status === "published" ? n : undefined;
+    })().catch((error: unknown) => {
+      topicCache.delete(slug);
+      throw error;
     });
     topicCache.set(slug, pending);
   }

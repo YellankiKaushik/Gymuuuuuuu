@@ -3473,8 +3473,8 @@
     {
       "module": "nutrients",
       "totalIdentities": 51,
-      "publishedIdentities": 7,
-      "draftIdentities": 44,
+      "publishedIdentities": 11,
+      "draftIdentities": 40,
       "blockedIdentities": [
         {
           "id": "energy_kcal",
@@ -3701,36 +3701,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "thiamin_mg",
-          "slug": "thiamin-vitamin-b1",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "riboflavin_mg",
-          "slug": "riboflavin-vitamin-b2",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "niacin_mg",
-          "slug": "niacin-vitamin-b3",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "pantothenic_acid_mg",
           "slug": "pantothenic-acid-vitamin-b5",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "vitamin_b6_mg",
-          "slug": "vitamin-b6",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3790,8 +3762,8 @@
     },
     {
       "module": "recipes",
-      "totalIdentities": 12,
-      "publishedIdentities": 12,
+      "totalIdentities": 24,
+      "publishedIdentities": 24,
       "draftIdentities": 0,
       "blockedIdentities": [],
       "humanReviewedIdentities": 0,
@@ -8019,16 +7991,16 @@
     },
     {
       "module": "nutrients",
-      "published": 7,
-      "withPublicationProvenance": 7,
-      "inSearch": 7,
+      "published": 11,
+      "withPublicationProvenance": 11,
+      "inSearch": 11,
       "missingSourceProvenance": []
     },
     {
       "module": "recipes",
-      "published": 12,
-      "withPublicationProvenance": 12,
-      "inSearch": 12,
+      "published": 24,
+      "withPublicationProvenance": 24,
+      "inSearch": 24,
       "missingSourceProvenance": []
     },
     {
@@ -8104,7 +8076,7 @@
     },
     {
       "module": "nutrients",
-      "eligiblePublishedRecords": 7,
+      "eligiblePublishedRecords": 11,
       "families": [
         "nutrients"
       ],
@@ -8113,7 +8085,7 @@
     },
     {
       "module": "recipes",
-      "eligiblePublishedRecords": 12,
+      "eligiblePublishedRecords": 24,
       "families": [
         "recipes"
       ],
@@ -10340,6 +10312,38 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "thiamin_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "riboflavin_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "niacin_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "vitamin_b6_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10437,6 +10441,102 @@
         },
         {
           "id": "public_recipe_cucumber_carrot_salad",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_kidney_bean_rice_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_brown_rice_black_bean_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_pinto_bean_carrot_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_pea_potato_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_cooked_oat_banana_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_cooked_oat_apple_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_yogurt_banana_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_yogurt_mango_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_egg_potato_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_egg_rice_pea_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_brown_rice_chickpea_bowl",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "public_recipe_kidney_bean_potato_bowl",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -10591,10 +10691,10 @@
     },
     {
       "module": "nutrients",
-      "missingVerifiedFactualRecords": 44,
+      "missingVerifiedFactualRecords": 40,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 7,
+      "independentHumanReviewPending": 11,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10603,7 +10703,7 @@
       "missingVerifiedFactualRecords": 0,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 12,
+      "independentHumanReviewPending": 24,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10859,6 +10959,46 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-06T05:46:24Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_thiamin_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Thiamin-Consumer/",
+      "version": "Source updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:08:50Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_riboflavin_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Riboflavin-Consumer/",
+      "version": "Source updated 2022-05-11",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:08:50Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_niacin_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Niacin-Consumer/",
+      "version": "Source updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:08:50Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_vitamin_b6_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminB6-Consumer/",
+      "version": "Source updated 2023-06-16",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:08:50Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "original_recipes_v2",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/scripts/compile-original-recipes.ts",
+      "version": "2.0.0 recipe release; twelve additional recipes at version 1",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-06T06:19:20Z",
       "reviewDate": "2026-10-06"
     }
   ],
@@ -12169,13 +12309,13 @@
     "src/features/supplements\\export.ts",
     "src/features/workout-tracker\\backup.ts"
   ],
-  "foodProfiles": 227,
-  "numericFoodValues": 8355,
+  "foodProfiles": 234,
+  "numericFoodValues": 8628,
   "numericCoverage": {
     "foodRecordsWithComposition": 226,
     "nutrientArticlesWithReferenceRows": 7,
     "nutrientReferenceRows": 7,
-    "publicRecipesWithCalculatedNutrition": 12,
+    "publicRecipesWithCalculatedNutrition": 24,
     "exercisesWithContextualSetsAndRepetitions": 6,
     "publicCardioPlans": 1,
     "publicCardioSourceSessions": 27,
@@ -12184,8 +12324,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 412,
-    "factualRecords": 284
+    "documents": 428,
+    "factualRecords": 300
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -13718,6 +13858,26 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "nutrients",
+      "id": "thiamin_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "riboflavin_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "niacin_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "vitamin_b6_mg",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "recipes",
       "id": "public_recipe_chickpea_cucumber_bowl",
       "instructionalMediaRequired": false
@@ -13778,6 +13938,66 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "recipes",
+      "id": "public_recipe_kidney_bean_rice_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_brown_rice_black_bean_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_pinto_bean_carrot_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_pea_potato_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_cooked_oat_banana_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_cooked_oat_apple_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_yogurt_banana_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_yogurt_mango_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_egg_potato_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_egg_rice_pea_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_brown_rice_chickpea_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recipes",
+      "id": "public_recipe_kidney_bean_potato_bowl",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "meal-templates",
       "id": "template_rice_chickpea_meal_prep",
       "instructionalMediaRequired": false
@@ -13831,11 +14051,11 @@
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-06T06:04:58.915Z",
-    "expected": 466,
+    "buildDate": "2026-10-06T06:36:26.031Z",
+    "expected": 482,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 466,
+    "unmeasured": 482,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -16513,6 +16733,30 @@
         "evidence": null
       },
       {
+        "path": "/nutrients/thiamin-vitamin-b1",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/riboflavin-vitamin-b2",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/niacin-vitamin-b3",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/vitamin-b6",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/recipes/chickpea-cucumber-bowl",
         "kind": "public_record",
         "result": "unmeasured",
@@ -16580,6 +16824,78 @@
       },
       {
         "path": "/recipes/cucumber-carrot-salad",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/kidney-bean-rice-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/brown-rice-black-bean-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/pinto-bean-carrot-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/pea-potato-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/cooked-oat-banana-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/cooked-oat-apple-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/yogurt-banana-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/yogurt-mango-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/egg-potato-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/egg-rice-pea-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/brown-rice-chickpea-bowl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recipes/kidney-bean-potato-bowl",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

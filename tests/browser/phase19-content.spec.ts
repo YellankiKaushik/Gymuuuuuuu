@@ -13,6 +13,12 @@ const publicRoutes = [
   ],
   ["/foods/apple", "Apple"],
   ["/nutrients/iron", "Iron"],
+  ["/nutrients/thiamin-vitamin-b1", "Thiamin (vitamin B1)"],
+  ["/nutrients/riboflavin-vitamin-b2", "Riboflavin (vitamin B2)"],
+  ["/nutrients/niacin-vitamin-b3", "Niacin (vitamin B3)"],
+  ["/nutrients/vitamin-b6", "Vitamin B6"],
+  ["/recipes/egg-potato-bowl", "Hard-boiled egg and potato bowl"],
+  ["/recipes/cooked-oat-banana-bowl", "Cooked oat and banana bowl"],
   [
     "/meal-plans/templates/rice-chickpea-meal-prep",
     "Rice and chickpea meal-prep collection",

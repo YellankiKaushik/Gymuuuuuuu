@@ -1,5 +1,7 @@
 import { readFileSync, writeFileSync, renameSync } from "node:fs";
 import foodsJson from "../src/content/foods/records.json";
+import versionPins from "../src/content/provenance/recipe-version-pins.json";
+import { validateImmutableVersions } from "./content/immutable-versions";
 import { foodSchema } from "../src/features/foods/schema";
 import {
   createCanonicalFoodLogSnapshot,
@@ -20,6 +22,7 @@ const recipes: readonly {
   slug: string;
   title: string;
   ingredients: readonly [string, number, string?][];
+  createdAt?: string;
 }[] = [
   {
     slug: "chickpea-cucumber-bowl",
@@ -121,8 +124,125 @@ const recipes: readonly {
       ["carrot", 80],
     ],
   },
+  {
+    slug: "kidney-bean-rice-bowl",
+    title: "Kidney bean and rice bowl",
+    ingredients: [
+      ["kidney_bean", 150, "boiled"],
+      ["white_rice", 150, "other"],
+      ["cucumber", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "brown-rice-black-bean-bowl",
+    title: "Brown rice and black bean bowl",
+    ingredients: [
+      ["brown_rice", 150, "cooked"],
+      ["black_bean", 150, "boiled"],
+      ["cucumber", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "pinto-bean-carrot-bowl",
+    title: "Pinto bean and carrot bowl",
+    ingredients: [
+      ["pinto_bean", 150, "boiled"],
+      ["carrot", 80, "raw"],
+      ["cucumber", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "pea-potato-bowl",
+    title: "Pea and potato bowl",
+    ingredients: [
+      ["green_peas", 150, "boiled"],
+      ["potato", 150, "boiled"],
+      ["cucumber", 80, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "cooked-oat-banana-bowl",
+    title: "Cooked oat and banana bowl",
+    ingredients: [
+      ["oats", 200, "cooked"],
+      ["banana", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "cooked-oat-apple-bowl",
+    title: "Cooked oat and apple bowl",
+    ingredients: [
+      ["oats", 200, "cooked"],
+      ["apple", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "yogurt-banana-bowl",
+    title: "Plain nonfat Greek yogurt and banana bowl",
+    ingredients: [
+      ["greek_yogurt", 150, "other"],
+      ["banana", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "yogurt-mango-bowl",
+    title: "Plain nonfat Greek yogurt and mango bowl",
+    ingredients: [
+      ["greek_yogurt", 150, "other"],
+      ["mango", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "egg-potato-bowl",
+    title: "Hard-boiled egg and potato bowl",
+    ingredients: [
+      ["chicken_egg_whole", 100, "boiled"],
+      ["potato", 150, "boiled"],
+      ["cucumber", 80, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "egg-rice-pea-bowl",
+    title: "Hard-boiled egg, rice and pea bowl",
+    ingredients: [
+      ["chicken_egg_whole", 100, "boiled"],
+      ["white_rice", 150, "other"],
+      ["green_peas", 100, "boiled"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "brown-rice-chickpea-bowl",
+    title: "Brown rice and chickpea bowl",
+    ingredients: [
+      ["brown_rice", 150, "cooked"],
+      ["chickpea", 120, "boiled"],
+      ["cucumber", 100, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
+  {
+    slug: "kidney-bean-potato-bowl",
+    title: "Kidney bean and potato bowl",
+    ingredients: [
+      ["kidney_bean", 150, "boiled"],
+      ["potato", 150, "boiled"],
+      ["carrot", 80, "raw"],
+    ],
+    createdAt: "2026-10-06T06:19:20Z",
+  },
 ];
 const output = recipes.map((def) => {
+  const compiledAt = def.createdAt ?? now;
   const ingredients = def.ingredients.map(([slug, grams, state], order) => {
     const food = foods.find((f) => f.id === `food_${slug}`);
     const profile = food?.compositionProfiles.find(
@@ -135,12 +255,12 @@ const output = recipes.map((def) => {
       profile.profileId,
       exactMassAmount(grams, "g"),
       {
-        localDate: "2026-10-05",
-        occurredAtUtc: now,
+        localDate: compiledAt.slice(0, 10),
+        occurredAtUtc: compiledAt,
         timeZone: "UTC",
         mealSlotId: "meal_lunch",
         mealLabelSnapshot: "Public recipe compilation",
-        now,
+        now: compiledAt,
       },
     );
     const line = ingredientFromFoodEntry(entry, order);
@@ -149,8 +269,9 @@ const output = recipes.map((def) => {
   const mass = def.ingredients.reduce((sum, i) => sum + i[1], 0);
   const draft = recipeDraft(def.title, ingredients, {
     recipeId: `recipe_${def.slug.replaceAll("-", "_")}`,
-    instructions:
-      "Use the exact listed food profiles. Weigh edible portions after peeling or removing inedible parts as appropriate to the source description.\nFor boiled ingredients, weigh the already cooked food; raw quantities are not interchangeable. Chop the ready-to-use ingredients and combine in a bowl.\nThe listed batch is one serving. Actual final mass is unmeasured; weigh your own batch before logging a measured yield.",
+    instructions: def.createdAt
+      ? "Use already prepared ingredients matching each listed source profile. Weigh the listed edible grams: cooked grains, cooked beans, cooked peas and peeled hard-boiled eggs are weighed after preparation. No dry-grain, raw-bean or shell mass conversion is supplied.\nChop fruit and vegetables as desired; slice peeled eggs when included. Place the weighed ingredients in a bowl and combine. Oats use the cooked-with-water profile; yogurt uses the plain nonfat profile. Any extra milk, oil, dressing or topping needs a separate calculation.\nThe listed batch is one portion. Final yield is unmeasured. Weigh your assembled batch before logging a measured yield. These original assembly instructions have not received human taste or cooking review."
+      : "Use the exact listed food profiles. Weigh edible portions after peeling or removing inedible parts as appropriate to the source description.\nFor boiled ingredients, weigh the already cooked food; raw quantities are not interchangeable. Chop the ready-to-use ingredients and combine in a bowl.\nThe listed batch is one serving. Actual final mass is unmeasured; weigh your own batch before logging a measured yield.",
     cookingMethod: "no_cook",
     allowUnadjustedRetention: false,
     yieldModel: {
@@ -169,7 +290,7 @@ const output = recipes.map((def) => {
   const version = recipeVersionSchema.parse({
     ...draft,
     id: `rver_${def.slug.replaceAll("-", "_")}_v1`,
-    createdAt: now,
+    createdAt: compiledAt,
     source: {
       kind: "original_project_recipe",
       title: def.title,
@@ -177,17 +298,23 @@ const output = recipes.map((def) => {
       licenceStatus: "user_owned",
       licenceText:
         "Original repository instructions and ingredient arrangement. USDA composition remains CC0 with attribution.",
-      reviewedAt: now,
+      reviewedAt: compiledAt,
       reviewer,
     },
     instructions: draft.instructions.map((s, i) => ({
       ...s,
       id: `step_${def.slug.replaceAll("-", "_")}_${i}`,
     })),
-    calculation: { ...draft.calculation, calculatedAt: now },
+    calculation: { ...draft.calculation, calculatedAt: compiledAt },
     tags: {
       ...draft.tags,
-      mealTypes: ["snack"],
+      mealTypes: def.createdAt
+        ? [
+            def.slug.includes("oat") || def.slug.startsWith("yogurt")
+              ? "breakfast"
+              : "lunch",
+          ]
+        : ["snack"],
       equipment: ["bowl", "kitchen scale"],
       cuisines: ["original repository assembly"],
     },
@@ -206,6 +333,7 @@ const output = recipes.map((def) => {
     status: "published",
     version,
     sourceRefs: [
+      ...(def.createdAt ? ["original_recipes_v2"] : []),
       ...new Set(
         ingredients.flatMap(
           (i) =>
@@ -216,7 +344,7 @@ const output = recipes.map((def) => {
     review: {
       status: "approved",
       reviewer,
-      reviewedAt: now,
+      reviewedAt: compiledAt,
       dietaryAndAllergenReviewed: true,
       reuseRightsReviewed: true,
     },
@@ -225,6 +353,10 @@ const output = recipes.map((def) => {
 // Caller publication validator parses the complete release; source ingredients are validated before writing.
 const release = publicRecipeSchema.array().parse(output);
 validatePublicRelease(release, []);
+validateImmutableVersions(
+  release.map((recipe) => recipe.version),
+  versionPins,
+);
 const path = "src/content/recipes/records.json",
   value = JSON.stringify(release, null, 2) + "\n";
 if (process.argv.includes("--check")) {

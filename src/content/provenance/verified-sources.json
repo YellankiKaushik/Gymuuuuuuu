@@ -463,5 +463,94 @@
       "Personal-use machine validation only. No human or clinical review.",
       "Lunch/snack examples only, not complete diets or intake targets."
     ]
+  },
+  {
+    "id": "nih_ods_thiamin_consumer",
+    "title": "NIH ODS Thiamin consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Thiamin-Consumer/",
+    "sourceVersion": "Source updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:08:50Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+    ]
+  },
+  {
+    "id": "nih_ods_riboflavin_consumer",
+    "title": "NIH ODS Riboflavin consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Riboflavin-Consumer/",
+    "sourceVersion": "Source updated 2022-05-11",
+    "sourceDate": "2022-05-11",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:08:50Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+    ]
+  },
+  {
+    "id": "nih_ods_niacin_consumer",
+    "title": "NIH ODS Niacin consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Niacin-Consumer/",
+    "sourceVersion": "Source updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:08:50Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+    ]
+  },
+  {
+    "id": "nih_ods_vitamin_b6_consumer",
+    "title": "NIH ODS VitaminB6 consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminB6-Consumer/",
+    "sourceVersion": "Source updated 2023-06-16",
+    "sourceDate": "2023-06-16",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:08:50Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+    ]
+  },
+  {
+    "id": "original_recipes_v2",
+    "title": "Additional Fitness OS prepared-food assembly recipes, release 2",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/scripts/compile-original-recipes.ts",
+    "sourceVersion": "2.0.0 recipe release; twelve additional recipes at version 1",
+    "sourceDate": "2026-10-06",
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-06T06:19:20Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "original_work",
+    "rightsReference": "Original repository ingredient arrangements and assembly instructions; no third-party recipes copied. USDA composition attribution retained.",
+    "limitations": [
+      "No independent human, taste, yield or clinical review.",
+      "Already-cooked food profiles are weighed as cooked; no raw-to-cooked conversion or retention factor is invented."
+    ]
   }
 ]

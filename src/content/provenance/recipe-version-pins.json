@@ -1,0 +1,98 @@
+[
+  {
+    "id": "rver_chickpea_cucumber_bowl_v1",
+    "sha256": "f04a10cfaf890c7935bf41e59a996fa8c65e52054cad88205ca33796c708c3ad"
+  },
+  {
+    "id": "rver_potato_cucumber_bowl_v1",
+    "sha256": "93235d5a773dc48172f94fb9c2f555ba274b92377d36d54305a626794468c48b"
+  },
+  {
+    "id": "rver_rice_chickpea_bowl_v1",
+    "sha256": "41486463678d89f6b17e45cd5cd4da9dbfe9dd28ede7b8ba74e46591cab38bf3"
+  },
+  {
+    "id": "rver_chickpea_carrot_salad_v1",
+    "sha256": "0fc72396696f0a6beee427a536fc8f19397959cfb7a6db2d7f30fe668c9d974a"
+  },
+  {
+    "id": "rver_apple_banana_bowl_v1",
+    "sha256": "05460714687b7bdf0f5cc54aa513833ca43d9128101924f05dc41bb3932e3f38"
+  },
+  {
+    "id": "rver_mango_pineapple_bowl_v1",
+    "sha256": "fc0887ed2371ee86957379014e82d1a16101beb29d4ef14dcba8ab2b39957d82"
+  },
+  {
+    "id": "rver_strawberry_banana_bowl_v1",
+    "sha256": "116dd523ca7fbf234d940c0b0e34e14facae5877c9994af647b5d8640bec28fb"
+  },
+  {
+    "id": "rver_pear_apple_bowl_v1",
+    "sha256": "f0945365e7fd690ff405ca98e8b957875250f472ce2715e70d3996546e2c5f3b"
+  },
+  {
+    "id": "rver_watermelon_pomegranate_bowl_v1",
+    "sha256": "0376ec57da90e8bf199f9251a37d6a3da4340f6cce292b27a7ae48bcd8241187"
+  },
+  {
+    "id": "rver_pineapple_raspberry_bowl_v1",
+    "sha256": "1933d52ba224a803549885f7b3f4ef773d4a92560aab280176bb6afbadd34adc"
+  },
+  {
+    "id": "rver_mandarin_mango_bowl_v1",
+    "sha256": "55090f5d1e3e2500547d5df47a2dda5815c796355e663ede6aaadded03278bef"
+  },
+  {
+    "id": "rver_cucumber_carrot_salad_v1",
+    "sha256": "8b7d4b8d5d87bf022a69d7ee57d7c0994aa1c272bd66e9e62e8f1ebd52ff94c6"
+  },
+  {
+    "id": "rver_kidney_bean_rice_bowl_v1",
+    "sha256": "6a31004fb4ccd0dd4ac1e06a13cd70efb65359d5229150f28f1da1e378e67330"
+  },
+  {
+    "id": "rver_brown_rice_black_bean_bowl_v1",
+    "sha256": "91aca857f731e06ec489282134a867441edb7bf54a6cf840668d4922a1001fb0"
+  },
+  {
+    "id": "rver_pinto_bean_carrot_bowl_v1",
+    "sha256": "c87951dd44e2dcf72295da94ca6dc326b1ed807aa9d9aa014d0a40735b3ea58e"
+  },
+  {
+    "id": "rver_pea_potato_bowl_v1",
+    "sha256": "35b42cd302a634313e4d6784c408b251e150d852857e12a546542688e4ba86e2"
+  },
+  {
+    "id": "rver_cooked_oat_banana_bowl_v1",
+    "sha256": "958276aec0bfa5efcf66d154be148a250bbb3248531702f8c09d1280c3612d7a"
+  },
+  {
+    "id": "rver_cooked_oat_apple_bowl_v1",
+    "sha256": "0937119b66b82b6ea0cddee99daac3fe54608273cf54b94aa9e949ebb483a75d"
+  },
+  {
+    "id": "rver_yogurt_banana_bowl_v1",
+    "sha256": "921ddc9f74074d8b79cd6ccab450f3a45681b9f0af032888c58a2cf59bae9798"
+  },
+  {
+    "id": "rver_yogurt_mango_bowl_v1",
+    "sha256": "c2ea061a56631aec0ea2a11dc7079bcfdadd80b732002b55b61afd257719b345"
+  },
+  {
+    "id": "rver_egg_potato_bowl_v1",
+    "sha256": "ba752bb1d0173868dcd848a73107d5455e4924f9b59b0943eafeac8019ffb03d"
+  },
+  {
+    "id": "rver_egg_rice_pea_bowl_v1",
+    "sha256": "08f1587b5669f0e6a1e6939193accac20152190927ee4d3cf87a8fbad81daaa5"
+  },
+  {
+    "id": "rver_brown_rice_chickpea_bowl_v1",
+    "sha256": "08fbeb0da0745d1b04d6ef3a44457f1a4e0f82e1d52d6dc8131d43dc50daf291"
+  },
+  {
+    "id": "rver_kidney_bean_potato_bowl_v1",
+    "sha256": "d6cec7ed1b0cb5b232a8a186bb4812e4a7cda9e3a0a81e2bba7f5a2f5789503b"
+  }
+]

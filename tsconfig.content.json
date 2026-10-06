@@ -8,6 +8,7 @@
     "scripts/verify-publication-reviews.ts",
     "scripts/build-search-index.ts",
     "scripts/phase19-*.ts",
-    "scripts/compile-original-templates.ts"
+    "scripts/compile-original-templates.ts",
+    "scripts/compile-nih-nutrients.ts"
   ]
 }

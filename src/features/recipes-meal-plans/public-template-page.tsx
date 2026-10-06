@@ -39,7 +39,12 @@ export function PublicTemplateDetail({
         Totals for this collection only. Unavailable nutrients remain
         unavailable. These are not reference intakes.
       </p>
-      <div className="table-scroll">
+      <div
+        className="table-scroll"
+        role="region"
+        aria-label="Collection nutrition"
+        tabIndex={0}
+      >
         <table>
           <caption>Known totals from frozen recipe versions</caption>
           <thead>

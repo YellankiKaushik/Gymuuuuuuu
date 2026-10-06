@@ -5,10 +5,19 @@ import {
   compositionProfileNormativeSchema,
   nutrientMeasurementNormativeSchema,
 } from "./schema.generated";
-export type Food = z.infer<typeof foodNormativeSchema>;
-export type CompositionProfile = z.infer<
-  typeof compositionProfileNormativeSchema
->;
+// Phase 19 supports a source that states "cooked" without specifying a method.
+// A generic cooked profile must not be relabelled boiled, roasted or raw.
+const profileBaseSchema = compositionProfileNormativeSchema.extend({
+  foodState: z.enum([
+    ...compositionProfileNormativeSchema.shape.foodState.options,
+    "cooked",
+  ]),
+});
+const foodBaseSchema = foodNormativeSchema.extend({
+  compositionProfiles: z.array(profileBaseSchema),
+});
+export type Food = z.infer<typeof foodBaseSchema>;
+export type CompositionProfile = z.infer<typeof profileBaseSchema>;
 export type NutrientMeasurement = z.infer<
   typeof nutrientMeasurementNormativeSchema
 >;
@@ -115,12 +124,13 @@ export function profileIssues(p: CompositionProfile): string[] {
   }
   return errors;
 }
-export const compositionProfileSchema =
-  compositionProfileNormativeSchema.superRefine((p, ctx) => {
+export const compositionProfileSchema = profileBaseSchema.superRefine(
+  (p, ctx) => {
     for (const message of profileIssues(p))
       ctx.addIssue({ code: "custom", message });
-  });
-export const foodSchema = foodNormativeSchema.superRefine((f, ctx) => {
+  },
+);
+export const foodSchema = foodBaseSchema.superRefine((f, ctx) => {
   const error = (message: string) => ctx.addIssue({ code: "custom", message });
   if (
     reference.foodSubgroups.find((s) => s.id === f.subgroupId)?.categoryId !==

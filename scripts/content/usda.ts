@@ -15,6 +15,7 @@ export const mappingSchema = z.strictObject({
   reviewLevel: z.literal("published_personal_use"),
   matchRationale: z.string().min(20),
   sourceSnapshotSha256: z.string().regex(/^[a-f0-9]{64}$/),
+  verifiedAt: z.iso.datetime().optional(),
 });
 export const snapshotSchema = z
   .object({
@@ -121,6 +122,14 @@ export function buildUsdaRelease(
     throw Error("Duplicate mapping");
   const output: Food[] = [];
   for (const mapping of mappings) {
+    if (
+      mapping.verifiedAt &&
+      (Date.parse(mapping.verifiedAt) < Date.parse(extractedAt) ||
+        Date.parse(mapping.verifiedAt) > Date.now())
+    )
+      throw Error(
+        "Mapping verification must follow extraction and cannot be future-dated.",
+      );
     const identity = identities.find((i) => i.id === mapping.foodId),
       snapshot = snapshots.find((s) => s.record.fdcId === mapping.fdcId);
     if (!identity || !snapshot)
@@ -209,7 +218,7 @@ export function buildUsdaRelease(
       ],
       review: {
         status: "approved",
-        reviewedAt: extractedAt,
+        reviewedAt: mapping.verifiedAt ?? extractedAt,
         reviewer: "Codex machine validation; personal use; no human review",
         qualityNotes: [
           mapping.matchRationale,

@@ -1030,7 +1030,7 @@
     "slug": "chicken-egg-whole",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-06",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -1038,6 +1038,13 @@
     "fields": [
       {
         "path": "compositionProfiles.profile_chicken_egg_whole_fdc_171287",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_chicken_egg_whole_fdc_173424",
         "sourceIds": [
           "usda_fdc_sr_legacy_2018"
         ],
@@ -2387,7 +2394,7 @@
     "slug": "kidney-bean",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-06",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -2395,6 +2402,13 @@
     "fields": [
       {
         "path": "compositionProfiles.profile_kidney_bean_fdc_175193",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_kidney_bean_fdc_175194",
         "sourceIds": [
           "usda_fdc_sr_legacy_2018"
         ],
@@ -2662,7 +2676,7 @@
     "slug": "oats",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-06",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -2670,6 +2684,13 @@
     "fields": [
       {
         "path": "compositionProfiles.profile_oats_fdc_169705",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_oats_fdc_173905",
         "sourceIds": [
           "usda_fdc_sr_legacy_2018"
         ],
@@ -4719,7 +4740,7 @@
     "slug": "green-peas",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-06",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -4727,6 +4748,13 @@
     "fields": [
       {
         "path": "compositionProfiles.profile_green_peas_fdc_170419",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_green_peas_fdc_170420",
         "sourceIds": [
           "usda_fdc_sr_legacy_2018"
         ],
@@ -4901,7 +4929,7 @@
     "slug": "black-bean",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-06",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -4909,6 +4937,13 @@
     "fields": [
       {
         "path": "compositionProfiles.profile_black_bean_fdc_173734",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_black_bean_fdc_173735",
         "sourceIds": [
           "usda_fdc_sr_legacy_2018"
         ],
@@ -4951,7 +4986,7 @@
     "slug": "pinto-bean",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-06",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -4959,6 +4994,13 @@
     "fields": [
       {
         "path": "compositionProfiles.profile_pinto_bean_fdc_175199",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_pinto_bean_fdc_175200",
         "sourceIds": [
           "usda_fdc_sr_legacy_2018"
         ],
@@ -5151,7 +5193,7 @@
     "slug": "brown-rice",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-06",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -5159,6 +5201,13 @@
     "fields": [
       {
         "path": "compositionProfiles.profile_brown_rice_fdc_169703",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "compositionProfiles.profile_brown_rice_fdc_169704",
         "sourceIds": [
           "usda_fdc_sr_legacy_2018"
         ],
@@ -5683,7 +5732,7 @@
     },
     "fields": [
       {
-        "path": "claims",
+        "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_iron_consumer"
         ],
@@ -5715,7 +5764,7 @@
     },
     "fields": [
       {
-        "path": "claims",
+        "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_calcium_consumer"
         ],
@@ -5747,7 +5796,7 @@
     },
     "fields": [
       {
-        "path": "claims",
+        "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_vitamin_c_consumer"
         ],
@@ -5779,7 +5828,7 @@
     },
     "fields": [
       {
-        "path": "claims",
+        "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_magnesium_consumer"
         ],
@@ -5811,7 +5860,7 @@
     },
     "fields": [
       {
-        "path": "claims",
+        "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_zinc_consumer"
         ],
@@ -5843,7 +5892,7 @@
     },
     "fields": [
       {
-        "path": "claims",
+        "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_vitamin_d_consumer"
         ],
@@ -5875,7 +5924,7 @@
     },
     "fields": [
       {
-        "path": "claims",
+        "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_vitamin_b12_consumer"
         ],
@@ -5885,6 +5934,106 @@
         "path": "referenceValues",
         "sourceIds": [
           "fda_daily_values"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "thiamin_mg",
+    "slug": "thiamin-vitamin-b1",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_thiamin_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "riboflavin_mg",
+    "slug": "riboflavin-vitamin-b2",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_riboflavin_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "niacin_mg",
+    "slug": "niacin-vitamin-b3",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_niacin_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "vitamin_b6_mg",
+    "slug": "vitamin-b6",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_vitamin_b6_consumer"
         ],
         "kind": "sourced_education"
       }
@@ -6454,6 +6603,530 @@
       },
       {
         "path": "version.ingredients.ing_cucumber_carrot_salad_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_kidney_bean_rice_bowl",
+    "slug": "kidney-bean-rice-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_kidney_bean_rice_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_kidney_bean_rice_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_kidney_bean_rice_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_brown_rice_black_bean_bowl",
+    "slug": "brown-rice-black-bean-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_brown_rice_black_bean_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_brown_rice_black_bean_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_brown_rice_black_bean_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_pinto_bean_carrot_bowl",
+    "slug": "pinto-bean-carrot-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_pinto_bean_carrot_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_pinto_bean_carrot_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_pinto_bean_carrot_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_pea_potato_bowl",
+    "slug": "pea-potato-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_pea_potato_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_pea_potato_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_pea_potato_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_cooked_oat_banana_bowl",
+    "slug": "cooked-oat-banana-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_cooked_oat_banana_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_cooked_oat_banana_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_cooked_oat_apple_bowl",
+    "slug": "cooked-oat-apple-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_cooked_oat_apple_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_cooked_oat_apple_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_yogurt_banana_bowl",
+    "slug": "yogurt-banana-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_yogurt_banana_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_yogurt_banana_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_yogurt_mango_bowl",
+    "slug": "yogurt-mango-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_yogurt_mango_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_yogurt_mango_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_egg_potato_bowl",
+    "slug": "egg-potato-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_egg_potato_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_egg_potato_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_egg_potato_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_egg_rice_pea_bowl",
+    "slug": "egg-rice-pea-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_egg_rice_pea_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_egg_rice_pea_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_egg_rice_pea_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_brown_rice_chickpea_bowl",
+    "slug": "brown-rice-chickpea-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_brown_rice_chickpea_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_brown_rice_chickpea_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_brown_rice_chickpea_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recipes",
+    "id": "public_recipe_kidney_bean_potato_bowl",
+    "slug": "kidney-bean-potato-bowl",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "version.instructions",
+        "sourceIds": [
+          "original_recipes_v2"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "version.ingredients.ing_kidney_bean_potato_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_kidney_bean_potato_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "version.ingredients.ing_kidney_bean_potato_bowl_2",
         "sourceIds": [
           "usda_fdc_foundation_2026_04"
         ],

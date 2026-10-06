@@ -13,6 +13,7 @@
     "displayKind": "mineral",
     "status": "published",
     "contentStatus": "complete_for_mvp",
+    "summary": "Iron supports oxygen transport through hemoglobin and myoglobin.",
     "forms": [],
     "functions": [
       {
@@ -128,8 +129,7 @@
       "reviewedAt": "2026-10-05",
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education with mandatory clinical boundaries. No independent human/clinical review or personal intake prescription."
-    },
-    "summary": "Iron supports oxygen transport through hemoglobin and myoglobin."
+    }
   },
   {
     "id": "calcium_mg",
@@ -145,6 +145,7 @@
     "displayKind": "mineral",
     "status": "published",
     "contentStatus": "complete_for_mvp",
+    "summary": "Calcium contributes to bone structure, muscle movement and nerve signalling.",
     "forms": [],
     "functions": [
       {
@@ -260,8 +261,7 @@
       "reviewedAt": "2026-10-05",
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education with mandatory clinical boundaries. No independent human/clinical review or personal intake prescription."
-    },
-    "summary": "Calcium contributes to bone structure, muscle movement and nerve signalling."
+    }
   },
   {
     "id": "vitamin_c_mg",
@@ -279,6 +279,7 @@
     "displayKind": "vitamin",
     "status": "published",
     "contentStatus": "complete_for_mvp",
+    "summary": "Vitamin C supports collagen production and acts as an antioxidant.",
     "forms": [],
     "functions": [
       {
@@ -394,8 +395,7 @@
       "reviewedAt": "2026-10-05",
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education with mandatory clinical boundaries. No independent human/clinical review or personal intake prescription."
-    },
-    "summary": "Vitamin C supports collagen production and acts as an antioxidant."
+    }
   },
   {
     "id": "magnesium_mg",
@@ -411,6 +411,7 @@
     "displayKind": "mineral",
     "status": "published",
     "contentStatus": "complete_for_mvp",
+    "summary": "Magnesium supports muscle and nerve function and contributes to protein, bone and DNA production.",
     "forms": [],
     "functions": [
       {
@@ -457,12 +458,12 @@
     ],
     "absorptionFactors": [
       {
+        "factorType": "other",
         "description": "Different supplement salts can differ in absorption; a food-composition amount does not measure how much a person absorbs.",
+        "direction": "context_dependent",
         "sourceIds": [
           "nih_ods_fact_sheets"
-        ],
-        "factorType": "other",
-        "direction": "context_dependent"
+        ]
       }
     ],
     "deficiency": {
@@ -566,8 +567,7 @@
       "reviewedAt": "2026-10-05",
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education with mandatory clinical boundaries. No independent human/clinical review or personal intake prescription."
-    },
-    "summary": "Magnesium supports muscle and nerve function and contributes to protein, bone and DNA production."
+    }
   },
   {
     "id": "zinc_mg",
@@ -583,6 +583,7 @@
     "displayKind": "mineral",
     "status": "published",
     "contentStatus": "complete_for_mvp",
+    "summary": "Zinc contributes to immune function, protein and DNA synthesis, growth, wound healing and taste.",
     "forms": [],
     "functions": [
       {
@@ -629,12 +630,12 @@
     ],
     "absorptionFactors": [
       {
+        "factorType": "inhibitor",
         "description": "Phytates in beans and grains can reduce zinc absorption; vegetarian or vegan food-composition totals do not establish absorbed zinc.",
+        "direction": "decrease",
         "sourceIds": [
           "nih_ods_fact_sheets"
-        ],
-        "factorType": "inhibitor",
-        "direction": "decrease"
+        ]
       }
     ],
     "deficiency": {
@@ -738,8 +739,7 @@
       "reviewedAt": "2026-10-05",
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education with mandatory clinical boundaries. No independent human/clinical review or personal intake prescription."
-    },
-    "summary": "Zinc contributes to immune function, protein and DNA synthesis, growth, wound healing and taste."
+    }
   },
   {
     "id": "vitamin_d_ug",
@@ -757,6 +757,7 @@
     "displayKind": "vitamin",
     "status": "published",
     "contentStatus": "complete_for_mvp",
+    "summary": "Vitamin D helps calcium absorption and supports bone, muscle, nerve and immune functions.",
     "forms": [],
     "functions": [
       {
@@ -803,12 +804,12 @@
     ],
     "absorptionFactors": [
       {
+        "factorType": "other",
         "description": "Vitamin D is fat soluble and is absorbed with dietary fat; conditions affecting fat absorption can affect vitamin D status.",
+        "direction": "context_dependent",
         "sourceIds": [
           "nih_ods_fact_sheets"
-        ],
-        "factorType": "other",
-        "direction": "context_dependent"
+        ]
       }
     ],
     "deficiency": {
@@ -912,8 +913,7 @@
       "reviewedAt": "2026-10-05",
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education with mandatory clinical boundaries. No independent human/clinical review or personal intake prescription."
-    },
-    "summary": "Vitamin D helps calcium absorption and supports bone, muscle, nerve and immune functions."
+    }
   },
   {
     "id": "vitamin_b12_ug",
@@ -932,6 +932,7 @@
     "displayKind": "vitamin",
     "status": "published",
     "contentStatus": "complete_for_mvp",
+    "summary": "Vitamin B12 supports blood and nerve cells and DNA production.",
     "forms": [],
     "functions": [
       {
@@ -978,12 +979,12 @@
     ],
     "absorptionFactors": [
       {
+        "factorType": "other",
         "description": "Absorption of food-bound B12 involves release from protein and intrinsic factor; some conditions or medicines interfere with this process.",
+        "direction": "context_dependent",
         "sourceIds": [
           "nih_ods_fact_sheets"
-        ],
-        "factorType": "other",
-        "direction": "context_dependent"
+        ]
       }
     ],
     "deficiency": {
@@ -1087,7 +1088,636 @@
       "reviewedAt": "2026-10-05",
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education with mandatory clinical boundaries. No independent human/clinical review or personal intake prescription."
+    }
+  },
+  {
+    "id": "thiamin_mg",
+    "slug": "thiamin-vitamin-b1",
+    "canonicalName": "Thiamin (vitamin B1)",
+    "aliases": [
+      "thiamine",
+      "B1"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "thiamin_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Thiamin supports the conversion of food into usable energy and normal cell development and function.",
+    "forms": [
+      {
+        "id": "thiamin_mononitrate",
+        "name": "Thiamin mononitrate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "thiamin_hydrochloride",
+        "name": "Thiamin hydrochloride",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Thiamin supports the conversion of food into usable energy and normal cell development and function.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "thiamin_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Insufficient thiamin intake, absorption or retention can cause deficiency; severe deficiency can affect nerves and the heart.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
     },
-    "summary": "Vitamin B12 supports blood and nerve cells and DNA production."
+    "excess": {
+      "overview": "ODS reports no demonstrated harm from thiamin. This does not establish that unrestricted supplement use is appropriate.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Some medicines, including furosemide and fluorouracil, can lower thiamin levels. Discuss supplement and medicine use with a pharmacist or clinician.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_thiamin_mg_function",
+        "text": "Thiamin supports the conversion of food into usable energy and normal cell development and function.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_thiamin_mg_food_source",
+        "text": "ODS lists whole or fortified grains, pork, fish, legumes, seeds and nuts as food sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_thiamin_mg_deficiency",
+        "text": "Insufficient thiamin intake, absorption or retention can cause deficiency; severe deficiency can affect nerves and the heart.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_thiamin_mg_excess",
+        "text": "ODS reports no demonstrated harm from thiamin. This does not establish that unrestricted supplement use is appropriate.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_thiamin_mg_interaction",
+        "text": "Some medicines, including furosemide and fluorouracil, can lower thiamin levels. Discuss supplement and medicine use with a pharmacist or clinician.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Thiamin-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "riboflavin_mg",
+    "slug": "riboflavin-vitamin-b2",
+    "canonicalName": "Riboflavin (vitamin B2)",
+    "aliases": [
+      "B2"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "riboflavin_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Riboflavin supports energy metabolism and the growth and function of cells.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Riboflavin supports energy metabolism and the growth and function of cells.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "riboflavin_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Riboflavin deficiency can affect the skin, mouth and red blood cells. ODS identifies vegan diets and avoiding dairy or eggs as contexts needing attention.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "ODS reports no demonstrated harm from riboflavin. That statement is not a recommendation to take unrestricted supplements.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ODS does not identify known medication interactions for riboflavin, but recommends discussing supplements and medicines with health professionals.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_riboflavin_mg_function",
+        "text": "Riboflavin supports energy metabolism and the growth and function of cells.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_riboflavin_mg_food_source",
+        "text": "ODS lists eggs, lean meat, milk, mushrooms, spinach and fortified grain products as food sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_riboflavin_mg_deficiency",
+        "text": "Riboflavin deficiency can affect the skin, mouth and red blood cells. ODS identifies vegan diets and avoiding dairy or eggs as contexts needing attention.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_riboflavin_mg_excess",
+        "text": "ODS reports no demonstrated harm from riboflavin. That statement is not a recommendation to take unrestricted supplements.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_riboflavin_mg_interaction",
+        "text": "ODS does not identify known medication interactions for riboflavin, but recommends discussing supplements and medicines with health professionals.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Riboflavin-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2022-05-11. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "niacin_mg",
+    "slug": "niacin-vitamin-b3",
+    "canonicalName": "Niacin (vitamin B3)",
+    "aliases": [
+      "B3",
+      "niacin equivalents"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg NE",
+    "foodDataNutrientIds": [
+      "niacin_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Niacin contributes to energy metabolism and normal cell development and function.",
+    "forms": [
+      {
+        "id": "nicotinic_acid",
+        "name": "Nicotinic acid",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "nicotinamide",
+        "name": "Nicotinamide",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Niacin contributes to energy metabolism and normal cell development and function.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "USDA niacin mass is not niacin equivalents (NE). Tryptophan contribution is not inferred, and an NE ranking is unavailable."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Severe niacin deficiency can lead to pellagra. Low niacin or tryptophan intake and certain medical conditions can contribute.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "High-dose niacin supplements can cause adverse effects, including flushing with nicotinic acid and liver problems with some high-dose regimens.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "High-dose nicotinic acid can affect blood glucose and interfere with diabetes medicines. Prescription niacin use requires clinical supervision.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_niacin_mg_function",
+        "text": "Niacin contributes to energy metabolism and normal cell development and function.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_niacin_mg_food_source",
+        "text": "ODS lists poultry, meat, fish, some nuts and legumes, and enriched or fortified grain products as food sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_niacin_mg_deficiency",
+        "text": "Severe niacin deficiency can lead to pellagra. Low niacin or tryptophan intake and certain medical conditions can contribute.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_niacin_mg_excess",
+        "text": "High-dose niacin supplements can cause adverse effects, including flushing with nicotinic acid and liver problems with some high-dose regimens.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_niacin_mg_interaction",
+        "text": "High-dose nicotinic acid can affect blood glucose and interfere with diabetes medicines. Prescription niacin use requires clinical supervision.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Niacin-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "vitamin_b6_mg",
+    "slug": "vitamin-b6",
+    "canonicalName": "Vitamin B6",
+    "aliases": [
+      "pyridoxine family",
+      "B6"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "vitamin_b6_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Vitamin B6 participates in metabolic enzyme reactions, immune function and brain development.",
+    "forms": [
+      {
+        "id": "pyridoxine",
+        "name": "Pyridoxine",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Vitamin B6 participates in metabolic enzyme reactions, immune function and brain development.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "vitamin_b6_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Vitamin B6 deficiency can affect blood cells, skin and immune function; some kidney disorders, malabsorption conditions and alcohol dependence increase risk.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "High supplemental vitamin B6 intake over extended periods can cause serious nerve damage. US and European upper-limit frameworks differ.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Vitamin B6 can interact with cycloserine, some epilepsy medicines and theophylline. A pharmacist or clinician should assess medication interactions.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_vitamin_b6_mg_function",
+        "text": "Vitamin B6 participates in metabolic enzyme reactions, immune function and brain development.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_b6_mg_food_source",
+        "text": "ODS lists poultry, fish, potatoes and other starchy vegetables, and non-citrus fruit as food sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_b6_mg_deficiency",
+        "text": "Vitamin B6 deficiency can affect blood cells, skin and immune function; some kidney disorders, malabsorption conditions and alcohol dependence increase risk.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_b6_mg_excess",
+        "text": "High supplemental vitamin B6 intake over extended periods can cause serious nerve damage. US and European upper-limit frameworks differ.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_b6_mg_interaction",
+        "text": "Vitamin B6 can interact with cycloserine, some epilepsy medicines and theophylline. A pharmacist or clinician should assess medication interactions.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/VitaminB6-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2023-06-16. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
   }
 ]

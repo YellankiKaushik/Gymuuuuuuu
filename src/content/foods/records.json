@@ -18586,6 +18586,421 @@
             "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
           ]
         }
+      },
+      {
+        "profileId": "profile_chicken_egg_whole_fdc_173424",
+        "label": "Egg, whole, cooked, hard-boiled",
+        "foodState": "boiled",
+        "processingLevel": "not_classified",
+        "preparationNotes": "Use this exact source-described state. Do not convert raw and cooked masses or infer suitability for eating raw.",
+        "basis": "per_100g_edible_portion",
+        "ediblePortion": {
+          "percent": null,
+          "status": "not_available"
+        },
+        "nutrients": [
+          {
+            "nutrientId": "energy_kcal",
+            "status": "calculated",
+            "unit": "kcal",
+            "value": 155,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1008; Calculated."
+          },
+          {
+            "nutrientId": "energy_kj",
+            "status": "estimated",
+            "unit": "kJ",
+            "value": 649,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1062; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "water_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 74.6,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1051; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "protein_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 12.6,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1003; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "carbohydrate_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 1.12,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1005; Calculated."
+          },
+          {
+            "nutrientId": "carbohydrate_available_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "fiber_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1079; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "sugars_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 1.12,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 2000; Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298."
+          },
+          {
+            "nutrientId": "fat_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 10.6,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1004; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_saturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 3.27,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1258; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_monounsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 4.08,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1292; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_polyunsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 1.41,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1293; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "omega_3_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "omega_6_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "cholesterol_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 373,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1253; Other procedure used from imputing."
+          },
+          {
+            "nutrientId": "sodium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 124,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1093; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "potassium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 126,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1092; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "calcium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 50,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1087; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.19,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1089; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "magnesium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 10,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1090; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "phosphorus_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 172,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1091; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "zinc_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.05,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1095; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "copper_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.013,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1098; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "manganese_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.026,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1101; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "measured",
+            "unit": "µg",
+            "value": 30.8,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1103; Analytical."
+          },
+          {
+            "nutrientId": "iodine_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "vitamin_a_rae_ug",
+            "status": "calculated",
+            "unit": "µg RAE",
+            "value": 149,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1106; Calculated."
+          },
+          {
+            "nutrientId": "retinol_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 148,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1105; Based on another form of the food or similar food; Concentration adjustment; Fat; Retention factors not used."
+          },
+          {
+            "nutrientId": "beta_carotene_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 11,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1107; Based on another form of the food or similar food; Concentration adjustment; Fat; Retention factors not used."
+          },
+          {
+            "nutrientId": "thiamin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.066,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1165; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "riboflavin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.513,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1166; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "niacin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.064,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1167; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "pantothenic_acid_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.4,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1170; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_b6_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.121,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1175; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "biotin_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "folate_food_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 44,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1187; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "folic_acid_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1186; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "folate_dfe_ug",
+            "status": "calculated",
+            "unit": "µg DFE",
+            "value": 44,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1190; Calculated."
+          },
+          {
+            "nutrientId": "vitamin_b12_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 1.11,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1178; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_c_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1162; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_d_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 2.2,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1114; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_e_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.03,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1109; Based on another form of the food or similar food; Concentration adjustment; Fat; Retention factors not used."
+          },
+          {
+            "nutrientId": "vitamin_k_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0.3,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1185; Based on another form of the food or similar food; Concentration adjustment; Fat; Retention factors not used."
+          },
+          {
+            "nutrientId": "choline_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 294,
+            "sourceRecordId": "usda_fdc_173424",
+            "methodNote": "USDA nutrient 1180; Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used."
+          }
+        ],
+        "portions": [
+          {
+            "portionId": "portion_fdc_173424_92499",
+            "label": "1 tbsp",
+            "grams": 8.5,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_173424",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          },
+          {
+            "portionId": "portion_fdc_173424_92498",
+            "label": "1 cup, chopped",
+            "grams": 136,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_173424",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          },
+          {
+            "portionId": "portion_fdc_173424_92500",
+            "label": "1 large",
+            "grams": 50,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_173424",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          }
+        ],
+        "sourceRecords": [
+          {
+            "sourceRecordId": "usda_fdc_173424",
+            "sourceId": "usda_fdc_sr_legacy_2018",
+            "externalFoodId": "173424",
+            "externalDescription": "Egg, whole, cooked, hard-boiled",
+            "release": "April 2018 final",
+            "accessedAt": "2026-10-05T14:21:40Z",
+            "matchType": "exact",
+            "licenseNote": "USDA FoodData Central public-domain/CC0 data; USDA attribution retained.",
+            "citation": "USDA Agricultural Research Service. FoodData Central. SR Legacy, FDC 173424. https://fdc.nal.usda.gov/food-details/173424/nutrients"
+          }
+        ],
+        "review": {
+          "status": "approved",
+          "reviewedAt": "2026-10-06T06:15:44.002Z",
+          "reviewer": "Codex machine validation; personal use; no human review",
+          "qualityNotes": [
+            "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
+            "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
+            "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
+          ]
+        }
       }
     ],
     "editorial": {
@@ -42969,6 +43384,413 @@
             "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
           ]
         }
+      },
+      {
+        "profileId": "profile_kidney_bean_fdc_175194",
+        "label": "Beans, kidney, red, mature seeds, cooked, boiled, without salt",
+        "foodState": "boiled",
+        "processingLevel": "not_classified",
+        "preparationNotes": "Use this exact source-described state. Do not convert raw and cooked masses or infer suitability for eating raw.",
+        "basis": "per_100g_edible_portion",
+        "ediblePortion": {
+          "percent": null,
+          "status": "not_available"
+        },
+        "nutrients": [
+          {
+            "nutrientId": "energy_kcal",
+            "status": "calculated",
+            "unit": "kcal",
+            "value": 127,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1008; Calculated."
+          },
+          {
+            "nutrientId": "energy_kj",
+            "status": "calculated",
+            "unit": "kJ",
+            "value": 532,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1062; Calculated."
+          },
+          {
+            "nutrientId": "water_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 66.9,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1051; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "protein_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 8.67,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1003; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "carbohydrate_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 22.8,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1005; Calculated."
+          },
+          {
+            "nutrientId": "carbohydrate_available_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "fiber_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 7.4,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1079; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "sugars_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.32,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 2000; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "fat_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.5,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1004; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_saturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.072,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1258; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_monounsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.039,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1292; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_polyunsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.275,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1293; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "omega_3_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "omega_6_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "cholesterol_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1253; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "sodium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 2,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1093; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "potassium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 403,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1092; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "calcium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 28,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1087; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 2.94,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1089; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "magnesium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 45,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1090; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "phosphorus_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 142,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1091; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "zinc_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.07,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1095; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "copper_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.242,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1098; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "manganese_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.477,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1101; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 1.2,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1103; Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used."
+          },
+          {
+            "nutrientId": "iodine_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "vitamin_a_rae_ug",
+            "status": "calculated",
+            "unit": "µg RAE",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1106; Calculated."
+          },
+          {
+            "nutrientId": "retinol_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1105; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "beta_carotene_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1107; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "thiamin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.16,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1165; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "riboflavin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.058,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1166; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "niacin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.578,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1167; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "pantothenic_acid_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.22,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1170; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_b6_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.12,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1175; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "biotin_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "folate_food_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 130,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1187; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "folic_acid_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1186; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "folate_dfe_ug",
+            "status": "calculated",
+            "unit": "µg DFE",
+            "value": 130,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1190; Calculated."
+          },
+          {
+            "nutrientId": "vitamin_b12_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1178; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_c_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.2,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1162; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_d_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1114; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_e_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.03,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1109; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "vitamin_k_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 8.4,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1185; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "choline_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 30.5,
+            "sourceRecordId": "usda_fdc_175194",
+            "methodNote": "USDA nutrient 1180; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          }
+        ],
+        "portions": [
+          {
+            "portionId": "portion_fdc_175194_95823",
+            "label": "1 tbsp",
+            "grams": 11,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_175194",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          },
+          {
+            "portionId": "portion_fdc_175194_95822",
+            "label": "1 cup",
+            "grams": 177,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_175194",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          }
+        ],
+        "sourceRecords": [
+          {
+            "sourceRecordId": "usda_fdc_175194",
+            "sourceId": "usda_fdc_sr_legacy_2018",
+            "externalFoodId": "175194",
+            "externalDescription": "Beans, kidney, red, mature seeds, cooked, boiled, without salt",
+            "release": "April 2018 final",
+            "accessedAt": "2026-10-05T14:21:40Z",
+            "matchType": "exact",
+            "licenseNote": "USDA FoodData Central public-domain/CC0 data; USDA attribution retained.",
+            "citation": "USDA Agricultural Research Service. FoodData Central. SR Legacy, FDC 175194. https://fdc.nal.usda.gov/food-details/175194/nutrients"
+          }
+        ],
+        "review": {
+          "status": "approved",
+          "reviewedAt": "2026-10-06T06:15:44.002Z",
+          "reviewer": "Codex machine validation; personal use; no human review",
+          "qualityNotes": [
+            "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
+            "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
+            "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
+          ]
+        }
       }
     ],
     "editorial": {
@@ -47679,6 +48501,421 @@
           "reviewer": "Codex machine validation; personal use; no human review",
           "qualityNotes": [
             "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+            "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
+            "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
+          ]
+        }
+      },
+      {
+        "profileId": "profile_oats_fdc_173905",
+        "label": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+        "foodState": "cooked",
+        "processingLevel": "not_classified",
+        "preparationNotes": "Use this exact source-described state. Do not convert raw and cooked masses or infer suitability for eating raw.",
+        "basis": "per_100g_edible_portion",
+        "ediblePortion": {
+          "percent": null,
+          "status": "not_available"
+        },
+        "nutrients": [
+          {
+            "nutrientId": "energy_kcal",
+            "status": "calculated",
+            "unit": "kcal",
+            "value": 71,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1008; Calculated."
+          },
+          {
+            "nutrientId": "energy_kj",
+            "status": "calculated",
+            "unit": "kJ",
+            "value": 297,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1062; Calculated."
+          },
+          {
+            "nutrientId": "water_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 83.6,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1051; Analytical."
+          },
+          {
+            "nutrientId": "protein_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 2.54,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1003; Analytical."
+          },
+          {
+            "nutrientId": "carbohydrate_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 12,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1005; Calculated."
+          },
+          {
+            "nutrientId": "carbohydrate_available_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "fiber_total_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 1.7,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1079; Analytical."
+          },
+          {
+            "nutrientId": "sugars_total_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 0.27,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 2000; Analytical."
+          },
+          {
+            "nutrientId": "fat_total_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 1.52,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1004; Analytical."
+          },
+          {
+            "nutrientId": "fat_saturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.31,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1258; Calculated."
+          },
+          {
+            "nutrientId": "fat_monounsaturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.435,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1292; Calculated."
+          },
+          {
+            "nutrientId": "fat_polyunsaturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.559,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1293; Calculated."
+          },
+          {
+            "nutrientId": "omega_3_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "omega_6_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "cholesterol_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1253; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "sodium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 4,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1093; Analytical."
+          },
+          {
+            "nutrientId": "potassium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 70,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1092; Analytical."
+          },
+          {
+            "nutrientId": "calcium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 9,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1087; Analytical."
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.9,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1089; Analytical."
+          },
+          {
+            "nutrientId": "magnesium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 27,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1090; Analytical."
+          },
+          {
+            "nutrientId": "phosphorus_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 77,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1091; Analytical."
+          },
+          {
+            "nutrientId": "zinc_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 1,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1095; Analytical."
+          },
+          {
+            "nutrientId": "copper_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.074,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1098; Analytical."
+          },
+          {
+            "nutrientId": "manganese_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.58,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1101; Analytical."
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "measured",
+            "unit": "µg",
+            "value": 5.4,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1103; Analytical."
+          },
+          {
+            "nutrientId": "iodine_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "vitamin_a_rae_ug",
+            "status": "estimated",
+            "unit": "µg RAE",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1106; Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Manuf. Calc. data/100."
+          },
+          {
+            "nutrientId": "retinol_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1105; Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Manuf. Calc. data/100."
+          },
+          {
+            "nutrientId": "beta_carotene_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1107; Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Manuf. Calc. data/100."
+          },
+          {
+            "nutrientId": "thiamin_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.076,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1165; Analytical."
+          },
+          {
+            "nutrientId": "riboflavin_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.016,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1166; Analytical."
+          },
+          {
+            "nutrientId": "niacin_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.225,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1167; Analytical."
+          },
+          {
+            "nutrientId": "pantothenic_acid_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.311,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1170; Analytical."
+          },
+          {
+            "nutrientId": "vitamin_b6_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.005,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1175; Analytical."
+          },
+          {
+            "nutrientId": "biotin_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "folate_food_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 6,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1187; Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298."
+          },
+          {
+            "nutrientId": "folic_acid_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1186; Estimated formulation based on ingredient list; Linear program used to estimate ingredients; Manuf. Calc. data/100."
+          },
+          {
+            "nutrientId": "folate_dfe_ug",
+            "status": "calculated",
+            "unit": "µg DFE",
+            "value": 6,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1190; Calculated."
+          },
+          {
+            "nutrientId": "vitamin_b12_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1178; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_c_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1162; Analytical."
+          },
+          {
+            "nutrientId": "vitamin_d_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1114; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_e_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.08,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1109; Analytical."
+          },
+          {
+            "nutrientId": "vitamin_k_ug",
+            "status": "measured",
+            "unit": "µg",
+            "value": 0.3,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1185; Analytical."
+          },
+          {
+            "nutrientId": "choline_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 7.4,
+            "sourceRecordId": "usda_fdc_173905",
+            "methodNote": "USDA nutrient 1180; Derivation not supplied; retained as estimated, not measured."
+          }
+        ],
+        "portions": [
+          {
+            "portionId": "portion_fdc_173905_93457",
+            "label": "1 tbsp",
+            "grams": 14.6,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_173905",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          },
+          {
+            "portionId": "portion_fdc_173905_93456",
+            "label": "1 cup",
+            "grams": 234,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_173905",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          },
+          {
+            "portionId": "portion_fdc_173905_93458",
+            "label": "0.75 cup",
+            "grams": 175,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_173905",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          }
+        ],
+        "sourceRecords": [
+          {
+            "sourceRecordId": "usda_fdc_173905",
+            "sourceId": "usda_fdc_sr_legacy_2018",
+            "externalFoodId": "173905",
+            "externalDescription": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+            "release": "April 2018 final",
+            "accessedAt": "2026-10-05T14:21:40Z",
+            "matchType": "exact",
+            "licenseNote": "USDA FoodData Central public-domain/CC0 data; USDA attribution retained.",
+            "citation": "USDA Agricultural Research Service. FoodData Central. SR Legacy, FDC 173905. https://fdc.nal.usda.gov/food-details/173905/nutrients"
+          }
+        ],
+        "review": {
+          "status": "approved",
+          "reviewedAt": "2026-10-06T06:15:44.002Z",
+          "reviewer": "Codex machine validation; personal use; no human review",
+          "qualityNotes": [
+            "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
             "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
             "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
           ]
@@ -83858,6 +85095,405 @@
             "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
           ]
         }
+      },
+      {
+        "profileId": "profile_green_peas_fdc_170420",
+        "label": "Peas, green, cooked, boiled, drained, without salt",
+        "foodState": "boiled",
+        "processingLevel": "not_classified",
+        "preparationNotes": "Use this exact source-described state. Do not convert raw and cooked masses or infer suitability for eating raw.",
+        "basis": "per_100g_edible_portion",
+        "ediblePortion": {
+          "percent": null,
+          "status": "not_available"
+        },
+        "nutrients": [
+          {
+            "nutrientId": "energy_kcal",
+            "status": "calculated",
+            "unit": "kcal",
+            "value": 84,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1008; Calculated."
+          },
+          {
+            "nutrientId": "energy_kj",
+            "status": "calculated",
+            "unit": "kJ",
+            "value": 352,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1062; Calculated."
+          },
+          {
+            "nutrientId": "water_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 77.9,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1051; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "protein_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 5.36,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1003; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "carbohydrate_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 15.6,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1005; Calculated."
+          },
+          {
+            "nutrientId": "carbohydrate_available_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "fiber_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 5.5,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1079; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "sugars_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 5.93,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 2000; Calculated."
+          },
+          {
+            "nutrientId": "fat_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.22,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1004; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_saturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.039,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1258; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_monounsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.019,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1292; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_polyunsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.102,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1293; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "omega_3_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "omega_6_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "cholesterol_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1253; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "sodium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 3,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1093; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "potassium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 271,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1092; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "calcium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 27,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1087; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.54,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1089; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "magnesium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 39,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1090; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "phosphorus_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 117,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1091; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "zinc_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.19,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1095; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "copper_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.173,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1098; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "manganese_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.525,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1101; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 1.9,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1103; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "iodine_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "vitamin_a_rae_ug",
+            "status": "calculated",
+            "unit": "µg RAE",
+            "value": 40,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1106; Calculated."
+          },
+          {
+            "nutrientId": "retinol_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1105; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "beta_carotene_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 470,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1107; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "thiamin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.259,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1165; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "riboflavin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.149,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1166; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "niacin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 2.02,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1167; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "pantothenic_acid_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.153,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1170; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_b6_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.216,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1175; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "biotin_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "folate_food_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 63,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1187; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "folic_acid_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1186; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "folate_dfe_ug",
+            "status": "calculated",
+            "unit": "µg DFE",
+            "value": 63,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1190; Calculated."
+          },
+          {
+            "nutrientId": "vitamin_b12_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1178; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_c_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 14.2,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1162; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_d_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1114; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_e_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.14,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1109; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "vitamin_k_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 25.9,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1185; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "choline_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 29.7,
+            "sourceRecordId": "usda_fdc_170420",
+            "methodNote": "USDA nutrient 1180; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          }
+        ],
+        "portions": [
+          {
+            "portionId": "portion_fdc_170420_86614",
+            "label": "1 cup",
+            "grams": 160,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_170420",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          }
+        ],
+        "sourceRecords": [
+          {
+            "sourceRecordId": "usda_fdc_170420",
+            "sourceId": "usda_fdc_sr_legacy_2018",
+            "externalFoodId": "170420",
+            "externalDescription": "Peas, green, cooked, boiled, drained, without salt",
+            "release": "April 2018 final",
+            "accessedAt": "2026-10-05T14:21:40Z",
+            "matchType": "exact",
+            "licenseNote": "USDA FoodData Central public-domain/CC0 data; USDA attribution retained.",
+            "citation": "USDA Agricultural Research Service. FoodData Central. SR Legacy, FDC 170420. https://fdc.nal.usda.gov/food-details/170420/nutrients"
+          }
+        ],
+        "review": {
+          "status": "approved",
+          "reviewedAt": "2026-10-06T06:15:44.002Z",
+          "reviewer": "Codex machine validation; personal use; no human review",
+          "qualityNotes": [
+            "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
+            "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
+            "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
+          ]
+        }
       }
     ],
     "editorial": {
@@ -86919,6 +88555,405 @@
             "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
           ]
         }
+      },
+      {
+        "profileId": "profile_black_bean_fdc_173735",
+        "label": "Beans, black, mature seeds, cooked, boiled, without salt",
+        "foodState": "boiled",
+        "processingLevel": "not_classified",
+        "preparationNotes": "Use this exact source-described state. Do not convert raw and cooked masses or infer suitability for eating raw.",
+        "basis": "per_100g_edible_portion",
+        "ediblePortion": {
+          "percent": null,
+          "status": "not_available"
+        },
+        "nutrients": [
+          {
+            "nutrientId": "energy_kcal",
+            "status": "calculated",
+            "unit": "kcal",
+            "value": 132,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1008; Calculated."
+          },
+          {
+            "nutrientId": "energy_kj",
+            "status": "estimated",
+            "unit": "kJ",
+            "value": 552,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1062; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "water_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 65.7,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1051; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "protein_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 8.86,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1003; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "carbohydrate_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 23.7,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1005; Calculated."
+          },
+          {
+            "nutrientId": "carbohydrate_available_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "fiber_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 8.7,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1079; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "sugars_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.32,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 2000; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "fat_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.54,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1004; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_saturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.139,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1258; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_monounsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.047,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1292; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_polyunsaturated_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.231,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1293; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "omega_3_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "omega_6_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "cholesterol_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1253; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "sodium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1093; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "potassium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 355,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1092; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "calcium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 27,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1087; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 2.1,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1089; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "magnesium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 70,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1090; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "phosphorus_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 140,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1091; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "zinc_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1.12,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1095; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "copper_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.209,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1098; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "manganese_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.444,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1101; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 1.2,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1103; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "iodine_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "vitamin_a_rae_ug",
+            "status": "estimated",
+            "unit": "µg RAE",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1106; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "retinol_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1105; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "beta_carotene_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1107; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "thiamin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.244,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1165; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "riboflavin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.059,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1166; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "niacin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.505,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1167; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "pantothenic_acid_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.242,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1170; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_b6_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.069,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1175; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "biotin_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "folate_food_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 149,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1187; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "folic_acid_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1186; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "folate_dfe_ug",
+            "status": "calculated",
+            "unit": "µg DFE",
+            "value": 149,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1190; Calculated."
+          },
+          {
+            "nutrientId": "vitamin_b12_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1178; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_c_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1162; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_d_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1114; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_e_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.87,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1109; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "vitamin_k_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 3.3,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1185; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          },
+          {
+            "nutrientId": "choline_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 32.6,
+            "sourceRecordId": "usda_fdc_173735",
+            "methodNote": "USDA nutrient 1180; Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used."
+          }
+        ],
+        "portions": [
+          {
+            "portionId": "portion_fdc_173735_93200",
+            "label": "1 cup",
+            "grams": 172,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_173735",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          }
+        ],
+        "sourceRecords": [
+          {
+            "sourceRecordId": "usda_fdc_173735",
+            "sourceId": "usda_fdc_sr_legacy_2018",
+            "externalFoodId": "173735",
+            "externalDescription": "Beans, black, mature seeds, cooked, boiled, without salt",
+            "release": "April 2018 final",
+            "accessedAt": "2026-10-05T14:21:40Z",
+            "matchType": "exact",
+            "licenseNote": "USDA FoodData Central public-domain/CC0 data; USDA attribution retained.",
+            "citation": "USDA Agricultural Research Service. FoodData Central. SR Legacy, FDC 173735. https://fdc.nal.usda.gov/food-details/173735/nutrients"
+          }
+        ],
+        "review": {
+          "status": "approved",
+          "reviewedAt": "2026-10-06T06:15:44.002Z",
+          "reviewer": "Codex machine validation; personal use; no human review",
+          "qualityNotes": [
+            "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
+            "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
+            "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
+          ]
+        }
       }
     ],
     "editorial": {
@@ -87777,6 +89812,413 @@
           "reviewer": "Codex machine validation; personal use; no human review",
           "qualityNotes": [
             "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+            "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
+            "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
+          ]
+        }
+      },
+      {
+        "profileId": "profile_pinto_bean_fdc_175200",
+        "label": "Beans, pinto, mature seeds, cooked, boiled, without salt",
+        "foodState": "boiled",
+        "processingLevel": "not_classified",
+        "preparationNotes": "Use this exact source-described state. Do not convert raw and cooked masses or infer suitability for eating raw.",
+        "basis": "per_100g_edible_portion",
+        "ediblePortion": {
+          "percent": null,
+          "status": "not_available"
+        },
+        "nutrients": [
+          {
+            "nutrientId": "energy_kcal",
+            "status": "calculated",
+            "unit": "kcal",
+            "value": 143,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1008; Calculated."
+          },
+          {
+            "nutrientId": "energy_kj",
+            "status": "calculated",
+            "unit": "kJ",
+            "value": 600,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1062; Calculated."
+          },
+          {
+            "nutrientId": "water_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 63,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1051; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "protein_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 9.01,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1003; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "carbohydrate_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 26.2,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1005; Calculated."
+          },
+          {
+            "nutrientId": "carbohydrate_available_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "fiber_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 9,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1079; Aggregated data involving combinations of data with only source codes 1 and 12 and/or 13."
+          },
+          {
+            "nutrientId": "sugars_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.34,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 2000; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "fat_total_g",
+            "status": "estimated",
+            "unit": "g",
+            "value": 0.65,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1004; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "fat_saturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.136,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1258; Calculated."
+          },
+          {
+            "nutrientId": "fat_monounsaturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.133,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1292; Calculated."
+          },
+          {
+            "nutrientId": "fat_polyunsaturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.235,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1293; Calculated."
+          },
+          {
+            "nutrientId": "omega_3_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "omega_6_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "cholesterol_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1253; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "sodium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 1,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1093; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "potassium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 436,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1092; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "calcium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 46,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1087; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 2.09,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1089; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "magnesium_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 50,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1090; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "phosphorus_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 147,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1091; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "zinc_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.98,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1095; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "copper_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.219,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1098; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "manganese_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.453,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1101; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 6.2,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1103; Aggregated data involving combinations of data with only source codes 1 and 12 and/or 13."
+          },
+          {
+            "nutrientId": "iodine_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "vitamin_a_rae_ug",
+            "status": "estimated",
+            "unit": "µg RAE",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1106; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "retinol_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1105; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "beta_carotene_ug",
+            "status": "measured",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1107; Analytical."
+          },
+          {
+            "nutrientId": "thiamin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.193,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1165; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "riboflavin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.062,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1166; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "niacin_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.318,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1167; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "pantothenic_acid_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.21,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1170; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "vitamin_b6_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.229,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1175; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "biotin_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "folate_food_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 172,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1187; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "folic_acid_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1186; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "folate_dfe_ug",
+            "status": "calculated",
+            "unit": "µg DFE",
+            "value": 172,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1190; Calculated."
+          },
+          {
+            "nutrientId": "vitamin_b12_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1178; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_c_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.8,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1162; Analytical."
+          },
+          {
+            "nutrientId": "vitamin_d_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1114; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_e_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0.94,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1109; Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298."
+          },
+          {
+            "nutrientId": "vitamin_k_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 3.5,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1185; Aggregated data involving combinations of data with different source codes when at least one code is not 1, 6, 12, or 13."
+          },
+          {
+            "nutrientId": "choline_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 35.3,
+            "sourceRecordId": "usda_fdc_175200",
+            "methodNote": "USDA nutrient 1180; Derivation not supplied; retained as estimated, not measured."
+          }
+        ],
+        "portions": [
+          {
+            "portionId": "portion_fdc_175200_95833",
+            "label": "1 tbsp",
+            "grams": 10.6,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_175200",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          },
+          {
+            "portionId": "portion_fdc_175200_95832",
+            "label": "1 cup",
+            "grams": 171,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_175200",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          }
+        ],
+        "sourceRecords": [
+          {
+            "sourceRecordId": "usda_fdc_175200",
+            "sourceId": "usda_fdc_sr_legacy_2018",
+            "externalFoodId": "175200",
+            "externalDescription": "Beans, pinto, mature seeds, cooked, boiled, without salt",
+            "release": "April 2018 final",
+            "accessedAt": "2026-10-05T14:21:40Z",
+            "matchType": "exact",
+            "licenseNote": "USDA FoodData Central public-domain/CC0 data; USDA attribution retained.",
+            "citation": "USDA Agricultural Research Service. FoodData Central. SR Legacy, FDC 175200. https://fdc.nal.usda.gov/food-details/175200/nutrients"
+          }
+        ],
+        "review": {
+          "status": "approved",
+          "reviewedAt": "2026-10-06T06:15:44.002Z",
+          "reviewer": "Codex machine validation; personal use; no human review",
+          "qualityNotes": [
+            "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
             "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
             "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
           ]
@@ -91330,6 +93772,405 @@
           "reviewer": "Codex machine validation; personal use; no human review",
           "qualityNotes": [
             "Exact food kind with the source's specific cultivar, edible part, fortification and processing qualifiers retained. This profile does not establish composition for other varieties or preparations; raw composition does not imply suitability for eating raw.",
+            "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
+            "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
+          ]
+        }
+      },
+      {
+        "profileId": "profile_brown_rice_fdc_169704",
+        "label": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",
+        "foodState": "cooked",
+        "processingLevel": "not_classified",
+        "preparationNotes": "Use this exact source-described state. Do not convert raw and cooked masses or infer suitability for eating raw.",
+        "basis": "per_100g_edible_portion",
+        "ediblePortion": {
+          "percent": null,
+          "status": "not_available"
+        },
+        "nutrients": [
+          {
+            "nutrientId": "energy_kcal",
+            "status": "calculated",
+            "unit": "kcal",
+            "value": 123,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1008; Calculated."
+          },
+          {
+            "nutrientId": "energy_kj",
+            "status": "calculated",
+            "unit": "kJ",
+            "value": 514,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1062; Calculated."
+          },
+          {
+            "nutrientId": "water_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 70.3,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1051; Analytical."
+          },
+          {
+            "nutrientId": "protein_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 2.74,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1003; Analytical."
+          },
+          {
+            "nutrientId": "carbohydrate_total_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 25.6,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1005; Calculated."
+          },
+          {
+            "nutrientId": "carbohydrate_available_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "fiber_total_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 1.6,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1079; Analytical."
+          },
+          {
+            "nutrientId": "sugars_total_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 0.24,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 2000; Analytical."
+          },
+          {
+            "nutrientId": "fat_total_g",
+            "status": "measured",
+            "unit": "g",
+            "value": 0.97,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1004; Analytical."
+          },
+          {
+            "nutrientId": "fat_saturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.26,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1258; Calculated."
+          },
+          {
+            "nutrientId": "fat_monounsaturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.369,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1292; Calculated."
+          },
+          {
+            "nutrientId": "fat_polyunsaturated_g",
+            "status": "calculated",
+            "unit": "g",
+            "value": 0.366,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1293; Calculated."
+          },
+          {
+            "nutrientId": "omega_3_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "omega_6_g",
+            "status": "not_available",
+            "unit": "g",
+            "value": null,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "cholesterol_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1253; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "sodium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 4,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1093; Analytical."
+          },
+          {
+            "nutrientId": "potassium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 86,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1092; Analytical."
+          },
+          {
+            "nutrientId": "calcium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 3,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1087; Analytical."
+          },
+          {
+            "nutrientId": "iron_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.56,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1089; Analytical."
+          },
+          {
+            "nutrientId": "magnesium_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 39,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1090; Analytical."
+          },
+          {
+            "nutrientId": "phosphorus_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 103,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1091; Analytical."
+          },
+          {
+            "nutrientId": "zinc_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.71,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1095; Analytical."
+          },
+          {
+            "nutrientId": "copper_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.106,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1098; Analytical."
+          },
+          {
+            "nutrientId": "manganese_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.974,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1101; Analytical."
+          },
+          {
+            "nutrientId": "selenium_ug",
+            "status": "measured",
+            "unit": "µg",
+            "value": 5.8,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1103; Analytical."
+          },
+          {
+            "nutrientId": "iodine_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "vitamin_a_rae_ug",
+            "status": "estimated",
+            "unit": "µg RAE",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1106; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "retinol_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1105; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "beta_carotene_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1107; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "thiamin_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.178,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1165; Analytical."
+          },
+          {
+            "nutrientId": "riboflavin_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.069,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1166; Analytical."
+          },
+          {
+            "nutrientId": "niacin_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 2.56,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1167; Analytical."
+          },
+          {
+            "nutrientId": "pantothenic_acid_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.38,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1170; Analytical."
+          },
+          {
+            "nutrientId": "vitamin_b6_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.123,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1175; Analytical."
+          },
+          {
+            "nutrientId": "biotin_ug",
+            "status": "not_available",
+            "unit": "µg",
+            "value": null,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "This source record does not supply this nutrient/form; no zero or conversion inferred."
+          },
+          {
+            "nutrientId": "folate_food_ug",
+            "status": "measured",
+            "unit": "µg",
+            "value": 9,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1187; Analytical."
+          },
+          {
+            "nutrientId": "folic_acid_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1186; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "folate_dfe_ug",
+            "status": "calculated",
+            "unit": "µg DFE",
+            "value": 9,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1190; Calculated."
+          },
+          {
+            "nutrientId": "vitamin_b12_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1178; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_c_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1162; Derivation not supplied; retained as estimated, not measured."
+          },
+          {
+            "nutrientId": "vitamin_d_ug",
+            "status": "estimated",
+            "unit": "µg",
+            "value": 0,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1114; Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)."
+          },
+          {
+            "nutrientId": "vitamin_e_mg",
+            "status": "measured",
+            "unit": "mg",
+            "value": 0.17,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1109; Analytical."
+          },
+          {
+            "nutrientId": "vitamin_k_ug",
+            "status": "measured",
+            "unit": "µg",
+            "value": 0.2,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1185; Analytical."
+          },
+          {
+            "nutrientId": "choline_mg",
+            "status": "estimated",
+            "unit": "mg",
+            "value": 9.2,
+            "sourceRecordId": "usda_fdc_169704",
+            "methodNote": "USDA nutrient 1180; Derivation not supplied; retained as estimated, not measured."
+          }
+        ],
+        "portions": [
+          {
+            "portionId": "portion_fdc_169704_85378",
+            "label": "1 cup",
+            "grams": 202,
+            "status": "source_reported",
+            "sourceRecordId": "usda_fdc_169704",
+            "notes": "Dataset portion weight; household measures vary. Weight refers to this profile only."
+          }
+        ],
+        "sourceRecords": [
+          {
+            "sourceRecordId": "usda_fdc_169704",
+            "sourceId": "usda_fdc_sr_legacy_2018",
+            "externalFoodId": "169704",
+            "externalDescription": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",
+            "release": "April 2018 final",
+            "accessedAt": "2026-10-05T14:21:40Z",
+            "matchType": "exact",
+            "licenseNote": "USDA FoodData Central public-domain/CC0 data; USDA attribution retained.",
+            "citation": "USDA Agricultural Research Service. FoodData Central. SR Legacy, FDC 169704. https://fdc.nal.usda.gov/food-details/169704/nutrients"
+          }
+        ],
+        "review": {
+          "status": "approved",
+          "reviewedAt": "2026-10-06T06:15:44.002Z",
+          "reviewer": "Codex machine validation; personal use; no human review",
+          "qualityNotes": [
+            "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
             "Energy retains the USDA method (specific factors preferred where supplied). Missing values remain unavailable.",
             "Values describe the source sample, not your food. Historical SR Legacy profiles are labelled by release."
           ]

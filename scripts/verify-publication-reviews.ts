@@ -34,10 +34,8 @@ const field = (
     | "sourced_education"
     | "original_authorship" = "sourced_education",
 ) => ({ path, sourceIds, kind });
-for (const food of foodSchema
-  .array()
-  .parse(foodJson)
-  .filter((f) => f.status === "published"))
+const verifiedFoodRecords = foodSchema.array().parse(foodJson);
+for (const food of verifiedFoodRecords.filter((f) => f.status === "published"))
   records.push({
     module: "foods",
     id: food.id,
@@ -58,25 +56,31 @@ for (const food of foodSchema
       ),
     ],
   });
-const nutrientSources: Readonly<Record<string, string>> = {
-  iron_mg: "nih_ods_iron_consumer",
-  calcium_mg: "nih_ods_calcium_consumer",
-  vitamin_c_mg: "nih_ods_vitamin_c_consumer",
-  magnesium_mg: "nih_ods_magnesium_consumer",
-  zinc_mg: "nih_ods_zinc_consumer",
-  vitamin_d_ug: "nih_ods_vitamin_d_consumer",
-  vitamin_b12_ug: "nih_ods_vitamin_b12_consumer",
-};
-for (const n of nutrientJson.filter((n) => n.status === "published"))
+for (const n of nutrientJson.filter((n) => n.status === "published")) {
+  const educationSources = n.sources
+    .filter((s) => s.sourceId === "nih_ods_fact_sheets")
+    .map((s) => {
+      const approved = sources.find(
+        (source) => source.url.toLowerCase() === s.locator.toLowerCase(),
+      );
+      if (!approved)
+        throw Error(
+          `Individually verified nutrient page missing: ${s.locator}`,
+        );
+      return approved.id;
+    });
   records.push({
     module: "nutrients",
     id: n.id,
     slug: n.slug,
     fields: [
-      field("claims", [nutrientSources[n.id]!]),
-      field("referenceValues", ["fda_daily_values"]),
+      field("claims_and_educational_sections", educationSources),
+      ...(n.referenceValues.length
+        ? [field("referenceValues", ["fda_daily_values"])]
+        : []),
     ],
   });
+}
 for (const r of scienceRecords.filter((r) => r.contentStatus === "published"))
   records.push({
     module: "workout-science",
@@ -92,7 +96,11 @@ for (const r of publicRecipes)
     fields: [
       field(
         "version.instructions",
-        ["original_recipes_v1"],
+        [
+          r.sourceRefs.includes("original_recipes_v2")
+            ? "original_recipes_v2"
+            : "original_recipes_v1",
+        ],
         "original_authorship",
       ),
       ...r.version.ingredients.map((i) =>
@@ -234,14 +242,20 @@ const release = validatePublicationReviews(
     state: "published_personal_use",
     method:
       "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    lastReviewedAt: r.fields
-      .flatMap((f) =>
+    lastReviewedAt: [
+      ...(r.module === "foods"
+        ? verifiedFoodRecords
+            .find((f) => f.id === r.id)!
+            .compositionProfiles.map((p) => p.review.reviewedAt!.slice(0, 10))
+        : []),
+      ...r.fields.flatMap((f) =>
         f.sourceIds.map((id) => {
           const source = sources.find((s) => s.id === id);
           if (!source) throw Error(`Publication source is missing: ${id}`);
           return source.lastReviewedAt;
         }),
-      )
+      ),
+    ]
       .sort()
       .at(-1)!,
     reviewer: { kind: "machine", name: "Codex" },

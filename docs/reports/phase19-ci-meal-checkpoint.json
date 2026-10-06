@@ -1,0 +1,53 @@
+{
+  "commit": "b040705c22b9f37b83e925baa26f141266744abc",
+  "verifiedOn": "2026-10-06",
+  "ci": {
+    "runId": 37421959602,
+    "jobId": 112133056464,
+    "check": "passed",
+    "coverage": {
+      "passed": 222,
+      "failed": 1,
+      "failure": "100-ingredient/336-item stress test exceeded unchanged 15000 ms timeout under coverage instrumentation"
+    }
+  },
+  "crossBrowser": {
+    "runId": 37421959663,
+    "jobs": [
+      {
+        "browser": "chromium",
+        "jobId": 112133057765,
+        "passed": 72,
+        "failed": 1
+      },
+      {
+        "browser": "firefox",
+        "jobId": 112133057789,
+        "passed": 72,
+        "failed": 1
+      },
+      {
+        "browser": "webkit",
+        "jobId": 112133057598,
+        "passed": 72,
+        "failed": 1
+      }
+    ],
+    "sharedFailure": {
+      "route": "/meal-plans/templates/rice-chickpea-meal-prep",
+      "rule": "scrollable-region-focusable",
+      "element": ".table-scroll"
+    }
+  },
+  "local": {
+    "chromiumAndWebkitFullSuite": {
+      "passed": 146,
+      "failed": 0
+    },
+    "limitation": "Local pass does not supersede Linux failures"
+  },
+  "correctionsPendingNewCIVerification": [
+    "Labelled focusable collection scroll region",
+    "Single coverage worker; fixtures, assertions and timeouts unchanged"
+  ]
+}
