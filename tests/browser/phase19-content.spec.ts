@@ -13,6 +13,10 @@ const publicRoutes = [
   ],
   ["/foods/apple", "Apple"],
   ["/nutrients/iron", "Iron"],
+  [
+    "/meal-plans/templates/rice-chickpea-meal-prep",
+    "Rice and chickpea meal-prep collection",
+  ],
   ["/recipes/chickpea-cucumber-bowl", "Chickpea and cucumber bowl"],
   ["/recovery/topics/sleep-duration-adults", "Adult Sleep Duration"],
   ["/cardio/learn/topic-talk-test", "Talk Test"],
@@ -113,4 +117,38 @@ test("public food data retries safely in the local diary without saving consumed
     page.getByRole("button", { name: "Save consumed entry", exact: true }),
   ).toBeEnabled();
   expect(errors).toEqual([]);
+});
+
+test("public meal collection is read-only, source-linked and separate from private meal plans", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window.indexedDB, "open", {
+      value: () => {
+        throw Error("Personal storage denied during public collection viewing");
+      },
+    });
+  });
+  await page.goto("/meal-plans/templates");
+  await expect(page.getByRole("status")).toContainText("3 collections");
+  await page
+    .getByRole("link", {
+      name: "Rice and chickpea meal-prep collection",
+      exact: true,
+    })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "Exact menu", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("not a complete daily diet", { exact: false }).first(),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Rice and chickpea bowl", exact: true }),
+  ).toHaveAttribute("href", "/recipes/rice-chickpea-bowl");
+  await expect(page.getByRole("table")).toBeVisible();
+  await page.goto("/meal-plans/templates/audit-unknown-record");
+  await expect(
+    page.getByRole("heading", { name: "Collection unavailable", exact: true }),
+  ).toBeVisible();
 });

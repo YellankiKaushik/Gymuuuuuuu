@@ -1,5 +1,20 @@
-import { createFileRoute } from '@tanstack/react-router';
-import { RecipePage } from '../features/recipes-meal-plans/pages';
-import { RecipeTemplates } from '../features/recipes-meal-plans/info-pages';
-export const Route = createFileRoute('/meal-plans_/templates')({ head: () => ({ meta: [{ title: 'Meal-plan templates | Fitness OS' }, { name: 'robots', content: 'noindex' }] }), component: Page });
-function Page() { return <RecipePage title="Meal-plan templates"><RecipeTemplates /></RecipePage>; }
+import { createFileRoute } from "@tanstack/react-router";
+import { PageHeader } from "../components/common/page-header";
+import { RecipeTemplates } from "../features/recipes-meal-plans/info-pages";
+import { loadPublicTemplates } from "../features/recipes-meal-plans/public.functions";
+export const Route = createFileRoute("/meal-plans_/templates")({
+  loader: () => loadPublicTemplates(),
+  head: () => ({ meta: [{ title: "Meal-prep collections | Fitness OS" }] }),
+  component: Page,
+});
+function Page() {
+  return (
+    <div className="page recipe-page">
+      <PageHeader
+        title="Meal-prep collections"
+        description="Original meal organization examples with source-backed ingredients."
+      />
+      <RecipeTemplates templates={Route.useLoaderData()} />
+    </div>
+  );
+}

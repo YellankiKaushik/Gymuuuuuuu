@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { plannedRecipeItem, recalculateMealPlan } from "./domain";
 import {
   recipeVersionSchema,
   mealPlanVersionSchema,
@@ -52,6 +53,14 @@ export const publicTemplateSchema = z
     status: z.literal("published"),
     plan: mealPlanVersionSchema,
     recipeVersionIds: z.array(z.string().regex(/^rver_/)).min(1),
+    recipeLinks: z
+      .array(
+        z.strictObject({
+          versionId: z.string().regex(/^rver_/),
+          slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+        }),
+      )
+      .min(1),
     dietaryTags: z.array(z.string()),
     allergenTags: z.array(z.string()),
     equipment: z.array(z.string()),
@@ -63,6 +72,7 @@ export const publicTemplateSchema = z
       reviewedAt: z.iso.datetime({ offset: true }),
       status: z.literal("approved"),
     }),
+    limitations: z.array(z.string().min(1)).min(1),
   })
   .refine(
     (t) => t.energyBandKcal[0] <= t.energyBandKcal[1],
@@ -70,7 +80,6 @@ export const publicTemplateSchema = z
   );
 export type PublicRecipe = z.infer<typeof publicRecipeSchema>;
 export type PublicTemplate = z.infer<typeof publicTemplateSchema>;
-export const publicTemplates: readonly PublicTemplate[] = [];
 export function validatePublicRelease(
   recipes: readonly PublicRecipe[],
   templates: readonly PublicTemplate[],
@@ -78,6 +87,11 @@ export function validatePublicRelease(
   const versions = new Set(
     recipes.map((r) => publicRecipeSchema.parse(r).version.id),
   );
+  if (
+    new Set(templates.map((t) => t.id)).size !== templates.length ||
+    new Set(templates.map((t) => t.slug)).size !== templates.length
+  )
+    throw Error("Duplicate public template IDs or slugs.");
   if (
     new Set(recipes.map((r) => r.id)).size !== recipes.length ||
     new Set(recipes.map((r) => r.slug)).size !== recipes.length
@@ -95,6 +109,77 @@ export function validatePublicRelease(
       )
     )
       throw Error("Template references unpublished recipe versions.");
+    const actualVersions = [
+      ...new Set(t.plan.plannedItems.map((i) => i.recipeRef!.recipeVersionId)),
+    ].sort();
+    if (
+      JSON.stringify(actualVersions) !==
+      JSON.stringify([...t.recipeVersionIds].sort())
+    )
+      throw Error("Template recipe-version manifest disagrees with its menu.");
+    if (
+      t.recipeLinks.length !== actualVersions.length ||
+      new Set(t.recipeLinks.map((r) => r.versionId)).size !==
+        actualVersions.length ||
+      t.recipeLinks.some(
+        (link) =>
+          !actualVersions.includes(link.versionId) ||
+          !recipes.some(
+            (r) => r.version.id === link.versionId && r.slug === link.slug,
+          ),
+      )
+    )
+      throw Error("Template recipe links must use the exact canonical slugs.");
+    for (const item of t.plan.plannedItems) {
+      const recipe = recipes.find(
+        (r) => r.version.id === item.recipeRef!.recipeVersionId,
+      )!;
+      const expected = plannedRecipeItem(
+        recipe.version,
+        item.quantity,
+        item.localDate,
+        item.mealSlotId,
+      );
+      for (const key of [
+        "recipeRef",
+        "nutrients",
+        "gramWeight",
+        "completeness",
+        "displayNameSnapshot",
+      ] as const)
+        if (JSON.stringify(item[key]) !== JSON.stringify(expected[key]))
+          throw Error(
+            "Template snapshot differs from its exact public recipe version.",
+          );
+      if (item.quantityUnit !== "serving" || item.loggedEntryIds.length)
+        throw Error(
+          "Public template items must be unconsumed recipe servings.",
+        );
+      if (
+        recipe.version.allergenInfo.some((a) => a.state === "unknown") &&
+        !t.allergenTags.includes("unknown")
+      )
+        throw Error("Template must preserve unknown allergen information.");
+    }
+    if (
+      JSON.stringify(recalculateMealPlan(t.plan).summary) !==
+      JSON.stringify(t.plan.summary)
+    )
+      throw Error("Template nutrition summary is stale.");
+    const energy = t.plan.summary.dailySummaries[0]?.nutrients.find(
+      (n) => n.nutrientId === "energy_kcal",
+    );
+    if (
+      t.plan.dayCount === 1 &&
+      (energy?.value === null ||
+        energy?.value === undefined ||
+        energy.status !== "complete" ||
+        t.energyBandKcal[0] !== Math.floor(energy.value) ||
+        t.energyBandKcal[1] !== Math.ceil(energy.value))
+    )
+      throw Error(
+        "Collection energy band must be its rounded calculated total.",
+      );
   }
 }
 export function matchReviewedTemplates(
@@ -105,7 +190,7 @@ export function matchReviewedTemplates(
     equipment?: string[];
     excludedAllergens?: string[];
   },
-  templates: readonly PublicTemplate[] = publicTemplates,
+  templates: readonly PublicTemplate[] = [],
 ) {
   return templates
     .map((raw) => publicTemplateSchema.parse(raw))
@@ -117,13 +202,17 @@ export function matchReviewedTemplates(
           (query.energyKcal >= t.energyBandKcal[0] &&
             query.energyKcal <= t.energyBandKcal[1])) &&
         !t.allergenTags.some((tag) => query.excludedAllergens?.includes(tag)) &&
+        // Unknown labels must never be presented as a safe exclusion match.
+        !(
+          query.excludedAllergens?.length && t.allergenTags.includes("unknown")
+        ) &&
         (!query.equipment ||
           t.equipment.every((e) => query.equipment!.includes(e))),
     )
     .map((template) => ({
       template,
       reasons: [
-        `Reviewed ${template.plan.dayCount}-day template`,
+        `Source-validated ${template.plan.dayCount}-day collection; personal-use review`,
         ...(query.energyKcal === undefined
           ? []
           : ["Selected energy falls within the declared band"]),

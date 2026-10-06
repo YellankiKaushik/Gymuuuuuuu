@@ -5,7 +5,7 @@ import { muscleRecords } from "../src/features/muscles/repository";
 import { exerciseRecords } from "../src/features/exercises/repository";
 import { scienceRecords } from "../src/features/workout-science/repository";
 import { publishedPrograms } from "../src/features/programs/repository";
-import { publicTemplates } from "../src/features/recipes-meal-plans/publication";
+import { publicTemplates } from "../src/features/recipes-meal-plans/public-templates-records";
 import {
   publicRecoveryArticles,
   publicRecoveryRoutines,
@@ -100,6 +100,28 @@ for (const r of publicRecipes)
           `version.ingredients.${i.id}`,
           i.sourceSnapshot?.sourceRecords?.map((s) => s.sourceId) ?? [],
           "dataset_value",
+        ),
+      ),
+    ],
+  });
+for (const t of publicTemplates)
+  records.push({
+    module: "meal-templates",
+    id: t.id,
+    slug: t.slug,
+    fields: [
+      field(
+        "plan.plannedItems",
+        ["original_meal_collections_v1"],
+        "original_authorship",
+      ),
+      ...t.plan.plannedItems.flatMap((item) =>
+        item.recipeRef!.ingredientRequirements.map((i) =>
+          field(
+            `plan.${item.id}.${i.id}`,
+            i.sourceSnapshot?.sourceRecords?.map((s) => s.sourceId) ?? [],
+            "dataset_value",
+          ),
         ),
       ),
     ],

@@ -39,9 +39,9 @@ Vercel configuration is prepared with Nitro, per-request CSP nonces and browser 
 
 Phase 18 is integrated. Phase 19 is **in progress**, and this application is not yet certified as engineering/content complete. The generated [completion audit](docs/reports/content-completion.md) and its [JSON inventory](docs/reports/content-completion.json) list every identity, publication count and remaining content gap.
 
-Current personal-use publications: muscles 21/70, exercises 6/184, workout science 3/98, programs 0/50, foods 226/342 (227 preparation profiles), nutrients 7/51 (7 FDA Daily Value rows), recovery 2/124, cardio 2/202 (1 article and 1 complete source plan) and supplements 2/272. Twelve original recipes are available; public meal templates and recovery/conditioning routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
+Current personal-use publications: muscles 21/70, exercises 6/184, workout science 3/98, programs 0/50, foods 226/342 (227 preparation profiles), nutrients 7/51 (7 FDA Daily Value rows), recovery 2/124, cardio 2/202 (1 article and 1 complete source plan) and supplements 2/272. Twelve original recipes and three static lunch/snack meal-prep collections are available; they are not complete daily diets. Public recovery/conditioning routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
 
-Public search contains 281 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
+Public search contains 284 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
 
 ## Source policy and review levels
 
@@ -60,6 +60,7 @@ Recipe nutrition uses immutable ingredient snapshots. Final yield is explicitly 
 ```sh
 npm run content:import:foods
 npm run content:compile:recipes
+npm run content:compile:templates
 npm run content:verify:reviews
 npm run check
 npm run test:coverage
@@ -77,4 +78,4 @@ Importers parse and validate the whole proposed release before writes. Release c
 
 After the engineering/content completion checkpoint is actually issued, run the production build locally and test with synthetic records. Check real-device keyboard/touch use, screen readers, reduced motion, light/dark themes, 320px layout, tablet and desktop, print output, save/edit/delete feedback and storage-disabled behavior. Export a backup, restore it in a separate test browser profile and compare records before attempting any destructive operation. Test CSV escaping and invalid imports. Verify personal records remain on the device and that sources and review levels are understandable.
 
-Manual device and assistive-technology testing has not been performed. The local Windows Firefox runtime currently has a SideBySide/mozglue launch failure; Linux CI at the first Phase 19 checkpoint passed 63/64 Firefox tests, with zoom reflow still failing; The updated local WebKit suite passed 66/66, including the running plan and local-context workflow. The next hosted CI attempt was cancelled before executing any steps because GitHub could not acquire hosted runners. Firefox and fresh-content browser gates remain open; no complete cross-browser pass is claimed. Do not connect a production domain or deploy production during this testing preparation.
+Manual device and assistive-technology testing has not been performed. The local Windows Firefox runtime has a SideBySide/mozglue launch failure. The 157b407 checkpoint passed main CI and all three Linux browser jobs (Chromium, Firefox and WebKit); see docs/reports/phase19-ci-anatomy-checkpoint.json. A subsequent local dual-browser run passed 139/140 and exposed rapid-navigation WebKit hydration. The startup/CSP correction passes 16/16 focused browser checks and 6/6 repeated analytics traversals; a fresh complete regression of the final content build is still required. Do not connect a production domain or deploy production during this testing preparation.

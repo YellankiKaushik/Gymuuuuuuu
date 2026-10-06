@@ -25,7 +25,7 @@ import {
   publishedPrograms,
   programIdentities,
 } from "../src/features/programs/repository";
-import { publicTemplates } from "../src/features/recipes-meal-plans/publication";
+import { publicTemplates } from "../src/features/recipes-meal-plans/public-templates-records";
 import {
   publicRecoveryArticles,
   publicRecoveryRoutines,

@@ -10,7 +10,7 @@ import {
 import { planRecipeRestoreConflicts } from "./domain";
 import { recipeCsvKinds, exportRecipeCsv } from "./editor";
 import type { RecipeBackup } from "./schema";
-import { matchReviewedTemplates } from "./publication";
+import { matchReviewedTemplates, type PublicTemplate } from "./publication";
 export function RecipeSettings() {
   const { data, run } = useRecipes();
   if (!data)
@@ -481,21 +481,33 @@ export function RecipePublicEmpty() {
     </>
   );
 }
-export function RecipeTemplates() {
+export function RecipeTemplates({
+  templates,
+}: {
+  templates: readonly PublicTemplate[];
+}) {
   const [energy, setEnergy] = useState(""),
     [days, setDays] = useState(""),
     [diet, setDiet] = useState("");
-  const matches = matchReviewedTemplates({
-    energyKcal: energy ? Number(energy) : undefined,
-    days: days ? Number(days) : undefined,
-    dietary: diet || undefined,
-  });
+  const matches = matchReviewedTemplates(
+    {
+      energyKcal: energy ? Number(energy) : undefined,
+      days: days ? Number(days) : undefined,
+      dietary: diet || undefined,
+    },
+    templates,
+  );
   return (
     <>
-      <h2>Meal-plan template matcher</h2>
+      <h2>Meal-prep collections</h2>
+      <p>
+        Static lunch and snack examples assembled from exact public recipe
+        versions. These are not complete daily diets. Personal-use source
+        validation; no human or clinical review.
+      </p>
       <div className="recipe-controls">
         <label>
-          Target energy band selection (kcal)
+          Calculated collection energy (kcal)
           <input
             type="number"
             min="0"
@@ -518,13 +530,33 @@ export function RecipeTemplates() {
           <input value={diet} onChange={(e) => setDiet(e.target.value)} />
         </label>
       </div>
-      <p>{matches.length} reviewed templates match these criteria.</p>
-      <p>
-        No reviewed templates are published yet. Template selection requires
-        repository-owned recipe versions, compatible quantities, explicit
-        dietary declarations, equipment and exclusion rules. Missing allergen
-        information is not treated as safe.
-      </p>
+      <p role="status">{matches.length} collections match these criteria.</p>
+      <div className="recipe-grid">
+        {matches.map(({ template }) => (
+          <article className="card" key={template.id}>
+            <h3>
+              <a href={`/meal-plans/templates/${template.slug}`}>
+                {template.title}
+              </a>
+            </h3>
+            <p>
+              {template.plan.plannedItems.length} recipe servings ·{" "}
+              {template.energyBandKcal.join("–")} kcal ·{" "}
+              {template.plan.summary.completeness} nutrient coverage
+            </p>
+            <p>
+              Allergen information is unknown. No dietary safety or nutritional
+              adequacy guarantee.
+            </p>
+          </article>
+        ))}
+      </div>
+      {!matches.length && (
+        <p>
+          No public collection matches. Change the filters or build a manual
+          plan.
+        </p>
+      )}
       <a className="button primary" href="/meal-plans/create">
         Build a manual plan
       </a>

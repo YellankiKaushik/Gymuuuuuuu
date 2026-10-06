@@ -131,6 +131,7 @@ export const modules: readonly ModuleDefinition[] = [
   { path: '/meal-plans/create', title: 'Create meal plan', domain: 'Eat', phase: 11, description: 'Local recipes, immutable meal planning and source-aware calculations.' },
   { path: '/meal-plans/$planId', title: 'Local meal plan', domain: 'Eat', phase: 11, description: 'Local recipes, immutable meal planning and source-aware calculations.' },
   { path: '/meal-plans/$planId/grocery-list', title: 'Grocery list', domain: 'Eat', phase: 11, description: 'Local recipes, immutable meal planning and source-aware calculations.' },
+  { path: '/meal-plans/templates/$templateSlug', title: 'Meal-prep collection', domain: 'Eat', phase: 11, description: 'Original source-validated lunch and snack collection; not a complete daily diet.' },
   { path: '/meal-plans/templates', title: 'Meal-plan templates', domain: 'Eat', phase: 11, description: 'Local recipes, immutable meal planning and source-aware calculations.' },
   { path: '/meal-plans/settings', title: 'Meal-plan settings & backup', domain: 'Eat', phase: 11, description: 'Local recipes, immutable meal planning and source-aware calculations.' },
   { path: '/meal-plans/privacy', title: 'Meal-plan privacy', domain: 'Eat', phase: 11, description: 'Local recipes, immutable meal planning and source-aware calculations.' },

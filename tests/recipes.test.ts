@@ -1,3 +1,4 @@
+import { publicTemplates } from "../src/features/recipes-meal-plans/public-templates-records";
 import { publicRecipes } from "../src/features/recipes-meal-plans/public-records";
 import { describe, it, expect } from "vitest";
 import { dietPlanFixture } from "./fixtures/diet";
@@ -11,7 +12,6 @@ import {
 import {
   matchReviewedTemplates,
   validatePublicRelease,
-  publicTemplates,
   recipeExclusionWarnings,
 } from "../src/features/recipes-meal-plans/publication";
 import { canonical, nutritionContext } from "./fixtures/nutrition";

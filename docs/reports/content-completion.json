@@ -3799,12 +3799,12 @@
     },
     {
       "module": "meal-templates",
-      "totalIdentities": 0,
-      "publishedIdentities": 0,
+      "totalIdentities": 3,
+      "publishedIdentities": 3,
       "draftIdentities": 0,
       "blockedIdentities": [],
       "humanReviewedIdentities": 0,
-      "reviewLevel": null
+      "reviewLevel": "published_personal_use"
     },
     {
       "module": "recovery",
@@ -8033,9 +8033,9 @@
     },
     {
       "module": "meal-templates",
-      "published": 0,
-      "withPublicationProvenance": 0,
-      "inSearch": 0,
+      "published": 3,
+      "withPublicationProvenance": 3,
+      "inSearch": 3,
       "missingSourceProvenance": []
     },
     {
@@ -10448,7 +10448,32 @@
     {
       "module": "meal-templates",
       "instructionalMediaRequired": false,
-      "records": []
+      "records": [
+        {
+          "id": "template_rice_chickpea_meal_prep",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "template_potato_chickpea_meal_prep",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "template_chickpea_salad_meal_prep",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        }
+      ]
     },
     {
       "module": "recovery",
@@ -10587,7 +10612,7 @@
       "missingVerifiedFactualRecords": 0,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 0,
+      "independentHumanReviewPending": 3,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10826,6 +10851,14 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-06T05:24:08Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "original_meal_collections_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/scripts/compile-original-templates.ts",
+      "version": "1.0.0",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-06T05:46:24Z",
       "reviewDate": "2026-10-06"
     }
   ],
@@ -11731,6 +11764,12 @@
       "browserAudit": "unmeasured"
     },
     {
+      "route": "/meal-plans/templates/$templateSlug",
+      "dynamic": true,
+      "staticInventory": "implemented",
+      "browserAudit": "unmeasured"
+    },
+    {
       "route": "/mobility/custom/create",
       "dynamic": false,
       "staticInventory": "implemented",
@@ -11988,6 +12027,7 @@
     "meal-plans_.privacy.tsx",
     "meal-plans_.settings.tsx",
     "meal-plans_.templates.tsx",
+    "meal-plans_.templates_.$templateSlug.tsx",
     "mobility.tsx",
     "mobility_.custom.tsx",
     "mobility_.custom_.create.tsx",
@@ -12144,8 +12184,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 409,
-    "factualRecords": 281
+    "documents": 412,
+    "factualRecords": 284
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -12161,8 +12201,7 @@
     }
   ],
   "emptyKnowledgeModules": [
-    "programs",
-    "meal-templates"
+    "programs"
   ],
   "missingFoodMedia": [
     "food_apple",
@@ -13739,6 +13778,21 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "meal-templates",
+      "id": "template_rice_chickpea_meal_prep",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "meal-templates",
+      "id": "template_potato_chickpea_meal_prep",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "meal-templates",
+      "id": "template_chickpea_salad_meal_prep",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "recovery",
       "id": "sleep_duration_adults",
       "instructionalMediaRequired": false
@@ -13772,17 +13826,16 @@
   "missingMediaFiles": [],
   "emptyKnowledgeCollections": [
     "programs",
-    "meal-templates",
     "public-recovery-routines",
     "public-cardio-modalities"
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-06T05:37:03.331Z",
-    "expected": 462,
+    "buildDate": "2026-10-06T06:04:58.915Z",
+    "expected": 466,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 462,
+    "unmeasured": 466,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -14685,6 +14738,12 @@
       },
       {
         "path": "/meal-plans/audit-unknown-record/grocery-list",
+        "kind": "missing_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/templates/audit-unknown-record",
         "kind": "missing_record",
         "result": "unmeasured",
         "evidence": null
@@ -16521,6 +16580,24 @@
       },
       {
         "path": "/recipes/cucumber-carrot-salad",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/templates/rice-chickpea-meal-prep",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/templates/potato-chickpea-meal-prep",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/meal-plans/templates/chickpea-salad-meal-prep",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

@@ -1,3 +1,4 @@
+import { publicTemplates } from "../src/features/recipes-meal-plans/public-templates-records";
 import { publicRecipes } from "../src/features/recipes-meal-plans/public-records";
 import {
   anatomyTaxonomy,
@@ -5,10 +6,7 @@ import {
   validateAnatomy,
 } from "../src/features/muscles/repository";
 import { sourceSchema } from "../src/domain/schemas/foundation";
-import {
-  validatePublicRelease,
-  publicTemplates,
-} from "../src/features/recipes-meal-plans/publication";
+import { validatePublicRelease } from "../src/features/recipes-meal-plans/publication";
 import { sourceRegistry } from "../src/data/sources";
 import {
   exerciseCoverage,

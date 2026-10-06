@@ -7,6 +7,7 @@
     "scripts/content-audit.ts",
     "scripts/verify-publication-reviews.ts",
     "scripts/build-search-index.ts",
-    "scripts/phase19-*.ts"
+    "scripts/phase19-*.ts",
+    "scripts/compile-original-templates.ts"
   ]
 }

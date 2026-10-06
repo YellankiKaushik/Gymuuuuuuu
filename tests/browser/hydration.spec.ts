@@ -1,6 +1,11 @@
 import { expect, test } from "@playwright/test";
 
-for (const path of ["/", "/progress/privacy", "/nutrition/settings"]) {
+for (const path of [
+  "/",
+  "/progress/privacy",
+  "/nutrition/settings",
+  "/analytics/workouts",
+]) {
   test(`@security cached document hydration remains usable at ${path}`, async ({
     page,
   }) => {

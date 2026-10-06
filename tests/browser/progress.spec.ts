@@ -35,6 +35,8 @@ test("dashboard never renders the private photo grid", async ({ page }) => {
 });
 
 test("all Phase 15 routes load with private-page metadata and a working analytics range", async ({ page }) => {
+  const pageErrors: string[] = [];
+  page.on("pageerror", (error) => pageErrors.push(error.message));
   const routes = [
     ["/dashboard", "Body progress dashboard"], ["/progress", "Progress workspace"], ["/progress/weight", "Body weight"],
     ["/progress/measurements", "Circumference measurements"], ["/progress/body-composition", "External body composition reports"],
@@ -61,6 +63,7 @@ test("all Phase 15 routes load with private-page metadata and a working analytic
   await page.locator('section[aria-label="Analytics date range"] input[type="date"]').nth(0).fill("2026-01-01");
   await page.locator('section[aria-label="Analytics date range"] input[type="date"]').nth(1).fill("2026-01-31");
   await expect(page.getByText("Showing 2026-01-01 through 2026-01-31, inclusive.")).toBeVisible();
+  expect(pageErrors).toEqual([]);
 });
 
 test("private tracking pages have no automated accessibility violations at mobile and desktop widths", async ({ page }) => {

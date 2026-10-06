@@ -446,5 +446,22 @@
     "limitations": [
       "Movement-cue schematics, not anatomical models, complete technique demonstrations or independent human review."
     ]
+  },
+  {
+    "id": "original_meal_collections_v1",
+    "title": "Original Fitness OS meal-prep collections, version 1",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/scripts/compile-original-templates.ts",
+    "sourceVersion": "1.0.0",
+    "sourceDate": "2026-10-06",
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-06T05:46:24Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "original_work",
+    "rightsReference": "Original repository assembly from exact USDA-backed recipe snapshots; no third-party menus copied",
+    "limitations": [
+      "Personal-use machine validation only. No human or clinical review.",
+      "Lunch/snack examples only, not complete diets or intake targets."
+    ]
   }
 ]

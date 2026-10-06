@@ -6466,6 +6466,235 @@
     ]
   },
   {
+    "module": "meal-templates",
+    "id": "template_rice_chickpea_meal_prep",
+    "slug": "rice-chickpea-meal-prep",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "plan.plannedItems",
+        "sourceIds": [
+          "original_meal_collections_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "plan.pitem_template_rice_chickpea_meal_prep_0.ing_rice_chickpea_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_rice_chickpea_meal_prep_0.ing_rice_chickpea_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_rice_chickpea_meal_prep_0.ing_rice_chickpea_bowl_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_rice_chickpea_meal_prep_1.ing_cucumber_carrot_salad_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_rice_chickpea_meal_prep_1.ing_cucumber_carrot_salad_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_rice_chickpea_meal_prep_2.ing_apple_banana_bowl_0",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_rice_chickpea_meal_prep_2.ing_apple_banana_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "meal-templates",
+    "id": "template_potato_chickpea_meal_prep",
+    "slug": "potato-chickpea-meal-prep",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "plan.plannedItems",
+        "sourceIds": [
+          "original_meal_collections_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_0.ing_potato_cucumber_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_0.ing_potato_cucumber_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_0.ing_potato_cucumber_bowl_2",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_1.ing_chickpea_carrot_salad_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_1.ing_chickpea_carrot_salad_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_1.ing_chickpea_carrot_salad_2",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_2.ing_mango_pineapple_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_potato_chickpea_meal_prep_2.ing_mango_pineapple_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "meal-templates",
+    "id": "template_chickpea_salad_meal_prep",
+    "slug": "chickpea-salad-meal-prep",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "plan.plannedItems",
+        "sourceIds": [
+          "original_meal_collections_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "plan.pitem_template_chickpea_salad_meal_prep_0.ing_chickpea_cucumber_bowl_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_chickpea_salad_meal_prep_0.ing_chickpea_cucumber_bowl_1",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_chickpea_salad_meal_prep_0.ing_chickpea_cucumber_bowl_2",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_chickpea_salad_meal_prep_1.ing_cucumber_carrot_salad_0",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_chickpea_salad_meal_prep_1.ing_cucumber_carrot_salad_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_chickpea_salad_meal_prep_2.ing_strawberry_banana_bowl_0",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      },
+      {
+        "path": "plan.pitem_template_chickpea_salad_meal_prep_2.ing_strawberry_banana_bowl_1",
+        "sourceIds": [
+          "usda_fdc_foundation_2026_04"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "recovery",
     "id": "sleep_duration_adults",
     "slug": "sleep-duration-adults",

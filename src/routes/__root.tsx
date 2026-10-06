@@ -31,7 +31,9 @@ function RootComponent() {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {nonce && <meta name="csp-nonce" content={nonce} />}
+        {nonce && (
+          <meta name="csp-nonce" property="csp-nonce" content={nonce} />
+        )}
         <script nonce={nonce} dangerouslySetInnerHTML={{ __html: themeInit }} />
         <HeadContent />
       </head>

@@ -1,0 +1,30 @@
+{
+  "commit": "157b407c9132442e6ab27354f49c307c3e58d5bb",
+  "verification": "GitHub Actions public API job conclusions; not a claim about subsequent uncommitted work",
+  "mainValidation": {
+    "runId": 37419722012,
+    "jobId": 112126151572,
+    "conclusion": "success"
+  },
+  "crossBrowser": {
+    "runId": 37419722010,
+    "jobs": [
+      {
+        "browser": "chromium",
+        "jobId": 112126151589,
+        "conclusion": "success"
+      },
+      {
+        "browser": "firefox",
+        "jobId": 112126151578,
+        "conclusion": "success"
+      },
+      {
+        "browser": "webkit",
+        "jobId": 112126151354,
+        "conclusion": "success"
+      }
+    ]
+  },
+  "productionDeployment": false
+}

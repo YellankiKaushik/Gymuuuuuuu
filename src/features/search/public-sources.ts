@@ -5,6 +5,7 @@ import { scienceRecords } from "../workout-science/repository";
 import { publishedPrograms } from "../programs/repository";
 import foodIndexJson from "../../content/foods/index.json";
 import nutrientIndexJson from "../../content/nutrients/index.json";
+import { publicTemplates } from "../recipes-meal-plans/public-templates-records";
 import { publicRecipes } from "../recipes-meal-plans/public-records";
 import {
   publicRecoveryArticles,
@@ -52,6 +53,7 @@ function recordRoute(type: SearchEntityType, slug: string) {
       food: `/foods/${slug}`,
       nutrient: `/nutrients/${slug}`,
       recipe: `/recipes/${slug}`,
+      meal_plan_template: `/meal-plans/templates/${slug}`,
       recovery_topic: `/recovery/topics/${slug}`,
       recovery_routine: `/mobility/routines/${slug}`,
       cardio_topic: `/cardio/learn/${slug}`,
@@ -168,6 +170,20 @@ const publicGroups: readonly {
       status: recipe.status,
       title: text(recipe.version as unknown as PublicRow, "name", "title"),
       version: recipe.version.id,
+    })),
+  },
+  {
+    type: "meal_plan_template",
+    module: "phase_11_meal_plans",
+    rows: publicTemplates.map((t) => ({
+      id: t.id,
+      slug: t.slug,
+      title: t.title,
+      status: t.status,
+      version: t.plan.id,
+      summary:
+        "Static lunch and snack collection; source-validated personal use; not a complete daily diet.",
+      review: { reviewedAt: t.review.reviewedAt.slice(0, 10) },
     })),
   },
   {

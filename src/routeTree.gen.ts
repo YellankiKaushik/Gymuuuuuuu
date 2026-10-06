@@ -160,6 +160,7 @@ import { Route as LearnWorkoutScienceSlugRouteImport } from './routes/learn_.wor
 import { Route as LearnWorkoutScienceGlossaryRouteImport } from './routes/learn_.workout-science_.glossary'
 import { Route as LearnWorkoutScienceMethodsRouteImport } from './routes/learn_.workout-science_.methods'
 import { Route as MealPlansPlanIdGroceryListRouteImport } from './routes/meal-plans_.$planId_.grocery-list'
+import { Route as MealPlansTemplatesTemplateSlugRouteImport } from './routes/meal-plans_.templates_.$templateSlug'
 import { Route as MobilityCustomCreateRouteImport } from './routes/mobility_.custom_.create'
 import { Route as MobilityRoutinesRoutineSlugRouteImport } from './routes/mobility_.routines.$routineSlug'
 import { Route as MobilitySessionRoutineIdRouteImport } from './routes/mobility_.session.$routineId'
@@ -956,6 +957,12 @@ const MealPlansPlanIdGroceryListRoute =
     path: '/meal-plans/$planId/grocery-list',
     getParentRoute: () => rootRouteImport,
   } as any)
+const MealPlansTemplatesTemplateSlugRoute =
+  MealPlansTemplatesTemplateSlugRouteImport.update({
+    id: '/meal-plans_/templates_/$templateSlug',
+    path: '/meal-plans/templates/$templateSlug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MobilityCustomCreateRoute = MobilityCustomCreateRouteImport.update({
   id: '/mobility_/custom_/create',
   path: '/mobility/custom/create',
@@ -1271,6 +1278,7 @@ export interface FileRoutesByFullPath {
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
   '/meal-plans/$planId/grocery-list': typeof MealPlansPlanIdGroceryListRoute
+  '/meal-plans/templates/$templateSlug': typeof MealPlansTemplatesTemplateSlugRoute
   '/mobility/custom/create': typeof MobilityCustomCreateRoute
   '/mobility/routines/$routineSlug': typeof MobilityRoutinesRoutineSlugRoute
   '/mobility/session/$routineId': typeof MobilitySessionRoutineIdRoute
@@ -1446,6 +1454,7 @@ export interface FileRoutesByTo {
   '/learn/workout-science/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn/workout-science/methods': typeof LearnWorkoutScienceMethodsRoute
   '/meal-plans/$planId/grocery-list': typeof MealPlansPlanIdGroceryListRoute
+  '/meal-plans/templates/$templateSlug': typeof MealPlansTemplatesTemplateSlugRoute
   '/mobility/custom/create': typeof MobilityCustomCreateRoute
   '/mobility/routines/$routineSlug': typeof MobilityRoutinesRoutineSlugRoute
   '/mobility/session/$routineId': typeof MobilitySessionRoutineIdRoute
@@ -1630,6 +1639,7 @@ export interface FileRoutesById {
   '/learn_/workout-science_/glossary': typeof LearnWorkoutScienceGlossaryRoute
   '/learn_/workout-science_/methods': typeof LearnWorkoutScienceMethodsRoute
   '/meal-plans_/$planId_/grocery-list': typeof MealPlansPlanIdGroceryListRoute
+  '/meal-plans_/templates_/$templateSlug': typeof MealPlansTemplatesTemplateSlugRoute
   '/mobility_/custom_/create': typeof MobilityCustomCreateRoute
   '/mobility_/routines/$routineSlug': typeof MobilityRoutinesRoutineSlugRoute
   '/mobility_/session/$routineId': typeof MobilitySessionRoutineIdRoute
@@ -1815,6 +1825,7 @@ export interface FileRouteTypes {
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
     | '/meal-plans/$planId/grocery-list'
+    | '/meal-plans/templates/$templateSlug'
     | '/mobility/custom/create'
     | '/mobility/routines/$routineSlug'
     | '/mobility/session/$routineId'
@@ -1990,6 +2001,7 @@ export interface FileRouteTypes {
     | '/learn/workout-science/glossary'
     | '/learn/workout-science/methods'
     | '/meal-plans/$planId/grocery-list'
+    | '/meal-plans/templates/$templateSlug'
     | '/mobility/custom/create'
     | '/mobility/routines/$routineSlug'
     | '/mobility/session/$routineId'
@@ -2173,6 +2185,7 @@ export interface FileRouteTypes {
     | '/learn_/workout-science_/glossary'
     | '/learn_/workout-science_/methods'
     | '/meal-plans_/$planId_/grocery-list'
+    | '/meal-plans_/templates_/$templateSlug'
     | '/mobility_/custom_/create'
     | '/mobility_/routines/$routineSlug'
     | '/mobility_/session/$routineId'
@@ -2334,6 +2347,7 @@ export interface RootRouteChildren {
   LearnWorkoutScienceGlossaryRoute: typeof LearnWorkoutScienceGlossaryRoute
   LearnWorkoutScienceMethodsRoute: typeof LearnWorkoutScienceMethodsRoute
   MealPlansPlanIdGroceryListRoute: typeof MealPlansPlanIdGroceryListRoute
+  MealPlansTemplatesTemplateSlugRoute: typeof MealPlansTemplatesTemplateSlugRoute
   MobilityCustomCreateRoute: typeof MobilityCustomCreateRoute
   MobilityRoutinesRoutineSlugRoute: typeof MobilityRoutinesRoutineSlugRoute
   MobilitySessionRoutineIdRoute: typeof MobilitySessionRoutineIdRoute
@@ -3412,6 +3426,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MealPlansPlanIdGroceryListRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/meal-plans_/templates_/$templateSlug': {
+      id: '/meal-plans_/templates_/$templateSlug'
+      path: '/meal-plans/templates/$templateSlug'
+      fullPath: '/meal-plans/templates/$templateSlug'
+      preLoaderRoute: typeof MealPlansTemplatesTemplateSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mobility_/custom_/create': {
       id: '/mobility_/custom_/create'
       path: '/mobility/custom/create'
@@ -3921,6 +3942,7 @@ const rootRouteChildren: RootRouteChildren = {
   LearnWorkoutScienceGlossaryRoute: LearnWorkoutScienceGlossaryRoute,
   LearnWorkoutScienceMethodsRoute: LearnWorkoutScienceMethodsRoute,
   MealPlansPlanIdGroceryListRoute: MealPlansPlanIdGroceryListRoute,
+  MealPlansTemplatesTemplateSlugRoute: MealPlansTemplatesTemplateSlugRoute,
   MobilityCustomCreateRoute: MobilityCustomCreateRoute,
   MobilityRoutinesRoutineSlugRoute: MobilityRoutinesRoutineSlugRoute,
   MobilitySessionRoutineIdRoute: MobilitySessionRoutineIdRoute,
