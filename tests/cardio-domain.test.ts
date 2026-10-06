@@ -127,9 +127,12 @@ it("validates backup graphs and keep/copy semantics before storage", () => {
     }),
   ).toThrow("Duplicate");
 });
-it("keeps all 202 draft identities out of the public release", () => {
+it("publishes only the explicitly sourced identities from the 202 seeds", () => {
   expect(cardioReference.seedTaxonomy).toHaveLength(202);
-  expect(publicCardioEntities.map((r) => r.id)).toEqual(["topic_talk_test"]);
+  expect(publicCardioEntities.map((r) => r.id)).toEqual([
+    "topic_talk_test",
+    "plan_5k_general_foundation",
+  ]);
   expect(
     publicCardioEntities.every((r) => r.publicationStatus === "published"),
   ).toBe(true);

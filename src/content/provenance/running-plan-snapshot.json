@@ -1,0 +1,1021 @@
+{
+  "version": "1.0.0",
+  "sourceId": "nhs_running_plan_snapshot_2026",
+  "sourceUrl": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+  "sourceHtmlSha256": "730b21146459b152533615e75c72948294c37d64835e0ee37c9e5f3f9515401f",
+  "extractedAt": "2026-10-05T20:07:51.072Z",
+  "sourceDate": null,
+  "goal": "Build toward 30 minutes of continuous running at your own comfortable pace.",
+  "experience": "beginner",
+  "durationWeeks": 9,
+  "sessionsPerWeek": 3,
+  "minimumRestDaysBetweenRuns": 1,
+  "equipment": [
+    "A timer",
+    "Comfortable running shoes"
+  ],
+  "intensity": {
+    "method": "manual_text",
+    "methodVersion": "source-running-comfortable-1",
+    "instruction": "Run at a pace that feels comfortable for you. Focus on time rather than speed; walk during the scheduled walking intervals."
+  },
+  "progression": "Follow the source's run durations in sequence, with a rest day between runs. The final week contains 30-minute runs; distance depends on your pace.",
+  "regression": "Repeat a week if you do not feel ready to progress. Slow down or take a walking break when needed; stop if something does not feel right.",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Original source schedule retrieved 5 October 2026; this rendering has no NHS endorsement or independent clinical review.",
+  "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "sessions": [
+    {
+      "week": 1,
+      "run": 1,
+      "totalSeconds": 1710,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "run": 2,
+      "totalSeconds": 1710,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "run": 3,
+      "totalSeconds": 1710,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 60
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "run": 1,
+      "totalSeconds": 1740,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "run": 2,
+      "totalSeconds": 1740,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "run": 3,
+      "totalSeconds": 1740,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 120
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "run": 1,
+      "totalSeconds": 1500,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "run": 2,
+      "totalSeconds": 1500,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "run": 3,
+      "totalSeconds": 1500,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 90
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "run": 1,
+      "totalSeconds": 1890,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "walk",
+          "seconds": 150
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "run": 2,
+      "totalSeconds": 1890,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "walk",
+          "seconds": 150
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "run": 3,
+      "totalSeconds": 1890,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "walk",
+          "seconds": 150
+        },
+        {
+          "kind": "run",
+          "seconds": 180
+        },
+        {
+          "kind": "walk",
+          "seconds": 90
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "run": 1,
+      "totalSeconds": 1860,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "run": 2,
+      "totalSeconds": 1860,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 480
+        },
+        {
+          "kind": "walk",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 480
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "run": 3,
+      "totalSeconds": 1800,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1200
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "run": 1,
+      "totalSeconds": 2040,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 480
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 300
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "run": 2,
+      "totalSeconds": 1980,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 600
+        },
+        {
+          "kind": "walk",
+          "seconds": 180
+        },
+        {
+          "kind": "run",
+          "seconds": 600
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "run": 3,
+      "totalSeconds": 2100,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1500
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "run": 1,
+      "totalSeconds": 2100,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1500
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "run": 2,
+      "totalSeconds": 2100,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1500
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "run": 3,
+      "totalSeconds": 2100,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1500
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "run": 1,
+      "totalSeconds": 2280,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1680
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "run": 2,
+      "totalSeconds": 2280,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1680
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "run": 3,
+      "totalSeconds": 2280,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1680
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "run": 1,
+      "totalSeconds": 2400,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1800
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "run": 2,
+      "totalSeconds": 2400,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1800
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "run": 3,
+      "totalSeconds": 2400,
+      "segments": [
+        {
+          "kind": "warm_up",
+          "seconds": 300
+        },
+        {
+          "kind": "run",
+          "seconds": 1800
+        },
+        {
+          "kind": "cool_down",
+          "seconds": 300
+        }
+      ]
+    }
+  ]
+}

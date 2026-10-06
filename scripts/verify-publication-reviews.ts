@@ -128,6 +128,9 @@ for (const r of publicCardioEntities)
     id: r.id,
     slug: r.slug,
     fields: [
+      ...(r.plan
+        ? [field("plan.sessions", [r.plan.sourceId], "sourced_education")]
+        : []),
       field(
         "claims",
         r.sourceIds.map((id) =>
@@ -163,10 +166,33 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
     id: r.id,
     slug: r.slug,
     fields: [
-      field("technique", ["public_strength_2024"]),
-      field("muscleRoles", ["gray_1918_upper_arm"]),
-      field("safety", ["public_video_safety_2023"]),
-      field("media", ["original_curl_diagram_v1"], "original_authorship"),
+      field(
+        "technique",
+        r.sources
+          ?.filter((s) => s.sourceType === "government-guideline")
+          .map((s) => s.id) ?? [],
+      ),
+      field("muscleRoles", [
+        ...new Set(r.muscleRoles?.flatMap((role) => role.sourceIds) ?? []),
+      ]),
+      field(
+        "safety",
+        r.sources
+          ?.filter((s) => s.sourceType === "government-guideline")
+          .map((s) => s.id) ?? [],
+      ),
+      field("programmingGuidance", [
+        ...new Set(r.programmingGuidance?.flatMap((g) => g.sourceIds) ?? []),
+      ]),
+      field(
+        "media",
+        [
+          r.id === "exercise_dumbbell_curl"
+            ? "original_curl_diagram_v1"
+            : "original_strength_diagrams_v1",
+        ],
+        "original_authorship",
+      ),
     ],
   });
 // Fail closed: publication in an adapter without provenance is a release error.
@@ -186,7 +212,16 @@ const release = validatePublicationReviews(
     state: "published_personal_use",
     method:
       "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    lastReviewedAt: "2026-10-05",
+    lastReviewedAt: r.fields
+      .flatMap((f) =>
+        f.sourceIds.map((id) => {
+          const source = sources.find((s) => s.id === id);
+          if (!source) throw Error(`Publication source is missing: ${id}`);
+          return source.lastReviewedAt;
+        }),
+      )
+      .sort()
+      .at(-1)!,
     reviewer: { kind: "machine", name: "Codex" },
     limitations: [
       "No independent human or clinical review.",

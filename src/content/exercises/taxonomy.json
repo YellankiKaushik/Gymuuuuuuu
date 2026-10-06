@@ -257,6 +257,10 @@
     {
       "id": "equipment_none",
       "displayName": "No equipment"
+    },
+    {
+      "id": "equipment_sturdy_chair",
+      "displayName": "Sturdy armless chair"
     }
   ],
   "records": [

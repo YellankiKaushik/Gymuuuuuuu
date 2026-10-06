@@ -123,6 +123,8 @@ export function CardioFrame({
         label="Cardio tools"
         items={[
           { label: "Overview", href: "/cardio" },
+          { label: "Learn", href: "/cardio/learn" },
+          { label: "Public plans", href: "/cardio/plans" },
           { label: "New session", href: "/cardio/session/new" },
           { label: "Active session", href: "/cardio/session/active" },
           { label: "History", href: "/cardio/history" },

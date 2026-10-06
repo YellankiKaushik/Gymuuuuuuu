@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { cardioReference } from "./schema";
 import records from "../../content/cardio/records.json";
+import { publicPlanSchema } from "./public-plan";
 export const publishedCardioSchema = z.strictObject({
   id: z.string().min(1),
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
@@ -35,6 +36,7 @@ export const publishedCardioSchema = z.strictObject({
     .min(1),
   sourceIds: z.array(z.string()).min(1),
   relatedIds: z.array(z.string()),
+  plan: publicPlanSchema.optional(),
   review: z.strictObject({
     reviewer: z.string().min(1),
     reviewedAt: z.iso.date(),
@@ -52,6 +54,18 @@ export function validateCardioRelease(
     slugs = new Set<string>();
   for (const value of entries) {
     const e = publishedCardioSchema.parse(value);
+    if ((e.entityType === "cardio_plan_template") !== Boolean(e.plan))
+      throw Error(
+        "A published plan must contain its complete source schedule; other entities cannot masquerade as plans.",
+      );
+    if (
+      e.plan &&
+      (!e.sourceIds.includes(e.plan.sourceId) ||
+        !e.claims.some((claim) => claim.sourceIds.includes(e.plan!.sourceId)))
+    )
+      throw Error(
+        "The numeric plan schedule must resolve to its approved claim source.",
+      );
     if (ids.has(e.id) || slugs.has(e.slug))
       throw Error("Duplicate public cardio identity.");
     ids.add(e.id);

@@ -25,6 +25,11 @@ describe("exercise governance", () => {
     expect(validateExercises(exerciseIdentities)).toEqual([]);
     expect(getPublishedExercises().map((r) => r.id)).toEqual([
       "exercise_dumbbell_curl",
+      "exercise_dumbbell_lateral_raise",
+      "exercise_dumbbell_front_raise",
+      "exercise_standing_dumbbell_shoulder_press",
+      "exercise_seated_dumbbell_shoulder_press",
+      "exercise_dumbbell_overhead_triceps_extension",
     ]);
     expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
   });

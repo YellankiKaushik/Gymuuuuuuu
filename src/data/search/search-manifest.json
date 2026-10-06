@@ -3,14 +3,14 @@
   "adapterVersion": "fitness-os-native-index-v1",
   "normalizationVersion": "unicode-nfkc-token-v1",
   "rankingVersion": "field-weights-exact-prefix-bonus-v1",
-  "canonicalDocumentHash": "40b593e65f7c06eb289b379d88416b8159c1777d3fb468a696f6932d332695db",
-  "indexHash": "7ea9b36b2c3cf000198e97cf348687eb0b31d3943c02043d721a125cb1891a12",
-  "indexVersion": "2c45f838320db07a1de9a045ff3caa6e4f41bb1145ebdac4790df645dec78a4d",
-  "documentCount": 385,
+  "canonicalDocumentHash": "aabef74cf4eb6c709ac944502cc7349f43ae0962f28c03ea6211e29ceef4f193",
+  "indexHash": "fdfb9f4a6c2f390f2637ef839da3528365084677784fd3d53c4d1cf4fd1b113c",
+  "indexVersion": "d000436715e800437b09643c7e9a66af6ea592c4842a070ae6986089de333651",
+  "documentCount": 409,
   "countsByEntityType": {
     "route": 124,
-    "muscle": 3,
-    "exercise": 1,
+    "muscle": 21,
+    "exercise": 6,
     "workout_science_topic": 3,
     "workout_program": 0,
     "workout_session": 0,
@@ -25,7 +25,7 @@
     "recovery_checkin": 0,
     "cardio_topic": 1,
     "cardio_modality": 0,
-    "cardio_plan": 0,
+    "cardio_plan": 1,
     "conditioning_routine": 0,
     "supplement_ingredient": 2,
     "supplement_evidence_topic": 0,
@@ -34,6 +34,6 @@
     "body_measurement": 0,
     "dashboard_widget": 4
   },
-  "builtAt": "2026-10-05T19:00:44.000Z",
+  "builtAt": "2026-10-05T20:05:42.000Z",
   "locale": "en"
 }

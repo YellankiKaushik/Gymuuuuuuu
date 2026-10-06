@@ -3,7 +3,14 @@ import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
   ["/muscles/biceps-brachii", "Biceps brachii"],
+  ["/muscles/latissimus-dorsi", "Latissimus dorsi"],
+  ["/muscles/trapezius", "Trapezius"],
   ["/exercises/dumbbell-curl", "Dumbbell curl"],
+  ["/exercises/dumbbell-lateral-raise", "Dumbbell lateral raise"],
+  [
+    "/exercises/seated-dumbbell-shoulder-press",
+    "Seated dumbbell shoulder press",
+  ],
   ["/foods/apple", "Apple"],
   ["/nutrients/iron", "Iron"],
   ["/recipes/chickpea-cucumber-bowl", "Chickpea and cucumber bowl"],

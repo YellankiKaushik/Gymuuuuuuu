@@ -31,6 +31,8 @@ import {
   getCardioSession,
   deleteCardioEntity,
 } from "./storage";
+import { publicCardioEntities } from "./publication";
+import { publicPlanWeekSnapshot } from "./public-plan-session";
 const hrSources = [
   "none",
   "manual_pulse",
@@ -240,6 +242,12 @@ function NewSession() {
     [started, setStarted] = useState(""),
     [duration, setDuration] = useState(""),
     [draft, setDraft] = useState<Session | null>(null);
+  const [publicPlanId, setPublicPlanId] = useState(""),
+    [publicWeek, setPublicWeek] = useState(1),
+    [publicRun, setPublicRun] = useState(1);
+  const selectedPublic = publicCardioEntities.find(
+    (entry) => entry.id === publicPlanId && entry.plan,
+  );
   return (
     <>
       <p>
@@ -256,15 +264,32 @@ function NewSession() {
               if (!view) throw Error("Browser storage is not ready.");
               const owner = cardioOwnerId(),
                 now = manual ? started : new Date().toISOString();
+              const publishedWeek = selectedPublic
+                ? publicPlanWeekSnapshot(selectedPublic, publicWeek)
+                : null;
+              const publishedRun = publishedWeek?.sessions[publicRun - 1];
+              if (publishedWeek && !publishedRun)
+                throw Error("Choose an available source run.");
               let s = startCardioSession(
                 {
-                  title,
-                  modalityId: modality,
-                  sessionTypeId: type,
+                  title: title || publishedRun?.title || "",
+                  modalityId: publishedRun?.modalityId ?? modality,
+                  sessionTypeId: publishedRun?.sessionTypeId ?? type,
                   timezone: view.preferences.value.timezone,
-                  segments: segments.length
-                    ? segments
-                    : [makeSegment("Manual activity")],
+                  segments:
+                    publishedRun?.segments ??
+                    (segments.length
+                      ? segments
+                      : [makeSegment("Manual activity")]),
+                  frozenSource:
+                    publishedWeek && publishedRun
+                      ? {
+                          kind: "plan",
+                          version: publishedWeek,
+                          sessionId: publishedRun.id,
+                          weekNumber: publicWeek,
+                        }
+                      : null,
                 },
                 now,
                 owner,
@@ -300,23 +325,92 @@ function NewSession() {
           );
         }}
       >
+        <Field label="Published source plan">
+          <select
+            value={publicPlanId}
+            onChange={(event) => {
+              setPublicPlanId(event.target.value);
+              setPublicWeek(1);
+              setPublicRun(1);
+            }}
+          >
+            <option value="">Use my own activity</option>
+            {publicCardioEntities
+              .filter((entry) => entry.plan)
+              .map((entry) => (
+                <option key={entry.id} value={entry.id}>
+                  {entry.title}
+                </option>
+              ))}
+          </select>
+        </Field>
+        {selectedPublic?.plan && (
+          <>
+            <Field label="Source week">
+              <select
+                value={publicWeek}
+                onChange={(event) => setPublicWeek(Number(event.target.value))}
+              >
+                {Array.from(
+                  { length: selectedPublic.plan.durationWeeks },
+                  (_, index) => index + 1,
+                ).map((week) => (
+                  <option key={week} value={week}>
+                    Week {week}
+                  </option>
+                ))}
+              </select>
+            </Field>
+            <Field label="Source run">
+              <select
+                value={publicRun}
+                onChange={(event) => setPublicRun(Number(event.target.value))}
+              >
+                {Array.from(
+                  { length: selectedPublic.plan.sessionsPerWeek },
+                  (_, index) => index + 1,
+                ).map((run) => (
+                  <option key={run} value={run}>
+                    Run {run}
+                  </option>
+                ))}
+              </select>
+            </Field>
+            <p>
+              {selectedPublic.plan.intensity.instruction} Keep a rest day
+              between runs. A source selection supplies targets only; nothing is
+              saved until you start or save.
+            </p>
+            <p>
+              Personal-use source verification; no independent human review.{" "}
+              <a href={`/cardio/plans/${selectedPublic.slug}`}>
+                Read the complete schedule and limitations
+              </a>
+              .
+            </p>
+          </>
+        )}
         <Field label="Session title">
           <input
-            required
+            required={!selectedPublic}
             maxLength={200}
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
         </Field>
-        <Field label="Activity category">
-          <ModalitySelect value={modality} onChange={setModality} />
-        </Field>
-        <Field label="Session type">
-          <TypeSelect
-            value={type}
-            onChange={(v) => setType(v as typeof type)}
-          />
-        </Field>
+        {!selectedPublic && (
+          <>
+            <Field label="Activity category">
+              <ModalitySelect value={modality} onChange={setModality} />
+            </Field>
+            <Field label="Session type">
+              <TypeSelect
+                value={type}
+                onChange={(v) => setType(v as typeof type)}
+              />
+            </Field>
+          </>
+        )}
         <Field label="Record a completed session manually">
           <input
             type="checkbox"
@@ -348,7 +442,9 @@ function NewSession() {
             </Field>
           </>
         )}
-        <SegmentEditor value={segments} onChange={setSegments} />
+        {!selectedPublic && (
+          <SegmentEditor value={segments} onChange={setSegments} />
+        )}
         <button className="button primary" disabled={busy || !view}>
           {manual ? "Save completed manual session" : "Start local timer"}
         </button>

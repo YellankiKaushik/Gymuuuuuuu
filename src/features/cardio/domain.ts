@@ -22,6 +22,7 @@ import {
   tanakaMaximum,
 } from "./calculations";
 import { localDate, validateZonedTimestamp } from "../recovery/domain";
+import { isApprovedPublicIntensity } from "./source-intensity";
 export function newCardioId() {
   return `cardio_${crypto.randomUUID()}`;
 }
@@ -97,9 +98,9 @@ function sourceIds(ids: readonly string[]) {
 export function validateIntensity(value: Intensity) {
   const p = value.provenance;
   sourceIds(p.sourceIds);
-  if (p.basis === "reviewed_source")
+  if (p.basis === "reviewed_source" && !isApprovedPublicIntensity(value))
     throw Error(
-      "No reviewed public prescriptions are released yet. Save this as your own selection.",
+      "Source-backed intensity must match an approved public source version; save other instructions as your own selection.",
     );
   if (p.frameworkId !== null)
     throw Error("No reviewed heart-rate zone framework is released.");

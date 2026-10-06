@@ -194,5 +194,1083 @@
     "reviewedBy": "Codex source verification; published_personal_use; no human review",
     "reviewedAt": "2026-10-05",
     "version": "1.0.0"
+  },
+  {
+    "id": "muscle_levator_scapulae",
+    "slug": "levator-scapulae",
+    "displayName": "Levator scapulae",
+    "anatomicalName": "Levator scapulae",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_neck",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_neck",
+      "group_upper_back"
+    ],
+    "summary": "A muscle at the back and side of the neck that helps raise the medial angle of the scapula.",
+    "locationSummary": "Posterior and lateral neck.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Transverse processes of the atlas and axis, and posterior tubercles of the third and fourth cervical transverse processes.",
+      "distalAttachmentSummary": "Medial scapular border between the superior angle and the root of the scapular spine."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "elevation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Described with the head fixed."
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_deltoid",
+    "slug": "deltoid",
+    "displayName": "Deltoid",
+    "anatomicalName": "Deltoid",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [
+      "Deltoideus"
+    ],
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_shoulders"
+    ],
+    "summary": "A triangular muscle covering the front, back and lateral shoulder. Its portions contribute to raising the arm and moving it forward or backward.",
+    "locationSummary": "Superficial muscle around the shoulder.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Lateral third of the clavicle, acromion and posterior border of the scapular spine.",
+      "distalAttachmentSummary": "Deltoid prominence on the lateral humerus."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "abduction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Anterior fibers draw the arm forward."
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Posterior fibers draw the arm backward."
+      }
+    ],
+    "movementPatterns": [
+      "abduction",
+      "flexion",
+      "extension"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0",
+    "childIds": [
+      "muscle_deltoid_anterior",
+      "muscle_deltoid_posterior"
+    ]
+  },
+  {
+    "id": "muscle_deltoid_anterior",
+    "slug": "anterior-deltoid",
+    "displayName": "Anterior deltoid",
+    "anatomicalName": "Anterior deltoid",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_shoulders"
+    ],
+    "summary": "The anterior portion of the deltoid contributes to drawing the arm forward with pectoralis major.",
+    "locationSummary": "A portion of the superficial shoulder muscle.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior border and upper surface of the lateral third of the clavicle.",
+      "distalAttachmentSummary": "Shared deltoid insertion on the lateral humerus."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "A qualitative portion-specific action, not evidence of exact exercise isolation."
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0",
+    "parentIds": [
+      "muscle_deltoid"
+    ]
+  },
+  {
+    "id": "muscle_deltoid_posterior",
+    "slug": "posterior-deltoid",
+    "displayName": "Posterior deltoid",
+    "anatomicalName": "Posterior deltoid",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_shoulders"
+    ],
+    "summary": "The posterior portion of the deltoid contributes to drawing the arm backward with teres major and latissimus dorsi.",
+    "locationSummary": "A portion of the superficial shoulder muscle.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Posterior border of the scapular spine.",
+      "distalAttachmentSummary": "Shared deltoid insertion on the lateral humerus."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "A qualitative portion-specific action, not evidence of exact exercise isolation."
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0",
+    "parentIds": [
+      "muscle_deltoid"
+    ]
+  },
+  {
+    "id": "muscle_supraspinatus",
+    "slug": "supraspinatus",
+    "displayName": "Supraspinatus",
+    "anatomicalName": "Supraspinatus",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "summary": "A muscle above the scapular spine that assists in raising the arm from the side and holding the humeral head in the glenoid cavity.",
+    "locationSummary": "Supraspinous fossa of the scapula.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Medial two-thirds of the supraspinous fossa and its fascia.",
+      "distalAttachmentSummary": "Highest impression on the greater tubercle of the humerus, with attachment to the shoulder capsule."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "abduction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Assists the deltoid."
+      },
+      {
+        "joint": "shoulder",
+        "motion": "stabilization",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "The historical source describes holding the humeral head in the glenoid cavity, not a guarantee against injury."
+      }
+    ],
+    "movementPatterns": [
+      "abduction"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_infraspinatus",
+    "slug": "infraspinatus",
+    "displayName": "Infraspinatus",
+    "anatomicalName": "Infraspinatus",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_shoulder",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "summary": "A muscle below the scapular spine that rotates the humerus outward and assists in carrying the arm backward.",
+    "locationSummary": "Infraspinous fossa on the posterior scapula.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Medial two-thirds of the infraspinous fossa, surface ridges and covering fascia.",
+      "distalAttachmentSummary": "Middle impression on the greater tubercle of the humerus."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "external rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Assists in carrying the arm backward."
+      }
+    ],
+    "movementPatterns": [
+      "rotation",
+      "extension"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_teres_minor",
+    "slug": "teres-minor",
+    "displayName": "Teres minor",
+    "anatomicalName": "Teres minor",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_shoulder",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "summary": "A narrow muscle along the lateral scapular border that helps rotate the humerus outward and move the arm backward.",
+    "locationSummary": "Posterior shoulder near the lateral scapular border.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Upper two-thirds of the dorsal lateral border of the scapula and adjacent aponeurotic tissue.",
+      "distalAttachmentSummary": "Lowest impression on the greater tubercle of the humerus, with lower fibers inserting immediately below it."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "external rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Assists in carrying the arm backward."
+      }
+    ],
+    "movementPatterns": [
+      "rotation",
+      "extension"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_subscapularis",
+    "slug": "subscapularis",
+    "displayName": "Subscapularis",
+    "anatomicalName": "Subscapularis",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "summary": "A triangular muscle on the front surface of the scapula that rotates the humerus inward.",
+    "locationSummary": "Subscapular fossa, between the scapula and the thorax.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Medial two-thirds of the subscapular fossa, lower lateral-border groove and associated aponeurotic tissue.",
+      "distalAttachmentSummary": "Lesser tubercle of the humerus and front of the shoulder capsule."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "lowering the raised arm",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "The source describes drawing an already raised humerus forward and downward."
+      }
+    ],
+    "movementPatterns": [
+      "rotation"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_pectoralis_major",
+    "slug": "pectoralis-major",
+    "displayName": "Pectoralis major",
+    "anatomicalName": "Pectoralis major",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest"
+    ],
+    "summary": "A fan-shaped muscle on the front of the upper chest that draws the arm toward the body and across the chest and rotates it inward.",
+    "locationSummary": "Anterior upper chest.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Sternal half of the clavicle, anterior sternum, costal cartilages and external-oblique aponeurosis; attachment extent varies.",
+      "distalAttachmentSummary": "Crest of the greater tubercle of the humerus."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "adduction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "drawing the arm forward and across the chest",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "rotation"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_pectoralis_minor",
+    "slug": "pectoralis-minor",
+    "displayName": "Pectoralis minor",
+    "anatomicalName": "Pectoralis minor",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest"
+    ],
+    "summary": "A thin muscle beneath pectoralis major that draws the scapula downward and toward the chest.",
+    "locationSummary": "Upper thorax, deep to pectoralis major.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Third, fourth and fifth ribs near their cartilages and covering intercostal aponeuroses; rib attachments vary.",
+      "distalAttachmentSummary": "Medial border and upper surface of the scapular coracoid process."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "depression",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "drawing the scapula toward the thorax",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_serratus_anterior",
+    "slug": "serratus-anterior",
+    "displayName": "Serratus anterior",
+    "anatomicalName": "Serratus anterior",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest",
+      "group_upper_back"
+    ],
+    "summary": "A muscular sheet between the ribs and scapula that carries the scapula forward and contributes to its rotation during arm raising.",
+    "locationSummary": "Upper and lateral chest wall beneath the scapula.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Outer surfaces and upper borders of the upper eight or nine ribs and associated intercostal aponeuroses.",
+      "distalAttachmentSummary": "Ventral surface of the medial scapular border, including the superior and inferior angles."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "protraction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Lower fibers assist trapezius in moving the inferior angle forward during arm raising."
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction",
+      "rotation"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_latissimus_dorsi",
+    "slug": "latissimus-dorsi",
+    "displayName": "Latissimus dorsi",
+    "anatomicalName": "Latissimus dorsi",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_back",
+      "region_lower_back"
+    ],
+    "trainingGroups": [
+      "group_lats"
+    ],
+    "summary": "A broad muscle over the lower back that connects to the humerus and helps draw the arm backward, downward and inward in rotation.",
+    "locationSummary": "Lower thoracic and lumbar back.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Lower thoracic spinous processes, lumbodorsal fascia, posterior iliac crest and lower ribs, with variable fibers from the inferior scapular angle.",
+      "distalAttachmentSummary": "Floor of the intertubercular groove of the humerus."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "lowering the raised arm",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "extension",
+      "rotation"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_trapezius",
+    "slug": "trapezius",
+    "displayName": "Trapezius",
+    "anatomicalName": "Trapezius",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_neck",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "summary": "A broad muscle over the upper back and neck. Its portions help retract, elevate, depress and rotate the scapula.",
+    "locationSummary": "Posterior neck and upper back.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "External occipital protuberance, superior nuchal line, nuchal ligament, seventh cervical and thoracic spinous processes and supraspinal ligament.",
+      "distalAttachmentSummary": "Lateral clavicle, acromion and scapular spine, with portion-specific attachments."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "elevation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Upper fibers, with the head fixed."
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "depression",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Lower fibers assist."
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Middle and lower fibers rotate the scapula to raise the acromion."
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction",
+      "scapular-elevation-depression",
+      "rotation"
+    ],
+    "relationships": [
+      {
+        "relatedMuscleId": "muscle_rhomboid_group",
+        "context": "Scapular retraction",
+        "role": "synergist",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0",
+    "childIds": [
+      "muscle_trapezius_upper",
+      "muscle_trapezius_middle",
+      "muscle_trapezius_lower"
+    ]
+  },
+  {
+    "id": "muscle_trapezius_upper",
+    "slug": "upper-trapezius",
+    "displayName": "Upper trapezius",
+    "anatomicalName": "Upper trapezius",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_neck",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_neck",
+      "group_upper_back"
+    ],
+    "summary": "The upper trapezius fibers help elevate the point of the shoulder when the head is fixed.",
+    "locationSummary": "A portion of the posterior neck and upper-back muscle.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "A portion of the shared trapezius vertebral, ligamentous and occipital attachment region; see the whole-muscle record for the complete description.",
+      "distalAttachmentSummary": "Posterior border of the lateral third of the clavicle."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "elevation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Described with the head fixed."
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0",
+    "parentIds": [
+      "muscle_trapezius"
+    ]
+  },
+  {
+    "id": "muscle_trapezius_middle",
+    "slug": "middle-trapezius",
+    "displayName": "Middle trapezius",
+    "anatomicalName": "Middle trapezius",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "summary": "The middle trapezius fibers participate in scapular retraction and, with lower fibers, scapular rotation.",
+    "locationSummary": "A portion of the posterior neck and upper-back muscle.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "A portion of the shared trapezius vertebral, ligamentous and occipital attachment region; see the whole-muscle record for the complete description.",
+      "distalAttachmentSummary": "Medial acromion and upper posterior lip of the scapular spine."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Acts with the lower fibers and rhomboids."
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "The source describes the middle and lower fibers together."
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction",
+      "rotation"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0",
+    "parentIds": [
+      "muscle_trapezius"
+    ]
+  },
+  {
+    "id": "muscle_trapezius_lower",
+    "slug": "lower-trapezius",
+    "displayName": "Lower trapezius",
+    "anatomicalName": "Lower trapezius",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "summary": "The lower trapezius fibers assist scapular depression and participate with middle fibers in scapular rotation and retraction.",
+    "locationSummary": "A portion of the posterior neck and upper-back muscle.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "A portion of the shared trapezius vertebral, ligamentous and occipital attachment region; see the whole-muscle record for the complete description.",
+      "distalAttachmentSummary": "A tubercle at the medial end of the scapular spine, through an aponeurosis."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "depression",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "A contribution, not an isolated whole-muscle action."
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "The source describes the middle and lower fibers together."
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Acts together with middle fibers and rhomboids."
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression",
+      "scapular-protraction-retraction",
+      "rotation"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0",
+    "parentIds": [
+      "muscle_trapezius"
+    ]
+  },
+  {
+    "id": "muscle_rhomboid_group",
+    "slug": "rhomboids",
+    "displayName": "Rhomboid group",
+    "anatomicalName": "Rhomboid major and rhomboid minor",
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "summary": "Rhomboid major and minor connect the vertebral column to the medial scapula and act with trapezius fibers to retract the scapula.",
+    "locationSummary": "Posterior upper back, between the vertebral column and scapula.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Major: second through fifth thoracic spinous processes. Minor: lower nuchal ligament, seventh cervical and first thoracic spinous processes.",
+      "distalAttachmentSummary": "Major: medial scapular attachment from the root of the spine toward the inferior angle. Minor: root of the scapular spine."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "The group acts with the middle and lower trapezius fibers."
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction"
+    ],
+    "relationships": [
+      {
+        "relatedMuscleId": "muscle_trapezius",
+        "context": "Scapular retraction",
+        "role": "synergist",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_teres_major",
+    "slug": "teres-major",
+    "displayName": "Teres major",
+    "anatomicalName": "Teres major",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "aliases": [],
+    "regions": [
+      "region_upper_back",
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_upper_back",
+      "group_lats"
+    ],
+    "summary": "A muscle from the inferior scapula to the humerus that assists latissimus dorsi in lowering the raised arm, drawing it backward and rotating it inward.",
+    "locationSummary": "Posterior shoulder near the inferior scapular angle.",
+    "practicalImportance": "Read these qualitative actions as an introduction to movement, rather than a ranking of exercises. Training effects and individual exercise roles need their own sources.",
+    "structure": {
+      "proximalAttachmentSummary": "Dorsal surface of the inferior scapular angle and adjacent fibrous septa.",
+      "distalAttachmentSummary": "Crest of the lesser tubercle of the humerus."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "lowering the raised arm",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "qualifier": "Described with latissimus dorsi."
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "extension",
+      "rotation"
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical 1918 description, not current clinical or exercise-effect evidence. Individual attachment variation is not represented.",
+      "Machine source verification only; no independent human anatomy review. No activation percentages, injury-prevention guarantee or exact exercise-isolation claim."
+    ],
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-05",
+    "version": "1.0.0"
   }
 ]

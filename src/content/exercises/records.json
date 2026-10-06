@@ -104,7 +104,7 @@
     "sources": [
       {
         "id": "gray_1918_upper_arm",
-        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443\u2013445)",
+        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
         "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
         "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
         "sourceType": "textbook",
@@ -138,6 +138,689 @@
       "mediaReviewedAt": "2026-10-05",
       "nextReviewDue": "2027-02-28",
       "notes": "Source facts and original diagram machine-validated. No independent human or clinical review. Publication does not establish individual suitability."
+    }
+  },
+  {
+    "id": "exercise_dumbbell_lateral_raise",
+    "slug": "dumbbell-lateral-raise",
+    "displayName": "Dumbbell lateral raise",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "movementPatternIds": [
+      "pattern_shoulder_abduction"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A slow side arm raise with light weights following the NIA older-adult guide. This source version stops at shoulder height.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_deltoid",
+        "role": "context-dependent",
+        "qualifier": "Qualitative relationship between the described movement and the sourced joint action; no activation percentage, head-isolation claim or exercise ranking.",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand with feet flat and about shoulder-width apart, or sit in a sturdy armless chair.",
+        "Hold light weights beside the body with palms inward; breathe in."
+      ],
+      "executionSteps": [
+        "Breathe out while slowly raising both arms sideways to shoulder height.",
+        "Hold for 1 second, then breathe in while lowering slowly."
+      ],
+      "finishOrReset": "Return slowly and under control to the described starting position.",
+      "keyCheckpoints": [
+        "Use the source shoulder-height endpoint."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Using a jerking or thrusting motion instead of the described controlled movement.",
+        "whyItMatters": "This differs from the source technique and safety instructions.",
+        "correction": "Use smooth, steady motion and a manageable light resistance.",
+        "severity": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "confidence": "limited",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
+        "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "qualifier": "Printed page 49: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "notMedicalAdvice": true,
+      "stopSignals": [
+        "Stop if exercise causes pain or you feel unwell."
+      ],
+      "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
+    },
+    "media": [
+      {
+        "id": "diagram_dumbbell_lateral_raise_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/dumbbell-lateral-raise.svg",
+        "alt": "Original simplified movement schematic for Dumbbell lateral raise; use the written source instructions for setup and execution.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-06",
+        "whySelected": "Machine comparison with the stated written movement cue; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-06",
+        "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-06",
+      "anatomyReviewedAt": "2026-10-06",
+      "safetyReviewedAt": "2026-10-06",
+      "mediaReviewedAt": "2026-10-06",
+      "nextReviewDue": "2027-04-05",
+      "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
+    }
+  },
+  {
+    "id": "exercise_dumbbell_front_raise",
+    "slug": "dumbbell-front-raise",
+    "displayName": "Dumbbell front raise",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "movementPatternIds": [
+      "pattern_shoulder_flexion"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A slow front arm raise with light weights using the shoulder-height endpoint in the NIA older-adult guide.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_deltoid_anterior",
+        "role": "context-dependent",
+        "qualifier": "Qualitative relationship between the described movement and the sourced joint action; no activation percentage, head-isolation claim or exercise ranking.",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand with feet about shoulder-width apart.",
+        "Hold light weights beside the body with palms facing backward."
+      ],
+      "executionSteps": [
+        "Breathe out while raising straight arms in front to shoulder height.",
+        "Hold for 1 second, then breathe in while lowering slowly."
+      ],
+      "finishOrReset": "Return slowly and under control to the described starting position.",
+      "keyCheckpoints": [
+        "Use the source shoulder-height endpoint."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Using a jerking or thrusting motion instead of the described controlled movement.",
+        "whyItMatters": "This differs from the source technique and safety instructions.",
+        "correction": "Use smooth, steady motion and a manageable light resistance.",
+        "severity": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "confidence": "limited",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
+        "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "qualifier": "Printed page 48: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "notMedicalAdvice": true,
+      "stopSignals": [
+        "Stop if exercise causes pain or you feel unwell."
+      ],
+      "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
+    },
+    "media": [
+      {
+        "id": "diagram_dumbbell_front_raise_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/dumbbell-front-raise.svg",
+        "alt": "Original simplified movement schematic for Dumbbell front raise; use the written source instructions for setup and execution.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-06",
+        "whySelected": "Machine comparison with the stated written movement cue; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-06",
+        "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-06",
+      "anatomyReviewedAt": "2026-10-06",
+      "safetyReviewedAt": "2026-10-06",
+      "mediaReviewedAt": "2026-10-06",
+      "nextReviewDue": "2027-04-05",
+      "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
+    }
+  },
+  {
+    "id": "exercise_standing_dumbbell_shoulder_press",
+    "slug": "standing-dumbbell-shoulder-press",
+    "displayName": "Standing dumbbell shoulder press",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "movementPatternIds": [
+      "pattern_vertical_push",
+      "pattern_anti_extension"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The standing version of the NIA overhead arm raise, using light weights and smooth motion. This is older-adult source guidance.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_deltoid",
+        "role": "context-dependent",
+        "qualifier": "Qualitative relationship between the described movement and the sourced joint action; no activation percentage, head-isolation claim or exercise ranking.",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand with feet flat and about shoulder-width apart.",
+        "Hold light weights at shoulder height, palms forward; breathe in."
+      ],
+      "executionSteps": [
+        "Breathe out slowly while raising both arms overhead, keeping the elbows slightly bent.",
+        "Hold for 1 second, then breathe in while lowering slowly."
+      ],
+      "finishOrReset": "Return slowly and under control to the described starting position.",
+      "keyCheckpoints": [
+        "Keep the elbows slightly bent at the overhead endpoint."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Using a jerking or thrusting motion instead of the described controlled movement.",
+        "whyItMatters": "This differs from the source technique and safety instructions.",
+        "correction": "Use smooth, steady motion and a manageable light resistance.",
+        "severity": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "confidence": "limited",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
+        "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "qualifier": "Printed page 47: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "notMedicalAdvice": true,
+      "stopSignals": [
+        "Stop if exercise causes pain or you feel unwell."
+      ],
+      "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
+    },
+    "media": [
+      {
+        "id": "diagram_standing_dumbbell_shoulder_press_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/standing-dumbbell-shoulder-press.svg",
+        "alt": "Original simplified movement schematic for Standing dumbbell shoulder press; use the written source instructions for setup and execution.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-06",
+        "whySelected": "Machine comparison with the stated written movement cue; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-06",
+        "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-06",
+      "anatomyReviewedAt": "2026-10-06",
+      "safetyReviewedAt": "2026-10-06",
+      "mediaReviewedAt": "2026-10-06",
+      "nextReviewDue": "2027-04-05",
+      "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
+    }
+  },
+  {
+    "id": "exercise_seated_dumbbell_shoulder_press",
+    "slug": "seated-dumbbell-shoulder-press",
+    "displayName": "Seated dumbbell shoulder press",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "movementPatternIds": [
+      "pattern_vertical_push"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell",
+      "equipment_sturdy_chair"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The seated version of the NIA older-adult overhead arm raise, in a sturdy armless chair with both feet on the floor.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_deltoid",
+        "role": "context-dependent",
+        "qualifier": "Qualitative relationship between the described movement and the sourced joint action; no activation percentage, head-isolation claim or exercise ranking.",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Sit in a sturdy armless chair, feet flat and about shoulder-width apart.",
+        "Hold light weights at shoulder height, palms forward; breathe in."
+      ],
+      "executionSteps": [
+        "Breathe out slowly while raising both arms overhead, keeping the elbows slightly bent.",
+        "Hold for 1 second, then breathe in while lowering slowly."
+      ],
+      "finishOrReset": "Return slowly and under control to the described starting position.",
+      "keyCheckpoints": [
+        "Use a stable chair and keep elbows slightly bent."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Using a jerking or thrusting motion instead of the described controlled movement.",
+        "whyItMatters": "This differs from the source technique and safety instructions.",
+        "correction": "Use smooth, steady motion and a manageable light resistance.",
+        "severity": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "confidence": "limited",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
+        "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "qualifier": "Printed page 47: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "notMedicalAdvice": true,
+      "stopSignals": [
+        "Stop if exercise causes pain or you feel unwell."
+      ],
+      "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
+    },
+    "media": [
+      {
+        "id": "diagram_seated_dumbbell_shoulder_press_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/seated-dumbbell-shoulder-press.svg",
+        "alt": "Original simplified movement schematic for Seated dumbbell shoulder press; use the written source instructions for setup and execution.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-06",
+        "whySelected": "Machine comparison with the stated written movement cue; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-06",
+        "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-06",
+      "anatomyReviewedAt": "2026-10-06",
+      "safetyReviewedAt": "2026-10-06",
+      "mediaReviewedAt": "2026-10-06",
+      "nextReviewDue": "2027-04-05",
+      "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
+    }
+  },
+  {
+    "id": "exercise_dumbbell_overhead_triceps_extension",
+    "slug": "dumbbell-overhead-triceps-extension",
+    "displayName": "Dumbbell overhead triceps extension",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "movementPatternIds": [
+      "pattern_elbow_extension"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "unilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A one-arm overhead elbow extension from the NIA older-adult guide, with the other hand supporting the raised arm below the elbow.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_triceps_brachii",
+        "role": "context-dependent",
+        "qualifier": "Qualitative relationship between the described movement and the sourced joint action; no activation percentage, head-isolation claim or exercise ranking.",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand or sit in a sturdy armless chair, feet flat and about shoulder-width apart.",
+        "Hold a light weight in one hand, palm inward, and raise the arm toward the ceiling.",
+        "Support the raised arm below the elbow with the other hand; breathe in."
+      ],
+      "executionSteps": [
+        "Bend the raised elbow slowly, bringing the weight toward the shoulder.",
+        "Hold for 1 second, then breathe out while straightening the arm overhead without locking the elbow."
+      ],
+      "finishOrReset": "Return slowly and under control to the described starting position.",
+      "keyCheckpoints": [
+        "Support the upper arm and avoid a tightly locked elbow."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Using a jerking or thrusting motion instead of the described controlled movement.",
+        "whyItMatters": "This differs from the source technique and safety instructions.",
+        "correction": "Use smooth, steady motion and a manageable light resistance.",
+        "severity": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "confidence": "limited",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
+        "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "qualifier": "Printed page 54: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "notMedicalAdvice": true,
+      "stopSignals": [
+        "Stop if exercise causes pain or you feel unwell."
+      ],
+      "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
+    },
+    "media": [
+      {
+        "id": "diagram_dumbbell_overhead_triceps_extension_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/dumbbell-overhead-triceps-extension.svg",
+        "alt": "Original simplified movement schematic for Dumbbell overhead triceps extension; use the written source instructions for setup and execution.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-06",
+        "whySelected": "Machine comparison with the stated written movement cue; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
+      },
+      {
+        "id": "gray_1918_upper_arm",
+        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-06",
+        "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-06",
+      "anatomyReviewedAt": "2026-10-06",
+      "safetyReviewedAt": "2026-10-06",
+      "mediaReviewedAt": "2026-10-06",
+      "nextReviewDue": "2027-04-05",
+      "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
     }
   }
 ]

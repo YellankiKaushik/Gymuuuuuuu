@@ -1,0 +1,71 @@
+{
+  "sourceId": "nia_strength_guide_2018",
+  "version": "1.0.0",
+  "sourceUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+  "sourceVersion": "March 2018; 18-AG-4258",
+  "extractedAt": "2026-10-06T05:24:53Z",
+  "sourceFileSha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0",
+  "population": "Older adults; source educational guide, not a study effect estimate",
+  "records": [
+    {
+      "exerciseId": "exercise_dumbbell_lateral_raise",
+      "printedPage": 49,
+      "sets": 2,
+      "repetitionsMin": 10,
+      "repetitionsMax": 15,
+      "holdSeconds": 1,
+      "restSeconds": null,
+      "anatomySourceId": "gray_1918_shoulder_thorax",
+      "mediaId": "diagram_dumbbell_lateral_raise_v1",
+      "mediaSha256": "314451435f2530185c349b1fe783d06f9102dcd453cc4cfde6e3d8a2fe2ff041"
+    },
+    {
+      "exerciseId": "exercise_dumbbell_front_raise",
+      "printedPage": 48,
+      "sets": 2,
+      "repetitionsMin": 10,
+      "repetitionsMax": 15,
+      "holdSeconds": 1,
+      "restSeconds": null,
+      "anatomySourceId": "gray_1918_shoulder_thorax",
+      "mediaId": "diagram_dumbbell_front_raise_v1",
+      "mediaSha256": "3eea6127676353b62883d8cf6c5f4ebd2fc9609bc74b4764e79f687a9ef8ac08"
+    },
+    {
+      "exerciseId": "exercise_standing_dumbbell_shoulder_press",
+      "printedPage": 47,
+      "sets": 2,
+      "repetitionsMin": 10,
+      "repetitionsMax": 15,
+      "holdSeconds": 1,
+      "restSeconds": null,
+      "anatomySourceId": "gray_1918_shoulder_thorax",
+      "mediaId": "diagram_standing_dumbbell_shoulder_press_v1",
+      "mediaSha256": "093863cefbe2f7ae9e92ab7512d93f03cd2a2a7bfa1d5ad66deee65c688024e7"
+    },
+    {
+      "exerciseId": "exercise_seated_dumbbell_shoulder_press",
+      "printedPage": 47,
+      "sets": 2,
+      "repetitionsMin": 10,
+      "repetitionsMax": 15,
+      "holdSeconds": 1,
+      "restSeconds": null,
+      "anatomySourceId": "gray_1918_shoulder_thorax",
+      "mediaId": "diagram_seated_dumbbell_shoulder_press_v1",
+      "mediaSha256": "2a02b426da1065bf71b8cf34d40d3be8d1285cede522c0512488713869bcb988"
+    },
+    {
+      "exerciseId": "exercise_dumbbell_overhead_triceps_extension",
+      "printedPage": 54,
+      "sets": 2,
+      "repetitionsMin": 10,
+      "repetitionsMax": 15,
+      "holdSeconds": 1,
+      "restSeconds": null,
+      "anatomySourceId": "gray_1918_upper_arm",
+      "mediaId": "diagram_dumbbell_overhead_triceps_extension_v1",
+      "mediaSha256": "4ef2b52e432e6871d17b8154602c4a25e2b2074020a3facf694ac4ca9a8a3f2f"
+    }
+  ]
+}

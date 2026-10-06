@@ -6541,6 +6541,38 @@
     ]
   },
   {
+    "module": "cardio",
+    "id": "plan_5k_general_foundation",
+    "slug": "plan-5k-general-foundation",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "plan.sessions",
+        "sourceIds": [
+          "nhs_running_plan_snapshot_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_running_plan_snapshot_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "supplements",
     "id": "ingredient_creatine_monohydrate",
     "slug": "ingredient-creatine-monohydrate",
@@ -6666,6 +6698,456 @@
     ]
   },
   {
+    "module": "muscles",
+    "id": "muscle_levator_scapulae",
+    "slug": "levator-scapulae",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_deltoid",
+    "slug": "deltoid",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_deltoid_anterior",
+    "slug": "anterior-deltoid",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_deltoid_posterior",
+    "slug": "posterior-deltoid",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_supraspinatus",
+    "slug": "supraspinatus",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_infraspinatus",
+    "slug": "infraspinatus",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_teres_minor",
+    "slug": "teres-minor",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_subscapularis",
+    "slug": "subscapularis",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_pectoralis_major",
+    "slug": "pectoralis-major",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_pectoralis_minor",
+    "slug": "pectoralis-minor",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_serratus_anterior",
+    "slug": "serratus-anterior",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_latissimus_dorsi",
+    "slug": "latissimus-dorsi",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_trapezius",
+    "slug": "trapezius",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_trapezius_upper",
+    "slug": "upper-trapezius",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_trapezius_middle",
+    "slug": "middle-trapezius",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_trapezius_lower",
+    "slug": "lower-trapezius",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_rhomboid_group",
+    "slug": "rhomboids",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_teres_major",
+    "slug": "teres-major",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-05",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "exercises",
     "id": "exercise_dumbbell_curl",
     "slug": "dumbbell-curl",
@@ -6680,7 +7162,8 @@
       {
         "path": "technique",
         "sourceIds": [
-          "public_strength_2024"
+          "public_strength_2024",
+          "public_video_safety_2023"
         ],
         "kind": "sourced_education"
       },
@@ -6694,7 +7177,15 @@
       {
         "path": "safety",
         "sourceIds": [
+          "public_strength_2024",
           "public_video_safety_2023"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "public_strength_2024"
         ],
         "kind": "sourced_education"
       },
@@ -6702,6 +7193,271 @@
         "path": "media",
         "sourceIds": [
           "original_curl_diagram_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_dumbbell_lateral_raise",
+    "slug": "dumbbell-lateral-raise",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_strength_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_dumbbell_front_raise",
+    "slug": "dumbbell-front-raise",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_strength_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_standing_dumbbell_shoulder_press",
+    "slug": "standing-dumbbell-shoulder-press",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_strength_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_seated_dumbbell_shoulder_press",
+    "slug": "seated-dumbbell-shoulder-press",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_strength_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_dumbbell_overhead_triceps_extension",
+    "slug": "dumbbell-overhead-triceps-extension",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_strength_diagrams_v1"
         ],
         "kind": "original_authorship"
       }

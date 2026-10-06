@@ -1,0 +1,30 @@
+{
+  "sourceId": "gray_1918_shoulder_thorax",
+  "version": "1.0.0",
+  "sourceUrl": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+  "extractedAt": "2026-10-05T20:40:27Z",
+  "sourceYear": 1918,
+  "locator": "Printed pages 432–442; myology",
+  "extractPath": "src/content/provenance/gray-1918-shoulder-extract.txt",
+  "sha256": "d3b95fadf93bfb113b29cd6c34d08880c9e333bb815f59104dcbb16451da796f",
+  "recordIds": [
+    "muscle_levator_scapulae",
+    "muscle_deltoid",
+    "muscle_deltoid_anterior",
+    "muscle_deltoid_posterior",
+    "muscle_supraspinatus",
+    "muscle_infraspinatus",
+    "muscle_teres_minor",
+    "muscle_subscapularis",
+    "muscle_pectoralis_major",
+    "muscle_pectoralis_minor",
+    "muscle_serratus_anterior",
+    "muscle_latissimus_dorsi",
+    "muscle_trapezius",
+    "muscle_trapezius_upper",
+    "muscle_trapezius_middle",
+    "muscle_trapezius_lower",
+    "muscle_rhomboid_group",
+    "muscle_teres_major"
+  ]
+}

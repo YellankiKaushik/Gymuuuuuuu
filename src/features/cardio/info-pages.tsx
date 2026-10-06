@@ -8,6 +8,8 @@ import {
 } from "./workspace";
 import { cardioReference, type CardioBackup } from "./schema";
 import { publicCardioEntities } from "./publication";
+import { publicPlanMatches } from "./public-plan-session";
+import { PublicPlanSchedule } from "./public-plan-view";
 import { MyPlansPage } from "./builders";
 import {
   readCardioBackup,
@@ -47,6 +49,16 @@ export function KnowledgePage({
   const entries = publicCardioEntities.filter(
     (e) =>
       e.entityType === entityType &&
+      (!e.plan ||
+        publicPlanMatches(e.plan, {
+          experience,
+          days,
+          time,
+          equipment,
+          impact,
+          priority,
+          environment,
+        })) &&
       (!slug || e.slug === slug) &&
       (!domain ||
         cardioReference.seedTaxonomy.find((seed) => seed.id === e.id)
@@ -108,8 +120,8 @@ export function KnowledgePage({
                   onChange={(e) => setExperience(e.target.value)}
                 >
                   <option value="">Select experience</option>
-                  <option value="new">New to activity</option>
-                  <option value="experienced">Experienced</option>
+                  <option value="beginner">New to activity</option>
+                  <option value="intermediate">Experienced</option>
                 </select>
               </Field>
               <Field label="Available days">
@@ -168,9 +180,10 @@ export function KnowledgePage({
                 </select>
               </Field>
               <p>
-                Finder results require reviewed eligibility, dose and
-                progression contracts. No automatic or generated plan is offered
-                while those records are drafts.
+                Results use published schedules only. Filters without verified
+                matching information exclude a plan; this finder does not assess
+                medical suitability. Available minutes include warm-up and
+                cooldown.
               </p>
             </>
           )}
@@ -181,12 +194,16 @@ export function KnowledgePage({
           <h2>
             {slug
               ? "Reviewed entry unavailable"
-              : "No reviewed entries released"}
+              : publicCardioEntities.some(
+                    (entry) => entry.entityType === entityType,
+                  )
+                ? "No published entries match your filters"
+                : "No published entries available"}
           </h2>
           <p>
-            Unpublished entries remain unavailable. Claims, suitability,
-            training doses and comparisons await sources, rights checks and
-            actual reviewer approval.
+            Try fewer filters or explore another library. Unpublished entries
+            remain unavailable until their sources, reuse rights and review
+            level are verified.
           </p>
           <p>
             <a href="/cardio/custom-plans/create">Create your own local plan</a>{" "}
@@ -213,6 +230,9 @@ export function KnowledgePage({
               <p key={c.id}>{c.text}</p>
             ))}
             <p>{e.limitations.join(" ")}</p>
+            {e.plan && (
+              <PublicPlanSchedule plan={e.plan} detailed={Boolean(slug)} />
+            )}
             <p>
               Personal-use publication · machine source verification · no
               independent human review.

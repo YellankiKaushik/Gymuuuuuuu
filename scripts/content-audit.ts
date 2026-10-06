@@ -1,7 +1,13 @@
 import { routeAuditInventory } from "./content/route-inventory";
 import { collectBrowserEvidence } from "./content/browser-report";
 import { publicRecipes } from "../src/features/recipes-meal-plans/public-records";
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import {
+  readFileSync,
+  writeFileSync,
+  mkdirSync,
+  readdirSync,
+  existsSync,
+} from "node:fs";
 import { createHash } from "node:crypto";
 import {
   muscleRecords,
@@ -31,6 +37,9 @@ import { buildPublicSearchDocuments } from "../src/features/search/public-source
 import publications from "../src/content/provenance/publications.json";
 import verifiedSources from "../src/content/provenance/verified-sources.json";
 import { validatePublicationReviews } from "../src/features/content-review/schema";
+import { foodSchema } from "../src/features/foods/schema";
+import { nutrientSchema } from "../src/features/nutrients/schema";
+import { comparisonFamilyFor } from "../src/features/search/comparison";
 type Row = {
   id: string;
   slug?: string;
@@ -42,15 +51,10 @@ const read = (path: string): unknown => JSON.parse(readFileSync(path, "utf8"));
 const content = (path: string) => read(`src/content/${path}.json`);
 const seeds = (path: string, key: string) =>
   (content(path) as Record<string, Row[]>)[key]!;
-const foods = content("foods/records") as (Row & {
-  compositionProfiles: {
-    nutrients: { value: number | null }[];
-    sourceRecords: unknown[];
-    portions: unknown[];
-  }[];
-  media?: unknown[];
-})[];
-const nutrients = content("nutrients/records") as Row[];
+const foods = foodSchema.array().parse(content("foods/records"));
+const nutrients = nutrientSchema.array().parse(content("nutrients/records"));
+const publicFoods = foods.filter((r) => r.status === "published");
+const publicNutrients = nutrients.filter((r) => r.status === "published");
 const groups: {
   module: string;
   identities: readonly Row[];
@@ -79,12 +83,12 @@ const groups: {
   {
     module: "foods",
     identities: content("foods/identities") as Row[],
-    public: foods.filter((r) => r.status === "published"),
+    public: publicFoods,
   },
   {
     module: "nutrients",
     identities: content("nutrients/identities") as Row[],
-    public: nutrients.filter((r) => r.status === "published"),
+    public: publicNutrients,
   },
   { module: "recipes", identities: publicRecipes, public: publicRecipes },
   {
@@ -136,7 +140,11 @@ const modules = groups.map((g) => {
           g.module === "foods"
             ? "Exact rights-cleared dataset mapping has not yet been verified"
             : "Source-backed factual record and machine publication review have not yet been completed",
-        classification: "incomplete_source_review",
+        classification:
+          g.module === "foods"
+            ? "missing_dataset_mapping"
+            : "missing_verified_factual_record",
+        disposition: "pending_content_work_not_a_permanent_licensing_block",
       })),
     humanReviewedIdentities: 0,
     reviewLevel: g.public.length ? "published_personal_use" : null,
@@ -193,13 +201,107 @@ const browserEvidence = collectBrowserEvidence(
   routeAuditInventory(tree, expectedSearch),
   read("src/data/search/search-manifest.json"),
 );
+const comparisonCoverage = groups.map((group) => {
+  const families = group.public.flatMap((record) => {
+    const doc = expectedSearch.find((d) => d.entityId === record.id);
+    if (!doc) return [];
+    const family = comparisonFamilyFor({
+      entityType: doc.entityType,
+      entityId: doc.entityId,
+      sourceModule: doc.sourceModule,
+      lastKnownTitle: doc.title,
+      lastKnownRoute: doc.route,
+      referenceStatus: "active",
+    });
+    return family ? [family] : [];
+  });
+  return {
+    module: group.module,
+    eligiblePublishedRecords: families.length,
+    families: [...new Set(families)],
+    hasAtLeastTwoCompatibleRecords: [...new Set(families)].some(
+      (family) => families.filter((f) => f === family).length >= 2,
+    ),
+    interpretation:
+      "Compatible family eligibility only; no winner or efficacy score.",
+  };
+});
+const mediaCoverage = groups.map((group) => ({
+  module: group.module,
+  instructionalMediaRequired: group.module === "exercises",
+  records: group.public.map((record) => {
+    const raw = record as Row & { media?: unknown; mediaIds?: unknown };
+    const entries = Array.isArray(raw.media) ? raw.media : [];
+    const assets = entries.flatMap((value: unknown) => {
+      if (!value || typeof value !== "object") return [];
+      const entry = value as Record<string, unknown>;
+      return [
+        {
+          url: typeof entry.url === "string" ? entry.url : null,
+          creator: typeof entry.credit === "string" ? entry.credit : null,
+          licence: typeof entry.license === "string" ? entry.license : null,
+          reviewDate:
+            typeof entry.reviewedAt === "string" ? entry.reviewedAt : null,
+          reviewStatus:
+            typeof entry.reviewStatus === "string" ? entry.reviewStatus : null,
+        },
+      ];
+    });
+    return {
+      id: record.id,
+      assets,
+      hasVisual: assets.length > 0,
+      unresolvedMediaIds: Array.isArray(raw.mediaIds) ? raw.mediaIds : [],
+      missingLocalAssets: assets
+        .filter(
+          (asset) =>
+            asset.url?.startsWith("/") && !existsSync(`public${asset.url}`),
+        )
+        .map((asset) => asset.url),
+      status: assets.length
+        ? "media_metadata_present"
+        : "no_record_visual_provided",
+    };
+  }),
+}));
+const brokenReferences = verifiedPublications.flatMap((record) =>
+  record.fields.flatMap((field) =>
+    field.sourceIds
+      .filter((id) => !verifiedSources.some((source) => source.id === id))
+      .map((id) => ({
+        module: record.module,
+        id: record.id,
+        field: field.path,
+        missingSourceId: id,
+      })),
+  ),
+);
 const report = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   milestone: "Phase 19 — Verified Content Completion",
   completionStatus: "in_progress",
   productionDeployment: "disabled",
   modules,
   sourceCoverage,
+  comparisonCoverage,
+  mediaCoverage,
+  brokenReferences,
+  publicationBlockSummary: modules.map((module) => ({
+    module: module.module,
+    missingVerifiedFactualRecords: module.blockedIdentities.filter(
+      (r) => r.classification === "missing_verified_factual_record",
+    ).length,
+    missingDatasetMappings: module.blockedIdentities.filter(
+      (r) => r.classification === "missing_dataset_mapping",
+    ).length,
+    publishedRecordsMissingSource:
+      sourceCoverage.find((r) => r.module === module.module)
+        ?.missingSourceProvenance.length ?? 0,
+    independentHumanReviewPending: module.publishedIdentities,
+    licensingBlockedIdentities: null,
+    licensingStatus:
+      "Source-level exclusions below; no unverified identity-to-licence assignment.",
+  })),
   sourceManifest: verifiedSources.map((s) => ({
     id: s.id,
     url: s.url,
@@ -226,8 +328,11 @@ const report = {
   implementedExportsAndBackupRestore: features(
     /(data-management|backup|export|csv|restore|portability)/,
   ),
-  foodProfiles: foods.reduce((n, f) => n + f.compositionProfiles.length, 0),
-  numericFoodValues: foods.reduce(
+  foodProfiles: publicFoods.reduce(
+    (n, f) => n + f.compositionProfiles.length,
+    0,
+  ),
+  numericFoodValues: publicFoods.reduce(
     (n, f) =>
       n +
       f.compositionProfiles.reduce(
@@ -236,6 +341,33 @@ const report = {
       ),
     0,
   ),
+  numericCoverage: {
+    foodRecordsWithComposition: publicFoods.filter(
+      (f) => f.compositionProfiles.length,
+    ).length,
+    nutrientArticlesWithReferenceRows: publicNutrients.filter(
+      (n) => n.referenceValues.length,
+    ).length,
+    nutrientReferenceRows: publicNutrients.reduce(
+      (sum, n) => sum + n.referenceValues.length,
+      0,
+    ),
+    publicRecipesWithCalculatedNutrition: publicRecipes.filter(
+      (r) => r.version.calculation.status !== "unavailable",
+    ).length,
+    exercisesWithContextualSetsAndRepetitions: exerciseRecords.filter(
+      (r) =>
+        r.contentStatus === "published" &&
+        r.programmingGuidance?.some((g) => g.setRange && g.repRange),
+    ).length,
+    publicCardioPlans: publicCardioEntities.filter((r) => r.plan).length,
+    publicCardioSourceSessions: publicCardioEntities.reduce(
+      (sum, r) => sum + (r.plan?.sessions.length ?? 0),
+      0,
+    ),
+    limitations:
+      "Structured numerical coverage only; unspecified values stay unavailable. No numerical anatomy activation or supplement dose prescription is inferred.",
+  },
   search: {
     staleEntries: [],
     validatedAgainst: "All current production publication adapters",
@@ -267,7 +399,30 @@ const report = {
   emptyKnowledgeModules: modules
     .filter((m) => m.publishedIdentities === 0)
     .map((m) => m.module),
-  missingFoodMedia: foods.filter((f) => !f.media?.length).map((f) => f.id),
+  missingFoodMedia: publicFoods
+    .filter((f) => !f.media?.length)
+    .map((f) => f.id),
+  missingMedia: mediaCoverage.flatMap((m) =>
+    m.records
+      .filter((r) => !r.hasVisual)
+      .map((r) => ({
+        module: m.module,
+        id: r.id,
+        instructionalMediaRequired: m.instructionalMediaRequired,
+      })),
+  ),
+  missingMediaFiles: mediaCoverage.flatMap((m) =>
+    m.records.flatMap((r) =>
+      r.missingLocalAssets.map((url) => ({ module: m.module, id: r.id, url })),
+    ),
+  ),
+  emptyKnowledgeCollections: [
+    ...modules.filter((m) => !m.publishedIdentities).map((m) => m.module),
+    ...(!publicRecoveryRoutines.length ? ["public-recovery-routines"] : []),
+    ...(!publicCardioEntities.some((r) => r.entityType === "cardio_modality")
+      ? ["public-cardio-modalities"]
+      : []),
+  ],
   browserAudit: browserEvidence,
   verification: {
     sourceAndRelationshipValidation: "npm run validate:content",

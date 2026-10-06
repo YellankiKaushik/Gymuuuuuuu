@@ -374,5 +374,77 @@
       "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
       "Source date is the displayed update date, not a new clinical review by this application."
     ]
+  },
+  {
+    "id": "nhs_running_plan_snapshot_2026",
+    "title": "Original nine-week Couch to 5K source schedule",
+    "publisher": "Department of Health and Social Care",
+    "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+    "sourceVersion": "Retrieved 2026-10-05; original page update/version date not supplied",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-05T20:07:51.072Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "open_government_licence",
+    "rightsReference": "https://www.nhs.uk/our-policies/terms-and-conditions/ sections 3.4–3.6; OGL v3.0. Exclusions checked at https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/. Public-sector attribution, original reference link and extraction date retained. No logo, stock image, audio, video or third-party asset reproduced.",
+    "limitations": [
+      "Numeric source schedule only; no endorsement or independent clinical review.",
+      "The original page update date is unavailable; extraction is dated and the archived numeric snapshot has the original HTML hash.",
+      "Targets remain separate from measured duration; completing the final timed run does not guarantee 5 km."
+    ]
+  },
+  {
+    "id": "gray_1918_shoulder_thorax",
+    "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+    "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+    "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+    "sourceVersion": "1918 historical edition; pp. 432–442",
+    "sourceDate": null,
+    "evidenceType": "historical_anatomy",
+    "extractedAt": "2026-10-05T20:40:27Z",
+    "lastReviewedAt": "2026-10-05",
+    "reuse": "public_domain_data",
+    "rightsReference": "https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+    "limitations": [
+      "Historical anatomical description; terminology is modernized in short summaries.",
+      "Not current training evidence, clinical guidance, individual variation estimates or muscle-activation evidence.",
+      "No independent human anatomy review.",
+      "Repository source extract SHA-256: d3b95fadf93bfb113b29cd6c34d08880c9e333bb815f59104dcbb16451da796f. OCR transcription can contain errors; source page remains the authority."
+    ]
+  },
+  {
+    "id": "nia_strength_guide_2018",
+    "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+    "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+    "sourceVersion": "March 2018; Publication No. 18-AG-4258",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T05:24:08Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "public_domain_data",
+    "rightsReference": "https://www.nia.nih.gov/about/policies",
+    "limitations": [
+      "NIA text reuse policy: public domain unless otherwise indicated; photos and credited artwork are excluded.",
+      "Historical older-adult education, not current evidence of hypertrophy protocols or individual suitability.",
+      "Publication month is known; exact publication day is not supplied.",
+      "No independent human technique or clinical review."
+    ]
+  },
+  {
+    "id": "original_strength_diagrams_v1",
+    "title": "Original Fitness OS source-cue movement schematics",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+    "sourceVersion": "1.0.0",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-06T05:24:08Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "original_work",
+    "rightsReference": "Original project SVG illustrations. No third-party artwork or tracing.",
+    "limitations": [
+      "Movement-cue schematics, not anatomical models, complete technique demonstrations or independent human review."
+    ]
   }
 ]

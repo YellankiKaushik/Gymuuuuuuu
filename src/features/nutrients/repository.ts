@@ -6,6 +6,7 @@ import type { Nutrient } from "./schema";
 import type { ReferenceRow, FrameworkDataset } from "./frameworks";
 import type { RankedFood } from "./ranking";
 import { nutrientIndex } from "./public-index";
+import { loadPublicJson } from "../content-review/public-json";
 export {
   nutrientIndex,
   nutrientReleaseReport,
@@ -19,8 +20,9 @@ const topics = import.meta.glob<{ default: unknown }>(
   frameworks = import.meta.glob<{ default: unknown }>(
     "../../content/nutrients/frameworks/*.json",
   ),
-  rankings = import.meta.glob<{ default: unknown }>(
+  rankingUrls = import.meta.glob<string>(
     "../../content/nutrients/rankings/*.json",
+    { query: "?url", import: "default", eager: true },
   );
 const topicCache = new Map<string, Promise<Nutrient | undefined>>();
 export async function getNutrientBySlug(slug: string) {
@@ -79,9 +81,29 @@ const rankedFoodSchema = z.strictObject({
   energyStatus: z.string().nullable(),
   portionStatus: z.string().nullable(),
 });
+const rankingCache = new Map<string, Promise<RankedFood[]>>();
+async function loadRankingData(id: string): Promise<RankedFood[]> {
+  const path = `../../content/nutrients/rankings/${id}.json`;
+  if (import.meta.env.SSR) {
+    const serverRankings = import.meta.glob<{ default: unknown }>(
+      "../../content/nutrients/rankings/*.json",
+    );
+    const loader = serverRankings[path];
+    if (!loader) return [];
+    return rankedFoodSchema.array().parse((await loader()).default);
+  }
+  const url = rankingUrls[path];
+  return url ? loadPublicJson(url, rankedFoodSchema.array()) : [];
+}
 export async function loadFoodRankings(id: string): Promise<RankedFood[]> {
   if (!manifest[id]) return [];
-  const loader = rankings[`../../content/nutrients/rankings/${id}.json`];
-  if (!loader) return [];
-  return rankedFoodSchema.array().parse((await loader()).default);
+  let pending = rankingCache.get(id);
+  if (!pending) {
+    pending = loadRankingData(id).catch((error: unknown) => {
+      rankingCache.delete(id);
+      throw error;
+    });
+    rankingCache.set(id, pending);
+  }
+  return pending;
 }
