@@ -140,6 +140,9 @@ export const nutrientNormativeSchema = z.strictObject({
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
             "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education",
           ]),
         )
         .optional(),
@@ -158,6 +161,9 @@ export const nutrientNormativeSchema = z.strictObject({
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
             "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education",
           ]),
         )
         .min(1),
@@ -212,6 +218,9 @@ export const nutrientNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
       status: z.enum([
         "source_verified",
@@ -270,6 +279,9 @@ export const nutrientNormativeSchema = z.strictObject({
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
             "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education",
           ]),
         )
         .min(1),
@@ -293,6 +305,9 @@ export const nutrientNormativeSchema = z.strictObject({
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
               "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education",
             ]),
           )
           .min(1),
@@ -316,6 +331,9 @@ export const nutrientNormativeSchema = z.strictObject({
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
               "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education",
             ]),
           )
           .min(1),
@@ -347,6 +365,9 @@ export const nutrientNormativeSchema = z.strictObject({
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
             "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education",
           ]),
         )
         .min(1),
@@ -381,6 +402,9 @@ export const nutrientNormativeSchema = z.strictObject({
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
             "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education",
           ]),
         )
         .min(1),
@@ -420,6 +444,9 @@ export const nutrientNormativeSchema = z.strictObject({
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
             "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education",
           ]),
         )
         .min(1),
@@ -436,6 +463,9 @@ export const nutrientNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
       locator: z.string().min(2).max(500),
       accessedAt: z
@@ -483,6 +513,9 @@ export const nutrientFormNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
     )
     .optional(),
@@ -499,6 +532,9 @@ export const functionClaimNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
     )
     .min(1),
@@ -558,6 +594,9 @@ export const referenceValueNormativeSchema = z.strictObject({
     "icmr_nin_rda_ear_2020",
     "efsa_drv",
     "usda_fooddata_central",
+    "fda_nutrition_education",
+    "fao_food_energy",
+    "nhs_food_education",
   ]),
   status: z.enum([
     "source_verified",
@@ -607,6 +646,9 @@ export const absorptionFactorNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
     )
     .min(1),
@@ -626,6 +668,9 @@ export const deficiencyExcessNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
     )
     .min(1),
@@ -654,6 +699,9 @@ export const interactionNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
     )
     .min(1),
@@ -686,6 +734,9 @@ export const athleticItemNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
     )
     .min(1),
@@ -723,6 +774,9 @@ export const evidenceClaimNormativeSchema = z.strictObject({
         "icmr_nin_rda_ear_2020",
         "efsa_drv",
         "usda_fooddata_central",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
       ]),
     )
     .min(1),
@@ -737,6 +791,9 @@ export const sourceCitationNormativeSchema = z.strictObject({
     "icmr_nin_rda_ear_2020",
     "efsa_drv",
     "usda_fooddata_central",
+    "fda_nutrition_education",
+    "fao_food_energy",
+    "nhs_food_education",
   ]),
   locator: z.string().min(2).max(500),
   accessedAt: z

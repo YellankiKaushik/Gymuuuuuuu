@@ -58,7 +58,15 @@ for (const food of verifiedFoodRecords.filter((f) => f.status === "published"))
   });
 for (const n of nutrientJson.filter((n) => n.status === "published")) {
   const educationSources = n.sources
-    .filter((s) => s.sourceId === "nih_ods_fact_sheets")
+    .filter((s) =>
+      [
+        "nih_ods_fact_sheets",
+        "fda_nutrition_education",
+        "fao_food_energy",
+        "nhs_food_education",
+        "efsa_drv",
+      ].includes(s.sourceId),
+    )
     .map((s) => {
       const approved = sources.find(
         (source) => source.url.toLowerCase() === s.locator.toLowerCase(),

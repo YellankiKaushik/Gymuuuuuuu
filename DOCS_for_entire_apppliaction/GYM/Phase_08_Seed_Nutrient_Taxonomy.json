@@ -136,6 +136,30 @@
         "url": "https://fdc.nal.usda.gov/download-datasets/",
         "usage": "Phase 07 food composition links and source-backed food rankings.",
         "rights": "CC0 data with requested attribution."
+      },
+      {
+        "id": "fda_nutrition_education",
+        "name": "FDA Interactive Nutrition Facts Label education",
+        "authority": "US Food and Drug Administration",
+        "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/",
+        "usage": "Qualitative food-label education only; separate from FDA Daily Value reference rows and personal needs.",
+        "rights": "Brief original factual paraphrases with attribution; no source diagrams or bulk text copied."
+      },
+      {
+        "id": "fao_food_energy",
+        "name": "FAO Food energy: methods of analysis and conversion factors",
+        "authority": "Food and Agriculture Organization of the United Nations",
+        "url": "https://www.fao.org/4/y5022e/y5022e00.htm",
+        "usage": "Documented energy units and carbohydrate measurement definitions; not personal intake targets.",
+        "rights": "Brief original factual paraphrases with attribution; no tables or figures reproduced."
+      },
+      {
+        "id": "nhs_food_education",
+        "name": "NHS water, drinks and hydration education",
+        "authority": "National Health Service",
+        "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+        "usage": "General hydration education with source-age limitations, not individual fluid prescriptions.",
+        "rights": "Text attribution under the NHS Open Government Licence policy; no third-party images copied."
       }
     ],
     "phase07CompatibleCount": 44,

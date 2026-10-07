@@ -1,0 +1,349 @@
+[
+  {
+    "id": "energy_kcal",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_calories",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/calories.cfm",
+      "version": null,
+      "sourceDate": null
+    },
+    "role": "Food energy is supplied by carbohydrate, fat, protein and alcohol. Calories on a food label refer to its stated serving.",
+    "foods": "Use the stated food profile and serving mass; a fat-free or no-added-sugar label does not mean calorie-free.",
+    "limitation": "The FDA label guide is general education; its reference diet is not an individual calorie prescription.",
+    "deficiency": null,
+    "excess": null,
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "energy_kj",
+    "source": {
+      "authority": "fao_food_energy",
+      "verifiedSourceId": "fao_food_energy_chapter3_2003",
+      "url": "https://www.fao.org/4/Y5022E/y5022e04.htm",
+      "version": "Food and Nutrition Paper 77, 2003",
+      "sourceDate": null
+    },
+    "role": "Kilojoules and kilocalories express the same food-energy quantity in different units; they are not separate nutrients.",
+    "foods": "FAO distinguishes food-energy measurement and conversion methods. Keep the exact dataset energy values and method.",
+    "limitation": "Food-specific energy factors can differ from general factors; no missing food-energy value is reconstructed here.",
+    "deficiency": null,
+    "excess": null,
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": [
+      {
+        "category": "conversion",
+        "text": "FAO specifies the exact unit conversion: 1 kcal equals 4.184 kJ. This unit relationship does not supply a missing nutrient measurement."
+      }
+    ]
+  },
+  {
+    "id": "alcohol_g",
+    "source": {
+      "authority": "fao_food_energy",
+      "verifiedSourceId": "fao_food_energy_chapter3_2003",
+      "url": "https://www.fao.org/4/Y5022E/y5022e04.htm",
+      "version": "Food and Nutrition Paper 77, 2003",
+      "sourceDate": null
+    },
+    "role": "Alcohol contributes food energy; its energy contribution is distinct from protein, carbohydrate and fat.",
+    "foods": "The FAO methodology discusses alcohol as an energy-contributing food component.",
+    "limitation": "An energy-conversion method does not establish that drinking is beneficial or safe; this page supplies no drinking or treatment advice.",
+    "deficiency": null,
+    "excess": null,
+    "absorption": null,
+    "qualitativeOnly": true,
+    "extraClaims": []
+  },
+  {
+    "id": "water_g",
+    "source": {
+      "authority": "nhs_food_education",
+      "verifiedSourceId": "nhs_water_drinks_2023",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+      "version": "Page last reviewed 17 May 2023; next review was due 17 May 2026",
+      "sourceDate": "2023-05-17"
+    },
+    "role": "Fluid intake helps maintain hydration; drinks and fluid-containing foods contribute.",
+    "foods": "The NHS identifies water and other drinks, as well as fluid from food, as contributors to hydration.",
+    "limitation": "Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue.",
+    "deficiency": "The NHS describes inadequate fluid intake as a cause of dehydration. This article does not diagnose dehydration or quantify an individual deficit.",
+    "excess": "This retained NHS source gives hydration guidance rather than a complete excess-fluid safety assessment. No safe maximum or individual drinking prescription is established here.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "protein_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_protein_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Protein_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Protein consists of linked amino acids and supports the building and repair of cells and body tissues.",
+    "foods": "FDA lists legumes, dairy, eggs, meat, nuts, seeds, seafood and soy foods as protein sources.",
+    "limitation": "Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods.",
+    "deficiency": "The source describes protein functions and food sources; it does not provide criteria to diagnose inadequate protein intake from a food log.",
+    "excess": "This label-education source does not establish an individual protein ceiling or a medical safety assessment; no upper limit is inferred.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "carbohydrate_total_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_carbohydrate_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalCarbohydrate_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Total carbohydrate on the FDA label includes dietary fiber, total sugars and sugar alcohols; carbohydrate supplies energy.",
+    "foods": "FDA lists plant foods and dairy products among carbohydrate-containing foods.",
+    "limitation": "Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses.",
+    "deficiency": "The source provides label and energy education, rather than individual diagnostic criteria for carbohydrate inadequacy.",
+    "excess": "The source does not establish a universal carbohydrate toxicity threshold or an individual intake ceiling.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "carbohydrate_available_g",
+    "source": {
+      "authority": "fao_food_energy",
+      "verifiedSourceId": "fao_food_energy_chapter2_2003",
+      "url": "https://www.fao.org/4/y5022e/y5022e03.htm",
+      "version": "Food and Nutrition Paper 77, 2003",
+      "sourceDate": null
+    },
+    "role": "Available carbohydrate is the carbohydrate fraction digested by human enzymes, absorbed and metabolized; it excludes dietary fiber.",
+    "foods": "FAO distinguishes summing measured components from calculating carbohydrate by difference; the method must be documented.",
+    "limitation": "Available carbohydrate is not a glycemic-index result. Missing fiber or component data cannot establish a reliable total-minus-fiber calculation.",
+    "deficiency": null,
+    "excess": null,
+    "absorption": null,
+    "qualitativeOnly": true,
+    "extraClaims": []
+  },
+  {
+    "id": "fiber_total_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_fiber_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_DietaryFiber_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Dietary fiber is carbohydrate that is not readily digested in the small intestine; soluble and insoluble forms have different properties.",
+    "foods": "FDA lists legumes, fruit, nuts, seeds, vegetables and whole grains as fiber sources.",
+    "limitation": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+    "deficiency": "FDA describes fiber in relation to bowel function and diet quality; this does not diagnose a deficiency or the cause of bowel symptoms.",
+    "excess": "This source is not an individual digestive-tolerance assessment and supplies no universal fiber toxicity threshold.",
+    "absorption": "FDA describes soluble fiber forming a gel and being broken down by intestinal bacteria, while insoluble fiber passes relatively intact. These are broad distinctions, not a guaranteed response to every fiber ingredient.",
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "sugars_total_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_sugars_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Total%26AddedSugars_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Total sugars include naturally occurring sugars and added sugars. Sugars contribute carbohydrate energy.",
+    "foods": "The FDA distinguishes sugars naturally present in milk and fruit from sugars added to foods or drinks.",
+    "limitation": "A total-sugar value does not reveal the added-sugar amount; unavailable added sugars must remain unavailable.",
+    "deficiency": null,
+    "excess": null,
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "added_sugars_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_sugars_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Total%26AddedSugars_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Added sugars include sugars added during food preparation or processing, including certain syrups, honey and concentrated juices.",
+    "foods": "FDA identifies sweetened foods and drinks as contexts for added sugars.",
+    "limitation": "Do not infer added sugars from total sugars, sweetness or an ingredient name alone. The exact source food profile is required.",
+    "deficiency": null,
+    "excess": "FDA explains that added sugars can make it harder to obtain sufficient nutrients within an energy allowance. Its label reference is not a personal prescription.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "fat_total_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_total_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalFat_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Total fat includes saturated, trans, monounsaturated and polyunsaturated fats; fat supplies energy and supports cell membranes.",
+    "foods": "FDA describes fat in both animal and plant foods.",
+    "limitation": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+    "deficiency": "The source explains physiological roles of fat; it does not provide diagnostic criteria for inadequate fat intake from a food log.",
+    "excess": "This label-education source is not an individual fat-intake ceiling or clinical risk assessment.",
+    "absorption": "FDA explains that dietary fat helps absorption of vitamins A, D, E and K. This does not supply a personal fat dose or an absorption percentage.",
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "fat_saturated_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_saturated_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_SaturatedFat_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Saturated fat is a component of total dietary fat. FDA distinguishes it from unsaturated and trans fats.",
+    "foods": "FDA lists animal foods and tropical plant oils, including coconut and palm oils, as saturated-fat sources.",
+    "limitation": "Plant origin does not automatically mean a fat is predominantly unsaturated.",
+    "deficiency": "This source does not establish a saturated-fat deficiency diagnosis or a separate personal minimum requirement.",
+    "excess": "FDA describes replacing saturated fat with unsaturated fat in relation to lower LDL cholesterol. The replacement context matters; no individual disease-risk prediction is made.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "fat_monounsaturated_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_unsaturated_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_MUFA%26PUFA_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Monounsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+    "foods": "FDA lists avocados, nuts, olive oil, seeds and other plant oils as monounsaturated-fat sources.",
+    "limitation": "These food examples do not establish exact composition for every cultivar, oil blend or preparation.",
+    "deficiency": "This source does not establish a distinct monounsaturated-fat deficiency diagnosis or personal minimum requirement.",
+    "excess": "FDA discusses replacing saturated fat with unsaturated fat; this does not endorse adding unlimited oil or establish an individual safe ceiling.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "fat_polyunsaturated_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_unsaturated_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_MUFA%26PUFA_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Polyunsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+    "foods": "FDA lists fish, nuts, seeds and plant oils as polyunsaturated-fat sources.",
+    "limitation": "Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts.",
+    "deficiency": "The source does not establish that a low total-polyunsaturated-fat log diagnoses a particular essential-fatty-acid deficiency.",
+    "excess": "FDA discusses replacing saturated fat with unsaturated fat; this is not an unlimited-intake recommendation or an individual safe ceiling.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "trans_fat_g",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_trans_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TransFat_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Trans fat is a component of dietary fat found naturally in some ruminant foods and historically in partially hydrogenated oils.",
+    "foods": "FDA distinguishes naturally occurring trans fat from trans fat produced through partial hydrogenation.",
+    "limitation": "Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction.",
+    "deficiency": "FDA does not establish a trans-fat deficiency diagnosis or a requirement to consume trans fat.",
+    "excess": "FDA links higher trans-fat intake with higher LDL cholesterol and cardiovascular risk; this is general risk education, not an individual diagnosis.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "omega_6_g",
+    "source": {
+      "authority": "nih_ods_fact_sheets",
+      "verifiedSourceId": "nih_ods_omega3_hp_2025",
+      "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+      "version": "Updated 22 August 2025",
+      "sourceDate": "2025-08-22"
+    },
+    "role": "Omega-6 fatty acids are a polyunsaturated-fat family that includes linoleic acid and arachidonic acid. Linoleic acid must be obtained from the diet.",
+    "foods": "The NIH source identifies linoleic acid as an essential fatty acid; this page does not infer total omega-6 composition from separate fatty-acid values.",
+    "limitation": "The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created.",
+    "deficiency": "The source establishes that linoleic acid is essential; an unavailable total omega-6 food value or a short food log does not diagnose essential-fatty-acid deficiency.",
+    "excess": "No universal omega-6-to-omega-3 ratio or personal omega-6 ceiling is derived from this source.",
+    "absorption": null,
+    "qualitativeOnly": true,
+    "extraClaims": []
+  },
+  {
+    "id": "cholesterol_mg",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_cholesterol_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Cholesterol_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Cholesterol is used in cell membranes and in producing bile acids and some hormones; the body also makes cholesterol.",
+    "foods": "FDA identifies animal foods as sources of dietary cholesterol.",
+    "limitation": "Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests.",
+    "deficiency": "The source describes body production and physiological roles; it does not establish a dietary cholesterol deficiency diagnosis.",
+    "excess": "FDA provides label and cardiovascular-risk education rather than an individual cholesterol intake prescription or blood-risk diagnosis.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "sodium_mg",
+    "source": {
+      "authority": "fda_nutrition_education",
+      "verifiedSourceId": "fda_label_sodium_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Sodium_October2021.pdf",
+      "version": "October 2021",
+      "sourceDate": null
+    },
+    "role": "Sodium supports fluid balance and normal muscle and nervous-system function. Sodium is not the same substance as table salt.",
+    "foods": "FDA describes sodium in packaged foods, added salt and other foods.",
+    "limitation": "A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred.",
+    "deficiency": "The source gives food-label education; it does not diagnose low blood sodium or determine an individual replacement need.",
+    "excess": "FDA describes higher sodium intake in relation to high blood pressure risk. Its label limit is not an individual sodium prescription.",
+    "absorption": null,
+    "qualitativeOnly": false,
+    "extraClaims": []
+  },
+  {
+    "id": "chloride_mg",
+    "source": {
+      "authority": "efsa_drv",
+      "verifiedSourceId": "efsa_chloride_2019",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5779",
+      "version": "EFSA Journal 2019;17(9):5779; doi:10.2903/j.efsa.2019.5779",
+      "sourceDate": "2019-09-04"
+    },
+    "role": "Chloride supports fluid and acid-base balance, muscle and nervous-system activity, and fluid transport.",
+    "foods": "EFSA identifies sodium chloride as the major dietary chloride source in the European context discussed.",
+    "limitation": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+    "deficiency": "EFSA describes dietary chloride deficiency as rare in its assessed context. This does not interpret blood chloride or diagnose symptoms.",
+    "excess": "The retained EFSA reference opinion does not establish an individual chloride ceiling here; numeric reference values remain unavailable pending separate framework validation.",
+    "absorption": "EFSA describes efficient chloride absorption and kidney excretion linked to sodium and potassium balance; no individual absorption percentage is supplied.",
+    "qualitativeOnly": true,
+    "extraClaims": []
+  }
+]

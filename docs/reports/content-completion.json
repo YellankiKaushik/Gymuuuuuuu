@@ -2954,143 +2954,9 @@
     {
       "module": "nutrients",
       "totalIdentities": 51,
-      "publishedIdentities": 32,
-      "draftIdentities": 19,
-      "blockedIdentities": [
-        {
-          "id": "energy_kcal",
-          "slug": "energy",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "energy_kj",
-          "slug": "energy-kilojoules",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "water_g",
-          "slug": "water",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "alcohol_g",
-          "slug": "alcohol",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "protein_g",
-          "slug": "protein",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "carbohydrate_total_g",
-          "slug": "total-carbohydrate",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "carbohydrate_available_g",
-          "slug": "available-carbohydrate",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "fiber_total_g",
-          "slug": "dietary-fibre",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "sugars_total_g",
-          "slug": "total-sugars",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "added_sugars_g",
-          "slug": "added-sugars",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "fat_total_g",
-          "slug": "total-fat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "fat_saturated_g",
-          "slug": "saturated-fat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "fat_monounsaturated_g",
-          "slug": "monounsaturated-fat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "fat_polyunsaturated_g",
-          "slug": "polyunsaturated-fat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "trans_fat_g",
-          "slug": "trans-fat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "omega_6_g",
-          "slug": "omega-6-fatty-acids",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "cholesterol_mg",
-          "slug": "cholesterol",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "sodium_mg",
-          "slug": "sodium",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "chloride_mg",
-          "slug": "chloride",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        }
-      ],
+      "publishedIdentities": 51,
+      "draftIdentities": 0,
+      "blockedIdentities": [],
       "humanReviewedIdentities": 0,
       "reviewLevel": "published_personal_use"
     },
@@ -7311,9 +7177,9 @@
     },
     {
       "module": "nutrients",
-      "published": 32,
-      "withPublicationProvenance": 32,
-      "inSearch": 32,
+      "published": 51,
+      "withPublicationProvenance": 51,
+      "inSearch": 51,
       "missingSourceProvenance": []
     },
     {
@@ -7398,7 +7264,7 @@
     },
     {
       "module": "nutrients",
-      "eligiblePublishedRecords": 32,
+      "eligiblePublishedRecords": 51,
       "families": [
         "nutrients"
       ],
@@ -10467,6 +10333,158 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "energy_kcal",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "energy_kj",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "alcohol_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "water_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "protein_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "carbohydrate_total_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "carbohydrate_available_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "fiber_total_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "sugars_total_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "added_sugars_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "fat_total_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "fat_saturated_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "fat_monounsaturated_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "fat_polyunsaturated_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "trans_fat_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "omega_6_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "cholesterol_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "sodium_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "chloride_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10830,10 +10848,10 @@
     },
     {
       "module": "nutrients",
-      "missingVerifiedFactualRecords": 19,
+      "missingVerifiedFactualRecords": 0,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 32,
+      "independentHumanReviewPending": 51,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -11773,6 +11791,232 @@
       "limitations": [
         "Excluded from content ingestion and publication. No factual record or media may cite this entry as an approved source.",
         "This source-level exclusion is not proof that any particular anatomy identity lacks a permitted alternative."
+      ]
+    },
+    {
+      "id": "fda_label_protein_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Protein_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_carbohydrate_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalCarbohydrate_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_fiber_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_DietaryFiber_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_total_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalFat_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_saturated_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_SaturatedFat_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_unsaturated_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_MUFA%26PUFA_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_trans_fat_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TransFat_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_sodium_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Sodium_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_cholesterol_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Cholesterol_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_sugars_2021",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Total%26AddedSugars_October2021.pdf",
+      "version": "October 2021",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_calories",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/calories.cfm",
+      "version": null,
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fao_food_energy_chapter3_2003",
+      "url": "https://www.fao.org/4/Y5022E/y5022e04.htm",
+      "version": "Food and Nutrition Paper 77, 2003",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fao_food_energy_chapter2_2003",
+      "url": "https://www.fao.org/4/y5022e/y5022e03.htm",
+      "version": "Food and Nutrition Paper 77, 2003",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "nhs_water_drinks_2023",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+      "version": "Page last reviewed 17 May 2023; next review was due 17 May 2026",
+      "reuse": "open_government_licence",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects.",
+        "The displayed next-review date is past; extraction in 2026 does not make this a 2026 clinical update."
+      ]
+    },
+    {
+      "id": "nih_ods_omega3_hp_2025",
+      "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+      "version": "Updated 22 August 2025",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "efsa_chloride_2019",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5779",
+      "version": "EFSA Journal 2019;17(9):5779; doi:10.2903/j.efsa.2019.5779",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T16:22:19Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects.",
+        "Chloride reference values were derived from sodium on an equimolar basis because evidence did not support direct derivation; no sodium-to-chloride food mass conversion is imported."
       ]
     }
   ],
@@ -13098,8 +13342,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 525,
-    "factualRecords": 397
+    "documents": 544,
+    "factualRecords": 416
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -15117,6 +15361,101 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "nutrients",
+      "id": "energy_kcal",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "energy_kj",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "alcohol_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "water_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "protein_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "carbohydrate_total_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "carbohydrate_available_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "fiber_total_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "sugars_total_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "added_sugars_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "fat_total_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "fat_saturated_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "fat_monounsaturated_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "fat_polyunsaturated_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "trans_fat_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "omega_6_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "cholesterol_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "sodium_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "chloride_mg",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "recipes",
       "id": "public_recipe_chickpea_cucumber_bowl",
       "instructionalMediaRequired": false
@@ -15298,11 +15637,11 @@
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-07T16:18:50.702Z",
-    "expected": 579,
+    "buildDate": "2026-10-07T16:31:17.489Z",
+    "expected": 598,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 579,
+    "unmeasured": 598,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -18569,6 +18908,120 @@
       },
       {
         "path": "/nutrients/folic-acid",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/energy",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/energy-kilojoules",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/alcohol",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/water",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/protein",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/total-carbohydrate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/available-carbohydrate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/dietary-fibre",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/total-sugars",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/added-sugars",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/total-fat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/saturated-fat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/monounsaturated-fat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/polyunsaturated-fat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/trans-fat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/omega-6-fatty-acids",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/cholesterol",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/sodium",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/chloride",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

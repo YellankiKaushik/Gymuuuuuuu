@@ -3,10 +3,10 @@
   "adapterVersion": "fitness-os-native-index-v1",
   "normalizationVersion": "unicode-nfkc-token-v1",
   "rankingVersion": "field-weights-exact-prefix-bonus-v1",
-  "canonicalDocumentHash": "98326ae106fd3f4c4a57cdfcffb2c95f6f81f3e0704f928549c180a4d7106547",
-  "indexHash": "593668ec1a3d9a3f5ba6e79af5cdade03e16f73c7001fcbdbd0dca7f6c6a0021",
-  "indexVersion": "b22a4bebb610ec6ee1d09b7b8675532ddb5bb459bbee322bf5450509e63e074f",
-  "documentCount": 525,
+  "canonicalDocumentHash": "7ed18b8964260ffa2ed537a6e298422e8eee6717f182f1cadac92e99269d8765",
+  "indexHash": "c89411f419d039fabad0c7fb2b147acb91911e8247f84a2fe01337e2256b2d67",
+  "indexVersion": "deaa11ca9e29d758889d3c9b5789ddcd513bcdaead1c5cb789c2d854c771e499",
+  "documentCount": 544,
   "countsByEntityType": {
     "route": 124,
     "muscle": 70,
@@ -15,7 +15,7 @@
     "workout_program": 1,
     "workout_session": 0,
     "food": 243,
-    "nutrient": 32,
+    "nutrient": 51,
     "diet_plan": 0,
     "recipe": 24,
     "meal_plan_template": 3,
@@ -35,6 +35,6 @@
     "body_measurement": 0,
     "dashboard_widget": 4
   },
-  "builtAt": "2026-10-07T16:00:17.000Z",
+  "builtAt": "2026-10-07T16:20:01.000Z",
   "locale": "en"
 }

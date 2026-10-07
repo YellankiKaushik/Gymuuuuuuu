@@ -155,7 +155,7 @@ writeFileSync(
 const report = {
   schemaVersion: 1,
   transformVersion: "1.0.0",
-  draft: identities.filter((n) => n.status === "draft_identity").length,
+  draft: identities.filter((n) => !published.some((p) => p.id === n.id)).length,
   partial: records.filter((n) => n.contentStatus === "partial").length,
   published: published.length,
   referenceRows: published.reduce(

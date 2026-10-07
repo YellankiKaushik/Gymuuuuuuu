@@ -10911,6 +10911,515 @@
     "contentHash": "0effdfe86a71cb4091ea14832a9a8926c5369a5164b1b0864c039bda90765c67"
   },
   {
+    "documentId": "nutrient:energy_kcal",
+    "entityType": "nutrient",
+    "entityId": "energy_kcal",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/energy",
+    "title": "Energy",
+    "normalizedTitle": "energy",
+    "aliases": [
+      "calories",
+      "kilocalories"
+    ],
+    "normalizedAliases": [
+      "calories",
+      "kilocalories"
+    ],
+    "summary": "",
+    "keywords": [
+      "calories",
+      "kilocalories"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "6e45f2631768e820f0fbf79400779f9421fca9455802aa7c5f3e3c30eebce6c3"
+  },
+  {
+    "documentId": "nutrient:energy_kj",
+    "entityType": "nutrient",
+    "entityId": "energy_kj",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/energy-kilojoules",
+    "title": "Energy in kilojoules",
+    "normalizedTitle": "energy in kilojoules",
+    "aliases": [
+      "kilojoules",
+      "kJ"
+    ],
+    "normalizedAliases": [
+      "kilojoules",
+      "kj"
+    ],
+    "summary": "",
+    "keywords": [
+      "kilojoules",
+      "kJ"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "740e57f0868a15be4d326590f0d9e34a39d541548c9f35a1d357e4e42dd8b60c"
+  },
+  {
+    "documentId": "nutrient:alcohol_g",
+    "entityType": "nutrient",
+    "entityId": "alcohol_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/alcohol",
+    "title": "Alcohol",
+    "normalizedTitle": "alcohol",
+    "aliases": [
+      "ethanol"
+    ],
+    "normalizedAliases": [
+      "ethanol"
+    ],
+    "summary": "",
+    "keywords": [
+      "ethanol"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "78d8b5435df7d3c19dfc663a315e9e7556cb7d6b2710d21d190fa1b9f3e910de"
+  },
+  {
+    "documentId": "nutrient:water_g",
+    "entityType": "nutrient",
+    "entityId": "water_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/water",
+    "title": "Water",
+    "normalizedTitle": "water",
+    "aliases": [
+      "hydration"
+    ],
+    "normalizedAliases": [
+      "hydration"
+    ],
+    "summary": "",
+    "keywords": [
+      "hydration"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "dded02f179d2942bc6242c6761d459652f4cd278ebe146b5e39ce385c4d9fc57"
+  },
+  {
+    "documentId": "nutrient:protein_g",
+    "entityType": "nutrient",
+    "entityId": "protein_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/protein",
+    "title": "Protein",
+    "normalizedTitle": "protein",
+    "aliases": [
+      "dietary protein"
+    ],
+    "normalizedAliases": [
+      "dietary protein"
+    ],
+    "summary": "",
+    "keywords": [
+      "dietary protein"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "2210c07849cca3a9c0d93d5cd527f6bd002acb26875e283dc7a78b4dba58e8ca"
+  },
+  {
+    "documentId": "nutrient:carbohydrate_total_g",
+    "entityType": "nutrient",
+    "entityId": "carbohydrate_total_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/total-carbohydrate",
+    "title": "Total carbohydrate",
+    "normalizedTitle": "total carbohydrate",
+    "aliases": [
+      "carbohydrates",
+      "carbs"
+    ],
+    "normalizedAliases": [
+      "carbohydrates",
+      "carbs"
+    ],
+    "summary": "",
+    "keywords": [
+      "carbohydrates",
+      "carbs"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "e8e6f0c7d78f1ffa39c8d953db511e48b512bedd67dd0ac29d46f83adac8df26"
+  },
+  {
+    "documentId": "nutrient:carbohydrate_available_g",
+    "entityType": "nutrient",
+    "entityId": "carbohydrate_available_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/available-carbohydrate",
+    "title": "Available carbohydrate",
+    "normalizedTitle": "available carbohydrate",
+    "aliases": [
+      "digestible carbohydrate",
+      "available carbs"
+    ],
+    "normalizedAliases": [
+      "digestible carbohydrate",
+      "available carbs"
+    ],
+    "summary": "",
+    "keywords": [
+      "digestible carbohydrate",
+      "available carbs"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "ab23e9608fef0d4cfde69b267dce0b1055272a498c5dd157f3a18d2c4fa73c78"
+  },
+  {
+    "documentId": "nutrient:fiber_total_g",
+    "entityType": "nutrient",
+    "entityId": "fiber_total_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/dietary-fibre",
+    "title": "Dietary fibre",
+    "normalizedTitle": "dietary fibre",
+    "aliases": [
+      "dietary fiber",
+      "fibre",
+      "fiber"
+    ],
+    "normalizedAliases": [
+      "dietary fiber",
+      "fibre",
+      "fiber"
+    ],
+    "summary": "",
+    "keywords": [
+      "dietary fiber",
+      "fibre",
+      "fiber"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "bd7c6d912d8696ef459f55fb7aa0131aaafa426805bde498664af9278e785fc6"
+  },
+  {
+    "documentId": "nutrient:sugars_total_g",
+    "entityType": "nutrient",
+    "entityId": "sugars_total_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/total-sugars",
+    "title": "Total sugars",
+    "normalizedTitle": "total sugars",
+    "aliases": [
+      "sugars"
+    ],
+    "normalizedAliases": [
+      "sugars"
+    ],
+    "summary": "",
+    "keywords": [
+      "sugars"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "d86d6eee2b651a7438a5de96d6d8f1543b257f8e9bfb3f2b57986474016cc9f9"
+  },
+  {
+    "documentId": "nutrient:added_sugars_g",
+    "entityType": "nutrient",
+    "entityId": "added_sugars_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/added-sugars",
+    "title": "Added sugars",
+    "normalizedTitle": "added sugars",
+    "aliases": [
+      "free sugars in some frameworks"
+    ],
+    "normalizedAliases": [
+      "free sugars in some frameworks"
+    ],
+    "summary": "",
+    "keywords": [
+      "free sugars in some frameworks"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "9976c68ff34a1cb305f2e64dabdcbf57071f51691c9ea4723fe7c0b9eff4c050"
+  },
+  {
+    "documentId": "nutrient:fat_total_g",
+    "entityType": "nutrient",
+    "entityId": "fat_total_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/total-fat",
+    "title": "Total fat",
+    "normalizedTitle": "total fat",
+    "aliases": [
+      "dietary fat",
+      "lipids"
+    ],
+    "normalizedAliases": [
+      "dietary fat",
+      "lipids"
+    ],
+    "summary": "",
+    "keywords": [
+      "dietary fat",
+      "lipids"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "efd46d2dfc5e978bd0dfdcbc7961ec1ee0e3cab48073eeb0b23cf0f124733d4b"
+  },
+  {
+    "documentId": "nutrient:fat_saturated_g",
+    "entityType": "nutrient",
+    "entityId": "fat_saturated_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/saturated-fat",
+    "title": "Saturated fat",
+    "normalizedTitle": "saturated fat",
+    "aliases": [
+      "saturated fatty acids",
+      "SFA"
+    ],
+    "normalizedAliases": [
+      "saturated fatty acids",
+      "sfa"
+    ],
+    "summary": "",
+    "keywords": [
+      "saturated fatty acids",
+      "SFA"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "075a403dcbbc4e499dc6020a6e21c37f0cd55a3a22d483de9fab25ac4b580688"
+  },
+  {
+    "documentId": "nutrient:fat_monounsaturated_g",
+    "entityType": "nutrient",
+    "entityId": "fat_monounsaturated_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/monounsaturated-fat",
+    "title": "Monounsaturated fat",
+    "normalizedTitle": "monounsaturated fat",
+    "aliases": [
+      "MUFA"
+    ],
+    "normalizedAliases": [
+      "mufa"
+    ],
+    "summary": "",
+    "keywords": [
+      "MUFA"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "b783a3df2ba738b2ae177aa66e7aaf82f9e4e0c0623b095a4af728bedabc2812"
+  },
+  {
+    "documentId": "nutrient:fat_polyunsaturated_g",
+    "entityType": "nutrient",
+    "entityId": "fat_polyunsaturated_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/polyunsaturated-fat",
+    "title": "Polyunsaturated fat",
+    "normalizedTitle": "polyunsaturated fat",
+    "aliases": [
+      "PUFA"
+    ],
+    "normalizedAliases": [
+      "pufa"
+    ],
+    "summary": "",
+    "keywords": [
+      "PUFA"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "90c380d8424c2425ae6887e4d31802e2c60d4611b5af8cb11a106bc86cf93f85"
+  },
+  {
+    "documentId": "nutrient:trans_fat_g",
+    "entityType": "nutrient",
+    "entityId": "trans_fat_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/trans-fat",
+    "title": "Trans fat",
+    "normalizedTitle": "trans fat",
+    "aliases": [
+      "trans fatty acids"
+    ],
+    "normalizedAliases": [
+      "trans fatty acids"
+    ],
+    "summary": "",
+    "keywords": [
+      "trans fatty acids"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "eede68959cfba20de45e65b01ffbb067eec5afb50c5fa5113a6756596f9fef55"
+  },
+  {
+    "documentId": "nutrient:omega_6_g",
+    "entityType": "nutrient",
+    "entityId": "omega_6_g",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/omega-6-fatty-acids",
+    "title": "Omega-6 fatty acids",
+    "normalizedTitle": "omega-6 fatty acids",
+    "aliases": [
+      "n-6 fatty acids",
+      "omega 6"
+    ],
+    "normalizedAliases": [
+      "n-6 fatty acids",
+      "omega 6"
+    ],
+    "summary": "",
+    "keywords": [
+      "n-6 fatty acids",
+      "omega 6"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "904d0d2a39b59d015c0e89dcc7bde72284c4b96b150d442fa82d168e99f1190e"
+  },
+  {
+    "documentId": "nutrient:cholesterol_mg",
+    "entityType": "nutrient",
+    "entityId": "cholesterol_mg",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/cholesterol",
+    "title": "Cholesterol",
+    "normalizedTitle": "cholesterol",
+    "aliases": [
+      "dietary cholesterol"
+    ],
+    "normalizedAliases": [
+      "dietary cholesterol"
+    ],
+    "summary": "",
+    "keywords": [
+      "dietary cholesterol"
+    ],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "3006c49f3a38ce731751deff91f8e733f7710fda6924ed05b97221eccc0eb6e1"
+  },
+  {
+    "documentId": "nutrient:sodium_mg",
+    "entityType": "nutrient",
+    "entityId": "sodium_mg",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/sodium",
+    "title": "Sodium",
+    "normalizedTitle": "sodium",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "6be7cf5ad2706c11d036c78bc7857d8d765a023df7e1f20df2ca7a0ff6577b58"
+  },
+  {
+    "documentId": "nutrient:chloride_mg",
+    "entityType": "nutrient",
+    "entityId": "chloride_mg",
+    "entityVersion": null,
+    "sourceModule": "phase_08_nutrients",
+    "route": "/nutrients/chloride",
+    "title": "Chloride",
+    "normalizedTitle": "chloride",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": null,
+    "contentHash": "75962e1885fc9f7968382352387bb626e5cb9da75f0d9d40f574d50a6f83482d"
+  },
+  {
     "documentId": "recipe:public_recipe_chickpea_cucumber_bowl",
     "entityType": "recipe",
     "entityId": "public_recipe_chickpea_cucumber_bowl",

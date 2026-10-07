@@ -491,9 +491,11 @@ export function NutrientDetail({
             <small>Accessed {s.accessedAt}</small>
             <a
               href={
-                nutrientReference.sourceRegistry.find(
-                  (r) => r.id === s.sourceId,
-                )?.url
+                /^https?:\/\//.test(s.locator)
+                  ? s.locator
+                  : nutrientReference.sourceRegistry.find(
+                      (r) => r.id === s.sourceId,
+                    )?.url
               }
             >
               Official source

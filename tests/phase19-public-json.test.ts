@@ -33,6 +33,9 @@ it("rejects external, encoded, traversal and non-JSON paths before requests", as
     "/assets/a.json?private=1",
     "/assets/a.js",
     "/src/content/../../a.json",
+    "/src/data/search/private-records.json",
+    "/src/data/search/search-documents.private.json",
+    "/src/data/search/search-documents.public.json?personal=1",
     "/\\example.com/a.json",
   ])
     await expect(loadPublicJson(url, schema, fetcher)).rejects.toThrow(

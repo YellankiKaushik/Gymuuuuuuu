@@ -5035,5 +5035,2422 @@
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
     }
+  },
+  {
+    "id": "energy_kcal",
+    "slug": "energy",
+    "canonicalName": "Energy",
+    "aliases": [
+      "calories",
+      "kilocalories"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "kcal",
+    "foodDataNutrientIds": [
+      "energy_kcal"
+    ],
+    "essentiality": "not_a_nutrient",
+    "displayKind": "energy",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Food energy is supplied by carbohydrate, fat, protein and alcohol. Calories on a food label refer to its stated serving.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Food energy is supplied by carbohydrate, fat, protein and alcohol. Calories on a food label refer to its stated serving.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "energy_kcal",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_energy_kcal_source_1",
+        "text": "Food energy is supplied by carbohydrate, fat, protein and alcohol. Calories on a food label refer to its stated serving.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The FDA label guide is general education; its reference diet is not an individual calorie prescription.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_energy_kcal_source_2",
+        "text": "Use the stated food profile and serving mass; a fat-free or no-added-sugar label does not mean calorie-free.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The FDA label guide is general education; its reference diet is not an individual calorie prescription.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_energy_kcal_source_3",
+        "text": "The FDA label guide is general education; its reference diet is not an individual calorie prescription.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The FDA label guide is general education; its reference diet is not an individual calorie prescription.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/calories.cfm",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: not supplied; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. The FDA label guide is general education; its reference diet is not an individual calorie prescription."
+    }
+  },
+  {
+    "id": "energy_kj",
+    "slug": "energy-kilojoules",
+    "canonicalName": "Energy in kilojoules",
+    "aliases": [
+      "kilojoules",
+      "kJ"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "kJ",
+    "foodDataNutrientIds": [
+      "energy_kj"
+    ],
+    "essentiality": "not_a_nutrient",
+    "displayKind": "energy_equivalent",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Kilojoules and kilocalories express the same food-energy quantity in different units; they are not separate nutrients.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Kilojoules and kilocalories express the same food-energy quantity in different units; they are not separate nutrients.",
+        "sourceIds": [
+          "fao_food_energy"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "energy_kj",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_energy_kj_source_1",
+        "text": "Kilojoules and kilocalories express the same food-energy quantity in different units; they are not separate nutrients.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "Food-specific energy factors can differ from general factors; no missing food-energy value is reconstructed here.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_energy_kj_source_2",
+        "text": "FAO distinguishes food-energy measurement and conversion methods. Keep the exact dataset energy values and method.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "Food-specific energy factors can differ from general factors; no missing food-energy value is reconstructed here.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_energy_kj_source_3",
+        "text": "Food-specific energy factors can differ from general factors; no missing food-energy value is reconstructed here.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "Food-specific energy factors can differ from general factors; no missing food-energy value is reconstructed here.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_energy_kj_source_4",
+        "text": "FAO specifies the exact unit conversion: 1 kcal equals 4.184 kJ. This unit relationship does not supply a missing nutrient measurement.",
+        "category": "conversion",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "Food-specific energy factors can differ from general factors; no missing food-energy value is reconstructed here.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fao_food_energy",
+        "locator": "https://www.fao.org/4/Y5022E/y5022e04.htm",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: Food and Nutrition Paper 77, 2003; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Food-specific energy factors can differ from general factors; no missing food-energy value is reconstructed here."
+    }
+  },
+  {
+    "id": "alcohol_g",
+    "slug": "alcohol",
+    "canonicalName": "Alcohol",
+    "aliases": [
+      "ethanol"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [],
+    "essentiality": "nonessential",
+    "displayKind": "dietary_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Alcohol contributes food energy; its energy contribution is distinct from protein, carbohydrate and fat.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Alcohol contributes food energy; its energy contribution is distinct from protein, carbohydrate and fat.",
+        "sourceIds": [
+          "fao_food_energy"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "Qualitative source education only. Missing measurements and fatty-acid totals are not reconstructed from other concepts."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_alcohol_g_source_1",
+        "text": "Alcohol contributes food energy; its energy contribution is distinct from protein, carbohydrate and fat.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "An energy-conversion method does not establish that drinking is beneficial or safe; this page supplies no drinking or treatment advice.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_alcohol_g_source_2",
+        "text": "The FAO methodology discusses alcohol as an energy-contributing food component.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "An energy-conversion method does not establish that drinking is beneficial or safe; this page supplies no drinking or treatment advice.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_alcohol_g_source_3",
+        "text": "An energy-conversion method does not establish that drinking is beneficial or safe; this page supplies no drinking or treatment advice.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "An energy-conversion method does not establish that drinking is beneficial or safe; this page supplies no drinking or treatment advice.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fao_food_energy",
+        "locator": "https://www.fao.org/4/Y5022E/y5022e04.htm",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: Food and Nutrition Paper 77, 2003; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. An energy-conversion method does not establish that drinking is beneficial or safe; this page supplies no drinking or treatment advice."
+    }
+  },
+  {
+    "id": "water_g",
+    "slug": "water",
+    "canonicalName": "Water",
+    "aliases": [
+      "hydration"
+    ],
+    "groupId": "energy_hydration",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "water_g"
+    ],
+    "essentiality": "essential",
+    "displayKind": "nutrient",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Fluid intake helps maintain hydration; drinks and fluid-containing foods contribute.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Fluid intake helps maintain hydration; drinks and fluid-containing foods contribute.",
+        "sourceIds": [
+          "nhs_food_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "water_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "The NHS describes inadequate fluid intake as a cause of dehydration. This article does not diagnose dehydration or quantify an individual deficit.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nhs_food_education"
+      ]
+    },
+    "excess": {
+      "overview": "This retained NHS source gives hydration guidance rather than a complete excess-fluid safety assessment. No safe maximum or individual drinking prescription is established here.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "nhs_food_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_water_g_source_1",
+        "text": "Fluid intake helps maintain hydration; drinks and fluid-containing foods contribute.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nhs_food_education"
+        ],
+        "limitations": "Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_water_g_source_2",
+        "text": "The NHS identifies water and other drinks, as well as fluid from food, as contributors to hydration.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nhs_food_education"
+        ],
+        "limitations": "Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_water_g_source_3",
+        "text": "Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nhs_food_education"
+        ],
+        "limitations": "Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_water_g_source_4",
+        "text": "The NHS describes inadequate fluid intake as a cause of dehydration. This article does not diagnose dehydration or quantify an individual deficit.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nhs_food_education"
+        ],
+        "limitations": "Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_water_g_source_5",
+        "text": "This retained NHS source gives hydration guidance rather than a complete excess-fluid safety assessment. No safe maximum or individual drinking prescription is established here.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nhs_food_education"
+        ],
+        "limitations": "Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nhs_food_education",
+        "locator": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: Page last reviewed 17 May 2023; next review was due 17 May 2026; date: 2023-05-17. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Fluid needs vary with heat, prolonged activity, illness and life stage. No cup-to-gram conversion or personal fluid target is inferred. The source review is overdue."
+    }
+  },
+  {
+    "id": "protein_g",
+    "slug": "protein",
+    "canonicalName": "Protein",
+    "aliases": [
+      "dietary protein"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "protein_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "macronutrient",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Protein consists of linked amino acids and supports the building and repair of cells and body tissues.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Protein consists of linked amino acids and supports the building and repair of cells and body tissues.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "protein_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "The source describes protein functions and food sources; it does not provide criteria to diagnose inadequate protein intake from a food log.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "This label-education source does not establish an individual protein ceiling or a medical safety assessment; no upper limit is inferred.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_protein_g_source_1",
+        "text": "Protein consists of linked amino acids and supports the building and repair of cells and body tissues.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_protein_g_source_2",
+        "text": "FDA lists legumes, dairy, eggs, meat, nuts, seeds, seafood and soy foods as protein sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_protein_g_source_3",
+        "text": "Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_protein_g_source_4",
+        "text": "The source describes protein functions and food sources; it does not provide criteria to diagnose inadequate protein intake from a food log.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_protein_g_source_5",
+        "text": "This label-education source does not establish an individual protein ceiling or a medical safety assessment; no upper limit is inferred.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Protein_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Food-label education does not establish an athlete protein target, a supplement requirement or equal composition across foods."
+    }
+  },
+  {
+    "id": "carbohydrate_total_g",
+    "slug": "total-carbohydrate",
+    "canonicalName": "Total carbohydrate",
+    "aliases": [
+      "carbohydrates",
+      "carbs"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "carbohydrate_total_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "macronutrient",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Total carbohydrate on the FDA label includes dietary fiber, total sugars and sugar alcohols; carbohydrate supplies energy.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Total carbohydrate on the FDA label includes dietary fiber, total sugars and sugar alcohols; carbohydrate supplies energy.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "carbohydrate_total_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "The source provides label and energy education, rather than individual diagnostic criteria for carbohydrate inadequacy.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "The source does not establish a universal carbohydrate toxicity threshold or an individual intake ceiling.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_carbohydrate_total_g_source_1",
+        "text": "Total carbohydrate on the FDA label includes dietary fiber, total sugars and sugar alcohols; carbohydrate supplies energy.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_carbohydrate_total_g_source_2",
+        "text": "FDA lists plant foods and dairy products among carbohydrate-containing foods.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_carbohydrate_total_g_source_3",
+        "text": "Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_carbohydrate_total_g_source_4",
+        "text": "The source provides label and energy education, rather than individual diagnostic criteria for carbohydrate inadequacy.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_carbohydrate_total_g_source_5",
+        "text": "The source does not establish a universal carbohydrate toxicity threshold or an individual intake ceiling.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalCarbohydrate_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Total carbohydrate and available carbohydrate use different definitions. Do not subtract unknown fiber or infer glucose responses."
+    }
+  },
+  {
+    "id": "carbohydrate_available_g",
+    "slug": "available-carbohydrate",
+    "canonicalName": "Available carbohydrate",
+    "aliases": [
+      "digestible carbohydrate",
+      "available carbs"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "carbohydrate_available_g"
+    ],
+    "essentiality": "nonessential_measure",
+    "displayKind": "food_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Available carbohydrate is the carbohydrate fraction digested by human enzymes, absorbed and metabolized; it excludes dietary fiber.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Available carbohydrate is the carbohydrate fraction digested by human enzymes, absorbed and metabolized; it excludes dietary fiber.",
+        "sourceIds": [
+          "fao_food_energy"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "Qualitative source education only. Missing measurements and fatty-acid totals are not reconstructed from other concepts."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_carbohydrate_available_g_source_1",
+        "text": "Available carbohydrate is the carbohydrate fraction digested by human enzymes, absorbed and metabolized; it excludes dietary fiber.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "Available carbohydrate is not a glycemic-index result. Missing fiber or component data cannot establish a reliable total-minus-fiber calculation.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_carbohydrate_available_g_source_2",
+        "text": "FAO distinguishes summing measured components from calculating carbohydrate by difference; the method must be documented.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "Available carbohydrate is not a glycemic-index result. Missing fiber or component data cannot establish a reliable total-minus-fiber calculation.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_carbohydrate_available_g_source_3",
+        "text": "Available carbohydrate is not a glycemic-index result. Missing fiber or component data cannot establish a reliable total-minus-fiber calculation.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fao_food_energy"
+        ],
+        "limitations": "Available carbohydrate is not a glycemic-index result. Missing fiber or component data cannot establish a reliable total-minus-fiber calculation.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fao_food_energy",
+        "locator": "https://www.fao.org/4/y5022e/y5022e03.htm",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: Food and Nutrition Paper 77, 2003; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Available carbohydrate is not a glycemic-index result. Missing fiber or component data cannot establish a reliable total-minus-fiber calculation."
+    }
+  },
+  {
+    "id": "fiber_total_g",
+    "slug": "dietary-fibre",
+    "canonicalName": "Dietary fibre",
+    "aliases": [
+      "dietary fiber",
+      "fibre",
+      "fiber"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fiber_total_g"
+    ],
+    "essentiality": "beneficial_component",
+    "displayKind": "food_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Dietary fiber is carbohydrate that is not readily digested in the small intestine; soluble and insoluble forms have different properties.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Dietary fiber is carbohydrate that is not readily digested in the small intestine; soluble and insoluble forms have different properties.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "fiber_total_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [
+      {
+        "factorType": "other",
+        "description": "FDA describes soluble fiber forming a gel and being broken down by intestinal bacteria, while insoluble fiber passes relatively intact. These are broad distinctions, not a guaranteed response to every fiber ingredient.",
+        "direction": "context_dependent",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "deficiency": {
+      "overview": "FDA describes fiber in relation to bowel function and diet quality; this does not diagnose a deficiency or the cause of bowel symptoms.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "This source is not an individual digestive-tolerance assessment and supplies no universal fiber toxicity threshold.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_fiber_total_g_source_1",
+        "text": "Dietary fiber is carbohydrate that is not readily digested in the small intestine; soluble and insoluble forms have different properties.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fiber_total_g_source_2",
+        "text": "FDA lists legumes, fruit, nuts, seeds, vegetables and whole grains as fiber sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fiber_total_g_source_3",
+        "text": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fiber_total_g_source_4",
+        "text": "FDA describes fiber in relation to bowel function and diet quality; this does not diagnose a deficiency or the cause of bowel symptoms.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fiber_total_g_source_5",
+        "text": "This source is not an individual digestive-tolerance assessment and supplies no universal fiber toxicity threshold.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fiber_total_g_source_6",
+        "text": "FDA describes soluble fiber forming a gel and being broken down by intestinal bacteria, while insoluble fiber passes relatively intact. These are broad distinctions, not a guaranteed response to every fiber ingredient.",
+        "category": "absorption",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_DietaryFiber_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. The label definition also includes qualifying isolated or synthetic nondigestible carbohydrates. No universal fermentation or nutrient-retention factor is inferred."
+    }
+  },
+  {
+    "id": "sugars_total_g",
+    "slug": "total-sugars",
+    "canonicalName": "Total sugars",
+    "aliases": [
+      "sugars"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "sugars_total_g"
+    ],
+    "essentiality": "nonessential_measure",
+    "displayKind": "food_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Total sugars include naturally occurring sugars and added sugars. Sugars contribute carbohydrate energy.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Total sugars include naturally occurring sugars and added sugars. Sugars contribute carbohydrate energy.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "sugars_total_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": null,
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_sugars_total_g_source_1",
+        "text": "Total sugars include naturally occurring sugars and added sugars. Sugars contribute carbohydrate energy.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A total-sugar value does not reveal the added-sugar amount; unavailable added sugars must remain unavailable.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_sugars_total_g_source_2",
+        "text": "The FDA distinguishes sugars naturally present in milk and fruit from sugars added to foods or drinks.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A total-sugar value does not reveal the added-sugar amount; unavailable added sugars must remain unavailable.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_sugars_total_g_source_3",
+        "text": "A total-sugar value does not reveal the added-sugar amount; unavailable added sugars must remain unavailable.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A total-sugar value does not reveal the added-sugar amount; unavailable added sugars must remain unavailable.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Total%26AddedSugars_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. A total-sugar value does not reveal the added-sugar amount; unavailable added sugars must remain unavailable."
+    }
+  },
+  {
+    "id": "added_sugars_g",
+    "slug": "added-sugars",
+    "canonicalName": "Added sugars",
+    "aliases": [
+      "free sugars in some frameworks"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [],
+    "essentiality": "nonessential",
+    "displayKind": "dietary_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Added sugars include sugars added during food preparation or processing, including certain syrups, honey and concentrated juices.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Added sugars include sugars added during food preparation or processing, including certain syrups, honey and concentrated juices.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "Qualitative source education only. Missing measurements and fatty-acid totals are not reconstructed from other concepts."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": null,
+    "excess": {
+      "overview": "FDA explains that added sugars can make it harder to obtain sufficient nutrients within an energy allowance. Its label reference is not a personal prescription.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_added_sugars_g_source_1",
+        "text": "Added sugars include sugars added during food preparation or processing, including certain syrups, honey and concentrated juices.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Do not infer added sugars from total sugars, sweetness or an ingredient name alone. The exact source food profile is required.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_added_sugars_g_source_2",
+        "text": "FDA identifies sweetened foods and drinks as contexts for added sugars.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Do not infer added sugars from total sugars, sweetness or an ingredient name alone. The exact source food profile is required.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_added_sugars_g_source_3",
+        "text": "Do not infer added sugars from total sugars, sweetness or an ingredient name alone. The exact source food profile is required.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Do not infer added sugars from total sugars, sweetness or an ingredient name alone. The exact source food profile is required.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_added_sugars_g_source_4",
+        "text": "FDA explains that added sugars can make it harder to obtain sufficient nutrients within an energy allowance. Its label reference is not a personal prescription.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Do not infer added sugars from total sugars, sweetness or an ingredient name alone. The exact source food profile is required.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Total%26AddedSugars_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Do not infer added sugars from total sugars, sweetness or an ingredient name alone. The exact source food profile is required."
+    }
+  },
+  {
+    "id": "fat_total_g",
+    "slug": "total-fat",
+    "canonicalName": "Total fat",
+    "aliases": [
+      "dietary fat",
+      "lipids"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_total_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "macronutrient",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Total fat includes saturated, trans, monounsaturated and polyunsaturated fats; fat supplies energy and supports cell membranes.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Total fat includes saturated, trans, monounsaturated and polyunsaturated fats; fat supplies energy and supports cell membranes.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "fat_total_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [
+      {
+        "factorType": "other",
+        "description": "FDA explains that dietary fat helps absorption of vitamins A, D, E and K. This does not supply a personal fat dose or an absorption percentage.",
+        "direction": "context_dependent",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "deficiency": {
+      "overview": "The source explains physiological roles of fat; it does not provide diagnostic criteria for inadequate fat intake from a food log.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "This label-education source is not an individual fat-intake ceiling or clinical risk assessment.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_fat_total_g_source_1",
+        "text": "Total fat includes saturated, trans, monounsaturated and polyunsaturated fats; fat supplies energy and supports cell membranes.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_total_g_source_2",
+        "text": "FDA describes fat in both animal and plant foods.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_total_g_source_3",
+        "text": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_total_g_source_4",
+        "text": "The source explains physiological roles of fat; it does not provide diagnostic criteria for inadequate fat intake from a food log.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_total_g_source_5",
+        "text": "This label-education source is not an individual fat-intake ceiling or clinical risk assessment.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_total_g_source_6",
+        "text": "FDA explains that dietary fat helps absorption of vitamins A, D, E and K. This does not supply a personal fat dose or an absorption percentage.",
+        "category": "absorption",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalFat_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Total fat does not identify fatty-acid composition. Missing individual fatty-acid measurements remain unavailable."
+    }
+  },
+  {
+    "id": "fat_saturated_g",
+    "slug": "saturated-fat",
+    "canonicalName": "Saturated fat",
+    "aliases": [
+      "saturated fatty acids",
+      "SFA"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_saturated_g"
+    ],
+    "essentiality": "nonessential",
+    "displayKind": "fat_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Saturated fat is a component of total dietary fat. FDA distinguishes it from unsaturated and trans fats.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Saturated fat is a component of total dietary fat. FDA distinguishes it from unsaturated and trans fats.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "fat_saturated_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "This source does not establish a saturated-fat deficiency diagnosis or a separate personal minimum requirement.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "FDA describes replacing saturated fat with unsaturated fat in relation to lower LDL cholesterol. The replacement context matters; no individual disease-risk prediction is made.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_fat_saturated_g_source_1",
+        "text": "Saturated fat is a component of total dietary fat. FDA distinguishes it from unsaturated and trans fats.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Plant origin does not automatically mean a fat is predominantly unsaturated.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_saturated_g_source_2",
+        "text": "FDA lists animal foods and tropical plant oils, including coconut and palm oils, as saturated-fat sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Plant origin does not automatically mean a fat is predominantly unsaturated.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_saturated_g_source_3",
+        "text": "Plant origin does not automatically mean a fat is predominantly unsaturated.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Plant origin does not automatically mean a fat is predominantly unsaturated.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_saturated_g_source_4",
+        "text": "This source does not establish a saturated-fat deficiency diagnosis or a separate personal minimum requirement.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Plant origin does not automatically mean a fat is predominantly unsaturated.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_saturated_g_source_5",
+        "text": "FDA describes replacing saturated fat with unsaturated fat in relation to lower LDL cholesterol. The replacement context matters; no individual disease-risk prediction is made.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Plant origin does not automatically mean a fat is predominantly unsaturated.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_SaturatedFat_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Plant origin does not automatically mean a fat is predominantly unsaturated."
+    }
+  },
+  {
+    "id": "fat_monounsaturated_g",
+    "slug": "monounsaturated-fat",
+    "canonicalName": "Monounsaturated fat",
+    "aliases": [
+      "MUFA"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_monounsaturated_g"
+    ],
+    "essentiality": "nonessential",
+    "displayKind": "fat_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Monounsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Monounsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "fat_monounsaturated_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "This source does not establish a distinct monounsaturated-fat deficiency diagnosis or personal minimum requirement.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "FDA discusses replacing saturated fat with unsaturated fat; this does not endorse adding unlimited oil or establish an individual safe ceiling.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_fat_monounsaturated_g_source_1",
+        "text": "Monounsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "These food examples do not establish exact composition for every cultivar, oil blend or preparation.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_monounsaturated_g_source_2",
+        "text": "FDA lists avocados, nuts, olive oil, seeds and other plant oils as monounsaturated-fat sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "These food examples do not establish exact composition for every cultivar, oil blend or preparation.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_monounsaturated_g_source_3",
+        "text": "These food examples do not establish exact composition for every cultivar, oil blend or preparation.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "These food examples do not establish exact composition for every cultivar, oil blend or preparation.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_monounsaturated_g_source_4",
+        "text": "This source does not establish a distinct monounsaturated-fat deficiency diagnosis or personal minimum requirement.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "These food examples do not establish exact composition for every cultivar, oil blend or preparation.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_monounsaturated_g_source_5",
+        "text": "FDA discusses replacing saturated fat with unsaturated fat; this does not endorse adding unlimited oil or establish an individual safe ceiling.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "These food examples do not establish exact composition for every cultivar, oil blend or preparation.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_MUFA%26PUFA_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. These food examples do not establish exact composition for every cultivar, oil blend or preparation."
+    }
+  },
+  {
+    "id": "fat_polyunsaturated_g",
+    "slug": "polyunsaturated-fat",
+    "canonicalName": "Polyunsaturated fat",
+    "aliases": [
+      "PUFA"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "fat_polyunsaturated_g"
+    ],
+    "essentiality": "essential_class",
+    "displayKind": "fat_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Polyunsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Polyunsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "fat_polyunsaturated_g",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "The source does not establish that a low total-polyunsaturated-fat log diagnoses a particular essential-fatty-acid deficiency.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "FDA discusses replacing saturated fat with unsaturated fat; this is not an unlimited-intake recommendation or an individual safe ceiling.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_fat_polyunsaturated_g_source_1",
+        "text": "Polyunsaturated fat is an unsaturated component of dietary fat; it provides energy alongside other fats.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_polyunsaturated_g_source_2",
+        "text": "FDA lists fish, nuts, seeds and plant oils as polyunsaturated-fat sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_polyunsaturated_g_source_3",
+        "text": "Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_polyunsaturated_g_source_4",
+        "text": "The source does not establish that a low total-polyunsaturated-fat log diagnoses a particular essential-fatty-acid deficiency.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fat_polyunsaturated_g_source_5",
+        "text": "FDA discusses replacing saturated fat with unsaturated fat; this is not an unlimited-intake recommendation or an individual safe ceiling.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_MUFA%26PUFA_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Total polyunsaturated fat does not establish separate omega-3 or omega-6 amounts."
+    }
+  },
+  {
+    "id": "trans_fat_g",
+    "slug": "trans-fat",
+    "canonicalName": "Trans fat",
+    "aliases": [
+      "trans fatty acids"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [],
+    "essentiality": "nonessential",
+    "displayKind": "dietary_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Trans fat is a component of dietary fat found naturally in some ruminant foods and historically in partially hydrogenated oils.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Trans fat is a component of dietary fat found naturally in some ruminant foods and historically in partially hydrogenated oils.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "Qualitative source education only. Missing measurements and fatty-acid totals are not reconstructed from other concepts."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "FDA does not establish a trans-fat deficiency diagnosis or a requirement to consume trans fat.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "FDA links higher trans-fat intake with higher LDL cholesterol and cardiovascular risk; this is general risk education, not an individual diagnosis.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_trans_fat_g_source_1",
+        "text": "Trans fat is a component of dietary fat found naturally in some ruminant foods and historically in partially hydrogenated oils.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_trans_fat_g_source_2",
+        "text": "FDA distinguishes naturally occurring trans fat from trans fat produced through partial hydrogenation.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_trans_fat_g_source_3",
+        "text": "Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_trans_fat_g_source_4",
+        "text": "FDA does not establish a trans-fat deficiency diagnosis or a requirement to consume trans fat.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_trans_fat_g_source_5",
+        "text": "FDA links higher trans-fat intake with higher LDL cholesterol and cardiovascular risk; this is general risk education, not an individual diagnosis.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TransFat_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Partially and fully hydrogenated oils are different. The cited US policy context does not determine current rules in another jurisdiction."
+    }
+  },
+  {
+    "id": "omega_6_g",
+    "slug": "omega-6-fatty-acids",
+    "canonicalName": "Omega-6 fatty acids",
+    "aliases": [
+      "n-6 fatty acids",
+      "omega 6"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "omega_6_g"
+    ],
+    "essentiality": "essential_family",
+    "displayKind": "fat_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Omega-6 fatty acids are a polyunsaturated-fat family that includes linoleic acid and arachidonic acid. Linoleic acid must be obtained from the diet.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Omega-6 fatty acids are a polyunsaturated-fat family that includes linoleic acid and arachidonic acid. Linoleic acid must be obtained from the diet.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "Qualitative source education only. Missing measurements and fatty-acid totals are not reconstructed from other concepts."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "The source establishes that linoleic acid is essential; an unavailable total omega-6 food value or a short food log does not diagnose essential-fatty-acid deficiency.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "No universal omega-6-to-omega-3 ratio or personal omega-6 ceiling is derived from this source.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_omega_6_g_source_1",
+        "text": "Omega-6 fatty acids are a polyunsaturated-fat family that includes linoleic acid and arachidonic acid. Linoleic acid must be obtained from the diet.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_6_g_source_2",
+        "text": "The NIH source identifies linoleic acid as an essential fatty acid; this page does not infer total omega-6 composition from separate fatty-acid values.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_6_g_source_3",
+        "text": "The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_6_g_source_4",
+        "text": "The source establishes that linoleic acid is essential; an unavailable total omega-6 food value or a short food log does not diagnose essential-fatty-acid deficiency.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_6_g_source_5",
+        "text": "No universal omega-6-to-omega-3 ratio or personal omega-6 ceiling is derived from this source.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: Updated 22 August 2025; date: 2025-08-22. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. The NIH source states that an optimal omega-6 to omega-3 ratio, if any, has not been defined. No universal ratio or inflammatory ranking is created."
+    }
+  },
+  {
+    "id": "cholesterol_mg",
+    "slug": "cholesterol",
+    "canonicalName": "Cholesterol",
+    "aliases": [
+      "dietary cholesterol"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "cholesterol_mg"
+    ],
+    "essentiality": "nonessential",
+    "displayKind": "food_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Cholesterol is used in cell membranes and in producing bile acids and some hormones; the body also makes cholesterol.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Cholesterol is used in cell membranes and in producing bile acids and some hormones; the body also makes cholesterol.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "cholesterol_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "The source describes body production and physiological roles; it does not establish a dietary cholesterol deficiency diagnosis.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "FDA provides label and cardiovascular-risk education rather than an individual cholesterol intake prescription or blood-risk diagnosis.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_cholesterol_mg_source_1",
+        "text": "Cholesterol is used in cell membranes and in producing bile acids and some hormones; the body also makes cholesterol.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_cholesterol_mg_source_2",
+        "text": "FDA identifies animal foods as sources of dietary cholesterol.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_cholesterol_mg_source_3",
+        "text": "Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_cholesterol_mg_source_4",
+        "text": "The source describes body production and physiological roles; it does not establish a dietary cholesterol deficiency diagnosis.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_cholesterol_mg_source_5",
+        "text": "FDA provides label and cardiovascular-risk education rather than an individual cholesterol intake prescription or blood-risk diagnosis.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Cholesterol_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Food cholesterol measurements and blood lipoprotein results describe different things; this page cannot interpret blood tests."
+    }
+  },
+  {
+    "id": "sodium_mg",
+    "slug": "sodium",
+    "canonicalName": "Sodium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "sodium_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Sodium supports fluid balance and normal muscle and nervous-system function. Sodium is not the same substance as table salt.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Sodium supports fluid balance and normal muscle and nervous-system function. Sodium is not the same substance as table salt.",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "sodium_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact published Phase 07 source profiles only; missing measurements are not zero. State, units and serving mass remain explicit."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "The source gives food-label education; it does not diagnose low blood sodium or determine an individual replacement need.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "excess": {
+      "overview": "FDA describes higher sodium intake in relation to high blood pressure risk. Its label limit is not an individual sodium prescription.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "fda_nutrition_education"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_sodium_mg_source_1",
+        "text": "Sodium supports fluid balance and normal muscle and nervous-system function. Sodium is not the same substance as table salt.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_sodium_mg_source_2",
+        "text": "FDA describes sodium in packaged foods, added salt and other foods.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_sodium_mg_source_3",
+        "text": "A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_sodium_mg_source_4",
+        "text": "The source gives food-label education; it does not diagnose low blood sodium or determine an individual replacement need.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_sodium_mg_source_5",
+        "text": "FDA describes higher sodium intake in relation to high blood pressure risk. Its label limit is not an individual sodium prescription.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "fda_nutrition_education"
+        ],
+        "limitations": "A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "fda_nutrition_education",
+        "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Sodium_October2021.pdf",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. A sodium measurement is not an equal mass of salt. No sweat-loss or athlete electrolyte replacement target is inferred."
+    }
+  },
+  {
+    "id": "chloride_mg",
+    "slug": "chloride",
+    "canonicalName": "Chloride",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Chloride supports fluid and acid-base balance, muscle and nervous-system activity, and fluid transport.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Source-backed explanation",
+        "description": "Chloride supports fluid and acid-base balance, muscle and nervous-system activity, and fluid transport.",
+        "sourceIds": [
+          "efsa_drv"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "Qualitative source education only. Missing measurements and fatty-acid totals are not reconstructed from other concepts."
+      }
+    ],
+    "absorptionFactors": [
+      {
+        "factorType": "other",
+        "description": "EFSA describes efficient chloride absorption and kidney excretion linked to sodium and potassium balance; no individual absorption percentage is supplied.",
+        "direction": "context_dependent",
+        "sourceIds": [
+          "efsa_drv"
+        ]
+      }
+    ],
+    "deficiency": {
+      "overview": "EFSA describes dietary chloride deficiency as rare in its assessed context. This does not interpret blood chloride or diagnose symptoms.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "efsa_drv"
+      ]
+    },
+    "excess": {
+      "overview": "The retained EFSA reference opinion does not establish an individual chloride ceiling here; numeric reference values remain unavailable pending separate framework validation.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Individual clinical or medical assessment requires a qualified professional.",
+      "sourceIds": [
+        "efsa_drv"
+      ]
+    },
+    "interactions": [],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_chloride_mg_source_1",
+        "text": "Chloride supports fluid and acid-base balance, muscle and nervous-system activity, and fluid transport.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "efsa_drv"
+        ],
+        "limitations": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chloride_mg_source_2",
+        "text": "EFSA identifies sodium chloride as the major dietary chloride source in the European context discussed.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "efsa_drv"
+        ],
+        "limitations": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chloride_mg_source_3",
+        "text": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+        "category": "other",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "efsa_drv"
+        ],
+        "limitations": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chloride_mg_source_4",
+        "text": "EFSA describes dietary chloride deficiency as rare in its assessed context. This does not interpret blood chloride or diagnose symptoms.",
+        "category": "deficiency",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "efsa_drv"
+        ],
+        "limitations": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chloride_mg_source_5",
+        "text": "The retained EFSA reference opinion does not establish an individual chloride ceiling here; numeric reference values remain unavailable pending separate framework validation.",
+        "category": "excess",
+        "evidenceLevel": "insufficient",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "efsa_drv"
+        ],
+        "limitations": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chloride_mg_source_6",
+        "text": "EFSA describes efficient chloride absorption and kidney excretion linked to sodium and potassium balance; no individual absorption percentage is supplied.",
+        "category": "absorption",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General source education; no individual diagnostic, athlete supplementation or clinical assessment",
+        "sourceIds": [
+          "efsa_drv"
+        ],
+        "limitations": "EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "efsa_drv",
+        "locator": "https://www.efsa.europa.eu/en/efsajournal/pub/5779",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read source. Version: EFSA Journal 2019;17(9):5779; doi:10.2903/j.efsa.2019.5779; date: 2019-09-04. No numeric intake rows imported."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. EFSA derived chloride reference values from sodium on an equimolar basis because direct evidence was insufficient. No equal-mass conversion or numeric framework row is inferred."
+    }
   }
 ]

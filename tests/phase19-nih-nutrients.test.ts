@@ -10,7 +10,7 @@ import foods from "../src/content/foods/records.json";
 const additions = ["thiamin_mg", "riboflavin_mg", "niacin_mg", "vitamin_b6_mg"];
 it("keeps every new nutrient's stable identity, exact NIH page and honest dated publication", () => {
   const parsed = nutrientSchema.array().parse(records);
-  expect(parsed.filter((r) => r.status === "published")).toHaveLength(32);
+  expect(parsed.filter((r) => r.status === "published")).toHaveLength(51);
   expect(parsed.flatMap((r) => r.referenceValues)).toHaveLength(7);
   for (const id of additions) {
     const record = parsed.find((r) => r.id === id)!,

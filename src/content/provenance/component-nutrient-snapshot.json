@@ -1,0 +1,300 @@
+{
+  "definitionsSha256": "ac747da13542dcb1f57d0bafaf7cd26540110a5ce817da6ce0a0e630b845fee3",
+  "recordIds": [
+    "energy_kcal",
+    "energy_kj",
+    "alcohol_g",
+    "water_g",
+    "protein_g",
+    "carbohydrate_total_g",
+    "carbohydrate_available_g",
+    "fiber_total_g",
+    "sugars_total_g",
+    "added_sugars_g",
+    "fat_total_g",
+    "fat_saturated_g",
+    "fat_monounsaturated_g",
+    "fat_polyunsaturated_g",
+    "trans_fat_g",
+    "omega_6_g",
+    "cholesterol_mg",
+    "sodium_mg",
+    "chloride_mg"
+  ],
+  "sources": [
+    {
+      "id": "fda_label_protein_2021",
+      "title": "FDA: Protein",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Protein_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_carbohydrate_2021",
+      "title": "FDA: Total carbohydrate",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalCarbohydrate_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_fiber_2021",
+      "title": "FDA: Dietary fiber",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_DietaryFiber_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_total_fat_2021",
+      "title": "FDA: Total fat",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalFat_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_saturated_fat_2021",
+      "title": "FDA: Saturated fat",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_SaturatedFat_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_unsaturated_fat_2021",
+      "title": "FDA: Monounsaturated and polyunsaturated fat",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_MUFA%26PUFA_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_trans_fat_2021",
+      "title": "FDA: Trans fat",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TransFat_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_sodium_2021",
+      "title": "FDA: Sodium",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Sodium_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_cholesterol_2021",
+      "title": "FDA: Cholesterol",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Cholesterol_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_sugars_2021",
+      "title": "FDA: Total and added sugars",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Total%26AddedSugars_October2021.pdf",
+      "sourceVersion": "October 2021",
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fda_label_calories",
+      "title": "FDA: Calories",
+      "publisher": "US Food and Drug Administration",
+      "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/calories.cfm",
+      "sourceVersion": null,
+      "sourceDate": null,
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fao_food_energy_chapter3_2003",
+      "title": "FAO: Food energy, Chapter 3",
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "url": "https://www.fao.org/4/Y5022E/y5022e04.htm",
+      "sourceVersion": "Food and Nutrition Paper 77, 2003",
+      "sourceDate": null,
+      "evidenceType": "professional_summary",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "fao_food_energy_chapter2_2003",
+      "title": "FAO: Food energy, Chapter 2",
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "url": "https://www.fao.org/4/y5022e/y5022e03.htm",
+      "sourceVersion": "Food and Nutrition Paper 77, 2003",
+      "sourceDate": null,
+      "evidenceType": "professional_summary",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "nhs_water_drinks_2023",
+      "title": "NHS: Water, drinks and hydration",
+      "publisher": "National Health Service",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+      "sourceVersion": "Page last reviewed 17 May 2023; next review was due 17 May 2026",
+      "sourceDate": "2023-05-17",
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "open_government_licence",
+      "rightsReference": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects.",
+        "The displayed next-review date is past; extraction in 2026 does not make this a 2026 clinical update."
+      ]
+    },
+    {
+      "id": "nih_ods_omega3_hp_2025",
+      "title": "NIH ODS: Omega-3 Fatty Acids, Health Professional",
+      "publisher": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+      "sourceVersion": "Updated 22 August 2025",
+      "sourceDate": "2025-08-22",
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects."
+      ]
+    },
+    {
+      "id": "efsa_chloride_2019",
+      "title": "EFSA: Dietary Reference Values for chloride",
+      "publisher": "European Food Safety Authority",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5779",
+      "sourceVersion": "EFSA Journal 2019;17(9):5779; doi:10.2903/j.efsa.2019.5779",
+      "sourceDate": "2019-09-04",
+      "evidenceType": "government_reference",
+      "extractedAt": "2026-10-07T16:22:19Z",
+      "lastReviewedAt": "2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "rightsReference": "Brief original factual paraphrase with source attribution. No bulk source text, tables, figures or media reproduced.",
+      "limitations": [
+        "Machine source verification and automated validation; no independent human or clinical review.",
+        "General source education does not establish individual requirements or sports performance effects.",
+        "Chloride reference values were derived from sodium on an equimolar basis because evidence did not support direct derivation; no sodium-to-chloride food mass conversion is imported."
+      ]
+    }
+  ]
+}

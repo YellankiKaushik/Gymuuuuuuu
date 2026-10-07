@@ -21,6 +21,7 @@
     "scripts/compile-science-research.ts",
     "scripts/compile-runtime-knowledge.ts",
     "scripts/compile-science-index.ts",
-    "scripts/compile-remaining-anatomy.ts"
+    "scripts/compile-remaining-anatomy.ts",
+    "scripts/compile-component-nutrients.ts"
   ]
 }

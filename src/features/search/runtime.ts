@@ -1,10 +1,33 @@
-import rawDocuments from "../../data/search/search-documents.public.json";
-import rawIndex from "../../data/search/search-index.public.json";
 import rawManifest from "../../data/search/search-manifest.json";
 import type { PublicSearchDocument } from "./domain";
 import { verifyPublicSearchDocuments } from "./verify-documents";
 import { LocalSearchEngine } from "./engine";
 import { searchManifestSchema, serializedIndexSchema } from "./index-format";
+import { searchDocumentSchema } from "./domain";
+import { loadPublicJson } from "../content-review/public-json";
+
+const publicAssetUrls = import.meta.glob<string>(
+  "../../data/search/*.public.json",
+  { query: "?url", import: "default", eager: true },
+);
+async function loadSearchAssets() {
+  if (import.meta.env.SSR) {
+    const [documents, index] = await Promise.all([
+      import("../../data/search/search-documents.public.json"),
+      import("../../data/search/search-index.public.json"),
+    ]);
+    return [documents.default, index.default] as const;
+  }
+  const documentUrl =
+      publicAssetUrls["../../data/search/search-documents.public.json"],
+    indexUrl = publicAssetUrls["../../data/search/search-index.public.json"];
+  if (!documentUrl || !indexUrl)
+    throw Error("Public search assets are unavailable.");
+  return Promise.all([
+    loadPublicJson(documentUrl, searchDocumentSchema.array()),
+    loadPublicJson(indexUrl, serializedIndexSchema),
+  ]);
+}
 
 async function sha256(value: string) {
   const digest = await crypto.subtle.digest(
@@ -21,6 +44,7 @@ export type PublicSearchRuntime = {
   status: "verified" | "rebuilt";
 };
 export async function loadPublicSearchRuntime(): Promise<PublicSearchRuntime> {
+  const [rawDocuments, rawIndex] = await loadSearchAssets();
   const docs = await verifyPublicSearchDocuments(rawDocuments, sha256),
     manifest = searchManifestSchema.parse(rawManifest),
     index = serializedIndexSchema.parse(rawIndex);

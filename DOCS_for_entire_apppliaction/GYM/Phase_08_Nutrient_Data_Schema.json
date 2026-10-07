@@ -302,7 +302,10 @@
               "fda_daily_values",
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
-              "usda_fooddata_central"
+              "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education"
             ]
           }
         }
@@ -337,7 +340,10 @@
               "fda_daily_values",
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
-              "usda_fooddata_central"
+              "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education"
             ]
           }
         }
@@ -470,7 +476,10 @@
             "fda_daily_values",
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
-            "usda_fooddata_central"
+            "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education"
           ]
         },
         "status": {
@@ -581,7 +590,10 @@
               "fda_daily_values",
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
-              "usda_fooddata_central"
+              "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education"
             ]
           }
         },
@@ -639,7 +651,10 @@
               "fda_daily_values",
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
-              "usda_fooddata_central"
+              "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education"
             ]
           }
         }
@@ -692,7 +707,10 @@
               "fda_daily_values",
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
-              "usda_fooddata_central"
+              "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education"
             ]
           }
         },
@@ -750,7 +768,10 @@
               "fda_daily_values",
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
-              "usda_fooddata_central"
+              "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education"
             ]
           }
         }
@@ -817,7 +838,10 @@
               "fda_daily_values",
               "icmr_nin_rda_ear_2020",
               "efsa_drv",
-              "usda_fooddata_central"
+              "usda_fooddata_central",
+              "fda_nutrition_education",
+              "fao_food_energy",
+              "nhs_food_education"
             ]
           }
         },
@@ -854,7 +878,10 @@
             "fda_daily_values",
             "icmr_nin_rda_ear_2020",
             "efsa_drv",
-            "usda_fooddata_central"
+            "usda_fooddata_central",
+            "fda_nutrition_education",
+            "fao_food_energy",
+            "nhs_food_education"
           ]
         },
         "locator": {

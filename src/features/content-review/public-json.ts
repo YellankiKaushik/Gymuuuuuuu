@@ -7,7 +7,7 @@ export async function loadPublicJson<T>(
   fetcher: typeof fetch = fetch,
 ): Promise<T> {
   if (
-    !/^\/(?:assets\/[a-zA-Z0-9_.-]+|src\/content\/[a-zA-Z0-9_/-]+)\.json$/.test(
+    !/^\/(?:assets\/[a-zA-Z0-9_.-]+|src\/content\/[a-zA-Z0-9_/-]+|src\/data\/search\/search-(?:documents|index)\.public)\.json$/.test(
       assetUrl,
     )
   )
