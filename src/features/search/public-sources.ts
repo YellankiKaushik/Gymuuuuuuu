@@ -196,7 +196,7 @@ const publicGroups: readonly {
     module: "phase_12_recovery",
     rows: publicRecoveryRoutines.map((item) => ({
       ...item.article,
-      id: item.routine.id,
+      id: item.article.id,
       slug: item.article.slug,
       title: item.routine.title,
       summary: item.article.definition,

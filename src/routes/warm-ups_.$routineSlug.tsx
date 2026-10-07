@@ -8,7 +8,7 @@ export const Route = createFileRoute("/warm-ups_/$routineSlug")({
 });
 function Page() {
   return (
-    <RecoveryPage title="Reviewed warm-up">
+    <RecoveryPage publicKnowledge title="Reviewed warm-up">
       <RecoveryKnowledge routines slug={Route.useParams().routineSlug} />
     </RecoveryPage>
   );

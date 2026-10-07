@@ -1,6 +1,64 @@
-import { createFileRoute, redirect } from '@tanstack/react-router'
-import { ScienceDetail } from '../features/workout-science/detail'
-import { getScienceBySlug, scienceIndexes } from '../features/workout-science/repository'
-import { appConfig } from '../config/app'
-export const Route = createFileRoute('/learn_/workout-science_/$slug')({ beforeLoad: ({ params }) => { const record = getScienceBySlug(params.slug); const target = record?.deprecation && scienceIndexes.byId.get(record.deprecation.replacementTopicId); if (record?.contentStatus === 'deprecated' && target) throw redirect({ to: '/learn/workout-science/$slug', params: { slug: target.slug } }) }, head: ({ params }) => { const topic = getScienceBySlug(params.slug); const published = topic?.contentStatus === 'published'; return { meta: [{ title: `${published ? topic.displayName : 'Topic unavailable'} | ${appConfig.name}` }, { name: 'description', content: published ? topic.summary ?? '' : 'The requested topic is not available in the reviewed library.' }, ...(published ? [{ property: 'og:title', content: topic.displayName }, { property: 'og:description', content: topic.summary ?? '' }, { property: 'article:modified_time', content: topic.review?.reviewedAt ?? '' }] : [{ name: 'robots', content: 'noindex' }])], links: published ? [{ rel: 'canonical', href: new URL(`/learn/workout-science/${topic.slug}`, appConfig.origin).href }] : [] } }, component: Page })
-function Page() { return <ScienceDetail slug={Route.useParams().slug} /> }
+import { createFileRoute, redirect } from "@tanstack/react-router";
+import { loadPublicScienceTopic } from "../features/workout-science/public.functions";
+import { ScienceDetail } from "../features/workout-science/detail";
+import {
+  getScienceBySlug,
+  scienceIndexes,
+} from "../features/workout-science/public-repository";
+import { appConfig } from "../config/app";
+export const Route = createFileRoute("/learn_/workout-science_/$slug")({
+  loader: async ({ params }) => {
+    const record = getScienceBySlug(params.slug);
+    const target =
+      record?.deprecation &&
+      scienceIndexes.byId.get(record.deprecation.replacementTopicId);
+    if (record?.contentStatus === "deprecated" && target)
+      throw redirect({
+        to: "/learn/workout-science/$slug",
+        params: { slug: target.slug },
+      });
+    return loadPublicScienceTopic({ data: { slug: params.slug } });
+  },
+  head: ({ params }) => {
+    const topic = getScienceBySlug(params.slug);
+    const published = topic?.contentStatus === "published";
+    return {
+      meta: [
+        {
+          title: `${published ? topic.displayName : "Topic unavailable"} | ${appConfig.name}`,
+        },
+        {
+          name: "description",
+          content: published
+            ? (topic.summary ?? "")
+            : "The requested topic is not available in the reviewed library.",
+        },
+        ...(published
+          ? [
+              { property: "og:title", content: topic.displayName },
+              { property: "og:description", content: topic.summary ?? "" },
+              {
+                property: "article:modified_time",
+                content: topic.review?.reviewedAt ?? "",
+              },
+            ]
+          : [{ name: "robots", content: "noindex" }]),
+      ],
+      links: published
+        ? [
+            {
+              rel: "canonical",
+              href: new URL(
+                `/learn/workout-science/${topic.slug}`,
+                appConfig.origin,
+              ).href,
+            },
+          ]
+        : [],
+    };
+  },
+  component: Page,
+});
+function Page() {
+  return <ScienceDetail topic={Route.useLoaderData()} />;
+}

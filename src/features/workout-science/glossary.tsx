@@ -1,6 +1,6 @@
 import { PageHeader, SectionNav } from '../../components/common/page-header'
 import { EmptyState } from '../../components/common/states'
-import { scienceIndexes } from './repository'
+import { scienceIndexes } from './public-repository'
 import { scienceWords } from './catalogue'
 import { parseScienceQuery, searchScience, type ScienceQuery } from './query'
 export function ScienceGlossary({ query, onChange }: { query: ScienceQuery; onChange: (query: ScienceQuery) => void }) {

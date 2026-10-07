@@ -2345,5 +2345,192 @@
     "matchRationale": "Additional exact source-described cooked profile of the same canonical food. The source method, salt/enrichment and edible-state qualifiers are retained; raw grams and other preparations are not interchangeable.",
     "sourceSnapshotSha256": "91fa62527f24a58135346d1e34d00723f2c0e1210413309a270606cb782e107b",
     "verifiedAt": "2026-10-06T06:15:44.002Z"
+  },
+  {
+    "foodId": "food_red_cabbage",
+    "fdcId": 169977,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cabbage, red, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "a13dea00029c9464835ea76f89e867518f7319192484954e715d70dffbecae56",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_cherry",
+    "fdcId": 171719,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cherries, sweet, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "087b47393ff0d2ea29c2a3dfbdeaa80e1c579358a3947ff41712f4f768cb3213",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_green_chilli",
+    "fdcId": 170497,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Peppers, hot chili, green, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "9732aba40aa0fb8966595961ff2e7f9fce10721a3fcd87f97d4b369e21ece406",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_red_chilli_pepper",
+    "fdcId": 170106,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Peppers, hot chili, red, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "189ae74bcd5c61ee52cfa87c1f6ca0510bde3e5eb7a78e3072727fa5d7a8b807",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_chestnut",
+    "fdcId": 169413,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Nuts, chestnuts, japanese, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "f6a4472198855dbcd48c6a68aa149bd3d509547b408c7aeb6041421e93cba86b",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_poppy_seed",
+    "fdcId": 171330,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, poppy seed",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "d02f68ad8215f7cedc8cc066ceceafeaa50ca46eefe783ad7dec3273d441eb85",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_skim_milk",
+    "fdcId": 173432,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Milk, nonfat, fluid, without added vitamin A and vitamin D (fat free or skim)",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "dc8a9c7d7991ef8cfced61925d6fb0afa5af5b34ebe43d4a8a242ae893a1068a",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_goat_meat",
+    "fdcId": 175303,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Game meat, goat, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "9d9d8908c80ce153c7ef209d866967ce27dfaf3360bce26a42207220f0904b10",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_duck_meat",
+    "fdcId": 172410,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Duck, domesticated, meat only, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "869c14df8d4d1e0946942ddf7d94613f436e6ac1e055e570daca2b0cd46a96d5",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_rabbit_meat",
+    "fdcId": 172521,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Game meat, rabbit, domesticated, composite of cuts, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "2991df1bac4028c2d2dc62e0e00eff9ed3355527b64b211fe3624e80cd178244",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_venison",
+    "fdcId": 173855,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Game meat, deer, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "d0fc68cd6155d4b49ff358c64b74bf7fc5fffedc6a6302a59118f2df380207d1",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_beef_liver",
+    "fdcId": 169451,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Beef, variety meats and by-products, liver, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "ee8429b107bf03a6f4fc2501f96cda20408d1d998fb1adf83bd75ead0720f91e",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_chicken_wing",
+    "fdcId": 173632,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chicken, broilers or fryers, wing, meat only, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "5bb5f351ff54428941b50bf61d2dac77a2cbfc02e33dc7424f1cf43fdeb9b941",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_tomato_juice_unsalted",
+    "fdcId": 170545,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Tomato juice, canned, without salt added",
+    "foodState": "canned",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "d94f84a25b6bc3c41900b688fdf52466b57db75e53edc7c5415cabf3647d70d5",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_orange_juice_unsweetened",
+    "fdcId": 169098,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Orange juice, raw (Includes foods for USDA's Food Distribution Program)",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "ebffe9d803aec87e28b673a13fb8d1863ee2c62f82efa9de60f1ab4e0b96839f",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_paprika",
+    "fdcId": 171329,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, paprika",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "c561c893482dfbe6ac9f43b41d7340827184d47b5ea7bb42559e1d5eaebeef87",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_oregano",
+    "fdcId": 171328,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, oregano, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
+    "sourceSnapshotSha256": "c390a76d80f284151b188225c738cc2c2cbaf89b55af0e66e70cee18a24f4a46",
+    "verifiedAt": "2026-10-07T10:26:33.683Z"
   }
 ]

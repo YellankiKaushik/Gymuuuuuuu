@@ -1,7 +1,12 @@
 import { appConfig } from "../../config/app";
 import { Icon } from "../../components/common/icon";
-import verifiedSources from "../../content/provenance/verified-sources.json";
-export function SourcesPage() {
+import type { z } from "zod";
+import type { verifiedSourceSchema } from "../content-review/schema";
+export function SourcesPage({
+  verifiedSources,
+}: {
+  verifiedSources: z.infer<typeof verifiedSourceSchema>[];
+}) {
   return (
     <div className="page sources-page">
       <div className="page-heading">

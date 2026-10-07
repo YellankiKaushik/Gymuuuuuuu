@@ -5,18 +5,17 @@
     "displayName": "Dumbbell curl",
     "aliases": [],
     "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
     "movementPatternIds": [
       "pattern_elbow_flexion"
     ],
     "equipmentIds": [
       "equipment_dumbbell"
     ],
-    "contentStatus": "published",
-    "reviewRequired": false,
-    "version": "1.0.0",
-    "difficulty": "foundation",
-    "mechanics": "isolation",
-    "laterality": "bilateral",
     "environmentTags": [
       "home",
       "commercial-gym"
@@ -72,19 +71,19 @@
           "max": 5
         },
         "restSeconds": null,
-        "confidence": "limited",
         "loadNotes": "The source uses light weights.",
         "qualifier": "This gentle source routine gives three sets of five curls per arm. It is not a universal strength or hypertrophy prescription. Rest and breathing timing are not specified by this source.",
+        "confidence": "limited",
         "sourceIds": [
           "public_strength_2024"
         ]
       }
     ],
     "safety": {
-      "notMedicalAdvice": true,
       "stopSignals": [
         "Stop if exercise produces pain or you become unwell."
       ],
+      "notMedicalAdvice": true,
       "notes": "Seek qualified advice when unsure about suitability, with a health problem, injury, symptoms, recent surgery, pregnancy or other concerns. Source video safety context; no individual clearance."
     },
     "media": [
@@ -106,8 +105,8 @@
         "id": "gray_1918_upper_arm",
         "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
         "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
-        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
         "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
         "reviewedAt": "2026-10-05",
         "notes": "Public-domain historical anatomy; not training-effect evidence."
       },
@@ -115,8 +114,8 @@
         "id": "public_strength_2024",
         "title": "Public-sector strength exercise guidance",
         "publisher": "Department of Health and Social Care",
-        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
         "sourceType": "government-guideline",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
         "reviewedAt": "2026-10-05",
         "notes": "Contains public sector information licensed under the Open Government Licence v3.0."
       },
@@ -124,8 +123,8 @@
         "id": "public_video_safety_2023",
         "title": "Public-sector exercise safety information",
         "publisher": "Department of Health and Social Care",
-        "url": "https://www.nhs.uk/live-well/exercise/strength-and-resistance/body-blast-arms/",
         "sourceType": "government-guideline",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-and-resistance/body-blast-arms/",
         "reviewedAt": "2026-10-05",
         "notes": "Contains public sector information licensed under the Open Government Licence v3.0."
       }
@@ -138,7 +137,8 @@
       "mediaReviewedAt": "2026-10-05",
       "nextReviewDue": "2027-02-28",
       "notes": "Source facts and original diagram machine-validated. No independent human or clinical review. Publication does not establish individual suitability."
-    }
+    },
+    "version": "1.0.0"
   },
   {
     "id": "exercise_dumbbell_lateral_raise",
@@ -146,18 +146,17 @@
     "displayName": "Dumbbell lateral raise",
     "aliases": [],
     "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
     "movementPatternIds": [
       "pattern_shoulder_abduction"
     ],
     "equipmentIds": [
       "equipment_dumbbell"
     ],
-    "contentStatus": "published",
-    "reviewRequired": false,
-    "version": "1.0.0",
-    "difficulty": "foundation",
-    "mechanics": "isolation",
-    "laterality": "bilateral",
     "environmentTags": [
       "home",
       "commercial-gym"
@@ -214,20 +213,20 @@
           "max": 15
         },
         "restSeconds": null,
-        "confidence": "limited",
-        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "qualifier": "Printed page 49: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "confidence": "limited",
         "sourceIds": [
           "nia_strength_guide_2018"
         ]
       }
     ],
     "safety": {
-      "notMedicalAdvice": true,
       "stopSignals": [
         "Stop if exercise causes pain or you feel unwell."
       ],
+      "notMedicalAdvice": true,
       "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
     },
     "media": [
@@ -249,8 +248,8 @@
         "id": "nia_strength_guide_2018",
         "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
         "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
-        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "publicationYear": 2018,
         "reviewedAt": "2026-10-06",
         "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
@@ -259,8 +258,8 @@
         "id": "gray_1918_shoulder_thorax",
         "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
         "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
-        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "publicationYear": 1918,
         "reviewedAt": "2026-10-06",
         "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
@@ -274,7 +273,8 @@
       "mediaReviewedAt": "2026-10-06",
       "nextReviewDue": "2027-04-05",
       "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
-    }
+    },
+    "version": "1.0.0"
   },
   {
     "id": "exercise_dumbbell_front_raise",
@@ -282,18 +282,17 @@
     "displayName": "Dumbbell front raise",
     "aliases": [],
     "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
     "movementPatternIds": [
       "pattern_shoulder_flexion"
     ],
     "equipmentIds": [
       "equipment_dumbbell"
     ],
-    "contentStatus": "published",
-    "reviewRequired": false,
-    "version": "1.0.0",
-    "difficulty": "foundation",
-    "mechanics": "isolation",
-    "laterality": "bilateral",
     "environmentTags": [
       "home",
       "commercial-gym"
@@ -350,20 +349,20 @@
           "max": 15
         },
         "restSeconds": null,
-        "confidence": "limited",
-        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "qualifier": "Printed page 48: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "confidence": "limited",
         "sourceIds": [
           "nia_strength_guide_2018"
         ]
       }
     ],
     "safety": {
-      "notMedicalAdvice": true,
       "stopSignals": [
         "Stop if exercise causes pain or you feel unwell."
       ],
+      "notMedicalAdvice": true,
       "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
     },
     "media": [
@@ -385,8 +384,8 @@
         "id": "nia_strength_guide_2018",
         "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
         "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
-        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "publicationYear": 2018,
         "reviewedAt": "2026-10-06",
         "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
@@ -395,8 +394,8 @@
         "id": "gray_1918_shoulder_thorax",
         "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
         "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
-        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "publicationYear": 1918,
         "reviewedAt": "2026-10-06",
         "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
@@ -410,7 +409,8 @@
       "mediaReviewedAt": "2026-10-06",
       "nextReviewDue": "2027-04-05",
       "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
-    }
+    },
+    "version": "1.0.0"
   },
   {
     "id": "exercise_standing_dumbbell_shoulder_press",
@@ -418,6 +418,11 @@
     "displayName": "Standing dumbbell shoulder press",
     "aliases": [],
     "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "compound",
+    "laterality": "bilateral",
     "movementPatternIds": [
       "pattern_vertical_push",
       "pattern_anti_extension"
@@ -425,12 +430,6 @@
     "equipmentIds": [
       "equipment_dumbbell"
     ],
-    "contentStatus": "published",
-    "reviewRequired": false,
-    "version": "1.0.0",
-    "difficulty": "foundation",
-    "mechanics": "compound",
-    "laterality": "bilateral",
     "environmentTags": [
       "home",
       "commercial-gym"
@@ -487,20 +486,20 @@
           "max": 15
         },
         "restSeconds": null,
-        "confidence": "limited",
-        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "qualifier": "Printed page 47: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "confidence": "limited",
         "sourceIds": [
           "nia_strength_guide_2018"
         ]
       }
     ],
     "safety": {
-      "notMedicalAdvice": true,
       "stopSignals": [
         "Stop if exercise causes pain or you feel unwell."
       ],
+      "notMedicalAdvice": true,
       "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
     },
     "media": [
@@ -522,8 +521,8 @@
         "id": "nia_strength_guide_2018",
         "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
         "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
-        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "publicationYear": 2018,
         "reviewedAt": "2026-10-06",
         "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
@@ -532,8 +531,8 @@
         "id": "gray_1918_shoulder_thorax",
         "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
         "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
-        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "publicationYear": 1918,
         "reviewedAt": "2026-10-06",
         "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
@@ -547,7 +546,8 @@
       "mediaReviewedAt": "2026-10-06",
       "nextReviewDue": "2027-04-05",
       "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
-    }
+    },
+    "version": "1.0.0"
   },
   {
     "id": "exercise_seated_dumbbell_shoulder_press",
@@ -555,6 +555,11 @@
     "displayName": "Seated dumbbell shoulder press",
     "aliases": [],
     "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "compound",
+    "laterality": "bilateral",
     "movementPatternIds": [
       "pattern_vertical_push"
     ],
@@ -562,12 +567,6 @@
       "equipment_dumbbell",
       "equipment_sturdy_chair"
     ],
-    "contentStatus": "published",
-    "reviewRequired": false,
-    "version": "1.0.0",
-    "difficulty": "foundation",
-    "mechanics": "compound",
-    "laterality": "bilateral",
     "environmentTags": [
       "home",
       "commercial-gym"
@@ -624,20 +623,20 @@
           "max": 15
         },
         "restSeconds": null,
-        "confidence": "limited",
-        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "qualifier": "Printed page 47: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "confidence": "limited",
         "sourceIds": [
           "nia_strength_guide_2018"
         ]
       }
     ],
     "safety": {
-      "notMedicalAdvice": true,
       "stopSignals": [
         "Stop if exercise causes pain or you feel unwell."
       ],
+      "notMedicalAdvice": true,
       "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
     },
     "media": [
@@ -659,8 +658,8 @@
         "id": "nia_strength_guide_2018",
         "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
         "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
-        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "publicationYear": 2018,
         "reviewedAt": "2026-10-06",
         "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
@@ -669,8 +668,8 @@
         "id": "gray_1918_shoulder_thorax",
         "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
         "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
-        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
         "publicationYear": 1918,
         "reviewedAt": "2026-10-06",
         "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
@@ -684,7 +683,8 @@
       "mediaReviewedAt": "2026-10-06",
       "nextReviewDue": "2027-04-05",
       "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
-    }
+    },
+    "version": "1.0.0"
   },
   {
     "id": "exercise_dumbbell_overhead_triceps_extension",
@@ -692,18 +692,17 @@
     "displayName": "Dumbbell overhead triceps extension",
     "aliases": [],
     "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "unilateral",
     "movementPatternIds": [
       "pattern_elbow_extension"
     ],
     "equipmentIds": [
       "equipment_dumbbell"
     ],
-    "contentStatus": "published",
-    "reviewRequired": false,
-    "version": "1.0.0",
-    "difficulty": "foundation",
-    "mechanics": "isolation",
-    "laterality": "unilateral",
     "environmentTags": [
       "home",
       "commercial-gym"
@@ -761,20 +760,20 @@
           "max": 15
         },
         "restSeconds": null,
-        "confidence": "limited",
-        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "effortNotes": "Older-adult source guidance; not an RPE/RIR target or individualized prescription.",
+        "loadNotes": "Begin with light resistance. The source allows starting below the repetition goal and gradually building up.",
         "qualifier": "Printed page 54: repeat 10–15 movements, rest, then repeat. For the one-arm extension, repeat with each arm. Rest duration is unspecified and remains null. The source gives a 1-second hold; do not infer a universal tempo or hypertrophy prescription.",
+        "confidence": "limited",
         "sourceIds": [
           "nia_strength_guide_2018"
         ]
       }
     ],
     "safety": {
-      "notMedicalAdvice": true,
       "stopSignals": [
         "Stop if exercise causes pain or you feel unwell."
       ],
+      "notMedicalAdvice": true,
       "notes": "Ask a qualified health professional when unsure about an exercise, including after surgery or with a health concern. This record does not establish personal clearance."
     },
     "media": [
@@ -796,8 +795,8 @@
         "id": "nia_strength_guide_2018",
         "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
         "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
-        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
         "publicationYear": 2018,
         "reviewedAt": "2026-10-06",
         "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
@@ -806,8 +805,8 @@
         "id": "gray_1918_upper_arm",
         "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
         "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
-        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
         "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
         "publicationYear": 1918,
         "reviewedAt": "2026-10-06",
         "notes": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review."
@@ -821,7 +820,8 @@
       "mediaReviewedAt": "2026-10-06",
       "nextReviewDue": "2027-04-05",
       "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
-    }
+    },
+    "version": "1.0.0"
   },
   {
     "id": "exercise_single_leg_calf_raise",
@@ -829,6 +829,11 @@
     "displayName": "Single-leg calf raise",
     "aliases": [],
     "exerciseType": "bodyweight-strength",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "unilateral",
     "movementPatternIds": [
       "pattern_calf_raise"
     ],
@@ -836,12 +841,6 @@
       "equipment_bodyweight",
       "equipment_sturdy_chair"
     ],
-    "contentStatus": "published",
-    "reviewRequired": false,
-    "version": "1.0.0",
-    "difficulty": "foundation",
-    "mechanics": "isolation",
-    "laterality": "unilateral",
     "environmentTags": [
       "home"
     ],
@@ -903,42 +902,20 @@
           "max": 15
         },
         "restSeconds": null,
-        "confidence": "limited",
         "qualifier": "Printed page 62 gives a one-leg progression totaling 10–15 repetitions per leg. It gives no separate set count or timed rest for that progression; the two-leg two-set prescription is not transferred. Older-adult education, not a universal training dose.",
+        "confidence": "limited",
         "sourceIds": [
           "nia_strength_guide_2018"
         ]
       }
     ],
     "safety": {
-      "notMedicalAdvice": true,
       "stopSignals": [
         "Stop for chest pain or pressure, severe joint pain, dizziness or feeling unwell."
       ],
+      "notMedicalAdvice": true,
       "notes": "NIA older-adult safety context: seek qualified advice when unsure about suitability, after surgery or with health concerns. This page provides no individual medical clearance."
     },
-    "sources": [
-      {
-        "id": "nia_strength_guide_2018",
-        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
-        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
-        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
-        "sourceType": "government-guideline",
-        "publicationYear": 2018,
-        "reviewedAt": "2026-10-07",
-        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
-      },
-      {
-        "id": "gray_1918_lower_limb",
-        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
-        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
-        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
-        "sourceType": "textbook",
-        "publicationYear": 1918,
-        "reviewedAt": "2026-10-07",
-        "notes": "Public-domain historical joint-action context only; no modern training-effect evidence."
-      }
-    ],
     "media": [
       {
         "id": "diagram_supported_single_leg_calf_raise_v1",
@@ -953,6 +930,28 @@
         "whySelected": "Machine comparison with the written source cue; no independent human technique review."
       }
     ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Public-domain historical joint-action context only; no modern training-effect evidence."
+      }
+    ],
     "review": {
       "contentReviewer": "Codex source verification; published_personal_use; no human review",
       "techniqueReviewedAt": "2026-10-07",
@@ -961,6 +960,643 @@
       "mediaReviewedAt": "2026-10-07",
       "nextReviewDue": "2027-04-07",
       "notes": "Source verification and automated validation; no independent human or clinical review. Due date is a repository maintenance reminder."
-    }
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_bodyweight_squat",
+    "slug": "bodyweight-squat",
+    "displayName": "Bodyweight squat",
+    "aliases": [],
+    "exerciseType": "bodyweight-strength",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "beginner",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_squat"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "environmentTags": [
+      "home"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "An unloaded squat using the ACE technique description; depth ends sooner if heels lift or torso position deteriorates.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_rectus_femoris",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "muscleId": "muscle_vastus_lateralis",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "muscleId": "muscle_vastus_medialis",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "muscleId": "muscle_vastus_intermedius",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand slightly wider than hip width, toes turned a little outward.",
+        "Brace the trunk, keep the chest up and begin with the hips moving backward."
+      ],
+      "executionSteps": [
+        "Lower with the hips moving back and down while bending the knees.",
+        "Keep heels grounded and knees aligned with the second toes. End descent near parallel or earlier if heels lift or torso control changes.",
+        "Exhale as hips and knees extend together back to standing; inhale during descent."
+      ],
+      "finishOrReset": "Return to the initial upright stance.",
+      "breathing": "Inhale downward; exhale while rising.",
+      "keyCheckpoints": [
+        "Retain heel contact and controlled torso position rather than forcing a fixed depth."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Continuing lower after heel contact or torso control is lost.",
+        "whyItMatters": "This differs from the source-described version.",
+        "correction": "Use the earlier endpoint described in the source.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_bodyweight_squat"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "qualifier": "Technique source only; no universal depth, load, sets, repetitions or rest period is established.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_bodyweight_squat"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for chest pain or pressure, severe joint pain, dizziness or feeling unwell."
+      ],
+      "prerequisites": [
+        "Obtain qualified instruction if you cannot maintain this source-described setup and control."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA older-adult safety context on printed pages 42–43: seek qualified advice when unsure about suitability, after surgery or with health concerns. No individual clearance is provided."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_bodyweight_squat_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/bodyweight-squat-cue.svg",
+        "alt": "Original movement sequence: Stand and brace, then Hips back and down, then Rise with heels grounded. Read written setup and safety guidance.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the cited movement sequence; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_bodyweight_squat",
+        "title": "ACE Bodyweight Squat",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-07",
+        "notes": "Brief original technique paraphrase; no third-party media copied."
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Historical qualitative joint actions only."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Source verification and automated validation; no independent human or clinical review. Due date is a maintenance reminder."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_one_arm_dumbbell_row",
+    "slug": "one-arm-dumbbell-row",
+    "displayName": "One-arm dumbbell row",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "unilateral",
+    "movementPatternIds": [
+      "pattern_horizontal_pull",
+      "pattern_anti_rotation"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell",
+      "equipment_bench"
+    ],
+    "environmentTags": [
+      "home"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE bench-supported single-arm dumbbell row, retaining its intermediate difficulty and torso-control prerequisites.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_latissimus_dorsi",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "muscleId": "muscle_biceps_brachii",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Support the opposite hand and knee on a stable bench, hand below shoulder and knee below hip. Hold the dumbbell in the working hand.",
+        "Brace with a flat back and head aligned with the spine; keep the shoulder down and back."
+      ],
+      "executionSteps": [
+        "Exhale while drawing the upper arm backward with the elbow close to the body.",
+        "Stop before the lift requires trunk rotation or a changed spinal position.",
+        "Inhale while lowering slowly, maintaining the supported trunk position."
+      ],
+      "finishOrReset": "Return the weight to the hanging starting position; repeat the setup on the other side.",
+      "breathing": "Exhale while lifting; inhale while lowering.",
+      "keyCheckpoints": [
+        "Avoid trunk rotation and loss of the stated back or shoulder position."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Rotating the trunk to lift farther.",
+        "whyItMatters": "This differs from the source-described version.",
+        "correction": "End the lift before rotation is needed; monitor position as suggested by the source.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_single_arm_row"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "qualifier": "Intermediate technique instruction only; no set, repetition, effort-scale or timed-rest protocol is supplied.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_single_arm_row"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for chest pain or pressure, severe joint pain, dizziness or feeling unwell."
+      ],
+      "prerequisites": [
+        "Obtain qualified instruction if you cannot maintain this source-described setup and control."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA older-adult safety context on printed pages 42–43: seek qualified advice when unsure about suitability, after surgery or with health concerns. No individual clearance is provided."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_one_arm_dumbbell_row_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/one-arm-dumbbell-row-cue.svg",
+        "alt": "Original movement sequence: Bench-supported setup, then Elbow draws backward, then Lower without rotation. Read written setup and safety guidance.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the cited movement sequence; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_single_arm_row",
+        "title": "ACE Single-arm Row",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/126/single-arm-row/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-07",
+        "notes": "Brief original technique paraphrase; no third-party media copied."
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Historical qualitative joint actions only."
+      },
+      {
+        "id": "gray_1918_upper_arm",
+        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Historical qualitative joint actions only."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Source verification and automated validation; no independent human or clinical review. Due date is a maintenance reminder."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_incline_push_up",
+    "slug": "incline-push-up",
+    "displayName": "Incline push-up",
+    "aliases": [],
+    "exerciseType": "bodyweight-strength",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_horizontal_push",
+      "pattern_anti_extension"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "environmentTags": [
+      "home"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The wall-supported incline push-up from the NIA older-adult guide. This page covers the wall variant, not an elevated-bench push-up.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_pectoralis_major",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax"
+        ]
+      },
+      {
+        "muscleId": "muscle_triceps_brachii",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand a little farther than arm length from a wall, feet shoulder width apart.",
+        "Place palms against the wall at shoulder height and shoulder width."
+      ],
+      "executionSteps": [
+        "Inhale as elbows bend and the body moves slowly toward the wall, keeping feet flat.",
+        "Hold for 1 second.",
+        "Exhale while slowly pressing away until the arms are straight."
+      ],
+      "finishOrReset": "Return to the initial wall-supported stance.",
+      "breathing": "Inhale toward the wall; exhale while pressing away.",
+      "keyCheckpoints": [
+        "Keep feet flat and move slowly; use the stated wall variant."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Using an unstable raised surface instead of the specified wall.",
+        "whyItMatters": "This differs from the source-described version.",
+        "correction": "Follow the wall-supported version; a bench variation needs separate guidance.",
+        "severity": "performance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "qualifier": "Printed page 53: older-adult wall version, two sets of 10–15 with a 1-second hold. Timed rest is unspecified. Start with what can be managed; not a universal dose.",
+        "confidence": "limited",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for chest pain or pressure, severe joint pain, dizziness or feeling unwell."
+      ],
+      "prerequisites": [],
+      "notMedicalAdvice": true,
+      "notes": "NIA older-adult safety context on printed pages 42–43: seek qualified advice when unsure about suitability, after surgery or with health concerns. No individual clearance is provided."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_incline_push_up_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/incline-push-up-cue.svg",
+        "alt": "Original movement sequence: Hands against wall, then Bend toward wall, then Press away slowly. Read written setup and safety guidance.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the cited movement sequence; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed page 53"
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Historical qualitative joint actions only."
+      },
+      {
+        "id": "gray_1918_upper_arm",
+        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Historical qualitative joint actions only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Source verification and automated validation; no independent human or clinical review. Due date is a maintenance reminder."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_standing_calf_raise",
+    "slug": "standing-calf-raise",
+    "displayName": "Standing calf raise",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_calf_raise"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight",
+      "equipment_sturdy_chair"
+    ],
+    "environmentTags": [
+      "home"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The NIA two-leg toe stand with sturdy-chair support. It is a bodyweight standing calf raise, not a machine-loaded variation.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gastrocnemius",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "muscleId": "muscle_soleus",
+        "role": "context-dependent",
+        "qualifier": "Qualitative joint-action relationship from historical anatomy and the stated movement; no exercise activation percentage, isolation or comparative training effect is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand with feet shoulder width apart behind a sturdy chair.",
+        "Hold the chair for balance."
+      ],
+      "executionSteps": [
+        "Exhale while slowly rising onto the toes as far as comfortable.",
+        "Hold for 1 second.",
+        "Inhale while slowly lowering the heels to the floor."
+      ],
+      "finishOrReset": "Return heels to the floor while retaining chair support.",
+      "breathing": "Exhale rising; inhale lowering.",
+      "keyCheckpoints": [
+        "Retain the sturdy support and controlled rise and return."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Removing the chair support or moving abruptly.",
+        "whyItMatters": "This differs from the source-described version.",
+        "correction": "Keep support available and follow the slow source sequence.",
+        "severity": "performance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "qualifier": "Printed page 62: older-adult two-leg version, two sets of 10–15 with a 1-second hold. Timed rest is unspecified. One-leg progression does not inherit this set count.",
+        "confidence": "limited",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for chest pain or pressure, severe joint pain, dizziness or feeling unwell."
+      ],
+      "prerequisites": [],
+      "notMedicalAdvice": true,
+      "notes": "NIA older-adult safety context on printed pages 42–43: seek qualified advice when unsure about suitability, after surgery or with health concerns. No individual clearance is provided."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_standing_calf_raise_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/standing-calf-raise-cue.svg",
+        "alt": "Original movement sequence: Hold sturdy chair, then Rise onto toes, then Lower heels slowly. Read written setup and safety guidance.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the cited movement sequence; no independent human technique review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed page 62"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Historical qualitative joint actions only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Source verification and automated validation; no independent human or clinical review. Due date is a maintenance reminder."
+    },
+    "version": "1.0.0"
   }
 ]

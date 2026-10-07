@@ -1,3 +1,4 @@
+import type { Muscle } from "./schema";
 import { exercisesForMuscle } from "../exercises/repository";
 import { PageHeader, SectionNav } from "../../components/common/page-header";
 import { SourceList } from "../../components/common/source-list";
@@ -10,14 +11,11 @@ import {
 import {
   anatomyTaxonomy,
   getAnatomySources,
-  getMuscleBySlug,
-  getRelatedMuscles,
   muscleRecords,
-} from "./repository";
+} from "./public-repository";
 import { appConfig } from "../../config/app";
 
-export function MuscleDetail({ slug }: { slug: string }) {
-  const record = getMuscleBySlug(slug);
+export function MuscleDetail({ record }: { record: Muscle | undefined }) {
   if (!record)
     return (
       <div className="page">
@@ -61,7 +59,14 @@ export function MuscleDetail({ slug }: { slug: string }) {
         anatomyTaxonomy.regions.find((region) => region.id === id)?.displayName,
     )
     .join(" · ");
-  const related = getRelatedMuscles(record.id);
+  const related = record.relationships.flatMap((relation) => {
+    const item = muscleRecords.find(
+      (candidate) =>
+        candidate.id === relation.relatedMuscleId &&
+        candidate.contentStatus === "published",
+    );
+    return item ? [{ record: item, relation }] : [];
+  });
   const family = muscleRecords.filter(
     (item) =>
       [...record.parentIds, ...record.childIds].includes(item.id) &&

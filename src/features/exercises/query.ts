@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { anatomyTaxonomy, normalizeTerm } from '../muscles/repository'
+import { anatomyTaxonomy, normalizeTerm } from '../muscles/public-repository'
 import { buildExerciseIndexes, exerciseIndexes, exerciseTaxonomy, getPublishedExercises } from './repository'
 import { difficulties, environments, exerciseTypes, goals, lateralities, mechanics, type Exercise } from './schema'
 

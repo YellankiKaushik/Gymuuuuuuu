@@ -24,6 +24,8 @@ it("validates all draft science identities and hides unpublished articles", () =
     "science_consistency_adherence",
     "science_hypertrophy_adaptation",
     "science_muscular_failure",
+    "science_rest_intervals",
+    "science_training_split",
   ]);
   expect(getScienceBySlug("training-volume")).toBeUndefined();
 });

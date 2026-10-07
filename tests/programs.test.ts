@@ -21,7 +21,17 @@ import { programSchema } from "../src/features/programs/schema";
 import { programFixture } from "./fixtures/program";
 afterEach(() => vi.unstubAllGlobals());
 it("keeps draft programs hidden and rejects incomplete publication", () => {
-  expect(publishedPrograms).toEqual([]);
+  expect(publishedPrograms.map((program) => program.id)).toEqual([
+    "program_full_body_2_day_foundation",
+  ]);
+  expect(
+    publishedPrograms.every((program) => program.contentStatus === "published"),
+  ).toBe(true);
+  expect(
+    searchPrograms(parseProgramQuery({}), [
+      { ...programFixture, contentStatus: "draft" },
+    ]),
+  ).toEqual([]);
   expect(
     programSchema.safeParse({ ...programFixture, progressionRules: [] })
       .success,

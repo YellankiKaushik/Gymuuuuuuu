@@ -1,6 +1,9 @@
 import { z } from "zod";
-import { normativeProgramSchema } from "./schema.generated";
-export type { Program } from "./schema.generated";
+import {
+  normativeProgramSchema,
+  normativeProgramObjectSchema,
+  validateProgramConditionals,
+} from "./schema.generated";
 export const programGoals = normativeProgramSchema.shape.primaryGoal.options;
 export const programExperiences =
   normativeProgramSchema.shape.experienceLevels.element.options;
@@ -15,8 +18,66 @@ export const programEnvironments = [
   "limited-space",
   "mixed",
 ] as const;
-export const programSchema = normativeProgramSchema.superRefine(
-  (program, ctx) => {
+const schedule = normativeProgramObjectSchema.shape.scheduleModel
+  .unwrap()
+  .unwrap();
+const session = schedule.shape.sessions.element;
+const block = session.shape.exerciseBlocks.element;
+const prescription = block.shape.prescriptions.element;
+const sourceRestPrescription = prescription
+  .extend({
+    restSeconds: prescription.shape.restSeconds.nullable(),
+    restGuidance: z
+      .strictObject({
+        status: z.literal("source_unspecified"),
+        text: z.string().min(20),
+        sourceIds: z.array(z.string().regex(/^source_[a-z0-9_]+$/)).min(1),
+      })
+      .optional(),
+  })
+  .superRefine((item, ctx) => {
+    if (item.restSeconds === null && !item.restGuidance)
+      ctx.addIssue({
+        code: "custom",
+        path: ["restGuidance"],
+        message: "Unspecified timed rest requires explicit source context",
+      });
+    if (item.restSeconds !== null && item.restGuidance)
+      ctx.addIssue({
+        code: "custom",
+        path: ["restGuidance"],
+        message:
+          "Unspecified-rest context cannot accompany a numeric prescription",
+      });
+  });
+const sourceRestSchedule = schedule.extend({
+  sessions: z
+    .array(
+      session.extend({
+        exerciseBlocks: z
+          .array(
+            block.extend({
+              prescriptions: z.array(sourceRestPrescription).min(1),
+            }),
+          )
+          .min(1),
+      }),
+    )
+    .min(1),
+});
+export const programSchema = normativeProgramObjectSchema
+  .extend({
+    scheduleModel: sourceRestSchedule.nullable().optional(),
+    timeContext: z
+      .strictObject({
+        method: z.literal("source_guideline_allocation"),
+        explanation: z.string().min(30),
+        sourceIds: z.array(z.string().regex(/^source_[a-z0-9_]+$/)).min(1),
+      })
+      .optional(),
+  })
+  .superRefine(validateProgramConditionals)
+  .superRefine((program, ctx) => {
     const issue = (path: (string | number)[], message: string) =>
       ctx.addIssue({ code: "custom", path, message });
     function ranges(value: unknown, path: (string | number)[]) {
@@ -128,8 +189,22 @@ export const programSchema = normativeProgramSchema.superRefine(
         }),
       ),
     );
-  },
-);
+    if (
+      program.timeContext &&
+      program.scheduleModel?.sessions.some(
+        (session) =>
+          session.estimatedDurationMinutes.min !==
+            program.sessionDurationMinutes?.min ||
+          session.estimatedDurationMinutes.max !==
+            program.sessionDurationMinutes?.max,
+      )
+    )
+      issue(
+        ["timeContext"],
+        "Source time allocation must match each session; it is not an observed completion estimate",
+      );
+  });
+export type Program = z.infer<typeof programSchema>;
 export const weekdays = [
   "monday",
   "tuesday",

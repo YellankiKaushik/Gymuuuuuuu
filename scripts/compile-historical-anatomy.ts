@@ -6,6 +6,7 @@ import {
   validateAnatomy,
 } from "../src/features/muscles/repository";
 import definitions from "../src/content/provenance/historical-lower-limb-definitions.json";
+import additionalDefinitions from "../src/content/provenance/historical-lower-limb-additional.json";
 import snapshot from "../src/content/provenance/gray-1918-lower-limb-snapshot.json";
 
 const digest = createHash("sha256")
@@ -13,10 +14,21 @@ const digest = createHash("sha256")
   .digest("hex");
 if (digest !== snapshot.sha256)
   throw Error("Historical source extract changed");
-const additions = muscleSchema.array().parse(definitions);
+const additions = muscleSchema
+  .array()
+  .parse([...definitions, ...additionalDefinitions]);
 if (
   JSON.stringify(additions.map((row) => row.id)) !==
-  JSON.stringify(snapshot.recordIds)
+  JSON.stringify([
+    ...snapshot.recordIds,
+    "muscle_adductor_magnus",
+    "muscle_adductor_longus",
+    "muscle_adductor_brevis",
+    "muscle_gracilis",
+    "muscle_pectineus",
+    "muscle_tibialis_anterior",
+    "muscle_deep_hip_rotator_group",
+  ])
 )
   throw Error("Historical source identity coverage changed");
 for (const row of additions) {

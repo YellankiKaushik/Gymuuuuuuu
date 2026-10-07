@@ -10,7 +10,7 @@ import foods from "../src/content/foods/records.json";
 const additions = ["thiamin_mg", "riboflavin_mg", "niacin_mg", "vitamin_b6_mg"];
 it("keeps every new nutrient's stable identity, exact NIH page and honest dated publication", () => {
   const parsed = nutrientSchema.array().parse(records);
-  expect(parsed.filter((r) => r.status === "published")).toHaveLength(22);
+  expect(parsed.filter((r) => r.status === "published")).toHaveLength(32);
   expect(parsed.flatMap((r) => r.referenceValues)).toHaveLength(7);
   for (const id of additions) {
     const record = parsed.find((r) => r.id === id)!,
@@ -140,4 +140,69 @@ it("keeps natural food folate, source-reported DFE and medication safety context
   expect(potassium.excess!.overview).toContain("Kidney disease");
   expect(potassium.interactions[0]!.description).toContain("potassium-sparing");
   expect(dfe.excess!.overview).toContain("vitamin B12");
+});
+
+it("preserves source-specific vitamin A, folate and omega-3 concepts without inventing intake rows", () => {
+  const parsed = nutrientSchema.array().parse(records);
+  const ids = [
+    "chromium_ug",
+    "fluoride_mg",
+    "molybdenum_ug",
+    "pantothenic_acid_mg",
+    "biotin_ug",
+    "omega_3_g",
+    "vitamin_a_rae_ug",
+    "beta_carotene_ug",
+    "retinol_ug",
+    "folic_acid_ug",
+  ];
+  for (const id of ids) {
+    const article = parsed.find((r) => r.id === id)!;
+    const seed = identities.find((r) => r.id === id)!;
+    expect(article.status).toBe("published");
+    expect([
+      article.slug,
+      article.canonicalUnit,
+      article.foodDataNutrientIds,
+    ]).toEqual([seed.slug, seed.canonicalUnit, seed.foodDataNutrientIds]);
+    expect(article.referenceValues).toEqual([]);
+    expect(article.editorial.reviewedAt).toBe("2026-10-07");
+    expect(article.claims.every((claim) => claim.sourceIds.length > 0)).toBe(
+      true,
+    );
+    expect(article.deficiency!.medicalBoundary).toContain("cannot diagnose");
+    expect(
+      reviews.find((r) => r.module === "nutrients" && r.id === id)?.reviewer
+        .kind,
+    ).toBe("machine");
+  }
+  for (const id of [
+    "chromium_ug",
+    "fluoride_mg",
+    "molybdenum_ug",
+    "omega_3_g",
+  ]) {
+    expect(
+      parsed
+        .find((r) => r.id === id)!
+        .foodSourceRules.every(
+          (r) => r.status === "disabled" && r.phase07NutrientId === null,
+        ),
+    ).toBe(true);
+  }
+  expect(
+    parsed.find((r) => r.id === "retinol_ug")!.sources[0]!.locator,
+  ).toContain("VitaminA-HealthProfessional");
+  expect(parsed.find((r) => r.id === "vitamin_a_rae_ug")!.canonicalUnit).toBe(
+    "µg RAE",
+  );
+  expect(parsed.find((r) => r.id === "folic_acid_ug")!.canonicalUnit).toBe(
+    "µg",
+  );
+  expect(
+    JSON.stringify(parsed.find((r) => r.id === "biotin_ug")!.excess),
+  ).toMatch(/laboratory|lab test/i);
+  expect(
+    JSON.stringify(parsed.find((r) => r.id === "chromium_ug")!.functions),
+  ).toMatch(/uncertain|unclear|no longer/i);
 });

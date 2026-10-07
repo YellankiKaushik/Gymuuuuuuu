@@ -8,7 +8,7 @@ export const Route = createFileRoute("/mobility")({
 });
 function Page() {
   return (
-    <RecoveryPage title="Mobility">
+    <RecoveryPage publicKnowledge title="Mobility">
       <RecoveryKnowledge domain="mobility" routines />
     </RecoveryPage>
   );

@@ -1,6 +1,6 @@
 import rawTaxonomy from '../../content/exercises/taxonomy.json'
 import rawRecords from '../../content/exercises/records.json'
-import { anatomyTaxonomy, muscleRecords, normalizeTerm } from '../muscles/repository'
+import { anatomyTaxonomy, muscleRecords, normalizeTerm } from '../muscles/public-repository'
 import { exerciseSchema, type Exercise } from './schema'
 
 export const exerciseTaxonomy = rawTaxonomy

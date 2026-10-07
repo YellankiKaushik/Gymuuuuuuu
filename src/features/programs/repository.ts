@@ -1,19 +1,27 @@
 import rawTaxonomy from "../../content/programs/taxonomy.json";
 import rawRecords from "../../content/programs/records.json";
-import rawVersions from "../../content/programs/versions.json";
-import { anatomyTaxonomy, normalizeTerm } from "../muscles/repository";
+import historicalVersions from "../../content/programs/historical-versions.json";
+import versionIndex from "../../content/programs/version-index.json";
+import { anatomyTaxonomy, normalizeTerm } from "../muscles/public-repository";
 import { exerciseIdentities, exerciseIndexes } from "../exercises/repository";
 import {
   scienceIdentities,
   scienceIndexes,
-} from "../workout-science/repository";
+} from "../workout-science/public-repository";
 import { programSchema, type Program } from "./schema";
 export const programTaxonomy = rawTaxonomy;
 export const programIdentities = programSchema
   .array()
   .parse(rawTaxonomy.records);
 export const programRecords = programSchema.array().parse(rawRecords);
-export const programVersions = programSchema.array().parse(rawVersions);
+const historical = programSchema.array().parse(historicalVersions);
+export const programVersions = versionIndex.map((entry) => {
+  const program = (entry.current ? programRecords : historical).find(
+    (r) => r.id === entry.id && r.version === entry.version,
+  );
+  if (!program) throw Error("Immutable program version is missing.");
+  return structuredClone(program);
+});
 export function deriveProgramSummary(program: Program) {
   const sessions = program.scheduleModel?.sessions ?? [];
   const rotating = program.scheduleModel?.mode === "rotating-sequence";

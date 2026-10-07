@@ -5,7 +5,7 @@ import { EmptyState, NotFoundState } from "../../components/common/states";
 import { InfoCallout } from "../../components/common/primitives";
 import { createRecordStorage } from "../../storage/indexed-db/adapter";
 import { exerciseIndexes, exerciseTaxonomy } from "../exercises/repository";
-import { scienceIndexes } from "../workout-science/repository";
+import { scienceIndexes } from "../workout-science/public-repository";
 import {
   deriveProgramSummary,
   getProgramBySlug,
@@ -61,7 +61,10 @@ function Card({ program }: { program: Program }) {
       <p>{program.summary}</p>
       <div className="tag-row">
         <span>{program.trainingDaysPerWeek} days / week</span>
-        <span>{range(program.sessionDurationMinutes)} min / session</span>
+        <span>
+          {range(program.sessionDurationMinutes)} min / session
+          {program.timeContext ? " source allocation" : ""}
+        </span>
         <span>{words(program.routineStyle)}</span>
       </div>
     </a>
@@ -404,6 +407,7 @@ export function ProgramComparison({ ids }: { ids: string[] }) {
                 <dd>
                   {program.trainingDaysPerWeek} days / week ·{" "}
                   {range(program.sessionDurationMinutes)} minutes
+                  {program.timeContext ? " source allocation" : ""}
                 </dd>
                 <dt>Equipment</dt>
                 <dd>
@@ -468,9 +472,17 @@ export function ProgramContent({
   return (
     <>
       <p>{program.summary}</p>
+      <InfoCallout title="Publication review level">
+        Personal-use publication after source verification and machine
+        validation. No independent human or clinical review is claimed. This
+        repository's arrangement is not endorsed by the source publisher.
+      </InfoCallout>
       <div className="tag-row">
         <span>{summary.sessionCount} sessions / week</span>
-        <span>{range(summary.estimatedWeeklyMinutes)} minutes / week</span>
+        <span>
+          {range(summary.estimatedWeeklyMinutes)} minutes / week
+          {program.timeContext ? " source allocation" : ""}
+        </span>
         <span>{summary.exerciseCount} exercises</span>
       </div>
       <small>{summary.method}</small>
@@ -495,11 +507,16 @@ export function ProgramContent({
       />
       <section className="detail-section">
         <h2>Schedule and prescriptions</h2>
+        {program.timeContext && (
+          <InfoCallout title="Source time allocation">
+            {program.timeContext.explanation}
+          </InfoCallout>
+        )}
         {program.scheduleModel?.sessions.map((session) => (
           <article key={session.id} className="entity-card">
             <h3>
               {session.displayName} · {range(session.estimatedDurationMinutes)}{" "}
-              min
+              min{program.timeContext ? " source allocation" : ""}
             </h3>
             {instance && update && (
               <label>
@@ -542,8 +559,11 @@ export function ProgramContent({
                         {range(item.sets)} sets ·{" "}
                         {range(item.repetitionTarget.range)}{" "}
                         {item.repetitionTarget.type} · rest{" "}
-                        {range(item.restSeconds)} seconds
+                        {item.restSeconds
+                          ? `${range(item.restSeconds)} seconds`
+                          : "timed rest not specified by the source"}
                       </p>
+                      {item.restGuidance && <p>{item.restGuidance.text}</p>}
                       <p>
                         {words(item.effortTarget.method)}:{" "}
                         {typeof item.effortTarget.target === "string"

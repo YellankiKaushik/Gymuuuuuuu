@@ -8,7 +8,7 @@ export const Route = createFileRoute("/recovery_/topics_/$topicSlug")({
 });
 function Page() {
   return (
-    <RecoveryPage title="Recovery topic">
+    <RecoveryPage publicKnowledge title="Recovery topic">
       <RecoveryKnowledge slug={Route.useParams().topicSlug} />
     </RecoveryPage>
   );

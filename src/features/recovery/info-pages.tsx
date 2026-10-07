@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { publicRecoveryArticles, publicRecoveryRoutines } from "./publication";
+import { createPublicRoutineCopy } from "./public-routines";
+import { saveRoutine } from "./storage";
 import { recoveryReference, type RecoveryBackup } from "./schema";
 import {
   defaultRecoverySettings,
@@ -48,10 +50,9 @@ export function RecoveryKnowledge({
         <section className="recovery-card">
           <h2>{slug ? "Reviewed detail unavailable" : "Reviewed knowledge"}</h2>
           <p>
-            The supplied {recoveryReference.seedTaxonomy.length} records are
-            draft taxonomy, without complete claims, sources and review
-            approval. No reviewed {routines ? "routines" : "articles"} are
-            available yet.
+            {slug
+              ? "This entry is unavailable while its sources and content are checked."
+              : "No published entries match these filters. Try another search or clear the filters."}
           </p>
           <p>Local routines are independent of this publication gate.</p>
           <a href="/mobility/custom">Create or use your own routine</a>
@@ -110,9 +111,18 @@ export function RecoveryKnowledge({
       {articles.map((article) => (
         <article className="recovery-card" key={article.id}>
           <h2>
-            <a href={`/recovery/topics/${article.slug}`}>{article.title}</a>
+            <a
+              href={
+                routines
+                  ? `/mobility/routines/${article.slug}`
+                  : `/recovery/topics/${article.slug}`
+              }
+            >
+              {article.title}
+            </a>
           </h2>
           <p>{article.definition}</p>
+          {routines && <PublishedRoutineSteps publicId={article.id} />}
           <p>
             Personal-use publication · machine source verification · no
             independent human review.
@@ -188,6 +198,71 @@ export function RecoveryKnowledge({
         </section>
       )}
     </>
+  );
+}
+function PublishedRoutineSteps({ publicId }: { publicId: string }) {
+  const entry = publicRecoveryRoutines.find((r) => r.article.id === publicId);
+  const [busy, setBusy] = useState(false),
+    [message, setMessage] = useState(""),
+    [error, setError] = useState("");
+  if (!entry) return null;
+  return (
+    <section>
+      <h3>Source walking step</h3>
+      <ol>
+        {entry.routine.steps.map((step, index) => (
+          <li key={step.id}>
+            <strong>
+              {step.title}: {step.doseValue} {step.doseType}
+            </strong>
+            <p>{step.intensityCue}</p>
+            <p>{step.techniqueCue}</p>
+            <p>{entry.stepRationales[index]}</p>
+            <ul>
+              {step.stopSignals?.map((signal) => (
+                <li key={signal}>{signal}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ol>
+      <p>
+        Copying creates an editable local version and retains the source
+        instructions. Changes to your copy do not acquire the publication’s
+        review status.
+      </p>
+      <button
+        className="button secondary"
+        disabled={busy || !!message}
+        onClick={() => {
+          setBusy(true);
+          setError("");
+          void Promise.resolve()
+            .then(() => saveRoutine(createPublicRoutineCopy(publicId)))
+            .then(
+              () =>
+                setMessage(
+                  "Source routine copied to this browser. Export a backup to keep it.",
+                ),
+              (cause: unknown) =>
+                setError(
+                  cause instanceof Error
+                    ? cause.message
+                    : "Copy failed; existing records are preserved.",
+                ),
+            )
+            .finally(() => setBusy(false));
+        }}
+      >
+        Copy to my routines
+      </button>
+      {message && (
+        <p role="status">
+          {message} <a href="/mobility/custom">Open my routines</a>
+        </p>
+      )}
+      {error && <p role="alert">{error}</p>}
+    </section>
   );
 }
 export function SleepMethodology() {

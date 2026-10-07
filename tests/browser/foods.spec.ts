@@ -53,7 +53,7 @@ test("food discovery filters, sourced publication and safe unknown profiles", as
   await page.goto("/foods/sources");
   await expect(
     page.getByText(
-      "226 source-backed foods and 234 machine-validated profiles",
+      "243 source-backed foods and 251 machine-validated profiles",
       {
         exact: false,
       },
@@ -108,4 +108,38 @@ test("food catalogue reflows and exposes accessible filter dialog", async ({
       page.getByRole("button", { name: "Food filters", exact: true }),
     ).toBeFocused();
   }
+});
+
+test("native food profile control reflows and remains keyboard operable", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 320, height: 1000 });
+  await page.goto("/foods/brown-rice");
+  const control = page.getByRole("combobox", {
+    name: "Composition profile",
+    exact: true,
+  });
+  await expect(control).toBeEnabled();
+  const options = await control.locator("option").evaluateAll((rows) =>
+    rows.map((row) => ({
+      value: (row as HTMLOptionElement).value,
+      text: row.textContent ?? "",
+    })),
+  );
+  expect(options.length).toBeGreaterThan(1);
+  await control.focus();
+  await expect(control).toBeFocused();
+  await control.press("Home");
+  await control.press("ArrowDown");
+  await control.press("Enter");
+  await expect(control).toHaveValue(options[1]!.value);
+  await expect(page).toHaveURL(new RegExp("profile=" + options[1]!.value));
+  await expect(page.locator(".food-profile-banner strong")).toHaveText(
+    options[1]!.text.split(" · ")[0]!,
+  );
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
 });

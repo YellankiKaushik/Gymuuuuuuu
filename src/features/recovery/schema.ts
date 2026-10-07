@@ -1,6 +1,6 @@
 import { z } from "zod";
-import taxonomy from "../../content/muscles/taxonomy.json";
-import reference from "../../content/recovery/reference.json";
+import taxonomy from "../../content/muscles/runtime-taxonomy.json";
+import reference from "../../content/recovery/runtime-reference.json";
 import { getPublishedExercises } from "../exercises/repository";
 import {
   sleepLogNormativeSchema,

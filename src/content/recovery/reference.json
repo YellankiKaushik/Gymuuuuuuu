@@ -1645,6 +1645,19 @@
         "resistance_training_rom"
       ],
       "licenseNote": "Use summarized findings with risk-of-bias limitations."
+    },
+    {
+      "id": "nhs_walking_transitions_2026",
+      "title": "Couch to 5K: walking before and after each run",
+      "publisher": "NHS Better Health",
+      "year": 2026,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+      "role": [
+        "running_warm_up",
+        "running_cool_down"
+      ],
+      "licenseNote": "Source checked 2026-10-07; OGL v3.0 with exclusions; no publisher endorsement."
     }
   ]
 }

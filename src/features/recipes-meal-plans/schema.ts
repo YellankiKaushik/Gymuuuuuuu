@@ -1,6 +1,7 @@
 import { z } from "zod";
 import * as n from "./schema.generated";
 import reference from "../../content/recipes/reference.json";
+import { immutableSnapshotSchema } from "./validated-snapshot";
 import {
   foodEntrySchema,
   nutritionDaySchema,
@@ -334,21 +335,21 @@ export const plannedNutrientSchema = n.plannedNutrientNormativeSchema
     (v) => nutrientDefinition(v.nutrientId)?.canonicalUnit === v.unit,
     "Unknown planned nutrient/unit",
   );
+export const plannedRecipeSnapshotSchema = immutableSnapshotSchema(
+  z.strictObject({
+    recipeId: z.string().regex(/^recipe_/),
+    recipeVersionId: z.string().regex(/^rver_/),
+    versionNumber: z.number().int().positive(),
+    originalServings: z.number().positive().nullable(),
+    finalBatchWeightGrams: z.number().positive().nullable(),
+    servingWeightGrams: z.number().positive().nullable(),
+    calculation: recipeCalculationSchema,
+    ingredientRequirements: z.array(leafIngredientSchema),
+  }),
+);
 export const plannedItemSchema = n.plannedItemNormativeSchema
   .extend({
-    recipeRef: z
-      .strictObject({
-        recipeId: z.string().regex(/^recipe_/),
-        recipeVersionId: z.string().regex(/^rver_/),
-        versionNumber: z.number().int().positive(),
-        originalServings: z.number().positive().nullable(),
-        finalBatchWeightGrams: z.number().positive().nullable(),
-        servingWeightGrams: z.number().positive().nullable(),
-        calculation: recipeCalculationSchema,
-        ingredientRequirements: z.array(leafIngredientSchema),
-      })
-      .nullable()
-      .optional(),
+    recipeRef: plannedRecipeSnapshotSchema.nullable().optional(),
     canonicalFoodRef: foodEntrySchema.shape.canonicalFoodRef,
     customFoodRef: foodEntrySchema.shape.customFoodRef,
     sourceSnapshot: sourceSnapshotSchema.optional(),

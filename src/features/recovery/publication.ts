@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { recoveryReference, routineSchema } from "./schema";
 import records from "../../content/recovery/records.json";
+import routineRecords from "../../content/recovery/routines.json";
 export const recoveryArticleSchema = z.strictObject({
   id: z.string().min(1),
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
@@ -50,17 +51,20 @@ export const recoveryArticleSchema = z.strictObject({
 export type RecoveryArticle = z.infer<typeof recoveryArticleSchema>;
 export const publicRecoveryArticles: readonly RecoveryArticle[] =
   recoveryArticleSchema.array().parse(records);
-export const publicRecoveryRoutines: readonly {
-  article: RecoveryArticle;
-  routine: z.infer<typeof routineSchema>;
-  stepRationales: readonly string[];
-}[] = [];
-export function validateRecoveryRelease() {
+export const publicRecoveryRoutineSchema = z.strictObject({
+  article: recoveryArticleSchema,
+  routine: routineSchema,
+  stepRationales: z.array(z.string().min(1)).min(1),
+});
+export type PublicRecoveryRoutine = z.infer<typeof publicRecoveryRoutineSchema>;
+export const publicRecoveryRoutines: readonly PublicRecoveryRoutine[] =
+  publicRecoveryRoutineSchema.array().parse(routineRecords);
+export function validateRecoveryRelease(
+  articles: readonly RecoveryArticle[] = publicRecoveryArticles,
+  routines: readonly PublicRecoveryRoutine[] = publicRecoveryRoutines,
+) {
   const sources = new Set(recoveryReference.sources.map((s) => s.id));
-  const entries = [
-    ...publicRecoveryArticles,
-    ...publicRecoveryRoutines.map((r) => r.article),
-  ];
+  const entries = [...articles, ...routines.map((r) => r.article)];
   const ids = new Set<string>(),
     slugs = new Set<string>();
   for (const entry of entries) {
@@ -89,7 +93,13 @@ export function validateRecoveryRelease() {
     if (article.review.reviewedAt > new Date().toISOString().slice(0, 10))
       throw Error("Future recovery review date.");
   }
-  for (const item of publicRecoveryRoutines) {
+  for (const item of routines) {
+    if (
+      item.article.id !== item.routine.routineIdentityId ||
+      item.routine.id !== `${item.article.id}_v${item.routine.versionNumber}` ||
+      item.routine.publicationStatus !== "local_draft"
+    )
+      throw Error("Public routine template identity/version mismatch.");
     routineSchema.parse(item.routine);
     if (
       item.stepRationales.length !== item.routine.steps.length ||

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import reference from "../../content/supplements/reference.json";
+import reference from "../../content/supplements/runtime-reference.json";
 import * as n from "./schema.generated";
 export const supplementReference = reference;
 export const id = z.string().min(1).max(180),

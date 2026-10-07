@@ -1,0 +1,10 @@
+[
+  {
+    "id": "routine_running_warmup_v1",
+    "sha256": "2f0cf2aca465923c96222fd6261892dd48e0ce4efbe62b255447e55f77b92a97"
+  },
+  {
+    "id": "routine_post_run_cooldown_v1",
+    "sha256": "b3ddbc475baa7b6be7f37960eed1efe2b4c635c30a1392f0b8bfec673fbbfff4"
+  }
+]

@@ -152,6 +152,17 @@ for (const r of publicRecoveryArticles)
       ),
     ],
   });
+for (const r of publicRecoveryRoutines)
+  records.push({
+    module: "recovery",
+    id: r.article.id,
+    slug: r.article.slug,
+    fields: [
+      field("claims", r.article.sourceIds),
+      field("routine.steps", r.article.sourceIds),
+      field("stepRationales", r.article.sourceIds),
+    ],
+  });
 for (const r of publicCardioEntities)
   records.push({
     module: "cardio",
@@ -199,7 +210,15 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
       field(
         "technique",
         r.sources
-          ?.filter((s) => s.sourceType === "government-guideline")
+          ?.filter(
+            (s) =>
+              s.sourceType ===
+              (r.sources?.some(
+                (ref) => ref.sourceType === "professional-technique-guide",
+              )
+                ? "professional-technique-guide"
+                : "government-guideline"),
+          )
           .map((s) => s.id) ?? [],
       ),
       field("muscleRoles", [
@@ -221,12 +240,61 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
             ? "original_curl_diagram_v1"
             : r.id === "exercise_single_leg_calf_raise"
               ? "original_calf_diagram_v1"
-              : "original_strength_diagrams_v1",
+              : [
+                    "exercise_bodyweight_squat",
+                    "exercise_one_arm_dumbbell_row",
+                    "exercise_incline_push_up",
+                    "exercise_standing_calf_raise",
+                  ].includes(r.id)
+                ? "original_foundation_diagrams_v1"
+                : "original_strength_diagrams_v1",
         ],
         "original_authorship",
       ),
     ],
   });
+for (const r of publishedPrograms) {
+  if (r.id !== "program_full_body_2_day_foundation")
+    throw Error(`Unverified program arrangement ${r.id}`);
+  records.push({
+    module: "programs",
+    id: r.id,
+    slug: r.slug,
+    fields: [
+      field(
+        "schedule.arrangement",
+        ["original_foundation_program_v1"],
+        "original_authorship",
+      ),
+      field("prescriptions.progression.safety.timeAllocation", [
+        "nia_strength_guide_2018",
+      ]),
+      ...[
+        ...new Set(
+          r.scheduleModel!.sessions.flatMap((session) =>
+            session.exerciseBlocks.flatMap((block) =>
+              block.prescriptions.map((p) => p.exerciseId),
+            ),
+          ),
+        ),
+      ].map((id) => {
+        const exercise = exerciseRecords.find((e) => e.id === id);
+        if (!exercise || exercise.contentStatus !== "published")
+          throw Error(`Unpublished program technique ${id}`);
+        return field(
+          `technique.${id}`,
+          exercise.sources
+            ?.filter((s) =>
+              ["government-guideline", "professional-technique-guide"].includes(
+                s.sourceType,
+              ),
+            )
+            .map((s) => s.id) ?? [],
+        );
+      }),
+    ],
+  });
+}
 // Fail closed: publication in an adapter without provenance is a release error.
 for (const [module, rows] of [
   ["muscles", muscleRecords.filter((r) => r.contentStatus === "published")],
@@ -236,7 +304,14 @@ for (const [module, rows] of [
   ["recovery-routines", publicRecoveryRoutines.map((r) => r.article)],
 ] as const)
   for (const row of rows)
-    if (!records.some((r) => r.module === module && r.id === row.id))
+    if (
+      !records.some(
+        (r) =>
+          (r.module === module ||
+            (module === "recovery-routines" && r.module === "recovery")) &&
+          r.id === row.id,
+      )
+    )
       throw Error(`Publication provenance missing: ${module}:${row.id}`);
 const release = validatePublicationReviews(
   records.map((r) => ({

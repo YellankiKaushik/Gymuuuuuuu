@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { anatomyTaxonomy } from './repository'
+import { anatomyTaxonomy } from './public-repository'
 import { usePreferences } from '../../components/app-shell/preferences'
 const spots: Record<string, { top: number; left: number }> = {
   region_neck: { top: 12, left: 3 }, region_shoulder: { top: 22, left: 52 }, region_chest: { top: 31, left: 3 },

@@ -17,7 +17,7 @@ it("retains the lower-limb source and stable identities with limited machine-onl
   ).toBe(snapshot.sha256);
   expect(snapshot.recordIds).toHaveLength(17);
   const records = getPublishedMuscles();
-  expect(records).toHaveLength(38);
+  expect(records).toHaveLength(45);
   expect(validateAnatomy(records)).toEqual([]);
   for (const id of snapshot.recordIds) {
     const record = records.find((r) => r.id === id)!;
@@ -65,4 +65,36 @@ it("preserves head relationships without transferring whole-muscle actions or in
       "no unique head-specific activation",
     );
   }
+});
+
+it("keeps the additional medial thigh and ankle actions tied to the retained historical extract", () => {
+  const records = getPublishedMuscles();
+  for (const name of [
+    "adductor_magnus",
+    "adductor_longus",
+    "adductor_brevis",
+    "gracilis",
+    "pectineus",
+    "tibialis_anterior",
+    "deep_hip_rotator_group",
+  ]) {
+    const record = records.find((r) => r.id === `muscle_${name}`)!;
+    expect(record.sources).toEqual([snapshot.sourceId]);
+    expect(
+      record.jointActions.every((r) => r.sourceIds[0] === snapshot.sourceId),
+    ).toBe(true);
+    expect(record.confidence).toBe("limited");
+  }
+  const magnus = records.find((r) => r.id === "muscle_adductor_magnus")!;
+  expect(magnus.jointActions.map((r) => r.motion)).toEqual(["adduction"]);
+  const tibialis = records.find((r) => r.id === "muscle_tibialis_anterior")!;
+  expect(tibialis.jointActions.map((r) => r.motion)).toEqual([
+    "dorsiflexion",
+    "inversion",
+  ]);
+  const group = records.find((r) => r.id === "muscle_deep_hip_rotator_group")!;
+  expect(group.entityType).toBe("anatomical-group");
+  expect(
+    group.jointActions.find((r) => r.motion === "abduction")!.qualifier,
+  ).toContain("except obturator externus");
 });

@@ -2349,5 +2349,467 @@
     "reviewedBy": "Codex source verification; published_personal_use; no human review",
     "reviewedAt": "2026-10-07",
     "version": "1.0.0"
+  },
+  {
+    "id": "muscle_adductor_magnus",
+    "slug": "adductor-magnus",
+    "displayName": "Adductor magnus",
+    "anatomicalName": "Adductor magnus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A large medial thigh muscle described in the historical source as contributing to thigh adduction.",
+    "locationSummary": "Medial thigh, with broad and more vertical portions.",
+    "practicalImportance": "Use the sourced actions to understand movement terminology. Historical anatomy does not establish a training prescription, exact activation or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Inferior pubic and ischial rami and the lower outer margin of the ischial tuberosity.",
+      "distalAttachmentSummary": "Broad fibers reach the linea aspera and its medial continuation; the vertical portion reaches the adductor tubercle."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical source describes thigh adduction. It does not establish an optimal exercise, activation percentage or a position-independent action.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "adduction"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; individual variation and contemporary functional research are not represented.",
+      "No independent human anatomy review. No diagnosis, exact muscle isolation or clinical treatment advice."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_adductor_longus",
+    "slug": "adductor-longus",
+    "displayName": "Adductor longus",
+    "anatomicalName": "Adductor longus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A superficial triangular medial thigh muscle described as contributing to thigh adduction and flexion.",
+    "locationSummary": "Medial thigh, in the same superficial plane as pectineus.",
+    "practicalImportance": "Use the sourced actions to understand movement terminology. Historical anatomy does not establish a training prescription, exact activation or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Front of the pubis at the junction of its crest and symphysis.",
+      "distalAttachmentSummary": "Linea aspera of the femur, between vastus medialis and adductor magnus."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical source describes thigh adduction. It does not establish an optimal exercise, activation percentage or a position-independent action.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes assisting psoas major and iliacus in flexing the thigh.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; individual variation and contemporary functional research are not represented.",
+      "No independent human anatomy review. No diagnosis, exact muscle isolation or clinical treatment advice."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_adductor_brevis",
+    "slug": "adductor-brevis",
+    "displayName": "Adductor brevis",
+    "anatomicalName": "Adductor brevis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A shorter medial thigh muscle described as contributing to thigh adduction and assisting thigh flexion.",
+    "locationSummary": "Behind pectineus and adductor longus in the medial thigh.",
+    "practicalImportance": "Use the sourced actions to understand movement terminology. Historical anatomy does not establish a training prescription, exact activation or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Outer surfaces of the superior and inferior pubic rami.",
+      "distalAttachmentSummary": "Line from the lesser trochanter toward the linea aspera and the upper linea aspera."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical source describes thigh adduction. It does not establish an optimal exercise, activation percentage or a position-independent action.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes assisting psoas major and iliacus in flexing the thigh.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; individual variation and contemporary functional research are not represented.",
+      "No independent human anatomy review. No diagnosis, exact muscle isolation or clinical treatment advice."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_gracilis",
+    "slug": "gracilis",
+    "displayName": "Gracilis",
+    "anatomicalName": "Gracilis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A thin superficial medial thigh muscle described as adducting the thigh and assisting knee flexion and inward leg rotation.",
+    "locationSummary": "Superficial medial thigh; its tendon reaches the upper medial tibia.",
+    "practicalImportance": "Use the sourced actions to understand movement terminology. Historical anatomy does not establish a training prescription, exact activation or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior margins of the lower pubic symphysis and upper pubic arch.",
+      "distalAttachmentSummary": "Upper medial surface of the tibial shaft below the condyle."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Historical description of thigh adduction.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes assisting sartorius in flexing the leg.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "knee",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical source describes assisting inward rotation of the leg; this is not a whole-body rotation prescription.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion",
+      "rotation"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; individual variation and contemporary functional research are not represented.",
+      "No independent human anatomy review. No diagnosis, exact muscle isolation or clinical treatment advice."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_pectineus",
+    "slug": "pectineus",
+    "displayName": "Pectineus",
+    "anatomicalName": "Pectineus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors",
+      "group_hip_flexors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A flat upper medial thigh muscle described as contributing to thigh adduction and assisting thigh flexion.",
+    "locationSummary": "Anterior upper medial thigh.",
+    "practicalImportance": "Use the sourced actions to understand movement terminology. Historical anatomy does not establish a training prescription, exact activation or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Pectineal line and adjoining surface of the pubis, with fibers from overlying fascia.",
+      "distalAttachmentSummary": "Rough femoral line running from the lesser trochanter toward the linea aspera."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical source describes thigh adduction. It does not establish an optimal exercise, activation percentage or a position-independent action.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes assisting psoas major and iliacus in flexing the thigh.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; individual variation and contemporary functional research are not represented.",
+      "No independent human anatomy review. No diagnosis, exact muscle isolation or clinical treatment advice."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_tibialis_anterior",
+    "slug": "tibialis-anterior",
+    "displayName": "Tibialis anterior",
+    "anatomicalName": "Tibialis anterior",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_shin_ankle"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A front-of-leg muscle described as flexing the foot upward at the ankle and helping turn the medial border upward.",
+    "locationSummary": "Along the lateral side of the tibia in the anterior leg.",
+    "practicalImportance": "Use the sourced actions to understand movement terminology. Historical anatomy does not establish a training prescription, exact activation or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Lateral tibial condyle and upper lateral tibial shaft, adjoining interosseous membrane and fascia.",
+      "distalAttachmentSummary": "Medial and plantar surfaces of the first cuneiform and base of the first metatarsal."
+    },
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "dorsiflexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical term flexion of the foot at the ankle means raising the foot toward the leg.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "foot",
+        "motion": "inversion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes raising the medial foot border in conjunction with tibialis posterior.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; individual variation and contemporary functional research are not represented.",
+      "No independent human anatomy review. No diagnosis, exact muscle isolation or clinical treatment advice."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_deep_hip_rotator_group",
+    "slug": "deep-hip-external-rotators",
+    "displayName": "Deep hip external rotator group",
+    "anatomicalName": "Deep hip external rotator group",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A labelled anatomical group comprising piriformis, obturator internus and externus, the two gemelli and quadratus femoris.",
+    "locationSummary": "Deep gluteal and pelvic region around the hip.",
+    "practicalImportance": "Use the sourced actions to understand movement terminology. Historical anatomy does not establish a training prescription, exact activation or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Members have different pelvic attachments; this group is not one muscle with one origin.",
+      "distalAttachmentSummary": "Members have different femoral attachments; individual attachments require separate anatomy records."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "external rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Collective historical action. This is a group, not one muscle or a claim of equal contribution.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "abduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes abduction in the sitting, flexed-thigh posture for these rotators except obturator externus, which retains outward rotation.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "rotation",
+      "abduction"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; individual variation and contemporary functional research are not represented.",
+      "No independent human anatomy review. No diagnosis, exact muscle isolation or clinical treatment advice."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
   }
 ]

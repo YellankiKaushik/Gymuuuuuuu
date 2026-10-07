@@ -1,0 +1,50 @@
+{
+  "checkpointSha": "0211638573a5b827ae85fbc4059350659c1168ff",
+  "verificationDate": "2026-10-07",
+  "ci": {
+    "runId": 37611945424,
+    "jobId": 112761010645,
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37611945424",
+    "check": {
+      "passed": 236,
+      "files": 52
+    },
+    "coverage": {
+      "passed": 235,
+      "failed": 1,
+      "failure": "Unchanged 15000 ms calendar stress test exceeded its limit under hosted coverage instrumentation."
+    }
+  },
+  "crossBrowser": {
+    "runId": 37611945386,
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37611945386",
+    "jobs": [
+      {
+        "browser": "Chromium",
+        "jobId": 112761011511,
+        "passed": 92,
+        "failed": 0
+      },
+      {
+        "browser": "Firefox",
+        "jobId": 112761011880,
+        "passed": 92,
+        "failed": 0
+      },
+      {
+        "browser": "WebKit",
+        "jobId": 112761011919,
+        "passed": 92,
+        "failed": 0
+      }
+    ]
+  },
+  "nextCorrection": "Schema-owned validated immutable recipe snapshots avoid repeated ingredient validation; JSON restore and mutated draft inputs remain fully validated. No workloads, assertion limits or timeouts changed.",
+  "localCorrectionEvidence": {
+    "coveragePassed": 242,
+    "files": 55,
+    "log": "data-imports/coverage-foods243-immutable-snapshots.log",
+    "scope": "Local revised source and composition library before the additional seven anatomy records and program-rest extension; hosted verification pending."
+  },
+  "productionDeployment": "disabled"
+}

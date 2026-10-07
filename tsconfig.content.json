@@ -12,6 +12,14 @@
     "scripts/compile-nih-nutrients.ts",
     "scripts/compile-nutrients.ts",
     "scripts/compile-foods.ts",
-    "scripts/compile-historical-anatomy.ts"
+    "scripts/compile-historical-anatomy.ts",
+    "scripts/compile-anatomy-index.ts",
+    "scripts/compile-reference-indexes.ts",
+    "scripts/compile-supported-exercises.ts",
+    "scripts/compile-foundation-programs.ts",
+    "scripts/compile-recovery-routines.ts",
+    "scripts/compile-science-research.ts",
+    "scripts/compile-runtime-knowledge.ts",
+    "scripts/compile-science-index.ts"
   ]
 }

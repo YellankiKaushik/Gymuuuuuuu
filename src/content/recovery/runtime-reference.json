@@ -1,0 +1,971 @@
+{
+  "version": "1.0.0",
+  "date": "5 August 2026",
+  "moduleId": "phase_12_recovery_sleep_mobility",
+  "publicationStatuses": [
+    "draft",
+    "in_review",
+    "published",
+    "archived"
+  ],
+  "evidenceStrength": [
+    "high",
+    "moderate",
+    "low",
+    "very_low",
+    "consensus",
+    "not_graded"
+  ],
+  "sleepEntrySources": [
+    "manual_recall",
+    "manual_morning_diary",
+    "consumer_device_estimate"
+  ],
+  "sleepQualityScale": {
+    "min": 1,
+    "max": 5,
+    "labels": {
+      "1": "very_poor",
+      "2": "poor",
+      "3": "fair",
+      "4": "good",
+      "5": "very_good"
+    }
+  },
+  "fivePointCheckInScale": {
+    "min": 1,
+    "max": 5,
+    "directionNotes": {
+      "energy": "higher_is_more_energy",
+      "fatigue": "higher_is_more_fatigue",
+      "stress": "higher_is_more_stress",
+      "motivation": "higher_is_more_motivation",
+      "mood": "higher_is_more_positive",
+      "readiness": "higher_is_more_ready"
+    }
+  },
+  "sorenessScale": {
+    "min": 0,
+    "max": 10,
+    "label": "user-reported soreness; not a diagnosis"
+  },
+  "painConcernScale": {
+    "min": 0,
+    "max": 10,
+    "label": "user-reported pain concern; no automated diagnosis"
+  },
+  "recoveryDimensions": [
+    "overall_readiness",
+    "energy",
+    "general_fatigue",
+    "stress",
+    "motivation",
+    "mood",
+    "perceived_recovery"
+  ],
+  "bodyRegions": [
+    "whole_body",
+    "neck",
+    "shoulders",
+    "chest",
+    "upper_back",
+    "lower_back",
+    "arms",
+    "forearms_wrists",
+    "hips_glutes",
+    "quadriceps",
+    "hamstrings",
+    "adductors",
+    "calves_ankles",
+    "feet"
+  ],
+  "routineContexts": [
+    "warm_up",
+    "cool_down",
+    "standalone_mobility",
+    "flexibility",
+    "recovery",
+    "movement_break",
+    "position_specific"
+  ],
+  "stretchTypes": [
+    "static",
+    "dynamic",
+    "pnf",
+    "ballistic",
+    "loaded",
+    "none"
+  ],
+  "stepDoseTypes": [
+    "repetitions",
+    "seconds",
+    "breaths",
+    "distance",
+    "ramp_up_set"
+  ],
+  "recoveryModalities": [
+    "passive_rest",
+    "active_recovery",
+    "massage",
+    "compression",
+    "foam_rolling",
+    "static_stretching",
+    "cold_water_immersion",
+    "heat_exposure",
+    "contrast_water",
+    "breathing_relaxation"
+  ],
+  "alertCategories": [
+    "pain_or_injury_concern",
+    "illness_symptoms",
+    "severe_sleepiness",
+    "breathing_during_sleep_concern",
+    "persistent_sleep_problem",
+    "none"
+  ],
+  "calculationDefinitions": {
+    "sleepOpportunityMinutes": "minutes between attemptedSleepAt and outOfBedAt",
+    "terminalWakeMinutes": "minutes between finalWakeAt and outOfBedAt",
+    "estimatedTotalSleepMinutes": "sleepOpportunity - sleepOnsetLatency - wakeAfterSleepOnset - terminalWake; null when required inputs are missing; clamp only for display error handling, not to hide invalid data",
+    "sleepEfficiencyPercent": "estimatedTotalSleepMinutes / sleepOpportunityMinutes * 100; display only when both are valid",
+    "dailyTotalSleepMinutes": "mainSleep estimatedTotalSleepMinutes plus completed nap durations",
+    "differenceFromSelectedGoalMinutes": "dailyTotalSleepMinutes - locally selected goal; never label as physiologic sleep debt",
+    "scheduleVariability": "descriptive variability of local sleep-start and wake clock times after midnight-unwrapping around the period median; no universal good/bad threshold",
+    "readinessSummary": "no calculated readiness score; dimensions remain separate; optional overall readiness is directly entered by the user"
+  },
+  "adultSleepReference": {
+    "id": "adult_7_plus_hours_consensus",
+    "minimumRegularHours": 7,
+    "population": "generally healthy adults",
+    "sourceId": "src_aasm_sleep_duration_2015",
+    "displayRule": "Show as population guidance, not an individual prescription or diagnostic threshold."
+  },
+  "seedTaxonomy": [
+    {
+      "id": "sleep_duration_adults",
+      "slug": "sleep-duration-adults",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_need_variability",
+      "slug": "sleep-need-variability",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_regularity",
+      "slug": "sleep-regularity",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_opportunity_vs_sleep",
+      "slug": "sleep-opportunity-vs-sleep",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_quality_vs_duration",
+      "slug": "sleep-quality-vs-duration",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_latency",
+      "slug": "sleep-latency",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "wake_after_sleep_onset",
+      "slug": "wake-after-sleep-onset",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_efficiency",
+      "slug": "sleep-efficiency",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "final_wake_and_out_of_bed",
+      "slug": "final-wake-and-out-of-bed",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "naps",
+      "slug": "naps",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "circadian_light",
+      "slug": "circadian-light",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "caffeine_and_sleep",
+      "slug": "caffeine-and-sleep",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "alcohol_and_sleep",
+      "slug": "alcohol-and-sleep",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "exercise_timing_and_sleep",
+      "slug": "exercise-timing-and-sleep",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "bedroom_environment",
+      "slug": "bedroom-environment",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "wind_down_routine",
+      "slug": "wind-down-routine",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "shift_work_and_travel",
+      "slug": "shift-work-and-travel",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_tracker_limitations",
+      "slug": "sleep-tracker-limitations",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_diary_method",
+      "slug": "sleep-diary-method",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_debt_language",
+      "slug": "sleep-debt-language",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_stages_boundary",
+      "slug": "sleep-stages-boundary",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_evaluation_signals",
+      "slug": "sleep-evaluation-signals",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "recovery_definition",
+      "slug": "recovery-definition",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "stimulus_fatigue_recovery_adaptation",
+      "slug": "stimulus-fatigue-recovery-adaptation",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "soreness_vs_pain",
+      "slug": "soreness-vs-pain",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "doms",
+      "slug": "doms",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "passive_rest",
+      "slug": "passive-rest",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "active_recovery",
+      "slug": "active-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "massage_recovery",
+      "slug": "massage-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "compression_recovery",
+      "slug": "compression-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "foam_rolling_recovery",
+      "slug": "foam-rolling-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "post_exercise_stretching_recovery",
+      "slug": "post-exercise-stretching-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "cold_water_acute",
+      "slug": "cold-water-acute",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "cold_water_adaptation",
+      "slug": "cold-water-adaptation",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "heat_recovery",
+      "slug": "heat-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "contrast_water",
+      "slug": "contrast-water",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "sleep_and_training_recovery",
+      "slug": "sleep-and-training-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "stress_and_training_recovery",
+      "slug": "stress-and-training-recovery",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "rest_days",
+      "slug": "rest-days",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "deload_crosslink",
+      "slug": "deload-crosslink",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "recovery_modality_placebo_context",
+      "slug": "recovery-modality-placebo-context",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "recovery_evidence_outcomes",
+      "slug": "recovery-evidence-outcomes",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "subjective_readiness",
+      "slug": "subjective-readiness",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "general_fatigue",
+      "slug": "general-fatigue",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "regional_soreness",
+      "slug": "regional-soreness",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "stress_checkin",
+      "slug": "stress-checkin",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "motivation_checkin",
+      "slug": "motivation-checkin",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "mood_checkin",
+      "slug": "mood-checkin",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "energy_checkin",
+      "slug": "energy-checkin",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "perceived_recovery_status",
+      "slug": "perceived-recovery-status",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "performance_trend_signal",
+      "slug": "performance-trend-signal",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "baseline_vs_single_day",
+      "slug": "baseline-vs-single-day",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "no_universal_recovery_score",
+      "slug": "no-universal-recovery-score",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "pain_and_illness_flags",
+      "slug": "pain-and-illness-flags",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "checkin_interpretation",
+      "slug": "checkin-interpretation",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "readiness_data_privacy",
+      "slug": "readiness-data-privacy",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "mobility_vs_flexibility",
+      "slug": "mobility-vs-flexibility",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "active_vs_passive_rom",
+      "slug": "active-vs-passive-rom",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "joint_specific_rom",
+      "slug": "joint-specific-rom",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "static_stretching",
+      "slug": "static-stretching",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "dynamic_stretching",
+      "slug": "dynamic-stretching",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "pnf_stretching",
+      "slug": "pnf-stretching",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "ballistic_stretching",
+      "slug": "ballistic-stretching",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "loaded_stretching",
+      "slug": "loaded-stretching",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "resistance_training_and_rom",
+      "slug": "resistance-training-and-rom",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "foam_rolling_rom",
+      "slug": "foam-rolling-rom",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "warm_up_purpose",
+      "slug": "warm-up-purpose",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "general_warm_up",
+      "slug": "general-warm-up",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "dynamic_mobility_warm_up",
+      "slug": "dynamic-mobility-warm-up",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "movement_rehearsal",
+      "slug": "movement-rehearsal",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "ramp_up_sets",
+      "slug": "ramp-up-sets",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "cool_down_purpose",
+      "slug": "cool-down-purpose",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "stretching_recovery_myth",
+      "slug": "stretching-recovery-myth",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "stretching_intensity",
+      "slug": "stretching-intensity",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "stretching_duration_performance",
+      "slug": "stretching-duration-performance",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "mobility_progress_measurement",
+      "slug": "mobility-progress-measurement",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "ankle_dorsiflexion",
+      "slug": "ankle-dorsiflexion",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "hip_flexion",
+      "slug": "hip-flexion",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "hip_extension",
+      "slug": "hip-extension",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "hip_rotation",
+      "slug": "hip-rotation",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "thoracic_rotation",
+      "slug": "thoracic-rotation",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "shoulder_flexion",
+      "slug": "shoulder-flexion",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "shoulder_external_rotation",
+      "slug": "shoulder-external-rotation",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "wrist_extension",
+      "slug": "wrist-extension",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "squat_position_mobility",
+      "slug": "squat-position-mobility",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "hinge_position_mobility",
+      "slug": "hinge-position-mobility",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "overhead_position_mobility",
+      "slug": "overhead-position-mobility",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "split_squat_position_mobility",
+      "slug": "split-squat-position-mobility",
+      "entityType": "knowledge_topic"
+    },
+    {
+      "id": "routine_full_body_warmup_5",
+      "slug": "routine-full-body-warmup-5",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_full_body_warmup_10",
+      "slug": "routine-full-body-warmup-10",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_upper_strength_warmup",
+      "slug": "routine-upper-strength-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_lower_strength_warmup",
+      "slug": "routine-lower-strength-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_squat_day_warmup",
+      "slug": "routine-squat-day-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_hinge_day_warmup",
+      "slug": "routine-hinge-day-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_press_day_warmup",
+      "slug": "routine-press-day-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_pull_day_warmup",
+      "slug": "routine-pull-day-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_bodyweight_warmup",
+      "slug": "routine-bodyweight-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_running_warmup",
+      "slug": "routine-running-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_cycling_warmup",
+      "slug": "routine-cycling-warmup",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_ankle_mobility",
+      "slug": "routine-ankle-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_hip_mobility",
+      "slug": "routine-hip-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_thoracic_mobility",
+      "slug": "routine-thoracic-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_shoulder_mobility",
+      "slug": "routine-shoulder-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_wrist_mobility",
+      "slug": "routine-wrist-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_full_body_mobility_10",
+      "slug": "routine-full-body-mobility-10",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_full_body_mobility_20",
+      "slug": "routine-full-body-mobility-20",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_desk_reset",
+      "slug": "routine-desk-reset",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_morning_mobility",
+      "slug": "routine-morning-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_evening_mobility",
+      "slug": "routine-evening-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_squat_position",
+      "slug": "routine-squat-position",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_overhead_position",
+      "slug": "routine-overhead-position",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_split_squat_position",
+      "slug": "routine-split-squat-position",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_hip_rotation",
+      "slug": "routine-hip-rotation",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_hamstring_flexibility",
+      "slug": "routine-hamstring-flexibility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_calf_flexibility",
+      "slug": "routine-calf-flexibility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_post_lift_easy_movement",
+      "slug": "routine-post-lift-easy-movement",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_post_run_cooldown",
+      "slug": "routine-post-run-cooldown",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_post_cycle_cooldown",
+      "slug": "routine-post-cycle-cooldown",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_lower_body_foam_roll",
+      "slug": "routine-lower-body-foam-roll",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_upper_body_foam_roll",
+      "slug": "routine-upper-body-foam-roll",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_rest_day_gentle_mobility",
+      "slug": "routine-rest-day-gentle-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_travel_stiffness",
+      "slug": "routine-travel-stiffness",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_pre_bed_gentle_mobility",
+      "slug": "routine-pre-bed-gentle-mobility",
+      "entityType": "mobility_routine"
+    },
+    {
+      "id": "routine_active_recovery_easy",
+      "slug": "routine-active-recovery-easy",
+      "entityType": "mobility_routine"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_aasm_sleep_duration_2015",
+      "title": "Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement",
+      "publisher": "American Academy of Sleep Medicine and Sleep Research Society",
+      "year": 2015,
+      "type": "consensus_statement",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25979105/",
+      "role": [
+        "adult_sleep_duration"
+      ],
+      "licenseNote": "Use as cited guidance; do not reproduce substantial copyrighted text."
+    },
+    {
+      "id": "src_sleep_regularity_consensus_2023",
+      "title": "The importance of sleep regularity: a consensus statement",
+      "publisher": "National Sleep Foundation Sleep Timing and Variability Panel",
+      "year": 2023,
+      "type": "consensus_statement",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37684151/",
+      "role": [
+        "sleep_regularity"
+      ],
+      "licenseNote": "Use summarized findings with citation."
+    },
+    {
+      "id": "src_consensus_sleep_diary_2012",
+      "title": "The consensus sleep diary: standardizing prospective sleep self-monitoring",
+      "publisher": "Sleep",
+      "year": 2012,
+      "type": "consensus_method",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22294820/",
+      "role": [
+        "sleep_log_fields",
+        "sleep_diary_method"
+      ],
+      "licenseNote": "Use field concepts; do not copy proprietary forms or artwork."
+    },
+    {
+      "id": "src_aasm_consumer_sleep_tech_2018",
+      "title": "Consumer Sleep Technology: An AASM Position Statement",
+      "publisher": "American Academy of Sleep Medicine",
+      "year": 2018,
+      "type": "position_statement",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29734997/",
+      "role": [
+        "wearable_limitations",
+        "non_diagnostic_boundary"
+      ],
+      "licenseNote": "Use summarized position with citation."
+    },
+    {
+      "id": "src_athlete_sleep_consensus_2021",
+      "title": "Sleep and the athlete: narrative review and 2021 expert consensus recommendations",
+      "publisher": "British Journal of Sports Medicine",
+      "year": 2021,
+      "type": "expert_consensus",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33144349/",
+      "role": [
+        "athlete_sleep_context",
+        "individualization"
+      ],
+      "licenseNote": "No commercial reproduction; use brief summary and citation only."
+    },
+    {
+      "id": "src_nhlbi_sleep_habits",
+      "title": "Healthy Sleep Habits",
+      "publisher": "US National Heart, Lung, and Blood Institute",
+      "year": 2022,
+      "type": "government_guidance",
+      "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits",
+      "role": [
+        "sleep_education",
+        "behavior_environment"
+      ],
+      "licenseNote": "US government source; retain attribution and review date."
+    },
+    {
+      "id": "src_nhlbi_sleep_apnea_symptoms",
+      "title": "Sleep Apnea Symptoms",
+      "publisher": "US National Heart, Lung, and Blood Institute",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms",
+      "role": [
+        "professional_evaluation_signals"
+      ],
+      "licenseNote": "Use concise symptom categories and direct users to clinical evaluation."
+    },
+    {
+      "id": "src_warmup_meta_2010",
+      "title": "Effects of warming-up on physical performance: systematic review with meta-analysis",
+      "publisher": "Journal of Strength and Conditioning Research",
+      "year": 2010,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19996770/",
+      "role": [
+        "warm_up_performance"
+      ],
+      "licenseNote": "Use summarized findings with citation."
+    },
+    {
+      "id": "src_stretching_review_2016",
+      "title": "Acute effects of muscle stretching on performance, range of motion, and injury incidence",
+      "publisher": "Applied Physiology, Nutrition, and Metabolism",
+      "year": 2016,
+      "type": "systematic_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26642915/",
+      "role": [
+        "stretching_warmup",
+        "acute_performance"
+      ],
+      "licenseNote": "Use summarized findings with population and limitations."
+    },
+    {
+      "id": "src_static_stretch_meta_2024",
+      "title": "Revisiting the stretch-induced force deficit",
+      "publisher": "Sports Medicine",
+      "year": 2024,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38735533/",
+      "role": [
+        "static_stretch_duration",
+        "acute_strength"
+      ],
+      "licenseNote": "Use summarized findings and certainty limitations."
+    },
+    {
+      "id": "src_post_exercise_stretch_meta_2021",
+      "title": "Effectiveness of post-exercise stretching in recovery",
+      "publisher": "Frontiers in Physiology",
+      "year": 2021,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34025459/",
+      "role": [
+        "post_exercise_stretching",
+        "doms"
+      ],
+      "licenseNote": "Open-access research; attribute."
+    },
+    {
+      "id": "src_foam_roll_meta_2019",
+      "title": "A Meta-Analysis of the Effects of Foam Rolling on Performance and Recovery",
+      "publisher": "Frontiers in Physiology",
+      "year": 2019,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31024339/",
+      "role": [
+        "foam_rolling",
+        "rom",
+        "soreness"
+      ],
+      "licenseNote": "Open-access research; attribute."
+    },
+    {
+      "id": "src_recovery_methods_meta_2018",
+      "title": "Evidence-Based Approach for Choosing Post-exercise Recovery Techniques",
+      "publisher": "Frontiers in Physiology",
+      "year": 2018,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29755363/",
+      "role": [
+        "recovery_modalities",
+        "doms",
+        "fatigue"
+      ],
+      "licenseNote": "Open-access research; attribute and preserve outcome distinctions."
+    },
+    {
+      "id": "src_cwi_adaptation_meta_2021",
+      "title": "Regular Cold-Water Immersion and Training Adaptations",
+      "publisher": "Sports Medicine",
+      "year": 2021,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33146851/",
+      "role": [
+        "cold_water_adaptation"
+      ],
+      "licenseNote": "Use summarized conclusions; note population limitations."
+    },
+    {
+      "id": "src_resistance_rom_meta_2025",
+      "title": "Influence of Resistance Training on Joint Flexibility in Healthy Adults",
+      "publisher": "Journal of Strength and Conditioning Research",
+      "year": 2025,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39787531/",
+      "role": [
+        "resistance_training_rom"
+      ],
+      "licenseNote": "Use summarized findings with risk-of-bias limitations."
+    },
+    {
+      "id": "nhs_walking_transitions_2026",
+      "title": "Couch to 5K: walking before and after each run",
+      "publisher": "NHS Better Health",
+      "year": 2026,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+      "role": [
+        "running_warm_up",
+        "running_cool_down"
+      ],
+      "licenseNote": "Source checked 2026-10-07; OGL v3.0 with exclusions; no publisher endorsement."
+    }
+  ]
+}

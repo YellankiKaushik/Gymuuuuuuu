@@ -8,7 +8,7 @@ export const Route = createFileRoute("/mobility_/routines/$routineSlug")({
 });
 function Page() {
   return (
-    <RecoveryPage title="Reviewed mobility routine">
+    <RecoveryPage publicKnowledge title="Reviewed mobility routine">
       <RecoveryKnowledge routines slug={Route.useParams().routineSlug} />
     </RecoveryPage>
   );

@@ -24,6 +24,7 @@ export const verifiedSourceSchema = z.strictObject({
     "government_dataset",
     "government_reference",
     "consensus",
+    "systematic_review_meta_analysis",
     "professional_summary",
     "original_repository_work",
     "historical_anatomy",

@@ -1,0 +1,148 @@
+[
+  {
+    "article": {
+      "id": "routine_running_warmup",
+      "slug": "routine-running-warmup",
+      "title": "Running Warm-Up",
+      "status": "published",
+      "domain": "recovery",
+      "population": "People following the NHS Couch to 5K plan; general education",
+      "context": "Walking transition within the source running plan",
+      "definition": "The NHS Couch to 5K plan begins each run with a five-minute walk at a gentle pace.",
+      "sourceIds": [
+        "nhs_walking_transitions_2026"
+      ],
+      "claims": [
+        {
+          "id": "claim_routine_running_warmup_walking",
+          "text": "The NHS Couch to 5K plan begins each run with a five-minute walk at a gentle pace.",
+          "outcome": "definition",
+          "sourceIds": [
+            "nhs_walking_transitions_2026"
+          ]
+        }
+      ],
+      "evidenceStrength": "not_graded",
+      "limitations": [
+        "This is the source plan’s walking component only. The linked NHS page also discusses stretching; no unsupported stretch sequence is supplied here.",
+        "The timer is a source target, not a personal readiness test or proof that pain, illness or injury has resolved.",
+        "No heart-rate zone, calorie expenditure or injury-prevention guarantee is inferred."
+      ],
+      "contraindications": [
+        "Follow the NHS advice to stop if something does not feel right. If concerned about your health before starting, speak to a healthcare professional."
+      ],
+      "review": {
+        "reviewer": "Codex source verification and machine validation; personal use; no human review",
+        "reviewedAt": "2026-10-07",
+        "status": "approved",
+        "rightsReviewed": true
+      },
+      "relatedIds": []
+    },
+    "routine": {
+      "id": "routine_running_warmup_v1",
+      "routineIdentityId": "routine_running_warmup",
+      "versionNumber": 1,
+      "title": "Running Warm-Up",
+      "context": "warm_up",
+      "publicationStatus": "local_draft",
+      "estimatedMinutes": 5,
+      "steps": [
+        {
+          "id": "routine_running_warmup_walk",
+          "order": 1,
+          "title": "Source walking step",
+          "phase03ExerciseId": null,
+          "doseType": "seconds",
+          "doseValue": 300,
+          "sides": "none",
+          "intensityCue": "Walk gently at a pace comfortable for you before the source running session.",
+          "techniqueCue": "Follow the linked NHS walking instructions; no additional gait technique is prescribed.",
+          "stopSignals": [
+            "Stop if something does not feel right."
+          ],
+          "alternativeExerciseIds": []
+        }
+      ],
+      "revisionReason": "Initial source-verified walking template",
+      "notes": "Read-only repository template. Copying creates an independent local routine, not clinical review. Source: https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+      "createdAt": "2026-10-07T15:07:44Z"
+    },
+    "stepRationales": [
+      "NHS explicitly supplies a five-minute walking transition; 5 × 60 = 300 seconds. This step has no inferred canonical exercise relationship."
+    ]
+  },
+  {
+    "article": {
+      "id": "routine_post_run_cooldown",
+      "slug": "routine-post-run-cooldown",
+      "title": "Post-Run Cool-Down",
+      "status": "published",
+      "domain": "recovery",
+      "population": "People following the NHS Couch to 5K plan; general education",
+      "context": "Walking transition within the source running plan",
+      "definition": "The NHS Couch to 5K plan ends each run with a five-minute cool-down walk.",
+      "sourceIds": [
+        "nhs_walking_transitions_2026"
+      ],
+      "claims": [
+        {
+          "id": "claim_routine_post_run_cooldown_walking",
+          "text": "The NHS Couch to 5K plan ends each run with a five-minute cool-down walk.",
+          "outcome": "definition",
+          "sourceIds": [
+            "nhs_walking_transitions_2026"
+          ]
+        }
+      ],
+      "evidenceStrength": "not_graded",
+      "limitations": [
+        "This is the source plan’s walking component only. The linked NHS page also discusses stretching; no unsupported stretch sequence is supplied here.",
+        "The timer is a source target, not a personal readiness test or proof that pain, illness or injury has resolved.",
+        "No heart-rate zone, calorie expenditure or injury-prevention guarantee is inferred."
+      ],
+      "contraindications": [
+        "Follow the NHS advice to stop if something does not feel right. If concerned about your health before starting, speak to a healthcare professional."
+      ],
+      "review": {
+        "reviewer": "Codex source verification and machine validation; personal use; no human review",
+        "reviewedAt": "2026-10-07",
+        "status": "approved",
+        "rightsReviewed": true
+      },
+      "relatedIds": []
+    },
+    "routine": {
+      "id": "routine_post_run_cooldown_v1",
+      "routineIdentityId": "routine_post_run_cooldown",
+      "versionNumber": 1,
+      "title": "Post-Run Cool-Down",
+      "context": "cool_down",
+      "publicationStatus": "local_draft",
+      "estimatedMinutes": 5,
+      "steps": [
+        {
+          "id": "routine_post_run_cooldown_walk",
+          "order": 1,
+          "title": "Source walking step",
+          "phase03ExerciseId": null,
+          "doseType": "seconds",
+          "doseValue": 300,
+          "sides": "none",
+          "intensityCue": "After the source run, walk at a comfortable pace for the timed walking step.",
+          "techniqueCue": "Follow the linked NHS walking instructions; no additional gait technique is prescribed.",
+          "stopSignals": [
+            "Stop if something does not feel right."
+          ],
+          "alternativeExerciseIds": []
+        }
+      ],
+      "revisionReason": "Initial source-verified walking template",
+      "notes": "Read-only repository template. Copying creates an independent local routine, not clinical review. Source: https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+      "createdAt": "2026-10-07T15:07:44Z"
+    },
+    "stepRationales": [
+      "NHS explicitly supplies a five-minute walking transition; 5 × 60 = 300 seconds. This step has no inferred canonical exercise relationship."
+    ]
+  }
+]

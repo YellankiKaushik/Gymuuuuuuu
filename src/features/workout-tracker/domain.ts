@@ -235,8 +235,8 @@ export function fromProgram(
             prescription.repetitionTarget.type === "seconds"
               ? prescription.repetitionTarget.range?.max
               : null,
-          restSecondsMin: prescription.restSeconds.min,
-          restSecondsMax: prescription.restSeconds.max,
+          restSecondsMin: prescription.restSeconds?.min ?? null,
+          restSecondsMax: prescription.restSeconds?.max ?? null,
         };
         return {
           id: localId("workout_exercise"),
@@ -254,6 +254,12 @@ export function fromProgram(
             progressionRuleId: prescription.progressionRuleId,
             substitutionGroupId: prescription.substitutionGroupId,
             notesSnapshot: [
+              ...(prescription.restGuidance
+                ? [
+                    prescription.restGuidance.text,
+                    `Rest source references: ${prescription.restGuidance.sourceIds.join(", ")}`,
+                  ]
+                : []),
               ...(prescription.notes ?? []),
               `Reviewed set range: ${prescription.sets.min}–${prescription.sets.max}`,
               `Reviewed target: ${prescription.repetitionTarget.type}, ${JSON.stringify(prescription.repetitionTarget.range ?? prescription.repetitionTarget.cap ?? "technical quality")}`,

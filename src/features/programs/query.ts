@@ -1,5 +1,5 @@
 import type { SearchSchemaInput } from "@tanstack/react-router";
-import { normalizeTerm } from "../muscles/repository";
+import { normalizeTerm } from "../muscles/public-repository";
 import { publishedPrograms, programTaxonomy } from "./repository";
 import {
   programGoals,
@@ -191,7 +191,9 @@ export function findPrograms(
       const reasons = [
         `${program.trainingDaysPerWeek} sessions fit your available days.`,
         "Required equipment and environment match.",
-        "The reviewed time range fits your time budget.",
+        program.timeContext
+          ? "The source's time allocation fits this budget; completing this template in that time is not guaranteed."
+          : "The reviewed time range fits your time budget.",
         "Your experience level is within its audience.",
       ];
       const score =

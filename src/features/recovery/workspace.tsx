@@ -24,9 +24,11 @@ const Context = createContext<Workspace | null>(null);
 export function RecoveryPage({
   title,
   children,
+  publicKnowledge = false,
 }: {
   title: string;
   children: ReactNode;
+  publicKnowledge?: boolean;
 }) {
   const [view, setView] = useState<RecoveryView | null>(null),
     [error, setError] = useState(""),
@@ -45,6 +47,7 @@ export function RecoveryPage({
     [],
   );
   useEffect(() => {
+    if (publicKnowledge) return;
     void reload();
     const update = () => void reload();
     window.addEventListener("fitness-os:recovery-changed", update);
@@ -57,7 +60,7 @@ export function RecoveryPage({
       window.removeEventListener("fitness-os:recovery-changed", update);
       channel?.close();
     };
-  }, [reload]);
+  }, [reload, publicKnowledge]);
   const run = async (work: () => Promise<unknown>, success: string) => {
     if (pending.current) return false;
     pending.current = true;
@@ -84,9 +87,15 @@ export function RecoveryPage({
     <Context.Provider value={{ view, error, message, busy, run, reload }}>
       <div className="page recovery-page">
         <PageHeader
-          eyebrow="Recovery · device local"
+          eyebrow={
+            publicKnowledge ? "Recovery knowledge" : "Recovery · device local"
+          }
           title={title}
-          description="Optional diary and routines. Your reports stay in this browser; no recovery score or training prescription is generated."
+          description={
+            publicKnowledge
+              ? "Source-backed education and routines, with population limits and review levels shown."
+              : "Optional diary and routines. Your reports stay in this browser; no recovery score or training prescription is generated."
+          }
         />
         <SectionNav
           label="Recovery tools"
@@ -116,7 +125,13 @@ export function RecoveryPage({
             Enable tracking in settings before saving new personal records.
           </p>
         )}
-        {!view ? <p role="status">Loading browser records…</p> : children}
+        {publicKnowledge ? (
+          children
+        ) : !view ? (
+          <p role="status">Loading browser records…</p>
+        ) : (
+          children
+        )}
       </div>
     </Context.Provider>
   );

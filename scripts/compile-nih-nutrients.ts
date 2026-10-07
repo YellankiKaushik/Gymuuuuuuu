@@ -247,12 +247,181 @@ const definitions = [
       "Warfarin has a serious vitamin K interaction: sudden intake changes can be dangerous. Antibiotics, bile acid sequestrants and orlistat can also affect availability. Do not change medicines here.",
     forms: ["Phylloquinone", "Phytonadione", "Menaquinone-4", "Menaquinone-7"],
   },
+  {
+    id: "chromium_ug",
+    page: "Chromium",
+    updated: "2021-03-22",
+    role: "Chromium(III) occurs in foods, but its physiological role is uncertain. ODS distinguishes it from toxic industrial chromium(VI).",
+    foods:
+      "ODS lists meats, grains, vegetables, fruit, juices, nuts and brewerÃ¢â‚¬â„¢s yeast; content varies with growing and processing conditions.",
+    deficiency:
+      "ODS reports no chromium deficiency in healthy people and explains that its older reference amounts arose from earlier views of essentiality.",
+    excess:
+      "Safety research is limited; kidney or liver disease warrants particular caution with high supplemental amounts.",
+    interaction:
+      "Chromium supplements can interact with diabetes medicines and levothyroxine. Ask a pharmacist or clinician; do not adjust medicines here.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "fluoride_mg",
+    page: "Fluoride",
+    updated: "2024-06-17",
+    role: "Fluoride supports tooth enamel and helps reduce tooth decay; supplement effects on adult bone health remain uncertain.",
+    foods:
+      "Fluoridated water and foods or beverages made with it are major intake sources. Dental products should not be swallowed.",
+    deficiency:
+      "Too little fluoride can leave teeth more susceptible to cavities. This page does not assess individual dental risk.",
+    excess:
+      "Excess during tooth formation can cause dental fluorosis; very high or prolonged excessive intake can be harmful.",
+    interaction:
+      "ODS identifies no known medicine interactions but recommends discussing supplements and medicines with health professionals.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "molybdenum_ug",
+    page: "Molybdenum",
+    updated: "2021-03-22",
+    role: "Molybdenum supports processing of proteins and genetic material and the breakdown of some substances.",
+    foods:
+      "ODS lists legumes, grains, nuts, vegetables, dairy, meat and eggs; content depends on soil and irrigation water.",
+    deficiency:
+      "ODS describes deficiency as very rare in the United States and discusses a rare genetic cofactor disorder, not a common fitness symptom.",
+    excess:
+      "High environmental exposure can cause adverse effects; a source upper limit is a safety boundary, not an intake goal.",
+    interaction:
+      "ODS reports no known medicine interactions; tell health professionals about supplement use.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "pantothenic_acid_mg",
+    page: "PantothenicAcid",
+    updated: "2026-05-01",
+    role: "Pantothenic acid, vitamin B5, supports energy metabolism and the making and breakdown of fats.",
+    foods:
+      "ODS lists meat, seafood, eggs, milk, vegetables, whole grains, peanuts, sunflower seeds and chickpeas.",
+    deficiency:
+      "Deficiency is very rare in the United States; rare inherited disorders can affect utilization. Symptoms cannot diagnose it.",
+    excess:
+      "Very high supplemental amounts can cause gastrointestinal upset and diarrhea. This page gives no dosing prescription.",
+    interaction:
+      "ODS identifies no known medicine interactions but recommends discussing supplement use with health professionals.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "biotin_ug",
+    page: "Biotin",
+    updated: "2021-01-15",
+    role: "Biotin is a B vitamin involved in energy metabolism of carbohydrates, fats and proteins.",
+    foods:
+      "ODS lists meat, fish, eggs, organ meats, nuts, seeds and some vegetables.",
+    deficiency:
+      "Deficiency is rare in the United States; genetic conditions, alcohol dependence and some life stages warrant professional assessment.",
+    excess:
+      "High supplemental biotin can distort laboratory results, including some thyroid-related tests. Tell the laboratory and clinician about use.",
+    interaction:
+      "Some antiseizure medicines can lower biotin levels. Hair or nail changes alone do not establish a need for supplements.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "omega_3_g",
+    page: "Omega3FattyAcids",
+    updated: "2022-07-18",
+    role: "Omega-3 fatty acids include ALA, EPA and DHA and contribute to cell membranes. These forms are not interchangeable intake targets.",
+    foods:
+      "ODS lists seafood, flaxseed, chia, walnuts and some plant oils; algal oils provide a vegetarian supplement source.",
+    deficiency:
+      "ODS describes deficiency as rare in the United States. Skin symptoms cannot diagnose it; reference amounts for ALA do not establish an EPA/DHA target.",
+    excess:
+      "Omega-3 supplements can cause gastrointestinal and other adverse effects; source safety limits are not a personal dosing goal.",
+    interaction:
+      "High supplemental amounts can increase bleeding problems with warfarin or other anticoagulants; seek professional review.",
+    absorption:
+      "The body converts only small amounts of ALA to EPA and DHA. No conversion percentage or total omega-3 composition is inferred.",
+    qualitativeOnly: true,
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "vitamin_a_rae_ug",
+    page: "VitaminA",
+    updated: "2025-03-10",
+    role: "Vitamin A supports vision, immunity and development; RAE accounts for differing form activity.",
+    foods: "ODS lists animal foods and plant provitamin-A sources.",
+    deficiency:
+      "Inadequacy can affect vision; assessment requires clinical context.",
+    excess:
+      "Excess preformed vitamin A can harm; pregnancy requires particular caution.",
+    interaction:
+      "Supplements can interact with orlistat and retinoid medicines.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "beta_carotene_ug",
+    page: "VitaminA",
+    updated: "2025-03-10",
+    role: "Beta-carotene is a plant provitamin-A carotenoid, distinct from preformed vitamin A.",
+    foods: "ODS lists green, orange and yellow vegetables and some fruits.",
+    deficiency:
+      "Beta-carotene intake alone does not diagnose vitamin A deficiency.",
+    excess:
+      "High-dose beta-carotene supplements increase risk in smokers, former smokers and asbestos-exposed people.",
+    interaction:
+      "Assess supplement and medicine use with a health professional.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "retinol_ug",
+    page: "VitaminA",
+    pageType: "HealthProfessional",
+    updated: "2025-03-10",
+    role: "Retinol is a preformed vitamin A form, distinct from plant provitamin-A carotenoids.",
+    foods:
+      "ODS identifies animal foods including liver, fish, dairy and eggs as preformed vitamin A sources.",
+    deficiency:
+      "Blood retinol interpretation requires clinical context; storage and infection can affect assessment.",
+    excess:
+      "Excess preformed vitamin A can cause toxicity; no individual intake or treatment threshold is inferred.",
+    interaction:
+      "Retinoid medicines and orlistat require professional assessment before supplement use.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
+  {
+    id: "folic_acid_ug",
+    page: "Folate",
+    updated: "2022-11-01",
+    role: "Folic acid is a folate form used in fortified foods and supplements; folate supports DNA production and cell division.",
+    foods:
+      "ODS identifies enriched grain products and fortified cereals as added-folic-acid sources; these are distinct from natural food folate.",
+    deficiency:
+      "Folate inadequacy can cause megaloblastic anemia, but this article does not diagnose anemia or prescribe prenatal care.",
+    excess:
+      "Large supplemental folate amounts can mask the anemia of vitamin B12 deficiency without preventing nerve injury.",
+    interaction:
+      "Folate supplements can interact with methotrexate and antiseizure medicines; do not change medicines here.",
+    absorption:
+      "Folic acid absorption differs from natural food folate; DFE and micrograms of folic acid remain separate values without an inferred conversion.",
+    reviewedAt: "2026-10-07",
+    forms: [],
+  },
 ] as const;
 const sourceIds = ["nih_ods_fact_sheets"] as const;
 const additions = definitions.map((d) => {
+  const pageType = "pageType" in d ? d.pageType : "Consumer";
   const recordReviewedAt = "reviewedAt" in d ? d.reviewedAt : reviewedAt;
   const seed = identities.find((r) => r.id === d.id);
   if (!seed) throw Error(`Unknown immutable nutrient identity ${d.id}`);
+  const qualitativeOnly =
+    d.id === "niacin_mg" ||
+    ("qualitativeOnly" in d && d.qualitativeOnly) ||
+    !seed.foodDataNutrientIds.includes(d.id);
   const claims = (
     [
       ["function", d.role],
@@ -305,14 +474,18 @@ const additions = definitions.map((d) => {
         : seed.absorptionFactors,
     foodSourceRules: [
       {
-        rankingBasis: d.id === "niacin_mg" ? "qualitative_only" : "per_100g",
-        phase07NutrientId: d.id === "niacin_mg" ? null : d.id,
+        rankingBasis: qualitativeOnly ? "qualitative_only" : "per_100g",
+        phase07NutrientId: qualitativeOnly ? null : d.id,
         minimumDataStatus: "measured_or_calculated",
-        status: d.id === "niacin_mg" ? "disabled" : "enabled",
+        status: qualitativeOnly ? "disabled" : "enabled",
         notes:
-          d.id === "niacin_mg"
-            ? "USDA niacin mass is not niacin equivalents (NE). Tryptophan contribution is not inferred, and an NE ranking is unavailable."
-            : "Exact source-backed 100 g profiles; missing composition is not zero.",
+          d.id === "omega_3_g"
+            ? "Total omega-3 composition is unavailable; individual ALA, EPA and DHA values are not inferred or conflated."
+            : d.id === "niacin_mg"
+              ? "USDA niacin mass is not niacin equivalents (NE). Tryptophan contribution is not inferred, and an NE ranking is unavailable."
+              : qualitativeOnly
+                ? "No matching Phase 07 composition concept is available; qualitative source education only, with no inferred food values."
+                : "Exact source-backed 100 g profiles; missing composition is not zero.",
       },
     ],
     deficiency: {
@@ -345,9 +518,9 @@ const additions = definitions.map((d) => {
     sources: [
       {
         sourceId: "nih_ods_fact_sheets",
-        locator: `https://ods.od.nih.gov/factsheets/${d.page}-Consumer/`,
+        locator: `https://ods.od.nih.gov/factsheets/${d.page}-${pageType}/`,
         accessedAt: recordReviewedAt,
-        notes: `Individually read consumer page; source updated ${d.updated}. No numeric intake rows imported. See the source for framework-specific recommendations.`,
+        notes: `Individually read ${pageType === "Consumer" ? "consumer" : "HealthProfessional"} page; source updated ${d.updated}. No numeric intake rows imported. See the source for framework-specific recommendations.`,
       },
     ],
     editorial: {

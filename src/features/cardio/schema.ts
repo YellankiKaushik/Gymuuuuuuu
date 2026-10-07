@@ -1,5 +1,5 @@
 import { z } from "zod";
-import reference from "../../content/cardio/reference.json";
+import reference from "../../content/cardio/runtime-reference.json";
 import {
   intensityPrescriptionNormativeSchema,
   segmentNormativeSchema,

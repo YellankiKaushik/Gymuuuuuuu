@@ -767,5 +767,275 @@
       "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
       "No independent human or clinical review."
     ]
+  },
+  {
+    "id": "ace_bodyweight_squat",
+    "title": "ACE Bodyweight Squat",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/",
+    "sourceVersion": null,
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-07T11:50:52Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and link; no copied wording, photographs or third-party illustration. Copyright remains with ACE; no permission or open licence claimed.",
+    "limitations": [
+      "Technique education, not a studied training protocol or guaranteed injury prevention.",
+      "No set, repetition or timed-rest prescription in this source.",
+      "Source page read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human review."
+    ]
+  },
+  {
+    "id": "ace_single_arm_row",
+    "title": "ACE Single-arm Row",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/126/single-arm-row/",
+    "sourceVersion": null,
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-07T11:50:52Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and link; no copied wording, photographs or third-party illustration. Copyright remains with ACE; no permission or open licence claimed.",
+    "limitations": [
+      "Technique education, not a studied training protocol or guaranteed injury prevention.",
+      "No set, repetition or timed-rest prescription in this source.",
+      "Source page read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human review."
+    ]
+  },
+  {
+    "id": "original_foundation_diagrams_v1",
+    "title": "Original foundation movement-sequence diagrams",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+    "sourceVersion": "1.0.0",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-07T11:50:52Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "original_work",
+    "rightsReference": "Original project SVG sequences; no copied photographs, tracing or third-party art.",
+    "limitations": [
+      "Sequence cues only, not anatomical models or complete demonstrations.",
+      "No independent human review."
+    ]
+  },
+  {
+    "id": "original_foundation_program_v1",
+    "title": "Original two-day source-based strength arrangement",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs",
+    "sourceVersion": "1.0.0",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-07T11:53:02Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "original_work",
+    "rightsReference": "Original static schedule and arrangement; numeric goals attributed separately to NIA. No copied proprietary program.",
+    "limitations": [
+      "Original arrangement, not a trial-tested program or NIA endorsement.",
+      "Older-adult source scope; no independent human or clinical review.",
+      "Time is a guideline allocation, not measured completion time."
+    ]
+  },
+  {
+    "id": "nih_ods_chromium_consumer",
+    "title": "NIH ODS Chromium Consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Chromium-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_fluoride_consumer",
+    "title": "NIH ODS Fluoride Consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Fluoride-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2024-06-17",
+    "sourceDate": "2024-06-17",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_molybdenum_consumer",
+    "title": "NIH ODS Molybdenum Consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Molybdenum-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_pantothenicacid_consumer",
+    "title": "NIH ODS PantothenicAcid Consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/PantothenicAcid-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2026-05-01",
+    "sourceDate": "2026-05-01",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_biotin_consumer",
+    "title": "NIH ODS Biotin Consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Biotin-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2021-01-15",
+    "sourceDate": "2021-01-15",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_omega3fattyacids_consumer",
+    "title": "NIH ODS Omega3FattyAcids Consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2022-07-18",
+    "sourceDate": "2022-07-18",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_vitamina_consumer",
+    "title": "NIH ODS VitaminA Consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminA-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2025-03-10",
+    "sourceDate": "2025-03-10",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_vitamina_professional",
+    "title": "NIH ODS VitaminA HealthProfessional fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/",
+    "sourceVersion": "HealthProfessional fact sheet, updated 2025-03-10",
+    "sourceDate": "2025-03-10",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T12:01:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+    "limitations": [
+      "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nhs_walking_transitions_2026",
+    "title": "Couch to 5K: walking before and after each run",
+    "publisher": "NHS Better Health",
+    "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+    "sourceVersion": "Page read 2026-10-07; publisher update date not specified",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T15:07:44Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "open_government_licence",
+    "rightsReference": "NHS terms sections 3.4–3.6; Open Government Licence v3.0. NHS content-not-licensed-for-re-use exclusions checked. No logo, image, video or audio copied.",
+    "limitations": [
+      "The walking steps are one part of the NHS running plan, not a complete mobility sequence.",
+      "No endorsement, guaranteed injury prevention or independent clinical review."
+    ]
+  },
+  {
+    "id": "source_rest_hypertrophy_2024",
+    "title": "Give it a rest: a systematic review with Bayesian meta-analysis on the effect of inter-set rest interval duration on muscle hypertrophy",
+    "publisher": "Singer and colleagues",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11349676/",
+    "sourceVersion": "DOI 10.3389/fspor.2024.1429789; PMID 39205815",
+    "sourceDate": "2024-08-14",
+    "evidenceType": "systematic_review_meta_analysis",
+    "extractedAt": "2026-10-07T15:17:09Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase. Singer and colleagues retain attribution; source article carries CC BY, https://creativecommons.org/licenses/by/4.0/. No figure or table reproduced.",
+    "limitations": [
+      "The included interventions lasted five to ten weeks; long-term individual responses are not established.",
+      "Small studies, differing muscle-size measures and heterogeneous results limit precision.",
+      "The interval comparisons are not personal recovery targets or a requirement to shorten rest."
+    ]
+  },
+  {
+    "id": "source_split_fullbody_2024",
+    "title": "Efficacy of Split Versus Full-Body Resistance Training on Strength and Muscle Growth: A Systematic Review With Meta-Analysis",
+    "publisher": "Ramos-Campo and colleagues",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38595233/",
+    "sourceVersion": "DOI 10.1519/JSC.0000000000004774; PMID 38595233",
+    "sourceDate": "2024-07-01",
+    "evidenceType": "systematic_review_meta_analysis",
+    "extractedAt": "2026-10-07T15:17:09Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Copyright 2024 National Strength and Conditioning Association. Brief original factual paraphrase and citation only; no abstract, table, figure or publisher media reproduced.",
+    "limitations": [
+      "This summary uses the published abstract; individual study protocols and risks of bias have not been independently appraised.",
+      "The comparison depends on matched volume; it does not establish that every schedule or exercise selection is equivalent.",
+      "Personal preference is not proof of an individual response or a superior split."
+    ]
   }
 ]

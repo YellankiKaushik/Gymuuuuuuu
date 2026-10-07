@@ -38,7 +38,12 @@ function convert(schema, path = '') {
   return value
 }
 let code = `// Generated from ${sourcePath}. Regenerate with node scripts/generate-program-schema.mjs.\nimport { z } from 'zod'\n\n`
-code += `export const normativeProgramSchema = ${convert(root)}.superRefine((record,ctx)=>{\n`
+code += `export const normativeProgramObjectSchema = ${convert(root)}\n`
+const conditionalKeys = [...new Set(root.allOf.flatMap((clause) => [
+  ...Object.keys(clause.if.properties), ...(clause.then.required ?? []),
+  ...Object.keys(clause.then.properties ?? {}),
+]))]
+code += `export function validateProgramConditionals(record: {${conditionalKeys.map((key) => `${quote(key)}?: unknown`).join(';')}},ctx:z.RefinementCtx){\n`
 for (const clause of root.allOf) {
   const predicate = Object.entries(clause.if.properties).map(([key, condition]) => `record[${quote(key)}] === ${quote(condition.const)}`).join(' && ')
   code += `if(${predicate}){\n`
@@ -46,7 +51,7 @@ for (const clause of root.allOf) {
   for (const [key, constraints] of Object.entries(clause.then.properties ?? {})) if (constraints.minItems) code += `if(Array.isArray(record[${quote(key)}]) && record[${quote(key)}]!.length < ${constraints.minItems})ctx.addIssue({code:'custom',path:[${quote(key)}],message:'Insufficient publication items'});\n`
   code += '}\n'
 }
-code += '})\nexport type Program = z.infer<typeof normativeProgramSchema>\n'
+code += '}\nexport const normativeProgramSchema = normativeProgramObjectSchema.superRefine(validateProgramConditionals)\nexport type Program = z.infer<typeof normativeProgramSchema>\n'
 mkdirSync('src/features/programs', { recursive: true })
 writeFileSync('src/features/programs/schema.generated.ts', code)
 console.log('Generated all Phase 05 schema fields, references, enums, required fields and conditionals.')

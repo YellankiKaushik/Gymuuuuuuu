@@ -2,7 +2,7 @@ import rawTaxonomy from '../../content/workout-science/taxonomy.json'
 import rawRecords from '../../content/workout-science/records.json'
 import rawExceptions from '../../content/workout-science/language-exceptions.json'
 import { z } from 'zod'
-import { anatomyTaxonomy, normalizeTerm } from '../muscles/repository'
+import { anatomyTaxonomy, normalizeTerm } from '../muscles/public-repository'
 import { exerciseIdentities, exerciseIndexes } from '../exercises/repository'
 import { scienceSchema, type ScienceTopic } from './schema'
 export const scienceTaxonomy = rawTaxonomy

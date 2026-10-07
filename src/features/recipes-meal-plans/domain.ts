@@ -17,6 +17,7 @@ import {
   recipeVersionSchema,
   recipeCalculationSchema,
   plannedItemSchema,
+  plannedRecipeSnapshotSchema,
   mealPlanVersionSchema,
   recipeBackupSchema,
   recipeReference,
@@ -649,6 +650,35 @@ export function flattenRecipeIngredients(
     }));
   });
 }
+const plannedSnapshotCache = new WeakMap<
+  RecipeVersion,
+  {
+    fingerprint: string;
+    snapshot: NonNullable<PlannedItem["recipeRef"]>;
+  }
+>();
+function frozenPlannedRecipe(
+  recipe: RecipeVersion,
+  servingWeight: number | null,
+) {
+  // Recipe drafts remain editable. A byte-exact fingerprint prevents a mutated
+  // draft from inheriting the cached snapshot of its earlier composition.
+  const fingerprint = JSON.stringify(recipe);
+  const previous = plannedSnapshotCache.get(recipe);
+  if (previous?.fingerprint === fingerprint) return previous.snapshot;
+  const snapshot = plannedRecipeSnapshotSchema.parse({
+    recipeId: recipe.recipeId,
+    recipeVersionId: recipe.id,
+    versionNumber: recipe.versionNumber,
+    originalServings: recipe.yieldModel.servings,
+    finalBatchWeightGrams: recipe.yieldModel.finalWeightGrams,
+    servingWeightGrams: servingWeight,
+    calculation: recipe.calculation,
+    ingredientRequirements: flattenRecipeIngredients(recipe),
+  });
+  plannedSnapshotCache.set(recipe, { fingerprint, snapshot });
+  return snapshot;
+}
 export function plannedRecipeItem(
   recipe: RecipeVersion,
   quantity: number,
@@ -675,16 +705,7 @@ export function plannedRecipeItem(
     mealSlotId,
     kind: "recipe",
     displayNameSnapshot: recipe.title,
-    recipeRef: {
-      recipeId: recipe.recipeId,
-      recipeVersionId: recipe.id,
-      versionNumber: recipe.versionNumber,
-      originalServings: recipe.yieldModel.servings,
-      finalBatchWeightGrams: recipe.yieldModel.finalWeightGrams,
-      servingWeightGrams: servingWeight,
-      calculation: recipe.calculation,
-      ingredientRequirements: flattenRecipeIngredients(recipe),
-    },
+    recipeRef: frozenPlannedRecipe(recipe, servingWeight),
     quantity,
     quantityUnit: "serving",
     gramWeight: servingWeight === null ? null : servingWeight * quantity,

@@ -31,6 +31,10 @@ describe("exercise governance", () => {
       "exercise_seated_dumbbell_shoulder_press",
       "exercise_dumbbell_overhead_triceps_extension",
       "exercise_single_leg_calf_raise",
+      "exercise_bodyweight_squat",
+      "exercise_one_arm_dumbbell_row",
+      "exercise_incline_push_up",
+      "exercise_standing_calf_raise",
     ]);
     expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
   });

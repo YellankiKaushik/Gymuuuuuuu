@@ -1,0 +1,1636 @@
+[
+  {
+    "id": "muscle_biceps_brachii",
+    "slug": "biceps-brachii",
+    "displayName": "Biceps brachii",
+    "anatomicalName": "Biceps brachii",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_biceps"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A two-headed muscle on the front of the upper arm. It contributes to elbow bending and turning the forearm palm-up.",
+    "jointActions": [
+      {
+        "joint": "elbow",
+        "motion": "flexion"
+      },
+      {
+        "joint": "radioulnar joints",
+        "motion": "supination"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_upper_arm"
+    ]
+  },
+  {
+    "id": "muscle_brachialis",
+    "slug": "brachialis",
+    "displayName": "Brachialis",
+    "anatomicalName": "Brachialis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_biceps"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "An elbow flexor located across the front of the lower upper arm and elbow. Its distal attachment is on the ulna.",
+    "jointActions": [
+      {
+        "joint": "elbow",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_upper_arm"
+    ]
+  },
+  {
+    "id": "muscle_triceps_brachii",
+    "slug": "triceps-brachii",
+    "displayName": "Triceps brachii",
+    "anatomicalName": "Triceps brachii",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_triceps"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "The three-headed muscle along the back of the upper arm contributes to straightening the elbow.",
+    "jointActions": [
+      {
+        "joint": "elbow",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_upper_arm"
+    ]
+  },
+  {
+    "id": "muscle_levator_scapulae",
+    "slug": "levator-scapulae",
+    "displayName": "Levator scapulae",
+    "anatomicalName": "Levator scapulae",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_neck",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_neck",
+      "group_upper_back"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A muscle at the back and side of the neck that helps raise the medial angle of the scapula.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "elevation"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_deltoid",
+    "slug": "deltoid",
+    "displayName": "Deltoid",
+    "anatomicalName": "Deltoid",
+    "aliases": [
+      "Deltoideus"
+    ],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_shoulders"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A triangular muscle covering the front, back and lateral shoulder. Its portions contribute to raising the arm and moving it forward or backward.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "abduction"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "flexion"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [
+      "abduction",
+      "flexion",
+      "extension"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_deltoid_anterior",
+    "slug": "anterior-deltoid",
+    "displayName": "Anterior deltoid",
+    "anatomicalName": "Anterior deltoid",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_shoulders"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "The anterior portion of the deltoid contributes to drawing the arm forward with pectoralis major.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_deltoid_posterior",
+    "slug": "posterior-deltoid",
+    "displayName": "Posterior deltoid",
+    "anatomicalName": "Posterior deltoid",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_shoulders"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "The posterior portion of the deltoid contributes to drawing the arm backward with teres major and latissimus dorsi.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_supraspinatus",
+    "slug": "supraspinatus",
+    "displayName": "Supraspinatus",
+    "anatomicalName": "Supraspinatus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A muscle above the scapular spine that assists in raising the arm from the side and holding the humeral head in the glenoid cavity.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "abduction"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "stabilization"
+      }
+    ],
+    "movementPatterns": [
+      "abduction"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_infraspinatus",
+    "slug": "infraspinatus",
+    "displayName": "Infraspinatus",
+    "anatomicalName": "Infraspinatus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_shoulder",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A muscle below the scapular spine that rotates the humerus outward and assists in carrying the arm backward.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "external rotation"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [
+      "rotation",
+      "extension"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_teres_minor",
+    "slug": "teres-minor",
+    "displayName": "Teres minor",
+    "anatomicalName": "Teres minor",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_shoulder",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A narrow muscle along the lateral scapular border that helps rotate the humerus outward and move the arm backward.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "external rotation"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [
+      "rotation",
+      "extension"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_subscapularis",
+    "slug": "subscapularis",
+    "displayName": "Subscapularis",
+    "anatomicalName": "Subscapularis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_rotator_cuff"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A triangular muscle on the front surface of the scapula that rotates the humerus inward.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "lowering the raised arm"
+      }
+    ],
+    "movementPatterns": [
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_pectoralis_major",
+    "slug": "pectoralis-major",
+    "displayName": "Pectoralis major",
+    "anatomicalName": "Pectoralis major",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A fan-shaped muscle on the front of the upper chest that draws the arm toward the body and across the chest and rotates it inward.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "adduction"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "drawing the arm forward and across the chest"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_pectoralis_minor",
+    "slug": "pectoralis-minor",
+    "displayName": "Pectoralis minor",
+    "anatomicalName": "Pectoralis minor",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A thin muscle beneath pectoralis major that draws the scapula downward and toward the chest.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "depression"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "drawing the scapula toward the thorax"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_serratus_anterior",
+    "slug": "serratus-anterior",
+    "displayName": "Serratus anterior",
+    "anatomicalName": "Serratus anterior",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest",
+      "group_upper_back"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A muscular sheet between the ribs and scapula that carries the scapula forward and contributes to its rotation during arm raising.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "protraction"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_latissimus_dorsi",
+    "slug": "latissimus-dorsi",
+    "displayName": "Latissimus dorsi",
+    "anatomicalName": "Latissimus dorsi",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_back",
+      "region_lower_back"
+    ],
+    "trainingGroups": [
+      "group_lats"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A broad muscle over the lower back that connects to the humerus and helps draw the arm backward, downward and inward in rotation.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "extension"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "lowering the raised arm"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "extension",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_trapezius",
+    "slug": "trapezius",
+    "displayName": "Trapezius",
+    "anatomicalName": "Trapezius",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_neck",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A broad muscle over the upper back and neck. Its portions help retract, elevate, depress and rotate the scapula.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "elevation"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "depression"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction",
+      "scapular-elevation-depression",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_trapezius_upper",
+    "slug": "upper-trapezius",
+    "displayName": "Upper trapezius",
+    "anatomicalName": "Upper trapezius",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_neck",
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_neck",
+      "group_upper_back"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "The upper trapezius fibers help elevate the point of the shoulder when the head is fixed.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "elevation"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_trapezius_middle",
+    "slug": "middle-trapezius",
+    "displayName": "Middle trapezius",
+    "anatomicalName": "Middle trapezius",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "The middle trapezius fibers participate in scapular retraction and, with lower fibers, scapular rotation.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_trapezius_lower",
+    "slug": "lower-trapezius",
+    "displayName": "Lower trapezius",
+    "anatomicalName": "Lower trapezius",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "The lower trapezius fibers assist scapular depression and participate with middle fibers in scapular rotation and retraction.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "depression"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "upward rotation"
+      },
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-elevation-depression",
+      "scapular-protraction-retraction",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_rhomboid_group",
+    "slug": "rhomboids",
+    "displayName": "Rhomboid group",
+    "anatomicalName": "Rhomboid major and rhomboid minor",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_back"
+    ],
+    "trainingGroups": [
+      "group_upper_back"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "Rhomboid major and minor connect the vertebral column to the medial scapula and act with trapezius fibers to retract the scapula.",
+    "jointActions": [
+      {
+        "joint": "shoulder girdle",
+        "motion": "retraction"
+      }
+    ],
+    "movementPatterns": [
+      "scapular-protraction-retraction"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_teres_major",
+    "slug": "teres-major",
+    "displayName": "Teres major",
+    "anatomicalName": "Teres major",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_upper_back",
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_upper_back",
+      "group_lats"
+    ],
+    "visibility": [],
+    "depth": "foundation",
+    "summary": "A muscle from the inferior scapula to the humerus that assists latissimus dorsi in lowering the raised arm, drawing it backward and rotating it inward.",
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "lowering the raised arm"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "extension"
+      },
+      {
+        "joint": "shoulder",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "extension",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-05",
+    "sources": [
+      "gray_1918_shoulder_thorax"
+    ]
+  },
+  {
+    "id": "muscle_gluteus_maximus",
+    "slug": "gluteus-maximus",
+    "displayName": "Gluteus maximus",
+    "anatomicalName": "Gluteus maximus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A broad superficial gluteal muscle described as extending the thigh and supporting the pelvis and trunk.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "extension"
+      },
+      {
+        "joint": "hip",
+        "motion": "external rotation"
+      }
+    ],
+    "movementPatterns": [
+      "extension",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_gluteus_medius",
+    "slug": "gluteus-medius",
+    "displayName": "Gluteus medius",
+    "anatomicalName": "Gluteus medius",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes",
+      "group_hip_abductors"
+    ],
+    "visibility": [
+      "lateral"
+    ],
+    "depth": "foundation",
+    "summary": "A lateral pelvic muscle contributing to thigh abduction and pelvic support when standing on one limb.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "abduction"
+      },
+      {
+        "joint": "hip",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "abduction",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_gluteus_minimus",
+    "slug": "gluteus-minimus",
+    "displayName": "Gluteus minimus",
+    "anatomicalName": "Gluteus minimus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes",
+      "group_hip_abductors"
+    ],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A small gluteal muscle beneath gluteus medius, contributing to thigh abduction and one-limb pelvic support.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "abduction"
+      },
+      {
+        "joint": "hip",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "abduction",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_tensor_fasciae_latae",
+    "slug": "tensor-fasciae-latae",
+    "displayName": "Tensor fasciae latae",
+    "anatomicalName": "Tensor fasciae latae",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_hip_gluteal",
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_abductors",
+      "group_hip_flexors"
+    ],
+    "visibility": [
+      "lateral"
+    ],
+    "depth": "foundation",
+    "summary": "A muscle connected with the iliotibial band, described as tensing fascia and assisting thigh abduction and inward rotation.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "abduction"
+      },
+      {
+        "joint": "hip",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "abduction",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_rectus_femoris",
+    "slug": "rectus-femoris",
+    "displayName": "Rectus femoris",
+    "anatomicalName": "Rectus femoris",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A quadriceps component contributing to knee extension and assisting hip flexion.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension"
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "extension",
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_vastus_lateralis",
+    "slug": "vastus-lateralis",
+    "displayName": "Vastus lateralis",
+    "anatomicalName": "Vastus lateralis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A quadriceps component contributing to knee extension.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_vastus_medialis",
+    "slug": "vastus-medialis",
+    "displayName": "Vastus medialis",
+    "anatomicalName": "Vastus medialis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A quadriceps component contributing to knee extension.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_vastus_intermedius",
+    "slug": "vastus-intermedius",
+    "displayName": "Vastus intermedius",
+    "anatomicalName": "Vastus intermedius",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A quadriceps component contributing to knee extension.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension"
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_biceps_femoris",
+    "slug": "biceps-femoris",
+    "displayName": "Biceps femoris",
+    "anatomicalName": "Biceps femoris",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A two-headed posterior thigh muscle contributing to knee flexion and outward rotation of the bent leg.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion"
+      },
+      {
+        "joint": "knee",
+        "motion": "external rotation"
+      }
+    ],
+    "movementPatterns": [
+      "flexion",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_biceps_femoris_long_head",
+    "slug": "biceps-femoris-long-head",
+    "displayName": "Biceps femoris — long head",
+    "anatomicalName": "Biceps femoris — long head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of biceps femoris sharing its distal tendon; head-specific activation or isolation is not established here.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_biceps_femoris_short_head",
+    "slug": "biceps-femoris-short-head",
+    "displayName": "Biceps femoris — short head",
+    "anatomicalName": "Biceps femoris — short head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of biceps femoris sharing its distal tendon; head-specific activation or isolation is not established here.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_semitendinosus",
+    "slug": "semitendinosus",
+    "displayName": "Semitendinosus",
+    "anatomicalName": "Semitendinosus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A medial posterior thigh muscle with a long tendon, contributing to knee flexion and inward rotation of the bent leg.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion"
+      },
+      {
+        "joint": "knee",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "flexion",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_semimembranosus",
+    "slug": "semimembranosus",
+    "displayName": "Semimembranosus",
+    "anatomicalName": "Semimembranosus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A medial posterior thigh muscle contributing to knee flexion and a smaller role in inward rotation of the bent leg.",
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion"
+      },
+      {
+        "joint": "knee",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "flexion",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_gastrocnemius",
+    "slug": "gastrocnemius",
+    "displayName": "Gastrocnemius",
+    "anatomicalName": "Gastrocnemius",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A superficial two-headed calf muscle contributing to heel raising at the ankle and knee flexion.",
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion"
+      },
+      {
+        "joint": "knee",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_gastrocnemius_medial_head",
+    "slug": "gastrocnemius-medial-head",
+    "displayName": "Gastrocnemius — medial head",
+    "anatomicalName": "Gastrocnemius — medial head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of gastrocnemius contributing to its shared calf muscle and calcaneal tendon.",
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_gastrocnemius_lateral_head",
+    "slug": "gastrocnemius-lateral-head",
+    "displayName": "Gastrocnemius — lateral head",
+    "anatomicalName": "Gastrocnemius — lateral head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "visibility": [
+      "posterior"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of gastrocnemius contributing to its shared calf muscle and calcaneal tendon.",
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_soleus",
+    "slug": "soleus",
+    "displayName": "Soleus",
+    "anatomicalName": "Soleus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A broad calf muscle beneath gastrocnemius, contributing to heel raising and supporting the leg over the foot in standing.",
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_adductor_magnus",
+    "slug": "adductor-magnus",
+    "displayName": "Adductor magnus",
+    "anatomicalName": "Adductor magnus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A large medial thigh muscle described in the historical source as contributing to thigh adduction.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction"
+      }
+    ],
+    "movementPatterns": [
+      "adduction"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_adductor_longus",
+    "slug": "adductor-longus",
+    "displayName": "Adductor longus",
+    "anatomicalName": "Adductor longus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A superficial triangular medial thigh muscle described as contributing to thigh adduction and flexion.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction"
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_adductor_brevis",
+    "slug": "adductor-brevis",
+    "displayName": "Adductor brevis",
+    "anatomicalName": "Adductor brevis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A shorter medial thigh muscle described as contributing to thigh adduction and assisting thigh flexion.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction"
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_gracilis",
+    "slug": "gracilis",
+    "displayName": "Gracilis",
+    "anatomicalName": "Gracilis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors"
+    ],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A thin superficial medial thigh muscle described as adducting the thigh and assisting knee flexion and inward leg rotation.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction"
+      },
+      {
+        "joint": "knee",
+        "motion": "flexion"
+      },
+      {
+        "joint": "knee",
+        "motion": "internal rotation"
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion",
+      "rotation"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_pectineus",
+    "slug": "pectineus",
+    "displayName": "Pectineus",
+    "anatomicalName": "Pectineus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_adductors",
+      "group_hip_flexors"
+    ],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A flat upper medial thigh muscle described as contributing to thigh adduction and assisting thigh flexion.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "adduction"
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion"
+      }
+    ],
+    "movementPatterns": [
+      "adduction",
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_tibialis_anterior",
+    "slug": "tibialis-anterior",
+    "displayName": "Tibialis anterior",
+    "anatomicalName": "Tibialis anterior",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_shin_ankle"
+    ],
+    "visibility": [
+      "anterior"
+    ],
+    "depth": "foundation",
+    "summary": "A front-of-leg muscle described as flexing the foot upward at the ankle and helping turn the medial border upward.",
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "dorsiflexion"
+      },
+      {
+        "joint": "foot",
+        "motion": "inversion"
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  },
+  {
+    "id": "muscle_deep_hip_rotator_group",
+    "slug": "deep-hip-external-rotators",
+    "displayName": "Deep hip external rotator group",
+    "anatomicalName": "Deep hip external rotator group",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes"
+    ],
+    "visibility": [
+      "deep"
+    ],
+    "depth": "foundation",
+    "summary": "A labelled anatomical group comprising piriformis, obturator internus and externus, the two gemelli and quadratus femoris.",
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "external rotation"
+      },
+      {
+        "joint": "hip",
+        "motion": "abduction"
+      }
+    ],
+    "movementPatterns": [
+      "rotation",
+      "abduction"
+    ],
+    "reviewedAt": "2026-10-07",
+    "sources": [
+      "gray_1918_lower_limb"
+    ]
+  }
+]

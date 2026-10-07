@@ -7,8 +7,8 @@
     {
       "module": "muscles",
       "totalIdentities": 70,
-      "publishedIdentities": 38,
-      "draftIdentities": 32,
+      "publishedIdentities": 45,
+      "draftIdentities": 25,
       "blockedIdentities": [
         {
           "id": "muscle_sternocleidomastoid",
@@ -165,57 +165,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "muscle_deep_hip_rotator_group",
-          "slug": "deep-hip-external-rotators",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_adductor_magnus",
-          "slug": "adductor-magnus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_adductor_longus",
-          "slug": "adductor-longus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_adductor_brevis",
-          "slug": "adductor-brevis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_gracilis",
-          "slug": "gracilis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_pectineus",
-          "slug": "pectineus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "muscle_sartorius",
           "slug": "sartorius",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_tibialis_anterior",
-          "slug": "tibialis-anterior",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -241,8 +192,8 @@
     {
       "module": "exercises",
       "totalIdentities": 184,
-      "publishedIdentities": 7,
-      "draftIdentities": 177,
+      "publishedIdentities": 11,
+      "draftIdentities": 173,
       "blockedIdentities": [
         {
           "id": "exercise_barbell_bench_press",
@@ -308,13 +259,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "exercise_incline_push_up",
-          "slug": "incline-push-up",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "exercise_decline_push_up",
           "slug": "decline-push-up",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -373,13 +317,6 @@
         {
           "id": "exercise_pendlay_row",
           "slug": "pendlay-row",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_one_arm_dumbbell_row",
-          "slug": "one-arm-dumbbell-row",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -805,13 +742,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "exercise_bodyweight_squat",
-          "slug": "bodyweight-squat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "exercise_box_squat",
           "slug": "box-squat",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -1094,13 +1024,6 @@
         {
           "id": "exercise_copenhagen_plank",
           "slug": "copenhagen-plank",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_standing_calf_raise",
-          "slug": "standing-calf-raise",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1490,8 +1413,8 @@
     {
       "module": "workout-science",
       "totalIdentities": 98,
-      "publishedIdentities": 3,
-      "draftIdentities": 95,
+      "publishedIdentities": 5,
+      "draftIdentities": 93,
       "blockedIdentities": [
         {
           "id": "science_training_adaptation",
@@ -1615,13 +1538,6 @@
         {
           "id": "science_training_frequency",
           "slug": "training-frequency",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_rest_intervals",
-          "slug": "rest-intervals",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1818,13 +1734,6 @@
         {
           "id": "science_warmup_working_backoff_sets",
           "slug": "warmup-working-backoff-sets",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_training_split",
-          "slug": "training-split",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2165,16 +2074,9 @@
     {
       "module": "programs",
       "totalIdentities": 50,
-      "publishedIdentities": 0,
-      "draftIdentities": 50,
+      "publishedIdentities": 1,
+      "draftIdentities": 49,
       "blockedIdentities": [
-        {
-          "id": "program_full_body_2_day_foundation",
-          "slug": "full-body-2-day-foundation",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
         {
           "id": "program_full_body_3_day_foundation",
           "slug": "full-body-3-day-foundation",
@@ -2520,13 +2422,13 @@
         }
       ],
       "humanReviewedIdentities": 0,
-      "reviewLevel": null
+      "reviewLevel": "published_personal_use"
     },
     {
       "module": "foods",
       "totalIdentities": 342,
-      "publishedIdentities": 226,
-      "draftIdentities": 116,
+      "publishedIdentities": 243,
+      "draftIdentities": 99,
       "blockedIdentities": [
         {
           "id": "food_custard_apple",
@@ -2566,13 +2468,6 @@
         {
           "id": "food_tamarind_pulp",
           "slug": "tamarind-pulp",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_cherry",
-          "slug": "cherry",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2641,29 +2536,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_red_cabbage",
-          "slug": "red-cabbage",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_red_onion",
           "slug": "red-onion",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_green_chilli",
-          "slug": "green-chilli",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_red_chilli_pepper",
-          "slug": "red-chilli-pepper",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2935,22 +2809,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_chestnut",
-          "slug": "chestnut",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_pumpkin_seed",
           "slug": "pumpkin-seed",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_poppy_seed",
-          "slug": "poppy-seed",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2965,13 +2825,6 @@
         {
           "id": "food_buffalo_milk",
           "slug": "buffalo-milk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_skim_milk",
-          "slug": "skim-milk",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3019,29 +2872,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_chicken_wing",
-          "slug": "chicken-wing",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_turkey_breast",
           "slug": "turkey-breast",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_duck_meat",
-          "slug": "duck-meat",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_goat_meat",
-          "slug": "goat-meat",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3068,20 +2900,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_rabbit_meat",
-          "slug": "rabbit-meat",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_venison",
-          "slug": "venison",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_chicken_liver",
           "slug": "chicken-liver",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -3091,13 +2909,6 @@
         {
           "id": "food_goat_liver",
           "slug": "goat-liver",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_beef_liver",
-          "slug": "beef-liver",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3222,13 +3033,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_oregano",
-          "slug": "oregano",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_fresh_turmeric_root",
           "slug": "fresh-turmeric-root",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -3278,13 +3082,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_paprika",
-          "slug": "paprika",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_lemon_water_unsweetened",
           "slug": "lemon-water-unsweetened",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -3294,20 +3091,6 @@
         {
           "id": "food_sugarcane_juice",
           "slug": "sugarcane-juice",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_tomato_juice_unsalted",
-          "slug": "tomato-juice-unsalted",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_orange_juice_unsweetened",
-          "slug": "orange-juice-unsweetened",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3347,8 +3130,8 @@
     {
       "module": "nutrients",
       "totalIdentities": 51,
-      "publishedIdentities": 22,
-      "draftIdentities": 29,
+      "publishedIdentities": 32,
+      "draftIdentities": 19,
       "blockedIdentities": [
         {
           "id": "energy_kcal",
@@ -3456,13 +3239,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "omega_3_g",
-          "slug": "omega-3-fatty-acids",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "omega_6_g",
           "slug": "omega-6-fatty-acids",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -3486,69 +3262,6 @@
         {
           "id": "chloride_mg",
           "slug": "chloride",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "chromium_ug",
-          "slug": "chromium",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "fluoride_mg",
-          "slug": "fluoride",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "molybdenum_ug",
-          "slug": "molybdenum",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "vitamin_a_rae_ug",
-          "slug": "vitamin-a",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "retinol_ug",
-          "slug": "retinol",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "beta_carotene_ug",
-          "slug": "beta-carotene",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "pantothenic_acid_mg",
-          "slug": "pantothenic-acid-vitamin-b5",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "biotin_ug",
-          "slug": "biotin-vitamin-b7",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "folic_acid_ug",
-          "slug": "folic-acid",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3578,8 +3291,8 @@
     {
       "module": "recovery",
       "totalIdentities": 124,
-      "publishedIdentities": 2,
-      "draftIdentities": 122,
+      "publishedIdentities": 4,
+      "draftIdentities": 120,
       "blockedIdentities": [
         {
           "id": "sleep_need_variability",
@@ -4247,13 +3960,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "routine_running_warmup",
-          "slug": "routine-running-warmup",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "routine_cycling_warmup",
           "slug": "routine-cycling-warmup",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -4375,13 +4081,6 @@
         {
           "id": "routine_post_lift_easy_movement",
           "slug": "routine-post-lift-easy-movement",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "routine_post_run_cooldown",
-          "slug": "routine-post-run-cooldown",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -7753,44 +7452,44 @@
   "sourceCoverage": [
     {
       "module": "muscles",
-      "published": 38,
-      "withPublicationProvenance": 38,
-      "inSearch": 38,
+      "published": 45,
+      "withPublicationProvenance": 45,
+      "inSearch": 45,
       "missingSourceProvenance": []
     },
     {
       "module": "exercises",
-      "published": 7,
-      "withPublicationProvenance": 7,
-      "inSearch": 7,
+      "published": 11,
+      "withPublicationProvenance": 11,
+      "inSearch": 11,
       "missingSourceProvenance": []
     },
     {
       "module": "workout-science",
-      "published": 3,
-      "withPublicationProvenance": 3,
-      "inSearch": 3,
+      "published": 5,
+      "withPublicationProvenance": 5,
+      "inSearch": 5,
       "missingSourceProvenance": []
     },
     {
       "module": "programs",
-      "published": 0,
-      "withPublicationProvenance": 0,
-      "inSearch": 0,
+      "published": 1,
+      "withPublicationProvenance": 1,
+      "inSearch": 1,
       "missingSourceProvenance": []
     },
     {
       "module": "foods",
-      "published": 226,
-      "withPublicationProvenance": 226,
-      "inSearch": 226,
+      "published": 243,
+      "withPublicationProvenance": 243,
+      "inSearch": 243,
       "missingSourceProvenance": []
     },
     {
       "module": "nutrients",
-      "published": 22,
-      "withPublicationProvenance": 22,
-      "inSearch": 22,
+      "published": 32,
+      "withPublicationProvenance": 32,
+      "inSearch": 32,
       "missingSourceProvenance": []
     },
     {
@@ -7809,9 +7508,9 @@
     },
     {
       "module": "recovery",
-      "published": 2,
-      "withPublicationProvenance": 2,
-      "inSearch": 2,
+      "published": 4,
+      "withPublicationProvenance": 4,
+      "inSearch": 4,
       "missingSourceProvenance": []
     },
     {
@@ -7832,7 +7531,7 @@
   "comparisonCoverage": [
     {
       "module": "muscles",
-      "eligiblePublishedRecords": 38,
+      "eligiblePublishedRecords": 45,
       "families": [
         "muscles"
       ],
@@ -7841,7 +7540,7 @@
     },
     {
       "module": "exercises",
-      "eligiblePublishedRecords": 7,
+      "eligiblePublishedRecords": 11,
       "families": [
         "exercises"
       ],
@@ -7857,14 +7556,16 @@
     },
     {
       "module": "programs",
-      "eligiblePublishedRecords": 0,
-      "families": [],
+      "eligiblePublishedRecords": 1,
+      "families": [
+        "workout_programs"
+      ],
       "hasAtLeastTwoCompatibleRecords": false,
       "interpretation": "Compatible family eligibility only; no winner or efficacy score."
     },
     {
       "module": "foods",
-      "eligiblePublishedRecords": 226,
+      "eligiblePublishedRecords": 243,
       "families": [
         "foods"
       ],
@@ -7873,7 +7574,7 @@
     },
     {
       "module": "nutrients",
-      "eligiblePublishedRecords": 22,
+      "eligiblePublishedRecords": 32,
       "families": [
         "nutrients"
       ],
@@ -7898,7 +7599,7 @@
     },
     {
       "module": "recovery",
-      "eligiblePublishedRecords": 2,
+      "eligiblePublishedRecords": 4,
       "families": [
         "recovery_methods"
       ],
@@ -8232,6 +7933,62 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_adductor_magnus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_adductor_longus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_adductor_brevis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_gracilis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_pectineus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_tibialis_anterior",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_deep_hip_rotator_group",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -8350,6 +8107,70 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_bodyweight_squat",
+          "assets": [
+            {
+              "url": "/media/bodyweight-squat-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-07",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_one_arm_dumbbell_row",
+          "assets": [
+            {
+              "url": "/media/one-arm-dumbbell-row-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-07",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_incline_push_up",
+          "assets": [
+            {
+              "url": "/media/incline-push-up-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-07",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_standing_calf_raise",
+          "assets": [
+            {
+              "url": "/media/standing-calf-raise-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-07",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
         }
       ]
     },
@@ -8380,13 +8201,38 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_rest_intervals",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_training_split",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
     {
       "module": "programs",
       "instructionalMediaRequired": false,
-      "records": []
+      "records": [
+        {
+          "id": "program_full_body_2_day_foundation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        }
+      ]
     },
     {
       "module": "foods",
@@ -10199,6 +10045,142 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_red_cabbage",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_cherry",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_green_chilli",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_red_chilli_pepper",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_chestnut",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_poppy_seed",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_skim_milk",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_goat_meat",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_duck_meat",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_rabbit_meat",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_venison",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_beef_liver",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_chicken_wing",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_tomato_juice_unsalted",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_orange_juice_unsweetened",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_paprika",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_oregano",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10376,6 +10358,86 @@
         },
         {
           "id": "vitamin_k_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "chromium_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "fluoride_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "molybdenum_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "pantothenic_acid_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "biotin_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "omega_3_g",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "vitamin_a_rae_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "beta_carotene_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "retinol_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "folic_acid_ug",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -10631,6 +10693,22 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "routine_running_warmup",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "routine_post_run_cooldown",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10683,55 +10761,55 @@
   "publicationBlockSummary": [
     {
       "module": "muscles",
-      "missingVerifiedFactualRecords": 32,
+      "missingVerifiedFactualRecords": 25,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 38,
+      "independentHumanReviewPending": 45,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
     {
       "module": "exercises",
-      "missingVerifiedFactualRecords": 177,
+      "missingVerifiedFactualRecords": 173,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 7,
+      "independentHumanReviewPending": 11,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
     {
       "module": "workout-science",
-      "missingVerifiedFactualRecords": 95,
+      "missingVerifiedFactualRecords": 93,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 3,
+      "independentHumanReviewPending": 5,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
     {
       "module": "programs",
-      "missingVerifiedFactualRecords": 50,
+      "missingVerifiedFactualRecords": 49,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 0,
+      "independentHumanReviewPending": 1,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
     {
       "module": "foods",
       "missingVerifiedFactualRecords": 0,
-      "missingDatasetMappings": 116,
+      "missingDatasetMappings": 99,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 226,
+      "independentHumanReviewPending": 243,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
     {
       "module": "nutrients",
-      "missingVerifiedFactualRecords": 29,
+      "missingVerifiedFactualRecords": 19,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 22,
+      "independentHumanReviewPending": 32,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10755,10 +10833,10 @@
     },
     {
       "module": "recovery",
-      "missingVerifiedFactualRecords": 122,
+      "missingVerifiedFactualRecords": 120,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 2,
+      "independentHumanReviewPending": 4,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -11132,6 +11210,126 @@
       "version": "Consumer fact sheet, updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T10:17:36Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "ace_bodyweight_squat",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/",
+      "version": null,
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T11:50:52Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "ace_single_arm_row",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/126/single-arm-row/",
+      "version": null,
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T11:50:52Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "original_foundation_diagrams_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+      "version": "1.0.0",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-07T11:50:52Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "original_foundation_program_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs",
+      "version": "1.0.0",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-07T11:53:02Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_chromium_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Chromium-Consumer/",
+      "version": "Consumer fact sheet, updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_fluoride_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Fluoride-Consumer/",
+      "version": "Consumer fact sheet, updated 2024-06-17",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_molybdenum_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Molybdenum-Consumer/",
+      "version": "Consumer fact sheet, updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_pantothenicacid_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/PantothenicAcid-Consumer/",
+      "version": "Consumer fact sheet, updated 2026-05-01",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_biotin_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Biotin-Consumer/",
+      "version": "Consumer fact sheet, updated 2021-01-15",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_omega3fattyacids_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-Consumer/",
+      "version": "Consumer fact sheet, updated 2022-07-18",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_vitamina_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminA-Consumer/",
+      "version": "Consumer fact sheet, updated 2025-03-10",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_vitamina_professional",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/",
+      "version": "HealthProfessional fact sheet, updated 2025-03-10",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T12:01:04Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nhs_walking_transitions_2026",
+      "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+      "version": "Page read 2026-10-07; publisher update date not specified",
+      "reuse": "open_government_licence",
+      "extractionDate": "2026-10-07T15:07:44Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "source_rest_hypertrophy_2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11349676/",
+      "version": "DOI 10.3389/fspor.2024.1429789; PMID 39205815",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T15:17:09Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "source_split_fullbody_2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38595233/",
+      "version": "DOI 10.1519/JSC.0000000000004774; PMID 38595233",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T15:17:09Z",
       "reviewDate": "2026-10-07"
     }
   ],
@@ -12442,14 +12640,14 @@
     "src/features/supplements\\export.ts",
     "src/features/workout-tracker\\backup.ts"
   ],
-  "foodProfiles": 234,
-  "numericFoodValues": 8628,
+  "foodProfiles": 251,
+  "numericFoodValues": 9265,
   "numericCoverage": {
-    "foodRecordsWithComposition": 226,
+    "foodRecordsWithComposition": 243,
     "nutrientArticlesWithReferenceRows": 7,
     "nutrientReferenceRows": 7,
     "publicRecipesWithCalculatedNutrition": 24,
-    "exercisesWithContextualSetsAndRepetitions": 6,
+    "exercisesWithContextualSetsAndRepetitions": 8,
     "publicCardioPlans": 1,
     "publicCardioSourceSessions": 27,
     "limitations": "Structured numerical coverage only; unspecified values stay unavailable. No numerical anatomy activation or supplement dose prescription is inferred."
@@ -12457,8 +12655,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 457,
-    "factualRecords": 329
+    "documents": 500,
+    "factualRecords": 372
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -12473,9 +12671,7 @@
       "reason": "Bulk reproduction permission is not established; no composition data imported."
     }
   ],
-  "emptyKnowledgeModules": [
-    "programs"
-  ],
+  "emptyKnowledgeModules": [],
   "missingFoodMedia": [
     "food_apple",
     "food_banana",
@@ -12702,7 +12898,24 @@
     "food_green_tea_brewed",
     "food_coffee_brewed",
     "food_espresso",
-    "food_coconut_water"
+    "food_coconut_water",
+    "food_red_cabbage",
+    "food_cherry",
+    "food_green_chilli",
+    "food_red_chilli_pepper",
+    "food_chestnut",
+    "food_poppy_seed",
+    "food_skim_milk",
+    "food_goat_meat",
+    "food_duck_meat",
+    "food_rabbit_meat",
+    "food_venison",
+    "food_beef_liver",
+    "food_chicken_wing",
+    "food_tomato_juice_unsalted",
+    "food_orange_juice_unsweetened",
+    "food_paprika",
+    "food_oregano"
   ],
   "missingMedia": [
     {
@@ -12896,6 +13109,41 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "muscles",
+      "id": "muscle_adductor_magnus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_adductor_longus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_adductor_brevis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_gracilis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_pectineus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_tibialis_anterior",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_deep_hip_rotator_group",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "workout-science",
       "id": "science_consistency_adherence",
       "instructionalMediaRequired": false
@@ -12908,6 +13156,21 @@
     {
       "module": "workout-science",
       "id": "science_muscular_failure",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_rest_intervals",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_training_split",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "programs",
+      "id": "program_full_body_2_day_foundation",
       "instructionalMediaRequired": false
     },
     {
@@ -14041,6 +14304,91 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "foods",
+      "id": "food_red_cabbage",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_cherry",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_green_chilli",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_red_chilli_pepper",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_chestnut",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_poppy_seed",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_skim_milk",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_goat_meat",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_duck_meat",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_rabbit_meat",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_venison",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_beef_liver",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_chicken_wing",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_tomato_juice_unsalted",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_orange_juice_unsweetened",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_paprika",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_oregano",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "nutrients",
       "id": "iron_mg",
       "instructionalMediaRequired": false
@@ -14148,6 +14496,56 @@
     {
       "module": "nutrients",
       "id": "vitamin_k_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "chromium_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "fluoride_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "molybdenum_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "pantothenic_acid_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "biotin_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "omega_3_g",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "vitamin_a_rae_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "beta_carotene_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "retinol_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "folic_acid_ug",
       "instructionalMediaRequired": false
     },
     {
@@ -14296,6 +14694,16 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "recovery",
+      "id": "routine_running_warmup",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "routine_post_run_cooldown",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "cardio",
       "id": "topic_talk_test",
       "instructionalMediaRequired": false
@@ -14318,17 +14726,15 @@
   ],
   "missingMediaFiles": [],
   "emptyKnowledgeCollections": [
-    "programs",
-    "public-recovery-routines",
     "public-cardio-modalities"
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-07T10:50:15.322Z",
-    "expected": 511,
+    "buildDate": "2026-10-07T15:42:19.830Z",
+    "expected": 554,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 511,
+    "unmeasured": 554,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -15656,6 +16062,48 @@
         "evidence": null
       },
       {
+        "path": "/muscles/adductor-magnus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/adductor-longus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/adductor-brevis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/gracilis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/pectineus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/tibialis-anterior",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/deep-hip-external-rotators",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/exercises/dumbbell-curl",
         "kind": "public_record",
         "result": "unmeasured",
@@ -15698,6 +16146,30 @@
         "evidence": null
       },
       {
+        "path": "/exercises/bodyweight-squat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/one-arm-dumbbell-row",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/incline-push-up",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/standing-calf-raise",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/learn/workout-science/consistency-adherence",
         "kind": "public_record",
         "result": "unmeasured",
@@ -15711,6 +16183,24 @@
       },
       {
         "path": "/learn/workout-science/muscular-failure",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/rest-intervals",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/training-split",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs/full-body-2-day-foundation",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
@@ -17072,6 +17562,108 @@
         "evidence": null
       },
       {
+        "path": "/foods/red-cabbage",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cherry",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/green-chilli",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/red-chilli-pepper",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chestnut",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/poppy-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/skim-milk",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/goat-meat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/duck-meat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/rabbit-meat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/venison",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/beef-liver",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-wing",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/tomato-juice-unsalted",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/orange-juice-unsweetened",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/paprika",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/oregano",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/nutrients/iron",
         "kind": "public_record",
         "result": "unmeasured",
@@ -17199,6 +17791,66 @@
       },
       {
         "path": "/nutrients/vitamin-k",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/chromium",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/fluoride",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/molybdenum",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/pantothenic-acid-vitamin-b5",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/biotin-vitamin-b7",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/omega-3-fatty-acids",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/vitamin-a",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/beta-carotene",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/retinol",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/folic-acid",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
@@ -17373,6 +18025,18 @@
       },
       {
         "path": "/recovery/topics/sleep-regularity",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/routines/routine-running-warmup",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/routines/routine-post-run-cooldown",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

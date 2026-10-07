@@ -1,0 +1,349 @@
+[
+  {
+    "id": "science_consistency_adherence",
+    "slug": "consistency-adherence",
+    "displayName": "Consistency and adherence",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "foundations",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Regular participation is the practical focus of adherence in this ACSM summary.",
+    "summary": "ACSM emphasizes regular resistance-training participation for healthy adults, with goals, enjoyment and safety guiding an achievable routine.",
+    "keyTakeaways": [
+      "ACSM emphasizes regular resistance-training participation for healthy adults, with goals, enjoyment and safety guiding an achievable routine.",
+      "The source population is healthy adults; sport and clinical contexts need separate evidence.",
+      "This is a brief source summary, not a personalised prescription or a universal rule."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Helps distinguish a general source recommendation from a personal training decision."
+      ],
+      "prioritizeWhen": [
+        "When considering whether the source population and your question match."
+      ],
+      "deprioritizeWhen": [
+        "When a clinical or sport-specific decision requires separate qualified guidance."
+      ],
+      "adjustmentLevers": [
+        "Your selected goal",
+        "Your available equipment"
+      ],
+      "watchFor": [
+        "A claim applied beyond its studied population or reported outcome."
+      ],
+      "cannotTellYou": [
+        "Your individual response or which programme is optimal for you."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_consistency_adherence_acsm2026",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ]
+      }
+    ],
+    "limitations": [
+      "Professional-body summary only; confidence is an explicit machine editorial judgement, not a formal evidence grade."
+    ],
+    "review": {
+      "subjectReviewerRole": "Codex machine source verification; no human subject reviewer",
+      "editorialReviewerRole": "Codex machine validation; personal-use publication",
+      "reviewedAt": "2026-10-05",
+      "nextReviewDue": "2027-10-05",
+      "claimReviewComplete": true,
+      "notes": "published_personal_use; no independent human scientific review. The next date is a scheduled recheck, not a completed future review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-05",
+    "learningOrder": 6
+  },
+  {
+    "id": "science_hypertrophy_adaptation",
+    "slug": "hypertrophy-adaptation",
+    "displayName": "Muscle hypertrophy",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "adaptations-goals",
+    "contentType": "adaptation",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Hypertrophy refers to increased muscle size in the ACSM resistance-training framework.",
+    "summary": "The ACSM summary distinguishes muscle-size goals from strength and power, and describes weekly training volume as a goal-dependent variable.",
+    "keyTakeaways": [
+      "The ACSM summary distinguishes muscle-size goals from strength and power, and describes weekly training volume as a goal-dependent variable.",
+      "The source population is healthy adults; sport and clinical contexts need separate evidence.",
+      "This is a brief source summary, not a personalised prescription or a universal rule."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Helps distinguish a general source recommendation from a personal training decision."
+      ],
+      "prioritizeWhen": [
+        "When considering whether the source population and your question match."
+      ],
+      "deprioritizeWhen": [
+        "When a clinical or sport-specific decision requires separate qualified guidance."
+      ],
+      "adjustmentLevers": [
+        "Your selected goal",
+        "Your available equipment"
+      ],
+      "watchFor": [
+        "A claim applied beyond its studied population or reported outcome."
+      ],
+      "cannotTellYou": [
+        "Your individual response or which programme is optimal for you."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_hypertrophy_adaptation_acsm2026",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ]
+      }
+    ],
+    "limitations": [
+      "Professional-body summary only; confidence is an explicit machine editorial judgement, not a formal evidence grade."
+    ],
+    "review": {
+      "subjectReviewerRole": "Codex machine source verification; no human subject reviewer",
+      "editorialReviewerRole": "Codex machine validation; personal-use publication",
+      "reviewedAt": "2026-10-05",
+      "nextReviewDue": "2027-10-05",
+      "claimReviewComplete": true,
+      "notes": "published_personal_use; no independent human scientific review. The next date is a scheduled recheck, not a completed future review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-05",
+    "learningOrder": 10
+  },
+  {
+    "id": "science_muscular_failure",
+    "slug": "muscular-failure",
+    "displayName": "Training to muscular failure",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "effort-fatigue",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Momentary muscular failure is considered as a training variable rather than a required endpoint in the ACSM summary.",
+    "summary": "ACSM reports that reaching fatigue or momentary failure did not consistently change outcomes for the average healthy adult in its reviewed evidence.",
+    "keyTakeaways": [
+      "ACSM reports that reaching fatigue or momentary failure did not consistently change outcomes for the average healthy adult in its reviewed evidence.",
+      "The source population is healthy adults; sport and clinical contexts need separate evidence.",
+      "This is a brief source summary, not a personalised prescription or a universal rule."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Helps distinguish a general source recommendation from a personal training decision."
+      ],
+      "prioritizeWhen": [
+        "When considering whether the source population and your question match."
+      ],
+      "deprioritizeWhen": [
+        "When a clinical or sport-specific decision requires separate qualified guidance."
+      ],
+      "adjustmentLevers": [
+        "Your selected goal",
+        "Your available equipment"
+      ],
+      "watchFor": [
+        "A claim applied beyond its studied population or reported outcome."
+      ],
+      "cannotTellYou": [
+        "Your individual response or which programme is optimal for you."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_muscular_failure_acsm2026",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_2026_summary"
+        ]
+      }
+    ],
+    "limitations": [
+      "Professional-body summary only; confidence is an explicit machine editorial judgement, not a formal evidence grade."
+    ],
+    "review": {
+      "subjectReviewerRole": "Codex machine source verification; no human subject reviewer",
+      "editorialReviewerRole": "Codex machine validation; personal-use publication",
+      "reviewedAt": "2026-10-05",
+      "nextReviewDue": "2027-10-05",
+      "claimReviewComplete": true,
+      "notes": "published_personal_use; no independent human scientific review. The next date is a scheduled recheck, not a completed future review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-05",
+    "learningOrder": 31
+  },
+  {
+    "id": "science_rest_intervals",
+    "slug": "rest-intervals",
+    "displayName": "Rest intervals",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Inter-set rest is the time between resistance-training sets, as defined in this review.",
+    "summary": "In nine studies of healthy adults, pooled estimates suggested a small muscle-growth advantage for longer rather than very short rests, with substantial overlap and variation. The analysis did not establish a universal best rest duration.",
+    "keyTakeaways": [
+      "In nine studies of healthy adults, pooled estimates suggested a small muscle-growth advantage for longer rather than very short rests, with substantial overlap and variation. The analysis did not establish a universal best rest duration.",
+      "Healthy adults in the included resistance-training studies; mostly young participants, with training experience varying across studies.",
+      "No individual response or universal best option is established."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Understanding the scope of the cited training comparison."
+      ],
+      "prioritizeWhen": [
+        "The studied outcome and workload match the question you are asking."
+      ],
+      "deprioritizeWhen": [
+        "The population, workload or outcome differs from the source comparison."
+      ],
+      "adjustmentLevers": [
+        "Schedule or rest context already specified by a source program"
+      ],
+      "watchFor": [
+        "Unmatched volume, different outcome measures or unsupported individual predictions."
+      ],
+      "cannotTellYou": [
+        "Your best program, recovery status or expected gains."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_rest_intervals_2024",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_rest_hypertrophy_2024"
+        ]
+      }
+    ],
+    "limitations": [
+      "The included interventions lasted five to ten weeks; long-term individual responses are not established.",
+      "Small studies, differing muscle-size measures and heterogeneous results limit precision.",
+      "The interval comparisons are not personal recovery targets or a requirement to shorten rest."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Source-specific summary; moderate evidence-type label with limited editorial confidence, not a formal GRADE reassessment."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 21
+  },
+  {
+    "id": "science_training_split",
+    "slug": "training-split",
+    "displayName": "Training splits",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "program-design",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "This review compares resistance-training schedules that split training across sessions with schedules that train the full body.",
+    "summary": "The meta-analysis of fourteen studies in healthy adults found similar strength and muscle-growth changes with split and full-body schedules when training volume was matched. This does not establish equal results for every individual or unmatched workload.",
+    "keyTakeaways": [
+      "The meta-analysis of fourteen studies in healthy adults found similar strength and muscle-growth changes with split and full-body schedules when training volume was matched. This does not establish equal results for every individual or unmatched workload.",
+      "Healthy adults in fourteen studies comparing split and full-body resistance training with matched volume.",
+      "No individual response or universal best option is established."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Understanding the scope of the cited training comparison."
+      ],
+      "prioritizeWhen": [
+        "The studied outcome and workload match the question you are asking."
+      ],
+      "deprioritizeWhen": [
+        "The population, workload or outcome differs from the source comparison."
+      ],
+      "adjustmentLevers": [
+        "Schedule or rest context already specified by a source program"
+      ],
+      "watchFor": [
+        "Unmatched volume, different outcome measures or unsupported individual predictions."
+      ],
+      "cannotTellYou": [
+        "Your best program, recovery status or expected gains."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_training_split_2024",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_split_fullbody_2024"
+        ]
+      }
+    ],
+    "limitations": [
+      "This summary uses the published abstract; individual study protocols and risks of bias have not been independently appraised.",
+      "The comparison depends on matched volume; it does not establish that every schedule or exercise selection is equivalent.",
+      "Personal preference is not proof of an individual response or a superior split."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Source-specific summary; moderate evidence-type label with limited editorial confidence, not a formal GRADE reassessment."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 51
+  }
+]

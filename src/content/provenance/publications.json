@@ -5720,6 +5720,431 @@
     ]
   },
   {
+    "module": "foods",
+    "id": "food_red_cabbage",
+    "slug": "red-cabbage",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_red_cabbage_fdc_169977",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_cherry",
+    "slug": "cherry",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_cherry_fdc_171719",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_green_chilli",
+    "slug": "green-chilli",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_green_chilli_fdc_170497",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_red_chilli_pepper",
+    "slug": "red-chilli-pepper",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_red_chilli_pepper_fdc_170106",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_chestnut",
+    "slug": "chestnut",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_chestnut_fdc_169413",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_poppy_seed",
+    "slug": "poppy-seed",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_poppy_seed_fdc_171330",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_skim_milk",
+    "slug": "skim-milk",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_skim_milk_fdc_173432",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_goat_meat",
+    "slug": "goat-meat",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_goat_meat_fdc_175303",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_duck_meat",
+    "slug": "duck-meat",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_duck_meat_fdc_172410",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_rabbit_meat",
+    "slug": "rabbit-meat",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_rabbit_meat_fdc_172521",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_venison",
+    "slug": "venison",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_venison_fdc_173855",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_beef_liver",
+    "slug": "beef-liver",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_beef_liver_fdc_169451",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_chicken_wing",
+    "slug": "chicken-wing",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_chicken_wing_fdc_173632",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_tomato_juice_unsalted",
+    "slug": "tomato-juice-unsalted",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_tomato_juice_unsalted_fdc_170545",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_orange_juice_unsweetened",
+    "slug": "orange-juice-unsweetened",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_orange_juice_unsweetened_fdc_169098",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_paprika",
+    "slug": "paprika",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_paprika_fdc_171329",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_oregano",
+    "slug": "oregano",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_oregano_fdc_171328",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "nutrients",
     "id": "iron_mg",
     "slug": "iron",
@@ -6319,6 +6744,256 @@
     ]
   },
   {
+    "module": "nutrients",
+    "id": "chromium_ug",
+    "slug": "chromium",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_chromium_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "fluoride_mg",
+    "slug": "fluoride",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_fluoride_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "molybdenum_ug",
+    "slug": "molybdenum",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_molybdenum_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "pantothenic_acid_mg",
+    "slug": "pantothenic-acid-vitamin-b5",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_pantothenicacid_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "biotin_ug",
+    "slug": "biotin-vitamin-b7",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_biotin_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "omega_3_g",
+    "slug": "omega-3-fatty-acids",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_omega3fattyacids_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "vitamin_a_rae_ug",
+    "slug": "vitamin-a",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_vitamina_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "beta_carotene_ug",
+    "slug": "beta-carotene",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_vitamina_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "retinol_ug",
+    "slug": "retinol",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_vitamina_professional"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "nutrients",
+    "id": "folic_acid_ug",
+    "slug": "folic-acid",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-06",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims_and_educational_sections",
+        "sourceIds": [
+          "nih_ods_folate_consumer"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "workout-science",
     "id": "science_consistency_adherence",
     "slug": "consistency-adherence",
@@ -6384,6 +7059,56 @@
         "path": "claims",
         "sourceIds": [
           "source_acsm_2026_summary"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_rest_intervals",
+    "slug": "rest-intervals",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_rest_hypertrophy_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_training_split",
+    "slug": "training-split",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_split_fullbody_2024"
         ],
         "kind": "sourced_education"
       }
@@ -7693,6 +8418,84 @@
     ]
   },
   {
+    "module": "recovery",
+    "id": "routine_running_warmup",
+    "slug": "routine-running-warmup",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_walking_transitions_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "routine.steps",
+        "sourceIds": [
+          "nhs_walking_transitions_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "stepRationales",
+        "sourceIds": [
+          "nhs_walking_transitions_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "routine_post_run_cooldown",
+    "slug": "routine-post-run-cooldown",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_walking_transitions_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "routine.steps",
+        "sourceIds": [
+          "nhs_walking_transitions_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "stepRationales",
+        "sourceIds": [
+          "nhs_walking_transitions_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "cardio",
     "id": "topic_talk_test",
     "slug": "topic-talk-test",
@@ -8750,6 +9553,181 @@
     ]
   },
   {
+    "module": "muscles",
+    "id": "muscle_adductor_magnus",
+    "slug": "adductor-magnus",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_adductor_longus",
+    "slug": "adductor-longus",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_adductor_brevis",
+    "slug": "adductor-brevis",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_gracilis",
+    "slug": "gracilis",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_pectineus",
+    "slug": "pectineus",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_tibialis_anterior",
+    "slug": "tibialis-anterior",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "muscles",
+    "id": "muscle_deep_hip_rotator_group",
+    "slug": "deep-hip-external-rotators",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "anatomy",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "exercises",
     "id": "exercise_dumbbell_curl",
     "slug": "dumbbell-curl",
@@ -9115,6 +10093,297 @@
           "original_calf_diagram_v1"
         ],
         "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_bodyweight_squat",
+    "slug": "bodyweight-squat",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_bodyweight_squat"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_bodyweight_squat"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_foundation_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_one_arm_dumbbell_row",
+    "slug": "one-arm-dumbbell-row",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_single_arm_row"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_single_arm_row"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_foundation_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_incline_push_up",
+    "slug": "incline-push-up",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_foundation_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_standing_calf_raise",
+    "slug": "standing-calf-raise",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_foundation_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "programs",
+    "id": "program_full_body_2_day_foundation",
+    "slug": "full-body-2-day-foundation",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "schedule.arrangement",
+        "sourceIds": [
+          "original_foundation_program_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "prescriptions.progression.safety.timeAllocation",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_bodyweight_squat",
+        "sourceIds": [
+          "ace_bodyweight_squat",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_incline_push_up",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_one_arm_dumbbell_row",
+        "sourceIds": [
+          "ace_single_arm_row",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_seated_dumbbell_shoulder_press",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_dumbbell_curl",
+        "sourceIds": [
+          "public_strength_2024",
+          "public_video_safety_2023"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_standing_calf_raise",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
       }
     ],
     "limitations": [

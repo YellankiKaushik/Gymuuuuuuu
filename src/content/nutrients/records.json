@@ -3544,5 +3544,1496 @@
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
     }
+  },
+  {
+    "id": "chromium_ug",
+    "slug": "chromium",
+    "canonicalName": "Chromium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [],
+    "essentiality": "reference_framework_dependent",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Chromium(III) occurs in foods, but its physiological role is uncertain. ODS distinguishes it from toxic industrial chromium(VI).",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Chromium(III) occurs in foods, but its physiological role is uncertain. ODS distinguishes it from toxic industrial chromium(VI).",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "No matching Phase 07 composition concept is available; qualitative source education only, with no inferred food values."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "ODS reports no chromium deficiency in healthy people and explains that its older reference amounts arose from earlier views of essentiality.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Safety research is limited; kidney or liver disease warrants particular caution with high supplemental amounts.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Chromium supplements can interact with diabetes medicines and levothyroxine. Ask a pharmacist or clinician; do not adjust medicines here.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_chromium_ug_function",
+        "text": "Chromium(III) occurs in foods, but its physiological role is uncertain. ODS distinguishes it from toxic industrial chromium(VI).",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chromium_ug_food_source",
+        "text": "ODS lists meats, grains, vegetables, fruit, juices, nuts and brewerÃ¢â‚¬â„¢s yeast; content varies with growing and processing conditions.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chromium_ug_deficiency",
+        "text": "ODS reports no chromium deficiency in healthy people and explains that its older reference amounts arose from earlier views of essentiality.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chromium_ug_excess",
+        "text": "Safety research is limited; kidney or liver disease warrants particular caution with high supplemental amounts.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_chromium_ug_interaction",
+        "text": "Chromium supplements can interact with diabetes medicines and levothyroxine. Ask a pharmacist or clinician; do not adjust medicines here.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Chromium-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "fluoride_mg",
+    "slug": "fluoride",
+    "canonicalName": "Fluoride",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [],
+    "essentiality": "beneficial_trace_element",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Fluoride supports tooth enamel and helps reduce tooth decay; supplement effects on adult bone health remain uncertain.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Fluoride supports tooth enamel and helps reduce tooth decay; supplement effects on adult bone health remain uncertain.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "No matching Phase 07 composition concept is available; qualitative source education only, with no inferred food values."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Too little fluoride can leave teeth more susceptible to cavities. This page does not assess individual dental risk.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Excess during tooth formation can cause dental fluorosis; very high or prolonged excessive intake can be harmful.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ODS identifies no known medicine interactions but recommends discussing supplements and medicines with health professionals.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_fluoride_mg_function",
+        "text": "Fluoride supports tooth enamel and helps reduce tooth decay; supplement effects on adult bone health remain uncertain.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fluoride_mg_food_source",
+        "text": "Fluoridated water and foods or beverages made with it are major intake sources. Dental products should not be swallowed.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fluoride_mg_deficiency",
+        "text": "Too little fluoride can leave teeth more susceptible to cavities. This page does not assess individual dental risk.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fluoride_mg_excess",
+        "text": "Excess during tooth formation can cause dental fluorosis; very high or prolonged excessive intake can be harmful.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_fluoride_mg_interaction",
+        "text": "ODS identifies no known medicine interactions but recommends discussing supplements and medicines with health professionals.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Fluoride-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2024-06-17. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "molybdenum_ug",
+    "slug": "molybdenum",
+    "canonicalName": "Molybdenum",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Molybdenum supports processing of proteins and genetic material and the breakdown of some substances.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Molybdenum supports processing of proteins and genetic material and the breakdown of some substances.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "No matching Phase 07 composition concept is available; qualitative source education only, with no inferred food values."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "ODS describes deficiency as very rare in the United States and discusses a rare genetic cofactor disorder, not a common fitness symptom.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "High environmental exposure can cause adverse effects; a source upper limit is a safety boundary, not an intake goal.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ODS reports no known medicine interactions; tell health professionals about supplement use.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_molybdenum_ug_function",
+        "text": "Molybdenum supports processing of proteins and genetic material and the breakdown of some substances.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_molybdenum_ug_food_source",
+        "text": "ODS lists legumes, grains, nuts, vegetables, dairy, meat and eggs; content depends on soil and irrigation water.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_molybdenum_ug_deficiency",
+        "text": "ODS describes deficiency as very rare in the United States and discusses a rare genetic cofactor disorder, not a common fitness symptom.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_molybdenum_ug_excess",
+        "text": "High environmental exposure can cause adverse effects; a source upper limit is a safety boundary, not an intake goal.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_molybdenum_ug_interaction",
+        "text": "ODS reports no known medicine interactions; tell health professionals about supplement use.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Molybdenum-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "pantothenic_acid_mg",
+    "slug": "pantothenic-acid-vitamin-b5",
+    "canonicalName": "Pantothenic acid (vitamin B5)",
+    "aliases": [
+      "B5"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "pantothenic_acid_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Pantothenic acid, vitamin B5, supports energy metabolism and the making and breakdown of fats.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Pantothenic acid, vitamin B5, supports energy metabolism and the making and breakdown of fats.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "pantothenic_acid_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Deficiency is very rare in the United States; rare inherited disorders can affect utilization. Symptoms cannot diagnose it.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Very high supplemental amounts can cause gastrointestinal upset and diarrhea. This page gives no dosing prescription.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ODS identifies no known medicine interactions but recommends discussing supplement use with health professionals.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_pantothenic_acid_mg_function",
+        "text": "Pantothenic acid, vitamin B5, supports energy metabolism and the making and breakdown of fats.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_pantothenic_acid_mg_food_source",
+        "text": "ODS lists meat, seafood, eggs, milk, vegetables, whole grains, peanuts, sunflower seeds and chickpeas.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_pantothenic_acid_mg_deficiency",
+        "text": "Deficiency is very rare in the United States; rare inherited disorders can affect utilization. Symptoms cannot diagnose it.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_pantothenic_acid_mg_excess",
+        "text": "Very high supplemental amounts can cause gastrointestinal upset and diarrhea. This page gives no dosing prescription.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_pantothenic_acid_mg_interaction",
+        "text": "ODS identifies no known medicine interactions but recommends discussing supplement use with health professionals.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/PantothenicAcid-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2026-05-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "biotin_ug",
+    "slug": "biotin-vitamin-b7",
+    "canonicalName": "Biotin (vitamin B7)",
+    "aliases": [
+      "B7"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "biotin_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Biotin is a B vitamin involved in energy metabolism of carbohydrates, fats and proteins.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Biotin is a B vitamin involved in energy metabolism of carbohydrates, fats and proteins.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "biotin_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Deficiency is rare in the United States; genetic conditions, alcohol dependence and some life stages warrant professional assessment.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "High supplemental biotin can distort laboratory results, including some thyroid-related tests. Tell the laboratory and clinician about use.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Some antiseizure medicines can lower biotin levels. Hair or nail changes alone do not establish a need for supplements.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_biotin_ug_function",
+        "text": "Biotin is a B vitamin involved in energy metabolism of carbohydrates, fats and proteins.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_biotin_ug_food_source",
+        "text": "ODS lists meat, fish, eggs, organ meats, nuts, seeds and some vegetables.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_biotin_ug_deficiency",
+        "text": "Deficiency is rare in the United States; genetic conditions, alcohol dependence and some life stages warrant professional assessment.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_biotin_ug_excess",
+        "text": "High supplemental biotin can distort laboratory results, including some thyroid-related tests. Tell the laboratory and clinician about use.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_biotin_ug_interaction",
+        "text": "Some antiseizure medicines can lower biotin levels. Hair or nail changes alone do not establish a need for supplements.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Biotin-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2021-01-15. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "omega_3_g",
+    "slug": "omega-3-fatty-acids",
+    "canonicalName": "Omega-3 fatty acids",
+    "aliases": [
+      "n-3 fatty acids",
+      "omega 3"
+    ],
+    "groupId": "macronutrients",
+    "canonicalUnit": "g",
+    "foodDataNutrientIds": [
+      "omega_3_g"
+    ],
+    "essentiality": "essential_family",
+    "displayKind": "fat_component",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Omega-3 fatty acids include ALA, EPA and DHA and contribute to cell membranes. These forms are not interchangeable intake targets.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Omega-3 fatty acids include ALA, EPA and DHA and contribute to cell membranes. These forms are not interchangeable intake targets.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "qualitative_only",
+        "phase07NutrientId": null,
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "disabled",
+        "notes": "Total omega-3 composition is unavailable; individual ALA, EPA and DHA values are not inferred or conflated."
+      }
+    ],
+    "absorptionFactors": [
+      {
+        "factorType": "form_difference",
+        "description": "The body converts only small amounts of ALA to EPA and DHA. No conversion percentage or total omega-3 composition is inferred.",
+        "direction": "context_dependent",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "deficiency": {
+      "overview": "ODS describes deficiency as rare in the United States. Skin symptoms cannot diagnose it; reference amounts for ALA do not establish an EPA/DHA target.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Omega-3 supplements can cause gastrointestinal and other adverse effects; source safety limits are not a personal dosing goal.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "High supplemental amounts can increase bleeding problems with warfarin or other anticoagulants; seek professional review.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_omega_3_g_function",
+        "text": "Omega-3 fatty acids include ALA, EPA and DHA and contribute to cell membranes. These forms are not interchangeable intake targets.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_3_g_food_source",
+        "text": "ODS lists seafood, flaxseed, chia, walnuts and some plant oils; algal oils provide a vegetarian supplement source.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_3_g_deficiency",
+        "text": "ODS describes deficiency as rare in the United States. Skin symptoms cannot diagnose it; reference amounts for ALA do not establish an EPA/DHA target.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_3_g_excess",
+        "text": "Omega-3 supplements can cause gastrointestinal and other adverse effects; source safety limits are not a personal dosing goal.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_3_g_interaction",
+        "text": "High supplemental amounts can increase bleeding problems with warfarin or other anticoagulants; seek professional review.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_omega_3_g_absorption",
+        "text": "The body converts only small amounts of ALA to EPA and DHA. No conversion percentage or total omega-3 composition is inferred.",
+        "category": "absorption",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2022-07-18. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "vitamin_a_rae_ug",
+    "slug": "vitamin-a",
+    "canonicalName": "Vitamin A",
+    "aliases": [
+      "vitamin A RAE"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg RAE",
+    "foodDataNutrientIds": [
+      "vitamin_a_rae_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Vitamin A supports vision, immunity and development; RAE accounts for differing form activity.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Vitamin A supports vision, immunity and development; RAE accounts for differing form activity.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "vitamin_a_rae_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Inadequacy can affect vision; assessment requires clinical context.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Excess preformed vitamin A can harm; pregnancy requires particular caution.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Supplements can interact with orlistat and retinoid medicines.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_vitamin_a_rae_ug_function",
+        "text": "Vitamin A supports vision, immunity and development; RAE accounts for differing form activity.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_a_rae_ug_food_source",
+        "text": "ODS lists animal foods and plant provitamin-A sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_a_rae_ug_deficiency",
+        "text": "Inadequacy can affect vision; assessment requires clinical context.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_a_rae_ug_excess",
+        "text": "Excess preformed vitamin A can harm; pregnancy requires particular caution.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_a_rae_ug_interaction",
+        "text": "Supplements can interact with orlistat and retinoid medicines.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/VitaminA-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2025-03-10. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "beta_carotene_ug",
+    "slug": "beta-carotene",
+    "canonicalName": "Beta-carotene",
+    "aliases": [
+      "provitamin A carotenoid"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "beta_carotene_ug"
+    ],
+    "essentiality": "vitamin_precursor",
+    "displayKind": "vitamin_form",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Beta-carotene is a plant provitamin-A carotenoid, distinct from preformed vitamin A.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Beta-carotene is a plant provitamin-A carotenoid, distinct from preformed vitamin A.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "beta_carotene_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Beta-carotene intake alone does not diagnose vitamin A deficiency.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "High-dose beta-carotene supplements increase risk in smokers, former smokers and asbestos-exposed people.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Assess supplement and medicine use with a health professional.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_beta_carotene_ug_function",
+        "text": "Beta-carotene is a plant provitamin-A carotenoid, distinct from preformed vitamin A.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_beta_carotene_ug_food_source",
+        "text": "ODS lists green, orange and yellow vegetables and some fruits.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_beta_carotene_ug_deficiency",
+        "text": "Beta-carotene intake alone does not diagnose vitamin A deficiency.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_beta_carotene_ug_excess",
+        "text": "High-dose beta-carotene supplements increase risk in smokers, former smokers and asbestos-exposed people.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_beta_carotene_ug_interaction",
+        "text": "Assess supplement and medicine use with a health professional.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/VitaminA-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2025-03-10. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "retinol_ug",
+    "slug": "retinol",
+    "canonicalName": "Retinol",
+    "aliases": [
+      "preformed vitamin A"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "retinol_ug"
+    ],
+    "essentiality": "vitamin_form",
+    "displayKind": "vitamin_form",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Retinol is a preformed vitamin A form, distinct from plant provitamin-A carotenoids.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Retinol is a preformed vitamin A form, distinct from plant provitamin-A carotenoids.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "retinol_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Blood retinol interpretation requires clinical context; storage and infection can affect assessment.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Excess preformed vitamin A can cause toxicity; no individual intake or treatment threshold is inferred.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Retinoid medicines and orlistat require professional assessment before supplement use.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_retinol_ug_function",
+        "text": "Retinol is a preformed vitamin A form, distinct from plant provitamin-A carotenoids.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_retinol_ug_food_source",
+        "text": "ODS identifies animal foods including liver, fish, dairy and eggs as preformed vitamin A sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_retinol_ug_deficiency",
+        "text": "Blood retinol interpretation requires clinical context; storage and infection can affect assessment.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_retinol_ug_excess",
+        "text": "Excess preformed vitamin A can cause toxicity; no individual intake or treatment threshold is inferred.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_retinol_ug_interaction",
+        "text": "Retinoid medicines and orlistat require professional assessment before supplement use.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read HealthProfessional page; source updated 2025-03-10. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "folic_acid_ug",
+    "slug": "folic-acid",
+    "canonicalName": "Folic acid",
+    "aliases": [
+      "synthetic folate"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "folic_acid_ug"
+    ],
+    "essentiality": "vitamin_form",
+    "displayKind": "vitamin_form",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Folic acid is a folate form used in fortified foods and supplements; folate supports DNA production and cell division.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Folic acid is a folate form used in fortified foods and supplements; folate supports DNA production and cell division.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "folic_acid_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [
+      {
+        "factorType": "form_difference",
+        "description": "Folic acid absorption differs from natural food folate; DFE and micrograms of folic acid remain separate values without an inferred conversion.",
+        "direction": "context_dependent",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "deficiency": {
+      "overview": "Folate inadequacy can cause megaloblastic anemia, but this article does not diagnose anemia or prescribe prenatal care.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Large supplemental folate amounts can mask the anemia of vitamin B12 deficiency without preventing nerve injury.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Folate supplements can interact with methotrexate and antiseizure medicines; do not change medicines here.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_folic_acid_ug_function",
+        "text": "Folic acid is a folate form used in fortified foods and supplements; folate supports DNA production and cell division.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folic_acid_ug_food_source",
+        "text": "ODS identifies enriched grain products and fortified cereals as added-folic-acid sources; these are distinct from natural food folate.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folic_acid_ug_deficiency",
+        "text": "Folate inadequacy can cause megaloblastic anemia, but this article does not diagnose anemia or prescribe prenatal care.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folic_acid_ug_excess",
+        "text": "Large supplemental folate amounts can mask the anemia of vitamin B12 deficiency without preventing nerve injury.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folic_acid_ug_interaction",
+        "text": "Folate supplements can interact with methotrexate and antiseizure medicines; do not change medicines here.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folic_acid_ug_absorption",
+        "text": "Folic acid absorption differs from natural food folate; DFE and micrograms of folic acid remain separate values without an inferred conversion.",
+        "category": "absorption",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Folate-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2022-11-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
   }
 ]

@@ -1,6 +1,7 @@
+import type { MuscleIndexEntry } from './index-schema'
 import { z } from 'zod'
-import { anatomyTaxonomy, getPublishedMuscles, normalizeTerm } from './repository'
-import { entityTypeSchema, visibilitySchema, movementPatterns, type Muscle } from './schema'
+import { anatomyTaxonomy, getPublishedMuscles, normalizeTerm } from './public-repository'
+import { entityTypeSchema, visibilitySchema, movementPatterns } from './schema'
 export const muscleQuerySchema = z.object({
   q: z.string().max(200).catch(''), region: z.string().refine((id) => id === '' || anatomyTaxonomy.regions.some((region) => region.id === id)).catch(''),
   type: z.union([z.literal(''), entityTypeSchema]).catch(''), visibility: z.union([z.literal(''), visibilitySchema]).catch(''),
@@ -11,7 +12,7 @@ export type MuscleQuery = z.infer<typeof muscleQuerySchema>
 export function parseMuscleQuery(input: Record<string, unknown>): MuscleQuery { return muscleQuerySchema.parse(input) }
 export function serializeMuscleQuery(query: MuscleQuery) { const params = new URLSearchParams(); Object.entries(query).forEach(([key, value]) => { if (value) params.set(key, value) }); return params.toString() }
 export const misconceptionAliases: Record<string, string> = { 'lower abs': 'rectus abdominis', 'inner chest': 'pectoralis major', 'rear delt': 'posterior deltoid', 'side delt': 'middle deltoid', lats: 'latissimus dorsi' }
-export function searchMuscles(query: MuscleQuery, records: readonly Muscle[] = getPublishedMuscles()) {
+export function searchMuscles(query: MuscleQuery, records: readonly MuscleIndexEntry[] = getPublishedMuscles()) {
   const term = normalizeTerm(query.q)
   const corrected = misconceptionAliases[term] ?? term
   return records.filter((record) => {
