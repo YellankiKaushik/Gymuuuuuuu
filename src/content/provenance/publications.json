@@ -7922,6 +7922,131 @@
     ]
   },
   {
+    "module": "workout-science",
+    "id": "science_specificity",
+    "slug": "specificity",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_progressive_overload",
+    "slug": "progressive-overload",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_individual_response",
+    "slug": "individual-response",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_periodization",
+    "slug": "periodization",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "workout-science",
+    "id": "science_proximity_to_failure",
+    "slug": "proximity-to-failure",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "recipes",
     "id": "public_recipe_chickpea_cucumber_bowl",
     "slug": "chickpea-cucumber-bowl",
@@ -9474,6 +9599,256 @@
         "path": "claims",
         "sourceIds": [
           "nhs_running_plan_snapshot_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_absolute_vs_relative_intensity",
+    "slug": "topic-absolute-vs-relative-intensity",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_intensity_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_perceived_exertion_0_10",
+    "slug": "topic-perceived-exertion-0-10",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_intensity_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_met_definition",
+    "slug": "topic-met-definition",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_intensity_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_health_guidelines_vs_training_plan",
+    "slug": "topic-health-guidelines-vs-training-plan",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_weekly_minutes",
+    "slug": "topic-weekly-minutes",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_moderate_vigorous_equivalence",
+    "slug": "topic-moderate-vigorous-equivalence",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_frequency_cardio",
+    "slug": "topic-frequency-cardio",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "topic_beginner_progression",
+    "slug": "topic-beginner-progression",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_walking_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "modality_walking_outdoor",
+    "slug": "modality-walking-outdoor",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_walking_education_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "cardio",
+    "id": "modality_cycling_outdoor",
+    "slug": "modality-cycling-outdoor",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
         ],
         "kind": "sourced_education"
       }
@@ -11738,6 +12113,7 @@
       {
         "path": "safety",
         "sourceIds": [
+          "ace_bodyweight_squat",
           "nia_strength_guide_2018"
         ],
         "kind": "sourced_education"
@@ -11792,6 +12168,7 @@
       {
         "path": "safety",
         "sourceIds": [
+          "ace_single_arm_row",
           "nia_strength_guide_2018"
         ],
         "kind": "sourced_education"
@@ -11952,6 +12329,7 @@
       {
         "path": "safety",
         "sourceIds": [
+          "ace_dumbbell_chest_press",
           "nia_strength_guide_2018"
         ],
         "kind": "sourced_education"
@@ -12005,6 +12383,7 @@
       {
         "path": "safety",
         "sourceIds": [
+          "ace_forward_lunge",
           "nia_strength_guide_2018"
         ],
         "kind": "sourced_education"
@@ -12058,6 +12437,7 @@
       {
         "path": "safety",
         "sourceIds": [
+          "ace_rdl_2025",
           "nia_strength_guide_2018"
         ],
         "kind": "sourced_education"
@@ -12073,6 +12453,118 @@
         "path": "media",
         "sourceIds": [
           "original_ace_next_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_push_up",
+    "slug": "push-up",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_pushup_progression_2019",
+          "ace_knee_pushup_13"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "ace_pushup_progression_2019",
+          "ace_knee_pushup_13",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_pushup_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_knee_push_up",
+    "slug": "knee-push-up",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_pushup_progression_2019",
+          "ace_knee_pushup_13"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "ace_pushup_progression_2019",
+          "ace_knee_pushup_13",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_pushup_diagrams_v1"
         ],
         "kind": "original_authorship"
       }

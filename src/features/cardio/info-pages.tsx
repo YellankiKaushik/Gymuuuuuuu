@@ -71,10 +71,10 @@ export function KnowledgePage({
         kind === "learn"
           ? "Cardio learning library"
           : kind === "modalities"
-            ? "Reviewed activity guidance"
+            ? "Activity guidance"
             : kind === "plans"
-              ? "Reviewed cardio plan finder"
-              : "Reviewed conditioning routine"
+              ? "Cardio plan finder"
+              : "Conditioning routine library"
       }
     >
       {!slug && (
@@ -226,10 +226,39 @@ export function KnowledgePage({
               </a>
             </h2>
             <p>{e.population}</p>
+            <h3>Before you start</h3>
+            <ul>
+              {e.prerequisites.map((text) => (
+                <li key={text}>{text}</li>
+              ))}
+            </ul>
             {e.claims.map((c) => (
-              <p key={c.id}>{c.text}</p>
+              <div key={c.id}>
+                <p>{c.text}</p>
+                <p>
+                  Evidence level: {readable(c.evidenceStrength)}.{" "}
+                  {c.sourceIds.map((id, index) => {
+                    const source = cardioReference.sources.find(
+                      (s) => s.id === id,
+                    )!;
+                    return (
+                      <span key={id}>
+                        {index > 0 ? " · " : ""}
+                        <a href={source.url}>{source.title}</a>
+                      </span>
+                    );
+                  })}
+                </p>
+              </div>
             ))}
+            <h3>Scope and limitations</h3>
             <p>{e.limitations.join(" ")}</p>
+            <h3>When to pause</h3>
+            <ul>
+              {e.stopRules.map((text) => (
+                <li key={text}>{text}</li>
+              ))}
+            </ul>
             {e.plan && (
               <PublicPlanSchedule plan={e.plan} detailed={Boolean(slug)} />
             )}

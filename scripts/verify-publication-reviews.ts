@@ -235,7 +235,11 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
       field(
         "safety",
         r.sources
-          ?.filter((s) => s.sourceType === "government-guideline")
+          ?.filter((s) =>
+            ["government-guideline", "professional-technique-guide"].includes(
+              s.sourceType,
+            ),
+          )
           .map((s) => s.id) ?? [],
       ),
       field("programmingGuidance", [
@@ -246,22 +250,24 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
         [
           r.id === "exercise_dumbbell_curl"
             ? "original_curl_diagram_v1"
-            : r.id === "exercise_single_leg_calf_raise"
-              ? "original_calf_diagram_v1"
-              : [
-                    "exercise_bodyweight_squat",
-                    "exercise_one_arm_dumbbell_row",
-                    "exercise_incline_push_up",
-                    "exercise_standing_calf_raise",
-                  ].includes(r.id)
-                ? "original_foundation_diagrams_v1"
+            : ["exercise_push_up", "exercise_knee_push_up"].includes(r.id)
+              ? "original_pushup_diagrams_v1"
+              : r.id === "exercise_single_leg_calf_raise"
+                ? "original_calf_diagram_v1"
                 : [
-                      "exercise_dumbbell_bench_press",
-                      "exercise_forward_lunge",
-                      "exercise_dumbbell_romanian_deadlift",
+                      "exercise_bodyweight_squat",
+                      "exercise_one_arm_dumbbell_row",
+                      "exercise_incline_push_up",
+                      "exercise_standing_calf_raise",
                     ].includes(r.id)
-                  ? "original_ace_next_diagrams_v1"
-                  : "original_strength_diagrams_v1",
+                  ? "original_foundation_diagrams_v1"
+                  : [
+                        "exercise_dumbbell_bench_press",
+                        "exercise_forward_lunge",
+                        "exercise_dumbbell_romanian_deadlift",
+                      ].includes(r.id)
+                    ? "original_ace_next_diagrams_v1"
+                    : "original_strength_diagrams_v1",
         ],
         "original_authorship",
       ),

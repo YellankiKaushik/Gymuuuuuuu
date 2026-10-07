@@ -38,6 +38,8 @@ describe("exercise governance", () => {
       "exercise_dumbbell_bench_press",
       "exercise_forward_lunge",
       "exercise_dumbbell_romanian_deadlift",
+      "exercise_push_up",
+      "exercise_knee_push_up",
     ]);
     expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
   });

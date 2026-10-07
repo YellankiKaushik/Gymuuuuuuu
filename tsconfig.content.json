@@ -3,25 +3,10 @@
   "include": [
     "scripts/content/*.ts",
     "scripts/import-usda.ts",
-    "scripts/compile-original-recipes.ts",
     "scripts/content-audit.ts",
     "scripts/verify-publication-reviews.ts",
     "scripts/build-search-index.ts",
     "scripts/phase19-*.ts",
-    "scripts/compile-original-templates.ts",
-    "scripts/compile-nih-nutrients.ts",
-    "scripts/compile-nutrients.ts",
-    "scripts/compile-foods.ts",
-    "scripts/compile-historical-anatomy.ts",
-    "scripts/compile-anatomy-index.ts",
-    "scripts/compile-reference-indexes.ts",
-    "scripts/compile-supported-exercises.ts",
-    "scripts/compile-foundation-programs.ts",
-    "scripts/compile-recovery-routines.ts",
-    "scripts/compile-science-research.ts",
-    "scripts/compile-runtime-knowledge.ts",
-    "scripts/compile-science-index.ts",
-    "scripts/compile-remaining-anatomy.ts",
-    "scripts/compile-component-nutrients.ts"
+    "scripts/compile-*.ts"
   ]
 }

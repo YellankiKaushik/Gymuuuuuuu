@@ -1,0 +1,349 @@
+[
+  {
+    "id": "exercise_push_up",
+    "slug": "push-up",
+    "displayName": "Push-up",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "movementPatternIds": [
+      "pattern_horizontal_push",
+      "pattern_anti_extension"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "Full push-up education with an explicitly contextual 2019 professional progression example.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_pectoralis_major",
+        "role": "primary",
+        "qualifier": "Qualitative involvement described for full and knee-modified push-ups; no activation percentage, isolation or superiority claim.",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      },
+      {
+        "muscleId": "muscle_triceps_brachii",
+        "role": "primary",
+        "qualifier": "Qualitative involvement described for full and knee-modified push-ups; no activation percentage, isolation or superiority claim.",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      },
+      {
+        "muscleId": "muscle_transversus_abdominis",
+        "role": "stabilizer",
+        "qualifier": "Qualitative involvement described for full and knee-modified push-ups; no activation percentage, isolation or superiority claim.",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Start in a high plank with legs hip-width and hands supported, fingers pointing away from feet.",
+        "Press hands into the floor and contract thigh and glute muscles while retaining a stable trunk."
+      ],
+      "executionSteps": [
+        "Lower the body slowly toward the floor while keeping trunk and hips stable.",
+        "Press the hands into the floor to return to the high-plank position."
+      ],
+      "finishOrReset": "Return to the described starting support under control before relaxing.",
+      "keyCheckpoints": [
+        "Retain trunk alignment rather than moving the hips separately."
+      ],
+      "breathing": null
+    },
+    "mistakes": [
+      {
+        "mistake": "Sagging the low back or raising the hips separately.",
+        "whyItMatters": "Changes the source-described alignment.",
+        "correction": "Reset the supported starting position; use a learned easier variation if control is lost.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "skill-learning",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 5,
+          "max": 6
+        },
+        "restSeconds": {
+          "min": 60,
+          "max": 60
+        },
+        "loadNotes": "Bodyweight example; not a required dose for every person.",
+        "qualifier": "The 2019 professional article gives this starting example and adds repetitions before sets. It is not a universally validated schedule; breathing timing is not specified.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      }
+    ],
+    "safety": {
+      "prerequisites": [
+        "Learn supported trunk control and the relevant starting position before the complete movement."
+      ],
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "General NIA symptom boundaries are separate from technique. Knee-supported push-ups still load the wrists; no injury-prevention guarantee or personal clearance."
+    },
+    "sources": [
+      {
+        "id": "ace_pushup_progression_2019",
+        "title": "Pete McCall: Perfecting the Push-up for All Levels",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": 2019,
+        "reviewedAt": "2026-10-07",
+        "notes": "Introduction, Modified Push-ups and Full Push-ups"
+      },
+      {
+        "id": "ace_knee_pushup_13",
+        "title": "ACE Bent Knee Push-up",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/13/bent-knee-push-up/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-07",
+        "notes": "Exercise Library 13; steps 1-4 and wrist-stress note"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Machine validation, not independent human technique or clinical review. Due date is a maintenance reminder."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_push_up_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/push-up-cue.svg",
+        "alt": "Original cue: supported alignment, controlled lowering and return. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison against source sequence; no independent human review."
+      }
+    ],
+    "relationships": {
+      "regressionIds": [
+        "exercise_knee_push_up"
+      ]
+    }
+  },
+  {
+    "id": "exercise_knee_push_up",
+    "slug": "knee-push-up",
+    "displayName": "Knee push-up",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "movementPatternIds": [
+      "pattern_horizontal_push"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "Knee-supported push-up education with an explicitly contextual 2019 professional progression example.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_pectoralis_major",
+        "role": "primary",
+        "qualifier": "Qualitative involvement described for full and knee-modified push-ups; no activation percentage, isolation or superiority claim.",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      },
+      {
+        "muscleId": "muscle_triceps_brachii",
+        "role": "primary",
+        "qualifier": "Qualitative involvement described for full and knee-modified push-ups; no activation percentage, isolation or superiority claim.",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      },
+      {
+        "muscleId": "muscle_transversus_abdominis",
+        "role": "stabilizer",
+        "qualifier": "Qualitative involvement described for full and knee-modified push-ups; no activation percentage, isolation or superiority claim.",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Kneel with feet together; place palms shoulder-width and fingers forward.",
+        "Shift until shoulders are over hands; keep a straight supported line from knees through torso, with abdominal bracing."
+      ],
+      "executionSteps": [
+        "Lower slowly as one supported unit without back sag or raised hips; keep head aligned.",
+        "Press back to extended elbows, retaining the same supported alignment."
+      ],
+      "finishOrReset": "Return to the described starting support under control before relaxing.",
+      "keyCheckpoints": [
+        "Retain trunk alignment rather than moving the hips separately."
+      ],
+      "breathing": null
+    },
+    "mistakes": [
+      {
+        "mistake": "Sagging the low back or raising the hips separately.",
+        "whyItMatters": "Changes the source-described alignment.",
+        "correction": "Reset the supported starting position; use a learned easier variation if control is lost.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_knee_pushup_13"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "skill-learning",
+        "guidanceStatus": "context-dependent",
+        "setRange": {
+          "min": 2,
+          "max": 2
+        },
+        "repRange": {
+          "min": 6,
+          "max": 8
+        },
+        "restSeconds": {
+          "min": 60,
+          "max": 60
+        },
+        "loadNotes": "Bodyweight example; not a required dose for every person.",
+        "qualifier": "The 2019 professional article gives this starting example and adds repetitions before sets. It is not a universally validated schedule; breathing timing is not specified.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_pushup_progression_2019"
+        ]
+      }
+    ],
+    "safety": {
+      "prerequisites": [
+        "Learn supported trunk control and the relevant starting position before the complete movement."
+      ],
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "General NIA symptom boundaries are separate from technique. Knee-supported push-ups still load the wrists; no injury-prevention guarantee or personal clearance."
+    },
+    "sources": [
+      {
+        "id": "ace_pushup_progression_2019",
+        "title": "Pete McCall: Perfecting the Push-up for All Levels",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": 2019,
+        "reviewedAt": "2026-10-07",
+        "notes": "Introduction, Modified Push-ups and Full Push-ups"
+      },
+      {
+        "id": "ace_knee_pushup_13",
+        "title": "ACE Bent Knee Push-up",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/13/bent-knee-push-up/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-07",
+        "notes": "Exercise Library 13; steps 1-4 and wrist-stress note"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Machine validation, not independent human technique or clinical review. Due date is a maintenance reminder."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_knee_push_up_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/knee-push-up-cue.svg",
+        "alt": "Original cue: supported alignment, controlled lowering and return. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison against source sequence; no independent human review."
+      }
+    ],
+    "relationships": {
+      "progressionIds": [
+        "exercise_push_up"
+      ]
+    }
+  }
+]

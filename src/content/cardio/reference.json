@@ -44,7 +44,7 @@
     },
     {
       "id": "perceived_effort_0_10",
-      "displayName": "Generic perceived effort 0\u201310",
+      "displayName": "Generic perceived effort 0–10",
       "outputs": [
         "0_to_10"
       ],
@@ -113,13 +113,13 @@
   "heartRateContracts": {
     "agePredictedHrmax": {
       "formulaId": "tanaka_2001",
-      "formula": "208 - (0.7 \u00d7 ageYears)",
+      "formula": "208 - (0.7 × ageYears)",
       "rounding": "nearest_whole_bpm",
       "sourceId": "src_tanaka_hrmax_2001",
       "warning": "Population estimate with substantial individual error; measured HRmax is preferred when safely obtained."
     },
     "heartRateReserve": {
-      "formula": "restingHR + fraction \u00d7 (maxHR - restingHR)",
+      "formula": "restingHR + fraction × (maxHR - restingHR)",
       "requiredInputs": [
         "restingHeartRateBpm",
         "maxHeartRateBpm",
@@ -128,7 +128,7 @@
       "warning": "Do not use when heart-rate response is unreliable or a clinician supplied a different target."
     },
     "percentHrmax": {
-      "formula": "fraction \u00d7 maxHeartRateBpm",
+      "formula": "fraction × maxHeartRateBpm",
       "warning": "Do not present as a precise physiological threshold."
     }
   },
@@ -272,7 +272,7 @@
     },
     {
       "id": "modality_walk_jog",
-      "displayName": "Walk\u2013Jog",
+      "displayName": "Walk–Jog",
       "phase03ExerciseId": null,
       "tags": [
         "beginner"
@@ -650,7 +650,43 @@
         "source_running_schedule",
         "comfort_based_intensity"
       ],
-      "licenseNote": "Open Government Licence v3.0 and NHS terms sections 3.4\u20133.6; numeric schedule and attributed summaries only, no logos, imagery, third-party video or clinical endorsement. Retrieval year is not a claimed publication date."
+      "licenseNote": "Open Government Licence v3.0 and NHS terms sections 3.4–3.6; numeric schedule and attributed summaries only, no logos, imagery, third-party video or clinical endorsement. Retrieval year is not a claimed publication date."
+    },
+    {
+      "id": "cdc_intensity_education_2026",
+      "title": "How to Measure Physical Activity Intensity",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "Brief original factual paraphrase and source link; no third-party visuals, tables or branding reproduced."
+    },
+    {
+      "id": "nhs_walking_education_2026",
+      "title": "Walking for health",
+      "publisher": "Department of Health and Social Care",
+      "year": 2022,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
+    },
+    {
+      "id": "nhs_adult_activity_education_2026",
+      "title": "Physical activity guidelines for adults aged 19 to 64",
+      "publisher": "Department of Health and Social Care",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
     }
   ],
   "seedTaxonomy": [
@@ -817,7 +853,7 @@
     {
       "id": "topic_perceived_exertion_0_10",
       "slug": "topic-perceived-exertion-0-10",
-      "title": "Generic 0\u201310 Perceived Exertion",
+      "title": "Generic 0–10 Perceived Exertion",
       "entityType": "knowledge_topic",
       "domain": "intensity",
       "publicationStatus": "draft",
@@ -937,7 +973,7 @@
     {
       "id": "topic_zone_two_boundary",
       "slug": "topic-zone-two-boundary",
-      "title": "Why \u201cZone 2\u201d Is Not One Universal Number",
+      "title": "Why “Zone 2” Is Not One Universal Number",
       "entityType": "knowledge_topic",
       "domain": "intensity",
       "publicationStatus": "draft",
@@ -1187,7 +1223,7 @@
     {
       "id": "topic_moderate_vigorous_equivalence",
       "slug": "topic-moderate-vigorous-equivalence",
-      "title": "Moderate\u2013Vigorous Minute Equivalence",
+      "title": "Moderate–Vigorous Minute Equivalence",
       "entityType": "knowledge_topic",
       "domain": "programming",
       "publicationStatus": "draft",
@@ -1587,7 +1623,7 @@
     {
       "id": "topic_no_vo2max_inference",
       "slug": "topic-no-vo2max-inference",
-      "title": "Why the App Does Not Infer VO\u2082max",
+      "title": "Why the App Does Not Infer VO₂max",
       "entityType": "knowledge_topic",
       "domain": "measurement",
       "publicationStatus": "draft",
@@ -1872,7 +1908,7 @@
     {
       "id": "modality_walk_jog",
       "slug": "modality-walk-jog",
-      "title": "Walk\u2013Jog",
+      "title": "Walk–Jog",
       "entityType": "cardio_modality",
       "domain": "modality",
       "publicationStatus": "draft",
@@ -2115,7 +2151,7 @@
     {
       "id": "plan_walk_jog_intro_6w",
       "slug": "plan-walk-jog-intro-6w",
-      "title": "Six-Week Walk\u2013Jog Introduction",
+      "title": "Six-Week Walk–Jog Introduction",
       "entityType": "cardio_plan_template",
       "domain": "plan",
       "publicationStatus": "draft",
@@ -2445,7 +2481,7 @@
     {
       "id": "routine_walk_jog_1_1",
       "slug": "routine-walk-jog-1-1",
-      "title": "One-Minute Walk\u2013Jog Intervals",
+      "title": "One-Minute Walk–Jog Intervals",
       "entityType": "conditioning_routine",
       "domain": "routine",
       "publicationStatus": "draft",

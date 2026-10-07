@@ -2,6 +2,35 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/exercises/push-up", "Push-up"],
+  ["/exercises/knee-push-up", "Knee push-up"],
+  ["/learn/workout-science/specificity", "Specificity"],
+  ["/learn/workout-science/progressive-overload", "Progressive overload"],
+  ["/learn/workout-science/individual-response", "Individual response"],
+  ["/learn/workout-science/periodization", "Periodization"],
+  ["/learn/workout-science/proximity-to-failure", "Proximity to failure"],
+  [
+    "/cardio/learn/topic-absolute-vs-relative-intensity",
+    "Absolute vs Relative Intensity",
+  ],
+  [
+    "/cardio/learn/topic-perceived-exertion-0-10",
+    "Generic 0–10 Perceived Exertion",
+  ],
+  ["/cardio/learn/topic-met-definition", "Metabolic Equivalent of Task"],
+  [
+    "/cardio/learn/topic-health-guidelines-vs-training-plan",
+    "Public-Health Guidelines vs Individual Training",
+  ],
+  ["/cardio/learn/topic-weekly-minutes", "Weekly Aerobic Minutes"],
+  [
+    "/cardio/learn/topic-moderate-vigorous-equivalence",
+    "Moderate–Vigorous Minute Equivalence",
+  ],
+  ["/cardio/learn/topic-frequency-cardio", "Cardio Frequency"],
+  ["/cardio/learn/topic-beginner-progression", "Starting After Inactivity"],
+  ["/cardio/modalities/modality-walking-outdoor", "Outdoor Walking"],
+  ["/cardio/modalities/modality-cycling-outdoor", "Outdoor Cycling"],
   ["/exercises/dumbbell-bench-press", "Dumbbell bench press"],
   ["/exercises/forward-lunge", "Forward lunge"],
   ["/exercises/dumbbell-romanian-deadlift", "Dumbbell Romanian deadlift"],

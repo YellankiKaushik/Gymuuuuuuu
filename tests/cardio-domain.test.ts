@@ -132,6 +132,16 @@ it("publishes only the explicitly sourced identities from the 202 seeds", () => 
   expect(publicCardioEntities.map((r) => r.id)).toEqual([
     "topic_talk_test",
     "plan_5k_general_foundation",
+    "topic_absolute_vs_relative_intensity",
+    "topic_perceived_exertion_0_10",
+    "topic_met_definition",
+    "topic_health_guidelines_vs_training_plan",
+    "topic_weekly_minutes",
+    "topic_moderate_vigorous_equivalence",
+    "topic_frequency_cardio",
+    "topic_beginner_progression",
+    "modality_walking_outdoor",
+    "modality_cycling_outdoor",
   ]);
   expect(
     publicCardioEntities.every((r) => r.publicationStatus === "published"),

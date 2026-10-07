@@ -1,0 +1,687 @@
+[
+  {
+    "id": "science_specificity",
+    "slug": "specificity",
+    "displayName": "Specificity",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "foundations",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 2,
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "definition": "Specificity connects a training stimulus to the outcomes it develops.",
+    "summary": "The authors describe adaptations as specific to the training stimulus, while noting carryover across muscular performance domains in nonadvanced trainees.",
+    "whyItMatters": "Specify the outcome being discussed rather than promising transfer to every activity.",
+    "keyTakeaways": [
+      "The authors describe adaptations as specific to the training stimulus, while noting carryover across muscular performance domains in nonadvanced trainees.",
+      "Specify the outcome being discussed rather than promising transfer to every activity.",
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance."
+    ],
+    "goalContexts": [
+      {
+        "goal": "general-fitness",
+        "interpretation": "The authors describe adaptations as specific to the training stimulus, while noting carryover across muscular performance domains in nonadvanced trainees.",
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Specify the outcome being discussed rather than promising transfer to every activity."
+      ],
+      "prioritizeWhen": [
+        "The outcome and healthy-adult scope match the question."
+      ],
+      "deprioritizeWhen": [
+        "The proposed application exceeds the inspected evidence."
+      ],
+      "adjustmentLevers": [
+        "Use the source framework with explicit limits; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Population, effort, volume, adherence and missing source detail."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_specificity_acsm_discussion",
+        "claimText": "The authors describe adaptations as specific to the training stimulus, while noting carryover across muscular performance domains in nonadvanced trainees.",
+        "claimType": "practice-framework",
+        "outcome": "mixed",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "consensus-practice",
+        "confidence": "limited",
+        "direction": "context-dependent",
+        "effectQualifier": "Original source-scoped interpretation; editorial evidence label, not a new independent evidence reassessment.",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "limitations": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "lastVerified": "2026-10-07"
+      }
+    ],
+    "practicalGuidance": [
+      {
+        "context": "Understanding the source framework",
+        "guidanceText": "Specify the outcome being discussed rather than promising transfer to every activity.",
+        "numericValue": null,
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_training_volume",
+      "science_load_relative_intensity"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "relatedMuscleIds": [],
+    "futureProgramIds": [],
+    "sources": [
+      {
+        "id": "source_acsm_rt_2026_discussion",
+        "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+        "authorsOrOrganization": "Currier and colleagues; American College of Sports Medicine",
+        "sourceType": "position-stand",
+        "year": 2026,
+        "doi": "10.1249/MSS.0000000000003897",
+        "pmid": "41843416",
+        "url": "https://europepmc.org/articles/PMC12965823",
+        "accessedAt": "2026-10-07",
+        "notes": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted. Selected eligibility and Discussion passages inspected; not an abstract-only extraction."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Selected full-text passage inspection, original source-specific observations and automated validation. No independent human or clinical review; editorial labels are not a new GRADE assessment."
+    }
+  },
+  {
+    "id": "science_progressive_overload",
+    "slug": "progressive-overload",
+    "displayName": "Progressive overload",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "foundations",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 3,
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "definition": "Progressive overload increases a training stimulus as adaptation occurs.",
+    "summary": "The discussion distinguishes initial benefit from continued longer-term progress: increasing a stimulus can support continued adaptation, but progression is not a prerequisite for every initial benefit.",
+    "whyItMatters": "Distinguish greater load from other possible changes in the training stimulus.",
+    "keyTakeaways": [
+      "The discussion distinguishes initial benefit from continued longer-term progress: increasing a stimulus can support continued adaptation, but progression is not a prerequisite for every initial benefit.",
+      "Distinguish greater load from other possible changes in the training stimulus.",
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance."
+    ],
+    "goalContexts": [
+      {
+        "goal": "general-fitness",
+        "interpretation": "The discussion distinguishes initial benefit from continued longer-term progress: increasing a stimulus can support continued adaptation, but progression is not a prerequisite for every initial benefit.",
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Distinguish greater load from other possible changes in the training stimulus."
+      ],
+      "prioritizeWhen": [
+        "The outcome and healthy-adult scope match the question."
+      ],
+      "deprioritizeWhen": [
+        "The proposed application exceeds the inspected evidence."
+      ],
+      "adjustmentLevers": [
+        "Use the source framework with explicit limits; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Population, effort, volume, adherence and missing source detail."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_progressive_overload_acsm_discussion",
+        "claimText": "The discussion distinguishes initial benefit from continued longer-term progress: increasing a stimulus can support continued adaptation, but progression is not a prerequisite for every initial benefit.",
+        "claimType": "practice-framework",
+        "outcome": "mixed",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "consensus-practice",
+        "confidence": "limited",
+        "direction": "context-dependent",
+        "effectQualifier": "Original source-scoped interpretation; editorial evidence label, not a new independent evidence reassessment.",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "limitations": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "lastVerified": "2026-10-07"
+      }
+    ],
+    "practicalGuidance": [
+      {
+        "context": "Understanding the source framework",
+        "guidanceText": "Distinguish greater load from other possible changes in the training stimulus.",
+        "numericValue": null,
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_training_volume",
+      "science_load_relative_intensity"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "relatedMuscleIds": [],
+    "futureProgramIds": [],
+    "sources": [
+      {
+        "id": "source_acsm_rt_2026_discussion",
+        "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+        "authorsOrOrganization": "Currier and colleagues; American College of Sports Medicine",
+        "sourceType": "position-stand",
+        "year": 2026,
+        "doi": "10.1249/MSS.0000000000003897",
+        "pmid": "41843416",
+        "url": "https://europepmc.org/articles/PMC12965823",
+        "accessedAt": "2026-10-07",
+        "notes": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted. Selected eligibility and Discussion passages inspected; not an abstract-only extraction."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Selected full-text passage inspection, original source-specific observations and automated validation. No independent human or clinical review; editorial labels are not a new GRADE assessment."
+    }
+  },
+  {
+    "id": "science_individual_response",
+    "slug": "individual-response",
+    "displayName": "Individual response",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "foundations",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 4,
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "definition": "Individual response concerns how group evidence applies to a particular trainee.",
+    "summary": "The authors state that pooled group-level findings require individualization to goals, needs, experience and circumstances; the review does not predict each individual response.",
+    "whyItMatters": "Treat group recommendations as context, not a forecast of your gains or suitability.",
+    "keyTakeaways": [
+      "The authors state that pooled group-level findings require individualization to goals, needs, experience and circumstances; the review does not predict each individual response.",
+      "Treat group recommendations as context, not a forecast of your gains or suitability.",
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance."
+    ],
+    "goalContexts": [
+      {
+        "goal": "general-fitness",
+        "interpretation": "The authors state that pooled group-level findings require individualization to goals, needs, experience and circumstances; the review does not predict each individual response.",
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Treat group recommendations as context, not a forecast of your gains or suitability."
+      ],
+      "prioritizeWhen": [
+        "The outcome and healthy-adult scope match the question."
+      ],
+      "deprioritizeWhen": [
+        "The proposed application exceeds the inspected evidence."
+      ],
+      "adjustmentLevers": [
+        "Use the source framework with explicit limits; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Population, effort, volume, adherence and missing source detail."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_individual_response_acsm_discussion",
+        "claimText": "The authors state that pooled group-level findings require individualization to goals, needs, experience and circumstances; the review does not predict each individual response.",
+        "claimType": "practice-framework",
+        "outcome": "mixed",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "consensus-practice",
+        "confidence": "limited",
+        "direction": "context-dependent",
+        "effectQualifier": "Original source-scoped interpretation; editorial evidence label, not a new independent evidence reassessment.",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "limitations": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "lastVerified": "2026-10-07"
+      }
+    ],
+    "practicalGuidance": [
+      {
+        "context": "Understanding the source framework",
+        "guidanceText": "Treat group recommendations as context, not a forecast of your gains or suitability.",
+        "numericValue": null,
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_training_volume",
+      "science_load_relative_intensity"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "relatedMuscleIds": [],
+    "futureProgramIds": [],
+    "sources": [
+      {
+        "id": "source_acsm_rt_2026_discussion",
+        "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+        "authorsOrOrganization": "Currier and colleagues; American College of Sports Medicine",
+        "sourceType": "position-stand",
+        "year": 2026,
+        "doi": "10.1249/MSS.0000000000003897",
+        "pmid": "41843416",
+        "url": "https://europepmc.org/articles/PMC12965823",
+        "accessedAt": "2026-10-07",
+        "notes": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted. Selected eligibility and Discussion passages inspected; not an abstract-only extraction."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Selected full-text passage inspection, original source-specific observations and automated validation. No independent human or clinical review; editorial labels are not a new GRADE assessment."
+    }
+  },
+  {
+    "id": "science_periodization",
+    "slug": "periodization",
+    "displayName": "Periodization",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "periodization-autoregulation",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 55,
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "definition": "Periodization systematically varies training prescription over time.",
+    "summary": "The discussion reports uncertain overall strength conclusions, with one volume-equated review slightly favouring periodization. It does not establish a universal periodized-program advantage under appropriate overload.",
+    "whyItMatters": "Separate purposeful variation from a claim that every trainee needs a particular periodization model.",
+    "keyTakeaways": [
+      "The discussion reports uncertain overall strength conclusions, with one volume-equated review slightly favouring periodization. It does not establish a universal periodized-program advantage under appropriate overload.",
+      "Separate purposeful variation from a claim that every trainee needs a particular periodization model.",
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance."
+    ],
+    "goalContexts": [
+      {
+        "goal": "general-fitness",
+        "interpretation": "The discussion reports uncertain overall strength conclusions, with one volume-equated review slightly favouring periodization. It does not establish a universal periodized-program advantage under appropriate overload.",
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Separate purposeful variation from a claim that every trainee needs a particular periodization model."
+      ],
+      "prioritizeWhen": [
+        "The outcome and healthy-adult scope match the question."
+      ],
+      "deprioritizeWhen": [
+        "The proposed application exceeds the inspected evidence."
+      ],
+      "adjustmentLevers": [
+        "Use the source framework with explicit limits; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Population, effort, volume, adherence and missing source detail."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_periodization_acsm_discussion",
+        "claimText": "The discussion reports uncertain overall strength conclusions, with one volume-equated review slightly favouring periodization. It does not establish a universal periodized-program advantage under appropriate overload.",
+        "claimType": "null-or-inconsistent",
+        "outcome": "strength",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "low",
+        "confidence": "limited",
+        "direction": "mixed",
+        "effectQualifier": "Original source-scoped interpretation; editorial evidence label, not a new independent evidence reassessment.",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "limitations": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "lastVerified": "2026-10-07"
+      }
+    ],
+    "practicalGuidance": [
+      {
+        "context": "Understanding the source framework",
+        "guidanceText": "Separate purposeful variation from a claim that every trainee needs a particular periodization model.",
+        "numericValue": null,
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_training_volume",
+      "science_load_relative_intensity"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "relatedMuscleIds": [],
+    "futureProgramIds": [],
+    "sources": [
+      {
+        "id": "source_acsm_rt_2026_discussion",
+        "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+        "authorsOrOrganization": "Currier and colleagues; American College of Sports Medicine",
+        "sourceType": "position-stand",
+        "year": 2026,
+        "doi": "10.1249/MSS.0000000000003897",
+        "pmid": "41843416",
+        "url": "https://europepmc.org/articles/PMC12965823",
+        "accessedAt": "2026-10-07",
+        "notes": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted. Selected eligibility and Discussion passages inspected; not an abstract-only extraction."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Selected full-text passage inspection, original source-specific observations and automated validation. No independent human or clinical review; editorial labels are not a new GRADE assessment."
+    }
+  },
+  {
+    "id": "science_proximity_to_failure",
+    "slug": "proximity-to-failure",
+    "displayName": "Proximity to failure",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "effort-fatigue",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "learningOrder": 30,
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "definition": "Proximity to failure describes how close a set ends to inability to continue its concentric action.",
+    "summary": "The authors propose near-failure or a target of two to three repetitions in reserve as a way to achieve sufficient effort; completing every set to muscular failure is not required for benefit.",
+    "whyItMatters": "Keep a proposed effort framework distinct from a measured RIR value or a rule to force repetitions.",
+    "keyTakeaways": [
+      "The authors propose near-failure or a target of two to three repetitions in reserve as a way to achieve sufficient effort; completing every set to muscular failure is not required for benefit.",
+      "Keep a proposed effort framework distinct from a measured RIR value or a rule to force repetitions.",
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance."
+    ],
+    "goalContexts": [
+      {
+        "goal": "general-fitness",
+        "interpretation": "The authors propose near-failure or a target of two to three repetitions in reserve as a way to achieve sufficient effort; completing every set to muscular failure is not required for benefit.",
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Keep a proposed effort framework distinct from a measured RIR value or a rule to force repetitions."
+      ],
+      "prioritizeWhen": [
+        "The outcome and healthy-adult scope match the question."
+      ],
+      "deprioritizeWhen": [
+        "The proposed application exceeds the inspected evidence."
+      ],
+      "adjustmentLevers": [
+        "Use the source framework with explicit limits; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Population, effort, volume, adherence and missing source detail."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_proximity_to_failure_acsm_discussion",
+        "claimText": "The authors propose near-failure or a target of two to three repetitions in reserve as a way to achieve sufficient effort; completing every set to muscular failure is not required for benefit.",
+        "claimType": "practice-framework",
+        "outcome": "mixed",
+        "population": [
+          "healthy-adults"
+        ],
+        "evidenceLevel": "consensus-practice",
+        "confidence": "limited",
+        "direction": "context-dependent",
+        "effectQualifier": "Original source-scoped interpretation; editorial evidence label, not a new independent evidence reassessment.",
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ],
+        "limitations": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "lastVerified": "2026-10-07"
+      }
+    ],
+    "practicalGuidance": [
+      {
+        "context": "Understanding the source framework",
+        "guidanceText": "Keep a proposed effort framework distinct from a measured RIR value or a rule to force repetitions.",
+        "numericValue": null,
+        "qualifiers": [
+          "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+          "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+          "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+        ],
+        "sourceIds": [
+          "source_acsm_rt_2026_discussion"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_training_volume",
+      "science_load_relative_intensity"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "relatedMuscleIds": [],
+    "futureProgramIds": [],
+    "sources": [
+      {
+        "id": "source_acsm_rt_2026_discussion",
+        "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+        "authorsOrOrganization": "Currier and colleagues; American College of Sports Medicine",
+        "sourceType": "position-stand",
+        "year": 2026,
+        "doi": "10.1249/MSS.0000000000003897",
+        "pmid": "41843416",
+        "url": "https://europepmc.org/articles/PMC12965823",
+        "accessedAt": "2026-10-07",
+        "notes": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted. Selected eligibility and Discussion passages inspected; not an abstract-only extraction."
+      }
+    ],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Selected full-text passage inspection, original source-specific observations and automated validation. No independent human or clinical review; editorial labels are not a new GRADE assessment."
+    }
+  }
+]

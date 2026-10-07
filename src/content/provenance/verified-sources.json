@@ -1677,5 +1677,125 @@
       "Sequence cues, not anatomical models or movement assessment.",
       "No independent human or clinical review."
     ]
+  },
+  {
+    "id": "ace_pushup_progression_2019",
+    "title": "Pete McCall: Perfecting the Push-up for All Levels",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/pros/expert-articles/7265/perfecting-the-push-up-for-all-levels/",
+    "sourceVersion": "Introduction, Modified Push-ups and Full Push-ups",
+    "sourceDate": "2019-04-09",
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-07T21:07:40Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and attribution; no full proprietary program, source photographs, videos or traced artwork copied. No open licence claimed.",
+    "limitations": [
+      "Professional educational example, not a trial-tested personal prescription or universal progression rule.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_knee_pushup_13",
+    "title": "ACE Bent Knee Push-up",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/13/bent-knee-push-up/",
+    "sourceVersion": "Exercise Library 13; steps 1-4 and wrist-stress note",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-07T21:07:40Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and attribution; no full proprietary program, source photographs, videos or traced artwork copied. No open licence claimed.",
+    "limitations": [
+      "Professional educational example, not a trial-tested personal prescription or universal progression rule.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "cdc_intensity_education_2026",
+    "title": "How to Measure Physical Activity Intensity",
+    "publisher": "U.S. Centers for Disease Control and Prevention",
+    "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+    "sourceVersion": "Relative intensity, talk test and absolute intensity; publisher review/update 2025-12-04",
+    "sourceDate": "2025-12-04",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T21:03:25Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and source link; no third-party visuals, tables or branding reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "The identified sections were read using the browsing tool. Raw HTML was not archived; direct CDC retrieval returned HTTP 403."
+    ]
+  },
+  {
+    "id": "nhs_walking_education_2026",
+    "title": "Walking for health",
+    "publisher": "Department of Health and Social Care",
+    "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+    "sourceVersion": "Footwear, brisk walking and starting after inactivity; publisher review/update 2022-12-15",
+    "sourceDate": "2022-12-15",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T21:03:25Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "open_government_licence",
+    "rightsReference": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "The identified sections were read using the browsing tool. Raw HTML was not archived; direct CDC retrieval returned HTTP 403."
+    ]
+  },
+  {
+    "id": "nhs_adult_activity_education_2026",
+    "title": "Physical activity guidelines for adults aged 19 to 64",
+    "publisher": "Department of Health and Social Care",
+    "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+    "sourceVersion": "Weekly volume, distribution, intensity examples and strengthening distinction; publisher review/update 2024-05-22",
+    "sourceDate": "2024-05-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T21:03:25Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "open_government_licence",
+    "rightsReference": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "The identified sections were read using the browsing tool. Raw HTML was not archived; direct CDC retrieval returned HTTP 403."
+    ]
+  },
+  {
+    "id": "source_acsm_rt_2026_discussion",
+    "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+    "publisher": "Currier and colleagues; American College of Sports Medicine",
+    "url": "https://europepmc.org/articles/PMC12965823",
+    "sourceVersion": "doi:10.1249/MSS.0000000000003897; PMID:41843416; PMCID:PMC12965823; eligibility and selected Discussion paragraphs",
+    "sourceDate": null,
+    "evidenceType": "position_stand",
+    "extractedAt": "2026-10-07T21:12:54Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted.",
+    "limitations": [
+      "Healthy adults aged at least 18 in eligible resistance-training trials; group results are not individual predictions or clinical/youth guidance.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and discussion passages support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews and limited subgroup evidence constrain conclusions."
+    ]
+  },
+  {
+    "id": "original_pushup_diagrams_v1",
+    "title": "Original full and knee-supported push-up sequence cues",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+    "sourceVersion": "1.0.0",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-07T21:07:40Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "original_work",
+    "rightsReference": "Original repository-created SVG text and arrow sequences; no third-party photos or traced artwork.",
+    "limitations": [
+      "Sequence cues, not complete technique demonstrations or anatomical models.",
+      "No independent human or clinical review."
+    ]
   }
 ]

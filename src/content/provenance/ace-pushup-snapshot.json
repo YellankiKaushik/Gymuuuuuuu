@@ -1,0 +1,14 @@
+{
+  "extractedAt": "2026-10-07T21:07:40Z",
+  "definitionsSha256": "9a725066ae5d48cc6bdb16d9e49b4ec217a65abfda3b543d59e61f30796e48b9",
+  "sourcesSha256": "25d24e6dce6b8949791887ce909c506c8265fd7cb5188af56d5e00119dc17fac",
+  "recordIds": [
+    "exercise_push_up",
+    "exercise_knee_push_up"
+  ],
+  "mediaHashes": {
+    "/media/push-up-cue.svg": "13734be77451a2801bfbbd13b475c08c41a5e85fda6e8e3f017fbe3002354e92",
+    "/media/knee-push-up-cue.svg": "b94dfb566f799515983ab834dbd3f8eacf708ef08b68b30fcfadb5e2a015db81"
+  },
+  "reviewMethod": "Inspected primary ACE technique and 2019 contextual progression example, explicit unknown breathing timing and automated validation; no independent human or clinical review."
+}

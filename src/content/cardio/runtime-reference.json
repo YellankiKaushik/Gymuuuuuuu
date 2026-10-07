@@ -583,6 +583,42 @@
         "comfort_based_intensity"
       ],
       "licenseNote": "Open Government Licence v3.0 and NHS terms sections 3.4–3.6; numeric schedule and attributed summaries only, no logos, imagery, third-party video or clinical endorsement. Retrieval year is not a claimed publication date."
+    },
+    {
+      "id": "cdc_intensity_education_2026",
+      "title": "How to Measure Physical Activity Intensity",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "Brief original factual paraphrase and source link; no third-party visuals, tables or branding reproduced."
+    },
+    {
+      "id": "nhs_walking_education_2026",
+      "title": "Walking for health",
+      "publisher": "Department of Health and Social Care",
+      "year": 2022,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
+    },
+    {
+      "id": "nhs_adult_activity_education_2026",
+      "title": "Physical activity guidelines for adults aged 19 to 64",
+      "publisher": "Department of Health and Social Care",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
     }
   ],
   "seedTaxonomy": [

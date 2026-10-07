@@ -1,0 +1,63 @@
+{
+  "extractedAt": "2026-10-07T21:03:25Z",
+  "definitionsSha256": "59a3d0a682350cdcdadbb90f7e7bb599076930c3971443eae779f9c12a7190fc",
+  "sourcesSha256": "1a9323c853e34042d5fbeb93393ffd9737428e901b381162cf64730653b31bdb",
+  "recordIds": [
+    "topic_absolute_vs_relative_intensity",
+    "topic_perceived_exertion_0_10",
+    "topic_met_definition",
+    "topic_health_guidelines_vs_training_plan",
+    "topic_weekly_minutes",
+    "topic_moderate_vigorous_equivalence",
+    "topic_frequency_cardio",
+    "topic_beginner_progression",
+    "modality_walking_outdoor",
+    "modality_cycling_outdoor"
+  ],
+  "moduleSources": [
+    {
+      "id": "cdc_intensity_education_2026",
+      "title": "How to Measure Physical Activity Intensity",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "Brief original factual paraphrase and source link; no third-party visuals, tables or branding reproduced."
+    },
+    {
+      "id": "nhs_walking_education_2026",
+      "title": "Walking for health",
+      "publisher": "Department of Health and Social Care",
+      "year": 2022,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
+    },
+    {
+      "id": "nhs_adult_activity_education_2026",
+      "title": "Physical activity guidelines for adults aged 19 to 64",
+      "publisher": "Department of Health and Social Care",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
+    }
+  ],
+  "sourceHtmlSha256": null,
+  "sourceCaptureMethod": "Browsing-tool page inspection and pinned original observations; no raw HTML hash claimed. Direct CDC retrieval returned HTTP 403.",
+  "sourceLocators": {
+    "cdc_intensity_education_2026": "Relative intensity, talk test and absolute intensity",
+    "nhs_walking_education_2026": "Footwear, brisk walking and starting after inactivity",
+    "nhs_adult_activity_education_2026": "Weekly volume, distribution, intensity examples and strengthening distinction"
+  },
+  "reviewMethod": "Inspected authoritative source sections and reuse policy; original source-scoped educational paraphrases and automated validation, with no independent human or clinical review."
+}

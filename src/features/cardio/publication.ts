@@ -80,6 +80,8 @@ export function validateCardioRelease(
     )
       throw Error("Public cardio identity differs from its stable seed.");
     if (
+      new Set(e.claims.map((claim) => claim.id)).size !== e.claims.length ||
+      new Set(e.sourceIds).size !== e.sourceIds.length ||
       e.claims.some((c) =>
         c.sourceIds.some((id) => !e.sourceIds.includes(id)),
       ) ||

@@ -1,0 +1,411 @@
+[
+  {
+    "id": "topic_absolute_vs_relative_intensity",
+    "slug": "topic-absolute-vs-relative-intensity",
+    "title": "Absolute vs Relative Intensity",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults using general activity guidance; not individual medical advice",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "Relative effort is not interchangeable with a fixed pace, power, heart-rate percentage or personal fitness estimate.",
+      "No independent human or clinical review."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_absolute_vs_relative_intensity",
+        "text": "CDC distinguishes relative effort, which depends on individual fitness, from absolute activity intensity. The same activity can feel vigorous to one person and moderate to another.",
+        "sourceIds": [
+          "cdc_intensity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "cdc_intensity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "topic_perceived_exertion_0_10",
+    "slug": "topic-perceived-exertion-0-10",
+    "title": "Generic 0–10 Perceived Exertion",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults using general activity guidance; not individual medical advice",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "This generic effort scale is not resistance-training RIR, a laboratory threshold or a universal heart-rate zone.",
+      "No independent human or clinical review."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_perceived_exertion_0_10",
+        "text": "On the CDC generic 0-10 effort scale, 0 represents sitting effort and 10 maximal effort. Moderate relative effort is 5 or 6; vigorous effort begins at 7 or 8.",
+        "sourceIds": [
+          "cdc_intensity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "cdc_intensity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "topic_met_definition",
+    "slug": "topic-met-definition",
+    "title": "Metabolic Equivalent of Task",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults using general activity guidance; not individual medical advice",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "These activity categories do not measure your oxygen uptake, calorie expenditure or relative effort. No personal MET or VO2max estimate is generated.",
+      "No independent human or clinical review."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_met_definition",
+        "text": "A metabolic equivalent of task describes absolute activity intensity relative to sitting. CDC classifies 3-5.9 METs as moderate and 6 or more as vigorous absolute intensity.",
+        "sourceIds": [
+          "cdc_intensity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "cdc_intensity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "topic_health_guidelines_vs_training_plan",
+    "slug": "topic-health-guidelines-vs-training-plan",
+    "title": "Public-Health Guidelines vs Individual Training",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults aged 19-64; general public-health education",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "This is population guidance, not a sport-specific program or individual clearance. Pregnancy, rehabilitation and clinical adaptations require their own context.",
+      "No independent human or clinical review.",
+      "Contains public sector information licensed under the Open Government Licence v3.0. Source inspected 2026-10-07; original adapted educational summary, not an NHS-approved adaptation."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_health_guidelines_vs_training_plan",
+        "text": "The adult public-health framework combines aerobic activity with major-muscle strengthening on at least two days weekly. Strengthening does not automatically replace the aerobic activity component.",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "nhs_adult_activity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "topic_weekly_minutes",
+    "slug": "topic-weekly-minutes",
+    "title": "Weekly Aerobic Minutes",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults aged 19-64; general public-health education",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "These weekly health recommendations do not prescribe an individual starting dose, recovery requirement or session sequence.",
+      "No independent human or clinical review.",
+      "Contains public sector information licensed under the Open Government Licence v3.0. Source inspected 2026-10-07; original adapted educational summary, not an NHS-approved adaptation."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_weekly_minutes",
+        "text": "For adults aged 19-64, the source recommends at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, or a combination.",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "nhs_adult_activity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "topic_moderate_vigorous_equivalence",
+    "slug": "topic-moderate-vigorous-equivalence",
+    "title": "Moderate–Vigorous Minute Equivalence",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults aged 19-64; general public-health education",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "This health-guideline comparison is not equal training load, fatigue, calories or performance stimulus for every activity or person.",
+      "No independent human or clinical review.",
+      "Contains public sector information licensed under the Open Government Licence v3.0. Source inspected 2026-10-07; original adapted educational summary, not an NHS-approved adaptation."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_moderate_vigorous_equivalence",
+        "text": "The source describes 75 minutes of vigorous activity as generally offering similar health benefits to 150 minutes of moderate activity.",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "nhs_adult_activity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "topic_frequency_cardio",
+    "slug": "topic-frequency-cardio",
+    "title": "Cardio Frequency",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults aged 19-64; general public-health education",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "This distribution guidance does not require hard training every day or prescribe equal effort for every session.",
+      "No independent human or clinical review.",
+      "Contains public sector information licensed under the Open Government Licence v3.0. Source inspected 2026-10-07; original adapted educational summary, not an NHS-approved adaptation."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_frequency_cardio",
+        "text": "The source recommends spreading activity across four to five days or every day, while reducing prolonged sitting.",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "nhs_adult_activity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "topic_beginner_progression",
+    "slug": "topic-beginner-progression",
+    "title": "Starting After Inactivity",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "Adults using general activity guidance; not individual medical advice",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "No universal weekly percentage, four-week schedule or minimum starting distance is supplied. Seek qualified guidance when health or mobility concerns affect suitability.",
+      "No independent human or clinical review.",
+      "Contains public sector information licensed under the Open Government Licence v3.0. Source inspected 2026-10-07; original adapted educational summary, not an NHS-approved adaptation.",
+      "The source retains its 2022 publisher review; its stated 2025 review-due date is past. No current publisher clinical approval is inferred."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_topic_beginner_progression",
+        "text": "If you are inactive but able to walk, the source advises increasing walking distance gradually. Comfortable supportive footwear should not cause blisters.",
+        "sourceIds": [
+          "nhs_walking_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "nhs_walking_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "modality_walking_outdoor",
+    "slug": "modality-walking-outdoor",
+    "title": "Outdoor Walking",
+    "entityType": "cardio_modality",
+    "publicationStatus": "published",
+    "population": "Adults using general activity guidance; not individual medical advice",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "Ten minutes is an example, not a compulsory starting duration. This page does not supply terrain, temperature or individual medical clearance.",
+      "No independent human or clinical review.",
+      "Contains public sector information licensed under the Open Government Licence v3.0. Source inspected 2026-10-07; original adapted educational summary, not an NHS-approved adaptation.",
+      "The source retains its 2022 publisher review; its stated 2025 review-due date is past. No current publisher clinical approval is inferred."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_modality_walking_outdoor",
+        "text": "A brisk walk can be recognised by being able to talk but not sing. The source describes a ten-minute brisk daily walk as contributing toward weekly activity guidance.",
+        "sourceIds": [
+          "nhs_walking_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "nhs_walking_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "modality_cycling_outdoor",
+    "slug": "modality-cycling-outdoor",
+    "title": "Outdoor Cycling",
+    "entityType": "cardio_modality",
+    "publicationStatus": "published",
+    "population": "Adults aged 19-64; general public-health education",
+    "prerequisites": [
+      "Use only an activity appropriate to your abilities; obtain qualified guidance if concerned about your health."
+    ],
+    "limitations": [
+      "The activity name alone does not classify your recorded effort. No universal speed, route safety, bike fit or cycling technique prescription is supplied.",
+      "No independent human or clinical review.",
+      "Contains public sector information licensed under the Open Government Licence v3.0. Source inspected 2026-10-07; original adapted educational summary, not an NHS-approved adaptation."
+    ],
+    "stopRules": [
+      "Pause the activity and obtain appropriate help when concerned about your health; this educational page does not grant clearance."
+    ],
+    "claims": [
+      {
+        "id": "claim_modality_cycling_outdoor",
+        "text": "The source lists riding a bike among moderate activity examples and fast or uphill riding among vigorous examples. Effort can change the intensity.",
+        "sourceIds": [
+          "nhs_adult_activity_education_2026"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "nhs_adult_activity_education_2026"
+    ],
+    "relatedIds": [
+      "topic_talk_test"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "extractedAt": "2026-10-07T21:12:54Z",
+  "reviewMethod": "Selected primary full-text eligibility and Discussion paragraphs read via the public Europe PMC XML endpoint; original factual observations and machine validation, not an independent full literature appraisal.",
+  "definitionSha256": "fc6bcd55cfd6e3fd6c19909c9da0109bc71ebddac50e858f83b235d614a911d7",
+  "sourcesSha256": "1c6ec0e92b92c96f4d56669738791e9d8a8fc77ab86174fe55833edb9bceaebf",
+  "observationsSha256": "671c62658edf02ed029c75bc86f53476a37d6c5fcc00ff3d30935245de05d377",
+  "identityIds": [
+    "science_specificity",
+    "science_progressive_overload",
+    "science_individual_response",
+    "science_periodization",
+    "science_proximity_to_failure"
+  ],
+  "sourceXmlSha256": "0f92699661a50164bbd97e7db21587f920da3055914327436b0947081ed2c082",
+  "inspectedSections": [
+    "Eligibility criteria: Table 1 population/intervention context",
+    "Discussion: specificity, progressive overload, individualization, periodization and effort/failure paragraphs"
+  ]
+}

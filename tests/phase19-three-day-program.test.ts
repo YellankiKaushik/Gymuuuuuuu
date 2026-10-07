@@ -23,6 +23,15 @@ it("retains the inspected weekly framework and an independently attributed origi
   expect(program.populationScope).toEqual(["older-adults-general"]);
   expect(program.timeContext?.method).toBe("source_guideline_allocation");
   expect(program.trainingDaysPerWeek).toBe(3);
+  const calendar = program.scheduleModel!.calendarExamples![0]!.days;
+  expect(calendar).toHaveLength(7);
+  expect(calendar.filter((day) => day.sessionId).map((day) => day.day)).toEqual(
+    ["monday", "wednesday", "friday"],
+  );
+  for (let index = 0; index < calendar.length; index++) {
+    if (calendar[index]?.sessionId)
+      expect(calendar[(index + 1) % calendar.length]?.sessionId).toBeNull();
+  }
   expect(validatePrograms([program])).toEqual([]);
   expect(
     programVersions.find(
