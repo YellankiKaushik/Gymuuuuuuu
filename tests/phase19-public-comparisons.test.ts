@@ -118,7 +118,7 @@ test("every factual search review date matches the explicit machine publication 
   const factual = documents.filter(
     (d) => !["route", "dashboard_widget"].includes(d.entityType),
   );
-  expect(factual).toHaveLength(433);
+  expect(factual).toHaveLength(435);
   for (const document of factual) {
     const review = reviews.find((r) => r.id === document.entityId)!;
     expect(document.lastReviewedAt).toBe(review.lastReviewedAt);

@@ -1,0 +1,10 @@
+{
+  "definitionsSha256": "e1058ade72e4125bed8cf1b380df17cee7578416659927f1c128c2787234eb83",
+  "sourcesSha256": "cfeebf65e8f077d09dafffed996151e259abe06b948d2e616fda30b46e4da199",
+  "recordIds": [
+    "ingredient_beta_alanine",
+    "ingredient_citrulline_malate"
+  ],
+  "extractedAt": "2026-10-07T20:24:03Z",
+  "reviewMethod": "Inspected NIH ingredient safety sections and primary review abstracts/methods; original bounded factual paraphrases, strict validation and no independent human review."
+}

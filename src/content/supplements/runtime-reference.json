@@ -1732,6 +1732,45 @@
         "safety"
       ],
       "licenseNote": "Brief factual paraphrases with attribution; no images or bulk copied prose."
+    },
+    {
+      "id": "src_beta_maximal_meta_2024",
+      "title": "Effect of Beta-Alanine Supplementation on Maximal Intensity Exercise in Trained Young Male Individuals: A Systematic Review and Meta-Analysis",
+      "publisher": "Georgiou and colleagues",
+      "year": 2024,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39032921/",
+      "roles": [
+        "outcome_specific_efficacy",
+        "source_limits"
+      ],
+      "licenseNote": "Original brief factual paraphrase, author attribution and source link. No source tables, abstract text, figures or media reproduced; no open licence claimed."
+    },
+    {
+      "id": "src_beta_repeated_sprint_meta_2026",
+      "title": "No ergogeniceffect of β-alanine on repeated sprint ability: a systematic review and multilevel meta-analysis of randomized controlled trials",
+      "publisher": "Liang, Kong, Wang, Yu, Chen and Huang",
+      "year": 2026,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1818755/full",
+      "roles": [
+        "outcome_specific_efficacy",
+        "source_limits"
+      ],
+      "licenseNote": "Original brief factual paraphrase, author attribution and source link. No source tables, abstract text, figures or media reproduced; no open licence claimed."
+    },
+    {
+      "id": "src_citrulline_malate_meta_2026",
+      "title": "Effects of Citrulline Malate Supplementation on Exercise Performance: A Systematic Review and Three-Level Meta-Analysis",
+      "publisher": "Wang and colleagues",
+      "year": 2026,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42356270/",
+      "roles": [
+        "outcome_specific_efficacy",
+        "source_limits"
+      ],
+      "licenseNote": "Original brief factual paraphrase, author attribution and source link. No source tables, abstract text, figures or media reproduced; no open licence claimed."
     }
   ],
   "entityTypes": [

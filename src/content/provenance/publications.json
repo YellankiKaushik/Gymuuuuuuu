@@ -9534,6 +9534,59 @@
     ]
   },
   {
+    "module": "supplements",
+    "id": "ingredient_beta_alanine",
+    "slug": "ingredient-beta-alanine",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections",
+        "sourceIds": [
+          "src_beta_maximal_meta_2024",
+          "src_beta_repeated_sprint_meta_2026",
+          "src_nih_ods_performance_hp"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_citrulline_malate",
+    "slug": "ingredient-citrulline-malate",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections",
+        "sourceIds": [
+          "src_citrulline_malate_meta_2026",
+          "src_nih_ods_performance_hp"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "muscles",
     "id": "muscle_biceps_brachii",
     "slug": "biceps-brachii",

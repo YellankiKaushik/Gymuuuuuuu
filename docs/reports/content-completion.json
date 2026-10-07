@@ -5122,8 +5122,8 @@
     {
       "module": "supplements",
       "totalIdentities": 272,
-      "publishedIdentities": 2,
-      "draftIdentities": 270,
+      "publishedIdentities": 4,
+      "draftIdentities": 268,
       "blockedIdentities": [
         {
           "id": "topic_supplement_definition",
@@ -5805,13 +5805,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "ingredient_beta_alanine",
-          "slug": "ingredient-beta-alanine",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "ingredient_sodium_bicarbonate",
           "slug": "ingredient-sodium-bicarbonate",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -5989,13 +5982,6 @@
         {
           "id": "ingredient_citrulline",
           "slug": "ingredient-citrulline",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "ingredient_citrulline_malate",
-          "slug": "ingredient-citrulline-malate",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -7093,9 +7079,9 @@
     },
     {
       "module": "supplements",
-      "published": 2,
-      "withPublicationProvenance": 2,
-      "inSearch": 2,
+      "published": 4,
+      "withPublicationProvenance": 4,
+      "inSearch": 4,
       "missingSourceProvenance": []
     }
   ],
@@ -7188,7 +7174,7 @@
     },
     {
       "module": "supplements",
-      "eligiblePublishedRecords": 2,
+      "eligiblePublishedRecords": 4,
       "families": [
         "supplements"
       ],
@@ -10812,6 +10798,22 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_beta_alanine",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_citrulline_malate",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     }
@@ -10910,10 +10912,10 @@
     },
     {
       "module": "supplements",
-      "missingVerifiedFactualRecords": 270,
+      "missingVerifiedFactualRecords": 268,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 2,
+      "independentHumanReviewPending": 4,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     }
@@ -12178,6 +12180,62 @@
         "No independent human technique or clinical review.",
         "Printed pages 70, 82 and 88 only; source hold/repetition ranges are not individualized instructions.",
         "No soreness-recovery, hypertrophy, rehabilitation or injury-prevention benefit is inferred."
+      ]
+    },
+    {
+      "id": "src_nih_ods_performance_hp",
+      "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+      "version": "Beta-alanine and citrulline sections inspected 2026-10-07",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T20:24:03Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Original brief factual paraphrase, author attribution and source link. No source tables, abstract text, figures or media reproduced; no open licence claimed.",
+      "limitations": [
+        "Machine source verification; no independent human or clinical review.",
+        "Only the identified sections or abstract were inspected; no complete systematic re-review of the literature."
+      ]
+    },
+    {
+      "id": "src_beta_maximal_meta_2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39032921/",
+      "version": "doi:10.1123/ijsnem.2024-0027; PMID:39032921",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T20:24:03Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase, author attribution and source link. No source tables, abstract text, figures or media reproduced; no open licence claimed.",
+      "limitations": [
+        "Machine source verification; no independent human or clinical review.",
+        "Only the identified sections or abstract were inspected; no complete systematic re-review of the literature."
+      ]
+    },
+    {
+      "id": "src_beta_repeated_sprint_meta_2026",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1818755/full",
+      "version": "doi:10.3389/fnut.2026.1818755; abstract and methods inspected",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T20:24:03Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase, author attribution and source link. No source tables, abstract text, figures or media reproduced; no open licence claimed.",
+      "limitations": [
+        "Machine source verification; no independent human or clinical review.",
+        "Only the identified sections or abstract were inspected; no complete systematic re-review of the literature."
+      ]
+    },
+    {
+      "id": "src_citrulline_malate_meta_2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42356270/",
+      "version": "doi:10.3390/nu18121881; PMID:42356270",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T20:24:03Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase, author attribution and source link. No source tables, abstract text, figures or media reproduced; no open licence claimed.",
+      "limitations": [
+        "Machine source verification; no independent human or clinical review.",
+        "Only the identified sections or abstract were inspected; no complete systematic re-review of the literature."
       ]
     }
   ],
@@ -13503,8 +13561,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 561,
-    "factualRecords": 433
+    "documents": 563,
+    "factualRecords": 435
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -15875,6 +15933,16 @@
       "module": "supplements",
       "id": "ingredient_caffeine",
       "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_beta_alanine",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_citrulline_malate",
+      "instructionalMediaRequired": false
     }
   ],
   "missingMediaFiles": [],
@@ -15883,11 +15951,11 @@
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-07T20:18:54.342Z",
-    "expected": 615,
+    "buildDate": "2026-10-07T20:32:40.725Z",
+    "expected": 617,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 615,
+    "unmeasured": 617,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -19580,6 +19648,18 @@
       },
       {
         "path": "/supplements/ingredients/ingredient-caffeine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-beta-alanine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-citrulline-malate",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

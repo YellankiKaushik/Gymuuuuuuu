@@ -2,6 +2,11 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/supplements/ingredients/ingredient-beta-alanine", "Beta-Alanine"],
+  [
+    "/supplements/ingredients/ingredient-citrulline-malate",
+    "Citrulline Malate",
+  ],
   ["/learn/workout-science/strength-adaptation", "Strength adaptation"],
   ["/learn/workout-science/power-adaptation", "Power development"],
   ["/learn/workout-science/physical-function-adaptation", "Physical function"],

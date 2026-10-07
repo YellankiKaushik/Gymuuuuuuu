@@ -20,11 +20,9 @@ test("six-step flexibility copy preserves readable source provenance in backup @
       exact: false,
     }),
   ).toBeVisible();
-  const details = page
-    .locator("details")
-    .filter({
-      has: page.getByText("Original source instructions", { exact: true }),
-    });
+  const details = page.locator("details").filter({
+    has: page.getByText("Original source instructions", { exact: true }),
+  });
   await expect(details.locator("ol > li")).toHaveCount(6);
   expect(
     (

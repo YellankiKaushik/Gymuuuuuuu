@@ -31,9 +31,8 @@ export function HomePage() {
           remain separate.
         </p>
         <p>
-          Source-backed ingredient education is available in the ingredient
-          library. Detailed efficacy claims and research protocols remain
-          unavailable.
+          Browse source-backed ingredient education and outcome-specific
+          research findings. Personal dosing prescriptions are not supplied.
         </p>
         <a href="/supplements/ingredients">Browse ingredient education</a>{" "}
         <a className="button primary" href="/supplements/products/create">
@@ -66,17 +65,23 @@ export function LibraryPage({
     (e) =>
       (kind === "ingredients"
         ? e.entityType === "ingredient"
-        : e.entityType !== "ingredient") &&
+        : e.entityType !== "ingredient" || e.claims.length > 0) &&
       (!slug || e.slug === slug) &&
-      [e.title, ...e.aliases].some((value) =>
-        value.toLowerCase().includes(query.toLowerCase()),
-      ),
+      [
+        e.title,
+        ...e.aliases,
+        ...e.claims.flatMap((claim) => [
+          claim.outcomeDefinition,
+          claim.population,
+          claim.formulation,
+        ]),
+      ].some((value) => value.toLowerCase().includes(query.toLowerCase())),
   );
   return (
     <Frame
       title={
         slug
-          ? "Reviewed supplement record"
+          ? "Supplement evidence record"
           : kind === "ingredients"
             ? "Ingredient library"
             : "Claim-level evidence"
@@ -97,18 +102,14 @@ export function LibraryPage({
           <>
             <form onSubmit={(event) => event.preventDefault()}>
               <TextField
-                label="Search canonical names and aliases"
+                label="Search names, outcomes, populations and forms"
                 value={query}
                 onChange={setQuery}
               />
-              <p>
-                Filter by name above. Claim-level filters will appear when
-                supported records are available.
-              </p>
             </form>
             <p>
-              {entries.length} reviewed records. Protocol unavailable until
-              source and clinical review are approved.
+              {entries.length} source-backed records. Personal-use publication
+              with machine validation; no independent human review.
             </p>
           </>
         )}
@@ -131,6 +132,57 @@ export function LibraryPage({
             <section key={s.id}>
               <h3>{s.heading}</h3>
               <p>{s.content.text}</p>
+            </section>
+          ))}
+          {e.claims.length > 0 && <h3>Outcome-specific findings</h3>}
+          {e.claims.map((claim) => (
+            <section key={claim.id}>
+              <h4>{claim.outcomeDefinition}</h4>
+              <dl>
+                <dt>Ingredient form</dt>
+                <dd>{claim.formulation}</dd>
+                <dt>Population</dt>
+                <dd>
+                  {claim.population} · {claim.ageAndSexLimits}
+                </dd>
+                <dt>Training context</dt>
+                <dd>{claim.trainingStatus}</dd>
+                <dt>Protocol and duration</dt>
+                <dd>
+                  {claim.timeframe}{" "}
+                  {claim.protocol === null
+                    ? "No single source regimen extracted; no personal amount supplied."
+                    : claim.protocol.duration}
+                </dd>
+                <dt>Comparator</dt>
+                <dd>{claim.comparator}</dd>
+                <dt>Effect direction</dt>
+                <dd>{readable(claim.effectDirection)}</dd>
+                <dt>Confidence</dt>
+                <dd>
+                  {readable(claim.evidenceConfidence)} ·{" "}
+                  {claim.assessmentDocumentation}
+                </dd>
+                <dt>Study count for this outcome</dt>
+                <dd>{claim.studyCount ?? "Not available"}</dd>
+              </dl>
+              <ul>
+                {claim.limitations.map((limitation) => (
+                  <li key={limitation}>{limitation}</li>
+                ))}
+              </ul>
+              <ul>
+                {claim.sourceIds.map((id) => {
+                  const source = supplementReference.sources.find(
+                    (source) => source.id === id,
+                  )!;
+                  return (
+                    <li key={id}>
+                      <a href={source.url}>{source.title}</a>
+                    </li>
+                  );
+                })}
+              </ul>
             </section>
           ))}
           <h3>Safety context</h3>
@@ -169,16 +221,18 @@ export function ComparePage() {
       <section className="card">
         <h2>Choose up to four reviewed ingredients</h2>
         <p>
-          No reviewed ingredients are available to compare. Every future
-          comparison will retain its selected outcome, population and
-          formulation, with separate efficacy, safety, quality and anti-doping
-          dimensions.
+          Use public search to select compatible ingredient records for a source
+          comparison. Read each outcome, population, form and timeframe
+          separately; efficacy, safety, quality and anti-doping are distinct.
         </p>
         <p>
           No overall winner, brand ranking or purchase recommendation is
           generated.
         </p>
-        <a href="/supplements/ingredients">Ingredient library</a>
+        <a href="/supplements/ingredients">Ingredient library</a>{" "}
+        <a href="/search?type=supplement_ingredient">
+          Search ingredient records
+        </a>
       </section>
     </Frame>
   );

@@ -561,7 +561,9 @@
     "cardio_topic:topic_talk_test",
     "cardio_plan:plan_5k_general_foundation",
     "supplement_ingredient:ingredient_creatine_monohydrate",
-    "supplement_ingredient:ingredient_caffeine"
+    "supplement_ingredient:ingredient_caffeine",
+    "supplement_ingredient:ingredient_beta_alanine",
+    "supplement_ingredient:ingredient_citrulline_malate"
   ],
   "postings": {
     "3": [
@@ -1456,6 +1458,9 @@
     "best": [
       212
     ],
+    "beta-alanine": [
+      561
+    ],
     "beta-carotene": [
       500
     ],
@@ -1937,6 +1942,9 @@
     ],
     "circumstance": [
       220
+    ],
+    "citrulline": [
+      562
     ],
     "claim-level": [
       32
@@ -3961,6 +3969,9 @@
       175,
       176,
       189
+    ],
+    "malate": [
+      562
     ],
     "manage": [
       7

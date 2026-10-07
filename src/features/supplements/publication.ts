@@ -147,12 +147,15 @@ export function validateSupplementsRelease(
         throw Error("Supplement source unresolved");
     };
     requireSources(e.sourceIds);
+    if (new Set(e.claims.map((claim) => claim.id)).size !== e.claims.length)
+      throw Error("Duplicate supplement claim ID");
     for (const section of e.sections) requireSources(section.content.sourceIds);
     for (const safety of e.safety) requireSources(safety.content.sourceIds);
     for (const claim of e.claims) {
       if (claim.ingredientIdentityId !== e.id)
         throw Error("Claim ingredient mismatch");
       requireSources(claim.sourceIds);
+      claim.harms.forEach((harm) => requireSources(harm.sourceIds));
       if (claim.protocol) {
         requireSources(claim.protocol.sourceIds);
         claim.protocol.safetyLimits.forEach((s) => requireSources(s.sourceIds));
