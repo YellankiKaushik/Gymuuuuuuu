@@ -3,9 +3,9 @@
   "adapterVersion": "fitness-os-native-index-v1",
   "normalizationVersion": "unicode-nfkc-token-v1",
   "rankingVersion": "field-weights-exact-prefix-bonus-v1",
-  "canonicalDocumentHash": "7ed18b8964260ffa2ed537a6e298422e8eee6717f182f1cadac92e99269d8765",
+  "canonicalDocumentHash": "3e968d6bdcac823fdb12fa579cdc5250cf2fefe24a448db7cdbc042f4b538e26",
   "indexHash": "c89411f419d039fabad0c7fb2b147acb91911e8247f84a2fe01337e2256b2d67",
-  "indexVersion": "deaa11ca9e29d758889d3c9b5789ddcd513bcdaead1c5cb789c2d854c771e499",
+  "indexVersion": "9204d575224137f67e3113cdd77debdad020391f2ef100761dcc82c5d9ef1a5b",
   "documentCount": 544,
   "countsByEntityType": {
     "route": 124,
@@ -35,6 +35,6 @@
     "body_measurement": 0,
     "dashboard_widget": 4
   },
-  "builtAt": "2026-10-07T16:20:01.000Z",
+  "builtAt": "2026-10-07T16:36:40.000Z",
   "locale": "en"
 }

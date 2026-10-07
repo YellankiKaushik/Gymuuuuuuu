@@ -30,6 +30,10 @@
 .phase16-page .comparison-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
 .phase16-page .comparison-card dl { display:grid; gap:4px; }
 .phase16-page .comparison-card dd { margin:0 0 10px; color:var(--muted); }
+.phase16-page .comparison-card { min-width:0; overflow-wrap:anywhere; }
+.phase16-page .comparison-card label { display:grid; grid-template-columns:minmax(0,1fr); gap:8px; }
+.phase16-page .comparison-card select { min-width:0; width:100%; max-width:100%; contain:paint; }
+.phase16-page .comparison-card select:focus-visible { outline-offset:-3px; }
 .phase16-page .backup-controls,.phase16-page .backup-preview { display:grid; gap:12px; padding:14px; border:1px solid var(--line); border-radius:var(--radius-sm); }
 .phase16-page .backup-controls,.phase16-page .backup-controls>label,.phase16-page .backup-preview { min-width:0; max-width:100%; box-sizing:border-box; }
 .phase16-page .backup-controls input[type="file"] { display:block; width:100%; min-width:0; max-width:100%; box-sizing:border-box; overflow:hidden; }

@@ -121,7 +121,9 @@ const report = {
   inputSha256: createHash("sha256")
     .update(readFileSync(`${root}/records.json`))
     .digest("hex"),
-  draftIdentities: identities.length,
+  draftIdentities: draft.foods.filter(
+    (identity) => !published.some((food) => food.id === identity.id),
+  ).length,
   publishedFoods: published.length,
   publishedProfiles: published.reduce(
     (sum, f) => sum + f.compositionProfiles.length,

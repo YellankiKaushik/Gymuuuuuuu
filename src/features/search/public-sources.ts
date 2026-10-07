@@ -15,6 +15,20 @@ import { publicCardioEntities } from "../cardio/publication";
 import { publicSupplements } from "../supplements/publication";
 import type { PublicSearchDocument, SearchEntityType } from "./domain";
 import { normalizeSearchText, searchDocumentSchema } from "./domain";
+import publicationReviews from "../../content/provenance/publications.json";
+const provenanceModule: Record<string, string> = {
+  phase_02_anatomy: "muscles",
+  phase_03_exercises: "exercises",
+  phase_04_workout_science: "workout-science",
+  phase_05_programs: "programs",
+  phase_07_foods: "foods",
+  phase_08_nutrients: "nutrients",
+  phase_11_recipes: "recipes",
+  phase_11_meal_plans: "meal-templates",
+  phase_12_recovery: "recovery",
+  phase_13_cardio: "cardio",
+  phase_14_supplements: "supplements",
+};
 
 // These compiler outputs contain only records that passed their publication gate.
 // Identity seeds must never be passed through this adapter.
@@ -134,10 +148,14 @@ function publishedRows(
       facets: {},
       publicationStatus: "published",
       lastReviewedAt:
-        typeof review.reviewedAt === "string" &&
+        publicationReviews.find(
+          (r) =>
+            r.module === provenanceModule[sourceModule] && r.id === entityId,
+        )?.lastReviewedAt ??
+        (typeof review.reviewedAt === "string" &&
         /^\d{4}-\d{2}-\d{2}$/.test(review.reviewedAt)
           ? review.reviewedAt
-          : null,
+          : null),
     });
   }
   return output;

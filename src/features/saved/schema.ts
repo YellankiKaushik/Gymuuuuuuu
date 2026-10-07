@@ -2,9 +2,12 @@ import { z } from "zod";
 import { searchEntityTypes } from "../search/domain";
 
 const id = z.string().min(1).max(180), timestamp = z.iso.datetime({ offset: true }), text = (limit: number) => z.string().trim().min(1).max(limit);
+const localRoute = z.string().max(500).refine((value) =>
+  value.startsWith("/") && !value.startsWith("//") && !value.includes("\\") && [...value].every((character) => character.charCodeAt(0) >= 32 && character.charCodeAt(0) !== 127),
+  "Saved references require an app-relative route; external URLs and executable schemes are not allowed.");
 export const comparisonFamilies = ["muscles", "exercises", "workout_programs", "foods", "nutrients", "recipes", "recovery_methods", "cardio_modalities", "cardio_plans", "supplements"] as const;
 export type ComparisonFamily = (typeof comparisonFamilies)[number];
-export const entityRefSchema = z.strictObject({ entityType: z.enum(searchEntityTypes), entityId: id, entityVersion: z.string().nullable().optional(), sourceModule: text(80), lastKnownTitle: text(300), lastKnownRoute: z.string().max(500).nullable(), referenceStatus: z.enum(["active", "orphaned", "migrated", "unavailable", "private"]), migrationFromId: z.string().nullable().optional() });
+export const entityRefSchema = z.strictObject({ entityType: z.enum(searchEntityTypes), entityId: id, entityVersion: z.string().nullable().optional(), sourceModule: text(80), lastKnownTitle: text(300), lastKnownRoute: localRoute.nullable(), referenceStatus: z.enum(["active", "orphaned", "migrated", "unavailable", "private"]), migrationFromId: z.string().nullable().optional() });
 export const favouriteSchema = z.strictObject({ id, entity: entityRefSchema, savedAt: timestamp, updatedAt: timestamp });
 export const collectionSchema = z.strictObject({ id, name: text(120), description: z.string().max(1000).nullable().optional(), createdAt: timestamp, updatedAt: timestamp, sortMode: z.enum(["manual", "title", "saved_newest", "saved_oldest"]) });
 export const collectionItemSchema = z.strictObject({ id, collectionId: id, entity: entityRefSchema, position: z.number().int().min(0), note: z.string().max(3000).nullable().optional(), addedAt: timestamp, updatedAt: timestamp.nullable().optional() });

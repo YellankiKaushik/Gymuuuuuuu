@@ -3552,8 +3552,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2c920cfba3b71df4c4c7857399c97d3113cd351880c9fe91a9fa58bb9857277d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2186173f32a708190021f4c5b5946d653304bfb9754608983a0672c92391795d"
   },
   {
     "documentId": "muscle:muscle_brachialis",
@@ -3572,8 +3572,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "44c820717b13e9bcbd5ba4b7e9e9cbb99bbb6be30d10930a63a56103bcd88966"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "4491f7a161bac3ab80199402ba1e837bb0202952d9fe0b75a31195b485214825"
   },
   {
     "documentId": "muscle:muscle_triceps_brachii",
@@ -3592,8 +3592,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "bca569c28befeeeb328a9e8b28b44060b2d944f3f27221da38c287823db5301b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9eac08b8d45e4cf1d5a8a7a0051025defcc35d40696fe9835ad88dfbdf78fe4f"
   },
   {
     "documentId": "muscle:muscle_levator_scapulae",
@@ -3612,8 +3612,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6f3a865b7ab27c5cf82bbe14d731bf4c0880416f8a20cf44f6bfe5897c2400cc"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "27cbaaae826fa98c7ec7965c29972f9d2b10d4d2a44a97fad7c8fdf08ca4ab56"
   },
   {
     "documentId": "muscle:muscle_deltoid",
@@ -3638,8 +3638,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "25f9f4e6449721555987b2c79b855e7aee3cf86cc88fc16a6e46b9dafc8afe61"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f7f4f958681638a4338e6e2d3c42ba866ab4da0b79fba169ec99e2f83ed52bc4"
   },
   {
     "documentId": "muscle:muscle_deltoid_anterior",
@@ -3658,8 +3658,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "36a687a28814268a160ea04c067e746dfbba2e58af45aa571d4b83a83436aac3"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "72afda153dae45b27f6ee65f299e71ca2c9e732e768eb12d86d3ebb26c082bd3"
   },
   {
     "documentId": "muscle:muscle_deltoid_posterior",
@@ -3678,8 +3678,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "57840d60c3fd2cf07a8572bf9c828b978505e8b044ef466678d0a86d989af5e3"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9c2017c4192d4ccf3f11cd0d0dd8eca15484e9422980fcec25ba6819716b38f2"
   },
   {
     "documentId": "muscle:muscle_supraspinatus",
@@ -3698,8 +3698,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "498313455b898e7e7a506b722b41c2146fd34203e7fa0200b766caaf8347ac91"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "51cfa301cda71e44fd4837da2ac6ddaf2481b4389e92569d1bb4ca20400627c2"
   },
   {
     "documentId": "muscle:muscle_infraspinatus",
@@ -3718,8 +3718,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "592d5fb2cb112b1341a8c91365674b35eebad96571920846a53b1409ee264716"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7f3c150c375212c2b3b94feff084ee4198c266a177527e6c52a3c60ce5b83628"
   },
   {
     "documentId": "muscle:muscle_teres_minor",
@@ -3738,8 +3738,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e379c8255d17a86881353d2ee37417f6d521934322c013a4e42f430c6c7cdb64"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "4c3eecdbec08ec9b27d875636a2877adc7b0f14f5a039f7023e1b0c70439a87a"
   },
   {
     "documentId": "muscle:muscle_subscapularis",
@@ -3758,8 +3758,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "99cfe99fc4db8dcf56ad773a52624192ae05d66322aac0320a8decba68925179"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "18117cf40921c56f505e62f786ffb62b759349348f2292e06053869c99841292"
   },
   {
     "documentId": "muscle:muscle_pectoralis_major",
@@ -3778,8 +3778,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4501038bcb86f900570d1c1d6ade95d5f567056111ac6fbeab8c7e71d79edcc2"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "35d5f5d65bfa14a0f3921600ebaafb45f4bcc24b48da2159dd8295d2ce6bb2c2"
   },
   {
     "documentId": "muscle:muscle_pectoralis_minor",
@@ -3798,8 +3798,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d56ac1a5305b79813ae9ae215a0a121fffa929d8b028a7ac35b92723c2a9b99c"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "369711be7c35a4201c5f86ea7bb2cbcd5ab01866835caf357c010ef58bac0c80"
   },
   {
     "documentId": "muscle:muscle_serratus_anterior",
@@ -3818,8 +3818,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "65debdf7117aa43a63931f256baeffa16578f84b76a8f1faa5680187116088e5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d8db08eca33008593d8f2d942fd18e3e68a56a5973abf22e6a5bb846e5235c53"
   },
   {
     "documentId": "muscle:muscle_latissimus_dorsi",
@@ -3838,8 +3838,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "deb134e473256d53bbc19548e92ec2ce834d9158dfb0f8abfe82888524f93f14"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "4ea4d98fc21c99fc79c33339d3e59bea4c985959125e1ccbc53322b3733d9455"
   },
   {
     "documentId": "muscle:muscle_trapezius",
@@ -3858,8 +3858,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "03d95c1e95ead5c989d40186e8b30f1d6a0921c9ddc68422e1444edd9ce36b43"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e6ad8954bcc2ce695ab2578f44c5a9fb412754961a6797c59181b82e2d94c0dc"
   },
   {
     "documentId": "muscle:muscle_trapezius_upper",
@@ -3878,8 +3878,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f90a1dc4d236a4c8ab74d91f8471be94c4f04655988b229a39b1bb62465dff37"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b76b1c8bc888f11185f831ce3f220ddc8e05afae08fd2cb8463d59639ace97b5"
   },
   {
     "documentId": "muscle:muscle_trapezius_middle",
@@ -3898,8 +3898,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a018b58810018503079d6966038c354efbd9682c2320885132ed2cf0f98ea288"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "dcfcd5d8607183e2a1fc3faa0202344cdad22f888dc4b33c03f77dae38cd71f2"
   },
   {
     "documentId": "muscle:muscle_trapezius_lower",
@@ -3918,8 +3918,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6cffb6fdbef18f0fe8e97e6452720764f93c2a08b9947e164bd3cc5cd866e2ab"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "41b8d89a7a691ca97c4f84264c95571cd91ae9d3b70985119b261b047fa2508d"
   },
   {
     "documentId": "muscle:muscle_rhomboid_group",
@@ -3938,8 +3938,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9044d60339dd414d79b260ff86e392a596b41179cfa1c7fdd22840d508c493ee"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "13a60e5d937a218c37ff08131f97b460c253bf0b4db55496d724bb96dfdf94ab"
   },
   {
     "documentId": "muscle:muscle_teres_major",
@@ -3958,8 +3958,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "25a55321b906c6bbb0e8f8208ef0b45f1974667ce9e7928bdd9bc94ea26f3179"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2cbfe3ba9d32d14e54a48e8f05f1a7fe9b74401df68afd03ae3580b0f16d5a19"
   },
   {
     "documentId": "muscle:muscle_gluteus_maximus",
@@ -3978,8 +3978,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "cabb9785b1a029abb415974545e03dfb96c940e17398c01b6fabefc8b6c800d5"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "03cc59b7d5609a900793624dfd6dd4873df4d30bdec7766569cf40d123d98956"
   },
   {
     "documentId": "muscle:muscle_gluteus_medius",
@@ -3998,8 +3998,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "53624f5682cd5c03e268dd095df6bbc47192504849a54a332ded93ae46e1c045"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "16b14f2f9a1f3e0c229dfc31eb4d30dc6eb96c655b7a6ce344a0b2a29bb06059"
   },
   {
     "documentId": "muscle:muscle_gluteus_minimus",
@@ -4018,8 +4018,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f0597f3eb8dc8d813e3284f2bb8b39bb6a1604d0d2212cbe885442ed32055403"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "d0fe0a602e221495363681e10a6bd63b01e7eac6f815237b71f42171e6760953"
   },
   {
     "documentId": "muscle:muscle_tensor_fasciae_latae",
@@ -4038,8 +4038,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "14af51883e9bc6a2b6765f9cf1cf905a4b0393dcf9e0dcadfcc5e8afe87d2997"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "fa21dc763747f23c94bf881efe7b815e3ab938e430fc21968356db76318c0743"
   },
   {
     "documentId": "muscle:muscle_rectus_femoris",
@@ -4058,8 +4058,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d36f2b60103dcede7a7d7b73474f16effac0dc8a6409e13211d4934b523ffab9"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "588c4750e5c8f04e33194b4b3c840a6d6338b2435dbf805f15b8ed00de5fc4be"
   },
   {
     "documentId": "muscle:muscle_vastus_lateralis",
@@ -4078,8 +4078,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "df2cc66deb91d0bd73cc8d731187c036131babfc99ed6ae244e52362c7a0cebb"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "44681259cd75e61cfc1872608f635f78d803fbe0220e0af1373ff4b54fbb52d1"
   },
   {
     "documentId": "muscle:muscle_vastus_medialis",
@@ -4098,8 +4098,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f41ca73e990081571bd967556929ae22d22c5860e7bbd9bcfdfbcf297e3b1663"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "c2924b70b81b6f7c883d36ffe32be86d5161ece4185a64c8908e6f8e81d5eaf5"
   },
   {
     "documentId": "muscle:muscle_vastus_intermedius",
@@ -4118,8 +4118,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1c400c775c2642d089c5d50b938bb60de3fbde13f5ef25998d5bbb19028da8b3"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "95ab75b54265c3667d02bdfe44dfeb2c51bb977c6ec14de3695d4b889cad9e79"
   },
   {
     "documentId": "muscle:muscle_biceps_femoris",
@@ -4138,8 +4138,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1cc14003f05569658a79c80dfae1ad3d5a4dec2bec2d86e2fb89d666e0a85f6e"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "8706a022a7024e98878a207452053d4b1b02e0ead8298ead6b566e2b9bbea875"
   },
   {
     "documentId": "muscle:muscle_biceps_femoris_long_head",
@@ -4158,8 +4158,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f5b44d0514496b6df9179bdfa46fc4777c8b734ca55601bf398700ae6e55caa7"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "49f63a0bfa3e132b3c06f6600f6dd33ecf1210343f69fccb43ab644ca1a6ee9e"
   },
   {
     "documentId": "muscle:muscle_biceps_femoris_short_head",
@@ -4178,8 +4178,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "af0f4d781978e478427ca50c1f936b8c2a0ba7114de19e1c3a5f948d3bda0855"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "a34fa7dd68612f6e3487a3f76bf945722d92f8e4f2d1015fc7903d26c1cbc69d"
   },
   {
     "documentId": "muscle:muscle_semitendinosus",
@@ -4198,8 +4198,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "96ded2ff27ecbd319bd4a6803f639bdab5dc349fd02720fc107003ddb7c21fdd"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "43cdfb6fa0af6b7b4bf338d12de4a12561d6a21068f1c07bd505ce180675e74d"
   },
   {
     "documentId": "muscle:muscle_semimembranosus",
@@ -4218,8 +4218,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ef20ded1c769e9b2851fd63004315438d87f9fd6123a7143e4c5d0a62c0aba8c"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "0b69d534a39241fe1bc128a6b81fe8d03c64e6c8c0057863831ace8e06b6573c"
   },
   {
     "documentId": "muscle:muscle_gastrocnemius",
@@ -4238,8 +4238,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d66f67894e40080201dab6f14adf282830d8db1fd96d4ffc2adbc12ffa1bd0cc"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "991dd7853863c1b9fc0cd2ed2dd65233e79992d60d05fc7395072a2d5036c533"
   },
   {
     "documentId": "muscle:muscle_gastrocnemius_medial_head",
@@ -4258,8 +4258,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6c01a4bc72e3e714d8f280255480d1b3ef775afb9a4bda5a3e8ae7787475bc19"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "8464f0f9e2b52effc77c91d6b3be53c93e0cbe2a38845063af187357dc446dca"
   },
   {
     "documentId": "muscle:muscle_gastrocnemius_lateral_head",
@@ -4278,8 +4278,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d1d39dd7b1ac11f37603877aa2b2b03fe0ff7a86bd186f22a2e26c740efc2326"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "124213a5ba3bbfac312f5c0b851bf07f56328435901b0902b088b3651441f078"
   },
   {
     "documentId": "muscle:muscle_soleus",
@@ -4298,8 +4298,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "375ff9d7c6d05371c3c77c91bba9db9375d00562f61e2818059629afcea72a93"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "6abfda2403e4a0f4a3bc3e50cb628c3c40fab73db84764ba0fd10973b94eeeea"
   },
   {
     "documentId": "muscle:muscle_adductor_magnus",
@@ -4318,8 +4318,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fada56f9d03c53212d6a20a651a8748320fea92651817f184c038e0ef626ae2b"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "1c7ff2ea9f39300e127ef6e2ca876407b4f79f39bdb830199df0c080b3311eb2"
   },
   {
     "documentId": "muscle:muscle_adductor_longus",
@@ -4338,8 +4338,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d043d57d988ed7357097c50f9bf16b604f465370817d2415b4ff79d85640abb5"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "40c2eea66bb5ac945901041f4409890ebd1a65f0ecffdb2af900068ffac3fb0e"
   },
   {
     "documentId": "muscle:muscle_adductor_brevis",
@@ -4358,8 +4358,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8457567d26abf1fbb789d123b1debee9778d342c9a24c44d846cd1aafcd13b54"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "93e0c73e179b7a3de9b8b0858f54825e9046d5141f83a6bfc81516a5249408d3"
   },
   {
     "documentId": "muscle:muscle_gracilis",
@@ -4378,8 +4378,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f18c365025a14bc24b8c78745adc02f75eaead1d07e924ad549bcfa7f45c08e4"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "bfa969e8bcdc383b22c308095eb58606cc7cfae31b5ef60fbdf8221526911ada"
   },
   {
     "documentId": "muscle:muscle_pectineus",
@@ -4398,8 +4398,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "12b6c43f187d3b0e9dd848833df82850221fc5a509a9a567f4c69c875f7a66a9"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "de5960760dbc637c72fd46ebc4f616a5077e9dc79ddf3ab32fe159e9ed7d3091"
   },
   {
     "documentId": "muscle:muscle_tibialis_anterior",
@@ -4418,8 +4418,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "008802df7e3cd0e5f1fa21d292cda1c1db2841685f28b1a75061677f310d3450"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "5840c46e1a9e06178431e12080b7256a177bf8fd7a8ee6d9932dbdcafb05ff8c"
   },
   {
     "documentId": "muscle:muscle_deep_hip_rotator_group",
@@ -4438,8 +4438,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a17cc4c478c220a335223c545e1480e90220ddd5421e0c2d7145d58213599153"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "30664678cb4b60a70cdaa02c39d6f95ca85923ab720fbbc0b0296338c8a1942a"
   },
   {
     "documentId": "muscle:muscle_sternocleidomastoid",
@@ -4458,8 +4458,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "559a65f640a94de772996dda2aaf840eb546e0680cecfb315dfe969988a1ca07"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "21acdf1d02c46d0118756b07683da947620e6bb03b4991557cf3933beeddf116"
   },
   {
     "documentId": "muscle:muscle_deltoid_middle",
@@ -4478,8 +4478,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "93bf0144070c993ef4fe33b1d7fbe2c6831f9cf7d1758aaa6e520fd217b61228"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "e2987cc11b9ac4f3263201c6e75d789d35528ff2bcb9dfe93e2199852ebbe9a9"
   },
   {
     "documentId": "muscle:muscle_pectoralis_major_clavicular",
@@ -4498,8 +4498,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9d4ba8c800001332cacacafdeeb4035778597f911913d8b81200681745f48c30"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "8a05a5dd26f5eeacfcb8c0f4c93e6cf7ff792d517aef6c31537348f1a13d56e1"
   },
   {
     "documentId": "muscle:muscle_pectoralis_major_sternocostal",
@@ -4518,8 +4518,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8da8ed5e286ba147810a7c467a9b97a3eea851cf82549f00c44be61ad5080201"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "331094cef85e8b8698cbfdc956787c366ee8e006958a2f7e730a3882b0283f9c"
   },
   {
     "documentId": "muscle:muscle_erector_spinae_group",
@@ -4538,8 +4538,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "322f5fc62ced700a340d7a23483bb3915790f9e57b1a25326e30c635ee3b6c0c"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "33d7f50d0d6bbde2a7f35dc92a4686528a41a762a9323bb24207a4617718d525"
   },
   {
     "documentId": "muscle:muscle_multifidus",
@@ -4558,8 +4558,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a26bf2de07c3f2d178cd5935399d59c9f2ae49f27d266d3a58b73bf7a83640d3"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "4141bcd25e67554b9e544d5ad56fa2a7e07e8a4f1f02356e66989b2a07a97980"
   },
   {
     "documentId": "muscle:muscle_coracobrachialis",
@@ -4578,8 +4578,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ba0af371121eec5647a29580e14b1ae03e4ee8770d35dfad31913a2fa51767a9"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "46b8adaedbb1268754129f9248b9c49fccc475b7df2ba1146550ea441ad0f9f8"
   },
   {
     "documentId": "muscle:muscle_brachioradialis",
@@ -4598,8 +4598,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "20204fe873be85d046d205128a20b1885bbc9cd7d818ec76f1dba89639fc7427"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "e9eafdd5c90bfbcfa3a709dd0257a8c7e01f9f891772233f3e24cfce1739dded"
   },
   {
     "documentId": "muscle:muscle_forearm_flexor_group",
@@ -4618,8 +4618,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "cd85519a50ba1a00a00a43f3a5055ca71ddc9cbae1b05d9d898be2f760bea214"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "9f130ba3430e890f92f3ab9829ff9035d7b8e27eb4cf0fa42e0cef3ca7c70556"
   },
   {
     "documentId": "muscle:muscle_forearm_extensor_group",
@@ -4638,8 +4638,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a97c26af3a1791fd51cf8eab2babe56d43e7a9f752e1bd01d25fe4ee84479b7c"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "a3035c414476b79619bcde9d7c873544bc800e9c65b94f5afd28091ffa4d899b"
   },
   {
     "documentId": "muscle:muscle_rectus_abdominis",
@@ -4658,8 +4658,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "93ab186278e2738be9140d3a0132a0a1e8b2d6bb479990fbea10a58744dd7d78"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "9e7069420420d16d9b585a5f4de15ac658e86b5b078050771581588d4e2263a7"
   },
   {
     "documentId": "muscle:muscle_external_oblique",
@@ -4678,8 +4678,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b0ca9e77e2384c9b64246f628dd8fb2aaee9113a67fef79890bf2bb20752f21b"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "55b0d28f499b8063bffb92dbe9836d112cc3444fdca75e465364700940bf813f"
   },
   {
     "documentId": "muscle:muscle_internal_oblique",
@@ -4698,8 +4698,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "279279b324aaa531c4c6043a023bdacb4bb83e51e3695ee3306192cbe32af26b"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "f4d527d8a0de47f4114af45db9fabe8e1bcf61f418e591b87047f6faf333e314"
   },
   {
     "documentId": "muscle:muscle_transversus_abdominis",
@@ -4718,8 +4718,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "523d1afc1d41e9643a2049c2b5d9413170af8863fcd95a5024c5c5843a5f0011"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "1eece5250754e76fe1431fddc36a8a7e7ebd3e268c433ca4d6279a84a6d1358b"
   },
   {
     "documentId": "muscle:muscle_quadratus_lumborum",
@@ -4738,8 +4738,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1e9323638b61b09d44f70ea5ccb85a524d8d09a2d502bb0f3766570c3f48ae13"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "59fe16e9646f46beb307e4e81f8a9aae1bec1f1e7b74ddded8b6cf708fdb4abb"
   },
   {
     "documentId": "muscle:muscle_diaphragm",
@@ -4758,8 +4758,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e0458a2c0b3b47bd375978909ceaee639b6425d5e0cd29f090d7554e57593f85"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "afe1219969b37ca5cd8c47a1d7f7af08d696338fc42bd1366cec3728e0c84fed"
   },
   {
     "documentId": "muscle:muscle_iliopsoas_group",
@@ -4778,8 +4778,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "aa80c38eaed07e0db39dd236894523d5e8049ff1cd57ac1dd3e41d475f7d2dcc"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "66d64656c067bb76ed55399ea9fb63c928684095c043ac9f962eb2efb5c9bc60"
   },
   {
     "documentId": "muscle:muscle_sartorius",
@@ -4798,8 +4798,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "70d7be983cf6dc4986d7f214d07cc030393dfec72487e85683ffdb8925982806"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "71adfd9031db08cc6c0fb7cd28153ff0db2c7f08d9fd2258b823d72150584dc9"
   },
   {
     "documentId": "muscle:muscle_tibialis_posterior",
@@ -4818,8 +4818,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b90f9636fb44f65ccf5e7b02633ca01fc922beff55332fb0c421ff51845f7051"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "62bbe93152c2ef9b70f955a84461824019afe1418886bb3a58373d184f32a081"
   },
   {
     "documentId": "muscle:muscle_fibularis_group",
@@ -4838,8 +4838,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "21d71682eb79750a1531f27461c220f7371015b4602c07a5aa0f68424db30b7b"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "3e7e2e83a47ae2226e25c9040e9bca70c78548e384ff5bc837b7bdef6d638b0e"
   },
   {
     "documentId": "muscle:muscle_biceps_brachii_long_head",
@@ -4858,8 +4858,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9f461a9acee76bc030ba1ccb41c70d62acfde9327af57ab9b270d9732c68bd01"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "c20c7ce56af1783fd841de88a95f337ac8ba6d43df14d627f3bc765d68f2a2f2"
   },
   {
     "documentId": "muscle:muscle_biceps_brachii_short_head",
@@ -4878,8 +4878,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "cb8a487c0b3672b9b526427b567368f399fa3a301633601ed34ed3840fdd6f5d"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "9de51c2ebe140ff4589b12f15bf44cf6c6a1a716f3613b08549c5a3398b40868"
   },
   {
     "documentId": "muscle:muscle_triceps_long_head",
@@ -4898,8 +4898,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "043ac1940ff39387ea4f9f6b40e6ce29327badba5ae6c93516f14e5c9efed9b7"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "f6e00f5fb2174083aaeb7941a5b48a446912b5bcf4bdd7c9a5c4563131eabe63"
   },
   {
     "documentId": "muscle:muscle_triceps_lateral_head",
@@ -4918,8 +4918,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2204a652e220ec9e3513848644c56d6f564820d4198da2a5a1597329a47ef876"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "e963b1730ee9e144720b74021745ca3df6de7bdff600f6c0492eb83a274a9b12"
   },
   {
     "documentId": "muscle:muscle_triceps_medial_head",
@@ -4938,8 +4938,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "eeba445e00d3d484e95203ea8e620e95a6dd5e80a79ecb87a8aa91bdde69ed12"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "30f50685fa1d7bec74b1c117b2926b90be2a96b9ff9fde7e23d1f46459c7bfed"
   },
   {
     "documentId": "exercise:exercise_dumbbell_curl",
@@ -4958,8 +4958,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fa0179d94f6a865f9ff877b26c12cefabac2e0db3060dfbb1094f20246c8a163"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "eeb187e3ef4026cda6d88151cdfe339fe0f81694e4cc47d6a488b008cc9e9916"
   },
   {
     "documentId": "exercise:exercise_dumbbell_lateral_raise",
@@ -4978,8 +4978,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "178939ebe012b454d2cc0567eeec8cc7b08461afb439007e0cd21597593f5428"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "98202ac48490b66c3de54a977534679eb41122e98f79e8c49e4f0cea4a6ac373"
   },
   {
     "documentId": "exercise:exercise_dumbbell_front_raise",
@@ -4998,8 +4998,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e6149fd4c7e2e65a4e57c7270f21f754738ee62e88f54c09e3010b7f85ba7fdc"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "8fa74e25597d3c44f0e4bde8c4999f5570195f366b311e3d1c40e8cdbd35b761"
   },
   {
     "documentId": "exercise:exercise_standing_dumbbell_shoulder_press",
@@ -5018,8 +5018,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f50d25cde93e0a119fc5f92badb2e1b28d066006a950006a06cd1d07a73174bd"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "71de8c5b4222e2eadff4fa0a0ad468cd99f0ab01b77fb677a170ed3439cfd749"
   },
   {
     "documentId": "exercise:exercise_seated_dumbbell_shoulder_press",
@@ -5038,8 +5038,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "cb688ea9015f743f2f856a56b0b1fba3fc65cb84b6188c702db2fb2abc7f5b2e"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "370b2e20437da015a1dfe95d8b6a63327a4d2d228e5b80097055e926e3293db7"
   },
   {
     "documentId": "exercise:exercise_dumbbell_overhead_triceps_extension",
@@ -5058,8 +5058,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d5c3dd6cf581f83f8fffb0481c5759e1b5228c226734594ad92c4eb4bba6068c"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "759d5dc9a54c83e6f457dac69d8f195a886aee589bf1c8862c0b153618d11984"
   },
   {
     "documentId": "exercise:exercise_single_leg_calf_raise",
@@ -5078,8 +5078,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2d116e6c7a1a18f59a345bdbf5fa94b255c67dca79a49eaddc23dcc9a67ad2a4"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "478c0c89ddffd3506e3433611e6a382c494cedf77ec0e62f03ff402916558630"
   },
   {
     "documentId": "exercise:exercise_bodyweight_squat",
@@ -5098,8 +5098,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fdbf538afab2cadd623c1c4b2c658340bbad474faebbc16ecacb655133a3881c"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "b7a768e3bda2fd5d84fe15a62f6836ea7ca70fcea727e5c56f5b1fd79ac54bdc"
   },
   {
     "documentId": "exercise:exercise_one_arm_dumbbell_row",
@@ -5118,8 +5118,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1b53b2bafd3903aad4272dfbed951f33127b3309e88023b728b0df7abe483362"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "fa8c3316ef511a740f7dbbca77027fdc49e19cf36a6b0e075eea73899725cd72"
   },
   {
     "documentId": "exercise:exercise_incline_push_up",
@@ -5138,8 +5138,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f3ad6a94ba323faeff5f4f6cddc0a39c01c66646351d7c786af78d253f3d6fe6"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "e7edb0394a16f0768ab55758b06cfdd23ff71799d2ad428118eac3f8a6f3441f"
   },
   {
     "documentId": "exercise:exercise_standing_calf_raise",
@@ -5158,8 +5158,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "7bf56608b11711649ee97682574479497ccd4b9fbea86d6aca99248a1360a3eb"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "5e4f1f5a21fbd17743b8cff2f76aa820e29288f15be04b037cbfb8180a536768"
   },
   {
     "documentId": "workout_science_topic:science_consistency_adherence",
@@ -5298,8 +5298,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "eff9727b6ffcd6acfd965ed8a9ac54f41d33dc6d59f2a385962c8922ae4c7416"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "701850948f4f8a793da3b916eee854f5e3a5af275e365c4a83c80f278caeb8e5"
   },
   {
     "documentId": "food:food_banana",
@@ -5318,8 +5318,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "620d1010a0640d1fec8b91ea0bc7f51789b306e9be8d333fcc87d7635cafe7ed"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f29c1ff2e20733dfe497f9c0d772f3980be753f23fe4ed11ce9811881a1018c6"
   },
   {
     "documentId": "food:food_carrot",
@@ -5338,8 +5338,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f6bdfcf9a172924d16a00151ca0611c4eef5a2bd51b3ea7b790af610fc3b47f4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "6eea62064831f55c908dae6d8b2a9e2c551171555d77dcd2006f3cec67079bfe"
   },
   {
     "documentId": "food:food_spinach",
@@ -5358,8 +5358,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f0c5186e1833e333466f31072c6494cbabe9ac5ce76950fd9ce7c200ddb04138"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c45cbb877c4172aa56c02892faf060781cb8e43bde7cfa56d206973a10b1949c"
   },
   {
     "documentId": "food:food_almond",
@@ -5378,8 +5378,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "53a5984784179c6ef917b8017dba4e81652d29d648efe6f51c6edb0882283dcf"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "a73c4430b970bba4cf3cfc1c0eeb57ff0ede9113bf3b67140ab78b5853e52b7c"
   },
   {
     "documentId": "food:food_pineapple",
@@ -5398,8 +5398,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "43b776a9e806d932f6f9ce3a38fd3d17734ce4d6db6b7f27d3563c97a3ed7db9"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f9649f88e3289f13f7ddb125f84d4f909b71a86edf46309969f102ec5eab02b1"
   },
   {
     "documentId": "food:food_strawberry",
@@ -5418,8 +5418,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d08724eea7c0b8d4536d083f934426c3ed0aaf3a39fd16a05ad5e5e6f2e49bbc"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f0aba4719da2c539f6f7e84ad18b4157413730226aada3d22ceef01885810144"
   },
   {
     "documentId": "food:food_pear",
@@ -5438,8 +5438,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "deaee5e932b306275d75d34898c33a328596fac8462243577609084f8ed2b375"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d93918a14dc19927850f05e4d1c85515971670e495ae8f3bf827da8d89723f08"
   },
   {
     "documentId": "food:food_quince",
@@ -5458,8 +5458,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3940e361c3e1b6cdd06215775e1bbb140687e57e2a34630d0d85053445edee36"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "a27f15c92fab90baf532a11f79a0ff9dbd19e2d65580c1443be9a8d6d3c7c3ed"
   },
   {
     "documentId": "food:food_lime",
@@ -5478,8 +5478,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "54f3c220f2f6668755c8f5514aaf45b91943793e8c6d414caf5a2b83c8b84052"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f7cecb186bdb6ba8a92c0274b443a3a15e616bbae5531c3486e704e6f8dfaec7"
   },
   {
     "documentId": "food:food_pomelo",
@@ -5498,8 +5498,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d778cae04b0745e250b271287ffccfdf8565b4f9a8d544dca4d535cdf51aacd9"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9d54f2a867995d3a6a10454b5da69f5f970cb4955d309bf06435284e7de4a2b2"
   },
   {
     "documentId": "food:food_mango",
@@ -5518,8 +5518,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f6da1633ed65fd8991dd9c3f1578cedc9faf28aaa2f1f2a16677175746fae6ca"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "de31bb4c19758a0a879626760ee6e13dda40ab3cb3a01862fbd70c704676f232"
   },
   {
     "documentId": "food:food_pomegranate",
@@ -5538,8 +5538,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4d77410d138530175f2743cde64e7709f408341d1aa7a7f5da05fea4f4448bb5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "920a8303e06bd0528de0b71a0bbf0ce4e4fe9bcb8f16c6fa5b5c7193ec81861e"
   },
   {
     "documentId": "food:food_sapodilla",
@@ -5558,8 +5558,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "bf1d858466a75d72e162628553daf3f4642c43e2e39d73e11c0bec6160cd7ac6"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "539c98ba8985a9f88e89528a8e26e7a9982e5cd7924d3dbd7e253f8319e93997"
   },
   {
     "documentId": "food:food_passion_fruit",
@@ -5578,8 +5578,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fc939a55e4701dd621bb2862d55f476db0ed11df6850ec424dd8f637c02e4589"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "ac228a50faa920fbad794efc523a78e342fc6d2fb2f348bdb76d3d971e23d278"
   },
   {
     "documentId": "food:food_lychee",
@@ -5598,8 +5598,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "90b0d3866d79bd6fd5e48500f63ef26eb778d1fe9097bc3d9f74fbbc9a9ad23e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "641d00fbc1450a7875b24d5716561bcf9b45a9dd07c01d2f18b8c69fffa480a3"
   },
   {
     "documentId": "food:food_jamun",
@@ -5618,8 +5618,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b9d0920f647ba16576e5bd49dc46eb3ce88773e7795552eff4ab63b04352df5c"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e787633948fd6395c6c197ec6027053bbbe878b749175c928bcd064de4ffd554"
   },
   {
     "documentId": "food:food_mandarin",
@@ -5638,8 +5638,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fbd93f6d3476e45630d9cf86cbd0dbf9541929b2f226254bd0fac1366af65337"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b7923916829def4b29c464efb78ff8ab7f6c84604827587b90f45e7e3bd43a26"
   },
   {
     "documentId": "food:food_watermelon",
@@ -5658,8 +5658,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9e7b3835f415c21f51fad8ccc49a912f08b237ab93da2dfdacd7f944885ea735"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "894ca74283df90ece99e6cfbd2accd039d22e1302bc829a0f265fbf573eab9a8"
   },
   {
     "documentId": "food:food_muskmelon",
@@ -5678,8 +5678,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c0aecfb40dba67d7f113a2094f8e59d9decb05fa0c1313236d5160867830945e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "60cf7be4981b229f75cfb0a5559d3ad176f567075c28148c8902bb5be2342638"
   },
   {
     "documentId": "food:food_raspberry",
@@ -5698,8 +5698,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "feddf44ecda701884f79fc02850112cd6628c5faf78b3a5e8185fc765bb04ef0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "99c8cfcacefccfcb8526f9c235b202805c9d4838d2bee01fd376298e88b3535a"
   },
   {
     "documentId": "food:food_plantain",
@@ -5718,8 +5718,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2b3249fee8500a59fd681ec420f2d20cf8d1b3eecda18d395f74a33cf0dc5b88"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "8d37a6643b0d499d69e139f26a62de46237262462b3685a6ab35c6f04491867c"
   },
   {
     "documentId": "food:food_cucumber",
@@ -5738,8 +5738,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8d54307ba84cf85845de681ba533e426d3e29bf7bb8e56c774cb8d90e300e83a"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "589e28f527a24edb57b05ce970b68b6200f75a21bc5b9f83ac430cdc7e81a60d"
   },
   {
     "documentId": "food:food_pumpkin",
@@ -5758,8 +5758,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c879567dd93a774fd6ab910635ca5fcbbfafa5779fdc2c8a31ab0b35a4e309a4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "1cff00bbeb69a54f740b698ec59cc5b127b380a72d95a466c32b20b4f30d1582"
   },
   {
     "documentId": "food:food_kohlrabi",
@@ -5778,8 +5778,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "41535a113301b7f633921e103db43ea770751c4279ee42f05320f9b66f90aab0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "bac361772c794c3285f1238f6271fbb3da9ec3778a6e5736ec2e27a9330046d0"
   },
   {
     "documentId": "food:food_beetroot",
@@ -5798,8 +5798,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ac3d9032f84eb31699b1a74c16cf68168a88340bd4fd9b6a74525fadf54b0c8d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "84d2fd65a704aa71c44573e6683c34f6fe6c063a2e87dff948a3dc4803884008"
   },
   {
     "documentId": "food:food_asparagus",
@@ -5818,8 +5818,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dc806f8894be03b00a9d3ad206b2333931bcfe04864a8aebaa53464e294b57de"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b8890e890c153a61d03ad7e94e213dd5cadb544be04a17833a0019026f87f04f"
   },
   {
     "documentId": "food:food_eggplant",
@@ -5838,8 +5838,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "008f1505d2afbfda3bfe4d40e29aa12e886e24e3c53b8f5d6870b220fb2daca0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "0ec1c516efa1012fa6541a7c051c49f94816c4a4f2e15e2eb6f58d02069d827b"
   },
   {
     "documentId": "food:food_garlic",
@@ -5858,8 +5858,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e0f58ac2ebe235fb38c8949cb9d039c5262d7dee37f0953fb9229eea5e1deee4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e3bb956b67cab38d6a908d988ba9b1168d1e9afd1ac3c324e6d822c27f88b4ca"
   },
   {
     "documentId": "food:food_leek",
@@ -5878,8 +5878,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c9f202a17e76ce4f6732d61152900a9fc8360b4d2b665a7cef3e635175b2cdeb"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "5baa1aa7355d62f715c6275120455c22e0494a70d93cc01af8317c5fff5e2e96"
   },
   {
     "documentId": "food:food_romaine_lettuce",
@@ -5898,8 +5898,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9d204f4d559dd1562b4ad4072f39914a69ca336d334bea8de30321d1d596c79b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "27ae2bba2e91927362356bc2cc7c4c5b5d5119c13826f825f2a7ffd94680a118"
   },
   {
     "documentId": "food:food_mustard_greens",
@@ -5918,8 +5918,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6b4f2b9ecedae61b39495c7985392138f2dfd9b19d85a4c54fbedc1d1357fb1b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d4179123163595951f39a1967e84ab931eb18d514fc56b5c630371d9d7df2290"
   },
   {
     "documentId": "food:food_okra",
@@ -5938,8 +5938,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d1ab21742e992b5622c3258f54a432c8dcfb4887b046e3e3883232a12a385419"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d00bc4f49c358f96a6472dc70cebbfd95c89c60d94e6d81b390bec56f57f3121"
   },
   {
     "documentId": "food:food_arugula",
@@ -5958,8 +5958,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "950e902e8265016c1c2b3574f6426a18fd3371a227dfdec1fec5b73faa673a49"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3a19ea2d0fdf6edae145b6d4b46255f2ebb27281fb8f09005d388bde9812c7ee"
   },
   {
     "documentId": "food:food_endive",
@@ -5978,8 +5978,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2827b6d1513a77d8e5ae49d93e035822bb2abb7231864f13a59ad0cce10d9604"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f384ecc55bb85eacac608fbf3f8c1af0f78d1172177a5f58ebadafd007e29844"
   },
   {
     "documentId": "food:food_amaranth_leaves",
@@ -5998,8 +5998,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6cb0deb7da28f35bdaf5df0c12d43233a02a2bcdef1b7265ef2f46c0d74288c6"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "99b30a768b784b6012ad55afdadfe9841fa86de6beae1df3720fcce171cd2a44"
   },
   {
     "documentId": "food:food_drumstick_leaves",
@@ -6018,8 +6018,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "44f296dfa4c61b76ce373bcfaa2c493e48bcaaf12d2e2fec902f2bfd16710a59"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "08e6cc6f06a6a8fff4e8b17f2076e270fd161dc2e3b31fc8d03ab4dd1f48db91"
   },
   {
     "documentId": "food:food_colocasia_leaves",
@@ -6038,8 +6038,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "92ae0c2a2fb8d91ef76862191d92ac7c2bf4db33d43eed8a57e9b923b0c77848"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "52ea9e0f773bb2ed22e7e8204a97a79567ae96cb61aa500999f7cab10f7f9b10"
   },
   {
     "documentId": "food:food_taro_root",
@@ -6058,8 +6058,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "85a39eb41736d69dd774946b9197fe7b6ca09212b745a57f402afd89e010f6fb"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2de301e286ff87a636aeede7924d0dc9b2ba0659efc92c16b4b012518a6db172"
   },
   {
     "documentId": "food:food_zucchini",
@@ -6078,8 +6078,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "22646defe5e06e43ff67705cd7c9b2a6463a202ddc2b3ba4913eb1857133799e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "ff2f083e15b58a1a92e4d391ecd46866c10b11a014404490b897947ae506e720"
   },
   {
     "documentId": "food:food_butternut_squash",
@@ -6098,8 +6098,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e2a339e0c996eb49d433ea1434b8aff1a04abacca6a6c7909618b1811c696af5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d7f3dabbfb99fe2ba375c069b795d253ad7bc52d3f1ceac77e2ead44d4673e11"
   },
   {
     "documentId": "food:food_chicken_egg_whole",
@@ -6118,8 +6118,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "73e279672605c7bca77527a67dd1d305517a64a51427078c16f19dd341bb2129"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "7a0eb34fc4ed23eb4fed69900fc3f460f2c8ef8bff3e9aed9ad8e8dffdb23806"
   },
   {
     "documentId": "food:food_white_rice",
@@ -6138,8 +6138,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3957e595f343ea90809887c603145ce9a39723d3844f4a87648cd94358499c2e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "be1e583364a34b0c3e7f430607db3b44e47a96a6cc4bc3d9f7e706b1263ea6cd"
   },
   {
     "documentId": "food:food_olive_oil",
@@ -6158,8 +6158,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "22cb42d3ced1dd2a3c2836ecd625ac47f4829e5da908d836fe678e221e18c4b4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "a6da41d15f0837a617da3eb8edde6a8cbde4a4d005761cc6fa50b7dea1a8103a"
   },
   {
     "documentId": "food:food_potato",
@@ -6178,8 +6178,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e3cf18dc93bb0037eab7163dc7d818a37a0e43ba13abcbc39d08c287bf1effac"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "757e9cfddeeb9cb1fdad3d62187a191c044438ce6bd577b735dbc66c6a08b60d"
   },
   {
     "documentId": "food:food_chickpea",
@@ -6198,8 +6198,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d2e3579295a65683207b2628979d6d6b053b2a069e374c2b070acef019a6bfe4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9b1651ffedc88742e4d309eab035ac631231bcce96f158e96405942e2c0d9605"
   },
   {
     "documentId": "food:food_orange",
@@ -6218,8 +6218,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c6bdf98e76617b5c2517081fa21cebcbae08c1ab8ccd4418fc2edee7f2cdb53f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "21b59f56b458a2d65b69c62b98379051a7a3890cbe6c55406c3cb248747313b0"
   },
   {
     "documentId": "food:food_lemon",
@@ -6238,8 +6238,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "0259314588379ed5c968316145fc9d44a5cf8c6fd562a6524b9dc452a7846b21"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "4ab15b605790afdf3089fd6172c879a70537f8d2e399a07ebf096770883c71ce"
   },
   {
     "documentId": "food:food_grapefruit",
@@ -6258,8 +6258,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "35b5f9659d1d10690da4b841f644ca18aa3e401f5b83f9adb76ec9c879bdb2ff"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "5f643262284b18a998615cd1cce1311816f02894ee604eaaa89143f603dd877d"
   },
   {
     "documentId": "food:food_papaya",
@@ -6278,8 +6278,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ea8b38975f89c081db3aa13d92ab7151583fb22362d1a83fd1b395a1753f0237"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9072b3a481bdba99675e61b1bc0a22f25def8b9cef8e4003f99e37ba66afd445"
   },
   {
     "documentId": "food:food_guava",
@@ -6298,8 +6298,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8befe46ea894b53ca3d0755d79abfc7c02a0d0964c788c76b18af7f4f81ab520"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "43cc6a432eb5efaffe6a35937981dcaf474a9bc675b1f116eb8bf53cbd470163"
   },
   {
     "documentId": "food:food_jackfruit",
@@ -6318,8 +6318,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d8e6e3fec7f67a6303dc431fbbecc9e19b694ac118f627fe236592ff23995eb6"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "bdc85024950802d33207caa9134922ecc337903b1d94ea563f8f37633169f7a3"
   },
   {
     "documentId": "food:food_avocado",
@@ -6338,8 +6338,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "440abaf75ec4b9e44e2b6605cb6302d94b0e59c9e13237a8df5f04b213400ccc"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7da8942b278e0cb8e435b83f095cc4580db7721426f93f5fb0374821d0957777"
   },
   {
     "documentId": "food:food_peach",
@@ -6358,8 +6358,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "440d364b9a7dc32d3c2b3fc0818c7f3f44bd2fdba7495cc47b5a94e9e5e1892f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "75b09ed9cbc3762c11260c9b28f8f68ea21224abde86e8bf6385f2471e2e33e7"
   },
   {
     "documentId": "food:food_plum",
@@ -6378,8 +6378,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c90f441ec7c0460fd1cfc4cd4c6f591fa5ea0a0549c11fe57991c13e88827b5d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "81726647463a0bf5e5f3de6ebdb76be1d6c6c08c7dbb6074221e69b43c0c91aa"
   },
   {
     "documentId": "food:food_apricot",
@@ -6398,8 +6398,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "66d70d6977c39c4d7f64d0c78bbab342861fd9f211dba0e02a39567299ac085e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "4a777876294ffd089abb73754f24c4c6dc67d19a7913f62f34150f72a7cd5157"
   },
   {
     "documentId": "food:food_nectarine",
@@ -6418,8 +6418,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f5f9f532545a0dd40956aa0c5e43181a060ef7bb38ff4c59edb699477a87ce55"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d54a3daff84b0a0770980ac7a6bedf2ffa7eaadfd6d01e9c2c07f202deda8560"
   },
   {
     "documentId": "food:food_date",
@@ -6438,8 +6438,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "bd8db265e43fd6f85e78a1657544d738677839e6e7fe223c2f13a4c7db24c91b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "a1060b6f8214dc54d1374a059776a3ef72e2a4270ed29a2b13781f906ce43c04"
   },
   {
     "documentId": "food:food_blueberry",
@@ -6458,8 +6458,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "209fb0d4df92ebf83d0190e7799babf113ce353cc5c82eafa1a7fe738f0b969f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "06d485e6f6e232764895d37e21e8b6496e04e9a06e289943e6a731eaf5a6ede0"
   },
   {
     "documentId": "food:food_blackberry",
@@ -6478,8 +6478,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f1b2ba7b03fb02a05be0961e8c8cfd530afb6932ac4eb11ab967aebcf58c3395"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d4f14eec11367f18e2ae2a83d48b475145418297a2d6b7a0a4046c5a7deac9a2"
   },
   {
     "documentId": "food:food_cranberry",
@@ -6498,8 +6498,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d54540867a91b4c53a65660990256e86060efbd1a8da230c6dfcf313e82a6d03"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "6bfab398d133d768c342ff679aa76ea8208e1a9447ba893981070abe134822db"
   },
   {
     "documentId": "food:food_grape",
@@ -6518,8 +6518,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8a69c1c114d0db7bcb2067a55d15a3005c91377a674eccceffc56fa660f81e51"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "21c7a2f229ae3c2b193fdfc99d335ff41ce4b1b03233a20135fa1f92fb098a75"
   },
   {
     "documentId": "food:food_raisin",
@@ -6538,8 +6538,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f2046df16a9138439a28690978171b750dcd4ea8c0378d76060828b8738e0498"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "5e505c8addefcd80de4142719cf83c1284a0864ca81c77aecd539f6f8d24fe3f"
   },
   {
     "documentId": "food:food_prune",
@@ -6558,8 +6558,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "76d415f7d45b3f4dd7bde8ee8eb2d5bf777ff395f708abfd948e66c8ff34d04f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "79f66f22e6e80c84f298c2240cc518e45bf774d92a534afd5971f69efdcb39ba"
   },
   {
     "documentId": "food:food_sweet_potato",
@@ -6578,8 +6578,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3d67277ce00c9e6bc2fe3533cf239f7c0bfe5fecce90c250dff9be3eaf6faf7b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "0ebb1b0c6ff045eb2fe58f5a1be755e2530e5e32000690562f62b002fa2062ab"
   },
   {
     "documentId": "food:food_cassava",
@@ -6598,8 +6598,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c31e9d3f1d368edd72cca684a47f1be1f8090681e159408f19332be968813de5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "8fbc30483859ef7cab56c150ec01ed21cdbd4fbd76a335d8880202bec8887877"
   },
   {
     "documentId": "food:food_yam",
@@ -6618,8 +6618,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "38373c10fd49af049a328366359260f50998e390b6eb9acff6afe7ec8f4c4f79"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b99fafa7e8097f295d2513ace8aa2a22c69e3557344891897a0e8d1f5d95a0e3"
   },
   {
     "documentId": "food:food_turnip",
@@ -6638,8 +6638,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1e68cfc26b9b822e14ccbcfd5b96d18d518ae555a744917c23e281833987197f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "df0ee2eb55faaa1bdbd97fac9c87ac53916d1db1cbabe30e306c83cb40a2b612"
   },
   {
     "documentId": "food:food_parsnip",
@@ -6658,8 +6658,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "35727c63c7c896cefb8185fce7c0e3be3564e70b764828d800db98c6b2c9c549"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d3edc49813eec72d480d506c870384ad003ece8f94b08f210b4ca3464e5215e2"
   },
   {
     "documentId": "food:food_cauliflower",
@@ -6678,8 +6678,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fd9e41339f618052d3fe391ef0bebadbda70030eb29cf71c7d3633e602f09193"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "92ef599270fbf95ada2d3f3d08554bc7e60a4f3a287765964640f05efde5db9f"
   },
   {
     "documentId": "food:food_broccoli",
@@ -6698,8 +6698,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "41e5baa4fe03552206eeba225c898764b82297e9054ced9a4286f818a80ae317"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "78cf1e09953aac142350e689c23491b004bff7885bb9c83e76623be1f4d54a26"
   },
   {
     "documentId": "food:food_cabbage",
@@ -6718,8 +6718,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f8aeacbc63c5ab3d810560e25e1ad1f724b96892bb4e1522569284e39872016f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "150bf2095cde1405231fc0493115a09698c9445d827c1e2587d84324cef4d8ab"
   },
   {
     "documentId": "food:food_brussels_sprouts",
@@ -6738,8 +6738,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4171a175540e912992478a94489e361c38def2374debe91cf0bb6876dc2121d4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "6573faa8211cb8397a205c8e44b797e304436ad24dc156f98049102951c601b2"
   },
   {
     "documentId": "food:food_onion",
@@ -6758,8 +6758,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6d9d3b235c37354a98f66bf1d658a3f32819dda5d6b4c7ca4929d8afd9e37483"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "261c189fdfe9bb6283985d3638ab8e359e984c4881b8a91009bdd79b602d559f"
   },
   {
     "documentId": "food:food_spring_onion",
@@ -6778,8 +6778,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d7e1d38b088fbe2249ff3a3eca080a7e74e8146621ff5f91bd1fe6996d6470b4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f21a7583707daa6eaa2be39f9bd1b2e8d602d4ba0daac8ceefad8250e6d2002c"
   },
   {
     "documentId": "food:food_shallot",
@@ -6798,8 +6798,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f5967ef1abd8c053a8a5ace420220f19fdc9a7c55a95f8974c95fd3f66dc27d9"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "1b7afbf989748078161cc22d64662e0372d03ee5fac3b168858b736c3e73c91c"
   },
   {
     "documentId": "food:food_tomato",
@@ -6818,8 +6818,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e76fa5a8a408e3a70f3ced65a6cbbc6d9cad45375de324daaf3e802935f513f8"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "482a59a177c81902c7407271a37b55fc699604cf82f981b06f80e800e49d330e"
   },
   {
     "documentId": "food:food_bell_pepper",
@@ -6838,8 +6838,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3473b3c8f2b1633d7e60fb04762495b795b7db414ae4926e2f4e1b5f720d9233"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "646cc8d2b854cdb2f475bbe87e9c46b16852e1a172a0d57a8da1e960b53105c0"
   },
   {
     "documentId": "food:food_drumstick_pods",
@@ -6858,8 +6858,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f1853ccbf9444528579b1cce03f913c783f1d6e215f15e7c6ff02583e640b120"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7825d0e70130502c2504b6631291a6bc498f4f1dbaf8c7ea82bbe60d750c04b4"
   },
   {
     "documentId": "food:food_bamboo_shoots",
@@ -6878,8 +6878,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "58dbd77b2d2c7333cead8209e407bf63efe1997ec6a5b1926ff111780e4cdde4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "375a2881466cc010df1bbfcdb548be2d6870cc16a5c34a3f8d7f37793c4bc073"
   },
   {
     "documentId": "food:food_artichoke",
@@ -6898,8 +6898,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4d73c7131b75cf66c65075e079659cf64642a16e6c26bd00b079e951fe24e763"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "10ae48f4dd2a05ff8de601afc3175564d21a48a0b8739f9a070628a843ee6386"
   },
   {
     "documentId": "food:food_turnip_greens",
@@ -6918,8 +6918,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "0d888567861cfb94b4933978a3f6e08b6886c9b251c66b483b15e479e6b9ba7b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7b2d2926f9e362b55777f00d193c706ddb52006723059a306e02ae33d7606b86"
   },
   {
     "documentId": "food:food_beet_greens",
@@ -6938,8 +6938,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "24e32baa7951cdab924a039aacc5116c4def16ba0d023a2cd72e3e5f30a9f684"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "13bfc3120b17a01be4145108a63d65a60e8aaae553b3fa25fc9a1a1768f57880"
   },
   {
     "documentId": "food:food_kale",
@@ -6958,8 +6958,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "cf601309f8842c2c84ca10541a84a11f2f7473940061be1414fb24f12914c120"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7b44261db4afd69ea2cef932e25247a6532230092ee8b804aabe9be8bb7e8f6d"
   },
   {
     "documentId": "food:food_lettuce",
@@ -6978,8 +6978,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3e4fda8d4b62e3309e3eec2b31629d023d38d6ed63ae388486e13960147f42df"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "01189a6a97e51abafaa5259b772524afc262c7523c6db29bd4671c5b55d66731"
   },
   {
     "documentId": "food:food_watercress",
@@ -6998,8 +6998,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "99159ffa3f1bc13c0c67e3c317d49afabebcd65af31a1ebbbd185ca9fe61cf7e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "a9d989412882dcaefd9cd8c289bc2bf89f15fe016a90d52b445414d1123d0df0"
   },
   {
     "documentId": "food:food_cowpea",
@@ -7018,8 +7018,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "09471e01bb10d5c84840208d3c979d53df7a733858c91a6d82a343784e35206b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c5110fdec643555c6baa638fe9d694cbe8b7807bd32726aa350faaa11009b091"
   },
   {
     "documentId": "food:food_lima_bean",
@@ -7038,8 +7038,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "41e8b2b07f64bd636652e6eef1efa753bedd7f15d63cfe989bb2ee9f538938d0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "179b813f02963c5f27d4835137816fd02aabc27e4a4ccf5335cf500284e28499"
   },
   {
     "documentId": "food:food_hyacinth_bean",
@@ -7058,8 +7058,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "40640078d38e3eea5df3cb15667345d0179dd90da7a58fbf6f38836818272a45"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "1b14b0881bce1049187e9a48737ff859389148e8761812ede906b119c65c0c40"
   },
   {
     "documentId": "food:food_soybean",
@@ -7078,8 +7078,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8db77bc63fa702992fdccaca5439084e153cc5f890acc1d6a3b44ae7ce8c0505"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "51ad4785d1b8df45bb694f7a8db28f14cae9e124841c7a0567df9fd4aa586982"
   },
   {
     "documentId": "food:food_edamame",
@@ -7098,8 +7098,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "788076a5d5f07666c6791223207213563a26cf251b715ee2947f60fab1588461"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "eb3e2a09f7515f52649a54d4ad6d0701e2b5b48d38418d7b1c620a6ff2679d59"
   },
   {
     "documentId": "food:food_tofu",
@@ -7118,8 +7118,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "33812e8ba8e0342ff3872071c3c8679feb36698f96e738db8c378ebbf1c65a97"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "973039daa9f45375d518ac0ade4da8569ca32f72f79f2c20cb1fc110701cbc9d"
   },
   {
     "documentId": "food:food_tempeh",
@@ -7138,8 +7138,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "638ab5a1dec81bb81efd394c845f9bbf41a2da251875831bd760578354ae0276"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "a329f4613dbbfd3712ca6dc21e2d2df24b493b4527265c2bdb005dde2236c119"
   },
   {
     "documentId": "food:food_peanut",
@@ -7158,8 +7158,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f46b025d0f541c81d5092278d4efa1dfa9f73f9e88916c7ec3e4f7c0c51503a1"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3d0c56dba2e6305851804fc9ea8aabd9b37e26b6e5c1bf037ebe8832898ace0a"
   },
   {
     "documentId": "food:food_red_lentil",
@@ -7178,8 +7178,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d3577eb5dc65ad145d6ef7b8812a69447cf3312e73ea231f0476f8b921f528e6"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3b71d093d68ecfc809468de92d4f884d373920909af5e8b3e11dff14d6e74c13"
   },
   {
     "documentId": "food:food_kidney_bean",
@@ -7198,8 +7198,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f4b1cca4100c722c60759dbf45cccbbf2417ad496cdbf088f00e9cc59320835e"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "5d059af3cceb58e2d0f53494e0bb96d398d98f9d0574492a3f00a4098fc9c9b4"
   },
   {
     "documentId": "food:food_rice_flour",
@@ -7218,8 +7218,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "7420b1e8c848dc04ca1adc9bb38d58dac85f12f264dd1b7ebcc42c8c6f0fec6d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "fd44cd9576618249066b6df1da5d1bc49a99002556f5245405a88a8d4b3d08d9"
   },
   {
     "documentId": "food:food_whole_wheat_flour",
@@ -7238,8 +7238,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b2c56f4ddb19030bc640edcf64d847d6343865df2b5bc4d93bdb3bb9c878b35f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "43c93a27e02e36fef19e929279359c2b6291ee90b30be21b8a6cd801318ec872"
   },
   {
     "documentId": "food:food_semolina",
@@ -7258,8 +7258,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4972332e8342333438df75730af0778e187ef375fe9d043f48e520929ab79c8d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "1ec1274d1f7b284b75fa7422a3c1f8dc997b6402fe005f253befcbacb22bfd3e"
   },
   {
     "documentId": "food:food_barley",
@@ -7278,8 +7278,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "66678ccd048864b83aeb94a0ac359f01482c9baac450f6a6b202f408b0c5cccd"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "abcb1eabee2c8706adf4b415af819e9cc8bfce199f4e14ce1ab5092eceeb7629"
   },
   {
     "documentId": "food:food_spelt",
@@ -7298,8 +7298,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "093378b4c453ef15c75b004969b05fc8856e0f3009fb5cbce3c6a6d1ad8f85bb"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3d1fcbfab64d163e34c16215fd92d6f9f0246545d46a0980c23666f43019f51f"
   },
   {
     "documentId": "food:food_bulgur",
@@ -7318,8 +7318,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "19ab39305a984a2cc079fff54f74da1c32bd5cdccada1aba7282d3a0f67e9b18"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7d6cf643c9241dfc744c2f0c45b20edc1d81596c39282fe6b57d7d0a365217a3"
   },
   {
     "documentId": "food:food_couscous",
@@ -7338,8 +7338,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2d6957b15d288e20950f16832e06b1b30eb9e8d77d9f3f92a66dc1ab1d4bfde0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "4a3def6273ce37f1084e39ed5c0aba1fb77771e1b5af1026ddb8734927a44ac9"
   },
   {
     "documentId": "food:food_quinoa",
@@ -7358,8 +7358,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2565f90a3e0f4f291fd9df276b811f82ff3374b5332b0618c49b91df454d8eaf"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d2bedd22814e3771b985c637a816b9b9246df5a16901adddd093c55e77cf9a86"
   },
   {
     "documentId": "food:food_buckwheat",
@@ -7378,8 +7378,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8eef38fdcac30bb6dfe3b27212d33dd029bd657096d39dddf7c2ec2e60126cff"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "5dc8dbbfde4b388544beb64b6dd19cd1c716c1ac71702118c0d70d25bfc0d2da"
   },
   {
     "documentId": "food:food_amaranth_grain",
@@ -7398,8 +7398,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "40f1ce5117106e6a499ada86469f1313023224dee6cd00365d85424245fdba6a"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c5c4bf188a9fcb7654601eea0b370c759a3e05367f592da332a013cbb9cbf196"
   },
   {
     "documentId": "food:food_oats",
@@ -7418,8 +7418,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3482133ab7b23473e3f0b6f232803858222fbbaa585eb4d007e8d9de74badbd2"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "966a05b59f2c59e21c1fdfbd5ce1dae25a1a3449096e8792539aba5008c1a0db"
   },
   {
     "documentId": "food:food_sorghum",
@@ -7438,8 +7438,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "105c532df0db0ce4e1ae4e598bb53a8e9b5f31578248cbe42ecb80c3fd805b6d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "728beb4eac430d90feb8003843e3952c4f6c8d438976cfb4518b8fd0338ce2fb"
   },
   {
     "documentId": "food:food_lard",
@@ -7458,8 +7458,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1472b24ce10a2ab5a9bc3e3b61927738ec6d13c6b202f0422fde67fcd893164b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d851d9fb8328cf9b0a2c20353d866ab71976a089fc3b1af816ad85b698f5a930"
   },
   {
     "documentId": "food:food_parsley",
@@ -7478,8 +7478,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ac6e92c3b02d310ae9f707da01ed77950705acc8527b923c09b1b1a95b68a941"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f4de7b6617f69aa9f430728c2a578640a4dd1f29cb088bc15c66d058277dbc2e"
   },
   {
     "documentId": "food:food_rosemary",
@@ -7498,8 +7498,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "792fc8ebbf9c6ef9cb6acfd482e40f3d75b41d3ba0ef15057a59daf7239dc076"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "dc4f45e86b19347b3d8c32626aa52f980b2ec625f9c18dbba21d466295585d8a"
   },
   {
     "documentId": "food:food_thyme",
@@ -7518,8 +7518,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "82f2855bae7071ca168fe73738bce058272370cfb35f9e10ec019d48dfc074a6"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2d9ec8c3ac03a1120ec83454454499f69fecd6c30e7376f261242270e3c5a5b5"
   },
   {
     "documentId": "food:food_honey",
@@ -7538,8 +7538,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "475da2e6a1af6ad4ffbc3b835d05630d25b7dfc72b27e205ac9c360beedc420d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "8e43207f393578e7143f13ca90fa2959bd492a266af28f4be66c69361693ed84"
   },
   {
     "documentId": "food:food_molasses",
@@ -7558,8 +7558,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "28188592d19f6e8d9a129ebe1103c10cfdbd514f04d787a26e023edfe16b6e1e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f26cf38ebf4aacc10fea71ae1050c0138f8d09c43972cc2622de97a2920e0d46"
   },
   {
     "documentId": "food:food_cashew",
@@ -7578,8 +7578,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c4477ae87b37f7e197a090f611327bbc48d3a4e07002f6dd81c707d8bb8a6457"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "67b5d284702ef405da857caf668cd35384bbe1c6801881101851c607812a0a33"
   },
   {
     "documentId": "food:food_walnut",
@@ -7598,8 +7598,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9eef6762b014062f5f580db451b3ffcccad3322512eb77182392f4e40be9eb55"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "bef4bef5f236143a28ee18f8935c8c2f25269dc874238991028bdd3aa2d90381"
   },
   {
     "documentId": "food:food_pistachio",
@@ -7618,8 +7618,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b9d08ec1c7ea56e79088f986740f723b7c1b2a01c9c4eeae40304df2547704b0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "10922f548a4e09545184b8d0dae6c55eba06c0c0ab46d9671c125a9ea27df977"
   },
   {
     "documentId": "food:food_hazelnut",
@@ -7638,8 +7638,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "86944f9cc1d375c5eec69819fd710421df482cd139915e9b8915d836f139b98e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c9004c6d7eed55b18e6aedc0099f77510eaa88a8a4e4f14b8f54e2e63f63d3f7"
   },
   {
     "documentId": "food:food_pecan",
@@ -7658,8 +7658,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "632ad7ee025b5a15bc80f404c0e2de19f7fa8ee6faa31fce82b227017db37227"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "bc63eb76d60f58246eb1edcaf7a998c33db8a0d2aa8b2d6adc06fe5857b11335"
   },
   {
     "documentId": "food:food_brazil_nut",
@@ -7678,8 +7678,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9b908984f32124e6d4d04415cf77045260220843d61a46ca8c62332a9baea821"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "335463f3e2759a44ca83f8c143e1cb4d7ba797a9855102c52b6b2b38792e1ae2"
   },
   {
     "documentId": "food:food_macadamia_nut",
@@ -7698,8 +7698,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dc7adf85e59c6233417590804067ca6ab9c0d3f463cd07f367d2bd01fcf338ba"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "88eedd9c433869269b23ed7d5636e7a08fca54e8b1cb0ec2dab6443cf5b8794c"
   },
   {
     "documentId": "food:food_pine_nut",
@@ -7718,8 +7718,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "888767624870a14362e9f33e252300d1c55229aa8aa1dd884f66fa514efef54f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b33714ee368736db92171c493ee778d235f6648e85b9d16ac48816cb4e7799db"
   },
   {
     "documentId": "food:food_coconut_flesh",
@@ -7738,8 +7738,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8f2b42e56e13cc75a2f411bf835ed2c5c5da78b7abe95a9a0866b83e3052edb5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "eb4ad19fed37413e529a39b7a13221f0b91835dc48d475140afcc080a1f249d5"
   },
   {
     "documentId": "food:food_sesame_seed",
@@ -7758,8 +7758,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a3637a257cd8447f22e86f43202dabba12c855a0a07b3b7c7f07ec0d91488c26"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "56ef63029712b4719159a8d1ff723a2327c45c6051fbbc156f9c003a08cba100"
   },
   {
     "documentId": "food:food_flaxseed",
@@ -7778,8 +7778,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "bb22a1d7c9930974b8fd045fbc13a65462191bc8759da0f1c61eb1b660d1fff0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "056485afa35403c13775b7a3c52a2f5ab909630538e2347d6ad2e4f38805827e"
   },
   {
     "documentId": "food:food_chia_seed",
@@ -7798,8 +7798,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2b9e98f8bd937ee8df432bba6e6ab1940b276cc65cbde2b46e1f216dbbfa0f1d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2eb4eaa56d3f994a23a2d3b539a8133420c7bc729426cd526121b4d756e9919e"
   },
   {
     "documentId": "food:food_sunflower_seed",
@@ -7818,8 +7818,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fe36289682df5f950f1eb5155be004401d5a421bc4d4702f78dea4126238ff01"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "df3a7432f5cb896836b81665ccf34948b2acdc123b1551c9b8c9bc502956cab1"
   },
   {
     "documentId": "food:food_watermelon_seed",
@@ -7838,8 +7838,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "13e54ea5ff42768edb09687e47420607a6fc1552eb2133e6e2a68298bf17c6af"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "0187e7d253bec7e5fe2890bc281f286cff75330085b63cd2c992d4efbc4e7702"
   },
   {
     "documentId": "food:food_hemp_seed",
@@ -7858,8 +7858,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "38fc983ac57ac3338f8f0c448a23c3bb607802e086930c3c127d38db9f29312e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "5fad126a4fcc354f1ecb2fe30de682d39c84a280e0dc12c6c4747b6359e4e43c"
   },
   {
     "documentId": "food:food_lotus_seed",
@@ -7878,8 +7878,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ad35b51015d293e2517864caaec53f7d8030e83c7c473d3cf1072681031f78a5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d5efe0daf808eb1529faa699be773b4c7dcbfb4d552990d56a2e6bab8a5315de"
   },
   {
     "documentId": "food:food_goat_milk",
@@ -7898,8 +7898,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d639483d2d4c2d06f91fc51015dbfeecb2d9ba3f0dacc294e80480dd45c7def5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "731316abfaee5ab37cb76baf4621009e2d1062e1637f1d49da52aad0d09d8179"
   },
   {
     "documentId": "food:food_whole_milk",
@@ -7918,8 +7918,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dabac5dfb85ffad75d59ed5c281c1b10fd24dd55a13d823f43372863c6b7a44d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2043d1e706c76710c0fcf1894e6de3b5c27f00a273d482a741b8e88f0be670b8"
   },
   {
     "documentId": "food:food_greek_yogurt",
@@ -7938,8 +7938,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "772b424a6d2e4aee0eff9a1446518f655633f1c930e32edfea074dd06977123a"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "1f3c0a3b13d783a816dc9930384347b142b271851a77c6ad7152820741dec02c"
   },
   {
     "documentId": "food:food_cottage_cheese",
@@ -7958,8 +7958,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a961c48f27214660eb896200e55a07b3220ffd27e177c2b94370bd8b81fb5931"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "46979042441380fdbdc074b99ebb01ce030fc5c05be05a2c6a7797fb4f15a62e"
   },
   {
     "documentId": "food:food_cheddar_cheese",
@@ -7978,8 +7978,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a40d828e2425f804fade4d0c78088e934391ecbc2c8dc0f1b7d63d26f0f82ed1"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9eb977d4376c78a2f306f2e90de8ee31a091bc267f5edb28a86ddddb9e4bbfd5"
   },
   {
     "documentId": "food:food_mozzarella_cheese",
@@ -7998,8 +7998,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dbca93bed3189d86ff0ccbac70d4f3077f140fb8c93f7d9f96bacf757d2749b0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f2608f9b1bfe86e3947ae0bd205b1e0d81128bd33428e568a0ce4dda7d6e99bb"
   },
   {
     "documentId": "food:food_feta_cheese",
@@ -8018,8 +8018,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "343e7baf2dda43ce4ce1968e1b487f60a29764f65e727dbcaf255499346a1f6c"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "dbf52905c218015802bdf46defd6fdc94cc9f1e67c504e8bb51c76cbb131ae38"
   },
   {
     "documentId": "food:food_chicken_egg_white",
@@ -8038,8 +8038,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2c99c4bee320df04770557ae156b0bb58e0355fafd199b35a4bb797e087ec040"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "6b5a97a2f3173760dae511800b50ce7044563e5077d1262f69b94f1de4e3ea14"
   },
   {
     "documentId": "food:food_chicken_egg_yolk",
@@ -8058,8 +8058,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4ffa290dbc45b0b1be5a8a9e53d0f0dc1890d922786ae1661d27f1236889a01b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "1a330312b6dedd0c798a20b0d6098b5f6b5b6f16a795df22a1c36091d4167c43"
   },
   {
     "documentId": "food:food_duck_egg",
@@ -8078,8 +8078,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "818a72f635017766ac594102f483f8cda7a0d3cb1f3e02e3cc669bbbdeb48609"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e30c9abe5bb352dfc32049669bb3eef0b88e6b9a35644f459cd270d0ef520982"
   },
   {
     "documentId": "food:food_quail_egg",
@@ -8098,8 +8098,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "80580e269a8ea578b2d2dd24294dfa60820cc9f1398974b956b967513268d5bb"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9bbcb2a5d0beeb3127eed2d23dfdcd4f9d6f31d014585c634150a963117dc1be"
   },
   {
     "documentId": "food:food_chicken_breast",
@@ -8118,8 +8118,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d7cf1b0a671a24eaed75746f2a8e19af2aab79830562d3803b06a8ffaf41c414"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e5fc7f48cb3838be700cd3a19a68817f3bad71a63323307e48629056fd44ccdf"
   },
   {
     "documentId": "food:food_salmon",
@@ -8138,8 +8138,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e8115884fee373b18fbec7acae558646e8c4fba03ad16f7a4aa5cfdec21189c4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "1a3666f71053620c67637c0fb9b51491b1a48e6e0ae2139dc17d34647f5dc0da"
   },
   {
     "documentId": "food:food_sardine",
@@ -8158,8 +8158,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e9c0e3b13d69d9eadc05ddd5c58450453f394d0dd6c14618035eed63ca9bc4b3"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "663108cdc5f4279dcac2a67a4fc980b36d78b3eab634ab9534e2161fb0f22c22"
   },
   {
     "documentId": "food:food_anchovy",
@@ -8178,8 +8178,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ccebfdbdd6cc08106ccfcf364c3ddc074e76e8c2eaf2fb7e0eb9416d5c1d81fa"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "edf0fd5215a37146877aea7725b303ac3550d496721fca62e1355c15e247306a"
   },
   {
     "documentId": "food:food_tuna",
@@ -8198,8 +8198,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "06a8ee6ab0d003d7fd796626cd938feb84f77f11c4014296c391641dc07704cc"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2f30c129b8e4f517afcf31e4d7da00a36bee140751e31c67ca8dacce40dc98cf"
   },
   {
     "documentId": "food:food_cod",
@@ -8218,8 +8218,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6d8e09c5978a6bde7a0fe9316444ebbbcf5b87e4039fdd9bb6a05f8cdef1b00f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "fecb6da81880a4e9645b830f17ab5897e5f46830ff5c556978075290cf729328"
   },
   {
     "documentId": "food:food_tilapia",
@@ -8238,8 +8238,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "eda6f87baf29dde3644aa0921bc72c2bdffee8eeb59e2fe326e6df2c06aa6c5e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "cb8c59306d6adcace6bf1f3ca06119c05b9850500897c2412141d254fb661ce8"
   },
   {
     "documentId": "food:food_sea_bass",
@@ -8258,8 +8258,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ed6db1c5016f309b23a8886aa69c146b70c4e52d1225b1e55d98a1d4f825df2c"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2b639b377462f5f547459acd512e2fef6962f875ad8868518c8685e94970f528"
   },
   {
     "documentId": "food:food_trout",
@@ -8278,8 +8278,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "17f5862daa30bbebdc939eccd86aa72b0c9d583d663e1c91c354305500baa512"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "361a284e264745763c211a5dd30acd180acd892807084abe171948e37285fcf2"
   },
   {
     "documentId": "food:food_catfish",
@@ -8298,8 +8298,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3ba257c3583f9d4abac4ab30db32cd59a30071708c2d244aaf777e2564e8e398"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "5989cf02e35862288c167be256c3b902f8ee37a471d40ba28810cff93bf94025"
   },
   {
     "documentId": "food:food_crab",
@@ -8318,8 +8318,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1eddc8ec24f8f88c16ef9a8c0a7eb772871a5175aa4d7680b1e1618045d075c9"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "58d2e425fbb646d1b772acfaeec3c1cdab1f1695ba47cb9aeb3b759943fc0a63"
   },
   {
     "documentId": "food:food_lobster",
@@ -8338,8 +8338,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f00ae0572d4baca4a615494dec895a923677e01198679fb1e54dd1eede50de6e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "ae0ff8699f79b240c66ed08b80eaeaf567fed45fdc9c4415b3ff81379d7e957f"
   },
   {
     "documentId": "food:food_mussel",
@@ -8358,8 +8358,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "620557681f01409713b3823bcd06c855f5665976cfb965d4d083e4f48dbdd58e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "97b9b28b4a7156f27574d15b1b3583a1091477fe3f738e0bedc3b7ba75f22155"
   },
   {
     "documentId": "food:food_oyster",
@@ -8378,8 +8378,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6018367e67cf287ee6351de66bb4daa54d7a697a1912effcd9e75e41d25d1b78"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "0b714246e4a7fea605e0e96d19346e8ae3f43fd34c21c1b88c9544d5ab9723e8"
   },
   {
     "documentId": "food:food_clam",
@@ -8398,8 +8398,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "de504d21514e5a2e242aec4a8df680343842bdebd4b61e0947db40039f6bf010"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e7d0ef86aeac866f1453bbfc2fe0e09431f999455a61034695aff2c1da69c640"
   },
   {
     "documentId": "food:food_squid",
@@ -8418,8 +8418,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f55e1ae85395850a527c61b50359fe1468138253ee0be182fc99af1b23f61a27"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c03d33054c81e0d3e990500cc900bc01c937b4ed4bb88a1e4abb2ac9d85a375d"
   },
   {
     "documentId": "food:food_octopus",
@@ -8438,8 +8438,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "aa02a6914424e5a7c52fed1e9eeb7a96b31cdca41e805997eed6de75ae18737e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "383ef996f5382c952880bde5982bf4fa8af340d517fff238e2a6ffb410c38cfc"
   },
   {
     "documentId": "food:food_groundnut_oil",
@@ -8458,8 +8458,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d0896c3c0bf9c7f97604560d85e592b2f056e44f406c80b24e41b73d0a783070"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7e43b258491c4578deec95262dd1be72757e6daf61360d86ec64faa8b00e8042"
   },
   {
     "documentId": "food:food_sesame_oil",
@@ -8478,8 +8478,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "598ad808be55f536f043ce0f522d7f9f34cc74345eb56b37330eaa5af0e06716"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "fe57955a8b59494687f0dfdd8850354dda36146ac2f793ab95ea3d897162ddf9"
   },
   {
     "documentId": "food:food_coconut_oil",
@@ -8498,8 +8498,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8a670445f01e11a6e496b987ee5bdbafa3110c301cf60e27198791a9e6135db4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c24f3674ea30365f2d0868652da7a9c7d291c2de3fa73945e19e0857a8a188e9"
   },
   {
     "documentId": "food:food_rice_bran_oil",
@@ -8518,8 +8518,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "16cff18f8080a37517a781895eb85ace129dbc8ba14369855075cec3ec7d66d1"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "358863c4223f26fab7318c8073c177883ce539f3658cae1cc6c63eb33e28651b"
   },
   {
     "documentId": "food:food_sunflower_oil",
@@ -8538,8 +8538,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "71969c288a87bdfb2e2d108a510bcb282baa8c30ce2e50c22dbcbcecc1997b88"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9697b55e4780e8477325c1f8bb77662b200f04b63072a9603b8e2adb2496f415"
   },
   {
     "documentId": "food:food_soybean_oil",
@@ -8558,8 +8558,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fd2838d37795ec95749e36c17b73e26dae19c3e04684589ea136275c07fd76fa"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2a3bc69ef3a902883ef422e5d63b50e86f544a7012eeb01baed91bcadddf4b4f"
   },
   {
     "documentId": "food:food_canola_oil",
@@ -8578,8 +8578,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e6ec3e801585d242817f7ae8b0dd414cc07757c2241deaaf4a7a99e9da955580"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "873d77f58fb5a063174634060a64333ac0ce10f085478b08bf65f63e25e86e44"
   },
   {
     "documentId": "food:food_corn_oil",
@@ -8598,8 +8598,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2a6aa1f48b0318ebe2c6ee1898702ae79606dd7c8913c64eb11ac9b6058464bb"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "5b8be6807e5b6a1a7b8964083cd52f2d68c539c19aa48e04531a4580941cec88"
   },
   {
     "documentId": "food:food_safflower_oil",
@@ -8618,8 +8618,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6460f36fe3ba225c33af446f899c7df617241ffbbf252b25c6c99af74b3c87a5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "bbdba42a4a5cd5fb911a8c15d31047e97b51e0bf75e218bcf81c988eb465b51f"
   },
   {
     "documentId": "food:food_palm_oil",
@@ -8638,8 +8638,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "202a2f89dcf02c06dbf3dd646d60a765559d401ed9ddb4a4a2e99fc623afb8e8"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "207b7e0f94e02b28e3066f8c36d05493de846a265cc2ed2385c7d990c35984a3"
   },
   {
     "documentId": "food:food_ghee",
@@ -8658,8 +8658,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a7e0431cf48720224233c583703c0055c660c08337de28f9435d12468e8e8832"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "bdc5f2230e061999aae50b09fe1df3f8ac205606e1aa2e8538acf2d32f6da608"
   },
   {
     "documentId": "food:food_butter",
@@ -8678,8 +8678,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3cffe26bd71d3181f3b85177d9707a99e667de13b7c2297a3c377c41eb94d441"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "049d228f66e28e4a29ea79a4e00fc69032d1315bce2189c5eeb47764ffa44d9a"
   },
   {
     "documentId": "food:food_cumin_seed",
@@ -8698,8 +8698,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "08382abb3c12aa16c3c44a722f6c968747ffb7584e0899550a6b05a9757813b4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e0dfc52089667fc987c84285edcf5a46a7550444a6edd8a6eed7ccc531914d13"
   },
   {
     "documentId": "food:food_coriander_seed",
@@ -8718,8 +8718,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f01f16a0be16ef60bb22580b18f6d41a4b613a3091300ae7c7bdcf4de25671a9"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "cf3d3864e4cb21bea99ef5ba6128543c0f051eb7d38840dadac04f9a8f8ed29b"
   },
   {
     "documentId": "food:food_fennel_seed",
@@ -8738,8 +8738,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e08cd2d48d72a108352f6677370375fecb2249e39bc0cac486126afb777a1bf9"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d300494cea8768465289389404ab126a0fcd75609cd514530b566978b7124409"
   },
   {
     "documentId": "food:food_fenugreek_seed",
@@ -8758,8 +8758,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "44f407c6f255b7a998dfcefa5c828d2c304d4e0894e111dbab1f8a02fbb9a270"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "fc439a58aa4255c51b27ae7f7115b569f2dc945cc8a2d24a3a2061ae494a4b5f"
   },
   {
     "documentId": "food:food_black_pepper",
@@ -8778,8 +8778,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2c416a566bd0b6298492b5098efc029917c0db2b7bbd4f8ea57ed71b2a08b773"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e21b899f7e205028bceeaaf84a68463c6f367f48386b8f2318f10c7041532c5c"
   },
   {
     "documentId": "food:food_clove",
@@ -8798,8 +8798,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "702fc29e3e90ecaaa15796ecc2ee6c4c2be7664466f7bf6577ae4798e49f13ac"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "559f58db93039dc169bd981a236dbb095f1138ed657ebc4056832300669a7ee1"
   },
   {
     "documentId": "food:food_cinnamon",
@@ -8818,8 +8818,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c4cea7ec433a2616ad634293c9e002f15e5096df591fff510a7fc8ebde0797d1"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2f07439a2088e51c76f5359e37fbccda465016f06618633d28cbd11e934ccc1b"
   },
   {
     "documentId": "food:food_nutmeg",
@@ -8838,8 +8838,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "7a635f8466a8bfe51f1d89db0c8a80600813079ae825e387cd57f9b89cf011f2"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "38866d5a40aeb9cf02578f5c80810d5cfd9100767bc06085189e9e9740197368"
   },
   {
     "documentId": "food:food_mace",
@@ -8858,8 +8858,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "5b5d0d753ebb80a505985ff0cbfc72599decc26e834decc00d6b6df1030d98c3"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "0dd37dc7b3d5f8b095c79fe120626bc3a3d5c8177ba6792e82466b58873c389a"
   },
   {
     "documentId": "food:food_bay_leaf",
@@ -8878,8 +8878,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4c5f61fcfed30adb40545cb8f1c3beb353cc81d0c793db5b1b4d0e528ca28c39"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f2f21602ba59a22c259462af55c887b7cd64ea6c67ac5b2fa67a5b4128a62c1f"
   },
   {
     "documentId": "food:food_dry_ginger_powder",
@@ -8898,8 +8898,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4c70ad021cfc373d0a2930971f6147c9c2c8976ba63a5f03c72cd7a6415d709e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "ccacfc0c2dc238cd7f7941178178903128336c87d3b8546780404daee9e7bd1c"
   },
   {
     "documentId": "food:food_mustard_seed",
@@ -8918,8 +8918,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "94e86f8d65284bd866b29c22b5c04aff414611d113b7fb3ff15ff166b7efcefe"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "314062c2bfc056b07348a7bec397dc469ac665ec879106cc537cad03e663ac9e"
   },
   {
     "documentId": "food:food_fresh_coriander_leaves",
@@ -8938,8 +8938,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b894f3150168b55215b78831da785500edad2c60441fb09e06718e2b4e2bfef8"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "20e5f3bc10c00ac2471ae79d45c30beaa0b8236cc3380dda50fffe2d3db22347"
   },
   {
     "documentId": "food:food_mint_leaves",
@@ -8958,8 +8958,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fa38fcb0311479f3ffacc79d94458ff7d701d90a5beb9c66bb097776eb298db0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "98d44b765f6bf70ad745734d72cf575a97a308216a58897bafe1abe49393bacf"
   },
   {
     "documentId": "food:food_basil_leaves",
@@ -8978,8 +8978,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b9e8c2e8e2d251f60c282dc7e2fb2fbbaf63eaaf1b6c091efc72e5694f675f9c"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "43901c3681567e08ef3732b2bd2fc6299a32f51006349b9fedde68a8c27c2f0f"
   },
   {
     "documentId": "food:food_ginger",
@@ -8998,8 +8998,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1cb6cdb086905139a2e2a32a92f6c9e007700963f26a605b8527dadb61e0566c"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "866523442bbbc43b968ff50900dedbecec1499d97b331eb866e43aff5c650759"
   },
   {
     "documentId": "food:food_radish",
@@ -9018,8 +9018,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "43c118e4ed18d175c5c70bd3efa5a0c184253288936f4bc71a37064c663c46c0"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e9063127db5ab26bc05094da90a92910b04e64400dc46b66efc1273935aa59c8"
   },
   {
     "documentId": "food:food_celery_stalk",
@@ -9038,8 +9038,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4fd2fd2f80eb0f445741539e8d493d2d731913a4f877ea7af15af15547aec215"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "fc07910d142122fbe9290dc2e8514291dd8a414481b1e76a324378b8c5a49d05"
   },
   {
     "documentId": "food:food_green_peas",
@@ -9058,8 +9058,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4d014262f7d0293d935c7883f21f0359cfec9bd70fa8168b78212b8910c8a311"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "7fd001456103f9aecc19ef0cced3395bdb2fe0788fe88d4e9ebc8a9f07ad2db5"
   },
   {
     "documentId": "food:food_sweet_corn",
@@ -9078,8 +9078,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "5a64f6cb28c77404520c172b5110b04e57003ed0158a62d98c4772b6f45db6a5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "63b8a602325c9cdecfefb7b772b34751f06ff1464918b87932315b76ccd0bd25"
   },
   {
     "documentId": "food:food_french_beans",
@@ -9098,8 +9098,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "7485a5d8833164b78a069dfc2c20497e2104ab3616f35231d02f68540ca3a9d1"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7c648d78744ecc5660bdae3552e97e6187d5cd1561b0f4e98065bab146b5d052"
   },
   {
     "documentId": "food:food_broad_beans",
@@ -9118,8 +9118,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "114b18daf28b0b808741a42f624fa38ed33c6589ba5e0d07ece48011c0eb47e6"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e908d77954cc5553d0f73fdfa2fbf170d7f5ef7b45edc0f01dd280a456b61447"
   },
   {
     "documentId": "food:food_pigeon_pea",
@@ -9138,8 +9138,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dfe6d384ed73df186b053fe0538727d142174da949116ba7c0bad1506567fda2"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "26bbd9f4090c9e749be73d7c64e669d4a16fa9c7fe339012f1554605786fc19e"
   },
   {
     "documentId": "food:food_green_gram",
@@ -9158,8 +9158,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e8f57cbd2edaafe66ca9a8ce0125b28122b32003660eff1577565a7a1c68e940"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e3d38fa574a34726e4560db397c7e0ee9a2b62ed13f2d657a9e26bbc711ccc04"
   },
   {
     "documentId": "food:food_adzuki_bean",
@@ -9178,8 +9178,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f27086ab760f16e34bd1d72e43b22ba4d2e7d0fea6f01c272f59232f22a39de6"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "593be361282c9eff91d8beea24a3754e834758190cd1bccb9d6f2a15a4c9d4a9"
   },
   {
     "documentId": "food:food_black_bean",
@@ -9198,8 +9198,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "cb7d84fc672cb38d0c72b036a47628c9c538935f07391ca956bff7ccc942debd"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "ecbed63236dedf35436c97429024ec76828a172756cc60dc070039b5da7b0f4c"
   },
   {
     "documentId": "food:food_navy_bean",
@@ -9218,8 +9218,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dede417e2f73dc56c48c49eb41d20fb3e28b1e27f213bffdc3839f563bcf8b2e"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "08fbba1837160148739baed609c341986f35616cf3d58cdaf9c8b91f131c6433"
   },
   {
     "documentId": "food:food_pinto_bean",
@@ -9238,8 +9238,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "da1a71424b90b1618ad048e1e277daf58ec1fda9531bd89150c477a8d6209b6d"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "daf85791949667d91b7d5c911c8632e84e35f41282e4068aba0602dbdf55a25e"
   },
   {
     "documentId": "food:food_swiss_chard",
@@ -9258,8 +9258,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "7d3f1083ffae36cdfc727042754f42561218dc9ec6f21e567657522b187b898b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "ef24db96211158abce3d8d74bc38b4d33ddc2217cbb40f3579c8a7505f2ace96"
   },
   {
     "documentId": "food:food_collard_greens",
@@ -9278,8 +9278,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a6d283e0465ac04ade2fa24365aad94ed2e5dc0ceffad29ef19b258599b2b299"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c3fa475b8ec608764b0dc8ebd30f626aaa3ce4650363cc846b1e699b1fff4315"
   },
   {
     "documentId": "food:food_bok_choy",
@@ -9298,8 +9298,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "eb1ed07cd4a3d675c2c2a70d79b940404f9f4b44a934c7059086f8653be84436"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "6c0dd717b385524d1b5cd31c823dd65007c435a0aa7cb6f5af8e10be3bb2d522"
   },
   {
     "documentId": "food:food_honeydew_melon",
@@ -9318,8 +9318,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "eac70a761a73f88af4e289dd520dfc22a5edd1b704aa87709f55f62b296cdcd2"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "665e026c939dd9793a445fd18874bff90323504ddf89176df66668c518bdd025"
   },
   {
     "documentId": "food:food_star_fruit",
@@ -9338,8 +9338,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "78f5e622e3c84913986399c3d5d8e6b8b7cdeb8ce9a5a5c2dc8fa5df9bbfa974"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b3b8ee835525c4aee87346c9f201a49fc7c44a233dd13c530818e3d1c54fb842"
   },
   {
     "documentId": "food:food_dried_fig",
@@ -9358,8 +9358,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "757a10aaa3ced2c5f249826a296596288306fa1ffdd12a551415dbba03fc1f54"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "fbd84f0baf6fa624bc4c1fd2c9084efeda0ca8c59518772addb7be3561ff2d8d"
   },
   {
     "documentId": "food:food_dried_apricot",
@@ -9378,8 +9378,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "bdd8c8240531cd4733e43f3fa9a338900bbdc7677e943b354fc384aa1977b93d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "6189620ef448046292985fc99a021dc7b3ec9601da10d6f83f7fd8f9252d1b35"
   },
   {
     "documentId": "food:food_brown_rice",
@@ -9398,8 +9398,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b0605e9e548e0d23c17cf4e76e800f0b8285d9f7009497f186dd8e250732c722"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "fa5d3c9d2760277a788fcf20070abfb1407149cfe1b636a4d6ac3115bc7d737a"
   },
   {
     "documentId": "food:food_parboiled_rice",
@@ -9418,8 +9418,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "24e93d8d9bb9b586922dab7485b2cfdbb483b3a2888d3731156319057701af3d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "942b5c0c4d99455e1030c82504bef10f7731d267623e12d0dcc81284f199bee3"
   },
   {
     "documentId": "food:food_whole_wheat_grain",
@@ -9438,8 +9438,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "30b59cd512d27f68f9355302eac35a2d41fc1fbde23a89d279afab7db09f0e86"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "ec8da01382e8021455fee96e7cd4b57e58434a107017297bed9991863c2b67ab"
   },
   {
     "documentId": "food:food_durum_wheat",
@@ -9458,8 +9458,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f9418ad42e4eea6895f02763f990e3e29625208a4c8e4cd32555235c747ac0d2"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "72316f4e50a7959930d35d7b42b49914869c5d78bc6c105c9212c7d189eeb35e"
   },
   {
     "documentId": "food:food_rye",
@@ -9478,8 +9478,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "00ca15b6733ff6110b4960788290a35efec839f658b72614f795e3df09736ab9"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "73346b8a5872b43f234779823e853bb1298d55449a106c821fd850a069b89b74"
   },
   {
     "documentId": "food:food_button_mushroom",
@@ -9498,8 +9498,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "837e8bf00e9f8f985158e66d7ba850911f1d1c4dc1e6872d6cf1055a624412ec"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "40b0e0b2542e9520f2343876bab3743387bf6e102cba33dac2c75b6c645f7450"
   },
   {
     "documentId": "food:food_oyster_mushroom",
@@ -9518,8 +9518,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6681453069ec5a6d269e56a98ccd644cc556eec03cc9b1c08d8d097889412fec"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "d809086292a19e3b3ceafcb2fce394bb3912ce9617ea713b8e57f948c51a5c35"
   },
   {
     "documentId": "food:food_shiitake_mushroom",
@@ -9538,8 +9538,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "877f785239a0e167500e4f94f4d923513a2c937f35495355e5c8f29165627525"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2c36114990dd78ca8c27cbc39c0e62e8fd8bbbf99d131d2164d4f24cdf58e131"
   },
   {
     "documentId": "food:food_portobello_mushroom",
@@ -9558,8 +9558,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1db835488410e48dbe9ac1ebe72edf289ed70f1a7b4a97be7038196d33276d44"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "e441da711801ac71f60fcccfcf39b202d221ee4f3d7204f879335e14662b6da6"
   },
   {
     "documentId": "food:food_enoki_mushroom",
@@ -9578,8 +9578,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "876fe478e85f8a550996af1feb90748d9ae94bb56e561d534d844e97033d06eb"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "26155ea5b4ef366db39d3a097a1aace3c9c1ca119f2f6d20b60127f3544d8e87"
   },
   {
     "documentId": "food:food_morel_mushroom",
@@ -9598,8 +9598,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2c14bbfa8e397c52dd7c67ba453afb8e3fcbc4850d798c0239e71a294a9f912d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "443e82eecc6a8a9bd55651681fc8a7cff9bb8b47096bc4915f56551c8a6fe172"
   },
   {
     "documentId": "food:food_kelp",
@@ -9618,8 +9618,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fdd1359d4642adcd478df458576aadb773bfbfdc74ee1dd50248ea14a8ec4590"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9265b5a600874bbd3b39afc549ad74021c846566207e631872fd57d9c0dbd4d3"
   },
   {
     "documentId": "food:food_wakame",
@@ -9638,8 +9638,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fd57a6e659c90f57e16fdfbc479f63a4fc46fba9f608a893999bf2aeb5114f45"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "29f440108e7e8f0fdcaf2c9dba533376ea101a58ce263f6c615b56bb7d022134"
   },
   {
     "documentId": "food:food_white_sugar",
@@ -9658,8 +9658,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "76a54bb228bffbfc2f1a25d46fdf20984623756e516a8a33427276046a96637d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "0ca9047a433a1b522b45265abe09e1a966c14a67c621a8d4d6d6dd9fc3c1e1ef"
   },
   {
     "documentId": "food:food_brown_sugar",
@@ -9678,8 +9678,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2251261f12df9db072a3378241941a9f9da94766f94ac9b9ebc84d08b1269259"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2127a0aa204c44650f9bdc2945ff1d13b3f06bea406d30b9376ef88dee25c664"
   },
   {
     "documentId": "food:food_maple_syrup",
@@ -9698,8 +9698,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "0e9a91dfe9a1827f3c4d84a4e7cad30b1faa7b3b5bb168ebb5be7ed8758e7a69"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "9d8052632446985a9bfef935ea3b7ddb98d3ce9b87140e46694a6c1bd504079b"
   },
   {
     "documentId": "food:food_black_tea_brewed",
@@ -9718,8 +9718,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6cccf6e0d5bb5613f39e39172e27386fb02ebf1720877fdf63c52483e9d22e85"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3da4f7ebac89aa183a991187a19b430baf9de0c430d6b40732150b8cfccc7a81"
   },
   {
     "documentId": "food:food_green_tea_brewed",
@@ -9738,8 +9738,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "909a2b864c809f71407d1217e0b5a7bbd648722b359ca9791c82afcd9fa74ef1"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "93c6f10d2a3adb3caf1a12335a589eb41db490ef87a2dd406108c292e4c394b8"
   },
   {
     "documentId": "food:food_coffee_brewed",
@@ -9758,8 +9758,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c8d46568c547159fac565154d3ba7094c8090e0c150b16ff4ed44fae2e402dff"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3402d6f16bc28bbe9f12c9cbcb588ce5fb960c9e5ab5de22d305d26ae9e90a42"
   },
   {
     "documentId": "food:food_espresso",
@@ -9778,8 +9778,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f8637e73eb817065752d35994b52400dc090357e88424eaafa2df289ca32f675"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b894d4c4b87df4c36707e61cbbd64f35c229bb18cd0b78c44971d76a7754a5b1"
   },
   {
     "documentId": "food:food_coconut_water",
@@ -9798,8 +9798,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "df14f7f5d9e1589c80010e8006a8794df68e8846b93c63422e010b47eeab5016"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f6957b2daf054531e6340148323d8493744b1717794f574749f2e7eb48a8b097"
   },
   {
     "documentId": "food:food_red_cabbage",
@@ -9818,8 +9818,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a1840f850c438a7e540f4e92e897c6b04419b072cd756b4b49a3a83d9ada2d05"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "374b865be6b92f668ae2b2bec902bba8f93a6384a602f3e96d781997a3389d63"
   },
   {
     "documentId": "food:food_cherry",
@@ -9838,8 +9838,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3b61c66e31935ad8bdc1fa159a1b1e41621f6431d70fdc75a33d2c2390d76147"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "e9f3d17ad5988971ae0f61dca033d766eea7b570f7fa271082553048d815de91"
   },
   {
     "documentId": "food:food_green_chilli",
@@ -9858,8 +9858,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "08187fc82aa6a090e316fd66538619c07b7ea938158f0ac27f8937fa790e69c0"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "4c20fe29a1c0a473295e39c2d02afd79b86386f3ababe13b2a5128d46fffb5dd"
   },
   {
     "documentId": "food:food_red_chilli_pepper",
@@ -9878,8 +9878,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "a201cb89a1c0faccd2b9961f5b35706113d1d652ba261f72344b1ac4d4c7edad"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "5bf1a7c1a784861c665ed0b61d3e10d7c6ffee743498212ab6184b33f07bfec0"
   },
   {
     "documentId": "food:food_chestnut",
@@ -9898,8 +9898,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e9649a132a5f3ed95092e5f2e9a9b7139b21dfc08164cd67010413efcb865c48"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "954471eabf61856562559cf7544c8f631168da7c52d44ca3a61fe37a8c1398b3"
   },
   {
     "documentId": "food:food_poppy_seed",
@@ -9918,8 +9918,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6ad9f2d7f0eeee3ff1f8ecaaa6b9c3b6dab08474a5b535fe88d741d65425903d"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "17f553066b761f220992f44f2dd8dd4aca2ce2540e62051f0633f1bd7bc7a298"
   },
   {
     "documentId": "food:food_skim_milk",
@@ -9938,8 +9938,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f7588e8096f9810df45fce8b767c1e4e5fd0e838fa9cd0e60313cff0edb698dd"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "240143a1600d65902854fb720f4a6da5405cd2fa1df1fe252c7c8f020eb332b0"
   },
   {
     "documentId": "food:food_goat_meat",
@@ -9958,8 +9958,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2f33d97cda660ca1072285ce622f98e8c616e43ddf1b80085900ae4171a86abe"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "ca12b9d80ee19bc71c39b62c94d6b4bc1f0dd34d510e5546656419a54908b3b9"
   },
   {
     "documentId": "food:food_duck_meat",
@@ -9978,8 +9978,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "eabda888dc33772c8d895ba3bb82a75ebe531d5724222925c69c7ca92bfea85e"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "e0a3c0f650ed60f3f1114d455a8b163364a6ec90f155510d9c45c4d709b6b529"
   },
   {
     "documentId": "food:food_rabbit_meat",
@@ -9998,8 +9998,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e19bc69341712f2b6acd973e526e833161c1843517128ab8e611506165b2aa16"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "87428db5aeaaa1bd75c1cb450d30224c66b5a02a50ccb12084193d09e07e5f35"
   },
   {
     "documentId": "food:food_venison",
@@ -10018,8 +10018,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "044e51374d91627b6b90c0b35f0b084c72db3500f17aaf36cd717368a649de36"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "fad94c35d22a143429b0161ef1decc4c33d75fef089f88f7ead79e869287701b"
   },
   {
     "documentId": "food:food_beef_liver",
@@ -10038,8 +10038,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c8b911c405a488d6e8dc8a19ec29f908dd3f205c9b80eb5448eecad3e3dbe059"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "87b24b57866e1d9a653cd7fcf5fb8b5ec30cf72571088da37b9484d641f26351"
   },
   {
     "documentId": "food:food_chicken_wing",
@@ -10058,8 +10058,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1b463fa8d2873480d574f7d8db6b2a4bc624dd743f7d84d974e8a41cec07040f"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "ea9dc6550b615a13ebd58be84cfbfe4f73271c46b41153589370a08c5b617200"
   },
   {
     "documentId": "food:food_tomato_juice_unsalted",
@@ -10078,8 +10078,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2d0e37c3018a1363fbdab163d044a4aee80770837cc6f6fb3d8c555624b0387b"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "561d9c933744b755f8e9a8f9685dbc4dc0178b762d48093f8779ac991469765c"
   },
   {
     "documentId": "food:food_orange_juice_unsweetened",
@@ -10098,8 +10098,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "0ba82eddc3a4d8d4a084dd346cee3aa79507dd06422a3d46cd2da7180e782713"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "c501d7c9d93763be08cfd75b670044dcfc50806e3ebd4f20db3fe5040df2b7bb"
   },
   {
     "documentId": "food:food_paprika",
@@ -10118,8 +10118,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "017c2a7881a8ae7a2f75e216345fac1425088b95057854efa1d16a54b4a58e76"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "7deefacad39ca88e56de04972a1725344a9a071bfef281c08b00109c181f2f80"
   },
   {
     "documentId": "food:food_oregano",
@@ -10138,8 +10138,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4e0b5f6b90c1702f7a9a8af55f8dcd94c37f995b32ab02a323eb391b360c8ec8"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "991b68cc7f9ed9515b79c0b7d416d937b47656358a733315a26a2d7cfc842cbe"
   },
   {
     "documentId": "nutrient:iron_mg",
@@ -10158,8 +10158,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dc23bf4a00bd057890d610106965ae7e8aec7551ed20e5e8978bf4fc9199765f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "c78bcc3f5f4543d43adebd5b506bbed738e2d2e59acf5ed07980e3797300fef3"
   },
   {
     "documentId": "nutrient:calcium_mg",
@@ -10178,8 +10178,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9985623adcc1f73b437c6a80dc248a24011f23804017c9a610df1a41bec9b683"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b506adbb2a9b6dc5a966308c15aee190f2ff27450c316416f83ce6cd206e6b8f"
   },
   {
     "documentId": "nutrient:vitamin_c_mg",
@@ -10204,8 +10204,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4ad96dcfd681d55df16955c851be7a8fc6353379e71110a197ae2396558f3fa4"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "557183300864f1e29c44a65d7281919cea8b4500683e6caa5f2596bb110e17b7"
   },
   {
     "documentId": "nutrient:magnesium_mg",
@@ -10224,8 +10224,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6f6cb3a7bb7b53b17811a8e6ac04b08434bf2ad0b984b5dac8e942dc867a9a9d"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f1a7dcd0129c308a1b9891f5193bf71068f0e23a1e7c0dc8fc16c8ea9c0aab02"
   },
   {
     "documentId": "nutrient:zinc_mg",
@@ -10244,8 +10244,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "af61de613c5f557441d66db6cf300e02909cd7e6943b99284e4b2ba68b0dc298"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "345358fee6edf90abfd26a4a7b0c8ae5b55ee484440c609a8b7b700cfcd1e6ef"
   },
   {
     "documentId": "nutrient:vitamin_d_ug",
@@ -10270,8 +10270,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "35d4ca9d401d866575ade2ef92a9192f6e0e41bdd2e90e0a6c065751da6fd160"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "7d2cb070e9baa8f09fd1c2c33ba3354e9dca34cf305a1eadb4038d1aca399820"
   },
   {
     "documentId": "nutrient:vitamin_b12_ug",
@@ -10299,8 +10299,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8e9a7345c9daa8be446b6c72df75628f852c37ca9f10d0a1f2a05ffdb843fd0c"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3a733e4876350b5a5252c771ded6475efebdd5f9d899ee14b3a3edc427e97090"
   },
   {
     "documentId": "nutrient:thiamin_mg",
@@ -10328,8 +10328,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "29a781c3b55359f95d33fb83877459d5949630d0ebf34c080c9ad0067c591b6f"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "585aff9da40a3e8940d124d507b689a0ed9d7251d71e8304b08f58601dd01731"
   },
   {
     "documentId": "nutrient:riboflavin_mg",
@@ -10354,8 +10354,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c2f779a13b4e1bb350158f0b310d998dd62f1ce6aabd7719dae291c116017f45"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "4434db76b29978a0ff9e4e520fc00fed34262576d8c317da5a3a05cd1be66836"
   },
   {
     "documentId": "nutrient:niacin_mg",
@@ -10383,8 +10383,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "45d5a0dd3971d8d10ba7cb282aecfd84f4c55c7d17bbd2206673e407dfcccae2"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "d58f65cba99bebfe72216e7d82c18d4126d9d11b6db3512d598ff6772296c760"
   },
   {
     "documentId": "nutrient:vitamin_b6_mg",
@@ -10412,8 +10412,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "5fa364b2ba6bf78c2dc5b684a203dc26c877249610df9f8705096cb3a6c74bce"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "3ec068988876fa094d40b02df920e3b413ad6a3534a31f30b362ea4de98a212d"
   },
   {
     "documentId": "nutrient:folate_food_ug",
@@ -10438,8 +10438,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4b850f4e508498f86ddbca36832ba0604a7ab42af097d7dec3ecb603efe12359"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "3d98cc5b1a9d2d8413bd772fcab2a518dfa7908485758c1372a69c64607134a8"
   },
   {
     "documentId": "nutrient:folate_dfe_ug",
@@ -10470,8 +10470,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "83ccf5b0232d48d203f248dc04b57ea68648810d29763fbd9042de1743b9d4d7"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "3fc8e6e6fc9078518ec57fb0cef7e02c03fdc7f27ffe4ef95465171a8dcd5198"
   },
   {
     "documentId": "nutrient:choline_mg",
@@ -10490,8 +10490,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3fe7e63bdc8ebd73a04de66b679a44304068cecf9b97fa27796e537a3e2fc8dc"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "35d67ec2e060181eea1bde46f2458227895f74f3cc196a41704194e873730906"
   },
   {
     "documentId": "nutrient:iodine_ug",
@@ -10510,8 +10510,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "c2a8f3b36d723425e166ee49747357dbd5258504cc4a9b6344254bc8a498823f"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "d5204c4d117a9dd27848100225f9386867418a3af735b0d7072912b8c239a586"
   },
   {
     "documentId": "nutrient:potassium_mg",
@@ -10530,8 +10530,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "66f9b1ba55787c9ba787c304321ae3e2d4a1e344329f486a203e3164367cbc33"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "ddd6a62657780a7c8dceec44ee39a64fd7f30c30c5c149e9445772dc345bed52"
   },
   {
     "documentId": "nutrient:phosphorus_mg",
@@ -10556,8 +10556,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "f7b8aac79e859cb58b4663614958e3e201a7729e7f194b1d778908a5d1c23e3a"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "38f85913fb98faf081e79ff591ccbd05cb6bcd1f756405936ebabf6dad384c0e"
   },
   {
     "documentId": "nutrient:copper_mg",
@@ -10576,8 +10576,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3fd966f76516af36d5d8ba70b3f77b59ab540813bf2a0de286d6a52e8b80424c"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "dc2b223a2ebea17442a3d27439bafa7cbbe4bf8b7d2b2fccb2cecf2367ac7320"
   },
   {
     "documentId": "nutrient:manganese_mg",
@@ -10596,8 +10596,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ec79ade9d7e9e0b6e8abba8f40c1dc2674e0ad092ec85865b8adec07d9f96931"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "c0632717063f3d6ef6e3a47236fe3078b113d5b65e9049fc475258933d4be431"
   },
   {
     "documentId": "nutrient:selenium_ug",
@@ -10616,8 +10616,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "baec703bd30737af3b12c00798d6f2ab61792992dd1c1caecdc94f95b5c1886a"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "5d482a466a74bde77a865abd315083790fbc8a51fd33244907e8bd1d53bf44e1"
   },
   {
     "documentId": "nutrient:vitamin_e_mg",
@@ -10642,8 +10642,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "94b20b1637e0ae0e7497d1117869ad5b06e066c1a67bd42678c4e4a089a6f158"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "1d0ef3256d2b57cc48bc753fdf9bf8a2d254acb714062afd7c32f9031c849e28"
   },
   {
     "documentId": "nutrient:vitamin_k_ug",
@@ -10662,8 +10662,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2070b09ca4523fe6c40a26654c62957c6b48b2e8ae988b9d6a04d7be533c4586"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "b0f65c331d3c24fc51d65a061cccfb006fe73589ad280156170b04a2754993cc"
   },
   {
     "documentId": "nutrient:chromium_ug",
@@ -10682,8 +10682,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "31e505541f1374cf89dfb2ebb0b42f02f68e43e27634c4da485e3563a9f7ae49"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "b3f5f189abf48246f1e4a20764d49925f923b40726d18a67e708d91c1d410b24"
   },
   {
     "documentId": "nutrient:fluoride_mg",
@@ -10702,8 +10702,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "da3fa92bed933cf916eb3ad83902b1d41c67a5d29ce23488f6562e2f34d937e3"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "5cdc61c6d6e9ad1480e2c18f57ea4e0c7543dcdb5b402b48d57978d3a58844b6"
   },
   {
     "documentId": "nutrient:molybdenum_ug",
@@ -10722,8 +10722,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "cbfc243e762177f844f692e5a277abb121d29e5731989064abf962b8ce4c29a2"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "52aed210831fe70f8bcbe3449630dad02d57326d8360a3566c18bd1309d6a784"
   },
   {
     "documentId": "nutrient:pantothenic_acid_mg",
@@ -10748,8 +10748,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "73f76937e980fae485175a0866dd80fcf8ab6c7161cd2bd43c13d514be1e3c3e"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "1436ca35e418c8caa8d4feecbf12a43d7fa4b796d663b889ab8c1be5709cf4a0"
   },
   {
     "documentId": "nutrient:biotin_ug",
@@ -10774,8 +10774,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "1470f78a5d57a12119ca8059ca0fe3a915c835cf7bf48d328da9c27210843991"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "4c8d8328e00434b03c3e7b2fa9449eef0cb6d66118309b974a1e6b52839fae74"
   },
   {
     "documentId": "nutrient:omega_3_g",
@@ -10803,8 +10803,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "7f5e2efa8271e7ac3d3775f0a3190edc150c060aa89e8697d8203d1219b54cc8"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "6e619cb649f287fd6e97ca53f461dba6229dfbad0ec8903ea64d5cd95ed3e003"
   },
   {
     "documentId": "nutrient:vitamin_a_rae_ug",
@@ -10829,8 +10829,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8c1cc973d3e21653aed6ba88e37d7ac6a77c56f2650954c8cdd7de3129a8f247"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "37a5d43fce66bfc0c384d042438c6e5cf3919af6c56fcb98ad10b777db22276f"
   },
   {
     "documentId": "nutrient:beta_carotene_ug",
@@ -10855,8 +10855,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d2a11ae09afdfa2149238823394c9179dabbad8aaa66997cf3ec63daf434a737"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "05b766aa08371fa54ccd00f040928d7fc9093522e0b2eb13a4710fab23d96b14"
   },
   {
     "documentId": "nutrient:retinol_ug",
@@ -10881,8 +10881,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "71474696e8d1de577bbc045280465c0f549dcfe3b25b553d42add39350e3062c"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "a76d41fc03243b44130baab55f31328e0c9ddf5cf655537ee9cc6c351d256adf"
   },
   {
     "documentId": "nutrient:folic_acid_ug",
@@ -10907,8 +10907,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "0effdfe86a71cb4091ea14832a9a8926c5369a5164b1b0864c039bda90765c67"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "c2cba340a5303e621dca3d828682d507dea13b29961c9248a9f6cbca10cdc5dc"
   },
   {
     "documentId": "nutrient:energy_kcal",
@@ -10936,8 +10936,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6e45f2631768e820f0fbf79400779f9421fca9455802aa7c5f3e3c30eebce6c3"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "5b44406f3c9a9dd04b631d4a128419a66e454dd6e984d74e06d3c4f3057bfec3"
   },
   {
     "documentId": "nutrient:energy_kj",
@@ -10965,8 +10965,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "740e57f0868a15be4d326590f0d9e34a39d541548c9f35a1d357e4e42dd8b60c"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "b4d89a92590c99321357c50fd71d00bb48df96d6135fd5db695f6d7a4ca90ef9"
   },
   {
     "documentId": "nutrient:alcohol_g",
@@ -10991,8 +10991,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "78d8b5435df7d3c19dfc663a315e9e7556cb7d6b2710d21d190fa1b9f3e910de"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "03ace337a4b8d93995c9159d9af440c27ec19152b63a8cf8061d2da88b8a5bff"
   },
   {
     "documentId": "nutrient:water_g",
@@ -11017,8 +11017,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dded02f179d2942bc6242c6761d459652f4cd278ebe146b5e39ce385c4d9fc57"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "8b4cf88b8164722231a6ceec212a25149c063ec5e504fedca6d12d832a02ef27"
   },
   {
     "documentId": "nutrient:protein_g",
@@ -11043,8 +11043,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2210c07849cca3a9c0d93d5cd527f6bd002acb26875e283dc7a78b4dba58e8ca"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "37ca97072cf7697cba4b700db4af8ed975320fdfea12473a593a4dcd6ec4367b"
   },
   {
     "documentId": "nutrient:carbohydrate_total_g",
@@ -11072,8 +11072,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e8e6f0c7d78f1ffa39c8d953db511e48b512bedd67dd0ac29d46f83adac8df26"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "5fed4037cbc1250706c50d9a7ff175bfe08abb341972aecc5a34b055144c64f7"
   },
   {
     "documentId": "nutrient:carbohydrate_available_g",
@@ -11101,8 +11101,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ab23e9608fef0d4cfde69b267dce0b1055272a498c5dd157f3a18d2c4fa73c78"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "812fb14ef10bd2f6cbaf5dbe9972d8a47a7f738f24fe17414d0f5baf607527f5"
   },
   {
     "documentId": "nutrient:fiber_total_g",
@@ -11133,8 +11133,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "bd7c6d912d8696ef459f55fb7aa0131aaafa426805bde498664af9278e785fc6"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "abbb01f2c0c218cfcfe2403ff444d4803c2b37d13886bf5d9e23e5bf543a4cb2"
   },
   {
     "documentId": "nutrient:sugars_total_g",
@@ -11159,8 +11159,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d86d6eee2b651a7438a5de96d6d8f1543b257f8e9bfb3f2b57986474016cc9f9"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "9c9459627a09e33d754186883032fe6f454dcd6ce59e3a6d5dddd2aca5f333d5"
   },
   {
     "documentId": "nutrient:added_sugars_g",
@@ -11185,8 +11185,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9976c68ff34a1cb305f2e64dabdcbf57071f51691c9ea4723fe7c0b9eff4c050"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "715d5a79e82682ed92c3debe08a5847fcad17eb8e9a5386ef8247618d684a293"
   },
   {
     "documentId": "nutrient:fat_total_g",
@@ -11214,8 +11214,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "efd46d2dfc5e978bd0dfdcbc7961ec1ee0e3cab48073eeb0b23cf0f124733d4b"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "ae4438e973ada23c27a4c2ca96fdebc24c10e64e4d73956b550923e55af09310"
   },
   {
     "documentId": "nutrient:fat_saturated_g",
@@ -11243,8 +11243,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "075a403dcbbc4e499dc6020a6e21c37f0cd55a3a22d483de9fab25ac4b580688"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "4e640e4bb5d53b7e50c35d58b5b4da99c647b38fd2fc2634df3085a450275490"
   },
   {
     "documentId": "nutrient:fat_monounsaturated_g",
@@ -11269,8 +11269,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b783a3df2ba738b2ae177aa66e7aaf82f9e4e0c0623b095a4af728bedabc2812"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "55738e5edf2b4fd96491eaa040dfeafc35931336eb0a49517da86907b383238c"
   },
   {
     "documentId": "nutrient:fat_polyunsaturated_g",
@@ -11295,8 +11295,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "90c380d8424c2425ae6887e4d31802e2c60d4611b5af8cb11a106bc86cf93f85"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "ea27ae9c52dbfdfee86587bd39dd362b43ca6b1e27673f451dd60d3aedb2377a"
   },
   {
     "documentId": "nutrient:trans_fat_g",
@@ -11321,8 +11321,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "eede68959cfba20de45e65b01ffbb067eec5afb50c5fa5113a6756596f9fef55"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "6daa7f8dc731fcecb7346ad1d905f8c013f80526b84175d207eb421c8ecd677a"
   },
   {
     "documentId": "nutrient:omega_6_g",
@@ -11350,8 +11350,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "904d0d2a39b59d015c0e89dcc7bde72284c4b96b150d442fa82d168e99f1190e"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "6ef7e1a38467894fc4272354159700ab83c4048aa1d049d64fa8312370833374"
   },
   {
     "documentId": "nutrient:cholesterol_mg",
@@ -11376,8 +11376,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "3006c49f3a38ce731751deff91f8e733f7710fda6924ed05b97221eccc0eb6e1"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "757d21f0b0e64f97f290a5be53b87524dc33b3eafe882ac6353b29aa43b8db5e"
   },
   {
     "documentId": "nutrient:sodium_mg",
@@ -11396,8 +11396,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6be7cf5ad2706c11d036c78bc7857d8d765a023df7e1f20df2ca7a0ff6577b58"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "93b92cdffa1b6857692b77a12d514b148772851d22518ee7f33b244a60a835ea"
   },
   {
     "documentId": "nutrient:chloride_mg",
@@ -11416,8 +11416,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "75962e1885fc9f7968382352387bb626e5cb9da75f0d9d40f574d50a6f83482d"
+    "lastReviewedAt": "2026-10-07",
+    "contentHash": "712ff6f1a33b4bd135035fa9eca63d9e4996eeea2e1ca972e53e3b684071a037"
   },
   {
     "documentId": "recipe:public_recipe_chickpea_cucumber_bowl",
@@ -11436,8 +11436,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b7b83214adbb87b20ae3562ebc024e693211702c47df6e36f477582716f9e083"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "968af526cca2afc8cee6b7a3aaa715d0c6c6a6b69e29012076f7a32e18bb53f0"
   },
   {
     "documentId": "recipe:public_recipe_potato_cucumber_bowl",
@@ -11456,8 +11456,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dce08fb7125b5f7227847e010f7fe0f256c70c3449b5e7e3548aba5cadc1a3fe"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "f8d2fb04934b2c6ebbf46ab2a6eeb66e824d5b6f052c2527da5df8cdf29abc25"
   },
   {
     "documentId": "recipe:public_recipe_rice_chickpea_bowl",
@@ -11476,8 +11476,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "84bf48a03b7f326d9ef92f1909454f36b36fcb347c0c30cb538a0a9d50e7a240"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b2d6676bbdd9a6972d4e0f4b57592affd3a66caff17c6db0e309c5e0d3caccdf"
   },
   {
     "documentId": "recipe:public_recipe_chickpea_carrot_salad",
@@ -11496,8 +11496,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "dcf4ff18d9c2fbcc8cccbe8366f3c0afcbb3c62cd66acd8e4b82ee7ae17b11d8"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "25e196f08bb4ce2973de3076a634fbf93ab270c58aa9d6395c1da1b7c5a7e99d"
   },
   {
     "documentId": "recipe:public_recipe_apple_banana_bowl",
@@ -11516,8 +11516,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6cbbaa5e6ae3c0c922acdc26208814c83cccab4192d316f726ad605b4b0068d3"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "57ca3011ca755b96b014e858b5fd25ff047078b1a5097f0754115fbfa6705d4e"
   },
   {
     "documentId": "recipe:public_recipe_mango_pineapple_bowl",
@@ -11536,8 +11536,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "fff9b4467cd53f5e63aebe240986187a3d33c9547b92f423dd9485fa389a9c8a"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "2d6c074c36d2bda7d0b59a07ea22b0e3b0947bb1e6c7fc08f0a3a5fb7c14445b"
   },
   {
     "documentId": "recipe:public_recipe_strawberry_banana_bowl",
@@ -11556,8 +11556,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "8009b2acf9eb07bce6dc761b22cb9a782dcb81ad747228f2ed4db4c634133866"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "3720b4c2257f3854f79e2a9e0918f3bd5baa4bb4913260f46a0127c0957417c2"
   },
   {
     "documentId": "recipe:public_recipe_pear_apple_bowl",
@@ -11576,8 +11576,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "6821f6b01358d6173743c26013cc50dac0e4f82e3eef61648553cee293fc31d5"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "fa68283890be617f6348dd53608167f5c17cb23a44d87985748f96e03d17d661"
   },
   {
     "documentId": "recipe:public_recipe_watermelon_pomegranate_bowl",
@@ -11596,8 +11596,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b58966783d050204f3f4f185e1bed4a4cc67947bd09a5d4624f412edc51a2207"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "b1ec442d06af8b9dc7dd31562b54854d2984cfe300fc648c1116207360e6a92f"
   },
   {
     "documentId": "recipe:public_recipe_pineapple_raspberry_bowl",
@@ -11616,8 +11616,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ef153a1e2c7a8515eebc25affc9b392863daf0d048bd11d846d4aececcbc26a3"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "4c5ce91fcb397ac71a610ea1e33ffd3947f61fffbc29a7cc8357c0bcdeffa854"
   },
   {
     "documentId": "recipe:public_recipe_mandarin_mango_bowl",
@@ -11636,8 +11636,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "9088ae065cebbe5d074dac1966c5fda1cedc5e943d77e48aaf256aef5fed5c5f"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "bbd02b861292c61d4f6c0666a0e0eec502e071ccaaf8db7347c4da5b8c941531"
   },
   {
     "documentId": "recipe:public_recipe_cucumber_carrot_salad",
@@ -11656,8 +11656,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "4e1f0d84681ca81cabffdfc0cbb1edad3f44494bf50f91fb30898ef0bcbf787b"
+    "lastReviewedAt": "2026-10-05",
+    "contentHash": "ffce2664742b31044e7d006631c569709744ea7984042130c50035b80e27fc52"
   },
   {
     "documentId": "recipe:public_recipe_kidney_bean_rice_bowl",
@@ -11676,8 +11676,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "0391cd7500328eb027db636e436e28344cb4c96e5c58ee39577989e2bb730105"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "10b70a6e57e55082f9f31ba03e14e833cecae6b23c9ae60539a79c92e2e7dfa1"
   },
   {
     "documentId": "recipe:public_recipe_brown_rice_black_bean_bowl",
@@ -11696,8 +11696,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "e057fc77f991f4f6d2918af56c6f0885998822d6f4e726e7cea0f40d25aa09b6"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "442ace6c9fd95b5ee27565ea3b37bbdad57df9a4effa5d1ecfc02b4277338381"
   },
   {
     "documentId": "recipe:public_recipe_pinto_bean_carrot_bowl",
@@ -11716,8 +11716,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "ba3f862e4643e1b4959de95146e6c16f9cecc8d24c13186d6305ca9895bbe2a2"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "138afe38fc260b6ef60cf18a02fe98c5d34da6aa5e2f285abb9b0f2a1b34a9c4"
   },
   {
     "documentId": "recipe:public_recipe_pea_potato_bowl",
@@ -11736,8 +11736,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "189ba014c5c67408174678ba87ca2273f5ce4a98c405aed9c3e6cbfbae174c0d"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "05af5ce3f4198e035b3afc3abeb3ce111b70edb19ffe1ec28df4ffb08c123cbc"
   },
   {
     "documentId": "recipe:public_recipe_cooked_oat_banana_bowl",
@@ -11756,8 +11756,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "2d8b4cf7cdac2e03d1490b62e98ae73ba1c539335e03cf723a4b1282469f9c68"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "17bc4a6eec8cc4be5858ff523b8fcafb2faca509d4c148aa65261289aa64e7e1"
   },
   {
     "documentId": "recipe:public_recipe_cooked_oat_apple_bowl",
@@ -11776,8 +11776,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b854bbdac7f3436e6b10040c8e84b2ed34b6365a9bce466db656cc37131f01a4"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "cda58bf6b8c5924bab996dfc77aa16a3ad77285bda8afeac2ccccb9a9bc5e0dd"
   },
   {
     "documentId": "recipe:public_recipe_yogurt_banana_bowl",
@@ -11796,8 +11796,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b60a40969c84265252d7050db250301b91d82cc3389e7df93441aebdabaf5df5"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "444d6531a488f95801b14a97b382d40524b9d2d6a1c856453e911937f8612f16"
   },
   {
     "documentId": "recipe:public_recipe_yogurt_mango_bowl",
@@ -11816,8 +11816,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "b96e87765940f62675d17a389a7326dd8d8d894268f9158bf3fce3f8406ecc9e"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "fec41a0ca4d83a30eaf034a13d99a748db4417312ced916c18085341f6cc50fb"
   },
   {
     "documentId": "recipe:public_recipe_egg_potato_bowl",
@@ -11836,8 +11836,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "7e81166db333d153ca3e7b72b6e8847300c8cbb3ceb279176e9111bb7ad498b2"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "e3f95bfb3b710a5d98062416ee6b5f68d834a17d487776c5cfbc2ef2f331deed"
   },
   {
     "documentId": "recipe:public_recipe_egg_rice_pea_bowl",
@@ -11856,8 +11856,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "d4c19bdc565bccf8968777b9fdb990edf5b2515661157b1017a4e63879b2f110"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "7871744b79df00e2030d0f89eebdf41af22cae2a8fbb632c3107e5d1d8a3a5be"
   },
   {
     "documentId": "recipe:public_recipe_brown_rice_chickpea_bowl",
@@ -11876,8 +11876,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "266a9ba22be0b2ec139ca6205317b43f26b5f2364569e34d18b13a8a20f2c0b9"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "a595c2b2530370e98c188b64c20d3ba40f63de08407fd0e2bc309024ba65a636"
   },
   {
     "documentId": "recipe:public_recipe_kidney_bean_potato_bowl",
@@ -11896,8 +11896,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": null,
-    "contentHash": "bf02f39b8ceefa482816f39bd91fb5ae1799defb7f56cd0b7b17bc1860ba0e6e"
+    "lastReviewedAt": "2026-10-06",
+    "contentHash": "d107de0b3c1f3cf665f7653ba8180475a88f2d5692060f8587def69e30ae9dcb"
   },
   {
     "documentId": "meal_plan_template:template_rice_chickpea_meal_prep",

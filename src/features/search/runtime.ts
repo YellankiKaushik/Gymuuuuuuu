@@ -40,6 +40,7 @@ async function sha256(value: string) {
 }
 export type PublicSearchRuntime = {
   engine: LocalSearchEngine;
+  documents: readonly PublicSearchDocument[];
   documentCount: number;
   status: "verified" | "rebuilt";
 };
@@ -67,6 +68,7 @@ export async function loadPublicSearchRuntime(): Promise<PublicSearchRuntime> {
   );
   return {
     engine,
+    documents: docs,
     documentCount: docs.length,
     status: matches ? "verified" : "rebuilt",
   };

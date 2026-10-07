@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-test("nutrient routes, filters, framework isolation and hidden draft topics", async ({
+test("nutrient routes, filters, framework isolation and unavailable identities", async ({
   page,
 }) => {
   await page.goto("/nutrients");
@@ -34,11 +34,27 @@ test("nutrient routes, filters, framework isolation and hidden draft topics", as
     page.locator('meta[name="robots"][content="noindex"]'),
   ).toHaveCount(0);
   await page.goto("/nutrients/protein");
+  await expect(
+    page.getByRole("heading", { name: "Protein", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.locator('meta[name="robots"][content="noindex"]'),
+  ).toHaveCount(0);
+  await page.goto("/nutrients/unpublished-test-identity");
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
     "content",
     "noindex",
   );
   await page.goto("/nutrients/compare?topics=protein_g,fat_total_g");
+  await expect(
+    page.getByRole("heading", { name: "Protein", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Total fat", exact: true }),
+  ).toBeVisible();
+  await page.goto(
+    "/nutrients/compare?topics=protein_g,unpublished_test_identity",
+  );
   await expect(
     page.getByRole("heading", { name: "Choose reviewed nutrient topics." }),
   ).toBeVisible();
