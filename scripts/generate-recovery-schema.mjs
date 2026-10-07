@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import process from "node:process";
 const path =
   "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Data_Schema.json";
 const root = JSON.parse(readFileSync(path, "utf8"));
@@ -58,15 +59,17 @@ writeFileSync(
       )
       .join(""),
 );
-mkdirSync("src/content/recovery", { recursive: true });
-const reference = JSON.parse(
-  readFileSync(
-    "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Reference_Data.json",
-    "utf8",
-  ),
-);
-delete reference.testVectors;
-writeFileSync(
-  "src/content/recovery/reference.json",
-  JSON.stringify(reference, null, 2) + "\n",
-);
+if (!process.argv.includes("--schema-only")) {
+  mkdirSync("src/content/recovery", { recursive: true });
+  const reference = JSON.parse(
+    readFileSync(
+      "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Reference_Data.json",
+      "utf8",
+    ),
+  );
+  delete reference.testVectors;
+  writeFileSync(
+    "src/content/recovery/reference.json",
+    JSON.stringify(reference, null, 2) + "\n",
+  );
+}

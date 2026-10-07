@@ -1,0 +1,38 @@
+{
+  "source": {
+    "id": "nia_flexibility_guide_2018",
+    "title": "NIA Exercise & Physical Activity: flexibility education and back-of-leg/calf stretches, March 2018",
+    "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+    "sourceVersion": "March 2018; Publication No. 18-AG-4258",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T17:11:50Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "public_domain_data",
+    "rightsReference": "https://www.nia.nih.gov/about/policies",
+    "limitations": [
+      "NIA text reuse policy: public domain unless otherwise indicated; photos and credited artwork are excluded.",
+      "Historical older-adult education, not current evidence of hypertrophy protocols or individual suitability.",
+      "Publication month is known; exact publication day is not supplied.",
+      "No independent human technique or clinical review.",
+      "Printed pages 70, 82 and 88 only; source hold/repetition ranges are not individualized instructions.",
+      "No soreness-recovery, hypertrophy, rehabilitation or injury-prevention benefit is inferred."
+    ]
+  },
+  "definitionsSha256": "360e592ae6a2f8631dfa53461c32eae5d8fc5bc3e35b1261bc5c8bced160d09d",
+  "pdfSha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0",
+  "sourceLocators": [
+    "Printed page 70: dose, warm-up and safety",
+    "Printed page 82: back of leg floor stretch",
+    "Printed page 88: wall-supported calf stretch"
+  ],
+  "extractionMethod": "Direct inspection of the retained government PDF text; source lower-bound doses with unspecified time retained as unknown",
+  "recordIds": [
+    "static_stretching",
+    "stretching_intensity",
+    "routine_hamstring_flexibility",
+    "routine_calf_flexibility"
+  ],
+  "extractSha256": "f56e84b8521c41ae46931f28862eb73077ca06732cc3c3cad69f32c87bd6e7ca"
+}

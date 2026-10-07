@@ -101,3 +101,13 @@ Public factual resolution uses a same-origin TanStack server function, keeping c
 Saved-reference routes now require app-relative URLs and reject executable schemes, external origins, protocol-relative routes, backslashes and control characters before restore/import writes. Existing valid references and backups retain their format. Search review dates now come from the explicit machine-publication manifest rather than inconsistent adapter field paths.
 
 Validation at this checkpoint: 274 unit tests and coverage passed, including seven comparison and request-boundary regressions, and ten Chromium/WebKit comparison/nutrient browser checks passed. The production bundle is 667,762 gzip bytes against the unchanged 716,800-byte budget. GitHub's earlier Protein-draft expectation was replaced with assertions for the now-published sourced page, an unavailable identity and valid/invalid conceptual comparisons. Overall content completion remains in progress.
+
+## Source-scoped training and flexibility additions
+
+Primary training abstracts retain study population, source date/DOI, evidence type and limitations. ACSM position-stand observations, scoping reviews, meta-analyses, coach consensus and a complete-cessation deload trial remain separate; a nonsignificant comparison is not equivalence. Numeric personal prescriptions are not inferred. Byte-pinned original observations and approved source objects precede static publication. Existing published records are immutable.
+
+The NIA March 2018 flexibility extraction preserves printed pages 70, 82 and 88 and excludes photographs. Two routines choose the source lower bounds of ten-second holds, three repetitions per side. Warm-up, relaxation and transitions have unspecified durations, so total minutes remain unknown. Publication does not infer soreness relief or injury prevention.
+
+Source routine copies previously exceeded the notes limit when full provenance was serialized into notes. An additive optional bounded publicationProvenance field in the Phase 12 normative schema now preserves original steps, references, limits and honest review level. Notes retain their 5000-character limit. Legacy backups remain valid; source URLs, step order and array/text limits are validated before writes. CSV and JSON preserve the snapshot. A dedicated local disclosure shows original instructions separately from later edits. The schema generator has an explicit schema-only mode to preserve independently verified source registry additions.
+
+Read-only published-route browser cases run independently in parallel within the unchanged two-worker configuration. Storage-mutating flows remain separate. No timeout, content budget or test assertion is weakened.

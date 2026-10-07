@@ -37,8 +37,8 @@ for (const article of additions) {
     );
 }
 const proposed = [
-  ...old.filter((s) => !additions.some((r) => r.id === s.id)),
-  ...additions,
+  ...old.map((s) => additions.find((r) => r.id === s.id) ?? s),
+  ...additions.filter((r) => !old.some((s) => s.id === r.id)),
 ];
 const errors = validateScience(proposed);
 if (errors.length) throw Error(errors.join("\n"));

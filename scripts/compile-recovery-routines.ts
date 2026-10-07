@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { z } from "zod";
 import {
   publicRecoveryRoutineSchema,
   validateRecoveryRelease,
@@ -16,7 +17,7 @@ const existing = publicRecoveryRoutineSchema
   .parse(read("src/content/recovery/routines.json"));
 for (const old of existing) {
   const proposed = definitions.find((r) => r.routine.id === old.routine.id);
-  if (!proposed || JSON.stringify(proposed) !== JSON.stringify(old))
+  if (proposed && JSON.stringify(proposed) !== JSON.stringify(old))
     throw Error("Existing public routine versions are immutable.");
 }
 for (const item of definitions) {
@@ -42,13 +43,20 @@ for (const item of definitions) {
   )
     throw Error("Walking template differs from the extracted NHS step.");
 }
-const pins = definitions.map((item) => ({
+const combined = [
+  ...existing,
+  ...definitions.filter(
+    (entry) => !existing.some((old) => old.routine.id === entry.routine.id),
+  ),
+];
+validateRecoveryRelease(publicRecoveryArticles, combined);
+const pins = combined.map((item) => ({
   id: item.routine.id,
   sha256: createHash("sha256").update(JSON.stringify(item)).digest("hex"),
 }));
 const target = "src/content/recovery/routines.json",
   pinTarget = "src/content/provenance/recovery-routine-version-pins.json";
-const content = JSON.stringify(definitions, null, 2) + "\n",
+const content = JSON.stringify(combined, null, 2) + "\n",
   pinContent = JSON.stringify(pins, null, 2) + "\n";
 if (process.argv.includes("--check")) {
   if (
@@ -57,9 +65,19 @@ if (process.argv.includes("--check")) {
   )
     throw Error("Recovery routine output or version pin is stale.");
 } else {
+  const oldPins = z
+    .array(
+      z.strictObject({
+        id: z.string(),
+        sha256: z.string().regex(/^[a-f0-9]{64}$/),
+      }),
+    )
+    .parse(read(pinTarget));
   if (
-    existing.length &&
-    JSON.stringify(read(pinTarget)) !== JSON.stringify(pins)
+    oldPins.some(
+      (old) =>
+        !pins.some((pin) => pin.id === old.id && pin.sha256 === old.sha256),
+    )
   )
     throw Error("Existing routine version hashes cannot be overwritten.");
   writeFileSync(target, content);

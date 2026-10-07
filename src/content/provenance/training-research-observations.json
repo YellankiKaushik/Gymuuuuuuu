@@ -1,0 +1,71 @@
+[
+  {
+    "sourceId": "source_acsm_rt_2026",
+    "observations": [
+      "137 systematic reviews; more than 30,000 participants; healthy adults aged at least 18; included randomized resistance-training interventions lasting 6–52 weeks; searches through October 2024.",
+      "Strength, muscle size, power, endurance and several physical-function outcomes improved versus no exercise.",
+      "Heavier loads, complete movement range, session sequencing and multiple weekly sessions favored strength; greater weekly set volume favored hypertrophy.",
+      "Equipment, set structure, time under tension and periodization did not consistently alter adaptations."
+    ]
+  },
+  {
+    "sourceId": "source_rir_scoping_2024",
+    "observations": [
+      "31 studies; 855 mostly male adult participants; apparently healthy individuals; searches through April 2023.",
+      "RIR scales describe estimated repetitions to task failure; feasibility and accuracy depend on context; predictions closer to failure tended to be more accurate."
+    ]
+  },
+  {
+    "sourceId": "source_tempo_definition_2015",
+    "observations": [
+      "Repetition duration includes concentric, eccentric and isometric components.",
+      "Eight studies, interventions at least six weeks, participants without chronic disease or injury, training to failure; limited evidence for very slow repetitions."
+    ]
+  },
+  {
+    "sourceId": "source_tempo_hypertrophy_2025",
+    "observations": [
+      "14 studies of healthy adults; other training variables controlled; eccentric or concentric tempo manipulated.",
+      "Bayesian between-condition estimates indicated a minimal overall hypertrophy difference; subgroup precision varied."
+    ]
+  },
+  {
+    "sourceId": "source_superset_meta_2025",
+    "observations": [
+      "A superset sequences two exercises with little or no intervening rest.",
+      "19 studies; 313 participants; searches through 10 February 2024.",
+      "Shorter sessions and higher perceived exertion; pooled chronic adaptations showed no clear between-method advantage; pairing type changed volume-load results.",
+      "The abstract conclusion overstates muscle-damage and recovery implications compared with its reported creatine-kinase and perceived-recovery results; those implications are not adopted."
+    ]
+  },
+  {
+    "sourceId": "source_drop_definition_2023",
+    "observations": [
+      "The reviewed method reduced the load after concentric failure and immediately continued to another failure endpoint.",
+      "Six studies; 142 predominantly male young participants; no clear between-group hypertrophy difference.",
+      "A printed confidence interval in the abstract is inconsistent; no effect-size values or interval bounds are imported."
+    ]
+  },
+  {
+    "sourceId": "source_drop_meta_2026",
+    "observations": [
+      "12 studies; 274 participants; searches through 20 January 2026.",
+      "Higher acute perceived exertion and lactate; no statistically clear chronic hypertrophy, strength or endurance advantage over traditional sets; no consistent heart-rate difference."
+    ]
+  },
+  {
+    "sourceId": "source_deload_consensus_2023",
+    "observations": [
+      "A deload was defined by coaches as temporarily reducing training stress to support recovery and subsequent training.",
+      "Three Delphi rounds; 34, 29 and 21 coaches respectively; expert consensus rather than an adaptation trial; optimum implementation unknown."
+    ]
+  },
+  {
+    "sourceId": "source_deload_trial_2024",
+    "observations": [
+      "39 young trained men and women randomized to a nine-week high-volume program with or without one week of complete resistance-training cessation at its midpoint.",
+      "Continuous training improved lower-body strength more; measured hypertrophy, power and endurance differences were not appreciable.",
+      "Complete cessation was tested, not every form of reducing training stress; lower-body sessions supervised and upper-body sessions unsupervised."
+    ]
+  }
+]

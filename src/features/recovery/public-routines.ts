@@ -34,6 +34,7 @@ export function createPublicRoutineCopy(
       ...structuredClone(step),
       id: newRecoveryId(),
     })),
-    notes: JSON.stringify(provenance),
+    notes: `Copied from ${entry.article.title}. Source checked ${entry.article.review.reviewedAt}; personal-use publication, no independent human review.`,
+    publicationProvenance: provenance,
   });
 }

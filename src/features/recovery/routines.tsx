@@ -59,6 +59,54 @@ export function LocalRoutines() {
                   {routine.steps.length} steps ·{" "}
                   {routine.estimatedMinutes ?? "Unknown"} estimated minutes
                 </p>
+                {routine.publicationProvenance && (
+                  <details>
+                    <summary>Original source instructions</summary>
+                    <p>
+                      Source checked{" "}
+                      {routine.publicationProvenance.sourceChecked}.
+                      Personal-use publication; no independent human review.
+                      Your changes do not alter this original source snapshot.
+                    </p>
+                    <ul>
+                      {routine.publicationProvenance.sourceReferences.map(
+                        (source) => (
+                          <li key={source.id}>
+                            <a
+                              href={source.url}
+                              rel="noreferrer"
+                              target="_blank"
+                            >
+                              {source.title}
+                            </a>
+                          </li>
+                        ),
+                      )}
+                    </ul>
+                    <ol>
+                      {routine.publicationProvenance.sourceSteps.map((step) => (
+                        <li key={step.id}>
+                          <strong>{step.title}</strong>: {step.doseValue}{" "}
+                          {step.doseType.replaceAll("_", " ")}
+                          <p>{step.techniqueCue}</p>
+                          <p>{step.intensityCue}</p>
+                          <ul>
+                            {step.stopSignals?.map((signal) => (
+                              <li key={signal}>{signal}</li>
+                            ))}
+                          </ul>
+                        </li>
+                      ))}
+                    </ol>
+                    <ul>
+                      {routine.publicationProvenance.limitations.map(
+                        (limitation) => (
+                          <li key={limitation}>{limitation}</li>
+                        ),
+                      )}
+                    </ul>
+                  </details>
+                )}
                 <div className="actions">
                   <a
                     className="button primary"
@@ -210,8 +258,8 @@ function RoutineForm({ existing }: { existing: Routine | undefined }) {
     >
       <p>
         Local instructions are authored by you. They receive no clinical or
-        editorial endorsement. Only reviewed published exercise references can
-        be linked; none are currently available.
+        editorial endorsement. Source instructions, when copied, remain
+        available separately from your changes.
       </p>
       <Field label="Routine title">
         <input

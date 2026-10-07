@@ -916,6 +916,19 @@
         "running_cool_down"
       ],
       "licenseNote": "Source checked 2026-10-07; OGL v3.0 with exclusions; no publisher endorsement."
+    },
+    {
+      "id": "nia_flexibility_guide_2018",
+      "title": "NIA Exercise & Physical Activity: flexibility education and back-of-leg/calf stretches, March 2018",
+      "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+      "year": 2018,
+      "type": "government_guidance",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+      "role": [
+        "flexibility_education",
+        "held_stretch_template"
+      ],
+      "licenseNote": "US government text subject to NIA exclusions; no photos, figures or credited artwork reproduced. Source checked 2026-10-07."
     }
   ]
 }

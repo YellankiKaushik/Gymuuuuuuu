@@ -1,0 +1,22 @@
+{
+  "extractedAt": "2026-10-07T17:03:04Z",
+  "reviewMethod": "Machine primary-abstract inspection and source-specific paraphrase; no independent human appraisal",
+  "definitionSha256": "0d3808700719d31024718d3f1cdf31c4fdddbfa483b1e2f4c7c2812ac4ed1cca",
+  "sourcesSha256": "1a69a513db55d65bac74a58866c4b2d61fceff170c9d16c1df31294cfe25e64b",
+  "observationsSha256": "f25874a51312b8b152a1f0584b33423beab8b144a6194fcb9f9b1c2d4dd25623",
+  "identityIds": [
+    "science_strength_adaptation",
+    "science_power_adaptation",
+    "science_physical_function_adaptation",
+    "science_training_volume",
+    "science_load_relative_intensity",
+    "science_training_frequency",
+    "science_range_of_motion",
+    "science_exercise_order",
+    "science_repetitions_in_reserve",
+    "science_tempo_repetition_duration",
+    "science_superset",
+    "science_drop_set",
+    "science_deload"
+  ]
+}

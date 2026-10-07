@@ -2,6 +2,32 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/learn/workout-science/strength-adaptation", "Strength adaptation"],
+  ["/learn/workout-science/power-adaptation", "Power development"],
+  ["/learn/workout-science/physical-function-adaptation", "Physical function"],
+  ["/learn/workout-science/training-volume", "Training volume"],
+  [
+    "/learn/workout-science/load-relative-intensity",
+    "Load and relative intensity",
+  ],
+  ["/learn/workout-science/training-frequency", "Training frequency"],
+  ["/learn/workout-science/range-of-motion", "Range of motion"],
+  ["/learn/workout-science/exercise-order", "Exercise order"],
+  ["/learn/workout-science/repetitions-in-reserve", "Repetitions in reserve"],
+  [
+    "/learn/workout-science/tempo-repetition-duration",
+    "Tempo and repetition duration",
+  ],
+  ["/learn/workout-science/superset", "Superset"],
+  ["/learn/workout-science/drop-set", "Drop set"],
+  ["/learn/workout-science/deload", "Deloading"],
+  ["/recovery/topics/static-stretching", "Static Stretching"],
+  ["/recovery/topics/stretching-intensity", "Stretching Intensity"],
+  [
+    "/mobility/routines/routine-hamstring-flexibility",
+    "Hamstring Flexibility Routine",
+  ],
+  ["/mobility/routines/routine-calf-flexibility", "Calf Flexibility Routine"],
   ["/nutrients/energy", "Energy"],
   ["/nutrients/energy-kilojoules", "Energy in kilojoules"],
   ["/nutrients/alcohol", "Alcohol"],
@@ -87,48 +113,52 @@ const publicRoutes = [
     "Creatine Monohydrate",
   ],
 ] as const;
-for (const [path, title] of publicRoutes) {
-  test(`@a11y Phase 19 published content ${path}`, async ({ page }) => {
-    const errors: string[] = [];
-    const remote: string[] = [];
-    page.on("pageerror", (error) => errors.push(error.message));
-    page.on("request", (request) => {
-      if (!request.url().startsWith("http://127.0.0.1:3000"))
-        remote.push(request.url());
-    });
-    await page.goto(path);
-    await expect(
-      page.getByRole("heading", { name: title, exact: true }).first(),
-    ).toBeVisible();
-    await expect(
-      page
-        .getByText(/personal.use publication|published_personal_use/i)
-        .first(),
-    ).toBeVisible();
-    for (const width of [320, 768, 1440]) {
-      await page.setViewportSize({ width, height: 1000 });
-      for (const theme of ["light", "dark"]) {
-        await page.evaluate((value) => {
-          document.documentElement.dataset.theme = value;
-        }, theme);
-        expect(
-          await page.evaluate(
-            () => document.documentElement.scrollWidth <= innerWidth,
-          ),
-        ).toBe(true);
-        expect(
-          (
-            await new AxeBuilder({ page })
-              .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
-              .analyze()
-          ).violations,
-        ).toEqual([]);
+test.describe("Published library routes", () => {
+  // Each read-only route case has an isolated browser context and no shared writes.
+  test.describe.configure({ mode: "parallel" });
+  for (const [path, title] of publicRoutes) {
+    test(`@a11y Phase 19 published content ${path}`, async ({ page }) => {
+      const errors: string[] = [];
+      const remote: string[] = [];
+      page.on("pageerror", (error) => errors.push(error.message));
+      page.on("request", (request) => {
+        if (!request.url().startsWith("http://127.0.0.1:3000"))
+          remote.push(request.url());
+      });
+      await page.goto(path);
+      await expect(
+        page.getByRole("heading", { name: title, exact: true }).first(),
+      ).toBeVisible();
+      await expect(
+        page
+          .getByText(/personal.use publication|published_personal_use/i)
+          .first(),
+      ).toBeVisible();
+      for (const width of [320, 768, 1440]) {
+        await page.setViewportSize({ width, height: 1000 });
+        for (const theme of ["light", "dark"]) {
+          await page.evaluate((value) => {
+            document.documentElement.dataset.theme = value;
+          }, theme);
+          expect(
+            await page.evaluate(
+              () => document.documentElement.scrollWidth <= innerWidth,
+            ),
+          ).toBe(true);
+          expect(
+            (
+              await new AxeBuilder({ page })
+                .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
+                .analyze()
+            ).violations,
+          ).toEqual([]);
+        }
       }
-    }
-    expect(errors).toEqual([]);
-    expect(remote).toEqual([]);
-  });
-}
+      expect(errors).toEqual([]);
+      expect(remote).toEqual([]);
+    });
+  }
+});
 test("public recipe loads independently of personal databases and rejects unknown slugs", async ({
   page,
 }) => {

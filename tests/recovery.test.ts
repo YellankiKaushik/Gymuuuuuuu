@@ -226,6 +226,8 @@ it("exports five CSV families without missing-as-zero or spreadsheet formula exe
   expect(publicRecoveryArticles.map((r) => r.id)).toEqual([
     "sleep_duration_adults",
     "sleep_regularity",
+    "static_stretching",
+    "stretching_intensity",
   ]);
   expect(publicRecoveryArticles.every((r) => r.sourceIds.length > 0)).toBe(
     true,

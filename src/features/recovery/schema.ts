@@ -7,6 +7,7 @@ import {
   recoveryCheckInNormativeSchema,
   routineStepNormativeSchema,
   customRoutineVersionNormativeSchema,
+  routinePublicationProvenanceNormativeSchema,
   mobilitySessionNormativeSchema,
   auditEventNormativeSchema,
 } from "./schema.generated";
@@ -135,6 +136,21 @@ export const routineSchema = customRoutineVersionNormativeSchema
   .extend({
     context: z.enum(contexts),
     steps: z.array(stepSchema).min(1).max(100),
+    publicationProvenance: routinePublicationProvenanceNormativeSchema
+      .extend({
+        sourceSteps: z.array(stepSchema).min(1).max(100),
+        sourceReferences: z
+          .array(
+            z.strictObject({
+              id: z.string().min(1).max(100),
+              title: z.string().min(1).max(400),
+              url: z.url({ protocol: /^https?$/ }).max(2048),
+            }),
+          )
+          .min(1)
+          .max(20),
+      })
+      .optional(),
     revisionReason: z.string().min(1).max(1000),
   })
   .superRefine((v, ctx) => {
@@ -145,6 +161,16 @@ export const routineSchema = customRoutineVersionNormativeSchema
       ctx.addIssue({
         code: "custom",
         message: "Routine steps need unique IDs and consecutive order",
+      });
+    const original = v.publicationProvenance?.sourceSteps;
+    if (
+      original &&
+      (new Set(original.map((step) => step.id)).size !== original.length ||
+        original.some((step, i) => step.order !== i + 1))
+    )
+      ctx.addIssue({
+        code: "custom",
+        message: "Original source steps need unique IDs and consecutive order",
       });
   });
 export const identitySchema = z.strictObject({

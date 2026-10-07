@@ -14,14 +14,24 @@ import {
   purgeRecovery,
 } from "../src/features/recovery/storage";
 import pins from "../src/content/provenance/recovery-routine-version-pins.json";
+import { routineSchema } from "../src/features/recovery/schema";
+import { recoveryCsv } from "../src/features/recovery/export";
 it("keeps walking doses, immutable source versions and draft exercise boundaries", () => {
-  expect(publicRecoveryRoutines.map((r) => r.article.id)).toEqual([
+  expect(publicRecoveryRoutines.slice(0, 2).map((r) => r.article.id)).toEqual([
     "routine_running_warmup",
     "routine_post_run_cooldown",
   ]);
   expect(() => validateRecoveryRelease()).not.toThrow();
   for (const entry of publicRecoveryRoutines) {
-    expect(entry.routine.steps[0]!.doseValue).toBe(300);
+    if (entry.article.sourceIds.includes("nhs_walking_transitions_2026"))
+      expect(entry.routine.steps[0]!.doseValue).toBe(300);
+    else {
+      expect(entry.routine.steps).toHaveLength(6);
+      expect(entry.routine.steps.every((step) => step.doseValue === 10)).toBe(
+        true,
+      );
+      expect(entry.routine.estimatedMinutes).toBeNull();
+    }
     expect(entry.routine.steps[0]!.phase03ExerciseId).toBeNull();
     expect(pins.find((p) => p.id === entry.routine.id)?.sha256).toBe(
       createHash("sha256").update(JSON.stringify(entry)).digest("hex"),
@@ -51,7 +61,20 @@ it("retains original instructions in independent local copies through backup, re
     );
     await saveRoutine(first);
     const backup = await readRecoveryBackup();
-    const provenance: unknown = JSON.parse(first.notes!);
+    expect(recoveryCsv(backup, "routines")).toContain("publication_provenance");
+    expect(recoveryCsv(backup, "routines")).toContain(
+      "routine_running_warmup_v1",
+    );
+    const malformed = structuredClone(backup);
+    malformed.customRoutineVersions[0]!.publicationProvenance!.sourceReferences[0]!.url =
+      "javascript:alert(1)";
+    await expect(
+      restoreRecoveryBackup(malformed, "replace_local", true),
+    ).rejects.toThrow();
+    expect((await readRecoveryBackup()).customRoutineVersions).toEqual(
+      backup.customRoutineVersions,
+    );
+    const provenance: unknown = first.publicationProvenance;
     expect(provenance).toMatchObject({
       publicIdentity: "routine_running_warmup",
       publicVersion: "routine_running_warmup_v1",
@@ -79,12 +102,30 @@ it("retains original instructions in independent local copies through backup, re
         .doseValue,
     ).toBe(300);
     expect(
-      JSON.parse(
-        restored.customRoutineVersions.find((r) => r.versionNumber === 2)!
-          .notes!,
-      ).sourceSteps[0].doseValue,
+      restored.customRoutineVersions.find((r) => r.versionNumber === 2)!
+        .publicationProvenance!.sourceSteps[0]!.doseValue,
     ).toBe(300);
   } finally {
     vi.unstubAllGlobals();
   }
+});
+it("accepts legacy routine versions and rejects malformed original snapshots", () => {
+  const current = createPublicRoutineCopy("routine_calf_flexibility");
+  const legacy = structuredClone(current);
+  delete legacy.publicationProvenance;
+  expect(routineSchema.parse(legacy).publicationProvenance).toBeUndefined();
+  const oversized = structuredClone(current);
+  oversized.publicationProvenance!.limitations = ["x".repeat(1501)];
+  expect(routineSchema.safeParse(oversized).success).toBe(false);
+  const unordered = structuredClone(current);
+  unordered.publicationProvenance!.sourceSteps[0]!.order = 2;
+  expect(routineSchema.safeParse(unordered).success).toBe(false);
+  const falseReview = {
+    ...current,
+    publicationProvenance: {
+      ...current.publicationProvenance,
+      reviewLevel: "published_reviewed",
+    },
+  };
+  expect(routineSchema.safeParse(falseReview).success).toBe(false);
 });

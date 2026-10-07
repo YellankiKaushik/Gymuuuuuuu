@@ -345,5 +345,990 @@
     "version": "1.0.0",
     "updatedAt": "2026-10-07",
     "learningOrder": 51
+  },
+  {
+    "id": "science_strength_adaptation",
+    "slug": "strength-adaptation",
+    "displayName": "Strength adaptation",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "adaptations-goals",
+    "contentType": "adaptation",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Strength adaptation describes a change in the voluntary-strength outcomes measured after resistance training.",
+    "summary": "The ACSM review found improved strength versus no exercise; heavier loads and complete movement ranges enhanced this outcome.",
+    "keyTakeaways": [
+      "The ACSM review found improved strength versus no exercise; heavier loads and complete movement ranges enhanced this outcome.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Separate a strength outcome from muscle-size or power outcomes when reading a program rationale."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_strength_adaptation_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 9
+  },
+  {
+    "id": "science_power_adaptation",
+    "slug": "power-adaptation",
+    "displayName": "Power development",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "adaptations-goals",
+    "contentType": "adaptation",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Power adaptation concerns the power outcomes assessed after resistance-training interventions in this review.",
+    "summary": "In the ACSM synthesis, moderate loads and a fast concentric phase favored power outcomes; the precise training context remains important.",
+    "keyTakeaways": [
+      "In the ACSM synthesis, moderate loads and a fast concentric phase favored power outcomes; the precise training context remains important.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Distinguish power outcomes from voluntary-strength or muscle-size outcomes when reading a source protocol."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_power_adaptation_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 11
+  },
+  {
+    "id": "science_physical_function_adaptation",
+    "slug": "physical-function-adaptation",
+    "displayName": "Physical function",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "adaptations-goals",
+    "contentType": "adaptation",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Physical-function adaptation concerns the measured functional outcomes assessed after resistance-training interventions.",
+    "summary": "The ACSM review reported improved gait speed, balance and several physical-function outcomes versus no exercise; power training also supported function.",
+    "keyTakeaways": [
+      "The ACSM review reported improved gait speed, balance and several physical-function outcomes versus no exercise; power training also supported function.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Check which functional test was studied; strength or muscle size is not a substitute for that test."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_physical_function_adaptation_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 13
+  },
+  {
+    "id": "science_training_volume",
+    "slug": "training-volume",
+    "displayName": "Training volume",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Training volume in this review includes the weekly number of resistance-training sets.",
+    "summary": "Higher weekly set volume favored muscle growth in the ACSM synthesis; this does not establish each person’s ideal weekly amount.",
+    "keyTakeaways": [
+      "Higher weekly set volume favored muscle growth in the ACSM synthesis; this does not establish each person’s ideal weekly amount.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Keep the program’s stated set-count basis visible rather than turning the review into an automatic personal target."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_training_volume_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program.",
+      "A weekly set count is not interchangeable with load lifted or an effort rating."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 14
+  },
+  {
+    "id": "science_load_relative_intensity",
+    "slug": "load-relative-intensity",
+    "displayName": "Load and relative intensity",
+    "aliases": [
+      "intensity of load"
+    ],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "strength",
+      "hypertrophy",
+      "power"
+    ],
+    "experienceTags": [
+      "foundation",
+      "beginner",
+      "intermediate"
+    ],
+    "contentStatus": "published",
+    "definition": "Relative load in the ACSM review is expressed as a percentage of one-repetition maximum.",
+    "summary": "Heavier relative loads favored voluntary strength in the ACSM review; load percentage does not describe how close a particular set finishes to failure.",
+    "keyTakeaways": [
+      "Heavier relative loads favored voluntary strength in the ACSM review; load percentage does not describe how close a particular set finishes to failure.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Distinguish the external load target from the program’s separately stated effort or stopping context."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_load_relative_intensity_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program.",
+      "A percentage of one-repetition maximum is not an RIR estimate or an individual readiness assessment."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 17
+  },
+  {
+    "id": "science_training_frequency",
+    "slug": "training-frequency",
+    "displayName": "Training frequency",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Training frequency is the number of resistance-training sessions scheduled per week in the cited review.",
+    "summary": "Multiple weekly sessions supported strength in the ACSM synthesis; frequency and total weekly set volume are different prescription variables.",
+    "keyTakeaways": [
+      "Multiple weekly sessions supported strength in the ACSM synthesis; frequency and total weekly set volume are different prescription variables.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Read frequency alongside the program’s weekly workload rather than ranking schedules solely by training days."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_training_frequency_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program.",
+      "This result does not establish that adding days independently of volume improves every outcome."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 20
+  },
+  {
+    "id": "science_range_of_motion",
+    "slug": "range-of-motion",
+    "displayName": "Range of motion",
+    "aliases": [
+      "ROM"
+    ],
+    "abbreviations": [
+      "ROM"
+    ],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness",
+      "strength",
+      "hypertrophy",
+      "physical-function"
+    ],
+    "experienceTags": [
+      "foundation",
+      "beginner",
+      "intermediate"
+    ],
+    "contentStatus": "published",
+    "definition": "Range of motion identifies the movement-range condition used in the review’s exercise comparisons.",
+    "summary": "Complete movement ranges favored voluntary strength in the ACSM synthesis; the abstract does not establish one suitable range for every joint or circumstance.",
+    "keyTakeaways": [
+      "Complete movement ranges favored voluntary strength in the ACSM synthesis; the abstract does not establish one suitable range for every joint or circumstance.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Use the sourced exercise’s movement boundaries; the review is not permission to force an uncomfortable range."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_range_of_motion_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program.",
+      "No joint-specific range, painful-range instruction or injury-prevention guarantee is supplied."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 22
+  },
+  {
+    "id": "science_exercise_order",
+    "slug": "exercise-order",
+    "displayName": "Exercise order",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Exercise order denotes an exercise’s position within a resistance-training session.",
+    "summary": "Earlier session placement favored voluntary-strength outcomes in the ACSM review; the result does not specify one exercise sequence for every goal.",
+    "keyTakeaways": [
+      "Earlier session placement favored voluntary-strength outcomes in the ACSM review; the result does not specify one exercise sequence for every goal.",
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Check whether a program’s ordering rationale concerns strength, muscle size or another outcome."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_exercise_order_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "Healthy adults in interventions lasting 6–52 weeks; the review does not authorize a rehabilitation or youth prescription.",
+      "The 2026 position stand searched reviews through October 2024; its publication date is distinct from its evidence-search date.",
+      "Abstract-level extraction does not determine an individual response, tolerable load or optimal program."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 25
+  },
+  {
+    "id": "science_repetitions_in_reserve",
+    "slug": "repetitions-in-reserve",
+    "displayName": "Repetitions in reserve",
+    "aliases": [
+      "reps in reserve"
+    ],
+    "abbreviations": [
+      "RIR"
+    ],
+    "category": "effort-fatigue",
+    "contentType": "measurement",
+    "goalTags": [
+      "general-fitness",
+      "strength",
+      "hypertrophy"
+    ],
+    "experienceTags": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "contentStatus": "published",
+    "definition": "Repetitions in reserve expresses an estimate of repetitions remaining before task failure.",
+    "summary": "A scoping review found RIR scales contextually useful; estimates tended to be more accurate near task failure, with important population and exercise limitations.",
+    "keyTakeaways": [
+      "A scoping review found RIR scales contextually useful; estimates tended to be more accurate near task failure, with important population and exercise limitations.",
+      "The review covered 31 studies with 855 predominantly male adult participants; apparent health and training contexts varied.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Retain RIR as a self-reported estimate and keep it separate from load percentage and whole-session perceived effort."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_repetitions_in_reserve_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_rir_scoping_2024"
+        ]
+      }
+    ],
+    "limitations": [
+      "The review covered 31 studies with 855 predominantly male adult participants; apparent health and training contexts varied.",
+      "A scoping review of feasibility is not a validated universal calibration or proof of one ideal RIR target.",
+      "The source does not justify treating RIR as a percentage of one-repetition maximum or an objective recovery score."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 29
+  },
+  {
+    "id": "science_tempo_repetition_duration",
+    "slug": "tempo-repetition-duration",
+    "displayName": "Tempo and repetition duration",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Repetition duration combines concentric, eccentric and any isometric portions of a repetition.",
+    "summary": "The 2025 review found a small overall hypertrophy difference between faster and slower tempos, with uncertainty varying by study condition.",
+    "keyTakeaways": [
+      "The 2025 review found a small overall hypertrophy difference between faster and slower tempos, with uncertainty varying by study condition.",
+      "The current synthesis included 14 healthy-adult studies with other training variables controlled; eccentric and concentric tempo comparisons differed.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Distinguish a repetition’s duration from load, effort and the movement phase being changed."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_tempo_repetition_duration_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_tempo_definition_2015",
+          "source_tempo_hypertrophy_2025"
+        ]
+      }
+    ],
+    "limitations": [
+      "The current synthesis included 14 healthy-adult studies with other training variables controlled; eccentric and concentric tempo comparisons differed.",
+      "The older definition source included training-to-failure studies; its tempo findings are not universal cadence rules.",
+      "No specific tempo, injury-prevention effect or individual hypertrophy advantage is prescribed."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 23
+  },
+  {
+    "id": "science_superset",
+    "slug": "superset",
+    "displayName": "Superset",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "advanced-methods",
+    "contentType": "method",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "A superset performs two exercises sequentially with little or no rest between them.",
+    "summary": "Supersets shortened sessions and increased perceived exertion in the review; pooled chronic outcomes did not establish a clear advantage over traditional sets.",
+    "keyTakeaways": [
+      "Supersets shortened sessions and increased perceived exertion in the review; pooled chronic outcomes did not establish a clear advantage over traditional sets.",
+      "Nineteen studies with 313 participants; exercise pairing and measured outcomes varied.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Treat time saved and perceived effort as distinct considerations; retain the exact exercise pairing rather than assuming every superset has the same effect."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_superset_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_superset_meta_2025"
+        ]
+      }
+    ],
+    "limitations": [
+      "Nineteen studies with 313 participants; exercise pairing and measured outcomes varied.",
+      "Agonist–antagonist and similar-movement pairings had different volume-load results; superset types are not interchangeable.",
+      "A non-significant between-method result does not prove identical adaptations or establish recovery-time requirements."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 67
+  },
+  {
+    "id": "science_drop_set",
+    "slug": "drop-set",
+    "displayName": "Drop set",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "advanced-methods",
+    "contentType": "method",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "The reviewed drop-set method reduces load after a failure endpoint and continues immediately with another set.",
+    "summary": "The 2026 synthesis found higher acute perceived exertion and lactate with drop sets, without a clear chronic strength, hypertrophy or endurance advantage.",
+    "keyTakeaways": [
+      "The 2026 synthesis found higher acute perceived exertion and lactate with drop sets, without a clear chronic strength, hypertrophy or endurance advantage.",
+      "The 2026 synthesis included twelve studies with 274 participants; protocols and acute versus chronic outcomes differed.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Separate an acute demanding session from evidence of long-term adaptation; retain source-specific load-drop and stopping details."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_drop_set_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_drop_definition_2023",
+          "source_drop_meta_2026"
+        ]
+      }
+    ],
+    "limitations": [
+      "The 2026 synthesis included twelve studies with 274 participants; protocols and acute versus chronic outcomes differed.",
+      "The failure-based method definition describes the reviewed protocol, not a recommendation that every person train to failure.",
+      "No consistent heart-rate difference, personal recovery duration or superiority claim is inferred; the older abstract’s inconsistent confidence interval is not reproduced."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 72
+  },
+  {
+    "id": "science_deload",
+    "slug": "deload",
+    "displayName": "Deloading",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "periodization-autoregulation",
+    "contentType": "method",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Deloading temporarily reduces training stress with the intended purpose of supporting recovery and subsequent training.",
+    "summary": "Coaches proposed deload design principles by consensus; a separate trial of complete one-week cessation found less strength improvement than continuous training.",
+    "keyTakeaways": [
+      "Coaches proposed deload design principles by consensus; a separate trial of complete one-week cessation found less strength improvement than continuous training.",
+      "The Delphi consensus ended with 21 coaches; it is expert practice guidance rather than proof of training benefits.",
+      "The finding describes a source comparison, not your predicted result."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Distinguish a planned reduction in training stress from complete cessation and retain the source’s actual method and population."
+      ],
+      "prioritizeWhen": [
+        "The studied population, outcome and training comparison match your question."
+      ],
+      "deprioritizeWhen": [
+        "The source does not cover your circumstances or the proposed training method."
+      ],
+      "adjustmentLevers": [
+        "Use the explicit source program context; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Different training volume, effort, outcome measures or missing source details."
+      ],
+      "cannotTellYou": [
+        "Your ideal program, recovery status, expected gains or medical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_deload_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_deload_consensus_2023"
+        ]
+      },
+      {
+        "id": "claim_science_deload_trial_verified",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_deload_trial_2024"
+        ]
+      }
+    ],
+    "limitations": [
+      "The Delphi consensus ended with 21 coaches; it is expert practice guidance rather than proof of training benefits.",
+      "The trial involved 39 young trained adults in a nine-week high-volume program and tested complete cessation, not all ways of reducing training stress.",
+      "No fixed deload interval, personal readiness threshold or opaque recovery score is established."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-10-07",
+      "claimReviewComplete": true,
+      "notes": "Primary abstract inspection and source-specific paraphrase. Evidence labels are editorial, not an independent GRADE reassessment; no clinical or human review claimed."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-07",
+    "learningOrder": 64
   }
 ]

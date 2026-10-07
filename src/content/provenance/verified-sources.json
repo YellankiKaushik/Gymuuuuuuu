@@ -1346,5 +1346,179 @@
       "General source education does not establish individual requirements or sports performance effects.",
       "Chloride reference values were derived from sodium on an equimolar basis because evidence did not support direct derivation; no sodium-to-chloride food mass conversion is imported."
     ]
+  },
+  {
+    "id": "source_acsm_rt_2026",
+    "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+    "publisher": "Currier and colleagues; American College of Sports Medicine",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41843416/",
+    "sourceVersion": "2026; doi:10.1249/MSS.0000000000003897; PMID:41843416",
+    "sourceDate": "2026-03-05",
+    "evidenceType": "position_stand",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_rir_scoping_2024",
+    "title": "Feasibility and Usefulness of Repetitions-In-Reserve Scales for Selecting Exercise Intensity: A Scoping Review",
+    "publisher": "Bastos, Machado and Teixeira",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38563729/",
+    "sourceVersion": "2024; doi:10.1177/00315125241241785; PMID:38563729",
+    "sourceDate": "2024-04-02",
+    "evidenceType": "systematic_review",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_tempo_definition_2015",
+    "title": "Effect of repetition duration during resistance training on muscle hypertrophy: a systematic review and meta-analysis",
+    "publisher": "Schoenfeld, Ogborn and Krieger",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25601394/",
+    "sourceVersion": "2015; doi:10.1007/s40279-015-0304-0; PMID:25601394",
+    "sourceDate": null,
+    "evidenceType": "systematic_review_meta_analysis",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_tempo_hypertrophy_2025",
+    "title": "How Slow Should You Go? A Systematic Review With Meta-Analysis of the Effect of Resistance Training Repetition Tempo on Muscle Hypertrophy",
+    "publisher": "Enes and colleagues",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709703/",
+    "sourceVersion": "2025; doi:10.1519/JSC.0000000000005302; PMID:42709703",
+    "sourceDate": "2025-12-01",
+    "evidenceType": "systematic_review_meta_analysis",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_superset_meta_2025",
+    "title": "Superset Versus Traditional Resistance Training Prescriptions: A Systematic Review and Meta-analysis Exploring Acute and Chronic Effects on Mechanical, Metabolic, and Perceptual Variables",
+    "publisher": "Zhang, Weakley, Li, Li and Garcia-Ramos",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39903375/",
+    "sourceVersion": "2025; doi:10.1007/s40279-025-02176-8; PMID:39903375",
+    "sourceDate": "2025-02-04",
+    "evidenceType": "systematic_review_meta_analysis",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_drop_definition_2023",
+    "title": "Effects of Drop Sets on Skeletal Muscle Hypertrophy: A Systematic Review and Meta-analysis",
+    "publisher": "Sodal, Kristiansen, Larsen and van den Tillaar",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37523092/",
+    "sourceVersion": "2023; doi:10.1186/s40798-023-00620-5; PMID:37523092",
+    "sourceDate": "2023-07-31",
+    "evidenceType": "systematic_review_meta_analysis",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_drop_meta_2026",
+    "title": "Acute and Chronic Effects of Drop-Set Training: A Meta-Analysis and Systematic Review",
+    "publisher": "Havers, Micke, Geisler and Held",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41920484/",
+    "sourceVersion": "2026; doi:10.1186/s40798-026-01012-1; PMID:41920484",
+    "sourceDate": "2026-04-01",
+    "evidenceType": "systematic_review_meta_analysis",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_deload_consensus_2023",
+    "title": "Integrating Deloading into Strength and Physique Sports Training Programmes: An International Delphi Consensus Approach",
+    "publisher": "Bell, Strafford, Coleman, Androulakis Korakakis and Nolan",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37730925/",
+    "sourceVersion": "2023; doi:10.1186/s40798-023-00633-0; PMID:37730925",
+    "sourceDate": "2023-09-21",
+    "evidenceType": "consensus",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "source_deload_trial_2024",
+    "title": "Gaining more from doing less? The effects of a one-week deload period during supervised resistance training on muscular adaptations",
+    "publisher": "Coleman and colleagues",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38274324/",
+    "sourceVersion": "2024; doi:10.7717/peerj.16777; PMID:38274324",
+    "sourceDate": "2024-01-22",
+    "evidenceType": "original_peer_reviewed_study",
+    "extractedAt": "2026-10-07T17:03:04Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+    "limitations": [
+      "The primary abstract was inspected; full-text methods were not independently appraised.",
+      "Machine extraction and validation; no independent human review."
+    ]
+  },
+  {
+    "id": "nia_flexibility_guide_2018",
+    "title": "NIA Exercise & Physical Activity: flexibility education and back-of-leg/calf stretches, March 2018",
+    "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+    "sourceVersion": "March 2018; Publication No. 18-AG-4258",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T17:11:50Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "public_domain_data",
+    "rightsReference": "https://www.nia.nih.gov/about/policies",
+    "limitations": [
+      "NIA text reuse policy: public domain unless otherwise indicated; photos and credited artwork are excluded.",
+      "Historical older-adult education, not current evidence of hypertrophy protocols or individual suitability.",
+      "Publication month is known; exact publication day is not supplied.",
+      "No independent human technique or clinical review.",
+      "Printed pages 70, 82 and 88 only; source hold/repetition ranges are not individualized instructions.",
+      "No soreness-recovery, hypertrophy, rehabilitation or injury-prevention benefit is inferred."
+    ]
   }
 ]

@@ -1237,8 +1237,8 @@
     {
       "module": "workout-science",
       "totalIdentities": 98,
-      "publishedIdentities": 5,
-      "draftIdentities": 93,
+      "publishedIdentities": 18,
+      "draftIdentities": 80,
       "blockedIdentities": [
         {
           "id": "science_training_adaptation",
@@ -1290,36 +1290,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "science_strength_adaptation",
-          "slug": "strength-adaptation",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_power_adaptation",
-          "slug": "power-adaptation",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "science_muscular_endurance_adaptation",
           "slug": "muscular-endurance-adaptation",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_physical_function_adaptation",
-          "slug": "physical-function-adaptation",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_training_volume",
-          "slug": "training-volume",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1339,13 +1311,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "science_load_relative_intensity",
-          "slug": "load-relative-intensity",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "science_repetitions_rep_ranges",
           "slug": "repetitions-rep-ranges",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -1360,36 +1325,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "science_training_frequency",
-          "slug": "training-frequency",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_range_of_motion",
-          "slug": "range-of-motion",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_tempo_repetition_duration",
-          "slug": "tempo-repetition-duration",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "science_velocity_intent",
           "slug": "velocity-intent",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_exercise_order",
-          "slug": "exercise-order",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1411,13 +1348,6 @@
         {
           "id": "science_set_rpe",
           "slug": "set-rpe",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_repetitions_in_reserve",
-          "slug": "repetitions-in-reserve",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1647,13 +1577,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "science_deload",
-          "slug": "deload",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "science_taper",
           "slug": "taper",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -1663,13 +1586,6 @@
         {
           "id": "science_autoregulated_progression",
           "slug": "autoregulated-progression",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_superset",
-          "slug": "superset",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1698,13 +1614,6 @@
         {
           "id": "science_giant_set",
           "slug": "giant-set",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_drop_set",
-          "slug": "drop-set",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2981,8 +2890,8 @@
     {
       "module": "recovery",
       "totalIdentities": 124,
-      "publishedIdentities": 4,
-      "draftIdentities": 120,
+      "publishedIdentities": 8,
+      "draftIdentities": 116,
       "blockedIdentities": [
         {
           "id": "sleep_need_variability",
@@ -3384,13 +3293,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "static_stretching",
-          "slug": "static-stretching",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "dynamic_stretching",
           "slug": "dynamic-stretching",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -3477,13 +3379,6 @@
         {
           "id": "stretching_recovery_myth",
           "slug": "stretching-recovery-myth",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "stretching_intensity",
-          "slug": "stretching-intensity",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3750,20 +3645,6 @@
         {
           "id": "routine_hip_rotation",
           "slug": "routine-hip-rotation",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "routine_hamstring_flexibility",
-          "slug": "routine-hamstring-flexibility",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "routine_calf_flexibility",
-          "slug": "routine-calf-flexibility",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -7156,9 +7037,9 @@
     },
     {
       "module": "workout-science",
-      "published": 5,
-      "withPublicationProvenance": 5,
-      "inSearch": 5,
+      "published": 18,
+      "withPublicationProvenance": 18,
+      "inSearch": 18,
       "missingSourceProvenance": []
     },
     {
@@ -7198,9 +7079,9 @@
     },
     {
       "module": "recovery",
-      "published": 4,
-      "withPublicationProvenance": 4,
-      "inSearch": 4,
+      "published": 8,
+      "withPublicationProvenance": 8,
+      "inSearch": 8,
       "missingSourceProvenance": []
     },
     {
@@ -7289,7 +7170,7 @@
     },
     {
       "module": "recovery",
-      "eligiblePublishedRecords": 4,
+      "eligiblePublishedRecords": 8,
       "families": [
         "recovery_methods"
       ],
@@ -8102,6 +7983,110 @@
         },
         {
           "id": "science_training_split",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_strength_adaptation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_power_adaptation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_physical_function_adaptation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_training_volume",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_load_relative_intensity",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_training_frequency",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_range_of_motion",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_exercise_order",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_repetitions_in_reserve",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_tempo_repetition_duration",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_superset",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_drop_set",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_deload",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -10737,6 +10722,22 @@
           "status": "no_record_visual_provided"
         },
         {
+          "id": "static_stretching",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "stretching_intensity",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
           "id": "routine_running_warmup",
           "assets": [],
           "hasVisual": false,
@@ -10746,6 +10747,22 @@
         },
         {
           "id": "routine_post_run_cooldown",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "routine_hamstring_flexibility",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "routine_calf_flexibility",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -10821,10 +10838,10 @@
     },
     {
       "module": "workout-science",
-      "missingVerifiedFactualRecords": 93,
+      "missingVerifiedFactualRecords": 80,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 5,
+      "independentHumanReviewPending": 18,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10875,10 +10892,10 @@
     },
     {
       "module": "recovery",
-      "missingVerifiedFactualRecords": 120,
+      "missingVerifiedFactualRecords": 116,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 4,
+      "independentHumanReviewPending": 8,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12017,6 +12034,150 @@
         "Machine source verification and automated validation; no independent human or clinical review.",
         "General source education does not establish individual requirements or sports performance effects.",
         "Chloride reference values were derived from sodium on an equimolar basis because evidence did not support direct derivation; no sodium-to-chloride food mass conversion is imported."
+      ]
+    },
+    {
+      "id": "source_acsm_rt_2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41843416/",
+      "version": "2026; doi:10.1249/MSS.0000000000003897; PMID:41843416",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "position_stand",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_rir_scoping_2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38563729/",
+      "version": "2024; doi:10.1177/00315125241241785; PMID:38563729",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_tempo_definition_2015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25601394/",
+      "version": "2015; doi:10.1007/s40279-015-0304-0; PMID:25601394",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_tempo_hypertrophy_2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42709703/",
+      "version": "2025; doi:10.1519/JSC.0000000000005302; PMID:42709703",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_superset_meta_2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39903375/",
+      "version": "2025; doi:10.1007/s40279-025-02176-8; PMID:39903375",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_drop_definition_2023",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37523092/",
+      "version": "2023; doi:10.1186/s40798-023-00620-5; PMID:37523092",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_drop_meta_2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41920484/",
+      "version": "2026; doi:10.1186/s40798-026-01012-1; PMID:41920484",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_deload_consensus_2023",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37730925/",
+      "version": "2023; doi:10.1186/s40798-023-00633-0; PMID:37730925",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "consensus",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "source_deload_trial_2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38274324/",
+      "version": "2024; doi:10.7717/peerj.16777; PMID:38274324",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T17:03:04Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "original_peer_reviewed_study",
+      "rightsReference": "Original brief factual paraphrase with author attribution and an external source link. No abstract text, tables, figures or media reproduced; no open licence asserted.",
+      "limitations": [
+        "The primary abstract was inspected; full-text methods were not independently appraised.",
+        "Machine extraction and validation; no independent human review."
+      ]
+    },
+    {
+      "id": "nia_flexibility_guide_2018",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+      "version": "March 2018; Publication No. 18-AG-4258",
+      "reuse": "public_domain_data",
+      "extractionDate": "2026-10-07T17:11:50Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "https://www.nia.nih.gov/about/policies",
+      "limitations": [
+        "NIA text reuse policy: public domain unless otherwise indicated; photos and credited artwork are excluded.",
+        "Historical older-adult education, not current evidence of hypertrophy protocols or individual suitability.",
+        "Publication month is known; exact publication day is not supplied.",
+        "No independent human technique or clinical review.",
+        "Printed pages 70, 82 and 88 only; source hold/repetition ranges are not individualized instructions.",
+        "No soreness-recovery, hypertrophy, rehabilitation or injury-prevention benefit is inferred."
       ]
     }
   ],
@@ -13342,8 +13503,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 544,
-    "factualRecords": 416
+    "documents": 561,
+    "factualRecords": 433
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -13978,6 +14139,71 @@
     {
       "module": "workout-science",
       "id": "science_training_split",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_strength_adaptation",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_power_adaptation",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_physical_function_adaptation",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_training_volume",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_load_relative_intensity",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_training_frequency",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_range_of_motion",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_exercise_order",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_repetitions_in_reserve",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_tempo_repetition_duration",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_superset",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_drop_set",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_deload",
       "instructionalMediaRequired": false
     },
     {
@@ -15602,12 +15828,32 @@
     },
     {
       "module": "recovery",
+      "id": "static_stretching",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "stretching_intensity",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
       "id": "routine_running_warmup",
       "instructionalMediaRequired": false
     },
     {
       "module": "recovery",
       "id": "routine_post_run_cooldown",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "routine_hamstring_flexibility",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "routine_calf_flexibility",
       "instructionalMediaRequired": false
     },
     {
@@ -15637,11 +15883,11 @@
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-07T17:00:32.487Z",
-    "expected": 598,
+    "buildDate": "2026-10-07T20:18:54.342Z",
+    "expected": 615,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 598,
+    "unmeasured": 615,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -17252,6 +17498,84 @@
       },
       {
         "path": "/learn/workout-science/training-split",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/strength-adaptation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/power-adaptation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/physical-function-adaptation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/training-volume",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/load-relative-intensity",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/training-frequency",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/range-of-motion",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/exercise-order",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/repetitions-in-reserve",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/tempo-repetition-duration",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/superset",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/drop-set",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/deload",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
@@ -19201,6 +19525,18 @@
         "evidence": null
       },
       {
+        "path": "/recovery/topics/static-stretching",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/stretching-intensity",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/mobility/routines/routine-running-warmup",
         "kind": "public_record",
         "result": "unmeasured",
@@ -19208,6 +19544,18 @@
       },
       {
         "path": "/mobility/routines/routine-post-run-cooldown",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/routines/routine-hamstring-flexibility",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/mobility/routines/routine-calf-flexibility",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

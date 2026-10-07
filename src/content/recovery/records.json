@@ -23,7 +23,7 @@
     ],
     "evidenceStrength": "consensus",
     "limitations": [
-      "The consensus focuses on adults aged 18\u201360. Individual needs vary; longer sleep can be appropriate during recovery from sleep debt or illness. Persistent concerns require a healthcare professional."
+      "The consensus focuses on adults aged 18–60. Individual needs vary; longer sleep can be appropriate during recovery from sleep debt or illness. Persistent concerns require a healthcare professional."
     ],
     "contraindications": [
       "Seek professional help for persistent sleep concerns. This page does not provide diagnosis or change medication."
@@ -76,5 +76,91 @@
     "relatedIds": [
       "sleep_duration_adults"
     ]
+  },
+  {
+    "id": "static_stretching",
+    "slug": "static-stretching",
+    "title": "Static Stretching",
+    "status": "published",
+    "domain": "mobility",
+    "population": "Older adults addressed by the NIA 2018 educational guide",
+    "context": "Source-scoped flexibility education; not a soreness or readiness intervention",
+    "definition": "A held stretch maintains a gently reached position; this page describes the NIA guide’s held-stretch examples.",
+    "sourceIds": [
+      "nia_flexibility_guide_2018"
+    ],
+    "claims": [
+      {
+        "id": "claim_static_stretching_nia",
+        "text": "The NIA guide describes gently reaching a stretching position, holding while breathing normally and relaxing before repeating; it instructs readers not to bounce.",
+        "outcome": "definition",
+        "sourceIds": [
+          "nia_flexibility_guide_2018"
+        ]
+      }
+    ],
+    "evidenceStrength": "not_graded",
+    "limitations": [
+      "Historical March 2018 guidance for older adults; suitability for an individual is not established.",
+      "No improvement in soreness, endurance or strength is claimed from these flexibility instructions.",
+      "The source range is 10–30 seconds per hold and 3–5 repeats per side; timer templates use its lower bounds, not a personalized optimum.",
+      "Warm-up, repositioning and relaxation durations are unspecified and not counted as zero or estimated automatically.",
+      "Source verification and machine validation; no independent human or clinical review."
+    ],
+    "contraindications": [
+      "Warm up before stretching; if only stretching, the source suggests a few minutes of easy walking without an exact duration.",
+      "Stop for sharp, stabbing or joint pain. Use slow movement without bouncing and breathe normally.",
+      "Seek qualified advice when unsure of suitability, particularly following hip or back surgery."
+    ],
+    "review": {
+      "reviewer": "Codex primary-source extraction and automated validation; personal use; no human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    },
+    "relatedIds": []
+  },
+  {
+    "id": "stretching_intensity",
+    "slug": "stretching-intensity",
+    "title": "Stretching Intensity",
+    "status": "published",
+    "domain": "mobility",
+    "population": "Older adults addressed by the NIA 2018 educational guide",
+    "context": "Source-scoped flexibility education; not a soreness or readiness intervention",
+    "definition": "The NIA guide distinguishes a mild pulling sensation from sharp, stabbing or joint pain during stretching.",
+    "sourceIds": [
+      "nia_flexibility_guide_2018"
+    ],
+    "claims": [
+      {
+        "id": "claim_stretching_intensity_nia",
+        "text": "In this source, a mild pulling sensation can occur during a stretch; sharp, stabbing or joint pain is outside its described stretching boundary. No pain diagnosis is supplied.",
+        "outcome": "definition",
+        "sourceIds": [
+          "nia_flexibility_guide_2018"
+        ]
+      }
+    ],
+    "evidenceStrength": "not_graded",
+    "limitations": [
+      "Historical March 2018 guidance for older adults; suitability for an individual is not established.",
+      "No improvement in soreness, endurance or strength is claimed from these flexibility instructions.",
+      "The source range is 10–30 seconds per hold and 3–5 repeats per side; timer templates use its lower bounds, not a personalized optimum.",
+      "Warm-up, repositioning and relaxation durations are unspecified and not counted as zero or estimated automatically.",
+      "Source verification and machine validation; no independent human or clinical review."
+    ],
+    "contraindications": [
+      "Warm up before stretching; if only stretching, the source suggests a few minutes of easy walking without an exact duration.",
+      "Stop for sharp, stabbing or joint pain. Use slow movement without bouncing and breathe normally.",
+      "Seek qualified advice when unsure of suitability, particularly following hip or back surgery."
+    ],
+    "review": {
+      "reviewer": "Codex primary-source extraction and automated validation; personal use; no human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    },
+    "relatedIds": []
   }
 ]

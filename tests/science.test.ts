@@ -20,14 +20,18 @@ import { scienceFixture as fixture } from "./fixtures/science";
 it("validates all draft science identities and hides unpublished articles", () => {
   expect(scienceIdentities).toHaveLength(98);
   expect(validateScience(scienceIdentities)).toEqual([]);
-  expect(scienceIndexes.published.map((r) => r.id)).toEqual([
+  expect(scienceIndexes.published).toHaveLength(18);
+  expect(scienceIndexes.published.slice(0, 5).map((r) => r.id)).toEqual([
     "science_consistency_adherence",
     "science_hypertrophy_adaptation",
     "science_muscular_failure",
     "science_rest_intervals",
     "science_training_split",
   ]);
-  expect(getScienceBySlug("training-volume")).toBeUndefined();
+  expect(getScienceBySlug("training-volume")?.id).toBe(
+    "science_training_volume",
+  );
+  expect(getScienceBySlug("single-progression")).toBeUndefined();
 });
 it("requires claims, population, evidence, reviewer, source and decision context", () => {
   expect(validateScience([fixture])).toEqual([]);

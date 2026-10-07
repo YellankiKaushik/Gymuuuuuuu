@@ -164,6 +164,7 @@ export function recoveryCsv(
         "revision_reason",
         "created_at",
         "notes",
+        "publication_provenance",
       ],
       ...data.customRoutineVersions.map((v) => [
         v.id,
@@ -177,6 +178,7 @@ export function recoveryCsv(
         v.revisionReason,
         v.createdAt,
         v.notes,
+        v.publicationProvenance,
       ]),
     ];
   return rows.map((row) => row.map(cell).join(",")).join("\r\n");

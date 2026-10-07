@@ -39,9 +39,9 @@ Vercel configuration is prepared with Nitro, per-request CSP nonces and browser 
 
 Phase 18 is integrated. Phase 19 is **in progress**, and this application is not yet certified as engineering/content complete. The generated [completion audit](docs/reports/content-completion.md) and its [JSON inventory](docs/reports/content-completion.json) list every identity, publication count and remaining content gap.
 
-Current personal-use publications: muscles 70/70, exercises 11/184, workout science 5/98, programs 1/50, foods 243/342 (251 preparation profiles), nutrients 51/51 (7 FDA Daily Value rows), recovery 4/124, cardio 2/202 (1 article and 1 complete source plan) and supplements 2/272. Twenty-four original recipes and three static lunch/snack meal-prep collections are available; they are not complete daily diets. Two NHS source walking transitions are available; conditioning routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
+Current personal-use publications: muscles 70/70, exercises 11/184, workout science 18/98, programs 1/50, foods 243/342 (251 preparation profiles), nutrients 51/51 (7 FDA Daily Value rows), recovery 8/124, cardio 2/202 (1 article and 1 complete source plan) and supplements 2/272. Twenty-four original recipes and three static lunch/snack meal-prep collections are available; they are not complete daily diets. Two NHS walking transitions and two NIA flexibility routines are available; conditioning routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
 
-Public search contains 416 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
+Public search contains 433 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
 
 ## Source policy and review levels
 

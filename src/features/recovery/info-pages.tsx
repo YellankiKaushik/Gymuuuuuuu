@@ -208,7 +208,7 @@ function PublishedRoutineSteps({ publicId }: { publicId: string }) {
   if (!entry) return null;
   return (
     <section>
-      <h3>Source walking step</h3>
+      <h3>Source routine steps</h3>
       <ol>
         {entry.routine.steps.map((step, index) => (
           <li key={step.id}>

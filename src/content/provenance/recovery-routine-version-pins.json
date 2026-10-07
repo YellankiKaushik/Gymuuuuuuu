@@ -6,5 +6,13 @@
   {
     "id": "routine_post_run_cooldown_v1",
     "sha256": "b3ddbc475baa7b6be7f37960eed1efe2b4c635c30a1392f0b8bfec673fbbfff4"
+  },
+  {
+    "id": "routine_hamstring_flexibility_v1",
+    "sha256": "a945d3ba0afe85c35eff99d87a17f53467ff9187c091bc38e1c2950f6a2a2764"
+  },
+  {
+    "id": "routine_calf_flexibility_v1",
+    "sha256": "f75093b7bc8af1f0dd326bcfc524e199711e95e315bfcec4d225df280fa89ec3"
   }
 ]

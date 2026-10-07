@@ -350,6 +350,57 @@ export const backupNormativeSchema = z.strictObject({
           (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
           "Invalid timestamp",
         ),
+      publicationProvenance: z
+        .strictObject({
+          publicIdentity: z.string().min(1).max(100),
+          publicVersion: z.string().min(1).max(200),
+          sourceChecked: z
+            .string()
+            .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+          reviewLevel: z.enum(["published_personal_use"]),
+          sourceReferences: z
+            .array(
+              z.strictObject({
+                id: z.string().min(1).max(100),
+                url: z
+                  .string()
+                  .min(1)
+                  .max(2048)
+                  .regex(new RegExp("^https?://")),
+                title: z.string().min(1).max(400),
+              }),
+            )
+            .min(1)
+            .max(20),
+          limitations: z.array(z.string().min(1).max(1500)).min(1).max(30),
+          sourceSteps: z
+            .array(
+              z.strictObject({
+                id: z.string(),
+                order: z.number().finite().int().min(1),
+                title: z.string().min(1).max(200),
+                phase03ExerciseId: z.string().nullable().optional(),
+                doseType: z.enum([
+                  "repetitions",
+                  "seconds",
+                  "breaths",
+                  "distance",
+                  "ramp_up_set",
+                ]),
+                doseValue: z.number().finite().gt(0),
+                sides: z
+                  .enum(["none", "left_right", "alternating", "bilateral"])
+                  .optional(),
+                intensityCue: z.string().max(500).optional(),
+                techniqueCue: z.string().max(1000).optional(),
+                stopSignals: z.array(z.string()).optional(),
+                alternativeExerciseIds: z.array(z.string()).optional(),
+              }),
+            )
+            .min(1)
+            .max(100),
+        })
+        .optional(),
     }),
   ),
   settings: z.array(
@@ -813,6 +864,53 @@ export const customRoutineVersionNormativeSchema = z.strictObject({
       (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
       "Invalid timestamp",
     ),
+  publicationProvenance: z
+    .strictObject({
+      publicIdentity: z.string().min(1).max(100),
+      publicVersion: z.string().min(1).max(200),
+      sourceChecked: z
+        .string()
+        .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+      reviewLevel: z.enum(["published_personal_use"]),
+      sourceReferences: z
+        .array(
+          z.strictObject({
+            id: z.string().min(1).max(100),
+            url: z.string().min(1).max(2048).regex(new RegExp("^https?://")),
+            title: z.string().min(1).max(400),
+          }),
+        )
+        .min(1)
+        .max(20),
+      limitations: z.array(z.string().min(1).max(1500)).min(1).max(30),
+      sourceSteps: z
+        .array(
+          z.strictObject({
+            id: z.string(),
+            order: z.number().finite().int().min(1),
+            title: z.string().min(1).max(200),
+            phase03ExerciseId: z.string().nullable().optional(),
+            doseType: z.enum([
+              "repetitions",
+              "seconds",
+              "breaths",
+              "distance",
+              "ramp_up_set",
+            ]),
+            doseValue: z.number().finite().gt(0),
+            sides: z
+              .enum(["none", "left_right", "alternating", "bilateral"])
+              .optional(),
+            intensityCue: z.string().max(500).optional(),
+            techniqueCue: z.string().max(1000).optional(),
+            stopSignals: z.array(z.string()).optional(),
+            alternativeExerciseIds: z.array(z.string()).optional(),
+          }),
+        )
+        .min(1)
+        .max(100),
+    })
+    .optional(),
 });
 export const routineStepNormativeSchema = z.strictObject({
   id: z.string(),
@@ -866,4 +964,49 @@ export const deletedRecordNormativeSchema = z.strictObject({
       (v) => z.iso.datetime({ offset: true }).safeParse(v).success,
       "Invalid timestamp",
     ),
+});
+export const routinePublicationProvenanceNormativeSchema = z.strictObject({
+  publicIdentity: z.string().min(1).max(100),
+  publicVersion: z.string().min(1).max(200),
+  sourceChecked: z
+    .string()
+    .refine((v) => z.iso.date().safeParse(v).success, "Invalid date"),
+  reviewLevel: z.enum(["published_personal_use"]),
+  sourceReferences: z
+    .array(
+      z.strictObject({
+        id: z.string().min(1).max(100),
+        url: z.string().min(1).max(2048).regex(new RegExp("^https?://")),
+        title: z.string().min(1).max(400),
+      }),
+    )
+    .min(1)
+    .max(20),
+  limitations: z.array(z.string().min(1).max(1500)).min(1).max(30),
+  sourceSteps: z
+    .array(
+      z.strictObject({
+        id: z.string(),
+        order: z.number().finite().int().min(1),
+        title: z.string().min(1).max(200),
+        phase03ExerciseId: z.string().nullable().optional(),
+        doseType: z.enum([
+          "repetitions",
+          "seconds",
+          "breaths",
+          "distance",
+          "ramp_up_set",
+        ]),
+        doseValue: z.number().finite().gt(0),
+        sides: z
+          .enum(["none", "left_right", "alternating", "bilateral"])
+          .optional(),
+        intensityCue: z.string().max(500).optional(),
+        techniqueCue: z.string().max(1000).optional(),
+        stopSignals: z.array(z.string()).optional(),
+        alternativeExerciseIds: z.array(z.string()).optional(),
+      }),
+    )
+    .min(1)
+    .max(100),
 });
