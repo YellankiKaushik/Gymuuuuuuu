@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "sourceId": "nia_strength_guide_2018",
+  "extractedAt": "2026-10-07T10:14:35Z",
+  "sourceFileSha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0",
+  "locator": "Printed pages 42\u201343 safety; page 62 Toe Stand, including one-leg progression",
+  "exerciseId": "exercise_single_leg_calf_raise",
+  "repetitionsMin": 10,
+  "repetitionsMax": 15,
+  "holdSeconds": 1,
+  "sets": null,
+  "restSeconds": null,
+  "mediaId": "diagram_supported_single_leg_calf_raise_v1",
+  "mediaSha256": "2cca461fcb54c20cd92baf87a0d8736e7d43322553a86691aef7b6f872d4058c"
+}

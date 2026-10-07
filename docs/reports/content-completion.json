@@ -7,8 +7,8 @@
     {
       "module": "muscles",
       "totalIdentities": 70,
-      "publishedIdentities": 21,
-      "draftIdentities": 49,
+      "publishedIdentities": 38,
+      "draftIdentities": 32,
       "blockedIdentities": [
         {
           "id": "muscle_sternocleidomastoid",
@@ -158,34 +158,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "muscle_gluteus_maximus",
-          "slug": "gluteus-maximus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_gluteus_medius",
-          "slug": "gluteus-medius",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_gluteus_minimus",
-          "slug": "gluteus-minimus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_tensor_fasciae_latae",
-          "slug": "tensor-fasciae-latae",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "muscle_iliopsoas_group",
           "slug": "iliopsoas",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -235,99 +207,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "muscle_rectus_femoris",
-          "slug": "rectus-femoris",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_vastus_lateralis",
-          "slug": "vastus-lateralis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_vastus_medialis",
-          "slug": "vastus-medialis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_vastus_intermedius",
-          "slug": "vastus-intermedius",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "muscle_sartorius",
           "slug": "sartorius",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_biceps_femoris",
-          "slug": "biceps-femoris",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_biceps_femoris_long_head",
-          "slug": "biceps-femoris-long-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_biceps_femoris_short_head",
-          "slug": "biceps-femoris-short-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_semitendinosus",
-          "slug": "semitendinosus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_semimembranosus",
-          "slug": "semimembranosus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_gastrocnemius",
-          "slug": "gastrocnemius",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_gastrocnemius_medial_head",
-          "slug": "gastrocnemius-medial-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_gastrocnemius_lateral_head",
-          "slug": "gastrocnemius-lateral-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_soleus",
-          "slug": "soleus",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -360,8 +241,8 @@
     {
       "module": "exercises",
       "totalIdentities": 184,
-      "publishedIdentities": 6,
-      "draftIdentities": 178,
+      "publishedIdentities": 7,
+      "draftIdentities": 177,
       "blockedIdentities": [
         {
           "id": "exercise_barbell_bench_press",
@@ -1227,13 +1108,6 @@
         {
           "id": "exercise_seated_calf_raise",
           "slug": "seated-calf-raise",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_single_leg_calf_raise",
-          "slug": "single-leg-calf-raise",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -3473,8 +3347,8 @@
     {
       "module": "nutrients",
       "totalIdentities": 51,
-      "publishedIdentities": 11,
-      "draftIdentities": 40,
+      "publishedIdentities": 22,
+      "draftIdentities": 29,
       "blockedIdentities": [
         {
           "id": "energy_kcal",
@@ -3610,48 +3484,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "potassium_mg",
-          "slug": "potassium",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "phosphorus_mg",
-          "slug": "phosphorus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "copper_mg",
-          "slug": "copper",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "manganese_mg",
-          "slug": "manganese",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "selenium_ug",
-          "slug": "selenium",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "iodine_ug",
-          "slug": "iodine",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "chloride_mg",
           "slug": "chloride",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -3715,43 +3547,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "folate_food_ug",
-          "slug": "food-folate",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "folic_acid_ug",
           "slug": "folic-acid",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "folate_dfe_ug",
-          "slug": "folate-vitamin-b9",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "vitamin_e_mg",
-          "slug": "vitamin-e",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "vitamin_k_ug",
-          "slug": "vitamin-k",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "choline_mg",
-          "slug": "choline",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -7956,16 +7753,16 @@
   "sourceCoverage": [
     {
       "module": "muscles",
-      "published": 21,
-      "withPublicationProvenance": 21,
-      "inSearch": 21,
+      "published": 38,
+      "withPublicationProvenance": 38,
+      "inSearch": 38,
       "missingSourceProvenance": []
     },
     {
       "module": "exercises",
-      "published": 6,
-      "withPublicationProvenance": 6,
-      "inSearch": 6,
+      "published": 7,
+      "withPublicationProvenance": 7,
+      "inSearch": 7,
       "missingSourceProvenance": []
     },
     {
@@ -7991,9 +7788,9 @@
     },
     {
       "module": "nutrients",
-      "published": 11,
-      "withPublicationProvenance": 11,
-      "inSearch": 11,
+      "published": 22,
+      "withPublicationProvenance": 22,
+      "inSearch": 22,
       "missingSourceProvenance": []
     },
     {
@@ -8035,7 +7832,7 @@
   "comparisonCoverage": [
     {
       "module": "muscles",
-      "eligiblePublishedRecords": 21,
+      "eligiblePublishedRecords": 38,
       "families": [
         "muscles"
       ],
@@ -8044,7 +7841,7 @@
     },
     {
       "module": "exercises",
-      "eligiblePublishedRecords": 6,
+      "eligiblePublishedRecords": 7,
       "families": [
         "exercises"
       ],
@@ -8076,7 +7873,7 @@
     },
     {
       "module": "nutrients",
-      "eligiblePublishedRecords": 11,
+      "eligiblePublishedRecords": 22,
       "families": [
         "nutrients"
       ],
@@ -8299,6 +8096,142 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_gluteus_maximus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_gluteus_medius",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_gluteus_minimus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_tensor_fasciae_latae",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_rectus_femoris",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_vastus_lateralis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_vastus_medialis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_vastus_intermedius",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_biceps_femoris",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_biceps_femoris_long_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_biceps_femoris_short_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_semitendinosus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_semimembranosus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_gastrocnemius",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_gastrocnemius_medial_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_gastrocnemius_lateral_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_soleus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -8394,6 +8327,22 @@
               "creator": "Fitness OS / Codex original SVG",
               "licence": "Original project artwork; repository-owned",
               "reviewDate": "2026-10-06",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_single_leg_calf_raise",
+          "assets": [
+            {
+              "url": "/media/supported-single-leg-calf-raise.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-07",
               "reviewStatus": "reviewed"
             }
           ],
@@ -10344,6 +10293,94 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "folate_food_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "folate_dfe_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "choline_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "iodine_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "potassium_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "phosphorus_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "copper_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "manganese_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "selenium_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "vitamin_e_mg",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "vitamin_k_ug",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10646,19 +10683,19 @@
   "publicationBlockSummary": [
     {
       "module": "muscles",
-      "missingVerifiedFactualRecords": 49,
+      "missingVerifiedFactualRecords": 32,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 21,
+      "independentHumanReviewPending": 38,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
     {
       "module": "exercises",
-      "missingVerifiedFactualRecords": 178,
+      "missingVerifiedFactualRecords": 177,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 6,
+      "independentHumanReviewPending": 7,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10691,10 +10728,10 @@
     },
     {
       "module": "nutrients",
-      "missingVerifiedFactualRecords": 40,
+      "missingVerifiedFactualRecords": 29,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 11,
+      "independentHumanReviewPending": 22,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -11000,6 +11037,102 @@
       "reuse": "original_work",
       "extractionDate": "2026-10-06T06:19:20Z",
       "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_folate_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Folate-Consumer/",
+      "version": "Source updated 2022-11-01",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:37:25Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_choline_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Choline-Consumer/",
+      "version": "Source updated 2022-06-02",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:37:25Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_iodine_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Iodine-Consumer/",
+      "version": "Source updated 2024-05-01",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:37:25Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "nih_ods_potassium_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Potassium-Consumer/",
+      "version": "Source updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-06T06:37:25Z",
+      "reviewDate": "2026-10-06"
+    },
+    {
+      "id": "gray_1918_lower_limb",
+      "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+      "version": "1918 historical edition; pp. 470–483",
+      "reuse": "public_domain_data",
+      "extractionDate": "2026-10-06T06:41:14Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "original_calf_diagram_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+      "version": "1.0.0",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-07T10:14:35Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_phosphorus_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Phosphorus-Consumer/",
+      "version": "Consumer fact sheet, updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T10:17:36Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_copper_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Copper-Consumer/",
+      "version": "Consumer fact sheet, updated 2022-10-18",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T10:17:36Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_manganese_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Manganese-Consumer/",
+      "version": "Consumer fact sheet, updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T10:17:36Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_selenium_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/Selenium-Consumer/",
+      "version": "Consumer fact sheet, updated 2025-06-18",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T10:17:36Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_vitamine_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminE-Consumer/",
+      "version": "Consumer fact sheet, updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T10:17:36Z",
+      "reviewDate": "2026-10-07"
+    },
+    {
+      "id": "nih_ods_vitamink_consumer",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminK-Consumer/",
+      "version": "Consumer fact sheet, updated 2021-03-22",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T10:17:36Z",
+      "reviewDate": "2026-10-07"
     }
   ],
   "implementedRoutes": [
@@ -12324,8 +12457,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 428,
-    "factualRecords": 300
+    "documents": 457,
+    "factualRecords": 329
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -12675,6 +12808,91 @@
     {
       "module": "muscles",
       "id": "muscle_teres_major",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_gluteus_maximus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_gluteus_medius",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_gluteus_minimus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_tensor_fasciae_latae",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_rectus_femoris",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_vastus_lateralis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_vastus_medialis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_vastus_intermedius",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_biceps_femoris",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_biceps_femoris_long_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_biceps_femoris_short_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_semitendinosus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_semimembranosus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_gastrocnemius",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_gastrocnemius_medial_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_gastrocnemius_lateral_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_soleus",
       "instructionalMediaRequired": false
     },
     {
@@ -13878,6 +14096,61 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "nutrients",
+      "id": "folate_food_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "folate_dfe_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "choline_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "iodine_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "potassium_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "phosphorus_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "copper_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "manganese_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "selenium_ug",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "vitamin_e_mg",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "nutrients",
+      "id": "vitamin_k_ug",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "recipes",
       "id": "public_recipe_chickpea_cucumber_bowl",
       "instructionalMediaRequired": false
@@ -14051,11 +14324,11 @@
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-06T06:36:26.031Z",
-    "expected": 482,
+    "buildDate": "2026-10-07T10:50:15.322Z",
+    "expected": 511,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 482,
+    "unmeasured": 511,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -15281,6 +15554,108 @@
         "evidence": null
       },
       {
+        "path": "/muscles/gluteus-maximus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/gluteus-medius",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/gluteus-minimus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/tensor-fasciae-latae",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/rectus-femoris",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/vastus-lateralis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/vastus-medialis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/vastus-intermedius",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/biceps-femoris",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/biceps-femoris-long-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/biceps-femoris-short-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/semitendinosus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/semimembranosus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/gastrocnemius",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/gastrocnemius-medial-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/gastrocnemius-lateral-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/soleus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/exercises/dumbbell-curl",
         "kind": "public_record",
         "result": "unmeasured",
@@ -15312,6 +15687,12 @@
       },
       {
         "path": "/exercises/dumbbell-overhead-triceps-extension",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/single-leg-calf-raise",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
@@ -16752,6 +17133,72 @@
       },
       {
         "path": "/nutrients/vitamin-b6",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/food-folate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/folate-vitamin-b9",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/choline",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/iodine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/potassium",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/phosphorus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/copper",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/manganese",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/selenium",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/vitamin-e",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/nutrients/vitamin-k",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

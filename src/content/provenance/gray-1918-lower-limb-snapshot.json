@@ -1,0 +1,29 @@
+{
+  "sourceId": "gray_1918_lower_limb",
+  "version": "1.0.0",
+  "sourceUrl": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+  "extractedAt": "2026-10-06T06:41:14Z",
+  "sourceYear": 1918,
+  "locator": "Printed pages 470–483; anterior thigh, gluteal region, hamstrings and calf; retained OCR includes intervening context",
+  "extractPath": "src/content/provenance/gray-1918-lower-limb-extract.txt",
+  "sha256": "106482d52309133a42f47bda0cd7a80d8ebd11c97c45e375b9c01f5d37b03789",
+  "recordIds": [
+    "muscle_gluteus_maximus",
+    "muscle_gluteus_medius",
+    "muscle_gluteus_minimus",
+    "muscle_tensor_fasciae_latae",
+    "muscle_rectus_femoris",
+    "muscle_vastus_lateralis",
+    "muscle_vastus_medialis",
+    "muscle_vastus_intermedius",
+    "muscle_biceps_femoris",
+    "muscle_biceps_femoris_long_head",
+    "muscle_biceps_femoris_short_head",
+    "muscle_semitendinosus",
+    "muscle_semimembranosus",
+    "muscle_gastrocnemius",
+    "muscle_gastrocnemius_medial_head",
+    "muscle_gastrocnemius_lateral_head",
+    "muscle_soleus"
+  ]
+}

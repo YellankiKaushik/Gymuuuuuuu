@@ -9,6 +9,9 @@
     "scripts/build-search-index.ts",
     "scripts/phase19-*.ts",
     "scripts/compile-original-templates.ts",
-    "scripts/compile-nih-nutrients.ts"
+    "scripts/compile-nih-nutrients.ts",
+    "scripts/compile-nutrients.ts",
+    "scripts/compile-foods.ts",
+    "scripts/compile-historical-anatomy.ts"
   ]
 }

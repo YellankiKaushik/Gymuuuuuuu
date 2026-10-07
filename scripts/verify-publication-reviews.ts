@@ -219,7 +219,9 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
         [
           r.id === "exercise_dumbbell_curl"
             ? "original_curl_diagram_v1"
-            : "original_strength_diagrams_v1",
+            : r.id === "exercise_single_leg_calf_raise"
+              ? "original_calf_diagram_v1"
+              : "original_strength_diagrams_v1",
         ],
         "original_authorship",
       ),

@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "muscle_gluteus_maximus",
+    "slug": "gluteus-maximus",
+    "displayName": "Gluteus maximus",
+    "anatomicalName": "Gluteus maximus",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A broad superficial gluteal muscle described as extending the thigh and supporting the pelvis and trunk.",
+    "locationSummary": "Superficial posterior gluteal region.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Posterior ilium, lower sacrum and coccyx, sacrotuberous ligament and adjoining aponeuroses.",
+      "distalAttachmentSummary": "Iliotibial band and gluteal tuberosity of the femur."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes thigh extension; outward rotation is attributed to the lower portion.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "external rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes thigh extension; outward rotation is attributed to the lower portion.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "extension",
+      "rotation"
+    ]
+  },
+  {
+    "id": "muscle_gluteus_medius",
+    "slug": "gluteus-medius",
+    "displayName": "Gluteus medius",
+    "anatomicalName": "Gluteus medius",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes",
+      "group_hip_abductors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A lateral pelvic muscle contributing to thigh abduction and pelvic support when standing on one limb.",
+    "locationSummary": "Outer pelvis; partly covered by gluteus maximus.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Outer ilium between the posterior and anterior gluteal lines and the overlying gluteal aponeurosis.",
+      "distalAttachmentSummary": "Oblique ridge on the lateral greater trochanter."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "abduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Abduction is described with the limb extended; inward rotation is attributed to anterior fibers.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Abduction is described with the limb extended; inward rotation is attributed to anterior fibers.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "relatedMuscleId": "muscle_gluteus_minimus",
+        "context": "Source-described hip abduction and one-limb support",
+        "role": "synergist",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "lateral"
+    ],
+    "movementPatterns": [
+      "abduction",
+      "rotation"
+    ]
+  },
+  {
+    "id": "muscle_gluteus_minimus",
+    "slug": "gluteus-minimus",
+    "displayName": "Gluteus minimus",
+    "anatomicalName": "Gluteus minimus",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_glutes",
+      "group_hip_abductors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A small gluteal muscle beneath gluteus medius, contributing to thigh abduction and one-limb pelvic support.",
+    "locationSummary": "Deep to gluteus medius on the outer pelvis.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Outer ilium between the anterior and inferior gluteal lines and the margin of the greater sciatic notch.",
+      "distalAttachmentSummary": "Anterior border of the greater trochanter with an expansion to the hip capsule."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "abduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Abduction is described with the limb extended; inward rotation is attributed to anterior fibers.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Abduction is described with the limb extended; inward rotation is attributed to anterior fibers.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "relatedMuscleId": "muscle_gluteus_medius",
+        "context": "Source-described hip abduction and one-limb support",
+        "role": "synergist",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "deep"
+    ],
+    "movementPatterns": [
+      "abduction",
+      "rotation"
+    ]
+  },
+  {
+    "id": "muscle_tensor_fasciae_latae",
+    "slug": "tensor-fasciae-latae",
+    "displayName": "Tensor fasciae latae",
+    "anatomicalName": "Tensor fasciae latae",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_hip_gluteal",
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_abductors",
+      "group_hip_flexors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A muscle connected with the iliotibial band, described as tensing fascia and assisting thigh abduction and inward rotation.",
+    "locationSummary": "Lateral hip and proximal outer thigh.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior outer iliac crest, anterior superior iliac spine and deep fascia lata.",
+      "distalAttachmentSummary": "Between layers of the iliotibial band in the upper-to-middle thigh."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "abduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "lateral"
+    ],
+    "movementPatterns": [
+      "abduction",
+      "rotation"
+    ]
+  },
+  {
+    "id": "muscle_rectus_femoris",
+    "slug": "rectus-femoris",
+    "displayName": "Rectus femoris",
+    "anatomicalName": "Rectus femoris",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A quadriceps component contributing to knee extension and assisting hip flexion.",
+    "locationSummary": "Middle front of the thigh.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior inferior iliac spine and groove above the acetabular rim.",
+      "distalAttachmentSummary": "Base of the patella through its tendon. The combined quadriceps attachment continues through the patella and patellar ligament to the tibial tuberosity."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "anterior"
+    ],
+    "movementPatterns": [
+      "extension",
+      "flexion"
+    ]
+  },
+  {
+    "id": "muscle_vastus_lateralis",
+    "slug": "vastus-lateralis",
+    "displayName": "Vastus lateralis",
+    "anatomicalName": "Vastus lateralis",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A quadriceps component contributing to knee extension.",
+    "locationSummary": "Lateral front and side of the thigh.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Upper intertrochanteric line, greater trochanter, gluteal tuberosity, lateral linea aspera and adjoining septum.",
+      "distalAttachmentSummary": "Lateral patellar border, joining the quadriceps tendon. The combined quadriceps attachment continues through the patella and patellar ligament to the tibial tuberosity."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "anterior"
+    ],
+    "movementPatterns": [
+      "extension"
+    ]
+  },
+  {
+    "id": "muscle_vastus_medialis",
+    "slug": "vastus-medialis",
+    "displayName": "Vastus medialis",
+    "anatomicalName": "Vastus medialis",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A quadriceps component contributing to knee extension.",
+    "locationSummary": "Medial front of the thigh.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Lower intertrochanteric line, medial linea aspera, medial supracondylar line and adjoining tendons and septum.",
+      "distalAttachmentSummary": "Medial patellar border and quadriceps tendon. The combined quadriceps attachment continues through the patella and patellar ligament to the tibial tuberosity."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "anterior"
+    ],
+    "movementPatterns": [
+      "extension"
+    ]
+  },
+  {
+    "id": "muscle_vastus_intermedius",
+    "slug": "vastus-intermedius",
+    "displayName": "Vastus intermedius",
+    "anatomicalName": "Vastus intermedius",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_front_thigh"
+    ],
+    "trainingGroups": [
+      "group_quadriceps"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A quadriceps component contributing to knee extension.",
+    "locationSummary": "Front of the femur beneath rectus femoris.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior and lateral upper femoral shaft and the lateral intermuscular septum.",
+      "distalAttachmentSummary": "Deep portion of the quadriceps tendon. The combined quadriceps attachment continues through the patella and patellar ligament to the tibial tuberosity."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "deep"
+    ],
+    "movementPatterns": [
+      "extension"
+    ]
+  },
+  {
+    "id": "muscle_biceps_femoris",
+    "slug": "biceps-femoris",
+    "displayName": "Biceps femoris",
+    "anatomicalName": "Biceps femoris",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "parentIds": [],
+    "childIds": [
+      "muscle_biceps_femoris_long_head",
+      "muscle_biceps_femoris_short_head"
+    ],
+    "summary": "A two-headed posterior thigh muscle contributing to knee flexion and outward rotation of the bent leg.",
+    "locationSummary": "Posterior and lateral thigh.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Long head: Ischial tuberosity with a tendon shared with semitendinosus, and lower sacrotuberous ligament. Short head: Lateral linea aspera, lateral supracondylar region and lateral intermuscular septum of the femur.",
+      "distalAttachmentSummary": "Lateral fibular head, with a smaller attachment to the lateral tibial condyle."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Outward leg rotation is described when the knee is partly bent; this does not imply exact isolation.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "knee",
+        "motion": "external rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Outward leg rotation is described when the knee is partly bent; this does not imply exact isolation.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion",
+      "rotation"
+    ]
+  },
+  {
+    "id": "muscle_biceps_femoris_long_head",
+    "slug": "biceps-femoris-long-head",
+    "displayName": "Biceps femoris — long head",
+    "anatomicalName": "Biceps femoris — long head",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "parentIds": [
+      "muscle_biceps_femoris"
+    ],
+    "childIds": [],
+    "summary": "A named head of biceps femoris sharing its distal tendon; head-specific activation or isolation is not established here.",
+    "locationSummary": "Posterior thigh; subdivision of biceps femoris.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Ischial tuberosity with a tendon shared with semitendinosus, and lower sacrotuberous ligament.",
+      "distalAttachmentSummary": "Lateral fibular head, with a smaller attachment to the lateral tibial condyle."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes knee flexion for the muscle as a whole. No independent head-specific effect or hip action is inferred.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion"
+    ]
+  },
+  {
+    "id": "muscle_biceps_femoris_short_head",
+    "slug": "biceps-femoris-short-head",
+    "displayName": "Biceps femoris — short head",
+    "anatomicalName": "Biceps femoris — short head",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "parentIds": [
+      "muscle_biceps_femoris"
+    ],
+    "childIds": [],
+    "summary": "A named head of biceps femoris sharing its distal tendon; head-specific activation or isolation is not established here.",
+    "locationSummary": "Posterior thigh; subdivision of biceps femoris.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Lateral linea aspera, lateral supracondylar region and lateral intermuscular septum of the femur.",
+      "distalAttachmentSummary": "Lateral fibular head, with a smaller attachment to the lateral tibial condyle."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes knee flexion for the muscle as a whole. No independent head-specific effect or hip action is inferred.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion"
+    ]
+  },
+  {
+    "id": "muscle_semitendinosus",
+    "slug": "semitendinosus",
+    "displayName": "Semitendinosus",
+    "anatomicalName": "Semitendinosus",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A medial posterior thigh muscle with a long tendon, contributing to knee flexion and inward rotation of the bent leg.",
+    "locationSummary": "Posterior and medial thigh.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Lower medial ischial tuberosity with a tendon shared with the biceps femoris long head.",
+      "distalAttachmentSummary": "Upper medial tibial shaft, with a prolongation to leg fascia."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Inward leg rotation is described with the knee partly bent.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "knee",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Inward leg rotation is described with the knee partly bent.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion",
+      "rotation"
+    ]
+  },
+  {
+    "id": "muscle_semimembranosus",
+    "slug": "semimembranosus",
+    "displayName": "Semimembranosus",
+    "anatomicalName": "Semimembranosus",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_back_thigh"
+    ],
+    "trainingGroups": [
+      "group_hamstrings"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A medial posterior thigh muscle contributing to knee flexion and a smaller role in inward rotation of the bent leg.",
+    "locationSummary": "Posterior and medial thigh.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Upper outer ischial tuberosity through a broad tendon.",
+      "distalAttachmentSummary": "Posterior medial tibial condyle, with expansions to the posterior knee region."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Inward leg rotation is described with the knee partly bent and to a lesser extent than semitendinosus.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "knee",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Inward leg rotation is described with the knee partly bent and to a lesser extent than semitendinosus.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion",
+      "rotation"
+    ]
+  },
+  {
+    "id": "muscle_gastrocnemius",
+    "slug": "gastrocnemius",
+    "displayName": "Gastrocnemius",
+    "anatomicalName": "Gastrocnemius",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "parentIds": [],
+    "childIds": [
+      "muscle_gastrocnemius_medial_head",
+      "muscle_gastrocnemius_lateral_head"
+    ],
+    "summary": "A superficial two-headed calf muscle contributing to heel raising at the ankle and knee flexion.",
+    "locationSummary": "Superficial posterior lower leg.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Medial and lateral femoral condylar regions and adjoining knee capsule.",
+      "distalAttachmentSummary": "Posterior calcaneus through the common calcaneal (Achilles) tendon shared with soleus."
+    },
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion"
+    ]
+  },
+  {
+    "id": "muscle_gastrocnemius_medial_head",
+    "slug": "gastrocnemius-medial-head",
+    "displayName": "Gastrocnemius — medial head",
+    "anatomicalName": "Gastrocnemius — medial head",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "parentIds": [
+      "muscle_gastrocnemius"
+    ],
+    "childIds": [],
+    "summary": "A named head of gastrocnemius contributing to its shared calf muscle and calcaneal tendon.",
+    "locationSummary": "Posterior lower leg; subdivision of gastrocnemius.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Posterior medial femoral condyle and adjoining femur and knee capsule.",
+      "distalAttachmentSummary": "Posterior calcaneus through the common calcaneal (Achilles) tendon shared with soleus."
+    },
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes the calf muscle action collectively; no unique head-specific activation or isolation claim.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion"
+    ]
+  },
+  {
+    "id": "muscle_gastrocnemius_lateral_head",
+    "slug": "gastrocnemius-lateral-head",
+    "displayName": "Gastrocnemius — lateral head",
+    "anatomicalName": "Gastrocnemius — lateral head",
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "parentIds": [
+      "muscle_gastrocnemius"
+    ],
+    "childIds": [],
+    "summary": "A named head of gastrocnemius contributing to its shared calf muscle and calcaneal tendon.",
+    "locationSummary": "Posterior lower leg; subdivision of gastrocnemius.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Lateral femoral condyle and femur above it, with adjoining knee capsule.",
+      "distalAttachmentSummary": "Posterior calcaneus through the common calcaneal (Achilles) tendon shared with soleus."
+    },
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes the calf muscle action collectively; no unique head-specific activation or isolation claim.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "posterior"
+    ],
+    "movementPatterns": [
+      "flexion"
+    ]
+  },
+  {
+    "id": "muscle_soleus",
+    "slug": "soleus",
+    "displayName": "Soleus",
+    "anatomicalName": "Soleus",
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "aliases": [],
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_calves"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "summary": "A broad calf muscle beneath gastrocnemius, contributing to heel raising and supporting the leg over the foot in standing.",
+    "locationSummary": "Posterior lower leg, deep to gastrocnemius.",
+    "practicalImportance": "Use the sourced joint actions to understand movement. Historical anatomy does not establish an isolation strategy, exercise outcome or injury-prevention guarantee.",
+    "structure": {
+      "proximalAttachmentSummary": "Posterior proximal fibula, posterior tibial line and medial tibial border, and the connecting tendinous arch.",
+      "distalAttachmentSummary": "Posterior calcaneus through the common calcaneal (Achilles) tendon shared with soleus."
+    },
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Qualitative action from a historical anatomical description; no activation percentage.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "relationships": [],
+    "cautions": [
+      "Historical attachment summary; individual anatomical variation is not represented.",
+      "No independent human anatomy review. No exact activation, modern clinical or training-effect conclusions."
+    ],
+    "sources": [
+      "gray_1918_lower_limb"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0",
+    "visibility": [
+      "deep"
+    ],
+    "movementPatterns": [
+      "flexion"
+    ]
+  }
+]

@@ -1719,5 +1719,1830 @@
       "reviewer": "Codex source verification and machine validation; personal use; no human review",
       "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
     }
+  },
+  {
+    "id": "folate_food_ug",
+    "slug": "food-folate",
+    "canonicalName": "Food folate",
+    "aliases": [
+      "natural folate"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "folate_food_ug"
+    ],
+    "essentiality": "vitamin_form",
+    "displayKind": "vitamin_form",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Naturally occurring food folate supports DNA production and cell division.",
+    "forms": [],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Naturally occurring food folate supports DNA production and cell division.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "folate_food_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Low folate can cause megaloblastic anemia. This page cannot determine the cause of fatigue or anemia.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "ODS distinguishes natural food folate from folic acid in supplements and fortified foods; their excess-risk frameworks are not interchangeable.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Folate supplements can interact with methotrexate and some antiseizure medicines. Do not change medicines based on this page.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_folate_food_ug_function",
+        "text": "Naturally occurring food folate supports DNA production and cell division.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_food_ug_food_source",
+        "text": "ODS lists leafy vegetables, fruit, nuts, beans and peas as natural food-folate sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_food_ug_deficiency",
+        "text": "Low folate can cause megaloblastic anemia. This page cannot determine the cause of fatigue or anemia.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_food_ug_excess",
+        "text": "ODS distinguishes natural food folate from folic acid in supplements and fortified foods; their excess-risk frameworks are not interchangeable.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_food_ug_interaction",
+        "text": "Folate supplements can interact with methotrexate and some antiseizure medicines. Do not change medicines based on this page.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Folate-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2022-11-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "folate_dfe_ug",
+    "slug": "folate-vitamin-b9",
+    "canonicalName": "Folate (vitamin B9)",
+    "aliases": [
+      "dietary folate equivalents",
+      "DFE",
+      "B9"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg DFE",
+    "foodDataNutrientIds": [
+      "folate_dfe_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Dietary folate equivalents describe folate intake while accounting for differences between food folate and folic acid.",
+    "forms": [
+      {
+        "id": "folic_acid",
+        "name": "Folic acid",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "methylfolate_5_mthf",
+        "name": "Methylfolate (5-MTHF)",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Dietary folate equivalents describe folate intake while accounting for differences between food folate and folic acid.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "folate_dfe_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [
+      {
+        "factorType": "form_difference",
+        "description": "Folic acid from fortified foods and supplements is absorbed differently from naturally occurring food folate. No intake conversion is inferred here.",
+        "direction": "context_dependent",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "deficiency": {
+      "overview": "Insufficient folate can cause megaloblastic anemia; assessment requires clinical context.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Large supplemental folate amounts can hide the anemia of vitamin B12 deficiency without preventing its nerve damage.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Folate supplements can affect some medicines; consult a pharmacist or clinician before use.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_folate_dfe_ug_function",
+        "text": "Dietary folate equivalents describe folate intake while accounting for differences between food folate and folic acid.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_dfe_ug_food_source",
+        "text": "Natural folate and folic acid added to enriched grains contribute different forms; check the exact food profile.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_dfe_ug_deficiency",
+        "text": "Insufficient folate can cause megaloblastic anemia; assessment requires clinical context.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_dfe_ug_excess",
+        "text": "Large supplemental folate amounts can hide the anemia of vitamin B12 deficiency without preventing its nerve damage.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_dfe_ug_interaction",
+        "text": "Folate supplements can affect some medicines; consult a pharmacist or clinician before use.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_folate_dfe_ug_absorption",
+        "text": "Folic acid from fortified foods and supplements is absorbed differently from naturally occurring food folate. No intake conversion is inferred here.",
+        "category": "absorption",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Folate-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2022-11-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "choline_mg",
+    "slug": "choline",
+    "canonicalName": "Choline",
+    "aliases": [],
+    "groupId": "other_essential",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "choline_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "other_nutrient",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Choline supports cell membranes and nervous-system functions including muscle control; the body makes some but also uses dietary choline.",
+    "forms": [
+      {
+        "id": "choline_bitartrate",
+        "name": "Choline bitartrate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "phosphatidylcholine",
+        "name": "Phosphatidylcholine",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "lecithin",
+        "name": "Lecithin",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Choline supports cell membranes and nervous-system functions including muscle control; the body makes some but also uses dietary choline.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "choline_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Very low choline levels can cause muscle and liver damage. Below-reference intake alone does not establish deficiency.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Excess choline can cause vomiting, sweating, low blood pressure and liver damage; more is not automatically better.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ODS reports no known choline medication interactions but recommends discussing supplements and medicines with health professionals.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_choline_mg_function",
+        "text": "Choline supports cell membranes and nervous-system functions including muscle control; the body makes some but also uses dietary choline.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_choline_mg_food_source",
+        "text": "ODS lists eggs, meat, fish, dairy, potatoes, cruciferous vegetables, some beans, nuts, seeds and whole grains.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_choline_mg_deficiency",
+        "text": "Very low choline levels can cause muscle and liver damage. Below-reference intake alone does not establish deficiency.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_choline_mg_excess",
+        "text": "Excess choline can cause vomiting, sweating, low blood pressure and liver damage; more is not automatically better.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_choline_mg_interaction",
+        "text": "ODS reports no known choline medication interactions but recommends discussing supplements and medicines with health professionals.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Choline-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2022-06-02. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "iodine_ug",
+    "slug": "iodine",
+    "canonicalName": "Iodine",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "iodine_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Iodine is needed to make thyroid hormones, which support metabolism and development.",
+    "forms": [
+      {
+        "id": "potassium_iodide",
+        "name": "Potassium iodide",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "sodium_iodide",
+        "name": "Sodium iodide",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Iodine is needed to make thyroid hormones, which support metabolism and development.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "iodine_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Low iodine can impair thyroid-hormone production. Pregnancy and diets excluding seafood, dairy and eggs need appropriate professional assessment.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "High iodine intake can also harm thyroid function. Deficiency and excess can share symptoms, so symptoms cannot guide self-dosing.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Iodine supplements can interact with antithyroid medicines. Potassium iodide can raise potassium with ACE inhibitors or potassium-sparing diuretics.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_iodine_ug_function",
+        "text": "Iodine is needed to make thyroid hormones, which support metabolism and development.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_iodine_ug_food_source",
+        "text": "ODS lists seafood, dairy, eggs and iodized salt. Specialty salts are not necessarily iodized; check the product label.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_iodine_ug_deficiency",
+        "text": "Low iodine can impair thyroid-hormone production. Pregnancy and diets excluding seafood, dairy and eggs need appropriate professional assessment.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_iodine_ug_excess",
+        "text": "High iodine intake can also harm thyroid function. Deficiency and excess can share symptoms, so symptoms cannot guide self-dosing.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_iodine_ug_interaction",
+        "text": "Iodine supplements can interact with antithyroid medicines. Potassium iodide can raise potassium with ACE inhibitors or potassium-sparing diuretics.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Iodine-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2024-05-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "potassium_mg",
+    "slug": "potassium",
+    "canonicalName": "Potassium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "potassium_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Potassium supports kidney and heart function, nerve transmission and muscle contraction.",
+    "forms": [
+      {
+        "id": "potassium_chloride",
+        "name": "Potassium chloride",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "potassium_citrate",
+        "name": "Potassium citrate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Potassium supports kidney and heart function, nerve transmission and muscle contraction.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "potassium_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Illnesses, substantial losses and some medicines can cause severe low blood potassium. Muscle weakness alone does not diagnose deficiency.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Kidney disease and some medicines can raise blood potassium even with usual food intake. Supplements and salt substitutes can also cause dangerous excess.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ACE inhibitors, angiotensin-receptor blockers and potassium-sparing diuretics can raise potassium. Other diuretics can lower it; a clinician should assess the specific medicine.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_potassium_mg_function",
+        "text": "Potassium supports kidney and heart function, nerve transmission and muscle contraction.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_potassium_mg_food_source",
+        "text": "ODS lists fruit, vegetables, legumes, nuts, dairy, meat and fish as potassium sources.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_potassium_mg_deficiency",
+        "text": "Illnesses, substantial losses and some medicines can cause severe low blood potassium. Muscle weakness alone does not diagnose deficiency.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_potassium_mg_excess",
+        "text": "Kidney disease and some medicines can raise blood potassium even with usual food intake. Supplements and salt substitutes can also cause dangerous excess.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_potassium_mg_interaction",
+        "text": "ACE inhibitors, angiotensin-receptor blockers and potassium-sparing diuretics can raise potassium. Other diuretics can lower it; a clinician should assess the specific medicine.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Potassium-Consumer/",
+        "accessedAt": "2026-10-06",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-06",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "phosphorus_mg",
+    "slug": "phosphorus",
+    "canonicalName": "Phosphorus",
+    "aliases": [
+      "phosphate"
+    ],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "phosphorus_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Phosphorus is present in cells, bones and teeth and supports energy production and other chemical processes.",
+    "forms": [
+      {
+        "id": "dipotassium_phosphate",
+        "name": "Dipotassium phosphate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "disodium_phosphate",
+        "name": "Disodium phosphate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Phosphorus is present in cells, bones and teeth and supports energy production and other chemical processes.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "phosphorus_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Deficiency is rare in the United States; severe malnutrition and certain rare disorders are risk contexts. Symptoms cannot establish a diagnosis here.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Severe kidney disease can impair phosphorus removal. This page does not prescribe restriction or interpret blood results.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Some antacids reduce phosphorus absorption. Phosphate-containing laxatives can increase phosphorus, with particular risks in dehydration or kidney disease; seek professional advice.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_phosphorus_mg_function",
+        "text": "Phosphorus is present in cells, bones and teeth and supports energy production and other chemical processes.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_phosphorus_mg_food_source",
+        "text": "ODS lists dairy, grains, meat, eggs, nuts, seeds, legumes and some vegetables; processed foods can also contain phosphate additives.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_phosphorus_mg_deficiency",
+        "text": "Deficiency is rare in the United States; severe malnutrition and certain rare disorders are risk contexts. Symptoms cannot establish a diagnosis here.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_phosphorus_mg_excess",
+        "text": "Severe kidney disease can impair phosphorus removal. This page does not prescribe restriction or interpret blood results.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_phosphorus_mg_interaction",
+        "text": "Some antacids reduce phosphorus absorption. Phosphate-containing laxatives can increase phosphorus, with particular risks in dehydration or kidney disease; seek professional advice.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Phosphorus-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "copper_mg",
+    "slug": "copper",
+    "canonicalName": "Copper",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "copper_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Copper supports energy production, connective tissue, blood vessels and nervous and immune system functions.",
+    "forms": [
+      {
+        "id": "cupric_oxide",
+        "name": "Cupric oxide",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "cupric_sulfate",
+        "name": "Cupric sulfate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "copper_gluconate",
+        "name": "Copper gluconate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Copper supports energy production, connective tissue, blood vessels and nervous and immune system functions.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "copper_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Deficiency is rare in the United States; celiac disease, Menkes disease and high-dose zinc supplementation are risk contexts.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Repeated excessive copper exposure can damage the liver and cause gastrointestinal problems. Wilson's disease is a special toxicity-risk context.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ODS identifies no known medication interactions but describes high-dose zinc reducing copper absorption. Discuss supplements and medicines with a clinician or pharmacist.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_copper_mg_function",
+        "text": "Copper supports energy production, connective tissue, blood vessels and nervous and immune system functions.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_copper_mg_food_source",
+        "text": "ODS lists liver, shellfish, nuts, seeds, chocolate, whole grains, potatoes, mushrooms, avocados, chickpeas and tofu.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_copper_mg_deficiency",
+        "text": "Deficiency is rare in the United States; celiac disease, Menkes disease and high-dose zinc supplementation are risk contexts.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_copper_mg_excess",
+        "text": "Repeated excessive copper exposure can damage the liver and cause gastrointestinal problems. Wilson's disease is a special toxicity-risk context.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_copper_mg_interaction",
+        "text": "ODS identifies no known medication interactions but describes high-dose zinc reducing copper absorption. Discuss supplements and medicines with a clinician or pharmacist.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Copper-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2022-10-18. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "manganese_mg",
+    "slug": "manganese",
+    "canonicalName": "Manganese",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "mg",
+    "foodDataNutrientIds": [
+      "manganese_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Manganese supports energy production, cellular protection, bones, reproduction, blood clotting and immune function.",
+    "forms": [
+      {
+        "id": "manganese_sulfate",
+        "name": "Manganese sulfate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "manganese_aspartate",
+        "name": "Manganese aspartate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Manganese supports energy production, cellular protection, bones, reproduction, blood clotting and immune function.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "manganese_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Deficiency is very rare in the United States. Possible effects on growth, bones and skin are education, not a symptom-based diagnosis.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Very high manganese levels in drinking water and occupational dust exposure can cause toxicity affecting the nervous system. Exposure contexts are not interchangeable.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "ODS identifies no known medicine interactions for manganese but recommends discussing supplement and medication use with health professionals.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_manganese_mg_function",
+        "text": "Manganese supports energy production, cellular protection, bones, reproduction, blood clotting and immune function.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_manganese_mg_food_source",
+        "text": "ODS lists whole grains, shellfish, nuts, legumes, leafy vegetables, some fruit, tea and spices.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_manganese_mg_deficiency",
+        "text": "Deficiency is very rare in the United States. Possible effects on growth, bones and skin are education, not a symptom-based diagnosis.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_manganese_mg_excess",
+        "text": "Very high manganese levels in drinking water and occupational dust exposure can cause toxicity affecting the nervous system. Exposure contexts are not interchangeable.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_manganese_mg_interaction",
+        "text": "ODS identifies no known medicine interactions for manganese but recommends discussing supplement and medication use with health professionals.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Manganese-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "selenium_ug",
+    "slug": "selenium",
+    "canonicalName": "Selenium",
+    "aliases": [],
+    "groupId": "minerals_electrolytes",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "selenium_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "mineral",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Selenium supports thyroid function, reproduction, DNA production and cellular protection.",
+    "forms": [
+      {
+        "id": "selenomethionine",
+        "name": "Selenomethionine",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "sodium_selenite",
+        "name": "Sodium selenite",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "sodium_selenate",
+        "name": "Sodium selenate",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Selenium supports thyroid function, reproduction, DNA production and cellular protection.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "selenium_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Dialysis, HIV and diets based on plants grown in low-selenium soil are risk contexts. Deficiency is rare in the United States and Canada.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "Excess selenium can harm hair, nails and the nervous system; extreme exposure can be severe. US and European upper-limit frameworks differ and are not intake goals.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Cisplatin can lower selenium levels; ODS states that the effect on the body is unclear. Discuss cancer-treatment and supplement decisions with the treating team.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_selenium_ug_function",
+        "text": "Selenium supports thyroid function, reproduction, DNA production and cellular protection.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_selenium_ug_food_source",
+        "text": "ODS lists seafood, meat, poultry, eggs, dairy, grains, legumes and nuts. Soil selenium affects plant-food composition.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_selenium_ug_deficiency",
+        "text": "Dialysis, HIV and diets based on plants grown in low-selenium soil are risk contexts. Deficiency is rare in the United States and Canada.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_selenium_ug_excess",
+        "text": "Excess selenium can harm hair, nails and the nervous system; extreme exposure can be severe. US and European upper-limit frameworks differ and are not intake goals.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_selenium_ug_interaction",
+        "text": "Cisplatin can lower selenium levels; ODS states that the effect on the body is unclear. Discuss cancer-treatment and supplement decisions with the treating team.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/Selenium-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2025-06-18. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "vitamin_e_mg",
+    "slug": "vitamin-e",
+    "canonicalName": "Vitamin E",
+    "aliases": [
+      "alpha-tocopherol equivalents"
+    ],
+    "groupId": "vitamins",
+    "canonicalUnit": "mg alpha-tocopherol",
+    "foodDataNutrientIds": [
+      "vitamin_e_mg"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Vitamin E is a fat-soluble nutrient with antioxidant and immune functions.",
+    "forms": [
+      {
+        "id": "d_alpha_tocopherol",
+        "name": "d-alpha-tocopherol",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "dl_alpha_tocopherol",
+        "name": "dl-alpha-tocopherol",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Vitamin E is a fat-soluble nutrient with antioxidant and immune functions.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "vitamin_e_mg",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Deficiency is rare in healthy people and is often linked to impaired fat digestion or absorption; it can affect nerves and muscles.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "High-dose supplemental vitamin E can increase bleeding risk. A physiological role does not establish that supplements improve health or training outcomes.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Vitamin E supplements can increase bleeding risk with anticoagulant or antiplatelet medicines and may affect chemotherapy or radiation treatment. Seek professional review.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_vitamin_e_mg_function",
+        "text": "Vitamin E is a fat-soluble nutrient with antioxidant and immune functions.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_e_mg_food_source",
+        "text": "ODS lists vegetable oils, nuts, seeds, some green vegetables and fortified foods.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_e_mg_deficiency",
+        "text": "Deficiency is rare in healthy people and is often linked to impaired fat digestion or absorption; it can affect nerves and muscles.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_e_mg_excess",
+        "text": "High-dose supplemental vitamin E can increase bleeding risk. A physiological role does not establish that supplements improve health or training outcomes.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_e_mg_interaction",
+        "text": "Vitamin E supplements can increase bleeding risk with anticoagulant or antiplatelet medicines and may affect chemotherapy or radiation treatment. Seek professional review.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/VitaminE-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
+  },
+  {
+    "id": "vitamin_k_ug",
+    "slug": "vitamin-k",
+    "canonicalName": "Vitamin K",
+    "aliases": [],
+    "groupId": "vitamins",
+    "canonicalUnit": "µg",
+    "foodDataNutrientIds": [
+      "vitamin_k_ug"
+    ],
+    "essentiality": "essential",
+    "displayKind": "vitamin",
+    "status": "published",
+    "contentStatus": "complete_for_mvp",
+    "summary": "Vitamin K contributes to blood clotting and healthy bones. Its forms should not be treated as interchangeable composition measurements.",
+    "forms": [
+      {
+        "id": "phylloquinone",
+        "name": "Phylloquinone",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "phytonadione",
+        "name": "Phytonadione",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "menaquinone_4",
+        "name": "Menaquinone-4",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      },
+      {
+        "id": "menaquinone_7",
+        "name": "Menaquinone-7",
+        "relationship": "supplement_form",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "title": "Physiological role",
+        "description": "Vitamin K contributes to blood clotting and healthy bones. Its forms should not be treated as interchangeable composition measurements.",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ]
+      }
+    ],
+    "referenceValues": [],
+    "foodSourceRules": [
+      {
+        "rankingBasis": "per_100g",
+        "phase07NutrientId": "vitamin_k_ug",
+        "minimumDataStatus": "measured_or_calculated",
+        "status": "enabled",
+        "notes": "Exact source-backed 100 g profiles; missing composition is not zero."
+      }
+    ],
+    "absorptionFactors": [],
+    "deficiency": {
+      "overview": "Severe deficiency can cause bruising and bleeding. Malabsorption and bariatric surgery are risk contexts; this page cannot diagnose deficiency.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "Symptoms are nonspecific and cannot diagnose a nutrient deficiency. Diagnosis may require clinical evaluation and appropriate laboratory testing.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "excess": {
+      "overview": "ODS reports no demonstrated harm from vitamin K itself, but serious medicine interactions remain possible; this does not authorise unrestricted supplementation.",
+      "riskGroups": [],
+      "signsAndSymptoms": [],
+      "medicalBoundary": "No upper limit is an intake goal. Seek professional or medical advice before changing supplement or medication use.",
+      "sourceIds": [
+        "nih_ods_fact_sheets"
+      ]
+    },
+    "interactions": [
+      {
+        "type": "nutrient_medication",
+        "counterparty": "Medicines discussed in the linked NIH ODS fact sheet",
+        "description": "Warfarin has a serious vitamin K interaction: sudden intake changes can be dangerous. Antibiotics, bile acid sequestrants and orlistat can also affect availability. Do not change medicines here.",
+        "severity": "professional_review",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Informational summary, not a complete interaction list or an instruction to change medicines."
+      }
+    ],
+    "athleticRelevance": [],
+    "claims": [
+      {
+        "claimId": "claim_vitamin_k_ug_function",
+        "text": "Vitamin K contributes to blood clotting and healthy bones. Its forms should not be treated as interchangeable composition measurements.",
+        "category": "function",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_k_ug_food_source",
+        "text": "ODS lists leafy vegetables, vegetable oils, some fruit, meat, cheese, eggs and soybeans.",
+        "category": "food_source",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_k_ug_deficiency",
+        "text": "Severe deficiency can cause bruising and bleeding. Malabsorption and bariatric surgery are risk contexts; this page cannot diagnose deficiency.",
+        "category": "deficiency",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_k_ug_excess",
+        "text": "ODS reports no demonstrated harm from vitamin K itself, but serious medicine interactions remain possible; this does not authorise unrestricted supplementation.",
+        "category": "excess",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      },
+      {
+        "claimId": "claim_vitamin_k_ug_interaction",
+        "text": "Warfarin has a serious vitamin K interaction: sudden intake changes can be dangerous. Antibiotics, bile acid sequestrants and orlistat can also affect availability. Do not change medicines here.",
+        "category": "interaction",
+        "evidenceLevel": "authoritative_reference",
+        "population": "General NIH ODS consumer education; not an individual assessment or athlete supplement protocol",
+        "sourceIds": [
+          "nih_ods_fact_sheets"
+        ],
+        "limitations": "Brief source-linked education. No diagnosis, personal intake target or performance benefit is inferred.",
+        "reviewStatus": "approved"
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "nih_ods_fact_sheets",
+        "locator": "https://ods.od.nih.gov/factsheets/VitaminK-Consumer/",
+        "accessedAt": "2026-10-07",
+        "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      }
+    ],
+    "editorial": {
+      "reviewStatus": "approved",
+      "reviewedAt": "2026-10-07",
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "notes": "published_personal_use. Brief source-linked education, no independent human/clinical review and no personal intake prescription."
+    }
   }
 ]

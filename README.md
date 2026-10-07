@@ -39,9 +39,9 @@ Vercel configuration is prepared with Nitro, per-request CSP nonces and browser 
 
 Phase 18 is integrated. Phase 19 is **in progress**, and this application is not yet certified as engineering/content complete. The generated [completion audit](docs/reports/content-completion.md) and its [JSON inventory](docs/reports/content-completion.json) list every identity, publication count and remaining content gap.
 
-Current personal-use publications: muscles 21/70, exercises 6/184, workout science 3/98, programs 0/50, foods 226/342 (234 preparation profiles), nutrients 11/51 (7 FDA Daily Value rows), recovery 2/124, cardio 2/202 (1 article and 1 complete source plan) and supplements 2/272. Twenty-four original recipes and three static lunch/snack meal-prep collections are available; they are not complete daily diets. Public recovery/conditioning routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
+Current personal-use publications: muscles 38/70, exercises 7/184, workout science 3/98, programs 0/50, foods 226/342 (234 preparation profiles), nutrients 22/51 (7 FDA Daily Value rows), recovery 2/124, cardio 2/202 (1 article and 1 complete source plan) and supplements 2/272. Twenty-four original recipes and three static lunch/snack meal-prep collections are available; they are not complete daily diets. Public recovery/conditioning routines remain unavailable. Supplement pages are introductory education, with no published research protocols, product certification or current WADA-status verdicts.
 
-Public search contains 300 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
+Public search contains 329 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
 
 ## Source policy and review levels
 

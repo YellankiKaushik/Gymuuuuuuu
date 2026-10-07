@@ -552,5 +552,220 @@
       "No independent human, taste, yield or clinical review.",
       "Already-cooked food profiles are weighed as cooked; no raw-to-cooked conversion or retention factor is invented."
     ]
+  },
+  {
+    "id": "nih_ods_folate_consumer",
+    "title": "NIH ODS Folate consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Folate-Consumer/",
+    "sourceVersion": "Source updated 2022-11-01",
+    "sourceDate": "2022-11-01",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:37:25Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+    ]
+  },
+  {
+    "id": "nih_ods_choline_consumer",
+    "title": "NIH ODS Choline consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Choline-Consumer/",
+    "sourceVersion": "Source updated 2022-06-02",
+    "sourceDate": "2022-06-02",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:37:25Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+    ]
+  },
+  {
+    "id": "nih_ods_iodine_consumer",
+    "title": "NIH ODS Iodine consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Iodine-Consumer/",
+    "sourceVersion": "Source updated 2024-05-01",
+    "sourceDate": "2024-05-01",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:37:25Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+    ]
+  },
+  {
+    "id": "nih_ods_potassium_consumer",
+    "title": "NIH ODS Potassium consumer fact sheet",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Potassium-Consumer/",
+    "sourceVersion": "Source updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-06T06:37:25Z",
+    "lastReviewedAt": "2026-10-06",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+    "limitations": [
+      "Machine source verification, not independent human or clinical review.",
+      "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+      "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+    ]
+  },
+  {
+    "id": "gray_1918_lower_limb",
+    "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+    "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+    "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+    "sourceVersion": "1918 historical edition; pp. 470–483",
+    "sourceDate": null,
+    "evidenceType": "historical_anatomy",
+    "extractedAt": "2026-10-06T06:41:14Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "public_domain_data",
+    "rightsReference": "https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+    "limitations": [
+      "Historical anatomical description; terminology is modernized in short summaries.",
+      "Not current training evidence, clinical guidance, individual variation estimates or muscle-activation evidence.",
+      "No independent human anatomy review.",
+      "Repository source extract SHA-256: 106482d52309133a42f47bda0cd7a80d8ebd11c97c45e375b9c01f5d37b03789. OCR transcription can contain errors; source page remains the authority."
+    ]
+  },
+  {
+    "id": "original_calf_diagram_v1",
+    "title": "Original supported one-leg heel raise schematic",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+    "sourceVersion": "1.0.0",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-07T10:14:35Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "original_work",
+    "rightsReference": "Original repository SVG; no third-party artwork or tracing.",
+    "limitations": [
+      "Movement cue only; not an anatomical model or complete demonstration. No independent human review."
+    ]
+  },
+  {
+    "id": "nih_ods_phosphorus_consumer",
+    "title": "NIH ODS Phosphorus consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Phosphorus-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T10:17:36Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+    "limitations": [
+      "General consumer education, not diagnosis or a personal intake target.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_copper_consumer",
+    "title": "NIH ODS Copper consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Copper-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2022-10-18",
+    "sourceDate": "2022-10-18",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T10:17:36Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+    "limitations": [
+      "General consumer education, not diagnosis or a personal intake target.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_manganese_consumer",
+    "title": "NIH ODS Manganese consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Manganese-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T10:17:36Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+    "limitations": [
+      "General consumer education, not diagnosis or a personal intake target.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_selenium_consumer",
+    "title": "NIH ODS Selenium consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/Selenium-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2025-06-18",
+    "sourceDate": "2025-06-18",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T10:17:36Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+    "limitations": [
+      "General consumer education, not diagnosis or a personal intake target.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_vitamine_consumer",
+    "title": "NIH ODS VitaminE consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminE-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T10:17:36Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+    "limitations": [
+      "General consumer education, not diagnosis or a personal intake target.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nih_ods_vitamink_consumer",
+    "title": "NIH ODS VitaminK consumer fact sheet",
+    "publisher": "National Institutes of Health, Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminK-Consumer/",
+    "sourceVersion": "Consumer fact sheet, updated 2021-03-22",
+    "sourceDate": "2021-03-22",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T10:17:36Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+    "limitations": [
+      "General consumer education, not diagnosis or a personal intake target.",
+      "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+      "No independent human or clinical review."
+    ]
   }
 ]

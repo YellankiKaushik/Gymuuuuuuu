@@ -1,0 +1,36 @@
+{
+  "revision": "dccfb6c2132613df47ec39025c7c68f404246041",
+  "observedAt": "2026-10-07",
+  "completionClaim": false,
+  "ci": {
+    "runId": 37424755217,
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37424755217",
+    "conclusion": "failure",
+    "check": { "passed": 228, "failed": 0 },
+    "coverage": { "passed": 228, "failed": 0 },
+    "chromium": { "passed": 77, "failed": 2 },
+    "failures": [
+      "Food browser assertion retained the old 227-profile count instead of the verified 234 profiles.",
+      "Diet backup import validation feedback was intermittently overwritten after an asynchronous export."
+    ],
+    "subsequentSteps": "Steps after the failed browser command were skipped; no successful final audit is inferred."
+  },
+  "crossBrowser": {
+    "runId": 37424755194,
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37424755194",
+    "conclusion": "failure",
+    "jobs": [
+      { "id": 112141777271, "browser": "chromium", "passed": 78, "failed": 1 },
+      { "id": 112141777015, "browser": "firefox", "passed": 78, "failed": 1 },
+      { "id": 112141777168, "browser": "webkit", "passed": 78, "failed": 1 }
+    ],
+    "sharedFailure": "Stale food-profile count assertion."
+  },
+  "correction": "Update the exact verified count, give each asynchronous feedback request a generation token, ignore stale file reads and use stable import failure copy. A controlled delayed valid-read regression checks that the later invalid selection cannot expose a restore action.",
+  "correctionVerification": {
+    "localChromiumAndWebkit": { "passed": 12, "failed": 0 },
+    "scope": "Diet planning and food discovery browser suites, including delayed backup-read regression.",
+    "log": "data-imports/browser-backup-race-food-count.log",
+    "hostedVerification": "Pending a pushed correction checkpoint; prior failures are not relabelled as passing."
+  }
+}

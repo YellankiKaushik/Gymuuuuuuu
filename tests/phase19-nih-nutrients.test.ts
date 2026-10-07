@@ -10,7 +10,7 @@ import foods from "../src/content/foods/records.json";
 const additions = ["thiamin_mg", "riboflavin_mg", "niacin_mg", "vitamin_b6_mg"];
 it("keeps every new nutrient's stable identity, exact NIH page and honest dated publication", () => {
   const parsed = nutrientSchema.array().parse(records);
-  expect(parsed.filter((r) => r.status === "published")).toHaveLength(11);
+  expect(parsed.filter((r) => r.status === "published")).toHaveLength(22);
   expect(parsed.flatMap((r) => r.referenceValues)).toHaveLength(7);
   for (const id of additions) {
     const record = parsed.find((r) => r.id === id)!,
@@ -42,6 +42,38 @@ it("keeps every new nutrient's stable identity, exact NIH page and honest dated 
     expect(review.fields.flatMap((f) => f.sourceIds)).toContain(source.id);
   }
 });
+
+it("retains new mineral and fat-soluble vitamin source dates without importing doses or form conversions", () => {
+  const parsed = nutrientSchema.array().parse(records);
+  for (const id of [
+    "phosphorus_mg",
+    "copper_mg",
+    "manganese_mg",
+    "selenium_ug",
+    "vitamin_e_mg",
+    "vitamin_k_ug",
+  ]) {
+    const record = parsed.find((row) => row.id === id)!;
+    const source = verifiedSources.find(
+      (row) => row.url === record.sources[0]!.locator,
+    )!;
+    expect(source.extractedAt.slice(0, 10)).toBe("2026-10-07");
+    expect(record.editorial.reviewedAt).toBe("2026-10-07");
+    expect(record.referenceValues).toEqual([]);
+    expect(record.forms.every((form) => !form.conversionRule)).toBe(true);
+    expect(record.deficiency!.medicalBoundary).toContain("cannot diagnose");
+    expect(reviews.find((row) => row.id === id)?.reviewer.kind).toBe("machine");
+  }
+  const vitaminK = parsed.find((row) => row.id === "vitamin_k_ug")!;
+  expect(vitaminK.interactions[0]!.description).toContain(
+    "sudden intake changes",
+  );
+  const selenium = parsed.find((row) => row.id === "selenium_ug")!;
+  expect(selenium.excess!.overview).toContain("frameworks differ");
+  expect(selenium.interactions[0]!.description).toContain(
+    "effect on the body is unclear",
+  );
+});
 it("never ranks niacin mass as niacin equivalents or diagnoses from a deficiency page", () => {
   const niacin = nutrientSchema.parse(
     records.find((r) => r.id === "niacin_mg"),
@@ -67,4 +99,45 @@ it("never ranks niacin mass as niacin equivalents or diagnoses from a deficiency
     tampered.functions[0]!.description = "An unsupported performance guarantee";
     expect(() => nutrientSchema.parse(tampered)).toThrow(/approved claim/);
   }
+});
+
+it("keeps natural food folate, source-reported DFE and medication safety contexts separate", () => {
+  const parsed = nutrientSchema.array().parse(records);
+  const foodFolate = parsed.find((r) => r.id === "folate_food_ug")!;
+  const dfe = parsed.find((r) => r.id === "folate_dfe_ug")!;
+  expect(foodFolate.canonicalUnit).toBe("µg");
+  expect(dfe.canonicalUnit).toBe("µg DFE");
+  expect(foodFolate.foodSourceRules[0]!.phase07NutrientId).toBe(
+    "folate_food_ug",
+  );
+  expect(dfe.foodSourceRules[0]!.phase07NutrientId).toBe("folate_dfe_ug");
+  expect(dfe.absorptionFactors[0]!.description).toContain(
+    "No intake conversion",
+  );
+  expect(dfe.forms.map((f) => f.id)).toContain("methylfolate_5_mthf");
+  expect(dfe.forms.every((f) => !f.conversionRule)).toBe(true);
+  for (const id of [
+    "folate_food_ug",
+    "folate_dfe_ug",
+    "choline_mg",
+    "iodine_ug",
+    "potassium_mg",
+  ]) {
+    const record = parsed.find((r) => r.id === id)!;
+    const source = verifiedSources.find(
+      (s) => s.url === record.sources[0]!.locator,
+    )!;
+    expect(source.extractedAt).toBe("2026-10-06T06:37:25Z");
+    expect(record.referenceValues).toEqual([]);
+    expect(record.deficiency!.medicalBoundary).toContain("cannot diagnose");
+    expect(
+      reviews
+        .find((r) => r.module === "nutrients" && r.id === id)!
+        .fields.flatMap((f) => f.sourceIds),
+    ).toContain(source.id);
+  }
+  const potassium = parsed.find((r) => r.id === "potassium_mg")!;
+  expect(potassium.excess!.overview).toContain("Kidney disease");
+  expect(potassium.interactions[0]!.description).toContain("potassium-sparing");
+  expect(dfe.excess!.overview).toContain("vitamin B12");
 });

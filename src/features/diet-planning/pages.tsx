@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { PageHeader } from "../../components/common/page-header";
 import { InfoCallout } from "../../components/common/primitives";
@@ -208,8 +208,8 @@ export function DietInformation({ kind }: { kind: "methodology" | "safety" }) {
             </p>
             <p>
               Fibre benchmark: {dietReference.macroRules.fiberGramsPer1000Kcal}{" "}
-              g per 1000 kcal. This is separate from population-specific
-              age/sex reference data. No bodyweight water formula is used.
+              g per 1000 kcal. This is separate from population-specific age/sex
+              reference data. No bodyweight water formula is used.
             </p>
             <p>
               Adult AMDR context:{" "}
@@ -285,18 +285,27 @@ export function DietPlans({ planId }: { planId?: string }) {
     }>(),
     [edit, setEdit] = useState<DietPlan>();
   const plan = planId ? backup?.plans.find((p) => p.id === planId) : undefined;
+  const feedbackRequest = useRef(0);
+  useEffect(
+    () => () => {
+      feedbackRequest.current++;
+    },
+    [],
+  );
   async function action(operation: () => Promise<void>, success: string) {
+    const request = ++feedbackRequest.current;
     setBusy(true);
     try {
       await operation();
-      setMessage(success);
+      if (request === feedbackRequest.current) setMessage(success);
       return true;
     } catch (reason) {
-      setMessage(
-        reason instanceof Error
-          ? reason.message
-          : "Operation failed. Existing plans were preserved.",
-      );
+      if (request === feedbackRequest.current)
+        setMessage(
+          reason instanceof Error
+            ? reason.message
+            : "Operation failed. Existing plans were preserved.",
+        );
       return false;
     } finally {
       setBusy(false);
@@ -304,6 +313,7 @@ export function DietPlans({ planId }: { planId?: string }) {
   }
   async function exportFile(format: "json" | "csv") {
     if (!backup) return;
+    const request = ++feedbackRequest.current;
     try {
       downloadDietFile(
         format === "json"
@@ -313,11 +323,13 @@ export function DietPlans({ planId }: { planId?: string }) {
         format === "json" ? "application/json" : "text/csv",
       );
       await mutateDietPlans({ action: "exported" });
-      setMessage(
-        "Export prepared locally. Keep a safe copy of the downloaded file.",
-      );
+      if (request === feedbackRequest.current)
+        setMessage(
+          "Export prepared locally. Keep a safe copy of the downloaded file.",
+        );
     } catch (reason) {
-      setMessage(reason instanceof Error ? reason.message : "Export failed.");
+      if (request === feedbackRequest.current)
+        setMessage(reason instanceof Error ? reason.message : "Export failed.");
     }
   }
   return (
@@ -518,8 +530,10 @@ export function DietPlans({ planId }: { planId?: string }) {
                 accept=".json,application/json"
                 disabled={busy}
                 onChange={(e) => {
+                  const request = ++feedbackRequest.current;
                   const file = e.target.files?.[0];
                   setPreview(undefined);
+                  setMessage("");
                   if (file) {
                     if (file.size > 20 * 1024 * 1024) {
                       setMessage("Backup exceeds the 20 MB import limit.");
@@ -528,16 +542,16 @@ export function DietPlans({ planId }: { planId?: string }) {
                     void file
                       .text()
                       .then((text) => {
+                        if (request !== feedbackRequest.current) return;
                         setPreview(previewDietImport(text, backup));
                         setMessage("Backup validated. No records written yet.");
                       })
-                      .catch((reason) =>
+                      .catch(() => {
+                        if (request !== feedbackRequest.current) return;
                         setMessage(
-                          reason instanceof Error
-                            ? reason.message
-                            : "Invalid backup. Existing records preserved.",
-                        ),
-                      );
+                          "Backup could not be read or validated. Choose a valid Fitness OS JSON backup. No saved plans were changed.",
+                        );
+                      });
                   }
                 }}
               />

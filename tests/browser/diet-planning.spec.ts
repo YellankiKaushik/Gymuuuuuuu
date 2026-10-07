@@ -83,16 +83,60 @@ test("diet target flow, input consent, current snapshot, edit, export, restore a
   expect(path).toBeTruthy();
   const text = await readFile(path!, "utf8");
   expect(JSON.parse(text).plans[0].inputs).toBeNull();
+  // Hold an older valid read until the newer invalid selection has finished.
+  await page.evaluate(() => {
+    const original = File.prototype.text;
+    File.prototype.text = async function () {
+      if (this.name !== "delayed-backup.json") return original.call(this);
+      document.documentElement.dataset.backupRead = "pending";
+      await new Promise<void>((resolve) =>
+        window.addEventListener("release-backup-read", () => resolve(), {
+          once: true,
+        }),
+      );
+      const result = await original.call(this);
+      document.documentElement.dataset.backupRead = "finished";
+      return result;
+    };
+  });
+  await page.getByLabel("Preview JSON backup").setInputFiles({
+    name: "delayed-backup.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(text),
+  });
+  await expect(page.locator("html")).toHaveAttribute(
+    "data-backup-read",
+    "pending",
+  );
   await page.getByLabel("Preview JSON backup").setInputFiles({
     name: "invalid.json",
     mimeType: "application/json",
     buffer: Buffer.from("{bad"),
   });
   await expect(
+    page.getByRole("status").filter({
+      hasText:
+        "Backup could not be read or validated. Choose a valid Fitness OS JSON backup. No saved plans were changed.",
+    }),
+  ).toBeVisible();
+  await page.evaluate(() =>
+    window.dispatchEvent(new Event("release-backup-read")),
+  );
+  await expect(page.locator("html")).toHaveAttribute(
+    "data-backup-read",
+    "finished",
+  );
+  await expect(
     page
       .getByRole("status")
-      .filter({ hasText: /JSON|Unexpected|position|property/i }),
+      .filter({ hasText: "No saved plans were changed." }),
   ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Import preview", exact: true }),
+  ).toHaveCount(0);
+  await expect(
+    page.getByRole("button", { name: "Restore validated backup", exact: true }),
+  ).toHaveCount(0);
   await expect(
     page.getByRole("link", { name: "Synthetic renamed", exact: true }),
   ).toBeVisible();
@@ -319,4 +363,3 @@ test("imperial inputs, manual provenance, custom grams, explicit storage and rec
     ),
   ).toBe(true);
 });
-

@@ -5,8 +5,12 @@ const publicRoutes = [
   ["/muscles/biceps-brachii", "Biceps brachii"],
   ["/muscles/latissimus-dorsi", "Latissimus dorsi"],
   ["/muscles/trapezius", "Trapezius"],
+  ["/muscles/gluteus-maximus", "Gluteus maximus"],
+  ["/muscles/biceps-femoris-short-head", "Biceps femoris — short head"],
+  ["/muscles/soleus", "Soleus"],
   ["/exercises/dumbbell-curl", "Dumbbell curl"],
   ["/exercises/dumbbell-lateral-raise", "Dumbbell lateral raise"],
+  ["/exercises/single-leg-calf-raise", "Single-leg calf raise"],
   [
     "/exercises/seated-dumbbell-shoulder-press",
     "Seated dumbbell shoulder press",
@@ -17,6 +21,14 @@ const publicRoutes = [
   ["/nutrients/riboflavin-vitamin-b2", "Riboflavin (vitamin B2)"],
   ["/nutrients/niacin-vitamin-b3", "Niacin (vitamin B3)"],
   ["/nutrients/vitamin-b6", "Vitamin B6"],
+  ["/nutrients/folate-vitamin-b9", "Folate (vitamin B9)"],
+  ["/nutrients/potassium", "Potassium"],
+  ["/nutrients/phosphorus", "Phosphorus"],
+  ["/nutrients/copper", "Copper"],
+  ["/nutrients/manganese", "Manganese"],
+  ["/nutrients/selenium", "Selenium"],
+  ["/nutrients/vitamin-e", "Vitamin E"],
+  ["/nutrients/vitamin-k", "Vitamin K"],
   ["/recipes/egg-potato-bowl", "Hard-boiled egg and potato bowl"],
   ["/recipes/cooked-oat-banana-bowl", "Cooked oat and banana bowl"],
   [
@@ -92,6 +104,23 @@ test("public recipe loads independently of personal databases and rejects unknow
     "content",
     "noindex",
   );
+});
+
+test("vitamin E food rankings retain the source alpha-tocopherol form", async ({
+  page,
+}) => {
+  await page.goto("/nutrients/vitamin-e");
+  const sources = page.locator("#food-sources");
+  await expect(sources.getByRole("table")).toBeVisible();
+  await expect(sources.getByText(/mg alpha-tocopherol/).first()).toBeVisible();
+  const link = sources.locator("tbody a").first();
+  await expect(link).toHaveAttribute(
+    "href",
+    /\/foods\/[^?]+\?profile=profile_/,
+  );
+  await link.click();
+  await expect(page).toHaveURL(/\/foods\/.+\?profile=profile_/);
+  await expect(page.locator("h1")).toBeVisible();
 });
 test("public food data retries safely in the local diary without saving consumed records", async ({
   page,

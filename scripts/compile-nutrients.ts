@@ -15,6 +15,7 @@ import { frameworkDatasetSchema } from "../src/features/nutrients/frameworks";
 import { rankVerifiedFoodSources } from "../src/features/nutrients/ranking";
 import { foodSchema, normalizeFoodTerm } from "../src/features/foods/schema";
 import { verifyFdaReferenceValues } from "./content/fda";
+import { verifyAlphaTocopherolRankings } from "./content/vitamin-e-ranking";
 const root = "src/content/nutrients",
   identities = nutrientSchema
     .array()
@@ -48,11 +49,12 @@ for (const n of published)
       dataset.rightsStatus !== "approved"
     )
       throw Error(`${n.id}: reference dataset version/rights/review missing`);
+    const version = dataset.version;
     if (
       !n.sources.some(
         (s) =>
           s.sourceId === r.sourceId &&
-          `${s.locator} ${s.notes ?? ""}`.includes(dataset.version),
+          `${s.locator} ${s.notes ?? ""}`.includes(version),
       )
     )
       throw Error(
@@ -63,6 +65,16 @@ const foods = foodSchema
   .array()
   .parse(JSON.parse(readFileSync("src/content/foods/records.json", "utf8")))
   .filter((f) => f.status === "published");
+if (published.some((row) => row.id === "vitamin_e_mg"))
+  verifyAlphaTocopherolRankings(
+    foods,
+    JSON.parse(
+      readFileSync("src/content/provenance/food-mappings.json", "utf8"),
+    ),
+    JSON.parse(
+      readFileSync("src/content/provenance/usda-selected.json", "utf8"),
+    ),
+  );
 for (const folder of ["topics", "frameworks", "rankings"]) {
   mkdirSync(`${root}/${folder}`, { recursive: true });
   for (const file of readdirSync(`${root}/${folder}`))
@@ -82,7 +94,15 @@ for (const n of published) {
       foods,
       rule.phase07NutrientId!,
       rule.rankingBasis as "per_100g" | "per_100kcal" | "per_verified_portion",
-      { unit: n.canonicalUnit, minimumDataStatus: rule.minimumDataStatus },
+      {
+        unit:
+          n.id === "vitamin_e_mg" && n.canonicalUnit === "mg alpha-tocopherol"
+            ? "mg"
+            : n.canonicalUnit,
+        minimumDataStatus: rule.minimumDataStatus,
+      },
+    ).map((row) =>
+      n.id === "vitamin_e_mg" ? { ...row, unit: n.canonicalUnit } : row,
     ),
   );
   coverage[n.id] = new Set(rankings.map((r) => r.profileId)).size;

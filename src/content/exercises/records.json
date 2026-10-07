@@ -822,5 +822,145 @@
       "nextReviewDue": "2027-04-05",
       "notes": "Source facts and original schematic machine-validated. No independent human or clinical review. Review due date is a repository maintenance reminder, not a source review date."
     }
+  },
+  {
+    "id": "exercise_single_leg_calf_raise",
+    "slug": "single-leg-calf-raise",
+    "displayName": "Single-leg calf raise",
+    "aliases": [],
+    "exerciseType": "bodyweight-strength",
+    "movementPatternIds": [
+      "pattern_calf_raise"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight",
+      "equipment_sturdy_chair"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "foundation",
+    "mechanics": "isolation",
+    "laterality": "unilateral",
+    "environmentTags": [
+      "home"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A chair-supported one-leg toe stand from the NIA older-adult guide, following its progression from the two-leg version.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gastrocnemius",
+        "role": "context-dependent",
+        "qualifier": "Qualitative connection between plantar flexion and historical anatomy; no activation percentage or head isolation is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      },
+      {
+        "muscleId": "muscle_soleus",
+        "role": "context-dependent",
+        "qualifier": "Qualitative connection between plantar flexion and historical anatomy; no activation percentage or head isolation is established.",
+        "sourceIds": [
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Hold a sturdy chair for balance; begin from the supported toe-stand position.",
+        "Use one leg at a time as described in the source progression."
+      ],
+      "executionSteps": [
+        "Breathe out while slowly lifting the working heel to rise onto the toes.",
+        "Hold for 1 second, then breathe in while lowering slowly.",
+        "Repeat on the other leg while retaining chair support."
+      ],
+      "finishOrReset": "Lower the heel slowly to the floor.",
+      "keyCheckpoints": [
+        "Keep the sturdy support available and move slowly."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Moving abruptly or removing the stated chair support.",
+        "whyItMatters": "This differs from the supported source version.",
+        "correction": "Retain sturdy support and use slow, controlled movement.",
+        "severity": "minor",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "context-dependent",
+        "setRange": null,
+        "repRange": {
+          "min": 10,
+          "max": 15
+        },
+        "restSeconds": null,
+        "confidence": "limited",
+        "qualifier": "Printed page 62 gives a one-leg progression totaling 10–15 repetitions per leg. It gives no separate set count or timed rest for that progression; the two-leg two-set prescription is not transferred. Older-adult education, not a universal training dose.",
+        "sourceIds": [
+          "nia_strength_guide_2018"
+        ]
+      }
+    ],
+    "safety": {
+      "notMedicalAdvice": true,
+      "stopSignals": [
+        "Stop for chest pain or pressure, severe joint pain, dizziness or feeling unwell."
+      ],
+      "notes": "NIA older-adult safety context: seek qualified advice when unsure about suitability, after surgery or with health concerns. This page provides no individual medical clearance."
+    },
+    "sources": [
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "March 2018; publication 18-AG-4258, older-adult education. Public-domain text only; photographs and logos excluded."
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "Public-domain historical joint-action context only; no modern training-effect evidence."
+      }
+    ],
+    "media": [
+      {
+        "id": "diagram_supported_single_leg_calf_raise_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/supported-single-leg-calf-raise.svg",
+        "alt": "Chair support remains available while the working heel rises; original movement cue schematic, not complete technique instruction.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the written source cue; no independent human technique review."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Source verification and automated validation; no independent human or clinical review. Due date is a repository maintenance reminder."
+    }
   }
 ]
