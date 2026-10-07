@@ -1,0 +1,984 @@
+{
+  "id": "program_full_body_3_day_foundation",
+  "slug": "full-body-3-day-foundation",
+  "displayName": "Three-Day Full-Body Foundation",
+  "aliases": [],
+  "category": "general-fitness",
+  "programType": "template",
+  "contentStatus": "published",
+  "primaryGoal": "general-fitness",
+  "secondaryGoals": [],
+  "experienceLevels": [
+    "foundation"
+  ],
+  "routineStyle": "full-body",
+  "trainingDaysPerWeek": 3,
+  "sessionDurationMinutes": {
+    "min": 30,
+    "max": 30
+  },
+  "equipmentProfileId": "equipment_profile_dumbbell_bench",
+  "durationMode": "open-ended",
+  "environmentTags": [
+    "home",
+    "gym"
+  ],
+  "contentStatusNote": "Personal-use publication after source verification and automated checks; no independent human, clinical or NIA endorsement.",
+  "learningOrder": 2,
+  "version": "1.0.0",
+  "populationScope": [
+    "older-adults-general"
+  ],
+  "requiredEquipmentIds": [
+    "equipment_bodyweight",
+    "equipment_dumbbell",
+    "equipment_bench",
+    "equipment_sturdy_chair"
+  ],
+  "timeContext": {
+    "method": "source_guideline_allocation",
+    "explanation": "The NIA older-adult guide recommends 30-minute strength sessions. This is its guideline time allocation, not a measured completion estimate for the repository’s six-exercise arrangement. Warm-up, instruction and untimed rest can make the session longer; do not rush to meet a time budget.",
+    "sourceIds": [
+      "source_nia_strength_2018"
+    ]
+  },
+  "durationWeeks": null,
+  "summary": "An original three-day nonconsecutive arrangement using the NIA older-adult strength framework and verified movement versions. The source allows two or more strength days; this three-day calendar is an authored example, not evidence that three days are superior.",
+  "outcomesAndLimits": {
+    "designedToSupport": [
+      "Organizing three nonconsecutive source-scoped strength-practice sessions."
+    ],
+    "doesNotGuarantee": [
+      "Specific strength, hypertrophy, injury-prevention or rehabilitation outcomes.",
+      "Completion within the source’s 30-minute allocation.",
+      "A benefit over the two-day template or suitability for every older adult."
+    ],
+    "notDesignedFor": [
+      "Diagnosis, rehabilitation, athletic peaking or individualized medical clearance."
+    ]
+  },
+  "audience": {
+    "bestFor": [
+      "Older adults seeking a simple source-based strength-practice framework after confirming suitability and learning each movement."
+    ],
+    "notFor": [
+      "People with unresolved pain, illness, balance limitations or medical concerns requiring individualized advice.",
+      "A novice who has not learned the intermediate bench-supported row."
+    ],
+    "prerequisites": [
+      "Able to use a stable wall, sturdy chair and bench safely.",
+      "Prior instruction and comfortable control of all listed movements; the ACE row is intermediate."
+    ],
+    "assumptions": [
+      "The NIA older-adult guide is used for general educational context, not individualized prescription.",
+      "The original arrangement and exercise order have not been tested as a whole."
+    ]
+  },
+  "scheduleModel": {
+    "mode": "fixed-week",
+    "restDayGuidance": [
+      "The NIA guide recommends strength exercise on two or more days, without training the same muscle group on consecutive days.",
+      "Monday, Wednesday and Friday are an original nonconsecutive scheduling example; three days are not claimed to outperform two."
+    ],
+    "sessions": [
+      {
+        "id": "session_three_day_a",
+        "displayName": "Full-body session A",
+        "focusTags": [
+          "general-fitness"
+        ],
+        "estimatedDurationMinutes": {
+          "min": 30,
+          "max": 30
+        },
+        "exerciseBlocks": [
+          {
+            "id": "block_three_day_a",
+            "blockType": "primary",
+            "order": 1,
+            "prescriptions": [
+              {
+                "exerciseId": "exercise_bodyweight_squat",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program."
+                ]
+              },
+              {
+                "exerciseId": "exercise_incline_push_up",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Wall-supported version only; no elevated-bench variation is prescribed."
+                ]
+              },
+              {
+                "exerciseId": "exercise_one_arm_dumbbell_row",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Requires prior instruction and comfortable execution of the intermediate ACE bench-supported setup. Repeat the target for each side."
+                ]
+              },
+              {
+                "exerciseId": "exercise_seated_dumbbell_shoulder_press",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": "substitution_nia_press",
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program."
+                ]
+              },
+              {
+                "exerciseId": "exercise_dumbbell_curl",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Use the NIA page-50 standing palm-forward arm curl in this program. Its general 2 × 10–15 context differs from the NHS technique page’s 3 × 5 example."
+                ]
+              },
+              {
+                "exerciseId": "exercise_standing_calf_raise",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Two-leg bodyweight toe stand holding a sturdy chair, not a machine calf raise."
+                ]
+              }
+            ]
+          }
+        ],
+        "sessionNotes": [
+          "Warm up first with low-intensity activity; the NIA guide gives about 5 minutes of light walking as an example (printed pages 33, 35).",
+          "Keep the three sessions nonconsecutive; do not train the same muscle group on successive days (printed page 41).",
+          "First week: begin with very light weights or none and practise the movement. The listed sets and repetitions are a goal, not permission to force them.",
+          "The 30-minute value is the source’s guideline allocation, not a measured estimate for finishing these six movements. Take the rest needed; do not rush to fit it.",
+          "No fixed deload interval is supplied by this source. Do not add a calendar-based deload protocol without separate evidence and review."
+        ]
+      },
+      {
+        "id": "session_three_day_b",
+        "displayName": "Full-body session B",
+        "focusTags": [
+          "general-fitness"
+        ],
+        "estimatedDurationMinutes": {
+          "min": 30,
+          "max": 30
+        },
+        "exerciseBlocks": [
+          {
+            "id": "block_three_day_b",
+            "blockType": "primary",
+            "order": 1,
+            "prescriptions": [
+              {
+                "exerciseId": "exercise_bodyweight_squat",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program."
+                ]
+              },
+              {
+                "exerciseId": "exercise_incline_push_up",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Wall-supported version only; no elevated-bench variation is prescribed."
+                ]
+              },
+              {
+                "exerciseId": "exercise_one_arm_dumbbell_row",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Requires prior instruction and comfortable execution of the intermediate ACE bench-supported setup. Repeat the target for each side."
+                ]
+              },
+              {
+                "exerciseId": "exercise_seated_dumbbell_shoulder_press",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": "substitution_nia_press",
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program."
+                ]
+              },
+              {
+                "exerciseId": "exercise_dumbbell_curl",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Use the NIA page-50 standing palm-forward arm curl in this program. Its general 2 × 10–15 context differs from the NHS technique page’s 3 × 5 example."
+                ]
+              },
+              {
+                "exerciseId": "exercise_standing_calf_raise",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Two-leg bodyweight toe stand holding a sturdy chair, not a machine calf raise."
+                ]
+              }
+            ]
+          }
+        ],
+        "sessionNotes": [
+          "Warm up first with low-intensity activity; the NIA guide gives about 5 minutes of light walking as an example (printed pages 33, 35).",
+          "Keep the three sessions nonconsecutive; do not train the same muscle group on successive days (printed page 41).",
+          "First week: begin with very light weights or none and practise the movement. The listed sets and repetitions are a goal, not permission to force them.",
+          "The 30-minute value is the source’s guideline allocation, not a measured estimate for finishing these six movements. Take the rest needed; do not rush to fit it.",
+          "No fixed deload interval is supplied by this source. Do not add a calendar-based deload protocol without separate evidence and review."
+        ]
+      },
+      {
+        "id": "session_three_day_c",
+        "displayName": "Full-body session C",
+        "focusTags": [
+          "general-fitness"
+        ],
+        "estimatedDurationMinutes": {
+          "min": 30,
+          "max": 30
+        },
+        "exerciseBlocks": [
+          {
+            "id": "block_three_day_c",
+            "blockType": "primary",
+            "order": 1,
+            "prescriptions": [
+              {
+                "exerciseId": "exercise_bodyweight_squat",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program."
+                ]
+              },
+              {
+                "exerciseId": "exercise_incline_push_up",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Wall-supported version only; no elevated-bench variation is prescribed."
+                ]
+              },
+              {
+                "exerciseId": "exercise_one_arm_dumbbell_row",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Requires prior instruction and comfortable execution of the intermediate ACE bench-supported setup. Repeat the target for each side."
+                ]
+              },
+              {
+                "exerciseId": "exercise_seated_dumbbell_shoulder_press",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": "substitution_nia_press",
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program."
+                ]
+              },
+              {
+                "exerciseId": "exercise_dumbbell_curl",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_nia_load",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Use the NIA page-50 standing palm-forward arm curl in this program. Its general 2 × 10–15 context differs from the NHS technique page’s 3 × 5 example."
+                ]
+              },
+              {
+                "exerciseId": "exercise_standing_calf_raise",
+                "role": "primary",
+                "sets": {
+                  "min": 2,
+                  "max": 2
+                },
+                "repetitionTarget": {
+                  "type": "repetitions",
+                  "range": {
+                    "min": 10,
+                    "max": 15
+                  }
+                },
+                "effortTarget": {
+                  "method": "technical-stop",
+                  "target": "End the attempt when the source-described movement cannot be maintained; never force the repetition goal.",
+                  "qualifier": "NIA qualitative effort context, not an RPE/RIR measurement or a prescription to train to failure."
+                },
+                "restSeconds": null,
+                "restGuidance": {
+                  "status": "source_unspecified",
+                  "text": "The source instructs resting before another set but supplies no timed rest period. A missing duration is not zero rest.",
+                  "sourceIds": [
+                    "source_nia_strength_2018"
+                  ]
+                },
+                "tempo": "controlled",
+                "progressionRuleId": "progression_source_technique",
+                "substitutionGroupId": null,
+                "notes": [
+                  "10–15 is the source goal, not a required first-session achievement. Start with what you can manage; do not force repetitions or hold your breath.",
+                  "This static exercise order is original repository authorship, not a tested or NIA-endorsed whole program.",
+                  "Two-leg bodyweight toe stand holding a sturdy chair, not a machine calf raise."
+                ]
+              }
+            ]
+          }
+        ],
+        "sessionNotes": [
+          "Warm up first with low-intensity activity; the NIA guide gives about 5 minutes of light walking as an example (printed pages 33, 35).",
+          "Keep the three sessions nonconsecutive; do not train the same muscle group on successive days (printed page 41).",
+          "First week: begin with very light weights or none and practise the movement. The listed sets and repetitions are a goal, not permission to force them.",
+          "The 30-minute value is the source’s guideline allocation, not a measured estimate for finishing these six movements. Take the rest needed; do not rush to fit it.",
+          "No fixed deload interval is supplied by this source. Do not add a calendar-based deload protocol without separate evidence and review."
+        ]
+      }
+    ],
+    "calendarExamples": [
+      {
+        "label": "Original three-day nonconsecutive example",
+        "days": [
+          {
+            "day": "monday",
+            "sessionId": "session_three_day_a"
+          },
+          {
+            "day": "tuesday",
+            "sessionId": null
+          },
+          {
+            "day": "wednesday",
+            "sessionId": "session_three_day_b"
+          },
+          {
+            "day": "thursday",
+            "sessionId": null
+          },
+          {
+            "day": "friday",
+            "sessionId": "session_three_day_c"
+          },
+          {
+            "day": "saturday",
+            "sessionId": null
+          },
+          {
+            "day": "sunday",
+            "sessionId": null
+          }
+        ]
+      }
+    ]
+  },
+  "progressionRules": [
+    {
+      "id": "progression_nia_load",
+      "displayName": "NIA gradual weighted progression",
+      "type": "load-progression",
+      "trigger": [
+        "Two sets of 10–15 repetitions become easy with the source-described control."
+      ],
+      "action": [
+        "For the weighted exercises, increase the weight at the next session as described in NIA page 42; no fixed increment is prescribed here."
+      ],
+      "ceiling": [
+        "Keep controlled movement; do not lift more than can be managed or force very, very hard effort."
+      ],
+      "floor": [
+        "If eight repetitions cannot be managed, use a lighter weight; build gradually and start the first week light or unloaded."
+      ],
+      "stallResponse": [
+        "Retain or reduce the weight and practise control; do not invent a loading increment or push through pain."
+      ],
+      "scienceTopicIds": [
+        "science_consistency_adherence"
+      ],
+      "sourceIds": [
+        "source_nia_strength_2018"
+      ]
+    },
+    {
+      "id": "progression_source_technique",
+      "displayName": "Maintain the supported source version",
+      "type": "technical-progression",
+      "trigger": [
+        "The stated wall push-up, unloaded squat or chair-supported two-leg toe stand can be performed with control."
+      ],
+      "action": [
+        "Maintain the source-described version rather than automatically adding load or transferring a different variant’s prescription."
+      ],
+      "ceiling": [
+        "Do not change to machine calf raises or elevated-bench push-ups under this program version."
+      ],
+      "floor": [
+        "Begin with what can be managed; stop before loss of the source-described control. Seek instruction if this version is unsuitable."
+      ],
+      "stallResponse": [
+        "Pause progression and obtain qualified instruction rather than forcing the target."
+      ],
+      "scienceTopicIds": [
+        "science_consistency_adherence"
+      ],
+      "sourceIds": [
+        "source_nia_strength_2018"
+      ]
+    }
+  ],
+  "substitutionGroups": [
+    {
+      "id": "substitution_nia_press",
+      "displayName": "NIA seated or standing overhead press",
+      "originalExerciseIds": [
+        "exercise_seated_dumbbell_shoulder_press"
+      ],
+      "candidateExerciseIds": [
+        "exercise_standing_dumbbell_shoulder_press"
+      ],
+      "matchingRules": [
+        "The NIA page-47 overhead-press instruction permits sitting or standing; retain the same source framework.",
+        "Use the position already learned and appropriate to your balance and support needs."
+      ],
+      "disallowedChanges": [
+        "Do not treat the standing position as automatically safer or more effective.",
+        "Do not substitute a barbell or machine press using these instructions."
+      ],
+      "reviewRequired": true
+    }
+  ],
+  "scienceRationale": [
+    {
+      "decision": "Retain a fixed, nonconsecutive three-day calendar as an original example within the NIA two-or-more-days framework.",
+      "scienceTopicIds": [
+        "science_consistency_adherence",
+        "science_training_frequency"
+      ],
+      "sourceIds": [
+        "source_nia_strength_2018"
+      ],
+      "qualifiers": [
+        "The linked consistency topic is practical education; it does not establish a superiority effect for this template.",
+        "Dose and day spacing come from the NIA older-adult guide; the complete arrangement is original repository work.",
+        "The frequency topic separates frequency from other training variables; this authored template is not a tested superiority comparison."
+      ]
+    }
+  ],
+  "measurementGuidance": [
+    {
+      "metric": "completed-sessions",
+      "howToUse": "Track completed sessions only if you choose local tracking; missing sessions are not automatically failures.",
+      "limitations": [
+        "Completion does not prove adaptation, safety, readiness or suitability."
+      ],
+      "scienceTopicIds": [
+        "science_consistency_adherence"
+      ]
+    }
+  ],
+  "safety": {
+    "generalBoundaries": [
+      "Use slow controlled movement, breathe continuously and retain the described support.",
+      "Consult a qualified professional when unsure about suitability, after surgery or with health concerns."
+    ],
+    "stopSignals": [
+      "Stop for chest pain or pressure, severe joint pain, dizziness, feeling sick or other warning symptoms described by NIA."
+    ],
+    "professionalReviewTriggers": [
+      "Pain, illness, recent surgery or difficulty using the source-described positions."
+    ],
+    "notMedicalAdvice": true
+  },
+  "sources": [
+    {
+      "id": "source_nia_strength_2018",
+      "title": "NIA Exercise & Physical Activity: Your Everyday Guide",
+      "sourceType": "guideline",
+      "year": 2018,
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+      "accessedAt": "2026-10-07"
+    }
+  ],
+  "review": {
+    "programReviewerRole": "Codex source verification; no independent human review",
+    "scienceReviewerRole": "Codex source verification; no independent clinical review",
+    "editorialReviewerRole": "Codex automated validation; published_personal_use",
+    "reviewedAt": "2026-10-07",
+    "nextReviewDue": "2027-04-07",
+    "crossReferenceReviewComplete": true
+  },
+  "updatedAt": "2026-10-07",
+  "weeklySummary": null,
+  "relatedProgramIds": [
+    "program_full_body_2_day_foundation"
+  ]
+}

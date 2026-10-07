@@ -62,10 +62,12 @@ const outputs = [
         ),
       ]
     : [
-        ...existing.filter(
-          (r) => !definitions.programs.some((d) => d.id === r.id),
+        ...existing.map(
+          (r) => definitions.programs.find((d) => d.id === r.id) ?? r,
         ),
-        ...definitions.programs,
+        ...definitions.programs.filter(
+          (d) => !existing.some((r) => r.id === d.id),
+        ),
       ];
   const errors = path.endsWith("versions.json")
     ? proposed.flatMap((program) => validatePrograms([program]))

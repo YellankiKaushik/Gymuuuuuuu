@@ -2,6 +2,10 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/exercises/dumbbell-bench-press", "Dumbbell bench press"],
+  ["/exercises/forward-lunge", "Forward lunge"],
+  ["/exercises/dumbbell-romanian-deadlift", "Dumbbell Romanian deadlift"],
+  ["/programs/full-body-3-day-foundation", "Three-Day Full-Body Foundation"],
   ["/supplements/ingredients/ingredient-beta-alanine", "Beta-Alanine"],
   [
     "/supplements/ingredients/ingredient-citrulline-malate",

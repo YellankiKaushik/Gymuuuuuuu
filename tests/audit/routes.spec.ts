@@ -21,6 +21,18 @@ for (const [path, kind] of cases) {
   test(`route audit ${path}`, async ({ page, browserName }) => {
     const errors: string[] = [];
     const remoteRequests: string[] = [];
+    const failedAssets: string[] = [];
+    let publicRecordVerified: boolean | null =
+      kind === "public_record" ? false : null;
+    page.on("response", (response) => {
+      if (response.status() >= 400 && !response.request().isNavigationRequest())
+        failedAssets.push(`${response.status()} ${response.url()}`);
+    });
+    page.on("requestfailed", (request) =>
+      failedAssets.push(
+        `${request.failure()?.errorText ?? "Failed"} ${request.url()}`,
+      ),
+    );
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("request", (request) => {
       const url = new URL(request.url());
@@ -37,6 +49,21 @@ for (const [path, kind] of cases) {
       status = response?.status() ?? null;
       await expect(page.getByRole("main")).toBeVisible();
       await expect(page.locator("h1").first()).toBeVisible();
+      if (kind === "public_record") {
+        const record = documents.find(
+          (record) => record.route === path && record.entityType !== "route",
+        );
+        expect(record).toBeDefined();
+        await expect(
+          page.getByRole("heading").filter({ hasText: record!.title }).first(),
+        ).toBeVisible();
+        await expect(
+          page
+            .getByText(/personal.use publication|published_personal_use/i)
+            .first(),
+        ).toBeVisible();
+        publicRecordVerified = true;
+      }
       for (const [width, theme] of [
         [320, "light"],
         [320, "dark"],
@@ -69,6 +96,7 @@ for (const [path, kind] of cases) {
       if (kind !== "missing_record") expect(status).toBeLessThan(400);
       expect(errors).toEqual([]);
       expect(remoteRequests).toEqual([]);
+      expect(failedAssets).toEqual([]);
       expect(states.filter((s) => s.overflow || s.violations.length)).toEqual(
         [],
       );
@@ -83,6 +111,9 @@ for (const [path, kind] of cases) {
         JSON.stringify(
           {
             path,
+            auditVersion: 2,
+            publicRecordVerified,
+            failedAssets,
             kind,
             browserName,
             generatedAt: new Date().toISOString(),

@@ -35,6 +35,9 @@ describe("exercise governance", () => {
       "exercise_one_arm_dumbbell_row",
       "exercise_incline_push_up",
       "exercise_standing_calf_raise",
+      "exercise_dumbbell_bench_press",
+      "exercise_forward_lunge",
+      "exercise_dumbbell_romanian_deadlift",
     ]);
     expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
   });

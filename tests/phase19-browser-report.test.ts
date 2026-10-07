@@ -40,6 +40,9 @@ it("excludes stale builds and records actual failing UI states without inventing
   const manifest = { version: "fixture" };
   const base = {
     path: "/",
+    auditVersion: 2,
+    publicRecordVerified: null,
+    failedAssets: [],
     kind: "route",
     browserName: "chromium",
     generatedAt: buildDate,
@@ -74,11 +77,35 @@ it("excludes stale builds and records actual failing UI states without inventing
       states: base.states.map((state, i) => ({ ...state, overflow: i === 0 })),
     }),
   );
+  writeFileSync(
+    join(directory, "fallback.json"),
+    JSON.stringify({
+      ...base,
+      path: "/foods/apple",
+      kind: "public_record",
+      publicRecordVerified: false,
+    }),
+  );
+  writeFileSync(
+    join(directory, "asset.json"),
+    JSON.stringify({
+      ...base,
+      path: "/asset",
+      failedAssets: ["404 /assets/missing.json"],
+    }),
+  );
+  writeFileSync(
+    join(directory, "method.json"),
+    JSON.stringify({ ...base, path: "/old-method", auditVersion: 1 }),
+  );
   const result = collectBrowserEvidence(
     new Map([
       ["/", "route"],
       ["/stale", "route"],
       ["/broken", "route"],
+      ["/foods/apple", "public_record"],
+      ["/asset", "route"],
+      ["/old-method", "route"],
     ]),
     manifest,
     directory,
@@ -89,7 +116,7 @@ it("excludes stale builds and records actual failing UI states without inventing
     result.failed,
     result.unmeasured,
     result.ignoredStaleReports,
-  ]).toEqual([1, 1, 1, 1]);
+  ]).toEqual([1, 3, 2, 2]);
   expect(
     result.routes.find((r) => r.path === "/broken")?.evidence?.states[0]
       ?.overflow,

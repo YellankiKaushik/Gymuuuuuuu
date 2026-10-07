@@ -1598,5 +1598,469 @@
       "notes": "Source verification and automated validation; no independent human or clinical review. Due date is a maintenance reminder."
     },
     "version": "1.0.0"
+  },
+  {
+    "id": "exercise_dumbbell_bench_press",
+    "slug": "dumbbell-bench-press",
+    "displayName": "Dumbbell bench press",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_horizontal_push"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell",
+      "equipment_bench"
+    ],
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "Flat-bench dumbbell pressing; ACE describes intermediate technique with spotter assistance.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_pectoralis_major",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_dumbbell_chest_press"
+        ]
+      },
+      {
+        "muscleId": "muscle_triceps_brachii",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_dumbbell_chest_press"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Lie on a flat bench with feet supported; retain head, shoulder and butt contact.",
+        "Use a closed palms-forward grip, neutral wrists and shoulders down/back; signal a spotter for assistance."
+      ],
+      "executionSteps": [
+        "Inhale and lower both dumbbells slowly toward the mid-chest without bouncing or changing bench contact.",
+        "Exhale while pressing to elbow extension, maintaining neutral wrists and supported contact."
+      ],
+      "finishOrReset": "Signal the spotter and retain your grip until the dumbbells are taken.",
+      "breathing": "Inhale down; exhale up.",
+      "keyCheckpoints": [
+        "Maintain support and avoid bouncing."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Bouncing or losing the described points of contact.",
+        "whyItMatters": "Changes the source-described movement.",
+        "correction": "Reset supported contact and controlled movement.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_dumbbell_chest_press"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "Technique source does not establish sets, repetitions or timed rest. Breathing timing remains unavailable where unstated. Learn the described prerequisites first.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_dumbbell_chest_press"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Learn bench setup and spotter communication before loading."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_dumbbell_bench_press_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/dumbbell-bench-press-cue.svg",
+        "alt": "Original sequence: Supported bench setup, then Lower with control, then Press and finish safely. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_dumbbell_chest_press",
+        "title": "ACE Chest Press",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/19/chest-press/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-07",
+        "notes": "Exercise Library 19; steps 1–5"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Machine validation, not independent human technique or clinical review. Due date is a maintenance reminder."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_forward_lunge",
+    "slug": "forward-lunge",
+    "displayName": "Forward lunge",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "unilateral",
+    "movementPatternIds": [
+      "pattern_lunge"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "An unloaded forward-step lunge from the ACE intermediate technique guide.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_forward_lunge"
+        ]
+      },
+      {
+        "muscleId": "muscle_rectus_femoris",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_forward_lunge"
+        ]
+      },
+      {
+        "muscleId": "muscle_vastus_lateralis",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_forward_lunge"
+        ]
+      },
+      {
+        "muscleId": "muscle_vastus_medialis",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_forward_lunge"
+        ]
+      },
+      {
+        "muscleId": "muscle_vastus_intermedius",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_forward_lunge"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Start with feet together, shoulders down/back and trunk braced."
+      ],
+      "executionSteps": [
+        "Lift one foot while controlling balance, then step forward heel-first and transfer weight onto the planted foot.",
+        "Lower the hips toward the floor to a comfortable position, bending at the hips with a flat back; avoid sideways sway.",
+        "Push through the front leg to return upright."
+      ],
+      "finishOrReset": "Return to the initial stance before the next step.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Control the supporting leg and torso."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Swaying sideways during weight transfer.",
+        "whyItMatters": "Changes the source-described movement.",
+        "correction": "Return to stable balance before continuing.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_forward_lunge"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "Technique source does not establish sets, repetitions or timed rest. Breathing timing remains unavailable where unstated. Learn the described prerequisites first.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_forward_lunge"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "ACE recommends learning an unloaded single-leg stand first; no published linked version is available."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_forward_lunge_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/forward-lunge-cue.svg",
+        "alt": "Original sequence: Balance before stepping, then Step and lower hips, then Push back to standing. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_forward_lunge",
+        "title": "ACE Forward Lunge",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/94/forward-lunge/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-07",
+        "notes": "Exercise Library 94; steps 1–4"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Machine validation, not independent human technique or clinical review. Due date is a maintenance reminder."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_dumbbell_romanian_deadlift",
+    "slug": "dumbbell-romanian-deadlift",
+    "displayName": "Dumbbell Romanian deadlift",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "advanced",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_hinge"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A dumbbell hip hinge permitted by the ACE article; learn the unloaded hinge first.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_rdl_2025"
+        ]
+      },
+      {
+        "muscleId": "muscle_biceps_femoris",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_rdl_2025"
+        ]
+      },
+      {
+        "muscleId": "muscle_semitendinosus",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_rdl_2025"
+        ]
+      },
+      {
+        "muscleId": "muscle_semimembranosus",
+        "role": "primary",
+        "qualifier": "Qualitative source-described muscle involvement; no activation percentage, isolation or ranking.",
+        "sourceIds": [
+          "ace_rdl_2025"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand hip-width with knees slightly bent, holding a dumbbell in each hand in front of the thighs."
+      ],
+      "executionSteps": [
+        "Move the hips back while keeping the spine long, chin tucked and knees slightly bent.",
+        "Lower until tension is felt behind the thighs; the endpoint varies with controlled hip motion. Look toward the floor.",
+        "Drive through the heels and bring the hips forward to stand, retaining a long spine."
+      ],
+      "finishOrReset": "Return the dumbbells to the front of the thighs.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Move through the hips rather than rounding the lower back."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Rounding the back or turning the hinge into a squat.",
+        "whyItMatters": "Changes the source-described movement.",
+        "correction": "Practise the unloaded hip hinge with qualified instruction.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_rdl_2025"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "Technique source does not establish sets, repetitions or timed rest. Breathing timing remains unavailable where unstated. Learn the described prerequisites first.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_rdl_2025"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Demonstrate an unloaded hip hinge and stable spine before adding resistance; this source labels the lift advanced."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_dumbbell_romanian_deadlift_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/dumbbell-romanian-deadlift-cue.svg",
+        "alt": "Original sequence: Stand with soft knees, then Hips back and hinge, then Return hips to standing. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-07",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_rdl_2025",
+        "title": "Pete McCall — ACE Do it Better: Romanian Deadlift",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/",
+        "publicationYear": 2025,
+        "reviewedAt": "2026-10-07",
+        "notes": "Certified May 2025; Step-by-step How-to and Teaching the Lift"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-07",
+      "anatomyReviewedAt": "2026-10-07",
+      "safetyReviewedAt": "2026-10-07",
+      "mediaReviewedAt": "2026-10-07",
+      "nextReviewDue": "2027-04-07",
+      "notes": "Machine validation, not independent human technique or clinical review. Due date is a maintenance reminder."
+    },
+    "version": "1.0.0"
   }
 ]

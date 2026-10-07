@@ -1,0 +1,30 @@
+{
+  "definitionSha256": "99c9cfe4390276be0aeb0cfe8a56452b5b1fc69f47a0d739f6d1903b565e19da",
+  "source": {
+    "id": "original_three_day_foundation_v1",
+    "title": "Original three-day nonconsecutive source-scoped strength arrangement",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs",
+    "sourceVersion": "1.0.0",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-07T20:41:22Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "original_work",
+    "rightsReference": "Original static arrangement and calendar; NIA numerical framework attributed separately. No proprietary program copied.",
+    "limitations": [
+      "No independent human or clinical review.",
+      "The complete arrangement is not trial-tested or endorsed by NIA.",
+      "The older-adult source scope and guideline time allocation are explicit."
+    ]
+  },
+  "recordId": "program_full_body_3_day_foundation",
+  "sourceLocators": [
+    "NIA printed pages 104 and 106: two or more strength days; avoid consecutive days for the same muscle groups; 30-minute source allocation",
+    "NIA printed pages 41–43: numeric strength framework and progression",
+    "Exact linked published exercise versions; original three-day calendar"
+  ],
+  "reviewMethod": "Source-scoped original static arrangement, linked exercise validation and machine provenance checks; no independent human or clinical review.",
+  "sourceExtractSha256": "75ce431f5db4efa11c8a435c507579d086cd35c83ef4c87b1ccc255467d7a716",
+  "pdfSha256": "f96ee9973e9e30709ae2cab18c519b6c9fe524fb6c426a220cce349f1ab05de0"
+}

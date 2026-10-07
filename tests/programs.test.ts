@@ -23,6 +23,7 @@ afterEach(() => vi.unstubAllGlobals());
 it("keeps draft programs hidden and rejects incomplete publication", () => {
   expect(publishedPrograms.map((program) => program.id)).toEqual([
     "program_full_body_2_day_foundation",
+    "program_full_body_3_day_foundation",
   ]);
   expect(
     publishedPrograms.every((program) => program.contentStatus === "published"),

@@ -4,6 +4,9 @@ import type { RouteAuditKind } from "./route-inventory";
 
 const evidenceSchema = z.object({
   path: z.string(),
+  auditVersion: z.number().optional(),
+  publicRecordVerified: z.boolean().nullable().optional(),
+  failedAssets: z.array(z.string()).optional(),
   kind: z.enum(["route", "public_record", "missing_record"]),
   browserName: z.string(),
   generatedAt: z.iso.datetime(),
@@ -53,6 +56,7 @@ export function collectBrowserEvidence(
       );
       if (
         evidence.buildDate !== buildDate ||
+        evidence.auditVersion !== 2 ||
         JSON.stringify(evidence.contentManifest) !== JSON.stringify(manifest) ||
         inventory.get(evidence.path) !== evidence.kind
       ) {
@@ -79,6 +83,8 @@ export function collectBrowserEvidence(
       evidence.status < (kind === "missing_record" ? 500 : 400) &&
       !evidence.errors.length &&
       !evidence.remoteRequests.length &&
+      evidence.failedAssets?.length === 0 &&
+      (kind !== "public_record" || evidence.publicRecordVerified === true) &&
       evidence.states.every((s) => !s.overflow && !s.violations.length),
     );
     return {

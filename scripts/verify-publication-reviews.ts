@@ -255,25 +255,32 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
                     "exercise_standing_calf_raise",
                   ].includes(r.id)
                 ? "original_foundation_diagrams_v1"
-                : "original_strength_diagrams_v1",
+                : [
+                      "exercise_dumbbell_bench_press",
+                      "exercise_forward_lunge",
+                      "exercise_dumbbell_romanian_deadlift",
+                    ].includes(r.id)
+                  ? "original_ace_next_diagrams_v1"
+                  : "original_strength_diagrams_v1",
         ],
         "original_authorship",
       ),
     ],
   });
 for (const r of publishedPrograms) {
-  if (r.id !== "program_full_body_2_day_foundation")
-    throw Error(`Unverified program arrangement ${r.id}`);
+  const arrangementSource =
+    r.id === "program_full_body_2_day_foundation"
+      ? "original_foundation_program_v1"
+      : r.id === "program_full_body_3_day_foundation"
+        ? "original_three_day_foundation_v1"
+        : null;
+  if (!arrangementSource) throw Error(`Unverified program arrangement ${r.id}`);
   records.push({
     module: "programs",
     id: r.id,
     slug: r.slug,
     fields: [
-      field(
-        "schedule.arrangement",
-        ["original_foundation_program_v1"],
-        "original_authorship",
-      ),
+      field("schedule.arrangement", [arrangementSource], "original_authorship"),
       field("prescriptions.progression.safety.timeAllocation", [
         "nia_strength_guide_2018",
       ]),

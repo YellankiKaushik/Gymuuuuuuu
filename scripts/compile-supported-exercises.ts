@@ -47,8 +47,10 @@ const existing = exerciseSchema
   .array()
   .parse(JSON.parse(readFileSync(path, "utf8")));
 const proposed = existing
-  .filter((r) => !definitions.records.some((d) => d.id === r.id))
-  .concat(definitions.records);
+  .map((r) => definitions.records.find((d) => d.id === r.id) ?? r)
+  .concat(
+    definitions.records.filter((d) => !existing.some((r) => r.id === d.id)),
+  );
 for (const record of definitions.records) {
   const identity = exerciseIdentities.find((r) => r.id === record.id);
   if (

@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-10-07T20:37:28Z",
+  "definitionsSha256": "1d27513590c0b580ead97f594e914a93a5c36497cad06d83690422aaf1ef6fe6",
+  "sourcesSha256": "44e2438bc7a0b492da994d61b2caac06007982090f9de567da6114828df4af09",
+  "recordIds": [
+    "exercise_dumbbell_bench_press",
+    "exercise_forward_lunge",
+    "exercise_dumbbell_romanian_deadlift"
+  ],
+  "mediaHashes": {
+    "/media/dumbbell-bench-press-cue.svg": "7a6366fc2a5c1f74adb08b451dd0bf6dffe0bc7a101bdd9bf1edbaee99ccee5a",
+    "/media/forward-lunge-cue.svg": "3fae5da1ea177b7d9b550a5a133a3a255c68e84e84db58face4688fd56e93dd6",
+    "/media/dumbbell-romanian-deadlift-cue.svg": "6c12ea4eca4a114e6ee53c24997be1dea1e689b3eb3f60eabf0d8ca7a355cd73"
+  },
+  "reviewMethod": "Inspected exact primary ACE technique sections; brief original factual paraphrases and machine checks, no independent human review."
+}

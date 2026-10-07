@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ace_dumbbell_chest_press",
+    "title": "ACE Chest Press",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/19/chest-press/",
+    "sourceVersion": "Exercise Library 19; steps 1–5",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-07T20:37:28Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and linked attribution; no copied source photographs, text blocks or traced artwork. Copyright remains with ACE; no open licence or bulk-reuse permission claimed.",
+    "limitations": [
+      "Technique education, not a studied prescription or injury-prevention guarantee.",
+      "Unknown publication day stays unknown.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_forward_lunge",
+    "title": "ACE Forward Lunge",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/94/forward-lunge/",
+    "sourceVersion": "Exercise Library 94; steps 1–4",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-07T20:37:28Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and linked attribution; no copied source photographs, text blocks or traced artwork. Copyright remains with ACE; no open licence or bulk-reuse permission claimed.",
+    "limitations": [
+      "Technique education, not a studied prescription or injury-prevention guarantee.",
+      "Unknown publication day stays unknown.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_rdl_2025",
+    "title": "Pete McCall — ACE Do it Better: Romanian Deadlift",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/",
+    "sourceVersion": "Certified May 2025; Step-by-step How-to and Teaching the Lift",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-07T20:37:28Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and linked attribution; no copied source photographs, text blocks or traced artwork. Copyright remains with ACE; no open licence or bulk-reuse permission claimed.",
+    "limitations": [
+      "Technique education, not a studied prescription or injury-prevention guarantee.",
+      "Unknown publication day stays unknown.",
+      "No independent human or clinical review."
+    ]
+  }
+]
