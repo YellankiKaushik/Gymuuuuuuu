@@ -24,8 +24,37 @@ for (const [module, key] of [
     .parse(full[key]);
   if (new Set(seeds.map((s) => s.id)).size !== seeds.length)
     throw Error(`Duplicate ${module} seed ID`);
+  // Editorial planning notes stay in the full authority. None of these fields
+  // is consumed by a runtime validator, calculator, publication gate or UI.
+  const editorialOnly =
+    module === "supplements"
+      ? [
+          "evidenceClaimContract",
+          "doseProtocolContract",
+          "antiDopingWarning",
+          "certificationSchemes",
+          "aisClassificationSnapshot",
+          "productRiskRedFlags",
+        ]
+      : module === "cardio"
+        ? [
+            "publicHealthGuidance",
+            "absoluteIntensity",
+            "heartRateContracts",
+            "unitConversions",
+          ]
+        : [
+            "sleepQualityScale",
+            "fivePointCheckInScale",
+            "sorenessScale",
+            "painConcernScale",
+            "calculationDefinitions",
+            "adultSleepReference",
+          ];
   const projected = {
-    ...full,
+    ...Object.fromEntries(
+      Object.entries(full).filter(([field]) => !editorialOnly.includes(field)),
+    ),
     [key]: seeds.map((seed) =>
       module === "cardio"
         ? {

@@ -10,9 +10,11 @@ it("preserves sourced discovery fields without bundling full teaching records", 
     (r) => r.contentStatus === "published",
   );
   expect(index).toEqual(published.map(projectMuscleIndex));
-  expect(index.every((r) => !("structure" in r) && !("cautions" in r))).toBe(
-    true,
-  );
+  expect(
+    index.every(
+      (r) => !("structure" in r) && !("cautions" in r) && !("summary" in r),
+    ),
+  ).toBe(true);
   const query = parseMuscleQuery({ joint: "knee", action: "flexion" });
   expect(searchMuscles(query).map((r) => r.id)).toEqual(
     searchMuscles(query, published).map((r) => r.id),

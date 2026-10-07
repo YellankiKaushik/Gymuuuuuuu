@@ -7,29 +7,6 @@
     "seedRecordCount": 202,
     "notice": "Seed records establish identities only. Lovable must not fabricate training prescriptions or publish draft records."
   },
-  "publicHealthGuidance": {
-    "frameworkId": "who_hhs_adult_aerobic",
-    "population": "adults",
-    "moderateMinutesRangePerWeek": [
-      150,
-      300
-    ],
-    "vigorousMinutesRangePerWeek": [
-      75,
-      150
-    ],
-    "vigorousMinuteEquivalentModerateMinutes": 2,
-    "minimumBoutMinutes": 0,
-    "notes": [
-      "These are public-health ranges, not an individualized program.",
-      "Inactive users should start with tolerable amounts and progress.",
-      "More than the minimum can provide additional benefit, but recovery and medical context matter."
-    ],
-    "sourceIds": [
-      "src_who_pa_guidelines_2020",
-      "src_hhs_pa_guidelines_2018"
-    ]
-  },
   "intensityMethods": [
     {
       "id": "talk_test",
@@ -94,44 +71,6 @@
       "notes": "Must identify the method and source."
     }
   ],
-  "absoluteIntensity": {
-    "light": {
-      "metMin": 1.6,
-      "metMax": 2.9
-    },
-    "moderate": {
-      "metMin": 3,
-      "metMax": 5.9
-    },
-    "vigorous": {
-      "metMin": 6,
-      "metMax": null
-    },
-    "warning": "Absolute MET categories do not account for individual fitness, age, disability or disease and must not override relative symptoms or perceived effort.",
-    "sourceId": "src_cdc_intensity_2025"
-  },
-  "heartRateContracts": {
-    "agePredictedHrmax": {
-      "formulaId": "tanaka_2001",
-      "formula": "208 - (0.7 × ageYears)",
-      "rounding": "nearest_whole_bpm",
-      "sourceId": "src_tanaka_hrmax_2001",
-      "warning": "Population estimate with substantial individual error; measured HRmax is preferred when safely obtained."
-    },
-    "heartRateReserve": {
-      "formula": "restingHR + fraction × (maxHR - restingHR)",
-      "requiredInputs": [
-        "restingHeartRateBpm",
-        "maxHeartRateBpm",
-        "fraction"
-      ],
-      "warning": "Do not use when heart-rate response is unreliable or a clinician supplied a different target."
-    },
-    "percentHrmax": {
-      "formula": "fraction × maxHeartRateBpm",
-      "warning": "Do not present as a precise physiological threshold."
-    }
-  },
   "sessionTypes": [
     "easy_continuous",
     "moderate_continuous",
@@ -211,13 +150,6 @@
     "heat_illness_concern",
     "other_urgent_concern"
   ],
-  "unitConversions": {
-    "kilometersPerMile": 1.609344,
-    "metersPerMile": 1609.344,
-    "metersPerKilometer": 1000,
-    "secondsPerMinute": 60,
-    "minutesPerHour": 60
-  },
   "modalities": [
     {
       "id": "modality_walking_outdoor",

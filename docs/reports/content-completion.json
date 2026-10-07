@@ -7,185 +7,9 @@
     {
       "module": "muscles",
       "totalIdentities": 70,
-      "publishedIdentities": 45,
-      "draftIdentities": 25,
-      "blockedIdentities": [
-        {
-          "id": "muscle_sternocleidomastoid",
-          "slug": "sternocleidomastoid",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_deltoid_middle",
-          "slug": "middle-deltoid",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_pectoralis_major_clavicular",
-          "slug": "pectoralis-major-clavicular-portion",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_pectoralis_major_sternocostal",
-          "slug": "pectoralis-major-sternocostal-portion",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_erector_spinae_group",
-          "slug": "erector-spinae",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_multifidus",
-          "slug": "multifidus",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_biceps_brachii_long_head",
-          "slug": "biceps-brachii-long-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_biceps_brachii_short_head",
-          "slug": "biceps-brachii-short-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_coracobrachialis",
-          "slug": "coracobrachialis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_triceps_long_head",
-          "slug": "triceps-brachii-long-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_triceps_lateral_head",
-          "slug": "triceps-brachii-lateral-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_triceps_medial_head",
-          "slug": "triceps-brachii-medial-head",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_brachioradialis",
-          "slug": "brachioradialis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_forearm_flexor_group",
-          "slug": "forearm-flexors",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_forearm_extensor_group",
-          "slug": "forearm-extensors",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_rectus_abdominis",
-          "slug": "rectus-abdominis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_external_oblique",
-          "slug": "external-oblique",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_internal_oblique",
-          "slug": "internal-oblique",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_transversus_abdominis",
-          "slug": "transversus-abdominis",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_quadratus_lumborum",
-          "slug": "quadratus-lumborum",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_diaphragm",
-          "slug": "diaphragm",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_iliopsoas_group",
-          "slug": "iliopsoas",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_sartorius",
-          "slug": "sartorius",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_tibialis_posterior",
-          "slug": "tibialis-posterior",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "muscle_fibularis_group",
-          "slug": "fibularis-muscles",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        }
-      ],
+      "publishedIdentities": 70,
+      "draftIdentities": 0,
+      "blockedIdentities": [],
       "humanReviewedIdentities": 0,
       "reviewLevel": "published_personal_use"
     },
@@ -7452,9 +7276,9 @@
   "sourceCoverage": [
     {
       "module": "muscles",
-      "published": 45,
-      "withPublicationProvenance": 45,
-      "inSearch": 45,
+      "published": 70,
+      "withPublicationProvenance": 70,
+      "inSearch": 70,
       "missingSourceProvenance": []
     },
     {
@@ -7531,7 +7355,7 @@
   "comparisonCoverage": [
     {
       "module": "muscles",
-      "eligiblePublishedRecords": 45,
+      "eligiblePublishedRecords": 70,
       "families": [
         "muscles"
       ],
@@ -7984,6 +7808,206 @@
         },
         {
           "id": "muscle_deep_hip_rotator_group",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_sternocleidomastoid",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_deltoid_middle",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_pectoralis_major_clavicular",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_pectoralis_major_sternocostal",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_erector_spinae_group",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_multifidus",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_coracobrachialis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_brachioradialis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_forearm_flexor_group",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_forearm_extensor_group",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_rectus_abdominis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_external_oblique",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_internal_oblique",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_transversus_abdominis",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_quadratus_lumborum",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_diaphragm",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_iliopsoas_group",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_sartorius",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_tibialis_posterior",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_fibularis_group",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_biceps_brachii_long_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_biceps_brachii_short_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_triceps_long_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_triceps_lateral_head",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "muscle_triceps_medial_head",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -10761,10 +10785,10 @@
   "publicationBlockSummary": [
     {
       "module": "muscles",
-      "missingVerifiedFactualRecords": 25,
+      "missingVerifiedFactualRecords": 0,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 45,
+      "independentHumanReviewPending": 70,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10866,7 +10890,13 @@
       "version": "April 2026",
       "reuse": "public_domain_data",
       "extractionDate": "2026-10-05T14:21:40Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_dataset",
+      "rightsReference": "https://fdc.nal.usda.gov/api-guide/",
+      "limitations": [
+        "US samples do not establish Indian cultivar composition.",
+        "SR Legacy is historical April 2018 data, not a current analytical sample."
+      ]
     },
     {
       "id": "usda_fdc_sr_legacy_2018",
@@ -10874,7 +10904,13 @@
       "version": "April 2018 final",
       "reuse": "public_domain_data",
       "extractionDate": "2026-10-05T14:21:40Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_dataset",
+      "rightsReference": "https://fdc.nal.usda.gov/api-guide/",
+      "limitations": [
+        "US samples do not establish Indian cultivar composition.",
+        "SR Legacy is historical April 2018 data, not a current analytical sample."
+      ]
     },
     {
       "id": "aasm_sleep_2015",
@@ -10882,7 +10918,13 @@
       "version": "2015 consensus",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "consensus",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "nsf_regularity_2023",
@@ -10890,7 +10932,13 @@
       "version": "2023; doi:10.1016/j.sleh.2023.07.016",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "consensus",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "cdc_talk_test",
@@ -10898,7 +10946,13 @@
       "version": null,
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "nih_ods_faq",
@@ -10906,7 +10960,13 @@
       "version": null,
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "nih_ods_iron_consumer",
@@ -10914,7 +10974,13 @@
       "version": null,
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "nih_ods_calcium_consumer",
@@ -10922,7 +10988,13 @@
       "version": "Updated September 14, 2023",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "nih_ods_vitamin_c_consumer",
@@ -10930,7 +11002,13 @@
       "version": "Updated March 22, 2021",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "fda_daily_values",
@@ -10938,7 +11016,13 @@
       "version": "FDA-DV-web-snapshot-2026-10-05",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "source_acsm_2026_summary",
@@ -10946,7 +11030,13 @@
       "version": "Professional summary, March 17 2026",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "original_recipes_v1",
@@ -10954,7 +11044,13 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository authorship; no copied recipes",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "Null source dates/versions mean the source did not supply a verified date/version."
+      ]
     },
     {
       "id": "gray_1918_upper_arm",
@@ -10962,7 +11058,14 @@
       "version": "1918 historical edition; pp. 443–445",
       "reuse": "public_domain_data",
       "extractionDate": "2026-10-05T14:59:24Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "historical_anatomy",
+      "rightsReference": "https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+      "limitations": [
+        "Historical anatomical description; terminology is modernized in short summaries.",
+        "Not current training evidence, clinical guidance, individual variation estimates or muscle-activation evidence.",
+        "No independent human anatomy review."
+      ]
     },
     {
       "id": "public_strength_2024",
@@ -10970,7 +11073,14 @@
       "version": "Web source reviewed 2024-02-28",
       "reuse": "open_government_licence",
       "extractionDate": "2026-10-05T14:59:24Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "https://www.nhs.uk/our-policies/terms-and-conditions/#3-intellectual-property-rights-and-licence-terms",
+      "limitations": [
+        "Contains public sector information licensed under the Open Government Licence v3.0.",
+        "Repository interpretation; no NHS endorsement, formal clinical approval or human review.",
+        "No source photographs, logos or video copies are reproduced."
+      ]
     },
     {
       "id": "public_video_safety_2023",
@@ -10978,7 +11088,14 @@
       "version": "Web source reviewed 2023-12-08",
       "reuse": "open_government_licence",
       "extractionDate": "2026-10-05T14:59:24Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "https://www.nhs.uk/our-policies/terms-and-conditions/#3-intellectual-property-rights-and-licence-terms",
+      "limitations": [
+        "Contains public sector information licensed under the Open Government Licence v3.0.",
+        "Repository interpretation; no NHS endorsement, formal clinical approval or human review.",
+        "No source photographs, logos or video copies are reproduced."
+      ]
     },
     {
       "id": "original_curl_diagram_v1",
@@ -10986,7 +11103,12 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-05T14:59:24Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository vector drawing; no copied third-party artwork.",
+      "limitations": [
+        "Movement cue only, not an anatomical image or human technique review."
+      ]
     },
     {
       "id": "tnau_green_gram_identity",
@@ -10994,7 +11116,13 @@
       "version": null,
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T19:10:51Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "professional_summary",
+      "rightsReference": "https://agritech.tnau.ac.in/agriculture/pulses_greengram.html",
+      "limitations": [
+        "Only the Vigna radiata naming equivalence is used. No agricultural doses, Indian food composition or cultivar equivalence is imported.",
+        "Brief factual paraphrase only; no copying of protected images or bulk text."
+      ]
     },
     {
       "id": "fao_groundnut_oil_identity",
@@ -11002,7 +11130,13 @@
       "version": null,
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T19:10:51Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "https://www.fao.org/4/W3963E/W3963E06.htm",
+      "limitations": [
+        "Only the oil naming equivalence is used. This historical committee report does not establish current regulatory limits or composition.",
+        "Brief factual paraphrase only; no copying of protected images or bulk text."
+      ]
     },
     {
       "id": "nih_ods_magnesium_consumer",
@@ -11010,7 +11144,13 @@
       "version": "Consumer fact sheet updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T19:44:43.741274Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+      "limitations": [
+        "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+        "Source date is the displayed update date, not a new clinical review by this application."
+      ]
     },
     {
       "id": "nih_ods_zinc_consumer",
@@ -11018,7 +11158,13 @@
       "version": "Consumer fact sheet updated 2022-10-04",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T19:44:43.741327Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+      "limitations": [
+        "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+        "Source date is the displayed update date, not a new clinical review by this application."
+      ]
     },
     {
       "id": "nih_ods_vitamin_d_consumer",
@@ -11026,7 +11172,13 @@
       "version": "Consumer fact sheet updated 2022-11-08",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T19:44:43.741364Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+      "limitations": [
+        "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+        "Source date is the displayed update date, not a new clinical review by this application."
+      ]
     },
     {
       "id": "nih_ods_vitamin_b12_consumer",
@@ -11034,7 +11186,13 @@
       "version": "Consumer fact sheet updated 2023-12-15",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-05T19:44:43.741398Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase with attribution; no images or bulk third-party material reproduced.",
+      "limitations": [
+        "General consumer education; does not establish individual nutrient requirements or a diagnosis.",
+        "Source date is the displayed update date, not a new clinical review by this application."
+      ]
     },
     {
       "id": "nhs_running_plan_snapshot_2026",
@@ -11042,7 +11200,14 @@
       "version": "Retrieved 2026-10-05; original page update/version date not supplied",
       "reuse": "open_government_licence",
       "extractionDate": "2026-10-05T20:07:51.072Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "government_reference",
+      "rightsReference": "https://www.nhs.uk/our-policies/terms-and-conditions/ sections 3.4–3.6; OGL v3.0. Exclusions checked at https://www.nhs.uk/our-policies/terms-and-conditions/content-not-licensed-for-re-use/. Public-sector attribution, original reference link and extraction date retained. No logo, stock image, audio, video or third-party asset reproduced.",
+      "limitations": [
+        "Numeric source schedule only; no endorsement or independent clinical review.",
+        "The original page update date is unavailable; extraction is dated and the archived numeric snapshot has the original HTML hash.",
+        "Targets remain separate from measured duration; completing the final timed run does not guarantee 5 km."
+      ]
     },
     {
       "id": "gray_1918_shoulder_thorax",
@@ -11050,7 +11215,15 @@
       "version": "1918 historical edition; pp. 432–442",
       "reuse": "public_domain_data",
       "extractionDate": "2026-10-05T20:40:27Z",
-      "reviewDate": "2026-10-05"
+      "reviewDate": "2026-10-05",
+      "evidenceType": "historical_anatomy",
+      "rightsReference": "https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+      "limitations": [
+        "Historical anatomical description; terminology is modernized in short summaries.",
+        "Not current training evidence, clinical guidance, individual variation estimates or muscle-activation evidence.",
+        "No independent human anatomy review.",
+        "Repository source extract SHA-256: d3b95fadf93bfb113b29cd6c34d08880c9e333bb815f59104dcbb16451da796f. OCR transcription can contain errors; source page remains the authority."
+      ]
     },
     {
       "id": "nia_strength_guide_2018",
@@ -11058,7 +11231,15 @@
       "version": "March 2018; Publication No. 18-AG-4258",
       "reuse": "public_domain_data",
       "extractionDate": "2026-10-06T05:24:08Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "https://www.nia.nih.gov/about/policies",
+      "limitations": [
+        "NIA text reuse policy: public domain unless otherwise indicated; photos and credited artwork are excluded.",
+        "Historical older-adult education, not current evidence of hypertrophy protocols or individual suitability.",
+        "Publication month is known; exact publication day is not supplied.",
+        "No independent human technique or clinical review."
+      ]
     },
     {
       "id": "original_strength_diagrams_v1",
@@ -11066,7 +11247,12 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-06T05:24:08Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original project SVG illustrations. No third-party artwork or tracing.",
+      "limitations": [
+        "Movement-cue schematics, not anatomical models, complete technique demonstrations or independent human review."
+      ]
     },
     {
       "id": "original_meal_collections_v1",
@@ -11074,7 +11260,13 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-06T05:46:24Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository assembly from exact USDA-backed recipe snapshots; no third-party menus copied",
+      "limitations": [
+        "Personal-use machine validation only. No human or clinical review.",
+        "Lunch/snack examples only, not complete diets or intake targets."
+      ]
     },
     {
       "id": "nih_ods_thiamin_consumer",
@@ -11082,7 +11274,14 @@
       "version": "Source updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:08:50Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+      ]
     },
     {
       "id": "nih_ods_riboflavin_consumer",
@@ -11090,7 +11289,14 @@
       "version": "Source updated 2022-05-11",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:08:50Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+      ]
     },
     {
       "id": "nih_ods_niacin_consumer",
@@ -11098,7 +11304,14 @@
       "version": "Source updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:08:50Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+      ]
     },
     {
       "id": "nih_ods_vitamin_b6_consumer",
@@ -11106,7 +11319,14 @@
       "version": "Source updated 2023-06-16",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:08:50Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval; direct HTML download returned HTTP 403, so no raw HTML hash is claimed."
+      ]
     },
     {
       "id": "original_recipes_v2",
@@ -11114,7 +11334,13 @@
       "version": "2.0.0 recipe release; twelve additional recipes at version 1",
       "reuse": "original_work",
       "extractionDate": "2026-10-06T06:19:20Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository ingredient arrangements and assembly instructions; no third-party recipes copied. USDA composition attribution retained.",
+      "limitations": [
+        "No independent human, taste, yield or clinical review.",
+        "Already-cooked food profiles are weighed as cooked; no raw-to-cooked conversion or retention factor is invented."
+      ]
     },
     {
       "id": "nih_ods_folate_consumer",
@@ -11122,7 +11348,14 @@
       "version": "Source updated 2022-11-01",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:37:25Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+      ]
     },
     {
       "id": "nih_ods_choline_consumer",
@@ -11130,7 +11363,14 @@
       "version": "Source updated 2022-06-02",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:37:25Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+      ]
     },
     {
       "id": "nih_ods_iodine_consumer",
@@ -11138,7 +11378,14 @@
       "version": "Source updated 2024-05-01",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:37:25Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+      ]
     },
     {
       "id": "nih_ods_potassium_consumer",
@@ -11146,7 +11393,14 @@
       "version": "Source updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-06T06:37:25Z",
-      "reviewDate": "2026-10-06"
+      "reviewDate": "2026-10-06",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with attribution; no bulk source text, reference table, logo or image reproduced.",
+      "limitations": [
+        "Machine source verification, not independent human or clinical review.",
+        "General consumer education is not an individual intake assessment or an athlete supplement protocol.",
+        "Primary page read through web retrieval. No raw HTML snapshot or hash is claimed."
+      ]
     },
     {
       "id": "gray_1918_lower_limb",
@@ -11154,7 +11408,15 @@
       "version": "1918 historical edition; pp. 470–483",
       "reuse": "public_domain_data",
       "extractionDate": "2026-10-06T06:41:14Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "historical_anatomy",
+      "rightsReference": "https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+      "limitations": [
+        "Historical anatomical description; terminology is modernized in short summaries.",
+        "Not current training evidence, clinical guidance, individual variation estimates or muscle-activation evidence.",
+        "No independent human anatomy review.",
+        "Repository source extract SHA-256: 106482d52309133a42f47bda0cd7a80d8ebd11c97c45e375b9c01f5d37b03789. OCR transcription can contain errors; source page remains the authority."
+      ]
     },
     {
       "id": "original_calf_diagram_v1",
@@ -11162,7 +11424,12 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-07T10:14:35Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository SVG; no third-party artwork or tracing.",
+      "limitations": [
+        "Movement cue only; not an anatomical model or complete demonstration. No independent human review."
+      ]
     },
     {
       "id": "nih_ods_phosphorus_consumer",
@@ -11170,7 +11437,14 @@
       "version": "Consumer fact sheet, updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T10:17:36Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+      "limitations": [
+        "General consumer education, not diagnosis or a personal intake target.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_copper_consumer",
@@ -11178,7 +11452,14 @@
       "version": "Consumer fact sheet, updated 2022-10-18",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T10:17:36Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+      "limitations": [
+        "General consumer education, not diagnosis or a personal intake target.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_manganese_consumer",
@@ -11186,7 +11467,14 @@
       "version": "Consumer fact sheet, updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T10:17:36Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+      "limitations": [
+        "General consumer education, not diagnosis or a personal intake target.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_selenium_consumer",
@@ -11194,7 +11482,14 @@
       "version": "Consumer fact sheet, updated 2025-06-18",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T10:17:36Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+      "limitations": [
+        "General consumer education, not diagnosis or a personal intake target.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_vitamine_consumer",
@@ -11202,7 +11497,14 @@
       "version": "Consumer fact sheet, updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T10:17:36Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+      "limitations": [
+        "General consumer education, not diagnosis or a personal intake target.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_vitamink_consumer",
@@ -11210,7 +11512,14 @@
       "version": "Consumer fact sheet, updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T10:17:36Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, photographs or supplement protocols.",
+      "limitations": [
+        "General consumer education, not diagnosis or a personal intake target.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "ace_bodyweight_squat",
@@ -11218,7 +11527,15 @@
       "version": null,
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T11:50:52Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase and link; no copied wording, photographs or third-party illustration. Copyright remains with ACE; no permission or open licence claimed.",
+      "limitations": [
+        "Technique education, not a studied training protocol or guaranteed injury prevention.",
+        "No set, repetition or timed-rest prescription in this source.",
+        "Source page read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human review."
+      ]
     },
     {
       "id": "ace_single_arm_row",
@@ -11226,7 +11543,15 @@
       "version": null,
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T11:50:52Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase and link; no copied wording, photographs or third-party illustration. Copyright remains with ACE; no permission or open licence claimed.",
+      "limitations": [
+        "Technique education, not a studied training protocol or guaranteed injury prevention.",
+        "No set, repetition or timed-rest prescription in this source.",
+        "Source page read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human review."
+      ]
     },
     {
       "id": "original_foundation_diagrams_v1",
@@ -11234,7 +11559,13 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-07T11:50:52Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original project SVG sequences; no copied photographs, tracing or third-party art.",
+      "limitations": [
+        "Sequence cues only, not anatomical models or complete demonstrations.",
+        "No independent human review."
+      ]
     },
     {
       "id": "original_foundation_program_v1",
@@ -11242,7 +11573,14 @@
       "version": "1.0.0",
       "reuse": "original_work",
       "extractionDate": "2026-10-07T11:53:02Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original static schedule and arrangement; numeric goals attributed separately to NIA. No copied proprietary program.",
+      "limitations": [
+        "Original arrangement, not a trial-tested program or NIA endorsement.",
+        "Older-adult source scope; no independent human or clinical review.",
+        "Time is a guideline allocation, not measured completion time."
+      ]
     },
     {
       "id": "nih_ods_chromium_consumer",
@@ -11250,7 +11588,14 @@
       "version": "Consumer fact sheet, updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_fluoride_consumer",
@@ -11258,7 +11603,14 @@
       "version": "Consumer fact sheet, updated 2024-06-17",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_molybdenum_consumer",
@@ -11266,7 +11618,14 @@
       "version": "Consumer fact sheet, updated 2021-03-22",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_pantothenicacid_consumer",
@@ -11274,7 +11633,14 @@
       "version": "Consumer fact sheet, updated 2026-05-01",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_biotin_consumer",
@@ -11282,7 +11648,14 @@
       "version": "Consumer fact sheet, updated 2021-01-15",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_omega3fattyacids_consumer",
@@ -11290,7 +11663,14 @@
       "version": "Consumer fact sheet, updated 2022-07-18",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_vitamina_consumer",
@@ -11298,7 +11678,14 @@
       "version": "Consumer fact sheet, updated 2025-03-10",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nih_ods_vitamina_professional",
@@ -11306,7 +11693,14 @@
       "version": "HealthProfessional fact sheet, updated 2025-03-10",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T12:01:04Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase with attribution; no copied intake tables, media or supplement protocols.",
+      "limitations": [
+        "General source education, not diagnosis, a personal intake target or a sports-performance protocol.",
+        "Official page text read through browser extraction; no raw HTML snapshot hash claimed.",
+        "No independent human or clinical review."
+      ]
     },
     {
       "id": "nhs_walking_transitions_2026",
@@ -11314,7 +11708,13 @@
       "version": "Page read 2026-10-07; publisher update date not specified",
       "reuse": "open_government_licence",
       "extractionDate": "2026-10-07T15:07:44Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "NHS terms sections 3.4–3.6; Open Government Licence v3.0. NHS content-not-licensed-for-re-use exclusions checked. No logo, image, video or audio copied.",
+      "limitations": [
+        "The walking steps are one part of the NHS running plan, not a complete mobility sequence.",
+        "No endorsement, guaranteed injury prevention or independent clinical review."
+      ]
     },
     {
       "id": "source_rest_hypertrophy_2024",
@@ -11322,7 +11722,14 @@
       "version": "DOI 10.3389/fspor.2024.1429789; PMID 39205815",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T15:17:09Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Original brief factual paraphrase. Singer and colleagues retain attribution; source article carries CC BY, https://creativecommons.org/licenses/by/4.0/. No figure or table reproduced.",
+      "limitations": [
+        "The included interventions lasted five to ten weeks; long-term individual responses are not established.",
+        "Small studies, differing muscle-size measures and heterogeneous results limit precision.",
+        "The interval comparisons are not personal recovery targets or a requirement to shorten rest."
+      ]
     },
     {
       "id": "source_split_fullbody_2024",
@@ -11330,7 +11737,43 @@
       "version": "DOI 10.1519/JSC.0000000000004774; PMID 38595233",
       "reuse": "brief_factual_paraphrase",
       "extractionDate": "2026-10-07T15:17:09Z",
-      "reviewDate": "2026-10-07"
+      "reviewDate": "2026-10-07",
+      "evidenceType": "systematic_review_meta_analysis",
+      "rightsReference": "Copyright 2024 National Strength and Conditioning Association. Brief original factual paraphrase and citation only; no abstract, table, figure or publisher media reproduced.",
+      "limitations": [
+        "This summary uses the published abstract; individual study protocols and risks of bias have not been independently appraised.",
+        "The comparison depends on matched volume; it does not establish that every schedule or exercise selection is equivalent.",
+        "Personal preference is not proof of an individual response or a superior split."
+      ]
+    },
+    {
+      "id": "gray_1918_remaining_anatomy",
+      "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/390/mode/2up",
+      "version": "1918; selected myology passages pp. 390-487",
+      "reuse": "public_domain_data",
+      "extractionDate": "2026-10-07T16:02:22Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "historical_anatomy",
+      "rightsReference": "https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+      "limitations": [
+        "Historical qualitative anatomy, not contemporary clinical or exercise efficacy review.",
+        "Selected OCR omits part of the external-oblique origin description; exact rib inventory is not supplied.",
+        "Subdivision-specific actions are unavailable where the source only describes whole-muscle actions."
+      ]
+    },
+    {
+      "id": "openstax_ap2e_2026_excluded",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+      "version": "Current page reuse notice; copyright footer June 12, 2026",
+      "reuse": "blocked",
+      "extractionDate": "2026-10-07T16:05:02Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "textbook_reference",
+      "rightsReference": "Page Citation/Attribution and Reuse/Redistribution notice; current CC BY-NC-SA terms and prior written permission requirement for LLM or generative-AI ingestion. No permission is held.",
+      "limitations": [
+        "Excluded from content ingestion and publication. No factual record or media may cite this entry as an approved source.",
+        "This source-level exclusion is not proof that any particular anatomy identity lacks a permitted alternative."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -12655,8 +13098,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 500,
-    "factualRecords": 372
+    "documents": 525,
+    "factualRecords": 397
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -13141,6 +13584,131 @@
     {
       "module": "muscles",
       "id": "muscle_deep_hip_rotator_group",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_sternocleidomastoid",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_deltoid_middle",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_pectoralis_major_clavicular",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_pectoralis_major_sternocostal",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_erector_spinae_group",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_multifidus",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_coracobrachialis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_brachioradialis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_forearm_flexor_group",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_forearm_extensor_group",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_rectus_abdominis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_external_oblique",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_internal_oblique",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_transversus_abdominis",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_quadratus_lumborum",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_diaphragm",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_iliopsoas_group",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_sartorius",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_tibialis_posterior",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_fibularis_group",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_biceps_brachii_long_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_biceps_brachii_short_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_triceps_long_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_triceps_lateral_head",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "muscles",
+      "id": "muscle_triceps_medial_head",
       "instructionalMediaRequired": false
     },
     {
@@ -14730,11 +15298,11 @@
   ],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-07T15:42:19.830Z",
-    "expected": 554,
+    "buildDate": "2026-10-07T16:18:50.702Z",
+    "expected": 579,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 554,
+    "unmeasured": 579,
     "ignoredStaleReports": 434,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -16099,6 +16667,156 @@
       },
       {
         "path": "/muscles/deep-hip-external-rotators",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/sternocleidomastoid",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/middle-deltoid",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/pectoralis-major-clavicular-portion",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/pectoralis-major-sternocostal-portion",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/erector-spinae",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/multifidus",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/coracobrachialis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/brachioradialis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/forearm-flexors",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/forearm-extensors",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/rectus-abdominis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/external-oblique",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/internal-oblique",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/transversus-abdominis",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/quadratus-lumborum",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/diaphragm",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/iliopsoas",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/sartorius",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/tibialis-posterior",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/fibularis-muscles",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/biceps-brachii-long-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/biceps-brachii-short-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/triceps-brachii-long-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/triceps-brachii-lateral-head",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/muscles/triceps-brachii-medial-head",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

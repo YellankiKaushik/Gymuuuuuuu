@@ -39,8 +39,41 @@ test("runtime projections retain all IDs and required domains without draft text
           : { id: s.id, slug: s.slug, entityType: s.entityType },
       ),
     );
-    const withoutSeeds = (value: Record<string, unknown>) =>
-      Object.fromEntries(Object.entries(value).filter(([k]) => k !== key));
-    expect(withoutSeeds(runtime)).toEqual(withoutSeeds(full));
+    const editorialOnly =
+      module === "supplements"
+        ? [
+            "evidenceClaimContract",
+            "doseProtocolContract",
+            "antiDopingWarning",
+            "certificationSchemes",
+            "aisClassificationSnapshot",
+            "productRiskRedFlags",
+          ]
+        : module === "cardio"
+          ? [
+              "publicHealthGuidance",
+              "absoluteIntensity",
+              "heartRateContracts",
+              "unitConversions",
+            ]
+          : [
+              "sleepQualityScale",
+              "fivePointCheckInScale",
+              "sorenessScale",
+              "painConcernScale",
+              "calculationDefinitions",
+              "adultSleepReference",
+            ];
+    for (const field of editorialOnly) {
+      expect(full).toHaveProperty(field);
+      expect(runtime).not.toHaveProperty(field);
+    }
+    const requiredRuntime = (value: Record<string, unknown>) =>
+      Object.fromEntries(
+        Object.entries(value).filter(
+          ([k]) => k !== key && !editorialOnly.includes(k),
+        ),
+      );
+    expect(requiredRuntime(runtime)).toEqual(requiredRuntime(full));
   }
 });

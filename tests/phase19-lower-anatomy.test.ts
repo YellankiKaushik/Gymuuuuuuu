@@ -17,7 +17,7 @@ it("retains the lower-limb source and stable identities with limited machine-onl
   ).toBe(snapshot.sha256);
   expect(snapshot.recordIds).toHaveLength(17);
   const records = getPublishedMuscles();
-  expect(records).toHaveLength(45);
+  expect(records).toHaveLength(70);
   expect(validateAnatomy(records)).toEqual([]);
   for (const id of snapshot.recordIds) {
     const record = records.find((r) => r.id === id)!;

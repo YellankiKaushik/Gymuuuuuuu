@@ -56,6 +56,12 @@ test("source routine copy survives reload and appears in local backup", async ({
   await page.getByRole("button", { name: "Copy to my routines" }).click();
   await expect(page.getByRole("status")).toContainText("Source routine copied");
   await page.getByRole("link", { name: "Open my routines" }).click();
+  // A full-document link must finish navigating before reload; otherwise WebKit
+  // may reload the preceding public page rather than the saved local library.
+  await expect(page).toHaveURL(/\/mobility\/custom$/);
+  await expect(
+    page.getByRole("heading", { name: "Post-Run Cool-Down", exact: true }),
+  ).toBeVisible();
   await page.reload();
   await expect(
     page.getByRole("heading", { name: "Post-Run Cool-Down", exact: true }),

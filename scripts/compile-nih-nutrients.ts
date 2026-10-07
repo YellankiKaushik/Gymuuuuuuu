@@ -543,10 +543,12 @@ for (const addition of additions) {
       `Refusing to replace changed published nutrient ${addition.id}; record a new reviewed revision.`,
     );
 }
-const addedIds = new Set(additions.map((r) => r.id));
 const output = nutrientSchema
   .array()
-  .parse([...current.filter((r) => !addedIds.has(r.id)), ...additions]);
+  .parse([
+    ...current.map((r) => additions.find((a) => a.id === r.id) ?? r),
+    ...additions.filter((r) => !current.some((p) => p.id === r.id)),
+  ]);
 const path = "src/content/nutrients/records.json",
   value = JSON.stringify(output, null, 2) + "\n";
 if (process.argv.includes("--check")) {

@@ -28,6 +28,7 @@ export const verifiedSourceSchema = z.strictObject({
     "professional_summary",
     "original_repository_work",
     "historical_anatomy",
+    "textbook_reference",
   ]),
   extractedAt: z.iso.datetime({ offset: true }),
   lastReviewedAt: z.iso.date(),

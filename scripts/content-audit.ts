@@ -309,6 +309,9 @@ const report = {
     reuse: s.reuse,
     extractionDate: s.extractedAt,
     reviewDate: s.lastReviewedAt,
+    evidenceType: s.evidenceType,
+    rightsReference: s.rightsReference,
+    limitations: s.limitations,
   })),
   implementedRoutes: routes.map((route) => ({
     route,

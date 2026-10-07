@@ -1,0 +1,277 @@
+{
+  "sourceId": "gray_1918_remaining_anatomy",
+  "sourceUrl": "https://archive.org/details/anatomyofhumanbo00grayrich/page/390/mode/2up",
+  "sourceYear": 1918,
+  "sourceVersion": "1918; selected myology passages pp. 390-487",
+  "extractedAt": "2026-10-07T16:02:22Z",
+  "extractPath": "src/content/provenance/gray-1918-remaining-extract.txt",
+  "sha256": "def44d04fee4d0fd9ef025d30147adeedb27dc668b6b314b4b3c2e7b9a6d7582",
+  "recordIds": [
+    "muscle_sternocleidomastoid",
+    "muscle_deltoid_middle",
+    "muscle_pectoralis_major_clavicular",
+    "muscle_pectoralis_major_sternocostal",
+    "muscle_erector_spinae_group",
+    "muscle_multifidus",
+    "muscle_coracobrachialis",
+    "muscle_brachioradialis",
+    "muscle_forearm_flexor_group",
+    "muscle_forearm_extensor_group",
+    "muscle_rectus_abdominis",
+    "muscle_external_oblique",
+    "muscle_internal_oblique",
+    "muscle_transversus_abdominis",
+    "muscle_quadratus_lumborum",
+    "muscle_diaphragm",
+    "muscle_iliopsoas_group",
+    "muscle_sartorius",
+    "muscle_tibialis_posterior",
+    "muscle_fibularis_group",
+    "muscle_biceps_brachii_long_head",
+    "muscle_biceps_brachii_short_head",
+    "muscle_triceps_long_head",
+    "muscle_triceps_lateral_head",
+    "muscle_triceps_medial_head"
+  ],
+  "recordLocators": {
+    "muscle_sternocleidomastoid": [
+      [
+        30747,
+        30802
+      ]
+    ],
+    "muscle_deltoid_middle": [
+      [
+        33700,
+        33742
+      ]
+    ],
+    "muscle_pectoralis_major_clavicular": [
+      [
+        33505,
+        33543
+      ],
+      [
+        33661,
+        33670
+      ]
+    ],
+    "muscle_pectoralis_major_sternocostal": [
+      [
+        33505,
+        33551
+      ],
+      [
+        33661,
+        33670
+      ]
+    ],
+    "muscle_erector_spinae_group": [
+      [
+        31197,
+        31255
+      ],
+      [
+        31462,
+        31476
+      ]
+    ],
+    "muscle_multifidus": [
+      [
+        31337,
+        31354
+      ],
+      [
+        31479,
+        31485
+      ]
+    ],
+    "muscle_coracobrachialis": [
+      [
+        33893,
+        33900
+      ],
+      [
+        34013,
+        34019
+      ]
+    ],
+    "muscle_brachioradialis": [
+      [
+        34551,
+        34560
+      ],
+      [
+        34824,
+        34831
+      ]
+    ],
+    "muscle_forearm_flexor_group": [
+      [
+        34423,
+        34445
+      ]
+    ],
+    "muscle_forearm_extensor_group": [
+      [
+        34824,
+        34849
+      ]
+    ],
+    "muscle_rectus_abdominis": [
+      [
+        32293,
+        32311
+      ],
+      [
+        32427,
+        32446
+      ]
+    ],
+    "muscle_external_oblique": [
+      [
+        31999,
+        32023
+      ],
+      [
+        32165,
+        32177
+      ],
+      [
+        32427,
+        32438
+      ]
+    ],
+    "muscle_internal_oblique": [
+      [
+        32165,
+        32209
+      ],
+      [
+        32427,
+        32438
+      ]
+    ],
+    "muscle_transversus_abdominis": [
+      [
+        32245,
+        32260
+      ],
+      [
+        32427,
+        32438
+      ]
+    ],
+    "muscle_quadratus_lumborum": [
+      [
+        32572,
+        32595
+      ]
+    ],
+    "muscle_diaphragm": [
+      [
+        31772,
+        31836
+      ],
+      [
+        31898,
+        31913
+      ]
+    ],
+    "muscle_iliopsoas_group": [
+      [
+        35487,
+        35534
+      ]
+    ],
+    "muscle_sartorius": [
+      [
+        35665,
+        35677
+      ],
+      [
+        35773,
+        35779
+      ]
+    ],
+    "muscle_tibialis_posterior": [
+      [
+        36783,
+        36818
+      ],
+      [
+        36822,
+        36835
+      ]
+    ],
+    "muscle_fibularis_group": [
+      [
+        36568,
+        36576
+      ],
+      [
+        36948,
+        36960
+      ],
+      [
+        36988,
+        36995
+      ]
+    ],
+    "muscle_biceps_brachii_long_head": [
+      [
+        33955,
+        33985
+      ],
+      [
+        34013,
+        34019
+      ]
+    ],
+    "muscle_biceps_brachii_short_head": [
+      [
+        33955,
+        33985
+      ],
+      [
+        34013,
+        34019
+      ]
+    ],
+    "muscle_triceps_long_head": [
+      [
+        34021,
+        34043
+      ],
+      [
+        34067,
+        34094
+      ]
+    ],
+    "muscle_triceps_lateral_head": [
+      [
+        34021,
+        34043
+      ],
+      [
+        34067,
+        34094
+      ]
+    ],
+    "muscle_triceps_medial_head": [
+      [
+        34021,
+        34043
+      ],
+      [
+        34067,
+        34094
+      ]
+    ]
+  },
+  "limitations": [
+    "Selected OCR passages; external-oblique origin inventory is incomplete and explicitly unavailable.",
+    "Historical terminology is retained with explicit modern motion labels where the source context establishes direction.",
+    "No independent human review or contemporary clinical/training-effect evidence."
+  ]
+}

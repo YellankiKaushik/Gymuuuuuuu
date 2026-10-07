@@ -21,39 +21,6 @@
     "manual_morning_diary",
     "consumer_device_estimate"
   ],
-  "sleepQualityScale": {
-    "min": 1,
-    "max": 5,
-    "labels": {
-      "1": "very_poor",
-      "2": "poor",
-      "3": "fair",
-      "4": "good",
-      "5": "very_good"
-    }
-  },
-  "fivePointCheckInScale": {
-    "min": 1,
-    "max": 5,
-    "directionNotes": {
-      "energy": "higher_is_more_energy",
-      "fatigue": "higher_is_more_fatigue",
-      "stress": "higher_is_more_stress",
-      "motivation": "higher_is_more_motivation",
-      "mood": "higher_is_more_positive",
-      "readiness": "higher_is_more_ready"
-    }
-  },
-  "sorenessScale": {
-    "min": 0,
-    "max": 10,
-    "label": "user-reported soreness; not a diagnosis"
-  },
-  "painConcernScale": {
-    "min": 0,
-    "max": 10,
-    "label": "user-reported pain concern; no automated diagnosis"
-  },
   "recoveryDimensions": [
     "overall_readiness",
     "energy",
@@ -123,23 +90,6 @@
     "persistent_sleep_problem",
     "none"
   ],
-  "calculationDefinitions": {
-    "sleepOpportunityMinutes": "minutes between attemptedSleepAt and outOfBedAt",
-    "terminalWakeMinutes": "minutes between finalWakeAt and outOfBedAt",
-    "estimatedTotalSleepMinutes": "sleepOpportunity - sleepOnsetLatency - wakeAfterSleepOnset - terminalWake; null when required inputs are missing; clamp only for display error handling, not to hide invalid data",
-    "sleepEfficiencyPercent": "estimatedTotalSleepMinutes / sleepOpportunityMinutes * 100; display only when both are valid",
-    "dailyTotalSleepMinutes": "mainSleep estimatedTotalSleepMinutes plus completed nap durations",
-    "differenceFromSelectedGoalMinutes": "dailyTotalSleepMinutes - locally selected goal; never label as physiologic sleep debt",
-    "scheduleVariability": "descriptive variability of local sleep-start and wake clock times after midnight-unwrapping around the period median; no universal good/bad threshold",
-    "readinessSummary": "no calculated readiness score; dimensions remain separate; optional overall readiness is directly entered by the user"
-  },
-  "adultSleepReference": {
-    "id": "adult_7_plus_hours_consensus",
-    "minimumRegularHours": 7,
-    "population": "generally healthy adults",
-    "sourceId": "src_aasm_sleep_duration_2015",
-    "displayRule": "Show as population guidance, not an individual prescription or diagnostic threshold."
-  },
   "seedTaxonomy": [
     {
       "id": "sleep_duration_adults",

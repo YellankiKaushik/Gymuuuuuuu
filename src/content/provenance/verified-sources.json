@@ -1037,5 +1037,40 @@
       "The comparison depends on matched volume; it does not establish that every schedule or exercise selection is equivalent.",
       "Personal preference is not proof of an individual response or a superior split."
     ]
+  },
+  {
+    "id": "gray_1918_remaining_anatomy",
+    "title": "Gray 1918: selected remaining anatomy identities",
+    "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+    "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/390/mode/2up",
+    "sourceVersion": "1918; selected myology passages pp. 390-487",
+    "sourceDate": null,
+    "evidenceType": "historical_anatomy",
+    "extractedAt": "2026-10-07T16:02:22Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "public_domain_data",
+    "rightsReference": "https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+    "limitations": [
+      "Historical qualitative anatomy, not contemporary clinical or exercise efficacy review.",
+      "Selected OCR omits part of the external-oblique origin description; exact rib inventory is not supplied.",
+      "Subdivision-specific actions are unavailable where the source only describes whole-muscle actions."
+    ]
+  },
+  {
+    "id": "openstax_ap2e_2026_excluded",
+    "title": "OpenStax Anatomy and Physiology 2e: current reuse terms (excluded source)",
+    "publisher": "OpenStax, Rice University",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "sourceVersion": "Current page reuse notice; copyright footer June 12, 2026",
+    "sourceDate": "2022-04-20",
+    "evidenceType": "textbook_reference",
+    "extractedAt": "2026-10-07T16:05:02Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "blocked",
+    "rightsReference": "Page Citation/Attribution and Reuse/Redistribution notice; current CC BY-NC-SA terms and prior written permission requirement for LLM or generative-AI ingestion. No permission is held.",
+    "limitations": [
+      "Excluded from content ingestion and publication. No factual record or media may cite this entry as an approved source.",
+      "This source-level exclusion is not proof that any particular anatomy identity lacks a permitted alternative."
+    ]
   }
 ]

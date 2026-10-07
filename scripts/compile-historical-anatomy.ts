@@ -61,10 +61,10 @@ for (const addition of additions) {
       `Published anatomy changed: ${addition.id}. A reviewed revision is required.`,
     );
 }
-const addedIds = new Set(additions.map((row) => row.id));
+const existingIds = new Set(parsed.map((row) => row.id));
 const output = [
-  ...current.filter((_, index) => !addedIds.has(parsed[index]!.id)),
-  ...additions,
+  ...current,
+  ...additions.filter((row) => !existingIds.has(row.id)),
 ];
 const errors = validateAnatomy(muscleSchema.array().parse(output));
 if (errors.length) throw Error(errors.join("; "));

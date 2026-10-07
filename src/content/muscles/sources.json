@@ -58,5 +58,25 @@
     ],
     "limitations": "Historical edition; no modern clinical or training-effect evidence. Machine source verification; no independent human review.",
     "reviewerStatus": "verified"
+  },
+  {
+    "sourceId": "gray_1918_remaining_anatomy",
+    "title": "Gray, Anatomy of the Human Body, 1918: selected neck, trunk, arm and leg anatomy",
+    "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+    "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/390/mode/2up",
+    "sourceType": "academic",
+    "datasetVersion": "1918; selected passages pp. 390-487",
+    "accessedAt": "2026-10-07",
+    "reviewedAt": "2026-10-07",
+    "usageNote": "Public-domain historical book; original summaries of retained passages. Licence evidence: https://en.wikisource.org/wiki/File:Anatomy_of_the_Human_Body_(1918).djvu#Licensing",
+    "quality": "limited",
+    "supportedFields": [
+      "location",
+      "attachments",
+      "qualitative actions",
+      "anatomical subdivisions"
+    ],
+    "limitations": "Historical edition; incomplete selected OCR where explicitly stated. No modern clinical or training-effect evidence. Machine source verification; no independent human review.",
+    "reviewerStatus": "verified"
   }
 ]

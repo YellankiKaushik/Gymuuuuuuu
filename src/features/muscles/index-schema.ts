@@ -16,7 +16,6 @@ export const muscleIndexSchema = z.strictObject({
   trainingGroups: s.trainingGroups,
   visibility: s.visibility,
   depth: s.depth,
-  summary: s.summary,
   jointActions: z.array(
     z.strictObject({ joint: z.string().min(1), motion: z.string().min(1) }),
   ),

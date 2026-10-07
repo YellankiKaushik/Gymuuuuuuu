@@ -2811,5 +2811,1435 @@
     "reviewedBy": "Codex source verification; published_personal_use; no human review",
     "reviewedAt": "2026-10-07",
     "version": "1.0.0"
+  },
+  {
+    "id": "muscle_sternocleidomastoid",
+    "slug": "sternocleidomastoid",
+    "displayName": "Sternocleidomastoid",
+    "anatomicalName": "Sternocleidomastoid",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_neck"
+    ],
+    "trainingGroups": [
+      "group_neck"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A paired muscle crossing the side of the neck, with sternal and clavicular heads.",
+    "locationSummary": "Side of the neck, between the sternum/clavicle and skull.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Manubrium and medial clavicle.",
+      "distalAttachmentSummary": "Mastoid process and lateral superior nuchal line."
+    },
+    "jointActions": [
+      {
+        "joint": "neck",
+        "motion": "lateral flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "One-sided action draws the head toward the same-side shoulder.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "neck",
+        "motion": "contralateral rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "One-sided action turns the face toward the opposite side.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "neck",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes cervical flexion when both muscles act from their sternoclavicular attachments.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion",
+      "rotation"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_deltoid_middle",
+    "slug": "middle-deltoid",
+    "displayName": "Middle/lateral deltoid",
+    "anatomicalName": "Middle/lateral deltoid",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_shoulder"
+    ],
+    "trainingGroups": [
+      "group_shoulders"
+    ],
+    "parentIds": [
+      "muscle_deltoid"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "The central acromial portion of the deltoid, distinguished by its attachment and fiber arrangement.",
+    "locationSummary": "Lateral shoulder, within the whole deltoid.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Acromion; the source distinguishes this central portion from clavicular and scapular-spine portions.",
+      "distalAttachmentSummary": "Shared deltoid tendon reaching the lateral humeral prominence."
+    },
+    "jointActions": [],
+    "movementPatterns": [],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_pectoralis_major_clavicular",
+    "slug": "pectoralis-major-clavicular-portion",
+    "displayName": "Pectoralis major — clavicular portion",
+    "anatomicalName": "Pectoralis major — clavicular portion",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest"
+    ],
+    "parentIds": [
+      "muscle_pectoralis_major"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "The clavicular portion of pectoralis major; the historical description distinguishes its origin and tendon contribution.",
+    "locationSummary": "Upper anterior chest, within pectoralis major.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior surface of the sternal half of the clavicle.",
+      "distalAttachmentSummary": "Anterior lamina of the shared tendon at the crest of the greater tubercle of the humerus."
+    },
+    "jointActions": [],
+    "movementPatterns": [],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_pectoralis_major_sternocostal",
+    "slug": "pectoralis-major-sternocostal-portion",
+    "displayName": "Pectoralis major — sternocostal portion",
+    "anatomicalName": "Pectoralis major — sternocostal portion",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_chest"
+    ],
+    "trainingGroups": [
+      "group_chest"
+    ],
+    "parentIds": [
+      "muscle_pectoralis_major"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "The sternal and costal portion of pectoralis major, with fibers converging into its shared humeral tendon.",
+    "locationSummary": "Anterior chest, within pectoralis major.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Sternum and true-rib cartilages; the source describes variation in rib attachments.",
+      "distalAttachmentSummary": "Shared tendon at the crest of the greater tubercle; much of the sternal and deep costal attachment enters its posterior lamina."
+    },
+    "jointActions": [],
+    "movementPatterns": [],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_erector_spinae_group",
+    "slug": "erector-spinae",
+    "displayName": "Erector spinae group",
+    "anatomicalName": "Erector spinae group",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_lower_back"
+    ],
+    "trainingGroups": [
+      "group_lower_back"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "The historical Sacrospinalis group divides into iliocostalis, longissimus and spinalis columns along the back.",
+    "locationSummary": "Longitudinal columns beside the vertebral column.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Broad sacral, lumbar and iliac tendon; individual column attachments differ.",
+      "distalAttachmentSummary": "Multiple vertebral and rib attachments, with upward continuations described separately."
+    },
+    "jointActions": [
+      {
+        "joint": "spine",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes maintaining an erect column and bending the trunk backward; individual columns and regions differ.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_multifidus",
+    "slug": "multifidus",
+    "displayName": "Multifidus",
+    "anatomicalName": "Multifidus",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_lower_back"
+    ],
+    "trainingGroups": [
+      "group_lower_back",
+      "group_core"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A series of short fleshy and tendinous fascicles alongside the spinous processes, extending from sacrum to axis.",
+    "locationSummary": "Deep back, beside the spinous processes.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Regional origins include sacrum, lumbar mammillary processes, thoracic transverse processes and lower cervical articular processes.",
+      "distalAttachmentSummary": "Spinous processes of vertebrae above each regional origin."
+    },
+    "jointActions": [
+      {
+        "joint": "spine",
+        "motion": "contralateral rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes turning the front of the trunk toward the side opposite the acting muscle; this is qualitative historical anatomy.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "rotation"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_coracobrachialis",
+    "slug": "coracobrachialis",
+    "displayName": "Coracobrachialis",
+    "anatomicalName": "Coracobrachialis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_biceps"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A small upper medial arm muscle sharing a coracoid origin with the short head of biceps.",
+    "locationSummary": "Upper medial arm.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Apex of the coracoid process and adjoining intermuscular septum.",
+      "distalAttachmentSummary": "Middle of the medial humeral surface and border."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes drawing the humerus forward.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "shoulder",
+        "motion": "adduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source also describes drawing the humerus medially.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion",
+      "adduction"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_brachioradialis",
+    "slug": "brachioradialis",
+    "displayName": "Brachioradialis",
+    "anatomicalName": "Brachioradialis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_upper_arm",
+      "region_forearm_grip"
+    ],
+    "trainingGroups": [
+      "group_biceps",
+      "group_forearms_grip"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A superficial muscle on the radial side of the forearm, historically also called Supinator longus.",
+    "locationSummary": "Radial forearm.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Lateral supracondylar ridge of the humerus and lateral intermuscular septum.",
+      "distalAttachmentSummary": "Lateral base of the radial styloid process."
+    },
+    "jointActions": [
+      {
+        "joint": "elbow",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical source describes elbow flexion and adds a sequencing explanation; no modern activation ranking is inferred.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_forearm_flexor_group",
+    "slug": "forearm-flexors",
+    "displayName": "Wrist and finger flexor group",
+    "anatomicalName": "Wrist and finger flexor group",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_forearm_grip"
+    ],
+    "trainingGroups": [
+      "group_forearms_grip"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A functional grouping of wrist and finger flexors. The source describes distinct actions for named flexors, rather than one action for every member.",
+    "locationSummary": "Volar forearm and tendons reaching the wrist and fingers.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "jointActions": [
+      {
+        "joint": "wrist",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Described for named wrist flexors and as assistance from several finger flexors; not every member has an identical action.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "fingers",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Superficial/deep finger and long thumb flexors act at different phalanges.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_forearm_extensor_group",
+    "slug": "forearm-extensors",
+    "displayName": "Wrist and finger extensor group",
+    "anatomicalName": "Wrist and finger extensor group",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_forearm_grip"
+    ],
+    "trainingGroups": [
+      "group_forearms_grip"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A functional grouping of wrist and finger extensors, with different named muscles acting at different joints.",
+    "locationSummary": "Dorsal/lateral forearm and tendons reaching the hand.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "jointActions": [
+      {
+        "joint": "wrist",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Named radial and ulnar wrist extensors extend the wrist with differing deviation contexts.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "fingers",
+        "motion": "extension",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Named finger and thumb extensors act at different phalanges; the source also distinguishes intrinsic hand muscle contributions.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_rectus_abdominis",
+    "slug": "rectus-abdominis",
+    "displayName": "Rectus abdominis",
+    "anatomicalName": "Rectus abdominis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_core_trunk"
+    ],
+    "trainingGroups": [
+      "group_core"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A long flat paired muscle along the anterior abdomen, separated at the midline by the linea alba.",
+    "locationSummary": "Anterior abdomen.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Pubic crest and tissues at the front of the pubic symphysis.",
+      "distalAttachmentSummary": "Cartilages of the fifth, sixth and seventh ribs, with described variation near the xiphoid region."
+    },
+    "jointActions": [
+      {
+        "joint": "spine",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "With the pelvis fixed, the source describes depressing the thorax and flexing the vertebral column.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_external_oblique",
+    "slug": "external-oblique",
+    "displayName": "External oblique",
+    "anatomicalName": "External oblique",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_core_trunk"
+    ],
+    "trainingGroups": [
+      "group_obliques",
+      "group_core"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "The superficial flat muscle of the lateral and anterior abdominal wall, with an aponeurosis joining at the linea alba.",
+    "locationSummary": "Superficial lateral/anterior abdomen.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Rib attachments are described in the retained passage, which begins mid-description; the exact proximal rib inventory is unavailable.",
+      "distalAttachmentSummary": "Iliac crest and broad aponeurosis reaching the linea alba and pubic region."
+    },
+    "jointActions": [
+      {
+        "joint": "abdominal wall",
+        "motion": "compression",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes abdominal compression by the abdominal muscles collectively; this does not quantify this muscle alone.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "breathing-bracing"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_internal_oblique",
+    "slug": "internal-oblique",
+    "displayName": "Internal oblique",
+    "anatomicalName": "Internal oblique",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_core_trunk"
+    ],
+    "trainingGroups": [
+      "group_obliques",
+      "group_core"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A flat abdominal muscle beneath external oblique, with fibers and aponeurotic attachments that vary across its parts.",
+    "locationSummary": "Lateral/anterior abdomen, deep to external oblique.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Inguinal ligament, iliac crest and lumbodorsal fascia.",
+      "distalAttachmentSummary": "Pubic/pectineal region, linea alba and lower rib-cartilage attachments through different portions."
+    },
+    "jointActions": [
+      {
+        "joint": "abdominal wall",
+        "motion": "compression",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes abdominal compression collectively. It does not support assigning the same unilateral rotation direction to every abdominal muscle.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "breathing-bracing"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_transversus_abdominis",
+    "slug": "transversus-abdominis",
+    "displayName": "Transversus abdominis",
+    "anatomicalName": "Transversus abdominis",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_core_trunk"
+    ],
+    "trainingGroups": [
+      "group_core"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "The innermost flat abdominal muscle in the historical description, lying immediately beneath internal oblique.",
+    "locationSummary": "Deep lateral/anterior abdominal wall.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Inguinal ligament, iliac crest, inner lower rib cartilages and lumbodorsal fascia.",
+      "distalAttachmentSummary": "Broad anterior aponeurosis reaching linea alba and, inferiorly, pubic/pectineal attachments."
+    },
+    "jointActions": [
+      {
+        "joint": "abdominal wall",
+        "motion": "compression",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical source describes abdominal compression by the abdominal muscles collectively; no isolated activation or clinical treatment claim is inferred.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "breathing-bracing"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_quadratus_lumborum",
+    "slug": "quadratus-lumborum",
+    "displayName": "Quadratus lumborum",
+    "anatomicalName": "Quadratus lumborum",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_core_trunk",
+      "region_lower_back"
+    ],
+    "trainingGroups": [
+      "group_core",
+      "group_lower_back"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A posterior abdominal-wall muscle with iliac, lumbar and last-rib attachments that vary between individuals.",
+    "locationSummary": "Posterior abdominal wall, near the lumbar column.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Iliolumbar ligament and adjacent iliac crest.",
+      "distalAttachmentSummary": "Lower border of the last rib and upper lumbar transverse processes."
+    },
+    "jointActions": [
+      {
+        "joint": "last rib",
+        "motion": "fixation during inspiration",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes helping fix the diaphragmatic origin. Its historical trunk-action explanation is not used as a modern position-independent exercise claim.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "breathing-bracing"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_diaphragm",
+    "slug": "diaphragm",
+    "displayName": "Diaphragm",
+    "anatomicalName": "Diaphragm",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_core_trunk"
+    ],
+    "trainingGroups": [
+      "group_core"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A dome-shaped musculotendinous partition between the thoracic and abdominal cavities, converging into a central tendon.",
+    "locationSummary": "Between thoracic and abdominal cavities.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Sternal, costal and lumbar origins: xiphoid region, lower ribs/cartilages and lumbar crura/arches.",
+      "distalAttachmentSummary": "Central tendon."
+    },
+    "jointActions": [
+      {
+        "joint": "respiratory apparatus",
+        "motion": "inspiration",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes contraction drawing the central tendon downward during inspiration; this is a respiratory action rather than a limb-joint movement.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "breathing-bracing"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_iliopsoas_group",
+    "slug": "iliopsoas",
+    "displayName": "Iliopsoas group",
+    "anatomicalName": "Iliopsoas group",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_hip_gluteal"
+    ],
+    "trainingGroups": [
+      "group_hip_flexors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "Psoas major and iliacus converge through the psoas tendon near the hip. This grouping does not include the differently acting psoas minor.",
+    "locationSummary": "Lumbar/pelvic region and anterior hip.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Psoas major arises from lumbar-region vertebral attachments; iliacus from the iliac fossa and adjacent pelvic attachments.",
+      "distalAttachmentSummary": "Psoas tendon to the lesser trochanter, receiving most iliacus fibers; some iliacus fibers continue onto adjacent femur."
+    },
+    "jointActions": [
+      {
+        "joint": "hip",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes psoas major flexing the thigh on the pelvis, assisted by iliacus; fixed-point context changes the described action.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_sartorius",
+    "slug": "sartorius",
+    "displayName": "Sartorius",
+    "anatomicalName": "Sartorius",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_front_thigh",
+      "region_inner_outer_thigh"
+    ],
+    "trainingGroups": [
+      "group_hip_flexors"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A narrow ribbon-like muscle crossing obliquely from the lateral upper thigh toward the medial knee.",
+    "locationSummary": "Anterior thigh crossing toward medial knee.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Anterior superior iliac spine and the notch below it.",
+      "distalAttachmentSummary": "Upper medial tibial surface, anterior to gracilis and semitendinosus insertions in the historical description."
+    },
+    "jointActions": [
+      {
+        "joint": "knee",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes bending the leg on the thigh.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Continuing action bends the thigh on the pelvis.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "hip",
+        "motion": "abduction and external rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "These qualitative actions are described in the source; no exact exercise isolation is claimed.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "knee",
+        "motion": "internal rotation",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The described tibial rotation is conditional on a bent knee.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "flexion",
+      "abduction",
+      "rotation"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_tibialis_posterior",
+    "slug": "tibialis-posterior",
+    "displayName": "Tibialis posterior",
+    "anatomicalName": "Tibialis posterior",
+    "aliases": [],
+    "entityType": "muscle",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_shin_ankle"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A deep posterior-leg muscle whose tendon passes behind the medial ankle and spreads to several foot attachments.",
+    "locationSummary": "Deep posterior leg and medial foot.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Posterior interosseous membrane, tibia and medial fibula, with fascial attachments.",
+      "distalAttachmentSummary": "Navicular tuberosity and expansions to nearby tarsal and metatarsal structures."
+    },
+    "jointActions": [
+      {
+        "joint": "ankle",
+        "motion": "plantar flexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The historical term extension of the foot refers to pointing the foot downward in this context.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "foot",
+        "motion": "inversion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes raising the medial border of the foot in conjunction with tibialis anterior.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_fibularis_group",
+    "slug": "fibularis-muscles",
+    "displayName": "Fibularis/peroneal group",
+    "anatomicalName": "Fibularis/peroneal group",
+    "aliases": [],
+    "entityType": "anatomical-group",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_lower_leg"
+    ],
+    "trainingGroups": [
+      "group_shin_ankle"
+    ],
+    "parentIds": [],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "The peroneal/fibular muscles include longus and brevis in the lateral leg and tertius described with the anterior-leg muscles; their ankle actions differ.",
+    "locationSummary": "Lateral and anterior leg, with tendons reaching the foot.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "jointActions": [
+      {
+        "joint": "foot",
+        "motion": "eversion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source describes longus, brevis and tertius raising the lateral border of the foot.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      },
+      {
+        "joint": "ankle",
+        "motion": "context-dependent plantar flexion or dorsiflexion",
+        "contributionLevel": "context-dependent",
+        "qualifier": "Longus/brevis point the foot downward; tertius is described with dorsiflexors. Do not assign one ankle direction to the entire group.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "locomotion"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_biceps_brachii_long_head",
+    "slug": "biceps-brachii-long-head",
+    "displayName": "Biceps brachii — long head",
+    "anatomicalName": "Biceps brachii — long head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_biceps"
+    ],
+    "parentIds": [
+      "muscle_biceps_brachii"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of biceps brachii, distinguished by its proximal attachment and converging into the shared distal tendon.",
+    "locationSummary": "Anterior upper arm, within biceps brachii.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Supraglenoid tuberosity and continuity with the glenoid labrum.",
+      "distalAttachmentSummary": "Shared tendon at the radial tuberosity and bicipital aponeurosis."
+    },
+    "jointActions": [],
+    "movementPatterns": [],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_biceps_brachii_short_head",
+    "slug": "biceps-brachii-short-head",
+    "displayName": "Biceps brachii — short head",
+    "anatomicalName": "Biceps brachii — short head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_biceps"
+    ],
+    "parentIds": [
+      "muscle_biceps_brachii"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of biceps brachii, distinguished by its proximal attachment and converging into the shared distal tendon.",
+    "locationSummary": "Anterior upper arm, within biceps brachii.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Coracoid apex, in common with coracobrachialis.",
+      "distalAttachmentSummary": "Shared tendon at the radial tuberosity and bicipital aponeurosis."
+    },
+    "jointActions": [],
+    "movementPatterns": [],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_triceps_long_head",
+    "slug": "triceps-brachii-long-head",
+    "displayName": "Triceps brachii — long head",
+    "anatomicalName": "Triceps brachii — long head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_triceps"
+    ],
+    "parentIds": [
+      "muscle_triceps_brachii"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of triceps brachii, distinguished by its origin and joining the shared insertion.",
+    "locationSummary": "Posterior upper arm, within triceps brachii.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Infraglenoid tuberosity of the scapula, blending with the shoulder capsule.",
+      "distalAttachmentSummary": "Shared tendon reaching the olecranon, with described fascial continuation."
+    },
+    "jointActions": [
+      {
+        "joint": "shoulder",
+        "motion": "extension and adduction",
+        "contributionLevel": "context-dependent",
+        "qualifier": "The source specifically describes the long head assisting these actions when the arm is extended.",
+        "sourceIds": [
+          "gray_1918_remaining_anatomy"
+        ]
+      }
+    ],
+    "movementPatterns": [
+      "extension"
+    ],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_triceps_lateral_head",
+    "slug": "triceps-brachii-lateral-head",
+    "displayName": "Triceps brachii — lateral head",
+    "anatomicalName": "Triceps brachii — lateral head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_triceps"
+    ],
+    "parentIds": [
+      "muscle_triceps_brachii"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of triceps brachii, distinguished by its origin and joining the shared insertion.",
+    "locationSummary": "Posterior upper arm, within triceps brachii.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Posterior humerus above the radial-nerve groove and lateral intermuscular septum.",
+      "distalAttachmentSummary": "Shared tendon reaching the olecranon, with described fascial continuation."
+    },
+    "jointActions": [],
+    "movementPatterns": [],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
+  },
+  {
+    "id": "muscle_triceps_medial_head",
+    "slug": "triceps-brachii-medial-head",
+    "displayName": "Triceps brachii — medial head",
+    "anatomicalName": "Triceps brachii — medial head",
+    "aliases": [],
+    "entityType": "subdivision",
+    "contentStatus": "published",
+    "confidence": "limited",
+    "regions": [
+      "region_upper_arm"
+    ],
+    "trainingGroups": [
+      "group_triceps"
+    ],
+    "parentIds": [
+      "muscle_triceps_brachii"
+    ],
+    "childIds": [],
+    "visibility": [
+      "multiple"
+    ],
+    "depth": "foundation",
+    "summary": "A named head of triceps brachii, distinguished by its origin and joining the shared insertion.",
+    "locationSummary": "Posterior upper arm, within triceps brachii.",
+    "practicalImportance": "Use the sourced terminology to understand anatomy and movement context. Historical anatomy does not establish a training prescription, exact isolation, activation percentage or clinical treatment.",
+    "structure": {
+      "proximalAttachmentSummary": "Posterior humerus below the radial-nerve groove and medial intermuscular septum.",
+      "distalAttachmentSummary": "Shared tendon reaching the olecranon, with described fascial continuation."
+    },
+    "jointActions": [],
+    "movementPatterns": [],
+    "relationships": [],
+    "misconceptions": [],
+    "cautions": [
+      "Qualitative historical anatomy from 1918; no modern training-effect or clinical review is claimed.",
+      "No independent human review. Variation, modern biomechanical detail and unsourced subdivision-specific actions remain unavailable.",
+      "Whole-muscle actions must not be interpreted as a measured head-specific action, activation ranking or isolation claim."
+    ],
+    "mediaIds": [],
+    "sources": [
+      "gray_1918_remaining_anatomy"
+    ],
+    "reviewedBy": "Codex source verification; published_personal_use; no human review",
+    "reviewedAt": "2026-10-07",
+    "version": "1.0.0"
   }
 ]

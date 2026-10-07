@@ -1752,72 +1752,6 @@
     "sleep_stress_cognition",
     "weight_metabolic"
   ],
-  "evidenceClaimContract": {
-    "requiredFields": [
-      "id",
-      "ingredientIdentityId",
-      "outcomeId",
-      "population",
-      "formulation",
-      "protocol",
-      "comparator",
-      "timeframe",
-      "effectDirection",
-      "evidenceConfidence",
-      "assessmentMethod",
-      "magnitude",
-      "harms",
-      "sourceIds",
-      "limitations",
-      "reviewedAt",
-      "reviewStatus"
-    ],
-    "effectDirections": [
-      "beneficial",
-      "no_clear_benefit",
-      "harmful",
-      "mixed",
-      "insufficient_evidence",
-      "not_applicable"
-    ],
-    "evidenceConfidence": [
-      "high",
-      "moderate",
-      "low",
-      "very_low",
-      "not_assessed"
-    ],
-    "assessmentWarning": "High/moderate/low/very low are editorial confidence labels unless a source explicitly used a formal grading method. Never label an internal assessment as formal GRADE unless the process was actually performed.",
-    "rule": "No ingredient receives one global efficacy verdict. Each claim is outcome-, population-, formulation-, protocol- and timeframe-specific."
-  },
-  "doseProtocolContract": {
-    "fields": [
-      "amountLower",
-      "amountUpper",
-      "unit",
-      "basis",
-      "frequency",
-      "timing",
-      "duration",
-      "loadingProtocol",
-      "maintenanceProtocol",
-      "formulation",
-      "sourceIds",
-      "applicablePopulation",
-      "safetyLimits",
-      "reviewedAt"
-    ],
-    "allowedBasis": [
-      "absolute_per_serving",
-      "per_kg_body_mass",
-      "per_day",
-      "per_hour",
-      "concentration",
-      "food_equivalent",
-      "source_specific_other"
-    ],
-    "rule": "Dose fields remain unavailable unless directly supported by reviewed sources. A dose used in a study is not automatically a personal recommendation."
-  },
   "safetySeverity": [
     "informational",
     "caution",
@@ -1845,97 +1779,6 @@
     "high_contamination_risk",
     "unclear_manual_review_required"
   ],
-  "antiDopingWarning": "Not identified on the current WADA list is not a guarantee of permission, safety or contamination-free status. Check current rules, metabolites, sport and product batch.",
-  "certificationSchemes": [
-    {
-      "id": "nsf_certified_sport",
-      "displayName": "NSF Certified for Sport",
-      "sourceId": "src_nsf_certified_sport",
-      "scope": "product quality and banned-substance risk reduction",
-      "guarantee": false
-    },
-    {
-      "id": "usp_verified",
-      "displayName": "USP Verified",
-      "sourceId": "src_usp_verification",
-      "scope": "identity, strength, purity, manufacturing and quality verification",
-      "guarantee": false
-    },
-    {
-      "id": "informed_sport",
-      "displayName": "Informed Sport",
-      "sourceId": "src_sia_supplements",
-      "scope": "batch-tested sport supplement program",
-      "guarantee": false
-    },
-    {
-      "id": "hasta",
-      "displayName": "HASTA",
-      "sourceId": "src_sia_supplements",
-      "scope": "batch-tested sport supplement program",
-      "guarantee": false
-    }
-  ],
-  "aisClassificationSnapshot": {
-    "asOf": "5 August 2026",
-    "sourceIds": [
-      "src_ais_framework",
-      "src_ais_group_a",
-      "src_ais_group_b",
-      "src_ais_group_c",
-      "src_ais_group_d"
-    ],
-    "groupA": [
-      "ingredient_sports_drink",
-      "ingredient_sports_gel",
-      "ingredient_sports_chew",
-      "ingredient_sports_bar",
-      "ingredient_electrolyte_supplement",
-      "ingredient_isolated_protein",
-      "ingredient_mixed_macronutrient",
-      "ingredient_calcium",
-      "ingredient_folate",
-      "ingredient_iron",
-      "ingredient_vitamin_d",
-      "ingredient_zinc",
-      "ingredient_caffeine",
-      "ingredient_beta_alanine",
-      "ingredient_dietary_nitrate",
-      "ingredient_sodium_bicarbonate",
-      "ingredient_creatine_monohydrate",
-      "ingredient_glycerol"
-    ],
-    "groupB": [
-      "ingredient_tart_cherry",
-      "ingredient_blackcurrant",
-      "ingredient_pomegranate_extract",
-      "ingredient_vitamin_c",
-      "ingredient_menthol",
-      "ingredient_pickle_juice",
-      "ingredient_quinine",
-      "ingredient_l_carnitine",
-      "ingredient_collagen_peptides",
-      "ingredient_curcumin",
-      "ingredient_eggshell_membrane",
-      "ingredient_fish_oil",
-      "ingredient_ketone_ester",
-      "ingredient_multivitamin_mineral",
-      "ingredient_n_acetylcysteine",
-      "ingredient_probiotic",
-      "ingredient_prebiotic"
-    ],
-    "groupC": [
-      "ingredient_magnesium",
-      "ingredient_alpha_lipoic_acid",
-      "ingredient_hmb",
-      "ingredient_branched_chain_amino_acids",
-      "ingredient_phosphate",
-      "ingredient_sam_e",
-      "ingredient_tyrosine",
-      "ingredient_vitamin_e"
-    ],
-    "warning": "This is a dated external-framework snapshot, not the app's own evidence grade. Revalidate before publication and whenever AIS changes its framework."
-  },
   "jurisdictions": [
     "global_education",
     "united_states",
@@ -1961,20 +1804,5 @@
     "suicidal_thoughts",
     "stroke_like_symptoms",
     "other_urgent_concern"
-  ],
-  "productRiskRedFlags": [
-    "proprietary_blend_without_amounts",
-    "extreme_or_drug_like_claims",
-    "rapid_fat_loss_claim",
-    "steroid_or_hormone_like_claim",
-    "research_chemical_language",
-    "sarm_or_prohormone_language",
-    "no_responsible_company_contact",
-    "missing_lot_or_expiry",
-    "tampered_seal",
-    "unverified_certification_logo",
-    "multiple_stimulants",
-    "undeclared_or_ambiguous_ingredient_names",
-    "marketplace_seller_without_traceability"
   ]
 }
