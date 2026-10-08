@@ -261,3 +261,14 @@ accessibility rerun; GitHub's annotation confirms the cause. That rerun is
 incomplete, not a pass. Accessibility now has a separate mandatory CI job with
 clean installation and complete checks; both jobs retain their limits and all
 assertions. Fresh hosted verification of the correction remains required.
+
+## Final pre-Vercel handoff (in progress)
+
+The owner authorized application completion with the verified content frozen.
+The finalization branch is codex/final-pre-vercel-readiness; its initial checkpoint
+is retained as pre-vercel-finalization-safety-checkpoint. No deployment, cleanup
+or tracked-file deletion is authorized. Restore preparation, envelope/domain
+validation, automatic rollback, bounded imports and cross-browser sanitized photo
+storage are corrected. Current final test evidence and main integration remain
+pending; historical checkpoint passes are not inherited. Decisions are retained
+in pre-vercel-restore-safety.md and pre-vercel-performance-budget.md.

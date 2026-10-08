@@ -126,6 +126,7 @@ export async function exportCsvSet() {
 export function circumferenceMedianMm(replicates: number[]) { return median(replicates); }
 export async function saveSanitizedPhoto(file: File, details: Record<string, string | null>) {
   if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) throw Error("Choose a JPEG, PNG, or WebP image.");
+  if (file.size === 0 || file.size > 10 * 1024 * 1024) throw Error("Choose an image no larger than 10 MiB.");
   const sourceUrl = URL.createObjectURL(file);
   try {
     const image = new Image(); image.src = sourceUrl; await image.decode();
@@ -135,16 +136,19 @@ export async function saveSanitizedPhoto(file: File, details: Record<string, str
     context.drawImage(image, 0, 0);
     const mime = file.type === "image/png" ? "image/png" : file.type === "image/webp" ? "image/webp" : "image/jpeg";
     const blob = await new Promise<Blob>((resolve, reject) => canvas.toBlob((value) => value ? resolve(value) : reject(Error("Image re-encoding failed.")), mime, 0.92));
+    if (blob.size > 10 * 1024 * 1024) throw Error("The sanitized image exceeds the 10 MiB storage limit.");
     const blobKey = crypto.randomUUID(), id = crypto.randomUUID(), now = new Date(), measuredAt = now.toISOString(), localDate = new Intl.DateTimeFormat("en-CA").format(now), timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const hash = await crypto.subtle.digest("SHA-256", await blob.arrayBuffer()), sha256 = [...new Uint8Array(hash)].map((value) => value.toString(16).padStart(2, "0")).join("");
     const metadata = photoSchema.parse({ id, setId: details.setId ?? "default", takenAt: measuredAt, localDate, timezone, view: details.view ?? "front", pose: details.pose ?? null, clothing: details.clothing ?? null, lighting: details.lighting ?? null, cameraDistance: details.cameraDistance ?? null, background: details.background ?? null, blobKey, mime, width: canvas.width, height: canvas.height, sanitizedCopy: true, originalMetadataRemoved: true, includeBinaryInBackup: true, sha256, notes: details.notes ?? null, createdAt: measuredAt, updatedAt: measuredAt, deletedAt: null });
-    const db = await openFitnessDatabase(), tx = db.transaction(["progressPhotos", "progressPhotoBlobs"], "readwrite"); tx.objectStore("progressPhotos").put(metadata); tx.objectStore("progressPhotoBlobs").put({ blobKey, blob, mime }); await transactionDone(tx);
+    const bytes = new Uint8Array(await blob.arrayBuffer());
+    const db = await openFitnessDatabase(), tx = db.transaction(["progressPhotos", "progressPhotoBlobs"], "readwrite"); tx.objectStore("progressPhotos").put(metadata); tx.objectStore("progressPhotoBlobs").put({ blobKey, blob: bytes, mime }); await transactionDone(tx);
     return metadata;
   } finally { URL.revokeObjectURL(sourceUrl); }
 }
 export async function readPhotoBlob(blobKey: string) {
   const db = await openFitnessDatabase();
-  return requestValue(db.transaction("progressPhotoBlobs", "readonly").objectStore("progressPhotoBlobs").get(blobKey)) as Promise<{ blob: Blob; mime: string } | undefined>;
+  const row = await requestValue(db.transaction("progressPhotoBlobs", "readonly").objectStore("progressPhotoBlobs").get(blobKey)) as { blob: Blob | Uint8Array<ArrayBuffer>; mime: string } | undefined;
+  return row ? { ...row, blob: row.blob instanceof Blob ? row.blob : new Blob([row.blob], { type: row.mime }) } : undefined;
 }
 export async function downloadProgressBackup() {
   const backup = await makeProgressBackup();

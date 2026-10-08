@@ -15,3 +15,13 @@ This owner-authorized milestone follows Phase 18. The October 8 scope supersedes
 - [x] Pass final automatic gates, retain current-build evidence, update README/handoff, commit/push and safely integrate main. Create only codex-first-manual-test-ready; do not deploy production.
 
 Source verification is not independent human or clinical review. No dataset match, numeric value, fitness claim, licence, review date, yield measurement or test result may be invented. Remaining gaps must stay unavailable and be reported with specific reasons. Production deployment and domain connection remain disabled.
+
+## Owner-authorized final pre-Vercel checkpoint
+
+- [x] Freeze verified content and preserve all existing modules and tracked files.
+- [x] Audit implementation gaps and correct restore, migration and photo safety defects.
+- [x] Prepare owner-controlled Vercel runbook without deploying.
+- [ ] Pass current clean-clone checks, coverage, dependency audit and build.
+- [ ] Pass current Chromium/WebKit journeys and hosted Linux browser/accessibility gates.
+- [ ] Run the final complete route audit and bind observed evidence to this implementation.
+- [ ] Commit/push, integrate main normally and create pre-vercel-release-ready only after passing gates.

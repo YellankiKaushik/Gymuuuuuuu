@@ -3,7 +3,7 @@ name: Cross-browser regression
 on:
   pull_request:
   push:
-    branches: [main, codex/phase-19-verified-content]
+    branches: [main, codex/phase-19-verified-content, codex/final-pre-vercel-readiness]
   schedule:
     - cron: "23 7 * * 1"
   workflow_dispatch:

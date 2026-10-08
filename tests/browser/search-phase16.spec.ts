@@ -52,9 +52,9 @@ test("public search filters stay in URL while private query state never does", a
   ).toBeVisible();
   await expect(page.getByText(/Private search is off/).first()).toBeVisible();
   await page.getByText("Modules", { exact: true }).click();
-  await page.getByRole("checkbox", { name: "phase 08 nutrients" }).check();
+  await page.getByRole("checkbox", { name: "Nutrients" }).check();
   await expect(
-    page.getByRole("checkbox", { name: "phase 08 nutrients" }),
+    page.getByRole("checkbox", { name: "Nutrients" }),
   ).toBeChecked();
   await expect(page).toHaveURL(/q=vitamins/);
   await expect(page).toHaveURL(/phase_08_nutrients/);

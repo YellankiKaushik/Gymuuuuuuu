@@ -106,9 +106,9 @@ export function PublicComparisonCards({
   return (
     <>
       <p>
-        Personal-use publication · sources checked by Codex and automated
-        validation; no independent human or clinical review. Review the full
-        record for its context.
+        Personal-use publication · sources checked by machine review and
+        automated validation; no independent human or clinical review. Review
+        the full record for its context.
       </p>
       <div
         className="comparison-grid"

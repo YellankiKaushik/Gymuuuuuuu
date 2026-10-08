@@ -49,7 +49,7 @@ describe("Phase 17 local data portability", () => {
   });
   it("detects tampered payload content before any database changes", async () => {
     storage(); await openFitnessDatabase(); const backup = await createBackup();
-    const changed = { ...backup, payload: { ...backup.payload, shellPreferences: [{ key: "unexpected", value: "x", source: "localStorage_preference" }] } };
+    const changed = { ...backup, payload: { ...backup.payload, shellPreferences: [{ key: "fitness-os:preferences:v1", value: "x", source: "localStorage_preference" }] } };
     const preview = await previewBackup(changed);
     expect(preview.errors.join(" ")).toContain("payload hash"); expect(preview.writes).toBe(0);
   });

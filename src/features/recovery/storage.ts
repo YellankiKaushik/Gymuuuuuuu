@@ -75,7 +75,9 @@ export function openRecoveryDatabase(): Promise<IDBDatabase> {
       "fitness-os-recovery-sleep-mobility",
       2,
     );
+    let blocked = false;
     request.onupgradeneeded = () => {
+      if (blocked) { request.transaction?.abort(); return; }
       for (const name of stores) {
         const store = request.result.objectStoreNames.contains(name)
           ? request.transaction!.objectStore(name)
@@ -99,10 +101,12 @@ export function openRecoveryDatabase(): Promise<IDBDatabase> {
           );
       }
     };
-    request.onsuccess = () => resolve(request.result);
+    request.onsuccess = () => { const db = request.result; db.onversionchange = () => db.close(); if (blocked) db.close(); else resolve(db); };
     request.onerror = () => reject(Error("Recovery database could not open."));
-    request.onblocked = () =>
+    request.onblocked = () => {
+      blocked = true;
       reject(Error("Close other Fitness OS tabs to update recovery storage."));
+    };
   });
 }
 function requestValue<T>(request: IDBRequest<T>): Promise<T> {

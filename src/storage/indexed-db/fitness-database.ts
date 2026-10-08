@@ -163,7 +163,9 @@ export async function openFitnessDatabase(
   }
   const pending = new Promise<IDBDatabase>((resolve, reject) => {
     const request = factory.open(name, fitnessDatabaseVersion);
+    let blocked = false;
     request.onupgradeneeded = (event) => {
+      if (blocked) { request.transaction?.abort(); return; }
       migrateFitnessDatabase(
         request.result,
         request.transaction!,
@@ -176,12 +178,15 @@ export async function openFitnessDatabase(
           "Local database could not open. Export available records before clearing browser storage.",
         ),
       );
-    request.onblocked = () =>
+    request.onblocked = () => {
+      blocked = true;
       reject(
         Error("Close other Fitness OS tabs before upgrading local storage."),
       );
+    };
     request.onsuccess = () => {
       const db = request.result;
+      if (blocked) { db.close(); return; }
       db.onversionchange = () => {
         db.close();
         cache.delete(name);

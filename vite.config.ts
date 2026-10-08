@@ -6,5 +6,21 @@ import { nitro } from 'nitro/vite'
 
 export default defineConfig({
   plugins: [tailwindcss(), tanstackStart(), nitro(), react()],
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            { name: 'validation-library', test: /node_modules[\\/]zod[\\/]/ },
+            {
+              name: (id) => `route-${id.match(/src[\\/]routes[\\/]([a-z-]+)/)?.[1] ?? 'other'}`,
+              test: /src[\\/]routes[\\/].*[?&]tsr-split=/,
+              includeDependenciesRecursively: false,
+            },
+          ],
+        },
+      },
+    },
+  },
   server: { host: '127.0.0.1', port: 3000 },
 })

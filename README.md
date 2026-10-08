@@ -54,7 +54,9 @@ data, moving origins, browsers or devices. Backup files are not encrypted; keep
 them private and outside the browser. Preview validates an import before record
 writes. Multi-database restore is journaled, with recovery controls; independent
 databases cannot form a globally atomic browser transaction. In a fresh profile,
-open the owning modules first to initialize their versioned database schemas.
+choose **Prepare local storage** on the global Restore screen to run owning
+module migrations before selecting a file. Preview itself never initializes or
+writes canonical records.
 Portable backups exclude binary photos; explicitly select full media when needed.
 
 ## Frozen public content
@@ -154,8 +156,8 @@ diet calculator, recipes/meal plans, recovery/sleep/mobility, cardio, supplement
 progress/dashboard, favourites/comparisons and settings. Exercise save, reload,
 edit/delete, undo, validation, keyboard flow and storage-disabled behavior.
 
-Create records across several modules. Export a backup, initialize the owning
-modules in a separate clean profile, preview without writes, restore and compare
+Create records across several modules. Export a backup, prepare local storage from the Restore screen in a separate
+clean profile, preview without writes, restore and compare
 records/references. Verify invalid files preserve existing data. Check CSV exports,
 including formula-like text. Keep the original profile intact until verified.
 
