@@ -1,10 +1,14 @@
 # Phase 19 handoff
 
-Status: final manual-test verification in progress. Content expansion is frozen under the superseding October 8 owner instruction. The 520-record local subset is preserved; 900 unpublished identities are future backlog and do not block manual testing.
+Status: **Ready for owner manual testing.** Content expansion is frozen under the superseding October 8 owner instruction. The 520-record local subset is preserved; 900 unpublished identities are future backlog and do not block manual testing.
+
+Final evidence: [manual-test report](../reports/phase19-manual-test-ready.md) and [machine-readable verification](../reports/phase19-ci-manual-test-ready.json). The tested commit is 93047ce622c604d6676433ee426bcb361febf927; the final checkpoint adds only reports, handoff and synthetic screenshots. All 823 production files remained unchanged after verification. Unit/coverage: 338 tests in 92 files. Local Chromium/WebKit: 282 each. Hosted Ubuntu Chromium/Firefox/WebKit: 282 each; mandatory accessibility: 184. Final route audit: 702/702, zero failed or unmeasured. Clean install, full check, npm audit (zero vulnerabilities), production build and unchanged performance budgets passed. No production deployment, domain connection or real-device manual testing was performed.
+
+Global backup/restore now owns its database connections, reuses one per database during preview, and rejects stale file completions. The final browser gate also corrected an obsolete draft assertion for the published barbell bench press, preserving draft/noindex checks on the unpublished incline variant. Assertions, timeouts and budgets were not weakened.
 
 The final pass fixes 320px science source wrapping, an exact stale food-count assertion, global restore stale-file completions and misleading data-management breadcrumbs/phase copy. Public recipes now support an explicit local copy for the existing scaling/editing/consumed-snapshot workflow. Source snapshots, original provenance and estimated-yield limitations remain intact. Search was regenerated once and retains 648 documents and manifest 83fef1c09dbeeb3e9a28bba1e037a38dbbfa3ec9d05a39ce2cea5d3175b91fa5. Subsequent checks verify frozen assets without writing.
 
-Representative owner-test checks cover all major workspaces at seven viewport widths in both themes, public recipe copying/scaling/logging, synthetic multi-module portability into an initialized clean profile, zero-write preview and invalid-import preservation. The final expensive suites and bound route evidence remain required; historical results below apply only to their recorded checkpoints.
+Representative owner-test checks passed for all major workspaces at seven viewport widths in both themes, public recipe copying/scaling/logging, synthetic multi-module portability into an initialized clean profile, zero-write preview and invalid-import preservation. Historical results below apply only to their recorded checkpoints. Real Android/iOS, human screen readers, print and actual personal flows remain owner testing.
 
 ## Historical checkpoints
 

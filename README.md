@@ -7,6 +7,16 @@ Production deployment remains disabled. This checkpoint provides the existing
 verified content subset; it does not certify clinical review, real-device testing
 or completion of every planned content identity.
 
+Final [verification report](docs/reports/phase19-manual-test-ready.md) and
+[machine-readable evidence](docs/reports/phase19-ci-manual-test-ready.json):
+338 unit tests; 282 tests per local Chromium/WebKit and hosted
+Chromium/Firefox/WebKit; 184 hosted accessibility checks; 702 audited URLs.
+All passed. Coverage, clean installation, full check, production build,
+privacy/security checks, unchanged performance budgets and npm audit passed.
+Reports bind results to the tested commit, frozen content and production hash.
+The final completion commit adds reports and synthetic screenshots without
+changing the tested application. Real-device and human testing remain required.
+
 ## Installation and development
 
 Use Node.js 24.16.0 and npm 11.9.0, matching the pinned toolchain and CI.
@@ -51,19 +61,19 @@ Portable backups exclude binary photos; explicitly select full media when needed
 
 Counts come from the current production adapters, not historical phase targets.
 
-| Module | Published | Planned identities | Future backlog |
-| --- | ---: | ---: | ---: |
-| Muscles | 70 | 70 | 0 |
-| Exercises | 32 | 184 | 152 |
-| Workout science | 32 | 98 | 66 |
-| Workout programs | 4 | 50 | 46 |
-| Foods | 264 | 342 | 78 |
-| Nutrients | 51 | 51 | 0 |
-| Recipes | 24 | 24 | 0 |
-| Meal collections | 3 | 3 | 0 |
-| Recovery, sleep and mobility | 15 | 124 | 109 |
-| Cardio and conditioning | 13 | 202 | 189 |
-| Supplements | 12 | 272 | 260 |
+| Module                       | Published | Planned identities | Future backlog |
+| ---------------------------- | --------: | -----------------: | -------------: |
+| Muscles                      |        70 |                 70 |              0 |
+| Exercises                    |        32 |                184 |            152 |
+| Workout science              |        32 |                 98 |             66 |
+| Workout programs             |         4 |                 50 |             46 |
+| Foods                        |       264 |                342 |             78 |
+| Nutrients                    |        51 |                 51 |              0 |
+| Recipes                      |        24 |                 24 |              0 |
+| Meal collections             |         3 |                  3 |              0 |
+| Recovery, sleep and mobility |        15 |                124 |            109 |
+| Cardio and conditioning      |        13 |                202 |            189 |
+| Supplements                  |        12 |                272 |            260 |
 
 There are **520 factual records**, **273 food preparation profiles**, 35 FDA label
 reference rows and **648 public search documents** including navigation entries.

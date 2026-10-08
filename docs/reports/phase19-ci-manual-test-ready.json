@@ -1,0 +1,775 @@
+{
+  "schemaVersion": 1,
+  "milestone": "Phase 19 — First manual-test completion",
+  "status": "Ready for owner manual testing.",
+  "generatedAt": "2026-10-08T12:59:05.819986+00:00",
+  "testedCommit": "93047ce622c604d6676433ee426bcb361febf927",
+  "applicationBuildCommit": "b6a89c6708914b7ab257b216971c210db7af7ed1",
+  "commitRelationship": "Only the exercise regression and decision record changed after the application build. The final completion commit adds documentation, reports and synthetic screenshots; it does not alter the tested application.",
+  "checkpointTag": "codex-first-manual-test-ready",
+  "phase18IntegratedCommit": "0473d0b65acffac51254b4fa07d5ef301e0cd727",
+  "productionBuild": {
+    "date": "2026-10-08T11:57:25.816Z",
+    "sha256": "e0faabf4daa53141bf32c85fd6f2be95efe4c141c0b77dc1ca7af113a9241fde",
+    "fingerprintedFiles": 823,
+    "serverEntrySha256": "fcf98167764f30a1b19a5f5d3adb24e58aac2bb6f04dfe6fdb23fd77d6fca990",
+    "unchangedAfterAllVerification": true
+  },
+  "searchManifest": {
+    "schemaVersion": "1.0.0",
+    "adapterVersion": "fitness-os-native-index-v1",
+    "normalizationVersion": "unicode-nfkc-token-v1",
+    "rankingVersion": "field-weights-exact-prefix-bonus-v1",
+    "canonicalDocumentHash": "7b3df4d5ac92f146a203b4c5b1741f44b1e73691d0a65014b219831d8e0f9f5e",
+    "indexHash": "d512000f40b6054f1cc261aed4aa99b91d5c043fbcdb9e17de19f0df3c6a7706",
+    "indexVersion": "83fef1c09dbeeb3e9a28bba1e037a38dbbfa3ec9d05a39ce2cea5d3175b91fa5",
+    "documentCount": 648,
+    "countsByEntityType": {
+      "route": 124,
+      "muscle": 70,
+      "exercise": 32,
+      "workout_science_topic": 32,
+      "workout_program": 4,
+      "workout_session": 0,
+      "food": 264,
+      "nutrient": 51,
+      "diet_plan": 0,
+      "recipe": 24,
+      "meal_plan_template": 3,
+      "meal_plan": 0,
+      "recovery_topic": 11,
+      "recovery_routine": 4,
+      "sleep_entry": 0,
+      "recovery_checkin": 0,
+      "cardio_topic": 10,
+      "cardio_modality": 2,
+      "cardio_plan": 1,
+      "conditioning_routine": 0,
+      "supplement_ingredient": 12,
+      "supplement_evidence_topic": 0,
+      "measurement_protocol": 0,
+      "progress_topic": 0,
+      "body_measurement": 0,
+      "dashboard_widget": 4
+    },
+    "builtAt": "2026-10-08T08:08:02.000Z",
+    "locale": "en"
+  },
+  "content": {
+    "modules": [
+      {
+        "module": "muscles",
+        "totalIdentities": 70,
+        "publishedIdentities": 70,
+        "draftIdentities": 0
+      },
+      {
+        "module": "exercises",
+        "totalIdentities": 184,
+        "publishedIdentities": 32,
+        "draftIdentities": 152
+      },
+      {
+        "module": "workout-science",
+        "totalIdentities": 98,
+        "publishedIdentities": 32,
+        "draftIdentities": 66
+      },
+      {
+        "module": "programs",
+        "totalIdentities": 50,
+        "publishedIdentities": 4,
+        "draftIdentities": 46
+      },
+      {
+        "module": "foods",
+        "totalIdentities": 342,
+        "publishedIdentities": 264,
+        "draftIdentities": 78
+      },
+      {
+        "module": "nutrients",
+        "totalIdentities": 51,
+        "publishedIdentities": 51,
+        "draftIdentities": 0
+      },
+      {
+        "module": "recipes",
+        "totalIdentities": 24,
+        "publishedIdentities": 24,
+        "draftIdentities": 0
+      },
+      {
+        "module": "meal-templates",
+        "totalIdentities": 3,
+        "publishedIdentities": 3,
+        "draftIdentities": 0
+      },
+      {
+        "module": "recovery",
+        "totalIdentities": 124,
+        "publishedIdentities": 15,
+        "draftIdentities": 109
+      },
+      {
+        "module": "cardio",
+        "totalIdentities": 202,
+        "publishedIdentities": 13,
+        "draftIdentities": 189
+      },
+      {
+        "module": "supplements",
+        "totalIdentities": 272,
+        "publishedIdentities": 12,
+        "draftIdentities": 260
+      }
+    ],
+    "factualRecords": 520,
+    "searchDocuments": 648,
+    "foodProfiles": 273,
+    "numericFoodValues": 10011,
+    "numericCoverage": {
+      "foodRecordsWithComposition": 264,
+      "nutrientArticlesWithReferenceRows": 35,
+      "nutrientReferenceRows": 35,
+      "publicRecipesWithCalculatedNutrition": 24,
+      "exercisesWithContextualSetsAndRepetitions": 10,
+      "publicCardioPlans": 1,
+      "publicCardioSourceSessions": 27,
+      "limitations": "Structured numerical coverage only; unspecified values stay unavailable. No numerical anatomy activation or supplement dose prescription is inferred."
+    },
+    "backlogIdentities": 900,
+    "backlogBlocksManualTesting": false,
+    "reviewState": "published_personal_use",
+    "independentHumanReviewedRecords": 0,
+    "sourceCoverage": [
+      {
+        "module": "muscles",
+        "published": 70,
+        "withPublicationProvenance": 70,
+        "inSearch": 70,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "exercises",
+        "published": 32,
+        "withPublicationProvenance": 32,
+        "inSearch": 32,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "workout-science",
+        "published": 32,
+        "withPublicationProvenance": 32,
+        "inSearch": 32,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "programs",
+        "published": 4,
+        "withPublicationProvenance": 4,
+        "inSearch": 4,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "foods",
+        "published": 264,
+        "withPublicationProvenance": 264,
+        "inSearch": 264,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "nutrients",
+        "published": 51,
+        "withPublicationProvenance": 51,
+        "inSearch": 51,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "recipes",
+        "published": 24,
+        "withPublicationProvenance": 24,
+        "inSearch": 24,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "meal-templates",
+        "published": 3,
+        "withPublicationProvenance": 3,
+        "inSearch": 3,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "recovery",
+        "published": 15,
+        "withPublicationProvenance": 15,
+        "inSearch": 15,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "cardio",
+        "published": 13,
+        "withPublicationProvenance": 13,
+        "inSearch": 13,
+        "missingSourceProvenance": []
+      },
+      {
+        "module": "supplements",
+        "published": 12,
+        "withPublicationProvenance": 12,
+        "inSearch": 12,
+        "missingSourceProvenance": []
+      }
+    ],
+    "comparisonCoverage": [
+      {
+        "module": "muscles",
+        "eligiblePublishedRecords": 70,
+        "families": ["muscles"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "exercises",
+        "eligiblePublishedRecords": 32,
+        "families": ["exercises"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "workout-science",
+        "eligiblePublishedRecords": 0,
+        "families": [],
+        "hasAtLeastTwoCompatibleRecords": false,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "programs",
+        "eligiblePublishedRecords": 4,
+        "families": ["workout_programs"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "foods",
+        "eligiblePublishedRecords": 264,
+        "families": ["foods"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "nutrients",
+        "eligiblePublishedRecords": 51,
+        "families": ["nutrients"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "recipes",
+        "eligiblePublishedRecords": 24,
+        "families": ["recipes"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "meal-templates",
+        "eligiblePublishedRecords": 0,
+        "families": [],
+        "hasAtLeastTwoCompatibleRecords": false,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "recovery",
+        "eligiblePublishedRecords": 15,
+        "families": ["recovery_methods"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "cardio",
+        "eligiblePublishedRecords": 3,
+        "families": ["cardio_plans", "cardio_modalities"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      },
+      {
+        "module": "supplements",
+        "eligiblePublishedRecords": 12,
+        "families": ["supplements"],
+        "hasAtLeastTwoCompatibleRecords": true,
+        "interpretation": "Compatible family eligibility only; no winner or efficacy score."
+      }
+    ],
+    "mediaCoverage": [
+      {
+        "module": "muscles",
+        "records": 70,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "exercises",
+        "records": 32,
+        "withVisual": 32,
+        "instructionalMediaRequired": true
+      },
+      {
+        "module": "workout-science",
+        "records": 32,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "programs",
+        "records": 4,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "foods",
+        "records": 264,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "nutrients",
+        "records": 51,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "recipes",
+        "records": 24,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "meal-templates",
+        "records": 3,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "recovery",
+        "records": 15,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "cardio",
+        "records": 13,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      },
+      {
+        "module": "supplements",
+        "records": 12,
+        "withVisual": 0,
+        "instructionalMediaRequired": false
+      }
+    ],
+    "licensingExclusions": [
+      {
+        "source": "OpenStax Anatomy and Physiology",
+        "status": "excluded_not_imported",
+        "reason": "Current generative-AI use restriction requires permission; no content ingested."
+      },
+      {
+        "source": "ICMR-NIN IFCT 2017",
+        "status": "reference_only_not_imported",
+        "reason": "Bulk reproduction permission is not established; no composition data imported."
+      }
+    ]
+  },
+  "localVerification": {
+    "cleanInstall": "npm ci passed; lockfile unchanged",
+    "check": "Passed format, lint, strict TypeScript, static schemas/content/sources/relationships, frozen search hashes, unit tests, privacy/security audits, production build and budgets.",
+    "unit": {
+      "files": 92,
+      "tests": 338,
+      "failed": 0
+    },
+    "coverage": {
+      "statements": "71.88% (8073/11230)",
+      "branches": "64.31% (5072/7886)",
+      "functions": "66.39% (2146/3232)",
+      "lines": "76.84% (7039/9160)",
+      "configuredThresholdsPassed": true
+    },
+    "chromium": {
+      "passed": 282,
+      "failed": 0
+    },
+    "webkit": {
+      "passed": 282,
+      "failed": 0
+    },
+    "firefox": "Windows mozglue/SideBySide launch limitation; verified on hosted Ubuntu instead. No repeated local reinstall attempted.",
+    "npmAudit": {
+      "level": "high",
+      "vulnerabilities": 0
+    },
+    "performance": {
+      "javascriptAssets": 274,
+      "javascriptGzipBytes": 705746,
+      "largestJavascriptGzipBytes": 171072,
+      "lazyJsonAssets": 97,
+      "lazyJsonGzipBytes": 429517,
+      "largestJsonGzipBytes": 59287,
+      "existingBudgetsPassed": true
+    },
+    "routes": {
+      "expected": 702,
+      "passed": 702,
+      "failed": 0,
+      "unmeasured": 0,
+      "statesPerUrl": 5,
+      "widths": [320, 768, 1440],
+      "themes": ["light", "dark"],
+      "tabletAccessibilityScan": false,
+      "mobileDesktopAccessibilityScan": "WCAG 2/2.1/2.2 AA",
+      "uncaughtBrowserErrors": 0,
+      "failedSameOriginAssets": 0,
+      "unexpectedRemoteRequests": 0,
+      "evidence": "content-completion.json"
+    },
+    "representativeJourneyCoverage": "Workouts, program snapshots/Finder, diet targets, nutrition missing states, immutable recipes and consumption, sleep/recovery, cardio, progress, search/favourites/collections/compatible comparisons, synthetic multi-module backup/restore and corrupt archive preservation.",
+    "representativeLayoutWidths": [320, 375, 393, 768, 1024, 1280, 1440],
+    "logSha256": {
+      "final-manual-install": "abb944b03f58a1ef96cda0d2e21b7df9ec755fc908833f0bf9443075cc2154a4",
+      "final-frozen-check": "190652b517af510fe1007e788f25939e343ef9299602942915647715381c5c63",
+      "final-frozen-coverage": "09a7b11b693ee7075139f131abc1dfc35dc45522aa65a94ff2f1f89214d7b745",
+      "final-frozen-npm-audit": "4b02d4a3c23d969c46bd2041360f80bfcb1fe760d9db864009acdd710f9de601",
+      "final-frozen-chromium": "f051caabf3c46dcaefe03a5ea6a1f888128c81f3a41ec584ef1cc25bb0d2c515",
+      "final-frozen-webkit": "51f99e701a57b584e87c6b558c4e7414cb9eb53a848221858a292d347c76ce04",
+      "final-frozen-routes": "9cece90a146694c05507b8f60026fb483005dcbd5738887954f57a1e45581778",
+      "final-frozen-route-report": "9803ceb89b70d11344cbcbbd105da4369595437ebcb8c7da77c44c703155e76e"
+    }
+  },
+  "hostedVerification": [
+    {
+      "id": 37774678041,
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37774678041",
+      "headSha": "93047ce622c604d6676433ee426bcb361febf927",
+      "name": "CI",
+      "jobs": [
+        {
+          "id": 113302585744,
+          "name": "accessibility",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm ci",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run check",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npx playwright install --with-deps chromium",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run test:a11y",
+              "conclusion": "success"
+            },
+            {
+              "name": "Preserve failed accessibility diagnostics",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ],
+          "passSummary": ["2026-10-08T12:21:25.3728146Z   184 passed (10.7m)"]
+        },
+        {
+          "id": 113302585869,
+          "name": "verify",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm ci",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run check",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run test:coverage",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npx playwright install --with-deps chromium",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run test:e2e",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm audit --audit-level=high",
+              "conclusion": "success"
+            },
+            {
+              "name": "Preserve failed regression diagnostics",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ],
+          "passSummary": ["2026-10-08T12:23:14.2549723Z   282 passed (12.7m)"]
+        }
+      ]
+    },
+    {
+      "id": 37774678026,
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37774678026",
+      "headSha": "93047ce622c604d6676433ee426bcb361febf927",
+      "name": "Cross-browser regression",
+      "jobs": [
+        {
+          "id": 113302876658,
+          "name": "browser (webkit)",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm ci",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run check",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npx playwright install --with-deps webkit",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run test:e2e:cross-browser -- --project=webkit",
+              "conclusion": "success"
+            },
+            {
+              "name": "Preserve failed browser diagnostics",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ],
+          "passSummary": ["2026-10-08T12:36:12.6107230Z   282 passed (24.3m)"]
+        },
+        {
+          "id": 113302877046,
+          "name": "browser (firefox)",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm ci",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run check",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npx playwright install --with-deps firefox",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run test:e2e:cross-browser -- --project=firefox",
+              "conclusion": "success"
+            },
+            {
+              "name": "Preserve failed browser diagnostics",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ],
+          "passSummary": ["2026-10-08T12:31:00.4878904Z   282 passed (20.3m)"]
+        },
+        {
+          "id": 113302877212,
+          "name": "browser (chromium)",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm ci",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run check",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npx playwright install --with-deps chromium",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run npm run test:e2e:cross-browser -- --project=chromium",
+              "conclusion": "success"
+            },
+            {
+              "name": "Preserve failed browser diagnostics",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ],
+          "passSummary": ["2026-10-08T12:22:26.7854874Z   282 passed (11.8m)"]
+        }
+      ]
+    }
+  ],
+  "bugsFixed": [
+    "320px Workout Science source identifiers overflowed; wrap complete visible provenance.",
+    "Global backup services could close connections still used by module workspaces; use independently owned connections.",
+    "Restore preview reopened a database per store; reuse one owned connection per database while preserving validation-before-write.",
+    "Stale file reads/restore previews could supersede a newer file selection; guard generations and busy states.",
+    "Data-management breadcrumbs and user screens contained engineering phase labels; resolve contextual destinations and replace normal-screen copy.",
+    "Home lacked direct nutrition logging, diet planning and cardio entry points.",
+    "Public recipes lacked a route into existing local scaling/editing/logging; add explicit source-preserving local copy.",
+    "Build/check could silently regenerate search; compare deterministic frozen output and fail stale assets.",
+    "Route evidence lacked explicit commit/build hash binding; retain and strictly validate bindings.",
+    "Browser assertions used obsolete food counts and assumed published barbell bench press was a draft; assert exact frozen inventory and a genuinely unpublished exercise."
+  ],
+  "correctedVerificationFailures": [
+    "Initial Chromium final suite stopped at the obsolete barbell bench press draft assertion. Focused Chromium/WebKit correction passed, then both complete suites passed. No content or application change was required.",
+    "Earlier synthetic backup fixtures used an incorrect button label and left owning routes before schemas initialized; fixtures were corrected. WebKit exposed a real connection ownership race and repeated-open preview overhead; application fixes retained existing timeouts and integrity assertions."
+  ],
+  "manualChecksRequired": [
+    "Real Android",
+    "Real iPhone/iPad",
+    "Human screen-reader testing",
+    "Actual personal workout flow",
+    "Actual nutrition flow",
+    "Actual backup/restore including native OS pickers and stable browser origin",
+    "Visual/UX preferences",
+    "Print output and subjective improvements"
+  ],
+  "deployment": {
+    "productionPerformed": false,
+    "domainConnected": false,
+    "automaticGitDeployment": "disabled",
+    "realPersonalTestDataCreated": false
+  },
+  "limitations": [
+    "Automated tests use isolated synthetic browser contexts, not owner data.",
+    "Source/machine verification is not independent human or clinical review.",
+    "Historical anatomy and SR Legacy composition are labelled historical; food samples do not establish Indian cultivar composition.",
+    "Recipe yield uses documented ingredient-mass estimation, not measured cooked yield or invented retention factors.",
+    "Optional media coverage is incomplete; no missing required local media binding remains.",
+    "Fresh-profile global restore requires initialization of versioned schemas through owning modules. IndexedDB is browser-profile/origin specific."
+  ]
+}
