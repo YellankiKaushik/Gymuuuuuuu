@@ -17,7 +17,14 @@ it("retains independent naming evidence and exact raw composition for gourd iden
     ),
   ).toEqual(matches);
   const foods = foodSchema.array().parse(foodJson);
-  for (const match of matches) {
+  const gourds = matches.filter((row) =>
+    ["food_bottle_gourd", "food_ash_gourd"].includes(row.foodId),
+  );
+  expect(gourds.map((row) => row.foodId).sort()).toEqual([
+    "food_ash_gourd",
+    "food_bottle_gourd",
+  ]);
+  for (const match of gourds) {
     const food = foods.find((row) => row.id === match.foodId)!;
     const profile = food.compositionProfiles[0]!;
     expect(profile.foodState).toBe("raw");
@@ -42,6 +49,33 @@ it("retains independent naming evidence and exact raw composition for gourd iden
   expect(
     onion.nutrients.find((row) => row.nutrientId === "iodine_ug"),
   ).toMatchObject({ value: 0, status: "measured" });
+});
+
+it("keeps fresh dill leaf naming distinct from seed and preserves the source preparation label", () => {
+  const match = matches.find((row) => row.foodId === "food_dill_leaves")!;
+  expect(match).toMatchObject({
+    fdcId: 172233,
+    description: "Dill weed, fresh",
+    sourceIds: ["uw_dill_leaf_identity_2026"],
+  });
+  const profile = foodSchema
+    .array()
+    .parse(foodJson)
+    .find((row) => row.id === match.foodId)!.compositionProfiles[0]!;
+  expect(profile.foodState).toBe("other");
+  expect(profile.label).toBe("Dill weed, fresh");
+  expect(profile.review.qualityNotes.join(" ")).toContain(
+    "Naming reference only",
+  );
+  expect(
+    reviews
+      .find((row) => row.id === match.foodId)
+      ?.fields.find((field) => field.path === "identity.fdc_172233")?.sourceIds,
+  ).toEqual(match.sourceIds);
+  expect(sources.find((row) => row.id === match.sourceIds[0])).toMatchObject({
+    sourceDate: null,
+    reuse: "brief_factual_paraphrase",
+  });
 });
 
 it("rejects ambiguous mappings, missing or blocked naming sources and future verification", () => {

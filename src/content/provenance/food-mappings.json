@@ -2741,5 +2741,38 @@
     "matchRationale": "UPOV GENIE identifies Benincasa hispida with English ash gourd, waxgourd and Chinese preserving melon names. Naming reference only; no cultivar-specific composition inferred. Source-specific US composition; cultivar and preparation variation limit generalisation.",
     "sourceSnapshotSha256": "77fc2eb5a91c39b684be049a8eef40862ae04db595816e654cac7a2b9302a6ce",
     "verifiedAt": "2026-10-08T03:12:46.015Z"
+  },
+  {
+    "foodId": "food_rolled_oats",
+    "fdcId": 2346396,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Oats, whole grain, rolled, old fashioned",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source-described whole-grain old-fashioned rolled-oat sample. No cooked or steel-cut state or household-volume conversion is inferred; the 40 g RACC is a source-reported reference serving, not an invented cup weight or personal intake target.",
+    "sourceSnapshotSha256": "1ff2ac0017b1aecacb91efc7d3c19358e911bde568f127b939115fb0dbe98af8",
+    "verifiedAt": "2026-10-08T07:50:44.081Z"
+  },
+  {
+    "foodId": "food_soy_milk",
+    "fdcId": 2257044,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Soy milk, sweetened, plain, refrigerated",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "The source's sweetened, plain, refrigerated soy-milk sample only. Unsweetened shelf-stable soy beverage retains its separate identity and immutable composition; no brand, home preparation, fortification level or volume-to-mass conversion is generalized.",
+    "sourceSnapshotSha256": "f2668fa811b0a056a3acd57eb5703fdbc6aa0b944a52675f47742d79a67b96f0",
+    "verifiedAt": "2026-10-08T07:50:44.081Z"
+  },
+  {
+    "foodId": "food_dill_leaves",
+    "fdcId": 172233,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Dill weed, fresh",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Naming reference only: UW-Madison Extension distinguishes dill weed (the leaves) from dill seed. This maps the source-described fresh herb sample only; no cooked/dried state, seed composition or Indian cultivar composition is inferred.",
+    "sourceSnapshotSha256": "f61add9406a5421edab51f3faf4c014092ead5fa68a0d7980b65407914b8a8f0",
+    "verifiedAt": "2026-10-08T07:50:44.081Z"
   }
 ]

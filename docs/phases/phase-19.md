@@ -219,3 +219,33 @@ Budgets remain 700329 gzip JavaScript bytes and 423218 gzip public JSON bytes.
 The current 687-route audit and hosted verification of this newer checkpoint
 remain pending. Remaining identities retain explicit content/source blocks;
 this is not final completion or authorization to deploy production.
+
+The 505-record build now has complete route evidence: 687/687 checks passed in
+19.6 minutes, and the strict current-build report passed. The retained report is
+phase19-routes-505-checkpoint.json, scoped to commit 30003c7 and build
+2026-10-08T07:30:56.968Z. Hosted Chromium and WebKit each passed 244/244 browser
+cases; Firefox and combined CI remain pending until their completed logs are
+inspected. No later build inherits those results.
+
+The next checkpoint adds exact USDA rolled-oat, sweetened refrigerated soy-milk
+and fresh-dill samples. All 261 earlier foods, 270 mappings, 505 publications and
+128 approved sources remain unchanged. Complete pinned dataset verification
+covers 273 profiles: 11 Foundation records and 262 SR Legacy records. Separate
+UW-Madison naming evidence distinguishes dill leaves from seed and supplies no
+composition values. There are now 264 public foods, 508 factual publications and
+636 search documents; 78 food identities remain unmapped.
+
+Complete checks and coverage pass 332 tests in 90 files. All six new-page
+Chromium/WebKit checks pass. Unchanged budgets measure 700747 gzip JavaScript
+bytes and 426551 gzip public JSON bytes. Stale publication metadata correctly
+rejected the first validation attempt before the expanded manifest was explicitly
+regenerated. The 690-URL current-build route audit and hosted checks for this
+newer checkpoint remain pending; Phase 19 is still in progress.
+
+Completed 505-record hosted evidence is retained in
+phase19-ci-505-checkpoint.json: each browser passed all 244 cases. The combined
+CI job exceeded its unchanged 30-minute limit during the separate 169-case
+accessibility rerun; GitHub's annotation confirms the cause. That rerun is
+incomplete, not a pass. Accessibility now has a separate mandatory CI job with
+clean installation and complete checks; both jobs retain their limits and all
+assertions. Fresh hosted verification of the correction remains required.

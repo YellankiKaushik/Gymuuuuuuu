@@ -74,3 +74,42 @@ it("retains existing recipe version pins after extending the composition library
     ),
   ).not.toThrow();
 });
+
+it("preserves rolled-oat and refrigerated sweetened-soy samples without inferred preparation or cup conversions", () => {
+  for (const [id, fdcId, label] of [
+    ["food_rolled_oats", 2346396, "Oats, whole grain, rolled, old fashioned"],
+    ["food_soy_milk", 2257044, "Soy milk, sweetened, plain, refrigerated"],
+    ["food_dill_leaves", 172233, "Dill weed, fresh"],
+  ] as const) {
+    const profile = records.find((row) => row.id === id)!
+      .compositionProfiles[0]!;
+    const source = snapshots.find((row) => row.fdcId === fdcId)!;
+    expect(profile.label).toBe(label);
+    expect(profile.foodState).toBe("other");
+    expect(profile.sourceRecords[0]!.externalFoodId).toBe(String(fdcId));
+    expect(
+      profile.nutrients.find((row) => row.nutrientId === "protein_g")!.value,
+    ).toBe(
+      source.foodNutrients.find((row) => row.nutrient.id === 1003)!.amount,
+    );
+    expect(
+      profile.nutrients.find((row) => row.nutrientId === "omega_3_g"),
+    ).toMatchObject({ value: null, status: "not_available" });
+    expect(mappings.find((row) => row.foodId === id)!.verifiedAt).toMatch(
+      /^2026-10-08T/,
+    );
+  }
+  const oats = records.find((row) => row.id === "food_rolled_oats")!
+    .compositionProfiles[0]!;
+  expect(oats.portions).toHaveLength(1);
+  expect(oats.portions[0]).toMatchObject({
+    label: "1 RACC",
+    grams: 40,
+    status: "source_reported",
+  });
+  expect(oats.portions.some((row) => /cup/i.test(row.label))).toBe(false);
+  expect(
+    records.find((row) => row.id === "food_soy_beverage_unsweetened")!
+      .compositionProfiles[0]!.sourceRecords[0]!.externalFoodId,
+  ).toBe("1999630");
+});

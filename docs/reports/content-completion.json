@@ -1978,8 +1978,8 @@
     {
       "module": "foods",
       "totalIdentities": 342,
-      "publishedIdentities": 261,
-      "draftIdentities": 81,
+      "publishedIdentities": 264,
+      "draftIdentities": 78,
       "blockedIdentities": [
         {
           "id": "food_custard_apple",
@@ -2115,13 +2115,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_dill_leaves",
-          "slug": "dill-leaves",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_sorrel_leaves",
           "slug": "sorrel-leaves",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2206,13 +2199,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_soy_milk",
-          "slug": "soy-milk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_basmati_rice",
           "slug": "basmati-rice",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2292,13 +2278,6 @@
         {
           "id": "food_proso_millet",
           "slug": "proso-millet",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_rolled_oats",
-          "slug": "rolled-oats",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6547,9 +6526,9 @@
     },
     {
       "module": "foods",
-      "published": 261,
-      "withPublicationProvenance": 261,
-      "inSearch": 261,
+      "published": 264,
+      "withPublicationProvenance": 264,
+      "inSearch": 264,
       "missingSourceProvenance": []
     },
     {
@@ -6632,7 +6611,7 @@
     },
     {
       "module": "foods",
-      "eligiblePublishedRecords": 261,
+      "eligiblePublishedRecords": 264,
       "families": [
         "foods"
       ],
@@ -10041,6 +10020,30 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_rolled_oats",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_soy_milk",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_dill_leaves",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -11066,9 +11069,9 @@
     {
       "module": "foods",
       "missingVerifiedFactualRecords": 0,
-      "missingDatasetMappings": 81,
+      "missingDatasetMappings": 78,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 261,
+      "independentHumanReviewPending": 264,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12990,6 +12993,21 @@
         "Sequence cues are not anatomical models or complete technique demonstrations.",
         "Machine comparison with sourced steps only; no independent human review."
       ]
+    },
+    {
+      "id": "uw_dill_leaf_identity_2026",
+      "url": "https://hort.extension.wisc.edu/articles/dill-anethum-graveolens/",
+      "version": "Revised September 2026; selected Culinary Uses of Dill paragraph",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T07:39:18Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original naming observation with linked attribution. No source photos, illustrations, horticultural text blocks or tables reproduced; no open licence or bulk reuse permission asserted.",
+      "limitations": [
+        "Names the leaves as dill weed, distinct from seed; not a nutrient-composition source or proof of cultivar equivalence.",
+        "Only publication month supplied; exact day unavailable.",
+        "No independent human or clinical review of this extraction."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -14304,10 +14322,10 @@
     "src/features/supplements/export.ts",
     "src/features/workout-tracker/backup.ts"
   ],
-  "foodProfiles": 270,
-  "numericFoodValues": 9934,
+  "foodProfiles": 273,
+  "numericFoodValues": 10011,
   "numericCoverage": {
-    "foodRecordsWithComposition": 261,
+    "foodRecordsWithComposition": 264,
     "nutrientArticlesWithReferenceRows": 35,
     "nutrientReferenceRows": 35,
     "publicRecipesWithCalculatedNutrition": 24,
@@ -14319,8 +14337,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 633,
-    "factualRecords": 505
+    "documents": 636,
+    "factualRecords": 508
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -14597,7 +14615,10 @@
     "food_soy_beverage_unsweetened",
     "food_red_onion",
     "food_bottle_gourd",
-    "food_ash_gourd"
+    "food_ash_gourd",
+    "food_rolled_oats",
+    "food_soy_milk",
+    "food_dill_leaves"
   ],
   "missingMedia": [
     {
@@ -16396,6 +16417,21 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "foods",
+      "id": "food_rolled_oats",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_soy_milk",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_dill_leaves",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "nutrients",
       "id": "iron_mg",
       "instructionalMediaRequired": false
@@ -16990,12 +17026,12 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T07:30:56.968Z",
-    "expected": 687,
+    "buildDate": "2026-10-08T07:56:18.902Z",
+    "expected": 690,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 687,
-    "ignoredStaleReports": 682,
+    "unmeasured": 690,
+    "ignoredStaleReports": 687,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
       "No manual devices, screen-reader interaction, print output or complete interactive-state traversal is claimed."
@@ -20411,6 +20447,24 @@
       },
       {
         "path": "/foods/ash-gourd",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/rolled-oats",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/soy-milk",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/dill-leaves",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

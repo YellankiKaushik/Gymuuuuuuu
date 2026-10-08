@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": "505 factual publications",
+  "commit": "30003c7b7e2aebe52fb97d2f03e9aff6c1af680f",
+  "repository": "YellankiKaushik/Gymuuuuuuu",
+  "verificationMethod": "Completed GitHub job status, annotations and decoded logs inspected; results apply only to this commit.",
+  "productionDeployment": "disabled",
+  "ci": {
+    "runId": 37744356258,
+    "jobId": 113202200326,
+    "conclusion": "cancelled",
+    "annotation": "The job has exceeded the maximum execution time of 30m0s",
+    "unit": { "passed": 330, "failed": 0, "files": 90 },
+    "coverage": { "passed": 330, "failed": 0, "files": 90 },
+    "chromium": { "passed": 244, "failed": 0, "duration": "17.9m" },
+    "accessibility": {
+      "selected": 169,
+      "result": "incomplete",
+      "reason": "Combined job limit reached during the separately requested rerun; no completed-suite pass claimed."
+    },
+    "npmAudit": "not reached in this hosted job; the clean local checkpoint audit reported zero vulnerabilities"
+  },
+  "crossBrowser": {
+    "runId": 37744356386,
+    "conclusion": "success",
+    "jobs": [
+      { "browser": "chromium", "jobId": 113202200944, "passed": 244, "failed": 0, "duration": "17.3m" },
+      { "browser": "firefox", "jobId": 113202201363, "passed": 244, "failed": 0, "duration": "27.8m" },
+      { "browser": "webkit", "jobId": 113202201627, "passed": 244, "failed": 0, "duration": "17.6m" }
+    ]
+  },
+  "routeAudit": {
+    "report": "phase19-routes-505-checkpoint.json",
+    "browser": "chromium",
+    "buildDate": "2026-10-08T07:30:56.968Z",
+    "passed": 687,
+    "failed": 0,
+    "unmeasured": 0
+  },
+  "correction": {
+    "decision": "docs/decisions/phase19-independent-accessibility-ci.md",
+    "change": "Accessibility has a separate mandatory job with clean installation and full checks. Existing 30-minute job limits, assertions, workers and test timeouts remain unchanged.",
+    "verification": "Fresh hosted results required; this report does not claim the newer configuration has passed."
+  }
+}

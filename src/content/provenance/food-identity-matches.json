@@ -18,5 +18,15 @@
     ],
     "rationale": "UPOV GENIE identifies Benincasa hispida with English ash gourd, waxgourd and Chinese preserving melon names. Naming reference only; no cultivar-specific composition inferred.",
     "verifiedAt": "2026-10-08T03:12:46.015Z"
+  },
+  {
+    "foodId": "food_dill_leaves",
+    "fdcId": 172233,
+    "description": "Dill weed, fresh",
+    "sourceIds": [
+      "uw_dill_leaf_identity_2026"
+    ],
+    "rationale": "Naming reference only: UW-Madison Extension distinguishes dill weed (the leaves) from dill seed. This maps the source-described fresh herb sample only; no cooked/dried state, seed composition or Indian cultivar composition is inferred.",
+    "verifiedAt": "2026-10-08T07:50:44.081Z"
   }
 ]

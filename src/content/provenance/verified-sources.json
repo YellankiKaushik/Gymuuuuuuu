@@ -2245,5 +2245,23 @@
       "Sequence cues are not anatomical models or complete technique demonstrations.",
       "Machine comparison with sourced steps only; no independent human review."
     ]
+  },
+  {
+    "id": "uw_dill_leaf_identity_2026",
+    "title": "Dill, Anethum graveolens — culinary naming",
+    "publisher": "University of Wisconsin-Madison Division of Extension; Susan Mahr",
+    "url": "https://hort.extension.wisc.edu/articles/dill-anethum-graveolens/",
+    "sourceVersion": "Revised September 2026; selected Culinary Uses of Dill paragraph",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T07:39:18Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original naming observation with linked attribution. No source photos, illustrations, horticultural text blocks or tables reproduced; no open licence or bulk reuse permission asserted.",
+    "limitations": [
+      "Names the leaves as dill weed, distinct from seed; not a nutrient-composition source or proof of cultivar equivalence.",
+      "Only publication month supplied; exact day unavailable.",
+      "No independent human or clinical review of this extraction."
+    ]
   }
 ]
