@@ -1,0 +1,20 @@
+[
+  {
+    "id": "src_nih_ods_amino_nitrate_sections_2026",
+    "title": "Exercise and Athletic Performance — arginine, beetroot and BCAA sections",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+    "sourceVersion": "Selected arginine, beetroot and branched-chain amino-acid sections inspected 2026-10-07; publisher update date not extracted",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-07T21:31:01Z",
+    "lastReviewedAt": "2026-10-07",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted.",
+    "limitations": [
+      "Machine source verification; no independent human or clinical review.",
+      "Selected NIH summary sections inspected; cited primary studies were not independently reappraised.",
+      "Publisher update date and current anti-doping/regulatory status have not been verified."
+    ]
+  }
+]

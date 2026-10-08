@@ -1,0 +1,9 @@
+# USDA source-dataset verification
+
+The ingestion gate can now compare every repository-selected record with the exact complete USDA JSON payload, rather than relying only on individual snapshot hashes. The manifest distinguishes the uncompressed JSON hash from the ZIP-container hash. Downloaded archives remain outside Git; selected source records, provenance and import scripts remain repository owned.
+
+Comparison permits the existing deliberate projection of unused top-level source metadata. It requires the full food-nutrient and food-portion arrays, source ID, description, data type and publication date. Amounts, missing fields, derivation metadata and serving masses cannot change. Null placeholders in the pinned Foundation payload are skipped because they are not food identities; duplicate FDC identities are rejected.
+
+Some initial selected snapshots contain the UTF-8 mojibake prefix U+00C2 before the microgram symbol. Original USDA JSON and the separately retained April 2026 official nutrient.csv establish UG for the same nutrient IDs. The verifier permits only that exact encoding repair, with no scaling or numeric conversion, and rejects unsupported nutrient IDs. The unit dictionary includes source/version, archive and CSV hashes, actual extraction time and 477 retained dictionary entries. Its bytes are pinned by the validator. Existing published quantities and recipe versions are unchanged.
+
+Validation against retained original downloads confirms 244 unique SR Legacy and 7 Foundation source records for the 243-food/251-profile release. The thirteen further identity mappings under investigation are not authorized by this decision alone; publication still requires exact identity/preparation verification and the full release checks.

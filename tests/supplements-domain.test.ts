@@ -37,9 +37,12 @@ it("keeps all draft ingredient claims and doses hidden; requires atomic claim sc
     "ingredient_caffeine",
     "ingredient_beta_alanine",
     "ingredient_citrulline_malate",
+    "ingredient_arginine",
+    "ingredient_dietary_nitrate",
+    "ingredient_branched_chain_amino_acids",
   ]);
   expect(publicSupplements.slice(0, 2).flatMap((r) => r.claims)).toEqual([]);
-  expect(publicSupplements.flatMap((r) => r.claims)).toHaveLength(4);
+  expect(publicSupplements.flatMap((r) => r.claims)).toHaveLength(7);
   expect(publicSupplements.every((r) => r.antiDoping === null)).toBe(true);
   expect(() => validateSupplementsRelease()).not.toThrow();
   expect(

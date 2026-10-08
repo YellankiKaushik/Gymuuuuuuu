@@ -1,0 +1,9 @@
+# Document-bound client hydration
+
+Rapid navigation from a source record to the supplement evidence filter exposed a WebKit hydration failure. Diagnostics showed a completed document, absent router bootstrap and no attached React node keys; the SSR-disabled controls remained unusable. Waiting for document parsing alone did not resolve it. A 30-case stress run with an Await-only correction passed 21 and failed 9; it is not recorded as a successful correction.
+
+Startup now waits for both the parsed document and the streamed router bootstrap, registers React hydration with TanStack Await, and binds bootstrap cleanup and router rendering to the document and bootstrap object that started initialization. A pagehide event invalidates that initialization. Pending initialization must not clear a later document's bootstrap through a retained WindowProxy. The supported start-client-core client entry supplies the same router, Start options and serialization adapters; the already-installed exact 1.170.34 version is now an explicit dependency. No dependency version changes or CSP relaxations were made.
+
+The new regression verifies the supplement filter is enabled before using it, checks exact published output and retains non-personal hydration diagnostics on failure. Existing eight-visit cached-hydration checks now include the supplement evidence filter. Private workspace guards remain in place; no personal record is added to server rendering or metadata.
+
+The document-bound correction passes 30/30 repeated Chromium/WebKit cases, a clean npm install, all 300 engineering tests and unchanged performance budgets. Full all-module verification passes 382/382 Chromium/WebKit cases, with an additional 2/2 canonical back/forward document-control checks. No final completion or manual device validation is claimed.

@@ -1,0 +1,251 @@
+[
+  {
+    "id": "ingredient_arginine",
+    "slug": "ingredient-arginine",
+    "title": "L-Arginine",
+    "entityType": "ingredient",
+    "category": "protein_amino_acid",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "Proposed physiological mechanisms do not establish improved exercise performance.",
+          "sourceIds": [
+            "src_nih_ods_amino_nitrate_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_arginine_ods_summary",
+        "ingredientIdentityId": "ingredient_arginine",
+        "outcomeId": "claim_ingredient_arginine_ods_summary",
+        "outcomeDefinition": "NIH describes limited, conflicting research with little or no overall performance enhancement.",
+        "population": "Healthy active adults",
+        "trainingStatus": "Varied",
+        "ageAndSexLimits": "Exact age/sex distribution for this combined outcome was not extracted; no extrapolation to children or clinical populations.",
+        "baselineStatus": "Not extracted; no deficiency or personal baseline inferred.",
+        "formulation": "L-arginine",
+        "protocol": null,
+        "comparator": "Study controls; exact outcome-specific comparators not extracted.",
+        "timeframe": "Short-term studies; no single regimen extracted.",
+        "effectDirection": "no_clear_benefit",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Summary of the named government reference, without independent formal evidence grading.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "Selected source summary only; no independent appraisal of all underlying studies.",
+          "No individual response, personal dose, product certification, jurisdictional approval or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-07",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "Reported adverse effects include gastrointestinal discomfort and reduced blood pressure; longer-term high-dose safety is unknown.",
+          "sourceIds": [
+            "src_nih_ods_amino_nitrate_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_amino_nitrate_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "ingredient_dietary_nitrate",
+    "slug": "ingredient-dietary-nitrate",
+    "title": "Dietary Nitrate or Beetroot Juice",
+    "entityType": "ingredient",
+    "category": "performance",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "Juice and concentrate findings do not automatically apply to powders; nitrate content varies.",
+          "sourceIds": [
+            "src_nih_ods_amino_nitrate_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_dietary_nitrate_ods_summary",
+        "ingredientIdentityId": "ingredient_dietary_nitrate",
+        "outcomeId": "claim_ingredient_dietary_nitrate_ods_summary",
+        "outcomeDefinition": "Beetroot juice sometimes improves endurance tests, with less consistent results in elite athletes.",
+        "population": "Recreational participants and athletes",
+        "trainingStatus": "Recreational and elite contexts distinguished",
+        "ageAndSexLimits": "Exact age/sex distribution for this combined outcome was not extracted; no extrapolation to children or clinical populations.",
+        "baselineStatus": "Not extracted; no deficiency or personal baseline inferred.",
+        "formulation": "Beetroot juice or concentrate",
+        "protocol": null,
+        "comparator": "Placebo",
+        "timeframe": "Single use or several weeks; no single regimen extracted.",
+        "effectDirection": "mixed",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Summary of the named government reference, without independent formal evidence grading.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "Selected source summary only; no independent appraisal of all underlying studies.",
+          "No individual response, personal dose, product certification, jurisdictional approval or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-07",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "Short-term observations do not establish long-term safety; beetroot pigments can change urine colour.",
+          "sourceIds": [
+            "src_nih_ods_amino_nitrate_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_amino_nitrate_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "ingredient_branched_chain_amino_acids",
+    "slug": "ingredient-branched-chain-amino-acids",
+    "title": "Branched-Chain Amino Acids",
+    "entityType": "ingredient",
+    "category": "protein_amino_acid",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "Leucine, isoleucine and valine are essential amino acids.",
+          "sourceIds": [
+            "src_nih_ods_amino_nitrate_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_branched_chain_amino_acids_ods_summary",
+        "ingredientIdentityId": "ingredient_branched_chain_amino_acids",
+        "outcomeId": "claim_ingredient_branched_chain_amino_acids_ods_summary",
+        "outcomeDefinition": "Evidence for additional muscle-protein synthesis beyond sufficient high-quality dietary protein is inconsistent.",
+        "population": "Study participants; exact combined-outcome distribution not extracted.",
+        "trainingStatus": "Not extracted",
+        "ageAndSexLimits": "Exact age/sex distribution for this combined outcome was not extracted; no extrapolation to children or clinical populations.",
+        "baselineStatus": "Not extracted; no deficiency or personal baseline inferred.",
+        "formulation": "Branched-chain amino acids",
+        "protocol": null,
+        "comparator": "Adequate high-quality dietary protein is the relevant context; exact combined-outcome comparators not extracted.",
+        "timeframe": "Short-term studies; no single regimen extracted.",
+        "effectDirection": "mixed",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Summary of the named government reference, without independent formal evidence grading.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "Selected source summary only; no independent appraisal of all underlying studies.",
+          "No individual response, personal dose, product certification, jurisdictional approval or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-07",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "Leucine-only safety observations do not approve every BCAA formulation or individual use.",
+          "sourceIds": [
+            "src_nih_ods_amino_nitrate_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_amino_nitrate_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-07",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  }
+]

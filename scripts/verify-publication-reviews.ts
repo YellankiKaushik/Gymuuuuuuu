@@ -194,12 +194,40 @@ for (const r of publicSupplements)
     id: r.id,
     slug: r.slug,
     fields: [
-      field(
-        "sections",
-        r.sourceIds.map((id) =>
-          id === "src_nih_ods_faq" ? "nih_ods_faq" : id,
+      ...r.sections.map((section) =>
+        field(
+          `sections.${section.id}`,
+          section.content.sourceIds.map((id) =>
+            id === "src_nih_ods_faq" ? "nih_ods_faq" : id,
+          ),
         ),
       ),
+      ...r.claims.flatMap((claim) => [
+        field(`claims.${claim.id}`, claim.sourceIds),
+        ...claim.harms.map((harm, index) =>
+          field(`claims.${claim.id}.harms.${index}`, harm.sourceIds),
+        ),
+        ...(claim.protocol
+          ? [
+              field(`claims.${claim.id}.protocol`, claim.protocol.sourceIds),
+              ...claim.protocol.safetyLimits.map((limit, index) =>
+                field(
+                  `claims.${claim.id}.protocol.safetyLimits.${index}`,
+                  limit.sourceIds,
+                ),
+              ),
+            ]
+          : []),
+      ]),
+      ...r.safety.map((safety) =>
+        field(
+          `safety.${safety.id}`,
+          safety.content.sourceIds.map((id) =>
+            id === "src_nih_ods_faq" ? "nih_ods_faq" : id,
+          ),
+        ),
+      ),
+      ...(r.antiDoping ? [field("antiDoping", r.antiDoping.sourceIds)] : []),
     ],
   });
 for (const r of muscleRecords.filter((r) => r.contentStatus === "published"))

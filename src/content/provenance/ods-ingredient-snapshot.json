@@ -1,0 +1,32 @@
+{
+  "extractedAt": "2026-10-07T21:31:01Z",
+  "definitionsSha256": "23ac11f61f9980d475e06e645d2a8445332f5bfc9bfc23e2ca765e5ea59b4edf",
+  "sourcesSha256": "7219717b93b728073190050159de237387309d5a14b3a62d09a1d0208aa3fb2f",
+  "recordIds": [
+    "ingredient_arginine",
+    "ingredient_dietary_nitrate",
+    "ingredient_branched_chain_amino_acids"
+  ],
+  "moduleSource": {
+    "id": "src_nih_ods_amino_nitrate_sections_2026",
+    "title": "Exercise and Athletic Performance — arginine, beetroot and BCAA sections",
+    "publisher": "NIH Office of Dietary Supplements",
+    "year": 2026,
+    "type": "government_reference",
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+    "roles": [
+      "ingredient_education",
+      "outcome_specific_findings",
+      "safety_context"
+    ],
+    "licenseNote": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted. Year is the observation year, not a verified publisher update date."
+  },
+  "sourceHtmlSha256": null,
+  "sourceCaptureMethod": "Selected primary NIH ODS sections inspected through the web tool. Direct HTML capture returned HTTP 403; no raw HTML archive or hash is claimed.",
+  "sourceLocators": [
+    "Arginine: efficacy and safety",
+    "Beetroot or beet juice: efficacy, safety and implications for use",
+    "Branched-chain amino acids: efficacy, safety and implications for use"
+  ],
+  "reviewMethod": "Compared original brief factual summaries against the named NIH sections; byte-pinned definitions, stable identities and automated source/schema validation. No independent human review."
+}

@@ -4975,8 +4975,8 @@
     {
       "module": "supplements",
       "totalIdentities": 272,
-      "publishedIdentities": 4,
-      "draftIdentities": 268,
+      "publishedIdentities": 7,
+      "draftIdentities": 265,
       "blockedIdentities": [
         {
           "id": "topic_supplement_definition",
@@ -5665,13 +5665,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "ingredient_dietary_nitrate",
-          "slug": "ingredient-dietary-nitrate",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "ingredient_glycerol",
           "slug": "ingredient-glycerol",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -5805,13 +5798,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "ingredient_branched_chain_amino_acids",
-          "slug": "ingredient-branched-chain-amino-acids",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "ingredient_leucine",
           "slug": "ingredient-leucine",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -5821,13 +5807,6 @@
         {
           "id": "ingredient_glutamine",
           "slug": "ingredient-glutamine",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "ingredient_arginine",
-          "slug": "ingredient-arginine",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6932,9 +6911,9 @@
     },
     {
       "module": "supplements",
-      "published": 4,
-      "withPublicationProvenance": 4,
-      "inSearch": 4,
+      "published": 7,
+      "withPublicationProvenance": 7,
+      "inSearch": 7,
       "missingSourceProvenance": []
     }
   ],
@@ -7028,7 +7007,7 @@
     },
     {
       "module": "supplements",
-      "eligiblePublishedRecords": 4,
+      "eligiblePublishedRecords": 7,
       "families": [
         "supplements"
       ],
@@ -10876,6 +10855,30 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_arginine",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_dietary_nitrate",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_branched_chain_amino_acids",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     }
@@ -10974,10 +10977,10 @@
     },
     {
       "module": "supplements",
-      "missingVerifiedFactualRecords": 268,
+      "missingVerifiedFactualRecords": 265,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 4,
+      "independentHumanReviewPending": 7,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     }
@@ -12472,6 +12475,21 @@
         "Sequence cues, not complete technique demonstrations or anatomical models.",
         "No independent human or clinical review."
       ]
+    },
+    {
+      "id": "src_nih_ods_amino_nitrate_sections_2026",
+      "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+      "version": "Selected arginine, beetroot and branched-chain amino-acid sections inspected 2026-10-07; publisher update date not extracted",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-07T21:31:01Z",
+      "reviewDate": "2026-10-07",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted.",
+      "limitations": [
+        "Machine source verification; no independent human or clinical review.",
+        "Selected NIH summary sections inspected; cited primary studies were not independently reappraised.",
+        "Publisher update date and current anti-doping/regulatory status have not been verified."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -13796,8 +13814,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 584,
-    "factualRecords": 456
+    "documents": 587,
+    "factualRecords": 459
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -16258,17 +16276,32 @@
       "module": "supplements",
       "id": "ingredient_citrulline_malate",
       "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_arginine",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_dietary_nitrate",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_branched_chain_amino_acids",
+      "instructionalMediaRequired": false
     }
   ],
   "missingMediaFiles": [],
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-07T21:22:28.206Z",
-    "expected": 638,
+    "buildDate": "2026-10-07T22:09:02.777Z",
+    "expected": 641,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 638,
+    "unmeasured": 641,
     "ignoredStaleReports": 621,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -20099,6 +20132,24 @@
       },
       {
         "path": "/supplements/ingredients/ingredient-citrulline-malate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-arginine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-dietary-nitrate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-branched-chain-amino-acids",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

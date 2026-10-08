@@ -14,8 +14,8 @@ Status: **in progress**. Production deployment remains disabled. Counts are reco
 | meal-templates | 3 | 3 | 0 |
 | recovery | 124 | 8 | 116 |
 | cardio | 202 | 12 | 190 |
-| supplements | 272 | 4 | 268 |
+| supplements | 272 | 7 | 265 |
 
-182 route patterns implemented. Current-build browser evidence: 0 passed, 0 failed, 638 unmeasured out of 638 route/record URLs. Stale build or content reports are excluded. 251 food profiles, 9265 numeric food values. Every remaining identity and its block reason appears in the JSON report.
+182 route patterns implemented. Current-build browser evidence: 0 passed, 0 failed, 641 unmeasured out of 641 route/record URLs. Stale build or content reports are excluded. 251 food profiles, 9265 numeric food values. Every remaining identity and its block reason appears in the JSON report.
 
 No independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. This report does not certify completion.

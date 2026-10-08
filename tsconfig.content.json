@@ -7,6 +7,7 @@
     "scripts/verify-publication-reviews.ts",
     "scripts/build-search-index.ts",
     "scripts/phase19-*.ts",
-    "scripts/compile-*.ts"
+    "scripts/compile-*.ts",
+    "scripts/verify-usda-dataset.ts"
   ]
 }

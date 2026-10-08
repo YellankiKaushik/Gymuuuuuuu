@@ -9871,7 +9871,21 @@
     },
     "fields": [
       {
-        "path": "sections",
+        "path": "sections.context",
+        "sourceIds": [
+          "nih_ods_faq"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "sections.quality",
+        "sourceIds": [
+          "nih_ods_faq"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
         "sourceIds": [
           "nih_ods_faq"
         ],
@@ -9896,7 +9910,21 @@
     },
     "fields": [
       {
-        "path": "sections",
+        "path": "sections.context",
+        "sourceIds": [
+          "nih_ods_faq"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "sections.quality",
+        "sourceIds": [
+          "nih_ods_faq"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
         "sourceIds": [
           "nih_ods_faq"
         ],
@@ -9921,10 +9949,38 @@
     },
     "fields": [
       {
-        "path": "sections",
+        "path": "sections.scope",
         "sourceIds": [
           "src_beta_maximal_meta_2024",
           "src_beta_repeated_sprint_meta_2026",
+          "src_nih_ods_performance_hp"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "sections.quality",
+        "sourceIds": [
+          "src_nih_ods_performance_hp"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_beta_maximal",
+        "sourceIds": [
+          "src_beta_maximal_meta_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_beta_repeated_sprints",
+        "sourceIds": [
+          "src_beta_repeated_sprint_meta_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
           "src_nih_ods_performance_hp"
         ],
         "kind": "sourced_education"
@@ -9948,10 +10004,155 @@
     },
     "fields": [
       {
-        "path": "sections",
+        "path": "sections.scope",
         "sourceIds": [
           "src_citrulline_malate_meta_2026",
           "src_nih_ods_performance_hp"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "sections.quality",
+        "sourceIds": [
+          "src_nih_ods_performance_hp"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_cit_performance",
+        "sourceIds": [
+          "src_citrulline_malate_meta_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_cit_effort",
+        "sourceIds": [
+          "src_citrulline_malate_meta_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_performance_hp"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_arginine",
+    "slug": "ingredient-arginine",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_arginine_ods_summary",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_dietary_nitrate",
+    "slug": "ingredient-dietary-nitrate",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_dietary_nitrate_ods_summary",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_branched_chain_amino_acids",
+    "slug": "ingredient-branched-chain-amino-acids",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-07",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_branched_chain_amino_acids_ods_summary",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_amino_nitrate_sections_2026"
         ],
         "kind": "sourced_education"
       }

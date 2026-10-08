@@ -584,7 +584,10 @@
     "supplement_ingredient:ingredient_creatine_monohydrate",
     "supplement_ingredient:ingredient_caffeine",
     "supplement_ingredient:ingredient_beta_alanine",
-    "supplement_ingredient:ingredient_citrulline_malate"
+    "supplement_ingredient:ingredient_citrulline_malate",
+    "supplement_ingredient:ingredient_arginine",
+    "supplement_ingredient:ingredient_dietary_nitrate",
+    "supplement_ingredient:ingredient_branched_chain_amino_acids"
   ],
   "postings": {
     "3": [
@@ -774,7 +777,8 @@
       509,
       525,
       528,
-      529
+      529,
+      586
     ],
     "acromial": [
       174
@@ -946,6 +950,9 @@
     "amaranth": [
       274,
       344
+    ],
+    "amino": [
+      586
     ],
     "amount": [
       222
@@ -1501,7 +1508,8 @@
       321
     ],
     "beetroot": [
-      264
+      264,
+      585
     ],
     "begins": [
       564
@@ -1670,6 +1678,9 @@
     ],
     "bran": [
       400
+    ],
+    "branched-chain": [
+      586
     ],
     "brazil": [
       358
@@ -2555,7 +2566,8 @@
       518,
       521,
       524,
-      530
+      530,
+      585
     ],
     "differ": [
       192
@@ -3897,7 +3909,8 @@
     ],
     "juice": [
       478,
-      479
+      479,
+      585
     ],
     "k": [
       503
@@ -3946,6 +3959,9 @@
     ],
     "kohlrabi": [
       263
+    ],
+    "l-arginine": [
+      584
     ],
     "label": [
       40
@@ -4637,6 +4653,9 @@
     "nine": [
       217
     ],
+    "nitrate": [
+      585
+    ],
     "no": [
       219,
       221
@@ -4953,7 +4972,8 @@
       236,
       238,
       560,
-      563
+      563,
+      585
     ],
     "orange": [
       285,
