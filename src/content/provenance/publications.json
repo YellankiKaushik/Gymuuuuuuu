@@ -14334,5 +14334,151 @@
       "No independent human or clinical review.",
       "See each record's source-specific limitations and missing data."
     ]
+  },
+  {
+    "module": "programs",
+    "id": "program_general_fitness_2_day",
+    "slug": "general-fitness-2-day",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "schedule.arrangement",
+        "sourceIds": [
+          "original_general_fitness_2_day_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "prescriptions.progression.safety.timeAllocation",
+        "sourceIds": [
+          "nhs_strength_flexibility_2026",
+          "nhs_warmup_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_goblet_squat",
+        "sourceIds": [
+          "ace_goblet_squat",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_dumbbell_romanian_deadlift",
+        "sourceIds": [
+          "ace_rdl_2025",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_dumbbell_bench_press",
+        "sourceIds": [
+          "ace_dumbbell_chest_press",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_one_arm_dumbbell_row",
+        "sourceIds": [
+          "ace_single_arm_row",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_bird_dog",
+        "sourceIds": [
+          "ace_bird_dog",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "programs",
+    "id": "program_general_fitness_3_day",
+    "slug": "general-fitness-3-day",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "schedule.arrangement",
+        "sourceIds": [
+          "original_general_fitness_3_day_v1"
+        ],
+        "kind": "original_authorship"
+      },
+      {
+        "path": "prescriptions.progression.safety.timeAllocation",
+        "sourceIds": [
+          "nhs_strength_flexibility_2026",
+          "nhs_warmup_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_goblet_squat",
+        "sourceIds": [
+          "ace_goblet_squat",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_dumbbell_romanian_deadlift",
+        "sourceIds": [
+          "ace_rdl_2025",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_dumbbell_bench_press",
+        "sourceIds": [
+          "ace_dumbbell_chest_press",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_one_arm_dumbbell_row",
+        "sourceIds": [
+          "ace_single_arm_row",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "technique.exercise_bird_dog",
+        "sourceIds": [
+          "ace_bird_dog",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
   }
 ]

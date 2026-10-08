@@ -147,13 +147,13 @@ export type FinderInput = {
   goal: string;
   experience: string;
   days: number;
-  minutes: number;
+  minutes: number | null;
   equipmentIds: string[];
   environment: string;
   style: string;
   eligible: "yes" | "no" | "unsure";
 };
-export const finderVersion = "1.0.0";
+export const finderVersion = "1.1.0";
 export function findPrograms(
   input: FinderInput,
   records: readonly Program[] = publishedPrograms,
@@ -163,8 +163,8 @@ export function findPrograms(
     !Number.isInteger(input.days) ||
     input.days < 1 ||
     input.days > 7 ||
-    !Number.isFinite(input.minutes) ||
-    input.minutes <= 0
+    (input.minutes !== null &&
+      (!Number.isFinite(input.minutes) || input.minutes <= 0))
   )
     return [];
   return records
@@ -181,8 +181,10 @@ export function findPrograms(
         item.experienceLevels.includes(
           input.experience as (typeof programExperiences)[number],
         ) &&
-        item.sessionDurationMinutes &&
-        item.sessionDurationMinutes.max <= input.minutes &&
+        (input.minutes === null ||
+          (item.sessionDurationMinutes !== null &&
+            item.sessionDurationMinutes !== undefined &&
+            item.sessionDurationMinutes.max <= input.minutes)) &&
         [item.primaryGoal, ...(item.secondaryGoals ?? [])].includes(
           input.goal as (typeof programGoals)[number],
         ),
@@ -191,9 +193,13 @@ export function findPrograms(
       const reasons = [
         `${program.trainingDaysPerWeek} sessions fit your available days.`,
         "Required equipment and environment match.",
-        program.timeContext
-          ? "The source's time allocation fits this budget; completing this template in that time is not guaranteed."
-          : "The reviewed time range fits your time budget.",
+        input.minutes === null
+          ? program.sessionDurationMinutes
+            ? "You chose not to apply a time limit."
+            : "Duration is not supplied; you chose not to apply a time limit."
+          : program.timeContext?.method === "source_guideline_allocation"
+            ? "The source's time allocation fits this budget; completing this template in that time is not guaranteed."
+            : "The reviewed time range fits your time budget.",
         "Your experience level is within its audience.",
       ];
       const score =

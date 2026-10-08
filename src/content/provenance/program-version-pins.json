@@ -6,5 +6,13 @@
   {
     "id": "program_full_body_3_day_foundation@1.0.0",
     "sha256": "d08b5528ebb49c6a7fe3f9e25aa6860a960d1c0bbf74cae5a406907e53933861"
+  },
+  {
+    "id": "program_general_fitness_2_day@1.0.0",
+    "sha256": "329af3e447ccd08daf9d78cb2174b5518a6276516978bcd3af31870bb3e2edb2"
+  },
+  {
+    "id": "program_general_fitness_3_day@1.0.0",
+    "sha256": "2e1303a97f61dde2e36cc9ceccd72b943bc367565f3fecd1375de66d74e83300"
   }
 ]

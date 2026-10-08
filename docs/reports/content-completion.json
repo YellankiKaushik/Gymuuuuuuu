@@ -1688,8 +1688,8 @@
     {
       "module": "programs",
       "totalIdentities": 50,
-      "publishedIdentities": 2,
-      "draftIdentities": 48,
+      "publishedIdentities": 4,
+      "draftIdentities": 46,
       "blockedIdentities": [
         {
           "id": "program_full_body_3_day_intermediate",
@@ -1862,20 +1862,6 @@
         {
           "id": "program_circuit_foundation_3_day",
           "slug": "circuit-foundation-3-day",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "program_general_fitness_2_day",
-          "slug": "general-fitness-2-day",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "program_general_fitness_3_day",
-          "slug": "general-fitness-3-day",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6631,9 +6617,9 @@
     },
     {
       "module": "programs",
-      "published": 2,
-      "withPublicationProvenance": 2,
-      "inSearch": 2,
+      "published": 4,
+      "withPublicationProvenance": 4,
+      "inSearch": 4,
       "missingSourceProvenance": []
     },
     {
@@ -6714,7 +6700,7 @@
     },
     {
       "module": "programs",
-      "eligiblePublishedRecords": 2,
+      "eligiblePublishedRecords": 4,
       "families": [
         "workout_programs"
       ],
@@ -7929,6 +7915,22 @@
         },
         {
           "id": "program_full_body_3_day_foundation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "program_general_fitness_2_day",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "program_general_fitness_3_day",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -11003,10 +11005,10 @@
     },
     {
       "module": "programs",
-      "missingVerifiedFactualRecords": 48,
+      "missingVerifiedFactualRecords": 46,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 2,
+      "independentHumanReviewPending": 4,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12770,6 +12772,66 @@
         "The identified primary-page sections were inspected through the browsing tool; raw HTML is not archived.",
         "No independent human or clinical review; evidence confidence is not formally graded."
       ]
+    },
+    {
+      "id": "nhs_strength_flexibility_2026",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+      "version": "Page reviewed 21 July 2026; How often / How can I tell / aerobic separation sections inspected",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T02:37:30.637423Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrase and linked NHS attribution; no copied images, source text blocks or open licence claimed.",
+      "limitations": [
+        "Public general exercise guidance, not a trial of a repository-authored program, a personal prescription or a formal evidence appraisal.",
+        "The source specifies no strength-session duration or timed rest; do not invent these as source facts.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "nhs_warmup_2026",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/",
+      "version": "Page reviewed 24 June 2026; warm-up link and general video safety boundaries inspected",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T06:35:56Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief factual paraphrase and external attribution; no copied images, video, full routine text or open licence claimed.",
+      "limitations": [
+        "General example and safety information for most people in good health with reasonable fitness; not medical clearance or an injury-prevention guarantee.",
+        "The source routine duration is not a strength-session completion estimate.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "original_general_fitness_2_day_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs",
+      "version": "1.0.0",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-08T06:35:56Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original static exercise selection, counting conventions, calendar and substitution option; NHS framework and ACE techniques attributed separately. No proprietary program copied.",
+      "limitations": [
+        "No independent human or clinical review.",
+        "The complete arrangement is not trial-tested or endorsed by NHS or ACE.",
+        "Unknown duration and rest remain unknown; no individual suitability or superiority inferred."
+      ]
+    },
+    {
+      "id": "original_general_fitness_3_day_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs",
+      "version": "1.0.0",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-08T06:35:56Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original static exercise selection, counting conventions, calendar and substitution option; NHS framework and ACE techniques attributed separately. No proprietary program copied.",
+      "limitations": [
+        "No independent human or clinical review.",
+        "The complete arrangement is not trial-tested or endorsed by NHS or ACE.",
+        "Unknown duration and rest remain unknown; no individual suitability or superiority inferred."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -14094,8 +14156,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 620,
-    "factualRecords": 492
+    "documents": 622,
+    "factualRecords": 494
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -14848,6 +14910,16 @@
     {
       "module": "programs",
       "id": "program_full_body_3_day_foundation",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "programs",
+      "id": "program_general_fitness_2_day",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "programs",
+      "id": "program_general_fitness_3_day",
       "instructionalMediaRequired": false
     },
     {
@@ -16725,11 +16797,11 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T06:30:43.518Z",
-    "expected": 674,
+    "buildDate": "2026-10-08T06:43:25.343Z",
+    "expected": 676,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 674,
+    "unmeasured": 676,
     "ignoredStaleReports": 667,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -18532,6 +18604,18 @@
       },
       {
         "path": "/programs/full-body-3-day-foundation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs/general-fitness-2-day",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/programs/general-fitness-3-day",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

@@ -54,6 +54,8 @@ const sourceRestSchedule = schedule.extend({
   sessions: z
     .array(
       session.extend({
+        estimatedDurationMinutes:
+          session.shape.estimatedDurationMinutes.nullable(),
         exerciseBlocks: z
           .array(
             block.extend({
@@ -70,7 +72,7 @@ export const programSchema = normativeProgramObjectSchema
     scheduleModel: sourceRestSchedule.nullable().optional(),
     timeContext: z
       .strictObject({
-        method: z.literal("source_guideline_allocation"),
+        method: z.enum(["source_guideline_allocation", "source_unspecified"]),
         explanation: z.string().min(30),
         sourceIds: z.array(z.string().regex(/^source_[a-z0-9_]+$/)).min(1),
       })
@@ -102,7 +104,6 @@ export const programSchema = normativeProgramObjectSchema
       issue(["deprecation"], "Replacement and migration note required");
     if (program.contentStatus !== "published") return;
     for (const key of [
-      "sessionDurationMinutes",
       "summary",
       "outcomesAndLimits",
       "audience",
@@ -189,20 +190,40 @@ export const programSchema = normativeProgramObjectSchema
         }),
       ),
     );
-    if (
-      program.timeContext &&
-      program.scheduleModel?.sessions.some(
-        (session) =>
-          session.estimatedDurationMinutes.min !==
-            program.sessionDurationMinutes?.min ||
-          session.estimatedDurationMinutes.max !==
-            program.sessionDurationMinutes?.max,
+    const sessions = program.scheduleModel?.sessions ?? [];
+    if (program.timeContext?.method === "source_unspecified") {
+      if (
+        program.sessionDurationMinutes !== null ||
+        sessions.some((session) => session.estimatedDurationMinutes !== null)
       )
-    )
-      issue(
-        ["timeContext"],
-        "Source time allocation must match each session; it is not an observed completion estimate",
-      );
+        issue(
+          ["timeContext"],
+          "Unspecified duration requires explicit null for every duration; it cannot accompany numeric estimates",
+        );
+    } else {
+      if (
+        !program.sessionDurationMinutes ||
+        sessions.some((session) => session.estimatedDurationMinutes === null)
+      )
+        issue(
+          ["sessionDurationMinutes"],
+          "Unknown duration requires explicit source-unspecified provenance",
+        );
+      if (
+        program.timeContext?.method === "source_guideline_allocation" &&
+        sessions.some(
+          (session) =>
+            session.estimatedDurationMinutes?.min !==
+              program.sessionDurationMinutes?.min ||
+            session.estimatedDurationMinutes?.max !==
+              program.sessionDurationMinutes?.max,
+        )
+      )
+        issue(
+          ["timeContext"],
+          "Source time allocation must match each session; it is not an observed completion estimate",
+        );
+    }
   });
 export type Program = z.infer<typeof programSchema>;
 export const weekdays = [

@@ -1,0 +1,14 @@
+{
+  "definitionSha256": "7deec71c1b133b3fc2c8d3e35477c9d0f4e10108c092c40655b56f2a1260ac28",
+  "sourceSha256": "2a1eb6832bc619133e6a7111bf6a560a1d44b8dd44e62bfbbce1024139c5e2d2",
+  "recordIds": [
+    "program_general_fitness_2_day",
+    "program_general_fitness_3_day"
+  ],
+  "sourceLocators": [
+    "NHS strength guidance: How often should I do strength and flexibility exercises? — source reviewed 21 July 2026.",
+    "NHS warm-up page: general exercise video safety information and link — page reviewed 24 June 2026."
+  ],
+  "rawHtmlSha256": null,
+  "reviewMethod": "Actual primary NHS pages inspected; selected numerical framework and safety boundaries transcribed as brief original factual paraphrases. Complete program arrangements, counting conventions and substitution options are original repository authorship, not trial-tested programs or independent human review. No raw HTML archive retained."
+}

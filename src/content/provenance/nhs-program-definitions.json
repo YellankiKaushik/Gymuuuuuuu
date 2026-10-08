@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "program_general_fitness_2_day",
+    "slug": "general-fitness-2-day",
+    "displayName": "Two-Day General Fitness",
+    "aliases": [],
+    "category": "general-fitness",
+    "programType": "template",
+    "contentStatus": "published",
+    "primaryGoal": "general-fitness",
+    "secondaryGoals": [],
+    "experienceLevels": [
+      "intermediate"
+    ],
+    "routineStyle": "full-body",
+    "trainingDaysPerWeek": 2,
+    "sessionDurationMinutes": null,
+    "equipmentProfileId": "equipment_profile_full_gym",
+    "durationMode": "open-ended",
+    "environmentTags": [
+      "gym"
+    ],
+    "contentStatusNote": "Source-verified and machine-validated personal-use publication; original arrangement, no independent human or clinical review or NHS endorsement.",
+    "learningOrder": 28,
+    "version": "1.0.0",
+    "populationScope": [
+      "healthy-adults"
+    ],
+    "requiredEquipmentIds": [
+      "equipment_bodyweight",
+      "equipment_dumbbell",
+      "equipment_bench"
+    ],
+    "durationWeeks": null,
+    "updatedAt": "2026-10-08",
+    "weeklySummary": null,
+    "timeContext": {
+      "method": "source_unspecified",
+      "explanation": "The NHS strength guidance explicitly supplies no session-duration recommendation. No completion time or timed rest is inferred for this original arrangement; missing time is not zero and these sessions are excluded from time-limited Finder results.",
+      "sourceIds": [
+        "source_nhs_strength_2026"
+      ]
+    },
+    "summary": "An original 2-day general strength-practice arrangement for adults who have already learned these intermediate techniques. It uses the NHS general strength framework and links exact published movement versions; the complete arrangement has not been tested as a program.",
+    "outcomesAndLimits": {
+      "designedToSupport": [
+        "Organizing source-scoped strength practice using an authored static calendar."
+      ],
+      "doesNotGuarantee": [
+        "Specific strength, hypertrophy, injury-prevention or rehabilitation outcomes.",
+        "A particular completion time or superiority over a different schedule."
+      ],
+      "notDesignedFor": [
+        "Diagnosis, rehabilitation, athletic peaking or individual medical clearance."
+      ]
+    },
+    "audience": {
+      "bestFor": [
+        "Adults in good health with reasonable fitness and prior instruction in every listed movement."
+      ],
+      "notFor": [
+        "An untrained novice or anyone unsure about suitability, with pain, illness, injury or a recent health event requiring professional advice."
+      ],
+      "prerequisites": [
+        "Prior instruction and comfortable control of goblet squats, Romanian deadlifts, bench-supported rows, bench presses and bird-dog movements; the linked ACE guides include intermediate techniques.",
+        "A stable exercise bench, clear floor space and manageable dumbbells."
+      ],
+      "assumptions": [
+        "The NHS public guidance supplies the numeric strength framework; exercise selection, ordering and calendar are original repository authorship.",
+        "General educational guidance does not establish individual suitability or validate the complete arrangement."
+      ]
+    },
+    "scheduleModel": {
+      "mode": "fixed-week",
+      "restDayGuidance": [
+        "Monday and Thursday is an original separated-day calendar example, not an NHS-tested recovery interval.",
+        "The NHS advises strength work for the major muscle groups on at least two days; the choice of this calendar does not establish a superior frequency."
+      ],
+      "sessions": [
+        {
+          "id": "session_general_2_1",
+          "displayName": "Strength-practice session A",
+          "focusTags": [
+            "general-fitness"
+          ],
+          "estimatedDurationMinutes": null,
+          "exerciseBlocks": [
+            {
+              "id": "block_general_2_1",
+              "blockType": "primary",
+              "order": 1,
+              "prescriptions": [
+                {
+                  "exerciseId": "exercise_goblet_squat",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_romanian_deadlift",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_bench_press",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": "substitution_authored_press",
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_one_arm_dumbbell_row",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "The range is per side as an original balanced-session convention; the ACE guide supplies technique, not this numerical prescription."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_bird_dog",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "Count a controlled opposite-arm/leg raise and return as one repetition, then alternate sides. This counting convention is original session organization, not an ACE repetition prescription; do not turn positional practice into a forced fatigue test."
+                  ]
+                }
+              ]
+            }
+          ],
+          "sessionNotes": [
+            "Warm up before exercising. Use the attributed NHS warm-up example through its external source link; its example timing is not a strength-session duration.",
+            "Read each exact exercise version before starting. The exercise order is an original static arrangement, not a publisher-endorsed sequence.",
+            "Build gradually over weeks rather than forcing the published framework on the first session.",
+            "No fixed deload interval, load increment or session duration is supplied; do not infer a numeric protocol."
+          ]
+        },
+        {
+          "id": "session_general_2_2",
+          "displayName": "Strength-practice session B",
+          "focusTags": [
+            "general-fitness"
+          ],
+          "estimatedDurationMinutes": null,
+          "exerciseBlocks": [
+            {
+              "id": "block_general_2_2",
+              "blockType": "primary",
+              "order": 1,
+              "prescriptions": [
+                {
+                  "exerciseId": "exercise_goblet_squat",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_romanian_deadlift",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_bench_press",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": "substitution_authored_press",
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_one_arm_dumbbell_row",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "The range is per side as an original balanced-session convention; the ACE guide supplies technique, not this numerical prescription."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_bird_dog",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "Count a controlled opposite-arm/leg raise and return as one repetition, then alternate sides. This counting convention is original session organization, not an ACE repetition prescription; do not turn positional practice into a forced fatigue test."
+                  ]
+                }
+              ]
+            }
+          ],
+          "sessionNotes": [
+            "Warm up before exercising. Use the attributed NHS warm-up example through its external source link; its example timing is not a strength-session duration.",
+            "Read each exact exercise version before starting. The exercise order is an original static arrangement, not a publisher-endorsed sequence.",
+            "Build gradually over weeks rather than forcing the published framework on the first session.",
+            "No fixed deload interval, load increment or session duration is supplied; do not infer a numeric protocol."
+          ]
+        }
+      ]
+    },
+    "progressionRules": [
+      {
+        "id": "progression_nhs_gradual",
+        "displayName": "Gradual source-scoped practice",
+        "type": "technical-progression",
+        "trigger": [
+          "All listed movements remain controlled and manageable; do not infer a personal readiness score."
+        ],
+        "action": [
+          "Build gradually over weeks as the NHS describes. Retain controlled practice and seek qualified instruction when choosing load; no fixed weekly increment is supplied."
+        ],
+        "ceiling": [
+          "Do not force the repetitions, accept loss of the linked movement control or automatically add a third set or heavier load."
+        ],
+        "floor": [
+          "Begin with manageable practice rather than forcing two complete sets. Reduce the attempted work or pause when control cannot be maintained; seek instruction if the published version is unsuitable."
+        ],
+        "stallResponse": [
+          "Retain or reduce attempted work and obtain appropriate instruction; no automatic load adjustment or pain diagnosis."
+        ],
+        "scienceTopicIds": [
+          "science_progressive_overload"
+        ],
+        "sourceIds": [
+          "source_nhs_strength_2026"
+        ]
+      }
+    ],
+    "substitutionGroups": [
+      {
+        "id": "substitution_authored_press",
+        "displayName": "Authored press option after instruction",
+        "originalExerciseIds": [
+          "exercise_dumbbell_bench_press"
+        ],
+        "candidateExerciseIds": [
+          "exercise_push_up"
+        ],
+        "matchingRules": [
+          "Both published guides describe a press; this is an original option, not proof of equivalent load, muscle activation or outcome.",
+          "Use only the exact published version already learned and appropriate to your available equipment and abilities."
+        ],
+        "disallowedChanges": [
+          "Do not transfer a dumbbell load to a bodyweight movement, silently alter the prescription or treat a substitution as medical advice.",
+          "Do not infer equivalence or automatic suitability from shared movement classification."
+        ],
+        "reviewRequired": true
+      }
+    ],
+    "scienceRationale": [
+      {
+        "decision": "Organize 2 static source-scoped practice sessions; day placement and exercise combination are original authorship.",
+        "scienceTopicIds": [
+          "science_training_frequency",
+          "science_progressive_overload"
+        ],
+        "sourceIds": [
+          "source_nhs_strength_2026"
+        ],
+        "qualifiers": [
+          "The linked science articles distinguish training variables and gradual progression; they do not test this whole program.",
+          "The NHS framework supplies the general set/repetition context; no superiority, individualized effort or duration claim is inferred."
+        ]
+      }
+    ],
+    "measurementGuidance": [
+      {
+        "metric": "completed-sessions",
+        "howToUse": "Track completed sessions only if you choose local tracking; missing sessions are not automatically failures.",
+        "limitations": [
+          "Completion does not prove adaptation, safety, readiness or suitability."
+        ],
+        "scienceTopicIds": [
+          "science_consistency_adherence"
+        ]
+      }
+    ],
+    "safety": {
+      "generalBoundaries": [
+        "Read the exact linked technique instructions and the NHS safety information before exercising.",
+        "The NHS warm-up example is general guidance, not a guarantee of injury prevention."
+      ],
+      "stopSignals": [
+        "The NHS advises stopping immediately if pain occurs or you become unwell; seek appropriate help for symptoms that persist or cause concern."
+      ],
+      "professionalReviewTriggers": [
+        "Uncertain suitability, a health problem, injury, symptoms, illness, recent health event, pregnancy or recent birth as described in NHS exercise-video safety information."
+      ],
+      "notMedicalAdvice": true
+    },
+    "sources": [
+      {
+        "id": "source_nhs_strength_2026",
+        "title": "NHS — How to improve your strength and flexibility",
+        "sourceType": "guideline",
+        "year": 2026,
+        "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+        "accessedAt": "2026-10-08"
+      },
+      {
+        "id": "source_nhs_warmup_2026",
+        "title": "NHS — How to warm up before exercising",
+        "sourceType": "guideline",
+        "year": 2026,
+        "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/",
+        "accessedAt": "2026-10-08"
+      }
+    ],
+    "review": {
+      "programReviewerRole": "Codex source verification; no independent human review",
+      "scienceReviewerRole": "Codex source verification; no independent clinical review",
+      "editorialReviewerRole": "Codex automated validation; published_personal_use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "crossReferenceReviewComplete": true
+    },
+    "relatedProgramIds": [
+      "program_general_fitness_3_day"
+    ]
+  },
+  {
+    "id": "program_general_fitness_3_day",
+    "slug": "general-fitness-3-day",
+    "displayName": "Three-Day General Fitness",
+    "aliases": [],
+    "category": "general-fitness",
+    "programType": "template",
+    "contentStatus": "published",
+    "primaryGoal": "general-fitness",
+    "secondaryGoals": [],
+    "experienceLevels": [
+      "intermediate"
+    ],
+    "routineStyle": "full-body",
+    "trainingDaysPerWeek": 3,
+    "sessionDurationMinutes": null,
+    "equipmentProfileId": "equipment_profile_full_gym",
+    "durationMode": "open-ended",
+    "environmentTags": [
+      "gym"
+    ],
+    "contentStatusNote": "Source-verified and machine-validated personal-use publication; original arrangement, no independent human or clinical review or NHS endorsement.",
+    "learningOrder": 29,
+    "version": "1.0.0",
+    "populationScope": [
+      "healthy-adults"
+    ],
+    "requiredEquipmentIds": [
+      "equipment_bodyweight",
+      "equipment_dumbbell",
+      "equipment_bench"
+    ],
+    "durationWeeks": null,
+    "updatedAt": "2026-10-08",
+    "weeklySummary": null,
+    "timeContext": {
+      "method": "source_unspecified",
+      "explanation": "The NHS strength guidance explicitly supplies no session-duration recommendation. No completion time or timed rest is inferred for this original arrangement; missing time is not zero and these sessions are excluded from time-limited Finder results.",
+      "sourceIds": [
+        "source_nhs_strength_2026"
+      ]
+    },
+    "summary": "An original 3-day general strength-practice arrangement for adults who have already learned these intermediate techniques. It uses the NHS general strength framework and links exact published movement versions; the complete arrangement has not been tested as a program.",
+    "outcomesAndLimits": {
+      "designedToSupport": [
+        "Organizing source-scoped strength practice using an authored static calendar."
+      ],
+      "doesNotGuarantee": [
+        "Specific strength, hypertrophy, injury-prevention or rehabilitation outcomes.",
+        "A particular completion time or superiority over a different schedule."
+      ],
+      "notDesignedFor": [
+        "Diagnosis, rehabilitation, athletic peaking or individual medical clearance."
+      ]
+    },
+    "audience": {
+      "bestFor": [
+        "Adults in good health with reasonable fitness and prior instruction in every listed movement."
+      ],
+      "notFor": [
+        "An untrained novice or anyone unsure about suitability, with pain, illness, injury or a recent health event requiring professional advice."
+      ],
+      "prerequisites": [
+        "Prior instruction and comfortable control of goblet squats, Romanian deadlifts, bench-supported rows, bench presses and bird-dog movements; the linked ACE guides include intermediate techniques.",
+        "A stable exercise bench, clear floor space and manageable dumbbells."
+      ],
+      "assumptions": [
+        "The NHS public guidance supplies the numeric strength framework; exercise selection, ordering and calendar are original repository authorship.",
+        "General educational guidance does not establish individual suitability or validate the complete arrangement."
+      ]
+    },
+    "scheduleModel": {
+      "mode": "fixed-week",
+      "restDayGuidance": [
+        "Monday, Wednesday and Friday is an original separated-day calendar example, not an NHS-tested recovery interval.",
+        "The NHS advises strength work for the major muscle groups on at least two days; the choice of this calendar does not establish a superior frequency."
+      ],
+      "sessions": [
+        {
+          "id": "session_general_3_1",
+          "displayName": "Strength-practice session A",
+          "focusTags": [
+            "general-fitness"
+          ],
+          "estimatedDurationMinutes": null,
+          "exerciseBlocks": [
+            {
+              "id": "block_general_3_1",
+              "blockType": "primary",
+              "order": 1,
+              "prescriptions": [
+                {
+                  "exerciseId": "exercise_goblet_squat",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_romanian_deadlift",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_bench_press",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": "substitution_authored_press",
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_one_arm_dumbbell_row",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "The range is per side as an original balanced-session convention; the ACE guide supplies technique, not this numerical prescription."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_bird_dog",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "Count a controlled opposite-arm/leg raise and return as one repetition, then alternate sides. This counting convention is original session organization, not an ACE repetition prescription; do not turn positional practice into a forced fatigue test."
+                  ]
+                }
+              ]
+            }
+          ],
+          "sessionNotes": [
+            "Warm up before exercising. Use the attributed NHS warm-up example through its external source link; its example timing is not a strength-session duration.",
+            "Read each exact exercise version before starting. The exercise order is an original static arrangement, not a publisher-endorsed sequence.",
+            "Build gradually over weeks rather than forcing the published framework on the first session.",
+            "No fixed deload interval, load increment or session duration is supplied; do not infer a numeric protocol."
+          ]
+        },
+        {
+          "id": "session_general_3_2",
+          "displayName": "Strength-practice session B",
+          "focusTags": [
+            "general-fitness"
+          ],
+          "estimatedDurationMinutes": null,
+          "exerciseBlocks": [
+            {
+              "id": "block_general_3_2",
+              "blockType": "primary",
+              "order": 1,
+              "prescriptions": [
+                {
+                  "exerciseId": "exercise_goblet_squat",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_romanian_deadlift",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_bench_press",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": "substitution_authored_press",
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_one_arm_dumbbell_row",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "The range is per side as an original balanced-session convention; the ACE guide supplies technique, not this numerical prescription."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_bird_dog",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "Count a controlled opposite-arm/leg raise and return as one repetition, then alternate sides. This counting convention is original session organization, not an ACE repetition prescription; do not turn positional practice into a forced fatigue test."
+                  ]
+                }
+              ]
+            }
+          ],
+          "sessionNotes": [
+            "Warm up before exercising. Use the attributed NHS warm-up example through its external source link; its example timing is not a strength-session duration.",
+            "Read each exact exercise version before starting. The exercise order is an original static arrangement, not a publisher-endorsed sequence.",
+            "Build gradually over weeks rather than forcing the published framework on the first session.",
+            "No fixed deload interval, load increment or session duration is supplied; do not infer a numeric protocol."
+          ]
+        },
+        {
+          "id": "session_general_3_3",
+          "displayName": "Strength-practice session C",
+          "focusTags": [
+            "general-fitness"
+          ],
+          "estimatedDurationMinutes": null,
+          "exerciseBlocks": [
+            {
+              "id": "block_general_3_3",
+              "blockType": "primary",
+              "order": 1,
+              "prescriptions": [
+                {
+                  "exerciseId": "exercise_goblet_squat",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_romanian_deadlift",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_dumbbell_bench_press",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": "substitution_authored_press",
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_one_arm_dumbbell_row",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "The range is per side as an original balanced-session convention; the ACE guide supplies technique, not this numerical prescription."
+                  ]
+                },
+                {
+                  "exerciseId": "exercise_bird_dog",
+                  "role": "primary",
+                  "sets": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "repetitionTarget": {
+                    "type": "repetitions",
+                    "range": {
+                      "min": 8,
+                      "max": 12
+                    }
+                  },
+                  "effortTarget": {
+                    "method": "technical-stop",
+                    "target": "Retain the linked source-described control and stop the attempt when that cannot be maintained. The NHS framework describes another repetition becoming difficult without help; do not convert that into a measured RIR value.",
+                    "qualifier": "Qualitative source context, not a prescription to force failure, obtain assistance or ignore technique."
+                  },
+                  "restSeconds": null,
+                  "restGuidance": {
+                    "status": "source_unspecified",
+                    "text": "The NHS describes a short rest before continuing but provides no seconds. No timed rest or zero-rest prescription is inferred.",
+                    "sourceIds": [
+                      "source_nhs_strength_2026"
+                    ]
+                  },
+                  "tempo": "self-selected",
+                  "progressionRuleId": "progression_nhs_gradual",
+                  "substitutionGroupId": null,
+                  "notes": [
+                    "Two sets and the 8–12 repetition range are selected from the NHS general framework, not an exercise-specific trial or a required first-session achievement.",
+                    "Read the linked exact movement instructions; stop before losing control and do not force the repetition target.",
+                    "Count a controlled opposite-arm/leg raise and return as one repetition, then alternate sides. This counting convention is original session organization, not an ACE repetition prescription; do not turn positional practice into a forced fatigue test."
+                  ]
+                }
+              ]
+            }
+          ],
+          "sessionNotes": [
+            "Warm up before exercising. Use the attributed NHS warm-up example through its external source link; its example timing is not a strength-session duration.",
+            "Read each exact exercise version before starting. The exercise order is an original static arrangement, not a publisher-endorsed sequence.",
+            "Build gradually over weeks rather than forcing the published framework on the first session.",
+            "No fixed deload interval, load increment or session duration is supplied; do not infer a numeric protocol."
+          ]
+        }
+      ]
+    },
+    "progressionRules": [
+      {
+        "id": "progression_nhs_gradual",
+        "displayName": "Gradual source-scoped practice",
+        "type": "technical-progression",
+        "trigger": [
+          "All listed movements remain controlled and manageable; do not infer a personal readiness score."
+        ],
+        "action": [
+          "Build gradually over weeks as the NHS describes. Retain controlled practice and seek qualified instruction when choosing load; no fixed weekly increment is supplied."
+        ],
+        "ceiling": [
+          "Do not force the repetitions, accept loss of the linked movement control or automatically add a third set or heavier load."
+        ],
+        "floor": [
+          "Begin with manageable practice rather than forcing two complete sets. Reduce the attempted work or pause when control cannot be maintained; seek instruction if the published version is unsuitable."
+        ],
+        "stallResponse": [
+          "Retain or reduce attempted work and obtain appropriate instruction; no automatic load adjustment or pain diagnosis."
+        ],
+        "scienceTopicIds": [
+          "science_progressive_overload"
+        ],
+        "sourceIds": [
+          "source_nhs_strength_2026"
+        ]
+      }
+    ],
+    "substitutionGroups": [
+      {
+        "id": "substitution_authored_press",
+        "displayName": "Authored press option after instruction",
+        "originalExerciseIds": [
+          "exercise_dumbbell_bench_press"
+        ],
+        "candidateExerciseIds": [
+          "exercise_push_up"
+        ],
+        "matchingRules": [
+          "Both published guides describe a press; this is an original option, not proof of equivalent load, muscle activation or outcome.",
+          "Use only the exact published version already learned and appropriate to your available equipment and abilities."
+        ],
+        "disallowedChanges": [
+          "Do not transfer a dumbbell load to a bodyweight movement, silently alter the prescription or treat a substitution as medical advice.",
+          "Do not infer equivalence or automatic suitability from shared movement classification."
+        ],
+        "reviewRequired": true
+      }
+    ],
+    "scienceRationale": [
+      {
+        "decision": "Organize 3 static source-scoped practice sessions; day placement and exercise combination are original authorship.",
+        "scienceTopicIds": [
+          "science_training_frequency",
+          "science_progressive_overload"
+        ],
+        "sourceIds": [
+          "source_nhs_strength_2026"
+        ],
+        "qualifiers": [
+          "The linked science articles distinguish training variables and gradual progression; they do not test this whole program.",
+          "The NHS framework supplies the general set/repetition context; no superiority, individualized effort or duration claim is inferred."
+        ]
+      }
+    ],
+    "measurementGuidance": [
+      {
+        "metric": "completed-sessions",
+        "howToUse": "Track completed sessions only if you choose local tracking; missing sessions are not automatically failures.",
+        "limitations": [
+          "Completion does not prove adaptation, safety, readiness or suitability."
+        ],
+        "scienceTopicIds": [
+          "science_consistency_adherence"
+        ]
+      }
+    ],
+    "safety": {
+      "generalBoundaries": [
+        "Read the exact linked technique instructions and the NHS safety information before exercising.",
+        "The NHS warm-up example is general guidance, not a guarantee of injury prevention."
+      ],
+      "stopSignals": [
+        "The NHS advises stopping immediately if pain occurs or you become unwell; seek appropriate help for symptoms that persist or cause concern."
+      ],
+      "professionalReviewTriggers": [
+        "Uncertain suitability, a health problem, injury, symptoms, illness, recent health event, pregnancy or recent birth as described in NHS exercise-video safety information."
+      ],
+      "notMedicalAdvice": true
+    },
+    "sources": [
+      {
+        "id": "source_nhs_strength_2026",
+        "title": "NHS — How to improve your strength and flexibility",
+        "sourceType": "guideline",
+        "year": 2026,
+        "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+        "accessedAt": "2026-10-08"
+      },
+      {
+        "id": "source_nhs_warmup_2026",
+        "title": "NHS — How to warm up before exercising",
+        "sourceType": "guideline",
+        "year": 2026,
+        "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/",
+        "accessedAt": "2026-10-08"
+      }
+    ],
+    "review": {
+      "programReviewerRole": "Codex source verification; no independent human review",
+      "scienceReviewerRole": "Codex source verification; no independent clinical review",
+      "editorialReviewerRole": "Codex automated validation; published_personal_use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "crossReferenceReviewComplete": true
+    },
+    "relatedProgramIds": [
+      "program_general_fitness_2_day"
+    ]
+  }
+]

@@ -43,6 +43,14 @@ const range = (value: { min: number; max: number } | null | undefined) =>
       ? String(value.min)
       : `${value.min}–${value.max}`
     : "Not available";
+function durationText(
+  value: { min: number; max: number } | null | undefined,
+  program: Program,
+  unit = "minutes",
+) {
+  if (!value) return "Duration not supplied";
+  return `${range(value)} ${unit}${program.timeContext?.method === "source_guideline_allocation" ? " source allocation" : ""}`;
+}
 function ProgramNav() {
   return (
     <nav className="section-nav" aria-label="Programs">
@@ -62,8 +70,11 @@ function Card({ program }: { program: Program }) {
       <div className="tag-row">
         <span>{program.trainingDaysPerWeek} days / week</span>
         <span>
-          {range(program.sessionDurationMinutes)} min / session
-          {program.timeContext ? " source allocation" : ""}
+          {durationText(
+            program.sessionDurationMinutes,
+            program,
+            "min / session",
+          )}
         </span>
         <span>{words(program.routineStyle)}</span>
       </div>
@@ -274,13 +285,28 @@ export function ProgramFinder() {
             type="number"
             min="1"
             max="360"
-            value={input.minutes}
+            value={input.minutes ?? 60}
+            disabled={input.minutes === null}
             onChange={(event) =>
               setInput({ ...input, minutes: event.target.valueAsNumber })
             }
             required
           />
         </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={input.minutes === null}
+            onChange={(event) =>
+              setInput({ ...input, minutes: event.target.checked ? null : 60 })
+            }
+          />
+          Do not apply a session time limit
+        </label>
+        <p className="field-help">
+          Templates without a sourced duration are included only when you choose
+          no time limit. No completion time is estimated.
+        </p>
         <label>
           Environment
           <select
@@ -406,8 +432,7 @@ export function ProgramComparison({ ids }: { ids: string[] }) {
                 <dt>Schedule</dt>
                 <dd>
                   {program.trainingDaysPerWeek} days / week ·{" "}
-                  {range(program.sessionDurationMinutes)} minutes
-                  {program.timeContext ? " source allocation" : ""}
+                  {durationText(program.sessionDurationMinutes, program)}
                 </dd>
                 <dt>Equipment</dt>
                 <dd>
@@ -480,8 +505,11 @@ export function ProgramContent({
       <div className="tag-row">
         <span>{summary.sessionCount} sessions / week</span>
         <span>
-          {range(summary.estimatedWeeklyMinutes)} minutes / week
-          {program.timeContext ? " source allocation" : ""}
+          {durationText(
+            summary.estimatedWeeklyMinutes,
+            program,
+            "minutes / week",
+          )}
         </span>
         <span>{summary.exerciseCount} exercises</span>
       </div>
@@ -508,15 +536,21 @@ export function ProgramContent({
       <section className="detail-section">
         <h2>Schedule and prescriptions</h2>
         {program.timeContext && (
-          <InfoCallout title="Source time allocation">
+          <InfoCallout
+            title={
+              program.timeContext.method === "source_unspecified"
+                ? "Duration availability"
+                : "Source time allocation"
+            }
+          >
             {program.timeContext.explanation}
           </InfoCallout>
         )}
         {program.scheduleModel?.sessions.map((session) => (
           <article key={session.id} className="entity-card">
             <h3>
-              {session.displayName} · {range(session.estimatedDurationMinutes)}{" "}
-              min{program.timeContext ? " source allocation" : ""}
+              {session.displayName} ·{" "}
+              {durationText(session.estimatedDurationMinutes, program, "min")}
             </h3>
             {instance && update && (
               <label>

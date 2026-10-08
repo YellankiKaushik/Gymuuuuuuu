@@ -153,3 +153,20 @@ zero audit vulnerabilities; those results certify the prior 491-record commit.
 Exact hosted evidence is recorded in phase19-ci-loaded-food-checkpoint.json.
 Current-build route evidence, further program/content work and final verification
 remain in progress. No completion tag or production deployment is claimed.
+
+The 494-record checkpoint adds two original general-fitness strength templates
+using inspected NHS framework and safety sources with published ACE techniques.
+All 50 seed identities and both earlier NIA immutable versions are preserved.
+The runtime duration extension requires explicit source-unspecified provenance
+and null values throughout; fixed/rotating totals propagate unknown duration.
+Finder includes these templates only after an explicit no-time-limit choice.
+Exact program-source bindings reject missing, duplicated, blocked or mismatched
+frameworks. Publication prerequisites reflect intermediate technique instruction.
+Complete checks and coverage pass 322 tests in 86 files. Rebuilt selection,
+reload, destructive-confirmation, Finder boundary and responsive/accessibility
+checks pass 14/14 Chromium/WebKit cases. The first Finder run had two selector
+failures (12 passes); the accessible-combobox selector correction preserves all
+assertions and timeout settings. Budgets remain 695643 gzip JavaScript bytes and
+420750 gzip public JSON bytes within unchanged limits. Search contains 622
+documents and 494 factual records. Current full-route and hosted evidence remain
+pending, alongside reported content work; no final completion claim is made.

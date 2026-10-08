@@ -24,6 +24,8 @@ it("keeps draft programs hidden and rejects incomplete publication", () => {
   expect(publishedPrograms.map((program) => program.id)).toEqual([
     "program_full_body_2_day_foundation",
     "program_full_body_3_day_foundation",
+    "program_general_fitness_2_day",
+    "program_general_fitness_3_day",
   ]);
   expect(
     publishedPrograms.every((program) => program.contentStatus === "published"),

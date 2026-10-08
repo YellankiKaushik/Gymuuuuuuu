@@ -1,0 +1,36 @@
+[
+  {
+    "programId": "program_full_body_2_day_foundation",
+    "version": "1.0.0",
+    "arrangementSourceId": "original_foundation_program_v1",
+    "frameworkSourceIds": [
+      "nia_strength_guide_2018"
+    ]
+  },
+  {
+    "programId": "program_full_body_3_day_foundation",
+    "version": "1.0.0",
+    "arrangementSourceId": "original_three_day_foundation_v1",
+    "frameworkSourceIds": [
+      "nia_strength_guide_2018"
+    ]
+  },
+  {
+    "programId": "program_general_fitness_2_day",
+    "version": "1.0.0",
+    "arrangementSourceId": "original_general_fitness_2_day_v1",
+    "frameworkSourceIds": [
+      "nhs_strength_flexibility_2026",
+      "nhs_warmup_2026"
+    ]
+  },
+  {
+    "programId": "program_general_fitness_3_day",
+    "version": "1.0.0",
+    "arrangementSourceId": "original_general_fitness_3_day_v1",
+    "frameworkSourceIds": [
+      "nhs_strength_flexibility_2026",
+      "nhs_warmup_2026"
+    ]
+  }
+]

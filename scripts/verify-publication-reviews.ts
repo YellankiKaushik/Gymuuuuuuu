@@ -25,6 +25,13 @@ const identityMatches = verifyFoodIdentityMatches(
   sources,
   new Date().toISOString(),
 );
+import { verifyProgramSourceBindings } from "./content/program-source-bindings";
+import programBindingsJson from "../src/content/provenance/program-source-bindings.json";
+const programBindings = verifyProgramSourceBindings(
+  programBindingsJson,
+  publishedPrograms,
+  sources,
+);
 const records: {
   module: string;
   id: string;
@@ -349,22 +356,23 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
     ],
   });
 for (const r of publishedPrograms) {
-  const arrangementSource =
-    r.id === "program_full_body_2_day_foundation"
-      ? "original_foundation_program_v1"
-      : r.id === "program_full_body_3_day_foundation"
-        ? "original_three_day_foundation_v1"
-        : null;
-  if (!arrangementSource) throw Error(`Unverified program arrangement ${r.id}`);
+  const binding = programBindings.find(
+    (b) => b.programId === r.id && b.version === r.version,
+  )!;
   records.push({
     module: "programs",
     id: r.id,
     slug: r.slug,
     fields: [
-      field("schedule.arrangement", [arrangementSource], "original_authorship"),
-      field("prescriptions.progression.safety.timeAllocation", [
-        "nia_strength_guide_2018",
-      ]),
+      field(
+        "schedule.arrangement",
+        [binding.arrangementSourceId],
+        "original_authorship",
+      ),
+      field(
+        "prescriptions.progression.safety.timeAllocation",
+        binding.frameworkSourceIds,
+      ),
       ...[
         ...new Set(
           r.scheduleModel!.sessions.flatMap((session) =>

@@ -2,6 +2,8 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/programs/general-fitness-2-day", "Two-Day General Fitness"],
+  ["/programs/general-fitness-3-day", "Three-Day General Fitness"],
   ["/cardio/learn/topic-heat-safety", "Exercise in Heat"],
   ["/foods/red-onion", "Red onion"],
   ["/foods/bottle-gourd", "Bottle gourd"],

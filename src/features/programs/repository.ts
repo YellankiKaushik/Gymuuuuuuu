@@ -33,16 +33,19 @@ export function deriveProgramSummary(program: Program) {
         ),
       )
     : [sessions];
-  const minutes = windows.map((window) => ({
-    min: window.reduce(
-      (sum, session) => sum + session.estimatedDurationMinutes.min,
-      0,
-    ),
-    max: window.reduce(
-      (sum, session) => sum + session.estimatedDurationMinutes.max,
-      0,
-    ),
-  }));
+  const minutes = windows.map((window) => {
+    const total = { min: 0, max: 0 };
+    for (const session of window) {
+      const duration = session.estimatedDurationMinutes;
+      if (duration === null) return null;
+      total.min += duration.min;
+      total.max += duration.max;
+    }
+    return total;
+  });
+  const knownMinutes = minutes.filter(
+    (item): item is { min: number; max: number } => item !== null,
+  );
   const movementCounts = new Map<string, number[]>();
   windows.forEach((window, windowIndex) =>
     window.forEach((session) => {
@@ -71,12 +74,13 @@ export function deriveProgramSummary(program: Program) {
   );
   return {
     sessionCount: rotating ? program.trainingDaysPerWeek : sessions.length,
-    estimatedWeeklyMinutes: sessions.length
-      ? {
-          min: Math.min(...minutes.map((item) => item.min)),
-          max: Math.max(...minutes.map((item) => item.max)),
-        }
-      : null,
+    estimatedWeeklyMinutes:
+      sessions.length && knownMinutes.length === minutes.length
+        ? {
+            min: Math.min(...knownMinutes.map((item) => item.min)),
+            max: Math.max(...knownMinutes.map((item) => item.max)),
+          }
+        : null,
     movementPatternExposure: [...movementCounts].map(
       ([movementPatternId, counts]) => ({
         movementPatternId,

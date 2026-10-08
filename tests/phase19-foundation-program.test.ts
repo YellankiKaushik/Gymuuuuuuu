@@ -35,7 +35,10 @@ test("publishes an original source-scoped program with exact public technique pr
   }
   expect(program.audience?.prerequisites.join(" ")).toContain("intermediate");
   const changed = structuredClone(program);
-  changed.scheduleModel!.sessions[0]!.estimatedDurationMinutes.max = 35;
+  expect(
+    changed.scheduleModel!.sessions[0]!.estimatedDurationMinutes,
+  ).not.toBeNull();
+  changed.scheduleModel!.sessions[0]!.estimatedDurationMinutes!.max = 35;
   expect(programSchema.safeParse(changed).success).toBe(false);
 });
 test("finder exposes source allocation honestly and hides mismatched equipment and drafts", () => {

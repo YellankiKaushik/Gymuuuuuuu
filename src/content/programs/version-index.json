@@ -8,5 +8,15 @@
     "id": "program_full_body_3_day_foundation",
     "version": "1.0.0",
     "current": true
+  },
+  {
+    "id": "program_general_fitness_2_day",
+    "version": "1.0.0",
+    "current": true
+  },
+  {
+    "id": "program_general_fitness_3_day",
+    "version": "1.0.0",
+    "current": true
   }
 ]

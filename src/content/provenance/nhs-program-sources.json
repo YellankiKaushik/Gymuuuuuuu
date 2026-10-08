@@ -1,0 +1,74 @@
+[
+  {
+    "id": "nhs_strength_flexibility_2026",
+    "title": "NHS — How to improve your strength and flexibility",
+    "publisher": "NHS",
+    "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+    "sourceVersion": "Page reviewed 21 July 2026; How often / How can I tell / aerobic separation sections inspected",
+    "sourceDate": "2026-07-21",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-08T02:37:30.637423Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase and linked NHS attribution; no copied images, source text blocks or open licence claimed.",
+    "limitations": [
+      "Public general exercise guidance, not a trial of a repository-authored program, a personal prescription or a formal evidence appraisal.",
+      "The source specifies no strength-session duration or timed rest; do not invent these as source facts.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "nhs_warmup_2026",
+    "title": "NHS — How to warm up before exercising",
+    "publisher": "NHS",
+    "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/",
+    "sourceVersion": "Page reviewed 24 June 2026; warm-up link and general video safety boundaries inspected",
+    "sourceDate": "2026-06-24",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-08T06:35:56Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief factual paraphrase and external attribution; no copied images, video, full routine text or open licence claimed.",
+    "limitations": [
+      "General example and safety information for most people in good health with reasonable fitness; not medical clearance or an injury-prevention guarantee.",
+      "The source routine duration is not a strength-session completion estimate.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "original_general_fitness_2_day_v1",
+    "title": "Original 2-day source-scoped general strength arrangement",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs",
+    "sourceVersion": "1.0.0",
+    "sourceDate": "2026-10-08",
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-08T06:35:56Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "original_work",
+    "rightsReference": "Original static exercise selection, counting conventions, calendar and substitution option; NHS framework and ACE techniques attributed separately. No proprietary program copied.",
+    "limitations": [
+      "No independent human or clinical review.",
+      "The complete arrangement is not trial-tested or endorsed by NHS or ACE.",
+      "Unknown duration and rest remain unknown; no individual suitability or superiority inferred."
+    ]
+  },
+  {
+    "id": "original_general_fitness_3_day_v1",
+    "title": "Original 3-day source-scoped general strength arrangement",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs",
+    "sourceVersion": "1.0.0",
+    "sourceDate": "2026-10-08",
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-08T06:35:56Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "original_work",
+    "rightsReference": "Original static exercise selection, counting conventions, calendar and substitution option; NHS framework and ACE techniques attributed separately. No proprietary program copied.",
+    "limitations": [
+      "No independent human or clinical review.",
+      "The complete arrangement is not trial-tested or endorsed by NHS or ACE.",
+      "Unknown duration and rest remain unknown; no individual suitability or superiority inferred."
+    ]
+  }
+]
