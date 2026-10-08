@@ -13297,6 +13297,226 @@
     ]
   },
   {
+    "module": "exercises",
+    "id": "exercise_glute_bridge",
+    "slug": "glute-bridge",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_glute_bridge"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "ace_glute_bridge",
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "ace_glute_bridge",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_glute_bridge"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_ace_four_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_single_leg_glute_bridge",
+    "slug": "single-leg-glute-bridge",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_single_leg_glute_bridge"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "ace_single_leg_glute_bridge",
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "ace_single_leg_glute_bridge",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_single_leg_glute_bridge"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_ace_four_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_bird_dog",
+    "slug": "bird-dog",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_bird_dog"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "ace_bird_dog",
+          "gray_1918_lower_limb"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "ace_bird_dog",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_bird_dog"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_ace_four_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "exercises",
+    "id": "exercise_lat_pulldown",
+    "slug": "lat-pulldown",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "technique",
+        "sourceIds": [
+          "ace_seated_lat_pulldown"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "muscleRoles",
+        "sourceIds": [
+          "ace_seated_lat_pulldown",
+          "gray_1918_shoulder_thorax"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety",
+        "sourceIds": [
+          "ace_seated_lat_pulldown",
+          "nia_strength_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "programmingGuidance",
+        "sourceIds": [
+          "ace_seated_lat_pulldown"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "media",
+        "sourceIds": [
+          "original_ace_four_diagrams_v1"
+        ],
+        "kind": "original_authorship"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "programs",
     "id": "program_full_body_2_day_foundation",
     "slug": "full-body-2-day-foundation",

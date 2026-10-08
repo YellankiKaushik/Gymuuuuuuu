@@ -40,6 +40,10 @@ describe("exercise governance", () => {
       "exercise_dumbbell_romanian_deadlift",
       "exercise_push_up",
       "exercise_knee_push_up",
+      "exercise_glute_bridge",
+      "exercise_single_leg_glute_bridge",
+      "exercise_bird_dog",
+      "exercise_lat_pulldown",
     ]);
     expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
   });

@@ -1,0 +1,18 @@
+{
+  "extractedAt": "2026-10-08T01:26:57.594845Z",
+  "definitionsSha256": "7a87060c4e3adfb842001bee0662e59a310f599b21e1b5d503372ff26f03b79f",
+  "sourcesSha256": "c300a4b5914a2aba106fd17fdf5cc9d1b8a67dcc50eb62d310b517a49f4e65d1",
+  "recordIds": [
+    "exercise_glute_bridge",
+    "exercise_single_leg_glute_bridge",
+    "exercise_bird_dog",
+    "exercise_lat_pulldown"
+  ],
+  "mediaHashes": {
+    "/media/bird-dog-cue.svg": "8e2c96a6a3e27d95a622f838414e9a44cd15f608a4e9715e0770c1409370a1f6",
+    "/media/glute-bridge-cue.svg": "658e6e990785e660b5cec6a100d5b071c53a5a2735dd2cfa1cb32265c3d84f9f",
+    "/media/lat-pulldown-cue.svg": "412e51630a77d1d9edae2068d71a847c67ee9acf10612659a684fe27820e512d",
+    "/media/single-leg-glute-bridge-cue.svg": "33aee7a98fa4d446fe181b4b1abcd33ceafbf2720eee01391a26add8126d5a34"
+  },
+  "reviewMethod": "Inspected primary ACE technique sections and retained historical anatomical actions; brief original factual summaries, explicit anatomical inference and machine validation; no independent human review."
+}

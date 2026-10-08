@@ -1816,5 +1816,94 @@
       "Selected NIH summary sections inspected; cited primary studies were not independently reappraised.",
       "Publisher update date and current anti-doping/regulatory status have not been verified."
     ]
+  },
+  {
+    "id": "ace_glute_bridge",
+    "title": "ACE Glute Bridge Exercise",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/",
+    "sourceVersion": "Exercise Library 49; inspected setup and movement sections",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T01:26:57.594845Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_single_leg_glute_bridge",
+    "title": "ACE Glute Bridge Single Leg Progression",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/145/glute-bridge-single-leg-progression/",
+    "sourceVersion": "Exercise Library 145; inspected setup and movement sections",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T01:26:57.594845Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_bird_dog",
+    "title": "ACE Bird Dog",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/14/bird-dog/",
+    "sourceVersion": "Exercise Library 14; inspected setup and movement sections",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T01:26:57.594845Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_seated_lat_pulldown",
+    "title": "ACE Seated Lat Pulldown",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/158/seated-lat-pulldown/",
+    "sourceVersion": "Exercise Library 158; inspected setup and movement sections",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T01:26:57.594845Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "original_ace_four_diagrams_v1",
+    "title": "Original bridge, bird dog and seated pulldown sequence cues",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+    "sourceVersion": "1.0.0",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-08T01:26:57.594845Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "original_work",
+    "rightsReference": "Original repository-created SVG sequence cues, not copied or traced third-party photographs or diagrams.",
+    "limitations": [
+      "Sequence cues, not complete technique demonstrations, anatomical models or movement assessment.",
+      "Machine source comparison only; no independent human review."
+    ]
   }
 ]

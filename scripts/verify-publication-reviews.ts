@@ -283,19 +283,26 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
               : r.id === "exercise_single_leg_calf_raise"
                 ? "original_calf_diagram_v1"
                 : [
-                      "exercise_bodyweight_squat",
-                      "exercise_one_arm_dumbbell_row",
-                      "exercise_incline_push_up",
-                      "exercise_standing_calf_raise",
+                      "exercise_glute_bridge",
+                      "exercise_single_leg_glute_bridge",
+                      "exercise_bird_dog",
+                      "exercise_lat_pulldown",
                     ].includes(r.id)
-                  ? "original_foundation_diagrams_v1"
+                  ? "original_ace_four_diagrams_v1"
                   : [
-                        "exercise_dumbbell_bench_press",
-                        "exercise_forward_lunge",
-                        "exercise_dumbbell_romanian_deadlift",
+                        "exercise_bodyweight_squat",
+                        "exercise_one_arm_dumbbell_row",
+                        "exercise_incline_push_up",
+                        "exercise_standing_calf_raise",
                       ].includes(r.id)
-                    ? "original_ace_next_diagrams_v1"
-                    : "original_strength_diagrams_v1",
+                    ? "original_foundation_diagrams_v1"
+                    : [
+                          "exercise_dumbbell_bench_press",
+                          "exercise_forward_lunge",
+                          "exercise_dumbbell_romanian_deadlift",
+                        ].includes(r.id)
+                      ? "original_ace_next_diagrams_v1"
+                      : "original_strength_diagrams_v1",
         ],
         "original_authorship",
       ),

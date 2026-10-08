@@ -5,7 +5,7 @@ Status: **in progress**. Production deployment remains disabled. Counts are reco
 | Module | Identities | Published | Blocked |
 | --- | ---: | ---: | ---: |
 | muscles | 70 | 70 | 0 |
-| exercises | 184 | 16 | 168 |
+| exercises | 184 | 20 | 164 |
 | workout-science | 98 | 23 | 75 |
 | programs | 50 | 2 | 48 |
 | foods | 342 | 256 | 86 |
@@ -16,6 +16,6 @@ Status: **in progress**. Production deployment remains disabled. Counts are reco
 | cardio | 202 | 12 | 190 |
 | supplements | 272 | 7 | 265 |
 
-182 route patterns implemented. Current-build browser evidence: 0 passed, 0 failed, 654 unmeasured out of 654 route/record URLs. Stale build or content reports are excluded. 264 food profiles, 9751 numeric food values. Every remaining identity and its block reason appears in the JSON report.
+182 route patterns implemented. Current-build browser evidence: 0 passed, 0 failed, 658 unmeasured out of 658 route/record URLs. Stale build or content reports are excluded. 264 food profiles, 9751 numeric food values. Every remaining identity and its block reason appears in the JSON report.
 
 No independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. This report does not certify completion.

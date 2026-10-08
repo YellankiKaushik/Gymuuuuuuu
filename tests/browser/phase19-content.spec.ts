@@ -2,6 +2,11 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/exercises/glute-bridge", "Glute bridge"],
+  ["/exercises/single-leg-glute-bridge", "Single-leg glute bridge"],
+  ["/exercises/bird-dog", "Bird dog"],
+  ["/exercises/lat-pulldown", "Lat pulldown"],
+
   ["/foods/bitter-gourd", "Bitter gourd"],
   ["/foods/moth-bean", "Moth bean"],
   ["/foods/refined-wheat-flour", "Refined wheat flour"],

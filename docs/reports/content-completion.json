@@ -16,8 +16,8 @@
     {
       "module": "exercises",
       "totalIdentities": 184,
-      "publishedIdentities": 16,
-      "draftIdentities": 168,
+      "publishedIdentities": 20,
+      "draftIdentities": 164,
       "blockedIdentities": [
         {
           "id": "exercise_barbell_bench_press",
@@ -239,13 +239,6 @@
         {
           "id": "exercise_assisted_pull_up",
           "slug": "assisted-pull-up",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_lat_pulldown",
-          "slug": "lat-pulldown",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -692,20 +685,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "exercise_glute_bridge",
-          "slug": "glute-bridge",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_single_leg_glute_bridge",
-          "slug": "single-leg-glute-bridge",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "exercise_cable_pull_through",
           "slug": "cable-pull-through",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -855,13 +834,6 @@
         {
           "id": "exercise_dead_bug",
           "slug": "dead-bug",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_bird_dog",
-          "slug": "bird-dog",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6757,9 +6729,9 @@
     },
     {
       "module": "exercises",
-      "published": 16,
-      "withPublicationProvenance": 16,
-      "inSearch": 16,
+      "published": 20,
+      "withPublicationProvenance": 20,
+      "inSearch": 20,
       "missingSourceProvenance": []
     },
     {
@@ -6838,7 +6810,7 @@
     },
     {
       "module": "exercises",
-      "eligiblePublishedRecords": 16,
+      "eligiblePublishedRecords": 20,
       "families": [
         "exercises"
       ],
@@ -7743,6 +7715,70 @@
               "creator": "Fitness OS / Codex original SVG",
               "licence": "Original project artwork; repository-owned",
               "reviewDate": "2026-10-07",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_glute_bridge",
+          "assets": [
+            {
+              "url": "/media/glute-bridge-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_single_leg_glute_bridge",
+          "assets": [
+            {
+              "url": "/media/single-leg-glute-bridge-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_bird_dog",
+          "assets": [
+            {
+              "url": "/media/bird-dog-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_lat_pulldown",
+          "assets": [
+            {
+              "url": "/media/lat-pulldown-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
               "reviewStatus": "reviewed"
             }
           ],
@@ -10909,10 +10945,10 @@
     },
     {
       "module": "exercises",
-      "missingVerifiedFactualRecords": 168,
+      "missingVerifiedFactualRecords": 164,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 16,
+      "independentHumanReviewPending": 20,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12504,6 +12540,80 @@
         "Selected NIH summary sections inspected; cited primary studies were not independently reappraised.",
         "Publisher update date and current anti-doping/regulatory status have not been verified."
       ]
+    },
+    {
+      "id": "ace_glute_bridge",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/",
+      "version": "Exercise Library 49; inspected setup and movement sections",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T01:26:57.594845Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_single_leg_glute_bridge",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/145/glute-bridge-single-leg-progression/",
+      "version": "Exercise Library 145; inspected setup and movement sections",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T01:26:57.594845Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_bird_dog",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/14/bird-dog/",
+      "version": "Exercise Library 14; inspected setup and movement sections",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T01:26:57.594845Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_seated_lat_pulldown",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/158/seated-lat-pulldown/",
+      "version": "Exercise Library 158; inspected setup and movement sections",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T01:26:57.594845Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "original_ace_four_diagrams_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+      "version": "1.0.0",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-08T01:26:57.594845Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository-created SVG sequence cues, not copied or traced third-party photographs or diagrams.",
+      "limitations": [
+        "Sequence cues, not complete technique demonstrations, anatomical models or movement assessment.",
+        "Machine source comparison only; no independent human review."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -13828,8 +13938,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 600,
-    "factualRecords": 472
+    "documents": 604,
+    "factualRecords": 476
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -16389,11 +16499,11 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T01:34:59.828Z",
-    "expected": 654,
+    "buildDate": "2026-10-08T01:41:07.859Z",
+    "expected": 658,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 654,
+    "unmeasured": 658,
     "ignoredStaleReports": 621,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -18004,6 +18114,30 @@
       },
       {
         "path": "/exercises/knee-push-up",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/glute-bridge",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/single-leg-glute-bridge",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/bird-dog",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/lat-pulldown",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

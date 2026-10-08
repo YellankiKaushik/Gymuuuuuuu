@@ -1,0 +1,9 @@
+# Source-specific bridges, bird dog and seated pulldown
+
+Four existing exercise identities now retain inspected ACE Exercise Library 49, 145, 14 and 158 technique summaries, individually approved source metadata and hash-pinned original SVG sequence cues. Exact source publication dates are unavailable. Source facts, metadata and artwork use canonical LF bytes under the existing Git contract. Compilation validates all identities, relationships and publication objects before atomic writes, and refuses to overwrite existing versions.
+
+Muscle associations are explicitly qualified anatomical inferences connecting the guide's hip extension or lowering of the raised arm to retained historical anatomical actions. They are context-dependent relationships, without measured activity, primary/secondary ranking, isolation percentages or training-effect conclusions. This distinction is visible in each exercise's muscle-role qualifier and citation.
+
+The thigh-held single-leg bridge is ACE 145's version. ACE 49's straight-leg progression is not silently substituted for it; the two published identities have variation links. Bird dog limb height is limited by control of the back and pelvis. Seated pulldown setup retains the guide's limit of 30 degrees of backward lean, without making it a universal individualized posture rule. The selectorized-machine equipment qualifier is added alongside the existing cable identity.
+
+All sets, repetitions, duration and rest values remain unavailable because these technique guides supply no numeric programs. Bird dog breathing timing remains unavailable; other breathing cues retain only what their guide specifies. No shin-splint prevention claim from the single-leg guide is imported. General NIA stop signals remain separately sourced. Future review dates are maintenance reminders, not performed human reviews.

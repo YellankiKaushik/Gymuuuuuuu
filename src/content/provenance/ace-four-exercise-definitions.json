@@ -1,0 +1,588 @@
+[
+  {
+    "id": "exercise_glute_bridge",
+    "slug": "glute-bridge",
+    "displayName": "Glute bridge",
+    "aliases": [],
+    "exerciseType": "bodyweight-strength",
+    "movementPatternIds": [
+      "pattern_hinge"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "beginner",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A floor-based hip-extension technique with bent knees and two supported feet.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described hip extension; exercise involvement is not measured or ranked.",
+        "sourceIds": [
+          "ace_glute_bridge",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Lie on your back, knees bent and feet flat hip-width apart. Keep a gentle abdominal contraction."
+      ],
+      "executionSteps": [
+        "Exhale, press through the heels and lift the hips while contracting the glutes; avoid excessive lower-back arching.",
+        "Inhale while lowering slowly to the starting position."
+      ],
+      "finishOrReset": "Return under control to the described starting position.",
+      "keyCheckpoints": [
+        "Maintain abdominal contraction and limit the lift."
+      ],
+      "breathing": "Exhale while lifting; inhale while lowering."
+    },
+    "mistakes": [
+      {
+        "mistake": "Lifting beyond controlled hip extension into excessive lower-back arching.",
+        "whyItMatters": "Departs from the source-described technique.",
+        "correction": "Maintain abdominal contraction and limit the lift.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_glute_bridge"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "Technique source does not establish sets, repetitions or timed rest. Breathing timing remains unavailable where unstated. Learn the described prerequisites first.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_glute_bridge"
+        ]
+      }
+    ],
+    "safety": {
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "sources": [
+      {
+        "id": "ace_glute_bridge",
+        "title": "ACE Glute Bridge Exercise",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 49; inspected setup and movement sections"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-08",
+        "notes": "Historical anatomical action only; exercise association is an explicitly limited anatomical inference, not measured muscle activation."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_glute_bridge_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/glute-bridge-cue.svg",
+        "alt": "Original sequence cue: Bent knees, supported feet, then Lift without excessive arching, then Lower with control. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "relationships": {
+      "variationIds": [
+        "exercise_single_leg_glute_bridge"
+      ]
+    }
+  },
+  {
+    "id": "exercise_single_leg_glute_bridge",
+    "slug": "single-leg-glute-bridge",
+    "displayName": "Single-leg glute bridge",
+    "aliases": [],
+    "exerciseType": "bodyweight-strength",
+    "movementPatternIds": [
+      "pattern_hinge",
+      "pattern_anti_rotation"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "unilateral",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE single-leg bridge version holds the opposite thigh near the chest while the supported hip extends.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described hip extension; exercise involvement is not measured or ranked.",
+        "sourceIds": [
+          "ace_single_leg_glute_bridge",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Lie on your back with bent knees. Hold behind one thigh and draw that knee toward the chest; move the supported foot toward the midline.",
+        "Keep gentle abdominal stiffness and a supported heel."
+      ],
+      "executionSteps": [
+        "Exhale, press the supported heel down and contract the glute to raise the hips without excessive back arching.",
+        "Inhale while lowering slowly. Repeat on the other side; no repetition count or duration is specified."
+      ],
+      "finishOrReset": "Return under control to the described starting position.",
+      "keyCheckpoints": [
+        "Maintain abdominal stiffness and reduce the lift."
+      ],
+      "breathing": "Exhale while lifting; inhale while lowering."
+    },
+    "mistakes": [
+      {
+        "mistake": "Pushing the hip lift into excessive lower-back extension.",
+        "whyItMatters": "Departs from the source-described technique.",
+        "correction": "Maintain abdominal stiffness and reduce the lift.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_single_leg_glute_bridge"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "Technique source does not establish sets, repetitions or timed rest. Breathing timing remains unavailable where unstated. Learn the described prerequisites first.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_single_leg_glute_bridge"
+        ]
+      }
+    ],
+    "safety": {
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "sources": [
+      {
+        "id": "ace_single_leg_glute_bridge",
+        "title": "ACE Glute Bridge Single Leg Progression",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/145/glute-bridge-single-leg-progression/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 145; inspected setup and movement sections"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-08",
+        "notes": "Historical anatomical action only; exercise association is an explicitly limited anatomical inference, not measured muscle activation."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review. This is ACE 145's thigh-held version; it is not the straight-leg progression described in ACE 49."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_single_leg_glute_bridge_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/single-leg-glute-bridge-cue.svg",
+        "alt": "Original sequence cue: Hold the opposite thigh, then Press the supported heel, then Lower, then change sides. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "relationships": {
+      "variationIds": [
+        "exercise_glute_bridge"
+      ]
+    }
+  },
+  {
+    "id": "exercise_bird_dog",
+    "slug": "bird-dog",
+    "displayName": "Bird dog",
+    "aliases": [],
+    "exerciseType": "bodyweight-strength",
+    "movementPatternIds": [
+      "pattern_anti_rotation",
+      "pattern_trunk_extension"
+    ],
+    "equipmentIds": [
+      "equipment_bodyweight"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "alternating",
+    "environmentTags": [
+      "home",
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A hands-and-knees opposite-arm/leg movement with controlled spinal and pelvic position.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described hip extension; exercise involvement is not measured or ranked.",
+        "sourceIds": [
+          "ace_bird_dog",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Place hands below shoulders and knees below hips, toes dorsiflexed and fingers forward. Brace gently with a neutral spine."
+      ],
+      "executionSteps": [
+        "Reach one arm forward and the opposite leg backward toward floor-parallel only as far as back and pelvis control allow.",
+        "Keep hips and shoulders level and the head aligned. Lower gently and repeat with the opposite limbs."
+      ],
+      "finishOrReset": "Return under control to the described starting position.",
+      "keyCheckpoints": [
+        "Use a smaller controlled reach."
+      ],
+      "breathing": null
+    },
+    "mistakes": [
+      {
+        "mistake": "Raising a limb beyond the ability to keep the back and pelvis controlled.",
+        "whyItMatters": "Departs from the source-described technique.",
+        "correction": "Use a smaller controlled reach.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_bird_dog"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "Technique source does not establish sets, repetitions or timed rest. Breathing timing remains unavailable where unstated. Learn the described prerequisites first.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_bird_dog"
+        ]
+      }
+    ],
+    "safety": {
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "sources": [
+      {
+        "id": "ace_bird_dog",
+        "title": "ACE Bird Dog",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/14/bird-dog/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 14; inspected setup and movement sections"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-08",
+        "notes": "Historical anatomical action only; exercise association is an explicitly limited anatomical inference, not measured muscle activation."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_bird_dog_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/bird-dog-cue.svg",
+        "alt": "Original sequence cue: Hands and knees supported, then Opposite arm and leg reach, then Lower and alternate. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ]
+  },
+  {
+    "id": "exercise_lat_pulldown",
+    "slug": "lat-pulldown",
+    "displayName": "Lat pulldown",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "movementPatternIds": [
+      "pattern_vertical_pull"
+    ],
+    "equipmentIds": [
+      "equipment_cable",
+      "equipment_machine_selectorized"
+    ],
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "version": "1.0.0",
+    "difficulty": "beginner",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A seated selectorized cable-machine pull with supported thighs and controlled shoulder and elbow movement.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_latissimus_dorsi",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to lowering the raised arm; this guide does not measure or rank muscle activation.",
+        "sourceIds": [
+          "ace_seated_lat_pulldown",
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Adjust thigh support and sit with feet supported. Brace without excessive back arching; align the head and set shoulders down/back.",
+        "Use the guide's slight backward lean, no more than 30 degrees, and keep that torso position throughout the pull."
+      ],
+      "executionSteps": [
+        "Exhale, depress the shoulder blades and draw the bar toward the upper/middle chest with elbows moving down beside the torso.",
+        "Stop near the chest or when elbows stop descending and begin moving backward. Pause, then control the return as elbows extend."
+      ],
+      "finishOrReset": "Return under control to the described starting position.",
+      "keyCheckpoints": [
+        "Keep the initial torso position and stop at the described endpoint."
+      ],
+      "breathing": "Exhale while pulling down; the guide does not assign a separate inhalation phase."
+    },
+    "mistakes": [
+      {
+        "mistake": "Leaning farther backward or continuing the pull after elbows stop moving downward.",
+        "whyItMatters": "Departs from the source-described technique.",
+        "correction": "Keep the initial torso position and stop at the described endpoint.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_seated_lat_pulldown"
+        ]
+      }
+    ],
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "Technique source does not establish sets, repetitions or timed rest. Breathing timing remains unavailable where unstated. Learn the described prerequisites first.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_seated_lat_pulldown"
+        ]
+      }
+    ],
+    "safety": {
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "sources": [
+      {
+        "id": "ace_seated_lat_pulldown",
+        "title": "ACE Seated Lat Pulldown",
+        "publisher": "American Council on Exercise",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/158/seated-lat-pulldown/",
+        "sourceType": "professional-technique-guide",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 158; inspected setup and movement sections"
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "sourceType": "textbook",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-08",
+        "notes": "Historical anatomical action only; exercise association is an explicitly limited anatomical inference, not measured muscle activation."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "sourceType": "government-guideline",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_lat_pulldown_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/lat-pulldown-cue.svg",
+        "alt": "Original sequence cue: Adjust support and brace, then Pull with elbows downward, then Pause, then return slowly. Not a complete technique demonstration.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ]
+  }
+]
