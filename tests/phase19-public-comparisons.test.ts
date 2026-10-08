@@ -68,7 +68,9 @@ test("source education and framework rows retain units, population and distinct 
   ).toContain("mg");
   expect(
     rows[1]?.fields.find((f) => f.label === "Reference frameworks")?.value,
-  ).toBe("No numeric reference rows published");
+  ).toBe(
+    "fda dv adult 4 plus · DV · 50 g · label reference · all · 48–no upper bound months · general",
+  );
   expect(rows.every((r) => r.sources.length > 0)).toBe(true);
   const anatomy = await loadComparisonRecords("muscles", [
     reference("muscle", "muscle_biceps_brachii"),
@@ -118,7 +120,7 @@ test("every factual search review date matches the explicit machine publication 
   const factual = documents.filter(
     (d) => !["route", "dashboard_widget"].includes(d.entityType),
   );
-  expect(factual).toHaveLength(459);
+  expect(factual).toHaveLength(472);
   for (const document of factual) {
     const review = reviews.find((r) => r.id === document.entityId)!;
     expect(document.lastReviewedAt).toBe(review.lastReviewedAt);

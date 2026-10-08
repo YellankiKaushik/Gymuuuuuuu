@@ -1,4 +1,6 @@
 import { expect, it } from "vitest";
+import fda from "../src/content/provenance/fda-daily-values.json";
+import type { Nutrient } from "../src/features/nutrients/schema";
 import records from "../src/content/nutrients/records.json";
 import identities from "../src/content/nutrients/identities.json";
 import verifiedSources from "../src/content/provenance/verified-sources.json";
@@ -7,11 +9,26 @@ import { nutrientSchema } from "../src/features/nutrients/schema";
 import { foodSchema } from "../src/features/foods/schema";
 import { rankVerifiedFoodSources } from "../src/features/nutrients/ranking";
 import foods from "../src/content/foods/records.json";
+const expectExactReference = (record: Nutrient) => {
+  const row = fda.rows.find((r) => r.nutrientId === record.id);
+  if (!row) {
+    expect(record.referenceValues).toEqual([]);
+    return;
+  }
+  expect(record.referenceValues).toHaveLength(1);
+  expect(record.referenceValues[0]).toMatchObject({
+    frameworkId: "fda_dv_adult_4_plus",
+    valueType: "DV",
+    sourceId: "fda_daily_values",
+    unit: record.canonicalUnit,
+    value: row.value,
+  });
+};
 const additions = ["thiamin_mg", "riboflavin_mg", "niacin_mg", "vitamin_b6_mg"];
 it("keeps every new nutrient's stable identity, exact NIH page and honest dated publication", () => {
   const parsed = nutrientSchema.array().parse(records);
   expect(parsed.filter((r) => r.status === "published")).toHaveLength(51);
-  expect(parsed.flatMap((r) => r.referenceValues)).toHaveLength(7);
+  expect(parsed.flatMap((r) => r.referenceValues)).toHaveLength(35);
   for (const id of additions) {
     const record = parsed.find((r) => r.id === id)!,
       seed = identities.find((r) => r.id === id)!;
@@ -20,7 +37,7 @@ it("keeps every new nutrient's stable identity, exact NIH page and honest dated 
       record.canonicalUnit,
       record.foodDataNutrientIds,
     ]).toEqual([seed.slug, seed.canonicalUnit, seed.foodDataNutrientIds]);
-    expect(record.referenceValues).toEqual([]);
+    expectExactReference(record);
     expect(record.claims.map((c) => c.category)).toEqual([
       "function",
       "food_source",
@@ -59,7 +76,7 @@ it("retains new mineral and fat-soluble vitamin source dates without importing d
     )!;
     expect(source.extractedAt.slice(0, 10)).toBe("2026-10-07");
     expect(record.editorial.reviewedAt).toBe("2026-10-07");
-    expect(record.referenceValues).toEqual([]);
+    expectExactReference(record);
     expect(record.forms.every((form) => !form.conversionRule)).toBe(true);
     expect(record.deficiency!.medicalBoundary).toContain("cannot diagnose");
     expect(reviews.find((row) => row.id === id)?.reviewer.kind).toBe("machine");
@@ -128,7 +145,7 @@ it("keeps natural food folate, source-reported DFE and medication safety context
       (s) => s.url === record.sources[0]!.locator,
     )!;
     expect(source.extractedAt).toBe("2026-10-06T06:37:25Z");
-    expect(record.referenceValues).toEqual([]);
+    expectExactReference(record);
     expect(record.deficiency!.medicalBoundary).toContain("cannot diagnose");
     expect(
       reviews
@@ -165,7 +182,7 @@ it("preserves source-specific vitamin A, folate and omega-3 concepts without inv
       article.canonicalUnit,
       article.foodDataNutrientIds,
     ]).toEqual([seed.slug, seed.canonicalUnit, seed.foodDataNutrientIds]);
-    expect(article.referenceValues).toEqual([]);
+    expectExactReference(article);
     expect(article.editorial.reviewedAt).toBe("2026-10-07");
     expect(article.claims.every((claim) => claim.sourceIds.length > 0)).toBe(
       true,

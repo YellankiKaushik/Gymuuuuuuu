@@ -2,16 +2,22 @@
   "sourceId": "fda_daily_values",
   "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
   "locator": "Reference Guide: Daily Values for Nutrients",
-  "sourceVersion": null,
+  "sourceVersion": "FDA-DV-web-snapshot-2026-10-08",
   "sourceDate": null,
-  "extractedAt": "2026-10-05T19:49:43.027832Z",
+  "extractedAt": "2026-10-08T01:15:56.524750Z",
   "reviewMethod": "Explicit transcription from the official FDA reference table and machine validation; no independent human review",
   "rows": [
     {
-      "nutrientId": "iron_mg",
-      "sourceName": "Iron",
-      "value": 18,
-      "sourceUnit": "mg"
+      "nutrientId": "added_sugars_g",
+      "sourceName": "Added sugars",
+      "value": 50,
+      "sourceUnit": "g"
+    },
+    {
+      "nutrientId": "biotin_ug",
+      "sourceName": "Biotin",
+      "value": 30,
+      "sourceUnit": "mcg"
     },
     {
       "nutrientId": "calcium_mg",
@@ -20,9 +26,63 @@
       "sourceUnit": "mg"
     },
     {
-      "nutrientId": "vitamin_c_mg",
-      "sourceName": "Vitamin C",
-      "value": 90,
+      "nutrientId": "chloride_mg",
+      "sourceName": "Chloride",
+      "value": 2300,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "choline_mg",
+      "sourceName": "Choline",
+      "value": 550,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "cholesterol_mg",
+      "sourceName": "Cholesterol",
+      "value": 300,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "chromium_ug",
+      "sourceName": "Chromium",
+      "value": 35,
+      "sourceUnit": "mcg"
+    },
+    {
+      "nutrientId": "copper_mg",
+      "sourceName": "Copper",
+      "value": 0.9,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "fiber_total_g",
+      "sourceName": "Dietary Fiber",
+      "value": 28,
+      "sourceUnit": "g"
+    },
+    {
+      "nutrientId": "fat_total_g",
+      "sourceName": "Fat",
+      "value": 78,
+      "sourceUnit": "g"
+    },
+    {
+      "nutrientId": "folate_dfe_ug",
+      "sourceName": "Folate/Folic Acid",
+      "value": 400,
+      "sourceUnit": "mcg DFE"
+    },
+    {
+      "nutrientId": "iodine_ug",
+      "sourceName": "Iodine",
+      "value": 150,
+      "sourceUnit": "mcg"
+    },
+    {
+      "nutrientId": "iron_mg",
+      "sourceName": "Iron",
+      "value": 18,
       "sourceUnit": "mg"
     },
     {
@@ -32,9 +92,105 @@
       "sourceUnit": "mg"
     },
     {
-      "nutrientId": "zinc_mg",
-      "sourceName": "Zinc",
-      "value": 11,
+      "nutrientId": "manganese_mg",
+      "sourceName": "Manganese",
+      "value": 2.3,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "molybdenum_ug",
+      "sourceName": "Molybdenum",
+      "value": 45,
+      "sourceUnit": "mcg"
+    },
+    {
+      "nutrientId": "niacin_mg",
+      "sourceName": "Niacin",
+      "value": 16,
+      "sourceUnit": "mg NE"
+    },
+    {
+      "nutrientId": "pantothenic_acid_mg",
+      "sourceName": "Pantothenic Acid",
+      "value": 5,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "phosphorus_mg",
+      "sourceName": "Phosphorus",
+      "value": 1250,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "potassium_mg",
+      "sourceName": "Potassium",
+      "value": 4700,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "protein_g",
+      "sourceName": "Protein",
+      "value": 50,
+      "sourceUnit": "g"
+    },
+    {
+      "nutrientId": "riboflavin_mg",
+      "sourceName": "Riboflavin",
+      "value": 1.3,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "fat_saturated_g",
+      "sourceName": "Saturated fat",
+      "value": 20,
+      "sourceUnit": "g"
+    },
+    {
+      "nutrientId": "selenium_ug",
+      "sourceName": "Selenium",
+      "value": 55,
+      "sourceUnit": "mcg"
+    },
+    {
+      "nutrientId": "sodium_mg",
+      "sourceName": "Sodium",
+      "value": 2300,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "thiamin_mg",
+      "sourceName": "Thiamin",
+      "value": 1.2,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "carbohydrate_total_g",
+      "sourceName": "Total carbohydrate",
+      "value": 275,
+      "sourceUnit": "g"
+    },
+    {
+      "nutrientId": "vitamin_a_rae_ug",
+      "sourceName": "Vitamin A",
+      "value": 900,
+      "sourceUnit": "mcg RAE"
+    },
+    {
+      "nutrientId": "vitamin_b6_mg",
+      "sourceName": "Vitamin B6",
+      "value": 1.7,
+      "sourceUnit": "mg"
+    },
+    {
+      "nutrientId": "vitamin_b12_ug",
+      "sourceName": "Vitamin B12",
+      "value": 2.4,
+      "sourceUnit": "mcg"
+    },
+    {
+      "nutrientId": "vitamin_c_mg",
+      "sourceName": "Vitamin C",
+      "value": 90,
       "sourceUnit": "mg"
     },
     {
@@ -44,10 +200,22 @@
       "sourceUnit": "mcg"
     },
     {
-      "nutrientId": "vitamin_b12_ug",
-      "sourceName": "Vitamin B12",
-      "value": 2.4,
+      "nutrientId": "vitamin_e_mg",
+      "sourceName": "Vitamin E",
+      "value": 15,
+      "sourceUnit": "mg alpha-tocopherol"
+    },
+    {
+      "nutrientId": "vitamin_k_ug",
+      "sourceName": "Vitamin K",
+      "value": 120,
       "sourceUnit": "mcg"
+    },
+    {
+      "nutrientId": "zinc_mg",
+      "sourceName": "Zinc",
+      "value": 11,
+      "sourceUnit": "mg"
     }
   ]
 }

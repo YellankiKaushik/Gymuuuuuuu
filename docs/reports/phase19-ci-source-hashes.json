@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": "3632be268179d14770f0821c9eff15d798e915e0",
+  "ciRun": 37711989803,
+  "crossBrowserRun": 37711989997,
+  "result": "failed_before_browser_tests",
+  "failure": "NIH ingredient observation snapshot changed.",
+  "cause": "Local CRLF-byte hash pins disagreed with LF Git blobs under the existing .gitattributes contract.",
+  "correction": "Normalize retained transcription files to LF and explicitly pin their exact LF bytes; preserve all factual JSON values. Do not normalize or alter downloaded USDA dataset payloads.",
+  "validation": "Canonical source JSON equals the committed source objects; local source-pin regressions pass. Fresh hosted verification required.",
+  "productionDeployment": "disabled"
+}

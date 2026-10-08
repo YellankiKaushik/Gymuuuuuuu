@@ -6145,12 +6145,337 @@
     ]
   },
   {
+    "module": "foods",
+    "id": "food_bitter_gourd",
+    "slug": "bitter-gourd",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_bitter_gourd_fdc_168393",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_moth_bean",
+    "slug": "moth-bean",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_moth_bean_fdc_172425",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_refined_wheat_flour",
+    "slug": "refined-wheat-flour",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_refined_wheat_flour_fdc_169761",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_cornmeal",
+    "slug": "cornmeal",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_cornmeal_fdc_169697",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_pumpkin_seed",
+    "slug": "pumpkin-seed",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_pumpkin_seed_fdc_170556",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_buttermilk",
+    "slug": "buttermilk",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_buttermilk_fdc_170874",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_kefir",
+    "slug": "kefir",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_kefir_fdc_170904",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_turkey_breast",
+    "slug": "turkey-breast",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_turkey_breast_fdc_171098",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_chicken_liver",
+    "slug": "chicken-liver",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_chicken_liver_fdc_171060",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_mustard_oil",
+    "slug": "mustard-oil",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_mustard_oil_fdc_172337",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_turmeric_powder",
+    "slug": "turmeric-powder",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_turmeric_powder_fdc_172231",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_chicken_thigh",
+    "slug": "chicken-thigh",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_chicken_thigh_fdc_173627",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "foods",
+    "id": "food_chicken_drumstick",
+    "slug": "chicken-drumstick",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "compositionProfiles.profile_chicken_drumstick_fdc_173614",
+        "sourceIds": [
+          "usda_fdc_sr_legacy_2018"
+        ],
+        "kind": "dataset_value"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "nutrients",
     "id": "iron_mg",
     "slug": "iron",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6182,7 +6507,7 @@
     "slug": "calcium",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6214,7 +6539,7 @@
     "slug": "vitamin-c",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6246,7 +6571,7 @@
     "slug": "magnesium",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6278,7 +6603,7 @@
     "slug": "zinc",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6310,7 +6635,7 @@
     "slug": "vitamin-d",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6342,7 +6667,7 @@
     "slug": "vitamin-b12",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-05",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6374,7 +6699,7 @@
     "slug": "thiamin-vitamin-b1",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6384,6 +6709,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_thiamin_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6399,7 +6731,7 @@
     "slug": "riboflavin-vitamin-b2",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6409,6 +6741,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_riboflavin_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6424,7 +6763,7 @@
     "slug": "niacin-vitamin-b3",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6434,6 +6773,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_niacin_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6449,7 +6795,7 @@
     "slug": "vitamin-b6",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6459,6 +6805,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_vitamin_b6_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6499,7 +6852,7 @@
     "slug": "folate-vitamin-b9",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6509,6 +6862,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_folate_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6524,7 +6884,7 @@
     "slug": "choline",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6534,6 +6894,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_choline_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6549,7 +6916,7 @@
     "slug": "iodine",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6559,6 +6926,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_iodine_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6574,7 +6948,7 @@
     "slug": "potassium",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-06",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6584,6 +6958,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_potassium_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6599,7 +6980,7 @@
     "slug": "phosphorus",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6609,6 +6990,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_phosphorus_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6624,7 +7012,7 @@
     "slug": "copper",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6634,6 +7022,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_copper_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6649,7 +7044,7 @@
     "slug": "manganese",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6659,6 +7054,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_manganese_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6674,7 +7076,7 @@
     "slug": "selenium",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6684,6 +7086,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_selenium_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6699,7 +7108,7 @@
     "slug": "vitamin-e",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6709,6 +7118,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_vitamine_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6724,7 +7140,7 @@
     "slug": "vitamin-k",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6734,6 +7150,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_vitamink_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6749,7 +7172,7 @@
     "slug": "chromium",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6759,6 +7182,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_chromium_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6799,7 +7229,7 @@
     "slug": "molybdenum",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6809,6 +7239,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_molybdenum_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6824,7 +7261,7 @@
     "slug": "pantothenic-acid-vitamin-b5",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6834,6 +7271,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_pantothenicacid_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6849,7 +7293,7 @@
     "slug": "biotin-vitamin-b7",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6859,6 +7303,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_biotin_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -6899,7 +7350,7 @@
     "slug": "vitamin-a",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -6909,6 +7360,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "nih_ods_vitamina_consumer"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7099,7 +7557,7 @@
     "slug": "protein",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7109,6 +7567,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_protein_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7124,7 +7589,7 @@
     "slug": "total-carbohydrate",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7134,6 +7599,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_carbohydrate_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7174,7 +7646,7 @@
     "slug": "dietary-fibre",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7184,6 +7656,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_fiber_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7224,7 +7703,7 @@
     "slug": "added-sugars",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7234,6 +7713,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_sugars_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7249,7 +7735,7 @@
     "slug": "total-fat",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7259,6 +7745,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_total_fat_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7274,7 +7767,7 @@
     "slug": "saturated-fat",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7284,6 +7777,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_saturated_fat_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7399,7 +7899,7 @@
     "slug": "cholesterol",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7409,6 +7909,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_cholesterol_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7424,7 +7931,7 @@
     "slug": "sodium",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7434,6 +7941,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "fda_label_sodium_2021"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }
@@ -7449,7 +7963,7 @@
     "slug": "chloride",
     "state": "published_personal_use",
     "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
-    "lastReviewedAt": "2026-10-07",
+    "lastReviewedAt": "2026-10-08",
     "reviewer": {
       "kind": "machine",
       "name": "Codex"
@@ -7459,6 +7973,13 @@
         "path": "claims_and_educational_sections",
         "sourceIds": [
           "efsa_chloride_2019"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "referenceValues",
+        "sourceIds": [
+          "fda_daily_values"
         ],
         "kind": "sourced_education"
       }

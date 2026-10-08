@@ -120,8 +120,8 @@
       {
         "sourceId": "fda_daily_values",
         "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-        "accessedAt": "2026-10-05",
-        "notes": "FDA-DV-web-snapshot-2026-10-05; repository snapshot identifier, not an official FDA release number. Reference Guide table."
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -252,8 +252,8 @@
       {
         "sourceId": "fda_daily_values",
         "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-        "accessedAt": "2026-10-05",
-        "notes": "FDA-DV-web-snapshot-2026-10-05; repository snapshot identifier, not an official FDA release number. Reference Guide table."
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -386,8 +386,8 @@
       {
         "sourceId": "fda_daily_values",
         "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-        "accessedAt": "2026-10-05",
-        "notes": "FDA-DV-web-snapshot-2026-10-05; repository snapshot identifier, not an official FDA release number. Reference Guide table."
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -558,8 +558,8 @@
       {
         "sourceId": "fda_daily_values",
         "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-        "accessedAt": "2026-10-05",
-        "notes": "FDA-DV-web-snapshot-2026-10-05; repository snapshot identifier, not an official FDA release number. Reference Guide table."
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -730,8 +730,8 @@
       {
         "sourceId": "fda_daily_values",
         "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-        "accessedAt": "2026-10-05",
-        "notes": "FDA-DV-web-snapshot-2026-10-05; repository snapshot identifier, not an official FDA release number. Reference Guide table."
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -904,8 +904,8 @@
       {
         "sourceId": "fda_daily_values",
         "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-        "accessedAt": "2026-10-05",
-        "notes": "FDA-DV-web-snapshot-2026-10-05; repository snapshot identifier, not an official FDA release number. Reference Guide table."
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -1079,8 +1079,8 @@
       {
         "sourceId": "fda_daily_values",
         "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-        "accessedAt": "2026-10-05",
-        "notes": "FDA-DV-web-snapshot-2026-10-05; repository snapshot identifier, not an official FDA release number. Reference Guide table."
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -1135,7 +1135,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 1.2,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -1245,6 +1262,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Thiamin-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -1281,7 +1304,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 1.3,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -1391,6 +1431,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Riboflavin-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2022-05-11. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -1445,7 +1491,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 16,
+        "unit": "mg NE",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "qualitative_only",
@@ -1555,6 +1618,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Niacin-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -1601,7 +1670,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 1.7,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -1711,6 +1797,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/VitaminB6-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2023-06-16. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -1912,7 +2004,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 400,
+        "unit": "µg DFE",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -2043,6 +2152,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Folate-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2022-11-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -2102,7 +2217,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 550,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -2212,6 +2344,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Choline-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2022-06-02. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -2263,7 +2401,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 150,
+        "unit": "µg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -2373,6 +2528,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Iodine-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2024-05-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -2424,7 +2585,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 4700,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -2534,6 +2712,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Potassium-Consumer/",
         "accessedAt": "2026-10-06",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -2587,7 +2771,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 1250,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -2697,6 +2898,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Phosphorus-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -2756,7 +2963,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 0.9,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -2866,6 +3090,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Copper-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2022-10-18. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -2917,7 +3147,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 2.3,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -3027,6 +3274,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Manganese-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -3086,7 +3339,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 55,
+        "unit": "µg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -3196,6 +3466,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Selenium-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2025-06-18. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -3249,7 +3525,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 15,
+        "unit": "mg alpha-tocopherol",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -3359,6 +3652,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/VitaminE-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -3426,7 +3725,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 120,
+        "unit": "µg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -3536,6 +3852,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/VitaminK-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -3568,7 +3890,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 35,
+        "unit": "µg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "qualitative_only",
@@ -3678,6 +4017,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Chromium-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -3852,7 +4197,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 45,
+        "unit": "µg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "qualitative_only",
@@ -3962,6 +4324,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Molybdenum-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2021-03-22. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -3998,7 +4366,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 5,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -4108,6 +4493,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/PantothenicAcid-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2026-05-01. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -4144,7 +4535,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 30,
+        "unit": "µg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -4254,6 +4662,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/Biotin-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2021-01-15. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -4458,7 +4872,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 900,
+        "unit": "µg RAE",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -4568,6 +4999,12 @@
         "locator": "https://ods.od.nih.gov/factsheets/VitaminA-Consumer/",
         "accessedAt": "2026-10-07",
         "notes": "Individually read consumer page; source updated 2025-03-10. No numeric intake rows imported. See the source for framework-specific recommendations."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -5495,7 +5932,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 50,
+        "unit": "g",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -5594,6 +6048,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Protein_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -5631,7 +6091,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 275,
+        "unit": "g",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -5730,6 +6207,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalCarbohydrate_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -5864,7 +6347,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 28,
+        "unit": "g",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -5984,6 +6484,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_DietaryFiber_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -6113,7 +6619,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 50,
+        "unit": "g",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "qualitative_only",
@@ -6192,6 +6715,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Total%26AddedSugars_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -6229,7 +6758,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 78,
+        "unit": "g",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -6349,6 +6895,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_TotalFat_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -6386,7 +6938,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 20,
+        "unit": "g",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -6485,6 +7054,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_SaturatedFat_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -7060,7 +7635,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 300,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -7159,6 +7751,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Cholesterol_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -7193,7 +7791,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 2300,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "per_100g",
@@ -7292,6 +7907,12 @@
         "locator": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_Sodium_October2021.pdf",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: October 2021; date: exact date not supplied. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {
@@ -7324,7 +7945,24 @@
         ]
       }
     ],
-    "referenceValues": [],
+    "referenceValues": [
+      {
+        "frameworkId": "fda_dv_adult_4_plus",
+        "valueType": "DV",
+        "population": {
+          "ageMinMonths": 48,
+          "ageMaxMonths": null,
+          "sex": "all",
+          "lifeStage": "general"
+        },
+        "value": 2300,
+        "unit": "mg",
+        "basis": "label_reference",
+        "sourceId": "fda_daily_values",
+        "status": "source_verified",
+        "notes": "FDA adult/children 4+ label reference. Not a personal target, EAR, RDA or UL. Exact source form; no conversion inferred."
+      }
+    ],
     "foodSourceRules": [
       {
         "rankingBasis": "qualitative_only",
@@ -7444,6 +8082,12 @@
         "locator": "https://www.efsa.europa.eu/en/efsajournal/pub/5779",
         "accessedAt": "2026-10-07",
         "notes": "Individually read source. Version: EFSA Journal 2019;17(9):5779; doi:10.2903/j.efsa.2019.5779; date: 2019-09-04. No numeric intake rows imported."
+      },
+      {
+        "sourceId": "fda_daily_values",
+        "locator": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessedAt": "2026-10-08",
+        "notes": "FDA-DV-web-snapshot-2026-10-08; repository transcription, not an official FDA release number. Exact Current Daily Value table; adult/children 4+ labeling scope. Original seven-row October 5 snapshot retained separately."
       }
     ],
     "editorial": {

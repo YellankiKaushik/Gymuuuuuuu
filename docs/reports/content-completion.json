@@ -2083,8 +2083,8 @@
     {
       "module": "foods",
       "totalIdentities": 342,
-      "publishedIdentities": 243,
-      "draftIdentities": 99,
+      "publishedIdentities": 256,
+      "draftIdentities": 86,
       "blockedIdentities": [
         {
           "id": "food_custard_apple",
@@ -2138,13 +2138,6 @@
         {
           "id": "food_bottle_gourd",
           "slug": "bottle-gourd",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_bitter_gourd",
-          "slug": "bitter-gourd",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2325,13 +2318,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_moth_bean",
-          "slug": "moth-bean",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_horse_gram",
           "slug": "horse-gram",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2383,13 +2369,6 @@
         {
           "id": "food_puffed_rice",
           "slug": "puffed-rice",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_refined_wheat_flour",
-          "slug": "refined-wheat-flour",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2451,22 +2430,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_cornmeal",
-          "slug": "cornmeal",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_popcorn_kernels",
           "slug": "popcorn-kernels",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_pumpkin_seed",
-          "slug": "pumpkin-seed",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2493,43 +2458,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_buttermilk",
-          "slug": "buttermilk",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_kefir",
-          "slug": "kefir",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_paneer",
           "slug": "paneer",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_chicken_thigh",
-          "slug": "chicken-thigh",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_chicken_drumstick",
-          "slug": "chicken-drumstick",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_turkey_breast",
-          "slug": "turkey-breast",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2551,13 +2481,6 @@
         {
           "id": "food_pork",
           "slug": "pork",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_chicken_liver",
-          "slug": "chicken-liver",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2647,13 +2570,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_mustard_oil",
-          "slug": "mustard-oil",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_green_cardamom",
           "slug": "green-cardamom",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2698,13 +2614,6 @@
         {
           "id": "food_lemongrass",
           "slug": "lemongrass",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_turmeric_powder",
-          "slug": "turmeric-powder",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6869,9 +6778,9 @@
     },
     {
       "module": "foods",
-      "published": 243,
-      "withPublicationProvenance": 243,
-      "inSearch": 243,
+      "published": 256,
+      "withPublicationProvenance": 256,
+      "inSearch": 256,
       "missingSourceProvenance": []
     },
     {
@@ -6954,7 +6863,7 @@
     },
     {
       "module": "foods",
-      "eligiblePublishedRecords": 243,
+      "eligiblePublishedRecords": 256,
       "families": [
         "foods"
       ],
@@ -10003,6 +9912,110 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_bitter_gourd",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_moth_bean",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_refined_wheat_flour",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_cornmeal",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_pumpkin_seed",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_buttermilk",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_kefir",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_turkey_breast",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_chicken_liver",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_mustard_oil",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_turmeric_powder",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_chicken_thigh",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_chicken_drumstick",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10924,9 +10937,9 @@
     {
       "module": "foods",
       "missingVerifiedFactualRecords": 0,
-      "missingDatasetMappings": 99,
+      "missingDatasetMappings": 86,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 243,
+      "independentHumanReviewPending": 256,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -11115,15 +11128,16 @@
     {
       "id": "fda_daily_values",
       "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
-      "version": "FDA-DV-web-snapshot-2026-10-05",
+      "version": "FDA-DV-web-snapshot-2026-10-08",
       "reuse": "brief_factual_paraphrase",
-      "extractionDate": "2026-10-05T14:44:18Z",
-      "reviewDate": "2026-10-05",
+      "extractionDate": "2026-10-08T01:15:56.524750Z",
+      "reviewDate": "2026-10-08",
       "evidenceType": "government_reference",
       "rightsReference": "Brief factual paraphrase with attribution. No bulk text, images or third-party diagrams reproduced.",
       "limitations": [
         "Machine source verification, not independent human or clinical review.",
-        "Null source dates/versions mean the source did not supply a verified date/version."
+        "Null source dates/versions mean the source did not supply a verified date/version.",
+        "Current 35-row reference table inspected October 8, 2026. FDA adult/children 4+ labeling scope; no personal EAR/RDA/UL or form conversion imported. Direct HTML capture was unavailable; snapshot is explicit table transcription, not a raw-page checksum."
       ]
     },
     {
@@ -13799,12 +13813,12 @@
     "src/features/supplements\\export.ts",
     "src/features/workout-tracker\\backup.ts"
   ],
-  "foodProfiles": 251,
-  "numericFoodValues": 9265,
+  "foodProfiles": 264,
+  "numericFoodValues": 9751,
   "numericCoverage": {
-    "foodRecordsWithComposition": 243,
-    "nutrientArticlesWithReferenceRows": 7,
-    "nutrientReferenceRows": 7,
+    "foodRecordsWithComposition": 256,
+    "nutrientArticlesWithReferenceRows": 35,
+    "nutrientReferenceRows": 35,
     "publicRecipesWithCalculatedNutrition": 24,
     "exercisesWithContextualSetsAndRepetitions": 10,
     "publicCardioPlans": 1,
@@ -13814,8 +13828,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 587,
-    "factualRecords": 459
+    "documents": 600,
+    "factualRecords": 472
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -14074,7 +14088,20 @@
     "food_tomato_juice_unsalted",
     "food_orange_juice_unsweetened",
     "food_paprika",
-    "food_oregano"
+    "food_oregano",
+    "food_bitter_gourd",
+    "food_moth_bean",
+    "food_refined_wheat_flour",
+    "food_cornmeal",
+    "food_pumpkin_seed",
+    "food_buttermilk",
+    "food_kefir",
+    "food_turkey_breast",
+    "food_chicken_liver",
+    "food_mustard_oil",
+    "food_turmeric_powder",
+    "food_chicken_thigh",
+    "food_chicken_drumstick"
   ],
   "missingMedia": [
     {
@@ -15768,6 +15795,71 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "foods",
+      "id": "food_bitter_gourd",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_moth_bean",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_refined_wheat_flour",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_cornmeal",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_pumpkin_seed",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_buttermilk",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_kefir",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_turkey_breast",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_chicken_liver",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_mustard_oil",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_turmeric_powder",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_chicken_thigh",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_chicken_drumstick",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "nutrients",
       "id": "iron_mg",
       "instructionalMediaRequired": false
@@ -16297,11 +16389,11 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-07T22:09:02.777Z",
-    "expected": 641,
+    "buildDate": "2026-10-08T01:34:59.828Z",
+    "expected": 654,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 641,
+    "unmeasured": 654,
     "ignoredStaleReports": 621,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -19520,6 +19612,84 @@
       },
       {
         "path": "/foods/oregano",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/bitter-gourd",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/moth-bean",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/refined-wheat-flour",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/cornmeal",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/pumpkin-seed",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/buttermilk",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/kefir",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/turkey-breast",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-liver",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/mustard-oil",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/turmeric-powder",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-thigh",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/chicken-drumstick",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

@@ -1,6 +1,7 @@
 import { expect, test } from "vitest";
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import fda from "../src/content/provenance/fda-daily-values.json";
 import records from "../src/content/nutrients/records.json";
 import definitions from "../src/content/provenance/component-nutrient-definitions.json";
 import snapshot from "../src/content/provenance/component-nutrient-snapshot.json";
@@ -31,7 +32,16 @@ test("all 51 nutrient identities have bounded source education and exact source 
     const record = published.find((r) => r.id === d.id)!;
     expect(record.summary).toBe(d.role);
     expect(record.sources[0]?.locator).toBe(d.source.url);
-    expect(record.referenceValues).toEqual([]);
+    const row = fda.rows.find((r) => r.nutrientId === record.id);
+    if (row) {
+      expect(record.referenceValues).toHaveLength(1);
+      expect(record.referenceValues[0]).toMatchObject({
+        frameworkId: "fda_dv_adult_4_plus",
+        valueType: "DV",
+        value: row.value,
+        unit: record.canonicalUnit,
+      });
+    } else expect(record.referenceValues).toEqual([]);
     expect(record.athleticRelevance).toEqual([]);
     expect(record.editorial.reviewer).toContain("no human review");
     const source = sources.find((s) => s.id === d.source.verifiedSourceId)!;
@@ -40,7 +50,7 @@ test("all 51 nutrient identities have bounded source education and exact source 
     expect(source.sourceVersion).toBe(d.source.version);
     expect(source.sourceDate).toBe(d.source.sourceDate);
   }
-  expect(published.flatMap((r) => r.referenceValues)).toHaveLength(7);
+  expect(published.flatMap((r) => r.referenceValues)).toHaveLength(35);
 });
 
 test("missing measurements, energy methods, source age and scope remain explicit", () => {
@@ -78,7 +88,11 @@ test("missing measurements, energy methods, source age and scope remain explicit
   const water = sources.find((s) => s.id === "nhs_water_drinks_2023")!;
   expect(water.sourceDate).toBe("2023-05-17");
   expect(water.limitations.some((s) => s.includes("past"))).toBe(true);
-  const validated = validatePublicationReviews(reviews, sources, "2026-10-07");
+  const validated = validatePublicationReviews(
+    reviews,
+    sources,
+    new Date().toISOString().slice(0, 10),
+  );
   for (const d of definitions)
     expect(
       validated

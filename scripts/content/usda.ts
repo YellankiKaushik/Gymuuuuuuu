@@ -237,7 +237,7 @@ export function buildUsdaRelease(
         compositionProfiles: [],
         editorial: {
           reviewStatus: "approved",
-          reviewedAt: extractedAt,
+          reviewedAt: mapping.verifiedAt ?? extractedAt,
           reviewer: "Codex machine validation; personal use; no human review",
           notes:
             "published_personal_use: exact source mapping and automated validation. No independent human/clinical review.",

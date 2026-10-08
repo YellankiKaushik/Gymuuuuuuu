@@ -9,7 +9,7 @@ if (
       readFileSync("src/content/provenance/usda-nutrient-unit-dictionary.json"),
     )
     .digest("hex") !==
-  "6eccaad42b67e45eb4fc22c8ccecc633d076078de7267438b20b70737a9140ad"
+  "81a268d6e2e671e281e4d0abff39126ed9a42e7ed1b689c9e89b7b87b6f3ea4f"
 )
   throw Error("Official USDA nutrient-unit dictionary snapshot changed.");
 const dictionary = z

@@ -2532,5 +2532,148 @@
     "matchRationale": "Individually verified food kind and edible part. Exact source species/cultivar, meat cut, fortification and preparation qualifiers remain visible; this is not an Indian cultivar value or a value for other preparations. Raw composition does not establish safety for raw consumption.",
     "sourceSnapshotSha256": "c390a76d80f284151b188225c738cc2c2cbaf89b55af0e66e70cee18a24f4a46",
     "verifiedAt": "2026-10-07T10:26:33.683Z"
+  },
+  {
+    "foodId": "food_bitter_gourd",
+    "fdcId": 168393,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Balsam-pear (bitter gourd), pods, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Balsam-pear (bitter gourd), pods, raw. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "7ff9d839fd9bd8e17cb5290cc61bc144de6cec52e0d2a96e234b6b67962146ed",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_moth_bean",
+    "fdcId": 172425,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Mothbeans, mature seeds, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Mothbeans, mature seeds, raw. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "d4ca163aa930cb79bb4571388e91ae55903e03536983d637251371dea8c4b5d9",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_refined_wheat_flour",
+    "fdcId": 169761,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Wheat flour, white, all-purpose, unenriched",
+    "foodState": "refined",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Wheat flour, white, all-purpose, unenriched. This is white all-purpose unenriched flour, not enriched flour. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "7deaf2d1dd59a4465429690e57db818476afc77f50e65fd38d567d04b6b0ade6",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_cornmeal",
+    "fdcId": 169697,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Cornmeal, whole-grain, yellow",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Cornmeal, whole-grain, yellow. This is whole-grain yellow cornmeal, not every corn flour. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "4c5aaa34f443b8bfab3bc6a1bdad714f050f62a560664c3f8c597a9631c8728b",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_pumpkin_seed",
+    "fdcId": 170556,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Seeds, pumpkin and squash seed kernels, dried",
+    "foodState": "dried",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Seeds, pumpkin and squash seed kernels, dried. The source groups pumpkin and squash seed kernels; hulls are excluded. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "152203b2573095d71028bbac0cafcf1c05946de7d6d1a3c6c67b2aafbd35df7f",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_buttermilk",
+    "fdcId": 170874,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Milk, buttermilk, fluid, cultured, lowfat",
+    "foodState": "fermented",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Milk, buttermilk, fluid, cultured, lowfat. This is cultured low-fat fluid buttermilk, not diluted Indian chaas. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "0a904501e739e42e78690be88a3d0c3f107b98ab3f8fad55ded92630fa84e053",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_kefir",
+    "fdcId": 170904,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Kefir, lowfat, plain, LIFEWAY",
+    "foodState": "fermented",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Kefir, lowfat, plain, LIFEWAY. This is the historical LIFEWAY low-fat plain brand sample, not every kefir. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "b855306f602cbc61b7a2ba78fa6c1ba4812afa382d2bb60e98342ceacb72676e",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_turkey_breast",
+    "fdcId": 171098,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Turkey, whole, breast, meat only, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Turkey, whole, breast, meat only, raw. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "8b5ea27ddc060e02bbd020605708c0729f7b968bc3949a6c0baab593ab25bad8",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_chicken_liver",
+    "fdcId": 171060,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chicken, liver, all classes, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Chicken, liver, all classes, raw. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "aa7670d995474ed5f45cdede3dc0abf5035c060af5bd5068308542eed9fe0cd9",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_mustard_oil",
+    "fdcId": 172337,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Oil, mustard",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Oil, mustard. The source specifies mustard oil without a verified refinement process; no process is inferred. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "b3cc391ef11af09429fea17019c154221250fce1d79fb9c45d42ec6510af2740",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_turmeric_powder",
+    "fdcId": 172231,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Spices, turmeric, ground",
+    "foodState": "powdered",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Spices, turmeric, ground. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "37132b91be8a25e720fb93794bd48a69a90588410b7a142f6683f10ff75897e2",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_chicken_thigh",
+    "fdcId": 173627,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chicken, broilers or fryers, dark meat, thigh, meat only, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Chicken, broilers or fryers, dark meat, thigh, meat only, raw. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "3627e8dfa4e314adaa4c0d823acb21b1823f47d2c3a3ecda9d90ae929aaaf12f",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_chicken_drumstick",
+    "fdcId": 173614,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Chicken, broilers or fryers, dark meat, drumstick, meat only, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact source kind and preparation: Chicken, broilers or fryers, dark meat, drumstick, meat only, raw. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "7f17e238a5d9c60bcdb76712b270372e6bfb90fe96872c1e97ba890c5c2be3f2",
+    "verifiedAt": "2026-10-08T01:18:28.831Z"
   }
 ]

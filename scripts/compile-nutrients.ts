@@ -4,6 +4,7 @@ import {
   mkdirSync,
   readdirSync,
   unlinkSync,
+  renameSync,
 } from "node:fs";
 import { createHash } from "node:crypto";
 import {
@@ -14,7 +15,10 @@ import {
 import { frameworkDatasetSchema } from "../src/features/nutrients/frameworks";
 import { rankVerifiedFoodSources } from "../src/features/nutrients/ranking";
 import { foodSchema, normalizeFoodTerm } from "../src/features/foods/schema";
-import { verifyFdaReferenceValues } from "./content/fda";
+import {
+  readVerifiedFdaSnapshot,
+  verifyFdaReferenceValues,
+} from "./content/fda";
 import { verifyAlphaTocopherolRankings } from "./content/vitamin-e-ranking";
 const root = "src/content/nutrients",
   identities = nutrientSchema
@@ -23,6 +27,10 @@ const root = "src/content/nutrients",
   records = nutrientSchema
     .array()
     .parse(JSON.parse(readFileSync(`${root}/records.json`, "utf8")));
+const writeReleaseFile = (path: string, value: string) => {
+  writeFileSync(`${path}.tmp`, value);
+  renameSync(`${path}.tmp`, path);
+};
 for (const rows of [identities, records])
   for (const key of ["id", "slug"] as const)
     if (new Set(rows.map((r) => r[key])).size !== rows.length)
@@ -33,12 +41,19 @@ const datasets = frameworkDatasetSchema
 if (new Set(datasets.map((d) => d.id)).size !== datasets.length)
   throw Error("Duplicate framework datasets");
 const published = records.filter((r) => r.status === "published");
-verifyFdaReferenceValues(
-  published,
-  JSON.parse(
-    readFileSync("src/content/provenance/fda-daily-values.json", "utf8"),
-  ),
-);
+const fdaSnapshot = readVerifiedFdaSnapshot();
+verifyFdaReferenceValues(published, fdaSnapshot);
+for (const row of fdaSnapshot.rows)
+  if (
+    published.filter(
+      (n) =>
+        n.id === row.nutrientId &&
+        n.referenceValues.some((r) => r.sourceId === fdaSnapshot.sourceId),
+    ).length !== 1
+  )
+    throw Error(
+      `${row.nutrientId}: verified FDA reference missing from the public release.`,
+    );
 for (const n of published)
   for (const r of n.referenceValues) {
     const dataset = datasets.find((d) => d.id === r.frameworkId);
@@ -146,8 +161,8 @@ const index = published.map((n: Nutrient) => ({
     [n.canonicalName, ...n.aliases, n.groupId].join(" "),
   ),
 }));
-writeFileSync(`${root}/index.json`, JSON.stringify(index) + "\n");
-writeFileSync(
+writeReleaseFile(`${root}/index.json`, JSON.stringify(index) + "\n");
+writeReleaseFile(
   `${root}/manifest.json`,
   JSON.stringify(Object.fromEntries(published.map((n) => [n.id, n.slug]))) +
     "\n",
@@ -166,7 +181,7 @@ const report = {
     .update(readFileSync(`${root}/records.json`))
     .digest("hex"),
 };
-writeFileSync(
+writeReleaseFile(
   `${root}/release-report.json`,
   JSON.stringify(report, null, 2) + "\n",
 );

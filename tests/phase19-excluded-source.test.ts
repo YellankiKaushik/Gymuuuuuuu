@@ -29,7 +29,7 @@ it("records current OpenStax reuse restrictions without authorizing publication"
         },
       ],
       sources,
-      "2026-10-07",
+      new Date().toISOString().slice(0, 10),
     ),
   ).toThrow(/rights-blocked/);
 });

@@ -12,14 +12,13 @@ test("NIH ingredient observations are pinned without pretending a raw source arc
   for (const [name, expected] of [
     ["definitions", snapshot.definitionsSha256],
     ["sources", snapshot.sourcesSha256],
-  ])
-    expect(
-      createHash("sha256")
-        .update(
-          readFileSync(`src/content/provenance/ods-ingredient-${name}.json`),
-        )
-        .digest("hex"),
-    ).toBe(expected);
+  ]) {
+    const bytes = readFileSync(
+      `src/content/provenance/ods-ingredient-${name}.json`,
+    );
+    expect(bytes.toString("utf8")).not.toContain("\r");
+    expect(createHash("sha256").update(bytes).digest("hex")).toBe(expected);
+  }
   expect(snapshot.sourceHtmlSha256).toBeNull();
   expect(snapshot.sourceCaptureMethod).toContain("HTTP 403");
   for (const row of definitions) {

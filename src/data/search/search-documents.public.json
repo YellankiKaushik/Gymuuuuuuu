@@ -10643,6 +10643,266 @@
     "contentHash": "991b68cc7f9ed9515b79c0b7d416d937b47656358a733315a26a2d7cfc842cbe"
   },
   {
+    "documentId": "food:food_bitter_gourd",
+    "entityType": "food",
+    "entityId": "food_bitter_gourd",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/bitter-gourd",
+    "title": "Bitter gourd",
+    "normalizedTitle": "bitter gourd",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "2837744d993f1381941fe8030d736a6ef57f55e82eafd7cc34849079db763574"
+  },
+  {
+    "documentId": "food:food_moth_bean",
+    "entityType": "food",
+    "entityId": "food_moth_bean",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/moth-bean",
+    "title": "Moth bean",
+    "normalizedTitle": "moth bean",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "2a357b38c4c766610f596a504d9386a3908c9a0011d3afa2e7eb71265c9a91cb"
+  },
+  {
+    "documentId": "food:food_refined_wheat_flour",
+    "entityType": "food",
+    "entityId": "food_refined_wheat_flour",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/refined-wheat-flour",
+    "title": "Refined wheat flour",
+    "normalizedTitle": "refined wheat flour",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "79107ffa2bfb29066a6059fd7e81ba6511f7eca1f655fd9635b45436793ac744"
+  },
+  {
+    "documentId": "food:food_cornmeal",
+    "entityType": "food",
+    "entityId": "food_cornmeal",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/cornmeal",
+    "title": "Cornmeal",
+    "normalizedTitle": "cornmeal",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "affe1d71e045c5ca40be92fb6a8a9ad6f16fa530008da9f5a3a1e3ac38e77c04"
+  },
+  {
+    "documentId": "food:food_pumpkin_seed",
+    "entityType": "food",
+    "entityId": "food_pumpkin_seed",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/pumpkin-seed",
+    "title": "Pumpkin seed",
+    "normalizedTitle": "pumpkin seed",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "5126a52f855403944b4ab904b2ee4f27757287124d17bfb4da7e72137c4a956a"
+  },
+  {
+    "documentId": "food:food_buttermilk",
+    "entityType": "food",
+    "entityId": "food_buttermilk",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/buttermilk",
+    "title": "Buttermilk",
+    "normalizedTitle": "buttermilk",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "0bf0f422c95f201c3514d0953eeba7ba73674110c1e11b68c15a12925ad6593a"
+  },
+  {
+    "documentId": "food:food_kefir",
+    "entityType": "food",
+    "entityId": "food_kefir",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/kefir",
+    "title": "Kefir",
+    "normalizedTitle": "kefir",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "b1d7c6e045a5c0c69cd3e0822c9146fc47928d79712c9259bc6562aba97f7633"
+  },
+  {
+    "documentId": "food:food_turkey_breast",
+    "entityType": "food",
+    "entityId": "food_turkey_breast",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/turkey-breast",
+    "title": "Turkey breast",
+    "normalizedTitle": "turkey breast",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "f63e6f32cf90d5cf00abfb354ee25b9944367d71269a02f44572469fd8529999"
+  },
+  {
+    "documentId": "food:food_chicken_liver",
+    "entityType": "food",
+    "entityId": "food_chicken_liver",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/chicken-liver",
+    "title": "Chicken liver",
+    "normalizedTitle": "chicken liver",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "10f55deb98aeacfc3a407d38470eb7532b73200891213e5340d59e5f0b7685c9"
+  },
+  {
+    "documentId": "food:food_mustard_oil",
+    "entityType": "food",
+    "entityId": "food_mustard_oil",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/mustard-oil",
+    "title": "Mustard oil",
+    "normalizedTitle": "mustard oil",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "f0a99879d5dc8ca5a18ff1f1bfaf75bff24b681aea4772a82e83780058c704a3"
+  },
+  {
+    "documentId": "food:food_turmeric_powder",
+    "entityType": "food",
+    "entityId": "food_turmeric_powder",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/turmeric-powder",
+    "title": "Turmeric powder",
+    "normalizedTitle": "turmeric powder",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "7d4b7a6e5db8daace6cce0be695b368cd7eca0ced2ce04bd707b476a64cfa9a2"
+  },
+  {
+    "documentId": "food:food_chicken_thigh",
+    "entityType": "food",
+    "entityId": "food_chicken_thigh",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/chicken-thigh",
+    "title": "Chicken thigh",
+    "normalizedTitle": "chicken thigh",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "0b37a47d802affcfb78e691e0dfc071a7d62451941e076ed41f09f2bbe4dfd94"
+  },
+  {
+    "documentId": "food:food_chicken_drumstick",
+    "entityType": "food",
+    "entityId": "food_chicken_drumstick",
+    "entityVersion": null,
+    "sourceModule": "phase_07_foods",
+    "route": "/foods/chicken-drumstick",
+    "title": "Chicken drumstick",
+    "normalizedTitle": "chicken drumstick",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "1396624526e915516c62c91065bf9dcd02f0e0fc18f4e2d735232c566d0a1211"
+  },
+  {
     "documentId": "nutrient:iron_mg",
     "entityType": "nutrient",
     "entityId": "iron_mg",
@@ -10659,8 +10919,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-05",
-    "contentHash": "c78bcc3f5f4543d43adebd5b506bbed738e2d2e59acf5ed07980e3797300fef3"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "6604862be7f6949611f99cb2e3a8dacbb9002d0708ae08739804e927cd1f84b0"
   },
   {
     "documentId": "nutrient:calcium_mg",
@@ -10679,8 +10939,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-05",
-    "contentHash": "b506adbb2a9b6dc5a966308c15aee190f2ff27450c316416f83ce6cd206e6b8f"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "509267e5a8c2938d74a5caeaaa9a9b134739e8384b3ebd8deedab7f95e64432a"
   },
   {
     "documentId": "nutrient:vitamin_c_mg",
@@ -10705,8 +10965,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-05",
-    "contentHash": "557183300864f1e29c44a65d7281919cea8b4500683e6caa5f2596bb110e17b7"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "3f891c8d46e764653afdf8fde1661fd9a3fa014829d6d64e2c167694d8d4a967"
   },
   {
     "documentId": "nutrient:magnesium_mg",
@@ -10725,8 +10985,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-05",
-    "contentHash": "f1a7dcd0129c308a1b9891f5193bf71068f0e23a1e7c0dc8fc16c8ea9c0aab02"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "132e769c3f474e5015632e8f5048bbe3efd63f974a43f21cf5ffe519ef6d5a14"
   },
   {
     "documentId": "nutrient:zinc_mg",
@@ -10745,8 +11005,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-05",
-    "contentHash": "345358fee6edf90abfd26a4a7b0c8ae5b55ee484440c609a8b7b700cfcd1e6ef"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "56eb38908969f278a795c2b625ba12129fc2078cee940260fff3c5803dc31691"
   },
   {
     "documentId": "nutrient:vitamin_d_ug",
@@ -10771,8 +11031,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-05",
-    "contentHash": "7d2cb070e9baa8f09fd1c2c33ba3354e9dca34cf305a1eadb4038d1aca399820"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "045774950d5df33e27088211dfe6f48d6034ee22db6c12bda6b3b54540f99824"
   },
   {
     "documentId": "nutrient:vitamin_b12_ug",
@@ -10800,8 +11060,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-05",
-    "contentHash": "3a733e4876350b5a5252c771ded6475efebdd5f9d899ee14b3a3edc427e97090"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "2fac9f2ab412e5d37ffbabafa9d0eedf2a0b5edb1eca354606fd74481bc07718"
   },
   {
     "documentId": "nutrient:thiamin_mg",
@@ -10829,8 +11089,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "585aff9da40a3e8940d124d507b689a0ed9d7251d71e8304b08f58601dd01731"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "0c6af8ade5bd38fa93788643883863012dc723e970e00f8b0a566fbe04ef2d06"
   },
   {
     "documentId": "nutrient:riboflavin_mg",
@@ -10855,8 +11115,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "4434db76b29978a0ff9e4e520fc00fed34262576d8c317da5a3a05cd1be66836"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "72233092b91a4e7045263b1af9771d3eccdd793ea3dd948c3a73731696f2fd9d"
   },
   {
     "documentId": "nutrient:niacin_mg",
@@ -10884,8 +11144,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "d58f65cba99bebfe72216e7d82c18d4126d9d11b6db3512d598ff6772296c760"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "59d4cc27460957194bcffe2d11e9e6ded3882ae8389acf817ea0becdb4271598"
   },
   {
     "documentId": "nutrient:vitamin_b6_mg",
@@ -10913,8 +11173,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "3ec068988876fa094d40b02df920e3b413ad6a3534a31f30b362ea4de98a212d"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "5a5cb7176bd586abf16a78dbd423eb5d5494ae75fedfbc1dcbba25b7f36eb69b"
   },
   {
     "documentId": "nutrient:folate_food_ug",
@@ -10971,8 +11231,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "3fc8e6e6fc9078518ec57fb0cef7e02c03fdc7f27ffe4ef95465171a8dcd5198"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "e2018410278b7518ba4f19f11d3a71ca3ba88ecd50a32f0baadfd3a40a0c6475"
   },
   {
     "documentId": "nutrient:choline_mg",
@@ -10991,8 +11251,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "35d67ec2e060181eea1bde46f2458227895f74f3cc196a41704194e873730906"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "90e89014fc1b8f20377725db3df29d13e09365a2dc9978ea9b44f4efd427ae95"
   },
   {
     "documentId": "nutrient:iodine_ug",
@@ -11011,8 +11271,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "d5204c4d117a9dd27848100225f9386867418a3af735b0d7072912b8c239a586"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "610e57a2bd110d3beb8c7766b5d643019485bc5418d397f731f74194b2ce3066"
   },
   {
     "documentId": "nutrient:potassium_mg",
@@ -11031,8 +11291,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-06",
-    "contentHash": "ddd6a62657780a7c8dceec44ee39a64fd7f30c30c5c149e9445772dc345bed52"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "b2ef8a1510c9108e444390d97d03574c36afd5965873ab8286272fe741ea6f23"
   },
   {
     "documentId": "nutrient:phosphorus_mg",
@@ -11057,8 +11317,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "38f85913fb98faf081e79ff591ccbd05cb6bcd1f756405936ebabf6dad384c0e"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "e86b92f8574e8f42c422e2408f29c6773f03916bd4a4a5dd6f731c834deb5b7f"
   },
   {
     "documentId": "nutrient:copper_mg",
@@ -11077,8 +11337,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "dc2b223a2ebea17442a3d27439bafa7cbbe4bf8b7d2b2fccb2cecf2367ac7320"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "58a4b7d96479b1f5d78b3e50805f6fe9b4ada20632eaa3af8d812f318c929432"
   },
   {
     "documentId": "nutrient:manganese_mg",
@@ -11097,8 +11357,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "c0632717063f3d6ef6e3a47236fe3078b113d5b65e9049fc475258933d4be431"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "938d0eeadd6118318eb64f4afe5383d94e48d4f050374f10c8d38cac5a9f29c8"
   },
   {
     "documentId": "nutrient:selenium_ug",
@@ -11117,8 +11377,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "5d482a466a74bde77a865abd315083790fbc8a51fd33244907e8bd1d53bf44e1"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "3564b4a06ffbc00538d8f20fea11b7be04653511bcfc07c07a1620fe5f3fde08"
   },
   {
     "documentId": "nutrient:vitamin_e_mg",
@@ -11143,8 +11403,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "1d0ef3256d2b57cc48bc753fdf9bf8a2d254acb714062afd7c32f9031c849e28"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "2f79b70074874061d41554d67ae3fd8f346d04b4124915c8a7d956c6a238eecb"
   },
   {
     "documentId": "nutrient:vitamin_k_ug",
@@ -11163,8 +11423,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "b0f65c331d3c24fc51d65a061cccfb006fe73589ad280156170b04a2754993cc"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "eaef4fc93083e986e23ef2f65524bc8cba832b018c1308a55129942fa0b4e71f"
   },
   {
     "documentId": "nutrient:chromium_ug",
@@ -11183,8 +11443,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "b3f5f189abf48246f1e4a20764d49925f923b40726d18a67e708d91c1d410b24"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "c11b043e6cfda7b1a2a82ecb8c262662cc22693a3cfbce8bcd7bf43b13dac687"
   },
   {
     "documentId": "nutrient:fluoride_mg",
@@ -11223,8 +11483,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "52aed210831fe70f8bcbe3449630dad02d57326d8360a3566c18bd1309d6a784"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "98dcc22d071699b4fd78937460cecaefca3d3876940642f5bf78fa9cc86c3bec"
   },
   {
     "documentId": "nutrient:pantothenic_acid_mg",
@@ -11249,8 +11509,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "1436ca35e418c8caa8d4feecbf12a43d7fa4b796d663b889ab8c1be5709cf4a0"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "c13c76ac2e8c59cd7234d9e18fd760bca8e1a3fdcd0fbdcceab3f8019db68726"
   },
   {
     "documentId": "nutrient:biotin_ug",
@@ -11275,8 +11535,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "4c8d8328e00434b03c3e7b2fa9449eef0cb6d66118309b974a1e6b52839fae74"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "df9b3332777c4a38b1ee28bc39790df276bc9289e4cd47c785e5acf10977af49"
   },
   {
     "documentId": "nutrient:omega_3_g",
@@ -11330,8 +11590,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "37a5d43fce66bfc0c384d042438c6e5cf3919af6c56fcb98ad10b777db22276f"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "e2622bb73b217adbd5a7374597b99f79c13443f24568179ba0f46c66b8a04e18"
   },
   {
     "documentId": "nutrient:beta_carotene_ug",
@@ -11544,8 +11804,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "37ca97072cf7697cba4b700db4af8ed975320fdfea12473a593a4dcd6ec4367b"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "23c3bb5916a688a85c071a4a439388f1da4ea48fc370a7a040e8be275eb0b346"
   },
   {
     "documentId": "nutrient:carbohydrate_total_g",
@@ -11573,8 +11833,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "5fed4037cbc1250706c50d9a7ff175bfe08abb341972aecc5a34b055144c64f7"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "daf6a8cbf905187e153908f78789bd468ed370e7fe7f2805f7a245b651669f20"
   },
   {
     "documentId": "nutrient:carbohydrate_available_g",
@@ -11634,8 +11894,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "abbb01f2c0c218cfcfe2403ff444d4803c2b37d13886bf5d9e23e5bf543a4cb2"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "208f4e2343668af0ecd26078128595a053e255f8aa89209035777eb0faf3134d"
   },
   {
     "documentId": "nutrient:sugars_total_g",
@@ -11686,8 +11946,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "715d5a79e82682ed92c3debe08a5847fcad17eb8e9a5386ef8247618d684a293"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "7535b3037fa9734b3a027176e1e3376fcee864e702abff87a4b94db375926b7c"
   },
   {
     "documentId": "nutrient:fat_total_g",
@@ -11715,8 +11975,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "ae4438e973ada23c27a4c2ca96fdebc24c10e64e4d73956b550923e55af09310"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "8674b39600a538a7e15dd2cf39fa8ce30fdcdc19182cc5c8fe3f31b1362c4d06"
   },
   {
     "documentId": "nutrient:fat_saturated_g",
@@ -11744,8 +12004,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "4e640e4bb5d53b7e50c35d58b5b4da99c647b38fd2fc2634df3085a450275490"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "c7b538a025c7c894630e6b7a7139b5d3e653dfc3939d0c64a4dffe360210a2fb"
   },
   {
     "documentId": "nutrient:fat_monounsaturated_g",
@@ -11877,8 +12137,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "757d21f0b0e64f97f290a5be53b87524dc33b3eafe882ac6353b29aa43b8db5e"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "f1b265e5bdbf868fe7d0c7c366bf8089bbbef2f7c9d77ea67ad1d590cee8dde2"
   },
   {
     "documentId": "nutrient:sodium_mg",
@@ -11897,8 +12157,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "93b92cdffa1b6857692b77a12d514b148772851d22518ee7f33b244a60a835ea"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "f1045ba0d480ee430bfc2da01cdeb2d918ee200ffa1109ad0f1af00414ed2ed8"
   },
   {
     "documentId": "nutrient:chloride_mg",
@@ -11917,8 +12177,8 @@
     "searchableBody": "",
     "facets": {},
     "publicationStatus": "published",
-    "lastReviewedAt": "2026-10-07",
-    "contentHash": "712ff6f1a33b4bd135035fa9eca63d9e4996eeea2e1ca972e53e3b684071a037"
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "81d03e966c6d4b2176df027d4b8d229b49dc4d116c6a70c38026c3bed64087e8"
   },
   {
     "documentId": "recipe:public_recipe_chickpea_cucumber_bowl",

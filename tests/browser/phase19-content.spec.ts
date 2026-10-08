@@ -2,6 +2,20 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/foods/bitter-gourd", "Bitter gourd"],
+  ["/foods/moth-bean", "Moth bean"],
+  ["/foods/refined-wheat-flour", "Refined wheat flour"],
+  ["/foods/cornmeal", "Cornmeal"],
+  ["/foods/pumpkin-seed", "Pumpkin seed"],
+  ["/foods/buttermilk", "Buttermilk"],
+  ["/foods/kefir", "Kefir"],
+  ["/foods/turkey-breast", "Turkey breast"],
+  ["/foods/chicken-liver", "Chicken liver"],
+  ["/foods/mustard-oil", "Mustard oil"],
+  ["/foods/turmeric-powder", "Turmeric powder"],
+  ["/foods/chicken-thigh", "Chicken thigh"],
+  ["/foods/chicken-drumstick", "Chicken drumstick"],
+
   ["/supplements/ingredients/ingredient-arginine", "L-Arginine"],
   [
     "/supplements/ingredients/ingredient-dietary-nitrate",

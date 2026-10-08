@@ -1,5 +1,46 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+test("FDA label table preserves 35 exact concepts and rejects unrelated populations", async ({
+  page,
+}) => {
+  await page.goto("/nutrients/reference-intakes");
+  const framework = page.getByLabel("Reference framework", { exact: true });
+  await expect(framework).toBeEnabled();
+  await framework.selectOption("fda_dv_adult_4_plus");
+  await page.getByLabel("Reference age", { exact: true }).fill("31");
+  const table = page.getByRole("table");
+  await expect(table.getByRole("row")).toHaveCount(36);
+  for (const [name, value] of [
+    ["Niacin", "16 mg NE"],
+    ["Folate (vitamin B9)", "400 µg DFE"],
+    ["Vitamin A", "900 µg RAE"],
+    ["Vitamin E", "15 mg alpha-tocopherol"],
+  ]) {
+    const row = table
+      .getByRole("row")
+      .filter({ has: page.getByRole("rowheader", { name, exact: false }) });
+    await expect(row).toContainText(value!);
+    await expect(row).toContainText("Not a personal target");
+  }
+  await page
+    .getByLabel("Life stage", { exact: true })
+    .selectOption("pregnancy");
+  await expect(table).toHaveCount(0);
+  await expect(
+    page.getByText(
+      "No reviewed reference rows are available for the selected age, sex and life stage. Missing rows do not mean zero.",
+    ),
+  ).toBeVisible();
+  await page.getByLabel("Life stage", { exact: true }).selectOption("general");
+  await page.getByLabel("Reference age", { exact: true }).fill("3");
+  await expect(table).toHaveCount(0);
+  await framework.selectOption("us_canada_dri");
+  await expect(
+    page.getByText("No approved reference dataset is available", {
+      exact: true,
+    }),
+  ).toBeVisible();
+});
 test("nutrient routes, filters, framework isolation and unavailable identities", async ({
   page,
 }) => {

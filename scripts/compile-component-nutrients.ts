@@ -1,4 +1,8 @@
 import { readFileSync, writeFileSync, renameSync } from "node:fs";
+import {
+  readVerifiedFdaSnapshot,
+  withVerifiedFdaReferences,
+} from "./content/fda";
 import { createHash } from "node:crypto";
 import { z } from "zod";
 import {
@@ -199,7 +203,11 @@ const additions = definitions.map((d) => {
     },
   });
 });
-for (const addition of additions) {
+const references = readVerifiedFdaSnapshot();
+const augmented = additions.map((r) =>
+  withVerifiedFdaReferences(r, references),
+);
+for (const addition of augmented) {
   const previous = current.find((r) => r.id === addition.id);
   if (
     previous?.status === "published" &&
@@ -212,8 +220,8 @@ for (const addition of additions) {
 const output = nutrientSchema
   .array()
   .parse([
-    ...current.map((r) => additions.find((a) => a.id === r.id) ?? r),
-    ...additions.filter((r) => !current.some((p) => p.id === r.id)),
+    ...current.map((r) => augmented.find((a) => a.id === r.id) ?? r),
+    ...augmented.filter((r) => !current.some((p) => p.id === r.id)),
   ]);
 const path = "src/content/nutrients/records.json",
   value = JSON.stringify(output, null, 2) + "\n";
