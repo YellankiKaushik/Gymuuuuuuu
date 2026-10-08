@@ -1,8 +1,8 @@
 # Content completion audit
 
-Status: **in progress**. Production deployment remains disabled. Counts are recomputed from production adapters and identity seeds.
+Content status: **verified subset frozen for owner manual testing**. Unpublished identities are future content backlog and do not block manual testing. Engineering readiness is recorded separately by the final verification gates. Production deployment remains disabled. Counts are recomputed from production adapters and identity seeds.
 
-| Module | Identities | Published | Blocked |
+| Module | Identities | Published | Backlog |
 | --- | ---: | ---: | ---: |
 | muscles | 70 | 70 | 0 |
 | exercises | 184 | 32 | 152 |
@@ -16,6 +16,6 @@ Status: **in progress**. Production deployment remains disabled. Counts are reco
 | cardio | 202 | 13 | 189 |
 | supplements | 272 | 12 | 260 |
 
-182 route patterns implemented. Current-build browser evidence: 0 passed, 0 failed, 702 unmeasured out of 702 route/record URLs. Stale build or content reports are excluded. 273 food profiles, 10011 numeric food values. Every remaining identity and its block reason appears in the JSON report.
+182 route patterns implemented. Current-build browser evidence: 0 passed, 0 failed, 702 unmeasured out of 702 route/record URLs. Stale build or content reports are excluded. 273 food profiles, 10011 numeric food values. Every remaining identity and its pending-source reason appears in the JSON report.
 
-No independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. This report does not certify completion.
+No independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. Content coverage does not imply production, clinical or manual-device verification.

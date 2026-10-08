@@ -150,7 +150,7 @@ export function NutrientMethodology() {
       <section>
         <h2>Food-source ranking</h2>
         <p>
-          Food amounts come from approved Phase 07 composition profiles. Ranking
+          Food amounts come from source-verified composition profiles. Ranking
           uses an explicit per-100-g, per-100-kcal or source-backed-portion
           basis, preserves preparation labels, source release and data status,
           and can exclude estimated/imputed inputs. Missing measurements and

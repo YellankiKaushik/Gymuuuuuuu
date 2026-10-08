@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { IDBFactory } from "fake-indexeddb";
 import { closeFitnessDatabase, openFitnessDatabase } from "../src/storage/indexed-db/fitness-database";
-import { createBackup, encodeCsv, previewBackup, restoreBackup, validateBackup } from "../src/features/data-management/service";
+import { createBackup, encodeCsv, inspectLocalData, previewBackup, restoreBackup, validateBackup } from "../src/features/data-management/service";
 import reference from "../DOCS_for_entire_apppliaction/GYM/Phase_17_Local_Storage_Backup_Export_Reference_Data.json";
 
 afterEach(() => { closeFitnessDatabase(); vi.unstubAllGlobals(); });
@@ -9,6 +9,17 @@ function storage() { const factory = new IDBFactory(); vi.stubGlobal("window", {
 function done(tx: IDBTransaction) { return new Promise<void>((resolve, reject) => { tx.oncomplete = () => resolve(); tx.onabort = tx.onerror = () => reject(tx.error); }); }
 
 describe("Phase 17 local data portability", () => {
+  it("concurrent inventory and exports own independent connections and preserve the module connection", async () => {
+    storage();
+    const moduleConnection = await openFitnessDatabase();
+    const [first, inventory, second] = await Promise.all([createBackup(), inspectLocalData(), createBackup()]);
+    expect(inventory.supported).toBe(true);
+    expect(first.payload.modules).toEqual(second.payload.modules);
+    const transaction = moduleConnection.transaction("appMeta", "readonly");
+    const count = transaction.objectStore("appMeta").count();
+    await expect(new Promise<number>((resolve, reject) => { count.onsuccess = () => resolve(count.result); count.onerror = () => reject(count.error); })).resolves.toBeGreaterThan(0);
+    moduleConnection.close();
+  });
   it("checks in each supplied Phase 17 integrity vector", () => { expect(reference.testVectors).toHaveLength(25); });
   it("CSV quotes values and neutralizes formula-like text by default", () => {
     expect(encodeCsv([{ note: "=SUM(A1:A2)", value: "say \"hi\"" }])).toBe('"note","value"\r\n"\'=SUM(A1:A2)","say ""hi"""');

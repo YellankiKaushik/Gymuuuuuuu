@@ -91,26 +91,34 @@ const manifest = searchManifestSchema.parse({
   locale: "en",
 });
 const folder = new URL("../src/data/search/", import.meta.url);
-await mkdir(folder, { recursive: true });
-await Promise.all([
-  writeFile(
-    new URL("search-documents.public.json", folder),
-    `${JSON.stringify(documents, null, 2)}\n`,
-    "utf8",
-  ),
-  writeFile(
-    new URL("search-index.public.json", folder),
-    `${JSON.stringify(index, null, 2)}\n`,
-    "utf8",
-  ),
-  writeFile(
-    new URL("search-manifest.json", folder),
-    `${JSON.stringify(manifest, null, 2)}\n`,
-    "utf8",
-  ),
-]);
+const generated = [
+  ["search-documents.public.json", documents],
+  ["search-index.public.json", index],
+  ["search-manifest.json", manifest],
+] as const;
+if (process.argv.includes("--check")) {
+  for (const [name, value] of generated)
+    if (
+      (await readFile(new URL(name, folder), "utf8")) !==
+      `${JSON.stringify(value, null, 2)}\n`
+    )
+      throw Error(
+        `Frozen search asset is stale: ${name}. Regenerate explicitly before final verification.`,
+      );
+} else {
+  await mkdir(folder, { recursive: true });
+  await Promise.all(
+    generated.map(([name, value]) =>
+      writeFile(
+        new URL(name, folder),
+        `${JSON.stringify(value, null, 2)}\n`,
+        "utf8",
+      ),
+    ),
+  );
+}
 console.log(
-  `Local search index built: ${documents.length} documents; ${postings.size} tokens; version ${indexVersion}`,
+  `Local search index ${process.argv.includes("--check") ? "verified without writes" : "built"}: ${documents.length} documents; ${postings.size} tokens; version ${indexVersion}`,
 );
 console.log(
   `Published factual documents: ${documents.filter((item) => item.entityType !== "route" && item.entityType !== "dashboard_widget").length}. Draft, private and review-needed records are absent.`,

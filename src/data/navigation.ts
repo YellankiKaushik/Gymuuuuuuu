@@ -209,7 +209,12 @@ export const navigationItems: readonly NavigationItem[] = [
 export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const
 export function navigationFor(path: string): NavigationItem | undefined {
   const module = findModule(path)
-  return navigationItems.find((entry) => entry.href === (module?.path ?? path))
+  const entry = navigationItems.find((entry) => entry.href === (module?.path ?? path))
+  if (entry) return entry
+  const dataTitles: Record<string, string> = { '/settings/data': 'Your local data', '/settings/data/backup': 'Create a backup', '/settings/data/restore': 'Restore a backup', '/settings/data/export': 'Export CSV', '/settings/data/storage': 'Storage inventory', '/settings/data/health': 'Data health', '/settings/data/history': 'Data history', '/settings/data/reset': 'Clear local data' }
+  const label = dataTitles[path]
+  const settings = navigationItems.find((item) => item.href === '/settings')
+  return label && settings ? { ...settings, id: `data-${path.split('/').at(-1)}`, href: path, label, groupId: settings.id, visibility: 'contextual' } : undefined
 }
 export function groupFor(path: string): string | undefined {
   const entry = navigationFor(path)

@@ -22,6 +22,7 @@ describe('shell manifest', () => {
   it('resolves deep entity navigation and validates sidebar preferences compatibly', () => {
     expect(groupFor('/exercises/unknown')).toBe('learn')
     expect(groupFor('/programs/unknown')).toBe('train')
+    expect(groupFor('/settings/data/restore')).toBe('settings')
     expect(preferencesSchema.safeParse({ theme: 'system', units: 'metric' }).success).toBe(true)
     expect(preferencesSchema.safeParse({ theme: 'system', units: 'metric', sidebarCollapsed: 'yes' }).success).toBe(false)
   })

@@ -279,8 +279,11 @@ const brokenReferences = verifiedPublications.flatMap((record) =>
 );
 const report = {
   schemaVersion: 2,
-  milestone: "Phase 19 — Verified Content Completion",
-  completionStatus: "in_progress",
+  milestone: "Phase 19 — First manual-test completion",
+  completionStatus: "verified_content_subset_frozen",
+  remainingIdentitiesBlockManualTesting: false,
+  engineeringReadiness:
+    "See the final current-build verification report; content coverage alone does not certify automated gates.",
   productionDeployment: "disabled",
   modules,
   sourceCoverage,
@@ -463,7 +466,7 @@ writeFileSync(
 );
 writeFileSync(
   "docs/reports/content-completion.md",
-  `# Content completion audit\n\nStatus: **in progress**. Production deployment remains disabled. Counts are recomputed from production adapters and identity seeds.\n\n| Module | Identities | Published | Blocked |\n| --- | ---: | ---: | ---: |\n${modules.map((m) => `| ${m.module} | ${m.totalIdentities} | ${m.publishedIdentities} | ${m.draftIdentities} |`).join("\n")}\n\n${routes.length} route patterns implemented. Current-build browser evidence: ${browserEvidence.passed} passed, ${browserEvidence.failed} failed, ${browserEvidence.unmeasured} unmeasured out of ${browserEvidence.expected} route/record URLs. Stale build or content reports are excluded. ${report.foodProfiles} food profiles, ${report.numericFoodValues} numeric food values. Every remaining identity and its block reason appears in the JSON report.\n\nNo independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. This report does not certify completion.\n`,
+  `# Content completion audit\n\nContent status: **verified subset frozen for owner manual testing**. Unpublished identities are future content backlog and do not block manual testing. Engineering readiness is recorded separately by the final verification gates. Production deployment remains disabled. Counts are recomputed from production adapters and identity seeds.\n\n| Module | Identities | Published | Backlog |\n| --- | ---: | ---: | ---: |\n${modules.map((m) => `| ${m.module} | ${m.totalIdentities} | ${m.publishedIdentities} | ${m.draftIdentities} |`).join("\n")}\n\n${routes.length} route patterns implemented. Current-build browser evidence: ${browserEvidence.passed} passed, ${browserEvidence.failed} failed, ${browserEvidence.unmeasured} unmeasured out of ${browserEvidence.expected} route/record URLs. Stale build or content reports are excluded. ${report.foodProfiles} food profiles, ${report.numericFoodValues} numeric food values. Every remaining identity and its pending-source reason appears in the JSON report.\n\nNo independent human review is claimed. Missing media, licensing restrictions and unmeasured UI states remain explicit. Content coverage does not imply production, clinical or manual-device verification.\n`,
 );
 console.log(
   modules
@@ -473,7 +476,16 @@ console.log(
 
 if (
   process.argv.includes("--require-browser-pass") &&
-  (browserEvidence.failed || browserEvidence.unmeasured)
+  (browserEvidence.failed ||
+    browserEvidence.unmeasured ||
+    browserEvidence.routes.some(
+      (route) =>
+        !route.evidence?.auditedCommit ||
+        route.evidence.productionBuildSha256 !==
+          createHash("sha256")
+            .update(readFileSync(".output/server/index.mjs"))
+            .digest("hex"),
+    ))
 )
   throw Error(
     "Current-build browser inventory has failed or unmeasured routes; inspect the generated report.",

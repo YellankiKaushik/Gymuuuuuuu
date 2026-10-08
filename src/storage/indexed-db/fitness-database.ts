@@ -136,6 +136,7 @@ export function migrateFitnessDatabase(
 }
 export async function openFitnessDatabase(
   name = "fitness-os",
+  options: { shared?: boolean } = {},
 ): Promise<IDBDatabase> {
   if (typeof window === "undefined" || !window.indexedDB)
     return Promise.reject(
@@ -144,10 +145,11 @@ export async function openFitnessDatabase(
       ),
     );
   const factory = window.indexedDB;
-  let cache = connections.get(factory);
+  const shared = options.shared !== false;
+  let cache = shared ? connections.get(factory) : undefined;
   if (!cache) {
     cache = new Map();
-    connections.set(factory, cache);
+    if (shared) connections.set(factory, cache);
   }
   const existing = cache.get(name);
   if (existing) {
@@ -187,7 +189,9 @@ export async function openFitnessDatabase(
       resolve(db);
     };
   });
-  cache.set(name, pending);
-  void pending.catch(() => cache.delete(name));
+  if (shared) {
+    cache.set(name, pending);
+    void pending.catch(() => cache.delete(name));
+  }
   return pending;
 }

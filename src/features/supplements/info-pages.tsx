@@ -95,8 +95,8 @@ export function LibraryPage({
         </h2>
         {slug && !entries.length ? (
           <p>
-            This record has no approved publication. No dose, efficacy or safety
-            verdict is inferred from its draft identity.
+            This page is not available yet. More verified content will be added
+            over time. No dose, efficacy or safety verdict is supplied.
           </p>
         ) : (
           <>

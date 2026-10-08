@@ -1,6 +1,10 @@
 import type { PublicRecipe } from "./publication";
 import type { PublicRecipeSummary } from "./public-records";
 import { RecipeCalculation } from "./pages";
+import { useState } from "react";
+import { useRecipes } from "./workspace";
+import { saveRecipeVersion } from "./storage";
+import { newNutritionId } from "../nutrition-tracker/domain";
 export function PublicRecipeCatalogue({
   recipes,
 }: {
@@ -37,6 +41,8 @@ export function PublicRecipeDetail({
 }: {
   recipe: PublicRecipe | null;
 }) {
+  const { data, readOnly, run } = useRecipes();
+  const [copying, setCopying] = useState(false);
   if (!recipe)
     return (
       <section>
@@ -89,6 +95,56 @@ export function PublicRecipeDetail({
         ))}
       </ul>
       <RecipeCalculation recipe={v} />
+      <section className="no-print">
+        <h3>Use this recipe</h3>
+        <p>
+          Save a separate local copy to scale ingredients, revise it or log an
+          actually consumed serving. Source snapshots and estimated-yield
+          limitations are retained. Browsing this page never creates a food log.
+        </p>
+        <button
+          className="button primary"
+          disabled={!data || readOnly || copying}
+          onClick={async () => {
+            if (copying) return;
+            setCopying(true);
+            const now = new Date().toISOString();
+            const id = newNutritionId("recipe");
+            const versionId = newNutritionId("rver");
+            const saved = await run(
+              () =>
+                saveRecipeVersion(
+                  {
+                    id,
+                    schemaVersion: 1,
+                    visibility: "local",
+                    title: v.title,
+                    currentVersionId: versionId,
+                    status: "active",
+                    createdAt: now,
+                    updatedAt: now,
+                  },
+                  {
+                    ...v,
+                    id: versionId,
+                    recipeId: id,
+                    versionNumber: 1,
+                    createdAt: now,
+                    revisionReason: `Local copy of repository version ${v.id}; source snapshots and yield limitations preserved.`,
+                  },
+                ),
+              "Repository recipe copied locally. No consumed entry was created.",
+            );
+            setCopying(false);
+            if (saved) window.location.assign(`/recipes/local/${id}`);
+          }}
+        >
+          {copying ? "Saving local copy…" : "Save local copy to scale or log"}
+        </button>
+        {(!data || readOnly) && (
+          <p>Local storage must be available to save a copy.</p>
+        )}
+      </section>
       <h3>Ingredient source snapshots</h3>
       <ul>
         {v.ingredients

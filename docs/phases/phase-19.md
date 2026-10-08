@@ -1,6 +1,14 @@
 # Phase 19 handoff
 
-Status: in progress. This file must not be read as a completion claim.
+Status: final manual-test verification in progress. Content expansion is frozen under the superseding October 8 owner instruction. The 520-record local subset is preserved; 900 unpublished identities are future backlog and do not block manual testing.
+
+The final pass fixes 320px science source wrapping, an exact stale food-count assertion, global restore stale-file completions and misleading data-management breadcrumbs/phase copy. Public recipes now support an explicit local copy for the existing scaling/editing/consumed-snapshot workflow. Source snapshots, original provenance and estimated-yield limitations remain intact. Search was regenerated once and retains 648 documents and manifest 83fef1c09dbeeb3e9a28bba1e037a38dbbfa3ec9d05a39ce2cea5d3175b91fa5. Subsequent checks verify frozen assets without writing.
+
+Representative owner-test checks cover all major workspaces at seven viewport widths in both themes, public recipe copying/scaling/logging, synthetic multi-module portability into an initialized clean profile, zero-write preview and invalid-import preservation. The final expensive suites and bound route evidence remain required; historical results below apply only to their recorded checkpoints.
+
+## Historical checkpoints
+
+The following chronological notes preserve earlier scope and failures; they do not override the new frozen-subset scope.
 
 Phase 18 is integrated into main with its original history intact. Validation corrected a streamed-document hydration race and Windows checkout line endings. Automatic Vercel Git deployment is disabled and enforced by the repository audit. Production has not been deployed or linked to a domain.
 

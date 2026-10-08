@@ -1,96 +1,160 @@
 # Fitness OS
 
-An evidence-aware, local-first fitness application built in phases from the supplied specifications. Stack: TanStack Start, React, strict TypeScript, Tailwind and Nitro. No account or backend personal-data store.
+## Application status
 
-## Run
+Ready for owner manual testing at the `codex-first-manual-test-ready` checkpoint.
+Production deployment remains disabled. This checkpoint provides the existing
+verified content subset; it does not certify clinical review, real-device testing
+or completion of every planned content identity.
 
-Node.js 24.16.0 and npm 11.9.0. `.nvmrc`, `.node-version`, `package.json` and CI share this toolchain.
+## Installation and development
+
+Use Node.js 24.16.0 and npm 11.9.0, matching the pinned toolchain and CI.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. For production: npm run build, then npm start.
-
-## Verify
+Open http://localhost:3000. To test the production build locally:
 
 ```sh
-npm run check
-npm run test:coverage
-npx playwright install chromium
-npm run test:e2e
-npm run test:a11y
+npm run build
+npm start
 ```
 
-`npm run check` includes formatting for release and content tooling, lint, strict types, source-data validation, unit tests, privacy/repository audits, the production build, measured bundle-size budgets and a fresh completion audit. The coverage report is diagnostic; its current line coverage is about 75% and is not a correctness claim. GitHub Actions run the Chromium/Firefox/WebKit matrix on pull requests, the Phase 19 branch, main and the weekly schedule. `npm run test:routes` audits every route pattern and published factual link at mobile, tablet and desktop widths. `npm run test:route-report` rejects failed or unmeasured current-build routes; evidence from an older build or content index is excluded.
+Keep the browser origin stable: IndexedDB data does not move between localhost,
+127.0.0.1, ports, browser profiles or devices. `VITE_PUBLIC_APP_ORIGIN` is a public
+origin, not a secret. Never put secrets in frontend environment variables.
 
-`VITE_PUBLIC_APP_ORIGIN` is a public HTTP(S) origin, not a secret. `.env.example` shows the local default. Keep the test origin stable: browser IndexedDB does not move between origins. Production deployment and domain connection remain disabled.
+## Architecture and personal data
 
-## Project
+TanStack Start, React, strict TypeScript, Tailwind and Nitro are retained.
+`src/features` contains module interfaces and domain logic; `src/storage` contains
+client-only persistence; `src/content` and generated public assets hold static
+knowledge. The generated route tree is managed by TanStack. Requirements and
+phase history remain in `DOCS_for_entire_apppliaction/GYM` and `docs/phases`.
 
-Requirements live in DOCS_for_entire_apppliaction/GYM. src/domain holds types and validation; src/data public content; src/features domain interfaces; src/storage client-only persistence. docs/phases records each completed gate and docs/decisions records intentional differences. Generated src/routeTree.gen.ts is managed by TanStack. Keep package-lock.json in version control.
+Public knowledge may render on the server. Personal records stay in browser
+IndexedDB; localStorage holds small preferences. Tracking is optional. There are
+no accounts, automatic cloud sync, runtime fitness APIs, analytics or telemetry.
 
-Public content may render on the server; personal records remain in browser IndexedDB. Only small preferences use localStorage. Browser storage is not a backup. Export a backup regularly and before changing browsers, clearing site data or moving to another origin. Validate imports before writing; use the app's confirmation step for replacement or deletion.
+**Browser storage is not a backup.** Export regularly and before clearing site
+data, moving origins, browsers or devices. Backup files are not encrypted; keep
+them private and outside the browser. Preview validates an import before record
+writes. Multi-database restore is journaled, with recovery controls; independent
+databases cannot form a globally atomic browser transaction. In a fresh profile,
+open the owning modules first to initialize their versioned database schemas.
+Portable backups exclude binary photos; explicitly select full media when needed.
 
-Vercel configuration is prepared with Nitro, per-request CSP nonces and browser security headers. Automatic Git deployment is disabled. No production deployment, project link or production domain is authorized by this checkpoint.
+## Frozen public content
 
-## Verified content milestone
+Counts come from the current production adapters, not historical phase targets.
 
-Phase 18 is integrated. Phase 19 is **in progress**, and this application is not yet certified as engineering/content complete. The generated [completion audit](docs/reports/content-completion.md) and its [JSON inventory](docs/reports/content-completion.json) list every identity, publication count and remaining content gap.
+| Module | Published | Planned identities | Future backlog |
+| --- | ---: | ---: | ---: |
+| Muscles | 70 | 70 | 0 |
+| Exercises | 32 | 184 | 152 |
+| Workout science | 32 | 98 | 66 |
+| Workout programs | 4 | 50 | 46 |
+| Foods | 264 | 342 | 78 |
+| Nutrients | 51 | 51 | 0 |
+| Recipes | 24 | 24 | 0 |
+| Meal collections | 3 | 3 | 0 |
+| Recovery, sleep and mobility | 15 | 124 | 109 |
+| Cardio and conditioning | 13 | 202 | 189 |
+| Supplements | 12 | 272 | 260 |
 
-Current personal-use publications: muscles 70/70, exercises 32/184, workout science 32/98, programs 4/50, foods 264/342 (273 preparation profiles), nutrients 51/51 (35 FDA Daily Value rows), recovery 15/124, cardio 13/202 (10 articles, 2 modality guides and 1 complete source plan) and supplements 12/272. Twenty-four original recipes and three static lunch/snack meal-prep collections are available; they are not complete daily diets. Two NHS walking transitions and two NIA flexibility routines are available; conditioning routines remain unavailable. Supplement records include four outcome-specific beta-alanine and citrulline-malate claims alongside introductory caffeine and creatine education. Three NIH-scoped summaries add arginine, beetroot-derived nitrate and BCAAs, with unassessed confidence and no dose inferred. No personal protocols, product certification or current WADA-status verdicts are supplied.
-
-Public search contains 520 factual entities alongside navigation and dashboard entries. Draft identities do not enter the public index. These counts are generated from actual production adapters, rather than the historical phase checklists.
+There are **520 factual records**, **273 food preparation profiles**, 35 FDA label
+reference rows and **648 public search documents** including navigation entries.
+The 900 unpublished identities remain unavailable and excluded from public search.
+They are future verified-content backlog, not a blocker for owner manual testing.
+The [completion audit](docs/reports/content-completion.md) and
+[JSON inventory](docs/reports/content-completion.json) retain individual reasons,
+source coverage, numeric/media coverage, relationships and current-build evidence.
 
 ## Source policy and review levels
 
-Food composition comes from checked-in USDA FoodData Central snapshots. April 2026 Foundation Foods is preferred; April 2018 SR Legacy is a visibly labelled historical fallback. Explicit mappings retain exact source IDs, food states, per-100-g values, derivations, missing states and source-reported serving masses. Unmatched varieties remain unavailable. Nothing calls a fitness-data API at runtime.
+Factual records retain stable IDs/slugs, source IDs/URLs, version/date when known,
+extraction dates, evidence type, review method and limitations. Current publication
+state is `published_personal_use`: source verification and automated validation,
+with **no independent human or clinical review claimed**. `published_reviewed`
+requires an actual human attestation. Other states distinguish draft, verified,
+validated, pending human review and deprecated records.
 
-ICMR-NIN/IFCT data is not bulk reproduced without documented permission. OpenStax content is excluded because its current generative-AI terms require permission. Anatomical attachment summaries currently use a labelled historical public-domain book; they are not modern clinical or muscle-activation evidence. NHS exercise text retains its Open Government Licence attribution; the NIA March 2018 older-adult guide retains its public-domain text policy and population context. No source photograph or logo is imported. The SVG movement schematics and recipe instructions are original repository work; no third-party exercise photos are copied.
+Food values are checked-in USDA FoodData Central snapshots, with pinned complete
+dataset hashes, exact source descriptions/preparations, per-100-g amounts and
+source-reported serving masses. April 2026 Foundation data is preferred; April
+2018 SR Legacy is a labelled historical fallback. Missing, trace, estimated and
+measured zero remain distinct. IFCT/ICMR-NIN data is not bulk reproduced without
+documented rights. OpenStax material requiring additional AI permission is excluded.
 
-The completion layer distinguishes `draft`, `source_verified`, `machine_validated`, `human_review_pending`, `published_personal_use`, `published_reviewed` and `deprecated`. Current factual publications are `published_personal_use`: source provenance and automated validation are shown, with no independent human or clinical review claimed. `published_reviewed` requires a real human attestation. Internal legacy approval flags do not imply that review.
+Anatomy uses labelled historical public-domain Gray's 1918 passages, not modern
+clinical or activation evidence. Exercise education retains NIA/NHS/ACE source
+scope and attribution. Movement cues are original SVGs, not copied photographs
+or complete demonstrations. Science retains populations, uncertainty and source
+limits; no universal regimen is inferred. NIH ingredient records distinguish
+outcomes, forms and safety without personal dosing or current WADA verdicts.
 
-A static nine-week running plan retains all 27 source sessions, walking recoveries, five-minute warm-up/cooldown walks and rest-day guidance. Its optional tracker freezes the selected source week, identifies intensity as source text, and never turns timed targets into recorded duration, distance or calorie expenditure. Source dates unavailable on the original page remain unavailable.
+Original recipes use exact immutable ingredient snapshots and explicitly estimated
+ingredient-mass yield. No retention factors, measured yields or raw/cooked
+conversions are invented. Meal collections are not nutritionally complete daily
+diets. FDA Daily Values remain a label framework, not individual RDA/EAR/UL targets.
+Published program versions are pinned. Source time allocations are not measured
+session durations; unknown duration/rest stays unavailable. Program Finder includes
+unknown-duration templates only after an explicit no-time-limit choice.
 
-Recipe nutrition uses immutable ingredient snapshots. Final yield is explicitly estimated, not measured. Missing nutrients remain missing; no retention factors or raw-to-cooked conversions are invented. FDA Daily Values remain a label framework, separate from personal targets, EARs, RDAs and ULs.
-
-## Content and test commands
+## Automated verification
 
 ```sh
-npm run content:import:foods
-npm run content:compile:recipes
-npm run content:compile:nih-nutrients
-npm run content:compile:templates
-npm run content:verify:reviews
+git diff --check
+npm ci
 npm run check
 npm run test:coverage
+npm audit --audit-level=high
+npx playwright install chromium webkit
 npm run test:e2e
+npx playwright test --config=playwright.production.config.ts --project=webkit
 npm run test:a11y
 npm run test:privacy
-npm audit --audit-level=high
-npx playwright install chromium firefox webkit
-npm run test:e2e:cross-browser
+npm run test:routes
+npm run test:route-report
 ```
 
-Importers parse and validate the whole proposed release before writes. Release checks reject tampered food snapshots, unresolved sources, blocked rights, false human-review labels, duplicate IDs/slugs, broken relationships, future verification dates, stale generated recipes and stale search content. New content tooling is included in strict TypeScript checks. Recipe route loaders read immutable repository content only and accept no personal records.
+`check` includes formatting, lint, strict types, static compilation, schemas,
+sources, duplicate/relationship checks, unit/migration/backup/search tests, privacy,
+production build and unchanged JavaScript/public-data budgets. The final route
+audit checks all registered routes and published links with mobile/tablet/desktop,
+themes, automated accessibility, browser errors, assets and network checks.
+Ordinary browser tests and the route audit own independent server ports and outputs.
+Run them sequentially for the final gate. Do not run a full route audit after each
+small change.
 
-## Manual application testing
+GitHub Actions run Linux Chromium, Firefox and WebKit plus a separate mandatory
+accessibility job. Windows Firefox has a mozglue/SideBySide runtime limitation;
+Linux supplies that gate. Final reports bind evidence to the tested code commit,
+search manifest and build date/hash. Historical checkpoint reports certify only
+their recorded commits. Coverage percentages are diagnostic, not proof of perfection.
 
-After the engineering/content completion checkpoint is actually issued, run the production build locally and test with synthetic records. Check real-device keyboard/touch use, screen readers, reduced motion, light/dark themes, 320px layout, tablet and desktop, print output, save/edit/delete feedback and storage-disabled behavior. Export a backup, restore it in a separate test browser profile and compare records before attempting any destructive operation. Test CSV escaping and invalid imports. Verify personal records remain on the device and that sources and review levels are understandable.
+## Owner manual testing
 
-Manual device and assistive-technology testing has not been performed. The local Windows Firefox runtime has a SideBySide/mozglue launch failure. The 157b407 checkpoint passed main CI and all three Linux browser jobs (Chromium, Firefox and WebKit); see docs/reports/phase19-ci-anatomy-checkpoint.json. A subsequent local dual-browser run passed 139/140 and exposed rapid-navigation WebKit hydration. The startup/CSP correction passed 146/146 local Chromium/WebKit checks. At b040705 Linux browsers each passed 72/73, identifying a missing keyboard focus target in the collection nutrition table; coverage also failed the large-recipe stress test under concurrent instrumentation. The table is corrected and coverage worker concurrency is bounded, with unchanged assertions and timeouts. A fresh complete regression of the final content build is still required. Do not connect a production domain or deploy production during this testing preparation.
+Start in a separate browser profile with synthetic records. Explore home,
+navigation and search, then the libraries, programs, workout and nutrition logs,
+diet calculator, recipes/meal plans, recovery/sleep/mobility, cardio, supplements,
+progress/dashboard, favourites/comparisons and settings. Exercise save, reload,
+edit/delete, undo, validation, keyboard flow and storage-disabled behavior.
 
-The initial static strength template uses an explicitly original arrangement and NIA older-adult framework, with linked ACE technique. It requires learning all movements, including the intermediate bench-supported row. Its 30-minute figure is a source guideline allocation, not measured completion time; unspecified rests stay unavailable. Program versions are pinned and retained for local selections. Full milestone completion is still pending.
+Create records across several modules. Export a backup, initialize the owning
+modules in a separate clean profile, preview without writes, restore and compare
+records/references. Verify invalid files preserve existing data. Check CSV exports,
+including formula-like text. Keep the original profile intact until verified.
 
-USDA dataset verification: download the exact archive in `src/content/provenance/sources.json`, extract its named JSON payload, then run `npm run content:verify:dataset -- usda_fdc_sr_legacy_2018 path/to/FoodData_Central_sr_legacy_food_json_2018-04.json` (or use `usda_fdc_foundation_2026_04` with its named payload). Dataset hashes pin uncompressed JSON; ZIP container hashes are recorded separately. This verifies every mapped snapshot against the complete source download, including its nutrient amounts and serving masses.
+Real Android, iPhone/iPad, human screen-reader use, print, actual personal workouts,
+nutrition and backup/restore, and subjective visual preferences still need owner
+testing. Automated viewports cover narrow mobile, tablet and desktop in both themes;
+they do not substitute for those manual checks. No composite recovery score,
+invented calorie burn/VO2max or inferred body-fat measurements are supplied.
 
-The general-fitness two- and three-day templates use an attributed NHS strength framework with original static arrangements. They require prior technique instruction, show duration and timed rest as unknown, and have no whole-program trial or independent human review. Choose “Do not apply a session time limit” in Program Finder to include unknown-duration templates; a numeric time budget never treats missing duration as zero.
-
-Five additional NIH-scoped ingredient summaries cover HMB, betaine, glutamine, sodium bicarbonate and tart cherry. Their populations, forms, short study durations and safety limitations remain visible. Protocols, effect magnitudes and formal confidence grades are not inferred, and the publisher update (April 1, 2024) is distinct from the October 2026 machine extraction.
-
-Five additional ACE-scoped entries cover machine chest press, seated cable row, lying leg curl, seated leg curl and stability-ball leg curl. The latter two retain the laboratory report's resistance-experienced adult population; EMG rankings and loading protocols are excluded. Each original diagram has an exact source/version/asset-hash binding. Unknown programming and breathing timing remain unavailable. Search generation runs before unit tests so the suite validates the current publication inventory.
-
-Three additional USDA samples cover old-fashioned rolled oats, sweetened plain refrigerated soy milk and fresh dill leaves. Exact preparation labels and source-reported portions are retained; naming evidence distinguishes dill leaves from seed. No generic soy-milk equivalence, cup conversion or missing nutrient zero is inferred.
-
-Recent verification evidence is scoped to its build and commit: the 500-record checkpoint passed 682 route checks and all 239 browser tests in each hosted browser; the 505-record build passed 687 route checks. Retained reports are in `docs/reports/phase19-ci-500-checkpoint.json`, `phase19-routes-500-checkpoint.json` and `phase19-routes-505-checkpoint.json`. Current 508-record checks and coverage pass 332 tests, with six additional Chromium/WebKit food-page checks; the complete updated route and hosted browser suites remain pending. These checks do not claim manual device or clinical review.
+Vercel Git deployment is disabled and repository-audited. No production domain is
+connected. **Production deployment was NOT performed.** Future changes follow owner
+feedback; no new content expansion or Phase 20 is part of this checkpoint.

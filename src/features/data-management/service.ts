@@ -133,7 +133,7 @@ function findEncodedBlobs(value: Encoded): { mime: string; bytes: number[] }[] {
   return Object.values(value).flatMap(findEncodedBlobs);
 }
 async function readDatabase(name: string, version: number, fullMedia = false): Promise<{ version: number; stores: RawStore[] }> {
-  const db = name === "fitness-os" ? await openFitnessDatabase() : await openExistingDatabase(name, version);
+  const db = name === "fitness-os" ? await openFitnessDatabase("fitness-os", { shared: false }) : await openExistingDatabase(name, version);
   try {
     const stores: RawStore[] = [];
     for (const storeId of [...db.objectStoreNames]) {
@@ -181,7 +181,7 @@ export async function inspectLocalData(): Promise<DataInventory> {
   for (const info of infos) {
     if (!appDatabaseNames.includes(info.name as AppDatabaseName)) continue;
     try {
-      const db = info.name === "fitness-os" ? await openFitnessDatabase() : await openExistingDatabase(info.name, info.version);
+      const db = info.name === "fitness-os" ? await openFitnessDatabase("fitness-os", { shared: false }) : await openExistingDatabase(info.name, info.version);
       try { databases.push({ name: info.name, version: db.version, stores: await Promise.all([...db.objectStoreNames].map(async (name) => { const tx = db.transaction(name, "readonly"), count = await request(tx.objectStore(name).count()); return { name, count, includedByDefault: !ephemeralStores.has(name) && !mediaStores.has(name), media: mediaStores.has(name) }; })) }); } finally { db.close(); }
     } catch (error) { const message = error instanceof Error ? error.message : "Database inspection failed."; warnings.push(`${info.name}: ${message}`); databases.push({ name: info.name, version: info.version, stores: [], warning: message }); }
   }
@@ -229,12 +229,15 @@ export async function previewBackup(input: unknown) {
   const errors: string[] = [], conflicts: { databaseName: string; storeId: string; incoming: number; existing: number }[] = [];
   const payload = result.backup.payload;
   if (await digest(payload) !== result.backup.integrity.payloadSha256) errors.push("Backup payload hash does not match. No local data was changed.");
+  const opened = new Map<string, IDBDatabase>();
+  try {
   for (const module of payload.modules) for (const store of module.stores) {
     if (!appDatabaseNames.includes(store.databaseName as AppDatabaseName)) { errors.push(`Unrecognized target database: ${store.databaseName}.`); continue; }
     if (await digest(store.records.map(({ recordId, value, recordHash }) => ({ recordId, value, recordHash }))) !== store.storeHash) errors.push(`Store integrity check failed: ${store.databaseName}/${store.storeId}.`);
     for (const record of store.records) if (await digest(record.value) !== record.recordHash) errors.push(`Record integrity check failed: ${store.databaseName}/${store.storeId}/${record.recordId}.`);
     try {
-      const db = store.databaseName === "fitness-os" ? await openFitnessDatabase() : await openExistingDatabase(store.databaseName, store.schemaVersion);
+      let db = opened.get(store.databaseName);
+      if (!db) { db = store.databaseName === "fitness-os" ? await openFitnessDatabase("fitness-os", { shared: false }) : await openExistingDatabase(store.databaseName, store.schemaVersion); opened.set(store.databaseName, db); }
       if (!db.objectStoreNames.contains(store.storeId)) errors.push(`Target store is missing: ${store.databaseName}/${store.storeId}.`);
       else {
         const tx = db.transaction(store.storeId, "readonly"), objectStore = tx.objectStore(store.storeId), count = await request(objectStore.count()), incomingKeys = new Set<string>();
@@ -247,9 +250,10 @@ export async function previewBackup(input: unknown) {
         }
         conflicts.push({ databaseName: store.databaseName, storeId: store.storeId, incoming: store.recordCount, existing: count });
       }
-      db.close();
+
     } catch { errors.push(`Target database is unavailable: ${store.databaseName}. Create or restore it in the owning module before importing this archive.`); }
   }
+  } finally { for (const db of opened.values()) db.close(); }
   return { backup: result.backup, errors, warnings: result.warnings, conflicts, writes: 0 };
 }
 async function restoreBackupUnlocked(input: unknown, mode: "keep-existing" | "replace", selectedStores?: string[]) {
@@ -258,7 +262,7 @@ async function restoreBackupUnlocked(input: unknown, mode: "keep-existing" | "re
   const dbs = [...new Set(preview.backup.payload.modules.flatMap((module) => module.stores.map((store) => store.databaseName)))], allStores = preview.backup.payload.modules.flatMap((module) => module.stores).filter((store) => !selectedStores || selectedStores.includes(`${store.databaseName}/${store.storeId}`));
   const rollbackSnapshots = await Promise.all(dbs.map(async (name) => {
     const info = (await existingDatabaseInfos()).find((item) => item.name === name); if (!info) throw Error(`Database ${name} is no longer available.`);
-    const db = name === "fitness-os" ? await openFitnessDatabase() : await openExistingDatabase(name, info.version);
+    const db = name === "fitness-os" ? await openFitnessDatabase("fitness-os", { shared: false }) : await openExistingDatabase(name, info.version);
     try {
       const stores = allStores.filter((store) => store.databaseName === name);
       return await Promise.all(stores.map(async (store) => {
@@ -269,7 +273,7 @@ async function restoreBackupUnlocked(input: unknown, mode: "keep-existing" | "re
   }));
   const shellPreferenceSnapshots = shellKeys.map((key) => ({ key, value: window.localStorage.getItem(key) }));
   const journal = { id: `restore_${crypto.randomUUID()}`, status: "running", startedAt: new Date().toISOString(), mode, completedDatabases: [] as string[], currentDatabase: "", backup: preview.backup, selectedStores: selectedStores ?? null, rollbackSnapshots: rollbackSnapshots.flat(), shellPreferenceSnapshots };
-  const controlDb = await openFitnessDatabase();
+  const controlDb = await openFitnessDatabase("fitness-os", { shared: false });
   const startTx = controlDb.transaction("phase17RestoreJournal", "readwrite"); startTx.objectStore("phase17RestoreJournal").put(journal); await transactionDone(startTx); controlDb.close();
   try {
     for (const name of dbs) {
@@ -277,7 +281,7 @@ async function restoreBackupUnlocked(input: unknown, mode: "keep-existing" | "re
       const stores = preview.backup.payload.modules.flatMap((module) => module.stores).filter((store) => store.databaseName === name && (!selectedStores || selectedStores.includes(`${name}/${store.storeId}`)));
       if (!stores.length) { journal.completedDatabases.push(name); continue; }
       const info = (await existingDatabaseInfos()).find((item) => item.name === name); if (!info) throw Error(`Database ${name} is no longer available.`);
-      const db = name === "fitness-os" ? await openFitnessDatabase() : await openExistingDatabase(name, info.version);
+      const db = name === "fitness-os" ? await openFitnessDatabase("fitness-os", { shared: false }) : await openExistingDatabase(name, info.version);
       const tx = db.transaction(stores.map((store) => store.storeId), "readwrite");
       for (const store of stores) {
         const target = tx.objectStore(store.storeId);
@@ -291,13 +295,13 @@ async function restoreBackupUnlocked(input: unknown, mode: "keep-existing" | "re
         }
       }
       await transactionDone(tx); db.close(); journal.completedDatabases.push(name);
-      const updateDb = await openFitnessDatabase(), update = updateDb.transaction("phase17RestoreJournal", "readwrite"); update.objectStore("phase17RestoreJournal").put({ ...journal, currentDatabase: "" }); await transactionDone(update); updateDb.close();
+      const updateDb = await openFitnessDatabase("fitness-os", { shared: false }), update = updateDb.transaction("phase17RestoreJournal", "readwrite"); update.objectStore("phase17RestoreJournal").put({ ...journal, currentDatabase: "" }); await transactionDone(update); updateDb.close();
     }
     for (const preference of preview.backup.payload.shellPreferences) window.localStorage.setItem(preference.key, typeof preference.value === "string" ? preference.value : JSON.stringify(preference.value));
-    const db = await openFitnessDatabase(), tx = db.transaction(["phase17RestoreJournal", "phase17AuditEvents"], "readwrite"); tx.objectStore("phase17RestoreJournal").delete(journal.id); tx.objectStore("phase17AuditEvents").put({ id: `audit_${crypto.randomUUID()}`, eventType: "restore_completed", occurredAt: new Date().toISOString(), details: { mode, backupId: preview.backup.backupId, databases: dbs.length } }); await transactionDone(tx); db.close();
+    const db = await openFitnessDatabase("fitness-os", { shared: false }), tx = db.transaction(["phase17RestoreJournal", "phase17AuditEvents"], "readwrite"); tx.objectStore("phase17RestoreJournal").delete(journal.id); tx.objectStore("phase17AuditEvents").put({ id: `audit_${crypto.randomUUID()}`, eventType: "restore_completed", occurredAt: new Date().toISOString(), details: { mode, backupId: preview.backup.backupId, databases: dbs.length } }); await transactionDone(tx); db.close();
     return { databases: dbs.length, records: preview.backup.manifest.totalRecordCount };
   } catch (error) {
-    try { const db = await openFitnessDatabase(), tx = db.transaction("phase17RestoreJournal", "readwrite"); tx.objectStore("phase17RestoreJournal").put({ ...journal, status: "blocked", error: error instanceof Error ? error.message : "Restore failed", updatedAt: new Date().toISOString() }); await transactionDone(tx); db.close(); } catch { /* journal remains in its previous durable state */ }
+    try { const db = await openFitnessDatabase("fitness-os", { shared: false }), tx = db.transaction("phase17RestoreJournal", "readwrite"); tx.objectStore("phase17RestoreJournal").put({ ...journal, status: "blocked", error: error instanceof Error ? error.message : "Restore failed", updatedAt: new Date().toISOString() }); await transactionDone(tx); db.close(); } catch { /* journal remains in its previous durable state */ }
     throw Error(`Restore is blocked after ${journal.completedDatabases.length} database(s). Existing writes remain recoverable; resume or roll back from Data health. ${error instanceof Error ? error.message : "Restore failed."}`, { cause: error });
   }
 }
@@ -319,26 +323,26 @@ export async function restoreBackup(input: unknown, mode: "keep-existing" | "rep
   finally { try { const current: unknown = JSON.parse(window.localStorage.getItem(lockKey) ?? "null"); if (current && typeof current === "object" && (current as { owner?: unknown }).owner === owner) window.localStorage.removeItem(lockKey); } catch { /* Keep the expiring lock if storage becomes unavailable. */ } }
 }
 async function pendingJournal(id: string) {
-  const db = await openFitnessDatabase(), tx = db.transaction("phase17RestoreJournal", "readonly"), row = await request(tx.objectStore("phase17RestoreJournal").get(id)) as ({ backup?: unknown; mode?: unknown; selectedStores?: unknown; rollbackSnapshots?: { databaseName: string; storeId: string; records: unknown[] }[] } & Record<string, unknown>) | undefined;
+  const db = await openFitnessDatabase("fitness-os", { shared: false }), tx = db.transaction("phase17RestoreJournal", "readonly"), row = await request(tx.objectStore("phase17RestoreJournal").get(id)) as ({ backup?: unknown; mode?: unknown; selectedStores?: unknown; rollbackSnapshots?: { databaseName: string; storeId: string; records: unknown[] }[] } & Record<string, unknown>) | undefined;
   await transactionDone(tx); db.close(); if (!row) throw Error("The pending restore journal was not found."); return row;
 }
 export async function resumeRestore(id: string) {
   const journal = await pendingJournal(id);
   if (!journal.backup || (journal.mode !== "keep-existing" && journal.mode !== "replace")) throw Error("This restore journal does not contain a resumable validated archive.");
   const result = await restoreBackup(journal.backup, journal.mode, Array.isArray(journal.selectedStores) ? journal.selectedStores.filter((item): item is string => typeof item === "string") : undefined);
-  const db = await openFitnessDatabase(), tx = db.transaction(["phase17RestoreJournal", "phase17AuditEvents"], "readwrite"); tx.objectStore("phase17RestoreJournal").delete(id); tx.objectStore("phase17AuditEvents").put({ id: `audit_${crypto.randomUUID()}`, eventType: "restore_resumed", occurredAt: new Date().toISOString(), details: { journalId: id } }); await transactionDone(tx); db.close(); return result;
+  const db = await openFitnessDatabase("fitness-os", { shared: false }), tx = db.transaction(["phase17RestoreJournal", "phase17AuditEvents"], "readwrite"); tx.objectStore("phase17RestoreJournal").delete(id); tx.objectStore("phase17AuditEvents").put({ id: `audit_${crypto.randomUUID()}`, eventType: "restore_resumed", occurredAt: new Date().toISOString(), details: { journalId: id } }); await transactionDone(tx); db.close(); return result;
 }
 async function rollbackRestoreUnlocked(id: string) {
   const journal = await pendingJournal(id), snapshots = journal.rollbackSnapshots ?? [];
   const names = [...new Set(snapshots.map((snapshot) => snapshot.databaseName))];
   for (const name of names) {
     const info = (await existingDatabaseInfos()).find((item) => item.name === name); if (!info) throw Error(`Database ${name} is unavailable; rollback remains blocked and journaled.`);
-    const selected = snapshots.filter((snapshot) => snapshot.databaseName === name), db = name === "fitness-os" ? await openFitnessDatabase() : await openExistingDatabase(name, info.version), tx = db.transaction(selected.map((snapshot) => snapshot.storeId), "readwrite");
+    const selected = snapshots.filter((snapshot) => snapshot.databaseName === name), db = name === "fitness-os" ? await openFitnessDatabase("fitness-os", { shared: false }) : await openExistingDatabase(name, info.version), tx = db.transaction(selected.map((snapshot) => snapshot.storeId), "readwrite");
     for (const snapshot of selected) { const store = tx.objectStore(snapshot.storeId); store.clear(); for (const record of snapshot.records) store.put(record); }
     await transactionDone(tx); db.close();
   }
   for (const preference of (journal.shellPreferenceSnapshots ?? []) as { key: string; value: string | null }[]) { if (preference.value === null) window.localStorage.removeItem(preference.key); else window.localStorage.setItem(preference.key, preference.value); }
-  const db = await openFitnessDatabase(), tx = db.transaction(["phase17RestoreJournal", "phase17AuditEvents"], "readwrite"); tx.objectStore("phase17RestoreJournal").delete(id); tx.objectStore("phase17AuditEvents").put({ id: `audit_${crypto.randomUUID()}`, eventType: "restore_rolled_back", occurredAt: new Date().toISOString(), details: { journalId: id, databases: names.length } }); await transactionDone(tx); db.close(); return { databases: names.length };
+  const db = await openFitnessDatabase("fitness-os", { shared: false }), tx = db.transaction(["phase17RestoreJournal", "phase17AuditEvents"], "readwrite"); tx.objectStore("phase17RestoreJournal").delete(id); tx.objectStore("phase17AuditEvents").put({ id: `audit_${crypto.randomUUID()}`, eventType: "restore_rolled_back", occurredAt: new Date().toISOString(), details: { journalId: id, databases: names.length } }); await transactionDone(tx); db.close(); return { databases: names.length };
 }
 export async function rollbackRestore(id: string) {
   if (typeof navigator !== "undefined" && navigator.locks) return navigator.locks.request("fitness-os-data-restore", { mode: "exclusive", ifAvailable: true }, async (lock) => { if (!lock) throw Error("Another data restore operation is running in a different tab."); return rollbackRestoreUnlocked(id); });
@@ -355,7 +359,7 @@ export async function rollbackRestore(id: string) {
   finally { try { const check: unknown = JSON.parse(window.localStorage.getItem(lockKey) ?? "null"); if (check && typeof check === "object" && (check as { owner?: unknown }).owner === owner) window.localStorage.removeItem(lockKey); } catch { /* leave expiring lease for another tab to recover */ } }
 }
 export async function recordBackupReceipt(backup: BackupEnvelope, method: "file-picker") {
-  const db = await openFitnessDatabase(), tx = db.transaction(["phase17BackupReceipts", "phase17AuditEvents"], "readwrite"), id = backup.backupId, createdAt = new Date().toISOString();
+  const db = await openFitnessDatabase("fitness-os", { shared: false }), tx = db.transaction(["phase17BackupReceipts", "phase17AuditEvents"], "readwrite"), id = backup.backupId, createdAt = new Date().toISOString();
   tx.objectStore("phase17BackupReceipts").put({ id, createdAt, profile: backup.profile, recordCount: backup.manifest.totalRecordCount, storeCount: backup.manifest.totalStoreCount, payloadSha256: backup.integrity.payloadSha256, delivery: method });
   tx.objectStore("phase17AuditEvents").put({ id: `audit_${crypto.randomUUID()}`, eventType: "backup_saved", occurredAt: createdAt, details: { backupId: id, profile: backup.profile } });
   await transactionDone(tx); db.close();
@@ -370,7 +374,7 @@ export function encodeCsv(rows: readonly Record<string, unknown>[], mode: "safe"
   return [columns.map((column) => safeCsvCell(column, mode)).join(","), ...rows.map((row) => columns.map((column) => safeCsvCell(row[column], mode)).join(","))].join("\r\n");
 }
 export async function readDataHistory() {
-  const db = await openFitnessDatabase(), names = ["phase17BackupReceipts", "phase17AuditEvents", "phase17RestoreJournal"], tx = db.transaction(names, "readonly");
+  const db = await openFitnessDatabase("fitness-os", { shared: false }), names = ["phase17BackupReceipts", "phase17AuditEvents", "phase17RestoreJournal"], tx = db.transaction(names, "readonly");
   const result = await Promise.all(names.map(async (name) => [name, await request(tx.objectStore(name).getAll())] as const)); await transactionDone(tx); db.close();
   return Object.fromEntries(result) as Record<string, Record<string, unknown>[]>;
 }

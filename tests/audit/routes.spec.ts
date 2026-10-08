@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import { routeAuditInventory } from "../../scripts/content/route-inventory";
 import type { PublicSearchDocument } from "../../src/features/search/domain";
 const documents = JSON.parse(
@@ -16,6 +17,12 @@ const cases = routeAuditInventory(tree, documents);
 const buildDate = (
   JSON.parse(readFileSync(".output/nitro.json", "utf8")) as { date: string }
 ).date;
+const auditedCommit = execFileSync("git", ["rev-parse", "HEAD"], {
+  encoding: "utf8",
+}).trim();
+const productionBuildSha256 = createHash("sha256")
+  .update(readFileSync(".output/server/index.mjs"))
+  .digest("hex");
 
 for (const [path, kind] of cases) {
   test(`route audit ${path}`, async ({ page, browserName, baseURL }) => {
@@ -112,6 +119,8 @@ for (const [path, kind] of cases) {
           {
             path,
             auditVersion: 2,
+            auditedCommit,
+            productionBuildSha256,
             publicRecordVerified,
             failedAssets,
             kind,

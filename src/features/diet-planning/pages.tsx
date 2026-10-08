@@ -261,8 +261,8 @@ export function DietInformation({ kind }: { kind: "methodology" | "safety" }) {
           }
         />
         <p>
-          Constants are supplied by the Phase 09 specification; energy equations
-          and PAL/model error were checked against the primary 2023 report.
+          Energy equations, constants and activity-model limitations are linked
+          to the primary reference materials.
           Engineering source checking is distinct from professional review of
           your circumstances.
         </p>

@@ -5,6 +5,14 @@ import type { RouteAuditKind } from "./route-inventory";
 const evidenceSchema = z.object({
   path: z.string(),
   auditVersion: z.number().optional(),
+  auditedCommit: z
+    .string()
+    .regex(/^[a-f0-9]{40}$/)
+    .optional(),
+  productionBuildSha256: z
+    .string()
+    .regex(/^[a-f0-9]{64}$/)
+    .optional(),
   publicRecordVerified: z.boolean().nullable().optional(),
   failedAssets: z.array(z.string()).optional(),
   kind: z.enum(["route", "public_record", "missing_record"]),
