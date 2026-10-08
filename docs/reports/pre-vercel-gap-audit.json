@@ -1,0 +1,1039 @@
+{
+  "schemaVersion": 1,
+  "auditedImplementationCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+  "scope": "Final pre-Vercel application completion; frozen verified subset; no deployment, cleanup, deletion or content expansion.",
+  "features": [
+    {
+      "module": "Foundation",
+      "feature": "application shell",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "navigation",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "responsive layouts",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "theme",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "error boundaries",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "loading states",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "404",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "canonical routes",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Foundation",
+      "feature": "metadata",
+      "status": "implemented",
+      "implementation": "src/components/app-shell",
+      "evidence": "tests/browser/foundation.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "muscles",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "exercises",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "workout science",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "workout programs",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "program finder",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "workout tracking",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "history",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "previous performance",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "timers",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "PR handling",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "edits/deletes",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Training",
+      "feature": "exports",
+      "status": "implemented",
+      "implementation": "src/features/workout-tracker",
+      "evidence": "tests/browser/workout.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "foods",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "food preparations",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "nutrient encyclopedia",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "diet calculator",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "target storage",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "nutrition diary",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "serving conversion",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "custom foods",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "quick add",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "hydration",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "recipes",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "meal plans",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "grocery lists",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Nutrition",
+      "feature": "consumption snapshots",
+      "status": "implemented",
+      "implementation": "src/features/nutrition-tracker",
+      "evidence": "tests/browser/nutrition.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Recovery",
+      "feature": "sleep",
+      "status": "implemented",
+      "implementation": "src/features/recovery",
+      "evidence": "tests/browser/recovery.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Recovery",
+      "feature": "recovery check-ins",
+      "status": "implemented",
+      "implementation": "src/features/recovery",
+      "evidence": "tests/browser/recovery.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Recovery",
+      "feature": "soreness",
+      "status": "implemented",
+      "implementation": "src/features/recovery",
+      "evidence": "tests/browser/recovery.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Recovery",
+      "feature": "pain/illness separation",
+      "status": "implemented",
+      "implementation": "src/features/recovery",
+      "evidence": "tests/browser/recovery.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Recovery",
+      "feature": "mobility",
+      "status": "implemented",
+      "implementation": "src/features/recovery",
+      "evidence": "tests/browser/recovery.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Recovery",
+      "feature": "routines",
+      "status": "implemented",
+      "implementation": "src/features/recovery",
+      "evidence": "tests/browser/recovery.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "cardio education",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "plans",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "sessions",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "intervals",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "distance",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "HR",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "effort",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "laps",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Cardio",
+      "feature": "history",
+      "status": "implemented",
+      "implementation": "src/features/cardio",
+      "evidence": "tests/browser/cardio.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Supplements",
+      "feature": "ingredient evidence",
+      "status": "implemented",
+      "implementation": "src/features/supplements",
+      "evidence": "tests/browser/supplements.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Supplements",
+      "feature": "product labels",
+      "status": "implemented",
+      "implementation": "src/features/supplements",
+      "evidence": "tests/browser/supplements.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Supplements",
+      "feature": "immutable label versions",
+      "status": "implemented",
+      "implementation": "src/features/supplements",
+      "evidence": "tests/browser/supplements.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Supplements",
+      "feature": "intake records",
+      "status": "implemented",
+      "implementation": "src/features/supplements",
+      "evidence": "tests/browser/supplements.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Supplements",
+      "feature": "trials",
+      "status": "implemented",
+      "implementation": "src/features/supplements",
+      "evidence": "tests/browser/supplements.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Supplements",
+      "feature": "adverse events",
+      "status": "implemented",
+      "implementation": "src/features/supplements",
+      "evidence": "tests/browser/supplements.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Supplements",
+      "feature": "safety flags",
+      "status": "implemented",
+      "implementation": "src/features/supplements",
+      "evidence": "tests/browser/supplements.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Progress",
+      "feature": "body measurements",
+      "status": "implemented",
+      "implementation": "src/features/progress",
+      "evidence": "tests/browser/progress.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Progress",
+      "feature": "body weight",
+      "status": "implemented",
+      "implementation": "src/features/progress",
+      "evidence": "tests/browser/progress.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Progress",
+      "feature": "trends",
+      "status": "implemented",
+      "implementation": "src/features/progress",
+      "evidence": "tests/browser/progress.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Progress",
+      "feature": "circumference",
+      "status": "implemented",
+      "implementation": "src/features/progress",
+      "evidence": "tests/browser/progress.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Progress",
+      "feature": "external body-composition estimates",
+      "status": "implemented",
+      "implementation": "src/features/progress",
+      "evidence": "tests/browser/progress.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Progress",
+      "feature": "progress photos",
+      "status": "implemented",
+      "implementation": "src/features/progress",
+      "evidence": "tests/browser/progress.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Progress",
+      "feature": "analytics dashboard",
+      "status": "implemented",
+      "implementation": "src/features/progress",
+      "evidence": "tests/browser/progress.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "search",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "favourites",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "collections",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "comparisons",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "recent activity",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "local settings",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "global backup",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "restore",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "CSV",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "privacy",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "migrations",
+      "status": "implemented",
+      "implementation": "src/features/data-management",
+      "evidence": "tests/browser/manual-test-ready.spec.ts",
+      "verification": "Final observed results are recorded separately in final-pre-vercel-readiness.json; file existence is not a test pass."
+    },
+    {
+      "module": "Global systems",
+      "feature": "global import-as-copy",
+      "status": "intentionally unavailable",
+      "reason": "No verified cross-module stable-ID remapper; UI explicitly disables this mode. Owning module copy modes remain available."
+    },
+    {
+      "module": "Global systems",
+      "feature": "encrypted backups",
+      "status": "intentionally unavailable",
+      "reason": "Optional profile deferred; UI explicitly states files are not encrypted or authenticated."
+    },
+    {
+      "module": "Global systems",
+      "feature": "globally atomic multi-database restore",
+      "status": "intentionally unavailable",
+      "reason": "Browser limitation; durable before-image, automatic rollback and explicit recovery are implemented."
+    },
+    {
+      "module": "Progress",
+      "feature": "photo ZIP import",
+      "status": "intentionally unavailable",
+      "reason": "Separate ZIP is an export; explicit global full-media JSON provides tested restoration. Portable JSON excludes binaries."
+    },
+    {
+      "module": "Foundation",
+      "feature": "accounts, cloud sync, analytics, payments and runtime fitness APIs",
+      "status": "intentionally unavailable",
+      "reason": "Prohibited by project contract."
+    },
+    {
+      "module": "Owner verification",
+      "feature": "Real Android",
+      "status": "manual-test-only"
+    },
+    {
+      "module": "Owner verification",
+      "feature": "Real iPhone/iPad",
+      "status": "manual-test-only"
+    },
+    {
+      "module": "Owner verification",
+      "feature": "Human screen readers and visual contrast judgement",
+      "status": "manual-test-only"
+    },
+    {
+      "module": "Owner verification",
+      "feature": "Native OS file pickers",
+      "status": "manual-test-only"
+    },
+    {
+      "module": "Owner verification",
+      "feature": "Print",
+      "status": "manual-test-only"
+    },
+    {
+      "module": "Owner verification",
+      "feature": "Owner's real workouts, nutrition and backup on the stable deployed origin",
+      "status": "manual-test-only"
+    },
+    {
+      "module": "Owner verification",
+      "feature": "Vercel Preview and production DNS/TLS/headers/smoke tests",
+      "status": "manual-test-only"
+    },
+    {
+      "module": "exercises",
+      "feature": "Unpublished identities",
+      "count": 152,
+      "status": "future content backlog"
+    },
+    {
+      "module": "workout-science",
+      "feature": "Unpublished identities",
+      "count": 66,
+      "status": "future content backlog"
+    },
+    {
+      "module": "programs",
+      "feature": "Unpublished identities",
+      "count": 46,
+      "status": "future content backlog"
+    },
+    {
+      "module": "foods",
+      "feature": "Unpublished identities",
+      "count": 78,
+      "status": "future content backlog"
+    },
+    {
+      "module": "recovery",
+      "feature": "Unpublished identities",
+      "count": 109,
+      "status": "future content backlog"
+    },
+    {
+      "module": "cardio",
+      "feature": "Unpublished identities",
+      "count": 189,
+      "status": "future content backlog"
+    },
+    {
+      "module": "supplements",
+      "feature": "Unpublished identities",
+      "count": 260,
+      "status": "future content backlog"
+    }
+  ],
+  "correctedDefects": [
+    "A blocked IndexedDB clear rejected even though its uncancellable deletion remained queued; the confirmed operation now stays pending with explicit close-tabs feedback.",
+    "WebKit could retain an identical file selection across document navigation and omit the change event; restore releases the picker selection after capturing each File.",
+    "A large backup export could exceed its own restore byte limit; export now rejects that size before download with module/media guidance.",
+    "Global restore file controls were available before React hydration and during a restore; they now wait for hydration and prevent overlapping selection.",
+    "Windows WebKit rejected native Blob storage; sanitized byte storage now preserves old Blob reads and versioned full-media archive portability.",
+    "Serial backup reads and integrity checks imposed avoidable browser waits; independent readonly reads and hashes now run concurrently.",
+    "New safety validators exceeded the unchanged bundle budget; tree shaking and route-family wrapper grouping restore headroom without removing features.",
+    "Blocked main/recovery upgrade requests could migrate after their promise rejected; cancelled upgrades now abort and recovery connections close on version changes.",
+    "Backups claimed to exclude active-workout pointers but included the IndexedDB pointer; new exports exclude it and legacy imports ignore it with guidance.",
+    "Fresh-profile global restore required visiting every owning module; one guided preparation action now calls owning migrations.",
+    "Preview could initialize the main database; all preview opens now abort upgrades and write no canonical records.",
+    "Malformed global envelopes could crash preview rendering; failed envelope results use a safe heading/summary.",
+    "Global restore omitted owning row and resulting-module validation, including relationships and cached immutable calculations.",
+    "Duplicate target stores, inconsistent schema versions, record counts and unsupported serializer/registry/module versions were not rejected.",
+    "A synchronous restore write error could leave queued writes alive; transactions now explicitly abort and close on failure.",
+    "Partial multi-database failure left recovery solely to the user; automatic before-image rollback is attempted and durable recovery retained on failure.",
+    "Keep-existing overwrote shell preferences; existing preferences now survive.",
+    "Global file reading/decompression and photo file sizes lacked byte bounds.",
+    "Imported media lacked signature/metadata/checksum/dimension and binary-manifest validation.",
+    "Full-media plus gzip produced an ambiguous portable profile; the UI separates the supported formats.",
+    "Search result/module labels exposed phase numbers; product names now replace those labels.",
+    "Comparison copy named the coding agent outside methodology; it now describes machine review.",
+    "Cross-browser push triggers omitted the finalization branch; the final branch now receives the hosted matrix."
+  ],
+  "unresolvedDeterministicCodeBlockers": [],
+  "caveats": [
+    "No independent human or clinical review is claimed.",
+    "Unknown legacy stores remain opaque and preserved; no invented schema is assigned to them.",
+    "No universal claim that software has no undiscovered bugs or that automation proves WCAG compliance."
+  ],
+  "contractHashes": [
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_00_Master_Foundation_Lovable_Specification.md",
+      "sha256": "2ff0e5d3bd4b1606e44d3503f90167bf9bc3fc5e5fdd5c617596c0a467f5a74f"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_01_Application_Shell_Navigation_Design_System.md",
+      "sha256": "162d5b7502cd61a938b0169340f388e33b07bed21e75c4550d62a2f4861f892c"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_01_Quick_Implementation_Reference.txt",
+      "sha256": "47cfab098fff8711703405542b6beaddb5e6d2eab515c1af35e900986c0ba62e"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Muscle_Data_Schema.json",
+      "sha256": "f73ad0c9519e787917b4a0e80f4d11641cebd71e639f2e6a761d2fc8c889a6cf"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Muscle_Functional_Anatomy_Library.md",
+      "sha256": "8c52079526579b2598309532150c657546ba93e3351cc3125589d70a39ec1f9d"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Quick_Implementation_Reference.txt",
+      "sha256": "b4d7a5f36d31b9846adeb52678cbbee95fbe6b07fb20e892056e4ee8220ffb63"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Seed_Taxonomy.json",
+      "sha256": "b04d1b845fa4c6d6e2dd9fcdabf13ca95b664e0431bfa7b17a18188d29fa0319"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Exercise_Data_Schema.json",
+      "sha256": "0776be710df6c28a2841ca37abce6959e0cda3f10fd56007882dce42b7360c81"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Exercise_Encyclopedia.md",
+      "sha256": "cf86e326c2d75ec6c5e22351660ddbc6b2c55e058d3065063a7977dd1ddf46cb"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Quick_Implementation_Reference.txt",
+      "sha256": "e26d7b68dbb47286508ada741d037ec10313575d91a1177609a6f3724a217271"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Seed_Exercise_Taxonomy.json",
+      "sha256": "f9bef9cc31afb2f0112af51c0fb58d9ffdca573038f01f5b077c3b02945e6b79"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Quick_Implementation_Reference.txt",
+      "sha256": "c71bae8728a867a3c573878bc56b5f2507236772af299a5b8f3aa822df7ecf52"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Seed_Workout_Science_Taxonomy.json",
+      "sha256": "91b6c23947ed21f200947eb4910d2878e360f1069db7e14a7a60617ee8e6045f"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Workout_Science.md",
+      "sha256": "cdf2151fcbdb9949a56148929818a6d7bb7a0d3793ff4649dbd93aff11bef89d"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Workout_Science_Data_Schema.json",
+      "sha256": "38ad03862455f8660d9f711f07d889c6b35234409be3f570280994c46d34d1e2"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Quick_Implementation_Reference.txt",
+      "sha256": "60f552db136748a8d004165f510f4421083185a9cd6d361f548e552cd6370efa"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Seed_Workout_Program_Taxonomy.json",
+      "sha256": "6b3490d1d93999dab645a84fa111af1222a1b770450f62171c5ce5d1b52d8679"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Workout_Programs.md",
+      "sha256": "7ce7ce1c351b92d6de5cdc58eb4b0aaf0445c30ef778085494d2df72b8a69bb6"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Workout_Program_Data_Schema.json",
+      "sha256": "f03607cc8ff56aebfb6ce980c473aa9cf56564db18afc60a6b90266f78d16862"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Quick_Implementation_Reference.txt",
+      "sha256": "7f0fd37b836ac647d7524154e5a58d8191e6cdfd184b829f3d4a64f4713587a5"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker.md",
+      "sha256": "14c4f95ced0f23eb2bd2f6d78a2a54ed42f15982e9b293b5e4a3b57cef9e7619"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Data_Schema.json",
+      "sha256": "b7c869a27aaf35da03de9909a115fe6a6be234af44f4ee2d10e439e75968272f"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Reference_Data.json",
+      "sha256": "f4c9205df0713966ab5bde7e79644ae1dd73e40c7bcf431dfa77101704086f1e"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Data_Schema.json",
+      "sha256": "aeb2b09c4258ec7ddc45cc98448891f51458ce1ab1b35c63d54df080a48dc4db"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Encyclopedia.md",
+      "sha256": "e1251a535298dde499aa6edfdafbcd7cdc58ee41eb9145e0cd141b047e638aed"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Quick_Implementation_Reference.txt",
+      "sha256": "fb040a80163a8e62d8f87541cca72b625b8bc4066883f8ba6fdb8c9a66c8e3ef"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Seed_Food_Taxonomy.json",
+      "sha256": "e80350eb6f22b147f915348c666b46dc3887d677f89fe64cf76bb290208efb9c"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Nutrient_Data_Schema.json",
+      "sha256": "499e124480ecdc08dcccd536d7d8fff9ac4b61131941b6f182817b95a989722d"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Nutrient_Encyclopedia.md",
+      "sha256": "685155ff33a74ff6ad7db36316ff54f9cfbb15339be86ae951c5cf32f054fdd9"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Quick_Implementation_Reference.txt",
+      "sha256": "3176eed64641af2d5ceef747ea8a8cd9b30a1e2a0d55883946e9e110462fc146"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Seed_Nutrient_Taxonomy.json",
+      "sha256": "cfb56a45c5735a5ba357baaf21787190a06747051e52d5ccd762e200cfab14aa"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_and_Target_Calculators.md",
+      "sha256": "7c6800bde4aa0dcd19d0e484853ec7995cae6c0636cea8f6cba2c3c23f8b8776"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_Data_Schema.json",
+      "sha256": "ba5dd1a099e077be6278bcc779c66cbe829d475c5d6bcab76e47464b50608ddc"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_Reference_Data.json",
+      "sha256": "a9e3aa467e847fc515b88e612faa93ae70550ff8d006bdc2f73e6af3e5ac0cf8"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Quick_Implementation_Reference.txt",
+      "sha256": "95c1b05d6c1f277c81fcfc268c7e03f9fa903e8c3af18ef5728d47eadd1be881"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker.md",
+      "sha256": "0634d16c883adf33e811e2daee123b7f7ad3a68c08452c9dd996f4765b1274ad"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker_Data_Schema.json",
+      "sha256": "69ada4a071d3b89a98bde43e81efce4ee3d21ebe46e6d3a2632156a683402ae5"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker_Reference_Data.json",
+      "sha256": "d58401dbfcf6acbefd763f377cd916155ed1b9f03d9506d7f64d2778b5837cb0"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Quick_Implementation_Reference.txt",
+      "sha256": "f83ab3b32bd207e9c0b7df0601f7433d42bcfe4cbbbb7d1bb61e5679d0301fb0"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Quick_Implementation_Reference.txt",
+      "sha256": "2e9e2aa2188b043ed3d731d969f7b354edc01c86a627b8f4707412a4964b25b7"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_and_Meal_Plans.md",
+      "sha256": "cc83e0f7ea68ceaad61c493c2247b57cbb83b644ca45e200569ae9aeae2c7d47"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Data_Schema.json",
+      "sha256": "7e354e035ee364af15fe679e71a639fa68564d764facc46df7ce5c2f07fee884"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Reference_Data.json",
+      "sha256": "9da3dd0095b2e83642daf0bfba7b054bd12c3e8ce477dcd766d72e1a3a16a441"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Quick_Implementation_Reference.txt",
+      "sha256": "b8b94afb89cd5cc94c5d7d837f218eeb3b682b2e619be6c116c93afa4bf0dad5"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility.md",
+      "sha256": "ecabc655dc615203569137ed3567fc4c3198dbca19050be180de2f5631defb23"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Data_Schema.json",
+      "sha256": "658ecae09394749d6a7bf3949bf0cc17d854dcc903c61f831d8ed146e1ca77e2"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Reference_Data.json",
+      "sha256": "7ca3a893bda68efd10fe25bf44b4fe5e88075329e6263e57ac72c9b581f1a47a"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Cardio_and_Conditioning.md",
+      "sha256": "65a1b5aefea797b2af2f550c41429641ae951e4f9b8b1682be8ed716d4e65a16"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Cardio_Conditioning_Data_Schema.json",
+      "sha256": "d14db11dacd24d82051e074cd5958b230b8af11352b6b66fc6a90e31474f1d94"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Cardio_Conditioning_Reference_Data.json",
+      "sha256": "b4ec3912b6d9449cd1527565c79813d4a9f56a08c5c26486b7862b555eab0dc0"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Quick_Implementation_Reference.txt",
+      "sha256": "c51576e25431384ba4c65b07aa8f5887d7eb11320ace8593bac1c04106c1a479"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Quick_Implementation_Reference.txt",
+      "sha256": "2a228b983c433ddc43ee890306febadbcb86d045dc8949dd7b8a430e5817024a"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_and_Evidence_Library.md",
+      "sha256": "7e609f08e18b686176a17c16007461cc3b91bb61666e8b806724cba66344a36b"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_Evidence_Data_Schema.json",
+      "sha256": "bbe1fda7a2ec9d7046f6ee4732e678c1b0c866ee0b8f386574f495c6ad1417b0"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_Evidence_Reference_Data.json",
+      "sha256": "ecd0eac65ff85ad2a5a7f679b8ad2ac0b999f88d3dcf18568552a420f12460fd"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Body_Progress_Analytics_Data_Schema.json",
+      "sha256": "8352d498767b1eceb37fa47f39a57054fcd82a2e186746f877e23c892d749208"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Body_Progress_Analytics_Reference_Data.json",
+      "sha256": "70cd8e083f527abbf0e6418d65d284890f999a4f5be4a7c97ecd46faeee0bec9"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Body_Progress_Dashboard_Analytics.md",
+      "sha256": "d8824d2aba417776bae78148339e859c06ff5e2ac7b68bb330f82b6b65353822"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Quick_Implementation_Reference.txt",
+      "sha256": "9c7ae979c312aa7352d5c2540cd2339a99ee51bba04bc0cad9704ebcb9a0c329"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Global_Search_Favourites_Comparison.md",
+      "sha256": "428faf8e0d6d5190c9cba3fd916aec331a7b2a41b7a9b90d2092d8257aec2fbd"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Quick_Implementation_Reference.txt",
+      "sha256": "90ef85b5c9d69b741ab6e9eae164532dbed2b17d3b3661e1af075258f8b7f624"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Search_Favourites_Comparison_Data_Schema.json",
+      "sha256": "3ec26e8664022b7fffa1e9156ffe1c10503c77cfed5cf234836e54f4ad648941"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Search_Favourites_Comparison_Reference_Data.json",
+      "sha256": "d8cbf1bce593d7f0c12fce10d70e91ab8612a0e2e2b8d744e7334888da1a2cb9"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Local_Storage_Backup_Export_Data_Schema.json",
+      "sha256": "254c08441934d8c62ba50778fba2161e53041a9d734982788b9d267f6b55f746"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Local_Storage_Backup_Export_Reference_Data.json",
+      "sha256": "450c32ba6904a5febd0fd189a44e40fbcd0fdffb66fb0a0a8e88f41716c83049"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Quick_Implementation_Reference.txt",
+      "sha256": "7efb6c6afab0b90ec2da455963b137dea946a26fded87440c204d1ff1ead607e"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Quick_Implementation_Reference.txt",
+      "sha256": "c7aac12e5c46d24484dffa963c2b60d0c9c46a7fd677a04d0d4f57148d0beb0c"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Data_Schema (1).json",
+      "sha256": "2845c592218563e85a3bfea7c7f26f6f9eaa7def85d8028823f61cade4a0cccd"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Data_Schema.json",
+      "sha256": "2845c592218563e85a3bfea7c7f26f6f9eaa7def85d8028823f61cade4a0cccd"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Reference_Data (1).json",
+      "sha256": "2b780c614061b0f99f942725bb7c2a2044b2c60beebfd42b4915a431f777c8aa"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Reference_Data.json",
+      "sha256": "2b780c614061b0f99f942725bb7c2a2044b2c60beebfd42b4915a431f777c8aa"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_GitHub_Vercel_Deployment (1).md",
+      "sha256": "136b91c409c28e367ba21f9c6bfc8be6160aa14e9770319f8611f5bef56df8d5"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_GitHub_Vercel_Deployment.md",
+      "sha256": "136b91c409c28e367ba21f9c6bfc8be6160aa14e9770319f8611f5bef56df8d5"
+    }
+  ]
+}

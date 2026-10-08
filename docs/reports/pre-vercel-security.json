@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "testedCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+  "trackedFilesScanned": 1248,
+  "publicBundleFilesScanned": 289,
+  "trackedEnvironmentFiles": [
+    ".env.example"
+  ],
+  "productionServerSha256": "6ee23f853d4c826ba3fee8ed1cbf135eb2dd572d68d85cb1da9b48844502662a",
+  "secretFindings": [],
+  "limitations": "Pattern-based current-tree/bundle scan; no claim of formal penetration testing or historical secret scanning."
+}

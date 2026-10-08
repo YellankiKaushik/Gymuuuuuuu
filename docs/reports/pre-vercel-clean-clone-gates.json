@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "verifiedImplementationCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+  "cleanClone": true,
+  "gates": [
+    {
+      "name": "diff-check",
+      "startedAt": "2026-10-08T14:58:46.7562378Z",
+      "finishedAt": "2026-10-08T14:58:46.8211181Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/diff-check.log"
+    },
+    {
+      "name": "npm-ci",
+      "startedAt": "2026-10-08T14:58:46.8408998Z",
+      "finishedAt": "2026-10-08T14:58:56.2906851Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/npm-ci.log"
+    },
+    {
+      "name": "vercel-package-only",
+      "startedAt": "2026-10-08T14:58:56.2928830Z",
+      "finishedAt": "2026-10-08T14:59:41.9802214Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/vercel-package-only.log"
+    },
+    {
+      "name": "check",
+      "startedAt": "2026-10-08T14:59:41.9978842Z",
+      "finishedAt": "2026-10-08T15:02:11.6719473Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/check.log"
+    },
+    {
+      "name": "coverage",
+      "startedAt": "2026-10-08T15:02:11.6736374Z",
+      "finishedAt": "2026-10-08T15:03:14.7305473Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/coverage.log"
+    },
+    {
+      "name": "privacy",
+      "startedAt": "2026-10-08T15:03:14.7321817Z",
+      "finishedAt": "2026-10-08T15:03:15.4080804Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/privacy.log"
+    },
+    {
+      "name": "dependency-audit",
+      "startedAt": "2026-10-08T15:03:15.4095656Z",
+      "finishedAt": "2026-10-08T15:03:17.2137265Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/dependency-audit.log"
+    },
+    {
+      "name": "build",
+      "startedAt": "2026-10-08T15:03:17.2152256Z",
+      "finishedAt": "2026-10-08T15:03:38.9449882Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/build.log"
+    },
+    {
+      "name": "performance",
+      "startedAt": "2026-10-08T15:03:38.9492750Z",
+      "finishedAt": "2026-10-08T15:03:39.4856424Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/performance.log"
+    },
+    {
+      "name": "content-performance",
+      "startedAt": "2026-10-08T15:03:39.4869693Z",
+      "finishedAt": "2026-10-08T15:03:40.0536314Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/content-performance.log"
+    },
+    {
+      "name": "secret-scan",
+      "startedAt": "2026-10-08T15:03:40.0549729Z",
+      "finishedAt": "2026-10-08T15:03:42.0120153Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/secret-scan.log"
+    },
+    {
+      "name": "gap-inventory",
+      "startedAt": "2026-10-08T15:03:42.0134725Z",
+      "finishedAt": "2026-10-08T15:03:43.2571213Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/gap-inventory.log"
+    },
+    {
+      "name": "local-browsers",
+      "startedAt": "2026-10-08T15:03:43.2584335Z",
+      "finishedAt": "2026-10-08T15:31:05.1209469Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/local-browsers.log"
+    },
+    {
+      "name": "complete-route-audit",
+      "startedAt": "2026-10-08T15:31:05.1227358Z",
+      "finishedAt": "2026-10-08T15:47:46.9979521Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/complete-route-audit.log"
+    },
+    {
+      "name": "route-report",
+      "startedAt": "2026-10-08T15:47:46.9996862Z",
+      "finishedAt": "2026-10-08T15:47:50.3182107Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/route-report.log"
+    }
+  ]
+}

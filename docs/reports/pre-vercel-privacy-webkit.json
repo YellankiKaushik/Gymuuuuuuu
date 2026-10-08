@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "testedCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+  "browser": "webkit",
+  "syntheticOnly": true,
+  "requestCount": 890,
+  "unexpectedRemoteRequests": 0,
+  "personalValuesInRequests": 0,
+  "ssrRoutes": [
+    "/workout",
+    "/diet-planning/plans",
+    "/nutrition",
+    "/sleep",
+    "/recovery",
+    "/cardio",
+    "/supplements/products",
+    "/progress/weight",
+    "/saved/favourites",
+    "/search"
+  ],
+  "ssrPersonalMarkerLeaks": 0,
+  "freshProfileRestore": "passed",
+  "invalidImportPreservation": "passed"
+}

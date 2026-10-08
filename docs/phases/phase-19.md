@@ -272,3 +272,25 @@ validation, automatic rollback, bounded imports and cross-browser sanitized phot
 storage are corrected. Current final test evidence and main integration remain
 pending; historical checkpoint passes are not inherited. Decisions are retained
 in pre-vercel-restore-safety.md and pre-vercel-performance-budget.md.
+
+## Final pre-Vercel handoff — verification complete
+
+Implementation 52102ad39cfc5c6e8e2ecb81db4eacde117fce7d passed the complete clean
+clone cycle: npm ci/check/coverage/privacy/audit/build, unchanged performance
+budgets, secret scan, 352 units in 94 files, local Chromium and WebKit 284/284
+each, and 702/702 current-build route checks. Hosted Linux Chromium/Firefox/WebKit
+each passed 284/284; the separate accessibility job passed 184/184. Logs and
+commit bindings are retained in final-pre-vercel-readiness.json, the clean-clone
+gate report and pre-vercel-hosted-ci.json. A final documentation/evidence commit
+preserves the verified execution tree before normal main integration and the
+pre-vercel-release-ready tag. No historical test passes are inherited.
+
+The Vercel preset generated Node.js 24 build output without deployment. Follow
+docs/runbooks/vercel-owner-deployment.md for owner-controlled Preview, stable
+origin, DNS/TLS, HTTPS headers and production smoke. Real devices, screen readers,
+print, native OS save and storage quota/eviction/persistence remain owner checks.
+All 520 factual records, 648 search documents and 900 backlog identities remain
+frozen; no cleanup, tracked-file deletion, source expansion or production
+operation was performed. Twenty-three defects/implementation gaps are recorded
+in pre-vercel-gap-audit.md. Global atomicity, safe cross-module import-as-copy,
+encryption and ZIP import are not falsely claimed.

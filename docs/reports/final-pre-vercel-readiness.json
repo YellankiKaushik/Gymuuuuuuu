@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "status": "ready_for_owner_controlled_vercel_preview",
+  "generatedAt": "2026-10-08T16:26:47.829086+00:00",
+  "verifiedImplementationCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+  "executionTreeSha256": "706ec0d1d4953464dfce471474b559df20b5a58cfba7db8b9171f4f6ffaf17f2",
+  "evidenceBinding": "All expensive verification targets this implementation commit. A final documentation/evidence commit may follow only if the non-docs/README Git execution tree remains identical. No historic checkpoint test results are inherited.",
+  "branch": "codex/final-pre-vercel-readiness",
+  "safetyCheckpoint": "pre-vercel-finalization-safety-checkpoint",
+  "safetyCommit": "684345c41207c2d54044e79be52c42a303bfee90",
+  "requestedFinalTag": "pre-vercel-release-ready",
+  "trackedFileDeletions": [],
+  "publicContentExpanded": false,
+  "counts": {
+    "muscles": 70,
+    "exercises": 32,
+    "workout-science": 32,
+    "programs": 4,
+    "foods": 264,
+    "nutrients": 51,
+    "recipes": 24,
+    "meal-templates": 3,
+    "recovery": 15,
+    "cardio": 13,
+    "supplements": 12,
+    "foodProfiles": 273,
+    "factualRecords": 520,
+    "searchDocuments": 648,
+    "backlog": 900
+  },
+  "searchManifest": {
+    "schemaVersion": "1.0.0",
+    "adapterVersion": "fitness-os-native-index-v1",
+    "normalizationVersion": "unicode-nfkc-token-v1",
+    "rankingVersion": "field-weights-exact-prefix-bonus-v1",
+    "canonicalDocumentHash": "7b3df4d5ac92f146a203b4c5b1741f44b1e73691d0a65014b219831d8e0f9f5e",
+    "indexHash": "d512000f40b6054f1cc261aed4aa99b91d5c043fbcdb9e17de19f0df3c6a7706",
+    "indexVersion": "83fef1c09dbeeb3e9a28bba1e037a38dbbfa3ec9d05a39ce2cea5d3175b91fa5",
+    "documentCount": 648,
+    "countsByEntityType": {
+      "route": 124,
+      "muscle": 70,
+      "exercise": 32,
+      "workout_science_topic": 32,
+      "workout_program": 4,
+      "workout_session": 0,
+      "food": 264,
+      "nutrient": 51,
+      "diet_plan": 0,
+      "recipe": 24,
+      "meal_plan_template": 3,
+      "meal_plan": 0,
+      "recovery_topic": 11,
+      "recovery_routine": 4,
+      "sleep_entry": 0,
+      "recovery_checkin": 0,
+      "cardio_topic": 10,
+      "cardio_modality": 2,
+      "cardio_plan": 1,
+      "conditioning_routine": 0,
+      "supplement_ingredient": 12,
+      "supplement_evidence_topic": 0,
+      "measurement_protocol": 0,
+      "progress_topic": 0,
+      "body_measurement": 0,
+      "dashboard_widget": 4
+    },
+    "builtAt": "2026-10-08T08:08:02.000Z",
+    "locale": "en"
+  },
+  "implementationInventory": "docs/reports/pre-vercel-gap-audit.json",
+  "correctedDefects": [
+    "A blocked IndexedDB clear rejected even though its uncancellable deletion remained queued; the confirmed operation now stays pending with explicit close-tabs feedback.",
+    "WebKit could retain an identical file selection across document navigation and omit the change event; restore releases the picker selection after capturing each File.",
+    "A large backup export could exceed its own restore byte limit; export now rejects that size before download with module/media guidance.",
+    "Global restore file controls were available before React hydration and during a restore; they now wait for hydration and prevent overlapping selection.",
+    "Windows WebKit rejected native Blob storage; sanitized byte storage now preserves old Blob reads and versioned full-media archive portability.",
+    "Serial backup reads and integrity checks imposed avoidable browser waits; independent readonly reads and hashes now run concurrently.",
+    "New safety validators exceeded the unchanged bundle budget; tree shaking and route-family wrapper grouping restore headroom without removing features.",
+    "Blocked main/recovery upgrade requests could migrate after their promise rejected; cancelled upgrades now abort and recovery connections close on version changes.",
+    "Backups claimed to exclude active-workout pointers but included the IndexedDB pointer; new exports exclude it and legacy imports ignore it with guidance.",
+    "Fresh-profile global restore required visiting every owning module; one guided preparation action now calls owning migrations.",
+    "Preview could initialize the main database; all preview opens now abort upgrades and write no canonical records.",
+    "Malformed global envelopes could crash preview rendering; failed envelope results use a safe heading/summary.",
+    "Global restore omitted owning row and resulting-module validation, including relationships and cached immutable calculations.",
+    "Duplicate target stores, inconsistent schema versions, record counts and unsupported serializer/registry/module versions were not rejected.",
+    "A synchronous restore write error could leave queued writes alive; transactions now explicitly abort and close on failure.",
+    "Partial multi-database failure left recovery solely to the user; automatic before-image rollback is attempted and durable recovery retained on failure.",
+    "Keep-existing overwrote shell preferences; existing preferences now survive.",
+    "Global file reading/decompression and photo file sizes lacked byte bounds.",
+    "Imported media lacked signature/metadata/checksum/dimension and binary-manifest validation.",
+    "Full-media plus gzip produced an ambiguous portable profile; the UI separates the supported formats.",
+    "Search result/module labels exposed phase numbers; product names now replace those labels.",
+    "Comparison copy named the coding agent outside methodology; it now describes machine review.",
+    "Cross-browser push triggers omitted the finalization branch; the final branch now receives the hosted matrix."
+  ],
+  "unit": {
+    "passed": 352,
+    "failed": 0,
+    "files": 94
+  },
+  "coverage": {
+    "statements": {
+      "percent": 72.87,
+      "covered": 8388,
+      "total": 11510
+    },
+    "branches": {
+      "percent": 64.63,
+      "covered": 5248,
+      "total": 8119
+    },
+    "functions": {
+      "percent": 67.37,
+      "covered": 2203,
+      "total": 3270
+    },
+    "lines": {
+      "percent": 76.78,
+      "covered": 7424,
+      "total": 9668
+    }
+  },
+  "localBrowsers": {
+    "windowsChromium": {
+      "passed": 284,
+      "failed": 0
+    },
+    "windowsWebKit": {
+      "passed": 284,
+      "failed": 0
+    },
+    "windowsFirefox": "Not certified locally: existing Windows mozglue/SideBySide launch limitation. Current Linux Firefox evidence is required and recorded below."
+  },
+  "hostedLinux": {
+    "schemaVersion": 1,
+    "verifiedImplementationCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+    "jobs": [
+      {
+        "id": 113378207352,
+        "name": "verify",
+        "conclusion": "success",
+        "runId": 37796787053,
+        "passed": 284,
+        "duration": "18.2m",
+        "verificationLines": [
+          "2026-10-08T14:59:43.7840292Z  Test Files  94 passed (94)",
+          "2026-10-08T14:59:43.7842304Z       Tests  352 passed (352)",
+          "2026-10-08T14:59:44.2456605Z Privacy/runtime audit passed: 390 source files scanned; no unreviewed direct fetch origins, analytics, telemetry or prohibited service packages.",
+          "2026-10-08T15:00:05.7957867Z Browser JavaScript: 157 assets, 700418 bytes gzip total; largest index-CQaU_aoC.js: 168459 bytes gzip.",
+          "2026-10-08T15:01:11.4549359Z  Test Files  94 passed (94)",
+          "2026-10-08T15:01:11.4553700Z       Tests  352 passed (352)",
+          "2026-10-08T15:19:54.6735520Z   284 passed (18.2m)"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37796787053/job/113378207352"
+      },
+      {
+        "id": 113378207821,
+        "name": "accessibility",
+        "conclusion": "success",
+        "runId": 37796787053,
+        "passed": 184,
+        "duration": "10.7m",
+        "verificationLines": [
+          "2026-10-08T14:59:49.2525596Z  Test Files  94 passed (94)",
+          "2026-10-08T14:59:49.2527100Z       Tests  352 passed (352)",
+          "2026-10-08T14:59:49.7139631Z Privacy/runtime audit passed: 390 source files scanned; no unreviewed direct fetch origins, analytics, telemetry or prohibited service packages.",
+          "2026-10-08T15:00:12.0169260Z Browser JavaScript: 157 assets, 700418 bytes gzip total; largest index-CQaU_aoC.js: 168459 bytes gzip.",
+          "2026-10-08T15:11:20.7181502Z   184 passed (10.7m)"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37796787053/job/113378207821"
+      },
+      {
+        "id": 113378206828,
+        "name": "browser (firefox)",
+        "conclusion": "success",
+        "runId": 37796786992,
+        "passed": 284,
+        "duration": "28.7m",
+        "verificationLines": [
+          "2026-10-08T14:59:47.1414783Z  Test Files  94 passed (94)",
+          "2026-10-08T14:59:47.1416538Z       Tests  352 passed (352)",
+          "2026-10-08T14:59:47.6225187Z Privacy/runtime audit passed: 390 source files scanned; no unreviewed direct fetch origins, analytics, telemetry or prohibited service packages.",
+          "2026-10-08T15:00:09.9193234Z Browser JavaScript: 157 assets, 700418 bytes gzip total; largest index-CQaU_aoC.js: 168459 bytes gzip.",
+          "2026-10-08T15:29:12.9129483Z   284 passed (28.7m)"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37796786992/job/113378206828"
+      },
+      {
+        "id": 113378207411,
+        "name": "browser (webkit)",
+        "conclusion": "success",
+        "runId": 37796786992,
+        "passed": 284,
+        "duration": "19.0m",
+        "verificationLines": [
+          "2026-10-08T14:59:23.3953894Z  Test Files  94 passed (94)",
+          "2026-10-08T14:59:23.3954444Z       Tests  352 passed (352)",
+          "2026-10-08T14:59:23.7738198Z Privacy/runtime audit passed: 390 source files scanned; no unreviewed direct fetch origins, analytics, telemetry or prohibited service packages.",
+          "2026-10-08T14:59:40.9535108Z Browser JavaScript: 157 assets, 700418 bytes gzip total; largest index-CQaU_aoC.js: 168459 bytes gzip.",
+          "2026-10-08T15:19:23.2279627Z   284 passed (19.0m)"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37796786992/job/113378207411"
+      },
+      {
+        "id": 113378207514,
+        "name": "browser (chromium)",
+        "conclusion": "success",
+        "runId": 37796786992,
+        "passed": 284,
+        "duration": "12.2m",
+        "verificationLines": [
+          "2026-10-08T14:59:05.9339536Z  Test Files  94 passed (94)",
+          "2026-10-08T14:59:05.9349002Z       Tests  352 passed (352)",
+          "2026-10-08T14:59:06.2368923Z Privacy/runtime audit passed: 390 source files scanned; no unreviewed direct fetch origins, analytics, telemetry or prohibited service packages.",
+          "2026-10-08T14:59:19.6542737Z Browser JavaScript: 157 assets, 700418 bytes gzip total; largest index-CQaU_aoC.js: 168459 bytes gzip.",
+          "2026-10-08T15:11:52.5572329Z   284 passed (12.2m)"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37796786992/job/113378207514"
+      }
+    ]
+  },
+  "accessibility": {
+    "hostedTaggedCases": 184,
+    "failures": 0,
+    "scope": "Automated axe and browser checks; no claim of manual WCAG certification."
+  },
+  "routeAudit": {
+    "passed": 702,
+    "failed": 0,
+    "unmeasured": 0,
+    "productionBuildSha256": "6ee23f853d4c826ba3fee8ed1cbf135eb2dd572d68d85cb1da9b48844502662a",
+    "evidence": "docs/reports/content-completion.json"
+  },
+  "performance": {
+    "javaScriptAssets": 157,
+    "totalGzipBytes": 700418,
+    "largestChunkGzipBytes": 168459,
+    "totalBudgetBytes": 716800,
+    "chunkBudgetBytes": 204800,
+    "publicJsonAssets": 97,
+    "publicJsonTotalGzipBytes": 429517,
+    "publicJsonLargestGzipBytes": 59287,
+    "budgetsIncreased": false
+  },
+  "dependencyAudit": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 129,
+      "dev": 218,
+      "optional": 82,
+      "peer": 10,
+      "peerOptional": 0,
+      "total": 399
+    }
+  },
+  "secretScan": {
+    "schemaVersion": 1,
+    "testedCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+    "trackedFilesScanned": 1248,
+    "publicBundleFilesScanned": 289,
+    "trackedEnvironmentFiles": [
+      ".env.example"
+    ],
+    "productionServerSha256": "6ee23f853d4c826ba3fee8ed1cbf135eb2dd572d68d85cb1da9b48844502662a",
+    "secretFindings": [],
+    "limitations": "Pattern-based current-tree/bundle scan; no claim of formal penetration testing or historical secret scanning."
+  },
+  "runtimePrivacy": {
+    "sourceFilesScanned": 390,
+    "findings": 0
+  },
+  "browserPrivacy": {
+    "chromium": {
+      "schemaVersion": 1,
+      "testedCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+      "browser": "chromium",
+      "syntheticOnly": true,
+      "requestCount": 897,
+      "unexpectedRemoteRequests": 0,
+      "personalValuesInRequests": 0,
+      "ssrRoutes": [
+        "/workout",
+        "/diet-planning/plans",
+        "/nutrition",
+        "/sleep",
+        "/recovery",
+        "/cardio",
+        "/supplements/products",
+        "/progress/weight",
+        "/saved/favourites",
+        "/search"
+      ],
+      "ssrPersonalMarkerLeaks": 0,
+      "freshProfileRestore": "passed",
+      "invalidImportPreservation": "passed"
+    },
+    "webkit": {
+      "schemaVersion": 1,
+      "testedCommit": "52102ad39cfc5c6e8e2ecb81db4eacde117fce7d",
+      "browser": "webkit",
+      "syntheticOnly": true,
+      "requestCount": 890,
+      "unexpectedRemoteRequests": 0,
+      "personalValuesInRequests": 0,
+      "ssrRoutes": [
+        "/workout",
+        "/diet-planning/plans",
+        "/nutrition",
+        "/sleep",
+        "/recovery",
+        "/cardio",
+        "/supplements/products",
+        "/progress/weight",
+        "/saved/favourites",
+        "/search"
+      ],
+      "ssrPersonalMarkerLeaks": 0,
+      "freshProfileRestore": "passed",
+      "invalidImportPreservation": "passed"
+    }
+  },
+  "securityReview": {
+    "csp": "Per-response nonce, same-origin script/connect, bounded optional youtube-nocookie frame. Narrow style-src-attr allowance remains documented. Browser nonce/hydration regressions pass.",
+    "headers": "Repository Vercel headers are configured. Actual deployed HTTPS/header/domain behavior remains owner verification.",
+    "xss": "React text rendering and validated URL/record inputs retained; the only inline HTML script is the static nonced theme initializer. No personal rich HTML rendering introduced.",
+    "csv": "Spreadsheet-safe escaping, formula-prefix handling and warned raw CSV preserved and tested.",
+    "imports": "Envelope/hash/row/media validation and whole-module candidate validation precede writes. Corruption/duplicates/future formats rejected; error preservation and rollback tested.",
+    "workflows": "SHA-pinned actions and contents:read permissions; no deployment job."
+  },
+  "dataSafety": {
+    "freshProfilePreparation": "Owning migrations initialize all seven known databases by explicit browser action.",
+    "preview": "Canonical data writes remain zero; existing target schemas are opened without upgrades.",
+    "restore": "Keep-existing and confirmed replace pass exact-record comparison. Global import-as-copy remains explicitly unavailable without a safe cross-module ID remapper.",
+    "rollback": "Durable before-images and automatic rollback pass injected partial-write failure regression; explicit recovery remains if rollback is blocked. Multi-database atomicity is not claimed.",
+    "photos": "Canvas metadata removal, byte storage, legacy Blob compatibility, explicit full-media restore, ZIP export and portable-media exclusion pass.",
+    "limits": "100 MiB file/decompressed backup bound; photo 10 MiB and 20 MP limits. Export respects the supported restore size.",
+    "clear": "Backup choice, typed confirmation and pending blocked-delete feedback retained."
+  },
+  "healthSafety": {
+    "diet": "Adult eligibility, pregnancy/lactation unavailability, formula/assumption disclosures and conservative boundaries pass.",
+    "body": "BMI remains screening/context; external composition/device estimates retain provenance. No fabricated body-fat or health score.",
+    "recovery": "Soreness, pain and illness stay distinct; stop/urgent signals remain explicit, with no diagnosis or opaque recovery score.",
+    "sleep": "Source/device labels retained; no diagnosis, fabricated stages or certain sleep-debt claims.",
+    "cardio": "No fabricated VO2max, fitness age, universal Zone 2 or automatic calorie credit; estimates and stop signals remain labelled.",
+    "supplements": "Label versions, unknown blend quantities and adverse-event handling retained; no prescriptions, efficacy guarantees or causal trial conclusions."
+  },
+  "intentionalUnavailable": [
+    {
+      "module": "Global systems",
+      "feature": "global import-as-copy",
+      "status": "intentionally unavailable",
+      "reason": "No verified cross-module stable-ID remapper; UI explicitly disables this mode. Owning module copy modes remain available."
+    },
+    {
+      "module": "Global systems",
+      "feature": "encrypted backups",
+      "status": "intentionally unavailable",
+      "reason": "Optional profile deferred; UI explicitly states files are not encrypted or authenticated."
+    },
+    {
+      "module": "Global systems",
+      "feature": "globally atomic multi-database restore",
+      "status": "intentionally unavailable",
+      "reason": "Browser limitation; durable before-image, automatic rollback and explicit recovery are implemented."
+    },
+    {
+      "module": "Progress",
+      "feature": "photo ZIP import",
+      "status": "intentionally unavailable",
+      "reason": "Separate ZIP is an export; explicit global full-media JSON provides tested restoration. Portable JSON excludes binaries."
+    },
+    {
+      "module": "Foundation",
+      "feature": "accounts, cloud sync, analytics, payments and runtime fitness APIs",
+      "status": "intentionally unavailable",
+      "reason": "Prohibited by project contract."
+    }
+  ],
+  "ownerChecks": [
+    "Meaningful use on real iOS/Android and desktop browsers, screen reader, keyboard and print.",
+    "Native OS file-save picker, real storage quota/eviction/persistence and external backup custody.",
+    "Vercel Preview, stable origin, actual HTTPS/security headers, DNS/TLS/canonical redirects and production smoke after owner deployment.",
+    "No independent human/clinical review of the factual subset is claimed."
+  ],
+  "vercel": {
+    "packageBuild": "passed_without_deployment",
+    "runtime": "nodejs24.x",
+    "framework": "TanStack Start with Nitro",
+    "gitDeploymentEnabled": false,
+    "ownerRunbook": "docs/runbooks/vercel-owner-deployment.md",
+    "previewPerformed": false,
+    "productionPerformed": false,
+    "domainConfigured": false
+  },
+  "cleanCloneGates": [
+    {
+      "name": "diff-check",
+      "startedAt": "2026-10-08T14:58:46.7562378Z",
+      "finishedAt": "2026-10-08T14:58:46.8211181Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/diff-check.log"
+    },
+    {
+      "name": "npm-ci",
+      "startedAt": "2026-10-08T14:58:46.8408998Z",
+      "finishedAt": "2026-10-08T14:58:56.2906851Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/npm-ci.log"
+    },
+    {
+      "name": "vercel-package-only",
+      "startedAt": "2026-10-08T14:58:56.2928830Z",
+      "finishedAt": "2026-10-08T14:59:41.9802214Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/vercel-package-only.log"
+    },
+    {
+      "name": "check",
+      "startedAt": "2026-10-08T14:59:41.9978842Z",
+      "finishedAt": "2026-10-08T15:02:11.6719473Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/check.log"
+    },
+    {
+      "name": "coverage",
+      "startedAt": "2026-10-08T15:02:11.6736374Z",
+      "finishedAt": "2026-10-08T15:03:14.7305473Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/coverage.log"
+    },
+    {
+      "name": "privacy",
+      "startedAt": "2026-10-08T15:03:14.7321817Z",
+      "finishedAt": "2026-10-08T15:03:15.4080804Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/privacy.log"
+    },
+    {
+      "name": "dependency-audit",
+      "startedAt": "2026-10-08T15:03:15.4095656Z",
+      "finishedAt": "2026-10-08T15:03:17.2137265Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/dependency-audit.log"
+    },
+    {
+      "name": "build",
+      "startedAt": "2026-10-08T15:03:17.2152256Z",
+      "finishedAt": "2026-10-08T15:03:38.9449882Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/build.log"
+    },
+    {
+      "name": "performance",
+      "startedAt": "2026-10-08T15:03:38.9492750Z",
+      "finishedAt": "2026-10-08T15:03:39.4856424Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/performance.log"
+    },
+    {
+      "name": "content-performance",
+      "startedAt": "2026-10-08T15:03:39.4869693Z",
+      "finishedAt": "2026-10-08T15:03:40.0536314Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/content-performance.log"
+    },
+    {
+      "name": "secret-scan",
+      "startedAt": "2026-10-08T15:03:40.0549729Z",
+      "finishedAt": "2026-10-08T15:03:42.0120153Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/secret-scan.log"
+    },
+    {
+      "name": "gap-inventory",
+      "startedAt": "2026-10-08T15:03:42.0134725Z",
+      "finishedAt": "2026-10-08T15:03:43.2571213Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/gap-inventory.log"
+    },
+    {
+      "name": "local-browsers",
+      "startedAt": "2026-10-08T15:03:43.2584335Z",
+      "finishedAt": "2026-10-08T15:31:05.1209469Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/local-browsers.log"
+    },
+    {
+      "name": "complete-route-audit",
+      "startedAt": "2026-10-08T15:31:05.1227358Z",
+      "finishedAt": "2026-10-08T15:47:46.9979521Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/complete-route-audit.log"
+    },
+    {
+      "name": "route-report",
+      "startedAt": "2026-10-08T15:47:46.9996862Z",
+      "finishedAt": "2026-10-08T15:47:50.3182107Z",
+      "exitCode": 0,
+      "log": "artifacts/pre-vercel/route-report.log"
+    }
+  ],
+  "artifactHashes": {
+    "artifacts/pre-vercel/diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/pre-vercel/npm-ci.log": "59c25a426e8a7003e2092b03dd7a65dbaf453fad4bb8354fd7487a1af72c0327",
+    "artifacts/pre-vercel/vercel-package-only.log": "ea86efc11d0e8b4974a3130090cd971543a538e55efb124eace8fd80c496358c",
+    "artifacts/pre-vercel/check.log": "f2f08c7df194599b646f16b4a42b86ead8890db0c15212455bdffb7b932fd622",
+    "artifacts/pre-vercel/coverage.log": "d315aa6274b6bd3bbe92fc1ccef0dd1cc5ab65bcaffe692abda2688de38b6e15",
+    "artifacts/pre-vercel/privacy.log": "f32eb3acb1b62f6561fa53bfa858b29f24194bd8548caf945c85b8b0603a8e6d",
+    "artifacts/pre-vercel/dependency-audit.log": "d94ecbc3ebf861adc6e0d115cc74a4a2dc4b169223ee3da09353c06e3415cc6b",
+    "artifacts/pre-vercel/build.log": "f9d439777eda6b565e192fbc012edc6f88af22fc65257d77401817c04027c55f",
+    "artifacts/pre-vercel/performance.log": "635b44dd58e75ab7af282ba115f3ce488ad80c887b33fd882a68e5b50d19a9e2",
+    "artifacts/pre-vercel/content-performance.log": "0d85ec22c6b3e1ef33844457be237d73b79697c7480352f22cf549c35c8d7e14",
+    "artifacts/pre-vercel/secret-scan.log": "1d35d00ba7d3fce5c83b3c21f9bf69da31b3cb109ebcaf7f6a1ff1d8d592cff7",
+    "artifacts/pre-vercel/gap-inventory.log": "8040520243960dfe78ff55b2ea78bf42cb16cdb0fd97db3279b947b04bdb4123",
+    "artifacts/pre-vercel/local-browsers.log": "500574198972b99a61f603df93ef04cd758d72cda3b6c36460cba5140d0e97e8",
+    "artifacts/pre-vercel/complete-route-audit.log": "371cd5b9816acd3cba5fb34df4fbba853976513397c4955d418fdd944d71d2e2",
+    "artifacts/pre-vercel/route-report.log": "9803ceb89b70d11344cbcbbd105da4369595437ebcb8c7da77c44c703155e76e"
+  },
+  "deploymentStatement": "Production deployment was NOT performed. Fitness OS is ready for the owner-controlled Vercel Preview and deployment stage."
+}

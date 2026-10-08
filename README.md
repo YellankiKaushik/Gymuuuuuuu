@@ -170,3 +170,27 @@ invented calorie burn/VO2max or inferred body-fat measurements are supplied.
 Vercel Git deployment is disabled and repository-audited. No production domain is
 connected. **Production deployment was NOT performed.** Future changes follow owner
 feedback; no new content expansion or Phase 20 is part of this checkpoint.
+
+
+## Final pre-Vercel release readiness
+
+The verified implementation is `52102ad39cfc5c6e8e2ecb81db4eacde117fce7d`.
+Fresh clean-clone checks pass 352 units in 94 files, with 76.78% line coverage.
+Local Chromium/WebKit and hosted Linux Chromium/Firefox/WebKit each pass 284
+cases; separate hosted accessibility passes 184 and the current-build route audit
+passes all 702 URLs. Dependency audit finds zero vulnerabilities. JavaScript is
+700418 bytes gzip (largest 168459) within the unchanged budgets. The full evidence
+and its execution-tree binding are in
+[final readiness](docs/reports/final-pre-vercel-readiness.md).
+
+The 520-record/648-search-document subset and 900 backlog identities remain
+frozen. Global restore now has explicit fresh-profile preparation, zero-write
+preview, owning-schema validation, before-image rollback and bounded media/file
+imports. Sanitized byte photos remain compatible with earlier Blob records.
+Existing unsupported modes stay explicit. No tracked files were deleted.
+
+The Node.js 24 Vercel packaging check passes; no Preview, production, DNS or TLS
+action was performed. Use the
+[owner deployment runbook](docs/runbooks/vercel-owner-deployment.md). Real-device,
+screen-reader, print, native save and browser storage behavior remain owner work.
+Keep a private external backup before changing browser origin or profile.
