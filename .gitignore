@@ -13,3 +13,10 @@ artifacts/
 !.env.example
 *.log
 data-imports/
+# Future local/editor artifacts only; tracked historical evidence stays tracked.
+.cache/
+.eslintcache
+*.tsbuildinfo
+.idea/
+.vscode/
+*.tmp

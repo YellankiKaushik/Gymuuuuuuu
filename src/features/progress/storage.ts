@@ -1,6 +1,7 @@
 import { openFitnessDatabase } from "../../storage/indexed-db/fitness-database";
 import { phase15StoreNames, weightLogSchema, circumferenceSchema, compositionSchema, photoSchema, heightSchema, goalSchema, nutritionReviewSchema, layoutSchema, receiptSchema, auditEventSchema, deletedRecordSchema, settingSchema, importConflictSchema } from "./schema";
 import { median } from "./domain";
+import { validatePhotoInput } from "./image-input";
 
 const privateStores = phase15StoreNames.filter((name) => !["progressPhotoBlobs", "derivedAnalyticsCache", "phase15Settings", "phase15AuditEvents", "phase15DeletedRecords", "phase15ImportConflicts"].includes(name));
 const recordSchemas = {
@@ -125,8 +126,7 @@ export async function exportCsvSet() {
 }
 export function circumferenceMedianMm(replicates: number[]) { return median(replicates); }
 export async function saveSanitizedPhoto(file: File, details: Record<string, string | null>) {
-  if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) throw Error("Choose a JPEG, PNG, or WebP image.");
-  if (file.size === 0 || file.size > 10 * 1024 * 1024) throw Error("Choose an image no larger than 10 MiB.");
+  await validatePhotoInput(file);
   const sourceUrl = URL.createObjectURL(file);
   try {
     const image = new Image(); image.src = sourceUrl; await image.decode();

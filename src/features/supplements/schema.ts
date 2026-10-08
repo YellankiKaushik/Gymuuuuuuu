@@ -21,6 +21,10 @@ export const imageSchema = z
   );
 export const certificationSchema =
   n.certificationVerificationNormativeSchema.extend({
+    registryUrl: z
+      .url({ protocol: /^https?$/ })
+      .max(2048)
+      .nullable(),
     id,
     lotSpecific: z.boolean(),
     matchedLot: nullableText,

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "application": "Fitness OS",
+  "productionOrigin": "https://kaush-ka-gym.vercel.app",
+  "architecture": "Public repository-owned knowledge and optional browser-local tracking; no accounts or personal cloud storage",
+  "assets": [
+    "workout history",
+    "nutrition logs",
+    "diet targets",
+    "personal recipes",
+    "sleep records",
+    "recovery records",
+    "cardio sessions",
+    "supplement records",
+    "body measurements",
+    "progress photos",
+    "search history",
+    "favourites",
+    "collections",
+    "backup files",
+    "CSV exports",
+    "personal notes"
+  ],
+  "boundaries": [
+    "browser DOM",
+    "IndexedDB",
+    "localStorage preferences",
+    "sessionStorage tab control",
+    "SSR",
+    "Vercel server runtime",
+    "static repository assets",
+    "imported files",
+    "exported files",
+    "external source links",
+    "consented YouTube privacy-enhanced embeds",
+    "GitHub source and Actions",
+    "Vercel deployments"
+  ],
+  "applicableThreats": [
+    "XSS",
+    "unsafe URL protocols",
+    "open redirects",
+    "network leakage",
+    "URL data leakage",
+    "server-render leakage",
+    "malicious import",
+    "oversized input",
+    "storage corruption",
+    "race conditions",
+    "stale writes",
+    "dependency compromise",
+    "leaked secrets",
+    "shared-browser access assumptions",
+    "CSV formula execution",
+    "origin migration",
+    "photo metadata leakage",
+    "backup disclosure",
+    "interrupted restore"
+  ],
+  "nonApplicableThreats": [
+    {
+      "threat": "Account takeover or authorization bypass",
+      "reason": "No accounts, login or multi-user authorization system"
+    },
+    { "threat": "SQL injection", "reason": "No SQL or remote database API" },
+    {
+      "threat": "Credentialed personal-record CSRF",
+      "reason": "No remote personal-record mutations; framework server-function CSRF middleware retained"
+    }
+  ],
+  "bounds": {
+    "backupBytes": 104857600,
+    "photoBytes": 10485760,
+    "photoPixels": 20000000,
+    "backupNesting": 64,
+    "backupStringCharacters": 3000000,
+    "backupTraversalValues": 12000000
+  },
+  "residualRisks": [
+    "Shared browser profiles share records",
+    "Browser quota and eviction",
+    "Unencrypted and unauthenticated backup files",
+    "No multi-database atomicity",
+    "Supply-chain and browser-decoder trust",
+    "Origin/profile changes require verified export/restore",
+    "Pattern scan cannot establish absence of every credential",
+    "Automated accessibility is not human conformance testing",
+    "No independent clinical review"
+  ],
+  "policy": {
+    "deleteFiles": false,
+    "renameOrMoveTrackedFiles": false,
+    "rewriteHistory": false,
+    "deployAutomatically": false,
+    "expandContent": false
+  },
+  "detailedAssessment": "final-threat-model.md"
+}

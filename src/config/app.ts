@@ -4,6 +4,8 @@ function getPublicOrigin() {
   const parsed = new URL(configuredOrigin);
   if (
     !["http:", "https:"].includes(parsed.protocol) ||
+    parsed.username ||
+    parsed.password ||
     parsed.pathname !== "/" ||
     parsed.search ||
     parsed.hash

@@ -1,7 +1,10 @@
 # Owner-controlled Vercel Preview and deployment
 
-This is the next stage after the final readiness tag. No project creation, linking,
-domain connection or deployment is performed by the engineering pass. Keep
+The owner has deployed the application at https://kaush-ka-gym.vercel.app using
+project `gymuuuuuuu`, Node 24 and TanStack Start. The final security pass inspects
+that deployment without deploying a replacement. Production's public origin is
+configured exactly to that URL; Preview has no project origin variable configured.
+For future owner-controlled releases, keep
 `vercel.json`'s `git.deploymentEnabled: false` until you explicitly choose to change
 that policy. A Git push alone must not deploy this candidate.
 
@@ -63,8 +66,10 @@ that policy. A Git push alone must not deploy this candidate.
     origin before entering real data. Preview URLs, localhost, different ports,
     browser profiles and production are separate IndexedDB profiles. There is no
     automatic transfer or cloud sync. Keep a private external backup before moving.
-11. Promote an approved Preview or create production with the owner-operated CLI/
-    dashboard flow only after these checks. Keep automatic Git deployment disabled
+11. Create an owner-controlled production build after Preview checks, or stage a
+    production deployment and promote that tested production build. Preview and
+    production environment variables may differ; inspect the actual build before
+    assigning the production alias. Keep automatic Git deployment disabled
     if you want every release to remain manual. Enabling it later requires a separate
     reviewed change: pushes to the production branch can trigger production releases.
 12. Run the same critical smoke flows on the production domain, including actual

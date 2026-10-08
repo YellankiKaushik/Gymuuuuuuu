@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { maximumBackupBytes } from "./read-file";
+import { validateInputBounds } from "./input-bounds";
 import { openFitnessDatabase } from "../../storage/indexed-db/fitness-database";
 
 export const appDatabaseNames = [
@@ -716,6 +717,17 @@ export function validateBackup(input: unknown): {
   errors: string[];
   warnings: string[];
 } {
+  try {
+    validateInputBounds(input);
+  } catch (error) {
+    return {
+      backup: undefined as unknown as BackupEnvelope,
+      errors: [
+        error instanceof Error ? error.message : "Invalid backup input.",
+      ],
+      warnings: [],
+    };
+  }
   const parsed = envelopeSchema.safeParse(input);
   if (!parsed.success)
     return {

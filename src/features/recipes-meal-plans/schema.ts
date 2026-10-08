@@ -256,6 +256,11 @@ export const recipeVersionSchema = n.recipeVersionNormativeSchema
       analyticalProfileId: z.string().nullable().optional(),
     }),
     source: n.sourceMetadataNormativeSchema.extend({
+      url: z
+        .url({ protocol: /^https?$/ })
+        .max(2048)
+        .nullable()
+        .optional(),
       reviewer: z.string().min(1).max(120).nullable().optional(),
       attribution: z.string().max(1000).nullable().optional(),
     }),
@@ -264,7 +269,7 @@ export const recipeVersionSchema = n.recipeVersionNormativeSchema
         z.strictObject({
           id: z.string().min(1),
           path: z.string().min(1),
-          sourceUrl: z.url(),
+          sourceUrl: z.url({ protocol: /^https?$/ }).max(2048),
           licence: z.string().min(1),
           attribution: z.string().min(1),
           reviewedAt: z.iso.datetime({ offset: true }),
