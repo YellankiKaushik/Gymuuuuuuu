@@ -13441,6 +13441,26 @@
     "contentHash": "393fb1615b2d2b9a119963448f48963854749fc8dfec830eabc1647973422bfa"
   },
   {
+    "documentId": "cardio_topic:topic_heat_safety",
+    "entityType": "cardio_topic",
+    "entityId": "topic_heat_safety",
+    "entityVersion": null,
+    "sourceModule": "phase_13_cardio",
+    "route": "/cardio/learn/topic-heat-safety",
+    "title": "Exercise in Heat",
+    "normalizedTitle": "exercise in heat",
+    "aliases": [],
+    "normalizedAliases": [],
+    "summary": "",
+    "keywords": [],
+    "headings": [],
+    "searchableBody": "",
+    "facets": {},
+    "publicationStatus": "published",
+    "lastReviewedAt": "2026-10-08",
+    "contentHash": "2efa1e74d2be1dcfd75270029bdd05271b263464b23fdd85076fde0d22e59f07"
+  },
+  {
     "documentId": "cardio_modality:modality_walking_outdoor",
     "entityType": "cardio_modality",
     "entityId": "modality_walking_outdoor",

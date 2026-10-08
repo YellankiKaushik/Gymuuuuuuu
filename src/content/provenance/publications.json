@@ -10855,6 +10855,31 @@
     ]
   },
   {
+    "module": "cardio",
+    "id": "topic_heat_safety",
+    "slug": "topic-heat-safety",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_heat_athletes_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "supplements",
     "id": "ingredient_creatine_monohydrate",
     "slug": "ingredient-creatine-monohydrate",

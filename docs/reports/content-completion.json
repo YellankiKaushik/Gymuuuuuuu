@@ -3411,8 +3411,8 @@
     {
       "module": "cardio",
       "totalIdentities": 202,
-      "publishedIdentities": 12,
-      "draftIdentities": 190,
+      "publishedIdentities": 13,
+      "draftIdentities": 189,
       "blockedIdentities": [
         {
           "id": "topic_cardio_definition",
@@ -4082,13 +4082,6 @@
         {
           "id": "topic_pain_gait_change",
           "slug": "topic-pain-gait-change",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "topic_heat_safety",
-          "slug": "topic-heat-safety",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6680,9 +6673,9 @@
     },
     {
       "module": "cardio",
-      "published": 12,
-      "withPublicationProvenance": 12,
-      "inSearch": 12,
+      "published": 13,
+      "withPublicationProvenance": 13,
+      "inSearch": 13,
       "missingSourceProvenance": []
     },
     {
@@ -10905,6 +10898,14 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "topic_heat_safety",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -11056,10 +11057,10 @@
     },
     {
       "module": "cardio",
-      "missingVerifiedFactualRecords": 190,
+      "missingVerifiedFactualRecords": 189,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 12,
+      "independentHumanReviewPending": 13,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12754,6 +12755,21 @@
         "Naming equivalence only; does not establish cultivar-specific nutrient composition or agronomic advice.",
         "No independent human review; USDA source samples do not establish Indian cultivar composition."
       ]
+    },
+    {
+      "id": "cdc_heat_athletes_2024",
+      "url": "https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html",
+      "version": "Key points; Stay safe on hot days; Warning; publisher date 2024-06-25",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T03:21:36.600858Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "government_reference",
+      "rightsReference": "Original brief factual paraphrases and linked attribution; no CDC photographs, third-party images, tables, branding or copied paragraphs reproduced.",
+      "limitations": [
+        "General hot-weather exercise precautions; no personal clearance, clinical diagnosis or individual hydration prescription.",
+        "The identified primary-page sections were inspected through the browsing tool; raw HTML is not archived.",
+        "No independent human or clinical review; evidence confidence is not formally graded."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -14078,8 +14094,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 619,
-    "factualRecords": 491
+    "documents": 620,
+    "factualRecords": 492
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -16665,6 +16681,11 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "cardio",
+      "id": "topic_heat_safety",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "supplements",
       "id": "ingredient_creatine_monohydrate",
       "instructionalMediaRequired": false
@@ -16704,11 +16725,11 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T03:17:20.957Z",
-    "expected": 673,
+    "buildDate": "2026-10-08T06:30:43.518Z",
+    "expected": 674,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 673,
+    "unmeasured": 674,
     "ignoredStaleReports": 667,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -20689,6 +20710,12 @@
       },
       {
         "path": "/cardio/learn/topic-beginner-progression",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/cardio/learn/topic-heat-safety",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

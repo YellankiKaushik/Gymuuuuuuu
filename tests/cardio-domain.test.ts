@@ -142,6 +142,7 @@ it("publishes only the explicitly sourced identities from the 202 seeds", () => 
     "topic_beginner_progression",
     "modality_walking_outdoor",
     "modality_cycling_outdoor",
+    "topic_heat_safety",
   ]);
   expect(
     publicCardioEntities.every((r) => r.publicationStatus === "published"),

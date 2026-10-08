@@ -1,0 +1,50 @@
+[
+  {
+    "id": "topic_heat_safety",
+    "slug": "topic-heat-safety",
+    "title": "Exercise in Heat",
+    "entityType": "knowledge_topic",
+    "publicationStatus": "published",
+    "population": "People exercising in hot weather; general precautions, not individual medical clearance",
+    "prerequisites": [
+      "Read the complete CDC precautions and choose activity appropriate to your circumstances."
+    ],
+    "limitations": [
+      "No individual water dose, medication changes, heat-acclimatization schedule or guarantee against heat illness is supplied.",
+      "This page does not interpret heart-rate or effort logs or assess heat illness.",
+      "No independent human or clinical review."
+    ],
+    "stopRules": [
+      "If you feel faint or weak, stop all activity and move to a cool place.",
+      "Seek medical care immediately for symptoms of heat-related illness, as CDC advises; this page does not diagnose the symptoms."
+    ],
+    "claims": [
+      {
+        "id": "claim_heat_risk",
+        "text": "CDC identifies greater dehydration and heat-related illness risk when exercising on hot days.",
+        "sourceIds": [
+          "cdc_heat_athletes_2024"
+        ],
+        "evidenceStrength": "not_graded"
+      },
+      {
+        "id": "claim_heat_precautions",
+        "text": "CDC advises cooler-time scheduling, gradual pacing, light loose clothing and teammates monitoring one another.",
+        "sourceIds": [
+          "cdc_heat_athletes_2024"
+        ],
+        "evidenceStrength": "not_graded"
+      }
+    ],
+    "sourceIds": [
+      "cdc_heat_athletes_2024"
+    ],
+    "relatedIds": [],
+    "review": {
+      "reviewer": "Codex source verification and automated validation; published_personal_use; no independent human review",
+      "reviewedAt": "2026-10-08",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  }
+]

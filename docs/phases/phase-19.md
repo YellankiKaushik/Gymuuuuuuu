@@ -141,3 +141,15 @@ factual transcriptions are unaffected. The actual failure and rebuilt focused
 results are recorded in phase19-ci-utf8-correction.json. Full fresh hosted
 verification, current-build route evidence and remaining content work are still
 required. No completion tag, manual device test or deployment is claimed.
+
+The 492-record checkpoint adds the source-scoped CDC heat-safety identity.
+Complete checks and coverage pass 316 tests in 84 files; the new page passes
+both Chromium and WebKit across the existing viewport/theme/accessibility
+assertions. Search contains 620 documents, including 492 factual records.
+Budgets remain unchanged at 692470 gzip JavaScript bytes and 419728 gzip public
+JSON bytes. Hosted ab90a34 now passes 227/227 browser cases in each of Chromium,
+Firefox and WebKit, 314 unit/coverage tests and 155 accessibility tests, with
+zero audit vulnerabilities; those results certify the prior 491-record commit.
+Exact hosted evidence is recorded in phase19-ci-loaded-food-checkpoint.json.
+Current-build route evidence, further program/content work and final verification
+remain in progress. No completion tag or production deployment is claimed.

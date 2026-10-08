@@ -1,4 +1,283 @@
 {
+  "sources": [
+    {
+      "id": "src_who_pa_guidelines_2020",
+      "title": "WHO guidelines on physical activity and sedentary behaviour",
+      "publisher": "World Health Organization",
+      "year": 2020,
+      "type": "guideline",
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "roles": [
+        "public_health_volume",
+        "sedentary_behavior",
+        "adult_guidance"
+      ],
+      "licenseNote": "CC BY-NC-SA 3.0 IGO; summarize with attribution and preserve licence constraints."
+    },
+    {
+      "id": "src_hhs_pa_guidelines_2018",
+      "title": "Physical Activity Guidelines for Americans, 2nd edition",
+      "publisher": "U.S. Department of Health and Human Services",
+      "year": 2018,
+      "type": "government_guideline",
+      "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines",
+      "roles": [
+        "public_health_volume",
+        "progression",
+        "bouts",
+        "adult_guidance"
+      ],
+      "licenseNote": "U.S. government guidance; cite the current official page and edition."
+    },
+    {
+      "id": "src_cdc_intensity_2025",
+      "title": "How to Measure Physical Activity Intensity",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+      "roles": [
+        "talk_test",
+        "absolute_met_intensity",
+        "moderate_vigorous_examples"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_compendium_2024",
+      "title": "2024 Adult Compendium of Physical Activities: A third update of the energy costs of human activities",
+      "publisher": "Journal of Sport and Health Science",
+      "year": 2024,
+      "type": "systematic_compendium",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38242596/",
+      "roles": [
+        "met_reference",
+        "activity_classification",
+        "energy_cost_limitations"
+      ],
+      "licenseNote": "Do not bulk-copy the Compendium without confirming reuse rights. Store source codes only when licensed and reviewed."
+    },
+    {
+      "id": "src_tanaka_hrmax_2001",
+      "title": "Age-predicted maximal heart rate revisited",
+      "publisher": "Journal of the American College of Cardiology",
+      "year": 2001,
+      "type": "primary_research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11153730/",
+      "roles": [
+        "age_predicted_hrmax"
+      ],
+      "licenseNote": "Use the equation with citation; label as an estimate with substantial individual error."
+    },
+    {
+      "id": "src_talk_test_review_2014",
+      "title": "The talk test: a useful tool for prescribing and monitoring exercise intensity",
+      "publisher": "Current Opinion in Cardiology",
+      "year": 2014,
+      "type": "review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25010379/",
+      "roles": [
+        "talk_test",
+        "relative_intensity"
+      ],
+      "licenseNote": "Summarize; do not reproduce copyrighted protocols verbatim."
+    },
+    {
+      "id": "src_talk_test_regulation_2015",
+      "title": "Evidence that the talk test can be used to regulate exercise intensity",
+      "publisher": "Journal of Strength and Conditioning Research",
+      "year": 2015,
+      "type": "validation_study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25536539/",
+      "roles": [
+        "talk_test_regulation"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_hiit_umbrella_2024",
+      "title": "High-intensity interval training and cardiorespiratory fitness in adults: an umbrella review",
+      "publisher": "Scandinavian Journal of Medicine & Science in Sports",
+      "year": 2024,
+      "type": "umbrella_review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38760916/",
+      "roles": [
+        "hiit_effectiveness",
+        "evidence_quality",
+        "population_variability"
+      ],
+      "licenseNote": "Summarize effect direction and limitations; do not claim universal superiority."
+    },
+    {
+      "id": "src_concurrent_meta_2022",
+      "title": "Compatibility of Concurrent Aerobic and Strength Training for Skeletal Muscle Size and Function",
+      "publisher": "Sports Medicine",
+      "year": 2022,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34757594/",
+      "roles": [
+        "concurrent_training",
+        "strength_hypertrophy",
+        "explosive_strength"
+      ],
+      "licenseNote": "Summarize with population and protocol limitations."
+    },
+    {
+      "id": "src_concurrent_fiber_meta_2022",
+      "title": "Effects of Concurrent Aerobic and Strength Training on Muscle Fiber Hypertrophy",
+      "publisher": "Sports Medicine",
+      "year": 2022,
+      "type": "systematic_review_meta_analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35476184/",
+      "roles": [
+        "concurrent_training",
+        "fiber_hypertrophy",
+        "running_cycling_context"
+      ],
+      "licenseNote": "Use only as qualified context; avoid deterministic modality claims."
+    },
+    {
+      "id": "src_acsm_screening_2015",
+      "title": "Updating ACSM's Recommendations for Exercise Preparticipation Health Screening",
+      "publisher": "Medicine & Science in Sports & Exercise",
+      "year": 2015,
+      "type": "consensus_update",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26473759/",
+      "roles": [
+        "preparticipation_screening",
+        "medical_clearance_boundary"
+      ],
+      "licenseNote": "Use conceptual factors; do not reproduce proprietary questionnaires."
+    },
+    {
+      "id": "src_aha_target_hr_2024",
+      "title": "Target Heart Rates Chart",
+      "publisher": "American Heart Association",
+      "year": 2024,
+      "type": "professional_guidance",
+      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/target-heart-rates",
+      "roles": [
+        "heart_rate_guidance",
+        "medication_caution"
+      ],
+      "licenseNote": "Summarize and label age-predicted values as general guides."
+    },
+    {
+      "id": "src_aha_warning_signs_2024",
+      "title": "Develop a Physical Activity Plan for You",
+      "publisher": "American Heart Association",
+      "year": 2024,
+      "type": "professional_guidance",
+      "url": "https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/develop-a-physical-activity-plan-for-you",
+      "roles": [
+        "exercise_stop_signals",
+        "urgent_symptoms"
+      ],
+      "licenseNote": "Summarize with citation; emergency wording must be localized where deployed."
+    },
+    {
+      "id": "src_cdc_heat_athletes_2024",
+      "title": "Heat and Athletes",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html",
+      "roles": [
+        "heat_safety",
+        "outdoor_exercise"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "src_cdc_heatrisk_aqi_2025",
+      "title": "How to use the HeatRisk Tool and Air Quality Index",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/heat-health/hcp/clinical-guidance/how-to-use-the-heatrisk-tool-and-air-quality-index.html",
+      "roles": [
+        "air_quality",
+        "heat_risk",
+        "outdoor_modification"
+      ],
+      "licenseNote": "Do not hard-code local advisories without a current approved data source."
+    },
+    {
+      "id": "src_aha_pa_recommendations",
+      "title": "American Heart Association Recommendations for Physical Activity in Adults",
+      "publisher": "American Heart Association",
+      "year": 2024,
+      "type": "professional_guidance",
+      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults",
+      "roles": [
+        "public_health_volume",
+        "talk_test_examples",
+        "beginner_progression"
+      ],
+      "licenseNote": "Summarize with citation."
+    },
+    {
+      "id": "nhs_running_plan_snapshot_2026",
+      "title": "Original NHS Couch to 5K running schedule (retrieved 5 October 2026)",
+      "publisher": "Department of Health and Social Care",
+      "year": 2026,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
+      "roles": [
+        "source_running_schedule",
+        "comfort_based_intensity"
+      ],
+      "licenseNote": "Open Government Licence v3.0 and NHS terms sections 3.4–3.6; numeric schedule and attributed summaries only, no logos, imagery, third-party video or clinical endorsement. Retrieval year is not a claimed publication date."
+    },
+    {
+      "id": "cdc_intensity_education_2026",
+      "title": "How to Measure Physical Activity Intensity",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2025,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "Brief original factual paraphrase and source link; no third-party visuals, tables or branding reproduced."
+    },
+    {
+      "id": "nhs_walking_education_2026",
+      "title": "Walking for health",
+      "publisher": "Department of Health and Social Care",
+      "year": 2022,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
+    },
+    {
+      "id": "nhs_adult_activity_education_2026",
+      "title": "Physical activity guidelines for adults aged 19 to 64",
+      "publisher": "Department of Health and Social Care",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+      "roles": [
+        "source_verified_education"
+      ],
+      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
+    },
+    {
+      "id": "cdc_heat_athletes_2024",
+      "title": "Heat and Athletes",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html",
+      "roles": [
+        "heat_safety_education"
+      ],
+      "licenseNote": "Original brief factual paraphrases and linked attribution; no CDC photographs, third-party images, tables, branding or copied paragraphs reproduced."
+    }
+  ],
   "metadata": {
     "title": "Fitness OS Phase 13 Cardio and Conditioning Reference Data",
     "version": "1.0.0",
@@ -420,273 +699,6 @@
       "tags": [
         "adaptive"
       ]
-    }
-  ],
-  "sources": [
-    {
-      "id": "src_who_pa_guidelines_2020",
-      "title": "WHO guidelines on physical activity and sedentary behaviour",
-      "publisher": "World Health Organization",
-      "year": 2020,
-      "type": "guideline",
-      "url": "https://www.who.int/publications/i/item/9789240015128",
-      "roles": [
-        "public_health_volume",
-        "sedentary_behavior",
-        "adult_guidance"
-      ],
-      "licenseNote": "CC BY-NC-SA 3.0 IGO; summarize with attribution and preserve licence constraints."
-    },
-    {
-      "id": "src_hhs_pa_guidelines_2018",
-      "title": "Physical Activity Guidelines for Americans, 2nd edition",
-      "publisher": "U.S. Department of Health and Human Services",
-      "year": 2018,
-      "type": "government_guideline",
-      "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines",
-      "roles": [
-        "public_health_volume",
-        "progression",
-        "bouts",
-        "adult_guidance"
-      ],
-      "licenseNote": "U.S. government guidance; cite the current official page and edition."
-    },
-    {
-      "id": "src_cdc_intensity_2025",
-      "title": "How to Measure Physical Activity Intensity",
-      "publisher": "U.S. Centers for Disease Control and Prevention",
-      "year": 2025,
-      "type": "government_guidance",
-      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
-      "roles": [
-        "talk_test",
-        "absolute_met_intensity",
-        "moderate_vigorous_examples"
-      ],
-      "licenseNote": "Summarize with citation."
-    },
-    {
-      "id": "src_compendium_2024",
-      "title": "2024 Adult Compendium of Physical Activities: A third update of the energy costs of human activities",
-      "publisher": "Journal of Sport and Health Science",
-      "year": 2024,
-      "type": "systematic_compendium",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38242596/",
-      "roles": [
-        "met_reference",
-        "activity_classification",
-        "energy_cost_limitations"
-      ],
-      "licenseNote": "Do not bulk-copy the Compendium without confirming reuse rights. Store source codes only when licensed and reviewed."
-    },
-    {
-      "id": "src_tanaka_hrmax_2001",
-      "title": "Age-predicted maximal heart rate revisited",
-      "publisher": "Journal of the American College of Cardiology",
-      "year": 2001,
-      "type": "primary_research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11153730/",
-      "roles": [
-        "age_predicted_hrmax"
-      ],
-      "licenseNote": "Use the equation with citation; label as an estimate with substantial individual error."
-    },
-    {
-      "id": "src_talk_test_review_2014",
-      "title": "The talk test: a useful tool for prescribing and monitoring exercise intensity",
-      "publisher": "Current Opinion in Cardiology",
-      "year": 2014,
-      "type": "review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/25010379/",
-      "roles": [
-        "talk_test",
-        "relative_intensity"
-      ],
-      "licenseNote": "Summarize; do not reproduce copyrighted protocols verbatim."
-    },
-    {
-      "id": "src_talk_test_regulation_2015",
-      "title": "Evidence that the talk test can be used to regulate exercise intensity",
-      "publisher": "Journal of Strength and Conditioning Research",
-      "year": 2015,
-      "type": "validation_study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/25536539/",
-      "roles": [
-        "talk_test_regulation"
-      ],
-      "licenseNote": "Summarize with citation."
-    },
-    {
-      "id": "src_hiit_umbrella_2024",
-      "title": "High-intensity interval training and cardiorespiratory fitness in adults: an umbrella review",
-      "publisher": "Scandinavian Journal of Medicine & Science in Sports",
-      "year": 2024,
-      "type": "umbrella_review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38760916/",
-      "roles": [
-        "hiit_effectiveness",
-        "evidence_quality",
-        "population_variability"
-      ],
-      "licenseNote": "Summarize effect direction and limitations; do not claim universal superiority."
-    },
-    {
-      "id": "src_concurrent_meta_2022",
-      "title": "Compatibility of Concurrent Aerobic and Strength Training for Skeletal Muscle Size and Function",
-      "publisher": "Sports Medicine",
-      "year": 2022,
-      "type": "systematic_review_meta_analysis",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34757594/",
-      "roles": [
-        "concurrent_training",
-        "strength_hypertrophy",
-        "explosive_strength"
-      ],
-      "licenseNote": "Summarize with population and protocol limitations."
-    },
-    {
-      "id": "src_concurrent_fiber_meta_2022",
-      "title": "Effects of Concurrent Aerobic and Strength Training on Muscle Fiber Hypertrophy",
-      "publisher": "Sports Medicine",
-      "year": 2022,
-      "type": "systematic_review_meta_analysis",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35476184/",
-      "roles": [
-        "concurrent_training",
-        "fiber_hypertrophy",
-        "running_cycling_context"
-      ],
-      "licenseNote": "Use only as qualified context; avoid deterministic modality claims."
-    },
-    {
-      "id": "src_acsm_screening_2015",
-      "title": "Updating ACSM's Recommendations for Exercise Preparticipation Health Screening",
-      "publisher": "Medicine & Science in Sports & Exercise",
-      "year": 2015,
-      "type": "consensus_update",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/26473759/",
-      "roles": [
-        "preparticipation_screening",
-        "medical_clearance_boundary"
-      ],
-      "licenseNote": "Use conceptual factors; do not reproduce proprietary questionnaires."
-    },
-    {
-      "id": "src_aha_target_hr_2024",
-      "title": "Target Heart Rates Chart",
-      "publisher": "American Heart Association",
-      "year": 2024,
-      "type": "professional_guidance",
-      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/target-heart-rates",
-      "roles": [
-        "heart_rate_guidance",
-        "medication_caution"
-      ],
-      "licenseNote": "Summarize and label age-predicted values as general guides."
-    },
-    {
-      "id": "src_aha_warning_signs_2024",
-      "title": "Develop a Physical Activity Plan for You",
-      "publisher": "American Heart Association",
-      "year": 2024,
-      "type": "professional_guidance",
-      "url": "https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/develop-a-physical-activity-plan-for-you",
-      "roles": [
-        "exercise_stop_signals",
-        "urgent_symptoms"
-      ],
-      "licenseNote": "Summarize with citation; emergency wording must be localized where deployed."
-    },
-    {
-      "id": "src_cdc_heat_athletes_2024",
-      "title": "Heat and Athletes",
-      "publisher": "U.S. Centers for Disease Control and Prevention",
-      "year": 2024,
-      "type": "government_guidance",
-      "url": "https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html",
-      "roles": [
-        "heat_safety",
-        "outdoor_exercise"
-      ],
-      "licenseNote": "Summarize with citation."
-    },
-    {
-      "id": "src_cdc_heatrisk_aqi_2025",
-      "title": "How to use the HeatRisk Tool and Air Quality Index",
-      "publisher": "U.S. Centers for Disease Control and Prevention",
-      "year": 2025,
-      "type": "government_guidance",
-      "url": "https://www.cdc.gov/heat-health/hcp/clinical-guidance/how-to-use-the-heatrisk-tool-and-air-quality-index.html",
-      "roles": [
-        "air_quality",
-        "heat_risk",
-        "outdoor_modification"
-      ],
-      "licenseNote": "Do not hard-code local advisories without a current approved data source."
-    },
-    {
-      "id": "src_aha_pa_recommendations",
-      "title": "American Heart Association Recommendations for Physical Activity in Adults",
-      "publisher": "American Heart Association",
-      "year": 2024,
-      "type": "professional_guidance",
-      "url": "https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults",
-      "roles": [
-        "public_health_volume",
-        "talk_test_examples",
-        "beginner_progression"
-      ],
-      "licenseNote": "Summarize with citation."
-    },
-    {
-      "id": "nhs_running_plan_snapshot_2026",
-      "title": "Original NHS Couch to 5K running schedule (retrieved 5 October 2026)",
-      "publisher": "Department of Health and Social Care",
-      "year": 2026,
-      "type": "government_guidance",
-      "url": "https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/",
-      "roles": [
-        "source_running_schedule",
-        "comfort_based_intensity"
-      ],
-      "licenseNote": "Open Government Licence v3.0 and NHS terms sections 3.4–3.6; numeric schedule and attributed summaries only, no logos, imagery, third-party video or clinical endorsement. Retrieval year is not a claimed publication date."
-    },
-    {
-      "id": "cdc_intensity_education_2026",
-      "title": "How to Measure Physical Activity Intensity",
-      "publisher": "U.S. Centers for Disease Control and Prevention",
-      "year": 2025,
-      "type": "government_guidance",
-      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
-      "roles": [
-        "source_verified_education"
-      ],
-      "licenseNote": "Brief original factual paraphrase and source link; no third-party visuals, tables or branding reproduced."
-    },
-    {
-      "id": "nhs_walking_education_2026",
-      "title": "Walking for health",
-      "publisher": "Department of Health and Social Care",
-      "year": 2022,
-      "type": "government_guidance",
-      "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
-      "roles": [
-        "source_verified_education"
-      ],
-      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
-    },
-    {
-      "id": "nhs_adult_activity_education_2026",
-      "title": "Physical activity guidelines for adults aged 19 to 64",
-      "publisher": "Department of Health and Social Care",
-      "year": 2024,
-      "type": "government_guidance",
-      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
-      "roles": [
-        "source_verified_education"
-      ],
-      "licenseNote": "NHS terms sections 3.3-3.6; Open Government Licence v3.0; checked excluded-content list. Adapted summary with standard public-sector attribution; no logos, photos, videos or endorsement."
     }
   ],
   "seedTaxonomy": [

@@ -610,6 +610,7 @@
     "cardio_topic:topic_moderate_vigorous_equivalence",
     "cardio_topic:topic_frequency_cardio",
     "cardio_topic:topic_beginner_progression",
+    "cardio_topic:topic_heat_safety",
     "cardio_modality:modality_walking_outdoor",
     "cardio_modality:modality_cycling_outdoor",
     "cardio_plan:plan_5k_general_foundation",
@@ -650,7 +651,7 @@
     "5k": [
       596,
       597,
-      611
+      612
     ],
     "a": [
       1,
@@ -820,7 +821,7 @@
       550,
       553,
       554,
-      618
+      619
     ],
     "acromial": [
       174
@@ -997,7 +998,7 @@
       351
     ],
     "amino": [
-      618
+      619
     ],
     "amount": [
       229
@@ -1586,7 +1587,7 @@
     ],
     "beetroot": [
       271,
-      617
+      618
     ],
     "begins": [
       596
@@ -1633,7 +1634,7 @@
       224
     ],
     "beta-alanine": [
-      614
+      615
     ],
     "beta-carotene": [
       536
@@ -1770,7 +1771,7 @@
       407
     ],
     "branched-chain": [
-      618
+      619
     ],
     "brazil": [
       365
@@ -1921,7 +1922,7 @@
     ],
     "caffeine": [
       592,
-      613
+      614
     ],
     "calcaneal": [
       163,
@@ -2168,7 +2169,7 @@
       241
     ],
     "citrulline": [
-      615
+      616
     ],
     "claim-level": [
       32
@@ -2496,7 +2497,7 @@
       107
     ],
     "creatine": [
-      612
+      613
     ],
     "crossing": [
       173,
@@ -2518,7 +2519,7 @@
       115
     ],
     "cycling": [
-      610
+      611
     ],
     "d": [
       512
@@ -2701,7 +2702,7 @@
       546,
       549,
       555,
-      617
+      618
     ],
     "differ": [
       192
@@ -3058,7 +3059,8 @@
       226,
       228,
       233,
-      234
+      234,
+      609
     ],
     "exercises": [
       75
@@ -3414,7 +3416,7 @@
     "foundation": [
       244,
       245,
-      611
+      612
     ],
     "four": [
       13
@@ -3509,7 +3511,7 @@
       172
     ],
     "general": [
-      611
+      612
     ],
     "generic": [
       602
@@ -3720,6 +3722,9 @@
     "healthy-adult": [
       94
     ],
+    "heat": [
+      609
+    ],
     "heavier": [
       226,
       230
@@ -3928,7 +3933,8 @@
       540,
       548,
       586,
-      593
+      593,
+      609
     ],
     "inactivity": [
       608
@@ -4126,7 +4132,7 @@
     "juice": [
       485,
       486,
-      617
+      618
     ],
     "k": [
       528
@@ -4183,7 +4189,7 @@
       270
     ],
     "l-arginine": [
-      616
+      617
     ],
     "label": [
       40
@@ -4459,7 +4465,7 @@
       189
     ],
     "malate": [
-      615
+      616
     ],
     "manage": [
       7
@@ -4680,7 +4686,7 @@
       223
     ],
     "monohydrate": [
-      612
+      613
     ],
     "monounsaturated": [
       551
@@ -4904,7 +4910,7 @@
       224
     ],
     "nitrate": [
-      617
+      618
     ],
     "no": [
       226,
@@ -5235,7 +5241,7 @@
       245,
       585,
       588,
-      617
+      618
     ],
     "orange": [
       292,
@@ -5278,8 +5284,8 @@
       236
     ],
     "outdoor": [
-      609,
-      610
+      610,
+      611
     ],
     "outward": [
       136,
@@ -5537,7 +5543,7 @@
       244,
       596,
       597,
-      611
+      612
     ],
     "planner": [
       94,
@@ -7765,7 +7771,7 @@
       597
     ],
     "walking": [
-      609
+      610
     ],
     "wall": [
       184,

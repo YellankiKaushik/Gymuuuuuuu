@@ -1,0 +1,28 @@
+{
+  "extractedAt": "2026-10-08T03:21:36.600858Z",
+  "definitionsSha256": "05e6ee48a25f3687806940fe239648bdefd9fede9245988f8ac13c1063b5f4dc",
+  "sourcesSha256": "15b0d3f51de8683e9adc7baa0dfd08caf80ee3a4fd61bbcbdabc64985bf8a46b",
+  "recordIds": [
+    "topic_heat_safety"
+  ],
+  "moduleSources": [
+    {
+      "id": "cdc_heat_athletes_2024",
+      "title": "Heat and Athletes",
+      "publisher": "U.S. Centers for Disease Control and Prevention",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html",
+      "roles": [
+        "heat_safety_education"
+      ],
+      "licenseNote": "Original brief factual paraphrases and linked attribution; no CDC photographs, third-party images, tables, branding or copied paragraphs reproduced."
+    }
+  ],
+  "sourceHtmlSha256": null,
+  "sourceCaptureMethod": "Primary CDC page inspected through the browsing tool; no raw HTML archive retained or fabricated.",
+  "sourceLocators": {
+    "cdc_heat_athletes_2024": "Key points; Stay safe on hot days; Warning; publisher date 2024-06-25"
+  },
+  "reviewMethod": "Inspected the primary CDC general risk, precautions and stop-signal sections; brief original factual paraphrase, stable identity mapping and automated validation; no human or clinical review."
+}
