@@ -20,7 +20,7 @@ import { scienceFixture as fixture } from "./fixtures/science";
 it("validates all draft science identities and hides unpublished articles", () => {
   expect(scienceIdentities).toHaveLength(98);
   expect(validateScience(scienceIdentities)).toEqual([]);
-  expect(scienceIndexes.published).toHaveLength(23);
+  expect(scienceIndexes.published).toHaveLength(24);
   expect(scienceIndexes.published.slice(0, 5).map((r) => r.id)).toEqual([
     "science_consistency_adherence",
     "science_hypertrophy_adaptation",

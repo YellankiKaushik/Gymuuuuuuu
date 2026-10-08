@@ -2117,5 +2117,43 @@
       "The complete arrangement is not trial-tested or endorsed by NHS or ACE.",
       "Unknown duration and rest remain unknown; no individual suitability or superiority inferred."
     ]
+  },
+  {
+    "id": "source_acsm_rt_2026_adaptations",
+    "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews",
+    "publisher": "Currier and colleagues; American College of Sports Medicine",
+    "url": "https://europepmc.org/articles/PMC12965823",
+    "sourceVersion": "doi:10.1249/MSS.0000000000003897; PMID:41843416; PMCID:PMC12965823; selected Eligibility, Power and Muscular Endurance sections",
+    "sourceDate": "2026-03-05",
+    "evidenceType": "position_stand",
+    "extractedAt": "2026-10-08T06:48:32Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted.",
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and adaptation sections support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews, differing protocols and insufficient variable-specific evidence constrain interpretation."
+    ]
+  },
+  {
+    "id": "src_nih_ods_recovery_performance_sections_2026",
+    "title": "Exercise and Athletic Performance — HMB, betaine, glutamine, bicarbonate and tart-cherry sections",
+    "publisher": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+    "sourceVersion": "Publisher update April 1, 2024; selected named efficacy, safety and implications sections inspected on 2026-10-08",
+    "sourceDate": "2024-04-01",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-08T06:53:16Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted.",
+    "limitations": [
+      "Machine source verification; no independent human or clinical review.",
+      "Selected NIH government-reference summaries inspected; cited primary studies were not independently reappraised.",
+      "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
+      "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
+    ]
   }
 ]

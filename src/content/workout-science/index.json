@@ -1710,5 +1710,91 @@
     "version": "1.0.0",
     "updatedAt": "2026-10-07",
     "learningOrder": 30
+  },
+  {
+    "id": "science_muscular_endurance_adaptation",
+    "slug": "muscular-endurance-adaptation",
+    "displayName": "Muscular endurance",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "adaptations-goals",
+    "contentType": "adaptation",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "This page covers the overview’s muscular-endurance outcome, without assuming that strength findings apply identically.",
+    "summary": "The overview reports improved muscular endurance with resistance training compared with no exercise; its reviewed analyses included standard and home-based training.",
+    "keyTakeaways": [
+      "The overview reports improved muscular endurance with resistance training compared with no exercise; its reviewed analyses included standard and home-based training.",
+      "There were insufficient data to determine muscular-endurance effects of load, power training, volume or set structure in the reviewed comparisons.",
+      "Keep the outcome explicit; the overview does not establish one optimal endurance prescription."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Keep the outcome explicit; the overview does not establish one optimal endurance prescription."
+      ],
+      "prioritizeWhen": [
+        "The outcome and healthy-adult scope match the question."
+      ],
+      "deprioritizeWhen": [
+        "The proposed application exceeds the inspected evidence."
+      ],
+      "adjustmentLevers": [
+        "Use the source framework with explicit limits; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, eligible population, training experience and insufficient comparison evidence."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_muscular_endurance_adaptation_acsm_adaptation_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_adaptations"
+        ]
+      },
+      {
+        "id": "claim_science_muscular_endurance_adaptation_acsm_adaptation_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_adaptations"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified eligibility and adaptation sections support this extraction.",
+      "No independent human, clinical or new GRADE appraisal; overlapping reviews, differing protocols and insufficient variable-specific evidence constrain interpretation.",
+      "Insufficient data do not establish equivalence or prove absence of an effect; no magnitude or individual protocol is supplied here."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_specificity",
+      "science_power_adaptation",
+      "science_strength_adaptation"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Selected primary full-text eligibility and adaptation paragraphs inspected. Brief original factual observations, linked attribution and automated checks; no independent human, clinical or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 12
   }
 ]

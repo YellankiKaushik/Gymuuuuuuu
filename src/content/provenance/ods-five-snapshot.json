@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-10-08T06:53:16Z",
+  "definitionsSha256": "8e0242e1ebaea2b59cfd07890ae6c939edaa4d66ab7a08b4e80739af0f290753",
+  "sourcesSha256": "1f79c341b9ea9cf39fe21f41ac76337588fa05395c45d97fe9e415f9b1f41553",
+  "recordIds": [
+    "ingredient_hmb",
+    "ingredient_betaine",
+    "ingredient_glutamine",
+    "ingredient_sodium_bicarbonate",
+    "ingredient_tart_cherry"
+  ],
+  "moduleSource": {
+    "id": "src_nih_ods_recovery_performance_sections_2026",
+    "title": "Exercise and Athletic Performance — HMB, betaine, glutamine, bicarbonate and tart-cherry sections",
+    "publisher": "NIH Office of Dietary Supplements",
+    "year": 2024,
+    "type": "government_reference",
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+    "roles": [
+      "ingredient_education",
+      "outcome_specific_findings",
+      "safety_context"
+    ],
+    "licenseNote": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted. Publisher update April 1, 2024 is shown on the inspected page; extraction/review occurred on 2026-10-08."
+  },
+  "sourceHtmlSha256": null,
+  "sourceCaptureMethod": "Primary NIH ODS pages inspected through the web tool, including the displayed April 1, 2024 update. No raw HTML archive retained and no direct-download attempt or capture hash claimed.",
+  "sourceLocators": [
+    "HMB: efficacy, safety and distinct forms in implications for use",
+    "Betaine: efficacy, short-duration evidence and insufficient safety assessment",
+    "Glutamine: specific six-week strength-study result, safety and differing recovery context",
+    "Sodium bicarbonate: conflicting results, individual variation, gastrointestinal distress and sodium exposure",
+    "Tart or sour cherry: product/population-specific recovery studies, safety limitations and no consensus"
+  ],
+  "reviewMethod": "Compared brief original observations with the named primary NIH sections; stable identities, byte-pinned transcriptions, explicit unknown regimen/magnitude and source/schema checks before factual publication. No independent human or clinical review."
+}

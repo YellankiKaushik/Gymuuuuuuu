@@ -1,0 +1,432 @@
+[
+  {
+    "id": "ingredient_hmb",
+    "slug": "ingredient-hmb",
+    "title": "Beta-Hydroxy-Beta-Methylbutyrate",
+    "entityType": "ingredient",
+    "category": "protein_amino_acid",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "A selected NIH summary of a specific ingredient and performance context; proposed mechanisms and study findings do not establish personal benefit or product quality.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_hmb_ods_scope",
+        "ingredientIdentityId": "ingredient_hmb",
+        "outcomeId": "claim_ingredient_hmb_ods_scope",
+        "outcomeDefinition": "Recovery after sufficiently demanding exercise, as discussed by NIH; variable protocols make individual benefits difficult to predict.",
+        "population": "Adults aged 19–50 in varied HMB studies summarized by NIH",
+        "trainingStatus": "Trained and untrained participants",
+        "ageAndSexLimits": "Population is limited to the source-described participants; unextracted age/sex details remain unknown, with no clinical or youth extrapolation.",
+        "baselineStatus": "Personal baseline and deficiency status are not assessed.",
+        "formulation": "HMB calcium salt and HMB free acid are distinct source-listed forms; no equivalence is inferred.",
+        "protocol": null,
+        "comparator": "Controls varied across summarized studies; no single outcome-specific comparator extracted.",
+        "timeframe": "Supplementation periods from one day to six weeks; training periods ranged from ten days to twelve weeks.",
+        "effectDirection": "mixed",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Source-scoped government-reference summary; no independent formal evidence grade, complete primary-study reassessment or personal prescription.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "Different ages, training protocols, co-supplements and forms limit transfer; this is not treatment of an injury.",
+          "Machine source verification; no independent human or clinical review.",
+          "Selected NIH government-reference summaries inspected; cited primary studies were not independently reappraised.",
+          "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
+          "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-08",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "Short-term adult findings do not establish adolescent or several-month safety. NIH describes no expert consensus for longer-term use.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_recovery_performance_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-08",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "ingredient_betaine",
+    "slug": "ingredient-betaine",
+    "title": "Betaine",
+    "entityType": "ingredient",
+    "category": "protein_amino_acid",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "A selected NIH summary of a specific ingredient and performance context; proposed mechanisms and study findings do not establish personal benefit or product quality.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_betaine_ods_scope",
+        "ingredientIdentityId": "ingredient_betaine",
+        "outcomeId": "claim_ingredient_betaine_ods_scope",
+        "outcomeDefinition": "Small studies in men give conflicting strength/power results, with improvements generally modest.",
+        "population": "Men in small studies of bodybuilders and occasionally cyclists",
+        "trainingStatus": "Bodybuilders and cyclists in the summarized studies",
+        "ageAndSexLimits": "Population is limited to the source-described participants; unextracted age/sex details remain unknown, with no clinical or youth extrapolation.",
+        "baselineStatus": "Personal baseline and deficiency status are not assessed.",
+        "formulation": "Supplemental betaine (trimethylglycine); exact product formulations were not extracted.",
+        "protocol": null,
+        "comparator": "Controls varied across summarized studies; no single outcome-specific comparator extracted.",
+        "timeframe": "Source studies lasted up to fifteen days.",
+        "effectDirection": "mixed",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Source-scoped government-reference summary; no independent formal evidence grade, complete primary-study reassessment or personal prescription.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "No conclusion for women, children, all sports, long-term use or a particular retail product follows from these small studies.",
+          "Machine source verification; no independent human or clinical review.",
+          "Selected NIH government-reference summaries inspected; cited primary studies were not independently reappraised.",
+          "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
+          "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-08",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "Short studies reported no side effects, but NIH states that safety has not been adequately evaluated.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_recovery_performance_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-08",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "ingredient_glutamine",
+    "slug": "ingredient-glutamine",
+    "title": "Glutamine",
+    "entityType": "ingredient",
+    "category": "protein_amino_acid",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "A selected NIH summary of a specific ingredient and performance context; proposed mechanisms and study findings do not establish personal benefit or product quality.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_glutamine_ods_scope",
+        "ingredientIdentityId": "ingredient_glutamine",
+        "outcomeId": "claim_ingredient_glutamine_ods_scope",
+        "outcomeDefinition": "In the NIH-described six-week placebo comparison, weightlifters had no significant between-group differences in strength, torque or lean tissue mass.",
+        "population": "Thirty-one male and female weightlifters in the specific study summarized by NIH",
+        "trainingStatus": "Weightlifters completing a strength-training program",
+        "ageAndSexLimits": "Population is limited to the source-described participants; unextracted age/sex details remain unknown, with no clinical or youth extrapolation.",
+        "baselineStatus": "Personal baseline and deficiency status are not assessed.",
+        "formulation": "Glutamine alone; exact manufacturing formulation not extracted.",
+        "protocol": null,
+        "comparator": "Placebo in the specific six-week weightlifting comparison.",
+        "timeframe": "Six-week strength-training study; no transfer to other timeframes.",
+        "effectDirection": "no_clear_benefit",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Source-scoped government-reference summary; no independent formal evidence grade, complete primary-study reassessment or personal prescription.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "This specific result is not a universal no-effect verdict. NIH also describes a different eccentric-exercise recovery study; clinical uses are outside this page.",
+          "Machine source verification; no independent human or clinical review.",
+          "Selected NIH government-reference summaries inspected; cited primary studies were not independently reappraised.",
+          "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
+          "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-08",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "The summarized studies reported no side effects; that observation does not establish safety for all regimens or populations.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_recovery_performance_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-08",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "ingredient_sodium_bicarbonate",
+    "slug": "ingredient-sodium-bicarbonate",
+    "title": "Sodium Bicarbonate",
+    "entityType": "ingredient",
+    "category": "performance",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "A selected NIH summary of a specific ingredient and performance context; proposed mechanisms and study findings do not establish personal benefit or product quality.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_sodium_bicarbonate_ods_scope",
+        "ingredientIdentityId": "ingredient_sodium_bicarbonate",
+        "outcomeId": "claim_ingredient_sodium_bicarbonate_ods_scope",
+        "outcomeDefinition": "NIH describes conflicting results for strenuous activity lasting several minutes and intermittent high-intensity sports; individual responses can include poorer performance.",
+        "population": "Participants in small laboratory trials involving swimmers, cyclists, rowers and other athletes",
+        "trainingStatus": "Varied; source suggests trained athletes are more likely to benefit",
+        "ageAndSexLimits": "Population is limited to the source-described participants; unextracted age/sex details remain unknown, with no clinical or youth extrapolation.",
+        "baselineStatus": "Personal baseline and deficiency status are not assessed.",
+        "formulation": "Sodium bicarbonate; no personal bicarbonate-loading protocol supplied.",
+        "protocol": null,
+        "comparator": "Controls varied across summarized studies; no single outcome-specific comparator extracted.",
+        "timeframe": "One or more laboratory trials over several days; months-long use was not evaluated.",
+        "effectDirection": "mixed",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Source-scoped government-reference summary; no independent formal evidence grade, complete primary-study reassessment or personal prescription.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "Laboratory findings do not establish an individual benefit or real-world competition result; no dose or loading schedule is prescribed.",
+          "Machine source verification; no independent human or clinical review.",
+          "Selected NIH government-reference summaries inspected; cited primary studies were not independently reappraised.",
+          "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
+          "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-08",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "Gastrointestinal distress can include nausea, stomach pain, diarrhea and vomiting. Large sodium exposure is a separate safety consideration.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_recovery_performance_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-08",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  },
+  {
+    "id": "ingredient_tart_cherry",
+    "slug": "ingredient-tart-cherry",
+    "title": "Tart Cherry",
+    "entityType": "ingredient",
+    "category": "botanical_adaptogen",
+    "aliases": [],
+    "publicationStatus": "published",
+    "sections": [
+      {
+        "id": "scope",
+        "heading": "What this evidence covers",
+        "content": {
+          "text": "A selected NIH summary of a specific ingredient and performance context; proposed mechanisms and study findings do not establish personal benefit or product quality.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_ingredient_tart_cherry_ods_scope",
+        "ingredientIdentityId": "ingredient_tart_cherry",
+        "outcomeId": "claim_ingredient_tart_cherry_ods_scope",
+        "outcomeDefinition": "NIH describes variable short-term findings for strength recovery and perceived soreness, with no expert consensus on performance use.",
+        "population": "Mostly young resistance-trained men in the short-term studies described by NIH",
+        "trainingStatus": "Resistance-trained participants; other source studies had different populations",
+        "ageAndSexLimits": "Population is limited to the source-described participants; unextracted age/sex details remain unknown, with no clinical or youth extrapolation.",
+        "baselineStatus": "Personal baseline and deficiency status are not assessed.",
+        "formulation": "Source-studied tart-cherry products include juice/concentrate and Montmorency skin powder; products are not interchangeable.",
+        "protocol": null,
+        "comparator": "Controls varied across summarized studies; no single outcome-specific comparator extracted.",
+        "timeframe": "Typical resistance-test studies used products for about a week before and about two days after testing.",
+        "effectDirection": "mixed",
+        "evidenceConfidence": "not_assessed",
+        "assessmentMethod": "editorial",
+        "assessmentDocumentation": "Source-scoped government-reference summary; no independent formal evidence grade, complete primary-study reassessment or personal prescription.",
+        "magnitude": null,
+        "studyTypes": [
+          "Government reference summarizing clinical studies"
+        ],
+        "studyCount": null,
+        "harms": [],
+        "limitations": [
+          "Product-specific findings cannot be transferred to any cherry capsule, a daily routine, all populations or guaranteed recovery.",
+          "Machine source verification; no independent human or clinical review.",
+          "Selected NIH government-reference summaries inspected; cited primary studies were not independently reappraised.",
+          "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
+          "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
+        ],
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "review": {
+          "reviewer": "Codex source verification and machine validation; personal use; no human review",
+          "reviewedAt": "2026-10-08",
+          "status": "approved",
+          "rightsReviewed": true
+        }
+      }
+    ],
+    "safety": [
+      {
+        "id": "safety_context",
+        "severity": "caution",
+        "interactionType": null,
+        "content": {
+          "text": "Studies reported no identified side effects, but NIH says tart-cherry supplement safety has not been adequately assessed.",
+          "sourceIds": [
+            "src_nih_ods_recovery_performance_sections_2026"
+          ]
+        }
+      }
+    ],
+    "antiDoping": null,
+    "sourceIds": [
+      "src_nih_ods_recovery_performance_sections_2026"
+    ],
+    "review": {
+      "reviewer": "Codex source verification and machine validation; personal use; no human review",
+      "reviewedAt": "2026-10-08",
+      "status": "approved",
+      "rightsReviewed": true
+    }
+  }
+]

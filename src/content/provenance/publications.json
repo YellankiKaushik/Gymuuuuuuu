@@ -8714,6 +8714,31 @@
     ]
   },
   {
+    "module": "workout-science",
+    "id": "science_muscular_endurance_adaptation",
+    "slug": "muscular-endurance-adaptation",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "claims",
+        "sourceIds": [
+          "source_acsm_rt_2026_adaptations"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
     "module": "recipes",
     "id": "public_recipe_chickpea_cucumber_bowl",
     "slug": "chickpea-cucumber-bowl",
@@ -11174,6 +11199,201 @@
         "path": "safety.safety_context",
         "sourceIds": [
           "src_nih_ods_amino_nitrate_sections_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_hmb",
+    "slug": "ingredient-hmb",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_hmb_ods_scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_betaine",
+    "slug": "ingredient-betaine",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_betaine_ods_scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_glutamine",
+    "slug": "ingredient-glutamine",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_glutamine_ods_scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_sodium_bicarbonate",
+    "slug": "ingredient-sodium-bicarbonate",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_sodium_bicarbonate_ods_scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "supplements",
+    "id": "ingredient_tart_cherry",
+    "slug": "ingredient-tart-cherry",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "sections.scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_ingredient_tart_cherry_ods_scope",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "safety.safety_context",
+        "sourceIds": [
+          "src_nih_ods_recovery_performance_sections_2026"
         ],
         "kind": "sourced_education"
       }

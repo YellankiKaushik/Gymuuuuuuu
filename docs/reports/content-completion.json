@@ -1153,8 +1153,8 @@
     {
       "module": "workout-science",
       "totalIdentities": 98,
-      "publishedIdentities": 23,
-      "draftIdentities": 75,
+      "publishedIdentities": 24,
+      "draftIdentities": 74,
       "blockedIdentities": [
         {
           "id": "science_training_adaptation",
@@ -1180,13 +1180,6 @@
         {
           "id": "science_detraining_retraining",
           "slug": "detraining-retraining",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_muscular_endurance_adaptation",
-          "slug": "muscular-endurance-adaptation",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -4730,8 +4723,8 @@
     {
       "module": "supplements",
       "totalIdentities": 272,
-      "publishedIdentities": 7,
-      "draftIdentities": 265,
+      "publishedIdentities": 12,
+      "draftIdentities": 260,
       "blockedIdentities": [
         {
           "id": "topic_supplement_definition",
@@ -5413,13 +5406,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "ingredient_sodium_bicarbonate",
-          "slug": "ingredient-sodium-bicarbonate",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "ingredient_glycerol",
           "slug": "ingredient-glycerol",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -5560,13 +5546,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "ingredient_glutamine",
-          "slug": "ingredient-glutamine",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "ingredient_citrulline",
           "slug": "ingredient-citrulline",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -5583,20 +5562,6 @@
         {
           "id": "ingredient_taurine",
           "slug": "ingredient-taurine",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "ingredient_hmb",
-          "slug": "ingredient-hmb",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "ingredient_betaine",
-          "slug": "ingredient-betaine",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6017,13 +5982,6 @@
         {
           "id": "ingredient_pomegranate_extract",
           "slug": "ingredient-pomegranate-extract",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "ingredient_tart_cherry",
-          "slug": "ingredient-tart-cherry",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6610,9 +6568,9 @@
     },
     {
       "module": "workout-science",
-      "published": 23,
-      "withPublicationProvenance": 23,
-      "inSearch": 23,
+      "published": 24,
+      "withPublicationProvenance": 24,
+      "inSearch": 24,
       "missingSourceProvenance": []
     },
     {
@@ -6666,9 +6624,9 @@
     },
     {
       "module": "supplements",
-      "published": 7,
-      "withPublicationProvenance": 7,
-      "inSearch": 7,
+      "published": 12,
+      "withPublicationProvenance": 12,
+      "inSearch": 12,
       "missingSourceProvenance": []
     }
   ],
@@ -6762,7 +6720,7 @@
     },
     {
       "module": "supplements",
-      "eligiblePublishedRecords": 7,
+      "eligiblePublishedRecords": 12,
       "families": [
         "supplements"
       ],
@@ -7893,6 +7851,14 @@
         },
         {
           "id": "science_proximity_to_failure",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_muscular_endurance_adaptation",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -10970,6 +10936,46 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_hmb",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_betaine",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_glutamine",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_sodium_bicarbonate",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "ingredient_tart_cherry",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     }
@@ -10996,10 +11002,10 @@
     },
     {
       "module": "workout-science",
-      "missingVerifiedFactualRecords": 75,
+      "missingVerifiedFactualRecords": 74,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 23,
+      "independentHumanReviewPending": 24,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -11068,10 +11074,10 @@
     },
     {
       "module": "supplements",
-      "missingVerifiedFactualRecords": 265,
+      "missingVerifiedFactualRecords": 260,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 7,
+      "independentHumanReviewPending": 12,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     }
@@ -12832,6 +12838,38 @@
         "The complete arrangement is not trial-tested or endorsed by NHS or ACE.",
         "Unknown duration and rest remain unknown; no individual suitability or superiority inferred."
       ]
+    },
+    {
+      "id": "source_acsm_rt_2026_adaptations",
+      "url": "https://europepmc.org/articles/PMC12965823",
+      "version": "doi:10.1249/MSS.0000000000003897; PMID:41843416; PMCID:PMC12965823; selected Eligibility, Power and Muscular Endurance sections",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T06:48:32Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "position_stand",
+      "rightsReference": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted.",
+      "limitations": [
+        "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+        "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+        "The overview searched reviews through October 2024. Only the identified eligibility and adaptation sections support this extraction.",
+        "No independent human, clinical or new GRADE appraisal; overlapping reviews, differing protocols and insufficient variable-specific evidence constrain interpretation."
+      ]
+    },
+    {
+      "id": "src_nih_ods_recovery_performance_sections_2026",
+      "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+      "version": "Publisher update April 1, 2024; selected named efficacy, safety and implications sections inspected on 2026-10-08",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T06:53:16Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted.",
+      "limitations": [
+        "Machine source verification; no independent human or clinical review.",
+        "Selected NIH government-reference summaries inspected; cited primary studies were not independently reappraised.",
+        "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
+        "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -14156,8 +14194,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 622,
-    "factualRecords": 494
+    "documents": 628,
+    "factualRecords": 500
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -14900,6 +14938,11 @@
     {
       "module": "workout-science",
       "id": "science_proximity_to_failure",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_muscular_endurance_adaptation",
       "instructionalMediaRequired": false
     },
     {
@@ -16791,17 +16834,42 @@
       "module": "supplements",
       "id": "ingredient_branched_chain_amino_acids",
       "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_hmb",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_betaine",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_glutamine",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_sodium_bicarbonate",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "supplements",
+      "id": "ingredient_tart_cherry",
+      "instructionalMediaRequired": false
     }
   ],
   "missingMediaFiles": [],
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T06:43:25.343Z",
-    "expected": 676,
+    "buildDate": "2026-10-08T06:57:57.799Z",
+    "expected": 682,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 676,
+    "unmeasured": 682,
     "ignoredStaleReports": 667,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -18592,6 +18660,12 @@
       },
       {
         "path": "/learn/workout-science/proximity-to-failure",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/muscular-endurance-adaptation",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
@@ -20860,6 +20934,36 @@
       },
       {
         "path": "/supplements/ingredients/ingredient-branched-chain-amino-acids",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-hmb",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-betaine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-glutamine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-sodium-bicarbonate",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/supplements/ingredients/ingredient-tart-cherry",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

@@ -170,3 +170,20 @@ assertions and timeout settings. Budgets remain 695643 gzip JavaScript bytes and
 420750 gzip public JSON bytes within unchanged limits. Search contains 622
 documents and 494 factual records. Current full-route and hosted evidence remain
 pending, alongside reported content work; no final completion claim is made.
+
+The 500-record checkpoint adds the source-scoped ACSM muscular-endurance
+adaptation article and five NIH ingredient summaries (HMB, betaine, glutamine,
+sodium bicarbonate and tart cherry). Exact source populations, study durations,
+form distinctions and safety limitations are retained; uncertain comparisons
+do not become equivalence claims, personal regimens or formal evidence grades.
+The existing power article and all earlier ingredient records are preserved.
+The NIH publisher update is verified as 2024-04-01, separate from extraction.
+Complete checks and coverage pass 326 tests in 88 files; the six new pages pass
+12/12 Chromium/WebKit responsive/theme/accessibility cases. The first endurance
+check had two obsolete 23-topic inventory assertions; both now assert 24 while
+retaining draft exclusion and exact source/index checks. Budgets remain unchanged
+at 698367 gzip JavaScript bytes and 421926 gzip public JSON bytes. Search contains
+628 public documents, including 500 factual records. Current-build full-route
+evidence and all-browser hosted checks are still required; remaining draft
+identities remain explicitly pending rather than falsely permanently blocked.
+No completion tag, manual device test or production deployment is claimed.

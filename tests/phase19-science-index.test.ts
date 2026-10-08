@@ -13,7 +13,7 @@ it("projects every published science identity and preserves filters, comparisons
       .filter((r) => ["published", "deprecated"].includes(r.contentStatus))
       .map(projectScienceIndex),
   );
-  expect(scienceIndexes.published).toHaveLength(23);
+  expect(scienceIndexes.published).toHaveLength(24);
   expect(scienceIndexes.bySlug.has("training-volume")).toBe(true);
   expect(scienceIndexes.bySlug.has("single-progression")).toBe(false);
   const results = searchScience(

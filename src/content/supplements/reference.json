@@ -3185,6 +3185,20 @@
         "safety_context"
       ],
       "licenseNote": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted. Year is the observation year, not a verified publisher update date."
+    },
+    {
+      "id": "src_nih_ods_recovery_performance_sections_2026",
+      "title": "Exercise and Athletic Performance — HMB, betaine, glutamine, bicarbonate and tart-cherry sections",
+      "publisher": "NIH Office of Dietary Supplements",
+      "year": 2024,
+      "type": "government_reference",
+      "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+      "roles": [
+        "ingredient_education",
+        "outcome_specific_findings",
+        "safety_context"
+      ],
+      "licenseNote": "Brief original factual paraphrases with NIH attribution and canonical source links. No source tables, figures, photos or full articles reproduced; no open licence asserted. Publisher update April 1, 2024 is shown on the inspected page; extraction/review occurred on 2026-10-08."
     }
   ],
   "entityTypes": [

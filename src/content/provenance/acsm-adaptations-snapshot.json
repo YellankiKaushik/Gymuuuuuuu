@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-10-08T06:48:32Z",
+  "reviewMethod": "Retained primary Europe PMC XML inspected directly: Eligibility Criteria, Power, Improving power, Muscular Endurance and Improving muscular endurance. Brief original factual observations and automated validation, not independent human or new GRADE review.",
+  "definitionSha256": "52fe580c2b814c8a58e2442da85117ad1a78317647eed1ced16ef5e3f2d1c8a0",
+  "sourcesSha256": "be960fbdc1d1bbc2b7dcf34a721acab627d87e7ab2013ab866d61ad1d7ccc385",
+  "observationsSha256": "03580bc4e88f70fc135e2b8a336eed7cc3122dbd6c6fc096c3f69c4b8bef5b06",
+  "identityIds": [
+    "science_muscular_endurance_adaptation"
+  ],
+  "sourceXmlSha256": "0f92699661a50164bbd97e7db21587f920da3055914327436b0947081ed2c082",
+  "inspectedSections": [
+    "Eligibility Criteria: healthy adults, six-week minimum, predominantly inexperienced participants",
+    "Results: Power; Discussion: Improving power",
+    "Results: Muscular Endurance; Discussion: Improving muscular endurance"
+  ]
+}

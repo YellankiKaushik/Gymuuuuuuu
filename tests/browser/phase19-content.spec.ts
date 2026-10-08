@@ -2,6 +2,21 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  [
+    "/supplements/ingredients/ingredient-hmb",
+    "Beta-Hydroxy-Beta-Methylbutyrate",
+  ],
+  ["/supplements/ingredients/ingredient-betaine", "Betaine"],
+  ["/supplements/ingredients/ingredient-glutamine", "Glutamine"],
+  [
+    "/supplements/ingredients/ingredient-sodium-bicarbonate",
+    "Sodium Bicarbonate",
+  ],
+  ["/supplements/ingredients/ingredient-tart-cherry", "Tart Cherry"],
+  [
+    "/learn/workout-science/muscular-endurance-adaptation",
+    "Muscular endurance",
+  ],
   ["/programs/general-fitness-2-day", "Two-Day General Fitness"],
   ["/programs/general-fitness-3-day", "Three-Day General Fitness"],
   ["/cardio/learn/topic-heat-safety", "Exercise in Heat"],
