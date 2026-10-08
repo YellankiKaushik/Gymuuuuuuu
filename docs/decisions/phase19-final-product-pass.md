@@ -43,3 +43,5 @@ Twenty major workspaces are checked at 320, 375, 393, 768, 1024, 1280 and 1440px
 both themes. Existing workout, program, diet, nutrition, recipe, recovery, cardio,
 progress, search/collections/comparison, backup and migration suites are retained.
 Print, real devices and human screen-reader behavior remain owner testing.
+
+The final browser gate exposed a stale draft assertion for the now-published barbell bench press. The test now verifies its public page and retains unavailable/noindex checks on the unpublished incline barbell variant. The focused Chromium and WebKit regression passed without changing application content or assertions for drafts.

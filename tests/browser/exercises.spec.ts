@@ -37,6 +37,9 @@ test("exercise multiselect, URL restoration, dialog focus and safe content gates
     ).violations,
   ).toEqual([]);
   await page.goto("/exercises/barbell-bench-press");
+  await expect(page.getByRole("heading", { name: "Barbell bench press", exact: true })).toBeVisible();
+  await expect(page.getByText(/personal.use publication|published_personal_use/i).first()).toBeVisible();
+  await page.goto("/exercises/incline-barbell-bench-press");
   await expect(
     page.getByRole("heading", { name: "Exercise not available", exact: true }),
   ).toBeVisible();
