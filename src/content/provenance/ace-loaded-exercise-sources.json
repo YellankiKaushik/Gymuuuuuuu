@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ace_back_squat",
+    "title": "ACE Back Squat",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/11/back-squat/",
+    "sourceVersion": "Exercise Library 11; inspected setup and movement paragraphs",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T02:12:07.207077Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_barbell_deadlift",
+    "title": "ACE Deadlift",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/6/deadlift/",
+    "sourceVersion": "Exercise Library 6; inspected setup and movement paragraphs",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T02:12:07.207077Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_goblet_squat",
+    "title": "ACE Goblet Squat",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/",
+    "sourceVersion": "Exercise Library 362; inspected setup and movement paragraphs",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T02:12:07.207077Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  }
+]

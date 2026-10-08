@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": "59085524683b247e49064321ec405b6f6cd4af24",
+  "publishedFactualRecords": 485,
+  "crossBrowserRun": 37720775903,
+  "observedResults": {
+    "chromium": {
+      "jobId": 113127643823,
+      "passed": 220,
+      "failed": 1,
+      "failure": "Recovery workflow could not locate the corrupted pain-severity label after a Windows edit used implicit text encoding."
+    },
+    "firefox": {
+      "result": "pending at report time"
+    },
+    "webkit": {
+      "result": "pending at report time"
+    }
+  },
+  "correction": "Restore recovery page UTF-8 bytes from verified 9ed0cbe baseline while preserving the busy-fieldset fix, and restore original Unicode browser expectations. Subsequent file edits explicitly use UTF-8. Raw downloaded payloads and pinned factual transcriptions are unchanged.",
+  "localRebuiltVerification": {
+    "publishedFactualRecords": 491,
+    "completeCheckTestsPassed": 314,
+    "coverageTestsPassed": 314,
+    "newPageBrowserCasesPassed": 12,
+    "foodExerciseRecoveryWorkflowCasesPassed": 20,
+    "browserProjects": ["chromium", "webkit"]
+  },
+  "scope": "Local focused rebuilt results do not replace the failed hosted run or certify fresh Firefox/full hosted verification. Phase 19 remains in progress.",
+  "reportedAt": "2026-10-08T03:23:15.684954Z",
+  "productionDeployment": "disabled"
+}

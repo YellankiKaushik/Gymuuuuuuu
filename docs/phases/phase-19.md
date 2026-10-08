@@ -18,13 +18,13 @@ Current anatomy/exercise checkpoint: full check passed with 220 unit tests in 46
 
 The first full expanded route traversal passed 432/434 URLs. Two source identity strings overflowed at 320px; wrapping was corrected without clipping. Current-build route evidence must be rerun before the final gate: browser reports exclude older build timestamps and content manifests, and test:route-report rejects failed or unmeasured URLs. Mobile and desktop themes receive automated WCAG checks; tablet evidence measures overflow. Interaction, print and manual devices are not falsely inferred from route renders.
 
-Linux CI at the first pushed Phase 19 checkpoint passed all 64 Chromium tests. Firefox and WebKit each passed 63/64: Firefox failed exercise zoom reflow; WebKit failed the read-only local concurrent-context status. Coverage also hit the recipe stress-test timeout at that earlier revision. The next pushed checkpointÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s hosted jobs were cancelled without executing steps: GitHub reported that no hosted runner could acquire the jobs. The new local WebKit run passes the prior context failure; Firefox zoom reflow still needs supported-host verification. These CI gates remain open pending the updated run. Failure diagnostics now retain traces/screenshots and measured layout or context details. Local Windows Firefox still cannot launch because of a mozglue/SideBySide runtime error; Linux is the supported verification host.
+Linux CI at the first pushed Phase 19 checkpoint passed all 64 Chromium tests. Firefox and WebKit each passed 63/64: Firefox failed exercise zoom reflow; WebKit failed the read-only local concurrent-context status. Coverage also hit the recipe stress-test timeout at that earlier revision. The next pushed checkpoint’s hosted jobs were cancelled without executing steps: GitHub reported that no hosted runner could acquire the jobs. The new local WebKit run passes the prior context failure; Firefox zoom reflow still needs supported-host verification. These CI gates remain open pending the updated run. Failure diagnostics now retain traces/screenshots and measured layout or context details. Local Windows Firefox still cannot launch because of a mozglue/SideBySide runtime error; Linux is the supported verification host.
 
 Remaining work includes substantially expanding source-backed anatomy, exercises, science and other education, usable static programs/routines, meal templates, comparison and media coverage, full fresh route-state verification and final clean-install cross-browser regression. No completion tag should be created until the owner's definition of done is met. Production deployment remains disabled.
 
 The source running plan preserves the stable General 5K Foundation identity and all 27 source schedules. Original source totals are checked before writes; immutable snapshots refuse replacement by changed source HTML. Targets, current measurements and guideline intensity classifications remain separate. The session tracker freezes the whole selected source week, retains source/version references, and accepts only the precise verified text-intensity contract. FDA food rankings now use validated credential-free static JSON to keep JavaScript within the unchanged 700 KiB aggregate budget.
 
-Anatomy expansion preserves all 70 seed identities, adds 18 public records and retains a SHA-256-checked public-domain source extract from GrayÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s 1918 pages 432ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ442. Historical material supports qualitative anatomy only. Five more exercise identities use NIAÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s March 2018 older-adult instructions with original source-cue SVGs, explicit population limits and unspecified rests kept null. No machine publication is called independent human review. The audit now separates pending factual work from permanent licensing exclusions and reports structured numeric, compatible-comparison and media-file coverage.
+Anatomy expansion preserves all 70 seed identities, adds 18 public records and retains a SHA-256-checked public-domain source extract from Gray’s 1918 pages 432–442. Historical material supports qualitative anatomy only. Five more exercise identities use NIA’s March 2018 older-adult instructions with original source-cue SVGs, explicit population limits and unspecified rests kept null. No machine publication is called independent human review. The audit now separates pending factual work from permanent licensing exclusions and reports structured numeric, compatible-comparison and media-file coverage.
 
 Zoom reflow uses card and exercise-filter grids that respond to their available container width rather than assuming desktop viewport width guarantees wide content. Fieldsets can shrink, labels wrap and cards retain readable widths without clipping. The sourced seated press names a sturdy armless chair rather than incorrectly inheriting the draft bench equipment; all existing identity IDs/slugs and equipment IDs remain stable, with one explicit chair equipment ID added.
 
@@ -42,7 +42,7 @@ This checkpoint's final full check passes 228 tests in 49 files, including the i
 
 The October 7 expansion retains a SHA-256-checked historical lower-limb extract and adds 17 stable muscle identities. The anatomy compiler rejects identity, source, relationship or published-object changes before atomic writes. Biceps femoris short-head and soleus joint actions remain distinct from whole-muscle or biarticular actions; historical anatomy is not modern training-effect evidence. Eleven further NIH articles bring the nutrient library to 22, retaining actual October 6/7 extraction and source update dates. Food folate and source-reported DFE remain distinct. No new intake rows, medication adjustments or supplement prescriptions are added.
 
-A supported one-leg calf raise follows NIA printed page 62. Its 10ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ15 repetitions per leg do not inherit the two-leg version's two-set count; sets and timed rest remain unavailable. An original movement-cue SVG has recorded authorship and a checked hash. The full check passes 233 tests in 51 files, builds 457 search documents, and meets unchanged budgets: 712009 gzip JavaScript bytes and 254262 gzip public JSON bytes.
+A supported one-leg calf raise follows NIA printed page 62. Its 10–15 repetitions per leg do not inherit the two-leg version's two-set count; sets and timed rest remain unavailable. An original movement-cue SVG has recorded authorship and a checked hash. The full check passes 233 tests in 51 files, builds 457 search documents, and meets unchanged budgets: 712009 gzip JavaScript bytes and 254262 gzip public JSON bytes.
 
 The dccfb6c hosted checkpoint passed all 228 check and coverage tests, but CI Chromium passed 77/79 and each cross-browser job passed 78/79. The exact failures and corrections are recorded in docs/reports/phase19-ci-cooked-checkpoint.json. The food test now asserts the verified 234-profile count. Backup UI feedback ignores stale export/file-read completions; a controlled delayed-read browser regression preserves the latest invalid-import rejection and forbids a restore preview. The focused local Chromium/WebKit suites pass 12/12. Hosted verification of the pushed correction and a fresh complete current-build route audit remain required.
 
@@ -121,3 +121,23 @@ JavaScript remains 690943 gzip bytes, within unchanged limits. The actual
 format decision is recorded in phase19-lossless-ranking-assets.md. Current
 all-route evidence and final hosted checks remain pending; no final completion
 or production deployment is claimed.
+
+The 491-record checkpoint publishes three source-scoped loaded ACE techniques
+and three exact USDA food matches. Separate FAO/UPOV naming proofs are bound to
+exact gourd composition mappings and approved source metadata before writes.
+All 270 mapped complete source records pass their downloaded payload pins;
+recipes and earlier food/exercise versions are preserved. Complete checks and
+coverage pass 314 tests in 83 files. The rebuilt six-page accessibility check
+passes 12/12 Chromium/WebKit cases; broader food, exercise and recovery workflows
+pass 20/20. Budgets remain unchanged: 692191 gzip JavaScript bytes and 419379 gzip
+public JSON bytes. Search has 619 public documents and 491 factual records.
+
+A Windows edit with implicit text encoding corrupted existing punctuation in
+recovery UI and a browser expectation. Hosted 5908552 Chromium reports 220
+passes and one recovery label failure. The affected UI is restored from the
+verified 9ed0cbe UTF-8 bytes, preserving the busy-fieldset fix; test text is also
+restored and subsequent edits use explicit UTF-8. Source payloads and pinned
+factual transcriptions are unaffected. The actual failure and rebuilt focused
+results are recorded in phase19-ci-utf8-correction.json. Full fresh hosted
+verification, current-build route evidence and remaining content work are still
+required. No completion tag, manual device test or deployment is claimed.

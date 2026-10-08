@@ -44,6 +44,9 @@ describe("exercise governance", () => {
       "exercise_single_leg_glute_bridge",
       "exercise_bird_dog",
       "exercise_lat_pulldown",
+      "exercise_back_squat",
+      "exercise_conventional_deadlift",
+      "exercise_goblet_squat",
     ]);
     expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
   });

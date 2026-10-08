@@ -95,7 +95,7 @@ test("food discovery filters, sourced publication and safe unknown profiles", as
   await page.goto("/foods/sources");
   await expect(
     page.getByText(
-      "258 source-backed foods and 267 machine-validated profiles",
+      "261 source-backed foods and 270 machine-validated profiles",
       {
         exact: false,
       },

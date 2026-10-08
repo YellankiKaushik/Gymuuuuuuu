@@ -2995,5 +2995,436 @@
       "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
     },
     "version": "1.0.0"
+  },
+  {
+    "id": "exercise_back_squat",
+    "slug": "back-squat",
+    "displayName": "Barbell back squat",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "advanced",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_squat"
+    ],
+    "equipmentIds": [
+      "equipment_barbell"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE rack-based barbell squat version places the bar across the upper back.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described hip extension; exercise involvement is not measured or ranked.",
+        "sourceIds": [
+          "ace_back_squat",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Set the bar in a rack below shoulder height. Position it across the upper back and grip wider than shoulder width.",
+        "Lift the chest and draw shoulder blades together. Unrack, step back and place feet slightly wider than shoulder width."
+      ],
+      "executionSteps": [
+        "Sit the hips back while keeping the chest raised and back straight; the guide describes lowering the hips below the knees.",
+        "Press the feet into the floor and move the hips forward to return to standing."
+      ],
+      "finishOrReset": "Return to the source-described starting position.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Keep the source-described chest and back position."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Departing from the source-described back position.",
+        "whyItMatters": "Technique differs from this guide; no injury probability is inferred.",
+        "correction": "Keep the source-described chest and back position.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_back_squat"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "These technique paragraphs do not establish sets, repetitions, duration, timed rest or breathing timing. Source-described depth and grip are contextual, not universal requirements.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_back_squat"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_back_squat_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/back-squat-cue.svg",
+        "alt": "Original sequence cue: Rack and upper-back setup, then Controlled squat descent, then Press feet and stand. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_back_squat",
+        "title": "ACE Back Squat",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/11/back-squat/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 11; inspected setup and movement paragraphs"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-08",
+        "notes": "Historical anatomical action only; exercise association is an explicitly limited anatomical inference, not measured muscle activation."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_conventional_deadlift",
+    "slug": "conventional-deadlift",
+    "displayName": "Conventional barbell deadlift",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "advanced",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_hinge"
+    ],
+    "equipmentIds": [
+      "equipment_barbell"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A floor-start barbell deadlift with the source-described mixed grip and controlled hip movement.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described hip extension; exercise involvement is not measured or ranked.",
+        "sourceIds": [
+          "ace_barbell_deadlift",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand behind the bar with feet about shoulder width, toes slightly outward and shins close to the bar.",
+        "Move the hips back, keep the back straight and chest raised, then take the guide's over-under grip."
+      ],
+      "executionSteps": [
+        "Grip firmly, press the feet into the floor and bring the hips forward while keeping the back flat. Finish standing tall with straight legs.",
+        "Return by moving weight toward the hips and bending the knees while keeping the back straight."
+      ],
+      "finishOrReset": "Return to the source-described starting position.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Maintain the source-described back position while moving the hips."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Departing from the source-described back position.",
+        "whyItMatters": "Technique differs from this guide; no injury probability is inferred.",
+        "correction": "Maintain the source-described back position while moving the hips.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_barbell_deadlift"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "These technique paragraphs do not establish sets, repetitions, duration, timed rest or breathing timing. Source-described depth and grip are contextual, not universal requirements.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_barbell_deadlift"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_conventional_deadlift_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/conventional-deadlift-cue.svg",
+        "alt": "Original sequence cue: Bar close to shins, then Press feet and stand, then Hips back to reset. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_barbell_deadlift",
+        "title": "ACE Deadlift",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/6/deadlift/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 6; inspected setup and movement paragraphs"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-08",
+        "notes": "Historical anatomical action only; exercise association is an explicitly limited anatomical inference, not measured muscle activation."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_goblet_squat",
+    "slug": "goblet-squat",
+    "displayName": "Goblet squat",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_squat"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE dumbbell version of a squat holds one weight vertically in front of the chest.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_gluteus_maximus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described hip extension; exercise involvement is not measured or ranked.",
+        "sourceIds": [
+          "ace_goblet_squat",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand about shoulder width and hold a dumbbell vertically in front of the chest."
+      ],
+      "executionSteps": [
+        "Keep elbows near the ribs and the back straight while lowering; the guide describes hips below knees.",
+        "Press both feet into the floor to return to standing."
+      ],
+      "finishOrReset": "Return to the source-described starting position.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Keep elbows close to the ribs and the back straight."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Departing from the source-described back position.",
+        "whyItMatters": "Technique differs from this guide; no injury probability is inferred.",
+        "correction": "Keep elbows close to the ribs and the back straight.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_goblet_squat"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load is inferred.",
+        "qualifier": "These technique paragraphs do not establish sets, repetitions, duration, timed rest or breathing timing. Source-described depth and grip are contextual, not universal requirements.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_goblet_squat"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_goblet_squat_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/goblet-squat-cue.svg",
+        "alt": "Original sequence cue: Dumbbell in front of chest, then Controlled squat descent, then Press feet and stand. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_goblet_squat",
+        "title": "ACE Goblet Squat",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 362; inspected setup and movement paragraphs"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-08",
+        "notes": "Historical anatomical action only; exercise association is an explicitly limited anatomical inference, not measured muscle activation."
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-07",
+        "notes": "Printed pages 42–43 general safety context only."
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
+    },
+    "version": "1.0.0"
   }
 ]

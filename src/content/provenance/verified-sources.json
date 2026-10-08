@@ -1922,5 +1922,110 @@
       "General public education, not an individualized treatment or athlete-performance protocol.",
       "Machine source verification only; no independent human/clinical review."
     ]
+  },
+  {
+    "id": "ace_back_squat",
+    "title": "ACE Back Squat",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/11/back-squat/",
+    "sourceVersion": "Exercise Library 11; inspected setup and movement paragraphs",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T02:12:07.207077Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_barbell_deadlift",
+    "title": "ACE Deadlift",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/6/deadlift/",
+    "sourceVersion": "Exercise Library 6; inspected setup and movement paragraphs",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T02:12:07.207077Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_goblet_squat",
+    "title": "ACE Goblet Squat",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/",
+    "sourceVersion": "Exercise Library 362; inspected setup and movement paragraphs",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T02:12:07.207077Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "original_ace_loaded_diagrams_v1",
+    "title": "Original loaded squat and deadlift sequence diagrams",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+    "sourceVersion": "1.0.0; three SVG files pinned in ace-loaded-exercise-snapshot.json",
+    "sourceDate": null,
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-08T02:12:07.207077Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "original_work",
+    "rightsReference": "Repository-created SVG sequence cues; no copied or traced third-party images. Not complete anatomical demonstrations.",
+    "limitations": [
+      "Read the complete source-linked technique and prerequisites; sequence cues are not personalised coaching.",
+      "Machine validation only; no independent human review."
+    ]
+  },
+  {
+    "id": "fao_bottle_gourd_identity",
+    "title": "FAO bottle gourd botanical and common names",
+    "publisher": "Food and Agriculture Organization of the United Nations",
+    "url": "https://www.fao.org/4/X5043E/x5043E07.htm",
+    "sourceVersion": "Minor oil crops; Bottle gourd, General, Common name / Botanical name / Other names",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-08T02:16:51.828303Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual naming paraphrase and linked attribution; no copied photographs, tables, bulk text or open licence claimed.",
+    "limitations": [
+      "Naming equivalence only; no FAO composition, seeds, agronomy or medical claims reused.",
+      "No independent human review; USDA source samples do not establish Indian cultivar composition."
+    ]
+  },
+  {
+    "id": "upov_ash_gourd_identity",
+    "title": "UPOV GENIE Benincasa hispida common names",
+    "publisher": "International Union for the Protection of New Varieties of Plants",
+    "url": "https://www.upov.int/genie/details.jsp?id=734",
+    "sourceVersion": "GENIE BENIN_HIS; English common names inspected",
+    "sourceDate": null,
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-08T02:16:51.828303Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Original brief factual naming paraphrase and linked attribution; no copied photographs, tables, bulk text or open licence claimed.",
+    "limitations": [
+      "Naming equivalence only; does not establish cultivar-specific nutrient composition or agronomic advice.",
+      "No independent human review; USDA source samples do not establish Indian cultivar composition."
+    ]
   }
 ]

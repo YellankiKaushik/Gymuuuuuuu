@@ -1,0 +1,22 @@
+[
+  {
+    "foodId": "food_bottle_gourd",
+    "fdcId": 169232,
+    "description": "Gourd, white-flowered (calabash), raw",
+    "sourceIds": [
+      "fao_bottle_gourd_identity"
+    ],
+    "rationale": "FAO common names identify bottle gourd with white-flowered/calabash gourd (Lagenaria siceraria). Naming reference only; no seed composition, agronomy or medical claim reproduced.",
+    "verifiedAt": "2026-10-08T03:12:46.015Z"
+  },
+  {
+    "foodId": "food_ash_gourd",
+    "fdcId": 170069,
+    "description": "Waxgourd, (chinese preserving melon), raw",
+    "sourceIds": [
+      "upov_ash_gourd_identity"
+    ],
+    "rationale": "UPOV GENIE identifies Benincasa hispida with English ash gourd, waxgourd and Chinese preserving melon names. Naming reference only; no cultivar-specific composition inferred.",
+    "verifiedAt": "2026-10-08T03:12:46.015Z"
+  }
+]

@@ -2708,5 +2708,38 @@
     "matchRationale": "Unsweetened, plain, shelf-stable soy milk sample. Not every soy beverage; no brand, fortification or serving volume is inferred. Source-specific US composition; cultivar and preparation variation limit generalisation.",
     "sourceSnapshotSha256": "c19a9886d2b35f732e04af1f71b6d7353dbe6e8cc5775e69d5961e8d55e59118",
     "verifiedAt": "2026-10-08T02:03:14.802Z"
+  },
+  {
+    "foodId": "food_red_onion",
+    "fdcId": 790577,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Onions, red, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Exact red onion raw sample; no cooked state or Indian cultivar composition inferred. Source-specific US composition; cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "e3382fb9aa72dc097ec313ea45e00bb4f498c2927520b158094742d3ef2e6aef",
+    "verifiedAt": "2026-10-08T03:12:46.015Z"
+  },
+  {
+    "foodId": "food_bottle_gourd",
+    "fdcId": 169232,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Gourd, white-flowered (calabash), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "FAO common names identify bottle gourd with white-flowered/calabash gourd (Lagenaria siceraria). Naming reference only; no seed composition, agronomy or medical claim reproduced. Source-specific US composition; cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "32efc625c04f5236716a087a2ce3844880e68f465e28b4ae9fa34849c91f2dc3",
+    "verifiedAt": "2026-10-08T03:12:46.015Z"
+  },
+  {
+    "foodId": "food_ash_gourd",
+    "fdcId": 170069,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Waxgourd, (chinese preserving melon), raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "UPOV GENIE identifies Benincasa hispida with English ash gourd, waxgourd and Chinese preserving melon names. Naming reference only; no cultivar-specific composition inferred. Source-specific US composition; cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "77fc2eb5a91c39b684be049a8eef40862ae04db595816e654cac7a2b9302a6ce",
+    "verifiedAt": "2026-10-08T03:12:46.015Z"
   }
 ]

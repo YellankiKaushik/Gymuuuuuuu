@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-10-08T02:12:07.207077Z",
+  "definitionsSha256": "a7351e58b06951d7de952be166e7236130ae62079cc8926ec1705f474cfd1025",
+  "sourcesSha256": "321be3a304ee88cd8a24ab5881dfb480539f17275cdbf8f1934ecc41d5e02010",
+  "recordIds": [
+    "exercise_back_squat",
+    "exercise_conventional_deadlift",
+    "exercise_goblet_squat"
+  ],
+  "mediaHashes": {
+    "/media/back-squat-cue.svg": "cc889110bb4142292229310189772d0db8b59bdb47d9054117acc46c6b77fc7a",
+    "/media/conventional-deadlift-cue.svg": "854354e77bf6a81d8b5c1adc6cf9018e40a10861368ec0c59ed6bb17e3903ded",
+    "/media/goblet-squat-cue.svg": "9aed758dba9fdc87a21f706854fe68434c02ae278e114a9d30c60dfd9a0146ea"
+  },
+  "reviewMethod": "Inspected primary ACE technique paragraphs; brief original factual paraphrases, explicitly inferred historical anatomical relationship, original sequence cues and machine validation; no independent human review."
+}

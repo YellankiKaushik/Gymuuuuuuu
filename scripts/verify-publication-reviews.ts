@@ -16,6 +16,15 @@ import foodJson from "../src/content/foods/records.json";
 import nutrientJson from "../src/content/nutrients/records.json";
 import sources from "../src/content/provenance/verified-sources.json";
 import { foodSchema } from "../src/features/foods/schema";
+import { verifyFoodIdentityMatches } from "./content/food-identity-matches";
+import identityMatchesJson from "../src/content/provenance/food-identity-matches.json";
+import mappingJson from "../src/content/provenance/food-mappings.json";
+const identityMatches = verifyFoodIdentityMatches(
+  identityMatchesJson,
+  mappingJson,
+  sources,
+  new Date().toISOString(),
+);
 const records: {
   module: string;
   id: string;
@@ -41,6 +50,9 @@ for (const food of verifiedFoodRecords.filter((f) => f.status === "published"))
     id: food.id,
     slug: food.slug,
     fields: [
+      ...identityMatches
+        .filter((match) => match.foodId === food.id)
+        .map((match) => field(`identity.fdc_${match.fdcId}`, match.sourceIds)),
       ...(food.id === "food_green_gram"
         ? [field("identity", ["tnau_green_gram_identity"])]
         : []),
@@ -300,31 +312,37 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
         [
           r.id === "exercise_dumbbell_curl"
             ? "original_curl_diagram_v1"
-            : ["exercise_push_up", "exercise_knee_push_up"].includes(r.id)
-              ? "original_pushup_diagrams_v1"
-              : r.id === "exercise_single_leg_calf_raise"
-                ? "original_calf_diagram_v1"
-                : [
-                      "exercise_glute_bridge",
-                      "exercise_single_leg_glute_bridge",
-                      "exercise_bird_dog",
-                      "exercise_lat_pulldown",
-                    ].includes(r.id)
-                  ? "original_ace_four_diagrams_v1"
+            : [
+                  "exercise_back_squat",
+                  "exercise_conventional_deadlift",
+                  "exercise_goblet_squat",
+                ].includes(r.id)
+              ? "original_ace_loaded_diagrams_v1"
+              : ["exercise_push_up", "exercise_knee_push_up"].includes(r.id)
+                ? "original_pushup_diagrams_v1"
+                : r.id === "exercise_single_leg_calf_raise"
+                  ? "original_calf_diagram_v1"
                   : [
-                        "exercise_bodyweight_squat",
-                        "exercise_one_arm_dumbbell_row",
-                        "exercise_incline_push_up",
-                        "exercise_standing_calf_raise",
+                        "exercise_glute_bridge",
+                        "exercise_single_leg_glute_bridge",
+                        "exercise_bird_dog",
+                        "exercise_lat_pulldown",
                       ].includes(r.id)
-                    ? "original_foundation_diagrams_v1"
+                    ? "original_ace_four_diagrams_v1"
                     : [
-                          "exercise_dumbbell_bench_press",
-                          "exercise_forward_lunge",
-                          "exercise_dumbbell_romanian_deadlift",
+                          "exercise_bodyweight_squat",
+                          "exercise_one_arm_dumbbell_row",
+                          "exercise_incline_push_up",
+                          "exercise_standing_calf_raise",
                         ].includes(r.id)
-                      ? "original_ace_next_diagrams_v1"
-                      : "original_strength_diagrams_v1",
+                      ? "original_foundation_diagrams_v1"
+                      : [
+                            "exercise_dumbbell_bench_press",
+                            "exercise_forward_lunge",
+                            "exercise_dumbbell_romanian_deadlift",
+                          ].includes(r.id)
+                        ? "original_ace_next_diagrams_v1"
+                        : "original_strength_diagrams_v1",
         ],
         "original_authorship",
       ),

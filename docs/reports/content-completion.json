@@ -16,8 +16,8 @@
     {
       "module": "exercises",
       "totalIdentities": 184,
-      "publishedIdentities": 20,
-      "draftIdentities": 164,
+      "publishedIdentities": 23,
+      "draftIdentities": 161,
       "blockedIdentities": [
         {
           "id": "exercise_barbell_bench_press",
@@ -517,22 +517,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "exercise_back_squat",
-          "slug": "back-squat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "exercise_front_squat",
           "slug": "front-squat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_goblet_squat",
-          "slug": "goblet-squat",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -631,13 +617,6 @@
         {
           "id": "exercise_sissy_squat",
           "slug": "sissy-squat",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_conventional_deadlift",
-          "slug": "conventional-deadlift",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2055,8 +2034,8 @@
     {
       "module": "foods",
       "totalIdentities": 342,
-      "publishedIdentities": 258,
-      "draftIdentities": 84,
+      "publishedIdentities": 261,
+      "draftIdentities": 81,
       "blockedIdentities": [
         {
           "id": "food_custard_apple",
@@ -2108,13 +2087,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_bottle_gourd",
-          "slug": "bottle-gourd",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_ridge_gourd",
           "slug": "ridge-gourd",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2136,13 +2108,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_ash_gourd",
-          "slug": "ash-gourd",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_ivy_gourd",
           "slug": "ivy-gourd",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2152,13 +2117,6 @@
         {
           "id": "food_pointed_gourd",
           "slug": "pointed-gourd",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_red_onion",
-          "slug": "red-onion",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6666,9 +6624,9 @@
     },
     {
       "module": "exercises",
-      "published": 20,
-      "withPublicationProvenance": 20,
-      "inSearch": 20,
+      "published": 23,
+      "withPublicationProvenance": 23,
+      "inSearch": 23,
       "missingSourceProvenance": []
     },
     {
@@ -6687,9 +6645,9 @@
     },
     {
       "module": "foods",
-      "published": 258,
-      "withPublicationProvenance": 258,
-      "inSearch": 258,
+      "published": 261,
+      "withPublicationProvenance": 261,
+      "inSearch": 261,
       "missingSourceProvenance": []
     },
     {
@@ -6747,7 +6705,7 @@
     },
     {
       "module": "exercises",
-      "eligiblePublishedRecords": 20,
+      "eligiblePublishedRecords": 23,
       "families": [
         "exercises"
       ],
@@ -6772,7 +6730,7 @@
     },
     {
       "module": "foods",
-      "eligiblePublishedRecords": 258,
+      "eligiblePublishedRecords": 261,
       "families": [
         "foods"
       ],
@@ -7713,6 +7671,54 @@
           "assets": [
             {
               "url": "/media/lat-pulldown-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_back_squat",
+          "assets": [
+            {
+              "url": "/media/back-squat-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_conventional_deadlift",
+          "assets": [
+            {
+              "url": "/media/conventional-deadlift-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_goblet_squat",
+          "assets": [
+            {
+              "url": "/media/goblet-squat-cue.svg",
               "creator": "Fitness OS / Codex original SVG",
               "licence": "Original project artwork; repository-owned",
               "reviewDate": "2026-10-08",
@@ -10005,6 +10011,30 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_red_onion",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_bottle_gourd",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_ash_gourd",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10954,10 +10984,10 @@
     },
     {
       "module": "exercises",
-      "missingVerifiedFactualRecords": 164,
+      "missingVerifiedFactualRecords": 161,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 20,
+      "independentHumanReviewPending": 23,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -10982,9 +11012,9 @@
     {
       "module": "foods",
       "missingVerifiedFactualRecords": 0,
-      "missingDatasetMappings": 84,
+      "missingDatasetMappings": 81,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 258,
+      "independentHumanReviewPending": 261,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12637,6 +12667,93 @@
         "General public education, not an individualized treatment or athlete-performance protocol.",
         "Machine source verification only; no independent human/clinical review."
       ]
+    },
+    {
+      "id": "ace_back_squat",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/11/back-squat/",
+      "version": "Exercise Library 11; inspected setup and movement paragraphs",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T02:12:07.207077Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_barbell_deadlift",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/6/deadlift/",
+      "version": "Exercise Library 6; inspected setup and movement paragraphs",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T02:12:07.207077Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_goblet_squat",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/",
+      "version": "Exercise Library 362; inspected setup and movement paragraphs",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T02:12:07.207077Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique, not universal suitability, activation measurements or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "original_ace_loaded_diagrams_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+      "version": "1.0.0; three SVG files pinned in ace-loaded-exercise-snapshot.json",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-08T02:12:07.207077Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Repository-created SVG sequence cues; no copied or traced third-party images. Not complete anatomical demonstrations.",
+      "limitations": [
+        "Read the complete source-linked technique and prerequisites; sequence cues are not personalised coaching.",
+        "Machine validation only; no independent human review."
+      ]
+    },
+    {
+      "id": "fao_bottle_gourd_identity",
+      "url": "https://www.fao.org/4/X5043E/x5043E07.htm",
+      "version": "Minor oil crops; Bottle gourd, General, Common name / Botanical name / Other names",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T02:16:51.828303Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "government_reference",
+      "rightsReference": "Original brief factual naming paraphrase and linked attribution; no copied photographs, tables, bulk text or open licence claimed.",
+      "limitations": [
+        "Naming equivalence only; no FAO composition, seeds, agronomy or medical claims reused.",
+        "No independent human review; USDA source samples do not establish Indian cultivar composition."
+      ]
+    },
+    {
+      "id": "upov_ash_gourd_identity",
+      "url": "https://www.upov.int/genie/details.jsp?id=734",
+      "version": "GENIE BENIN_HIS; English common names inspected",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T02:16:51.828303Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "government_reference",
+      "rightsReference": "Original brief factual naming paraphrase and linked attribution; no copied photographs, tables, bulk text or open licence claimed.",
+      "limitations": [
+        "Naming equivalence only; does not establish cultivar-specific nutrient composition or agronomic advice.",
+        "No independent human review; USDA source samples do not establish Indian cultivar composition."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -13946,10 +14063,10 @@
     "src/features/supplements\\export.ts",
     "src/features/workout-tracker\\backup.ts"
   ],
-  "foodProfiles": 267,
-  "numericFoodValues": 9846,
+  "foodProfiles": 270,
+  "numericFoodValues": 9934,
   "numericCoverage": {
-    "foodRecordsWithComposition": 258,
+    "foodRecordsWithComposition": 261,
     "nutrientArticlesWithReferenceRows": 35,
     "nutrientReferenceRows": 35,
     "publicRecipesWithCalculatedNutrition": 24,
@@ -13961,8 +14078,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 613,
-    "factualRecords": 485
+    "documents": 619,
+    "factualRecords": 491
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -14236,7 +14353,10 @@
     "food_chicken_thigh",
     "food_chicken_drumstick",
     "food_milkfish",
-    "food_soy_beverage_unsweetened"
+    "food_soy_beverage_unsweetened",
+    "food_red_onion",
+    "food_bottle_gourd",
+    "food_ash_gourd"
   ],
   "missingMedia": [
     {
@@ -16005,6 +16125,21 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "foods",
+      "id": "food_red_onion",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_bottle_gourd",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_ash_gourd",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "nutrients",
       "id": "iron_mg",
       "instructionalMediaRequired": false
@@ -16569,11 +16704,11 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T03:04:55.352Z",
-    "expected": 667,
+    "buildDate": "2026-10-08T03:17:20.957Z",
+    "expected": 673,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 667,
+    "unmeasured": 673,
     "ignoredStaleReports": 667,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -18208,6 +18343,24 @@
       },
       {
         "path": "/exercises/lat-pulldown",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/back-squat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/conventional-deadlift",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/goblet-squat",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
@@ -19906,6 +20059,24 @@
       },
       {
         "path": "/foods/soy-beverage-unsweetened",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/red-onion",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/bottle-gourd",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/ash-gourd",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
