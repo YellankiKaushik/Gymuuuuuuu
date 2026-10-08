@@ -3426,5 +3426,723 @@
       "notes": "Machine source verification only. Anatomical exercise relationship is an explicit inference; no activation measurement or numeric training prescription. The future due date is a repository maintenance reminder, not a performed review."
     },
     "version": "1.0.0"
+  },
+  {
+    "id": "exercise_machine_chest_press",
+    "slug": "machine-chest-press",
+    "displayName": "Machine chest press",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "beginner",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_horizontal_push"
+    ],
+    "equipmentIds": [
+      "equipment_machine_selectorized"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A supported seated selectorized chest press, following the ACE version.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_pectoralis_major",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_machine_chest_press",
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Adjust the seat for handles at mid-chest, no deeper than the front of the chest. Support the back and plant the feet.",
+        "Take a closed grip with wrists aligned to forearms; brace the abdomen and keep shoulder blades against the backrest."
+      ],
+      "executionSteps": [
+        "Press slowly while exhaling, keeping wrists aligned and avoiding an increased low-back arch.",
+        "Extend elbows without locking, pause briefly, then return slowly. Keep the shoulder blades supported."
+      ],
+      "finishOrReset": "Return to the source-described starting position under control.",
+      "breathing": "Exhale gently during the press; the guide does not specify return-phase breathing.",
+      "keyCheckpoints": [
+        "Keep the shoulder blades against the backrest."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Lifting the shoulder blades away from the backrest during this supported version.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Keep the shoulder blades against the backrest.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_machine_chest_press"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_machine_chest_press"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_machine_chest_press_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/machine-chest-press-cue.svg",
+        "alt": "Original sequence cue: Adjust supported seat, then Controlled supported press, then Return slowly. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_machine_chest_press",
+        "title": "ACE Seated Chest Press",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/188/seated-chest-press/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 188; inspected written setup and movement instructions"
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-05",
+        "notes": "1918 historical edition; pp. 432–442"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_seated_cable_row",
+    "slug": "seated-cable-row",
+    "displayName": "Seated cable row",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "beginner",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_horizontal_pull"
+    ],
+    "equipmentIds": [
+      "equipment_cable"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE narrow-handle seated pulley row version.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_biceps_brachii",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_cable_seated_row",
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Use a seated pulley machine with a narrow handle, feet on the floor, knees bent and back straight."
+      ],
+      "executionSteps": [
+        "Raise the chest and pull elbows back near the ribs until the handle reaches the front of the stomach.",
+        "Pause for one second, then straighten the arms slowly to return."
+      ],
+      "finishOrReset": "Return to the source-described starting position under control.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Maintain the source-described straight-back position."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Departing from the source-described straight-back position.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Maintain the source-described straight-back position.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_cable_seated_row"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_cable_seated_row"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_seated_cable_row_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/seated-cable-row-cue.svg",
+        "alt": "Original sequence cue: Seated narrow handle, then Pull elbows near ribs, then Pause then return. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_cable_seated_row",
+        "title": "ACE Seated Row (cable)",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/48/seated-row/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 48; inspected written setup and movement instructions"
+      },
+      {
+        "id": "gray_1918_upper_arm",
+        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-05",
+        "notes": "1918 historical edition; pp. 443–445"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_lying_leg_curl",
+    "slug": "lying-leg-curl",
+    "displayName": "Lying leg curl",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "beginner",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_knee_flexion"
+    ],
+    "equipmentIds": [
+      "equipment_machine_selectorized"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE prone selectorized curl version; pad placement and endpoints depend on this machine guide.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_semitendinosus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_lying_hamstrings_curl",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Lie prone with the knee joint aligned to the machine pivot. Place pads against the lower third of the lower legs, away from the heel.",
+        "Hold available handles, brace the abdomen and keep the low back steady."
+      ],
+      "executionSteps": [
+        "Exhale while bending knees and drawing pads toward the buttocks without arching the back.",
+        "The guide offers endpoints of knees bent beyond a right angle, lower legs vertical, or pads near the buttocks. Pause briefly and return under control."
+      ],
+      "finishOrReset": "Return to the source-described starting position under control.",
+      "breathing": "Exhale slowly during knee flexion; the guide does not specify return-phase breathing.",
+      "keyCheckpoints": [
+        "Keep the low back steady; reduce resistance if that position cannot be controlled."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Arching the low back during the curl.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Keep the low back steady; reduce resistance if that position cannot be controlled.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_lying_hamstrings_curl"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_lying_hamstrings_curl"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_lying_leg_curl_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/lying-leg-curl-cue.svg",
+        "alt": "Original sequence cue: Align knee and pivot, then Controlled knee flexion, then Pause then lower. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_lying_hamstrings_curl",
+        "title": "ACE Lying Hamstrings Curl",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/153/lying-hamstrings-curl/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 153; inspected written setup and movement instructions"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "1918 historical edition; pp. 470–483"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_seated_leg_curl",
+    "slug": "seated-leg-curl",
+    "displayName": "Seated leg curl",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_knee_flexion"
+    ],
+    "equipmentIds": [
+      "equipment_machine_selectorized"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A seated machine curl described in an ACE laboratory report in resistance-experienced adults.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_semitendinosus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_hamstrings_2018_techniques",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Support lower legs on the padded lever, secure the thigh pad above the knees and hold the handles. Begin with legs extended forward."
+      ],
+      "executionSteps": [
+        "Bend knees to draw the weight toward the backs of the thighs while keeping the torso still.",
+        "Return slowly after reaching the source-described endpoint."
+      ],
+      "finishOrReset": "Return to the source-described starting position under control.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Keep the torso still."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Moving the torso during the source-described curl.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Keep the torso still.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_hamstrings_2018_techniques"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion. Source participants were 16 resistance-experienced adults aged 20-25; no EMG winner, equivalence or personal loading recommendation is inferred.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_hamstrings_2018_techniques"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_seated_leg_curl_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/seated-leg-curl-cue.svg",
+        "alt": "Original sequence cue: Secure machine pads, then Bend knees, torso still, then Return slowly. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_hamstrings_2018_techniques",
+        "title": "ACE Certified February 2018: hamstrings study, selected exercise descriptions",
+        "publisher": "American Council on Exercise; Schmitt, Porcari and colleagues",
+        "sourceType": "professional-technique-guide",
+        "url": "https://contentcdn.eacefitness.com/February2018/ACE_HamstringsStudy.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-08",
+        "notes": "ACE Certified February 2018; page 3 exercise descriptions 2 and 8; participant context on page 2"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "1918 historical edition; pp. 470–483"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_stability_ball_leg_curl",
+    "slug": "stability-ball-leg-curl",
+    "displayName": "Stability-ball leg curl",
+    "aliases": [],
+    "exerciseType": "bodyweight-strength",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_knee_flexion",
+      "pattern_hinge"
+    ],
+    "equipmentIds": [
+      "equipment_stability_ball"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A supine stability-ball curl described in the same ACE laboratory report.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_semitendinosus",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_hamstrings_2018_techniques",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Lie supine with heels on a stability ball and arms spread for support. Raise hips into line with shoulders."
+      ],
+      "executionSteps": [
+        "Bend knees to roll the ball toward the hips until soles rest on it, maintaining hip alignment.",
+        "Roll the ball away slowly to extend the knees."
+      ],
+      "finishOrReset": "Return to the source-described starting position under control.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Maintain hips in line with the shoulders."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Losing the source-described hip alignment.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Maintain hips in line with the shoulders.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_hamstrings_2018_techniques"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion. Source participants were 16 resistance-experienced adults aged 20-25; no EMG winner, equivalence or personal loading recommendation is inferred.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_hamstrings_2018_techniques"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_stability_ball_leg_curl_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/stability-ball-leg-curl-cue.svg",
+        "alt": "Original sequence cue: Heels on ball, hips raised, then Roll ball toward hips, then Roll away slowly. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_hamstrings_2018_techniques",
+        "title": "ACE Certified February 2018: hamstrings study, selected exercise descriptions",
+        "publisher": "American Council on Exercise; Schmitt, Porcari and colleagues",
+        "sourceType": "professional-technique-guide",
+        "url": "https://contentcdn.eacefitness.com/February2018/ACE_HamstringsStudy.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-08",
+        "notes": "ACE Certified February 2018; page 3 exercise descriptions 2 and 8; participant context on page 2"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "1918 historical edition; pp. 470–483"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
   }
 ]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ace_machine_chest_press",
+    "title": "ACE Seated Chest Press",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/188/seated-chest-press/",
+    "sourceVersion": "Exercise Library 188; inspected written setup and movement instructions",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T07:11:18Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific machine or attachment version; not universal suitability, activation measurement or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_cable_seated_row",
+    "title": "ACE Seated Row (cable)",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/48/seated-row/",
+    "sourceVersion": "Exercise Library 48; inspected written setup and movement instructions",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T07:11:18Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific machine or attachment version; not universal suitability, activation measurement or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_lying_hamstrings_curl",
+    "title": "ACE Lying Hamstrings Curl",
+    "publisher": "American Council on Exercise",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/153/lying-hamstrings-curl/",
+    "sourceVersion": "Exercise Library 153; inspected written setup and movement instructions",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T07:11:18Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "Source-specific machine or attachment version; not universal suitability, activation measurement or individual programming.",
+      "Exact publication date unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "ace_hamstrings_2018_techniques",
+    "title": "ACE Certified February 2018: hamstrings study, selected exercise descriptions",
+    "publisher": "American Council on Exercise; Schmitt, Porcari and colleagues",
+    "url": "https://contentcdn.eacefitness.com/February2018/ACE_HamstringsStudy.pdf",
+    "sourceVersion": "ACE Certified February 2018; page 3 exercise descriptions 2 and 8; participant context on page 2",
+    "sourceDate": null,
+    "evidenceType": "professional_summary",
+    "extractedAt": "2026-10-08T07:11:18Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+    "limitations": [
+      "The source describes a laboratory protocol in 16 resistance-experienced adults aged 20-25, not an individually assessed training plan.",
+      "Only seated-machine and stability-ball curl setup/movement descriptions are extracted. EMG rankings, activation percentages, loading protocol and claims of interchangeability are not published.",
+      "Publication month is February 2018; exact day unavailable.",
+      "No independent human or clinical review."
+    ]
+  },
+  {
+    "id": "original_ace_machine_diagrams_v1",
+    "title": "Original machine and curl sequence cues",
+    "publisher": "Fitness OS repository",
+    "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+    "sourceVersion": "1.0.0; original sequence boxes and text, no traced source figures",
+    "sourceDate": "2026-10-08",
+    "evidenceType": "original_repository_work",
+    "extractedAt": "2026-10-08T07:11:18Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "original_work",
+    "rightsReference": "Original repository artwork created for Fitness OS; no third-party illustrations copied.",
+    "limitations": [
+      "Sequence cues are not anatomical models or complete technique demonstrations.",
+      "Machine comparison with sourced steps only; no independent human review."
+    ]
+  }
+]

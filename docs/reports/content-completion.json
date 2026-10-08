@@ -16,8 +16,8 @@
     {
       "module": "exercises",
       "totalIdentities": 184,
-      "publishedIdentities": 23,
-      "draftIdentities": 161,
+      "publishedIdentities": 28,
+      "draftIdentities": 156,
       "blockedIdentities": [
         {
           "id": "exercise_barbell_bench_press",
@@ -43,13 +43,6 @@
         {
           "id": "exercise_decline_barbell_bench_press",
           "slug": "decline-barbell-bench-press",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_machine_chest_press",
-          "slug": "machine-chest-press",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -127,13 +120,6 @@
         {
           "id": "exercise_chest_supported_dumbbell_row",
           "slug": "chest-supported-dumbbell-row",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_seated_cable_row",
-          "slug": "seated-cable-row",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -692,20 +678,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "exercise_lying_leg_curl",
-          "slug": "lying-leg-curl",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_seated_leg_curl",
-          "slug": "seated-leg-curl",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "exercise_standing_leg_curl",
           "slug": "standing-leg-curl",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -715,13 +687,6 @@
         {
           "id": "exercise_nordic_hamstring_curl",
           "slug": "nordic-hamstring-curl",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_stability_ball_leg_curl",
-          "slug": "stability-ball-leg-curl",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6561,9 +6526,9 @@
     },
     {
       "module": "exercises",
-      "published": 23,
-      "withPublicationProvenance": 23,
-      "inSearch": 23,
+      "published": 28,
+      "withPublicationProvenance": 28,
+      "inSearch": 28,
       "missingSourceProvenance": []
     },
     {
@@ -6642,7 +6607,7 @@
     },
     {
       "module": "exercises",
-      "eligiblePublishedRecords": 23,
+      "eligiblePublishedRecords": 28,
       "families": [
         "exercises"
       ],
@@ -7656,6 +7621,86 @@
           "assets": [
             {
               "url": "/media/goblet-squat-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_machine_chest_press",
+          "assets": [
+            {
+              "url": "/media/machine-chest-press-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_seated_cable_row",
+          "assets": [
+            {
+              "url": "/media/seated-cable-row-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_lying_leg_curl",
+          "assets": [
+            {
+              "url": "/media/lying-leg-curl-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_seated_leg_curl",
+          "assets": [
+            {
+              "url": "/media/seated-leg-curl-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_stability_ball_leg_curl",
+          "assets": [
+            {
+              "url": "/media/stability-ball-leg-curl-cue.svg",
               "creator": "Fitness OS / Codex original SVG",
               "licence": "Original project artwork; repository-owned",
               "reviewDate": "2026-10-08",
@@ -10993,10 +11038,10 @@
     },
     {
       "module": "exercises",
-      "missingVerifiedFactualRecords": 161,
+      "missingVerifiedFactualRecords": 156,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 23,
+      "independentHumanReviewPending": 28,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12870,6 +12915,81 @@
         "Study populations, products and short durations constrain conclusions; absent reported adverse effects do not prove long-term safety.",
         "No personal dose, product approval, jurisdictional permission, certification or current anti-doping status is established."
       ]
+    },
+    {
+      "id": "ace_machine_chest_press",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/188/seated-chest-press/",
+      "version": "Exercise Library 188; inspected written setup and movement instructions",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T07:11:18Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific machine or attachment version; not universal suitability, activation measurement or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_cable_seated_row",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/48/seated-row/",
+      "version": "Exercise Library 48; inspected written setup and movement instructions",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T07:11:18Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific machine or attachment version; not universal suitability, activation measurement or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_lying_hamstrings_curl",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/153/lying-hamstrings-curl/",
+      "version": "Exercise Library 153; inspected written setup and movement instructions",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T07:11:18Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific machine or attachment version; not universal suitability, activation measurement or individual programming.",
+        "Exact publication date unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_hamstrings_2018_techniques",
+      "url": "https://contentcdn.eacefitness.com/February2018/ACE_HamstringsStudy.pdf",
+      "version": "ACE Certified February 2018; page 3 exercise descriptions 2 and 8; participant context on page 2",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T07:11:18Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual paraphrase with linked attribution. No copied images, tables, text blocks or traced artwork. ACE retains copyright; no open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "The source describes a laboratory protocol in 16 resistance-experienced adults aged 20-25, not an individually assessed training plan.",
+        "Only seated-machine and stability-ball curl setup/movement descriptions are extracted. EMG rankings, activation percentages, loading protocol and claims of interchangeability are not published.",
+        "Publication month is February 2018; exact day unavailable.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "original_ace_machine_diagrams_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+      "version": "1.0.0; original sequence boxes and text, no traced source figures",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-08T07:11:18Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository artwork created for Fitness OS; no third-party illustrations copied.",
+      "limitations": [
+        "Sequence cues are not anatomical models or complete technique demonstrations.",
+        "Machine comparison with sourced steps only; no independent human review."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -14152,15 +14272,20 @@
     "__root.tsx"
   ],
   "implementedTrackers": [
-    "src/features/cardio\\workspace.tsx",
-    "src/features/nutrition-tracker\\workspace.tsx",
-    "src/features/progress\\workspace.tsx",
-    "src/features/recovery\\workspace.tsx",
-    "src/features/supplements\\workspace.tsx"
+    "src/features/cardio/workspace.tsx",
+    "src/features/nutrition-tracker/workspace.tsx",
+    "src/features/progress/workspace.tsx",
+    "src/features/recovery/workspace.tsx",
+    "src/features/supplements/workspace.tsx",
+    "src/features/workout-tracker/editor.tsx",
+    "src/features/workout-tracker/history.tsx",
+    "src/features/workout-tracker/start.tsx"
   ],
   "implementedCalculators": [
-    "src/features/cardio\\calculator-pages.tsx",
-    "src/features/diet-planning\\domain.ts"
+    "src/features/cardio/calculations.ts",
+    "src/features/cardio/calculator-pages.tsx",
+    "src/features/diet-planning/domain.ts",
+    "src/features/nutrients/calculations.ts"
   ],
   "localDatabases": [
     "fitness-os",
@@ -14172,12 +14297,12 @@
     "fitness-os-supplements-evidence"
   ],
   "implementedExportsAndBackupRestore": [
-    "src/features/cardio\\export.ts",
-    "src/features/data-management\\page.tsx",
-    "src/features/data-management\\service.ts",
-    "src/features/recovery\\export.ts",
-    "src/features/supplements\\export.ts",
-    "src/features/workout-tracker\\backup.ts"
+    "src/features/cardio/export.ts",
+    "src/features/data-management/page.tsx",
+    "src/features/data-management/service.ts",
+    "src/features/recovery/export.ts",
+    "src/features/supplements/export.ts",
+    "src/features/workout-tracker/backup.ts"
   ],
   "foodProfiles": 270,
   "numericFoodValues": 9934,
@@ -14194,8 +14319,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 628,
-    "factualRecords": 500
+    "documents": 633,
+    "factualRecords": 505
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -16865,12 +16990,12 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T06:57:57.799Z",
-    "expected": 682,
+    "buildDate": "2026-10-08T07:30:56.968Z",
+    "expected": 687,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 682,
-    "ignoredStaleReports": 667,
+    "unmeasured": 687,
+    "ignoredStaleReports": 682,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
       "No manual devices, screen-reader interaction, print output or complete interactive-state traversal is claimed."
@@ -18522,6 +18647,36 @@
       },
       {
         "path": "/exercises/goblet-squat",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/machine-chest-press",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/seated-cable-row",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/lying-leg-curl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/seated-leg-curl",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/stability-ball-leg-curl",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

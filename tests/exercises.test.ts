@@ -47,6 +47,11 @@ describe("exercise governance", () => {
       "exercise_back_squat",
       "exercise_conventional_deadlift",
       "exercise_goblet_squat",
+      "exercise_machine_chest_press",
+      "exercise_seated_cable_row",
+      "exercise_lying_leg_curl",
+      "exercise_seated_leg_curl",
+      "exercise_stability_ball_leg_curl",
     ]);
     expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
   });

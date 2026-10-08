@@ -158,6 +158,7 @@ const routes = [...full.matchAll(/'([^']+)': typeof /g)].map((m) => m[1]!);
 const routeFiles = readdirSync("src/routes").filter((f) => f.endsWith(".tsx"));
 const featureFiles = readdirSync("src/features", { recursive: true })
   .map(String)
+  .map((path) => path.replaceAll("\\", "/"))
   .filter((f) => f.endsWith(".ts") || f.endsWith(".tsx"));
 const features = (pattern: RegExp) =>
   featureFiles.filter((f) => pattern.test(f)).map((f) => `src/features/${f}`);
@@ -324,9 +325,11 @@ const report = {
   })),
   routeFiles,
   implementedTrackers: features(
-    /(workout|nutrition|progress|recovery|cardio|supplements).*workspace/,
+    /(?:workout-tracker\/(?:start|editor|history)|(?:nutrition-tracker|progress|recovery|cardio|supplements)\/workspace)\.tsx$/,
   ),
-  implementedCalculators: features(/calculator|diet-planning.*domain/),
+  implementedCalculators: features(
+    /calculator|calculations\.ts$|diet-planning\/domain\.ts$/,
+  ),
   localDatabases: appDatabaseNames,
   implementedExportsAndBackupRestore: features(
     /(data-management|backup|export|csv|restore|portability)/,

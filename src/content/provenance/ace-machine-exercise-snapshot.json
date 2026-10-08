@@ -1,0 +1,20 @@
+{
+  "extractedAt": "2026-10-08T07:11:18Z",
+  "definitionsSha256": "25c73ff5c5fae7f38166d807235119183fc4e566d119389ebbad41b1966b07de",
+  "sourcesSha256": "196f5b5d9ee25444ff87fd1ed6db3e1ee00efea0d0bbf00837218325d7d8a8b8",
+  "recordIds": [
+    "exercise_machine_chest_press",
+    "exercise_seated_cable_row",
+    "exercise_lying_leg_curl",
+    "exercise_seated_leg_curl",
+    "exercise_stability_ball_leg_curl"
+  ],
+  "mediaHashes": {
+    "/media/machine-chest-press-cue.svg": "e51e93bb2baa939eaf7a70c82d07798eea009d67b68dbfb17b80bc8147de5e3c",
+    "/media/seated-cable-row-cue.svg": "0d7943a705a27145b6a34b6db2ae45a70dc1b2c11c1f997fd3716f8764e3e592",
+    "/media/lying-leg-curl-cue.svg": "517370ab1d1ae3e5d9ec9f9a544d704c36fa38e049e35efc86a8db8ab1ee12d3",
+    "/media/seated-leg-curl-cue.svg": "ad8e7dd1819eb09ed5ee405b462cd3d4f7cc5aae04cbc208198e3e987bb5d475",
+    "/media/stability-ball-leg-curl-cue.svg": "75981a2a75de8385443337980d6f6b95b4a50a6802c0fb378ae0fb0a784fb1ae"
+  },
+  "reviewMethod": "Inspected primary ACE written exercise guides and selected laboratory technique descriptions; brief original factual paraphrases, explicitly limited anatomical inferences and original sequence cues; machine validation required before publication; no independent human review."
+}

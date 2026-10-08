@@ -1,0 +1,226 @@
+[
+  {
+    "exerciseId": "exercise_dumbbell_curl",
+    "version": "1.0.0",
+    "mediaId": "diagram_curl_elbow_flexion_v1",
+    "url": "/media/curl-elbow-flexion.svg",
+    "sha256": "5781311cd0925c02b499d8b7beb5fe1bacff50d655bcf97b3e36cf071d594081",
+    "sourceId": "original_curl_diagram_v1"
+  },
+  {
+    "exerciseId": "exercise_dumbbell_lateral_raise",
+    "version": "1.0.0",
+    "mediaId": "diagram_dumbbell_lateral_raise_v1",
+    "url": "/media/dumbbell-lateral-raise.svg",
+    "sha256": "314451435f2530185c349b1fe783d06f9102dcd453cc4cfde6e3d8a2fe2ff041",
+    "sourceId": "original_strength_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_dumbbell_front_raise",
+    "version": "1.0.0",
+    "mediaId": "diagram_dumbbell_front_raise_v1",
+    "url": "/media/dumbbell-front-raise.svg",
+    "sha256": "3eea6127676353b62883d8cf6c5f4ebd2fc9609bc74b4764e79f687a9ef8ac08",
+    "sourceId": "original_strength_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_standing_dumbbell_shoulder_press",
+    "version": "1.0.0",
+    "mediaId": "diagram_standing_dumbbell_shoulder_press_v1",
+    "url": "/media/standing-dumbbell-shoulder-press.svg",
+    "sha256": "093863cefbe2f7ae9e92ab7512d93f03cd2a2a7bfa1d5ad66deee65c688024e7",
+    "sourceId": "original_strength_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_seated_dumbbell_shoulder_press",
+    "version": "1.0.0",
+    "mediaId": "diagram_seated_dumbbell_shoulder_press_v1",
+    "url": "/media/seated-dumbbell-shoulder-press.svg",
+    "sha256": "2a02b426da1065bf71b8cf34d40d3be8d1285cede522c0512488713869bcb988",
+    "sourceId": "original_strength_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_dumbbell_overhead_triceps_extension",
+    "version": "1.0.0",
+    "mediaId": "diagram_dumbbell_overhead_triceps_extension_v1",
+    "url": "/media/dumbbell-overhead-triceps-extension.svg",
+    "sha256": "4ef2b52e432e6871d17b8154602c4a25e2b2074020a3facf694ac4ca9a8a3f2f",
+    "sourceId": "original_strength_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_single_leg_calf_raise",
+    "version": "1.0.0",
+    "mediaId": "diagram_supported_single_leg_calf_raise_v1",
+    "url": "/media/supported-single-leg-calf-raise.svg",
+    "sha256": "2cca461fcb54c20cd92baf87a0d8736e7d43322553a86691aef7b6f872d4058c",
+    "sourceId": "original_calf_diagram_v1"
+  },
+  {
+    "exerciseId": "exercise_bodyweight_squat",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_bodyweight_squat_v1",
+    "url": "/media/bodyweight-squat-cue.svg",
+    "sha256": "8db0c55cb27e699f1e7bd4a511d69b4ec0354a58258b7cf5ceb2bcf51e5293fa",
+    "sourceId": "original_foundation_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_one_arm_dumbbell_row",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_one_arm_dumbbell_row_v1",
+    "url": "/media/one-arm-dumbbell-row-cue.svg",
+    "sha256": "5d39629b7e3db48b38bfdfac4a4a6ed86894e11b69de6b01ed275f906b580f6d",
+    "sourceId": "original_foundation_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_incline_push_up",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_incline_push_up_v1",
+    "url": "/media/incline-push-up-cue.svg",
+    "sha256": "bf40405e7f9c6824de3cb1edccd570bb0b2a2f4b47d36e5a743037c2ea32ccfb",
+    "sourceId": "original_foundation_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_standing_calf_raise",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_standing_calf_raise_v1",
+    "url": "/media/standing-calf-raise-cue.svg",
+    "sha256": "17ae9d3b4b62e126135b1039dbf76c5e97c2a2703db5cd8f84ebcb7a2d6b89c8",
+    "sourceId": "original_foundation_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_dumbbell_bench_press",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_dumbbell_bench_press_v1",
+    "url": "/media/dumbbell-bench-press-cue.svg",
+    "sha256": "7a6366fc2a5c1f74adb08b451dd0bf6dffe0bc7a101bdd9bf1edbaee99ccee5a",
+    "sourceId": "original_ace_next_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_forward_lunge",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_forward_lunge_v1",
+    "url": "/media/forward-lunge-cue.svg",
+    "sha256": "3fae5da1ea177b7d9b550a5a133a3a255c68e84e84db58face4688fd56e93dd6",
+    "sourceId": "original_ace_next_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_dumbbell_romanian_deadlift",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_dumbbell_romanian_deadlift_v1",
+    "url": "/media/dumbbell-romanian-deadlift-cue.svg",
+    "sha256": "6c12ea4eca4a114e6ee53c24997be1dea1e689b3eb3f60eabf0d8ca7a355cd73",
+    "sourceId": "original_ace_next_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_push_up",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_push_up_v1",
+    "url": "/media/push-up-cue.svg",
+    "sha256": "13734be77451a2801bfbbd13b475c08c41a5e85fda6e8e3f017fbe3002354e92",
+    "sourceId": "original_pushup_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_knee_push_up",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_knee_push_up_v1",
+    "url": "/media/knee-push-up-cue.svg",
+    "sha256": "b94dfb566f799515983ab834dbd3f8eacf708ef08b68b30fcfadb5e2a015db81",
+    "sourceId": "original_pushup_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_glute_bridge",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_glute_bridge_v1",
+    "url": "/media/glute-bridge-cue.svg",
+    "sha256": "658e6e990785e660b5cec6a100d5b071c53a5a2735dd2cfa1cb32265c3d84f9f",
+    "sourceId": "original_ace_four_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_single_leg_glute_bridge",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_single_leg_glute_bridge_v1",
+    "url": "/media/single-leg-glute-bridge-cue.svg",
+    "sha256": "33aee7a98fa4d446fe181b4b1abcd33ceafbf2720eee01391a26add8126d5a34",
+    "sourceId": "original_ace_four_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_bird_dog",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_bird_dog_v1",
+    "url": "/media/bird-dog-cue.svg",
+    "sha256": "8e2c96a6a3e27d95a622f838414e9a44cd15f608a4e9715e0770c1409370a1f6",
+    "sourceId": "original_ace_four_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_lat_pulldown",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_lat_pulldown_v1",
+    "url": "/media/lat-pulldown-cue.svg",
+    "sha256": "412e51630a77d1d9edae2068d71a847c67ee9acf10612659a684fe27820e512d",
+    "sourceId": "original_ace_four_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_back_squat",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_back_squat_v1",
+    "url": "/media/back-squat-cue.svg",
+    "sha256": "cc889110bb4142292229310189772d0db8b59bdb47d9054117acc46c6b77fc7a",
+    "sourceId": "original_ace_loaded_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_conventional_deadlift",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_conventional_deadlift_v1",
+    "url": "/media/conventional-deadlift-cue.svg",
+    "sha256": "854354e77bf6a81d8b5c1adc6cf9018e40a10861368ec0c59ed6bb17e3903ded",
+    "sourceId": "original_ace_loaded_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_goblet_squat",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_goblet_squat_v1",
+    "url": "/media/goblet-squat-cue.svg",
+    "sha256": "9aed758dba9fdc87a21f706854fe68434c02ae278e114a9d30c60dfd9a0146ea",
+    "sourceId": "original_ace_loaded_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_machine_chest_press",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_machine_chest_press_v1",
+    "url": "/media/machine-chest-press-cue.svg",
+    "sha256": "e51e93bb2baa939eaf7a70c82d07798eea009d67b68dbfb17b80bc8147de5e3c",
+    "sourceId": "original_ace_machine_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_seated_cable_row",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_seated_cable_row_v1",
+    "url": "/media/seated-cable-row-cue.svg",
+    "sha256": "0d7943a705a27145b6a34b6db2ae45a70dc1b2c11c1f997fd3716f8764e3e592",
+    "sourceId": "original_ace_machine_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_lying_leg_curl",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_lying_leg_curl_v1",
+    "url": "/media/lying-leg-curl-cue.svg",
+    "sha256": "517370ab1d1ae3e5d9ec9f9a544d704c36fa38e049e35efc86a8db8ab1ee12d3",
+    "sourceId": "original_ace_machine_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_seated_leg_curl",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_seated_leg_curl_v1",
+    "url": "/media/seated-leg-curl-cue.svg",
+    "sha256": "ad8e7dd1819eb09ed5ee405b462cd3d4f7cc5aae04cbc208198e3e987bb5d475",
+    "sourceId": "original_ace_machine_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_stability_ball_leg_curl",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_stability_ball_leg_curl_v1",
+    "url": "/media/stability-ball-leg-curl-cue.svg",
+    "sha256": "75981a2a75de8385443337980d6f6b95b4a50a6802c0fb378ae0fb0a784fb1ae",
+    "sourceId": "original_ace_machine_diagrams_v1"
+  }
+]

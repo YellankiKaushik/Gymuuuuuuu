@@ -32,6 +32,14 @@ const programBindings = verifyProgramSourceBindings(
   publishedPrograms,
   sources,
 );
+import { verifyExerciseMediaBindings } from "./content/exercise-media-bindings";
+import mediaBindingsJson from "../src/content/provenance/exercise-media-bindings.json";
+const mediaBindings = verifyExerciseMediaBindings(
+  mediaBindingsJson,
+  exerciseRecords,
+  sources,
+  (url) => readFileSync("public" + url),
+);
 const records: {
   module: string;
   id: string;
@@ -317,39 +325,14 @@ for (const r of exerciseRecords.filter((r) => r.contentStatus === "published"))
       field(
         "media",
         [
-          r.id === "exercise_dumbbell_curl"
-            ? "original_curl_diagram_v1"
-            : [
-                  "exercise_back_squat",
-                  "exercise_conventional_deadlift",
-                  "exercise_goblet_squat",
-                ].includes(r.id)
-              ? "original_ace_loaded_diagrams_v1"
-              : ["exercise_push_up", "exercise_knee_push_up"].includes(r.id)
-                ? "original_pushup_diagrams_v1"
-                : r.id === "exercise_single_leg_calf_raise"
-                  ? "original_calf_diagram_v1"
-                  : [
-                        "exercise_glute_bridge",
-                        "exercise_single_leg_glute_bridge",
-                        "exercise_bird_dog",
-                        "exercise_lat_pulldown",
-                      ].includes(r.id)
-                    ? "original_ace_four_diagrams_v1"
-                    : [
-                          "exercise_bodyweight_squat",
-                          "exercise_one_arm_dumbbell_row",
-                          "exercise_incline_push_up",
-                          "exercise_standing_calf_raise",
-                        ].includes(r.id)
-                      ? "original_foundation_diagrams_v1"
-                      : [
-                            "exercise_dumbbell_bench_press",
-                            "exercise_forward_lunge",
-                            "exercise_dumbbell_romanian_deadlift",
-                          ].includes(r.id)
-                        ? "original_ace_next_diagrams_v1"
-                        : "original_strength_diagrams_v1",
+          ...new Set(
+            mediaBindings
+              .filter(
+                (binding) =>
+                  binding.exerciseId === r.id && binding.version === r.version,
+              )
+              .map((binding) => binding.sourceId),
+          ),
         ],
         "original_authorship",
       ),

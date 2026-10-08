@@ -2,6 +2,11 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/exercises/machine-chest-press", "Machine chest press"],
+  ["/exercises/seated-cable-row", "Seated cable row"],
+  ["/exercises/lying-leg-curl", "Lying leg curl"],
+  ["/exercises/seated-leg-curl", "Seated leg curl"],
+  ["/exercises/stability-ball-leg-curl", "Stability-ball leg curl"],
   [
     "/supplements/ingredients/ingredient-hmb",
     "Beta-Hydroxy-Beta-Methylbutyrate",

@@ -187,3 +187,35 @@ at 698367 gzip JavaScript bytes and 421926 gzip public JSON bytes. Search contai
 evidence and all-browser hosted checks are still required; remaining draft
 identities remain explicitly pending rather than falsely permanently blocked.
 No completion tag, manual device test or production deployment is claimed.
+
+The 500-record checkpoint has complete current-build route evidence: 682/682
+Chromium route/record checks passed in 17.5 minutes on the production build
+2026-10-08T06:57:57.799Z. Mobile/desktop automated WCAG scans, tablet overflow,
+browser errors, failed assets and external requests pass across the audited
+states. Hosted df8d139 passes 239/239 browser cases in each of Chromium, Firefox
+and WebKit, 326 unit/coverage tests and 164 accessibility tests, with zero audit
+vulnerabilities. The exact job and route evidence is retained in
+phase19-ci-500-checkpoint.json and phase19-routes-500-checkpoint.json. These
+results certify that checkpoint, not later builds or manual device behavior.
+
+The 505-record checkpoint publishes five inspected ACE techniques with original
+sequence cues. Every published exercise/media version now has an explicit
+original-source and asset-hash binding; the prior fallback attribution is removed.
+Earlier factual versions and their attribution are preserved. The report's
+file-based feature inventory now includes workout start/editor/history screens
+and calculation modules, using portable paths. README's stale search count is
+corrected to the generated 505 factual records within 633 public documents.
+
+Clean installation, complete checks and coverage pass 330 tests in 90 files,
+with zero audit vulnerabilities. The five new pages pass 10/10 Chromium/WebKit
+responsive/theme/accessibility cases. The first coverage pass exposed a stale
+500-record inventory assertion after search regenerated to 505 (329 passed,
+one failed). The assertion now requires 505 while retaining every provenance-date
+check; search compilation runs before unit tests to prevent tests inspecting an
+old index. An initial focused browser command selected no tests because it
+matched display names instead of path-based test titles; the corrected selector
+ran all ten intended cases. No assertions, budgets or timeouts were weakened.
+Budgets remain 700329 gzip JavaScript bytes and 423218 gzip public JSON bytes.
+The current 687-route audit and hosted verification of this newer checkpoint
+remain pending. Remaining identities retain explicit content/source blocks;
+this is not final completion or authorization to deploy production.
