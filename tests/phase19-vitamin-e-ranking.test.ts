@@ -5,6 +5,7 @@ import { foodSchema } from "../src/features/foods/schema";
 import { numericValue } from "../src/features/foods/domain";
 import { mappingSchema, snapshotHash } from "../scripts/content/usda";
 import { verifyAlphaTocopherolRankings } from "../scripts/content/vitamin-e-ranking";
+import { unpackRankings } from "../src/features/nutrients/ranking-codec";
 
 const read = (path: string): unknown => JSON.parse(readFileSync(path, "utf8"));
 const foods = foodSchema.array().parse(read("src/content/foods/records.json"));
@@ -28,9 +29,11 @@ it("uses the exact alpha-tocopherol mass without an IU or activity conversion", 
   expect(() =>
     verifyAlphaTocopherolRankings(foods, mappings, snapshots),
   ).not.toThrow();
-  const rankings = z
-    .array(z.object({ unit: z.string(), amount: z.number() }))
-    .parse(read("src/content/nutrients/rankings/vitamin_e_mg.json"));
+  const rankings = unpackRankings(
+    read("src/content/nutrients/rankings/vitamin_e_mg.json"),
+    read("src/content/nutrients/ranking-profiles.json"),
+    "vitamin_e_mg",
+  );
   expect(rankings.length).toBeGreaterThan(0);
   expect(rankings.every((row) => row.unit === "mg alpha-tocopherol")).toBe(
     true,

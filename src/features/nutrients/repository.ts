@@ -7,6 +7,12 @@ import type { ReferenceRow, FrameworkDataset } from "./frameworks";
 import type { RankedFood } from "./ranking";
 import { nutrientIndex } from "./public-index";
 import { loadPublicJson } from "../content-review/public-json";
+import rankingProfilesUrl from "../../content/nutrients/ranking-profiles.json?url";
+import {
+  packedRankingsSchema,
+  rankingProfilesSchema,
+  unpackRankings,
+} from "./ranking-codec";
 export {
   nutrientIndex,
   nutrientReleaseReport,
@@ -78,24 +84,23 @@ export async function loadReferenceFramework(
   const module = await loader();
   return rowSchema.array().parse(module.default);
 }
-const rankedFoodSchema = z.strictObject({
-  foodId: z.string(),
-  slug: z.string(),
-  name: z.string(),
-  profileId: z.string(),
-  profileLabel: z.string(),
-  state: z.string(),
-  nutrientId: z.string(),
-  amount: z.number().finite().nonnegative(),
-  unit: z.string(),
-  status: z.enum(["measured", "calculated", "imputed", "estimated"]),
-  basis: z.enum(["per_100g", "per_100kcal", "per_verified_portion"]),
-  portionLabel: z.string().nullable(),
-  grams: z.number().positive().nullable(),
-  sourceReleases: z.array(z.string()),
-  energyStatus: z.string().nullable(),
-  portionStatus: z.string().nullable(),
-});
+let profileCache: Promise<unknown> | undefined;
+function loadRankingProfiles() {
+  if (!profileCache) {
+    profileCache = (async () => {
+      if (import.meta.env.SSR) {
+        const module =
+          await import("../../content/nutrients/ranking-profiles.json");
+        return rankingProfilesSchema.parse(module.default);
+      }
+      return loadPublicJson(rankingProfilesUrl, rankingProfilesSchema);
+    })().catch((error: unknown) => {
+      profileCache = undefined;
+      throw error;
+    });
+  }
+  return profileCache;
+}
 const rankingCache = new Map<string, Promise<RankedFood[]>>();
 async function loadRankingData(id: string): Promise<RankedFood[]> {
   const path = `../../content/nutrients/rankings/${id}.json`;
@@ -105,10 +110,19 @@ async function loadRankingData(id: string): Promise<RankedFood[]> {
     );
     const loader = serverRankings[path];
     if (!loader) return [];
-    return rankedFoodSchema.array().parse((await loader()).default);
+    return unpackRankings(
+      (await loader()).default,
+      await loadRankingProfiles(),
+      id,
+    );
   }
   const url = rankingUrls[path];
-  return url ? loadPublicJson(url, rankedFoodSchema.array()) : [];
+  if (!url) return [];
+  const [packed, profiles] = await Promise.all([
+    loadPublicJson(url, packedRankingsSchema),
+    loadRankingProfiles(),
+  ]);
+  return unpackRankings(packed, profiles, id);
 }
 export async function loadFoodRankings(id: string): Promise<RankedFood[]> {
   if (!manifest[id]) return [];

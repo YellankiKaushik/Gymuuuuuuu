@@ -14,6 +14,12 @@ import {
 } from "../src/features/nutrients/schema";
 import { frameworkDatasetSchema } from "../src/features/nutrients/frameworks";
 import { rankVerifiedFoodSources } from "../src/features/nutrients/ranking";
+import { isDeepStrictEqual } from "node:util";
+import {
+  packRankings,
+  rankingProfiles,
+  unpackRankings,
+} from "../src/features/nutrients/ranking-codec";
 import { foodSchema, normalizeFoodTerm } from "../src/features/foods/schema";
 import {
   readVerifiedFdaSnapshot,
@@ -100,14 +106,8 @@ if (published.some((row) => row.id === "vitamin_e_mg"))
       readFileSync("src/content/provenance/usda-selected.json", "utf8"),
     ),
   );
-for (const folder of ["topics", "frameworks", "rankings"]) {
-  mkdirSync(`${root}/${folder}`, { recursive: true });
-  for (const file of readdirSync(`${root}/${folder}`))
-    if (file.endsWith(".json")) unlinkSync(`${root}/${folder}/${file}`);
-}
 const coverage: Record<string, number> = {};
-for (const n of published) {
-  writeFileSync(`${root}/topics/${n.slug}.json`, JSON.stringify(n) + "\n");
+const generated = published.map((n) => {
   const rules = n.foodSourceRules.filter(
     (r) =>
       r.status === "enabled" &&
@@ -131,14 +131,37 @@ for (const n of published) {
     ),
   );
   coverage[n.id] = new Set(rankings.map((r) => r.profileId)).size;
-  writeFileSync(
-    `${root}/rankings/${n.id}.json`,
-    JSON.stringify(rankings) + "\n",
-  );
+  return { n, rankings };
+});
+const profiles = rankingProfiles(generated.flatMap((entry) => entry.rankings));
+const assets = generated.map(({ n, rankings }) => {
+  const packed = packRankings(rankings);
+  if (!isDeepStrictEqual(unpackRankings(packed, profiles, n.id), rankings))
+    throw Error(
+      `${n.id}: ranking serialization changed factual values or context`,
+    );
+  return { n, packed };
+});
+// Validate every proposed asset before replacing any generated release files.
+for (const folder of ["topics", "frameworks", "rankings"]) {
+  mkdirSync(`${root}/${folder}`, { recursive: true });
+  for (const file of readdirSync(`${root}/${folder}`))
+    if (file.endsWith(".json")) unlinkSync(`${root}/${folder}/${file}`);
+}
+writeReleaseFile(
+  `${root}/ranking-profiles.json`,
+  JSON.stringify(profiles) + "\n",
+);
+for (const { n, packed } of assets) {
+  writeFileSync(`${root}/topics/${n.slug}.json`, JSON.stringify(n) + "\n");
+  writeFileSync(`${root}/rankings/${n.id}.json`, JSON.stringify(packed) + "\n");
 }
 if (!published.length) {
   writeFileSync(`${root}/topics/empty.json`, "null\n");
-  writeFileSync(`${root}/rankings/empty.json`, "[]\n");
+  writeFileSync(
+    `${root}/rankings/empty.json`,
+    JSON.stringify(packRankings([])) + "\n",
+  );
 }
 for (const d of datasets) {
   const rows = published.flatMap((n) =>
@@ -179,7 +202,7 @@ writeReleaseFile(
 );
 const report = {
   schemaVersion: 1,
-  transformVersion: "1.0.0",
+  transformVersion: "2.0.0",
   draft: identities.filter((n) => !published.some((p) => p.id === n.id)).length,
   partial: records.filter((n) => n.contentStatus === "partial").length,
   published: published.length,
