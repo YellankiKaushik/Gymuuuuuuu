@@ -1,5 +1,47 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+test("milkfish preparation deep links and soy missing household weights remain explicit @a11y", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 320, height: 1000 });
+  await page.goto("/foods/milkfish");
+  const profiles = page.getByRole("combobox", {
+    name: "Composition profile",
+    exact: true,
+  });
+  await expect(profiles).toHaveValue("profile_milkfish_fdc_173675");
+  await expect(page.locator(".food-profile-banner strong")).toHaveText(
+    "Fish, milkfish, raw",
+  );
+  await profiles.selectOption("profile_milkfish_fdc_171995");
+  await expect(page).toHaveURL(/profile=profile_milkfish_fdc_171995/);
+  await expect(page.locator(".food-profile-banner strong")).toHaveText(
+    "Fish, milkfish, cooked, dry heat",
+  );
+  await page.reload();
+  await expect(profiles).toHaveValue("profile_milkfish_fdc_171995");
+  await page.goto("/foods/soy-beverage-unsweetened");
+  await expect(page.locator(".food-profile-banner strong")).toHaveText(
+    "Soy milk, unsweetened, plain, shelf stable",
+  );
+  await expect(
+    page.getByText(
+      "No source-backed household portions are available for this profile.",
+    ),
+  ).toBeVisible();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  expect(
+    (
+      await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
+        .analyze()
+    ).violations,
+  ).toEqual([]);
+});
 test("food discovery filters, sourced publication and safe unknown profiles", async ({
   page,
 }) => {
@@ -53,7 +95,7 @@ test("food discovery filters, sourced publication and safe unknown profiles", as
   await page.goto("/foods/sources");
   await expect(
     page.getByText(
-      "256 source-backed foods and 264 machine-validated profiles",
+      "258 source-backed foods and 267 machine-validated profiles",
       {
         exact: false,
       },

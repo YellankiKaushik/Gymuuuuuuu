@@ -18,7 +18,10 @@ const buildDate = (
 ).date;
 
 for (const [path, kind] of cases) {
-  test(`route audit ${path}`, async ({ page, browserName }) => {
+  test(`route audit ${path}`, async ({ page, browserName, baseURL }) => {
+    if (!baseURL)
+      throw Error("The audit requires its configured local origin.");
+    const auditOrigin = new URL(baseURL).origin;
     const errors: string[] = [];
     const remoteRequests: string[] = [];
     const failedAssets: string[] = [];
@@ -36,10 +39,7 @@ for (const [path, kind] of cases) {
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("request", (request) => {
       const url = new URL(request.url());
-      if (
-        url.protocol.startsWith("http") &&
-        url.origin !== "http://127.0.0.1:3000"
-      )
+      if (url.protocol.startsWith("http") && url.origin !== auditOrigin)
         remoteRequests.push(url.origin + url.pathname);
     });
     const states = [];

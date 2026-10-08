@@ -2055,8 +2055,8 @@
     {
       "module": "foods",
       "totalIdentities": 342,
-      "publishedIdentities": 256,
-      "draftIdentities": 86,
+      "publishedIdentities": 258,
+      "draftIdentities": 84,
       "blockedIdentities": [
         {
           "id": "food_custard_apple",
@@ -2528,13 +2528,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "food_milkfish",
-          "slug": "milkfish",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "food_prawn",
           "slug": "prawn",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
@@ -2628,13 +2621,6 @@
         {
           "id": "food_sugarcane_juice",
           "slug": "sugarcane-juice",
-          "reason": "Exact rights-cleared dataset mapping has not yet been verified",
-          "classification": "missing_dataset_mapping",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "food_soy_beverage_unsweetened",
-          "slug": "soy-beverage-unsweetened",
           "reason": "Exact rights-cleared dataset mapping has not yet been verified",
           "classification": "missing_dataset_mapping",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6701,9 +6687,9 @@
     },
     {
       "module": "foods",
-      "published": 256,
-      "withPublicationProvenance": 256,
-      "inSearch": 256,
+      "published": 258,
+      "withPublicationProvenance": 258,
+      "inSearch": 258,
       "missingSourceProvenance": []
     },
     {
@@ -6786,7 +6772,7 @@
     },
     {
       "module": "foods",
-      "eligiblePublishedRecords": 256,
+      "eligiblePublishedRecords": 258,
       "families": [
         "foods"
       ],
@@ -10003,6 +9989,22 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_milkfish",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "food_soy_beverage_unsweetened",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
         }
       ]
     },
@@ -10980,9 +10982,9 @@
     {
       "module": "foods",
       "missingVerifiedFactualRecords": 0,
-      "missingDatasetMappings": 86,
+      "missingDatasetMappings": 84,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 256,
+      "independentHumanReviewPending": 258,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -13944,10 +13946,10 @@
     "src/features/supplements\\export.ts",
     "src/features/workout-tracker\\backup.ts"
   ],
-  "foodProfiles": 264,
-  "numericFoodValues": 9751,
+  "foodProfiles": 267,
+  "numericFoodValues": 9846,
   "numericCoverage": {
-    "foodRecordsWithComposition": 256,
+    "foodRecordsWithComposition": 258,
     "nutrientArticlesWithReferenceRows": 35,
     "nutrientReferenceRows": 35,
     "publicRecipesWithCalculatedNutrition": 24,
@@ -13959,8 +13961,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 611,
-    "factualRecords": 483
+    "documents": 613,
+    "factualRecords": 485
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -14232,7 +14234,9 @@
     "food_mustard_oil",
     "food_turmeric_powder",
     "food_chicken_thigh",
-    "food_chicken_drumstick"
+    "food_chicken_drumstick",
+    "food_milkfish",
+    "food_soy_beverage_unsweetened"
   ],
   "missingMedia": [
     {
@@ -15991,6 +15995,16 @@
       "instructionalMediaRequired": false
     },
     {
+      "module": "foods",
+      "id": "food_milkfish",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "foods",
+      "id": "food_soy_beverage_unsweetened",
+      "instructionalMediaRequired": false
+    },
+    {
       "module": "nutrients",
       "id": "iron_mg",
       "instructionalMediaRequired": false
@@ -16555,12 +16569,12 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T01:51:10.398Z",
-    "expected": 665,
+    "buildDate": "2026-10-08T03:00:04.901Z",
+    "expected": 667,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 665,
-    "ignoredStaleReports": 621,
+    "unmeasured": 667,
+    "ignoredStaleReports": 667,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
       "No manual devices, screen-reader interaction, print output or complete interactive-state traversal is claimed."
@@ -19885,6 +19899,18 @@
         "evidence": null
       },
       {
+        "path": "/foods/milkfish",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/foods/soy-beverage-unsweetened",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/nutrients/iron",
         "kind": "public_record",
         "result": "unmeasured",
@@ -20565,6 +20591,6 @@
     "inaccessibleUiStates": [],
     "missingSourceReferences": [],
     "manualDevices": "not performed",
-    "firefox": "blocked: Windows mozglue SideBySide launch error"
+    "firefox": "Local Windows launch unavailable (mozglue SideBySide). Hosted Linux results are scoped to the commits recorded in docs/reports/phase19-ci-*.json; they do not certify an unpushed build."
   }
 }

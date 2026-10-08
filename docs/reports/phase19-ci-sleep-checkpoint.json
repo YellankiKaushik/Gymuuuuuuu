@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": "9ed0cbe65798f4cf43d3c2e7d3108d20637b03a0",
+  "publishedFactualRecords": 483,
+  "ciRun": 37715856295,
+  "crossBrowserRun": 37715856378,
+  "engineeringChecks": {
+    "testsPassed": 306,
+    "testFilesPassed": 79,
+    "coverageTestsPassed": 306,
+    "npmAuditVulnerabilities": 0
+  },
+  "browserResults": {
+    "ciChromium": {
+      "passed": 218,
+      "failed": 0
+    },
+    "matrixChromium": {
+      "passed": 218,
+      "failed": 0
+    },
+    "matrixWebKit": {
+      "passed": 218,
+      "failed": 0
+    },
+    "matrixFirefox": {
+      "passed": 218,
+      "failed": 0
+    },
+    "ciAccessibility": {
+      "passed": 146,
+      "failed": 0
+    }
+  },
+  "result": "Hosted CI, Chromium, Firefox, WebKit and accessibility all pass at this checkpoint. Phase 19 content work remains in progress.",
+  "reportedAt": "2026-10-08T02:40:16.936253Z",
+  "productionDeployment": "disabled"
+}

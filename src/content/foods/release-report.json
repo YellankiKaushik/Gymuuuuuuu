@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "datasetVersion": "0.0.0",
   "transformVersion": "1.0.0",
-  "inputSha256": "824ae6d5f0d355da2b76bdd66db814b30a11d9ecc41f409508421f7f68a22780",
-  "draftIdentities": 86,
-  "publishedFoods": 256,
-  "publishedProfiles": 264,
+  "inputSha256": "5bfd06e736f84bce0cf9a81cda19f0a538b2b1cf2122fb7b11c6340bf11dd3d5",
+  "draftIdentities": 84,
+  "publishedFoods": 258,
+  "publishedProfiles": 267,
   "warnings": [],
   "sourceDownloads": []
 }

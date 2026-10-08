@@ -53,7 +53,7 @@ export function RecoveryOverview({
           {recent ? (
             <>
               <p>
-                {recent.sleepDate} · {recent.source.replaceAll("_", " ")} ·{" "}
+                {recent.sleepDate} Â· {recent.source.replaceAll("_", " ")} Â·{" "}
                 {recent.status}
               </p>
               <p className="recovery-number">
@@ -179,7 +179,7 @@ export function SleepDiary() {
           <option value="">New sleep entry</option>
           {view.data.sleepLogs.map((s) => (
             <option key={s.id} value={s.id}>
-              {s.sleepDate} · {s.source.replaceAll("_", " ")}
+              {s.sleepDate} Â· {s.source.replaceAll("_", " ")}
             </option>
           ))}
         </select>
@@ -511,12 +511,12 @@ function SleepForm({ existing }: { existing: SleepLog | null }) {
       <section className="recovery-card">
         <h2>Calculation preview</h2>
         <p>
-          Opportunity: {display(calculated.sleepOpportunityMinutes)} min · Main
-          duration: {display(calculated.estimatedTotalSleepMinutes)} min · Daily
-          total: {display(calculated.dailyTotalSleepMinutes)} min
+          Opportunity: {display(calculated.sleepOpportunityMinutes)} min Â· Main
+          duration: {display(calculated.estimatedTotalSleepMinutes)} min Â·
+          Daily total: {display(calculated.dailyTotalSleepMinutes)} min
         </p>
         <p>
-          Efficiency: {display(calculated.sleepEfficiencyPercent)}% · Naps:{" "}
+          Efficiency: {display(calculated.sleepEfficiencyPercent)}% Â· Naps:{" "}
           {display(calculated.napMinutes)} min
         </p>
         {calculated.validationWarnings.map((w) => (
@@ -795,7 +795,7 @@ function CheckForm({ existing }: { existing: CheckIn | null }) {
         Pain or injury concern
       </label>
       {entry.painOrInjuryConcern && (
-        <Field label="Reported pain concern severity (0–10)">
+        <Field label="Reported pain concern severity (0â€“10)">
           <input
             type="number"
             min="0"
@@ -852,7 +852,7 @@ function CheckForm({ existing }: { existing: CheckIn | null }) {
           prescribe training. Discuss concerns with a qualified professional.
         </p>
       )}
-      <fieldset>
+      <fieldset disabled={busy} aria-busy={busy}>
         <legend>Completed workout context (optional)</legend>
         <button
           type="button"
@@ -890,7 +890,7 @@ function CheckForm({ existing }: { existing: CheckIn | null }) {
                 )
               }
             />
-            {w.startedAt} · {w.id}
+            {w.startedAt} Â· {w.id}
           </label>
         ))}
         <p>
@@ -1038,12 +1038,12 @@ export function RecoveryHistory({ kind }: { kind: "sleep" | "checkin" }) {
           {kind === "sleep" ? "Daily sleep minutes" : "Your entered readiness"}
         </h2>
         <p>
-          Mean {display(summary.mean)} · Median {display(summary.median)} ·
-          Range {display(summary.min)}–{display(summary.max)}
+          Mean {display(summary.mean)} Â· Median {display(summary.median)} Â·
+          Range {display(summary.min)}â€“{display(summary.max)}
         </p>
         <p>
-          {summary.known} measured records · {summary.missing} incomplete
-          records · {missingDays} days without a record. Multiple reports in a
+          {summary.known} measured records Â· {summary.missing} incomplete
+          records Â· {missingDays} days without a record. Multiple reports in a
           day remain separate.
         </p>
         {kind === "sleep" && (
@@ -1063,7 +1063,7 @@ export function RecoveryHistory({ kind }: { kind: "sleep" | "checkin" }) {
               </p>
             ) : (
               <p>
-                Bedtime clock range: {display(regularity.bedtime.min)}–
+                Bedtime clock range: {display(regularity.bedtime.min)}â€“
                 {display(regularity.bedtime.max)} minutes around the
                 midnight-aware centre. No quality threshold is assigned.
               </p>
@@ -1083,7 +1083,7 @@ export function RecoveryHistory({ kind }: { kind: "sleep" | "checkin" }) {
                 <div key={s.dimension}>
                   <dt>{labels[s.dimension]}</dt>
                   <dd>
-                    Mean {display(s.mean)} · median {display(s.median)} ·{" "}
+                    Mean {display(s.mean)} Â· median {display(s.median)} Â·{" "}
                     {s.known} reported / {s.missing} missing
                   </dd>
                 </div>
@@ -1103,11 +1103,11 @@ export function RecoveryHistory({ kind }: { kind: "sleep" | "checkin" }) {
               }).map((s) => (
                 <div key={`${s.regionId}:${s.laterality}`}>
                   <dt>
-                    {regions.find((r) => r.id === s.regionId)?.displayName} ·{" "}
+                    {regions.find((r) => r.id === s.regionId)?.displayName} Â·{" "}
                     {s.laterality.replaceAll("_", " ")}
                   </dt>
                   <dd>
-                    Mean {display(s.mean)} · median {display(s.median)} ·{" "}
+                    Mean {display(s.mean)} Â· median {display(s.median)} Â·{" "}
                     {s.known} reported / {s.missing} missing
                   </dd>
                 </div>
@@ -1148,7 +1148,8 @@ export function RecoveryHistory({ kind }: { kind: "sleep" | "checkin" }) {
                 <article key={s.id} className="recovery-card">
                   <h2>{s.sleepDate}</h2>
                   <p>
-                    {s.source.replaceAll("_", " ")} · {s.timezone} · {s.status}
+                    {s.source.replaceAll("_", " ")} Â· {s.timezone} Â·{" "}
+                    {s.status}
                   </p>
                   <dl>
                     <div>
@@ -1190,7 +1191,7 @@ export function RecoveryHistory({ kind }: { kind: "sleep" | "checkin" }) {
                         (r) =>
                           `${regions.find((v) => v.id === r.regionId)?.displayName} (${r.laterality}): ${r.severity}`,
                       )
-                      .join(" · ") || "No regional soreness measurements"}
+                      .join(" Â· ") || "No regional soreness measurements"}
                   </p>
                   <p>{c.notes}</p>
                   <a href="/recovery/check-in">Edit check-ins</a>

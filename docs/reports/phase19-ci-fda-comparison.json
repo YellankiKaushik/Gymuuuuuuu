@@ -17,11 +17,14 @@
       "passed": 205,
       "failed": 1
     },
-    "matrixWebKit": "pending at report time"
+    "matrixWebKit": {
+      "passed": 205,
+      "failed": 1
+    }
   },
   "failure": "Nutrient comparison expected protein to have no published numeric reference row after the verified FDA expansion.",
   "correction": "Keep iron and the new exact FDA protein 50 g label row; add water as a genuinely missing-reference comparison, preserving the unavailable-row assertion and no-winner/personal-target assertions.",
   "localRebuiltVerification": "4/4 Chromium/WebKit comparison cases pass against the 483-record production build.",
-  "remaining": "Fresh complete hosted verification and final current-build route audit remain required.",
+  "remaining": "The corrected 9ed0cbe checkpoint passes hosted CI, Chromium, Firefox, WebKit and accessibility. The local 485-record route audit and remaining content expansion remain in progress.",
   "productionDeployment": "disabled"
 }

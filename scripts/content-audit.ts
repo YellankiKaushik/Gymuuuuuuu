@@ -448,7 +448,8 @@ const report = {
       (m) => m.missingSourceProvenance,
     ),
     manualDevices: "not performed",
-    firefox: "blocked: Windows mozglue SideBySide launch error",
+    firefox:
+      "Local Windows launch unavailable (mozglue SideBySide). Hosted Linux results are scoped to the commits recorded in docs/reports/phase19-ci-*.json; they do not certify an unpushed build.",
   },
 };
 if (duplicates.length) throw Error(duplicates.join("\n"));

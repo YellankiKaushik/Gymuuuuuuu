@@ -39,7 +39,9 @@ for (const theme of ["light", "dark"])
       for (const route of routes) {
         await page.goto(route);
         await expect(page.locator(".recovery-page")).toBeVisible();
-        await expect(page.getByText("Loading browser records…")).toHaveCount(0);
+        await expect(
+          page.getByText("Loading browser recordsÃ¢â‚¬Â¦"),
+        ).toHaveCount(0);
         await expect(page.locator("h1")).toHaveCount(1);
         expect(
           await page.evaluate(
@@ -88,7 +90,9 @@ test("local sleep, check-in, routine revision, resumable session and backup work
   await page.getByLabel("Energy", { exact: true }).selectOption("2");
   await page.getByLabel("General fatigue", { exact: true }).selectOption("4");
   await page.getByLabel("Pain or injury concern", { exact: true }).check();
-  await page.getByLabel("Reported pain concern severity (0–10)").fill("7");
+  await page
+    .getByLabel("Reported pain concern severity (0Ã¢â‚¬â€œ10)")
+    .fill("7");
   await page.getByRole("button", { name: "Add region", exact: true }).click();
   await page.getByLabel("Soreness 1", { exact: true }).fill("0");
   await page
@@ -168,10 +172,12 @@ test("local sleep, check-in, routine revision, resumable session and backup work
     .getByRole("button", { name: "Complete step", exact: true })
     .click();
   await expect(
-    page.getByRole("status").filter({ hasText: "Routine complete step saved." }),
+    page
+      .getByRole("status")
+      .filter({ hasText: "Routine complete step saved." }),
   ).toBeVisible();
   await page.goto("/mobility/history");
-  await expect(page.getByText(/completed · version 1/)).toBeVisible();
+  await expect(page.getByText(/completed Ã‚Â· version 1/)).toBeVisible();
   await page
     .getByLabel("Session notes", { exact: true })
     .fill("Test-only feedback");
@@ -278,12 +284,30 @@ test("keyboard, reduced motion, additional widths, quota and storage-denied stat
       exact: true,
     })
     .click();
+  await expect(
+    page.getByRole("button", {
+      name: "Remove unavailable workout link",
+      exact: true,
+    }),
+  ).toBeHidden();
+  await expect(page.getByText(/^0 linked sessions\./)).toBeVisible();
   await page
     .getByRole("button", { name: "Save check-in", exact: true })
     .click();
   await expect(
     page.getByRole("status").filter({ hasText: "Check-in saved" }),
   ).toBeVisible();
+  await page.reload();
+  await page
+    .getByLabel("Edit an existing check-in", { exact: true })
+    .selectOption("recovery_missing_link");
+  await expect(page.getByText(/^0 linked sessions\./)).toBeVisible();
+  await expect(
+    page.getByRole("button", {
+      name: "Remove unavailable workout link",
+      exact: true,
+    }),
+  ).toBeHidden();
   await page.goto("/sleep/log");
   await page
     .getByLabel("Notes", { exact: true })

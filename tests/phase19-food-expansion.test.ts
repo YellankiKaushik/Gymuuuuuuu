@@ -4,6 +4,37 @@ import mappings from "../src/content/provenance/food-mappings.json";
 import { publicRecipes } from "../src/features/recipes-meal-plans/public-records";
 import pins from "../src/content/provenance/recipe-version-pins.json";
 import { validateImmutableVersions } from "../scripts/content/immutable-versions";
+import snapshots from "../src/content/provenance/usda-selected.json";
+
+it("keeps raw and dry-heat milkfish independent and does not invent soy serving conversions", () => {
+  const milkfish = records.find((r) => r.id === "food_milkfish")!;
+  expect(milkfish.defaultProfileId).toBe("profile_milkfish_fdc_173675");
+  expect(
+    milkfish.compositionProfiles.map((p) => [p.foodState, p.label]),
+  ).toEqual([
+    ["raw", "Fish, milkfish, raw"],
+    ["cooked", "Fish, milkfish, cooked, dry heat"],
+  ]);
+  for (const profile of milkfish.compositionProfiles) {
+    const id = Number(profile.sourceRecords[0]!.externalFoodId);
+    const source = snapshots.find((row) => row.fdcId === id)!;
+    expect(
+      profile.nutrients.find((row) => row.nutrientId === "protein_g")!.value,
+    ).toBe(
+      source.foodNutrients.find((row) => row.nutrient.id === 1003)!.amount,
+    );
+    expect(profile.portions[0]!.grams).toBe(85);
+    expect(profile.portions[0]!.status).toBe("source_reported");
+  }
+  const soy = records.find((r) => r.id === "food_soy_beverage_unsweetened")!
+    .compositionProfiles[0]!;
+  expect(soy.label).toBe("Soy milk, unsweetened, plain, shelf stable");
+  expect(soy.sourceRecords[0]!.externalFoodId).toBe("1999630");
+  expect(soy.portions).toEqual([]);
+  expect(soy.nutrients.find((r) => r.nutrientId === "omega_3_g")).toMatchObject(
+    { value: null, status: "not_available" },
+  );
+});
 
 it("retains exact edible parts, fortification and preparation for new USDA matches", () => {
   const checked = [

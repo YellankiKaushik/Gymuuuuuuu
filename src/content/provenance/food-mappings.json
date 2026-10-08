@@ -2675,5 +2675,38 @@
     "matchRationale": "Exact source kind and preparation: Chicken, broilers or fryers, dark meat, drumstick, meat only, raw. The exact source cut, edible portion and state are retained. Historical US sample; regional, cultivar and preparation variation limit generalisation.",
     "sourceSnapshotSha256": "7f17e238a5d9c60bcdb76712b270372e6bfb90fe96872c1e97ba890c5c2be3f2",
     "verifiedAt": "2026-10-08T01:18:28.831Z"
+  },
+  {
+    "foodId": "food_milkfish",
+    "fdcId": 173675,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, milkfish, raw",
+    "foodState": "raw",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Raw milkfish; not a cooked portion or a recommendation to eat fish raw. Source-specific US composition; cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "00308f689d4858013244704d582a18e473e476d539a1f34317b9c30daf19bbab",
+    "verifiedAt": "2026-10-08T02:03:14.802Z"
+  },
+  {
+    "foodId": "food_milkfish",
+    "fdcId": 171995,
+    "sourceId": "usda_fdc_sr_legacy_2018",
+    "description": "Fish, milkfish, cooked, dry heat",
+    "foodState": "cooked",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Milkfish cooked by dry heat. No raw-to-cooked conversion, yield or retention factor is inferred. Source-specific US composition; cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "a5af5ed6b2f08231f2bb1e7e66d8c43cf9e0c588ded11b86ebe84c04249394d9",
+    "verifiedAt": "2026-10-08T02:03:14.802Z"
+  },
+  {
+    "foodId": "food_soy_beverage_unsweetened",
+    "fdcId": 1999630,
+    "sourceId": "usda_fdc_foundation_2026_04",
+    "description": "Soy milk, unsweetened, plain, shelf stable",
+    "foodState": "other",
+    "reviewLevel": "published_personal_use",
+    "matchRationale": "Unsweetened, plain, shelf-stable soy milk sample. Not every soy beverage; no brand, fortification or serving volume is inferred. Source-specific US composition; cultivar and preparation variation limit generalisation.",
+    "sourceSnapshotSha256": "c19a9886d2b35f732e04af1f71b6d7353dbe6e8cc5775e69d5961e8d55e59118",
+    "verifiedAt": "2026-10-08T02:03:14.802Z"
   }
 ]
