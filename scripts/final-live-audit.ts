@@ -1,4 +1,4 @@
-import { chromium } from "@playwright/test";
+import { chromium, expect } from "@playwright/test";
 import { mkdir, writeFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 
@@ -38,6 +38,27 @@ const canonical =
 assert.equal(canonical, `${origin}/`);
 const browser = await chromium.launch();
 const context = await browser.newContext();
+await context.addInitScript(() => {
+  Reflect.set(window, "fitnessOsPolicyEvents", []);
+  document.addEventListener("securitypolicyviolation", (event) => {
+    (Reflect.get(window, "fitnessOsPolicyEvents") as unknown[]).push({
+      directive: event.violatedDirective,
+      blockedURI: event.blockedURI,
+      sourceFile: event.sourceFile,
+    });
+  });
+});
+const policyEvents: {
+  route: string;
+  directive: string;
+  blockedURI: string;
+  sourceFile: string;
+}[] = [];
+const failedAssets: { url: string; status: number }[] = [];
+context.on("response", (response) => {
+  if (response.status() >= 400)
+    failedAssets.push({ url: response.url(), status: response.status() });
+});
 const requests: { url: string; markerLeak: boolean; remote: boolean }[] = [];
 const errors: string[] = [],
   violations: string[] = [],
@@ -101,6 +122,16 @@ try {
   for (const route of routes) {
     const response = await page.goto(origin + route);
     await page.locator("h1").first().waitFor();
+    await expect(
+      page.getByRole("button", { name: "Search Fitness OS", exact: true }),
+    ).toBeEnabled();
+    policyEvents.push(
+      ...(
+        (await page.evaluate(() =>
+          Reflect.get(window, "fitnessOsPolicyEvents"),
+        )) as { directive: string; blockedURI: string; sourceFile: string }[]
+      ).map((event) => ({ route, ...event })),
+    );
     assert(response && response.status() < 400);
     const ssr = await fetch(origin + route);
     const text = await ssr.text();
@@ -112,9 +143,21 @@ try {
     assert(!text.includes(marker));
   }
   assert.equal(dialogs.length, 0);
+  assert.equal(failedAssets.length, 0);
   assert.equal(errors.length, 0);
   assert.equal(violations.length, 0);
   assert.equal(requests.filter((x) => x.markerLeak || x.remote).length, 0);
+  assert.equal(
+    policyEvents.filter(
+      (event) =>
+        !(
+          event.directive === "script-src" &&
+          event.blockedURI === "eval" &&
+          event.sourceFile.includes("/assets/validation-library-")
+        ),
+    ).length,
+    0,
+  );
 } finally {
   await mkdir("artifacts/final-security", { recursive: true });
   await writeFile(
@@ -136,6 +179,10 @@ try {
         errors,
         violations,
         dialogs,
+        failedAssets,
+        policyEvents,
+        knownPolicyEventExplanation:
+          "Current owner deployment may still contain Zod's caught, CSP-blocked eval capability probe. Runtime remains on the interpreter fallback. Candidate explicitly enables jitless before browser schemas; no unsafe-eval permission is added. Owner redeploy required.",
         syntheticXssRenderedAsText: dialogs.length === 0,
         limitation:
           "Fresh synthetic context only; no live owner records accessed or deployment performed.",

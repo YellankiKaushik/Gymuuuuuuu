@@ -1,3 +1,4 @@
+import "./config/validation";
 import { StrictMode, startTransition } from "react";
 import { hydrateRoot } from "react-dom/client";
 import { hydrateStart } from "@tanstack/start-client-core/client";

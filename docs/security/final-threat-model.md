@@ -30,4 +30,6 @@ Boundaries: browser DOM ↔ IndexedDB; browser ↔ small localStorage preference
 
 ## Release interpretation
 
+The existing production build contains a caught, CSP-blocked Zod eval capability probe. It does not execute dynamic code and falls back to interpretation. The candidate browser build configures jitless before schema initialization; direct event checks cover this. The live audit records the known probe rather than describing production as having zero policy events.
+
 Automated checks establish evidence for a specific commit/build and synthetic scenarios, not formal penetration testing, full WCAG conformance or clinical review. Real devices, assistive technology, file pickers, quota/eviction and backup custody require owner testing. New runtime fixes require an owner-controlled redeploy; the current production deployment is audited separately.

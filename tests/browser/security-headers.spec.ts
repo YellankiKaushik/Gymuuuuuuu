@@ -28,6 +28,14 @@ test("@security server issues a per-response nonce CSP and hydrates without poli
   expect(secondNonce).not.toBe(nonce);
 
   const violations: string[] = [];
+  await page.addInitScript(() => {
+    Reflect.set(window, "fitnessOsPolicyEvents", []);
+    document.addEventListener("securitypolicyviolation", (event) => {
+      (Reflect.get(window, "fitnessOsPolicyEvents") as string[]).push(
+        `${event.violatedDirective}:${event.blockedURI}`,
+      );
+    });
+  });
   page.on("console", (message) => {
     if (message.text().toLowerCase().includes("content security policy"))
       violations.push(message.text());
@@ -41,4 +49,24 @@ test("@security server issues a per-response nonce CSP and hydrates without poli
     page.getByRole("combobox", { name: "Search Fitness OS on this device" }),
   ).toBeVisible();
   expect(violations).toEqual([]);
+  for (const route of [
+    "/muscles",
+    "/foods",
+    "/nutrition/custom-foods",
+    "/recipes/create",
+    "/supplements/products/create",
+    "/progress/weight",
+  ]) {
+    await page.goto(route);
+    await expect(
+      page.getByRole("button", { name: "Search Fitness OS", exact: true }),
+    ).toBeEnabled();
+    expect(
+      await page.evaluate(() => Reflect.get(window, "fitnessOsPolicyEvents")),
+      route,
+    ).toEqual([]);
+  }
+  expect(
+    await page.evaluate(() => Reflect.get(window, "fitnessOsPolicyEvents")),
+  ).toEqual([]);
 });

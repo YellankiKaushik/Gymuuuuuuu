@@ -3,8 +3,12 @@ import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { nitro } from 'nitro/vite'
+import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
+  resolve: {
+    alias: [{ find: /^zod$/, replacement: fileURLToPath(new URL('./src/config/validation.ts', import.meta.url)) }],
+  },
   plugins: [tailwindcss(), tanstackStart(), nitro(), react()],
   build: {
     rolldownOptions: {
