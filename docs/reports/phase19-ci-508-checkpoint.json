@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": "508 factual publications",
+  "commit": "e6e0ed5c8c4d668c1a8da3a51eccd0423bf9e838",
+  "repository": "YellankiKaushik/Gymuuuuuuu",
+  "verificationMethod": "Completed hosted job statuses and decoded logs inspected. Results apply only to this commit.",
+  "productionDeployment": "disabled",
+  "ci": {
+    "runId": 37747839599,
+    "verificationJobId": 113213485825,
+    "conclusion": "failure",
+    "unit": { "passed": 332, "failed": 0, "files": 90 },
+    "coverage": { "passed": 332, "failed": 0, "files": 90 },
+    "chromium": { "passed": 246, "failed": 1, "duration": "13.8m" },
+    "npmAudit": "not reached after browser failure; local checkpoint audit reported zero vulnerabilities",
+    "accessibility": {
+      "jobId": 113213486133,
+      "conclusion": "success",
+      "passed": 172,
+      "failed": 0,
+      "duration": "9.9m"
+    }
+  },
+  "crossBrowser": {
+    "runId": 37747839676,
+    "conclusion": "failure",
+    "jobs": [
+      { "browser": "chromium", "jobId": 113213486490, "passed": 246, "failed": 1, "duration": "17.7m" },
+      { "browser": "firefox", "jobId": 113213486101, "passed": 246, "failed": 1, "duration": "19.1m" },
+      { "browser": "webkit", "jobId": 113213486439, "passed": 246, "failed": 1, "duration": "17.6m" }
+    ]
+  },
+  "failure": {
+    "test": "tests/browser/foods.spec.ts:103",
+    "reason": "Exact UI-count expectation still required 261 foods and 270 profiles after validated publication increased the catalogue to 264 foods and 273 profiles.",
+    "correction": "Update the exact expected inventory to 264 source-backed foods and 273 machine-validated profiles. Keep the visibility assertion and all filter, missing-data and unknown-profile checks.",
+    "verification": "Corrected focused food test passes locally in Chromium and WebKit. Fresh complete hosted results required; this checkpoint remains failed."
+  },
+  "routeAudit": {
+    "report": "phase19-routes-508-checkpoint.json",
+    "browser": "chromium",
+    "buildDate": "2026-10-08T07:56:18.902Z",
+    "passed": 690,
+    "failed": 0,
+    "unmeasured": 0
+  },
+  "schedulingCorrection": {
+    "decision": "docs/decisions/phase19-independent-accessibility-ci.md",
+    "result": "The independent mandatory accessibility job completed 172 of 172 tests within its unchanged 30-minute limit."
+  }
+}

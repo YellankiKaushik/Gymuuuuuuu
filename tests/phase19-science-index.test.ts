@@ -13,7 +13,7 @@ it("projects every published science identity and preserves filters, comparisons
       .filter((r) => ["published", "deprecated"].includes(r.contentStatus))
       .map(projectScienceIndex),
   );
-  expect(scienceIndexes.published).toHaveLength(24);
+  expect(scienceIndexes.published).toHaveLength(32);
   expect(scienceIndexes.bySlug.has("training-volume")).toBe(true);
   expect(scienceIndexes.bySlug.has("single-progression")).toBe(false);
   const results = searchScience(
@@ -24,7 +24,9 @@ it("projects every published science identity and preserves filters, comparisons
   );
   expect(results.map((r) => r.id)).toEqual([
     "science_training_volume",
+    "science_volume_load",
     "science_load_relative_intensity",
+    "science_repetitions_rep_ranges",
     "science_training_frequency",
     "science_rest_intervals",
     "science_range_of_motion",

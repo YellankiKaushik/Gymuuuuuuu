@@ -1796,5 +1796,689 @@
     "version": "1.0.0",
     "updatedAt": "2026-10-08",
     "learningOrder": 12
+  },
+  {
+    "id": "science_training_adaptation",
+    "slug": "training-adaptation",
+    "displayName": "Training adaptation",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "foundations",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Adaptation describes the outcomes developed with a resistance-training stimulus.",
+    "summary": "The overview evaluates muscle size, strength, power, endurance and physical-function outcomes separately.",
+    "keyTakeaways": [
+      "The overview evaluates muscle size, strength, power, endurance and physical-function outcomes separately.",
+      "An outcome-specific result should not be presented as improvement in every performance domain.",
+      "Name the outcome you want to understand and retain its studied population and comparison."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Name the outcome you want to understand and retain its studied population and comparison."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_training_adaptation_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_training_adaptation_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "An outcome-specific result should not be presented as improvement in every performance domain."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_specificity",
+      "science_strength_adaptation"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 1
+  },
+  {
+    "id": "science_volume_load",
+    "slug": "volume-load",
+    "displayName": "Volume load and tonnage",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "measurement",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Volume load combines the load moved with the completed repetition and set structure.",
+    "summary": "The discussion describes weekly volume load using load per repetition, repetitions per set, sets per exercise, exercises per session and sessions per week.",
+    "keyTakeaways": [
+      "The discussion describes weekly volume load using load per repetition, repetitions per set, sets per exercise, exercises per session and sessions per week.",
+      "Weekly volume load was rarely considered in the included reviews.",
+      "Keep the recorded arithmetic separate from evidence about the number of sets; this overview does not establish a universal tonnage target."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Keep the recorded arithmetic separate from evidence about the number of sets; this overview does not establish a universal tonnage target."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_volume_load_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_volume_load_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "Weekly volume load was rarely considered in the included reviews."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_training_volume",
+      "science_tonnage_limitations"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 16
+  },
+  {
+    "id": "science_repetitions_rep_ranges",
+    "slug": "repetitions-rep-ranges",
+    "displayName": "Repetitions and rep ranges",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "training-variables",
+    "contentType": "training-variable",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "A repetition range describes the repetitions considered within a set; its loading context matters.",
+    "summary": "The discussion describes an inverse relationship between repetitions and load when a given load and near-fatiguing effort are applied.",
+    "keyTakeaways": [
+      "The discussion describes an inverse relationship between repetitions and load when a given load and near-fatiguing effort are applied.",
+      "Conversions between repetition maximum and percentage of one-repetition maximum can vary by exercise and between people.",
+      "Retain load, effort and exercise context rather than assigning one universal repetition-to-percentage conversion."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Retain load, effort and exercise context rather than assigning one universal repetition-to-percentage conversion."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_repetitions_rep_ranges_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_repetitions_rep_ranges_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "Conversions between repetition maximum and percentage of one-repetition maximum can vary by exercise and between people."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_load_relative_intensity",
+      "science_proximity_to_failure"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 18
+  },
+  {
+    "id": "science_load_progression",
+    "slug": "load-progression",
+    "displayName": "Load progression",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "progression",
+    "contentType": "method",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Load progression changes the external load as part of increasing a training stimulus.",
+    "summary": "The discussion describes increasing absolute load in line with strength gains, using regular strength testing or perceived-exertion information.",
+    "keyTakeaways": [
+      "The discussion describes increasing absolute load in line with strength gains, using regular strength testing or perceived-exertion information.",
+      "Increasing stimulus is discussed for continued longer-term progress; progression is not required for every beneficial outcome reported in the overview.",
+      "Do not turn this qualitative progression principle into an automatic weight increment or a personal readiness decision."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Do not turn this qualitative progression principle into an automatic weight increment or a personal readiness decision."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_load_progression_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_load_progression_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "Increasing stimulus is discussed for continued longer-term progress; progression is not required for every beneficial outcome reported in the overview."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_progressive_overload",
+      "science_load_relative_intensity"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 40
+  },
+  {
+    "id": "science_set_progression",
+    "slug": "set-progression",
+    "displayName": "Set progression",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "progression",
+    "contentType": "method",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Set progression changes the number of sets within a resistance-training prescription.",
+    "summary": "The discussion reports that more sets can support strength and hypertrophy, while the exact number needed to optimize adaptation could not be determined.",
+    "keyTakeaways": [
+      "The discussion reports that more sets can support strength and hypertrophy, while the exact number needed to optimize adaptation could not be determined.",
+      "The authors hypothesize diminishing additional benefit as further sets are added.",
+      "Keep an evidence summary about sets separate from an individualized rule to add sets every week."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Keep an evidence summary about sets separate from an individualized rule to add sets every week."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_set_progression_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_set_progression_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "The authors hypothesize diminishing additional benefit as further sets are added."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_training_volume",
+      "science_progressive_overload"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 41
+  },
+  {
+    "id": "science_program_variation",
+    "slug": "program-variation",
+    "displayName": "Exercise and program variation",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "program-design",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "Program variation systematically changes training variables over time.",
+    "summary": "The discussion describes variation as systematic modification of resistance-training variables and periodization as one common form.",
+    "keyTakeaways": [
+      "The discussion describes variation as systematic modification of resistance-training variables and periodization as one common form.",
+      "Definitions of periodization differ, and its ordering of variables for particular goals may be understudied relative to the overview outcomes.",
+      "Describe what changes and the intended outcome; do not infer a universal exercise-rotation schedule or claim that variation guarantees superior results."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Describe what changes and the intended outcome; do not infer a universal exercise-rotation schedule or claim that variation guarantees superior results."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_program_variation_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_program_variation_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "Definitions of periodization differ, and its ordering of variables for particular goals may be understudied relative to the overview outcomes."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_periodization",
+      "science_specificity"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 53
+  },
+  {
+    "id": "science_one_repetition_maximum",
+    "slug": "one-repetition-maximum",
+    "displayName": "One-repetition maximum",
+    "aliases": [
+      "one rep max"
+    ],
+    "abbreviations": [
+      "1RM"
+    ],
+    "category": "measurement-interpretation",
+    "contentType": "measurement",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "One-repetition maximum is a strength measure whose exercise and test mode must remain explicit.",
+    "summary": "Unless otherwise specified, the overview measured strength as voluntary isotonic one-repetition maximum in the same mode as the training.",
+    "keyTakeaways": [
+      "Unless otherwise specified, the overview measured strength as voluntary isotonic one-repetition maximum in the same mode as the training.",
+      "The discussion notes exercise-specific and between-person variation in conversions between percentage of one-repetition maximum and repetition maximum.",
+      "Distinguish the source-defined measured outcome from a personal estimate; this page supplies no maximal-test instructions or prediction formula."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Distinguish the source-defined measured outcome from a personal estimate; this page supplies no maximal-test instructions or prediction formula."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_one_repetition_maximum_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_one_repetition_maximum_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "The discussion notes exercise-specific and between-person variation in conversions between percentage of one-repetition maximum and repetition maximum."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_load_relative_intensity",
+      "science_repetitions_rep_ranges"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 88
+  },
+  {
+    "id": "science_tonnage_limitations",
+    "slug": "tonnage-limitations",
+    "displayName": "Limitations of tonnage comparisons",
+    "aliases": [],
+    "abbreviations": [],
+    "category": "measurement-interpretation",
+    "contentType": "concept",
+    "goalTags": [
+      "general-fitness"
+    ],
+    "experienceTags": [
+      "foundation"
+    ],
+    "contentStatus": "published",
+    "definition": "A tonnage total is a recorded volume-load measure, with evidence limits that should be shown.",
+    "summary": "Weekly volume load was rarely considered in the reviews included in this overview.",
+    "keyTakeaways": [
+      "Weekly volume load was rarely considered in the reviews included in this overview.",
+      "The discussion evaluates set volume separately and states that the exact number of sets required to optimize adaptation could not be ascertained.",
+      "Do not infer a universal dose-response conclusion or winner score from a measure that this overview rarely evaluated."
+    ],
+    "decisionFramework": {
+      "solves": [
+        "Do not infer a universal dose-response conclusion or winner score from a measure that this overview rarely evaluated."
+      ],
+      "prioritizeWhen": [
+        "The question matches the source outcome and healthy-adult scope."
+      ],
+      "deprioritizeWhen": [
+        "The intended use exceeds the inspected source population or comparison."
+      ],
+      "adjustmentLevers": [
+        "Use the stated qualitative framework; no automatic personal prescription."
+      ],
+      "watchFor": [
+        "Studied outcome, actual load, effort, exercise, training experience and evidence limits."
+      ],
+      "cannotTellYou": [
+        "Your exact response, optimal plan, readiness, recovery status or clinical suitability."
+      ]
+    },
+    "claims": [
+      {
+        "id": "claim_science_tonnage_limitations_acsm_measurement_1",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      },
+      {
+        "id": "claim_science_tonnage_limitations_acsm_measurement_2",
+        "confidence": "limited",
+        "sourceIds": [
+          "source_acsm_rt_2026_progression_measurement"
+        ]
+      }
+    ],
+    "limitations": [
+      "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+      "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+      "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+      "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied.",
+      "The discussion evaluates set volume separately and states that the exact number of sets required to optimize adaptation could not be ascertained."
+    ],
+    "prerequisiteTopicIds": [],
+    "relatedTopicIds": [
+      "science_volume_load",
+      "science_training_volume"
+    ],
+    "commonlyConfusedTopicIds": [],
+    "comparedTopicIds": [],
+    "relatedExerciseIds": [],
+    "review": {
+      "subjectReviewerRole": "Machine source extraction; no independent subject reviewer",
+      "editorialReviewerRole": "Codex machine editorial validation; personal use",
+      "reviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-10-08",
+      "claimReviewComplete": true,
+      "notes": "Primary XML introductory, eligibility, overload, variation, load and volume passages inspected. Brief original factual observations and automated checks; no human, clinical, maximal-test or formal evidence review."
+    },
+    "version": "1.0.0",
+    "updatedAt": "2026-10-08",
+    "learningOrder": 95
   }
 ]

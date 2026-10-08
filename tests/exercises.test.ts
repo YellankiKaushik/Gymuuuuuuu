@@ -52,8 +52,15 @@ describe("exercise governance", () => {
       "exercise_lying_leg_curl",
       "exercise_seated_leg_curl",
       "exercise_stability_ball_leg_curl",
+      "exercise_dumbbell_shrug",
+      "exercise_leg_extension",
+      "exercise_barbell_bench_press",
+      "exercise_close_grip_bench_press",
     ]);
-    expect(getExerciseBySlug("barbell-bench-press")).toBeUndefined();
+    expect(getExerciseBySlug("barbell-bench-press")?.id).toBe(
+      "exercise_barbell_bench_press",
+    );
+    expect(getExerciseBySlug("incline-barbell-bench-press")).toBeUndefined();
   });
   it("accepts a complete engineering fixture and rejects incomplete publication", () => {
     expect(exerciseSchema.safeParse(fixture).success).toBe(true);

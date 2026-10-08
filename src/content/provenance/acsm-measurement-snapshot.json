@@ -1,0 +1,23 @@
+{
+  "extractedAt": "2026-10-08T08:03:16Z",
+  "reviewMethod": "Retained primary Europe PMC XML introductory and Eligibility Criteria paragraphs and selected Discussion paragraphs on overload, variation, load and volume inspected directly. Brief original observations and automated validation; no independent human or new GRADE review.",
+  "definitionSha256": "5b3af90e12b4913d029da58b972c3d973884e4557b79bafd1400a7750684a86b",
+  "sourcesSha256": "9aeeeb41d94f060ca0a59013702bfc4cf90a5ce0839e6ceb27bb20974c555bbe",
+  "observationsSha256": "80e1a2daee1d1b724ab94faace14fc72ada5d5b02873c9da6688d3ffc45cb4d9",
+  "identityIds": [
+    "science_training_adaptation",
+    "science_volume_load",
+    "science_repetitions_rep_ranges",
+    "science_load_progression",
+    "science_set_progression",
+    "science_program_variation",
+    "science_one_repetition_maximum",
+    "science_tonnage_limitations"
+  ],
+  "sourceXmlSha256": "0f92699661a50164bbd97e7db21587f920da3055914327436b0947081ed2c082",
+  "inspectedSections": [
+    "Introduction and Eligibility Criteria",
+    "Discussion: progressive overload and variation",
+    "Discussion: load and volume"
+  ]
+}

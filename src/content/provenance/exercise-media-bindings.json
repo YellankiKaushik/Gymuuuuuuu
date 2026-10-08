@@ -222,5 +222,37 @@
     "url": "/media/stability-ball-leg-curl-cue.svg",
     "sha256": "75981a2a75de8385443337980d6f6b95b4a50a6802c0fb378ae0fb0a784fb1ae",
     "sourceId": "original_ace_machine_diagrams_v1"
+  },
+  {
+    "exerciseId": "exercise_dumbbell_shrug",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_dumbbell_shrug_v1",
+    "url": "/media/dumbbell-shrug-cue.svg",
+    "sourceId": "original_supporting_exercise_diagrams_v1",
+    "sha256": "3dcb8da135bb9e8d5820982deb3068c39aa6e0011ae48d6103778a7acf3bd29f"
+  },
+  {
+    "exerciseId": "exercise_leg_extension",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_leg_extension_v1",
+    "url": "/media/leg-extension-cue.svg",
+    "sourceId": "original_supporting_exercise_diagrams_v1",
+    "sha256": "299a56174191c5e1507451bbd42efef7f27b98c8d503a79aea855925dc199c93"
+  },
+  {
+    "exerciseId": "exercise_barbell_bench_press",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_barbell_bench_press_v1",
+    "url": "/media/barbell-bench-press-cue.svg",
+    "sourceId": "original_supporting_exercise_diagrams_v1",
+    "sha256": "7eb7234a67f913d185789166580275c274d831dba4b8e7bcef06e3493dcf03ca"
+  },
+  {
+    "exerciseId": "exercise_close_grip_bench_press",
+    "version": "1.0.0",
+    "mediaId": "diagram_exercise_close_grip_bench_press_v1",
+    "url": "/media/close-grip-bench-press-cue.svg",
+    "sourceId": "original_supporting_exercise_diagrams_v1",
+    "sha256": "438ce7f802d738d8c0485428abec7345c92273179405a3e8741abefb63de0a15"
   }
 ]

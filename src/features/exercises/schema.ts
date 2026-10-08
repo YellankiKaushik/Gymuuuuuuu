@@ -43,6 +43,7 @@ export const difficulties = [
   "intermediate",
   "advanced",
   "specialist",
+  "not-assessed",
 ] as const;
 export const mechanics = [
   "compound",

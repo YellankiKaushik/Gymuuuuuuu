@@ -2,6 +2,27 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/exercises/dumbbell-shrug", "Dumbbell shrug"],
+  ["/exercises/leg-extension", "Leg extension"],
+  ["/exercises/barbell-bench-press", "Barbell bench press"],
+  ["/exercises/close-grip-bench-press", "Close-grip bench press"],
+  ["/learn/workout-science/training-adaptation", "Training adaptation"],
+  ["/learn/workout-science/volume-load", "Volume load and tonnage"],
+  [
+    "/learn/workout-science/repetitions-rep-ranges",
+    "Repetitions and rep ranges",
+  ],
+  ["/learn/workout-science/load-progression", "Load progression"],
+  ["/learn/workout-science/set-progression", "Set progression"],
+  [
+    "/learn/workout-science/program-variation",
+    "Exercise and program variation",
+  ],
+  ["/learn/workout-science/one-repetition-maximum", "One-repetition maximum"],
+  [
+    "/learn/workout-science/tonnage-limitations",
+    "Limitations of tonnage comparisons",
+  ],
   ["/foods/rolled-oats", "Rolled oats"],
   ["/foods/soy-milk", "Soy milk"],
   ["/foods/dill-leaves", "Dill leaves"],

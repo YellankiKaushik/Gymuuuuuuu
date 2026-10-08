@@ -4144,5 +4144,602 @@
       "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
     },
     "version": "1.0.0"
+  },
+  {
+    "id": "exercise_dumbbell_shrug",
+    "slug": "dumbbell-shrug",
+    "displayName": "Dumbbell shrug",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_scapular_elevation"
+    ],
+    "equipmentIds": [
+      "equipment_dumbbell"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A standing dumbbell shrug using the ACE split-stance version.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_trapezius_upper",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_dumbbell_shrug",
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Stand in a split stance with dumbbells beside the thighs, closed neutral grips and elbows straight. Brace the torso and align head and neck with the spine."
+      ],
+      "executionSteps": [
+        "Exhale and raise the shoulders slowly, without rolling them or bending the elbows. Keep the torso upright and wrists neutral.",
+        "Inhale and lower gently, retaining the starting stance and arm positions."
+      ],
+      "finishOrReset": "Return to the source-described starting position under control.",
+      "breathing": "Exhale on the upward shrug; inhale while lowering.",
+      "keyCheckpoints": [
+        "Raise and lower the shoulders without rotation or elbow bending."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Shoulder rolling or elbow bending during the shrug.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Raise and lower the shoulders without rotation or elbow bending.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_dumbbell_shrug"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_dumbbell_shrug"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_dumbbell_shrug_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/dumbbell-shrug-cue.svg",
+        "alt": "Original sequence cue: Set split stance, then Raise shoulders slowly, then Lower with control. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_dumbbell_shrug",
+        "title": "ACE Standing Shrug",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/75/standing-shrug/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 75; inspected written Steps 1-3"
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-05",
+        "notes": "1918 historical edition; pp. 432–442"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_leg_extension",
+    "slug": "leg-extension",
+    "displayName": "Leg extension",
+    "aliases": [],
+    "exerciseType": "resistance-isolation",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "not-assessed",
+    "mechanics": "isolation",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_knee_extension"
+    ],
+    "equipmentIds": [
+      "equipment_machine_selectorized"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "A seated selectorized leg extension following the published HealthHub demonstration.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_vastus_lateralis",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "hph_leg_extension_guide",
+          "gray_1918_lower_limb"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Adjust the backrest to align the knees with the machine pivot. Place the pad across the ankles rather than high on the shins; start with the lower legs beneath the knees."
+      ],
+      "executionSteps": [
+        "Sit upright and extend against the pad, stopping short of locking or hyperextending the knees.",
+        "Lower under control without the weight plates meeting in this demonstrated version. Reduce the load if the back arches."
+      ],
+      "finishOrReset": "Return to the source-described starting position under control.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Reduce the weight so the source-described upright position can be maintained."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Arching the back to move the demonstrated load.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Reduce the weight so the source-described upright position can be maintained.",
+        "severity": "performance",
+        "sourceIds": [
+          "hph_leg_extension_guide"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "The demonstration uses 10-12 repetitions with good form, but supplies no individual suitability assessment or timed rest. No personal dose, sets, duration or universal range of motion is inferred.",
+        "confidence": "limited",
+        "sourceIds": [
+          "hph_leg_extension_guide"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Read the complete guide and establish the supported starting position before progressing."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety context, not an individual clearance or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_leg_extension_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/leg-extension-cue.svg",
+        "alt": "Original sequence cue: Align seat and pad, then Extend without locking, then Lower under control. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "hph_leg_extension_guide",
+        "title": "Your Exercise Routine: Seated Leg Extensions",
+        "publisher": "The Wellness Network; Hawaii Pacific Health HealthHub / WebMD Ignite",
+        "sourceType": "professional-technique-guide",
+        "url": "https://livinghealthy.hawaiipacifichealth.org/wellness/fitness/your-exercise-routine-seated-leg-extensions",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "HCGN1019096 EN; published transcript of seated-machine demonstration"
+      },
+      {
+        "id": "gray_1918_lower_limb",
+        "title": "Gray, Anatomy of the Human Body, 1918: lower-limb muscles (pp. 470–483)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/470/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-07",
+        "notes": "1918 historical edition; pp. 470–483"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_barbell_bench_press",
+    "slug": "barbell-bench-press",
+    "displayName": "Barbell bench press",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "beginner",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_horizontal_push"
+    ],
+    "equipmentIds": [
+      "equipment_barbell",
+      "equipment_bench"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE flat-bench barbell chest-press version, with separately attributed spotter context.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_pectoralis_major",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_barbell_bench_press",
+          "gray_1918_shoulder_thorax"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Lie face up on a flat bench with hands slightly wider than shoulder width. Keep the feet on the floor and hips against the bench when unracking with assistance."
+      ],
+      "executionSteps": [
+        "Lower slowly toward the chest as the elbows bend outward, stopping when they are just below the bench in this source version.",
+        "Press the feet into the floor and raise the bar straight upward to the starting position."
+      ],
+      "finishOrReset": "Complete the learned, assisted return-to-rack procedure; exact spotting and rerack steps are outside this brief extraction.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Keep the hips supported by the bench and the feet pressed into the floor."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Lifting the hips from the bench during this source version.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Keep the hips supported by the bench and the feet pressed into the floor.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_barbell_bench_press"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_barbell_bench_press"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Learn the setup, unrack and return-to-rack with qualified instruction. The brief technique source does not supply a complete spotting or reracking lesson.",
+        "ACE’s women-focused guide advises a spotter for bench pressing, especially while learning or increasing weight. No guaranteed injury-prevention effect is asserted."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety plus selected ACE spotter context; not individual clearance, complete spotting instruction or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_barbell_bench_press_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/barbell-bench-press-cue.svg",
+        "alt": "Original sequence cue: Learn supported setup, then Lower source version, then Press under control. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_barbell_bench_press",
+        "title": "ACE Chest Press (barbell and flat bench)",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/5/chest-press/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 5; inspected written barbell-and-bench instructions"
+      },
+      {
+        "id": "gray_1918_shoulder_thorax",
+        "title": "Gray, Anatomy of the Human Body, 1918: scapular, thoracic and shoulder muscles (pp. 432–442)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/432/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-05",
+        "notes": "1918 historical edition; pp. 432–442"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      },
+      {
+        "id": "ace_bench_spotter_context_2025",
+        "title": "A Woman’s Guide to Gaining Muscle with Weight Training — selected spotter context",
+        "publisher": "American Council on Exercise; Kelley Vargo",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/blog/5502/a-woman-s-guide-to-gaining-muscle-with-weight-training/",
+        "publicationYear": 2025,
+        "reviewedAt": "2026-10-08",
+        "notes": "Updated February 14, 2025; selected spotter sentence only"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
+  },
+  {
+    "id": "exercise_close_grip_bench_press",
+    "slug": "close-grip-bench-press",
+    "displayName": "Close-grip bench press",
+    "aliases": [],
+    "exerciseType": "resistance-compound",
+    "contentStatus": "published",
+    "reviewRequired": false,
+    "difficulty": "intermediate",
+    "mechanics": "compound",
+    "laterality": "bilateral",
+    "movementPatternIds": [
+      "pattern_horizontal_push",
+      "pattern_elbow_extension"
+    ],
+    "equipmentIds": [
+      "equipment_barbell",
+      "equipment_bench"
+    ],
+    "environmentTags": [
+      "commercial-gym"
+    ],
+    "goalTags": [
+      "general-fitness"
+    ],
+    "summary": "The ACE shoulder-line grip barbell bench-press version, with separately attributed spotter context.",
+    "muscleRoles": [
+      {
+        "muscleId": "muscle_triceps_brachii",
+        "role": "context-dependent",
+        "qualifier": "Anatomy-based relationship to the source-described joint movement; not measured activation, isolation or a primary/secondary ranking.",
+        "sourceIds": [
+          "ace_close_grip_bench_press",
+          "gray_1918_upper_arm"
+        ]
+      }
+    ],
+    "technique": {
+      "setup": [
+        "Lie face up on a barbell bench. Place the hands in line with the shoulders and point the elbows toward the feet; learn the unrack with qualified assistance."
+      ],
+      "executionSteps": [
+        "Bring the bar toward the chest by bending the elbows close to the ribs.",
+        "Press the feet into the floor and hips into the bench while returning the bar away from the chest."
+      ],
+      "finishOrReset": "Complete the learned, assisted return-to-rack procedure; exact spotting and rerack steps are outside this brief extraction.",
+      "breathing": null,
+      "keyCheckpoints": [
+        "Keep the elbows near the ribs as the bar approaches the chest."
+      ]
+    },
+    "mistakes": [
+      {
+        "mistake": "Letting the elbows move away from the ribs in this source version.",
+        "whyItMatters": "Technique differs from this source version; no injury probability is inferred.",
+        "correction": "Keep the elbows near the ribs as the bar approaches the chest.",
+        "severity": "performance",
+        "sourceIds": [
+          "ace_close_grip_bench_press"
+        ]
+      }
+    ],
+    "relationships": {},
+    "programmingGuidance": [
+      {
+        "context": "general-fitness",
+        "guidanceStatus": "insufficient-evidence",
+        "setRange": null,
+        "repRange": null,
+        "restSeconds": null,
+        "loadNotes": "No individual load inferred.",
+        "qualifier": "This extraction supplies technique, not an individual load, sets, repetitions, timed rest, duration or universal range of motion.",
+        "confidence": "limited",
+        "sourceIds": [
+          "ace_close_grip_bench_press"
+        ]
+      }
+    ],
+    "safety": {
+      "stopSignals": [
+        "Stop for pain or feeling unwell; seek qualified help when unsure about suitability."
+      ],
+      "prerequisites": [
+        "Learn the setup, unrack and return-to-rack with qualified instruction. The brief technique source does not supply a complete spotting or reracking lesson.",
+        "ACE’s women-focused guide advises a spotter for bench pressing, especially while learning or increasing weight. No guaranteed injury-prevention effect is asserted."
+      ],
+      "notMedicalAdvice": true,
+      "notes": "NIA general educational safety plus selected ACE spotter context; not individual clearance, complete spotting instruction or a guarantee of injury prevention."
+    },
+    "media": [
+      {
+        "id": "diagram_exercise_close_grip_bench_press_v1",
+        "kind": "diagram",
+        "provider": "Fitness OS repository",
+        "url": "/media/close-grip-bench-press-cue.svg",
+        "alt": "Original sequence cue: Set shoulder-line grip, then Lower near ribs, then Press with support. Read the complete technique and prerequisites.",
+        "license": "Original project artwork; repository-owned",
+        "credit": "Fitness OS / Codex original SVG",
+        "reviewStatus": "reviewed",
+        "reviewedAt": "2026-10-08",
+        "whySelected": "Machine comparison with the sourced sequence; no independent human review."
+      }
+    ],
+    "sources": [
+      {
+        "id": "ace_close_grip_bench_press",
+        "title": "ACE Close-grip Bench Press",
+        "publisher": "American Council on Exercise",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/311/close-grip-bench-press/",
+        "publicationYear": null,
+        "reviewedAt": "2026-10-08",
+        "notes": "Exercise Library 311; inspected written instructions"
+      },
+      {
+        "id": "gray_1918_upper_arm",
+        "title": "Gray, Anatomy of the Human Body, 1918: arm muscles (pp. 443–445)",
+        "publisher": "Lea & Febiger; Henry Gray, edited by Warren H. Lewis",
+        "sourceType": "textbook",
+        "url": "https://archive.org/details/anatomyofhumanbo00grayrich/page/442/mode/2up",
+        "publicationYear": 1918,
+        "reviewedAt": "2026-10-05",
+        "notes": "1918 historical edition; pp. 443–445"
+      },
+      {
+        "id": "nia_strength_guide_2018",
+        "title": "NIA Exercise & Physical Activity: Your Everyday Guide, March 2018",
+        "publisher": "National Institute on Aging, NIH / US Department of Health and Human Services",
+        "sourceType": "government-guideline",
+        "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+        "publicationYear": 2018,
+        "reviewedAt": "2026-10-06",
+        "notes": "March 2018; Publication No. 18-AG-4258"
+      },
+      {
+        "id": "ace_bench_spotter_context_2025",
+        "title": "A Woman’s Guide to Gaining Muscle with Weight Training — selected spotter context",
+        "publisher": "American Council on Exercise; Kelley Vargo",
+        "sourceType": "professional-technique-guide",
+        "url": "https://www.acefitness.org/resources/everyone/blog/5502/a-woman-s-guide-to-gaining-muscle-with-weight-training/",
+        "publicationYear": 2025,
+        "reviewedAt": "2026-10-08",
+        "notes": "Updated February 14, 2025; selected spotter sentence only"
+      }
+    ],
+    "review": {
+      "contentReviewer": "Codex source verification; published_personal_use; no human review",
+      "techniqueReviewedAt": "2026-10-08",
+      "anatomyReviewedAt": "2026-10-08",
+      "safetyReviewedAt": "2026-10-08",
+      "mediaReviewedAt": "2026-10-08",
+      "nextReviewDue": "2027-04-08",
+      "notes": "Machine source verification only. Relationships are anatomical inferences; source-specific equipment and population limits remain explicit. No independent human or clinical review."
+    },
+    "version": "1.0.0"
   }
 ]

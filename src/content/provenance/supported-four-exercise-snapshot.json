@@ -1,0 +1,18 @@
+{
+  "extractedAt": "2026-10-08T08:14:14Z",
+  "definitionsSha256": "4e37f8de1ce77b1ee8a4fd18a50028e8f319d5d4399a05f87e1639adbecb9fc6",
+  "sourcesSha256": "1f50f401ad921231c5f0eae9b2b1eaa13b022adcaf527f91a2486e883d41083a",
+  "recordIds": [
+    "exercise_dumbbell_shrug",
+    "exercise_leg_extension",
+    "exercise_barbell_bench_press",
+    "exercise_close_grip_bench_press"
+  ],
+  "mediaHashes": {
+    "/media/dumbbell-shrug-cue.svg": "3dcb8da135bb9e8d5820982deb3068c39aa6e0011ae48d6103778a7acf3bd29f",
+    "/media/leg-extension-cue.svg": "299a56174191c5e1507451bbd42efef7f27b98c8d503a79aea855925dc199c93",
+    "/media/barbell-bench-press-cue.svg": "7eb7234a67f913d185789166580275c274d831dba4b8e7bcef06e3493dcf03ca",
+    "/media/close-grip-bench-press-cue.svg": "438ce7f802d738d8c0485428abec7345c92273179405a3e8741abefb63de0a15"
+  },
+  "reviewMethod": "Primary ACE written Steps 1-3 and the published Hawaii Pacific Health HealthHub/The Wellness Network seated-machine transcript inspected. Brief original observations and sequence cues, scoped anatomy inferences and automated validation; no independent human review."
+}

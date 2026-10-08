@@ -16,16 +16,9 @@
     {
       "module": "exercises",
       "totalIdentities": 184,
-      "publishedIdentities": 28,
-      "draftIdentities": 156,
+      "publishedIdentities": 32,
+      "draftIdentities": 152,
       "blockedIdentities": [
-        {
-          "id": "exercise_barbell_bench_press",
-          "slug": "barbell-bench-press",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
         {
           "id": "exercise_incline_barbell_bench_press",
           "slug": "incline-barbell-bench-press",
@@ -356,13 +349,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "exercise_dumbbell_shrug",
-          "slug": "dumbbell-shrug",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "exercise_barbell_shrug",
           "slug": "barbell-shrug",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -428,13 +414,6 @@
         {
           "id": "exercise_reverse_curl",
           "slug": "reverse-curl",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_close_grip_bench_press",
-          "slug": "close-grip-bench-press",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -589,13 +568,6 @@
         {
           "id": "exercise_single_leg_squat_to_box",
           "slug": "single-leg-squat-to-box",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "exercise_leg_extension",
-          "slug": "leg-extension",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1118,16 +1090,9 @@
     {
       "module": "workout-science",
       "totalIdentities": 98,
-      "publishedIdentities": 24,
-      "draftIdentities": 74,
+      "publishedIdentities": 32,
+      "draftIdentities": 66,
       "blockedIdentities": [
-        {
-          "id": "science_training_adaptation",
-          "slug": "training-adaptation",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
         {
           "id": "science_stimulus_fatigue_recovery",
           "slug": "stimulus-fatigue-recovery",
@@ -1152,20 +1117,6 @@
         {
           "id": "science_direct_indirect_sets",
           "slug": "direct-indirect-sets",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_volume_load",
-          "slug": "volume-load",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_repetitions_rep_ranges",
-          "slug": "repetitions-rep-ranges",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1262,20 +1213,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "science_load_progression",
-          "slug": "load-progression",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_set_progression",
-          "slug": "set-progression",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "science_range_progression",
           "slug": "range-progression",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -1341,13 +1278,6 @@
         {
           "id": "science_weekly_volume_distribution",
           "slug": "weekly-volume-distribution",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_program_variation",
-          "slug": "program-variation",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -1563,13 +1493,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "science_one_repetition_maximum",
-          "slug": "one-repetition-maximum",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "science_estimated_one_rep_max",
           "slug": "estimated-one-rep-max",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -1607,13 +1530,6 @@
         {
           "id": "science_range_consistency_metric",
           "slug": "range-consistency-metric",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "science_tonnage_limitations",
-          "slug": "tonnage-limitations",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6505,16 +6421,16 @@
     },
     {
       "module": "exercises",
-      "published": 28,
-      "withPublicationProvenance": 28,
-      "inSearch": 28,
+      "published": 32,
+      "withPublicationProvenance": 32,
+      "inSearch": 32,
       "missingSourceProvenance": []
     },
     {
       "module": "workout-science",
-      "published": 24,
-      "withPublicationProvenance": 24,
-      "inSearch": 24,
+      "published": 32,
+      "withPublicationProvenance": 32,
+      "inSearch": 32,
       "missingSourceProvenance": []
     },
     {
@@ -6586,7 +6502,7 @@
     },
     {
       "module": "exercises",
-      "eligiblePublishedRecords": 28,
+      "eligiblePublishedRecords": 32,
       "families": [
         "exercises"
       ],
@@ -7690,6 +7606,70 @@
           "unresolvedMediaIds": [],
           "missingLocalAssets": [],
           "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_dumbbell_shrug",
+          "assets": [
+            {
+              "url": "/media/dumbbell-shrug-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_leg_extension",
+          "assets": [
+            {
+              "url": "/media/leg-extension-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_barbell_bench_press",
+          "assets": [
+            {
+              "url": "/media/barbell-bench-press-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
+        },
+        {
+          "id": "exercise_close_grip_bench_press",
+          "assets": [
+            {
+              "url": "/media/close-grip-bench-press-cue.svg",
+              "creator": "Fitness OS / Codex original SVG",
+              "licence": "Original project artwork; repository-owned",
+              "reviewDate": "2026-10-08",
+              "reviewStatus": "reviewed"
+            }
+          ],
+          "hasVisual": true,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "media_metadata_present"
         }
       ]
     },
@@ -7883,6 +7863,70 @@
         },
         {
           "id": "science_muscular_endurance_adaptation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_training_adaptation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_volume_load",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_repetitions_rep_ranges",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_load_progression",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_set_progression",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_program_variation",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_one_repetition_maximum",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "science_tonnage_limitations",
           "assets": [],
           "hasVisual": false,
           "unresolvedMediaIds": [],
@@ -11041,19 +11085,19 @@
     },
     {
       "module": "exercises",
-      "missingVerifiedFactualRecords": 156,
+      "missingVerifiedFactualRecords": 152,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 28,
+      "independentHumanReviewPending": 32,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
     {
       "module": "workout-science",
-      "missingVerifiedFactualRecords": 74,
+      "missingVerifiedFactualRecords": 66,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 24,
+      "independentHumanReviewPending": 32,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -13008,6 +13052,111 @@
         "Only publication month supplied; exact day unavailable.",
         "No independent human or clinical review of this extraction."
       ]
+    },
+    {
+      "id": "source_acsm_rt_2026_progression_measurement",
+      "url": "https://europepmc.org/articles/PMC12965823",
+      "version": "doi:10.1249/MSS.0000000000003897; PMID:41843416; PMCID:PMC12965823; Introduction, Eligibility Criteria and selected Discussion paragraphs on overload, variation, load and volume",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T08:03:16Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "position_stand",
+      "rightsReference": "Source article states CC BY-NC-ND 4.0. Only brief original factual observations and linked attribution are retained; no source table, figure, paragraph or adapted reproduction of the work is published. No permission to adapt the full work or use it commercially is asserted.",
+      "limitations": [
+        "Eligible healthy adults aged at least 18 with no defined disease, in resistance-training studies lasting at least six weeks; group results are not individual predictions or clinical/youth guidance.",
+        "Most included reviews concerned participants with minimal or no resistance-training experience; some included advanced trainees.",
+        "The overview searched reviews through October 2024. Only the identified introductory, eligibility and discussion passages support this extraction.",
+        "Editorial confidence is limited, not a new formal GRADE assessment. No independent human or clinical review, personal progression algorithm or maximal-test prescription is supplied."
+      ]
+    },
+    {
+      "id": "ace_dumbbell_shrug",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/75/standing-shrug/",
+      "version": "Exercise Library 75; inspected written Steps 1-3",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T08:14:14Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual observations with linked attribution. Publisher copyright retained; no copied video, photo, transcript block, traced artwork, open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique guide, not a controlled outcome study or individual assessment.",
+        "Exact publication date and studied population unavailable; a copyright footer is not a publication date.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "hph_leg_extension_guide",
+      "url": "https://livinghealthy.hawaiipacifichealth.org/wellness/fitness/your-exercise-routine-seated-leg-extensions",
+      "version": "HCGN1019096 EN; published transcript of seated-machine demonstration",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T08:14:14Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual observations with linked attribution. Publisher copyright retained; no copied video, photo, transcript block, traced artwork, open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique guide, not a controlled outcome study or individual assessment.",
+        "Exact publication date and studied population unavailable; a copyright footer is not a publication date.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_barbell_bench_press",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/5/chest-press/",
+      "version": "Exercise Library 5; inspected written barbell-and-bench instructions",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T08:14:14Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual observations with linked attribution. Publisher copyright retained; no copied video, photo, transcript block, traced artwork, open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique guide, not a controlled outcome study or individual assessment.",
+        "Exact publication date and studied population unavailable; a copyright footer is not a publication date.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_close_grip_bench_press",
+      "url": "https://www.acefitness.org/resources/everyone/exercise-library/311/close-grip-bench-press/",
+      "version": "Exercise Library 311; inspected written instructions",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T08:14:14Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual observations with linked attribution. Publisher copyright retained; no copied video, photo, transcript block, traced artwork, open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Source-specific technique guide, not a controlled outcome study or individual assessment.",
+        "Exact publication date and studied population unavailable; a copyright footer is not a publication date.",
+        "No independent human or clinical review."
+      ]
+    },
+    {
+      "id": "ace_bench_spotter_context_2025",
+      "url": "https://www.acefitness.org/resources/everyone/blog/5502/a-woman-s-guide-to-gaining-muscle-with-weight-training/",
+      "version": "Updated February 14, 2025; selected spotter sentence only",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T08:14:14Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "professional_summary",
+      "rightsReference": "Brief original factual observations with linked attribution. Publisher copyright retained; no copied video, photo, transcript block, traced artwork, open licence or bulk reuse permission claimed.",
+      "limitations": [
+        "Selected professional spotter guidance from a women-focused training article, not a controlled injury-prevention study.",
+        "Loading increments, sample dosing, hypertrophy claims and rest prescriptions from that article are excluded.",
+        "No independent human or clinical review or guaranteed injury prevention."
+      ]
+    },
+    {
+      "id": "original_supporting_exercise_diagrams_v1",
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media",
+      "version": "1.0.0; original sequence boxes and text, no traced source figures",
+      "reuse": "original_work",
+      "extractionDate": "2026-10-08T08:14:14Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "original_repository_work",
+      "rightsReference": "Original repository artwork created for Fitness OS; no third-party illustrations copied.",
+      "limitations": [
+        "Sequence cues are not anatomical models or complete technique demonstrations.",
+        "Machine comparison with sourced steps only; no independent human review."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -14337,8 +14486,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 636,
-    "factualRecords": 508
+    "documents": 648,
+    "factualRecords": 520
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -15089,6 +15238,46 @@
     {
       "module": "workout-science",
       "id": "science_muscular_endurance_adaptation",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_training_adaptation",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_volume_load",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_repetitions_rep_ranges",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_load_progression",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_set_progression",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_program_variation",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_one_repetition_maximum",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "workout-science",
+      "id": "science_tonnage_limitations",
       "instructionalMediaRequired": false
     },
     {
@@ -17026,12 +17215,12 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T07:56:18.902Z",
-    "expected": 690,
+    "buildDate": "2026-10-08T08:38:15.654Z",
+    "expected": 702,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 690,
-    "ignoredStaleReports": 687,
+    "unmeasured": 702,
+    "ignoredStaleReports": 690,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
       "No manual devices, screen-reader interaction, print output or complete interactive-state traversal is claimed."
@@ -18718,6 +18907,30 @@
         "evidence": null
       },
       {
+        "path": "/exercises/dumbbell-shrug",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/leg-extension",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/barbell-bench-press",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/exercises/close-grip-bench-press",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
         "path": "/learn/workout-science/consistency-adherence",
         "kind": "public_record",
         "result": "unmeasured",
@@ -18857,6 +19070,54 @@
       },
       {
         "path": "/learn/workout-science/muscular-endurance-adaptation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/training-adaptation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/volume-load",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/repetitions-rep-ranges",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/load-progression",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/set-progression",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/program-variation",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/one-repetition-maximum",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/learn/workout-science/tonnage-limitations",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null
