@@ -3,10 +3,10 @@
   "adapterVersion": "fitness-os-native-index-v1",
   "normalizationVersion": "unicode-nfkc-token-v1",
   "rankingVersion": "field-weights-exact-prefix-bonus-v1",
-  "canonicalDocumentHash": "da41609a1dda1d4b8511e1c9f8a5acc805a8b3e3d0e67e98f3231d0de3eea799",
-  "indexHash": "d2da38666190d88b1345c4ed4f5a4ede3d81b14a190a01c30526b79ad07ccf92",
-  "indexVersion": "1688be70311e3d5a40d15d694e6fdb144c776e26cffda1c58d2b39f8224f527a",
-  "documentCount": 604,
+  "canonicalDocumentHash": "4a13233e8acbac5935e2993291a7a2cdd0c865b8131168a75402527ade73ee78",
+  "indexHash": "d2da07726fae96d87e4857c7b246b5987f03f1afc81c36d6198e4b942b00e366",
+  "indexVersion": "55655a4231725bf0c8fcc9c94cd5c6ef63f85a015f3325db41a2f634941265fc",
+  "documentCount": 611,
   "countsByEntityType": {
     "route": 124,
     "muscle": 70,
@@ -20,7 +20,7 @@
     "recipe": 24,
     "meal_plan_template": 3,
     "meal_plan": 0,
-    "recovery_topic": 4,
+    "recovery_topic": 11,
     "recovery_routine": 4,
     "sleep_entry": 0,
     "recovery_checkin": 0,
@@ -35,6 +35,6 @@
     "body_measurement": 0,
     "dashboard_widget": 4
   },
-  "builtAt": "2026-10-08T01:35:12.000Z",
+  "builtAt": "2026-10-08T01:43:57.000Z",
   "locale": "en"
 }

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": "91d3cf35dce682ee9eebd5e79772ae0fd107880a",
+  "ciRun": 37713675090,
+  "crossBrowserRun": 37713675010,
+  "engineeringChecks": "302/302 main and all browser jobs; main coverage 302/302",
+  "browserResults": {
+    "ciChromium": {
+      "passed": 205,
+      "failed": 1
+    },
+    "matrixChromium": {
+      "passed": 205,
+      "failed": 1
+    },
+    "matrixFirefox": {
+      "passed": 205,
+      "failed": 1
+    },
+    "matrixWebKit": "pending at report time"
+  },
+  "failure": "Nutrient comparison expected protein to have no published numeric reference row after the verified FDA expansion.",
+  "correction": "Keep iron and the new exact FDA protein 50 g label row; add water as a genuinely missing-reference comparison, preserving the unavailable-row assertion and no-winner/personal-target assertions.",
+  "localRebuiltVerification": "4/4 Chromium/WebKit comparison cases pass against the 483-record production build.",
+  "remaining": "Fresh complete hosted verification and final current-build route audit remain required.",
+  "productionDeployment": "disabled"
+}

@@ -1,6 +1,35 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
+test("source sleep guidance is readable without comparison and related links resolve", async ({
+  page,
+}) => {
+  await page.goto("/recovery/topics/wind-down-routine");
+  await expect(
+    page.getByRole("region", { name: "Source guidance for Wind-Down Routine" }),
+  ).toContainText("at least 30 minutes before bed");
+  await expect(
+    page.getByRole("link", {
+      name: "CDC About Sleep: habits, quality, evaluation and diary context",
+    }),
+  ).toHaveAttribute("href", "https://www.cdc.gov/sleep/about/index.html");
+  await page
+    .getByRole("navigation", { name: "Related reading for Wind-Down Routine" })
+    .getByRole("link", { name: "Caffeine and Sleep", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/recovery\/topics\/caffeine-and-sleep$/);
+  await expect(
+    page.getByRole("region", {
+      name: "Source guidance for Caffeine and Sleep",
+    }),
+  ).toContainText("avoiding caffeine during the afternoon or evening");
+  await expect(
+    page.getByText(
+      "Personal-use publication · machine source verification · no independent human review.",
+      { exact: true },
+    ),
+  ).toBeVisible();
+});
 test("six-step flexibility copy preserves readable source provenance in backup @a11y", async ({
   page,
 }) => {

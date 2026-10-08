@@ -96,6 +96,7 @@ test("nutrient comparison preserves FDA label context and unavailable reference 
   for (const [query, title] of [
     ["iron", "Iron"],
     ["protein", "Protein"],
+    ["water", "Water"],
   ]) {
     await page.goto(`/search?q=${query}&type=nutrient`);
     const card = page.getByRole("article").filter({
@@ -114,6 +115,9 @@ test("nutrient comparison preserves FDA label context and unavailable reference 
   ).toBeVisible();
   await expect(
     page.getByText(/fda dv adult 4 plus · DV · 18 mg · label reference/),
+  ).toBeVisible();
+  await expect(
+    page.getByText(/fda dv adult 4 plus · DV · 50 g · label reference/),
   ).toBeVisible();
   await expect(
     page.getByText(/EAR is not a personal target/).first(),

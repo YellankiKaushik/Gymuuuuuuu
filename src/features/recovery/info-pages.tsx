@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { publicRecoveryArticles, publicRecoveryRoutines } from "./publication";
+
 import { createPublicRoutineCopy } from "./public-routines";
 import { saveRoutine } from "./storage";
 import { recoveryReference, type RecoveryBackup } from "./schema";
@@ -17,6 +18,43 @@ import {
 } from "./storage";
 import { recoveryCsv, recoveryCsvKinds } from "./export";
 import { Field, useRecovery, downloadRecoveryFile } from "./workspace";
+
+function RelatedRecoveryReading({
+  ids,
+  title,
+}: {
+  ids: string[];
+  title: string;
+}) {
+  const links = ids.flatMap((id) => {
+    const topic = publicRecoveryArticles.find((r) => r.id === id);
+    if (topic)
+      return [{ title: topic.title, href: `/recovery/topics/${topic.slug}` }];
+    const routine = publicRecoveryRoutines.find((r) => r.article.id === id);
+    return routine
+      ? [
+          {
+            title: routine.article.title,
+            href: `/mobility/routines/${routine.article.slug}`,
+          },
+        ]
+      : [];
+  });
+  if (!links.length) return null;
+  return (
+    <nav aria-label={`Related reading for ${title}`}>
+      <h3>Related reading</h3>
+      <ul>
+        {links.map((link) => (
+          <li key={link.href}>
+            <a href={link.href}>{link.title}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
 export function RecoveryKnowledge({
   domain,
   slug,
@@ -122,6 +160,24 @@ export function RecoveryKnowledge({
             </a>
           </h2>
           <p>{article.definition}</p>
+          {article.claims.some(
+            (claim) => claim.text !== article.definition,
+          ) && (
+            <section aria-label={`Source guidance for ${article.title}`}>
+              <h3>Source guidance</h3>
+              <ul>
+                {article.claims
+                  .filter((claim) => claim.text !== article.definition)
+                  .map((claim) => (
+                    <li key={claim.id}>{claim.text}</li>
+                  ))}
+              </ul>
+            </section>
+          )}
+          <RelatedRecoveryReading
+            ids={article.relatedIds}
+            title={article.title}
+          />
           {routines && <PublishedRoutineSteps publicId={article.id} />}
           <p>
             Personal-use publication · machine source verification · no

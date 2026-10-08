@@ -929,6 +929,20 @@
         "held_stretch_template"
       ],
       "licenseNote": "US government text subject to NIA exclusions; no photos, figures or credited artwork reproduced. Source checked 2026-10-07."
+    },
+    {
+      "id": "cdc_sleep_habits_2024",
+      "title": "CDC About Sleep: habits, quality, evaluation and diary context",
+      "publisher": "Centers for Disease Control and Prevention",
+      "year": 2024,
+      "type": "government_guidance",
+      "url": "https://www.cdc.gov/sleep/about/index.html",
+      "role": [
+        "sleep_habits",
+        "sleep_quality",
+        "sleep_diary_education"
+      ],
+      "licenseNote": "Brief original factual summaries and source links; no source photographs or third-party materials copied. Source checked 2026-10-08."
     }
   ]
 }

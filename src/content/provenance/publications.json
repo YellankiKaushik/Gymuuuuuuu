@@ -9829,6 +9829,20 @@
     },
     "fields": [
       {
+        "path": "definition",
+        "sourceIds": [
+          "aasm_sleep_2015"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_sleep_duration_adults",
+        "sourceIds": [
+          "aasm_sleep_2015"
+        ],
+        "kind": "sourced_education"
+      },
+      {
         "path": "claims",
         "sourceIds": [
           "aasm_sleep_2015"
@@ -9853,6 +9867,20 @@
       "name": "Codex"
     },
     "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "nsf_regularity_2023"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_sleep_regularity",
+        "sourceIds": [
+          "nsf_regularity_2023"
+        ],
+        "kind": "sourced_education"
+      },
       {
         "path": "claims",
         "sourceIds": [
@@ -9879,6 +9907,20 @@
     },
     "fields": [
       {
+        "path": "definition",
+        "sourceIds": [
+          "nia_flexibility_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_static_stretching_nia",
+        "sourceIds": [
+          "nia_flexibility_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
         "path": "claims",
         "sourceIds": [
           "nia_flexibility_guide_2018"
@@ -9904,9 +9946,296 @@
     },
     "fields": [
       {
+        "path": "definition",
+        "sourceIds": [
+          "nia_flexibility_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_stretching_intensity_nia",
+        "sourceIds": [
+          "nia_flexibility_guide_2018"
+        ],
+        "kind": "sourced_education"
+      },
+      {
         "path": "claims",
         "sourceIds": [
           "nia_flexibility_guide_2018"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "sleep_quality_vs_duration",
+    "slug": "sleep-quality-vs-duration",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_sleep_quality_vs_duration_cdc",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "bedroom_environment",
+    "slug": "bedroom-environment",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_bedroom_environment_cdc",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "wind_down_routine",
+    "slug": "wind-down-routine",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_wind_down_routine_cdc",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "caffeine_and_sleep",
+    "slug": "caffeine-and-sleep",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_caffeine_and_sleep_cdc",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "alcohol_and_sleep",
+    "slug": "alcohol-and-sleep",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_alcohol_and_sleep_cdc",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "sleep_evaluation_signals",
+    "slug": "sleep-evaluation-signals",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_sleep_evaluation_signals_cdc",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      }
+    ],
+    "limitations": [
+      "No independent human or clinical review.",
+      "See each record's source-specific limitations and missing data."
+    ]
+  },
+  {
+    "module": "recovery",
+    "id": "sleep_diary_method",
+    "slug": "sleep-diary-method",
+    "state": "published_personal_use",
+    "method": "Explicit source/identity verification and automated schema/provenance validation; no independent human review",
+    "lastReviewedAt": "2026-10-08",
+    "reviewer": {
+      "kind": "machine",
+      "name": "Codex"
+    },
+    "fields": [
+      {
+        "path": "definition",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims.claim_sleep_diary_method_cdc",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
+        ],
+        "kind": "sourced_education"
+      },
+      {
+        "path": "claims",
+        "sourceIds": [
+          "cdc_sleep_habits_2024"
         ],
         "kind": "sourced_education"
       }

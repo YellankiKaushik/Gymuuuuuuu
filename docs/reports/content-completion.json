@@ -2694,8 +2694,8 @@
     {
       "module": "recovery",
       "totalIdentities": 124,
-      "publishedIdentities": 8,
-      "draftIdentities": 116,
+      "publishedIdentities": 15,
+      "draftIdentities": 109,
       "blockedIdentities": [
         {
           "id": "sleep_need_variability",
@@ -2707,13 +2707,6 @@
         {
           "id": "sleep_opportunity_vs_sleep",
           "slug": "sleep-opportunity-vs-sleep",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "sleep_quality_vs_duration",
-          "slug": "sleep-quality-vs-duration",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2761,36 +2754,8 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "caffeine_and_sleep",
-          "slug": "caffeine-and-sleep",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "alcohol_and_sleep",
-          "slug": "alcohol-and-sleep",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "exercise_timing_and_sleep",
           "slug": "exercise-timing-and-sleep",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "bedroom_environment",
-          "slug": "bedroom-environment",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "wind_down_routine",
-          "slug": "wind-down-routine",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -2810,13 +2775,6 @@
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
         },
         {
-          "id": "sleep_diary_method",
-          "slug": "sleep-diary-method",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
           "id": "sleep_debt_language",
           "slug": "sleep-debt-language",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
@@ -2826,13 +2784,6 @@
         {
           "id": "sleep_stages_boundary",
           "slug": "sleep-stages-boundary",
-          "reason": "Source-backed factual record and machine publication review have not yet been completed",
-          "classification": "missing_verified_factual_record",
-          "disposition": "pending_content_work_not_a_permanent_licensing_block"
-        },
-        {
-          "id": "sleep_evaluation_signals",
-          "slug": "sleep-evaluation-signals",
           "reason": "Source-backed factual record and machine publication review have not yet been completed",
           "classification": "missing_verified_factual_record",
           "disposition": "pending_content_work_not_a_permanent_licensing_block"
@@ -6778,9 +6729,9 @@
     },
     {
       "module": "recovery",
-      "published": 8,
-      "withPublicationProvenance": 8,
-      "inSearch": 8,
+      "published": 15,
+      "withPublicationProvenance": 15,
+      "inSearch": 15,
       "missingSourceProvenance": []
     },
     {
@@ -6869,7 +6820,7 @@
     },
     {
       "module": "recovery",
-      "eligiblePublishedRecords": 8,
+      "eligiblePublishedRecords": 15,
       "families": [
         "recovery_methods"
       ],
@@ -10734,6 +10685,62 @@
           "status": "no_record_visual_provided"
         },
         {
+          "id": "sleep_quality_vs_duration",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "bedroom_environment",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "wind_down_routine",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "caffeine_and_sleep",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "alcohol_and_sleep",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "sleep_evaluation_signals",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
+          "id": "sleep_diary_method",
+          "assets": [],
+          "hasVisual": false,
+          "unresolvedMediaIds": [],
+          "missingLocalAssets": [],
+          "status": "no_record_visual_provided"
+        },
+        {
           "id": "routine_running_warmup",
           "assets": [],
           "hasVisual": false,
@@ -11008,10 +11015,10 @@
     },
     {
       "module": "recovery",
-      "missingVerifiedFactualRecords": 116,
+      "missingVerifiedFactualRecords": 109,
       "missingDatasetMappings": 0,
       "publishedRecordsMissingSource": 0,
-      "independentHumanReviewPending": 8,
+      "independentHumanReviewPending": 15,
       "licensingBlockedIdentities": null,
       "licensingStatus": "Source-level exclusions below; no unverified identity-to-licence assignment."
     },
@@ -12614,6 +12621,20 @@
         "Sequence cues, not complete technique demonstrations, anatomical models or movement assessment.",
         "Machine source comparison only; no independent human review."
       ]
+    },
+    {
+      "id": "cdc_sleep_habits_2024",
+      "url": "https://www.cdc.gov/sleep/about/index.html",
+      "version": "About Sleep web page, dated May 15, 2024; selected educational sections",
+      "reuse": "brief_factual_paraphrase",
+      "extractionDate": "2026-10-08T01:40:51.198810Z",
+      "reviewDate": "2026-10-08",
+      "evidenceType": "government_reference",
+      "rightsReference": "Brief original factual summaries with official source attribution; no images, copied text blocks or third-party materials reproduced.",
+      "limitations": [
+        "General public education, not an individualized treatment or athlete-performance protocol.",
+        "Machine source verification only; no independent human/clinical review."
+      ]
     }
   ],
   "implementedRoutes": [
@@ -13938,8 +13959,8 @@
   "search": {
     "staleEntries": [],
     "validatedAgainst": "All current production publication adapters",
-    "documents": 604,
-    "factualRecords": 476
+    "documents": 611,
+    "factualRecords": 483
   },
   "duplicateIdsOrSlugs": [],
   "unresolvedLicensing": [
@@ -16381,6 +16402,41 @@
     },
     {
       "module": "recovery",
+      "id": "sleep_quality_vs_duration",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "bedroom_environment",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "wind_down_routine",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "caffeine_and_sleep",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "alcohol_and_sleep",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "sleep_evaluation_signals",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
+      "id": "sleep_diary_method",
+      "instructionalMediaRequired": false
+    },
+    {
+      "module": "recovery",
       "id": "routine_running_warmup",
       "instructionalMediaRequired": false
     },
@@ -16499,11 +16555,11 @@
   "emptyKnowledgeCollections": [],
   "browserAudit": {
     "browser": "chromium",
-    "buildDate": "2026-10-08T01:41:07.859Z",
-    "expected": 658,
+    "buildDate": "2026-10-08T01:51:10.398Z",
+    "expected": 665,
     "passed": 0,
     "failed": 0,
-    "unmeasured": 658,
+    "unmeasured": 665,
     "ignoredStaleReports": 621,
     "limitations": [
       "Tablet checks measure overflow; automated WCAG scanning covers mobile and desktop themes.",
@@ -20316,6 +20372,48 @@
       },
       {
         "path": "/recovery/topics/stretching-intensity",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/sleep-quality-vs-duration",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/bedroom-environment",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/wind-down-routine",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/caffeine-and-sleep",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/alcohol-and-sleep",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/sleep-evaluation-signals",
+        "kind": "public_record",
+        "result": "unmeasured",
+        "evidence": null
+      },
+      {
+        "path": "/recovery/topics/sleep-diary-method",
         "kind": "public_record",
         "result": "unmeasured",
         "evidence": null

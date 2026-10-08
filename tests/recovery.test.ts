@@ -228,6 +228,14 @@ it("exports five CSV families without missing-as-zero or spreadsheet formula exe
     "sleep_regularity",
     "static_stretching",
     "stretching_intensity",
+    "sleep_quality_vs_duration",
+    "bedroom_environment",
+    "wind_down_routine",
+    "caffeine_and_sleep",
+    "alcohol_and_sleep",
+    "sleep_evaluation_signals",
+    "sleep_diary_method",
+
   ]);
   expect(publicRecoveryArticles.every((r) => r.sourceIds.length > 0)).toBe(
     true,

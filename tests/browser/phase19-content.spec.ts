@@ -2,6 +2,17 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
+  ["/recovery/topics/sleep-quality-vs-duration", "Sleep Quality vs Duration"],
+  ["/recovery/topics/bedroom-environment", "Bedroom Environment"],
+  ["/recovery/topics/wind-down-routine", "Wind-Down Routine"],
+  ["/recovery/topics/caffeine-and-sleep", "Caffeine and Sleep"],
+  ["/recovery/topics/alcohol-and-sleep", "Alcohol and Sleep"],
+  [
+    "/recovery/topics/sleep-evaluation-signals",
+    "When Sleep Problems Need Professional Evaluation",
+  ],
+  ["/recovery/topics/sleep-diary-method", "Sleep-Diary Method"],
+
   ["/exercises/glute-bridge", "Glute bridge"],
   ["/exercises/single-leg-glute-bridge", "Single-leg glute bridge"],
   ["/exercises/bird-dog", "Bird dog"],

@@ -28,6 +28,16 @@ const root = "src/content/nutrients",
     .array()
     .parse(JSON.parse(readFileSync(`${root}/records.json`, "utf8")));
 const writeReleaseFile = (path: string, value: string) => {
+  try {
+    if (readFileSync(path, "utf8") === value) return;
+  } catch (error) {
+    if (
+      !(error instanceof Error) ||
+      !("code" in error) ||
+      error.code !== "ENOENT"
+    )
+      throw error;
+  }
   writeFileSync(`${path}.tmp`, value);
   renameSync(`${path}.tmp`, path);
 };

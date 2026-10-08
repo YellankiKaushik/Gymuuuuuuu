@@ -1,0 +1,9 @@
+# CDC sleep habits and readable source guidance
+
+Seven existing sleep identities use the inspected CDC About Sleep page dated May 15, 2024: quality versus duration, bedroom environment, wind-down habits, caffeine, alcohol, professional evaluation and sleep diaries. October 8 extraction/review dates identify actual machine verification; the publisher date remains separate. Direct HTML retrieval was denied, so the snapshot explicitly has no raw-page checksum. Brief original factual summaries and attribution do not claim an open licence or reproduce source images or text blocks.
+
+The compiler checks exact canonical LF input pins, the full seed authority's IDs/slugs/titles/domains, approved source metadata, whole-release relationships and unchanged previous publications before atomic writes. Each definition and claim has explicit publication provenance. Public guidance has ungraded evidence status; it is not an athlete trial, formal evidence appraisal, diagnosis or medication instruction. CDC's electronic-device timing is retained as source advice, without inventing a caffeine-hour cutoff, sleep stage classification or recovery score.
+
+Recovery detail pages previously exposed non-definition claims only after selecting comparisons. They now display those claims directly as source guidance, avoiding duplicate definition text. Related-reading links resolve only independently published repository topics or routines. Comparison selection is still optional and introduces no universal score.
+
+A repeated Windows lock during an unchanged nutrient manifest rewrite exposed another unnecessary write in the pipeline. Index, manifest and report generation now preserves identical files and uses atomic replacement only for changed content. Source validation remains mandatory; errors other than a genuinely absent output still propagate. No retry, assertion relaxation or timeout increase is used.

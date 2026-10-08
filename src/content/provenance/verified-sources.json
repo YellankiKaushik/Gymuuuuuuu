@@ -1905,5 +1905,22 @@
       "Sequence cues, not complete technique demonstrations, anatomical models or movement assessment.",
       "Machine source comparison only; no independent human review."
     ]
+  },
+  {
+    "id": "cdc_sleep_habits_2024",
+    "title": "CDC About Sleep: habits, quality, evaluation and diary context",
+    "publisher": "Centers for Disease Control and Prevention",
+    "url": "https://www.cdc.gov/sleep/about/index.html",
+    "sourceVersion": "About Sleep web page, dated May 15, 2024; selected educational sections",
+    "sourceDate": "2024-05-15",
+    "evidenceType": "government_reference",
+    "extractedAt": "2026-10-08T01:40:51.198810Z",
+    "lastReviewedAt": "2026-10-08",
+    "reuse": "brief_factual_paraphrase",
+    "rightsReference": "Brief original factual summaries with official source attribution; no images, copied text blocks or third-party materials reproduced.",
+    "limitations": [
+      "General public education, not an individualized treatment or athlete-performance protocol.",
+      "Machine source verification only; no independent human/clinical review."
+    ]
   }
 ]

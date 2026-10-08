@@ -149,6 +149,28 @@ for (const r of publicRecoveryArticles)
     slug: r.slug,
     fields: [
       field(
+        "definition",
+        r.sourceIds.map((id) =>
+          id === "src_aasm_sleep_duration_2015"
+            ? "aasm_sleep_2015"
+            : id === "src_sleep_regularity_consensus_2023"
+              ? "nsf_regularity_2023"
+              : id,
+        ),
+      ),
+      ...r.claims.map((claim) =>
+        field(
+          `claims.${claim.id}`,
+          claim.sourceIds.map((id) =>
+            id === "src_aasm_sleep_duration_2015"
+              ? "aasm_sleep_2015"
+              : id === "src_sleep_regularity_consensus_2023"
+                ? "nsf_regularity_2023"
+                : id,
+          ),
+        ),
+      ),
+      field(
         "claims",
         r.sourceIds.map((id) =>
           id === "src_aasm_sleep_duration_2015"

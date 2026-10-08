@@ -1,0 +1,37 @@
+{
+  "extractedAt": "2026-10-08T01:40:51.198810Z",
+  "definitionsSha256": "a71b122e29cc8399ed110c701080946c85901142f71a56b0ab9faaea20d8ec0c",
+  "sourcesSha256": "f850c9913a80a18d5aabd4758a437366ed1982426ae04202316d743e394cbd1e",
+  "recordIds": [
+    "sleep_quality_vs_duration",
+    "bedroom_environment",
+    "wind_down_routine",
+    "caffeine_and_sleep",
+    "alcohol_and_sleep",
+    "sleep_evaluation_signals",
+    "sleep_diary_method"
+  ],
+  "moduleSource": {
+    "id": "cdc_sleep_habits_2024",
+    "title": "CDC About Sleep: habits, quality, evaluation and diary context",
+    "publisher": "Centers for Disease Control and Prevention",
+    "year": 2024,
+    "type": "government_guidance",
+    "url": "https://www.cdc.gov/sleep/about/index.html",
+    "role": [
+      "sleep_habits",
+      "sleep_quality",
+      "sleep_diary_education"
+    ],
+    "licenseNote": "Brief original factual summaries and source links; no source photographs or third-party materials copied. Source checked 2026-10-08."
+  },
+  "sourceHtmlSha256": null,
+  "sourceCaptureMethod": "Read the official primary page through web retrieval. Direct command-line HTML download returned Access Denied; no raw page archive or checksum is claimed.",
+  "sourceLocators": [
+    "What to do",
+    "Sleep quality",
+    "Management",
+    "Keeping a sleep diary"
+  ],
+  "reviewMethod": "Explicit inspection of CDC educational sections; brief original factual summaries and machine validation, not independent human or clinical review."
+}
