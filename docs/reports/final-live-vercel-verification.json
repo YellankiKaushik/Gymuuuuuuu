@@ -1,0 +1,2110 @@
+{
+  "schemaVersion": 1,
+  "result": "PASS",
+  "verifiedAt": "2026-10-11T11:03:06.813Z",
+  "deployment": {
+    "id": "dpl_JD7GorUhs1CTSSroEArjs8r4zG8i",
+    "project": "gymuuuuuuu",
+    "projectId": "prj_1FC5ytETu88SnshSUWGHtjvWcQBN",
+    "commit": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+    "environment": "production",
+    "origin": "https://kaush-ka-gym.vercel.app",
+    "createdAt": "2026-10-11T10:36:27.145Z",
+    "readyAt": "2026-10-11T10:37:11.634Z",
+    "framework": "tanstack-start",
+    "nodeRuntime": "24.x",
+    "buildStatus": "READY"
+  },
+  "environment": {
+    "result": "PASS",
+    "productionVariableNames": ["VITE_PUBLIC_APP_ORIGIN"],
+    "publicOrigin": "https://kaush-ka-gym.vercel.app",
+    "unexpectedProductionVariables": 0,
+    "hiddenProductionEnvCount": 0,
+    "secretValuesReported": false
+  },
+  "health": {
+    "consoleErrors": 0,
+    "uncaughtErrors": 0,
+    "failedRequiredAssets": 0,
+    "unexpectedCspViolations": 0,
+    "intentionalDraft404s": 0,
+    "cancelledNavigationRequests": 0,
+    "runtime": {
+      "runtimeErrors": 0,
+      "clusterWindow": "1h",
+      "warningErrorFatalLogs": 0,
+      "logWindow": "30m",
+      "limitation": "1h individual runtime-log request exceeded plan retention; successful scoped 30m query used instead."
+    }
+  },
+  "security": {
+    "result": "PASS",
+    "https": true,
+    "csp": "PASS",
+    "nonceRotation": true,
+    "headers": {
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-encoding": "br",
+      "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-CWeA1tr84jSPtR12PiEOtbND'; style-src 'self' 'nonce-CWeA1tr84jSPtR12PiEOtbND'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 11 Oct 2026 10:57:55 GMT",
+      "permissions-policy": "camera=(), microphone=(), geolocation=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=31536000",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::9nqzd-1791716275528-63b250c0a6a5",
+      "transfer-encoding": "chunked"
+    },
+    "canonicalPublicRoutes": [
+      "/",
+      "/muscles",
+      "/exercises",
+      "/programs",
+      "/foods",
+      "/nutrients",
+      "/diet-planning",
+      "/settings/data/backup"
+    ],
+    "intentionalNoindexRoots": [
+      "/recipes",
+      "/recovery",
+      "/cardio",
+      "/supplements"
+    ],
+    "ssrHeaderResults": [
+      {
+        "route": "/",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/\" nonce=\"CWeA1tr84jSPtR12PiEOtbND\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-CWeA1tr84jSPtR12PiEOtbND'; style-src 'self' 'nonce-CWeA1tr84jSPtR12PiEOtbND'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:55 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::9nqzd-1791716275528-63b250c0a6a5",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/muscles",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/muscles\" nonce=\"yhMrRc1fr20nwYBoXH9L07hH\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-yhMrRc1fr20nwYBoXH9L07hH'; style-src 'self' 'nonce-yhMrRc1fr20nwYBoXH9L07hH'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:56 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::5pgp6-1791716276294-5784bd22d783",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/exercises",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/exercises\" nonce=\"BlezKCQ7b39kEfY8R4HwJsVO\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-BlezKCQ7b39kEfY8R4HwJsVO'; style-src 'self' 'nonce-BlezKCQ7b39kEfY8R4HwJsVO'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:57 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::r559z-1791716277127-c1c8a9624b6f",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/programs",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/programs\" nonce=\"RkfZKMxtvfbdERkU3wQbaP3N\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-RkfZKMxtvfbdERkU3wQbaP3N'; style-src 'self' 'nonce-RkfZKMxtvfbdERkU3wQbaP3N'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:57 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::q8z74-1791716277391-1db09bf0b068",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/foods",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/foods\" nonce=\"KgZlZ697av6WR/vz86a6XKX6\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-KgZlZ697av6WR/vz86a6XKX6'; style-src 'self' 'nonce-KgZlZ697av6WR/vz86a6XKX6'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:57 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::x5vzl-1791716277677-a1f8d1b55ad8",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/nutrients",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/nutrients\" nonce=\"4/iuV/x2uvMyruOjUIVWbEYN\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-4/iuV/x2uvMyruOjUIVWbEYN'; style-src 'self' 'nonce-4/iuV/x2uvMyruOjUIVWbEYN'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:58 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::r559z-1791716278137-6ae789d94b77",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/recipes",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-JVeIygSJsYnRSr4vVj/PghRC'; style-src 'self' 'nonce-JVeIygSJsYnRSr4vVj/PghRC'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:58 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::hqs5n-1791716278488-a63828f29c72",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/recovery",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-O7by6u2n7AG3lriR5hmhZEb6'; style-src 'self' 'nonce-O7by6u2n7AG3lriR5hmhZEb6'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:58 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::tqtww-1791716278757-f6c51d1500b8",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/cardio",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-SgGMeO+kyi0g8zLR4g7zh1Ag'; style-src 'self' 'nonce-SgGMeO+kyi0g8zLR4g7zh1Ag'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:59 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::q8z74-1791716278998-4680b2ea5533",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/supplements",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-5AmFDgBVVTACd6t74l0viAB/'; style-src 'self' 'nonce-5AmFDgBVVTACd6t74l0viAB/'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:59 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::q8z74-1791716279271-b07fdcdb02ce",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/workout",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-p2eBdl9w0eFY7nVQSN3RE/cV'; style-src 'self' 'nonce-p2eBdl9w0eFY7nVQSN3RE/cV'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:59 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::sk2fq-1791716279600-ed586dd7e78c",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/nutrition",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-Nc3TRoiYjcsG6aMxFHPEvl66'; style-src 'self' 'nonce-Nc3TRoiYjcsG6aMxFHPEvl66'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:57:59 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::8lj4g-1791716279832-6dea6235314c",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/diet-planning",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/diet-planning\" nonce=\"3I1CK0ad7UdlG1W/Tu/Z9UCs\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-3I1CK0ad7UdlG1W/Tu/Z9UCs'; style-src 'self' 'nonce-3I1CK0ad7UdlG1W/Tu/Z9UCs'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:58:00 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::r559z-1791716280084-10feaf8e9de6",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/progress",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-zuR1cGddRLrolvi3YDkU9rkE'; style-src 'self' 'nonce-zuR1cGddRLrolvi3YDkU9rkE'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:58:00 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::b6pxh-1791716280341-68c4c7752e81",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/search",
+        "status": 200,
+        "canonical": null,
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-u1wRmEFQxaYNlmbRAxsHQ9D4'; style-src 'self' 'nonce-u1wRmEFQxaYNlmbRAxsHQ9D4'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:58:01 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::kswfh-1791716281046-64aa085b87d8",
+          "transfer-encoding": "chunked"
+        }
+      },
+      {
+        "route": "/settings/data/backup",
+        "status": 200,
+        "canonical": "<link rel=\"canonical\" href=\"https://kaush-ka-gym.vercel.app/settings\" nonce=\"1/T/E4nsx7mSw6BuEHEq+HBe\"/>",
+        "headers": {
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "br",
+          "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-1/T/E4nsx7mSw6BuEHEq+HBe'; style-src 'self' 'nonce-1/T/E4nsx7mSw6BuEHEq+HBe'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Sun, 11 Oct 2026 10:58:01 GMT",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=31536000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY",
+          "x-vercel-cache": "MISS",
+          "x-vercel-id": "bom1::iad1::c6k5t-1791716281405-a1c2034be33d",
+          "transfer-encoding": "chunked"
+        }
+      }
+    ],
+    "hardRefreshRoutes": [
+      "/",
+      "/exercises",
+      "/programs",
+      "/workout",
+      "/foods",
+      "/nutrition",
+      "/diet-planning",
+      "/recipes",
+      "/recovery",
+      "/cardio",
+      "/supplements",
+      "/progress",
+      "/search",
+      "/settings/data/backup"
+    ],
+    "localhostMetadataOccurrences": 0
+  },
+  "privacy": {
+    "browserRequestCount": 8407,
+    "unexpectedRemoteRequests": 0,
+    "personalMarkerLeaks": 0,
+    "ssrMarkerLeaks": 0,
+    "ssrRequests": 27,
+    "additionalPerformanceAssetFetches": 134,
+    "scope": "Counts from the latest passing execution of each of the 33 targeted cases, including separate restore/photo contexts. Diagnostic attempts excluded. API-context SSR requests and Node performance fetches counted separately.",
+    "syntheticMarker": "FO_LIVE_20261011_K7Q9",
+    "publicSearchQueryModel": "Published library queries may appear in same-origin URLs; personal queries and synthetic record values remain local. No external video was played."
+  },
+  "tests": {
+    "uniquePassingCases": 33,
+    "browser": "Chromium on Windows",
+    "cases": [
+      {
+        "title": "cardio manual entry, audit correction, immutable routine versions, resumable player, backup and SSR privacy",
+        "file": "cardio.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 13646
+          }
+        ]
+      },
+      {
+        "title": "diet target flow, input consent, current snapshot, edit, export, restore and cross-tab updates",
+        "file": "diet-planning.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 6935
+          }
+        ]
+      },
+      {
+        "title": "diet eligibility, unsafe goals and unreconciled meals block save; transient inputs clear on reload",
+        "file": "diet-planning.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2343
+          }
+        ]
+      },
+      {
+        "title": "synthetic workout and nutrition names remain text across persistence",
+        "file": "final-security.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 3168
+          }
+        ]
+      },
+      {
+        "title": "synthetic collection names and private search payload never execute or reach URLs",
+        "file": "final-security.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2270
+          }
+        ]
+      },
+      {
+        "title": "synthetic supplement text and invalid photo MIME are safely handled",
+        "file": "final-security.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2695
+          }
+        ]
+      },
+      {
+        "title": "milkfish preparation deep links and soy missing household weights remain explicit @a11y",
+        "file": "foods.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 3096
+          }
+        ]
+      },
+      {
+        "title": "food discovery filters, sourced publication and safe unknown profiles",
+        "file": "foods.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 3856
+          }
+        ]
+      },
+      {
+        "title": "food catalogue reflows and exposes accessible filter dialog",
+        "file": "foods.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 7171
+          }
+        ]
+      },
+      {
+        "title": "LIVE reviewed food grams snapshot persistence and removal",
+        "file": "live-supplement.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2238
+          }
+        ]
+      },
+      {
+        "title": "LIVE HTTPS headers canonical SSR and hard-refresh routes",
+        "file": "live-supplement.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 20759
+          }
+        ]
+      },
+      {
+        "title": "LIVE responsive rendering and targeted axe dialogs",
+        "file": "live-supplement.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 38581
+          }
+        ]
+      },
+      {
+        "title": "LIVE circumference illness persistence and comparison incompatibility",
+        "file": "live-supplement.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 4703
+          }
+        ]
+      },
+      {
+        "title": "public recipe copies exact sources locally, scales and freezes a consumed snapshot",
+        "file": "manual-test-ready.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 3449
+          }
+        ]
+      },
+      {
+        "title": "global restore rejects stale file completions after a newer invalid selection",
+        "file": "manual-test-ready.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1037
+          }
+        ]
+      },
+      {
+        "title": "synthetic multi-module records export exactly without network or SSR leaks",
+        "file": "manual-test-ready.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 17199
+          }
+        ]
+      },
+      {
+        "title": "fresh-profile restore preserves exact multi-module records and rejects corruption",
+        "file": "manual-test-ready.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 4439
+          }
+        ]
+      },
+      {
+        "title": "private quick-add, immutable custom revisions, fluid editing, undo, backup restore and cross-tab updates",
+        "file": "nutrition.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 5985
+          }
+        ]
+      },
+      {
+        "title": "@a11y published food comparison retains source preparations, missing values and local saves",
+        "file": "phase19-comparisons.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 8118
+          }
+        ]
+      },
+      {
+        "title": "nutrient comparison preserves FDA label context and unavailable reference rows",
+        "file": "phase19-comparisons.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 4753
+          }
+        ]
+      },
+      {
+        "title": "private photos remove synthetic metadata, exclude portable binaries and restore exact explicit media",
+        "file": "pre-vercel-photo.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 4732
+          }
+        ]
+      },
+      {
+        "title": "program discovery, finder scope and current selection empty states",
+        "file": "programs.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2747
+          }
+        ]
+      },
+      {
+        "title": "source-backed full-body-3-day-foundation selection preserves unspecified rest and immutable version locally",
+        "file": "programs.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2544
+          }
+        ]
+      },
+      {
+        "title": "Finder includes unknown-duration published templates only after an explicit no-time-limit choice",
+        "file": "programs.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1123
+          }
+        ]
+      },
+      {
+        "title": "Phase 15 records body weight locally and keeps the 320px layout inside the viewport",
+        "file": "progress.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1383
+          }
+        ]
+      },
+      {
+        "title": "creates immutable recipe versions, manual plans, leftovers, groceries and explicit consumed snapshots",
+        "file": "recipes.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 7824
+          }
+        ]
+      },
+      {
+        "title": "local sleep, check-in, routine revision, resumable session and backup workflow",
+        "file": "recovery.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 8306
+          }
+        ]
+      },
+      {
+        "title": "local search dialog supports keyboard suggestions, navigation and focus-safe close",
+        "file": "search-phase16.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2059
+          }
+        ]
+      },
+      {
+        "title": "public search filters stay in URL while private query state never does",
+        "file": "search-phase16.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 1696
+          }
+        ]
+      },
+      {
+        "title": "favourites persist locally and saved pages remain private across reload",
+        "file": "search-phase16.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2135
+          }
+        ]
+      },
+      {
+        "title": "collections support rename, private notes, sorting, filtering and moving references",
+        "file": "search-phase16.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 2956
+          }
+        ]
+      },
+      {
+        "title": "captures versioned labels, frozen intake, trial, urgent event, backup and clear privacy boundaries",
+        "file": "supplements.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 4614
+          }
+        ]
+      },
+      {
+        "title": "local workout logs, refreshes, completes, edits, backs up and restores",
+        "file": "workout.spec.ts",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "durationMs": 10040
+          }
+        ]
+      }
+    ],
+    "diagnostics": [
+      "Initial targeted run: 28 passed, 4 failed, 1 dependent restore skipped. Original evidence retained locally.",
+      "Harness corrected accessible selector, intentional noindex metadata, valid protocol ID, hydration readiness, saved-entry reopening and disabled incompatible-family guard. Targeted reruns completed all 33 cases. No runtime source edited.",
+      "Portability rerun additionally recorded exact exported/restored store counts."
+    ],
+    "workflows": [
+      {
+        "module": "Workout",
+        "result": "PASS",
+        "evidence": "Synthetic sets/load/reps, reload, pause/resume, finish, history, editing and backup/restore."
+      },
+      {
+        "module": "Programs",
+        "result": "PASS",
+        "evidence": "Published discovery/filtering, explicit duration choice, immutable selection, reload and confirmed clearing."
+      },
+      {
+        "module": "Foods",
+        "result": "PASS",
+        "evidence": "Milkfish preparation/provenance, soy missing serving masses, draft exclusion, known and missing values."
+      },
+      {
+        "module": "Nutrition",
+        "result": "PASS",
+        "evidence": "Reviewed food 150 g snapshot equals per-100-g values ×1.5; null nutrients remain null; reload/delete; custom food/quick-add/fluids/edit/undo and backup."
+      },
+      {
+        "module": "Diet planning",
+        "result": "PASS",
+        "evidence": "Synthetic adult calculation, consent, eligibility/unsafe-goal guards, source formulas/provenance, explicit save/current target/edit/restore and clearing transient inputs."
+      },
+      {
+        "module": "Recipes",
+        "result": "PASS",
+        "evidence": "Public recipe source/ingredient/yield snapshot copied exactly, servings scaled, consumed snapshot logged; local versions/plans/leftovers/grocery snapshots."
+      },
+      {
+        "module": "Recovery",
+        "result": "PASS",
+        "evidence": "Sleep diary and check-ins, pain separate from soreness, illness and pain flags preserved when reopening saved entry after reload; routine resume and backup."
+      },
+      {
+        "module": "Cardio",
+        "result": "PASS",
+        "evidence": "Manual duration/distance/effort/HR, history, reload, routine/resume and backup; no calculated calorie or fitness estimates added."
+      },
+      {
+        "module": "Supplements",
+        "result": "PASS",
+        "evidence": "Versioned product labels, zero versus unknown values, frozen intake snapshots, trials, urgent event, backup and privacy boundaries."
+      },
+      {
+        "module": "Progress",
+        "result": "PASS",
+        "evidence": "70.5 kg weight and circumference replicates 800/810/805 mm with median 805, compatible group and reload. No inferred body-fat or physique score."
+      },
+      {
+        "module": "Search",
+        "result": "PASS",
+        "evidence": "Published search, draft exclusion, public URL filters, private query separation and dialog keyboard focus."
+      },
+      {
+        "module": "Favourites/collections/comparison",
+        "result": "PASS",
+        "evidence": "Persisted favourites, renamed/sorted/filtered collections and moved references; source-backed food/nutrient comparisons with missing values; incompatible-family button disabled and tray preserved."
+      },
+      {
+        "module": "Backup/export",
+        "result": "PASS",
+        "evidence": "Spreadsheet-safe CSV and multi-module JSON export; standard backup omits binary photos."
+      },
+      {
+        "module": "Restore",
+        "result": "PASS",
+        "evidence": "Fresh-context prepare/preview, zero preview canonical writes, explicit confirmation, exact re-exported record equality including relationships/snapshots, corrupt/future/malformed rejection with existing data retained."
+      },
+      {
+        "module": "Photos/media",
+        "result": "PASS",
+        "evidence": "Disposable image with synthetic GPS metadata sanitized locally; metadata marker removed from ZIP and binary snapshot; explicit media backup restores exact sanitized bytes in fresh context; invalid signature rejected. Native picker UI deferred to owner."
+      }
+    ]
+  },
+  "responsive": {
+    "routes": [
+      "/",
+      "/search",
+      "/exercises/push-up",
+      "/workout",
+      "/foods",
+      "/nutrition",
+      "/diet-planning",
+      "/recipes/chickpea-cucumber-bowl",
+      "/recovery",
+      "/cardio",
+      "/supplements",
+      "/progress",
+      "/settings/data/backup"
+    ],
+    "widths": [320, 375, 393, 768, 1024, 1280, 1440],
+    "height": 900,
+    "themes": ["light", "dark"],
+    "states": 182,
+    "pageHorizontalOverflow": 0,
+    "clippedMainButtons": 0,
+    "additionalPopulatedWorkoutStates": 10
+  },
+  "accessibility": {
+    "dedicatedRouteAndDialogAxeScans": 54,
+    "violations": 0,
+    "tags": ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"],
+    "axeRouteWidths": [320, 1440],
+    "dialogs": ["Food filters", "Search"],
+    "additionalWorkoutAxeScans": 11,
+    "scope": "54 dedicated scans plus 11 populated workout/history scans and additional existing targeted food/comparison scans. Not a complete WCAG conformance assessment or human screen-reader test."
+  },
+  "backupRestore": {
+    "schemaVersion": 1,
+    "testedCommit": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+    "browser": "live-chromium",
+    "syntheticOnly": true,
+    "exportedRecordCount": 49,
+    "restoredStores": [
+      {
+        "databaseName": "fitness-os",
+        "storeId": "appMeta",
+        "recordCount": 19
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "customExercises",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "workoutPreferences",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "workoutSessions",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-local",
+        "storeId": "records",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "bodyWeightLogs",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "foodLogEntries",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "nutritionDays",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "nutritionPreferences",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "metricCalculationReceipts",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "phase15AuditEvents",
+        "recordCount": 3
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "phase16AuditEvents",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os",
+        "storeId": "phase16Favourites",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-cardio-conditioning",
+        "storeId": "cardioAuditEvents",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-cardio-conditioning",
+        "storeId": "cardioDerivedSummaries",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-cardio-conditioning",
+        "storeId": "cardioSessions",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-diet-planning",
+        "storeId": "dietPlanAuditLog",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-diet-planning",
+        "storeId": "dietPlannerSettings",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-diet-planning",
+        "storeId": "dietPlans",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-recovery-sleep-mobility",
+        "storeId": "phase12_audit_events",
+        "recordCount": 2
+      },
+      {
+        "databaseName": "fitness-os-recovery-sleep-mobility",
+        "storeId": "phase12_derived_summaries",
+        "recordCount": 2
+      },
+      {
+        "databaseName": "fitness-os-recovery-sleep-mobility",
+        "storeId": "phase12_recovery_checkins",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-recovery-sleep-mobility",
+        "storeId": "phase12_sleep_logs",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-supplements-evidence",
+        "storeId": "auditEvents",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-supplements-evidence",
+        "storeId": "derivedSummaries",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-supplements-evidence",
+        "storeId": "personalProducts",
+        "recordCount": 1
+      },
+      {
+        "databaseName": "fitness-os-supplements-evidence",
+        "storeId": "productLabelVersions",
+        "recordCount": 1
+      }
+    ],
+    "exactRecordsAndRelationshipsPreserved": true,
+    "previewCanonicalWrites": 0,
+    "rejectedFiles": [
+      "corrupted integrity hash",
+      "future format version",
+      "malformed JSON"
+    ],
+    "requestCount": 918,
+    "unexpectedRemoteRequests": 0,
+    "personalValuesInRequests": 0,
+    "ssrRoutes": [
+      "/workout",
+      "/diet-planning/plans",
+      "/nutrition",
+      "/sleep",
+      "/recovery",
+      "/cardio",
+      "/supplements/products",
+      "/progress/weight",
+      "/saved/favourites",
+      "/search"
+    ],
+    "ssrPersonalMarkerLeaks": 0,
+    "freshProfileRestore": "passed",
+    "invalidImportPreservation": "passed"
+  },
+  "performance": {
+    "observedAssetCount": 134,
+    "totalGzipBytes": 681411,
+    "largest": {
+      "path": "/assets/index-D8tN3ObM.js",
+      "status": 200,
+      "rawBytes": 730726,
+      "gzipBytes": 168441,
+      "elapsedMs": 323
+    },
+    "existingTotalBudget": 716800,
+    "existingChunkBudget": 204800,
+    "scope": "Only JavaScript requested in the targeted browser journeys; not a complete build-budget rerun",
+    "assets": [
+      {
+        "path": "/assets/route-metadata-Bn7JjJ06.js",
+        "status": 200,
+        "rawBytes": 375,
+        "gzipBytes": 274,
+        "elapsedMs": 276
+      },
+      {
+        "path": "/assets/createServerFn-BdIwFH27.js",
+        "status": 200,
+        "rawBytes": 37686,
+        "gzipBytes": 12075,
+        "elapsedMs": 306
+      },
+      {
+        "path": "/assets/useMatch-w3qOu4lG.js",
+        "status": 200,
+        "rawBytes": 613,
+        "gzipBytes": 390,
+        "elapsedMs": 227
+      },
+      {
+        "path": "/assets/invariant-DEEwAagU.js",
+        "status": 200,
+        "rawBytes": 60,
+        "gzipBytes": 80,
+        "elapsedMs": 250
+      },
+      {
+        "path": "/assets/validation-CEFmB7Qm.js",
+        "status": 200,
+        "rawBytes": 69,
+        "gzipBytes": 89,
+        "elapsedMs": 230
+      },
+      {
+        "path": "/assets/app-Cv3Gu7Z4.js",
+        "status": 200,
+        "rawBytes": 453,
+        "gzipBytes": 349,
+        "elapsedMs": 236
+      },
+      {
+        "path": "/assets/not-found-DIgawKw1.js",
+        "status": 200,
+        "rawBytes": 55,
+        "gzipBytes": 75,
+        "elapsedMs": 233
+      },
+      {
+        "path": "/assets/redirect-DmtLUW0N.js",
+        "status": 200,
+        "rawBytes": 388,
+        "gzipBytes": 252,
+        "elapsedMs": 225
+      },
+      {
+        "path": "/assets/link-Zii04Aa3.js",
+        "status": 200,
+        "rawBytes": 9240,
+        "gzipBytes": 4245,
+        "elapsedMs": 286
+      },
+      {
+        "path": "/assets/lazyRouteComponent-BYdwNRVN.js",
+        "status": 200,
+        "rawBytes": 3735,
+        "gzipBytes": 1357,
+        "elapsedMs": 273
+      },
+      {
+        "path": "/assets/navigation-DPibnNbB.js",
+        "status": 200,
+        "rawBytes": 27434,
+        "gzipBytes": 5216,
+        "elapsedMs": 293
+      },
+      {
+        "path": "/assets/useSelector-CL5AoqeH.js",
+        "status": 200,
+        "rawBytes": 2184,
+        "gzipBytes": 947,
+        "elapsedMs": 274
+      },
+      {
+        "path": "/assets/preload-helper-DjzSQ1t3.js",
+        "status": 200,
+        "rawBytes": 1383,
+        "gzipBytes": 749,
+        "elapsedMs": 276
+      },
+      {
+        "path": "/assets/storage-BIGF7Asx.js",
+        "status": 200,
+        "rawBytes": 18412,
+        "gzipBytes": 5474,
+        "elapsedMs": 291
+      },
+      {
+        "path": "/assets/foundation-BBm7eGrh.js",
+        "status": 200,
+        "rawBytes": 2194,
+        "gzipBytes": 1018,
+        "elapsedMs": 277
+      },
+      {
+        "path": "/assets/route-nutrition-CLWYqRFb.js",
+        "status": 200,
+        "rawBytes": 1013,
+        "gzipBytes": 455,
+        "elapsedMs": 272
+      },
+      {
+        "path": "/assets/public-json-CfnquwEU.js",
+        "status": 200,
+        "rawBytes": 465,
+        "gzipBytes": 334,
+        "elapsedMs": 237
+      },
+      {
+        "path": "/assets/jsx-runtime-D3jfb0Ew.js",
+        "status": 200,
+        "rawBytes": 8901,
+        "gzipBytes": 3382,
+        "elapsedMs": 277
+      },
+      {
+        "path": "/assets/domain-Kq1K_4WC.js",
+        "status": 200,
+        "rawBytes": 3760,
+        "gzipBytes": 1413,
+        "elapsedMs": 271
+      },
+      {
+        "path": "/assets/domain-B7w5FwjL.js",
+        "status": 200,
+        "rawBytes": 1480,
+        "gzipBytes": 764,
+        "elapsedMs": 270
+      },
+      {
+        "path": "/assets/matchContext-BVEm4KIG.js",
+        "status": 200,
+        "rawBytes": 162,
+        "gzipBytes": 141,
+        "elapsedMs": 228
+      },
+      {
+        "path": "/assets/schema-Dzkh4ooS.js",
+        "status": 200,
+        "rawBytes": 19276,
+        "gzipBytes": 4539,
+        "elapsedMs": 287
+      },
+      {
+        "path": "/assets/public-repository-CyjFBkBH.js",
+        "status": 200,
+        "rawBytes": 59401,
+        "gzipBytes": 7617,
+        "elapsedMs": 296
+      },
+      {
+        "path": "/assets/pages-C3Ls1HMf.js",
+        "status": 200,
+        "rawBytes": 44403,
+        "gzipBytes": 11917,
+        "elapsedMs": 298
+      },
+      {
+        "path": "/assets/schema-DpLoU1b4.js",
+        "status": 200,
+        "rawBytes": 25605,
+        "gzipBytes": 6005,
+        "elapsedMs": 285
+      },
+      {
+        "path": "/assets/repository-E7TDUU0X.js",
+        "status": 200,
+        "rawBytes": 143513,
+        "gzipBytes": 12528,
+        "elapsedMs": 305
+      },
+      {
+        "path": "/assets/public-repository-DNh-ZKjd.js",
+        "status": 200,
+        "rawBytes": 126083,
+        "gzipBytes": 15002,
+        "elapsedMs": 307
+      },
+      {
+        "path": "/assets/repository-CcnZA856.js",
+        "status": 200,
+        "rawBytes": 222410,
+        "gzipBytes": 26214,
+        "elapsedMs": 310
+      },
+      {
+        "path": "/assets/validation-library-CnmjqfTx.js",
+        "status": 200,
+        "rawBytes": 97456,
+        "gzipBytes": 27152,
+        "elapsedMs": 306
+      },
+      {
+        "path": "/assets/index-D8tN3ObM.js",
+        "status": 200,
+        "rawBytes": 730726,
+        "gzipBytes": 168441,
+        "elapsedMs": 323
+      },
+      {
+        "path": "/assets/useNavigate-50OFlK-L.js",
+        "status": 200,
+        "rawBytes": 225,
+        "gzipBytes": 192,
+        "elapsedMs": 222
+      },
+      {
+        "path": "/assets/fitness-database-DjRWv0AU.js",
+        "status": 200,
+        "rawBytes": 9845,
+        "gzipBytes": 3103,
+        "elapsedMs": 273
+      },
+      {
+        "path": "/assets/schema-DpvO1in6.js",
+        "status": 200,
+        "rawBytes": 2819,
+        "gzipBytes": 1280,
+        "elapsedMs": 265
+      },
+      {
+        "path": "/assets/reference-Bs7kTNeL.js",
+        "status": 200,
+        "rawBytes": 4129,
+        "gzipBytes": 1583,
+        "elapsedMs": 264
+      },
+      {
+        "path": "/assets/storage-B79Hsaut.js",
+        "status": 200,
+        "rawBytes": 5910,
+        "gzipBytes": 2376,
+        "elapsedMs": 272
+      },
+      {
+        "path": "/assets/framework-datasets-T9Vz3Sh7.js",
+        "status": 200,
+        "rawBytes": 560,
+        "gzipBytes": 295,
+        "elapsedMs": 225
+      },
+      {
+        "path": "/assets/storage-BGP1Prqz.js",
+        "status": 200,
+        "rawBytes": 19442,
+        "gzipBytes": 6606,
+        "elapsedMs": 280
+      },
+      {
+        "path": "/assets/domain-bvFm2y6W.js",
+        "status": 200,
+        "rawBytes": 242605,
+        "gzipBytes": 20439,
+        "elapsedMs": 308
+      },
+      {
+        "path": "/assets/schema-BGMjD34S.js",
+        "status": 200,
+        "rawBytes": 59418,
+        "gzipBytes": 7392,
+        "elapsedMs": 291
+      },
+      {
+        "path": "/assets/route-programs-StHnMn6e.js",
+        "status": 200,
+        "rawBytes": 594,
+        "gzipBytes": 343,
+        "elapsedMs": 237
+      },
+      {
+        "path": "/assets/pages-TKJMYCy5.js",
+        "status": 200,
+        "rawBytes": 18431,
+        "gzipBytes": 5483,
+        "elapsedMs": 283
+      },
+      {
+        "path": "/assets/local-eZWff9rb.js",
+        "status": 200,
+        "rawBytes": 1888,
+        "gzipBytes": 930,
+        "elapsedMs": 265
+      },
+      {
+        "path": "/assets/primitives-DB9b5Maq.js",
+        "status": 200,
+        "rawBytes": 773,
+        "gzipBytes": 362,
+        "elapsedMs": 225
+      },
+      {
+        "path": "/assets/adapter--JEaE820.js",
+        "status": 200,
+        "rawBytes": 1765,
+        "gzipBytes": 771,
+        "elapsedMs": 263
+      },
+      {
+        "path": "/assets/route-recipes-XPRmOF0X.js",
+        "status": 200,
+        "rawBytes": 1132,
+        "gzipBytes": 460,
+        "elapsedMs": 261
+      },
+      {
+        "path": "/assets/public-pages-IoBjiZnu.js",
+        "status": 200,
+        "rawBytes": 4020,
+        "gzipBytes": 1607,
+        "elapsedMs": 263
+      },
+      {
+        "path": "/assets/pages-SCQrrreR.js",
+        "status": 200,
+        "rawBytes": 23366,
+        "gzipBytes": 6896,
+        "elapsedMs": 279
+      },
+      {
+        "path": "/assets/info-pages-Bb-4KNar.js",
+        "status": 200,
+        "rawBytes": 13042,
+        "gzipBytes": 4600,
+        "elapsedMs": 274
+      },
+      {
+        "path": "/assets/publication-CA8VOQLc.js",
+        "status": 200,
+        "rawBytes": 8210,
+        "gzipBytes": 3377,
+        "elapsedMs": 268
+      },
+      {
+        "path": "/assets/schema-D-8CRLTn.js",
+        "status": 200,
+        "rawBytes": 18856,
+        "gzipBytes": 6074,
+        "elapsedMs": 280
+      },
+      {
+        "path": "/assets/storage-DNTrWgKT.js",
+        "status": 200,
+        "rawBytes": 36152,
+        "gzipBytes": 10605,
+        "elapsedMs": 289
+      },
+      {
+        "path": "/assets/route-progress-ONg80UFd.js",
+        "status": 200,
+        "rawBytes": 845,
+        "gzipBytes": 305,
+        "elapsedMs": 228
+      },
+      {
+        "path": "/assets/workspace-B-suiI_u.js",
+        "status": 200,
+        "rawBytes": 66832,
+        "gzipBytes": 17582,
+        "elapsedMs": 295
+      },
+      {
+        "path": "/assets/schema-D-PxK2vw.js",
+        "status": 200,
+        "rawBytes": 5909,
+        "gzipBytes": 2345,
+        "elapsedMs": 265
+      },
+      {
+        "path": "/assets/storage-ByRgz3cI.js",
+        "status": 200,
+        "rawBytes": 14693,
+        "gzipBytes": 5181,
+        "elapsedMs": 271
+      },
+      {
+        "path": "/assets/workspace-T36dNQHb.js",
+        "status": 200,
+        "rawBytes": 3197,
+        "gzipBytes": 1537,
+        "elapsedMs": 261
+      },
+      {
+        "path": "/assets/route-recovery-DJo3ebAB.js",
+        "status": 200,
+        "rawBytes": 1190,
+        "gzipBytes": 460,
+        "elapsedMs": 259
+      },
+      {
+        "path": "/assets/info-pages-Bd_SaULj.js",
+        "status": 200,
+        "rawBytes": 76295,
+        "gzipBytes": 15163,
+        "elapsedMs": 291
+      },
+      {
+        "path": "/assets/pages-WIV-Q4YQ.js",
+        "status": 200,
+        "rawBytes": 23349,
+        "gzipBytes": 5982,
+        "elapsedMs": 275
+      },
+      {
+        "path": "/assets/read-models-Br8Z3UhG.js",
+        "status": 200,
+        "rawBytes": 1610,
+        "gzipBytes": 697,
+        "elapsedMs": 259
+      },
+      {
+        "path": "/assets/storage-C6e3_rk7.js",
+        "status": 200,
+        "rawBytes": 12629,
+        "gzipBytes": 4219,
+        "elapsedMs": 269
+      },
+      {
+        "path": "/assets/domain-CarwRPck.js",
+        "status": 200,
+        "rawBytes": 9449,
+        "gzipBytes": 3379,
+        "elapsedMs": 265
+      },
+      {
+        "path": "/assets/schema-DYGNbKo1.js",
+        "status": 200,
+        "rawBytes": 26840,
+        "gzipBytes": 3270,
+        "elapsedMs": 270
+      },
+      {
+        "path": "/assets/storage-DyeJMKxC.js",
+        "status": 200,
+        "rawBytes": 7073,
+        "gzipBytes": 2567,
+        "elapsedMs": 262
+      },
+      {
+        "path": "/assets/schema-BbCf2Jds.js",
+        "status": 200,
+        "rawBytes": 21342,
+        "gzipBytes": 3610,
+        "elapsedMs": 269
+      },
+      {
+        "path": "/assets/route-foods-DhYNE-PP.js",
+        "status": 200,
+        "rawBytes": 1100,
+        "gzipBytes": 549,
+        "elapsedMs": 256
+      },
+      {
+        "path": "/assets/foods_.compare-5BlcTfOQ.js",
+        "status": 200,
+        "rawBytes": 3764,
+        "gzipBytes": 1473,
+        "elapsedMs": 258
+      },
+      {
+        "path": "/assets/catalogue-D-Nr3Dha.js",
+        "status": 200,
+        "rawBytes": 8211,
+        "gzipBytes": 2757,
+        "elapsedMs": 262
+      },
+      {
+        "path": "/assets/information-DklKN7Tc.js",
+        "status": 200,
+        "rawBytes": 4306,
+        "gzipBytes": 1659,
+        "elapsedMs": 257
+      },
+      {
+        "path": "/assets/foods_._slug-Cgv_J8_p.js",
+        "status": 200,
+        "rawBytes": 7208,
+        "gzipBytes": 2622,
+        "elapsedMs": 262
+      },
+      {
+        "path": "/assets/route-index-Cj2821-J.js",
+        "status": 200,
+        "rawBytes": 59,
+        "gzipBytes": 75,
+        "elapsedMs": 227
+      },
+      {
+        "path": "/assets/routes-DAtd1UD5.js",
+        "status": 200,
+        "rawBytes": 8119,
+        "gzipBytes": 2488,
+        "elapsedMs": 268
+      },
+      {
+        "path": "/assets/runtime-ChhQ7sai.js",
+        "status": 200,
+        "rawBytes": 3435,
+        "gzipBytes": 1659,
+        "elapsedMs": 254
+      },
+      {
+        "path": "/assets/route-nutrients-ChnJkRj_.js",
+        "status": 200,
+        "rawBytes": 1163,
+        "gzipBytes": 565,
+        "elapsedMs": 262
+      },
+      {
+        "path": "/assets/catalogue-BSmyopsf.js",
+        "status": 200,
+        "rawBytes": 7007,
+        "gzipBytes": 2259,
+        "elapsedMs": 259
+      },
+      {
+        "path": "/assets/information-DX20ifmF.js",
+        "status": 200,
+        "rawBytes": 6515,
+        "gzipBytes": 2381,
+        "elapsedMs": 259
+      },
+      {
+        "path": "/assets/nutrients_.compare-BJmJC06-.js",
+        "status": 200,
+        "rawBytes": 3232,
+        "gzipBytes": 1268,
+        "elapsedMs": 254
+      },
+      {
+        "path": "/assets/nutrients_._slug-uS3vWJxe.js",
+        "status": 200,
+        "rawBytes": 12269,
+        "gzipBytes": 3606,
+        "elapsedMs": 258
+      },
+      {
+        "path": "/assets/nutrients_.reference-intakes-x_HoI0aE.js",
+        "status": 200,
+        "rawBytes": 8490,
+        "gzipBytes": 3096,
+        "elapsedMs": 257
+      },
+      {
+        "path": "/assets/frameworks-BP9e-S49.js",
+        "status": 200,
+        "rawBytes": 2705,
+        "gzipBytes": 1263,
+        "elapsedMs": 251
+      },
+      {
+        "path": "/assets/pages-C_zI9d6O.js",
+        "status": 200,
+        "rawBytes": 15787,
+        "gzipBytes": 5411,
+        "elapsedMs": 262
+      },
+      {
+        "path": "/assets/route-diet-planning-CVRRuRxJ.js",
+        "status": 200,
+        "rawBytes": 1143,
+        "gzipBytes": 446,
+        "elapsedMs": 252
+      },
+      {
+        "path": "/assets/workspace-GI4Rj4lc.js",
+        "status": 200,
+        "rawBytes": 25926,
+        "gzipBytes": 7399,
+        "elapsedMs": 269
+      },
+      {
+        "path": "/assets/route-settings-8pVnOxGY.js",
+        "status": 200,
+        "rawBytes": 1017,
+        "gzipBytes": 425,
+        "elapsedMs": 252
+      },
+      {
+        "path": "/assets/page-D3q1BlUN.js",
+        "status": 200,
+        "rawBytes": 52817,
+        "gzipBytes": 15299,
+        "elapsedMs": 283
+      },
+      {
+        "path": "/assets/useLocation-B1bPb7fP.js",
+        "status": 200,
+        "rawBytes": 160,
+        "gzipBytes": 150,
+        "elapsedMs": 221
+      },
+      {
+        "path": "/assets/settings-CyazFcQw.js",
+        "status": 200,
+        "rawBytes": 4172,
+        "gzipBytes": 1399,
+        "elapsedMs": 248
+      },
+      {
+        "path": "/assets/calculations-BQEGrywa.js",
+        "status": 200,
+        "rawBytes": 3645,
+        "gzipBytes": 1613,
+        "elapsedMs": 251
+      },
+      {
+        "path": "/assets/prepare-DY7VVZqh.js",
+        "status": 200,
+        "rawBytes": 492,
+        "gzipBytes": 289,
+        "elapsedMs": 223
+      },
+      {
+        "path": "/assets/storage-DaWdihqG.js",
+        "status": 200,
+        "rawBytes": 12505,
+        "gzipBytes": 4397,
+        "elapsedMs": 259
+      },
+      {
+        "path": "/assets/domain-BavjiLZn.js",
+        "status": 200,
+        "rawBytes": 26549,
+        "gzipBytes": 6948,
+        "elapsedMs": 268
+      },
+      {
+        "path": "/assets/schema-DEc931vd.js",
+        "status": 200,
+        "rawBytes": 55157,
+        "gzipBytes": 10165,
+        "elapsedMs": 278
+      },
+      {
+        "path": "/assets/domain-CRCKf4Ka.js",
+        "status": 200,
+        "rawBytes": 6402,
+        "gzipBytes": 2344,
+        "elapsedMs": 254
+      },
+      {
+        "path": "/assets/storage-DyeF56_m.js",
+        "status": 200,
+        "rawBytes": 9627,
+        "gzipBytes": 3358,
+        "elapsedMs": 253
+      },
+      {
+        "path": "/assets/schema-CPvMVIwL.js",
+        "status": 200,
+        "rawBytes": 54021,
+        "gzipBytes": 10920,
+        "elapsedMs": 277
+      },
+      {
+        "path": "/assets/record-validation-OGx4w4Wr.js",
+        "status": 200,
+        "rawBytes": 2848,
+        "gzipBytes": 1294,
+        "elapsedMs": 250
+      },
+      {
+        "path": "/assets/candidate-validation-BPweeF5j.js",
+        "status": 200,
+        "rawBytes": 3160,
+        "gzipBytes": 1194,
+        "elapsedMs": 249
+      },
+      {
+        "path": "/assets/calculator-pages-JaxlOCD9.js",
+        "status": 200,
+        "rawBytes": 6177,
+        "gzipBytes": 2055,
+        "elapsedMs": 254
+      },
+      {
+        "path": "/assets/route-cardio-Cf9gVYYC.js",
+        "status": 200,
+        "rawBytes": 1960,
+        "gzipBytes": 639,
+        "elapsedMs": 247
+      },
+      {
+        "path": "/assets/builders-COQEVV2s.js",
+        "status": 200,
+        "rawBytes": 17144,
+        "gzipBytes": 4924,
+        "elapsedMs": 266
+      },
+      {
+        "path": "/assets/info-pages-DfzAZe2Z.js",
+        "status": 200,
+        "rawBytes": 23639,
+        "gzipBytes": 7797,
+        "elapsedMs": 265
+      },
+      {
+        "path": "/assets/pages-hGTuO593.js",
+        "status": 200,
+        "rawBytes": 14740,
+        "gzipBytes": 4666,
+        "elapsedMs": 258
+      },
+      {
+        "path": "/assets/session-pages-Bxl5QHnm.js",
+        "status": 200,
+        "rawBytes": 19904,
+        "gzipBytes": 5824,
+        "elapsedMs": 265
+      },
+      {
+        "path": "/assets/workspace-3rHKsyLE.js",
+        "status": 200,
+        "rawBytes": 3612,
+        "gzipBytes": 1617,
+        "elapsedMs": 245
+      },
+      {
+        "path": "/assets/public-plan-session-CHMyf3nB.js",
+        "status": 200,
+        "rawBytes": 30401,
+        "gzipBytes": 5762,
+        "elapsedMs": 265
+      },
+      {
+        "path": "/assets/route-conditioning-CIdYhQn5.js",
+        "status": 200,
+        "rawBytes": 463,
+        "gzipBytes": 275,
+        "elapsedMs": 230
+      },
+      {
+        "path": "/assets/image-validation-C69ohKwE.js",
+        "status": 200,
+        "rawBytes": 2208,
+        "gzipBytes": 975,
+        "elapsedMs": 244
+      },
+      {
+        "path": "/assets/route-search-Bmk5S57N.js",
+        "status": 200,
+        "rawBytes": 541,
+        "gzipBytes": 349,
+        "elapsedMs": 234
+      },
+      {
+        "path": "/assets/pages-qs6G7q9E.js",
+        "status": 200,
+        "rawBytes": 33229,
+        "gzipBytes": 9440,
+        "elapsedMs": 272
+      },
+      {
+        "path": "/assets/route-workout-C4FqZdMO.js",
+        "status": 200,
+        "rawBytes": 784,
+        "gzipBytes": 378,
+        "elapsedMs": 225
+      },
+      {
+        "path": "/assets/history-D1ZXADDi.js",
+        "status": 200,
+        "rawBytes": 6905,
+        "gzipBytes": 2200,
+        "elapsedMs": 248
+      },
+      {
+        "path": "/assets/workout_.settings-Cc-nZ7t6.js",
+        "status": 200,
+        "rawBytes": 9806,
+        "gzipBytes": 3150,
+        "elapsedMs": 253
+      },
+      {
+        "path": "/assets/start-DsEtk0xX.js",
+        "status": 200,
+        "rawBytes": 5962,
+        "gzipBytes": 2388,
+        "elapsedMs": 247
+      },
+      {
+        "path": "/assets/editor-djVWLl3f.js",
+        "status": 200,
+        "rawBytes": 22742,
+        "gzipBytes": 6837,
+        "elapsedMs": 260
+      },
+      {
+        "path": "/assets/domain-CO3VMMZ_.js",
+        "status": 200,
+        "rawBytes": 7919,
+        "gzipBytes": 3005,
+        "elapsedMs": 246
+      },
+      {
+        "path": "/assets/backup-NcmhRUpX.js",
+        "status": 200,
+        "rawBytes": 7455,
+        "gzipBytes": 2882,
+        "elapsedMs": 250
+      },
+      {
+        "path": "/assets/route-sleep-DDN_voMA.js",
+        "status": 200,
+        "rawBytes": 678,
+        "gzipBytes": 322,
+        "elapsedMs": 221
+      },
+      {
+        "path": "/assets/trial-pages-DrGDJ-KA.js",
+        "status": 200,
+        "rawBytes": 8829,
+        "gzipBytes": 2891,
+        "elapsedMs": 244
+      },
+      {
+        "path": "/assets/product-pages-B7qpWbz3.js",
+        "status": 200,
+        "rawBytes": 15317,
+        "gzipBytes": 4982,
+        "elapsedMs": 258
+      },
+      {
+        "path": "/assets/supplements_.adverse-events-DOMdm_J3.js",
+        "status": 200,
+        "rawBytes": 8506,
+        "gzipBytes": 2887,
+        "elapsedMs": 243
+      },
+      {
+        "path": "/assets/info-pages-BCeIXuAK.js",
+        "status": 200,
+        "rawBytes": 57687,
+        "gzipBytes": 12272,
+        "elapsedMs": 264
+      },
+      {
+        "path": "/assets/workspace-Cd4OfAZB.js",
+        "status": 200,
+        "rawBytes": 3193,
+        "gzipBytes": 1382,
+        "elapsedMs": 243
+      },
+      {
+        "path": "/assets/route-supplements-piABE_bv.js",
+        "status": 200,
+        "rawBytes": 2003,
+        "gzipBytes": 672,
+        "elapsedMs": 243
+      },
+      {
+        "path": "/assets/route-dashboard-BLI9QCmO.js",
+        "status": 200,
+        "rawBytes": 191,
+        "gzipBytes": 171,
+        "elapsedMs": 231
+      },
+      {
+        "path": "/assets/route-compare-BpMYsDDr.js",
+        "status": 200,
+        "rawBytes": 379,
+        "gzipBytes": 251,
+        "elapsedMs": 229
+      },
+      {
+        "path": "/assets/plan-pages-BrncyDVF.js",
+        "status": 200,
+        "rawBytes": 21272,
+        "gzipBytes": 6051,
+        "elapsedMs": 258
+      },
+      {
+        "path": "/assets/meal-plans_.templates_._templateSlug-CFvN0dOa.js",
+        "status": 200,
+        "rawBytes": 2697,
+        "gzipBytes": 1080,
+        "elapsedMs": 242
+      },
+      {
+        "path": "/assets/route-meal-plans-BheOz0YR.js",
+        "status": 200,
+        "rawBytes": 1740,
+        "gzipBytes": 674,
+        "elapsedMs": 241
+      },
+      {
+        "path": "/assets/route-mobility-Ry3PZa3e.js",
+        "status": 200,
+        "rawBytes": 1121,
+        "gzipBytes": 463,
+        "elapsedMs": 241
+      },
+      {
+        "path": "/assets/routines-za9LNA5F.js",
+        "status": 200,
+        "rawBytes": 16250,
+        "gzipBytes": 4673,
+        "elapsedMs": 255
+      },
+      {
+        "path": "/assets/route-saved-PBtkw3yF.js",
+        "status": 200,
+        "rawBytes": 584,
+        "gzipBytes": 298,
+        "elapsedMs": 220
+      },
+      {
+        "path": "/assets/exercises-DH2H_gC9.js",
+        "status": 200,
+        "rawBytes": 7285,
+        "gzipBytes": 2657,
+        "elapsedMs": 245
+      },
+      {
+        "path": "/assets/exercises_._slug-e7zzk3k4.js",
+        "status": 200,
+        "rawBytes": 12120,
+        "gzipBytes": 3911,
+        "elapsedMs": 260
+      },
+      {
+        "path": "/assets/route-exercises-BxHjoQJe.js",
+        "status": 200,
+        "rawBytes": 399,
+        "gzipBytes": 275,
+        "elapsedMs": 226
+      }
+    ]
+  },
+  "productionDefects": [],
+  "runtimeCodeChanges": false,
+  "repository": {
+    "baselineCommit": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+    "gitignorePreserved": true,
+    "gitignoreSha256": "5A22EF7D464EABAD8CD0D1B4129E4B415B815DFEC13CFA2FE3919C3DDC6439DB",
+    "trackedFilesDeleted": 0,
+    "trackedFilesRenamed": 0,
+    "trackedFilesMoved": 0,
+    "reportCommitMessage": "Record final live Vercel verification",
+    "reportCommitScope": [
+      "docs/reports/final-live-vercel-verification.md",
+      "docs/reports/final-live-vercel-verification.json"
+    ],
+    "tag": "fitness-os-owner-testing-ready"
+  },
+  "limitations": [
+    "Targeted live Chromium automation; physical devices and human evaluation remain.",
+    "Vercel error clusters checked over 1h; individual warning/error/fatal logs checked over available 30m retention window. No claim of all-time absence.",
+    "Responsive geometry checks and axe automation do not prove complete accessibility or subjective layout quality.",
+    "File inputs exercised with synthetic programmatic files and download fallback; native OS picker UI remains human-only.",
+    "Network counts describe the successful cohort; intentional draft 404 and navigation cancellations are classified separately.",
+    "Performance sanity measures 134 observed JavaScript assets, not a rebuilt full asset inventory or a new performance budget.",
+    "Known owner .gitignore change remains uncommitted; working tree therefore intentionally retains that exception."
+  ],
+  "ownerOnlyRemainingTesting": [
+    "physical Android",
+    "physical iPhone",
+    "physical iPad/tablet",
+    "real desktop workflows",
+    "human keyboard evaluation",
+    "screen reader",
+    "zoom",
+    "print",
+    "native OS file picker",
+    "native photo picker",
+    "real browser storage persistence/quota/eviction",
+    "subjective UI/UX",
+    "real personal-data workflow after synthetic testing is accepted"
+  ],
+  "localEvidenceDirectory": "artifacts/final-live-production-20261011"
+}
