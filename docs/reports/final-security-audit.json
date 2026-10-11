@@ -1,0 +1,595 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-11T05:03:01.736Z",
+  "verifiedImplementationCommit": "335b428868486c487fcae42ca941a3726e082701",
+  "executionTreeSha256": "7432676f2409a72e2f0f2232940d1615c80669c81789a84d8379365ffeea18ee",
+  "findings": [
+    {
+      "id": "SEC-01",
+      "severity": "Medium",
+      "component": "Global backup validation",
+      "problem": "Unbounded recursive hashing/decoding of deeply nested opaque values could exhaust stack/resources; a naive breadth-sized guard also imposed excess media memory overhead.",
+      "fix": "Bound depth, strings, nodes and finite numbers before recursive work; use depth-sized iterator frames.",
+      "verification": "final-security.test.ts plus invalid-preview/fresh-profile/rollback regressions; 358 units and full browser suites"
+    },
+    {
+      "id": "SEC-02",
+      "severity": "Low",
+      "component": "Imported recipe and supplement provenance",
+      "problem": "Generic URL schemas admitted executable/non-web schemes in provenance fields; no active exploit of these fields is claimed.",
+      "fix": "Owning schemas require bounded HTTP(S) source/media/registry URLs; generated schemas preserved.",
+      "verification": "Unsafe protocol rejection with valid HTTPS controls; whole-module restore validation"
+    },
+    {
+      "id": "SEC-03",
+      "severity": "Low",
+      "component": "Progress photo selection",
+      "problem": "Declared upload MIME was not compared to magic bytes before decoding.",
+      "fix": "JPEG/PNG/WebP signature and size check before browser decoding or storage; existing sanitization retained.",
+      "verification": "Unit MIME mismatch/empty/SVG tests and both-browser invalid image preservation; metadata/full-media journey"
+    },
+    {
+      "id": "SEC-04",
+      "severity": "Low",
+      "component": "Browser schema initialization / CSP",
+      "problem": "Zod caught an eval capability probe rejected by CSP; console-only checks missed its policy event.",
+      "fix": "Exact zod entry alias configures supported jitless parser before dependent browser schemas; SSR mode retained; direct event regression across seven route families.",
+      "verification": "Chromium/WebKit targeted 8/8; final browser/route gates; old live event recorded as known blocked probe pending redeploy"
+    },
+    {
+      "id": "SEC-05",
+      "severity": "Low",
+      "component": "Public origin configuration",
+      "problem": "Credential-bearing origins were silently normalized and accepted.",
+      "fix": "Reject username/password alongside unsupported protocols, paths, queries and fragments.",
+      "verification": "Targeted configuration import regression; actual production public origin matches exactly"
+    },
+    {
+      "id": "SEC-06",
+      "severity": "Low",
+      "component": "GitHub Actions checkout",
+      "problem": "Readonly checkout credentials were unnecessarily retained in test workspaces.",
+      "fix": "persist-credentials:false in every checkout; existing readonly permissions and SHA pins retained.",
+      "verification": "Workflow source review and five fresh successful hosted jobs"
+    },
+    {
+      "id": "INFO-01",
+      "severity": "Informational",
+      "component": "CSP styles",
+      "problem": "Removing inline style-attribute permission breaks existing React positioning/media layouts.",
+      "fix": "Retain narrow style-src-attr allowance; no script unsafe-inline/eval.",
+      "verification": "Controlled stricter-policy probe blocks ten body-region styles; live policy otherwise retained"
+    },
+    {
+      "id": "INFO-02",
+      "severity": "Informational",
+      "component": "Dependencies",
+      "problem": "Six packages have newer versions and newer Vercel npm warns about esbuild install-script policy.",
+      "fix": "No blanket upgrade or unsupported npm policy; document reviewed script and future version review.",
+      "verification": "Clean installs, zero-vulnerability audit, manifest/source review"
+    },
+    {
+      "id": "INFO-03",
+      "severity": "Informational",
+      "component": "Repository governance",
+      "problem": "main was reported unprotected; dependency-alert state is not available through this connector.",
+      "fix": "Recommend owner-managed required checks/review and branch protection; no settings changed.",
+      "verification": "Read-only GitHub branch API and current hosted checks"
+    }
+  ],
+  "critical": 0,
+  "high": 0,
+  "dependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "outdated": {
+    "@playwright/test": {
+      "current": "1.63.0",
+      "wanted": "1.64.0",
+      "latest": "1.64.0",
+      "dependent": "GYM application",
+      "location": "C:\\Users\\YellankiKaushik\\Desktop\\KAUSHIK\\ALL Projects\\GYM application\\node_modules\\@playwright\\test"
+    },
+    "@vitejs/plugin-react": {
+      "current": "6.1.1",
+      "wanted": "6.1.2",
+      "latest": "6.1.2",
+      "dependent": "GYM application",
+      "location": "C:\\Users\\YellankiKaushik\\Desktop\\KAUSHIK\\ALL Projects\\GYM application\\node_modules\\@vitejs\\plugin-react"
+    },
+    "lucide-react": {
+      "current": "1.52.0",
+      "wanted": "1.53.0",
+      "latest": "1.53.0",
+      "dependent": "GYM application",
+      "location": "C:\\Users\\YellankiKaushik\\Desktop\\KAUSHIK\\ALL Projects\\GYM application\\node_modules\\lucide-react"
+    },
+    "typescript": {
+      "current": "6.0.3",
+      "wanted": "6.0.3",
+      "latest": "7.0.2",
+      "dependent": "GYM application",
+      "location": "C:\\Users\\YellankiKaushik\\Desktop\\KAUSHIK\\ALL Projects\\GYM application\\node_modules\\typescript"
+    },
+    "typescript-eslint": {
+      "current": "8.71.0",
+      "wanted": "8.71.1",
+      "latest": "8.71.1",
+      "dependent": "GYM application",
+      "location": "C:\\Users\\YellankiKaushik\\Desktop\\KAUSHIK\\ALL Projects\\GYM application\\node_modules\\typescript-eslint"
+    },
+    "vite": {
+      "current": "8.3.2",
+      "wanted": "8.3.4",
+      "latest": "8.3.4",
+      "dependent": "GYM application",
+      "location": "C:\\Users\\YellankiKaushik\\Desktop\\KAUSHIK\\ALL Projects\\GYM application\\node_modules\\vite"
+    }
+  },
+  "installScripts": [
+    {
+      "path": "node_modules/esbuild",
+      "version": "0.28.2",
+      "scripts": {
+        "postinstall": "node install.js"
+      }
+    },
+    {
+      "path": "node_modules/fsevents",
+      "version": "2.3.3",
+      "scripts": {}
+    }
+  ],
+  "installScriptCommand": "npm install-scripts ls is unsupported by pinned npm 11.9.0; attempted result retained, manifests/source reviewed instead",
+  "secrets": {
+    "currentAndFinalBundle": {
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-08T18:35:56.347Z",
+      "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+      "trackedFiles": 1271,
+      "reachableCommits": 61,
+      "uniqueHistoryBlobs": 2585,
+      "historicalBytes": 225173202,
+      "publicBundleFiles": 290,
+      "rules": [
+        "private-key",
+        "github-token",
+        "aws-access-key",
+        "provider-secret",
+        "google-api-key",
+        "credential-url",
+        "literal-bearer"
+      ],
+      "findings": [],
+      "limitations": "Read-only scan of fetched reachable Git objects and current files; patterns do not establish absence of all credentials. Binary strings scanned; screenshot OCR and inaccessible/unreachable remote history are not covered. No credential values printed."
+    },
+    "fetchedReachableHistory": {
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-08T18:33:48.444Z",
+      "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+      "trackedFiles": 1271,
+      "reachableCommits": 63,
+      "uniqueHistoryBlobs": 2595,
+      "historicalBytes": 225438303,
+      "publicBundleFiles": 290,
+      "rules": [
+        "private-key",
+        "github-token",
+        "aws-access-key",
+        "provider-secret",
+        "google-api-key",
+        "credential-url",
+        "literal-bearer"
+      ],
+      "findings": [],
+      "limitations": "Read-only scan of fetched reachable Git objects and current files; patterns do not establish absence of all credentials. Binary strings scanned; screenshot OCR and inaccessible/unreachable remote history are not covered. No credential values printed."
+    },
+    "rotationsRequired": [],
+    "finalDocumentedTree": {
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-11T05:04:47.240Z",
+      "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+      "trackedFiles": 1280,
+      "reachableCommits": 63,
+      "uniqueHistoryBlobs": 2595,
+      "historicalBytes": 225438303,
+      "publicBundleFiles": 290,
+      "rules": [
+        "private-key",
+        "github-token",
+        "aws-access-key",
+        "provider-secret",
+        "google-api-key",
+        "credential-url",
+        "literal-bearer"
+      ],
+      "findings": [],
+      "limitations": "Read-only scan of fetched reachable Git objects and current files; patterns do not establish absence of all credentials. Binary strings scanned; screenshot OCR and inaccessible/unreachable remote history are not covered. No credential values printed."
+    }
+  },
+  "environment": [
+    {
+      "key": "VITE_PUBLIC_APP_ORIGIN",
+      "target": ["production"],
+      "securityIssues": []
+    }
+  ],
+  "vercel": {
+    "schemaVersion": 1,
+    "observedAt": "2026-10-08T18:32:23.180Z",
+    "deployment": {
+      "id": "dpl_5fNrtfrAv2z3niuQR1NvoxUz6jaF",
+      "name": "gymuuuuuuu",
+      "url": "gymuuuuuuu-r0tcq9hcq-kaushik-yellanki-project.vercel.app",
+      "type": "LAMBDAS",
+      "state": "READY",
+      "createdAt": 1791481458284,
+      "creator": {
+        "uid": "RbZ3cOFF3guWXqPbvXz78n5Q",
+        "username": "yellankikaushik"
+      },
+      "project": {
+        "id": "prj_1FC5ytETu88SnshSUWGHtjvWcQBN",
+        "name": "gymuuuuuuu",
+        "framework": "tanstack-start"
+      },
+      "meta": {
+        "githubCommitRef": "main",
+        "githubCommitSha": "26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+        "githubCommitMessage": "Record verified pre-Vercel release evidence and owner handoff",
+        "githubRepo": "Gymuuuuuuu",
+        "githubOrg": "YellankiKaushik"
+      },
+      "alias": [
+        "kaush-ka-gym.vercel.app",
+        "gymuuuuuuu-kaushik-yellanki-project.vercel.app",
+        "gymuuuuuuu-git-main-kaushik-yellanki-project.vercel.app"
+      ],
+      "target": "production",
+      "regions": ["iad1"],
+      "buildingAt": 1791481463705,
+      "ready": 1791481531873,
+      "readyState": "READY",
+      "source": "redeploy",
+      "aliasError": null
+    },
+    "project": {
+      "id": "prj_1FC5ytETu88SnshSUWGHtjvWcQBN",
+      "name": "gymuuuuuuu",
+      "framework": "tanstack-start",
+      "accountId": "team_UYEpjjRaObtrYF55SYu5rqUl",
+      "createdAt": 1791478310067,
+      "updatedAt": 1791481532157,
+      "nodeVersion": "24.x",
+      "live": false,
+      "latestDeployment": {
+        "id": "dpl_5fNrtfrAv2z3niuQR1NvoxUz6jaF",
+        "url": "gymuuuuuuu-r0tcq9hcq-kaushik-yellanki-project.vercel.app",
+        "createdAt": 1791481458284,
+        "readyState": "READY",
+        "target": "production"
+      },
+      "domains": [
+        "kaush-ka-gym.vercel.app",
+        "gymuuuuuuu-kaushik-yellanki-project.vercel.app",
+        "gymuuuuuuu-git-main-kaushik-yellanki-project.vercel.app"
+      ],
+      "passwordProtection": {
+        "enabled": false,
+        "deploymentType": null
+      },
+      "ssoProtection": {
+        "enabled": true,
+        "deploymentType": "all_except_custom_domains"
+      },
+      "trustedIps": {
+        "enabled": false,
+        "deploymentType": null,
+        "addresses": [],
+        "protectionMode": null
+      }
+    },
+    "environment": [
+      {
+        "key": "VITE_PUBLIC_APP_ORIGIN",
+        "target": ["production"],
+        "securityIssues": []
+      }
+    ],
+    "publicOrigin": "https://kaush-ka-gym.vercel.app",
+    "publicOriginVerifiedExactly": true,
+    "previewOriginConfigured": false,
+    "integrations": [],
+    "gitRepositoryVerifiedByBuildLog": "github.com/YellankiKaushik/Gymuuuuuuu",
+    "productionBranchVerifiedByBuildLog": "main",
+    "installCommandVerifiedByBuildLog": "npm ci",
+    "automaticGitDeploymentEnabledInRepository": false,
+    "configurationChangesPerformed": false,
+    "limitation": "Connector project response omits some dashboard overrides; build-log provenance and actual HTTPS behavior were inspected. CLI inspect remained unlinked and no linking confirmation was performed."
+  },
+  "live": {
+    "schemaVersion": 1,
+    "observedAt": "2026-10-11T05:02:57.191Z",
+    "origin": "https://kaush-ka-gym.vercel.app",
+    "tls": "HTTPS certificate verified by Node fetch and browser; no insecure bypass",
+    "status": 200,
+    "headers": {
+      "age": "0",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-encoding": "br",
+      "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-6nHDl6RRvjkeGgfBPquyn1lE'; style-src 'self' 'nonce-6nHDl6RRvjkeGgfBPquyn1lE'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 11 Oct 2026 05:02:36 GMT",
+      "permissions-policy": "camera=(), microphone=(), geolocation=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=31536000",
+      "transfer-encoding": "chunked",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-vercel-cache": "MISS",
+      "x-vercel-id": "bom1::iad1::s98gn-1791694954735-d4408857d364"
+    },
+    "distinctNonces": true,
+    "canonical": "https://kaush-ka-gym.vercel.app/",
+    "routes": [
+      {
+        "route": "/",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/workout",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/workout/history",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/nutrition",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/diet-planning",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/recipes",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/sleep",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/recovery",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/cardio",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/supplements",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/progress",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/search",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/saved",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/settings/data",
+        "status": 200,
+        "ssrMarkerLeak": false
+      }
+    ],
+    "requests": 631,
+    "personalMarkerLeaks": 0,
+    "unexpectedRemote": 0,
+    "errors": [],
+    "violations": [],
+    "dialogs": [],
+    "failedAssets": [],
+    "policyEvents": [
+      {
+        "route": "/",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/workout",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/workout/history",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/nutrition",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/diet-planning",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/recipes",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/sleep",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/recovery",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/cardio",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/supplements",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/progress",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/search",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/saved",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      },
+      {
+        "route": "/settings/data",
+        "directive": "script-src",
+        "blockedURI": "eval",
+        "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+      }
+    ],
+    "knownPolicyEventExplanation": "Current owner deployment may still contain Zod's caught, CSP-blocked eval capability probe. Runtime remains on the interpreter fallback. Candidate explicitly enables jitless before browser schemas; no unsafe-eval permission is added. Owner redeploy required.",
+    "syntheticXssRenderedAsText": true,
+    "limitation": "Fresh synthetic context only; no live owner records accessed or deployment performed."
+  },
+  "privacy": [
+    {
+      "schemaVersion": 1,
+      "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+      "browser": "chromium",
+      "syntheticOnly": true,
+      "requestCount": 918,
+      "unexpectedRemoteRequests": 0,
+      "personalValuesInRequests": 0,
+      "ssrRoutes": [
+        "/workout",
+        "/diet-planning/plans",
+        "/nutrition",
+        "/sleep",
+        "/recovery",
+        "/cardio",
+        "/supplements/products",
+        "/progress/weight",
+        "/saved/favourites",
+        "/search"
+      ],
+      "ssrPersonalMarkerLeaks": 0,
+      "freshProfileRestore": "passed",
+      "invalidImportPreservation": "passed"
+    },
+    {
+      "schemaVersion": 1,
+      "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+      "browser": "webkit",
+      "syntheticOnly": true,
+      "requestCount": 911,
+      "unexpectedRemoteRequests": 0,
+      "personalValuesInRequests": 0,
+      "ssrRoutes": [
+        "/workout",
+        "/diet-planning/plans",
+        "/nutrition",
+        "/sleep",
+        "/recovery",
+        "/cardio",
+        "/supplements/products",
+        "/progress/weight",
+        "/saved/favourites",
+        "/search"
+      ],
+      "ssrPersonalMarkerLeaks": 0,
+      "freshProfileRestore": "passed",
+      "invalidImportPreservation": "passed"
+    }
+  ],
+  "numericAndImportEvidence": {
+    "invalidJsonAndTruncation": "Restore UI parse errors preserve records",
+    "nestingAndStrings": "final-security.test.ts bounded traversal regression",
+    "versionsDuplicatesRelationships": "pre-vercel-restore.test.ts and owning module validation tests",
+    "datesUnitsFiniteNumbers": "Workout, nutrition, diet, recovery, cardio, supplements and progress schema/domain tests",
+    "binaryMimeSignatureChecksum": "pre-vercel-image.test.ts, pre-vercel-photo.spec.ts and final-security.spec.ts",
+    "previewWrites": 0,
+    "invalidImportWrites": 0,
+    "freshProfile": "Exact synthetic multi-module roundtrip after guided preparation; seven owning databases",
+    "interruption": "Injected transaction/partial-write failure rollback and durable recovery tests",
+    "multiDatabaseAtomicity": false,
+    "csv": "Six formula prefixes, comma/quote/CRLF/Unicode/multiline checks and seven owning export families; raw mode visibly labelled",
+    "limitation": "Representative automated negative cases and owning schema validation, not every combinatorial input or physical quota/eviction condition"
+  },
+  "health": {
+    "diet": "Adult eligibility, pregnancy/lactation exclusion, disclosed formulas/assumptions and conservative bounds; no calorie credit or exact weight/date promise",
+    "body": "BMI screening context and externally measured/source-labelled body composition; no physique/attractiveness/health score",
+    "sleep": "Estimates/source labels; no diagnosis, invented stages or certain sleep-debt claim",
+    "recovery": "Pain/illness distinct from soreness; stop signals; no opaque recovery score",
+    "cardio": "Estimate/stop labels; no fabricated VO2max, fitness age, universal Zone 2 or automatic exercise calories",
+    "supplements": "Immutable labels, unknown blend amounts, adverse-event stop guidance; no prescription, steroid/SARM/peptide protocol, global score or certification-as-efficacy",
+    "clinicalReview": "No independent human or clinical review claimed"
+  },
+  "headers": "Actual HTTPS nonce CSP, nosniff, DENY/frame-ancestors none, referrer, permissions and HSTS passed",
+  "xss": "React text escaping; static nonced theme initializer is only executable HTML insertion; synthetic text either escapes or is rejected; no payload executes",
+  "urls": "Fixed internal redirects, app-relative saved references, bounded HTTP(S) provenance and reviewed public links; deliberate external tabs use noreferrer/noopener behavior",
+  "workflow": "All actions SHA pinned, contents:read, no secret-bearing deployment steps/pull_request_target/metadata shell injection; credentials not persisted",
+  "noDeploymentPerformed": true,
+  "manualRedeployRequired": true,
+  "manualRedeployCommit": "335b428868486c487fcae42ca941a3726e082701",
+  "limitations": [
+    "Pattern scans are not proof of absence of all secrets; no screenshot OCR or unreachable history scan",
+    "No formal penetration-test or universally bug-free claim",
+    "Live deployment stays at recorded owner commit until manual redeploy",
+    "Owner records were never accessed; fresh synthetic contexts only"
+  ]
+}

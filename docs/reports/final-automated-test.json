@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-11T05:03:01.733Z",
+  "verifiedImplementationCommit": "335b428868486c487fcae42ca941a3726e082701",
+  "executionTreeSha256": "7432676f2409a72e2f0f2232940d1615c80669c81789a84d8379365ffeea18ee",
+  "cleanClone": true,
+  "gates": [
+    {
+      "name": "diff-check",
+      "startedAt": "2026-10-08T18:31:36.9059074Z",
+      "completedAt": "2026-10-08T18:31:37.2276709Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/diff-check.log"
+    },
+    {
+      "name": "npm-ci",
+      "startedAt": "2026-10-08T18:31:37.2475868Z",
+      "completedAt": "2026-10-08T18:31:46.567014Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/npm-ci.log"
+    },
+    {
+      "name": "check",
+      "startedAt": "2026-10-08T18:31:46.5702004Z",
+      "completedAt": "2026-10-08T18:34:21.6248479Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/check.log"
+    },
+    {
+      "name": "coverage",
+      "startedAt": "2026-10-08T18:34:21.6268024Z",
+      "completedAt": "2026-10-08T18:35:24.6511211Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/coverage.log"
+    },
+    {
+      "name": "privacy",
+      "startedAt": "2026-10-08T18:35:24.6527541Z",
+      "completedAt": "2026-10-08T18:35:25.3571727Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/privacy.log"
+    },
+    {
+      "name": "dependency-audit",
+      "startedAt": "2026-10-08T18:35:25.3587137Z",
+      "completedAt": "2026-10-08T18:35:27.4536987Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/dependency-audit.log"
+    },
+    {
+      "name": "build",
+      "startedAt": "2026-10-08T18:35:27.4551132Z",
+      "completedAt": "2026-10-08T18:35:48.6998442Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/build.log"
+    },
+    {
+      "name": "performance",
+      "startedAt": "2026-10-08T18:35:48.7011736Z",
+      "completedAt": "2026-10-08T18:35:49.2295792Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/performance.log"
+    },
+    {
+      "name": "content-performance",
+      "startedAt": "2026-10-08T18:35:49.2309361Z",
+      "completedAt": "2026-10-08T18:35:49.7678557Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/content-performance.log"
+    },
+    {
+      "name": "repository-inventory",
+      "startedAt": "2026-10-08T18:35:49.7691871Z",
+      "completedAt": "2026-10-08T18:35:52.190736Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/repository-inventory.log"
+    },
+    {
+      "name": "secret-history-bundle-scan",
+      "startedAt": "2026-10-08T18:35:52.1922629Z",
+      "completedAt": "2026-10-08T18:35:56.4372491Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/secret-history-bundle-scan.log"
+    },
+    {
+      "name": "local-browsers",
+      "startedAt": "2026-10-11T04:18:44.6202187Z",
+      "completedAt": "2026-10-11T04:46:10.3179117Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/local-browsers.log"
+    },
+    {
+      "name": "complete-route-audit",
+      "startedAt": "2026-10-11T04:46:10.3322913Z",
+      "completedAt": "2026-10-11T05:02:20.6880954Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/complete-route-audit.log"
+    },
+    {
+      "name": "route-report",
+      "startedAt": "2026-10-11T05:02:20.6900690Z",
+      "completedAt": "2026-10-11T05:02:26.6183296Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/route-report.log"
+    },
+    {
+      "name": "live-production-smoke",
+      "startedAt": "2026-10-11T05:02:26.6202504Z",
+      "completedAt": "2026-10-11T05:02:57.2862737Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/live-production-smoke.log"
+    }
+  ],
+  "units": {
+    "passed": 358,
+    "files": 95
+  },
+  "coverage": {
+    "statements": 72.98,
+    "branches": 64.77,
+    "functions": 67.38,
+    "lines": 76.89
+  },
+  "localBrowsers": {
+    "chromium": 287,
+    "webkit": 287,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "hosted": {
+    "schemaVersion": 1,
+    "verifiedImplementationCommit": "335b428868486c487fcae42ca941a3726e082701",
+    "jobs": [
+      {
+        "id": 113475411426,
+        "name": "accessibility",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 37824908226,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run npm run check",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Run npm run test:a11y",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Preserve failed accessibility diagnostics",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 8
+          },
+          {
+            "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          }
+        ],
+        "passed": 184,
+        "duration": "8.2m",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37824908226/job/113475411426",
+        "verificationLines": [
+          "2026-10-08T18:32:07.6340986Z found 0 vulnerabilities",
+          "2026-10-08T18:33:24.4512429Z  Test Files  95 passed (95)",
+          "2026-10-08T18:33:24.4514114Z       Tests  358 passed (358)",
+          "2026-10-08T18:42:16.4627846Z   184 passed (8.2m)"
+        ]
+      },
+      {
+        "id": 113475411819,
+        "name": "verify",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 37824908226,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run npm run check",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npm run test:coverage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run npm run test:e2e",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run npm audit --audit-level=high",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Preserve failed regression diagnostics",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 10
+          },
+          {
+            "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 20
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 21
+          }
+        ],
+        "passed": 287,
+        "duration": "18.3m",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37824908226/job/113475411819",
+        "verificationLines": [
+          "2026-10-08T18:32:11.3982806Z found 0 vulnerabilities",
+          "2026-10-08T18:33:49.5238938Z  Test Files  95 passed (95)",
+          "2026-10-08T18:33:49.5241569Z       Tests  358 passed (358)",
+          "2026-10-08T18:35:19.3163013Z  Test Files  95 passed (95)",
+          "2026-10-08T18:35:19.3164900Z       Tests  358 passed (358)",
+          "2026-10-08T18:54:10.9649230Z   287 passed (18.3m)",
+          "2026-10-08T18:54:11.4290907Z found 0 vulnerabilities"
+        ]
+      },
+      {
+        "id": 113475405184,
+        "name": "browser (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 37824908115,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run npm run check",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps firefox",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Run npm run test:e2e:cross-browser -- --project=firefox",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Preserve failed browser diagnostics",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 8
+          },
+          {
+            "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          }
+        ],
+        "passed": 287,
+        "duration": "30.5m",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37824908115/job/113475405184",
+        "verificationLines": [
+          "2026-10-08T18:32:07.0594362Z found 0 vulnerabilities",
+          "2026-10-08T18:33:47.9152658Z  Test Files  95 passed (95)",
+          "2026-10-08T18:33:47.9154229Z       Tests  358 passed (358)",
+          "2026-10-08T19:05:08.7631600Z   287 passed (30.5m)"
+        ]
+      },
+      {
+        "id": 113475405525,
+        "name": "browser (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 37824908115,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run npm run check",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Run npm run test:e2e:cross-browser -- --project=chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Preserve failed browser diagnostics",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 8
+          },
+          {
+            "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          }
+        ],
+        "passed": 287,
+        "duration": "18.3m",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37824908115/job/113475405525",
+        "verificationLines": [
+          "2026-10-08T18:32:08.4822632Z found 0 vulnerabilities",
+          "2026-10-08T18:33:46.2739339Z  Test Files  95 passed (95)",
+          "2026-10-08T18:33:46.2742240Z       Tests  358 passed (358)",
+          "2026-10-08T18:52:54.0799606Z   287 passed (18.3m)"
+        ]
+      },
+      {
+        "id": 113475405591,
+        "name": "browser (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 37824908115,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run npm run check",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps webkit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Run npm run test:e2e:cross-browser -- --project=webkit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Preserve failed browser diagnostics",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 8
+          },
+          {
+            "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          }
+        ],
+        "passed": 287,
+        "duration": "24.6m",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37824908115/job/113475405591",
+        "verificationLines": [
+          "2026-10-08T18:32:11.3911623Z found 0 vulnerabilities",
+          "2026-10-08T18:33:50.0899442Z  Test Files  95 passed (95)",
+          "2026-10-08T18:33:50.0902339Z       Tests  358 passed (358)",
+          "2026-10-08T19:00:01.8760774Z   287 passed (24.6m)"
+        ]
+      }
+    ]
+  },
+  "routeAudit": {
+    "expected": 702,
+    "passed": 702,
+    "failed": 0,
+    "unmeasured": 0,
+    "buildDate": "2026-10-08T18:35:48.576Z",
+    "productionBuildSha256": "bc99b66650ba25f8544905c61e6ab9706fba4fdf50d75d81f7929215140dbdbe",
+    "searchManifest": {
+      "schemaVersion": "1.0.0",
+      "adapterVersion": "fitness-os-native-index-v1",
+      "normalizationVersion": "unicode-nfkc-token-v1",
+      "rankingVersion": "field-weights-exact-prefix-bonus-v1",
+      "canonicalDocumentHash": "7b3df4d5ac92f146a203b4c5b1741f44b1e73691d0a65014b219831d8e0f9f5e",
+      "indexHash": "d512000f40b6054f1cc261aed4aa99b91d5c043fbcdb9e17de19f0df3c6a7706",
+      "indexVersion": "83fef1c09dbeeb3e9a28bba1e037a38dbbfa3ec9d05a39ce2cea5d3175b91fa5",
+      "documentCount": 648,
+      "countsByEntityType": {
+        "route": 124,
+        "muscle": 70,
+        "exercise": 32,
+        "workout_science_topic": 32,
+        "workout_program": 4,
+        "workout_session": 0,
+        "food": 264,
+        "nutrient": 51,
+        "diet_plan": 0,
+        "recipe": 24,
+        "meal_plan_template": 3,
+        "meal_plan": 0,
+        "recovery_topic": 11,
+        "recovery_routine": 4,
+        "sleep_entry": 0,
+        "recovery_checkin": 0,
+        "cardio_topic": 10,
+        "cardio_modality": 2,
+        "cardio_plan": 1,
+        "conditioning_routine": 0,
+        "supplement_ingredient": 12,
+        "supplement_evidence_topic": 0,
+        "measurement_protocol": 0,
+        "progress_topic": 0,
+        "body_measurement": 0,
+        "dashboard_widget": 4
+      },
+      "builtAt": "2026-10-08T08:08:02.000Z",
+      "locale": "en"
+    },
+    "sourceManifestSha256": "bf0ccc3a9e78db5fcf278de728f79fd44e396424b7e62510826e9acdeb314213"
+  },
+  "privacy": [
+    {
+      "schemaVersion": 1,
+      "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+      "browser": "chromium",
+      "syntheticOnly": true,
+      "requestCount": 918,
+      "unexpectedRemoteRequests": 0,
+      "personalValuesInRequests": 0,
+      "ssrRoutes": [
+        "/workout",
+        "/diet-planning/plans",
+        "/nutrition",
+        "/sleep",
+        "/recovery",
+        "/cardio",
+        "/supplements/products",
+        "/progress/weight",
+        "/saved/favourites",
+        "/search"
+      ],
+      "ssrPersonalMarkerLeaks": 0,
+      "freshProfileRestore": "passed",
+      "invalidImportPreservation": "passed"
+    },
+    {
+      "schemaVersion": 1,
+      "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+      "browser": "webkit",
+      "syntheticOnly": true,
+      "requestCount": 911,
+      "unexpectedRemoteRequests": 0,
+      "personalValuesInRequests": 0,
+      "ssrRoutes": [
+        "/workout",
+        "/diet-planning/plans",
+        "/nutrition",
+        "/sleep",
+        "/recovery",
+        "/cardio",
+        "/supplements/products",
+        "/progress/weight",
+        "/saved/favourites",
+        "/search"
+      ],
+      "ssrPersonalMarkerLeaks": 0,
+      "freshProfileRestore": "passed",
+      "invalidImportPreservation": "passed"
+    }
+  ],
+  "javascript": {
+    "assets": 158,
+    "gzipBytes": 701394,
+    "maximumChunkBytes": 168458,
+    "totalBudget": 716800,
+    "chunkBudget": 204800
+  },
+  "dependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "limitations": [
+    "Coverage has no configured minimum threshold; percentages are diagnostic",
+    "No local Windows Firefox claim; hosted Linux Firefox supplies that gate",
+    "Automated route/a11y checks do not certify every interactive state or human accessibility",
+    "Documentation-only descendants must preserve execution tree hash"
+  ]
+}

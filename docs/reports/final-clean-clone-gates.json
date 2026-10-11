@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "verifiedImplementationCommit": "335b428868486c487fcae42ca941a3726e082701",
+  "cleanClone": true,
+  "gates": [
+    {
+      "name": "diff-check",
+      "startedAt": "2026-10-08T18:31:36.9059074Z",
+      "completedAt": "2026-10-08T18:31:37.2276709Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/diff-check.log"
+    },
+    {
+      "name": "npm-ci",
+      "startedAt": "2026-10-08T18:31:37.2475868Z",
+      "completedAt": "2026-10-08T18:31:46.567014Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/npm-ci.log"
+    },
+    {
+      "name": "check",
+      "startedAt": "2026-10-08T18:31:46.5702004Z",
+      "completedAt": "2026-10-08T18:34:21.6248479Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/check.log"
+    },
+    {
+      "name": "coverage",
+      "startedAt": "2026-10-08T18:34:21.6268024Z",
+      "completedAt": "2026-10-08T18:35:24.6511211Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/coverage.log"
+    },
+    {
+      "name": "privacy",
+      "startedAt": "2026-10-08T18:35:24.6527541Z",
+      "completedAt": "2026-10-08T18:35:25.3571727Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/privacy.log"
+    },
+    {
+      "name": "dependency-audit",
+      "startedAt": "2026-10-08T18:35:25.3587137Z",
+      "completedAt": "2026-10-08T18:35:27.4536987Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/dependency-audit.log"
+    },
+    {
+      "name": "build",
+      "startedAt": "2026-10-08T18:35:27.4551132Z",
+      "completedAt": "2026-10-08T18:35:48.6998442Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/build.log"
+    },
+    {
+      "name": "performance",
+      "startedAt": "2026-10-08T18:35:48.7011736Z",
+      "completedAt": "2026-10-08T18:35:49.2295792Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/performance.log"
+    },
+    {
+      "name": "content-performance",
+      "startedAt": "2026-10-08T18:35:49.2309361Z",
+      "completedAt": "2026-10-08T18:35:49.7678557Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/content-performance.log"
+    },
+    {
+      "name": "repository-inventory",
+      "startedAt": "2026-10-08T18:35:49.7691871Z",
+      "completedAt": "2026-10-08T18:35:52.190736Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/repository-inventory.log"
+    },
+    {
+      "name": "secret-history-bundle-scan",
+      "startedAt": "2026-10-08T18:35:52.1922629Z",
+      "completedAt": "2026-10-08T18:35:56.4372491Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/secret-history-bundle-scan.log"
+    },
+    {
+      "name": "local-browsers",
+      "startedAt": "2026-10-11T04:18:44.6202187Z",
+      "completedAt": "2026-10-11T04:46:10.3179117Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/local-browsers.log"
+    },
+    {
+      "name": "complete-route-audit",
+      "startedAt": "2026-10-11T04:46:10.3322913Z",
+      "completedAt": "2026-10-11T05:02:20.6880954Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/complete-route-audit.log"
+    },
+    {
+      "name": "route-report",
+      "startedAt": "2026-10-11T05:02:20.6900690Z",
+      "completedAt": "2026-10-11T05:02:26.6183296Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/route-report.log"
+    },
+    {
+      "name": "live-production-smoke",
+      "startedAt": "2026-10-11T05:02:26.6202504Z",
+      "completedAt": "2026-10-11T05:02:57.2862737Z",
+      "exitCode": 0,
+      "log": "artifacts/final-security/live-production-smoke.log"
+    }
+  ]
+}

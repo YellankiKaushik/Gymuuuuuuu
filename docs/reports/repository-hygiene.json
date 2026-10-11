@@ -1,0 +1,5366 @@
+{
+  "schemaVersion": 1,
+  "testedCommit": "335b428868486c487fcae42ca941a3726e082701",
+  "generatedAt": "2026-10-08T18:35:52.139Z",
+  "filesClassified": 1280,
+  "classifications": [
+    {
+      "path": ".env.example",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".gitattributes",
+      "classification": "unknown"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".github/workflows/cross-browser.yml",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".github/workflows/release-evidence.yml",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".gitignore",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".node-version",
+      "classification": "unknown"
+    },
+    {
+      "path": ".nvmrc",
+      "classification": "active build tooling"
+    },
+    {
+      "path": ".prettierignore",
+      "classification": "unknown"
+    },
+    {
+      "path": "AGENTS.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_00_Lovable_Project_Knowledge.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_00_Lovable_Starter_Prompts.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_00_Master_Foundation_Lovable_Specification.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_00_Master_Foundation_Lovable_Specification.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_01_Application_Shell_Navigation_Design_System.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_01_Application_Shell_Navigation_Design_System.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_01_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_01_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Muscle_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Muscle_Functional_Anatomy_Library.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Muscle_Functional_Anatomy_Library.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_02_Seed_Taxonomy.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Exercise_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Exercise_Encyclopedia.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Exercise_Encyclopedia.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_03_Seed_Exercise_Taxonomy.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Seed_Workout_Science_Taxonomy.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Workout_Science.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Workout_Science.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_04_Workout_Science_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Seed_Workout_Program_Taxonomy.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Workout_Program_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Workout_Programs.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_05_Workout_Programs.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Encyclopedia.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Encyclopedia.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_07_Seed_Food_Taxonomy.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Nutrient_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Nutrient_Encyclopedia.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Nutrient_Encyclopedia.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_08_Seed_Nutrient_Taxonomy.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_and_Target_Calculators.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_and_Target_Calculators.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_09_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_10_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_and_Meal_Plans.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_and_Meal_Plans.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Cardio_Conditioning_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Cardio_Conditioning_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Cardio_and_Conditioning.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Cardio_and_Conditioning.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_13_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_Evidence_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_Evidence_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_and_Evidence_Library.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_and_Evidence_Library.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Body_Progress_Analytics_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Body_Progress_Analytics_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Body_Progress_Dashboard_Analytics.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Body_Progress_Dashboard_Analytics.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_15_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Global_Search_Favourites_Comparison.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Global_Search_Favourites_Comparison.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Search_Favourites_Comparison_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_16_Search_Favourites_Comparison_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Local_Storage_Backup_Export_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Local_Storage_Backup_Export_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Local_Storage_Backup_and_Export.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_17_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Lovable_Prompt_Package (1).txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Lovable_Prompt_Package.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Quick_Implementation_Reference.txt",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Data_Schema (1).json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Data_Schema.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Reference_Data (1).json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Reference_Data.json",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_GitHub_Vercel_Deployment (1).docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_GitHub_Vercel_Deployment (1).md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_GitHub_Vercel_Deployment.docx",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_GitHub_Vercel_Deployment.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "README.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/cardio-conditioning.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/content-governance/anatomy-sources.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/content-governance/exercise-sources.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/content-governance/workout-science-evidence.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/data-dictionary/foundation.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/001-local-scaffold.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/002-draft-content-gates.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/decision-template.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/final-security-hygiene.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-08-engineering-integration.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-08-reference-contract.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-09-snapshot-contract.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-10-snapshot-contract.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-11-companion-contracts.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-12-schema-companions.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-13-schema-companions.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-14-schema-companions.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-15-schema-companions.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-16-search-publication-and-index.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-17-local-backup-and-restore.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-18-hydration.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-18-release-controls.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase-19-verified-content.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-bridge-bird-dog-pulldown.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-cdc-sleep-education.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-fda-complete-reference-table.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-final-product-pass.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-first-manual-test-scope.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-hydration-lifecycle.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-independent-accessibility-ci.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-lossless-ranking-assets.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-machine-exercises-media-bindings.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-milkfish-unsweetened-soy.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-progression-and-supported-exercises.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-recovery-context-transition.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-rolled-oats-soy-dill.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-source-unspecified-program-duration.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/phase19-usda-dataset-verification.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/pre-vercel-performance-budget.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/decisions/pre-vercel-restore-safety.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/design-system.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/diet-planning/DATA_MODEL.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/diet-planning/FORMULAS.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/diet-planning/METHODOLOGY.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/diet-planning/SAFETY_BOUNDARIES.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/diet-planning/TESTING.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/exercise-encyclopedia.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/food-safety-and-allergen-boundaries.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/foods/data-ingestion.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/foods/data-model.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/foods/food-encyclopedia.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/foods/methodology.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/foods/source-policy.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/grocery-list-rules.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/local-data/nutrition-backup.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/local-data/nutrition-storage.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/local-data/workout-backup.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/local-data/workout-storage.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/meal-plan-methodology.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/muscle-library.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/navigation.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/nutrients/CONTENT_REVIEW.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/nutrients/METHODOLOGY.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/nutrients/REFERENCE_FRAMEWORKS.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/nutrients/SOURCES.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/nutrients/TESTING.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/nutrition-tracker.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-11-backup-restore.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-11-data-dictionary.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-11-recipes-meal-plans.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-11-source-registry.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-11-test-matrix.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-12-backup-restore.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-12-data-dictionary.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-12-source-verification.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-12-test-matrix.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-13-data-dictionary.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-13-source-verification.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-13-test-matrix.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phase-14-test-matrix.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/phases/00-completion.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/00-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/01-completion.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/01-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/02-completion.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/02-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/03-completion.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/03-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/04-completion.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/04-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/05-completion.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/05-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/06-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/07-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/08-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/09-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/10-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/11-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/12-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/13-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/14-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/15-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/16-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/17-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/18-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/19-plan.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-06.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-07.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-08.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-09.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-10.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-11.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-12.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-13.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-14.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-15.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-16.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-18.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-19.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/phases/phase-template.md",
+      "classification": "historical documentation"
+    },
+    {
+      "path": "docs/programs.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/progress-source-verification.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/recipe-calculation-methodology.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/recipe-versioning.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/recovery-sleep-mobility.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/reports/content-completion.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/content-completion.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/reports/final-automated-test.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-automated-test.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/reports/final-clean-clone-gates.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-hosted-ci.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-live-vercel.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-pre-vercel-readiness.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-pre-vercel-readiness.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/reports/final-privacy-chromium.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-privacy-webkit.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-route-audit.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-security-audit.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/final-security-audit.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/reports/phase19-ci-500-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-505-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-508-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-anatomy-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-cooked-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-fda-comparison.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-loaded-food-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-manual-test-ready.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-meal-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-nutrients-anatomy-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-sleep-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-source-hashes.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-ci-utf8-correction.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-manual-test-ready.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/reports/phase19-routes-500-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-routes-505-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/phase19-routes-508-checkpoint.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/pre-vercel-clean-clone-gates.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/pre-vercel-gap-audit.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/pre-vercel-gap-audit.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/reports/pre-vercel-hosted-ci.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/pre-vercel-privacy-chromium.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/pre-vercel-privacy-webkit.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/pre-vercel-security.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/repository-hygiene.json",
+      "classification": "generated evidence"
+    },
+    {
+      "path": "docs/reports/repository-hygiene.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/runbooks/release-and-rollback.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/runbooks/vercel-owner-deployment.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase-00-desktop.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase-00-mobile.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase-01-desktop.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase-01-mobile.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase03-desktop.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase03-detail-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase03-detail-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase03-mobile.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase04-desktop.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase04-detail-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase04-detail-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase04-mobile.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase05-detail-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase05-detail-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase06-active-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase06-active-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase07-compare-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase07-compare-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase07-detail-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase07-detail-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase08-compare-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase08-compare-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase08-detail-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase08-detail-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase09-energy-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase09-energy-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase10-add-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase10-add-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase11-recipe-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase11-recipe-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase12-player-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase12-recovery-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase12-recovery-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase13-cardio-1440.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase13-cardio-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/screenshots/phase13-player-320.png",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/security/final-threat-model.json",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/security/final-threat-model.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/supplements-evidence.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/supplements-source-verification.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/workout-science.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "docs/workout-tracker.md",
+      "classification": "current documentation"
+    },
+    {
+      "path": "eslint.config.js",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "package-lock.json",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "package.json",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "playwright.audit.config.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "playwright.config.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "playwright.production.config.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "public/icons/favicon.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/back-squat-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/barbell-bench-press-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/bird-dog-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/bodyweight-squat-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/close-grip-bench-press-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/conventional-deadlift-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/curl-elbow-flexion.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/dumbbell-bench-press-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/dumbbell-front-raise.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/dumbbell-lateral-raise.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/dumbbell-overhead-triceps-extension.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/dumbbell-romanian-deadlift-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/dumbbell-shrug-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/forward-lunge-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/glute-bridge-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/goblet-squat-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/incline-push-up-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/knee-push-up-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/lat-pulldown-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/leg-extension-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/lying-leg-curl-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/machine-chest-press-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/one-arm-dumbbell-row-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/push-up-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/seated-cable-row-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/seated-dumbbell-shoulder-press.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/seated-leg-curl-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/single-leg-glute-bridge-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/stability-ball-leg-curl-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/standing-calf-raise-cue.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/standing-dumbbell-shoulder-press.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "public/media/supported-single-leg-calf-raise.svg",
+      "classification": "active runtime"
+    },
+    {
+      "path": "scripts/build-search-index.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-ace-four-exercises.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-ace-loaded-exercises.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-ace-machine-exercises.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-ace-next-exercises.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-ace-pushups.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-acsm-adaptations.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-acsm-measurement.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-acsm-principles.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-anatomy-index.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-cardio-education.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-cdc-heat.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-cdc-sleep.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-component-nutrients.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-fda-references.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-foods.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-foundation-programs.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-historical-anatomy.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-nhs-programs.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-nia-flexibility.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-nih-nutrients.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-nutrients.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-ods-five.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-ods-ingredients.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-original-recipes.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-original-templates.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-recovery-routines.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-reference-indexes.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-remaining-anatomy.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-runtime-knowledge.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-science-index.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-science-research.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-supplement-evidence.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-supported-exercises.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-supported-four-exercises.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-three-day-program.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/compile-training-research.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content-audit.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/browser-report.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/exercise-media-bindings.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/fda.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/food-identity-matches.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/immutable-versions.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/nhs-running.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/program-source-bindings.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/route-inventory.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/usda-dataset.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/usda.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/content/vitamin-e-ranking.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/create-cardio-routes.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/create-nutrition-routes.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/create-recovery-routes.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/create-supplements-routes.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/final-live-audit.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/final-secret-scan.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/final-security-inventory.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-cardio-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-diet-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-food-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-nutrient-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-nutrition-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-program-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-recipe-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-recovery-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-supplements-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/generate-workout-schema.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/import-usda.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/inspect-exercise-fixture.tsx",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/inspect-food-fixture.tsx",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/inspect-nutrient-fixture.tsx",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/inspect-program-fixture.tsx",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/inspect-science-fixture.tsx",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/inspect-ui.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/phase18-performance-budget.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/phase18-release-manifest.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/phase18-repository-audit.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/phase18-runtime-audit.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/phase19-data-budget.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/pre-vercel-gap-audit.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/pre-vercel-security-audit.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/prepare-food-source.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/read-docx-differences.ps1",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/read-seed-data.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/scaffold-routes.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/upgrade-shell.mjs",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/validate-content.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/verify-publication-reviews.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "scripts/verify-usda-dataset.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "src/client.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/app-shell/module-finder.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/app-shell/navigation.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/app-shell/preferences.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/app-shell/shell.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/app-shell/workout-resume.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/common/icon.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/common/page-header.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/common/primitives.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/common/source-list.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/common/states.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/home.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/components/module-page.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/config/app.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/config/validation.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/content/cardio/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/cardio/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/cardio/runtime-reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/diet-planning/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/diet-planning/source-check.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/exercises/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/exercises/taxonomy.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/identities.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/index.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/manifest.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/release-report.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/beverages.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/dairy_eggs.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/fats_oils.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/fish_seafood.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/fruits.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/fungi_algae.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/grains_cereals_millets.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/leafy_greens.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/legumes_pulses.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/meat_poultry.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/nuts_seeds.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/spices_herbs.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/sweeteners.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/foods/shards/vegetables.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/muscles/index.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/muscles/media.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/muscles/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/muscles/runtime-taxonomy.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/muscles/sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/muscles/taxonomy.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/framework-datasets.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/frameworks/efsa_drv.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/frameworks/fda_dv_adult_4_plus.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/frameworks/icmr_nin_2020.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/frameworks/us_canada_dri.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/glossary.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/identities.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/index.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/manifest.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/ranking-profiles.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/added_sugars_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/alcohol_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/beta_carotene_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/biotin_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/calcium_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/carbohydrate_available_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/carbohydrate_total_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/chloride_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/cholesterol_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/choline_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/chromium_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/copper_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/energy_kcal.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/energy_kj.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/fat_monounsaturated_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/fat_polyunsaturated_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/fat_saturated_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/fat_total_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/fiber_total_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/fluoride_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/folate_dfe_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/folate_food_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/folic_acid_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/iodine_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/iron_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/magnesium_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/manganese_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/molybdenum_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/niacin_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/omega_3_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/omega_6_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/pantothenic_acid_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/phosphorus_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/potassium_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/protein_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/retinol_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/riboflavin_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/selenium_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/sodium_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/sugars_total_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/thiamin_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/trans_fat_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/vitamin_a_rae_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/vitamin_b12_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/vitamin_b6_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/vitamin_c_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/vitamin_d_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/vitamin_e_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/vitamin_k_ug.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/water_g.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/rankings/zinc_mg.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/release-report.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/added-sugars.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/alcohol.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/available-carbohydrate.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/beta-carotene.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/biotin-vitamin-b7.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/calcium.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/chloride.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/cholesterol.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/choline.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/chromium.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/copper.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/dietary-fibre.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/energy-kilojoules.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/energy.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/fluoride.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/folate-vitamin-b9.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/folic-acid.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/food-folate.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/iodine.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/iron.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/magnesium.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/manganese.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/molybdenum.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/monounsaturated-fat.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/niacin-vitamin-b3.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/omega-3-fatty-acids.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/omega-6-fatty-acids.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/pantothenic-acid-vitamin-b5.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/phosphorus.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/polyunsaturated-fat.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/potassium.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/protein.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/retinol.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/riboflavin-vitamin-b2.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/saturated-fat.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/selenium.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/sodium.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/thiamin-vitamin-b1.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/total-carbohydrate.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/total-fat.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/total-sugars.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/trans-fat.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/vitamin-a.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/vitamin-b12.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/vitamin-b6.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/vitamin-c.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/vitamin-d.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/vitamin-e.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/vitamin-k.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/water.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrients/topics/zinc.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrition/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/nutrition/source-check.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/programs/historical-versions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/programs/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/programs/taxonomy.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/programs/version-index.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/programs/versions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-four-exercise-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-four-exercise-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-four-exercise-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-loaded-exercise-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-loaded-exercise-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-loaded-exercise-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-machine-exercise-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-machine-exercise-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-machine-exercise-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-next-exercise-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-next-exercise-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-next-exercise-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-pushup-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-pushup-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ace-pushup-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-adaptations-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-adaptations-observations.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-adaptations-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-adaptations-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-measurement-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-measurement-observations.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-measurement-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-measurement-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-principles-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-principles-observations.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-principles-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/acsm-principles-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cardio-education-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cardio-education-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cardio-education-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cdc-heat-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cdc-heat-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cdc-heat-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cdc-sleep-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cdc-sleep-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/cdc-sleep-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/component-nutrient-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/component-nutrient-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/exercise-media-bindings.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/fda-daily-values-2026-10-05.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/fda-daily-values.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/food-identity-matches.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/food-mappings.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/foundation-program-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/gray-1918-lower-limb-extract.txt",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/gray-1918-lower-limb-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/gray-1918-remaining-extract.txt",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/gray-1918-remaining-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/gray-1918-shoulder-extract.txt",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/gray-1918-shoulder-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/gray-1918-upper-arm.txt",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/historical-lower-limb-additional.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/historical-lower-limb-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/historical-remaining-anatomy-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nhs-program-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nhs-program-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nhs-program-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nia-calf-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nia-flexibility-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nia-flexibility-extract.txt",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nia-flexibility-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/nia-strength-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ods-five-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ods-five-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ods-five-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ods-ingredient-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ods-ingredient-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/ods-ingredient-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/program-source-bindings.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/program-version-pins.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/publications.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/recipe-version-pins.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/recovery-routine-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/recovery-routine-version-pins.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/running-plan-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/science-research-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/supplement-evidence-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/supplement-evidence-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/supplement-evidence-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/supported-exercise-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/supported-four-exercise-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/supported-four-exercise-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/supported-four-exercise-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/three-day-program-definition.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/three-day-program-extract.txt",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/three-day-program-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/training-research-definitions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/training-research-observations.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/training-research-snapshot.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/training-research-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/usda-nutrient-unit-dictionary.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/usda-selected.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/provenance/verified-sources.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/recipes/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/recipes/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/recipes/templates.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/recovery/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/recovery/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/recovery/routines.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/recovery/runtime-reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/supplements/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/supplements/reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/supplements/runtime-reference.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/workout-science/index.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/workout-science/language-exceptions.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/workout-science/records.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/content/workout-science/taxonomy.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/data/navigation.ts",
+      "classification": "source data"
+    },
+    {
+      "path": "src/data/search/search-documents.public.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/data/search/search-index.public.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/data/search/search-manifest.json",
+      "classification": "source data"
+    },
+    {
+      "path": "src/data/sources/index.ts",
+      "classification": "source data"
+    },
+    {
+      "path": "src/domain/schemas/foundation.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/domain/schemas/recipe-log.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/domain/types/index.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/domain/units/format.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/builders.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/calculations.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/calculator-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/export.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/info-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/metadata.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/public-plan-session.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/public-plan-view.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/public-plan.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/publication.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/read-models.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/session-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/source-intensity.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/cardio/workspace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/content-review/public-json.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/content-review/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/candidate-validation.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/image-validation.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/input-bounds.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/page.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/prepare.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/read-file.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/record-validation.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/diet-planning/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/diet-planning/pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/diet-planning/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/diet-planning/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/diet-planning/workspace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/exercises/catalogue.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/exercises/detail.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/exercises/media.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/exercises/query.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/exercises/repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/exercises/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/catalogue.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/compare.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/detail.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/information.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/ingestion.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/public-asset.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/query.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/foods/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/body-selector.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/catalogue.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/detail-loader.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/detail.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/index-schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/public-repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/query.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/muscles/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/calculations.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/catalogue.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/compare.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/detail.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/explorer.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/food-ranking.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/frameworks.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/information.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/population-storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/public-index.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/query.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/ranking-codec.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/ranking.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrients/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrition-tracker/adapters.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrition-tracker/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrition-tracker/pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrition-tracker/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrition-tracker/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrition-tracker/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/nutrition-tracker/workspace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/programs/local.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/programs/pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/programs/query.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/programs/repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/programs/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/programs/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/progress/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/progress/image-input.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/progress/metrics.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/progress/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/progress/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/progress/workspace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/editor.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/info-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/plan-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/public-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/public-records.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/public-template-page.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/public-templates-records.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/public.functions.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/publication.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/validated-snapshot.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recipes-meal-plans/workspace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/export.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/info-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/metadata.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/public-routines.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/publication.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/read-models.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/routines.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/recovery/workspace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/saved/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/saved/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/comparison-cards.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/comparison-public.server.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/comparison-records.server.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/comparison-records.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/comparison-types.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/comparison.functions.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/comparison.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/engine.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/index-format.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/private-index.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/public-sources.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/runtime.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/search/verify-documents.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/settings/page.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/sources/loader.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/sources/page.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/event-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/export.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/info-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/metadata.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/product-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/publication.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/trial-pages.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/supplements/workspace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/catalogue.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/constants.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/detail.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/glossary.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/index-schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/learn-hub.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/public-repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/public.functions.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/query.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/repository.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-science/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/backup.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/domain.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/editor.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/exercise-picker.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/hooks.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/schema.generated.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/schema.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/start.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/features/workout-tracker/storage.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/lib/navigation-search.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/lib/route-metadata.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routeTree.gen.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/router.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/__root.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/about.sources.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics_.cardio.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics_.data-quality.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics_.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics_.nutrition.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics_.recovery.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics_.strength.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/analytics_.workouts.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.calculators_.intensity.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.calculators_.pace.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.custom-plans.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.custom-plans_.create.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.history_.$sessionId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.learn.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.learn_.$topicSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.modalities.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.modalities_.$modalitySlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.plans.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.plans_.$planSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.privacy.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.progress.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.session_.active.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.session_.new.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/cardio_.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/compare.$family.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/compare.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/compare.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/conditioning.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/conditioning_.custom.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/conditioning_.routines_.$routineSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/dashboard.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.energy.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.goal.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.macros.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.meal-distribution.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.plans.$planId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.plans.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.plans.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.safety.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet-planning.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/diet.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/eat.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/exercises.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/exercises_.$slug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/foods.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/foods_.$slug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/foods_.categories.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/foods_.categories_.$categoryId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/foods_.compare.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/foods_.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/foods_.sources.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/learn.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/learn_.workout-science.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/learn_.workout-science_.$slug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/learn_.workout-science_.glossary.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/learn_.workout-science_.methods.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans_.$planId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans_.$planId_.grocery-list.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans_.create.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans_.privacy.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans_.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans_.templates.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/meal-plans_.templates_.$templateSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/mobility.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/mobility_.custom.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/mobility_.custom_.create.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/mobility_.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/mobility_.routines.$routineSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/mobility_.session.$routineId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/muscles.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/muscles_.$slug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients_.$slug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients_.categories_.$groupId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients_.compare.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients_.frameworks.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients_.glossary.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients_.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrients_.reference-intakes.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition-log.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.add.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.custom-foods.$customFoodId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.custom-foods.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.custom-foods.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.day.$date.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.day.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.day.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.privacy.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/nutrition.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/programs.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/programs_.$slug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/programs_.compare.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/programs_.current.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/programs_.finder.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress_.body-composition.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress_.goals.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress_.measurements.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress_.photos.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress_.privacy.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress_.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/progress_.weight.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recent.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recipes.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recipes_.$slug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recipes_.create.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recipes_.local.$recipeId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recipes_.local_.$recipeId_.edit.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recipes_.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recovery.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recovery_.check-in.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recovery_.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recovery_.privacy.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recovery_.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recovery_.topics.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/recovery_.topics_.$topicSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/saved.collections.$collectionId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/saved.collections.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/saved.collections.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/saved.favourites.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/saved.index.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/saved.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/search.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/search_.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.backup.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.export.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.health.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.reset.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.restore.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.storage.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.data.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/sleep.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/sleep_.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/sleep_.log.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/sleep_.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.adverse-events.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.anti-doping.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.compare.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.evidence.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.evidence_.$claimSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.frameworks.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.ingredients.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.ingredients_.$ingredientSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.methodology.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.privacy.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.products.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.products_.$productId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.products_.create.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.quality.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.safety.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.trials.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.trials_.$trialId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/supplements_.trials_.create.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/tools.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/track.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/train.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/training-science.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/warm-ups.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/warm-ups_.$routineSlug.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/workout.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/workout_.exercises.$exerciseId.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/workout_.history.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/workout_.history_.$sessionId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/workout_.session.$sessionId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/workout_.settings.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/routes/workout_.summary.$sessionId.tsx",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/start.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/storage/backup/envelope.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/storage/indexed-db/adapter.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/storage/indexed-db/fitness-database.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/storage/migrations/index.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/storage/preferences/adapter.ts",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/app.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/cardio.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/catalogue.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/data-management.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/diet-planning.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/exercises.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/foods.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/foundation.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/nutrients.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/nutrition.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/programs.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/progress.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/recipes.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/recovery.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/science.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/search.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/shell.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "src/styles/workout.css",
+      "classification": "active runtime"
+    },
+    {
+      "path": "tests/audit/routes.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/cardio-plan.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/cardio.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/data-management.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/diet-planning.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/exercises.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/final-security.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/foods.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/foundation.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/hydration.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/manual-test-ready.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/muscles.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/nutrients.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/nutrition.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/phase19-cardio-education.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/phase19-comparisons.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/phase19-content.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/phase19-recovery-public.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/phase19-running-plan.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/phase19-supplement-evidence.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/pre-vercel-photo.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/programs.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/progress.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/recipes.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/recovery.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/science.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/search-phase16.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/security-headers.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/shell.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/supplements.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/browser/workout.spec.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/cardio-calculations.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/cardio-domain.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/cardio-storage.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/cardio-versions.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/data-management.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/diet-planning.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/diet-storage.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/exercise-components.test.tsx",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/exercises.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/final-security.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/diet.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/exercise.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/food.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/nutrient.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/nutrition.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/program.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/recovery.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/fixtures/science.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/foods-ui.test.tsx",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/foods.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/foundation.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/muscles.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/navigation.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/nutrient-population-storage.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/nutrients-ui.test.tsx",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/nutrients.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/nutrition-integrity.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/nutrition-storage.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/nutrition.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase18-release-manifest.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ace-four-exercises.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ace-loaded-exercises.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ace-machine-exercises.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ace-next-exercises.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ace-pushups.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-acsm-adaptations.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-acsm-measurement.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-acsm-principles.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-anatomy-index.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-anatomy-source.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-browser-report.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-calf-source.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-cardio-education.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-cdc-heat.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-cdc-sleep.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-component-nutrients.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-cooked-recipes.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-excluded-source.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-exercise-media-bindings.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-fda.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-food-asset.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-food-expansion.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-food-identity-matches.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-foundation-program.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-immutable-planned-snapshot.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-lower-anatomy.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-meal-collections.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-media.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-nhs-programs.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-nia-flexibility.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-nih-nutrients.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ods-five.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ods-ingredients.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-program-duration.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-program-rest.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-public-comparisons.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-public-json.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-public-plan.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-ranking-assets.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-recovery-context.test.tsx",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-recovery-routines.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-reference-indexes.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-remaining-anatomy.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-review.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-runtime-knowledge.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-science-index.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-science-research.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-search-assets.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-search-verification.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-strength-source.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-supplement-evidence.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-supported-four-exercises.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-three-day-program.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-timezone.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-training-research.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-usda-dataset.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-usda.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/phase19-vitamin-e-ranking.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/pre-vercel-image.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/pre-vercel-restore.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/programs.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/progress.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/recipe-storage.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/recipes.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/recovery-storage.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/recovery.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/science-components.test.tsx",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/science.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/search-phase16.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/supplements-domain.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/supplements-fixtures.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/supplements-storage.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/workout-migrations.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tests/workout.test.ts",
+      "classification": "tests"
+    },
+    {
+      "path": "tsconfig.content.json",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "tsconfig.json",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "vercel.json",
+      "classification": "unknown"
+    },
+    {
+      "path": "vite.config.ts",
+      "classification": "active build tooling"
+    },
+    {
+      "path": "vitest.config.ts",
+      "classification": "active build tooling"
+    }
+  ],
+  "todos": [
+    {
+      "path": "docs/decisions/decision-template.md",
+      "line": 1,
+      "marker": "XXX",
+      "classification": "historical or tooling reference; preserved"
+    },
+    {
+      "path": "scripts/final-security-inventory.ts",
+      "line": 59,
+      "marker": "TODO",
+      "classification": "historical or tooling reference; preserved"
+    },
+    {
+      "path": "scripts/final-security-inventory.ts",
+      "line": 59,
+      "marker": "FIXME",
+      "classification": "historical or tooling reference; preserved"
+    },
+    {
+      "path": "scripts/final-security-inventory.ts",
+      "line": 59,
+      "marker": "HACK",
+      "classification": "historical or tooling reference; preserved"
+    },
+    {
+      "path": "scripts/final-security-inventory.ts",
+      "line": 59,
+      "marker": "TEMP",
+      "classification": "historical or tooling reference; preserved"
+    },
+    {
+      "path": "scripts/final-security-inventory.ts",
+      "line": 59,
+      "marker": "XXX",
+      "classification": "historical or tooling reference; preserved"
+    },
+    {
+      "path": "scripts/final-security-inventory.ts",
+      "line": 59,
+      "marker": "DEPRECATED",
+      "classification": "historical or tooling reference; preserved"
+    }
+  ],
+  "debug": [],
+  "sinks": [
+    {
+      "path": "src/config/validation.ts",
+      "line": 4,
+      "kind": "new Function"
+    },
+    {
+      "path": "src/routes/__root.tsx",
+      "line": 37,
+      "kind": "dangerouslySetInnerHTML"
+    }
+  ],
+  "storage": [
+    {
+      "path": "src/components/app-shell/workout-resume.tsx",
+      "line": 6,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/components/app-shell/workout-resume.tsx",
+      "line": 7,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/components/app-shell/workout-resume.tsx",
+      "line": 18,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/cardio/info-pages.tsx",
+      "line": 393,
+      "kind": "sessionStorage"
+    },
+    {
+      "path": "src/features/cardio/storage.ts",
+      "line": 43,
+      "kind": "sessionStorage"
+    },
+    {
+      "path": "src/features/cardio/storage.ts",
+      "line": 46,
+      "kind": "sessionStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 623,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1085,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1189,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1191,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1273,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1285,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1290,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1313,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1320,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1418,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1419,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1457,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1467,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1472,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1490,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1497,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1600,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1601,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/data-management/service.ts",
+      "line": 1602,
+      "kind": "sessionStorage"
+    },
+    {
+      "path": "src/features/nutrients/explorer.tsx",
+      "line": 57,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/nutrients/explorer.tsx",
+      "line": 183,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/features/settings/page.tsx",
+      "line": 17,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/routes/__root.tsx",
+      "line": 13,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/storage/preferences/adapter.ts",
+      "line": 11,
+      "kind": "localStorage"
+    },
+    {
+      "path": "src/storage/preferences/adapter.ts",
+      "line": 24,
+      "kind": "localStorage"
+    }
+  ],
+  "brokenRelativeLinks": [],
+  "deletionPolicy": "No deletion, move, rename, untracking or history rewrite is authorized.",
+  "executionTreeSha256": "7432676f2409a72e2f0f2232940d1615c80669c81789a84d8379365ffeea18ee",
+  "filesDeleted": 0,
+  "filesRenamed": 0,
+  "filesMoved": 0,
+  "historyRewritten": false,
+  "staleReferencesCorrected": [
+    "README active deployment/origin and historical evidence labels",
+    "Owner runbook existing project/production origin/Preview environment note and production promotion semantics"
+  ],
+  "gitignore": "Future local .cache/.eslintcache/tsbuildinfo/editor/*.tmp only; no tracked file untracked",
+  "deadCode": "Strict noUnusedLocals/noUnusedParameters and ESLint pass. Unused exported APIs/legacy migration stores are preserved; no exhaustive reachability proof or unsafe deletion is claimed.",
+  "duplicates": "Owning CSV/backup validators intentionally retained for compatibility; no aesthetic refactor",
+  "sourceMaps": {
+    "publicSourceMaps": 0,
+    "sourceMapReferences": 0
+  },
+  "historicalPolicy": "Existing phase/spec/generated schemas/reports/screenshots remain in place; earlier reports certify their own recorded commits.",
+  "candidateFilesClassified": 1271,
+  "finalInventoryObservedAt": "2026-10-11T05:04:01.389Z",
+  "candidateMarkerMatches": 7,
+  "finalDocumentationAndToolingMatches": 22,
+  "markerScanScope": "Final staged inventory, including generated report references; no runtime review items. Candidate individual marker records are preserved without recursively embedding report mentions."
+}

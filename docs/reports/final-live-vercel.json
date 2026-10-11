@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-11T05:02:57.191Z",
+  "origin": "https://kaush-ka-gym.vercel.app",
+  "tls": "HTTPS certificate verified by Node fetch and browser; no insecure bypass",
+  "status": 200,
+  "headers": {
+    "age": "0",
+    "cache-control": "public, max-age=0, must-revalidate",
+    "content-encoding": "br",
+    "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-6nHDl6RRvjkeGgfBPquyn1lE'; style-src 'self' 'nonce-6nHDl6RRvjkeGgfBPquyn1lE'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 11 Oct 2026 05:02:36 GMT",
+    "permissions-policy": "camera=(), microphone=(), geolocation=()",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=31536000",
+    "transfer-encoding": "chunked",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "bom1::iad1::s98gn-1791694954735-d4408857d364"
+  },
+  "distinctNonces": true,
+  "canonical": "https://kaush-ka-gym.vercel.app/",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/workout",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/workout/history",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/nutrition",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/diet-planning",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/recipes",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/sleep",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/recovery",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/cardio",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/supplements",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/progress",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/search",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/saved",
+      "status": 200,
+      "ssrMarkerLeak": false
+    },
+    {
+      "route": "/settings/data",
+      "status": 200,
+      "ssrMarkerLeak": false
+    }
+  ],
+  "requests": 631,
+  "personalMarkerLeaks": 0,
+  "unexpectedRemote": 0,
+  "errors": [],
+  "violations": [],
+  "dialogs": [],
+  "failedAssets": [],
+  "policyEvents": [
+    {
+      "route": "/",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/workout",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/workout/history",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/nutrition",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/diet-planning",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/recipes",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/sleep",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/recovery",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/cardio",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/supplements",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/progress",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/search",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/saved",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    },
+    {
+      "route": "/settings/data",
+      "directive": "script-src",
+      "blockedURI": "eval",
+      "sourceFile": "https://kaush-ka-gym.vercel.app/assets/validation-library-J3iQ2sLT.js"
+    }
+  ],
+  "knownPolicyEventExplanation": "Current owner deployment may still contain Zod's caught, CSP-blocked eval capability probe. Runtime remains on the interpreter fallback. Candidate explicitly enables jitless before browser schemas; no unsafe-eval permission is added. Owner redeploy required.",
+  "syntheticXssRenderedAsText": true,
+  "limitation": "Fresh synthetic context only; no live owner records accessed or deployment performed."
+}

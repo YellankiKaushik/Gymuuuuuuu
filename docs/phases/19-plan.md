@@ -25,3 +25,10 @@ Source verification is not independent human or clinical review. No dataset matc
 - [x] Pass current Chromium/WebKit journeys and hosted Linux browser/accessibility gates.
 - [x] Run the final complete route audit and bind observed evidence to this implementation.
 - [x] Commit/push, integrate main normally and create pre-vercel-release-ready only after passing gates.
+
+## Final security/hygiene owner-testing checkpoint
+
+- [x] Threat model, dependencies, fetched-history/current/bundle secrets, environment, live headers and policy events reviewed.
+- [x] Import, URL, MIME, resource and CSP regressions corrected; local/hosted final checks and 702-route audit passed for 335b428868486c487fcae42ca941a3726e082701.
+- [x] Non-destructive inventory/reference/debug/TODO/workflow review completed; content/search/backlog preserved.
+- [x] Final reports and owner-only testing/redeploy handoff recorded; no deployment performed.

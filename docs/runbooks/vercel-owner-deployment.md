@@ -10,13 +10,10 @@ that policy. A Git push alone must not deploy this candidate.
 
 ## Project and build settings
 
-1. Sign into your own Vercel account. Create a project using the repository
-   `YellankiKaushik/Gymuuuuuuu`, or link an existing project to that repository.
-   Confirm the release tag/commit in the final report before selecting code.
-   Creating/importing a project can offer a first production deployment: do not
-   accept production promotion as your initial verification step. Prefer creating
-   and linking the project from the Vercel CLI, then using its default Preview
-   command below; connecting the Git repository is a separate project setting.
+1. Sign into your own Vercel account and select the existing `gymuuuuuuu` project
+   connected to `YellankiKaushik/Gymuuuuuuu`. Confirm the release tag/commit in
+   the final report before selecting code. Use the existing project for the
+   owner-controlled Preview and subsequent production build below.
 2. Use repository root `.` and framework **TanStack Start**. Install with `npm ci`,
    build with `npm run build`, and retain the framework's automatic output settings.
    Do not replace the output directory with `dist` or deploy the local Node server
@@ -27,10 +24,10 @@ that policy. A Git push alone must not deploy this candidate.
    minor/patch runtime updates, so inspect actual build versions and investigate any
    engine mismatch. Keep `package-lock.json`; do not switch package managers.
 4. Configure the sole required public setting, `VITE_PUBLIC_APP_ORIGIN`, to the
-   planned stable HTTPS production origin, for example `https://fitness.example.com`.
-   Replace the example with your real domain; no path, query, fragment or secret.
-   Use the planned canonical origin for Preview as well so canonical tags can be
-   inspected before promotion. Keep Preview access protected. No API key, database,
+   existing stable HTTPS production origin, `https://kaush-ka-gym.vercel.app`.
+   No path, query, fragment or secret. It currently targets Production only.
+   If you choose to configure Preview, use the same canonical origin so canonical
+   tags can be inspected before promotion. Keep Preview access protected. No API key, database,
    authentication, analytics, payment or personal-data environment variable is
    required. Never put a secret in a `VITE_*` variable.
 
