@@ -212,3 +212,9 @@ Those runtime fixes were deployed by the owner on October 11, 2026, in
 `dpl_JD7GorUhs1CTSSroEArjs8r4zG8i`, running
 `80f06ab2b6b1f6d4da252455efcc71a1daecde09`. Later documentation-only commits
 do not require redeployment. Future runtime changes remain owner-controlled.
+
+## Maximum-autonomy closure
+
+The [closure report](docs/reports/final-maximum-autonomy-closure.md), [task register](docs/reports/final-closure-task-register.md) and [minimal owner checklist](docs/reports/final-owner-required-minimal-checklist.md) supersede earlier closure status at the verified `fitness-os-maximum-autonomy-complete` tag. Before that tag, they are candidate reports pending final main CI. The annotated tag binds the final documentation commit to completed CI run IDs.
+
+Four focus/dialog/print defects were corrected and deployed through exact server-side Git source `6ac581aa07d0480679cc3762aee05d4d9962fe1b`, deployment `dpl_4cYvnfx5AAMTJJDhLRzqXoGKLhd3`, at https://kaush-ka-gym.vercel.app. Subsequent changes affect tests, tooling and handoff only. Synthetic persistent-profile restart, two-tab editing, exact backup/media restoration, mobile emulation, accessibility/zoom, print and storage-failure proxies are complete. Nine irreducible physical/human boundaries remain; content and the 900-item backlog remain frozen.

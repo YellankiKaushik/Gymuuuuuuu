@@ -324,3 +324,14 @@ encryption and ZIP import are not falsely claimed.
 ## Final deployed-application security/hygiene handoff
 
 Implementation 335b428868486c487fcae42ca941a3726e082701 passed fresh clean-clone checks, 358 units/95 files, local Chromium/WebKit 287 each, hosted Linux Chromium/Firefox/WebKit 287 each, 184 dedicated accessibility cases and 702 exact-build route checks. Evidence is in final-security-audit, repository-hygiene and final-automated-test reports; earlier checkpoint reports remain historical. Content/search/backlog are unchanged. No tracked deletion/rename/move or history rewrite is authorized. The owner-deployed 26281fd build was audited independently; an owner-controlled redeploy of the final tested execution tree is required. No deployment was performed.
+
+## Maximum-autonomy closure checkpoint
+
+- [x] Correct four bounded focus/dialog/print defects; preserve completed modules and factual data.
+- [x] Deploy exact runtime source 6ac581aa07d0480679cc3762aee05d4d9962fe1b to the existing production project.
+- [x] Verify corrected clean-clone gates: 360 units/95 files, strict types, lint, build, zero npm vulnerabilities, 393-file privacy audit, 702 exact-build routes and 48 local closure cases.
+- [x] Automate all fourteen former-owner technical portions; preserve nine explicit physical/human boundaries.
+- [x] Preserve historical evidence, all tracked files and the 900 frozen backlog identities.
+- [x] Bind final hosted Chromium/Firefox/WebKit results and clean synchronized main to the annotated completion tag after every final job passes. This checkbox is effective only at that verified tag; before tagging it is a candidate checkpoint.
+
+Current handoff: docs/reports/final-maximum-autonomy-closure.md/json, final-closure-task-register.md/json and final-owner-required-minimal-checklist.md/json. Final hosted gates independently rerun 287 screen cases per engine, 56 closure cases over seven configurations and 184 dedicated accessibility cases. The tag annotation and final handoff identify the final SHA and completed run/job IDs; no future self-hash is invented. Earlier deployment and test statements above remain historical for their stated commits.

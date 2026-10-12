@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-12T16:20:55.049Z",
+  "startingCommit": "e03ab59533f8bbde47807c192adcbf4bfee30b9f",
+  "implementationCommit": "6ac581aa07d0480679cc3762aee05d4d9962fe1b",
+  "assertionScope": {
+    "ref": "fitness-os-maximum-autonomy-complete",
+    "effectiveOnlyAtVerifiedTag": true,
+    "beforeTag": "These assembled reports are release-candidate documentation, not a claim that their future commit CI has already passed.",
+    "releaseRequirements": "Every final-main workflow/job completed successfully before tag creation; current production remains healthy with all runtime fixes deployed."
+  },
+  "documentationBinding": "Completion assertions apply only at the verified annotated fitness-os-maximum-autonomy-complete tag. Before that tag these are candidate reports. The final HEAD and its completed CI runs are identified in the tag annotation and final response. Execution evidence binds to immutable runtime/test commits; no future self-hash is invented.",
+  "percentageModel": {
+    "automatableEngineering": {
+      "passed": 43,
+      "total": 43,
+      "percent": 100
+    },
+    "automatedFormerOwnerPortions": {
+      "passed": 14,
+      "total": 14,
+      "percent": 100
+    },
+    "fullRelease": {
+      "passed": 43,
+      "total": 52,
+      "percent": 82.69
+    },
+    "model": "Equal-weight task accounting: 29 established engineering checkpoints plus 14 technical former-owner portions = 43 automated checkpoints. Nine separately stated irreducible physical/human boundaries remain, so 43/52 = 82.69%. This refinement changes the old category denominator; it is not certification or universal test coverage. Optional repository policy, prohibited/unsupported features and 900 frozen identities are excluded. A proxy completion never means its physical/human boundary passed."
+  },
+  "status": "IRREDUCIBLE_OWNER_BOUNDARIES_ONLY",
+  "origin": "https://kaush-ka-gym.vercel.app",
+  "tasks": [
+    {
+      "id": "PHYSICAL-ANDROID",
+      "task": "Physical Android",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "No attached physical Android or credential-free device service is available. Emulation cannot operate real hardware or its keyboard.",
+      "steps": "On Android Chrome at the stable origin, save a disposable workout, nutrition and photo; rotate; use the software keyboard; close/reopen; export and preview a backup.",
+      "passCondition": "Controls remain touchable; keyboard does not obscure required actions; exact records survive reopening.",
+      "severityIfFailed": "P1 for data loss; P2 for layout or input failure"
+    },
+    {
+      "id": "PHYSICAL-IPHONE",
+      "task": "Physical iPhone",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "Desktop WebKit emulation is not physical iOS Safari.",
+      "steps": "On iPhone Safari in normal mode repeat disposable workout, nutrition, photo and restore-preview flows; rotate; scroll while the software keyboard is open; close/reopen.",
+      "passCondition": "Navigation and keyboard remain usable; records/media persist; export and preview work.",
+      "severityIfFailed": "P1 for data loss; P2 for layout or input failure"
+    },
+    {
+      "id": "PHYSICAL-TABLET",
+      "task": "Physical tablet",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "No physical tablet is attached; split-view viewport simulation cannot reproduce OS window management.",
+      "steps": "On iPad Safari or Android tablet rotate, enter split view, browse food/exercise detail and comparison; open search/backup dialogs and export a disposable backup.",
+      "passCondition": "Tables scroll in intended regions; dialogs and required actions fit; touch works.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "PHYSICAL-EVICTION",
+      "task": "Real OS storage behavior over time",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "Application failure simulations cannot force or certify the real OS eviction/persistence policy over time.",
+      "steps": "Keep an external disposable backup; inspect storage health on the target browser; revisit after normal device use. Clear only disposable site data, prepare storage and restore the disposable backup.",
+      "passCondition": "Any storage limitation has honest feedback; independent backup restores exact records.",
+      "severityIfFailed": "P1 if recovery fails"
+    },
+    {
+      "id": "HUMAN-AT",
+      "task": "Assistive technology auditory experience",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "ARIA trees and axe cannot hear or judge NVDA, VoiceOver or TalkBack announcements.",
+      "steps": "With the chosen screen reader navigate headings/landmarks; complete a disposable workout/diary save; trigger an invalid restore; open/close search and review a comparison table.",
+      "passCondition": "Names, values, errors and save announcements are understandable; core actions are reachable.",
+      "severityIfFailed": "P1 if a core flow is inaccessible; otherwise P2"
+    },
+    {
+      "id": "HUMAN-COMFORT",
+      "task": "Visual, keyboard, zoom and print comfort",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "Automation measures focus, geometry, semantics and PDFs; personal readability and interaction comfort require human perception.",
+      "steps": "Try light/dark and reduced motion; keyboard-only search/forms; actual browser 200%/400% zoom and larger text; inspect the four print examples and a realistic disposable session.",
+      "passCondition": "Owner can read and operate the flows comfortably, recognize unknown/estimated values and read units/sources in print.",
+      "severityIfFailed": "P2 for a reproducible usability barrier"
+    },
+    {
+      "id": "HUMAN-PICKERS",
+      "task": "Native OS file/photo/save experience",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "Playwright operates file input delivery/downloads and simulates save cancellation; it cannot judge native OS chooser presentation or permission UX.",
+      "steps": "Cancel then reopen native backup and photo pickers; choose disposable JPEG/PNG/WebP; save backup/CSV and locate files; confirm cancellation changes no records.",
+      "passCondition": "Native chooser works and can reopen; files are locatable; cancellation preserves data.",
+      "severityIfFailed": "P1 for lost data or unusable backup; otherwise P2"
+    },
+    {
+      "id": "HUMAN-PERSONAL",
+      "task": "Actual personal-data transition",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "Owner actual records are intentionally never accessed or fabricated.",
+      "steps": "Create a private external backup; verify the stable production origin; optionally remove synthetic entries using confirmation; enter a small actual workout/diary/measurement privately; edit/reload; export and verify a fresh disposable-profile restore.",
+      "passCondition": "Owner privately confirms exact dates, units, values and immutable snapshots; recovery matches.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "HUMAN-CUSTODY",
+      "task": "Choose private external backup custody",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "An independent test-directory copy proves technical restoration, not the owner choice or privacy of an external storage location.",
+      "steps": "Choose owner-controlled private external storage; keep portable and explicit full-media backups as needed; restrict access; retain an independent copy; perform the documented disposable-profile restore drill.",
+      "passCondition": "At least one recoverable copy exists outside the browser at a private owner-chosen location.",
+      "severityIfFailed": "P1 if no recoverable independent copy exists"
+    }
+  ],
+  "optionalPolicy": {
+    "id": "POLICY",
+    "task": "Repository-owner branch protection decision",
+    "classification": "EXTERNAL_ACCOUNT_REQUIRED",
+    "status": "EXTERNAL_POLICY",
+    "whyCodexCannotComplete": "Repository administration changes were not authorized by this task; read-only inspection found unprotected main and no rulesets.",
+    "steps": "Owner may choose Settings → Rules → protect main with the project CI checks and review policy.",
+    "passCondition": "Owner policy is explicitly chosen; required checks configured if desired.",
+    "severityIfFailed": "EXTERNAL_POLICY; optional governance, not an application defect"
+  },
+  "noOwnerPersonalDataUsed": true
+}

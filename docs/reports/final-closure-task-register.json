@@ -1,152 +1,618 @@
 {
   "schemaVersion": 1,
+  "verifiedAt": "2026-10-12T16:20:55.049Z",
   "startingCommit": "e03ab59533f8bbde47807c192adcbf4bfee30b9f",
-  "state": "IN_PROGRESS",
+  "implementationCommit": "6ac581aa07d0480679cc3762aee05d4d9962fe1b",
+  "assertionScope": {
+    "ref": "fitness-os-maximum-autonomy-complete",
+    "effectiveOnlyAtVerifiedTag": true,
+    "beforeTag": "These assembled reports are release-candidate documentation, not a claim that their future commit CI has already passed.",
+    "releaseRequirements": "Every final-main workflow/job completed successfully before tag creation; current production remains healthy with all runtime fixes deployed."
+  },
+  "documentationBinding": "Completion assertions apply only at the verified annotated fitness-os-maximum-autonomy-complete tag. Before that tag these are candidate reports. The final HEAD and its completed CI runs are identified in the tag annotation and final response. Execution evidence binds to immutable runtime/test commits; no future self-hash is invented.",
+  "percentageModel": {
+    "automatableEngineering": {
+      "passed": 43,
+      "total": 43,
+      "percent": 100
+    },
+    "automatedFormerOwnerPortions": {
+      "passed": 14,
+      "total": 14,
+      "percent": 100
+    },
+    "fullRelease": {
+      "passed": 43,
+      "total": 52,
+      "percent": 82.69
+    },
+    "model": "Equal-weight task accounting: 29 established engineering checkpoints plus 14 technical former-owner portions = 43 automated checkpoints. Nine separately stated irreducible physical/human boundaries remain, so 43/52 = 82.69%. This refinement changes the old category denominator; it is not certification or universal test coverage. Optional repository policy, prohibited/unsupported features and 900 frozen identities are excluded. A proxy completion never means its physical/human boundary passed."
+  },
+  "status": "ALL_AUTOMATABLE_PORTIONS_COMPLETE",
   "tasks": [
     {
-      "id": "CI",
-      "task": "Settle current main workflows",
+      "id": "ENGINEERING-1",
+      "task": "00 Foundation",
       "classification": "AUTOMATABLE_NOW",
       "status": "COMPLETED_AUTOMATICALLY",
-      "evidence": "All three e03ab59 runs succeeded; final closure commit CI must settle too."
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
     },
     {
-      "id": "REPO",
-      "task": "Resolve known gitignore modification",
+      "id": "ENGINEERING-2",
+      "task": "01 App shell/navigation/design system",
       "classification": "AUTOMATABLE_NOW",
       "status": "COMPLETED_AUTOMATICALLY",
-      "evidence": "Restored only redundant historical addition; committed base policy excludes local env/Vercel and preserves .env.example."
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-3",
+      "task": "02 Anatomy",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-4",
+      "task": "03 Exercise encyclopedia",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-5",
+      "task": "04 Workout science",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-6",
+      "task": "05 Programs",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-7",
+      "task": "06 Workout tracker",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-8",
+      "task": "07 Foods",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-9",
+      "task": "08 Nutrients",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-10",
+      "task": "09 Diet planning/calculators",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-11",
+      "task": "10 Nutrition tracker",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-12",
+      "task": "11 Recipes/meal planning",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-13",
+      "task": "12 Recovery/sleep/mobility",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-14",
+      "task": "13 Cardio",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-15",
+      "task": "14 Supplements",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-16",
+      "task": "15 Body progress/dashboard/analytics",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-17",
+      "task": "16 Search/favourites/comparison",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-18",
+      "task": "17 Local storage/backup/export",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-19",
+      "task": "18 Testing/GitHub/Vercel",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-20",
+      "task": "19 Final verified content/release state",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-21",
+      "task": "Security",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-22",
+      "task": "Privacy",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-23",
+      "task": "Accessibility",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-24",
+      "task": "Responsive behavior",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-25",
+      "task": "Performance",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-26",
+      "task": "Import/export",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-27",
+      "task": "Photo/media handling",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-28",
+      "task": "Production deployment",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
+    },
+    {
+      "id": "ENGINEERING-29",
+      "task": "Documentation",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Current clean-clone and hosted gates; prior module implementation preserved."
     },
     {
       "id": "OWNER-01",
       "task": "Physical Android",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Open home/search/workout/nutrition/backup; use portrait and landscape; save synthetic workout and diary records; reload and revisit history.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Pixel 7 touch/orientation/shrunken keyboard viewport; all-module persistent profile and photo/backup round trip",
+      "result": "PASS",
+      "remaining": "PHYSICAL-ANDROID"
     },
     {
       "id": "OWNER-02",
       "task": "Physical iPhone",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Repeat workout/diary/backup flows; rotate; scroll with keyboard open; reload saved synthetic records.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "iPhone 13 WebKit touch/orientation/shrunken keyboard viewport; all-module persistent profile and photo/backup round trip",
+      "result": "PASS",
+      "remaining": "PHYSICAL-IPHONE"
     },
     {
       "id": "OWNER-03",
       "task": "Physical iPad/tablet",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Use split view and rotation; browse food/exercise detail; open filters, comparison and backup dialogs.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "iPad generation 7 WebKit and 800×1280 Android tablet touch, rotation and 512px split-view approximation",
+      "result": "PASS",
+      "remaining": "PHYSICAL-TABLET"
     },
     {
       "id": "OWNER-04",
       "task": "Real desktop workflow",
       "classification": "AUTOMATABLE_NOW",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Start a synthetic workout; log a set; finish; log nutrition; review history/dashboard; open a second tab and reload.",
-      "ownerBoundary": "No remaining synthetic desktop engineering task; personal-use decision is separate."
+      "status": "COMPLETED_AUTOMATICALLY",
+      "automation": "Real persistent browser close/relaunch; all seven databases; two tabs and reload; edits/history; exact independent-profile restore",
+      "result": "PASS",
+      "remaining": "None: the synthetic desktop workflow is completed automatically"
     },
     {
       "id": "OWNER-05",
       "task": "Native file picker and save",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Open /settings/data/backup and click Create backup file; open /settings/data/export and click Export spreadsheet-safe CSV; locate both saved files; on /settings/data/restore cancel and reopen Backup file; select the backup and inspect preview without confirming restore.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Actual filechooser event/reselection; invalid/future/gzip rejection; empty selection and save AbortError preserve stores; JSON download and nonempty CSV",
+      "result": "PASS",
+      "remaining": "HUMAN-PICKERS"
     },
     {
       "id": "OWNER-06",
       "task": "Native photo picker",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Open /progress/photos; use Image file to choose a disposable image; click Sanitize and save photo; reload; cancel a second selection; on /settings/data/backup explicitly choose full media and Create backup file; remove the photo using its confirmation.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "JPEG/PNG/WebP sanitize/save/reload; MIME/corrupt/size/dimension rejection; portable excludes media; full-media round trip; zero upload",
+      "result": "PASS",
+      "remaining": "HUMAN-PICKERS"
     },
     {
       "id": "OWNER-07",
       "task": "Storage quota/eviction/persistence",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "In a disposable profile inspect storage-health/persistence; exercise restricted storage; keep an external backup; clear only disposable site data; prepare storage and restore.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Existing owning-storage and restore regressions: unavailable IndexedDB, queued-write abort, quota rollback, rejected blocked upgrade and blocked clear; durable interrupted-journal resume/rollback after reopening; restore recovery and backup before replacement",
+      "result": "PASS",
+      "remaining": "PHYSICAL-EVICTION"
     },
     {
       "id": "OWNER-08",
       "task": "Human keyboard evaluation",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Tab through navigation/search/forms; open/close dialogs; use Escape; submit and correct invalid inputs; inspect focus after actions.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Tab/Shift+Tab/Enter/Space/Escape/Arrow keys; visible wrapper focus; search dialog focus cycle and opener restoration",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
     },
     {
       "id": "OWNER-09",
       "task": "Human screen reader",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Read home, workout, diary, comparison and backup; navigate landmarks/headings; trigger validation and save; inspect dialogs/table captions.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "ARIA snapshots, single main/h1, WCAG axe checks and invalid-restore announced alert with unavailable restore actions",
+      "result": "PASS",
+      "remaining": "HUMAN-AT"
     },
     {
       "id": "OWNER-10",
       "task": "Human zoom and reflow",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Increase zoom/text; inspect search, food detail, calculator, history and restore; keep keyboard focus visible.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "12 routes × light/dark × 640px effective 200%, 320px effective 400%, and 640px with 32px root text",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
     },
     {
       "id": "OWNER-11",
       "task": "Human print review",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Preview public exercise/food/recipe pages and a disposable local summary; inspect page breaks, sources, units and privacy before saving/printing.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Four print routes across configurations; actual shell hidden; A4 Chromium PDFs all 20 pages visually inspected; sources/units retained",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
     },
     {
       "id": "OWNER-12",
       "task": "Subjective usability and visual review",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Run one realistic synthetic session; inspect labels, empty/error states, feedback, touch targets and motion in both themes.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Bounded workflow heuristic plus light/dark/reduced motion; four objective focus/print defects fixed; no redesign",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
     },
     {
       "id": "OWNER-13",
       "task": "Real personal-data workflow",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "Keep an external backup first; enter a small real workout/diary/measurement; edit and reload; export; inspect exact values privately.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Synthetic realistic workout/nutrition/diet/recovery/cardio/progress/photo snapshots and exact edited backup/media restoration",
+      "result": "PASS",
+      "remaining": "HUMAN-PERSONAL"
     },
     {
       "id": "OWNER-14",
       "task": "Backup custody and independent restore drill",
       "classification": "AUTOMATABLE_PARTIALLY",
-      "status": "PENDING_AUTOMATION",
-      "requiredWork": "On /settings/data/backup click Create backup file for portable and explicit full-media profiles as needed; copy files outside browser; in a fresh disposable profile open /settings/data/restore and click Prepare local storage; select Backup file; compare preview counts; confirm Replace matching stores only in that disposable profile; reload and compare exact records/media; retain original files privately.",
-      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Portable/full-media export, independent directory copy, checksum/validator checks, confirmed fresh-profile replacement and exact canonical records/media comparison",
+      "result": "PASS",
+      "remaining": "HUMAN-CUSTODY"
+    },
+    {
+      "id": "CI",
+      "task": "Settle final main workflows",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Exact completed final main run IDs and SHA are recorded in the final response/tag; implementation CI included in execution evidence. This is a subtask of the existing engineering checkpoints."
+    },
+    {
+      "id": "REPO",
+      "task": "Resolve gitignore and repository state",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Known redundant suffix restored; .env.example remains addable; clean synchronized main verified. Subtask of the existing engineering checkpoints."
+    },
+    {
+      "id": "PHYSICAL-ANDROID",
+      "task": "Physical Android",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "No attached physical Android or credential-free device service is available. Emulation cannot operate real hardware or its keyboard.",
+      "steps": "On Android Chrome at the stable origin, save a disposable workout, nutrition and photo; rotate; use the software keyboard; close/reopen; export and preview a backup.",
+      "passCondition": "Controls remain touchable; keyboard does not obscure required actions; exact records survive reopening.",
+      "severityIfFailed": "P1 for data loss; P2 for layout or input failure"
+    },
+    {
+      "id": "PHYSICAL-IPHONE",
+      "task": "Physical iPhone",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "Desktop WebKit emulation is not physical iOS Safari.",
+      "steps": "On iPhone Safari in normal mode repeat disposable workout, nutrition, photo and restore-preview flows; rotate; scroll while the software keyboard is open; close/reopen.",
+      "passCondition": "Navigation and keyboard remain usable; records/media persist; export and preview work.",
+      "severityIfFailed": "P1 for data loss; P2 for layout or input failure"
+    },
+    {
+      "id": "PHYSICAL-TABLET",
+      "task": "Physical tablet",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "No physical tablet is attached; split-view viewport simulation cannot reproduce OS window management.",
+      "steps": "On iPad Safari or Android tablet rotate, enter split view, browse food/exercise detail and comparison; open search/backup dialogs and export a disposable backup.",
+      "passCondition": "Tables scroll in intended regions; dialogs and required actions fit; touch works.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "PHYSICAL-EVICTION",
+      "task": "Real OS storage behavior over time",
+      "classification": "PHYSICAL_HARDWARE_REQUIRED",
+      "status": "OWNER_PHYSICAL_REQUIRED",
+      "whyCodexCannotComplete": "Application failure simulations cannot force or certify the real OS eviction/persistence policy over time.",
+      "steps": "Keep an external disposable backup; inspect storage health on the target browser; revisit after normal device use. Clear only disposable site data, prepare storage and restore the disposable backup.",
+      "passCondition": "Any storage limitation has honest feedback; independent backup restores exact records.",
+      "severityIfFailed": "P1 if recovery fails"
+    },
+    {
+      "id": "HUMAN-AT",
+      "task": "Assistive technology auditory experience",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "ARIA trees and axe cannot hear or judge NVDA, VoiceOver or TalkBack announcements.",
+      "steps": "With the chosen screen reader navigate headings/landmarks; complete a disposable workout/diary save; trigger an invalid restore; open/close search and review a comparison table.",
+      "passCondition": "Names, values, errors and save announcements are understandable; core actions are reachable.",
+      "severityIfFailed": "P1 if a core flow is inaccessible; otherwise P2"
+    },
+    {
+      "id": "HUMAN-COMFORT",
+      "task": "Visual, keyboard, zoom and print comfort",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "Automation measures focus, geometry, semantics and PDFs; personal readability and interaction comfort require human perception.",
+      "steps": "Try light/dark and reduced motion; keyboard-only search/forms; actual browser 200%/400% zoom and larger text; inspect the four print examples and a realistic disposable session.",
+      "passCondition": "Owner can read and operate the flows comfortably, recognize unknown/estimated values and read units/sources in print.",
+      "severityIfFailed": "P2 for a reproducible usability barrier"
+    },
+    {
+      "id": "HUMAN-PICKERS",
+      "task": "Native OS file/photo/save experience",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "Playwright operates file input delivery/downloads and simulates save cancellation; it cannot judge native OS chooser presentation or permission UX.",
+      "steps": "Cancel then reopen native backup and photo pickers; choose disposable JPEG/PNG/WebP; save backup/CSV and locate files; confirm cancellation changes no records.",
+      "passCondition": "Native chooser works and can reopen; files are locatable; cancellation preserves data.",
+      "severityIfFailed": "P1 for lost data or unusable backup; otherwise P2"
+    },
+    {
+      "id": "HUMAN-PERSONAL",
+      "task": "Actual personal-data transition",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "Owner actual records are intentionally never accessed or fabricated.",
+      "steps": "Create a private external backup; verify the stable production origin; optionally remove synthetic entries using confirmation; enter a small actual workout/diary/measurement privately; edit/reload; export and verify a fresh disposable-profile restore.",
+      "passCondition": "Owner privately confirms exact dates, units, values and immutable snapshots; recovery matches.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "HUMAN-CUSTODY",
+      "task": "Choose private external backup custody",
+      "classification": "HUMAN_JUDGMENT_REQUIRED",
+      "status": "OWNER_HUMAN_REQUIRED",
+      "whyCodexCannotComplete": "An independent test-directory copy proves technical restoration, not the owner choice or privacy of an external storage location.",
+      "steps": "Choose owner-controlled private external storage; keep portable and explicit full-media backups as needed; restrict access; retain an independent copy; perform the documented disposable-profile restore drill.",
+      "passCondition": "At least one recoverable copy exists outside the browser at a private owner-chosen location.",
+      "severityIfFailed": "P1 if no recoverable independent copy exists"
     },
     {
       "id": "POLICY",
-      "task": "Branch protection and repository-owner policy",
+      "task": "Repository-owner branch protection decision",
       "classification": "EXTERNAL_ACCOUNT_REQUIRED",
       "status": "EXTERNAL_POLICY",
-      "evidence": "Read-only ruleset/branch inspection; no administration changes authorized."
+      "whyCodexCannotComplete": "Repository administration changes were not authorized by this task; read-only inspection found unprotected main and no rulesets.",
+      "steps": "Owner may choose Settings → Rules → protect main with the project CI checks and review policy.",
+      "passCondition": "Owner policy is explicitly chosen; required checks configured if desired.",
+      "severityIfFailed": "EXTERNAL_POLICY; optional governance, not an application defect"
     },
     {
       "id": "UNSUPPORTED",
-      "task": "Prohibited cloud/auth/payments and unsupported backup modes",
+      "task": "Accounts/auth/cloud personal storage/payments/social/admin/external runtime APIs; encryption/ZIP/import-as-copy/global atomicity not promised",
       "classification": "INTENTIONALLY_UNSUPPORTED",
       "status": "INTENTIONALLY_UNSUPPORTED"
     },
     {
       "id": "BACKLOG",
-      "task": "900 unpublished identities",
+      "task": "900 unpublished factual identities",
       "classification": "FUTURE_CONTENT_BACKLOG",
       "status": "FUTURE_CONTENT_BACKLOG"
     }
-  ]
+  ],
+  "formerOwnerTasks": [
+    {
+      "id": "OWNER-01",
+      "task": "Physical Android",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Pixel 7 touch/orientation/shrunken keyboard viewport; all-module persistent profile and photo/backup round trip",
+      "result": "PASS",
+      "remaining": "PHYSICAL-ANDROID"
+    },
+    {
+      "id": "OWNER-02",
+      "task": "Physical iPhone",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "iPhone 13 WebKit touch/orientation/shrunken keyboard viewport; all-module persistent profile and photo/backup round trip",
+      "result": "PASS",
+      "remaining": "PHYSICAL-IPHONE"
+    },
+    {
+      "id": "OWNER-03",
+      "task": "Physical iPad/tablet",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "iPad generation 7 WebKit and 800×1280 Android tablet touch, rotation and 512px split-view approximation",
+      "result": "PASS",
+      "remaining": "PHYSICAL-TABLET"
+    },
+    {
+      "id": "OWNER-04",
+      "task": "Real desktop workflow",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "automation": "Real persistent browser close/relaunch; all seven databases; two tabs and reload; edits/history; exact independent-profile restore",
+      "result": "PASS",
+      "remaining": "None: the synthetic desktop workflow is completed automatically"
+    },
+    {
+      "id": "OWNER-05",
+      "task": "Native file picker and save",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Actual filechooser event/reselection; invalid/future/gzip rejection; empty selection and save AbortError preserve stores; JSON download and nonempty CSV",
+      "result": "PASS",
+      "remaining": "HUMAN-PICKERS"
+    },
+    {
+      "id": "OWNER-06",
+      "task": "Native photo picker",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "JPEG/PNG/WebP sanitize/save/reload; MIME/corrupt/size/dimension rejection; portable excludes media; full-media round trip; zero upload",
+      "result": "PASS",
+      "remaining": "HUMAN-PICKERS"
+    },
+    {
+      "id": "OWNER-07",
+      "task": "Storage quota/eviction/persistence",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Existing owning-storage and restore regressions: unavailable IndexedDB, queued-write abort, quota rollback, rejected blocked upgrade and blocked clear; durable interrupted-journal resume/rollback after reopening; restore recovery and backup before replacement",
+      "result": "PASS",
+      "remaining": "PHYSICAL-EVICTION"
+    },
+    {
+      "id": "OWNER-08",
+      "task": "Human keyboard evaluation",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Tab/Shift+Tab/Enter/Space/Escape/Arrow keys; visible wrapper focus; search dialog focus cycle and opener restoration",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
+    },
+    {
+      "id": "OWNER-09",
+      "task": "Human screen reader",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "ARIA snapshots, single main/h1, WCAG axe checks and invalid-restore announced alert with unavailable restore actions",
+      "result": "PASS",
+      "remaining": "HUMAN-AT"
+    },
+    {
+      "id": "OWNER-10",
+      "task": "Human zoom and reflow",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "12 routes × light/dark × 640px effective 200%, 320px effective 400%, and 640px with 32px root text",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
+    },
+    {
+      "id": "OWNER-11",
+      "task": "Human print review",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Four print routes across configurations; actual shell hidden; A4 Chromium PDFs all 20 pages visually inspected; sources/units retained",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
+    },
+    {
+      "id": "OWNER-12",
+      "task": "Subjective usability and visual review",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Bounded workflow heuristic plus light/dark/reduced motion; four objective focus/print defects fixed; no redesign",
+      "result": "PASS",
+      "remaining": "HUMAN-COMFORT"
+    },
+    {
+      "id": "OWNER-13",
+      "task": "Real personal-data workflow",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Synthetic realistic workout/nutrition/diet/recovery/cardio/progress/photo snapshots and exact edited backup/media restoration",
+      "result": "PASS",
+      "remaining": "HUMAN-PERSONAL"
+    },
+    {
+      "id": "OWNER-14",
+      "task": "Backup custody and independent restore drill",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "COMPLETED_AUTOMATED_PROXY",
+      "automation": "Portable/full-media export, independent directory copy, checksum/validator checks, confirmed fresh-profile replacement and exact canonical records/media comparison",
+      "result": "PASS",
+      "remaining": "HUMAN-CUSTODY"
+    }
+  ],
+  "remainingBoundaryCount": 9
 }

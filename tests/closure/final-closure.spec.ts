@@ -222,9 +222,15 @@ test("touch/orientation, keyboard-height approximation and tablet split widths",
   await expect(
     page.getByRole("dialog", { name: "Search Fitness OS" }),
   ).toBeVisible();
-  await page
-    .getByRole("combobox", { name: "Search Fitness OS on this device" })
-    .fill("food");
+  await expect(page.getByRole("dialog").getByRole("status")).toContainText(
+    /\d+ suggestions/,
+  );
+  const search = page.getByRole("combobox", {
+    name: "Search Fitness OS on this device",
+  });
+  await search.click();
+  await search.pressSequentially("food");
+  await expect(search).toHaveValue("food");
   await expect(page.getByRole("option").first()).toBeVisible();
   await page.keyboard.press("ArrowDown");
   await page.keyboard.press("Enter");
