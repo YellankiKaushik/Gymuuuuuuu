@@ -11,6 +11,8 @@ import {
   downloadBackup,
   previewBackup,
   restoreBackup,
+  resumeRestore,
+  rollbackRestore,
   readDataHistory,
   validateBackup,
 } from "../src/features/data-management/service";
@@ -46,6 +48,96 @@ function done(tx: IDBTransaction) {
     tx.onabort = () => reject(tx.error);
   });
 }
+
+it.each(["resume", "rollback"] as const)(
+  "recovers a durable interrupted restore journal after reopening via %s",
+  async (mode) => {
+    const { indexedDB } = setup();
+    await prepareRestoreStorage();
+    const putSetting = async (value: string) => {
+      const db = await openFitnessDatabase();
+      const tx = db.transaction("phase17Settings", "readwrite");
+      tx.objectStore("phase17Settings").put({ key: "interruption", value });
+      await done(tx);
+      db.close();
+    };
+    await putSetting("incoming");
+    const incoming = await createBackup();
+    await putSetting("before");
+    const before = await createBackup();
+    const snapshots = [];
+    for (const store of before.payload.modules.flatMap(
+      (module) => module.stores,
+    )) {
+      const raw = await new Promise<IDBDatabase>((resolve, reject) => {
+        const opening = indexedDB.open(store.databaseName);
+        opening.onsuccess = () => resolve(opening.result);
+        opening.onerror = () => reject(opening.error);
+      });
+      const read = raw.transaction(store.storeId, "readonly");
+      const complete = done(read);
+      const records = await new Promise<unknown[]>((resolve, reject) => {
+        const request = read.objectStore(store.storeId).getAll();
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+      await complete;
+      raw.close();
+      snapshots.push({
+        databaseName: store.databaseName,
+        storeId: store.storeId,
+        records,
+      });
+    }
+    // Model process interruption after a committed database write: its before-image
+    // and validated archive were durably journaled, but normal completion never ran.
+    await putSetting("incoming");
+    const db = await openFitnessDatabase();
+    const tx = db.transaction("phase17RestoreJournal", "readwrite");
+    tx.objectStore("phase17RestoreJournal").put({
+      id: "synthetic-interrupted-restore",
+      status: "running",
+      startedAt: "2026-10-12T12:00:00.000Z",
+      mode: "replace",
+      completedDatabases: ["fitness-os"],
+      currentDatabase: "fitness-os-local",
+      backup: incoming,
+      selectedStores: null,
+      rollbackSnapshots: snapshots,
+      shellPreferenceSnapshots: [],
+    });
+    await done(tx);
+    db.close();
+    closeFitnessDatabase();
+    expect((await readDataHistory()).phase17RestoreJournal).toHaveLength(1);
+    if (mode === "resume") await resumeRestore("synthetic-interrupted-restore");
+    else await rollbackRestore("synthetic-interrupted-restore");
+    const recovered = await createBackup();
+    const expected = mode === "resume" ? incoming : before;
+    for (const store of expected.payload.modules.flatMap(
+      (module) => module.stores,
+    )) {
+      if (
+        [
+          "phase17AuditEvents",
+          "phase17BackupReceipts",
+          "phase17RestoreJournal",
+        ].includes(store.storeId)
+      )
+        continue;
+      expect(
+        recovered.payload.modules
+          .flatMap((module) => module.stores)
+          .find(
+            (candidate) =>
+              candidate.databaseName === store.databaseName &&
+              candidate.storeId === store.storeId,
+          )?.records,
+      ).toEqual(store.records);
+    }
+    expect((await readDataHistory()).phase17RestoreJournal).toEqual([]);
+  },
+);
 
 it("prepares every owning schema from one action, then previews with zero canonical writes", async () => {
   setup();
