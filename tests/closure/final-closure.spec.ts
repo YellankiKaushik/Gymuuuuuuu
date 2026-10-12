@@ -392,6 +392,13 @@ test("persistent daily records survive browser restart, cross-tab edit and indep
       .first()
       .click();
     await page.reload();
+    // Prove the saved reference survives and finish the reloaded search assets
+    // before navigating away; WebKit reports aborted document fetches as errors.
+    await expect(
+      page
+        .getByRole("button", { name: "Remove favourite", exact: true })
+        .first(),
+    ).toBeVisible();
     const portable = await downloadBackup(page);
     expect(portable.manifest.totalBinaryAssetCount).toBe(0);
     const before = await downloadBackup(page, true);
@@ -801,15 +808,25 @@ test("file chooser clearing, same-file reselect and invalid import preserve cano
     expect(await snapshot(page)).toEqual(before);
   }
   await ready(page, "/settings/data/backup");
+  await expect(
+    page.getByRole("checkbox", { name: /^fitness-os \d+ records/ }),
+  ).toBeVisible();
   // Exercise the actual application save-picker rejection branch without an OS dialog.
-  await page.evaluate(() =>
+  await page.evaluate(() => {
+    Reflect.set(window, "closureSaveCancellationCalls", 0);
     Reflect.set(window, "showSaveFilePicker", async () => {
+      Reflect.set(window, "closureSaveCancellationCalls", 1);
       throw new DOMException("Synthetic save cancellation", "AbortError");
-    }),
-  );
+    });
+  });
   await page
     .getByRole("button", { name: "Create backup file", exact: true })
     .click();
+  await expect
+    .poll(() =>
+      page.evaluate(() => Reflect.get(window, "closureSaveCancellationCalls")),
+    )
+    .toBe(1);
   await expect(page.getByRole("alert")).toContainText(
     "Synthetic save cancellation",
   );

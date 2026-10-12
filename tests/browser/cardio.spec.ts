@@ -270,6 +270,9 @@ test("cardio manual entry, audit correction, immutable routine versions, resumab
       .filter({ hasText: "restore completed atomically" }),
   ).toBeVisible();
   await page.goto("/cardio");
+  await expect(
+    page.getByRole("button", { name: "Search Fitness OS", exact: true }),
+  ).toBeEnabled();
   await page
     .getByRole("button", { name: "Load local concurrent context" })
     .click();
