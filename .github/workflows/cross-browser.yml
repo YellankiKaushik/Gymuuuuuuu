@@ -42,6 +42,15 @@ jobs:
       - run: npm run check
       - run: npx playwright install --with-deps ${{ matrix.browser }}
       - run: npm run test:e2e:cross-browser -- --project=${{ matrix.browser }}
+      - name: Verify closure proxies on the installed browser
+        env:
+          CLOSURE_BROWSER: ${{ matrix.browser }}
+        run: |
+          case "$CLOSURE_BROWSER" in
+            chromium) npm run test:closure -- --project=closure-chromium --project=android-chromium --project=android-tablet-chromium ;;
+            webkit) npm run test:closure -- --project=closure-webkit --project=iphone-webkit --project=ipad-webkit ;;
+            firefox) npm run test:closure -- --project=closure-firefox ;;
+          esac
       - name: Preserve failed browser diagnostics
         if: failure()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

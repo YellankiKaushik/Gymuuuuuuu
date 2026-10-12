@@ -13,6 +13,13 @@ button { cursor:pointer; }
 button:disabled,fieldset:disabled { opacity:.6; cursor:wait; }
 button { color:inherit; }
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+.search-field:focus-within { outline:3px solid var(--accent); outline-offset:3px; }
+@media print {
+  :root, :root[data-theme] { color-scheme:light; --canvas:#fff; --surface:#fff; --surface-soft:#f6f6f6; --text:#111; --muted:#444; --line:#bbb; --accent:#111; }
+  .sidebar, .topbar, .mobile-nav, .skip-link, .site-footer, .section-nav { display:none!important; }
+  .app-layout { display:block; min-height:0!important; }
+  .main-column { margin:0!important; width:100%!important; min-height:0!important; }
+}
 h1,h2,h3,p { margin:0; }
 .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
 .skip-link { position:fixed; left:260px; top:-100px; z-index:100; padding:15px 24px; background:var(--surface); border:2px solid var(--accent); }

@@ -117,6 +117,23 @@ export function ModuleFinder({ close }: { close: () => void }) {
     <dialog
       ref={ref}
       className="finder"
+      onKeyDown={(event) => {
+        if (event.key !== "Tab") return;
+        const controls = [
+          ...event.currentTarget.querySelectorAll<HTMLElement>(
+            'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])',
+          ),
+        ].filter((element) => element.getClientRects().length > 0);
+        if (!controls.length) return;
+        event.preventDefault();
+        const index = controls.indexOf(document.activeElement as HTMLElement);
+        const next = event.shiftKey
+          ? index <= 0
+            ? controls.length - 1
+            : index - 1
+          : (index + 1) % controls.length;
+        controls[next]?.focus();
+      }}
       onCancel={close}
       onClick={(event) => {
         const b = event.currentTarget.getBoundingClientRect();
