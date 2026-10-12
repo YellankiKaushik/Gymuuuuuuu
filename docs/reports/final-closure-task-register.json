@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "startingCommit": "e03ab59533f8bbde47807c192adcbf4bfee30b9f",
+  "state": "IN_PROGRESS",
+  "tasks": [
+    {
+      "id": "CI",
+      "task": "Settle current main workflows",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "All three e03ab59 runs succeeded; final closure commit CI must settle too."
+    },
+    {
+      "id": "REPO",
+      "task": "Resolve known gitignore modification",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "COMPLETED_AUTOMATICALLY",
+      "evidence": "Restored only redundant historical addition; committed base policy excludes local env/Vercel and preserves .env.example."
+    },
+    {
+      "id": "OWNER-01",
+      "task": "Physical Android",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Open home/search/workout/nutrition/backup; use portrait and landscape; save synthetic workout and diary records; reload and revisit history.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-02",
+      "task": "Physical iPhone",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Repeat workout/diary/backup flows; rotate; scroll with keyboard open; reload saved synthetic records.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-03",
+      "task": "Physical iPad/tablet",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Use split view and rotation; browse food/exercise detail; open filters, comparison and backup dialogs.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-04",
+      "task": "Real desktop workflow",
+      "classification": "AUTOMATABLE_NOW",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Start a synthetic workout; log a set; finish; log nutrition; review history/dashboard; open a second tab and reload.",
+      "ownerBoundary": "No remaining synthetic desktop engineering task; personal-use decision is separate."
+    },
+    {
+      "id": "OWNER-05",
+      "task": "Native file picker and save",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Open /settings/data/backup and click Create backup file; open /settings/data/export and click Export spreadsheet-safe CSV; locate both saved files; on /settings/data/restore cancel and reopen Backup file; select the backup and inspect preview without confirming restore.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-06",
+      "task": "Native photo picker",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Open /progress/photos; use Image file to choose a disposable image; click Sanitize and save photo; reload; cancel a second selection; on /settings/data/backup explicitly choose full media and Create backup file; remove the photo using its confirmation.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-07",
+      "task": "Storage quota/eviction/persistence",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "In a disposable profile inspect storage-health/persistence; exercise restricted storage; keep an external backup; clear only disposable site data; prepare storage and restore.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-08",
+      "task": "Human keyboard evaluation",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Tab through navigation/search/forms; open/close dialogs; use Escape; submit and correct invalid inputs; inspect focus after actions.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-09",
+      "task": "Human screen reader",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Read home, workout, diary, comparison and backup; navigate landmarks/headings; trigger validation and save; inspect dialogs/table captions.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-10",
+      "task": "Human zoom and reflow",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Increase zoom/text; inspect search, food detail, calculator, history and restore; keep keyboard focus visible.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-11",
+      "task": "Human print review",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Preview public exercise/food/recipe pages and a disposable local summary; inspect page breaks, sources, units and privacy before saving/printing.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-12",
+      "task": "Subjective usability and visual review",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Run one realistic synthetic session; inspect labels, empty/error states, feedback, touch targets and motion in both themes.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-13",
+      "task": "Real personal-data workflow",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "Keep an external backup first; enter a small real workout/diary/measurement; edit and reload; export; inspect exact values privately.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "OWNER-14",
+      "task": "Backup custody and independent restore drill",
+      "classification": "AUTOMATABLE_PARTIALLY",
+      "status": "PENDING_AUTOMATION",
+      "requiredWork": "On /settings/data/backup click Create backup file for portable and explicit full-media profiles as needed; copy files outside browser; in a fresh disposable profile open /settings/data/restore and click Prepare local storage; select Backup file; compare preview counts; confirm Replace matching stores only in that disposable profile; reload and compare exact records/media; retain original files privately.",
+      "ownerBoundary": "Reassess after device/lifecycle/keyboard/semantics/zoom/print/chooser/backup automation."
+    },
+    {
+      "id": "POLICY",
+      "task": "Branch protection and repository-owner policy",
+      "classification": "EXTERNAL_ACCOUNT_REQUIRED",
+      "status": "EXTERNAL_POLICY",
+      "evidence": "Read-only ruleset/branch inspection; no administration changes authorized."
+    },
+    {
+      "id": "UNSUPPORTED",
+      "task": "Prohibited cloud/auth/payments and unsupported backup modes",
+      "classification": "INTENTIONALLY_UNSUPPORTED",
+      "status": "INTENTIONALLY_UNSUPPORTED"
+    },
+    {
+      "id": "BACKLOG",
+      "task": "900 unpublished identities",
+      "classification": "FUTURE_CONTENT_BACKLOG",
+      "status": "FUTURE_CONTENT_BACKLOG"
+    }
+  ]
+}

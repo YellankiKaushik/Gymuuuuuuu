@@ -15,7 +15,7 @@ button { color:inherit; }
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
 .search-field:focus-within { outline:3px solid var(--accent); outline-offset:3px; }
 @media print {
-  :root, :root[data-theme] { color-scheme:light; --canvas:#fff; --surface:#fff; --surface-soft:#f6f6f6; --text:#111; --muted:#444; --line:#bbb; --accent:#111; }
+  :root, :root[data-theme] { color-scheme:light; --canvas:#fff; --surface:#fff; --surface-soft:#f6f6f6; --text:#111; --muted:#444; --line:#bbb; --accent:#111; --accent-soft:#eee; --info:#111!important; --warning:#111!important; --danger:#111!important; --focus:#111!important; }
   .sidebar, .topbar, .mobile-nav, .skip-link, .site-footer, .section-nav { display:none!important; }
   .app-layout { display:block; min-height:0!important; }
   .main-column { margin:0!important; width:100%!important; min-height:0!important; }

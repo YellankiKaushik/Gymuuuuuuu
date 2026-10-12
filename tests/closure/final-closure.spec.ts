@@ -723,6 +723,27 @@ test("read-only print rendering retains headings, units and provenance without n
     );
     await mkdir(directory, { recursive: true });
     const name = route.replaceAll("/", "_");
+    for (const theme of ["light", "dark"]) {
+      await page.evaluate(
+        (value) => (document.documentElement.dataset.theme = value),
+        theme,
+      );
+      expect(
+        (
+          await new AxeBuilder({ page })
+            .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
+            .analyze()
+        ).violations,
+      ).toEqual([]);
+      if (theme === "dark")
+        await page.screenshot({
+          path: info.outputPath(name + "-dark-print.png"),
+          fullPage: true,
+        });
+    }
+    await page.evaluate(
+      () => (document.documentElement.dataset.theme = "light"),
+    );
     await page.screenshot({
       path: resolve(directory, name + ".png"),
       fullPage: true,
