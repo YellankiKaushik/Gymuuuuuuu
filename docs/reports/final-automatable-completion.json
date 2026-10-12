@@ -1,0 +1,1845 @@
+{
+  "schemaVersion": 1,
+  "result": "PASS_AUTOMATABLE_OWNER_TESTING_REMAINS",
+  "verifiedAt": "2026-10-12T11:27:51.110Z",
+  "completion": {
+    "automatableEngineeringPercent": 100,
+    "fullReleasePercent": 67,
+    "automatedPassed": 29,
+    "automatedTotal": 29,
+    "ownerOnlyCount": 14,
+    "fullReleaseTotal": 43,
+    "P0": 0,
+    "P1": 0,
+    "P2": 0,
+    "backlogCount": 900,
+    "model": "29 equal-weight automatable module/cross-cutting checkpoints; 14 equally weighted owner categories remain. 29/29=100%; round(29/43*100)=67%. Frozen factual identities and intentionally unsupported features are excluded. This is checklist completion, not universal coverage or certification."
+  },
+  "repository": {
+    "branch": "main",
+    "headAtVerification": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+    "originMainAtVerification": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+    "safetyCheckpoint": "fitness-os-owner-testing-ready",
+    "finalDocumentationRef": "fitness-os-automatable-complete",
+    "finalDocumentationCommit": "Resolve finalDocumentationRef after the explicit documentation-only commit; no self-referential commit SHA is claimed.",
+    "gitignoreSha256": "5a22ef7d464eabad8cd0d1b4129e4b415b815dfec13cfa2fe3919c3ddc6439db",
+    "gitignoreState": "Pre-existing local .vercel/.env* addition preserved byte-for-byte, unstaged and uncommitted.",
+    "trackedDeleted": 0,
+    "trackedRenamed": 0,
+    "trackedMoved": 0,
+    "executionTreeSha256": "4511f33fea6b00f4a2b047686d49a514aaaca80e7725667445d92448a243a839"
+  },
+  "production": {
+    "id": "dpl_JD7GorUhs1CTSSroEArjs8r4zG8i",
+    "name": "gymuuuuuuu",
+    "url": "gymuuuuuuu-85oght4if-kaushik-yellanki-project.vercel.app",
+    "type": "LAMBDAS",
+    "state": "READY",
+    "createdAt": 1791714987145,
+    "creator": {
+      "uid": "RbZ3cOFF3guWXqPbvXz78n5Q",
+      "username": "yellankikaushik"
+    },
+    "project": {
+      "id": "prj_1FC5ytETu88SnshSUWGHtjvWcQBN",
+      "name": "gymuuuuuuu",
+      "framework": "tanstack-start"
+    },
+    "meta": {
+      "githubCommitRef": "main",
+      "githubCommitSha": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+      "githubCommitMessage": "Complete final security audit repository hygiene and testing",
+      "githubRepo": "Gymuuuuuuu",
+      "githubOrg": "YellankiKaushik"
+    },
+    "alias": [
+      "kaush-ka-gym.vercel.app",
+      "gymuuuuuuu-kaushik-yellanki-project.vercel.app",
+      "gymuuuuuuu-git-main-kaushik-yellanki-project.vercel.app"
+    ],
+    "target": "production",
+    "regions": ["iad1"],
+    "buildingAt": 1791714988323,
+    "ready": 1791715031634,
+    "readyState": "READY",
+    "aliasError": null,
+    "nodeRuntime": "24.x",
+    "framework": "tanstack-start",
+    "origin": "https://kaush-ka-gym.vercel.app",
+    "redeployRequired": false,
+    "environmentNames": ["VITE_PUBLIC_APP_ORIGIN"],
+    "publicOrigin": "https://kaush-ka-gym.vercel.app",
+    "unexpectedVariables": 0,
+    "hiddenProductionEnvCount": 0,
+    "integrations": 0,
+    "gitAutomaticDeploymentEnabled": false,
+    "runtimeErrorsLastHour": 0,
+    "warningErrorFatalLogsLast30m": 0,
+    "dashboardLimits": "Connector reports project.live=false despite verified ready production alias; this flag is not treated as application availability. Omitted dashboard fields are not inferred.",
+    "linkedProjectsForRepository": 1,
+    "finalHealth": {
+      "observedAt": "2026-10-12T11:29:44.641Z",
+      "results": [
+        "## Runtime Errors\n\n**Project:** prj_1FC5ytETu88SnshSUWGHtjvWcQBN\n\nNo runtime errors found in the selected time range.",
+        "## Runtime Logs\n\n**Project:** prj_1FC5ytETu88SnshSUWGHtjvWcQBN\n**Deployment:** dpl_JD7GorUhs1CTSSroEArjs8r4zG8i\n**Time range:** 2026-10-12T10:58:48.389Z → 2026-10-12T11:28:48.389Z\n\nNo logs found for the specified criteria."
+      ]
+    }
+  },
+  "modules": [
+    {
+      "module": "00 Foundation",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Foundation unit and browser gates",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "01 App shell/navigation/design system",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Foundation navigation, keyboard, themes, hydration and reflow",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "02 Anatomy",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "70 published records; canonical/provenance and full route audit",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "03 Exercise encyclopedia",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "32 published records; safe drafts, filters, zoom and routes",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "04 Workout science",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "32 published topics; provenance, navigation and reflow",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "05 Programs",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "4 programs; selection, unspecified duration and immutable snapshots",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "06 Workout tracker",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Start/add set/reload/finish/history/edit/backup",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "07 Foods",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "264 foods; preparations, 100 g composition, unknown values and filters",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "08 Nutrients",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "51 articles and 35 FDA reference rows; no personal intake inference",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "09 Diet planning/calculators",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Adult eligibility, consent, unsupported goals, formulas and save/restore",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "10 Nutrition tracker",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Grams snapshot, diary, totals, custom foods, edits and persistence",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "11 Recipes/meal planning",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "24 recipes/3 collections; source-preserving copy, scale, log, local plans",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "12 Recovery/sleep/mobility",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Sleep estimates; pain/illness distinct from soreness; routines and reload",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "13 Cardio",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "13 public identities; session/history/player/backup and safety labels",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "14 Supplements",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "12 ingredients; evidence, labels/intakes/trials/events and snapshots",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "15 Body progress/dashboard/analytics",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Weight/circumference/photo persistence; source-labelled estimates and widgets",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "16 Search/favourites/comparison",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "648 public documents; local-only private search; saved references/comparison",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "17 Local storage/backup/export",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "7 owning databases; validation, journal/rollback, portable/full-media and CSV",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "18 Testing/GitHub/Vercel",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Clean gates, local browsers, hosted browsers, 702 routes and live deployment",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "19 Final verified content/release state",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "520 factual identities; machine-only publication review; 900 drafts frozen",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "Security",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Current source inventory, secret scan, XSS, URL/import/media regressions, npm audit and live CSP/headers",
+      "remainingWork": "No observed unresolved engineering finding; residual trust boundaries documented."
+    },
+    {
+      "module": "Privacy",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "33 monitored live cases, synthetic SSR cohort and both local browser portability journeys",
+      "remainingWork": "Owner browser profile and backup custody."
+    },
+    {
+      "module": "Accessibility",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Full route axe states, 184 tagged checks per local browser, hosted accessibility and live dialog/route axe",
+      "remainingWork": "Human keyboard, screen reader, zoom and print checklist."
+    },
+    {
+      "module": "Responsive behavior",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "13 live routes × 7 widths × 2 themes = 182 states; full local reflow and route audit",
+      "remainingWork": "Physical Android/iPhone/iPad and subjective evaluation."
+    },
+    {
+      "module": "Performance",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Production JS/chunk/JSON budgets, required assets and hydrated routes",
+      "remainingWork": "No marginal optimization scope."
+    },
+    {
+      "module": "Import/export",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Zero-write preview; invalid import preservation; fresh-profile restore; CSV injection safety",
+      "remainingWork": "Native picker/save and owner-held backup drill."
+    },
+    {
+      "module": "Photo/media handling",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Synthetic metadata removal, MIME/signature/corruption/size guards, portable exclusion and full-media restore",
+      "remainingWork": "Native photo picker and real device decoder."
+    },
+    {
+      "module": "Production deployment",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Authenticated Vercel source/runtime/domain/env inspection, HTTPS/CSP/nonces and live workflows",
+      "remainingWork": "No redeploy required for documentation-only descendants."
+    },
+    {
+      "module": "Documentation",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Current README, security model, completion matrix, evidence and owner checklist",
+      "remainingWork": "Follow the owner checklist; historical reports remain in place."
+    },
+    {
+      "module": "Owner-only tasks",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "automatedVerification": "Automation cannot replace the physical/human tasks below",
+      "remainingWork": "14 categories remain."
+    },
+    {
+      "module": "Frozen factual content backlog",
+      "status": "FUTURE_BACKLOG",
+      "automatedVerification": "900 unpublished identities remain excluded from public search/publication",
+      "remainingWork": "Future owner-authorized source work; excluded from release percentage."
+    },
+    {
+      "module": "Unsupported by design",
+      "status": "INTENTIONALLY_UNSUPPORTED",
+      "automatedVerification": "Unavailable modes are labelled; project exclusions remain enforced",
+      "remainingWork": "No accounts/auth/cloud personal sync/payments/social/admin CMS/external fitness APIs."
+    }
+  ],
+  "security": {
+    "observedUnresolved": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "runtimeChangesThisPass": 0,
+    "reviewedSinks": [
+      {
+        "path": "src/config/validation.ts",
+        "line": 4,
+        "kind": "new Function"
+      },
+      {
+        "path": "src/routes/__root.tsx",
+        "line": 37,
+        "kind": "dangerouslySetInnerHTML"
+      }
+    ],
+    "inventory": {
+      "trackedFiles": 1282,
+      "runtimeTodos": 0,
+      "debug": 0,
+      "brokenRelativeLinks": 0
+    },
+    "secretScan": {
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-12T10:55:45.525Z",
+      "testedCommit": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+      "trackedFiles": 1282,
+      "reachableCommits": 63,
+      "uniqueHistoryBlobs": 2602,
+      "historicalBytes": 227945728,
+      "publicBundleFiles": 290,
+      "rules": [
+        "private-key",
+        "github-token",
+        "aws-access-key",
+        "provider-secret",
+        "google-api-key",
+        "credential-url",
+        "literal-bearer"
+      ],
+      "findings": [],
+      "limitations": "Read-only scan of fetched reachable Git objects and current files; patterns do not establish absence of all credentials. Binary strings scanned; screenshot OCR and inaccessible/unreachable remote history are not covered. No credential values printed."
+    },
+    "dependencies": {
+      "audit": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      },
+      "outdated": [
+        {
+          "name": "@playwright/test",
+          "current": "1.63.0",
+          "wanted": "1.64.0",
+          "latest": "1.64.0",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "@tanstack/react-router",
+          "current": "1.170.41",
+          "wanted": "1.170.42",
+          "latest": "1.170.42",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "@tanstack/react-start",
+          "current": "1.168.60",
+          "wanted": "1.168.61",
+          "latest": "1.168.61",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "@tanstack/start-client-core",
+          "current": "1.170.34",
+          "wanted": "1.170.34",
+          "latest": "1.170.35",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "@tanstack/start-storage-context",
+          "current": "1.167.36",
+          "wanted": "1.167.37",
+          "latest": "1.167.37",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "@types/node",
+          "current": "26.6.4",
+          "wanted": "26.6.5",
+          "latest": "26.6.5",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "@vitejs/plugin-react",
+          "current": "6.1.1",
+          "wanted": "6.1.2",
+          "latest": "6.1.2",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "@vitest/coverage-v8",
+          "current": "5.0.3",
+          "wanted": "5.0.4",
+          "latest": "5.0.4",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "lucide-react",
+          "current": "1.52.0",
+          "wanted": "1.55.0",
+          "latest": "1.55.0",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "prettier",
+          "current": "3.9.9",
+          "wanted": "3.9.10",
+          "latest": "3.9.10",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "typescript",
+          "current": "6.0.3",
+          "wanted": "6.0.3",
+          "latest": "7.0.2",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "typescript-eslint",
+          "current": "8.71.0",
+          "wanted": "8.71.1",
+          "latest": "8.71.1",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "vite",
+          "current": "8.3.2",
+          "wanted": "8.3.4",
+          "latest": "8.3.4",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "vitest",
+          "current": "5.0.3",
+          "wanted": "5.0.4",
+          "latest": "5.0.4",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        },
+        {
+          "name": "zod",
+          "current": "4.6.5",
+          "wanted": "4.6.6",
+          "latest": "4.6.6",
+          "classification": "optional later review; no audit-supported release-blocking/security finding"
+        }
+      ],
+      "installScripts": [
+        {
+          "path": "node_modules/esbuild",
+          "version": "0.28.2",
+          "optional": false
+        },
+        {
+          "path": "node_modules/fsevents",
+          "version": "2.3.3",
+          "optional": true
+        }
+      ],
+      "installScriptsCommand": "Pinned npm 11.9.0 rejects npm install-scripts ls. Lockfile/installed package inspection is used; esbuild 0.28.2 binary selection/download/version verification reviewed; optional macOS fsevents 2.3.3 absent on Windows.",
+      "esbuildInstallSourceSha256": "612294e278914443bdcf81cb17f54afec34dbdd2ebd999a6ee187912320cc315"
+    },
+    "residualRisk": [
+      "Unencrypted backup/CSV files and shared browser profiles",
+      "Browser eviction/quota, extensions and image decoder/dependency trust",
+      "Narrow style-src-attr unsafe-inline is retained; script unsafe-eval/unsafe-inline prohibited",
+      "GitHub main is unprotected; owner should configure required review/checks. Settings were not changed.",
+      "Pattern scans and synthetic cases are not penetration testing or full WCAG/clinical certification"
+    ],
+    "currentFixes": [
+      "Corrected stale current README/security guidance that still required redeployment or described the old Zod policy event; deployed runtime already contains the fix."
+    ],
+    "additionalCredentialAssignmentReview": {
+      "trackedTextFiles": 962,
+      "findings": [],
+      "valuesPrinted": false
+    }
+  },
+  "privacy": {
+    "liveWorkflowCases": 33,
+    "liveWorkflowRequests": 8407,
+    "unexpectedRemoteRequests": 0,
+    "personalMarkerLeaks": 0,
+    "liveSsrCohortRequests": 684,
+    "liveSsrCohortRoutes": 15,
+    "liveSsrMarkerLeaks": 0,
+    "additionalLiveHeaderSsrProbes": 16,
+    "local": [
+      {
+        "schemaVersion": 1,
+        "testedCommit": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+        "browser": "chromium",
+        "syntheticOnly": true,
+        "requestCount": 918,
+        "unexpectedRemoteRequests": 0,
+        "personalValuesInRequests": 0,
+        "ssrRoutes": [
+          "/workout",
+          "/diet-planning/plans",
+          "/nutrition",
+          "/sleep",
+          "/recovery",
+          "/cardio",
+          "/supplements/products",
+          "/progress/weight",
+          "/saved/favourites",
+          "/search"
+        ],
+        "ssrPersonalMarkerLeaks": 0,
+        "freshProfileRestore": "passed",
+        "invalidImportPreservation": "passed"
+      },
+      {
+        "schemaVersion": 1,
+        "testedCommit": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+        "browser": "webkit",
+        "syntheticOnly": true,
+        "requestCount": 911,
+        "unexpectedRemoteRequests": 0,
+        "personalValuesInRequests": 0,
+        "ssrRoutes": [
+          "/workout",
+          "/diet-planning/plans",
+          "/nutrition",
+          "/sleep",
+          "/recovery",
+          "/cardio",
+          "/supplements/products",
+          "/progress/weight",
+          "/saved/favourites",
+          "/search"
+        ],
+        "ssrPersonalMarkerLeaks": 0,
+        "freshProfileRestore": "passed",
+        "invalidImportPreservation": "passed"
+      }
+    ],
+    "countsModel": "Browser requests counted per monitored context. Separate SSR/header/API probes are stated separately, not silently added. No external video played.",
+    "liveSsrRoutes": [
+      {
+        "route": "/",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/workout",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/workout/history",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/nutrition",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/diet-planning",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/recipes",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/sleep",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/recovery",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/cardio",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/supplements",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/progress",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/search",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/saved",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/settings/data",
+        "status": 200,
+        "ssrMarkerLeak": false
+      },
+      {
+        "route": "/settings/data/backup",
+        "status": 200,
+        "ssrMarkerLeak": false
+      }
+    ]
+  },
+  "dataSafety": {
+    "databases": [
+      "fitness-os",
+      "fitness-os-local",
+      "fitness-os-diet-planning",
+      "fitness-os-recipes-meal-plans",
+      "fitness-os-recovery-sleep-mobility",
+      "fitness-os-cardio-conditioning",
+      "fitness-os-supplements-evidence"
+    ],
+    "validation": "Owning schemas and relationships before canonical writes; duplicate/future/non-finite/malformed/oversized rejection; no unknown-to-zero coercion.",
+    "backup": "Counts/manifest/SHA-256/bounded files; no active-workout pointer; portable excludes binary photos; unencrypted and unauthenticated.",
+    "restore": "Fresh-profile preparation, zero-write preview, invalid-import preservation, keep-existing preference preservation, partial failure transaction abort and automatic before-image rollback; retained recovery; no global atomicity.",
+    "csv": "Safe default neutralizes = + - @ TAB CR; commas/quotes/CRLF/multiline/Unicode/empty values and date serialization reviewed; raw mode labelled.",
+    "media": "JPEG/PNG/WebP MIME+signature; 10 MiB/20 MP bounds; corrupt decoding rejection; local canvas sanitization and metadata checks; checksum/dimensions/manifest; full-media JSON restore; no upload."
+  },
+  "healthSafety": {
+    "diet": "Adult eligibility, pregnancy/lactation exclusion, consent, disclosed formulas, conservative bounds; no future-weight guarantee or auto calorie credit.",
+    "body": "BMI context; only externally measured/source-labelled body composition; no fabricated body-fat or score.",
+    "sleep": "Source-labelled estimates; no diagnosis, fabricated stages or certain sleep-debt claim.",
+    "recovery": "Soreness distinct from pain/illness; stop guidance; no opaque score.",
+    "cardio": "Manual/source-labelled estimates and stop signals; no fake VO2max/fitness age/universal Zone 2/calorie burn.",
+    "supplements": "Provenance/evidence and unknown blends preserved; adverse-event guidance; no prescribing/steroid/SARM/peptide protocols/global efficacy or safety scores."
+  },
+  "testing": {
+    "unit": {
+      "passed": 358,
+      "files": 95
+    },
+    "coverage": {
+      "statements": 72.98,
+      "branches": 64.77,
+      "functions": 67.38,
+      "lines": 76.89,
+      "minimumThresholdConfigured": false
+    },
+    "localChromium": {
+      "passed": 287,
+      "failed": 0
+    },
+    "localWebKit": {
+      "passed": 287,
+      "failed": 0
+    },
+    "hosted": {
+      "testedCommit": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+      "jobs": [
+        {
+          "id": 114454595881,
+          "name": "browser (chromium)",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 38134196808,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run npm ci",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run npm run check",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run npx playwright install --with-deps chromium",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Run npm run test:e2e:cross-browser -- --project=chromium",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Preserve failed browser diagnostics",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 8
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 15
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 16
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 17
+            }
+          ],
+          "verificationLines": [
+            "2026-10-11T11:04:11.1751805Z found 0 vulnerabilities",
+            "2026-10-11T11:05:51.4090297Z  Test Files  95 passed (95)",
+            "2026-10-11T11:05:51.4092895Z       Tests  358 passed (358)",
+            "2026-10-11T11:06:13.9369937Z Browser JavaScript: 158 assets, 701394 bytes gzip total; largest index-CJEr-O2k.js: 168458 bytes gzip.",
+            "2026-10-11T11:06:14.2756377Z Public data: 97 lazy JSON assets; 429517 bytes gzip total; largest 59287 bytes gzip. No JavaScript budget was increased.",
+            "2026-10-11T11:25:17.7715754Z   287 passed (18.7m)"
+          ]
+        },
+        {
+          "id": 114454596109,
+          "name": "browser (webkit)",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 38134196808,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run npm ci",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run npm run check",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run npx playwright install --with-deps webkit",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Run npm run test:e2e:cross-browser -- --project=webkit",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Preserve failed browser diagnostics",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 8
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 15
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 16
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 17
+            }
+          ],
+          "verificationLines": [
+            "2026-10-11T11:04:10.8921583Z found 0 vulnerabilities",
+            "2026-10-11T11:06:00.2804244Z  Test Files  95 passed (95)",
+            "2026-10-11T11:06:00.2806835Z       Tests  358 passed (358)",
+            "2026-10-11T11:06:24.7826042Z Browser JavaScript: 158 assets, 701394 bytes gzip total; largest index-CJEr-O2k.js: 168458 bytes gzip.",
+            "2026-10-11T11:06:25.1537417Z Public data: 97 lazy JSON assets; 429517 bytes gzip total; largest 59287 bytes gzip. No JavaScript budget was increased.",
+            "2026-10-11T11:34:15.9578699Z   287 passed (27.0m)"
+          ]
+        },
+        {
+          "id": 114454596134,
+          "name": "browser (firefox)",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 38134196808,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run npm ci",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run npm run check",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run npx playwright install --with-deps firefox",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Run npm run test:e2e:cross-browser -- --project=firefox",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Preserve failed browser diagnostics",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 8
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 15
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 16
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 17
+            }
+          ],
+          "verificationLines": [
+            "2026-10-11T11:04:08.9769253Z found 0 vulnerabilities",
+            "2026-10-11T11:05:20.5950899Z  Test Files  95 passed (95)",
+            "2026-10-11T11:05:20.5952660Z       Tests  358 passed (358)",
+            "2026-10-11T11:05:35.6770360Z Browser JavaScript: 158 assets, 701394 bytes gzip total; largest index-CJEr-O2k.js: 168458 bytes gzip.",
+            "2026-10-11T11:05:35.9124970Z Public data: 97 lazy JSON assets; 429517 bytes gzip total; largest 59287 bytes gzip. No JavaScript budget was increased.",
+            "2026-10-11T11:26:15.7273630Z   287 passed (20.2m)"
+          ]
+        },
+        {
+          "id": 114454620752,
+          "name": "accessibility",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 38134205091,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run npm ci",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run npm run check",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run npx playwright install --with-deps chromium",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Run npm run test:a11y",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Preserve failed accessibility diagnostics",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 8
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 15
+            },
+            {
+              "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 16
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 17
+            }
+          ],
+          "verificationLines": [
+            "2026-10-11T11:04:19.8002920Z found 0 vulnerabilities",
+            "2026-10-11T11:05:49.3792487Z  Test Files  95 passed (95)",
+            "2026-10-11T11:05:49.3793866Z       Tests  358 passed (358)",
+            "2026-10-11T11:06:09.3256645Z Browser JavaScript: 158 assets, 701394 bytes gzip total; largest index-CJEr-O2k.js: 168458 bytes gzip.",
+            "2026-10-11T11:06:09.6414564Z Public data: 97 lazy JSON assets; 429517 bytes gzip total; largest 59287 bytes gzip. No JavaScript budget was increased.",
+            "2026-10-11T11:15:48.7801607Z   184 passed (9.3m)"
+          ]
+        }
+      ],
+      "verifyLines": [
+        "2026-10-11T11:04:19.7304324Z found 0 vulnerabilities",
+        "2026-10-11T11:05:59.0974348Z  Test Files  95 passed (95)",
+        "2026-10-11T11:05:59.0976363Z       Tests  358 passed (358)",
+        "2026-10-11T11:06:21.6923831Z Browser JavaScript: 158 assets, 701394 bytes gzip total; largest index-CJEr-O2k.js: 168458 bytes gzip.",
+        "2026-10-11T11:06:22.0470160Z Public data: 97 lazy JSON assets; 429517 bytes gzip total; largest 59287 bytes gzip. No JavaScript budget was increased.",
+        "2026-10-11T11:07:29.5116055Z  Test Files  95 passed (95)",
+        "2026-10-11T11:07:29.5117297Z       Tests  358 passed (358)",
+        "2026-10-11T11:07:29.5363513Z All files          |   72.98 |    64.78 |   67.38 |   76.89 |                   ",
+        "2026-10-11T11:26:37.4319819Z   287 passed (18.8m)",
+        "2026-10-11T11:26:37.9515455Z found 0 vulnerabilities"
+      ]
+    },
+    "live": {
+      "passed": 33,
+      "failed": 0,
+      "cases": [
+        {
+          "title": "private quick-add, immutable custom revisions, fluid editing, undo, backup restore and cross-tab updates",
+          "startedAt": "2026-10-12T10:54:32.102Z",
+          "completedAt": "2026-10-12T10:54:38.004Z",
+          "requestCount": 369,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "local sleep, check-in, routine revision, resumable session and backup workflow",
+          "startedAt": "2026-10-12T10:55:08.307Z",
+          "completedAt": "2026-10-12T10:55:16.031Z",
+          "requestCount": 528,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "captures versioned labels, frozen intake, trial, urgent event, backup and clear privacy boundaries",
+          "startedAt": "2026-10-12T10:55:16.111Z",
+          "completedAt": "2026-10-12T10:55:20.839Z",
+          "requestCount": 416,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "LIVE responsive rendering and targeted axe dialogs",
+          "startedAt": "2026-10-12T10:54:23.207Z",
+          "completedAt": "2026-10-12T10:55:03.513Z",
+          "requestCount": 637,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "local search dialog supports keyboard suggestions, navigation and focus-safe close",
+          "startedAt": "2026-10-12T10:55:11.221Z",
+          "completedAt": "2026-10-12T10:55:13.563Z",
+          "requestCount": 87,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "synthetic multi-module records export exactly without network or SSR leaks",
+          "startedAt": "2026-10-12T10:54:14.453Z",
+          "completedAt": "2026-10-12T10:54:26.653Z",
+          "requestCount": 647,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "diet target flow, input consent, current snapshot, edit, export, restore and cross-tab updates",
+          "startedAt": "2026-10-12T10:53:39.041Z",
+          "completedAt": "2026-10-12T10:53:47.466Z",
+          "requestCount": 82,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "synthetic supplement text and invalid photo MIME are safely handled",
+          "startedAt": "2026-10-12T10:53:59.002Z",
+          "completedAt": "2026-10-12T10:54:02.067Z",
+          "requestCount": 143,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "Finder includes unknown-duration published templates only after an explicit no-time-limit choice",
+          "startedAt": "2026-10-12T10:54:58.603Z",
+          "completedAt": "2026-10-12T10:54:59.760Z",
+          "requestCount": 39,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "LIVE reviewed food grams snapshot persistence and removal",
+          "startedAt": "2026-10-12T10:54:02.137Z",
+          "completedAt": "2026-10-12T10:54:03.893Z",
+          "requestCount": 83,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "synthetic workout and nutrition names remain text across persistence",
+          "startedAt": "2026-10-12T10:53:50.741Z",
+          "completedAt": "2026-10-12T10:53:55.777Z",
+          "requestCount": 174,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "collections support rename, private notes, sorting, filtering and moving references",
+          "startedAt": "2026-10-12T10:55:17.541Z",
+          "completedAt": "2026-10-12T10:55:20.426Z",
+          "requestCount": 114,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "nutrient comparison preserves FDA label context and unavailable reference rows",
+          "startedAt": "2026-10-12T10:54:46.350Z",
+          "completedAt": "2026-10-12T10:54:50.380Z",
+          "requestCount": 160,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "public recipe copies exact sources locally, scales and freezes a consumed snapshot",
+          "startedAt": "2026-10-12T10:54:12.057Z",
+          "completedAt": "2026-10-12T10:54:14.419Z",
+          "requestCount": 133,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "milkfish preparation deep links and soy missing household weights remain explicit @a11y",
+          "startedAt": "2026-10-12T10:53:56.025Z",
+          "completedAt": "2026-10-12T10:54:01.248Z",
+          "requestCount": 123,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "@a11y published food comparison retains source preparations, missing values and local saves",
+          "startedAt": "2026-10-12T10:54:38.070Z",
+          "completedAt": "2026-10-12T10:54:46.309Z",
+          "requestCount": 194,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "source-backed full-body-3-day-foundation selection preserves unspecified rest and immutable version locally",
+          "startedAt": "2026-10-12T10:54:56.406Z",
+          "completedAt": "2026-10-12T10:54:58.556Z",
+          "requestCount": 117,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "cardio manual entry, audit correction, immutable routine versions, resumable player, backup and SSR privacy",
+          "startedAt": "2026-10-12T10:53:39.043Z",
+          "completedAt": "2026-10-12T10:53:55.610Z",
+          "requestCount": 526,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "public search filters stay in URL while private query state never does",
+          "startedAt": "2026-10-12T10:55:13.609Z",
+          "completedAt": "2026-10-12T10:55:15.329Z",
+          "requestCount": 40,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "diet eligibility, unsafe goals and unreconciled meals block save; transient inputs clear on reload",
+          "startedAt": "2026-10-12T10:53:47.574Z",
+          "completedAt": "2026-10-12T10:53:50.656Z",
+          "requestCount": 123,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "synthetic collection names and private search payload never execute or reach URLs",
+          "startedAt": "2026-10-12T10:53:56.040Z",
+          "completedAt": "2026-10-12T10:53:58.879Z",
+          "requestCount": 77,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "creates immutable recipe versions, manual plans, leftovers, groceries and explicit consumed snapshots",
+          "startedAt": "2026-10-12T10:55:02.015Z",
+          "completedAt": "2026-10-12T10:55:11.153Z",
+          "requestCount": 594,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "fresh-profile restore preserves exact multi-module records and rejects corruption",
+          "startedAt": "2026-10-12T10:54:26.711Z",
+          "completedAt": "2026-10-12T10:54:31.236Z",
+          "requestCount": 271,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "food catalogue reflows and exposes accessible filter dialog",
+          "startedAt": "2026-10-12T10:54:05.150Z",
+          "completedAt": "2026-10-12T10:54:11.980Z",
+          "requestCount": 80,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "global restore rejects stale file completions after a newer invalid selection",
+          "startedAt": "2026-10-12T10:54:31.251Z",
+          "completedAt": "2026-10-12T10:54:32.040Z",
+          "requestCount": 38,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "program discovery, finder scope and current selection empty states",
+          "startedAt": "2026-10-12T10:54:54.206Z",
+          "completedAt": "2026-10-12T10:54:56.352Z",
+          "requestCount": 157,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "food discovery filters, sourced publication and safe unknown profiles",
+          "startedAt": "2026-10-12T10:54:01.299Z",
+          "completedAt": "2026-10-12T10:54:05.094Z",
+          "requestCount": 282,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "LIVE circumference illness persistence and comparison incompatibility",
+          "startedAt": "2026-10-12T10:55:03.577Z",
+          "completedAt": "2026-10-12T10:55:08.252Z",
+          "requestCount": 283,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "favourites persist locally and saved pages remain private across reload",
+          "startedAt": "2026-10-12T10:55:15.361Z",
+          "completedAt": "2026-10-12T10:55:17.506Z",
+          "requestCount": 114,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "local workout logs, refreshes, completes, edits, backs up and restores",
+          "startedAt": "2026-10-12T10:55:20.470Z",
+          "completedAt": "2026-10-12T10:55:30.601Z",
+          "requestCount": 322,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "Phase 15 records body weight locally and keeps the 320px layout inside the viewport",
+          "startedAt": "2026-10-12T10:54:59.857Z",
+          "completedAt": "2026-10-12T10:55:01.947Z",
+          "requestCount": 78,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "LIVE HTTPS headers canonical SSR and hard-refresh routes",
+          "startedAt": "2026-10-12T10:54:03.954Z",
+          "completedAt": "2026-10-12T10:54:23.156Z",
+          "requestCount": 1190,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        },
+        {
+          "title": "private photos remove synthetic metadata, exclude portable binaries and restore exact explicit media",
+          "startedAt": "2026-10-12T10:54:50.434Z",
+          "completedAt": "2026-10-12T10:54:54.146Z",
+          "requestCount": 186,
+          "remoteRequests": 0,
+          "markerLeaks": 0,
+          "uncaughtErrors": 0,
+          "failedAssets": 0,
+          "policyEvents": 0
+        }
+      ],
+      "monitorFixtureSha256": "56d346f415a4df53c00be2e65e3247b575ee98142b6e4987cadc018fee1a5c8b",
+      "configSha256": "c5c93e440bd14aab70b11abe61a10b78dfc65cae117e30a7101153b1253cf189"
+    },
+    "accessibility": {
+      "localTaggedPerBrowser": 184,
+      "hostedTagged": 184,
+      "liveAxeScans": 54,
+      "liveDetectedViolations": 0
+    },
+    "responsive": {
+      "routes": [
+        "/",
+        "/search",
+        "/exercises/push-up",
+        "/workout",
+        "/foods",
+        "/nutrition",
+        "/diet-planning",
+        "/recipes/chickpea-cucumber-bowl",
+        "/recovery",
+        "/cardio",
+        "/supplements",
+        "/progress",
+        "/settings/data/backup"
+      ],
+      "widths": [320, 375, 393, 768, 1024, 1280, 1440],
+      "themes": ["light", "dark"],
+      "states": 182
+    },
+    "routes": {
+      "expected": 702,
+      "passed": 702,
+      "failed": 0,
+      "unmeasured": 0,
+      "unexpectedApplicationErrors": 0,
+      "failedRequiredAssets": 0,
+      "unexpectedExternalTraffic": 0,
+      "auditedCommit": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+      "buildDate": "2026-10-12T10:55:04.501Z",
+      "serverBuildSha256": "2122b4d1e2aa48b245d961dd3240f43a694a39b064e19535fb10708ebe2fad7f",
+      "sourceManifestSha256": "bf0ccc3a9e78db5fcf278de728f79fd44e396424b7e62510826e9acdeb314213",
+      "searchManifest": {
+        "schemaVersion": "1.0.0",
+        "adapterVersion": "fitness-os-native-index-v1",
+        "normalizationVersion": "unicode-nfkc-token-v1",
+        "rankingVersion": "field-weights-exact-prefix-bonus-v1",
+        "canonicalDocumentHash": "7b3df4d5ac92f146a203b4c5b1741f44b1e73691d0a65014b219831d8e0f9f5e",
+        "indexHash": "d512000f40b6054f1cc261aed4aa99b91d5c043fbcdb9e17de19f0df3c6a7706",
+        "indexVersion": "83fef1c09dbeeb3e9a28bba1e037a38dbbfa3ec9d05a39ce2cea5d3175b91fa5",
+        "documentCount": 648,
+        "countsByEntityType": {
+          "route": 124,
+          "muscle": 70,
+          "exercise": 32,
+          "workout_science_topic": 32,
+          "workout_program": 4,
+          "workout_session": 0,
+          "food": 264,
+          "nutrient": 51,
+          "diet_plan": 0,
+          "recipe": 24,
+          "meal_plan_template": 3,
+          "meal_plan": 0,
+          "recovery_topic": 11,
+          "recovery_routine": 4,
+          "sleep_entry": 0,
+          "recovery_checkin": 0,
+          "cardio_topic": 10,
+          "cardio_modality": 2,
+          "cardio_plan": 1,
+          "conditioning_routine": 0,
+          "supplement_ingredient": 12,
+          "supplement_evidence_topic": 0,
+          "measurement_protocol": 0,
+          "progress_topic": 0,
+          "body_measurement": 0,
+          "dashboard_widget": 4
+        },
+        "builtAt": "2026-10-08T08:08:02.000Z",
+        "locale": "en"
+      },
+      "verifiedSourceFileSha256": "c6a02c7f52ebc0eb8e7992adb929945b36c29520f4aa4998b28ddd1f9c1c8bc2"
+    },
+    "gates": [
+      {
+        "gate": "ci",
+        "exitCode": 0,
+        "completedAt": "2026-10-12T10:51:43.3732839Z"
+      },
+      {
+        "gate": "run check",
+        "exitCode": 0,
+        "completedAt": "2026-10-12T10:55:07.5842910Z"
+      },
+      {
+        "gate": "run test:coverage",
+        "exitCode": 0,
+        "completedAt": "2026-10-12T10:56:42.7499532Z"
+      },
+      {
+        "gate": "audit --json",
+        "exitCode": 0,
+        "completedAt": "2026-10-12T10:56:45.4665135Z"
+      },
+      {
+        "gate": "audit --audit-level=high",
+        "exitCode": 0,
+        "completedAt": "2026-10-12T10:56:48.1367302Z"
+      },
+      {
+        "gate": "outdated --json",
+        "exitCode": 1,
+        "completedAt": "2026-10-12T10:56:52.7286203Z"
+      },
+      {
+        "gate": "install-scripts ls",
+        "exitCode": 1,
+        "completedAt": "2026-10-12T10:56:55.1741564Z"
+      }
+    ]
+  },
+  "performance": {
+    "javascriptAssets": 158,
+    "javascriptGzipBytes": 701394,
+    "javascriptBudgetBytes": 716800,
+    "largestChunkGzipBytes": 168458,
+    "largestChunkBudgetBytes": 204800,
+    "publicJsonAssets": 97,
+    "publicJsonGzipBytes": 429517,
+    "publicJsonBudgetBytes": 524288,
+    "largestPublicJsonGzipBytes": 59287,
+    "publicJsonShardGzipBudgetBytes": 65536,
+    "publicJsonShardRawBudgetBytes": 1048576
+  },
+  "content": {
+    "published": 520,
+    "backlog": 900,
+    "modules": [
+      {
+        "module": "muscles",
+        "totalIdentities": 70,
+        "publishedIdentities": 70,
+        "draftIdentities": 0,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "exercises",
+        "totalIdentities": 184,
+        "publishedIdentities": 32,
+        "draftIdentities": 152,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "workout-science",
+        "totalIdentities": 98,
+        "publishedIdentities": 32,
+        "draftIdentities": 66,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "programs",
+        "totalIdentities": 50,
+        "publishedIdentities": 4,
+        "draftIdentities": 46,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "foods",
+        "totalIdentities": 342,
+        "publishedIdentities": 264,
+        "draftIdentities": 78,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "nutrients",
+        "totalIdentities": 51,
+        "publishedIdentities": 51,
+        "draftIdentities": 0,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "recipes",
+        "totalIdentities": 24,
+        "publishedIdentities": 24,
+        "draftIdentities": 0,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "meal-templates",
+        "totalIdentities": 3,
+        "publishedIdentities": 3,
+        "draftIdentities": 0,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "recovery",
+        "totalIdentities": 124,
+        "publishedIdentities": 15,
+        "draftIdentities": 109,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "cardio",
+        "totalIdentities": 202,
+        "publishedIdentities": 13,
+        "draftIdentities": 189,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      },
+      {
+        "module": "supplements",
+        "totalIdentities": 272,
+        "publishedIdentities": 12,
+        "draftIdentities": 260,
+        "humanReviewedIdentities": 0,
+        "reviewLevel": "published_personal_use"
+      }
+    ],
+    "foodProfiles": 273,
+    "numericFoodValues": 10011,
+    "searchDocuments": 648,
+    "review": "Machine-only published_personal_use; no independent human/clinical review. No new publication or source review dates."
+  },
+  "github": {
+    "repository": "https://github.com/YellankiKaushik/Gymuuuuuuu",
+    "defaultBranch": "main",
+    "mainProtected": false,
+    "ciRuns": [
+      {
+        "id": 38134205091,
+        "name": "CI",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+        "html_url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38134205091",
+        "created_at": "2026-10-11T11:04:00Z"
+      },
+      {
+        "id": 38134196808,
+        "name": "Cross-browser regression",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+        "html_url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38134196808",
+        "created_at": "2026-10-11T11:03:51Z"
+      },
+      {
+        "id": 38134196792,
+        "name": "CI",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+        "html_url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38134196792",
+        "created_at": "2026-10-11T11:03:51Z"
+      }
+    ],
+    "workflowPolicy": "3 workflows; contents:read; SHA-pinned actions; persist-credentials:false; no secrets/deployment/pull_request_target. New report-only push may start checks; execution tree remains identical."
+  },
+  "unsupported": [
+    "Accounts/authentication and access-controlled sharing",
+    "Cloud personal storage/sync, Supabase/Firebase, payments, social features, admin CMS and external runtime fitness APIs",
+    "Automatic tracking, wearables/sensors, automatic photo uploads, analytics/telemetry",
+    "Encrypted/authenticated backups; hashes establish integrity, not trusted authorship",
+    "Global import-as-copy and globally atomic cross-database restore",
+    "Photo ZIP import (ZIP is export; full-media JSON is the tested restore path)",
+    "Clinical diagnosis/prescribing, composite health/recovery/physique scores, inferred body-fat, fabricated calorie burn/VO2max/fitness age",
+    "Full encyclopedia coverage, independent human/clinical review and unavailable media are not implied",
+    "Local Windows Firefox is unsupported on this host; hosted Linux Firefox supplies that gate"
+  ],
+  "ownerTasks": [
+    {
+      "id": "OWNER-01",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Physical Android",
+      "deviceEnvironment": "Android Chrome at the stable production origin",
+      "steps": "Open home/search/workout/nutrition/backup; use portrait and landscape; save synthetic workout and diary records; reload and revisit history.",
+      "passCondition": "All controls readable and touchable; records survive reload.",
+      "failureSymptoms": "Clipped controls, touch failures, lost saves or console errors.",
+      "severityIfFailed": "P1 if data loss; otherwise P2"
+    },
+    {
+      "id": "OWNER-02",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Physical iPhone",
+      "deviceEnvironment": "iPhone Safari, normal browsing",
+      "steps": "Repeat workout/diary/backup flows; rotate; scroll with keyboard open; reload saved synthetic records.",
+      "passCondition": "Navigation, keyboard and persistence work without blocked controls.",
+      "failureSymptoms": "Keyboard obscures submit, page jumps, inaccessible actions or lost records.",
+      "severityIfFailed": "P1 if data loss; otherwise P2"
+    },
+    {
+      "id": "OWNER-03",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Physical iPad/tablet",
+      "deviceEnvironment": "Physical iPad Safari or Android tablet",
+      "steps": "Use split view and rotation; browse food/exercise detail; open filters, comparison and backup dialogs.",
+      "passCondition": "Tables scroll, dialogs fit and navigation stays usable.",
+      "failureSymptoms": "Overlapping navigation, trapped scroll or clipped actions.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-04",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Real desktop workflow",
+      "deviceEnvironment": "Owner desktop browser/profile on production",
+      "steps": "Start a synthetic workout; log a set; finish; log nutrition; review history/dashboard; open a second tab and reload.",
+      "passCondition": "Saved feedback matches persisted records and tab state.",
+      "failureSymptoms": "Stale records, duplicate saves, incorrect history or lost edits.",
+      "severityIfFailed": "P1 if data loss; otherwise P2"
+    },
+    {
+      "id": "OWNER-05",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Native file picker and save",
+      "deviceEnvironment": "Desktop and mobile native OS dialogs",
+      "steps": "Open /settings/data/backup and click Create backup file; open /settings/data/export and click Export spreadsheet-safe CSV; locate both saved files; on /settings/data/restore cancel and reopen Backup file; select the backup and inspect preview without confirming restore.",
+      "passCondition": "Files are usable; cancellation changes no records; preview shows expected counts.",
+      "failureSymptoms": "Picker cannot reopen, truncated download, cancellation writes or missing file.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "OWNER-06",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Native photo picker",
+      "deviceEnvironment": "Android/iOS photo picker with disposable photo",
+      "steps": "Open /progress/photos; use Image file to choose a disposable image; click Sanitize and save photo; reload; cancel a second selection; on /settings/data/backup explicitly choose full media and Create backup file; remove the photo using its confirmation.",
+      "passCondition": "Image persists locally; cancellation preserves it; backup includes sanitized image when explicitly selected.",
+      "failureSymptoms": "Wrong photo, missing image, failed save or unexpected network upload.",
+      "severityIfFailed": "P1 for loss/upload; otherwise P2"
+    },
+    {
+      "id": "OWNER-07",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Storage quota/eviction/persistence",
+      "deviceEnvironment": "Owner browsers including Safari/private-mode behavior",
+      "steps": "In a disposable profile inspect storage-health/persistence; exercise restricted storage; keep an external backup; clear only disposable site data; prepare storage and restore.",
+      "passCondition": "Unavailable storage has honest feedback; restore recovers records; eviction risks understood.",
+      "failureSymptoms": "False success, silent data loss, blocked storage without guidance or unusable recovery.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "OWNER-08",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human keyboard evaluation",
+      "deviceEnvironment": "Desktop keyboard without mouse",
+      "steps": "Tab through navigation/search/forms; open/close dialogs; use Escape; submit and correct invalid inputs; inspect focus after actions.",
+      "passCondition": "Visible focus and logical order; no trap; dialog returns focus.",
+      "failureSymptoms": "Invisible focus, unreachable controls, trapped focus or unclear errors.",
+      "severityIfFailed": "P2; P1 if core flow unusable"
+    },
+    {
+      "id": "OWNER-09",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human screen reader",
+      "deviceEnvironment": "NVDA/Firefox or Chrome; VoiceOver/Safari; TalkBack if available",
+      "steps": "Read home, workout, diary, comparison and backup; navigate landmarks/headings; trigger validation and save; inspect dialogs/table captions.",
+      "passCondition": "Names, values, errors and status updates are understandable; all core actions reachable.",
+      "failureSymptoms": "Unlabelled fields, silent errors/saves, incorrect dialog focus or unusable tables.",
+      "severityIfFailed": "P1 if core flow inaccessible; otherwise P2"
+    },
+    {
+      "id": "OWNER-10",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human zoom and reflow",
+      "deviceEnvironment": "Desktop 200%/400% zoom plus mobile larger text",
+      "steps": "Increase zoom/text; inspect search, food detail, calculator, history and restore; keep keyboard focus visible.",
+      "passCondition": "Text and actions remain usable; only intended table regions scroll sideways.",
+      "failureSymptoms": "Clipped text/actions, page-wide overflow or missing focused control.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-11",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human print review",
+      "deviceEnvironment": "Desktop print preview/PDF and printer if available",
+      "steps": "Preview public exercise/food/recipe pages and a disposable local summary; inspect page breaks, sources, units and privacy before saving/printing.",
+      "passCondition": "Readable output preserves context and sources; chosen private output is intentional.",
+      "failureSymptoms": "Missing units/sources, truncated records, unreadable contrast or unexpected private output.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-12",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Subjective usability and visual review",
+      "deviceEnvironment": "Owner devices, light/dark themes, reduced motion",
+      "steps": "Run one realistic synthetic session; inspect labels, empty/error states, feedback, touch targets and motion in both themes.",
+      "passCondition": "Owner can complete flows and distinguish unavailable, unknown and estimated values.",
+      "failureSymptoms": "Misleading feedback, ambiguous control, painful contrast or distracting motion.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-13",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Real personal-data workflow",
+      "deviceEnvironment": "Stable origin and owner-controlled normal profile after synthetic tests pass",
+      "steps": "Keep an external backup first; enter a small real workout/diary/measurement; edit and reload; export; inspect exact values privately.",
+      "passCondition": "Actual values, dates, units and immutable snapshots match the owner’s entries.",
+      "failureSymptoms": "Incorrect conversion/date, overwritten snapshot, unexpected sharing or lost record.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "OWNER-14",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Backup custody and independent restore drill",
+      "deviceEnvironment": "Private external storage and separate disposable browser profile",
+      "steps": "On /settings/data/backup click Create backup file for portable and explicit full-media profiles as needed; copy files outside browser; in a fresh disposable profile open /settings/data/restore and click Prepare local storage; select Backup file; compare preview counts; confirm Replace matching stores only in that disposable profile; reload and compare exact records/media; retain original files privately.",
+      "passCondition": "Owner can recover exact records/media and keep unencrypted files private.",
+      "failureSymptoms": "Only browser copy exists, unreadable file, count mismatch, missing media or public exposure.",
+      "severityIfFailed": "P1"
+    }
+  ],
+  "blockers": {
+    "P0": [],
+    "P1": [],
+    "P2": [],
+    "OWNER": [
+      "OWNER-01",
+      "OWNER-02",
+      "OWNER-03",
+      "OWNER-04",
+      "OWNER-05",
+      "OWNER-06",
+      "OWNER-07",
+      "OWNER-08",
+      "OWNER-09",
+      "OWNER-10",
+      "OWNER-11",
+      "OWNER-12",
+      "OWNER-13",
+      "OWNER-14"
+    ],
+    "BACKLOG": 900
+  },
+  "filesChanged": [
+    "README.md",
+    "docs/phases/phase-19.md",
+    "docs/security/final-threat-model.md",
+    "docs/decisions/final-automatable-completion-scope.md",
+    "docs/reports/final-project-completion-matrix.md",
+    "docs/reports/final-project-completion-matrix.json",
+    "docs/reports/final-automatable-completion.md",
+    "docs/reports/final-automatable-completion.json",
+    "docs/reports/final-owner-manual-checklist.md",
+    "docs/reports/final-owner-manual-checklist.json"
+  ],
+  "finalTag": "fitness-os-automatable-complete",
+  "evidenceDirectory": "artifacts/final-completion",
+  "limitations": [
+    "Representative interactions plus full route renders do not exhaust every possible UI state.",
+    "Human assistive technology, print, physical devices and native OS pickers remain unperformed.",
+    "No screenshot OCR or unreachable/inaccessible remote Git objects in secret scan.",
+    "Scoped runtime log windows do not establish all-time absence of errors."
+  ],
+  "conclusion": "Fitness OS has completed all automatable engineering, security, privacy, data-safety, accessibility, responsive, testing and production-verification work. Remaining work is limited to owner-led physical-device and human usability testing plus intentionally frozen content backlog."
+}

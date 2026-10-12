@@ -7,6 +7,12 @@ Automatic Git deployment remains disabled; releases are owner-controlled. The ex
 verified content subset does not certify clinical review, real-device testing
 or completion of every planned content identity.
 
+The current finite completion pass is recorded in
+[automatable completion](docs/reports/final-automatable-completion.md),
+[module matrix](docs/reports/final-project-completion-matrix.md), and
+[owner checklist](docs/reports/final-owner-manual-checklist.md). These reports
+separate automated evidence from the physical-device and human checks still due.
+
 Historical [verification report](docs/reports/phase19-manual-test-ready.md) and
 [machine-readable evidence](docs/reports/phase19-ci-manual-test-ready.json):
 338 unit tests; 282 tests per local Chromium/WebKit and hosted
@@ -202,5 +208,7 @@ See the [security audit](docs/reports/final-security-audit.md),
 [threat model](docs/security/final-threat-model.md). Earlier reports remain
 historical evidence for their recorded commits. The factual dataset and 900-item
 backlog remain frozen. No tracked files are deleted, renamed or moved in this pass.
-Runtime fixes are verified locally and in hosted CI; the owner must redeploy the
-new tested commit manually before expecting those fixes on production.
+Those runtime fixes were deployed by the owner on October 11, 2026, in
+`dpl_JD7GorUhs1CTSSroEArjs8r4zG8i`, running
+`80f06ab2b6b1f6d4da252455efcc71a1daecde09`. Later documentation-only commits
+do not require redeployment. Future runtime changes remain owner-controlled.

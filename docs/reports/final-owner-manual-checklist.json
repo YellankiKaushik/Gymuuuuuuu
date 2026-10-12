@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "status": "OWNER_MANUAL_REQUIRED",
+  "origin": "https://kaush-ka-gym.vercel.app",
+  "tasks": [
+    {
+      "id": "OWNER-01",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Physical Android",
+      "deviceEnvironment": "Android Chrome at the stable production origin",
+      "steps": "Open home/search/workout/nutrition/backup; use portrait and landscape; save synthetic workout and diary records; reload and revisit history.",
+      "passCondition": "All controls readable and touchable; records survive reload.",
+      "failureSymptoms": "Clipped controls, touch failures, lost saves or console errors.",
+      "severityIfFailed": "P1 if data loss; otherwise P2"
+    },
+    {
+      "id": "OWNER-02",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Physical iPhone",
+      "deviceEnvironment": "iPhone Safari, normal browsing",
+      "steps": "Repeat workout/diary/backup flows; rotate; scroll with keyboard open; reload saved synthetic records.",
+      "passCondition": "Navigation, keyboard and persistence work without blocked controls.",
+      "failureSymptoms": "Keyboard obscures submit, page jumps, inaccessible actions or lost records.",
+      "severityIfFailed": "P1 if data loss; otherwise P2"
+    },
+    {
+      "id": "OWNER-03",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Physical iPad/tablet",
+      "deviceEnvironment": "Physical iPad Safari or Android tablet",
+      "steps": "Use split view and rotation; browse food/exercise detail; open filters, comparison and backup dialogs.",
+      "passCondition": "Tables scroll, dialogs fit and navigation stays usable.",
+      "failureSymptoms": "Overlapping navigation, trapped scroll or clipped actions.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-04",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Real desktop workflow",
+      "deviceEnvironment": "Owner desktop browser/profile on production",
+      "steps": "Start a synthetic workout; log a set; finish; log nutrition; review history/dashboard; open a second tab and reload.",
+      "passCondition": "Saved feedback matches persisted records and tab state.",
+      "failureSymptoms": "Stale records, duplicate saves, incorrect history or lost edits.",
+      "severityIfFailed": "P1 if data loss; otherwise P2"
+    },
+    {
+      "id": "OWNER-05",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Native file picker and save",
+      "deviceEnvironment": "Desktop and mobile native OS dialogs",
+      "steps": "Open /settings/data/backup and click Create backup file; open /settings/data/export and click Export spreadsheet-safe CSV; locate both saved files; on /settings/data/restore cancel and reopen Backup file; select the backup and inspect preview without confirming restore.",
+      "passCondition": "Files are usable; cancellation changes no records; preview shows expected counts.",
+      "failureSymptoms": "Picker cannot reopen, truncated download, cancellation writes or missing file.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "OWNER-06",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Native photo picker",
+      "deviceEnvironment": "Android/iOS photo picker with disposable photo",
+      "steps": "Open /progress/photos; use Image file to choose a disposable image; click Sanitize and save photo; reload; cancel a second selection; on /settings/data/backup explicitly choose full media and Create backup file; remove the photo using its confirmation.",
+      "passCondition": "Image persists locally; cancellation preserves it; backup includes sanitized image when explicitly selected.",
+      "failureSymptoms": "Wrong photo, missing image, failed save or unexpected network upload.",
+      "severityIfFailed": "P1 for loss/upload; otherwise P2"
+    },
+    {
+      "id": "OWNER-07",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Storage quota/eviction/persistence",
+      "deviceEnvironment": "Owner browsers including Safari/private-mode behavior",
+      "steps": "In a disposable profile inspect storage-health/persistence; exercise restricted storage; keep an external backup; clear only disposable site data; prepare storage and restore.",
+      "passCondition": "Unavailable storage has honest feedback; restore recovers records; eviction risks understood.",
+      "failureSymptoms": "False success, silent data loss, blocked storage without guidance or unusable recovery.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "OWNER-08",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human keyboard evaluation",
+      "deviceEnvironment": "Desktop keyboard without mouse",
+      "steps": "Tab through navigation/search/forms; open/close dialogs; use Escape; submit and correct invalid inputs; inspect focus after actions.",
+      "passCondition": "Visible focus and logical order; no trap; dialog returns focus.",
+      "failureSymptoms": "Invisible focus, unreachable controls, trapped focus or unclear errors.",
+      "severityIfFailed": "P2; P1 if core flow unusable"
+    },
+    {
+      "id": "OWNER-09",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human screen reader",
+      "deviceEnvironment": "NVDA/Firefox or Chrome; VoiceOver/Safari; TalkBack if available",
+      "steps": "Read home, workout, diary, comparison and backup; navigate landmarks/headings; trigger validation and save; inspect dialogs/table captions.",
+      "passCondition": "Names, values, errors and status updates are understandable; all core actions reachable.",
+      "failureSymptoms": "Unlabelled fields, silent errors/saves, incorrect dialog focus or unusable tables.",
+      "severityIfFailed": "P1 if core flow inaccessible; otherwise P2"
+    },
+    {
+      "id": "OWNER-10",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human zoom and reflow",
+      "deviceEnvironment": "Desktop 200%/400% zoom plus mobile larger text",
+      "steps": "Increase zoom/text; inspect search, food detail, calculator, history and restore; keep keyboard focus visible.",
+      "passCondition": "Text and actions remain usable; only intended table regions scroll sideways.",
+      "failureSymptoms": "Clipped text/actions, page-wide overflow or missing focused control.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-11",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Human print review",
+      "deviceEnvironment": "Desktop print preview/PDF and printer if available",
+      "steps": "Preview public exercise/food/recipe pages and a disposable local summary; inspect page breaks, sources, units and privacy before saving/printing.",
+      "passCondition": "Readable output preserves context and sources; chosen private output is intentional.",
+      "failureSymptoms": "Missing units/sources, truncated records, unreadable contrast or unexpected private output.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-12",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Subjective usability and visual review",
+      "deviceEnvironment": "Owner devices, light/dark themes, reduced motion",
+      "steps": "Run one realistic synthetic session; inspect labels, empty/error states, feedback, touch targets and motion in both themes.",
+      "passCondition": "Owner can complete flows and distinguish unavailable, unknown and estimated values.",
+      "failureSymptoms": "Misleading feedback, ambiguous control, painful contrast or distracting motion.",
+      "severityIfFailed": "P2"
+    },
+    {
+      "id": "OWNER-13",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Real personal-data workflow",
+      "deviceEnvironment": "Stable origin and owner-controlled normal profile after synthetic tests pass",
+      "steps": "Keep an external backup first; enter a small real workout/diary/measurement; edit and reload; export; inspect exact values privately.",
+      "passCondition": "Actual values, dates, units and immutable snapshots match the owner’s entries.",
+      "failureSymptoms": "Incorrect conversion/date, overwritten snapshot, unexpected sharing or lost record.",
+      "severityIfFailed": "P1"
+    },
+    {
+      "id": "OWNER-14",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "task": "Backup custody and independent restore drill",
+      "deviceEnvironment": "Private external storage and separate disposable browser profile",
+      "steps": "On /settings/data/backup click Create backup file for portable and explicit full-media profiles as needed; copy files outside browser; in a fresh disposable profile open /settings/data/restore and click Prepare local storage; select Backup file; compare preview counts; confirm Replace matching stores only in that disposable profile; reload and compare exact records/media; retain original files privately.",
+      "passCondition": "Owner can recover exact records/media and keep unencrypted files private.",
+      "failureSymptoms": "Only browser copy exists, unreadable file, count mismatch, missing media or public exposure.",
+      "severityIfFailed": "P1"
+    }
+  ],
+  "optionalGovernanceRecommendation": "Protect main with required checks/review in owner GitHub settings; no settings mutation performed."
+}

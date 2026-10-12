@@ -1,5 +1,31 @@
 # Phase 19 handoff
 
+## Current final completion checkpoint — October 12, 2026
+
+The finite release completion pass is **automatable-complete** for the frozen
+implementation. See the [completion report](../reports/final-automatable-completion.md),
+[module matrix](../reports/final-project-completion-matrix.md), and
+[14-category owner checklist](../reports/final-owner-manual-checklist.md).
+The checklist model is 29/29 automated checkpoints (100%) and 29/43 full-release
+categories (67%); physical-device and human tests remain unperformed.
+
+- [x] Clean install, formatting, lint, strict types, provenance/search validation,
+      358 unit tests in 95 files, coverage, privacy, build and unchanged budgets.
+- [x] Local Chromium and WebKit: 287 passing cases each; current-main hosted
+      Chromium/Firefox/WebKit: 287 each; hosted accessibility: 184.
+- [x] Current-build route audit: 702/702, zero failed/unmeasured routes, application
+      errors, failed required assets or unexpected external traffic.
+- [x] Live production: 33 focused workflows; zero synthetic marker/remote/CSP
+      leaks; 182 responsive states and 54 axe scans. The deployed runtime is
+      `80f06ab2b6b1f6d4da252455efcc71a1daecde09`; documentation-only descendants
+      require no redeploy.
+- [x] No factual expansion, tracked deletion/rename/move or history rewrite.
+      The owner's local `.gitignore` change is unchanged and unstaged.
+- [ ] Owner physical-device, native picker, storage, assistive-technology, print,
+      real-data and external-backup testing, with exact steps in the checklist.
+
+The paragraphs below preserve historical checkpoints and their recorded scope.
+
 Status: **Ready for owner manual testing.** Content expansion is frozen under the superseding October 8 owner instruction. The 520-record local subset is preserved; 900 unpublished identities are future backlog and do not block manual testing.
 
 Final evidence: [manual-test report](../reports/phase19-manual-test-ready.md) and [machine-readable verification](../reports/phase19-ci-manual-test-ready.json). The tested commit is 93047ce622c604d6676433ee426bcb361febf927; the final checkpoint adds only reports, handoff and synthetic screenshots. All 823 production files remained unchanged after verification. Unit/coverage: 338 tests in 92 files. Local Chromium/WebKit: 282 each. Hosted Ubuntu Chromium/Firefox/WebKit: 282 each; mandatory accessibility: 184. Final route audit: 702/702, zero failed or unmeasured. Clean install, full check, npm audit (zero vulnerabilities), production build and unchanged performance budgets passed. No production deployment, domain connection or real-device manual testing was performed.

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-12T11:27:51.110Z",
+  "testedCommit": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+  "statuses": [
+    "COMPLETE_AUTOMATED",
+    "COMPLETE_LIVE_VERIFIED",
+    "OWNER_MANUAL_REQUIRED",
+    "BLOCKED_EXTERNAL",
+    "INTENTIONALLY_UNSUPPORTED",
+    "FUTURE_BACKLOG"
+  ],
+  "percentageModel": {
+    "automatableEngineeringPercent": 100,
+    "fullReleasePercent": 67,
+    "automatedPassed": 29,
+    "automatedTotal": 29,
+    "ownerOnlyCount": 14,
+    "fullReleaseTotal": 43,
+    "P0": 0,
+    "P1": 0,
+    "P2": 0,
+    "backlogCount": 900,
+    "model": "29 equal-weight automatable module/cross-cutting checkpoints; 14 equally weighted owner categories remain. 29/29=100%; round(29/43*100)=67%. Frozen factual identities and intentionally unsupported features are excluded. This is checklist completion, not universal coverage or certification."
+  },
+  "modules": [
+    {
+      "module": "00 Foundation",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Foundation unit and browser gates",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "01 App shell/navigation/design system",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Foundation navigation, keyboard, themes, hydration and reflow",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "02 Anatomy",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "70 published records; canonical/provenance and full route audit",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "03 Exercise encyclopedia",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "32 published records; safe drafts, filters, zoom and routes",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "04 Workout science",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "32 published topics; provenance, navigation and reflow",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "05 Programs",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "4 programs; selection, unspecified duration and immutable snapshots",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "06 Workout tracker",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Start/add set/reload/finish/history/edit/backup",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "07 Foods",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "264 foods; preparations, 100 g composition, unknown values and filters",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "08 Nutrients",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "51 articles and 35 FDA reference rows; no personal intake inference",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "09 Diet planning/calculators",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Adult eligibility, consent, unsupported goals, formulas and save/restore",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "10 Nutrition tracker",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Grams snapshot, diary, totals, custom foods, edits and persistence",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "11 Recipes/meal planning",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "24 recipes/3 collections; source-preserving copy, scale, log, local plans",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "12 Recovery/sleep/mobility",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Sleep estimates; pain/illness distinct from soreness; routines and reload",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "13 Cardio",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "13 public identities; session/history/player/backup and safety labels",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "14 Supplements",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "12 ingredients; evidence, labels/intakes/trials/events and snapshots",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "15 Body progress/dashboard/analytics",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Weight/circumference/photo persistence; source-labelled estimates and widgets",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "16 Search/favourites/comparison",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "648 public documents; local-only private search; saved references/comparison",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "17 Local storage/backup/export",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "7 owning databases; validation, journal/rollback, portable/full-media and CSV",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "18 Testing/GitHub/Vercel",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Clean gates, local browsers, hosted browsers, 702 routes and live deployment",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "19 Final verified content/release state",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "520 factual identities; machine-only publication review; 900 drafts frozen",
+      "remainingWork": "Owner checklist applies; factual expansion remains frozen where applicable."
+    },
+    {
+      "module": "Security",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Current source inventory, secret scan, XSS, URL/import/media regressions, npm audit and live CSP/headers",
+      "remainingWork": "No observed unresolved engineering finding; residual trust boundaries documented."
+    },
+    {
+      "module": "Privacy",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "33 monitored live cases, synthetic SSR cohort and both local browser portability journeys",
+      "remainingWork": "Owner browser profile and backup custody."
+    },
+    {
+      "module": "Accessibility",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Full route axe states, 184 tagged checks per local browser, hosted accessibility and live dialog/route axe",
+      "remainingWork": "Human keyboard, screen reader, zoom and print checklist."
+    },
+    {
+      "module": "Responsive behavior",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "13 live routes × 7 widths × 2 themes = 182 states; full local reflow and route audit",
+      "remainingWork": "Physical Android/iPhone/iPad and subjective evaluation."
+    },
+    {
+      "module": "Performance",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Production JS/chunk/JSON budgets, required assets and hydrated routes",
+      "remainingWork": "No marginal optimization scope."
+    },
+    {
+      "module": "Import/export",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Zero-write preview; invalid import preservation; fresh-profile restore; CSV injection safety",
+      "remainingWork": "Native picker/save and owner-held backup drill."
+    },
+    {
+      "module": "Photo/media handling",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Synthetic metadata removal, MIME/signature/corruption/size guards, portable exclusion and full-media restore",
+      "remainingWork": "Native photo picker and real device decoder."
+    },
+    {
+      "module": "Production deployment",
+      "status": "COMPLETE_LIVE_VERIFIED",
+      "automatedVerification": "Authenticated Vercel source/runtime/domain/env inspection, HTTPS/CSP/nonces and live workflows",
+      "remainingWork": "No redeploy required for documentation-only descendants."
+    },
+    {
+      "module": "Documentation",
+      "status": "COMPLETE_AUTOMATED",
+      "automatedVerification": "Current README, security model, completion matrix, evidence and owner checklist",
+      "remainingWork": "Follow the owner checklist; historical reports remain in place."
+    },
+    {
+      "module": "Owner-only tasks",
+      "status": "OWNER_MANUAL_REQUIRED",
+      "automatedVerification": "Automation cannot replace the physical/human tasks below",
+      "remainingWork": "14 categories remain."
+    },
+    {
+      "module": "Frozen factual content backlog",
+      "status": "FUTURE_BACKLOG",
+      "automatedVerification": "900 unpublished identities remain excluded from public search/publication",
+      "remainingWork": "Future owner-authorized source work; excluded from release percentage."
+    },
+    {
+      "module": "Unsupported by design",
+      "status": "INTENTIONALLY_UNSUPPORTED",
+      "automatedVerification": "Unavailable modes are labelled; project exclusions remain enforced",
+      "remainingWork": "No accounts/auth/cloud personal sync/payments/social/admin CMS/external fitness APIs."
+    }
+  ]
+}
