@@ -637,11 +637,37 @@ test("200/400 percent effective viewport and large-text theme reflow", async ({
       for (const theme of ["light", "dark"]) {
         await page.evaluate(
           ({ fontSize, theme }) => {
+            if (fontSize === "32px") {
+              // Many established components use px text. Doubling only the root
+              // would leave them unchanged, so scale their measured text too.
+              const elements = [
+                ...document.querySelectorAll<HTMLElement>("body, body *"),
+              ];
+              const sizes = elements.map(
+                (element) =>
+                  element.dataset.closureBaseFont ??
+                  getComputedStyle(element).fontSize,
+              );
+              elements.forEach((element, index) => {
+                element.dataset.closureBaseFont = sizes[index]!;
+                element.style.fontSize = `${parseFloat(sizes[index]!) * 2}px`;
+              });
+            }
             document.documentElement.style.fontSize = fontSize;
             document.documentElement.dataset.theme = theme;
           },
           { fontSize, theme },
         );
+        if (fontSize === "32px")
+          expect(
+            await page
+              .locator("body")
+              .evaluate(
+                (element) =>
+                  parseFloat(getComputedStyle(element).fontSize) /
+                  parseFloat((element as HTMLElement).dataset.closureBaseFont!),
+              ),
+          ).toBe(2);
         await geometry(page);
         states.push({ route, width, fontSize, theme, scenario });
       }
