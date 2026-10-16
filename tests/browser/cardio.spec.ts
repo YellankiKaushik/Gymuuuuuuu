@@ -26,21 +26,20 @@ const routes = [
   "/cardio/privacy",
 ];
 for (const theme of ["light", "dark"])
-  test(`Phase 13 routes, accessibility and layout in ${theme}`, async ({
-    page,
-  }) => {
-    test.setTimeout(240000);
-    await page.addInitScript(
-      (theme) =>
-        localStorage.setItem(
-          "fitness-os:preferences:v1",
-          JSON.stringify({ theme }),
-        ),
-      theme,
-    );
-    for (const width of [320, 768, 1440]) {
-      await page.setViewportSize({ width, height: 900 });
-      for (const route of routes) {
+  for (const width of [320, 768, 1440])
+    for (const route of routes)
+      test(`Phase 13 accessibility ${route} at ${width}px in ${theme}`, async ({
+        page,
+      }) => {
+        await page.addInitScript(
+          (theme) =>
+            localStorage.setItem(
+              "fitness-os:preferences:v1",
+              JSON.stringify({ theme }),
+            ),
+          theme,
+        );
+        await page.setViewportSize({ width, height: 900 });
         await page.goto(route);
         await expect(page.locator(".cardio-page")).toBeVisible();
         await expect(page.getByText("Loading browser records…")).toHaveCount(0);
@@ -58,9 +57,7 @@ for (const theme of ["light", "dark"])
           (await new AxeBuilder({ page }).analyze()).violations,
           `${route} ${width} ${theme}`,
         ).toEqual([]);
-      }
-    }
-  });
+      });
 test("cardio manual entry, audit correction, immutable routine versions, resumable player, backup and SSR privacy", async ({
   page,
   context,

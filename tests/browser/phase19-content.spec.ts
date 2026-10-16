@@ -249,24 +249,26 @@ test.describe("Published library routes", () => {
   // Each read-only route case has an isolated browser context and no shared writes.
   test.describe.configure({ mode: "parallel" });
   for (const [path, title] of publicRoutes) {
-    test(`@a11y Phase 19 published content ${path}`, async ({ page }) => {
-      const errors: string[] = [];
-      const remote: string[] = [];
-      page.on("pageerror", (error) => errors.push(error.message));
-      page.on("request", (request) => {
-        if (!request.url().startsWith("http://127.0.0.1:3000"))
-          remote.push(request.url());
-      });
-      await page.goto(path);
-      await expect(
-        page.getByRole("heading", { name: title, exact: true }).first(),
-      ).toBeVisible();
-      await expect(
-        page
-          .getByText(/personal.use publication|published_personal_use/i)
-          .first(),
-      ).toBeVisible();
-      for (const width of [320, 768, 1440]) {
+    for (const width of [320, 768, 1440]) {
+      test(`@a11y Phase 19 published content ${path} at ${width}px`, async ({
+        page,
+      }) => {
+        const errors: string[] = [];
+        const remote: string[] = [];
+        page.on("pageerror", (error) => errors.push(error.message));
+        page.on("request", (request) => {
+          if (!request.url().startsWith("http://127.0.0.1:3000"))
+            remote.push(request.url());
+        });
+        await page.goto(path);
+        await expect(
+          page.getByRole("heading", { name: title, exact: true }).first(),
+        ).toBeVisible();
+        await expect(
+          page
+            .getByText(/personal.use publication|published_personal_use/i)
+            .first(),
+        ).toBeVisible();
         await page.setViewportSize({ width, height: 1000 });
         for (const theme of ["light", "dark"]) {
           await page.evaluate((value) => {
@@ -285,10 +287,10 @@ test.describe("Published library routes", () => {
             ).violations,
           ).toEqual([]);
         }
-      }
-      expect(errors).toEqual([]);
-      expect(remote).toEqual([]);
-    });
+        expect(errors).toEqual([]);
+        expect(remote).toEqual([]);
+      });
+    }
   }
 });
 test("public recipe loads independently of personal databases and rejects unknown slugs", async ({

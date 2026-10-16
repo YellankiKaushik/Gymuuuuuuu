@@ -24,7 +24,7 @@ Desktop navigation keeps eight primary destinations and compact persistent syste
 actions. Secondary group links open an adjacent panel rather than increasing the
 sidebar's normal height. Only one panel opens at once; Escape restores opener
 focus. Explicit focus on pointer activation supports WebKit's non-focusing button
-behavior. At heights below 650px the sidebar may scroll as an accessible fallback.
+behavior. At heights below 700px the sidebar may scroll as an accessible fallback.
 Mobile navigation keeps its existing destinations and focus restoration.
 
 Theme storage retains the existing `system` value and preference schema; the UI
@@ -94,3 +94,24 @@ Line reporting exposes failing test names before a run ends. No tests, assertion
 per-test timeouts, 30/40-minute job limits, workers, coverage thresholds or
 performance budgets are removed or relaxed. This changes execution scheduling,
 not application behavior. Every shard must pass before production deployment.
+
+The first complete sharded results were 12 successful jobs and four failed jobs.
+Named diagnostics confirmed cumulative accessibility scan deadlines in the food
+catalogue, foundation navigation, cardio, nutrition, Progress, search/saved and
+published-route groups. The chicken-drumstick traces show six completed axe runs
+reaching roughly 34 seconds without a reported violation inside a 30-second test.
+These read-only combinations now run in isolated route/viewport cases, with every
+original theme, axe rule, layout, focus, loading, error and request assertion
+retained. The two former 180/240-second aggregate loops use the stricter default
+30-second deadline per isolated case. No timeout is increased. Browser case count
+is 893 and dedicated accessibility count is 561 because of regrouping; the 179
+published routes retain exactly 1,074 viewport/theme scans. CI accessibility also
+uses two shards within its existing 30-minute job limit.
+
+Firefox/Linux additionally confirmed real primary-sidebar overflow at 1440×700
+with its fallback font metrics. Reducing unused top/brand/footer spacing by 16px
+retains all 14px primary text and 44px minimum controls. Necessary fallback
+scrolling applies below 700px. The original no-overflow assertion is preserved as
+an equivalent numeric comparison that now reports content and viewport heights.
+The current local check and all 72 focused Chromium/WebKit correction cases pass;
+current hosted results and production release remain required before completion.

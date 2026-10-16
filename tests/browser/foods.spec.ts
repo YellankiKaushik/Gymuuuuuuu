@@ -106,16 +106,16 @@ test("food discovery filters, sourced publication and safe unknown profiles", as
     page.getByRole("heading", { name: "Missing is different from zero" }),
   ).toBeVisible();
 });
-test("food catalogue reflows and exposes accessible filter dialog", async ({
-  page,
-}) => {
-  for (const width of [320, 1440]) {
-    await page.setViewportSize({ width, height: 1000 });
-    await page.goto("/foods");
-    await expect(
-      page.getByRole("textbox", { name: "Search foods" }),
-    ).toBeEnabled();
-    for (const theme of ["light", "dark"]) {
+for (const width of [320, 1440])
+  for (const theme of ["light", "dark"])
+    test(`food catalogue reflows and exposes accessible filter dialog at ${width}px in ${theme}`, async ({
+      page,
+    }) => {
+      await page.setViewportSize({ width, height: 1000 });
+      await page.goto("/foods");
+      await expect(
+        page.getByRole("textbox", { name: "Search foods" }),
+      ).toBeEnabled();
       await page.evaluate(
         (t) => (document.documentElement.dataset.theme = t),
         theme,
@@ -132,25 +132,25 @@ test("food catalogue reflows and exposes accessible filter dialog", async ({
             .analyze()
         ).violations,
       ).toEqual([]);
-    }
-    await page
-      .getByRole("button", { name: "Food filters", exact: true })
-      .click();
-    await expect(page.getByRole("dialog")).toBeVisible();
-    expect(
-      (
-        await new AxeBuilder({ page })
-          .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
-          .analyze()
-      ).violations,
-    ).toEqual([]);
-    await page.keyboard.press("Escape");
-    await expect(page.getByRole("dialog")).not.toBeVisible();
-    await expect(
-      page.getByRole("button", { name: "Food filters", exact: true }),
-    ).toBeFocused();
-  }
-});
+      if (theme === "dark") {
+        await page
+          .getByRole("button", { name: "Food filters", exact: true })
+          .click();
+        await expect(page.getByRole("dialog")).toBeVisible();
+        expect(
+          (
+            await new AxeBuilder({ page })
+              .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
+              .analyze()
+          ).violations,
+        ).toEqual([]);
+        await page.keyboard.press("Escape");
+        await expect(page.getByRole("dialog")).not.toBeVisible();
+        await expect(
+          page.getByRole("button", { name: "Food filters", exact: true }),
+        ).toBeFocused();
+      }
+    });
 
 test("native food profile control reflows and remains keyboard operable", async ({
   page,

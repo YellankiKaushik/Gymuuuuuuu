@@ -148,33 +148,32 @@ test("private quick-add, immutable custom revisions, fluid editing, undo, backup
   expect(remote).toEqual([]);
   await other.close();
 });
-test("all nutrition routes remain accessible at mobile and desktop widths in both themes", async ({
-  page,
-}) => {
-  test.setTimeout(180000);
-  const errors: string[] = [];
-  page.on("pageerror", (e) => errors.push(e.message));
-  for (const width of [320, 768, 1440])
-    for (const theme of ["light", "dark"]) {
-      await page.setViewportSize({ width, height: 1000 });
-      await page.goto("/settings");
-      await page
-        .getByRole("radio", {
-          name: theme === "dark" ? "Dark" : "Light",
-          exact: true,
-        })
-        .check();
-      for (const path of [
-        "/nutrition",
-        "/nutrition/add",
-        "/nutrition/history",
-        "/nutrition/custom-foods",
-        "/nutrition/settings",
-        "/nutrition/methodology",
-        "/nutrition/privacy",
-        "/nutrition/day/2026-10-04",
-        "/nutrition/custom-foods/custom_food_missing",
-      ]) {
+for (const width of [320, 768, 1440])
+  for (const theme of ["light", "dark"])
+    for (const path of [
+      "/nutrition",
+      "/nutrition/add",
+      "/nutrition/history",
+      "/nutrition/custom-foods",
+      "/nutrition/settings",
+      "/nutrition/methodology",
+      "/nutrition/privacy",
+      "/nutrition/day/2026-10-04",
+      "/nutrition/custom-foods/custom_food_missing",
+    ])
+      test(`nutrition accessibility ${path} at ${width}px in ${theme}`, async ({
+        page,
+      }) => {
+        const errors: string[] = [];
+        page.on("pageerror", (e) => errors.push(e.message));
+        await page.setViewportSize({ width, height: 1000 });
+        await page.goto("/settings");
+        await page
+          .getByRole("radio", {
+            name: theme === "dark" ? "Dark" : "Light",
+            exact: true,
+          })
+          .check();
         await page.goto(path);
         await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
         await expect(
@@ -196,19 +195,21 @@ test("all nutrition routes remain accessible at mobile and desktop widths in bot
           ).violations,
           `${path} ${width} ${theme}`,
         ).toEqual([]);
-      }
-      if (theme === "light" && [320, 1440].includes(width)) {
-        await page.goto("/nutrition/add");
-        await expect(page.getByLabel("Quick-add description")).toBeVisible();
-        await page.evaluate(() => {
-          (document.activeElement as HTMLElement)?.blur();
-          window.scrollTo(0, 0);
-        });
-        await page.screenshot({
-          path: `artifacts/ux-upgrade/regression-screenshots/phase10-add-${width}.png`,
-          fullPage: true,
-        });
-      }
-    }
-  expect(errors).toEqual([]);
-});
+        if (
+          path === "/nutrition/add" &&
+          theme === "light" &&
+          [320, 1440].includes(width)
+        ) {
+          await page.goto("/nutrition/add");
+          await expect(page.getByLabel("Quick-add description")).toBeVisible();
+          await page.evaluate(() => {
+            (document.activeElement as HTMLElement)?.blur();
+            window.scrollTo(0, 0);
+          });
+          await page.screenshot({
+            path: `artifacts/ux-upgrade/regression-screenshots/phase10-add-${width}.png`,
+            fullPage: true,
+          });
+        }
+        expect(errors).toEqual([]);
+      });

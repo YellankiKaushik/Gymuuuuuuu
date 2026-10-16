@@ -126,11 +126,14 @@ for (const [width, height] of [
       ),
     ).toBe(true);
     if (width >= 1024) {
+      const sidebar = await page.locator(".desktop-sidebar").evaluate((el) => ({
+        content: el.scrollHeight,
+        viewport: el.clientHeight,
+      }));
       expect(
-        await page
-          .locator(".desktop-sidebar")
-          .evaluate((el) => el.scrollHeight <= el.clientHeight),
-      ).toBe(true);
+        sidebar.content,
+        "Primary sidebar content must fit its viewport",
+      ).toBeLessThanOrEqual(sidebar.viewport);
       for (const name of [
         "Home",
         "Learn",

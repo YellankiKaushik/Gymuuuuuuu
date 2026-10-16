@@ -53,9 +53,7 @@ test("public search filters stay in URL while private query state never does", a
   await expect(page.getByText(/Private search is off/).first()).toBeVisible();
   await page.getByText("Modules", { exact: true }).click();
   await page.getByRole("checkbox", { name: "Nutrients" }).check();
-  await expect(
-    page.getByRole("checkbox", { name: "Nutrients" }),
-  ).toBeChecked();
+  await expect(page.getByRole("checkbox", { name: "Nutrients" })).toBeChecked();
   await expect(page).toHaveURL(/q=vitamins/);
   await expect(page).toHaveURL(/phase_08_nutrients/);
   await page.getByRole("button", { name: "On-device records" }).click();
@@ -173,18 +171,16 @@ test("collections support rename, private notes, sorting, filtering and moving r
   ).toEqual([]);
 });
 
-test("search settings and saved overview reflow at mobile and desktop widths", async ({
-  page,
-}) => {
-  for (const width of [320, 1280]) {
-    await page.setViewportSize({ width, height: 800 });
-    for (const route of [
-      "/search/settings",
-      "/saved",
-      "/saved/collections",
-      "/recent",
-      "/compare",
-    ]) {
+for (const width of [320, 1280])
+  for (const route of [
+    "/search/settings",
+    "/saved",
+    "/saved/collections",
+    "/recent",
+    "/compare",
+  ])
+    test(`search and saved reflow ${route} at ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 800 });
       await page.goto(route);
       const layout = await page.evaluate(() => ({
         width: document.documentElement.scrollWidth,
@@ -210,6 +206,4 @@ test("search settings and saved overview reflow at mobile and desktop widths", a
         ).violations,
         route,
       ).toEqual([]);
-    }
-  }
-});
+    });
