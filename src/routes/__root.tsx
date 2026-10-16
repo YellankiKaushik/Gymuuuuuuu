@@ -10,7 +10,7 @@ import { PreferenceProvider } from "../components/app-shell/preferences";
 import css from "../styles/app.css?url";
 import { appConfig } from "../config/app";
 
-const themeInit = `(function(){try{var p=JSON.parse(localStorage.getItem('fitness-os:preferences:v1')||'{}');var t=p.theme;if(t!=='dark'&&t!=='light')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}})()`;
+const themeInit = `(function(){try{var t;try{var p=JSON.parse(localStorage.getItem('fitness-os:preferences:v1')||'{}');t=p&&p.theme}catch(e){}if(t!=='dark'&&t!=='light')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}})()`;
 export const Route = createRootRoute({
   head: () => ({
     meta: [

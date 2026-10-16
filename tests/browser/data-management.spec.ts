@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 
 test("local data management exposes all routes with a usable storage inventory", async ({ page }) => {

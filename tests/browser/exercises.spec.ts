@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 test("exercise multiselect, URL restoration, dialog focus and safe content gates", async ({
   page,

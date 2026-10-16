@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 test("ingredient findings retain separate outcomes, forms and confidence without personal dosing", async ({
   page,
 }) => {

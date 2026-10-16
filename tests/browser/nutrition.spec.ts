@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 test("private quick-add, immutable custom revisions, fluid editing, undo, backup restore and cross-tab updates", async ({
@@ -205,7 +205,7 @@ test("all nutrition routes remain accessible at mobile and desktop widths in bot
           window.scrollTo(0, 0);
         });
         await page.screenshot({
-          path: `docs/screenshots/phase10-add-${width}.png`,
+          path: `artifacts/ux-upgrade/regression-screenshots/phase10-add-${width}.png`,
           fullPage: true,
         });
       }

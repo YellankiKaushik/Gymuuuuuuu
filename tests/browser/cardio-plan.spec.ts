@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 test("local cardio plan selection, HR method snapshot, revisions, laps and CSV", async ({
   page,

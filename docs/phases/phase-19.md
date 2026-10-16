@@ -335,3 +335,14 @@ Implementation 335b428868486c487fcae42ca941a3726e082701 passed fresh clean-clone
 - [x] Bind final hosted Chromium/Firefox/WebKit results and clean synchronized main to the annotated completion tag after every final job passes. This checkbox is effective only at that verified tag; before tagging it is a candidate checkpoint.
 
 Current handoff: docs/reports/final-maximum-autonomy-closure.md/json, final-closure-task-register.md/json and final-owner-required-minimal-checklist.md/json. Final hosted gates independently rerun 287 screen cases per engine, 56 closure cases over seven configurations and 184 dedicated accessibility cases. The tag annotation and final handoff identify the final SHA and completed run/job IDs; no future self-hash is invented. Earlier deployment and test statements above remain historical for their stated commits.
+
+## Owner-requested UX upgrade checkpoint
+
+- [x] Fix local Progress timestamp defaults and chronological active-height BMI selection; retain existing records and backup schemas.
+- [x] Fit primary desktop navigation at normal laptop heights; retain mobile navigation, keyboard focus and all destinations.
+- [x] Refine Light/Dark/Auto, pre-paint behavior and the six-area Home map.
+- [x] Cover ten high-value visual areas using original code-native diagrams and 32 unchanged reviewed SVGs; publish provenance.
+- [x] Pass clean install/check, 371 units/97 files, coverage, privacy/build/budgets and zero-vulnerability dependency audit.
+- [x] Pass 328 Chromium cases, the complete 328-case WebKit recheck, 198 dedicated accessibility cases, 48 six-configuration closure cases and all 702 current-build route records after one unchanged environment-error replay.
+
+Handoff: docs/reports/final-owner-requested-ux-upgrade.md/json and docs/decisions/owner-requested-ux-upgrade.md. Initial failures and their unchanged-assertion rechecks remain in ignored task evidence. The exact main commit, hosted Linux checks, production deployment and live verification are bound by the final owner handoff and immutable GitHub/Vercel records; no future self-hash or pre-deployment READY result is invented. Earlier checkpoints above remain historical.

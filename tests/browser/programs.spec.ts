@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 test("program discovery, finder scope and current selection empty states", async ({
   page,
 }) => {

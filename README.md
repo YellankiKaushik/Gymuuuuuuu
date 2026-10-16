@@ -4,11 +4,13 @@ Fitness OS brings fitness education, training, nutrition, recovery and optional 
 
 Built with **TanStack Start, React, strict TypeScript, Tailwind CSS, Vite and Nitro**. There are no accounts, authentication, cloud personal storage, payments, social features, admin CMS, analytics, telemetry or external runtime fitness APIs.
 
-[Application](https://kaush-ka-gym.vercel.app) · [Release evidence](docs/reports/final-maximum-autonomy-closure.md) · [Remaining owner checks](docs/reports/final-owner-required-minimal-checklist.md) · [Deployment runbook](docs/runbooks/vercel-owner-deployment.md)
+[Application](https://kaush-ka-gym.vercel.app) · [Historical release evidence](docs/reports/final-maximum-autonomy-closure.md) · [Remaining owner checks](docs/reports/final-owner-required-minimal-checklist.md) · [Deployment runbook](docs/runbooks/vercel-owner-deployment.md)
 
 ## Project status
 
 Phases 00–18 are implemented, followed by Phase 19 verified-content work and release hardening. The current release publishes a frozen subset of verified content; **900 unpublished identities remain future content backlog** and are excluded from public search.
+
+The owner-requested UX upgrade adds a six-area Home map, compact desktop navigation, Light/Dark/Auto controls, informative workflow figures, reviewed exercise previews and a recorded-weight chart. Progress defaults use local time, and BMI uses the newest valid active measured height. See the [UX upgrade report](docs/reports/final-owner-requested-ux-upgrade.md) for current verification and release binding. The checkpoint below remains historical.
 
 The annotated Git tag `fitness-os-maximum-autonomy-complete` records the October 12, 2026 checkpoint:
 
@@ -23,7 +25,7 @@ Automatic Vercel Git deployment is disabled in `vercel.json`. Releases remain ow
 
 ## What the application includes
 
-Navigation groups the application into Learn, Train, Eat, Recover, Track, Tools, Saved and System. Modules live in `src/features` and are exposed through file-based routes in `src/routes`.
+Primary navigation offers Home, Learn, Train, Eat, Recover, Progress, Tools and Saved, with Sources and Settings available in the sidebar. Home maps the six major working areas and explains public knowledge, local records and backups. Modules live in `src/features` and are exposed through file-based routes in `src/routes`.
 
 | Area                        | Implemented features                                                                                                                         | Entry routes                                    |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -66,6 +68,8 @@ For a local production build:
 npm run build
 npm start
 ```
+
+If the development browser reports an `AsyncLocalStorage` externalization error, use the production build/server commands above. This development-toolchain limitation was observed during UX verification; it does not describe the tested production server.
 
 `build` automatically validates content and checks search-index freshness before Vite builds the application. `start` runs Nitro's `.output/server/index.mjs`; it requires a completed build.
 

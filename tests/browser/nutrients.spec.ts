@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 test("FDA label table preserves 35 exact concepts and rejects unrelated populations", async ({
   page,
@@ -179,18 +179,18 @@ test("reference population is transient, remembers only after explicit action an
   ).toBeVisible();
   expect(remote).toEqual([]);
 });
-test("nutrient and reference controls reflow and remain accessible", async ({
-  page,
-}) => {
-  for (const width of [320, 1440]) {
-    await page.setViewportSize({ width, height: 1000 });
-    for (const path of [
-      "/nutrients",
-      "/nutrients/reference-intakes",
-      "/nutrients/glossary",
-    ]) {
-      await page.goto(path);
-      for (const theme of ["light", "dark"]) {
+for (const width of [320, 1440]) {
+  for (const path of [
+    "/nutrients",
+    "/nutrients/reference-intakes",
+    "/nutrients/glossary",
+  ]) {
+    for (const theme of ["light", "dark"]) {
+      test(`nutrient accessibility ${path} ${width}px ${theme}`, async ({
+        page,
+      }) => {
+        await page.setViewportSize({ width, height: 1000 });
+        await page.goto(path);
         await page.evaluate(
           (t) => (document.documentElement.dataset.theme = t),
           theme,
@@ -207,7 +207,7 @@ test("nutrient and reference controls reflow and remain accessible", async ({
               .analyze()
           ).violations,
         ).toEqual([]);
-      }
+      });
     }
   }
-});
+}

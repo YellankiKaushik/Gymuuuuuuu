@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 
 test("@security server issues a per-response nonce CSP and hydrates without policy violations", async ({
   page,

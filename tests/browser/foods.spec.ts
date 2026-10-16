@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 test("milkfish preparation deep links and soy missing household weights remain explicit @a11y", async ({
   page,

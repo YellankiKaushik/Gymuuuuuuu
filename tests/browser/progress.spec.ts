@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 
 test("Phase 15 records body weight locally and keeps the 320px layout inside the viewport", async ({ page }) => {

@@ -1,7 +1,10 @@
 import { test, expect, type Page, type BrowserContext } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { resolve, join } from "node:path";
+import { tmpdir } from "node:os";
+import { mkdtemp } from "node:fs/promises";
+import { settleLayout } from "../browser/test";
 import type { BackupEnvelope } from "../../src/features/data-management/service";
 
 const routes = [
@@ -74,9 +77,11 @@ async function ready(page: Page, route: string) {
   await expect(
     page.getByRole("button", { name: "Search Fitness OS", exact: true }),
   ).toBeEnabled();
+  await settleLayout(page);
 }
 
 async function geometry(page: Page) {
+  await settleLayout(page);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -255,10 +260,8 @@ test("persistent daily records survive browser restart, cross-tab edit and indep
     errors: [],
     failedAssets: [],
   };
-  const directory = resolve(
-    "artifacts/final-closure/profiles",
-    `${info.project.name}-${Date.now()}`,
-  );
+  // Chromium LevelDB appends long internal paths. Use an isolated short temporary profile.
+  const directory = await mkdtemp(join(tmpdir(), "fitness-os-"));
   const configured = info.project.use;
   const options = {
     baseURL,
@@ -411,7 +414,7 @@ test("persistent daily records survive browser restart, cross-tab edit and indep
     expect(before.manifest.totalBinaryAssetCount).toBe(1);
     expect(before.manifest.totalRecordCount).toBeGreaterThan(10);
     const custodyDirectory = resolve(
-      "artifacts/final-closure/custody",
+      "artifacts/ux-upgrade/closure/custody",
       `${info.project.name}-${Date.now()}`,
     );
     await mkdir(custodyDirectory, { recursive: true });
@@ -731,7 +734,7 @@ test("read-only print rendering retains headings, units and provenance without n
       ),
     ).toBe(true);
     const directory = resolve(
-      "artifacts/final-closure/print",
+      "artifacts/ux-upgrade/closure/print",
       info.project.name,
     );
     await mkdir(directory, { recursive: true });

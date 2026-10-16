@@ -1,0 +1,81 @@
+# Bounded owner-requested UX upgrade
+
+The owner's targeted UX/release request supersedes the preceding read-only audit
+for this implementation. Content identities, facts, backlog, architecture and
+backup schemas remain frozen. The finite workstreams are Progress correctness,
+navigation, themes, Home, reusable visual foundation, ten high-value visual areas,
+verification, and reports/release. No tracked file deletion, rename or move is
+required.
+
+PROG-001: HTML datetime-local defaults use local numeric calendar/time components,
+with minute precision, instead of UTC ISO digits. The submitted local datetime is
+converted to its ISO instant. Local-date defaults use the same calendar formatter.
+All four affected Progress measurement forms share it. Existing JSON editing keeps
+explicit offset-bearing instants and retains schema validation.
+
+PROG-002: BMI selects a schema-valid active height by measuredAt instant, excluding
+future measurements until their recorded instant. Measurement time descending is
+the recency rule. Equal instants use updatedAt descending, createdAt descending,
+then stable code-point ID order only to break an otherwise exact tie. Deleted,
+invalid and future records remain untouched in storage. IndexedDB order is not a
+recency signal. The displayed BMI identifies its height and measurement date.
+
+Desktop navigation keeps eight primary destinations and compact persistent system
+actions. Secondary group links open an adjacent panel rather than increasing the
+sidebar's normal height. Only one panel opens at once; Escape restores opener
+focus. Explicit focus on pointer activation supports WebKit's non-focusing button
+behavior. At heights below 650px the sidebar may scroll as an accessible fallback.
+Mobile navigation keeps its existing destinations and focus restoration.
+
+Theme storage retains the existing `system` value and preference schema; the UI
+calls it Auto (System). The existing nonce-bearing pre-paint script now recovers
+from malformed or inaccessible preference storage and still follows the system.
+Runtime system changes and manual overrides use the existing provider. The header
+cycles Auto → Dark → Light → Auto; mobile settings expose all three choices.
+
+Original workflow diagrams explain application records rather than prescribing
+health behavior. Evidence interpretation is claim-specific, without a numeric
+score. The weight scatter plot uses recorded daily medians in the selected window,
+without interpolation, includes labelled units/dates and an equivalent table, and
+allows local horizontal scrolling to keep axis text readable on small screens.
+Anatomy remains explicitly approximate navigation with equivalent text controls;
+exercise thumbnails reuse unchanged, reviewed local SVGs. The visual manifest is
+`docs/assets/owner-ux-visual-manifest.json`. No external image is added. Existing
+Lucide license notices are retained at `public/licenses/lucide.txt`.
+
+The reference projects were inspected in the browser and on GitHub: Criscris's
+explicit action/workflow hierarchy and SchemeSeva's grouped capability cards and
+data-boundary panel informed the composition. Their code, branding, fonts and
+architecture were not imported.
+
+Browser harness corrections await actual shell hydration, document fonts and two
+animation frames after document navigation/reload or viewport resize. Nutrient and
+recipe accessibility loops become independent cases with every original route,
+width, theme and assertion preserved and no increased timeout. Historical
+screenshots are preserved; new captures use ignored artifacts. Persistent closure
+profiles use isolated short temporary directories to avoid Windows LevelDB path
+limits; the browser's real persistence behavior is still tested. Closure geometry
+waits for layout settlement before measuring. No error is suppressed.
+
+The development server's AsyncLocalStorage externalization failure was observed
+and retained as an environment/toolchain limitation during targeted testing. The
+candidate is verified through the established production build/server instead of
+introducing unrelated framework changes. Windows Firefox launch limitations are
+reported separately from hosted Linux browser results.
+
+Release uses normal main commits/pushes, then the existing Vercel project's
+server-side Git source at the exact pushed SHA after applicable gates pass.
+Automatic Git deployments remain disabled. Final counts and deployment evidence
+belong in the final owner-requested report, not this prospective decision.
+
+During the first final regression matrix, a separately created fresh-profile page
+bypassed the shared page fixture. Playwright setInputFiles can populate a disabled
+pre-hydration input; the native UI was correctly disabled. The separate page now
+awaits readyForUi after each navigation, retaining every restore, confirmation,
+corruption and record-equality assertion. Both portability cases pass. A food-retry
+trace also showed mass fill starting at 862696ms before the retried data response
+completed at 862707ms. Three unchanged isolated checks passed; the test now
+explicitly awaits the loaded profile and asserts the retained mass before the
+original preview/save assertions. Application code was not changed for either
+harness finding. Initial evidence is preserved and the entire affected engine is
+rechecked before release.

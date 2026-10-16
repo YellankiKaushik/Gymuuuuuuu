@@ -1,3 +1,4 @@
+import { ModuleDiagram } from "../../components/common/module-diagram";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { PageHeader } from "../../components/common/page-header";
@@ -73,6 +74,7 @@ export function DietOverview() {
         eyebrow="EAT / LOCAL WORKSPACE"
         description="A transparent starting estimate for healthy adults, with explicit assumptions and optional local plans."
       />
+      <ModuleDiagram kind="nutrition" />
       <InfoCallout title="Eligibility">{boundaryText}</InfoCallout>
       <div className="actions">
         <Link to="/diet-planning/energy" className="button primary">

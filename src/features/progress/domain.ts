@@ -23,6 +23,18 @@ export function validateComposition(input: unknown) {
 }
 export const validateHeight = heightSchema.safeParse;
 
+/** Future measurements are retained in storage but excluded until their instant arrives.
+ * Equal measurement instants use latest update, then creation, then stable ID as a tie only.
+ */
+export function newestActiveHeight(rows: readonly unknown[], at = new Date()): HeightMeasurement | null {
+  const valid = rows.flatMap((row) => {
+    const parsed = heightSchema.safeParse(row);
+    return parsed.success && parsed.data.deletedAt === null && Date.parse(parsed.data.measuredAt) <= at.getTime() ? [parsed.data] : [];
+  });
+  valid.sort((a, b) => Date.parse(b.measuredAt) - Date.parse(a.measuredAt) || Date.parse(b.updatedAt) - Date.parse(a.updatedAt) || Date.parse(b.createdAt) - Date.parse(a.createdAt) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  return valid[0] ?? null;
+}
+
 export const weightMethodVersion = "weight-summary-v1";
 export type WeightSummary = { localDate: string; medianKg: number; recordCount: number; recordIds: string[]; flags: string[] };
 export function dailyWeightSummaries(rows: WeightLog[]): WeightSummary[] {

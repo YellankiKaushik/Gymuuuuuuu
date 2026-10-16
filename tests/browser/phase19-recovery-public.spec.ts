@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 test("source sleep guidance is readable without comparison and related links resolve", async ({

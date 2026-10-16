@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 
 const payload = "SYNTHETIC-FINAL-XSS <img src=x onerror=alert(1)>";
 test.beforeEach(async ({ page }) => {

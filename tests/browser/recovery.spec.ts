@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 const routes = [
   "/recovery",
@@ -133,7 +133,7 @@ test("local sleep, check-in, routine revision, resumable session and backup work
     ),
   ).toBe(true);
   await page.screenshot({
-    path: "docs/screenshots/phase12-player-320.png",
+    path: "artifacts/ux-upgrade/regression-screenshots/phase12-player-320.png",
     fullPage: true,
   });
   await page.context().setOffline(true);
@@ -204,12 +204,12 @@ test("local sleep, check-in, routine revision, resumable session and backup work
     page.getByRole("heading", { name: "Latest sleep report", exact: true }),
   ).toBeVisible();
   await page.screenshot({
-    path: "docs/screenshots/phase12-recovery-320.png",
+    path: "artifacts/ux-upgrade/regression-screenshots/phase12-recovery-320.png",
     fullPage: true,
   });
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.screenshot({
-    path: "docs/screenshots/phase12-recovery-1440.png",
+    path: "artifacts/ux-upgrade/regression-screenshots/phase12-recovery-1440.png",
     fullPage: true,
   });
 });

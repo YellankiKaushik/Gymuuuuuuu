@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 const routes = [
@@ -202,7 +202,7 @@ test("cardio manual entry, audit correction, immutable routine versions, resumab
     window.scrollTo(0, 0);
   });
   await page.screenshot({
-    path: "docs/screenshots/phase13-player-320.png",
+    path: "artifacts/ux-upgrade/regression-screenshots/phase13-player-320.png",
     fullPage: true,
   });
   await page
@@ -295,7 +295,7 @@ test("cardio manual entry, audit correction, immutable routine versions, resumab
     window.scrollTo(0, 0);
   });
   await page.screenshot({
-    path: "docs/screenshots/phase13-cardio-320.png",
+    path: "artifacts/ux-upgrade/regression-screenshots/phase13-cardio-320.png",
     fullPage: true,
   });
   await page.setViewportSize({ width: 1440, height: 900 });
@@ -306,7 +306,7 @@ test("cardio manual entry, audit correction, immutable routine versions, resumab
     window.scrollTo(0, 0);
   });
   await page.screenshot({
-    path: "docs/screenshots/phase13-cardio-1440.png",
+    path: "artifacts/ux-upgrade/regression-screenshots/phase13-cardio-1440.png",
     fullPage: true,
   });
   expect(external).toEqual([]);

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 
 const publicRoutes = [
@@ -350,7 +350,14 @@ test("public food data retries safely in the local diary without saving consumed
   ).toBeDisabled();
   await page.unroute("**/assets/fruits-*.json");
   await page.getByRole("button", { name: "Retry food data" }).click();
+  // The retried profile must finish loading before its quantity controls are used.
+  await expect(
+    page.getByText(/^Profile: Apples, gala, with skin, raw/),
+  ).toBeVisible();
   await page.getByLabel("Consumed mass", { exact: true }).fill("100");
+  await expect(page.getByLabel("Consumed mass", { exact: true })).toHaveValue(
+    "100",
+  );
   await expect(
     page.getByRole("heading", { name: "Nutrient preview" }),
   ).toBeVisible();

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 
 test("@a11y source running schedule is usable, filtered and selectable without saving a session", async ({

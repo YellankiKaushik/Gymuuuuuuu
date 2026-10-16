@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 test("cardio educational methods expose their source scope, prerequisites and pause boundaries", async ({
   page,
 }) => {

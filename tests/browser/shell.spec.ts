@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 
 test("sidebar preference, keyboard search and missing routes", async ({
@@ -94,7 +94,7 @@ test("tablet drawer and mobile More restore focus and expose contracted destinat
     page.getByRole("button", { name: "More destinations" }),
   ).toBeFocused();
   await page.goto("/settings");
-  await page.getByRole("radio", { name: "System", exact: true }).check();
+  await page.getByRole("radio", { name: "Auto (System)", exact: true }).check();
   await page.emulateMedia({ colorScheme: "dark" });
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await page.emulateMedia({ colorScheme: "light" });

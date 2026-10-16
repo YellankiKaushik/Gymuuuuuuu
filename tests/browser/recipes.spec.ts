@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 test("creates immutable recipe versions, manual plans, leftovers, groceries and explicit consumed snapshots", async ({
   page,
@@ -152,12 +152,12 @@ test("creates immutable recipe versions, manual plans, leftovers, groceries and 
   );
   expect(remote).toEqual([]);
 });
-test("Phase 11 routes remain accessible without private records at desktop and narrow widths", async ({
-  page,
-}) => {
-  test.setTimeout(180000);
-  for (const width of [320, 768, 1440])
-    for (const theme of ["light", "dark"]) {
+for (const width of [320, 768, 1440])
+  for (const theme of ["light", "dark"]) {
+    test(`Phase 11 routes accessible at ${width}px ${theme}`, async ({
+      page,
+    }) => {
+      test.setTimeout(180000);
       await page.setViewportSize({ width, height: 1000 });
       await page.goto("/settings");
       await page
@@ -209,9 +209,9 @@ test("Phase 11 routes remain accessible without private records at desktop and n
           window.scrollTo(0, 0);
         });
         await page.screenshot({
-          path: `docs/screenshots/phase11-recipe-${width}.png`,
+          path: `artifacts/ux-upgrade/regression-screenshots/phase11-recipe-${width}.png`,
           fullPage: true,
         });
       }
-    }
-});
+    });
+  }

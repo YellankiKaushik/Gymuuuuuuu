@@ -1,4 +1,4 @@
-import { test, expect, type Page } from "@playwright/test";
+import { test, expect, type Page } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 async function enterAdult(page: Page) {
@@ -239,7 +239,7 @@ test("diet routes and populated planner reflow with accessible light and dark th
         window.scrollTo(0, 0);
       });
       await page.screenshot({
-        path: `docs/screenshots/phase09-energy-${width}.png`,
+        path: `artifacts/ux-upgrade/regression-screenshots/phase09-energy-${width}.png`,
         fullPage: true,
       });
     }

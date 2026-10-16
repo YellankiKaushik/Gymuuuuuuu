@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { test, expect } from "./test"
 import AxeBuilder from '@axe-core/playwright'
 test('anatomy selector, shared URL filters and public content gate', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 })

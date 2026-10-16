@@ -1,3 +1,4 @@
+import { ModuleDiagram } from "../../components/common/module-diagram";
 import { useState } from "react";
 import {
   CardioPage,
@@ -24,6 +25,7 @@ import { listProgramInstances } from "../programs/local";
 export function HomePage() {
   return (
     <CardioPage title="Cardio & conditioning">
+      <ModuleDiagram kind="cardio" />
       <Home />
     </CardioPage>
   );

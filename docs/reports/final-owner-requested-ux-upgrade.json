@@ -1,0 +1,1168 @@
+{
+  "title": "Fitness OS — final owner-requested UX upgrade",
+  "recordedAt": "2026-10-16T10:46:10.350Z",
+  "source": {
+    "baseCommit": "b40b399b2316d51ad96f721900ce1024682254c8",
+    "testedExecutionTree": "ea2b21d422e36e3df9c9ef4dd958cb92a702af6979deeb96f0aab307467181c2",
+    "commitBinding": "The containing release commit and its GitHub Actions/Vercel records bind this report. No future self-hash is invented."
+  },
+  "scope": "Eight finite workstreams; no factual-content/backlog/architecture expansion",
+  "ownerRequests": [
+    {
+      "request": "PROG-001",
+      "implementation": "Local calendar/time defaults across four Progress forms; existing ISO editing retained",
+      "files": "src/features/progress/local-time.ts; src/features/progress/workspace.tsx",
+      "tests": "progress-correctness unit and owner-ux timezone/save/edit/reload cases",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "PROG-002",
+      "implementation": "Schema-valid newest active height by measuredAt, with defined ties and future exclusion",
+      "files": "src/features/progress/domain.ts; src/features/progress/workspace.tsx",
+      "tests": "progress-correctness ordering/invalid/deleted/future/tie/reopen tests; owner-ux BMI test",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Navigation/sidebar",
+      "implementation": "Eight persistent destinations, compact footer, one secondary panel, Escape/opener focus, short-height fallback",
+      "files": "src/components/app-shell/navigation.tsx; src/styles/visual-system.css",
+      "tests": "owner-ux seven sizes; shell keyboard/tablet/mobile tests; closure device/zoom cases",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Light / Dark / Auto",
+      "implementation": "Retain provider and storage schema; Auto label and header cycle; pre-paint recovery on invalid/inaccessible storage",
+      "files": "src/routes/__root.tsx; src/components/app-shell/shell.tsx; src/features/settings/page.tsx",
+      "tests": "owner-ux runtime changes/manual overrides/reloads/pre-hydration theme tests; shell; print closure",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Homepage",
+      "implementation": "Six-area map, useful quick actions, explicit public/local boundaries and backup path",
+      "files": "src/components/home.tsx",
+      "tests": "owner-ux seven widths/two themes/axe; owner-ux unit link validation; route audit",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Design references",
+      "implementation": "Inspected both live sites and repositories; adapted action hierarchy, grouped capability cards and explanatory workflow composition",
+      "files": "src/components/home.tsx; src/components/common/information-path.tsx",
+      "tests": "Browser reference screenshots in ignored artifacts; no code/branding imported",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Visual foundation",
+      "implementation": "Reusable semantic workflow figures, token-based surfaces and legible icons",
+      "files": "src/components/common/information-path.tsx; src/components/common/module-diagram.tsx; src/styles/visual-system.css",
+      "tests": "owner-ux module accessibility and responsive tests",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Anatomy/body",
+      "implementation": "Existing approximate front/back map gains distinct orientation cues and selected-region caption; equivalent text controls retained",
+      "files": "src/features/muscles/body-selector.tsx",
+      "tests": "owner-ux keyboard/front-back/mirrored-list case; muscles suite",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Exercise visuals",
+      "implementation": "Reviewed local SVG previews in card discovery; detail media and source instructions retained",
+      "files": "src/features/exercises/catalogue.tsx",
+      "tests": "owner-ux local image/alt/load case; exercise suite; route audit",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Programs/workouts",
+      "implementation": "Template → actual session → history workflow with direct entry links",
+      "files": "src/features/programs/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux program diagram; programs/workout regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Nutrition/diet",
+      "implementation": "Food composition → chosen plan → actual diary; missing values distinct from zero",
+      "files": "src/features/diet-planning/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux diet diagram; diet/nutrition regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Recovery/sleep",
+      "implementation": "Separate sleep diary, subjective check-in and mobility tools without a composite score",
+      "files": "src/features/recovery/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux recovery/sleep diagrams; recovery regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Cardio",
+      "implementation": "Activity, duration/effort and history workflow; no new intensity prescription",
+      "files": "src/features/cardio/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux cardio diagram; cardio regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Supplement evidence",
+      "implementation": "Question → evidence → limitations; population/formulation context, no invented score",
+      "files": "src/features/supplements/info-pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux evidence diagram; supplement regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Progress charts",
+      "implementation": "Actual daily median scatter in selected calendar window; gaps unfilled, dates/kg labels, keyboard-scrollable plot and equivalent table",
+      "files": "src/features/progress/weight-chart.tsx; src/features/progress/workspace.tsx",
+      "tests": "owner-ux chart/BMI browser case; owner-ux truthful chart unit; progress suite",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Backup/data flow",
+      "implementation": "Local records → exported copy → validated restore, including scope/media reminder",
+      "files": "src/features/data-management/page.tsx; src/components/home.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux data diagram; backup/privacy/closure regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Provenance/licenses",
+      "implementation": "Manifest records every new/reused visual; original diagrams, 32 unchanged SVGs and existing licensed icon system",
+      "files": "docs/assets/owner-ux-visual-manifest.json; public/licenses/lucide.txt",
+      "tests": "owner-ux manifest/file/license unit test; no external imagery",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Accessibility/responsive",
+      "implementation": "Semantic links/figures/headings, text alternatives, focus and existing reduced motion/print tokens",
+      "files": "Changed UI and styles",
+      "tests": "Full browser/a11y/route/closure gates; all specified widths and laptop heights",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Performance/privacy",
+      "implementation": "No chart dependency, remote imagery, analytics, cloud database, factual expansion or backup format change",
+      "files": "Existing stack and budgets retained",
+      "tests": "check/coverage/privacy/audit/build/performance; network/SSR closure monitoring",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Prior CI warnings",
+      "implementation": "Hydration/layout readiness; independent nutrient/recipe a11y cases; short isolated persistent profiles; no relaxed assertions/timeouts",
+      "files": "tests/browser/test.ts; tests/browser/nutrients.spec.ts; tests/browser/recipes.spec.ts; tests/closure/final-closure.spec.ts",
+      "tests": "Full current regressions and closure; Windows Firefox launch result separately recorded",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Integrity/release",
+      "implementation": "No tracked deletions/renames/moves; normal main push; existing Vercel Git-source deployment only after gates",
+      "files": "docs/decisions/owner-requested-ux-upgrade.md; final reports",
+      "tests": "Git diff/source fingerprint; hosted run records; final deployment/production handoff",
+      "result": "Owner-authorized release protocol; exact receipt in final handoff"
+    }
+  ],
+  "gates": {
+    "static": [
+      {
+        "name": "install",
+        "command": "npm ci",
+        "startedAt": "2026-10-16T09:11:37.308Z",
+        "durationMs": 21207,
+        "exitCode": 0
+      },
+      {
+        "name": "check",
+        "command": "npm run check",
+        "startedAt": "2026-10-16T09:11:58.516Z",
+        "durationMs": 102670,
+        "exitCode": 0
+      },
+      {
+        "name": "coverage",
+        "command": "npm run test:coverage",
+        "startedAt": "2026-10-16T09:13:41.187Z",
+        "durationMs": 63739,
+        "exitCode": 0
+      },
+      {
+        "name": "dependency-audit",
+        "command": "npm audit --audit-level=high --json",
+        "startedAt": "2026-10-16T09:14:44.927Z",
+        "durationMs": 1614,
+        "exitCode": 0
+      }
+    ],
+    "browser": [
+      {
+        "name": "regression",
+        "command": "npm run test:e2e:cross-browser -- --project=chromium --project=webkit --reporter=line,json",
+        "startedAt": "2026-10-16T09:15:04.396Z",
+        "finishedAt": "2026-10-16T09:41:54.473Z",
+        "exitCode": 1
+      },
+      {
+        "name": "regression-webkit-recheck",
+        "command": "npm run test:e2e:cross-browser -- --project=webkit --reporter=line,json",
+        "startedAt": "2026-10-16T09:42:15.722Z",
+        "finishedAt": "2026-10-16T09:58:44.608Z",
+        "exitCode": 0
+      },
+      {
+        "name": "accessibility",
+        "command": "npm run test:a11y -- --reporter=line,json",
+        "startedAt": "2026-10-16T09:58:44.608Z",
+        "finishedAt": "2026-10-16T10:04:26.537Z",
+        "exitCode": 0
+      },
+      {
+        "name": "closure",
+        "command": "npm run test:closure -- --project=closure-chromium --project=closure-webkit --project=android-chromium --project=iphone-webkit --project=ipad-webkit --project=android-tablet-chromium --reporter=line,json",
+        "startedAt": "2026-10-16T10:04:26.538Z",
+        "finishedAt": "2026-10-16T10:09:04.635Z",
+        "exitCode": 0
+      },
+      {
+        "name": "routes",
+        "command": "npm run test:routes -- --reporter=line,json",
+        "startedAt": "2026-10-16T10:09:04.635Z",
+        "finishedAt": "2026-10-16T10:25:34.019Z",
+        "exitCode": 1
+      },
+      {
+        "name": "routes-failed-case-recheck",
+        "command": "npm run test:routes -- --grep \"route audit /muscles/gluteus-minimus$\" --workers=1 --output=artifacts/ux-upgrade/route-recheck-results --reporter=line,json",
+        "startedAt": "2026-10-16T10:25:42.628Z",
+        "finishedAt": "2026-10-16T10:25:47.817Z",
+        "exitCode": 0,
+        "recheckedTitles": ["route audit /muscles/gluteus-minimus"]
+      },
+      {
+        "name": "route-report",
+        "command": "npm run test:route-report",
+        "startedAt": "2026-10-16T10:25:47.819Z",
+        "finishedAt": "2026-10-16T10:25:49.555Z",
+        "exitCode": 0
+      }
+    ],
+    "units": {
+      "passed": 371,
+      "files": 97
+    },
+    "coverage": {
+      "statements": 73.22,
+      "branches": 65.03,
+      "functions": 67.65,
+      "lines": 77.15
+    },
+    "regression": {
+      "tests": 656,
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 328,
+          "failed": 0
+        },
+        {
+          "project": "webkit",
+          "passed": 328,
+          "failed": 0
+        }
+      ],
+      "stats": {
+        "expected": 656,
+        "unexpected": 0
+      },
+      "affectedEngineRecheck": {
+        "stats": {
+          "startTime": "2026-10-16T09:42:16.497Z",
+          "duration": 988071.994,
+          "expected": 328,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "projects": [
+          {
+            "project": "webkit",
+            "passed": 328,
+            "failed": 0
+          }
+        ],
+        "tests": 328
+      }
+    },
+    "accessibility": {
+      "stats": {
+        "startTime": "2026-10-16T09:58:45.403Z",
+        "duration": 341100.24,
+        "expected": 198,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 198,
+          "failed": 0
+        }
+      ],
+      "tests": 198
+    },
+    "closure": {
+      "stats": {
+        "startTime": "2026-10-16T10:04:27.344Z",
+        "duration": 277261.234,
+        "expected": 48,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "projects": [
+        {
+          "project": "closure-chromium",
+          "passed": 8,
+          "failed": 0
+        },
+        {
+          "project": "closure-webkit",
+          "passed": 8,
+          "failed": 0
+        },
+        {
+          "project": "android-chromium",
+          "passed": 8,
+          "failed": 0
+        },
+        {
+          "project": "iphone-webkit",
+          "passed": 8,
+          "failed": 0
+        },
+        {
+          "project": "ipad-webkit",
+          "passed": 8,
+          "failed": 0
+        },
+        {
+          "project": "android-tablet-chromium",
+          "passed": 8,
+          "failed": 0
+        }
+      ],
+      "tests": 48
+    },
+    "routes": {
+      "tests": 702,
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 702,
+          "failed": 0
+        }
+      ],
+      "stats": {
+        "expected": 702,
+        "unexpected": 0
+      },
+      "recheckedFailures": 1,
+      "recheckStats": {
+        "startTime": "2026-10-16T10:25:43.513Z",
+        "duration": 4256.988,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "dependencyAudit": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "privacy": {
+      "sourceFiles": 397,
+      "result": "Passed; no unreviewed fetch origin, analytics, telemetry or prohibited service package"
+    },
+    "closureEvidence": {
+      "deviceStates": 528,
+      "zoomStates": 432,
+      "ariaSnapshots": 78,
+      "persistentProfiles": 6,
+      "monitoredRequests": 6349,
+      "unexpectedRemoteRequests": 0,
+      "privateMarkerLeaks": 0,
+      "pageErrors": 0,
+      "failedAssets": 0
+    },
+    "routesInitial": {
+      "stats": {
+        "startTime": "2026-10-16T10:09:05.446Z",
+        "duration": 988480.664,
+        "expected": 701,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 701,
+          "failed": 1
+        }
+      ],
+      "tests": 702
+    },
+    "regressionInitial": {
+      "stats": {
+        "startTime": "2026-10-16T09:15:05.184Z",
+        "duration": 1609236.828,
+        "expected": 654,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 328,
+          "failed": 0
+        },
+        {
+          "project": "webkit",
+          "passed": 326,
+          "failed": 2
+        }
+      ],
+      "tests": 656
+    },
+    "targetedCorrections": {
+      "portability": {
+        "startTime": "2026-10-16T09:31:04.357Z",
+        "duration": 35163.418000000005,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "foodRetry": {
+        "startTime": "2026-10-16T09:33:36.644Z",
+        "duration": 2802.285,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "hosted": {
+    "status": "Pending current-commit Linux CI after main push; required before deployment"
+  },
+  "performance": {
+    "javascriptGzipBefore": 701549,
+    "javascriptGzipAfter": 704529,
+    "largestChunkGzipBefore": 168570,
+    "largestChunkGzipAfter": 168639,
+    "javascriptBudget": 716800,
+    "chunkBudget": 204800,
+    "publicJsonGzipBefore": 429517,
+    "publicJsonGzipAfter": 429517,
+    "publicJsonAssets": 97,
+    "css": {
+      "before": {
+        "raw": 91395,
+        "gzip": 18111,
+        "files": 2
+      },
+      "after": {
+        "raw": 97007,
+        "gzip": 19221,
+        "files": 2
+      }
+    },
+    "assets": {
+      "newExternalImages": 0,
+      "newRasterImages": 0,
+      "newSvgFiles": 0,
+      "reusedSvgFiles": 32,
+      "reusedSvgRawBytes": 39776,
+      "reusedSvgGzipBytes": 16390,
+      "licenseNoticeBytes": 3208
+    }
+  },
+  "responsive": {
+    "widths": [320, 375, 393, 768, 1024, 1280, 1440],
+    "laptops": [
+      [1440, 700],
+      [1280, 720],
+      [1024, 768]
+    ],
+    "result": "All new UI cases passed in Chromium and WebKit; closure adds device and zoom/print checks"
+  },
+  "provenanceManifest": "docs/assets/owner-ux-visual-manifest.json",
+  "localSmoke": {
+    "origin": "http://127.0.0.1:3000",
+    "checkedAt": "2026-10-16T10:41:23.452Z",
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "153.0.8010.12",
+        "requests": 695,
+        "externalRequests": 0,
+        "leaks": 0,
+        "errors": 0,
+        "consoleErrors": 0,
+        "failedAssets": 0,
+        "failedRequests": 0,
+        "routes": [
+          {
+            "path": "/settings",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/",
+            "status": 200,
+            "canonical": "http://localhost:3000/"
+          },
+          {
+            "path": "/settings",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/",
+            "status": 200,
+            "canonical": "http://localhost:3000/"
+          },
+          {
+            "path": "/settings",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/",
+            "status": 200,
+            "canonical": "http://localhost:3000/"
+          },
+          {
+            "path": "/muscles?view=body",
+            "status": 200,
+            "canonical": "http://localhost:3000/muscles"
+          },
+          {
+            "path": "/exercises",
+            "status": 200,
+            "canonical": "http://localhost:3000/exercises"
+          },
+          {
+            "path": "/programs",
+            "status": 200,
+            "canonical": "http://localhost:3000/programs"
+          },
+          {
+            "path": "/diet-planning",
+            "status": 200,
+            "canonical": "http://localhost:3000/diet-planning"
+          },
+          {
+            "path": "/recovery",
+            "status": 200,
+            "canonical": null
+          },
+          {
+            "path": "/cardio",
+            "status": 200,
+            "canonical": null
+          },
+          {
+            "path": "/supplements",
+            "status": 200,
+            "canonical": null
+          },
+          {
+            "path": "/settings/data",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/progress/weight",
+            "status": 200,
+            "canonical": null
+          }
+        ],
+        "viewports": [
+          {
+            "width": 320,
+            "height": 800,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 375,
+            "height": 812,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 1024,
+            "height": 768,
+            "overflow": false,
+            "sidebarHeight": 768,
+            "sidebarContent": 768,
+            "sidebarScroll": false
+          },
+          {
+            "width": 1280,
+            "height": 720,
+            "overflow": false,
+            "sidebarHeight": 720,
+            "sidebarContent": 720,
+            "sidebarScroll": false
+          },
+          {
+            "width": 1440,
+            "height": 700,
+            "overflow": false,
+            "sidebarHeight": 700,
+            "sidebarContent": 700,
+            "sidebarScroll": false
+          }
+        ],
+        "themes": [
+          {
+            "choice": "Light",
+            "applied": "light"
+          },
+          {
+            "choice": "Dark",
+            "applied": "dark"
+          },
+          {
+            "choice": "Auto (System)",
+            "applied": "light"
+          },
+          {
+            "choice": "Auto runtime dark",
+            "applied": "dark"
+          }
+        ],
+        "progress": {
+          "synthetic": true,
+          "localDefault": "2026-10-16T09:30",
+          "expected": "2026-10-16T09:30",
+          "savedInstant": "2026-10-16T04:00:00.000Z",
+          "bmi": "24.7",
+          "reload": true,
+          "recordedDays": 3
+        }
+      },
+      {
+        "engine": "webkit",
+        "version": "26.6",
+        "requests": 675,
+        "externalRequests": 0,
+        "leaks": 0,
+        "errors": 0,
+        "consoleErrors": 0,
+        "failedAssets": 0,
+        "failedRequests": 0,
+        "routes": [
+          {
+            "path": "/settings",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/",
+            "status": 200,
+            "canonical": "http://localhost:3000/"
+          },
+          {
+            "path": "/settings",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/",
+            "status": 200,
+            "canonical": "http://localhost:3000/"
+          },
+          {
+            "path": "/settings",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/",
+            "status": 200,
+            "canonical": "http://localhost:3000/"
+          },
+          {
+            "path": "/muscles?view=body",
+            "status": 200,
+            "canonical": "http://localhost:3000/muscles"
+          },
+          {
+            "path": "/exercises",
+            "status": 200,
+            "canonical": "http://localhost:3000/exercises"
+          },
+          {
+            "path": "/programs",
+            "status": 200,
+            "canonical": "http://localhost:3000/programs"
+          },
+          {
+            "path": "/diet-planning",
+            "status": 200,
+            "canonical": "http://localhost:3000/diet-planning"
+          },
+          {
+            "path": "/recovery",
+            "status": 200,
+            "canonical": null
+          },
+          {
+            "path": "/cardio",
+            "status": 200,
+            "canonical": null
+          },
+          {
+            "path": "/supplements",
+            "status": 200,
+            "canonical": null
+          },
+          {
+            "path": "/settings/data",
+            "status": 200,
+            "canonical": "http://localhost:3000/settings"
+          },
+          {
+            "path": "/progress/weight",
+            "status": 200,
+            "canonical": null
+          }
+        ],
+        "viewports": [
+          {
+            "width": 320,
+            "height": 800,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 375,
+            "height": 812,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 393,
+            "height": 852,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "overflow": false,
+            "sidebarHeight": null,
+            "sidebarContent": null,
+            "sidebarScroll": null
+          },
+          {
+            "width": 1024,
+            "height": 768,
+            "overflow": false,
+            "sidebarHeight": 768,
+            "sidebarContent": 768,
+            "sidebarScroll": false
+          },
+          {
+            "width": 1280,
+            "height": 720,
+            "overflow": false,
+            "sidebarHeight": 720,
+            "sidebarContent": 720,
+            "sidebarScroll": false
+          },
+          {
+            "width": 1440,
+            "height": 700,
+            "overflow": false,
+            "sidebarHeight": 700,
+            "sidebarContent": 700,
+            "sidebarScroll": false
+          }
+        ],
+        "themes": [
+          {
+            "choice": "Light",
+            "applied": "light"
+          },
+          {
+            "choice": "Dark",
+            "applied": "dark"
+          },
+          {
+            "choice": "Auto (System)",
+            "applied": "light"
+          },
+          {
+            "choice": "Auto runtime dark",
+            "applied": "dark"
+          }
+        ],
+        "progress": {
+          "synthetic": true,
+          "localDefault": "2026-10-16T09:30",
+          "expected": "2026-10-16T09:30",
+          "savedInstant": "2026-10-16T04:00:00.000Z",
+          "bmi": "24.7",
+          "reload": true,
+          "recordedDays": 3
+        }
+      }
+    ]
+  },
+  "productionBinding": "Deployment and post-deploy checks are required after the clean release commit is pushed. Exact SHA, deployment ID, READY and live results are recorded in the final owner handoff and immutable Vercel/GitHub records.",
+  "priorWarnings": [
+    {
+      "item": "Firefox nutrient/recipe a11y timeouts",
+      "classification": "TEST_HARNESS",
+      "resolution": "All existing combinations retained as independent cases without increasing timeouts; current hosted outcome is recorded above."
+    },
+    {
+      "item": "Readiness/layout timing",
+      "classification": "TEST_HARNESS",
+      "resolution": "Explicit hydration, fonts and frame readiness; no assertion or timeout removed."
+    },
+    {
+      "item": "Interrupted WebKit navigation",
+      "classification": "RESOLVED",
+      "resolution": "Current regression and closure results supersede unconfirmed earlier observations for this execution tree."
+    },
+    {
+      "item": "Long Windows persistent profile paths",
+      "classification": "ENVIRONMENT_LIMITATION",
+      "resolution": "Isolated short temporary profile directories preserve real restart/backup behavior."
+    },
+    {
+      "item": "Windows Firefox launch",
+      "classification": "ENVIRONMENT_LIMITATION",
+      "resolution": "browserType.launch: spawn UNKNOWN"
+    },
+    {
+      "item": "Development AsyncLocalStorage externalization",
+      "classification": "ENVIRONMENT_LIMITATION",
+      "resolution": "Observed development client failure; production build/server verified. No unrelated toolchain change."
+    },
+    {
+      "item": "One route shared-bundle net::ERR_NO_BUFFER_SPACE",
+      "classification": "ENVIRONMENT_LIMITATION",
+      "resolution": "Initial route evidence retained; the identical failed route passed in a fresh browser with every asset/axe/geometry assertion unchanged. The exact-build report validates all 702 current routes."
+    },
+    {
+      "item": "Fresh-profile file preview before hydration",
+      "classification": "TEST_HARNESS",
+      "resolution": "The separate page bypassed the fixture; setInputFiles could set a disabled pre-hydration input. Added readyForUi after each separate-page navigation; both exact portability cases pass."
+    },
+    {
+      "item": "Food retry quantity before data readiness",
+      "classification": "TEST_HARNESS",
+      "resolution": "Trace fill began at 862696ms while the retried asset completed at 862707ms. Three unchanged isolated runs passed; an explicit loaded-profile assertion and retained-quantity assertion now precede preview checks."
+    }
+  ],
+  "integrity": {
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "forcePush": false,
+    "historyRewrite": false,
+    "historicalReports": "Generated content-completion output is preserved in ignored evidence and original historical tracked reports retained."
+  },
+  "filesChanged": [
+    "README.md",
+    "docs/assets/owner-ux-visual-manifest.json",
+    "docs/decisions/owner-requested-ux-upgrade.md",
+    "docs/phases/phase-19.md",
+    "docs/reports/final-owner-requested-ux-upgrade.json",
+    "docs/reports/final-owner-requested-ux-upgrade.md",
+    "package.json",
+    "public/licenses/lucide.txt",
+    "src/components/app-shell/navigation.tsx",
+    "src/components/app-shell/shell.tsx",
+    "src/components/common/information-path.tsx",
+    "src/components/common/module-diagram.tsx",
+    "src/components/home.tsx",
+    "src/features/cardio/pages.tsx",
+    "src/features/data-management/page.tsx",
+    "src/features/diet-planning/pages.tsx",
+    "src/features/exercises/catalogue.tsx",
+    "src/features/muscles/body-selector.tsx",
+    "src/features/programs/pages.tsx",
+    "src/features/progress/domain.ts",
+    "src/features/progress/local-time.ts",
+    "src/features/progress/weight-chart.tsx",
+    "src/features/progress/workspace.tsx",
+    "src/features/recovery/pages.tsx",
+    "src/features/settings/page.tsx",
+    "src/features/supplements/info-pages.tsx",
+    "src/routes/__root.tsx",
+    "src/styles/app.css",
+    "src/styles/visual-system.css",
+    "tests/browser/cardio-plan.spec.ts",
+    "tests/browser/cardio.spec.ts",
+    "tests/browser/data-management.spec.ts",
+    "tests/browser/diet-planning.spec.ts",
+    "tests/browser/exercises.spec.ts",
+    "tests/browser/final-security.spec.ts",
+    "tests/browser/foods.spec.ts",
+    "tests/browser/foundation.spec.ts",
+    "tests/browser/hydration.spec.ts",
+    "tests/browser/manual-test-ready.spec.ts",
+    "tests/browser/muscles.spec.ts",
+    "tests/browser/nutrients.spec.ts",
+    "tests/browser/nutrition.spec.ts",
+    "tests/browser/owner-ux.spec.ts",
+    "tests/browser/phase19-cardio-education.spec.ts",
+    "tests/browser/phase19-comparisons.spec.ts",
+    "tests/browser/phase19-content.spec.ts",
+    "tests/browser/phase19-recovery-public.spec.ts",
+    "tests/browser/phase19-running-plan.spec.ts",
+    "tests/browser/phase19-supplement-evidence.spec.ts",
+    "tests/browser/pre-vercel-photo.spec.ts",
+    "tests/browser/programs.spec.ts",
+    "tests/browser/progress.spec.ts",
+    "tests/browser/recipes.spec.ts",
+    "tests/browser/recovery.spec.ts",
+    "tests/browser/science.spec.ts",
+    "tests/browser/search-phase16.spec.ts",
+    "tests/browser/security-headers.spec.ts",
+    "tests/browser/shell.spec.ts",
+    "tests/browser/supplements.spec.ts",
+    "tests/browser/test.ts",
+    "tests/browser/workout.spec.ts",
+    "tests/closure/final-closure.spec.ts",
+    "tests/owner-ux.test.tsx",
+    "tests/progress-correctness.test.ts"
+  ],
+  "limitations": [
+    "Windows Firefox cannot launch on this host; distinguish it from hosted Linux results.",
+    "The development server exhibited a client AsyncLocalStorage bundling failure; production server is verified.",
+    "The existing Vite raw chunk-size advisory remains; unchanged gzip budgets pass.",
+    "Diagrams are approximate navigation/application workflows, not scientific anatomy or exercise technique.",
+    "Physical-device, human assistive-technology and source-review boundaries remain those of the existing release; no new certification is claimed."
+  ],
+  "progressDefects": {
+    "PROG-001": {
+      "classification": "RESOLVED",
+      "rootCause": "UTC ISO digits were used as local datetime defaults, then parsed as local time on save",
+      "fix": "Local numeric calendar components, shared across four measurement forms; local date uses the same formatter",
+      "affectedForms": [
+        "weight",
+        "height",
+        "circumference",
+        "external composition"
+      ],
+      "zones": ["UTC", "Asia/Kolkata", "America/Los_Angeles"],
+      "boundaries": [
+        "positive offset",
+        "negative offset",
+        "local midnight/day boundary"
+      ],
+      "edit": "Existing offset-bearing JSON timestamp edits retain validation and persist after reload",
+      "existingRecords": "Historical timestamps are not automatically shifted; original intent cannot be inferred. Owners who accepted an old default can review known affected records against their own notes.",
+      "evidence": "progress-correctness.test.ts; owner-ux.spec.ts"
+    },
+    "PROG-002": {
+      "classification": "RESOLVED",
+      "rootCause": "Last IndexedDB key-order item was treated as the latest measurement",
+      "fix": "Schema-valid active height by measuredAt instant descending",
+      "tieOrder": [
+        "updatedAt descending",
+        "createdAt descending",
+        "stable code-point ID only for an otherwise exact tie"
+      ],
+      "invalid": "Excluded without modifying storage",
+      "deleted": "Excluded without modifying storage",
+      "future": "Retained; eligible on the next read/render after the measurement instant",
+      "syntheticResult": {
+        "weightKg": 80,
+        "olderHeightCm": 160,
+        "newerHeightCm": 180,
+        "bmi": 24.7,
+        "reload": true
+      },
+      "evidence": "progress-correctness.test.ts; owner-ux.spec.ts"
+    }
+  },
+  "navigation": {
+    "primaryDestinations": 8,
+    "normalLaptopViewports": [
+      [1440, 700],
+      [1280, 720],
+      [1024, 768]
+    ],
+    "before": {
+      "height": 700,
+      "scrollHeight": 890,
+      "overflow": "auto"
+    },
+    "normalSidebarScroll": false,
+    "secondary": "One adjacent expandable group panel; Escape/opener focus; mobile navigation retained",
+    "fallbackMaxHeightPx": 650
+  },
+  "themes": {
+    "choices": ["Light", "Dark", "Auto (System)"],
+    "storedEnumUnchanged": true,
+    "preferenceKey": "fitness-os:preferences:v1",
+    "runtimeSystemChanges": true,
+    "manualOverrides": true,
+    "persistence": true,
+    "prePaintNonceScript": true,
+    "malformedStorageFallback": true,
+    "print": "Existing shared print tokens retained"
+  },
+  "homepage": {
+    "areas": ["Learn", "Train", "Eat", "Recover", "Progress", "Tools & data"],
+    "composition": [
+      "Quick actions",
+      "Public/local boundary panel",
+      "Six-area module map",
+      "Backup flow"
+    ],
+    "noFakeMetrics": true
+  },
+  "visualImprovements": [
+    {
+      "request": "Homepage",
+      "implementation": "Six-area map, useful quick actions, explicit public/local boundaries and backup path",
+      "files": "src/components/home.tsx",
+      "tests": "owner-ux seven widths/two themes/axe; owner-ux unit link validation; route audit",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Anatomy/body",
+      "implementation": "Existing approximate front/back map gains distinct orientation cues and selected-region caption; equivalent text controls retained",
+      "files": "src/features/muscles/body-selector.tsx",
+      "tests": "owner-ux keyboard/front-back/mirrored-list case; muscles suite",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Exercise visuals",
+      "implementation": "Reviewed local SVG previews in card discovery; detail media and source instructions retained",
+      "files": "src/features/exercises/catalogue.tsx",
+      "tests": "owner-ux local image/alt/load case; exercise suite; route audit",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Programs/workouts",
+      "implementation": "Template → actual session → history workflow with direct entry links",
+      "files": "src/features/programs/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux program diagram; programs/workout regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Nutrition/diet",
+      "implementation": "Food composition → chosen plan → actual diary; missing values distinct from zero",
+      "files": "src/features/diet-planning/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux diet diagram; diet/nutrition regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Recovery/sleep",
+      "implementation": "Separate sleep diary, subjective check-in and mobility tools without a composite score",
+      "files": "src/features/recovery/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux recovery/sleep diagrams; recovery regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Cardio",
+      "implementation": "Activity, duration/effort and history workflow; no new intensity prescription",
+      "files": "src/features/cardio/pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux cardio diagram; cardio regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Supplement evidence",
+      "implementation": "Question → evidence → limitations; population/formulation context, no invented score",
+      "files": "src/features/supplements/info-pages.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux evidence diagram; supplement regression",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Progress charts",
+      "implementation": "Actual daily median scatter in selected calendar window; gaps unfilled, dates/kg labels, keyboard-scrollable plot and equivalent table",
+      "files": "src/features/progress/weight-chart.tsx; src/features/progress/workspace.tsx",
+      "tests": "owner-ux chart/BMI browser case; owner-ux truthful chart unit; progress suite",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Backup/data flow",
+      "implementation": "Local records → exported copy → validated restore, including scope/media reminder",
+      "files": "src/features/data-management/page.tsx; src/components/home.tsx; src/components/common/module-diagram.tsx",
+      "tests": "owner-ux data diagram; backup/privacy/closure regression",
+      "result": "Implemented; see exact gate results"
+    }
+  ],
+  "sectionIndex": [
+    "Executive summary",
+    "Owner request mapping",
+    "PROG-001",
+    "PROG-002",
+    "Navigation",
+    "Theme",
+    "Homepage",
+    "Visual improvements",
+    "Asset licensing/provenance",
+    "Accessibility",
+    "Responsive testing",
+    "Performance",
+    "Automated tests",
+    "Browser results",
+    "Privacy/security",
+    "Remaining limitations",
+    "Files changed",
+    "Files deleted / renamed / moved"
+  ],
+  "screenshotCspDiagnosis": {
+    "classification": "TEST_HARNESS",
+    "source": "Playwright coreBundle.js inPagePrepareForScreenshots: WebKit syncAnimations inserts an unnonced empty body {} style",
+    "evidence": {
+      "before": 0,
+      "afterDefault": 1,
+      "afterInitial": 2,
+      "messages": [
+        "Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.",
+        "Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy."
+      ]
+    },
+    "policy": "Application CSP unchanged. Screenshots captured with Chromium; normal two-engine smoke runs without screenshot injection and rejects every console/request/asset error."
+  }
+}

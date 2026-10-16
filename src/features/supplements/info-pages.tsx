@@ -1,3 +1,4 @@
+import { ModuleDiagram } from "../../components/common/module-diagram";
 import { useState } from "react";
 import {
   Frame,
@@ -23,6 +24,7 @@ import { download, supplementsCsv } from "./export";
 export function HomePage() {
   return (
     <Frame title="Supplements & evidence">
+      <ModuleDiagram kind="evidence" />
       <section className="card">
         <h2>Start with the question</h2>
         <p>

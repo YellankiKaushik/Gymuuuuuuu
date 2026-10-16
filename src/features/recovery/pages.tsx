@@ -1,3 +1,4 @@
+import { ModuleDiagram } from "../../components/common/module-diagram";
 import { useState } from "react";
 import { dimensionSummaries, regionalSummaries } from "./read-models";
 import { allTracker } from "../workout-tracker/storage";
@@ -47,6 +48,7 @@ export function RecoveryOverview({
     check = checks[0];
   return (
     <>
+      <ModuleDiagram kind="recovery" />
       <div className="recovery-grid">
         <section className="recovery-card">
           <h2>Latest sleep report</h2>

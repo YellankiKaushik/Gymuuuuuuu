@@ -1,3 +1,4 @@
+import { ModuleDiagram } from "../../components/common/module-diagram";
 import { useEffect, useState } from "react";
 import { usePreferences } from "../../components/app-shell/preferences";
 import { PageHeader } from "../../components/common/page-header";
@@ -97,6 +98,7 @@ export function ProgramCatalogue({
         eyebrow="TRAIN / PROGRAMS"
         description="Compare reviewed templates by your goals, time and equipment."
       />
+      <ModuleDiagram kind="training" />
       <ProgramNav />
       <div className="catalogue-toolbar">
         <input

@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 test("local workout logs, refreshes, completes, edits, backs up and restores", async ({
   page,
@@ -77,7 +77,7 @@ test("local workout logs, refreshes, completes, edits, backs up and restores", a
     }
     if (width === 320 || width === 1440)
       await page.screenshot({
-        path: `docs/screenshots/phase06-active-${width}.png`,
+        path: `artifacts/ux-upgrade/regression-screenshots/phase06-active-${width}.png`,
         fullPage: true,
       });
   }

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, readyForUi } from "./test";
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import type { BackupEnvelope } from "../../src/features/data-management/service";
@@ -339,6 +339,7 @@ test.describe.serial("synthetic portability journey", () => {
       });
       const restored = await clean.newPage();
       await restored.goto("http://127.0.0.1:3000/settings/data/restore");
+      await readyForUi(restored);
       await restored
         .getByRole("button", { name: "Prepare local storage", exact: true })
         .click();
@@ -358,10 +359,12 @@ test.describe.serial("synthetic portability journey", () => {
         restored.getByRole("region", { name: "Scrollable record table" }),
       ).toBeVisible();
       await restored.goto("http://127.0.0.1:3000/progress/weight");
+      await readyForUi(restored);
       await expect(restored.getByText("70.5 kg", { exact: true })).toHaveCount(
         0,
       );
       await restored.goto("http://127.0.0.1:3000/settings/data/restore");
+      await readyForUi(restored);
       await restored.getByLabel("Backup file", { exact: true }).setInputFiles({
         name: "synthetic.json",
         mimeType: "application/json",
@@ -383,6 +386,7 @@ test.describe.serial("synthetic portability journey", () => {
       );
       expect(confirmed).toBe(true);
       await restored.goto("http://127.0.0.1:3000/settings/data/backup");
+      await readyForUi(restored);
       const afterDownload = restored.waitForEvent("download");
       await restored
         .getByRole("button", { name: "Create backup file", exact: true })
@@ -402,6 +406,7 @@ test.describe.serial("synthetic portability journey", () => {
           )?.records,
         ).toEqual(store.records);
       await restored.goto("http://127.0.0.1:3000/settings/data/restore");
+      await readyForUi(restored);
       await restored.getByLabel("Backup file", { exact: true }).setInputFiles({
         name: "invalid.json",
         mimeType: "application/json",
@@ -422,6 +427,7 @@ test.describe.serial("synthetic portability journey", () => {
         }),
       ).toHaveCount(0);
       await restored.goto("http://127.0.0.1:3000/progress/weight");
+      await readyForUi(restored);
       await expect(
         restored.getByText("70.5 kg", { exact: true }),
       ).toBeVisible();
@@ -436,9 +442,9 @@ test.describe.serial("synthetic portability journey", () => {
         /Synthetic(?:%20| )portability/i.test(value),
       ),
     ).toBe(false);
-    await mkdir("docs/reports", { recursive: true });
+    await mkdir("artifacts/ux-upgrade/privacy", { recursive: true });
     await writeFile(
-      `docs/reports/pre-vercel-privacy-${testInfo.project.name}.json`,
+      `artifacts/ux-upgrade/privacy/pre-vercel-privacy-${testInfo.project.name}.json`,
       JSON.stringify(
         {
           schemaVersion: 1,
