@@ -79,3 +79,18 @@ explicitly awaits the loaded profile and asserts the retained mass before the
 original preview/save assertions. Application code was not changed for either
 harness finding. Initial evidence is preserved and the entire affected engine is
 rechecked before release.
+
+Hosted execution then exposed whole-job limits: the duplicate CI Chromium job
+hit its existing 30-minute deadline twice, and the unsharded Firefox/WebKit jobs
+hit 40 minutes. Original logs and statuses are retained. Firefox also printed
+timeout/failure markers before cancellation; these remain unresolved until named
+sharded results identify and verify the exact cases. They are not classified as
+passing merely because Chromium passes.
+
+CI now runs the identical Chromium suite in two dedicated shards, separately from
+check/coverage/audit. The cross-browser workflow runs four shards per engine;
+closure still runs once per engine on shard 1 with all original configurations.
+Line reporting exposes failing test names before a run ends. No tests, assertions,
+per-test timeouts, 30/40-minute job limits, workers, coverage thresholds or
+performance budgets are removed or relaxed. This changes execution scheduling,
+not application behavior. Every shard must pass before production deployment.
