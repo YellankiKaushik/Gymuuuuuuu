@@ -346,3 +346,12 @@ Current handoff: docs/reports/final-maximum-autonomy-closure.md/json, final-clos
 - [x] Pass 328 Chromium cases, the complete 328-case WebKit recheck, 198 dedicated accessibility cases, 48 six-configuration closure cases and all 702 current-build route records after one unchanged environment-error replay.
 
 Handoff: docs/reports/final-owner-requested-ux-upgrade.md/json and docs/decisions/owner-requested-ux-upgrade.md. Initial failures and their unchanged-assertion rechecks remain in ignored task evidence. The exact main commit, hosted Linux checks, production deployment and live verification are bound by the final owner handoff and immutable GitHub/Vercel records; no future self-hash or pre-deployment READY result is invented. Earlier checkpoints above remain historical.
+
+### Hosted verification after the UX corrections
+
+- [x] Preserve all initial runner cancellations and named Firefox/WebKit failures; correct cumulative scan grouping and the confirmed Firefox/Linux 700px sidebar overflow without relaxing assertions, budgets or deadlines.
+- [x] Verify implementation commit `87ac86920b37930c6e3e1b9184f5ff181b0b285c`: all 17 required hosted jobs pass, with 893 regressions per Chromium/Firefox/WebKit engine, an independent 893-case Chromium CI run, 561 dedicated accessibility cases and 56 closure cases over seven configurations.
+- [x] Verify the corrected local build with the complete check, 72 focused browser cases, 336 responsive states across 12 changed routes and all 702 exact-build route records after one preserved Windows socket-buffer failure and unchanged fresh-browser replay.
+- [x] Preserve the original 328-case local snapshots and all historical tracked reports/screenshots; the higher current case counts reflect isolated combinations, with the same 1,074 published-route viewport/theme scans.
+
+The final report records the verified implementation SHA and normalized runtime/test fingerprints. Its containing documentation-only release commit retains those trees; its own required workflows must pass before the existing Vercel project receives that exact clean pushed SHA. Production READY, aliases, security headers, console/assets, Progress reproductions and runtime logs are verified in the final owner handoff.

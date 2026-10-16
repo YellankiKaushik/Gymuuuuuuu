@@ -1,10 +1,22 @@
 {
   "title": "Fitness OS — final owner-requested UX upgrade",
-  "recordedAt": "2026-10-16T10:46:10.350Z",
+  "recordedAt": "2026-10-16T15:54:52.469Z",
   "source": {
     "baseCommit": "b40b399b2316d51ad96f721900ce1024682254c8",
-    "testedExecutionTree": "ea2b21d422e36e3df9c9ef4dd958cb92a702af6979deeb96f0aab307467181c2",
-    "commitBinding": "The containing release commit and its GitHub Actions/Vercel records bind this report. No future self-hash is invented."
+    "testedExecutionTree": "b5d6203cc332002f9ecba4a326694abc606033c468cf1aabd1760599b9da4820",
+    "commitBinding": "The containing release commit and its GitHub Actions/Vercel records bind this report. No future self-hash is invented.",
+    "testedTestTree": "19a2ec2985c47a2ed764a870c8b1be66ff26e20b7d16d0a64959d083113867bc",
+    "originalLocalExecutionTree": "ea2b21d422e36e3df9c9ef4dd958cb92a702af6979deeb96f0aab307467181c2",
+    "ciSchedulingProof": {
+      "localExecutionTree": "ea2b21d422e36e3df9c9ef4dd958cb92a702af6979deeb96f0aab307467181c2",
+      "releaseExecutionTree": "117b5a46c691c10ff8976952a64133c07ed81a8e963e621689c09b62b01b9089",
+      "changedExecutionFiles": [
+        ".github/workflows/ci.yml",
+        ".github/workflows/cross-browser.yml"
+      ],
+      "applicationAndTestsIdenticalTo": "c38d2dffbbf0429b58d714719f911f592cb3939c",
+      "releaseCommit": "535e2840b92b2a00117477d649747b66b422ff33"
+    }
   },
   "scope": "Eight finite workstreams; no factual-content/backlog/architecture expansion",
   "ownerRequests": [
@@ -146,6 +158,13 @@
       "implementation": "Hydration/layout readiness; independent nutrient/recipe a11y cases; short isolated persistent profiles; no relaxed assertions/timeouts",
       "files": "tests/browser/test.ts; tests/browser/nutrients.spec.ts; tests/browser/recipes.spec.ts; tests/closure/final-closure.spec.ts",
       "tests": "Full current regressions and closure; Windows Firefox launch result separately recorded",
+      "result": "Implemented; see exact gate results"
+    },
+    {
+      "request": "Hosted failure follow-up",
+      "implementation": "Isolate confirmed read-only scan loops, shard CI within existing deadlines, and fix Firefox/Linux sidebar font-metric overflow",
+      "files": "src/styles/visual-system.css; .github/workflows/ci.yml; .github/workflows/cross-browser.yml; named test files in section 17",
+      "tests": "17 successful jobs; 893 unique cases per engine; 561 dedicated a11y; 72 focused cases; 336 responsive states",
       "result": "Implemented; see exact gate results"
     },
     {
@@ -362,8 +381,8 @@
       },
       "recheckedFailures": 1,
       "recheckStats": {
-        "startTime": "2026-10-16T10:25:43.513Z",
-        "duration": 4256.988,
+        "startTime": "2026-10-16T15:30:04.048Z",
+        "duration": 4062.5820000000003,
         "expected": 1,
         "skipped": 0,
         "unexpected": 0,
@@ -451,16 +470,259 @@
         "unexpected": 0,
         "flaky": 0
       }
+    },
+    "postCiCorrectionCheck": {
+      "command": "npm run check",
+      "exitCode": 0,
+      "completedAt": "2026-10-16T15:03:53.456Z",
+      "log": "post-ci-correction-check.log",
+      "reason": "Confirmed Firefox sidebar font-metric overflow and isolated accessibility test loops",
+      "units": 371,
+      "unitFiles": 97
+    },
+    "postCiCorrectionTargets": {
+      "stats": {
+        "startTime": "2026-10-16T15:04:00.005Z",
+        "duration": 65765.73300000001,
+        "expected": 72,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 36,
+          "failed": 0
+        },
+        {
+          "project": "webkit",
+          "passed": 36,
+          "failed": 0
+        }
+      ],
+      "tests": 72
+    },
+    "routesBeforeLinuxCorrection": {
+      "tests": 702,
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 702,
+          "failed": 0
+        }
+      ],
+      "stats": {
+        "expected": 702,
+        "unexpected": 0
+      },
+      "recheckedFailures": 1,
+      "recheckStats": {
+        "startTime": "2026-10-16T10:25:43.513Z",
+        "duration": 4256.988,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "routesCurrentInitial": {
+      "stats": {
+        "startTime": "2026-10-16T15:12:30.751Z",
+        "duration": 979027.864,
+        "expected": 701,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 701,
+          "failed": 1
+        }
+      ],
+      "tests": 702
+    },
+    "routesCurrent": {
+      "tests": 702,
+      "projects": [
+        {
+          "project": "chromium",
+          "passed": 702,
+          "failed": 0
+        }
+      ],
+      "stats": {
+        "expected": 702,
+        "unexpected": 0
+      },
+      "recheckedFailures": 1,
+      "recheckStats": {
+        "startTime": "2026-10-16T15:30:04.048Z",
+        "duration": 4062.5820000000003,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "routeReportCurrent": {
+      "command": "npm run test:route-report",
+      "exitCode": 0,
+      "completedAt": "2026-10-16T15:32:39.690Z",
+      "validRecords": 702,
+      "productionBuildSha256": [
+        "dc9dfa6c56f12d8d77b227c5cde9491c6b0f0c8a993b23bb7d8fd7f946294c00"
+      ],
+      "auditedCommits": ["87ac86920b37930c6e3e1b9184f5ff181b0b285c"],
+      "initial": {
+        "passed": 701,
+        "failed": 1
+      },
+      "recheck": {
+        "passed": 1,
+        "failed": 0,
+        "route": "/settings/data/restore",
+        "assertionsUnchanged": true
+      },
+      "classification": "ENVIRONMENT_LIMITATION",
+      "failure": "Windows net::ERR_NO_BUFFER_SPACE while downloading shared index JavaScript; initial failure and trace retained"
     }
   },
   "hosted": {
-    "status": "Pending current-commit Linux CI after main push; required before deployment"
+    "checkedAt": "2026-10-16T15:50:15.604Z",
+    "sha": "87ac86920b37930c6e3e1b9184f5ff181b0b285c",
+    "runs": [
+      {
+        "id": 38921593094,
+        "name": "CI",
+        "sha": "87ac86920b37930c6e3e1b9184f5ff181b0b285c",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38921593094",
+        "jobs": [
+          {
+            "id": 117042605340,
+            "name": "browser (2)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042605739,
+            "name": "verify",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042605916,
+            "name": "accessibility (2)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042605983,
+            "name": "accessibility (1)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606440,
+            "name": "browser (1)",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 38921593025,
+        "name": "Cross-browser regression",
+        "sha": "87ac86920b37930c6e3e1b9184f5ff181b0b285c",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38921593025",
+        "jobs": [
+          {
+            "id": 117042606354,
+            "name": "browser (firefox, 1)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606528,
+            "name": "browser (chromium, 2)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606696,
+            "name": "browser (firefox, 3)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606788,
+            "name": "browser (chromium, 3)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606801,
+            "name": "browser (chromium, 1)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606805,
+            "name": "browser (webkit, 2)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606838,
+            "name": "browser (chromium, 4)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606843,
+            "name": "browser (firefox, 4)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606869,
+            "name": "browser (firefox, 2)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042606986,
+            "name": "browser (webkit, 3)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042607182,
+            "name": "browser (webkit, 1)",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 117042607239,
+            "name": "browser (webkit, 4)",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
   },
   "performance": {
     "javascriptGzipBefore": 701549,
-    "javascriptGzipAfter": 704529,
+    "javascriptGzipAfter": 704566,
     "largestChunkGzipBefore": 168570,
-    "largestChunkGzipAfter": 168639,
+    "largestChunkGzipAfter": 168650,
     "javascriptBudget": 716800,
     "chunkBudget": 204800,
     "publicJsonGzipBefore": 429517,
@@ -473,8 +735,8 @@
         "files": 2
       },
       "after": {
-        "raw": 97007,
-        "gzip": 19221,
+        "raw": 97006,
+        "gzip": 19220,
         "files": 2
       }
     },
@@ -495,12 +757,33 @@
       [1280, 720],
       [1024, 768]
     ],
-    "result": "All new UI cases passed in Chromium and WebKit; closure adds device and zoom/print checks"
+    "result": "All new UI cases passed in Chromium and WebKit; closure adds device and zoom/print checks",
+    "currentDetailed": {
+      "states": 336,
+      "engines": ["chromium", "webkit"],
+      "paths": [
+        "/",
+        "/muscles?view=body",
+        "/exercises",
+        "/programs",
+        "/diet-planning",
+        "/recovery",
+        "/sleep",
+        "/cardio",
+        "/supplements",
+        "/progress/weight",
+        "/settings/data",
+        "/settings"
+      ],
+      "widths": [320, 375, 393, 768, 1024, 1280, 1440],
+      "themes": ["light", "dark"],
+      "failures": 0
+    }
   },
   "provenanceManifest": "docs/assets/owner-ux-visual-manifest.json",
   "localSmoke": {
     "origin": "http://127.0.0.1:3000",
-    "checkedAt": "2026-10-16T10:41:23.452Z",
+    "checkedAt": "2026-10-16T15:09:49.560Z",
     "engines": [
       {
         "engine": "chromium",
@@ -888,6 +1171,16 @@
       "resolution": "Initial route evidence retained; the identical failed route passed in a fresh browser with every asset/axe/geometry assertion unchanged. The exact-build report validates all 702 current routes."
     },
     {
+      "item": "Current-build restore-route Windows socket buffer",
+      "classification": "ENVIRONMENT_LIMITATION",
+      "resolution": "Initial 701/702 with shared-index net::ERR_NO_BUFFER_SPACE; identical fresh-browser restore route passes every original assertion. Raw failure/trace retained and separate validator accepts all 702 exact-build records."
+    },
+    {
+      "item": "Hosted whole-job deadlines",
+      "classification": "ENVIRONMENT_LIMITATION",
+      "resolution": "Original and unchanged-repeat CI verification jobs reached 30 minutes; unsharded WebKit/Firefox reached 40 minutes. All cancelled evidence is retained and is not counted as passing. Firefox also printed five timeout and one failure markers, which require the separately recorded named-case diagnosis. Two dedicated CI Chromium shards and four shards per matrix engine retain every test and assertion, two workers, all thresholds/budgets and original job/test timeouts. Final complete results are recorded in hosted counts."
+    },
+    {
       "item": "Fresh-profile file preview before hydration",
       "classification": "TEST_HARNESS",
       "resolution": "The separate page bypassed the fixture; setInputFiles could set a disabled pre-hydration input. Added readyForUi after each separate-page navigation; both exact portability cases pass."
@@ -907,6 +1200,8 @@
     "historicalReports": "Generated content-completion output is preserved in ignored evidence and original historical tracked reports retained."
   },
   "filesChanged": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/cross-browser.yml",
     "README.md",
     "docs/assets/owner-ux-visual-manifest.json",
     "docs/decisions/owner-requested-ux-upgrade.md",
@@ -977,7 +1272,8 @@
     "The development server exhibited a client AsyncLocalStorage bundling failure; production server is verified.",
     "The existing Vite raw chunk-size advisory remains; unchanged gzip budgets pass.",
     "Diagrams are approximate navigation/application workflows, not scientific anatomy or exercise technique.",
-    "Physical-device, human assistive-technology and source-review boundaries remain those of the existing release; no new certification is claimed."
+    "Physical-device, human assistive-technology and source-review boundaries remain those of the existing release; no new certification is claimed.",
+    "Large Windows route crawls can encounter shared-asset ERR_NO_BUFFER_SPACE. Each observed case retains its raw failure, passes an unchanged fresh-browser replay, and must satisfy the complete current-build route-record validator."
   ],
   "progressDefects": {
     "PROG-001": {
@@ -1036,7 +1332,7 @@
     },
     "normalSidebarScroll": false,
     "secondary": "One adjacent expandable group panel; Escape/opener focus; mobile navigation retained",
-    "fallbackMaxHeightPx": 650
+    "fallbackMaxHeightPx": 699
   },
   "themes": {
     "choices": ["Light", "Dark", "Auto (System)"],
@@ -1164,5 +1460,689 @@
       ]
     },
     "policy": "Application CSP unchanged. Screenshots captured with Chromium; normal two-engine smoke runs without screenshot injection and rejects every console/request/asset error."
+  },
+  "hostedCounts": {
+    "sha": "87ac86920b37930c6e3e1b9184f5ff181b0b285c",
+    "checkedAt": "2026-10-16T15:50:15.604Z",
+    "workflowsPassed": 2,
+    "jobsPassed": 17,
+    "jobs": [
+      {
+        "workflow": "CI",
+        "runId": 38921593094,
+        "jobId": 117042605340,
+        "job": "browser (2)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 446,
+            "line": "2026-10-16T15:21:00.0025564Z   446 passed (9.7m)"
+          }
+        ],
+        "ciRegressionPassed": 446
+      },
+      {
+        "workflow": "CI",
+        "runId": 38921593094,
+        "jobId": 117042605739,
+        "job": "verify",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:16:53.1267557Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:16:53.1270234Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 97,
+            "line": "2026-10-16T15:18:29.0211416Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:18:29.0213908Z       Tests  371 passed (371)"
+          }
+        ],
+        "coverage": {
+          "statements": 73.22,
+          "branches": 65.01,
+          "functions": 67.65,
+          "lines": 77.15
+        }
+      },
+      {
+        "workflow": "CI",
+        "runId": 38921593094,
+        "jobId": 117042605916,
+        "job": "accessibility (2)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:18:36.5563867Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:18:36.5566647Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 280,
+            "line": "2026-10-16T15:25:50.9105039Z   280 passed (6.5m)"
+          }
+        ],
+        "accessibilityPassed": 280
+      },
+      {
+        "workflow": "CI",
+        "runId": 38921593094,
+        "jobId": 117042605983,
+        "job": "accessibility (1)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:21:16.7690539Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:21:16.7695506Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 281,
+            "line": "2026-10-16T15:28:50.0861329Z   281 passed (6.8m)"
+          }
+        ],
+        "accessibilityPassed": 281
+      },
+      {
+        "workflow": "CI",
+        "runId": 38921593094,
+        "jobId": 117042606440,
+        "job": "browser (1)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 447,
+            "line": "2026-10-16T15:31:20.4698629Z   447 passed (9.5m)"
+          }
+        ],
+        "ciRegressionPassed": 447
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606354,
+        "job": "browser (firefox, 1)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:12:07.0451133Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:12:07.0453571Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 263,
+            "line": "2026-10-16T15:20:27.2391647Z   263 passed (7.5m)"
+          },
+          {
+            "count": 8,
+            "line": "2026-10-16T15:22:02.3797049Z   8 passed (1.6m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "firefox",
+          "shard": 1,
+          "regressionPassed": 263,
+          "closurePassed": 8
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606528,
+        "job": "browser (chromium, 2)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:18:37.3963495Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:18:37.3966031Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 184,
+            "line": "2026-10-16T15:23:46.9472871Z   184 passed (4.4m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "chromium",
+          "shard": 2,
+          "regressionPassed": 184,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606696,
+        "job": "browser (firefox, 3)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:30:06.9874038Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:30:06.9874610Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 223,
+            "line": "2026-10-16T15:35:58.8721582Z   223 passed (5.3m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "firefox",
+          "shard": 3,
+          "regressionPassed": 223,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606788,
+        "job": "browser (chromium, 3)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:23:53.4706983Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:23:53.4707517Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 223,
+            "line": "2026-10-16T15:28:19.1176224Z   223 passed (3.8m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "chromium",
+          "shard": 3,
+          "regressionPassed": 223,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606801,
+        "job": "browser (chromium, 1)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:32:13.7133989Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:32:13.7135251Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 263,
+            "line": "2026-10-16T15:38:40.0095724Z   263 passed (5.5m)"
+          },
+          {
+            "count": 24,
+            "line": "2026-10-16T15:41:28.6632229Z   24 passed (2.8m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "chromium",
+          "shard": 1,
+          "regressionPassed": 263,
+          "closurePassed": 24
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606805,
+        "job": "browser (webkit, 2)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:21:30.9618166Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:21:30.9619292Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 184,
+            "line": "2026-10-16T15:28:39.9766658Z   184 passed (6.1m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "webkit",
+          "shard": 2,
+          "regressionPassed": 184,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606838,
+        "job": "browser (chromium, 4)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:32:28.2869966Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:32:28.2872546Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 223,
+            "line": "2026-10-16T15:42:24.1494396Z   223 passed (9.2m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "chromium",
+          "shard": 4,
+          "regressionPassed": 223,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606843,
+        "job": "browser (firefox, 4)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:33:05.0824864Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:33:05.0825361Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 223,
+            "line": "2026-10-16T15:44:54.9187027Z   223 passed (11.1m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "firefox",
+          "shard": 4,
+          "regressionPassed": 223,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606869,
+        "job": "browser (firefox, 2)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:21:23.4089937Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:21:23.4090478Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 184,
+            "line": "2026-10-16T15:26:03.7015208Z   184 passed (4.1m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "firefox",
+          "shard": 2,
+          "regressionPassed": 184,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042606986,
+        "job": "browser (webkit, 3)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:33:23.7547528Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:33:23.7560246Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 223,
+            "line": "2026-10-16T15:40:08.2109142Z   223 passed (5.8m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "webkit",
+          "shard": 3,
+          "regressionPassed": 223,
+          "closurePassed": 0
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042607182,
+        "job": "browser (webkit, 1)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:36:14.8708305Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:36:14.8709035Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 263,
+            "line": "2026-10-16T15:44:22.5522126Z   263 passed (7.0m)"
+          },
+          {
+            "count": 24,
+            "line": "2026-10-16T15:48:06.2206462Z   24 passed (3.7m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "webkit",
+          "shard": 1,
+          "regressionPassed": 263,
+          "closurePassed": 24
+        }
+      },
+      {
+        "workflow": "Cross-browser regression",
+        "runId": 38921593025,
+        "jobId": 117042607239,
+        "job": "browser (webkit, 4)",
+        "conclusion": "success",
+        "passes": [
+          {
+            "count": 97,
+            "line": "2026-10-16T15:34:28.2800505Z  Test Files  97 passed (97)"
+          },
+          {
+            "count": 371,
+            "line": "2026-10-16T15:34:28.2801596Z       Tests  371 passed (371)"
+          },
+          {
+            "count": 223,
+            "line": "2026-10-16T15:43:56.8434640Z   223 passed (8.7m)"
+          }
+        ],
+        "browserResults": {
+          "browser": "webkit",
+          "shard": 4,
+          "regressionPassed": 223,
+          "closurePassed": 0
+        }
+      }
+    ],
+    "browsers": [
+      {
+        "browser": "chromium",
+        "shards": 4,
+        "regressionPassed": 893,
+        "closurePassed": 24
+      },
+      {
+        "browser": "firefox",
+        "shards": 4,
+        "regressionPassed": 893,
+        "closurePassed": 8
+      },
+      {
+        "browser": "webkit",
+        "shards": 4,
+        "regressionPassed": 893,
+        "closurePassed": 24
+      }
+    ],
+    "ciRegressionPassed": 893,
+    "accessibilityPassed": 561
+  },
+  "linuxCorrections": {
+    "commit": "87ac86920b37930c6e3e1b9184f5ff181b0b285c",
+    "previousCommit": "535e2840b92b2a00117477d649747b66b422ff33",
+    "initialShardedResults": {
+      "jobsPassed": 12,
+      "jobsFailed": 4,
+      "chromium": {
+        "passed": 328,
+        "failed": 0,
+        "closure": 24
+      },
+      "webkit": {
+        "passed": 327,
+        "failed": 1,
+        "closure": 24
+      },
+      "firefox": {
+        "passed": 319,
+        "failed": 9
+      }
+    },
+    "productCorrection": {
+      "classification": "PRODUCT_DEFECT",
+      "issue": "Firefox/Linux fallback-font sidebar overflow at 1440x700",
+      "change": "Remove 16px unused top/brand/footer spacing; preserve 14px primary text and 44px targets; allow necessary fallback scrolling below 700px"
+    },
+    "harnessCorrection": {
+      "classification": "TEST_HARNESS",
+      "groups": [
+        "published routes",
+        "foods",
+        "foundation",
+        "cardio",
+        "nutrition",
+        "progress",
+        "search/saved"
+      ],
+      "cause": "Repeated accessibility scans and page reuse accumulated inside one test deadline. The sixth axe finishRun began 30.288 seconds (Firefox) and 30.890 seconds (WebKit) after Before Hooks, beyond the 30-second deadline.",
+      "policy": "No scan, assertion, viewport, theme, axe rule, focus, loading, error or request check removed; 30-second deadlines retained or tightened from aggregate 180/240 seconds",
+      "inventory": {
+        "total": 893,
+        "a11y": 561,
+        "published": 537,
+        "publicViewportThemeScans": 1074,
+        "expectedScanCountUnchanged": true
+      },
+      "partition": [
+        {
+          "browser": "chromium",
+          "shards": 2,
+          "perShard": [447, 446],
+          "total": 893,
+          "distinct": 893,
+          "unchangedAssertions": true
+        },
+        {
+          "browser": "chromium",
+          "shards": 4,
+          "perShard": [263, 184, 223, 223],
+          "total": 893,
+          "distinct": 893,
+          "unchangedAssertions": true
+        },
+        {
+          "browser": "firefox",
+          "shards": 4,
+          "perShard": [263, 184, 223, 223],
+          "total": 893,
+          "distinct": 893,
+          "unchangedAssertions": true
+        },
+        {
+          "browser": "webkit",
+          "shards": 4,
+          "perShard": [263, 184, 223, 223],
+          "total": 893,
+          "distinct": 893,
+          "unchangedAssertions": true
+        }
+      ],
+      "traceEvidence": {
+        "firefoxSixthFinishStartSeconds": 30.288,
+        "webkitSixthFinishStartSeconds": 30.89,
+        "source": [
+          "trace-summary-firefox-chicken.json",
+          "trace-summary-webkit-chicken.json"
+        ]
+      }
+    },
+    "localCheck": {
+      "command": "npm run check",
+      "exitCode": 0,
+      "completedAt": "2026-10-16T15:03:53.456Z",
+      "log": "post-ci-correction-check.log",
+      "reason": "Confirmed Firefox sidebar font-metric overflow and isolated accessibility test loops",
+      "units": 371,
+      "unitFiles": 97
+    },
+    "targetedBrowser": {
+      "passed": 72,
+      "failed": 0,
+      "skipped": 0,
+      "engines": ["chromium", "webkit"],
+      "evidence": "post-ci-correction-targets.json"
+    },
+    "sourceTestTree": "19a2ec2985c47a2ed764a870c8b1be66ff26e20b7d16d0a64959d083113867bc",
+    "hosted": "Required current-commit outcomes are recorded separately; no pre-pass claim"
+  },
+  "hostedRunnerDeadline": {
+    "sha": "c38d2dffbbf0429b58d714719f911f592cb3939c",
+    "runId": 38889482185,
+    "jobId": 116935216703,
+    "conclusion": "cancelled",
+    "jobTimeoutMinutes": 30,
+    "browserTestsPlanned": 328,
+    "printedPassingDots": 240,
+    "assertionFailureLines": [],
+    "cancellation": "2026-10-16T11:17:14.2892345Z ##[error]The operation was canceled.",
+    "classification": "ENVIRONMENT_LIMITATION",
+    "action": "Rerun exact-SHA job with unchanged code, assertions, timeouts and workflow; original evidence retained",
+    "evidence": "github-job-116935216703.log",
+    "countingNote": "Browser-only marker rows; excludes two Vitest separator dots counted by the initial broad match."
+  },
+  "hostedUnshardedHistory": {
+    "sha": "c38d2dffbbf0429b58d714719f911f592cb3939c",
+    "jobs": [
+      {
+        "id": 116935216703,
+        "name": "CI verify, original",
+        "limitMinutes": 30,
+        "printedMarkers": {
+          "passed": 240,
+          "timedOut": 0,
+          "failed": 0
+        },
+        "cancellation": "2026-10-16T11:17:14.2892345Z ##[error]The operation was canceled.",
+        "evidence": "github-job-116935216703.log",
+        "result": "Incomplete due to whole-job deadline; not counted as a passing suite"
+      },
+      {
+        "id": 116946456120,
+        "name": "CI verify, unchanged rerun",
+        "limitMinutes": 30,
+        "printedMarkers": {
+          "passed": 240,
+          "timedOut": 0,
+          "failed": 0
+        },
+        "cancellation": "2026-10-16T11:48:52.1608940Z ##[error]The operation was canceled.",
+        "evidence": "github-job-116946456120.log",
+        "result": "Incomplete due to whole-job deadline; not counted as a passing suite"
+      },
+      {
+        "id": 116935217237,
+        "name": "WebKit unsharded",
+        "limitMinutes": 40,
+        "printedMarkers": {
+          "passed": 240,
+          "timedOut": 0,
+          "failed": 0
+        },
+        "cancellation": "2026-10-16T11:27:16.9296302Z ##[error]The operation was canceled.",
+        "evidence": "github-job-116935217237.log",
+        "result": "Incomplete due to whole-job deadline; not counted as a passing suite"
+      },
+      {
+        "id": 116935217456,
+        "name": "Firefox unsharded",
+        "limitMinutes": 40,
+        "printedMarkers": {
+          "passed": 154,
+          "timedOut": 5,
+          "failed": 1
+        },
+        "cancellation": "2026-10-16T11:27:16.0841758Z ##[error]The operation was canceled.",
+        "evidence": "github-job-116935217456.log",
+        "result": "Incomplete due to whole-job deadline; not counted as a passing suite"
+      }
+    ],
+    "schedulingCorrection": "Two CI Chromium shards; four shards per cross-browser engine; unchanged assertions, test timeouts, workers, thresholds, budgets and 30/40-minute job deadlines",
+    "partition": [
+      {
+        "browser": "chromium",
+        "shards": 2,
+        "perShard": [164, 164],
+        "total": 328,
+        "distinct": 328,
+        "unchangedAssertions": true
+      },
+      {
+        "browser": "chromium",
+        "shards": 4,
+        "perShard": [97, 67, 82, 82],
+        "total": 328,
+        "distinct": 328,
+        "unchangedAssertions": true
+      },
+      {
+        "browser": "firefox",
+        "shards": 4,
+        "perShard": [97, 67, 82, 82],
+        "total": 328,
+        "distinct": 328,
+        "unchangedAssertions": true
+      },
+      {
+        "browser": "webkit",
+        "shards": 4,
+        "perShard": [97, 67, 82, 82],
+        "total": 328,
+        "distinct": 328,
+        "unchangedAssertions": true
+      }
+    ]
   }
 }

@@ -98,8 +98,9 @@ not application behavior. Every shard must pass before production deployment.
 The first complete sharded results were 12 successful jobs and four failed jobs.
 Named diagnostics confirmed cumulative accessibility scan deadlines in the food
 catalogue, foundation navigation, cardio, nutrition, Progress, search/saved and
-published-route groups. The chicken-drumstick traces show six completed axe runs
-reaching roughly 34 seconds without a reported violation inside a 30-second test.
+published-route groups. In the chicken-drumstick traces, the sixth axe finishRun
+begins 30.288 seconds (Firefox) and 30.890 seconds (WebKit) after Before Hooks,
+beyond the 30-second deadline, without a reported accessibility violation.
 These read-only combinations now run in isolated route/viewport cases, with every
 original theme, axe rule, layout, focus, loading, error and request assertion
 retained. The two former 180/240-second aggregate loops use the stricter default
