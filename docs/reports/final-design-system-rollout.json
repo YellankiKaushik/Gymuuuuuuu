@@ -1,0 +1,551 @@
+{
+  "title": "Fitness OS — final design system rollout",
+  "recordedAt": "2026-10-17T07:49:33.983Z",
+  "baseCommit": "97fe2bb7d3f57993f76f97442259c55246841ca5",
+  "executionTree": "fd89f4116491871c6362245a2cf575d6c09b3644670c2cd17d521b804d47e3c8",
+  "releaseBinding": "The containing Git commit identifies the final source. Hosted Actions checks and the Vercel Git-source deployment are inspected for that exact SHA after this report is committed. Final release IDs and post-deployment results are delivered with the release response; no future self-hash or deployment result is fabricated here.",
+  "design": {
+    "canonical": true,
+    "trackedOnCommit": true,
+    "sections": [
+      {
+        "section": "References and decisions",
+        "result": "PASS"
+      },
+      {
+        "section": "Canonical tokens",
+        "result": "PASS"
+      },
+      {
+        "section": "Typography and hierarchy",
+        "result": "PASS"
+      },
+      {
+        "section": "Components and state",
+        "result": "PASS"
+      },
+      {
+        "section": "Responsive, themes and accessibility",
+        "result": "PASS"
+      },
+      {
+        "section": "Change discipline",
+        "result": "PASS"
+      }
+    ],
+    "compliancePercent": 100
+  },
+  "modules": [
+    {
+      "module": "Home",
+      "path": "/",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Anatomy",
+      "path": "/muscles",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Exercises",
+      "path": "/exercises",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Workout science",
+      "path": "/learn/workout-science",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Nutrients",
+      "path": "/nutrients",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Supplement evidence",
+      "path": "/supplements/evidence",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Supplement records",
+      "path": "/supplements/products/create",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Programs",
+      "path": "/programs",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Workout tracker",
+      "path": "/workout",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Cardio",
+      "path": "/cardio/session/new",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Foods",
+      "path": "/foods/brown-rice",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Nutrition",
+      "path": "/nutrition/add",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Diet planning",
+      "path": "/diet-planning/energy",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Recipes",
+      "path": "/recipes/chickpea-cucumber-bowl",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Recipe editor",
+      "path": "/recipes/create",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Meal plans",
+      "path": "/meal-plans/create",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Grocery empty state",
+      "path": "/meal-plans/mplan_missing/grocery-list",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Recovery",
+      "path": "/recovery/check-in",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Sleep",
+      "path": "/sleep/log",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Mobility",
+      "path": "/mobility",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Dashboard",
+      "path": "/dashboard",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Weight and height",
+      "path": "/progress/weight",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Measurements",
+      "path": "/progress/measurements",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Body composition",
+      "path": "/progress/body-composition",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Photos",
+      "path": "/progress/photos",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Analytics",
+      "path": "/analytics/workouts",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Search",
+      "path": "/search?q=apple&type=food",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Saved and favourites",
+      "path": "/saved",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Collections",
+      "path": "/saved/collections",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Comparisons",
+      "path": "/compare",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Settings",
+      "path": "/settings",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Data overview",
+      "path": "/settings/data",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Backup",
+      "path": "/settings/data/backup",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Restore",
+      "path": "/settings/data/restore",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "CSV export",
+      "path": "/settings/data/export",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Reset",
+      "path": "/settings/data/reset",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Sources",
+      "path": "/about/sources",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    },
+    {
+      "module": "Missing route",
+      "path": "/design-verification-missing-page",
+      "design": "PASS",
+      "light": "PASS",
+      "dark": "PASS",
+      "responsive": "PASS",
+      "accessibility": "PASS",
+      "automatedStates": 4
+    }
+  ],
+  "viewports": [
+    [320, 800],
+    [375, 812],
+    [393, 852],
+    [540, 900],
+    [640, 900],
+    [768, 1024],
+    [1024, 768],
+    [1280, 720],
+    [1440, 700],
+    [1440, 900]
+  ],
+  "tests": {
+    "chromium": 942,
+    "webkit": 942,
+    "accessibility": 599,
+    "closure": 48,
+    "correctedDesignBothEngines": 98,
+    "affectedBothEngines": 84,
+    "chromiumFirstRun": {
+      "passed": 941,
+      "failures": [
+        "Collections populated target-size case; fixed in actual navigation CSS, original assertions retained"
+      ]
+    },
+    "webkitFirstRun": {
+      "passed": 940,
+      "failures": ["Weight and height", "Body composition"]
+    },
+    "units": 371,
+    "unitFiles": 97,
+    "coverage": {
+      "statements": 73.22,
+      "branches": 65.01,
+      "functions": 67.65,
+      "lines": 77.15
+    },
+    "install": "PASS",
+    "format": "PASS",
+    "lint": "PASS",
+    "strictTypes": "PASS",
+    "content": "PASS",
+    "search": "PASS",
+    "privacy": "PASS",
+    "build": "PASS",
+    "auditVulnerabilities": 0,
+    "firefox": "Required current-SHA hosted Cross-browser regression jobs; see release check links"
+  },
+  "performance": {
+    "before": {
+      "baseSha": "97fe2bb7d3f57993f76f97442259c55246841ca5",
+      "javascriptGzip": 704566,
+      "largestJavascriptGzip": 168650,
+      "cssGzip": 19220,
+      "publicJsonGzip": 429517
+    },
+    "after": {
+      "javascriptGzip": 704799,
+      "largestJavascriptGzip": 168652,
+      "cssGzip": 20317,
+      "publicJsonGzip": 429517
+    },
+    "budgetsUnchanged": true
+  },
+  "preservation": {
+    "localDesignFilesPreserved": 9,
+    "unrelatedInitialEdits": 0,
+    "contentManifest": "83fef1c09dbeeb3e9a28bba1e037a38dbbfa3ec9d05a39ce2cea5d3175b91fa5",
+    "factualRecords": 520,
+    "searchDocuments": 648,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "historyRewritten": false,
+    "forcePush": false,
+    "dependenciesAdded": 0
+  },
+  "privacy": "397-source runtime audit plus full security/header/privacy regressions; no new remote fonts, images, analytics or personal-data endpoints",
+  "knownLimits": [
+    "Automated axe, keyboard, print and emulated-device proxies do not certify physical devices, native print dialogs or human screen-reader usability.",
+    "Sampled visual inspection covers every major module and page archetype, rather than every factual identity."
+  ],
+  "filesChanged": [
+    "DESIGN.md",
+    "README.md",
+    "docs/assets/design-system-route-matrix.json",
+    "docs/decisions/design-reference-integration.md",
+    "docs/decisions/final-design-system-rollout.md",
+    "docs/phases/19-plan.md",
+    "docs/phases/phase-19.md",
+    "docs/reports/design-reference-integration.md",
+    "docs/reports/final-design-system-rollout.json",
+    "docs/reports/final-design-system-rollout.md",
+    "package.json",
+    "src/components/home.tsx",
+    "src/features/cardio/builders.tsx",
+    "src/features/cardio/session-pages.tsx",
+    "src/features/data-management/page.tsx",
+    "src/features/diet-planning/pages.tsx",
+    "src/features/nutrition-tracker/pages.tsx",
+    "src/features/progress/workspace.tsx",
+    "src/features/recipes-meal-plans/pages.tsx",
+    "src/features/recipes-meal-plans/plan-pages.tsx",
+    "src/features/recovery/pages.tsx",
+    "src/features/recovery/routines.tsx",
+    "src/features/search/pages.tsx",
+    "src/features/supplements/event-pages.tsx",
+    "src/features/supplements/product-pages.tsx",
+    "src/features/supplements/trial-pages.tsx",
+    "src/features/workout-tracker/editor.tsx",
+    "src/styles/app.css",
+    "src/styles/cardio.css",
+    "src/styles/catalogue.css",
+    "src/styles/data-management.css",
+    "src/styles/diet-planning.css",
+    "src/styles/exercises.css",
+    "src/styles/foods.css",
+    "src/styles/foundation.css",
+    "src/styles/nutrients.css",
+    "src/styles/nutrition.css",
+    "src/styles/programs.css",
+    "src/styles/progress.css",
+    "src/styles/recipes.css",
+    "src/styles/recovery.css",
+    "src/styles/science.css",
+    "src/styles/search.css",
+    "src/styles/shell.css",
+    "src/styles/visual-system.css",
+    "src/styles/workout.css",
+    "tests/browser/design-system.spec.ts"
+  ]
+}

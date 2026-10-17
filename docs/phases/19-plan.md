@@ -1,5 +1,30 @@
 # Phase 19 — First manual-test completion
 
+## October 17 application-wide design rollout
+
+- [x] Preserve the nine local design-checkpoint files and record the initial Git state.
+- [x] Apply canonical tokens, shared shell, Home and action/state conventions.
+- [x] Normalize native forms, data boundaries, cards, tables and destructive actions.
+- [x] Align Learn, Train, Eat, Recover, Progress, Tools and Settings presentation.
+- [x] Add a finite 38-page module matrix and all ten requested Home viewport checks.
+- [x] Preserve frozen content, schemas, routing, local records and repository organization.
+- [x] Pass local gates: 371 units, 98 design rechecks, 84 affected interactions, 599 accessibility and 48 closure/device cases; require current-SHA hosted CI before release.
+- [x] Bind the normal push, exact Git-source deployment and live checks to the containing main commit in the final release handoff. This release checkbox is effective only after both required hosted workflows succeed and production is READY for that exact SHA.
+
+The [scope decision](../decisions/final-design-system-rollout.md) and
+[final report](../reports/final-design-system-rollout.md) retain the exact evidence.
+
+## October 17 owner-requested design checkpoint
+
+- [x] Inspect both required repositories and distinguish the supporting report from owner instructions.
+- [x] Create root DESIGN.md with NerdWallet primary, IBM data/forms and Oura wellness roles.
+- [x] Improve existing Home, tokens, shared states, comparison/data controls and Progress theme consistency.
+- [x] Preserve routing, content, storage schemas, confirmations, accessibility and Light/Dark/Auto behavior.
+- [x] Run strict types, lint, foundation/unit checks, content validation, build and focused desktop/mobile verification; see [current evidence](../reports/design-reference-integration.md).
+
+This is a bounded presentation checkpoint within the completed application; the
+original milestone and historical release evidence below retain their scope.
+
 This owner-authorized milestone follows Phase 18. The October 8 scope supersedes the open-ended content expansion requirement: freeze the existing verified subset, retain all drafts as future backlog and finish a stable checkpoint for the owner's first manual test. Phases 00–18, stable IDs, adapters, databases and all anti-fabrication rules are preserved. See docs/decisions/phase19-first-manual-test-scope.md.
 
 - [x] Recalculate baseline public/draft counts from actual adapters and inventory every production route, tracker, calculator, database, export and restore flow.

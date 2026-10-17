@@ -12,9 +12,9 @@
   margin-block: 20px;
 }
 .recovery-card {
-  padding: 22px;
+  padding: var(--space-card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   background: var(--surface);
   min-width: 0;
   margin-block: 18px;
@@ -75,8 +75,8 @@
   min-width: 0;
   min-height: 46px;
   padding: 11px 12px;
-  border: 1px solid var(--line);
-  border-radius: 9px;
+  border: 1px solid var(--control-line);
+  border-radius: var(--radius-sm);
   background: var(--surface);
   color: var(--text);
   font: inherit;
@@ -89,8 +89,8 @@
 .recovery-page fieldset {
   min-width: 0;
   border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 18px;
+  border-radius: var(--radius-md);
+  padding: var(--space-card);
   margin-block: 20px;
 }
 .recovery-page legend {

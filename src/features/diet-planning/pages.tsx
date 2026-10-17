@@ -415,7 +415,7 @@ export function DietPlans({ planId }: { planId?: string }) {
             <button onClick={() => setPending({ action: "archived", plan })}>
               Archive
             </button>
-            <button onClick={() => setPending({ action: "deleted", plan })}>
+            <button onClick={() => setPending({ action: "deleted", plan })} className="button danger">
               Delete
             </button>
           </div>

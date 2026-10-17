@@ -1,5 +1,39 @@
 # Phase 19 handoff
 
+## October 17, 2026 — Application-wide design handoff
+
+The owner-authorized extension aligns every implemented module with root DESIGN.md
+using existing feature styles and shared native-control, typography, action and
+state rules. The local checkpoint is preserved. A 38-page sample matrix covers
+module entry/detail/form/data/empty/error archetypes; all ten requested Home
+viewports have explicit layout assertions. Source-backed content, schemas,
+storage/restore behavior and routing architecture are unchanged.
+
+The [final rollout decision](../decisions/final-design-system-rollout.md) and
+[final report](../reports/final-design-system-rollout.md) distinguish local gates,
+hosted current-SHA checks and the exact Git-source production release. Existing
+human device/assistive-technology certification boundaries remain applicable.
+
+Final local gates pass: 371 units in 97 files, 98 corrected design cases, 84
+affected interaction cases, 599 dedicated accessibility cases and 48 closure
+cases. The complete initial runs and their three corrected failures remain in
+the report. Current-SHA hosted CI and exact-SHA production results are bound by
+the final release handoff after push; earlier release claims remain historical.
+
+## October 17, 2026 — Design reference integration
+
+The owner's design request is implemented through the existing React/CSS layer.
+Root [DESIGN.md](../../DESIGN.md) defines the original Fitness OS interpretation
+of NerdWallet (primary), IBM (data/forms) and Oura (wellness). Home hierarchy,
+shared tone borders, comparison values, data-control boundaries and Progress
+theme consistency are improved. Routing, schemas, local persistence, content
+and theme logic are preserved. No new runtime dependency or company asset is added.
+
+See the [decision](../decisions/design-reference-integration.md) and
+[current verification report](../reports/design-reference-integration.md) for
+the exact check scope and environment retries. Historical completion/deployment
+claims below apply to their recorded builds, not this local presentation update.
+
 ## Current final completion checkpoint — October 12, 2026
 
 The finite release completion pass is **automatable-complete** for the frozen

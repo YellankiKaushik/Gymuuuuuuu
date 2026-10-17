@@ -376,7 +376,7 @@ export function NutritionDayPage({ selectedDate }: { selectedDate?: string }) {
             </label>
             <button
               type="button"
-              className="button secondary"
+              className="button danger"
               onClick={() =>
                 void w.run(
                   () =>
@@ -570,7 +570,7 @@ export function NutritionDayPage({ selectedDate }: { selectedDate?: string }) {
                           Repeat snapshot
                         </button>
                         <button
-                          className="button secondary"
+                          className="button danger"
                           onClick={() =>
                             void w.run(
                               () => softDeleteNutritionEntry(e.id),
@@ -1425,7 +1425,7 @@ function NutritionAddForm() {
               Log favourite snapshot
             </button>
             <button
-              className="button secondary"
+              className="button danger"
               onClick={() =>
                 void w.run(() => removeFavourite(f.id), "Favourite removed.")
               }

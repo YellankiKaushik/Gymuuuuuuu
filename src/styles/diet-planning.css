@@ -7,7 +7,7 @@
   justify-content: center;
   min-height: 44px;
   padding: 0.6rem 0.9rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--control-line);
   border-radius: var(--radius-sm);
   background: var(--surface-soft);
   color: var(--text);
@@ -30,7 +30,7 @@
 .diet-nav a {
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
 }
 .diet-nav a[aria-current="page"] {
   background: var(--accent-soft);
@@ -64,10 +64,10 @@
 .diet-page textarea {
   width: 100%;
   min-width: 0;
-  border: 1px solid var(--line);
+  border: 1px solid var(--control-line);
   background: var(--surface);
   color: var(--text);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   padding: 0.7rem;
   font: inherit;
 }
@@ -86,7 +86,7 @@
 .diet-activity {
   padding: 1.25rem;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   background: var(--surface);
   margin-bottom: 1rem;
   overflow-wrap: anywhere;

@@ -1079,7 +1079,7 @@ function SessionDetail({ sessionId }: { sessionId: string }) {
           />
         </Field>
         <button
-          className="button secondary"
+          className="button danger"
           disabled={!confirmed || busy}
           onClick={() =>
             void run(async () => {

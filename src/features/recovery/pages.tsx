@@ -414,7 +414,7 @@ function SleepForm({ existing }: { existing: SleepLog | null }) {
               />
             </Field>
             <button
-              className="button secondary"
+              className="button danger"
               type="button"
               onClick={() =>
                 set(
@@ -534,7 +534,7 @@ function SleepForm({ existing }: { existing: SleepLog | null }) {
       </button>
       {existing && (
         <button
-          className="button secondary"
+          className="button danger"
           type="button"
           disabled={busy}
           onClick={() => {
@@ -751,7 +751,7 @@ function CheckForm({ existing }: { existing: CheckIn | null }) {
             </Field>
             <button
               type="button"
-              className="button secondary"
+              className="button danger"
               onClick={() =>
                 set(
                   "regionalSoreness",
@@ -909,7 +909,7 @@ function CheckForm({ existing }: { existing: CheckIn | null }) {
               : {id}{" "}
               <button
                 type="button"
-                className="button secondary"
+                className="button danger"
                 onClick={() =>
                   set(
                     "linkedWorkoutSessionIds",
@@ -949,7 +949,7 @@ function CheckForm({ existing }: { existing: CheckIn | null }) {
       </button>
       {existing && (
         <button
-          className="button secondary"
+          className="button danger"
           type="button"
           onClick={() => {
             if (

@@ -344,7 +344,7 @@ function SetEntry({
             Copy previous values
           </button>
         )}
-        <button type="button" className="button secondary" onClick={remove}>
+        <button type="button" className="button danger" onClick={remove}>
           Remove set
         </button>
       </div>
@@ -974,7 +974,7 @@ export function WorkoutEditor({
           ))}
           <div className="actions">
             <button
-              className="button secondary"
+              className="button danger"
               disabled={!owned}
               onClick={() => {
                 setReplaceId(exercise.id);
@@ -1043,7 +1043,7 @@ export function WorkoutEditor({
               Move exercise down
             </button>
             <button
-              className="button secondary"
+              className="button danger"
               disabled={!owned}
               onClick={() => {
                 if (

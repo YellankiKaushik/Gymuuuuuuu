@@ -132,7 +132,7 @@ export function LocalRoutines() {
                     {identity.status === "active" ? "Archive" : "Reactivate"}
                   </button>
                   <button
-                    className="button secondary"
+                    className="button danger"
                     onClick={() => {
                       if (
                         window.confirm(
@@ -431,7 +431,7 @@ function RoutineForm({ existing }: { existing: Routine | undefined }) {
             </button>
             <button
               type="button"
-              className="button secondary"
+              className="button danger"
               disabled={draft.steps.length === 1}
               onClick={() =>
                 set(
@@ -838,7 +838,7 @@ function SessionCard({
           Save feedback
         </button>
         <button
-          className="button secondary"
+          className="button danger"
           type="button"
           onClick={() => {
             if (

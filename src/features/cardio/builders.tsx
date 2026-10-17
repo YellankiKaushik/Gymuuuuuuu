@@ -442,7 +442,7 @@ export function SegmentEditor({
             </button>
             <button
               type="button"
-              className="button secondary"
+              className="button danger"
               onClick={() =>
                 onChange(
                   value
@@ -770,7 +770,7 @@ function Builder({ kind }: { kind: "plan" | "routine" }) {
                 />
                 <button
                   type="button"
-                  className="button secondary"
+                  className="button danger"
                   onClick={() =>
                     setSessions(sessions.filter((_, i) => i !== index))
                   }
@@ -890,7 +890,7 @@ function Builder({ kind }: { kind: "plan" | "routine" }) {
             </Field>
             <button
               disabled={!confirmed || busy}
-              className="button secondary"
+              className="button danger"
               onClick={() =>
                 void run(async () => {
                   await deleteCardioEntity(

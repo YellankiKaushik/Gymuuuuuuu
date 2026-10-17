@@ -45,7 +45,7 @@ function Trials() {
           )}
           <a href={`/supplements/trials/${t.id}`}>Review trial</a>
           <button
-            className="button secondary"
+            className="button danger"
             onClick={() => {
               if (
                 window.confirm(
@@ -320,7 +320,7 @@ function Editor({ trial }: { trial?: Trial }) {
               </p>
               <p>{o.note}</p>
               <button
-                className="button secondary"
+                className="button danger"
                 onClick={() => {
                   if (window.confirm("Delete this observation?"))
                     void run(

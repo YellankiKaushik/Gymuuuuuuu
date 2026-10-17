@@ -1,5 +1,8 @@
 # Fitness OS
 
+Presentation follows the project-specific [DESIGN.md](DESIGN.md). Engineering and
+local-data safety rules remain in [AGENTS.md](AGENTS.md).
+
 Fitness OS brings fitness education, training, nutrition, recovery and optional personal tracking into one application. Public knowledge is checked into the repository; personal records stay in the user's browser. You can browse the libraries without creating an account or keeping a diary.
 
 Built with **TanStack Start, React, strict TypeScript, Tailwind CSS, Vite and Nitro**. There are no accounts, authentication, cloud personal storage, payments, social features, admin CMS, analytics, telemetry or external runtime fitness APIs.

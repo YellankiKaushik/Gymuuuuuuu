@@ -1,78 +1,98 @@
-.cardio-page {
+.cardio-page,
+.supplements-page {
   max-width: 1280px;
   margin: auto;
 }
 .cardio-page .section-nav,
-.cardio-page .actions {
+.cardio-page .actions,
+.supplements-page .section-nav,
+.supplements-page .actions {
   flex-wrap: wrap;
 }
-.cardio-page .card {
+.cardio-page .card,
+.supplements-page .card {
   min-width: 0;
-  padding: 22px;
+  padding: var(--space-card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   background: var(--surface);
   margin-block: 20px;
 }
 .cardio-page .card h2,
-.cardio-page .cardio-ready > h2 {
+.cardio-page .cardio-ready > h2,
+.supplements-page .card h2,
+.supplements-page .cardio-ready > h2 {
   font-size: 1.2rem;
   font-weight: 650;
   margin: 0 0 12px;
 }
-.cardio-page .card h3 {
+.cardio-page .card h3,
+.supplements-page .card h3 {
   font-size: 1.05rem;
   font-weight: 600;
   margin-block: 12px;
 }
-.cardio-page .card dd {
+.cardio-page .card dd,
+.supplements-page .card dd {
   font-weight: 650;
   font-variant-numeric: tabular-nums;
   margin: 0 0 8px;
 }
 .cardio-page p,
 .cardio-page a,
-.cardio-page dd {
+.cardio-page dd,
+.supplements-page p,
+.supplements-page a,
+.supplements-page dd {
   overflow-wrap: anywhere;
 }
-.cardio-page fieldset {
+.cardio-page fieldset,
+.supplements-page fieldset {
   min-width: 0;
   border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 18px;
+  border-radius: var(--radius-md);
+  padding: var(--space-card);
   margin-block: 18px;
 }
-.cardio-page legend {
+.cardio-page legend,
+.supplements-page legend {
   font-weight: 600;
   padding-inline: 8px;
 }
-.cardio-page .cardio-ready {
+.cardio-page .cardio-ready,
+.supplements-page .cardio-ready {
   border: 0;
   padding: 0;
   margin: 0;
 }
-.cardio-page .recovery-field > label {
+.cardio-page .recovery-field > label,
+.supplements-page .recovery-field > label {
   min-height: 24px;
 }
-.cardio-page .button {
+.cardio-page .button,
+.supplements-page .button {
   min-height: 44px;
   max-width: 100%;
   white-space: normal;
   margin: 4px;
 }
-.cardio-page summary {
+.cardio-page summary,
+.supplements-page summary {
   min-height: 44px;
   padding-block: 12px;
   cursor: pointer;
 }
-.cardio-page .muted {
+.cardio-page .muted,
+.supplements-page .muted {
   color: var(--muted);
 }
-.cardio-page button:disabled {
+.cardio-page button:disabled,
+.supplements-page button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
-.cardio-page .recovery-field input[type="checkbox"] {
+.cardio-page .recovery-field input[type="checkbox"],
+.supplements-page .recovery-field input[type="checkbox"] {
   width: 44px;
   height: 44px;
   min-height: 44px;
@@ -99,13 +119,17 @@
 }
 @media (max-width: 480px) {
   .cardio-page .card,
-  .cardio-page fieldset {
+  .cardio-page fieldset,
+  .supplements-page .card,
+  .supplements-page fieldset {
     padding: 12px;
   }
-  .cardio-page .actions {
+  .cardio-page .actions,
+  .supplements-page .actions {
     gap: 8px;
   }
-  .cardio-page .button {
+  .cardio-page .button,
+  .supplements-page .button {
     margin: 4px 0;
   }
 }

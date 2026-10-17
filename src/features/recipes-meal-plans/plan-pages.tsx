@@ -626,7 +626,7 @@ function PlanEditor({ original }: { original: MealPlanVersion }) {
                       Duplicate item
                     </button>
                     <button
-                      className="button secondary"
+                      className="button danger"
                       onClick={() => {
                         if (
                           window.confirm(
@@ -1037,7 +1037,7 @@ export function GroceryPage({ planId }: { planId: string }) {
       )
       .sort((a, b) => b.generatedAt.localeCompare(a.generatedAt)),
     list = lists.find((l) => l.id === selected) ?? lists[0];
-  if (!plan) return <p>Plan unavailable.</p>;
+  if (!plan) return <><p>Plan unavailable.</p><p>This plan is not saved in this browser. <a href="/meal-plans">Choose a saved meal plan or create one</a> to prepare a grocery list.</p></>;
   return (
     <>
       <h2>{plan.title} groceries</h2>

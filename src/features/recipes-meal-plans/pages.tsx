@@ -627,7 +627,7 @@ function RecipeBuilderForm({ previous }: { previous?: RecipeVersion }) {
                 </button>{" "}
                 <button
                   type="button"
-                  className="button secondary"
+                  className="button danger"
                   onClick={() => {
                     if (
                       window.confirm(

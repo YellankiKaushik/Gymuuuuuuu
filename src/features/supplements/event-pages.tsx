@@ -56,7 +56,7 @@ function Events() {
               Edit event
             </button>
             <button
-              className="button secondary"
+              className="button danger"
               onClick={() => {
                 if (
                   window.confirm(
@@ -361,7 +361,7 @@ function SafetyContexts() {
             Toggle active context
           </button>
           <button
-            className="button secondary"
+            className="button danger"
             onClick={() => {
               if (window.confirm("Delete this optional safety context?"))
                 void run(

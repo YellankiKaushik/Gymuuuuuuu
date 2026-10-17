@@ -100,7 +100,7 @@ function Products() {
               Labels and edit product
             </a>
             <button
-              className="button secondary"
+              className="button danger"
               onClick={() => {
                 if (
                   window.confirm(
@@ -263,7 +263,7 @@ function IntakeCard({ log }: { log: Intake }) {
         Correct intake
       </button>
       <button
-        className="button secondary"
+        className="button danger"
         onClick={() => {
           if (window.confirm("Delete this intake? Keep a recovery snapshot."))
             void run(
@@ -592,7 +592,7 @@ function Editor({ product, label }: { product?: Product; label?: Label }) {
               />
               <button
                 type="button"
-                className="button secondary"
+                className="button danger"
                 onClick={() =>
                   setAmounts((rows) => rows.filter((_, j) => j !== i))
                 }
@@ -667,7 +667,7 @@ function Editor({ product, label }: { product?: Product; label?: Label }) {
               />
               <button
                 type="button"
-                className="button secondary"
+                className="button danger"
                 onClick={() =>
                   setImages((rows) => rows.filter((r) => r.id !== i.id))
                 }
