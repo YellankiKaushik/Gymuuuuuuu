@@ -22,7 +22,7 @@ const classifications = paths.map((path) => ({
           : path.startsWith("docs/reports/") && /\.(json|png|webp)$/.test(path)
             ? "generated evidence"
             : path.startsWith("docs/phases/") ||
-                path.startsWith("DOCS_for_entire_apppliaction/")
+                path.startsWith("docs/archive/original-specifications/")
               ? "historical documentation"
               : path.startsWith("docs/") ||
                   path === "README.md" ||
@@ -98,7 +98,7 @@ for (const path of paths) {
           target,
           classification:
             path.startsWith("docs/phases/") ||
-            path.startsWith("DOCS_for_entire_apppliaction/")
+            path.startsWith("docs/archive/original-specifications/")
               ? "historical reference; preserve and annotate"
               : "current reference requires review",
         });

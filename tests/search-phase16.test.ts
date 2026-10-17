@@ -7,7 +7,7 @@ import { canonicalSearchUrl, parseSearchUrl, searchUrlStateSchema } from "../src
 import { comparisonFamilyFor, validateComparisonEntities } from "../src/features/search/comparison";
 import { comparisonFamilies, phase16StoreNames } from "../src/features/saved/schema";
 import { addCollectionItem, moveCollectionItem, readSavedStore, readSearchSettings, saveCollection, saveCompareTray, transferCollectionItem, updateCollectionItemNote, writeSearchSetting } from "../src/features/saved/storage";
-import vectors from "../DOCS_for_entire_apppliaction/GYM/Phase_16_Search_Favourites_Comparison_Reference_Data.json";
+import vectors from "../docs/archive/original-specifications/phase-16/Phase_16_Search_Favourites_Comparison_Reference_Data.json";
 
 afterEach(() => { closeFitnessDatabase(); vi.unstubAllGlobals(); });
 function doc(id: string, title: string, aliases: string[] = [], entityType: SearchableDocument["entityType"] = "route"): SearchableDocument { return { documentId: `${entityType}:${id}`, entityType, entityId: id, entityVersion: null, sourceModule: "phase_01_navigation", route: `/${id}`, title, normalizedTitle: title.toLocaleLowerCase("en-US"), aliases, normalizedAliases: aliases.map((value) => value.toLocaleLowerCase("en-US")), summary: "", keywords: [], headings: [], searchableBody: "", facets: {}, lastReviewedAt: null }; }

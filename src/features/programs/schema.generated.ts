@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_05_Workout_Program_Data_Schema.json. Regenerate with node scripts/generate-program-schema.mjs.
+// Generated from docs/archive/original-specifications/phase-05/Phase_05_Workout_Program_Data_Schema.json. Regenerate with node scripts/generate-program-schema.mjs.
 import { z } from "zod";
 
 export const normativeProgramObjectSchema = z.strictObject({

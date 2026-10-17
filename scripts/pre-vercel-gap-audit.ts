@@ -133,14 +133,19 @@ const completion = JSON.parse(
     draftIdentities: number;
   }[];
 };
-const contracts = (await readdir("DOCS_for_entire_apppliaction/GYM")).filter(
-  (name) => /(?:\.md|\.json|Quick_Implementation_Reference\.txt)$/.test(name),
-);
+const archive = "docs/archive/original-specifications";
+const contracts = (await readdir(archive, { recursive: true }))
+  .map((name) => name.replaceAll("\\", "/"))
+  .filter(
+    (name) =>
+      /^phase-\d{2}\//.test(name) &&
+      /(?:\.md|\.json|Quick_Implementation_Reference\.txt)$/.test(name),
+  );
 const contractHashes = await Promise.all(
   contracts.map(async (name) => ({
-    path: `DOCS_for_entire_apppliaction/GYM/${name}`,
+    path: `${archive}/${name}`,
     sha256: createHash("sha256")
-      .update(await readFile(`DOCS_for_entire_apppliaction/GYM/${name}`))
+      .update(await readFile(`${archive}/${name}`))
       .digest("hex"),
   })),
 );

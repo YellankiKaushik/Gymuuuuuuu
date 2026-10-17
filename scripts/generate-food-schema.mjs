@@ -1,6 +1,6 @@
 import process from "node:process";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
-const path = "DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Data_Schema.json";
+const path = "docs/archive/original-specifications/phase-07/Phase_07_Food_Data_Schema.json";
 const root = JSON.parse(readFileSync(path, "utf8"));
 function convert(s) {
   if (s.$ref) return convert(root.$defs[s.$ref.slice(8)]);
@@ -53,7 +53,7 @@ writeFileSync("src/features/foods/schema.generated.ts", c);
 if (!process.argv.includes("--schema-only")) {
   const seed = JSON.parse(
     readFileSync(
-      "DOCS_for_entire_apppliaction/GYM/Phase_07_Seed_Food_Taxonomy.json",
+      "docs/archive/original-specifications/phase-07/Phase_07_Seed_Food_Taxonomy.json",
       "utf8",
     ),
   );

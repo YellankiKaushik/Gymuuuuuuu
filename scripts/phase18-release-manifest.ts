@@ -9,11 +9,11 @@ import { z } from "zod";
 const root = process.cwd();
 const referencePath = join(
   root,
-  "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Reference_Data.json",
+  "docs/archive/original-specifications/phase-18/Phase_18_Testing_Deployment_Reference_Data.json",
 );
 const schemaPath = join(
   root,
-  "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Data_Schema.json",
+  "docs/archive/original-specifications/phase-18/Phase_18_Testing_Deployment_Data_Schema.json",
 );
 const releaseGates = (
   JSON.parse(await readFile(referencePath, "utf8")) as {

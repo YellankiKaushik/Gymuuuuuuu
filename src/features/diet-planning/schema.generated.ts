@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_Data_Schema.json.
+// Generated from docs/archive/original-specifications/phase-09/Phase_09_Diet_Planning_Data_Schema.json.
 import { z } from "zod";
 export const backupNormativeSchema = z.strictObject({
   schemaVersion: z.literal("1.0.0"),

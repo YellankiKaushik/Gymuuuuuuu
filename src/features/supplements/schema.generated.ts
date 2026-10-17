@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_14_Supplements_Evidence_Data_Schema.json; behavioral companions live in schema.ts.
+// Generated from docs/archive/original-specifications/phase-14/Phase_14_Supplements_Evidence_Data_Schema.json; behavioral companions live in schema.ts.
 import { z } from "zod";
 export const backupNormativeSchema = z.strictObject({
   schemaVersion: z.literal("1.0.0"),

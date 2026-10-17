@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 const path =
-    "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_Data_Schema.json",
+    "docs/archive/original-specifications/phase-09/Phase_09_Diet_Planning_Data_Schema.json",
   root = JSON.parse(readFileSync(path, "utf8"));
 function convert(s) {
   if (s.$ref) return convert(root.$defs[s.$ref.slice(8)]);
@@ -55,6 +55,6 @@ mkdirSync("src/content/diet-planning", { recursive: true });
 writeFileSync(
   "src/content/diet-planning/reference.json",
   readFileSync(
-    "DOCS_for_entire_apppliaction/GYM/Phase_09_Diet_Planning_Reference_Data.json",
+    "docs/archive/original-specifications/phase-09/Phase_09_Diet_Planning_Reference_Data.json",
   ),
 );

@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_07_Food_Data_Schema.json; do not hand edit.
+// Generated from docs/archive/original-specifications/phase-07/Phase_07_Food_Data_Schema.json; do not hand edit.
 import { z } from "zod";
 export const foodNormativeSchema = z.strictObject({
   id: z.string().regex(new RegExp("^food_[a-z0-9_]+$")),

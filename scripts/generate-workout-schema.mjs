@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 const path =
-    "DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Data_Schema.json",
+    "docs/archive/original-specifications/phase-06/Phase_06_Workout_Tracker_Data_Schema.json",
   root = JSON.parse(readFileSync(path, "utf8"));
 function convert(schema) {
   if (schema.$ref)

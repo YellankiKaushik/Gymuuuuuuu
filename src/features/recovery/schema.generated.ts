@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_12_Recovery_Sleep_Mobility_Data_Schema.json; behavioral companions live in schema.ts.
+// Generated from docs/archive/original-specifications/phase-12/Phase_12_Recovery_Sleep_Mobility_Data_Schema.json; behavioral companions live in schema.ts.
 import { z } from "zod";
 export const backupNormativeSchema = z.strictObject({
   schemaVersion: z.string().regex(new RegExp("^1\\.")),

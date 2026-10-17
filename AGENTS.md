@@ -1,6 +1,6 @@
 # Fitness OS permanent project rules
 
-Build one phase at a time. The owner has authorized phases 00–18 sequentially using DOCS_for_entire_apppliaction/GYM. Read the current phase's documents, schemas and data before implementing it, then pass its checks before reading and starting the next phase. Preserve completed modules. Document changes to the specification in docs/decisions.
+Build one phase at a time. The owner has authorized phases 00–18 sequentially using docs/archive/original-specifications (organized by phase). Read the current phase's documents, schemas and data before implementing it, then pass its checks before reading and starting the next phase. Preserve completed modules. Document changes to the specification in docs/decisions.
 
 - Retain TanStack Start, React, strict TypeScript and Tailwind. No unbounded any.
 - No accounts, authentication, Supabase, Firebase, cloud personal storage, payments, social features, admin CMS or external runtime fitness APIs.

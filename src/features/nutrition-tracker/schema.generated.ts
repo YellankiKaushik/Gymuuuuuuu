@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker_Data_Schema.json. Conditional food-entry refs are enforced in schema.ts.
+// Generated from docs/archive/original-specifications/phase-10/Phase_10_Nutrition_Tracker_Data_Schema.json. Conditional food-entry refs are enforced in schema.ts.
 import { z } from "zod";
 export const backupNormativeSchema = z.strictObject({
   format: z.literal("fitness-os-nutrition-backup"),

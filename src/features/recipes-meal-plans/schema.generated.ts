@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_11_Recipes_Meal_Plans_Data_Schema.json. Conditional recipe/plan snapshots are enforced in schema.ts.
+// Generated from docs/archive/original-specifications/phase-11/Phase_11_Recipes_Meal_Plans_Data_Schema.json. Conditional recipe/plan snapshots are enforced in schema.ts.
 import { z } from "zod";
 export const backupNormativeSchema = z.strictObject({
   format: z.literal("fitness-os-recipes-meal-plans-backup"),

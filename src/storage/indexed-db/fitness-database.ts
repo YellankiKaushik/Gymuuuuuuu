@@ -1,4 +1,4 @@
-import workoutReference from "../../../DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Reference_Data.json";
+import workoutReference from "../../../docs/archive/original-specifications/phase-06/Phase_06_Workout_Tracker_Reference_Data.json";
 import nutritionReference from "../../content/nutrition/reference.json";
 export const fitnessDatabaseVersion =
   17;

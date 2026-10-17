@@ -138,6 +138,8 @@ Restricted source material is not bulk reproduced without documented rights. Con
 
 ## Repository guide
 
+Start with the [documentation index](docs/README.md), [repository map](docs/repository-map.md), [script index](scripts/README.md) and [test index](tests/README.md). Original specifications and duplicate historical copies are preserved in the [phase archive](docs/archive/original-specifications/README.md).
+
 ```text
 src/
   routes/          TanStack file-based pages, loaders and route metadata
@@ -153,16 +155,19 @@ src/
   start.ts         Request middleware, CSRF protection and nonce-based CSP
   client.tsx       Client hydration bootstrap
   router.tsx       Router configuration and CSP nonce integration
+public/            Static assets, local exercise visuals and license notices
 scripts/           Content import/compilation, audits and release/performance tooling
 tests/             Unit/component tests, fixtures, browser, route and closure suites
 docs/
+  README.md        Documentation hub and current/historical guidance
+  features/        Subject index for existing module documentation
   phases/          Phase plans, checklists and handoff history
   decisions/       Specification and implementation decisions
   reports/         Commit-bound inventories, verification and release evidence
   runbooks/        Operational and owner deployment instructions
   security/        Threat model and security documentation
-DOCS_for_entire_apppliaction/GYM/
-                   Original phase requirements, schemas and reference data
+  archive/original-specifications/
+                   Original phase requirements, schemas, reference data and duplicates
 .github/workflows/ CI, accessibility, cross-browser and release-evidence jobs
 ```
 

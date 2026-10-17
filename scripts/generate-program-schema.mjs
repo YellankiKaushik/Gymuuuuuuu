@@ -1,6 +1,6 @@
 import console from 'node:console'
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
-const sourcePath = 'DOCS_for_entire_apppliaction/GYM/Phase_05_Workout_Program_Data_Schema.json'
+const sourcePath = 'docs/archive/original-specifications/phase-05/Phase_05_Workout_Program_Data_Schema.json'
 const root = JSON.parse(readFileSync(sourcePath, 'utf8'))
 const quote = JSON.stringify
 function convert(schema, path = '') {

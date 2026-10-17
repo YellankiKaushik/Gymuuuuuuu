@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { IDBFactory } from "fake-indexeddb";
 import { closeFitnessDatabase, openFitnessDatabase } from "../src/storage/indexed-db/fitness-database";
 import { createBackup, encodeCsv, inspectLocalData, previewBackup, restoreBackup, validateBackup } from "../src/features/data-management/service";
-import reference from "../DOCS_for_entire_apppliaction/GYM/Phase_17_Local_Storage_Backup_Export_Reference_Data.json";
+import reference from "../docs/archive/original-specifications/phase-17/Phase_17_Local_Storage_Backup_Export_Reference_Data.json";
 
 afterEach(() => { closeFitnessDatabase(); vi.unstubAllGlobals(); });
 function storage() { const factory = new IDBFactory(); vi.stubGlobal("window", { indexedDB: factory, localStorage: { getItem: () => null, setItem: vi.fn(), removeItem: vi.fn() } }); return factory; }

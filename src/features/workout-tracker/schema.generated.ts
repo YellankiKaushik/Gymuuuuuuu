@@ -1,4 +1,4 @@
-// Generated from DOCS_for_entire_apppliaction/GYM/Phase_06_Workout_Tracker_Data_Schema.json; do not hand edit.
+// Generated from docs/archive/original-specifications/phase-06/Phase_06_Workout_Tracker_Data_Schema.json; do not hand edit.
 import { z } from "zod";
 export const workoutPreferencesNormativeSchema = z.strictObject({
   id: z.literal("workout-preferences"),

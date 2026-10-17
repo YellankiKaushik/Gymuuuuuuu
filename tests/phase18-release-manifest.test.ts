@@ -7,7 +7,7 @@ import { readFile } from "node:fs/promises";
 
 const reference = JSON.parse(
   await readFile(
-    "DOCS_for_entire_apppliaction/GYM/Phase_18_Testing_Deployment_Reference_Data.json",
+    "docs/archive/original-specifications/phase-18/Phase_18_Testing_Deployment_Reference_Data.json",
     "utf8",
   ),
 ) as {

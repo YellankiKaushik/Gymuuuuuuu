@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import process from 'node:process'
-const path='DOCS_for_entire_apppliaction/GYM/Phase_08_Nutrient_Data_Schema.json',root=JSON.parse(readFileSync(path,'utf8'))
+const path='docs/archive/original-specifications/phase-08/Phase_08_Nutrient_Data_Schema.json',root=JSON.parse(readFileSync(path,'utf8'))
 function convert(s){
   if(s.$ref)return convert(root.$defs[s.$ref.slice(8)])
   if(s.anyOf)return `z.union([${s.anyOf.map(convert).join(',')}])`
@@ -21,7 +21,7 @@ writeFileSync('src/features/nutrients/schema.generated.ts',code)
 // Schema-only regeneration preserves approved repository-owned source metadata
 // and stable identity documents while adding bounded authority identifiers.
 if (!process.argv.includes('--schema-only')) {
-const seed=JSON.parse(readFileSync('DOCS_for_entire_apppliaction/GYM/Phase_08_Seed_Nutrient_Taxonomy.json','utf8'))
+const seed=JSON.parse(readFileSync('docs/archive/original-specifications/phase-08/Phase_08_Seed_Nutrient_Taxonomy.json','utf8'))
 writeFileSync('src/content/nutrients/reference.json',JSON.stringify(seed.referenceData,null,2)+'\n');writeFileSync('src/content/nutrients/identities.json',JSON.stringify(seed.nutrients,null,2)+'\n')
 try{readFileSync('src/content/nutrients/records.json')}catch{writeFileSync('src/content/nutrients/records.json','[]\n')}
 }

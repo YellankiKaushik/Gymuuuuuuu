@@ -1,7 +1,7 @@
 import process from "node:process";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 const path =
-    "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker_Data_Schema.json",
+    "docs/archive/original-specifications/phase-10/Phase_10_Nutrition_Tracker_Data_Schema.json",
   root = JSON.parse(readFileSync(path, "utf8"));
 function convert(s) {
   if (s.$ref) return convert(root.$defs[s.$ref.slice(8)]);
@@ -59,7 +59,7 @@ if (!process.argv.includes("--schema-only")) {
   mkdirSync("src/content/nutrition", { recursive: true });
   const reference = JSON.parse(
     readFileSync(
-      "DOCS_for_entire_apppliaction/GYM/Phase_10_Nutrition_Tracker_Reference_Data.json",
+      "docs/archive/original-specifications/phase-10/Phase_10_Nutrition_Tracker_Reference_Data.json",
       "utf8",
     ),
   );
