@@ -16,7 +16,7 @@ human device/assistive-technology certification boundaries remain applicable.
 
 Final local gates pass: 371 units in 97 files, 98 corrected design cases, 84
 affected interaction cases, 599 dedicated accessibility cases and 48 closure
-cases. The complete initial runs and their three corrected failures remain in
+cases. The complete initial local runs and their three corrected failures remain in
 the report. Current-SHA hosted CI and exact-SHA production results are bound by
 the final release handoff after push; earlier release claims remain historical.
 

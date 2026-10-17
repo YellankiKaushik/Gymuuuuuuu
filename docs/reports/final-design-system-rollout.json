@@ -1,8 +1,8 @@
 {
   "title": "Fitness OS — final design system rollout",
-  "recordedAt": "2026-10-17T07:49:33.983Z",
+  "recordedAt": "2026-10-17T08:05:36.157Z",
   "baseCommit": "97fe2bb7d3f57993f76f97442259c55246841ca5",
-  "executionTree": "fd89f4116491871c6362245a2cf575d6c09b3644670c2cd17d521b804d47e3c8",
+  "executionTree": "245b45fecfe93509c7ab4ab2fc28d1d9291c3039eb8620fa30cb425893f90a86",
   "releaseBinding": "The containing Git commit identifies the final source. Hosted Actions checks and the Vercel Git-source deployment are inspected for that exact SHA after this report is committed. Final release IDs and post-deployment results are delivered with the release response; no future self-hash or deployment result is fabricated here.",
   "design": {
     "canonical": true,
@@ -436,6 +436,21 @@
     "closure": 48,
     "correctedDesignBothEngines": 98,
     "affectedBothEngines": 84,
+    "localPrecisionRecheckInitial": {
+      "passed": 97,
+      "failed": 1,
+      "reason": "Chromium ERR_NO_BUFFER_SPACE loading validation-CEFmB7Qm.js before hydration; preserved trace; unchanged full replay required"
+    },
+    "hostedInitialPrecisionFailure": {
+      "commit": "0bebaec8e9deb489b97e9ea3b54fa9d55e8ef74c",
+      "run": 39015106253,
+      "job": 117345498183,
+      "passed": 239,
+      "failed": 1,
+      "measuredHeight": 43.99998474121094,
+      "requiredMinimum": 44,
+      "correction": "Add an exact computed 44px min-height assertion and normalize DOMRect floating precision to 1/64 CSS px without reducing the 44px requirement; runtime source unchanged"
+    },
     "chromiumFirstRun": {
       "passed": 941,
       "failures": [

@@ -4,7 +4,7 @@
 
 The application-wide finite presentation pass is implemented under root DESIGN.md. The nine existing local design files were preserved. No product/content/storage architecture changes, dependencies, third-party branding or remote assets were introduced.
 
-Source baseline: `97fe2bb7d3f57993f76f97442259c55246841ca5`. Tested LF-normalized execution tree SHA-256: `fd89f4116491871c6362245a2cf575d6c09b3644670c2cd17d521b804d47e3c8`.
+Source baseline: `97fe2bb7d3f57993f76f97442259c55246841ca5`. Tested LF-normalized execution tree SHA-256: `245b45fecfe93509c7ab4ab2fc28d1d9291c3039eb8620fa30cb425893f90a86`.
 
 The containing Git commit identifies the final source. Hosted Actions checks and the Vercel Git-source deployment are inspected for that exact SHA after this report is committed. Final release IDs and post-deployment results are delivered with the release response; no future self-hash or deployment result is fabricated here.
 
@@ -145,6 +145,7 @@ Frozen storage/public-data boundaries, unchanged security policy/configuration, 
 - Unique regression cases covered per engine across the initial full run plus corrected affected reruns: Chromium 942, WebKit 942; dedicated Chromium accessibility: 599; local Chromium/WebKit desktop and emulated-device closure cases: 48.
 - Initial full runs: Chromium 941 passed with one reproduced Collections target-size failure; WebKit 940 passed with two new-harness readiness failures. The actual navigation fix passes the original affected suites on both engines; the corrected full design matrix passes all 98 cases across Chromium/WebKit, including both affected cases. No accessibility assertion or timeout was weakened.
 - Final print-only refinement: a rebuilt background-disabled print review and closure/device checks verify the Home action foreground; screen rules are unchanged.
+- Initial hosted Firefox shard 1 (run 39015106253, commit 0bebaec): 239 passed and one new-test DOMRect precision failure (43.99998474121094 for a 44px target). The regression now additionally asserts computed min-height exactly 44px and compares geometry at 1/64 CSS-pixel precision. All original navigation assertions and the 44px minimum remain; runtime source is unchanged. Final current-SHA hosted workflows must pass before deployment.
 - Firefox: required current-SHA hosted Cross-browser regression jobs are verified after push, before deployment.
 - npm audit: zero vulnerabilities at all severities.
 - Targeted implementation checkpoint: 77/77. The final suite includes the stabilized refinements.
@@ -163,7 +164,7 @@ The baseline was independently built from the initial Git SHA in an ignored snap
 
 ## Verification evidence and environment findings
 
-Ignored command logs, browser traces and screenshots reside in artifacts/final-design. The first targeted test load required a Node JSON import attribute; it was corrected without altering assertions. Earlier design-checkpoint sandbox cache/browser/IPv6 limitations are documented separately. The final gates use a workspace-local temporary directory, installed browsers and an IPv4 local preview. The disposable release-smoke harness was corrected to await the existing comparison-save completion before navigation. Its local 60-state route/theme scan and populated comparison succeeded; deployment-only static-header assertions correctly require the Vercel origin and are checked after deployment. Initial smoke diagnostics remain preserved.
+Ignored command logs, browser traces and screenshots reside in artifacts/final-design. The first targeted test load required a Node JSON import attribute; it was corrected without altering assertions. Earlier design-checkpoint sandbox cache/browser/IPv6 limitations are documented separately. The final gates use a workspace-local temporary directory, installed browsers and an IPv4 local preview. The disposable release-smoke harness was corrected to await the existing comparison-save completion before navigation. Its local 60-state route/theme scan and populated comparison succeeded; deployment-only static-header assertions correctly require the Vercel origin and are checked after deployment. Initial smoke diagnostics remain preserved. After the Firefox precision correction, a local 98-case recheck retained 97 passes and one Chromium ERR_NO_BUFFER_SPACE asset failure before hydration; its trace is retained and the full suite is replayed unchanged.
 
 The public factual/search manifest, all content, backup/schema/storage files and the repository organization are unchanged. React review confirms presentation attributes and one actionable grocery-empty-state message only; handlers, hooks, validation and data flows are preserved.
 

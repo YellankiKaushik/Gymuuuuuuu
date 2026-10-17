@@ -87,5 +87,8 @@ test("data navigation identifies exactly one current page", async ({
   );
   await expect(current).toHaveCount(1);
   await expect(current).toHaveText("Collections");
-  expect((await current.boundingBox())?.height).toBeGreaterThanOrEqual(44);
+  await expect(current).toHaveCSS("min-height", "44px");
+  // DOMRect floats can lose precision in Firefox; compare CSS layout units.
+  const height = (await current.boundingBox())?.height ?? 0;
+  expect(Math.round(height * 64) / 64).toBeGreaterThanOrEqual(44);
 });

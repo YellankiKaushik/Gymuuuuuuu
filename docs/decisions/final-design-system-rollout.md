@@ -64,3 +64,5 @@ CI and cross-browser workflows must succeed before an existing-project Git-sourc
 production deployment is requested. Production is checked after READY; automatic
 Git deployment remains disabled. Physical-device and human assistive-technology
 certification is not inferred from automated browser/device proxies.
+
+The first hosted Firefox run (39015106253, source 0bebaec8e9deb489b97e9ea3b54fa9d55e8ef74c) reported a 44px navigation target as DOMRect height 43.99998474121094. Its shard retained 239 passes and one failure. The new test now additionally checks computed min-height exactly 44px and normalizes measured geometry to 1/64 CSS-pixel precision before comparing the unchanged 44px minimum. The application source, all active-page assertions, timeouts and budgets are unchanged. The corrected test receives a normal follow-up commit; both workflows must pass for that final SHA before deployment.
