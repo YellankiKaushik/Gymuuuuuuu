@@ -1,7 +1,7 @@
 import { z } from "zod";
 import rawReference from "../../content/diet-planning/reference.json";
 import referenceFrameworks from "../../content/nutrients/framework-datasets.json";
-import foodIdentities from "../../content/foods/identities.json";
+import foodIdentityIds from "../../content/foods/identity-ids.json";
 import {
   inputsNormativeSchema,
   planNormativeSchema,
@@ -810,7 +810,7 @@ export const dietPlanSchema = snapshotSchema.superRefine((plan, ctx) => {
       }
     }
     if (plan.dietPreferences?.excludedFoodIds) {
-      const foods = new Set(foodIdentities.map((food) => food.id));
+      const foods = new Set(foodIdentityIds);
       ensure(
         plan.dietPreferences.excludedFoodIds.every((id) => foods.has(id)),
         "Unknown excluded food ID.",

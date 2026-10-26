@@ -21,6 +21,7 @@ The [feature documentation index](features/README.md) groups the existing module
 - [Reports](reports/) contain dated, commit-bound verification evidence, not a promise that old counts describe every later checkout. The [UX upgrade report](reports/final-owner-requested-ux-upgrade.md) describes the preceding production release.
 - [Reorganization manifest](reports/repository-reorganization-manifest.md) records every move, content hashes, inventories, reference decisions and checks.
 - [Test navigation](../tests/README.md) and [script navigation](../scripts/README.md).
+- [Phase 20 release readiness](reports/phase-20-release-readiness.md) and [compatible remediation decision](decisions/phase-20-release-remediation.md) record the later dependency/runtime fixes and bounded bundle optimization. The original implementation report remains historical evidence for its own commit.
 
 ## History and original requirements
 

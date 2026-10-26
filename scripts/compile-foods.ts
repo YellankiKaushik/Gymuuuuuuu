@@ -85,6 +85,12 @@ const draft = validateFoodRelease(identities),
   release = validateFoodRelease(records);
 if ([...draft.errors, ...release.errors].length)
   throw Error([...draft.errors, ...release.errors].join("\n"));
+// Relationship validation needs every stable seed ID, including unpublished
+// identities, but must not pull their full editorial records into the browser.
+writeFileSync(
+  `${root}/identity-ids.json`,
+  JSON.stringify(draft.foods.map((food) => food.id)) + "\n",
+);
 const published = release.foods
   .filter((f) => f.status === "published")
   .map((f) => ({

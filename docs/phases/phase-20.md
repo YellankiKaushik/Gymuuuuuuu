@@ -23,3 +23,15 @@ Release blockers are explicit: npm audit reports four affected packages (three h
 Production stays on deployment `dpl_5sLqYJstGvCKQWkMyh3A9vNQqVx7`, source `a946027b1f3a8754928c393228df696400b6b391`. No deployment is authorized here. Owner review and approval of an exact commit are required before publication. Stop at this phase.
 
 Final local closure: 1972 Chromium/WebKit regression cases, 48 desktop/mobile closure proxies and 703 audited public routes passed. The unchanged factual inventory remains 520 published / 648 search / 900 unpublished. JS aggregate gzip is 716114 bytes against the unchanged 716800-byte budget; see the report for exact before/after values.
+
+## Authorized release-readiness follow-up
+
+The later owner request authorizes compatible security remediation only, not another phase. See [the release-readiness report](../reports/phase-20-release-readiness.md) and [decision](../decisions/phase-20-release-remediation.md).
+
+- [x] Inspect exact implementation CI; all hosted Chromium/Firefox/WebKit and accessibility jobs passed, with verification failing only at the original dependency audit.
+- [x] Patch four affected npm packages through compatible releases; full and production-only audits return zero vulnerabilities.
+- [x] Correct the separate bundled-Undici runtime exposure with Node 24.22.1 pins while retaining npm 11 compatibility; verify with a checksum-checked local runtime.
+- [x] Complete one bounded ID-projection optimization pass without dropping any of the 342 accepted food references or changing published facts.
+- [x] Pass 406 unit tests, coverage, strict types, lint, content/search/privacy/build/budgets and 114 focused Chromium/WebKit browser checks on the remediated build.
+- [x] Preserve historical evidence and produce the new report. Normal main push and the observed exact-SHA CI status are recorded in the final handoff; no extra documentation commit is required for later CI completion.
+- [x] Leave production unchanged and stop before deployment or another phase. The next owner-authorized deployment must use server-side Git source and an exact approved commit.

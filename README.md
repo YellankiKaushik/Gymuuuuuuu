@@ -26,7 +26,7 @@ These are recorded results for that release, not a claim that every future check
 
 Automatic Vercel Git deployment is disabled in `vercel.json`. Releases remain owner-controlled.
 
-The authorized Phase 20 pilot adds approximate location schematics for twelve existing muscles, controlled SETUP/ACTION/RESET guides for six existing exercises, and local personal workout plans with Session A and optional B. Plans support nullable targets, editing, reordering, confirmed deletion, global backup/restore and safe CSV export. Starting a saved session copies its targets into the existing workout tracker. This pilot awaits exact-commit owner approval for production; see the [implementation report](docs/reports/visual-training-pilot.md).
+The authorized Phase 20 pilot adds approximate location schematics for twelve existing muscles, controlled SETUP/ACTION/RESET guides for six existing exercises, and local personal workout plans with Session A and optional B. Plans support nullable targets, editing, reordering, confirmed deletion, global backup/restore and safe CSV export. Starting a saved session copies its targets into the existing workout tracker. This pilot awaits exact-commit owner approval for production; see the [implementation report](docs/reports/visual-training-pilot.md) and subsequent [security and release-readiness report](docs/reports/phase-20-release-readiness.md).
 
 ## What the application includes
 
@@ -58,7 +58,7 @@ Open `/workout/plans` from the workout navigation or an eligible exercise's **Ad
 
 ## Run locally
 
-Use **Node.js 24.16.0** and **npm 11.9.0**, matching `.nvmrc`, `packageManager` and CI. `package.json` allows Node `>=24.16.0 <25` and npm `>=11.9.0 <12`. Keep `package-lock.json` and use npm.
+Use **Node.js 24.22.1**, pinned in `.nvmrc` and `.node-version` for version managers and CI. The declared package manager remains **npm 11.9.0**; compatible npm 11 releases satisfy `>=11.9.0 <12`. `package.json` requires Node `>=24.22.1 <25`. The Node 24 security update includes patched bundled Undici; an npm package update does not replace Node's internal copy. Keep `package-lock.json` and use npm.
 
 From the repository root:
 

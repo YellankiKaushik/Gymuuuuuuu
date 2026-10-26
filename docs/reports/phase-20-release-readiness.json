@@ -1,0 +1,1890 @@
+{
+  "schemaVersion": 1,
+  "phase": 20,
+  "purpose": "Release-blocker remediation only; no new phase",
+  "executiveResult": "BLOCKED",
+  "blockingReason": "Local required checks pass. Publication remains held pending exact-commit hosted CI inspection after push and owner approval.",
+  "baselineSha": "df59c127199bdea1fef60289a13e05dd6c8dd9f8",
+  "commitBinding": "Containing commit; its exact SHA and post-push workflow state are reported in the final handoff. This report is not updated with a second commit merely because CI later finishes.",
+  "recordedAt": "2026-10-26T13:55:07.652Z",
+  "testedInputSha256": "3f5ec699ca0b32dfee7f918e1b78552d77c634869097631e82c4531ffe44e69d",
+  "security": {
+    "before": {
+      "info": 0,
+      "low": 0,
+      "moderate": 1,
+      "high": 3,
+      "critical": 0,
+      "total": 4
+    },
+    "after": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "productionOnly": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "result": "PASS",
+    "advisoryCount": 14,
+    "vulnerabilities": [
+      {
+        "package": "fast-uri",
+        "beforeVersion": "3.1.8",
+        "correctedVersion": "3.1.9",
+        "minimumCompatiblePatch": "3.1.9",
+        "severity": "moderate",
+        "relationship": "Transitive development dependency",
+        "path": "AJV 8.20.0 -> fast-uri ^3.0.1 (also AJV-formats)",
+        "risk": "URI resolution is used by schema/tooling dependencies, not a new user-link renderer. The supported upstream range resolves 3.1.9 without an override; existing URL, schema and import validation remains in place.",
+        "result": "FIXED",
+        "requiredPackageChange": "Refresh lockfile resolution within the existing upstream range; no override",
+        "regressionRisk": "Compatible patch release; validation/import and browser regressions executed",
+        "advisories": [
+          {
+            "id": "GHSA-w74x-v6f9-j3xg",
+            "title": "fast-uri vulnerable to URI scheme spoofing via percent-encoded scheme decoding",
+            "url": "https://github.com/advisories/GHSA-w74x-v6f9-j3xg",
+            "severity": "moderate",
+            "affectedRange": ">=3.0.0 <3.1.9",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-xhq7-xmqj-769h",
+            "title": "fast-uri vulnerable to improper path equivalence in relative reference normalization",
+            "url": "https://github.com/advisories/GHSA-xhq7-xmqj-769h",
+            "severity": "low",
+            "affectedRange": ">=3.0.0 <3.1.9",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-wjr9-j795-jxcr",
+            "title": "fast-uri vulnerable to host confusion via unchecked WHATWG host canonicalization",
+            "url": "https://github.com/advisories/GHSA-wjr9-j795-jxcr",
+            "severity": "moderate",
+            "affectedRange": ">=3.1.3 <3.1.9",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-333x-w4r6-6crp",
+            "title": "fast-uri vulnerable to scheme injection via an unescaped first-segment colon in suffix references",
+            "url": "https://github.com/advisories/GHSA-333x-w4r6-6crp",
+            "severity": "low",
+            "affectedRange": ">=3.0.0 <3.1.9",
+            "result": "FIXED"
+          }
+        ]
+      },
+      {
+        "package": "undici",
+        "beforeVersion": "8.11.2",
+        "correctedVersion": "8.12.3",
+        "minimumCompatiblePatch": "8.12.2",
+        "severity": "high",
+        "relationship": "Transitive development dependency; Node embeds a separate runtime copy",
+        "path": "jsdom 30.1.2 -> undici ^8.11.2",
+        "risk": "The npm copy serves jsdom/testing, not browser fetch. The installed compatible version is 8.12.3. Separately, Node 24.16.0 embedded 7.25.0; Node 24.22.1 now supplies 7.30.1. No external fitness API or untrusted remote production fetch path was introduced.",
+        "result": "FIXED",
+        "requiredPackageChange": "Refresh lockfile resolution within the existing upstream range; no override",
+        "regressionRisk": "Compatible patch release; validation/import and browser regressions executed",
+        "advisories": [
+          {
+            "id": "GHSA-4qv8-2p9j-2685",
+            "title": "undici vulnerable to Denial of Service via unbounded memory in the EventSource parser",
+            "url": "https://github.com/advisories/GHSA-4qv8-2p9j-2685",
+            "severity": "moderate",
+            "affectedRange": ">=8.0.0 <8.12.2",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-f72v-6w45-q472",
+            "title": "undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens",
+            "url": "https://github.com/advisories/GHSA-f72v-6w45-q472",
+            "severity": "moderate",
+            "affectedRange": ">=8.0.0 <8.12.2",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-xjj6-f33q-929c",
+            "title": "undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
+            "url": "https://github.com/advisories/GHSA-xjj6-f33q-929c",
+            "severity": "high",
+            "affectedRange": ">=8.0.0 <8.12.2",
+            "result": "FIXED"
+          }
+        ]
+      },
+      {
+        "package": "vite",
+        "beforeVersion": "8.3.2",
+        "correctedVersion": "8.3.3",
+        "minimumCompatiblePatch": "8.3.3",
+        "severity": "high",
+        "relationship": "Direct declared development dependency, also reachable through the framework build graph",
+        "path": "root Vite and TanStack build/plugin dependencies",
+        "risk": "The affected editor/middleware/file-serving paths concern the development/build server. Normal production uses the built Nitro server, not the Vite development server. Localhost binding is not treated as a substitute for the patch; no exploit or absence of all attack paths is claimed.",
+        "result": "FIXED",
+        "requiredPackageChange": "Raise direct minimum within the same major; update the lockfile",
+        "regressionRisk": "Compatible patch release; validation/import and browser regressions executed",
+        "advisories": [
+          {
+            "id": "GHSA-698v-4r3x-3vcv",
+            "title": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
+            "url": "https://github.com/advisories/GHSA-698v-4r3x-3vcv",
+            "severity": "moderate",
+            "affectedRange": ">=8.3.0 <=8.3.2",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-r825-w8mm-5pxw",
+            "title": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
+            "url": "https://github.com/advisories/GHSA-r825-w8mm-5pxw",
+            "severity": "moderate",
+            "affectedRange": ">=8.3.0 <=8.3.2",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-587h-7wmj-h5pm",
+            "title": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+            "url": "https://github.com/advisories/GHSA-587h-7wmj-h5pm",
+            "severity": "high",
+            "affectedRange": ">=8.3.0 <=8.3.2",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-9jrq-w75r-8gcw",
+            "title": "Vite: Cross origin script execution through Vite custom middleware",
+            "url": "https://github.com/advisories/GHSA-9jrq-w75r-8gcw",
+            "severity": "low",
+            "affectedRange": ">=8.3.0 <=8.3.2",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-rq7h-c2jc-7f22",
+            "title": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+            "url": "https://github.com/advisories/GHSA-rq7h-c2jc-7f22",
+            "severity": "moderate",
+            "affectedRange": ">=8.3.0 <=8.3.2",
+            "result": "FIXED"
+          },
+          {
+            "id": "GHSA-vfpm-58rq-9qcg",
+            "title": "Vite: First 4 bytes of files outside of `server.fs` setting is exposed by `?vite-wasm-instance`",
+            "url": "https://github.com/advisories/GHSA-vfpm-58rq-9qcg",
+            "severity": "moderate",
+            "affectedRange": ">=8.3.0 <=8.3.2",
+            "result": "FIXED"
+          }
+        ]
+      },
+      {
+        "package": "zod",
+        "beforeVersion": "4.6.5",
+        "correctedVersion": "4.6.6",
+        "minimumCompatiblePatch": "4.6.6",
+        "severity": "high",
+        "relationship": "Direct production dependency",
+        "path": "root zod; also shared with TanStack tooling",
+        "risk": "Untrusted local backup/import collections and form/record validation reach Zod. Existing input bounds do not justify ignoring the advisory. The upstream patch is installed; record/import semantics are covered by targeted and complete regressions.",
+        "result": "FIXED",
+        "requiredPackageChange": "Raise direct minimum within the same major; update the lockfile",
+        "regressionRisk": "Compatible patch release; validation/import and browser regressions executed",
+        "advisories": [
+          {
+            "id": "GHSA-mrhx-c7xc-m3w5",
+            "title": "Zod can exhaust memory while validating oversized constrained collections",
+            "url": "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5",
+            "severity": "high",
+            "affectedRange": "<4.6.6",
+            "result": "FIXED"
+          }
+        ]
+      }
+    ],
+    "nodeRuntime": {
+      "before": "24.16.0",
+      "beforeBundledUndici": "7.25.0",
+      "after": "v24.22.1",
+      "afterBundledUndici": "7.30.1",
+      "source": "https://nodejs.org/en/blog/release/v24.22.1",
+      "additionalSecurityCves": [
+        "CVE-2026-106069",
+        "CVE-2026-106072",
+        "CVE-2026-105482",
+        "CVE-2026-105483",
+        "CVE-2026-111497",
+        "CVE-2026-105481",
+        "CVE-2026-106074",
+        "CVE-2026-106073"
+      ],
+      "result": "CORRECTED_WITHIN_NODE_24",
+      "evidence": {
+        "node": "v24.22.1",
+        "bundledUndici": "7.30.1",
+        "npm": "11.13.0",
+        "officialBinary": "https://nodejs.org/dist/v24.22.1/win-x64/node.exe",
+        "sha256": "d702daa815eabbff763c7d3808e235cf031cf2ca70211b56847bc72f51e240e5",
+        "packageManagerDeclared": "npm@11.9.0",
+        "globalInstallationChanged": false
+      }
+    }
+  },
+  "dependencies": {
+    "changes": [
+      {
+        "path": "node_modules/fast-uri",
+        "before": "3.1.8",
+        "after": "3.1.9"
+      },
+      {
+        "path": "node_modules/undici",
+        "before": "8.11.2",
+        "after": "8.12.3"
+      },
+      {
+        "path": "node_modules/vite",
+        "before": "8.3.2",
+        "after": "8.3.3"
+      },
+      {
+        "path": "node_modules/zod",
+        "before": "4.6.5",
+        "after": "4.6.6"
+      }
+    ],
+    "nodeEngine": ">=24.22.1 <25",
+    "npmEngine": ">=11.9.0 <12",
+    "declaredPackageManager": "npm@11.9.0",
+    "testedNpm": "11.13.0",
+    "overridesAdded": false,
+    "forceFixUsed": false,
+    "legacyPeerDepsUsed": false,
+    "frameworkMajorsChanged": false,
+    "dependabotMerges": 0
+  },
+  "featureIntegrity": {
+    "result": "PASS",
+    "muscles": 12,
+    "exerciseGuides": 6,
+    "guideStates": ["SETUP", "ACTION", "RESET"],
+    "oneArmRowDifficulty": "intermediate",
+    "maximumPersonalSessions": 2,
+    "existingVisualAndTrackerSourcesByteUnchanged": true,
+    "criticalJourney": "Muscle -> guide -> add -> A/B -> save -> reload -> edit -> start -> complete -> history",
+    "unitAndBrowserEvidence": "Existing pilot tests unchanged and passing"
+  },
+  "dataIntegrity": {
+    "result": "PASS",
+    "publishedRecords": 520,
+    "searchDocuments": 648,
+    "unpublishedBacklog": 900,
+    "preservedFoodReferenceIds": 342,
+    "factualAndSearchFilesByteUnchanged": true,
+    "migrationsAdded": 0,
+    "backupFormatChanges": 0,
+    "checks": [
+      "nullable targets and explicit zero rest",
+      "atomic failed-write preservation and stale-tab conflicts",
+      "immutable completed workout targets",
+      "fresh-profile JSON restore",
+      "zero-write preview",
+      "correctly hashed malformed/future import rejection",
+      "interrupted restore resume/rollback and quota rollback",
+      "CSV formula neutralization",
+      "legacy diet exclusions retain unpublished seed IDs",
+      "no personal data sent to external services"
+    ]
+  },
+  "tests": {
+    "fullCodeGate": {
+      "result": "PASS",
+      "command": "npm run check",
+      "runtime": "v24.22.1",
+      "unitTests": 406,
+      "unitFiles": 101,
+      "evidence": "artifacts/phase20-release/final-runtime-check.log"
+    },
+    "coverage": {
+      "result": "PASS",
+      "tests": 406,
+      "files": 101,
+      "statements": 72.84,
+      "branches": 64.96,
+      "functions": 67,
+      "lines": 76.54,
+      "evidence": "artifacts/phase20-release/final-coverage.log"
+    },
+    "targetedZod": {
+      "passed": 50,
+      "files": 4
+    },
+    "targetedOptimization": {
+      "passed": 46,
+      "files": 4
+    },
+    "focusedBrowsers": {
+      "result": "PASS",
+      "totalPassed": 114,
+      "chromiumPassed": 57,
+      "webkitPassed": 57,
+      "files": [
+        "visual-training-pilot.spec.ts",
+        "diet-planning.spec.ts",
+        "security-headers.spec.ts",
+        "hydration.spec.ts",
+        "data-management.spec.ts"
+      ],
+      "evidence": "artifacts/phase20-release/final-focused-browser.log"
+    },
+    "accessibility": {
+      "result": "PASS",
+      "pilotConfigurations": 168,
+      "widths": [320, 375, 393, 768, 1024, 1280, 1440],
+      "themes": ["Light", "Dark", "Auto/light OS", "Auto/dark OS"],
+      "reducedMotion": true
+    },
+    "privacy": {
+      "result": "PASS",
+      "sourceFilesScanned": 404,
+      "headersAndNonceCspPreserved": true,
+      "externalPersonalRequests": 0
+    },
+    "baselineFirefox": {
+      "result": "PASS_HOSTED",
+      "sha": "df59c127199bdea1fef60289a13e05dd6c8dd9f8",
+      "passed": 986,
+      "closurePassed": 8,
+      "shards": [257, 237, 246, 246],
+      "localWindowsSpawnUnknown": "Environment limitation; not an application release blocker"
+    },
+    "fullBrowserRerunPerformed": false,
+    "baselinePriorRouteAudit": {
+      "passed": 703,
+      "sha": "df59c127199bdea1fef60289a13e05dd6c8dd9f8",
+      "repeated": false
+    },
+    "finiteSequence": {
+      "securityRepairCycles": 1,
+      "newlyDiscoveredNodeRuntimeRepairCycles": 1,
+      "bundlePasses": 1,
+      "extraCodeGateReason": "Exposure analysis discovered the separate outdated Node-embedded Undici after the package-only code gate. One corrected-runtime code gate followed; coverage and relevant browser suite ran once on the final runtime."
+    }
+  },
+  "githubActions": {
+    "baseline": {
+      "checkedAt": "2026-10-26T13:40:48.359Z",
+      "runs": [
+        {
+          "id": 40326445379,
+          "name": "CI",
+          "sha": "df59c127199bdea1fef60289a13e05dd6c8dd9f8",
+          "status": "completed",
+          "conclusion": "failure",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/40326445379",
+          "jobs": [
+            {
+              "id": 121584248831,
+              "name": "browser (1)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445379,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run build",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e -- --shard=1/2 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 15
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 16
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                }
+              ]
+            },
+            {
+              "id": 121584248929,
+              "name": "verify",
+              "status": "completed",
+              "conclusion": "failure",
+              "run_id": 40326445379,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npm run test:coverage",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm audit --audit-level=high",
+                  "status": "completed",
+                  "conclusion": "failure",
+                  "number": 7
+                },
+                {
+                  "name": "Preserve failed regression diagnostics",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 8
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 15
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 16
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                }
+              ]
+            },
+            {
+              "id": 121584249080,
+              "name": "browser (2)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445379,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run build",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e -- --shard=2/2 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 15
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 16
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                }
+              ]
+            },
+            {
+              "id": 121584249134,
+              "name": "accessibility (2)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445379,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:a11y -- --shard=2/2 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Preserve failed accessibility diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 15
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 16
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                }
+              ]
+            },
+            {
+              "id": 121584249186,
+              "name": "accessibility (1)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445379,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:a11y -- --shard=1/2 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Preserve failed accessibility diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 15
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 16
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 40326445493,
+          "name": "Cross-browser regression",
+          "sha": "df59c127199bdea1fef60289a13e05dd6c8dd9f8",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/40326445493",
+          "jobs": [
+            {
+              "id": 121584249518,
+              "name": "browser (firefox, 1)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps firefox",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=firefox --shard=1/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249673,
+              "name": "browser (chromium, 2)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=chromium --shard=2/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249686,
+              "name": "browser (firefox, 2)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps firefox",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=firefox --shard=2/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249719,
+              "name": "browser (firefox, 3)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps firefox",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=firefox --shard=3/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249759,
+              "name": "browser (chromium, 4)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=chromium --shard=4/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249812,
+              "name": "browser (webkit, 2)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps webkit",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=webkit --shard=2/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249817,
+              "name": "browser (chromium, 1)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=chromium --shard=1/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249819,
+              "name": "browser (webkit, 4)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps webkit",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=webkit --shard=4/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249859,
+              "name": "browser (chromium, 3)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps chromium",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=chromium --shard=3/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249904,
+              "name": "browser (webkit, 3)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps webkit",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=webkit --shard=3/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249908,
+              "name": "browser (firefox, 4)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps firefox",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=firefox --shard=4/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            },
+            {
+              "id": 121584249927,
+              "name": "browser (webkit, 1)",
+              "status": "completed",
+              "conclusion": "success",
+              "run_id": 40326445493,
+              "logs_url": null,
+              "steps": [
+                {
+                  "name": "Set up job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 1
+                },
+                {
+                  "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 2
+                },
+                {
+                  "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 3
+                },
+                {
+                  "name": "Run npm ci",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 4
+                },
+                {
+                  "name": "Run npm run check",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 5
+                },
+                {
+                  "name": "Run npx playwright install --with-deps webkit",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 6
+                },
+                {
+                  "name": "Run npm run test:e2e:cross-browser -- --project=webkit --shard=1/4 --reporter=line",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 7
+                },
+                {
+                  "name": "Verify closure proxies on the installed browser",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 8
+                },
+                {
+                  "name": "Preserve failed browser diagnostics",
+                  "status": "completed",
+                  "conclusion": "skipped",
+                  "number": 9
+                },
+                {
+                  "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 17
+                },
+                {
+                  "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 18
+                },
+                {
+                  "name": "Complete job",
+                  "status": "completed",
+                  "conclusion": "success",
+                  "number": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "remediationCommit": {
+      "status": "NOT_CREATED_AT_REPORT_TIME",
+      "result": "Inspect after push; report IN_PROGRESS if unfinished",
+      "requiredForProduction": true
+    }
+  },
+  "performance": {
+    "before": {
+      "jsGzip": 716114,
+      "largestJsGzip": 168817,
+      "cssGzip": 20766,
+      "jsonGzip": 429517,
+      "headroom": 686
+    },
+    "after": {
+      "jsGzip": 707105,
+      "largestJsGzip": 168826,
+      "cssGzip": 20766,
+      "jsonGzip": 429517,
+      "headroom": 9695
+    },
+    "additionalHeadroom": 9009,
+    "targetAdditionalHeadroom": 10240,
+    "targetAchieved": false,
+    "budget": 716800,
+    "largestChunkBudget": 204800,
+    "newMediaBytes": 0,
+    "securityOnlyJsGzip": 716365
+  },
+  "privacySecurity": {
+    "result": "PASS_LOCAL",
+    "noAccountsOrCloudIntroduced": true,
+    "securityHeadersChanged": false,
+    "nonceCspChanged": false,
+    "personalStorageBoundaryChanged": false
+  },
+  "production": {
+    "checkedAt": "2026-10-26T13:48:04.362Z",
+    "alias": "kaush-ka-gym.vercel.app",
+    "deploymentId": "dpl_5sLqYJstGvCKQWkMyh3A9vNQqVx7",
+    "state": "READY",
+    "sha": "a946027b1f3a8754928c393228df696400b6b391",
+    "productionChanged": false,
+    "updateRequired": true,
+    "deploymentPerformed": false
+  },
+  "repository": {
+    "originalTrackedPaths": 1354,
+    "originalPathsLost": 0,
+    "historicalTagsPreserved": 26,
+    "trackedDeletes": 0,
+    "moves": 0,
+    "renames": 0,
+    "historyRewrite": false,
+    "forcePush": false,
+    "branchesDeleted": 0,
+    "branchesCreated": 0,
+    "dependencyPRsMerged": 0
+  },
+  "files": {
+    "modified": [
+      ".node-version",
+      ".nvmrc",
+      "README.md",
+      "docs/README.md",
+      "docs/phases/phase-20.md",
+      "package-lock.json",
+      "package.json",
+      "scripts/compile-foods.ts",
+      "scripts/phase18-repository-audit.ts",
+      "src/features/diet-planning/domain.ts"
+    ],
+    "added": [
+      "docs/decisions/phase-20-release-remediation.md",
+      "docs/reports/phase-20-release-readiness.json",
+      "docs/reports/phase-20-release-readiness.md",
+      "src/content/foods/identity-ids.json",
+      "tests/release-readiness.test.ts"
+    ],
+    "deleted": [],
+    "renamed": [],
+    "moved": []
+  },
+  "remainingIssues": [
+    {
+      "priority": "P2",
+      "id": "CI-CANDIDATE",
+      "status": "BLOCKED_PENDING_POST_PUSH_INSPECTION",
+      "finding": "Required exact-SHA hosted checks for the containing remediation commit do not exist at pre-commit report creation.",
+      "nextAction": "Inspect exact-SHA CI after normal push. If still running, report IN_PROGRESS; do not deploy or create another documentation-only CI-completion commit."
+    },
+    {
+      "priority": "P3",
+      "id": "BUNDLE-TARGET",
+      "status": "DOCUMENTED_NON_BLOCKING",
+      "finding": "The bounded pass adds 9009 bytes of headroom, below the optional 10240-byte additional target; 9695 bytes remain and the unchanged budget passes.",
+      "nextAction": "Preserve correctness and stop the bounded optimization pass; future changes must keep the same budget."
+    },
+    {
+      "priority": "OWNER",
+      "id": "LOCAL-RUNTIME",
+      "status": "INFORMATION",
+      "finding": "The global Node installation is intentionally unchanged. Final tests used a checksum-verified workspace-local Node 24.22.1.",
+      "nextAction": "Use Node 24.22.1 or a compatible later Node 24 security release for subsequent local work. Version managers and CI read the committed pin files."
+    },
+    {
+      "priority": "OWNER",
+      "id": "MANUAL-ACCEPTANCE",
+      "status": "NOT_TESTED",
+      "finding": "No new physical-device, auditory screen-reader or independent clinical/visual review was performed.",
+      "nextAction": "Use the existing Phase 20 owner acceptance checklist; automated/assistant verification is not independent human review."
+    }
+  ],
+  "nextDeployment": {
+    "authorized": false,
+    "required": true,
+    "sourceMethod": "Vercel server-side Git source at the exact owner-approved commit",
+    "bulkUploadUsed": false
+  }
+}

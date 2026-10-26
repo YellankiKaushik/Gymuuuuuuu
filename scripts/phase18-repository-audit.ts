@@ -69,14 +69,14 @@ if (
 }
 if (
   pkg.packageManager !== "npm@11.9.0" ||
-  !pkg.engines.node.includes("24.16.0") ||
+  !pkg.engines.node.includes("24.22.1") ||
   !pkg.engines.npm.includes("11.9.0")
 ) {
   failures.push(
     "package.json must declare the supported pinned Node 24/npm 11 toolchain.",
   );
 }
-if (nvmVersion !== "24.16.0" || nodeVersion !== nvmVersion)
+if (nvmVersion !== "24.22.1" || nodeVersion !== nvmVersion)
   failures.push(
     ".nvmrc and .node-version must pin the same supported Node patch.",
   );
