@@ -208,6 +208,10 @@ export const navigationItems: readonly NavigationItem[] = [
 ]
 export const mobileMorePaths = ['/recovery', '/mobility', '/tools', '/saved', '/settings', '/about/sources'] as const
 export function navigationFor(path: string): NavigationItem | undefined {
+  if (path === '/workout/plans') {
+    const workspace = navigationItems.find((entry) => entry.href === '/workout')
+    return workspace ? { ...workspace, id: 'personal-workout-plans', href: path, label: 'Personal plans', visibility: 'contextual' } : undefined
+  }
   const module = findModule(path)
   const entry = navigationItems.find((entry) => entry.href === (module?.path ?? path))
   if (entry) return entry

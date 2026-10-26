@@ -1,0 +1,165 @@
+.pilot-location {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(100px, 180px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  padding: 24px;
+  border: 1px solid var(--control-line);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+}
+.pilot-location svg {
+  width: 100%;
+  height: 230px;
+}
+.pilot-body {
+  fill: var(--surface);
+  stroke: var(--muted);
+  stroke-width: 3;
+}
+.pilot-zone {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+  stroke-width: 4;
+}
+.pilot-location.pilot-compact {
+  display: block;
+  padding: 8px;
+  background: transparent;
+  border: 0;
+}
+.pilot-compact svg {
+  height: 140px;
+}
+.pilot-compact figcaption {
+  font-size: 14px;
+}
+.pilot-guide {
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid var(--control-line);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+}
+.pilot-heading,
+.personal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.pilot-heading {
+  justify-content: space-between;
+}
+.pilot-guide-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 16px;
+}
+.pilot-guide figure {
+  margin: 0;
+}
+.pilot-guide figcaption {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.pilot-pose {
+  width: 100%;
+  height: 240px;
+  color: var(--accent);
+}
+.pilot-person {
+  stroke-width: 5;
+}
+.pilot-apparatus {
+  stroke-width: 3;
+  color: var(--muted);
+}
+.personal-plan-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
+  gap: 24px;
+}
+.personal-plan-layout aside ul {
+  padding: 0;
+  list-style: none;
+}
+.personal-plan-layout aside li {
+  margin: 12px 0;
+}
+.personal-plan-layout aside button {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.personal-plan-editor {
+  min-width: 0;
+}
+.personal-plan-editor fieldset {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--control-line);
+  border-radius: var(--radius-md);
+}
+.personal-plan-editor label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+.personal-plan-editor input,
+.personal-plan-editor select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+}
+.personal-session {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+}
+.personal-plan-entries {
+  padding-left: 24px;
+}
+.personal-plan-entries > li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.personal-targets {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.personal-plans p,
+.personal-plans h3 {
+  overflow-wrap: anywhere;
+}
+.personal-plans [role="alert"]:empty {
+  display: none;
+}
+@media (max-width: 767px) {
+  .personal-plan-layout,
+  .pilot-guide-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .pilot-guide,
+  .pilot-location,
+  .personal-plan-editor fieldset {
+    padding: 16px;
+  }
+  .pilot-location {
+    grid-template-columns: minmax(80px, 120px) minmax(0, 1fr);
+    gap: 12px;
+  }
+  .personal-targets {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pilot-guide *,
+  .personal-plans * {
+    scroll-behavior: auto;
+    transition: none;
+  }
+}

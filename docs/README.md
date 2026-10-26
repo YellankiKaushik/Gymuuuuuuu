@@ -12,6 +12,7 @@ The [feature documentation index](features/README.md) groups the existing module
 - [Foundation data dictionary](data-dictionary/foundation.md), [local storage and backup contracts](local-data/), and [content governance](content-governance/).
 - Module-specific data models, methods, source policies and test matrices are linked from the [feature index](features/README.md).
 - [Visual provenance manifest](assets/owner-ux-visual-manifest.json).
+- Phase 20 [visual-training pilot report](reports/visual-training-pilot.md), [personal-plan contract](decisions/phase-20-personal-plan-contract.md), [visual provenance](assets/visual-training-pilot-manifest.json) and [phase checklist](phases/phase-20.md). Production publication requires owner approval of the verified commit.
 
 ## Operations, security and verification
 

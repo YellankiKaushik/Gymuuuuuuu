@@ -1,0 +1,880 @@
+{
+  "phase": 20,
+  "startingSha": "9dd862cbad7fdc33ebcc0086e89ad1e8a19ffd3b",
+  "commitBinding": "Containing commit; exact SHA and post-push CI snapshot are provided in the final handoff. A file cannot embed its own containing commit SHA.",
+  "codeFingerprintSha256": "aa80187f542edb483c6490c847a8804fce7a1447dcc93b02e66b25967ededd62",
+  "recordedAt": "2026-10-26T12:55:27.478Z",
+  "implementationStatus": "implemented; release blocked by dependency audit and incomplete Firefox/CI verification",
+  "production": {
+    "checkedAt": "2026-10-26T09:12:52.873Z",
+    "alias": "kaush-ka-gym.vercel.app",
+    "deploymentId": "dpl_5sLqYJstGvCKQWkMyh3A9vNQqVx7",
+    "state": "READY",
+    "gitSha": "a946027b1f3a8754928c393228df696400b6b391",
+    "gitRef": "main",
+    "newDeploymentsRequested": 0
+  },
+  "inventory": {
+    "publishedFactual": 520,
+    "searchDocuments": 648,
+    "unpublishedBacklog": 900
+  },
+  "muscles": [
+    {
+      "id": "muscle_biceps_brachii",
+      "name": "Biceps brachii",
+      "status": "PASS",
+      "route": "/muscles/biceps-brachii",
+      "sourceIds": ["gray_1918_upper_arm"]
+    },
+    {
+      "id": "muscle_deltoid",
+      "name": "Deltoid",
+      "status": "PASS",
+      "route": "/muscles/deltoid",
+      "sourceIds": ["gray_1918_shoulder_thorax"]
+    },
+    {
+      "id": "muscle_rectus_femoris",
+      "name": "Rectus femoris",
+      "status": "PASS",
+      "route": "/muscles/rectus-femoris",
+      "sourceIds": ["gray_1918_lower_limb"]
+    },
+    {
+      "id": "muscle_vastus_lateralis",
+      "name": "Vastus lateralis",
+      "status": "PASS",
+      "route": "/muscles/vastus-lateralis",
+      "sourceIds": ["gray_1918_lower_limb"]
+    },
+    {
+      "id": "muscle_vastus_medialis",
+      "name": "Vastus medialis",
+      "status": "PASS",
+      "route": "/muscles/vastus-medialis",
+      "sourceIds": ["gray_1918_lower_limb"]
+    },
+    {
+      "id": "muscle_vastus_intermedius",
+      "name": "Vastus intermedius",
+      "status": "PASS",
+      "route": "/muscles/vastus-intermedius",
+      "sourceIds": ["gray_1918_lower_limb"]
+    },
+    {
+      "id": "muscle_gluteus_maximus",
+      "name": "Gluteus maximus",
+      "status": "PASS",
+      "route": "/muscles/gluteus-maximus",
+      "sourceIds": ["gray_1918_lower_limb"]
+    },
+    {
+      "id": "muscle_latissimus_dorsi",
+      "name": "Latissimus dorsi",
+      "status": "PASS",
+      "route": "/muscles/latissimus-dorsi",
+      "sourceIds": ["gray_1918_shoulder_thorax"]
+    },
+    {
+      "id": "muscle_pectoralis_major",
+      "name": "Pectoralis major",
+      "status": "PASS",
+      "route": "/muscles/pectoralis-major",
+      "sourceIds": ["gray_1918_shoulder_thorax"]
+    },
+    {
+      "id": "muscle_triceps_brachii",
+      "name": "Triceps brachii",
+      "status": "PASS",
+      "route": "/muscles/triceps-brachii",
+      "sourceIds": ["gray_1918_upper_arm"]
+    },
+    {
+      "id": "muscle_gastrocnemius",
+      "name": "Gastrocnemius",
+      "status": "PASS",
+      "route": "/muscles/gastrocnemius",
+      "sourceIds": ["gray_1918_lower_limb"]
+    },
+    {
+      "id": "muscle_soleus",
+      "name": "Soleus",
+      "status": "PASS",
+      "route": "/muscles/soleus",
+      "sourceIds": ["gray_1918_lower_limb"]
+    }
+  ],
+  "exerciseGuides": [
+    {
+      "id": "exercise_bodyweight_squat",
+      "name": "Bodyweight squat",
+      "status": "PASS",
+      "route": "/exercises/bodyweight-squat",
+      "difficulty": "beginner",
+      "states": ["SETUP", "ACTION", "RESET"],
+      "sourceIds": [
+        "ace_bodyweight_squat",
+        "gray_1918_lower_limb",
+        "nia_strength_guide_2018"
+      ]
+    },
+    {
+      "id": "exercise_incline_push_up",
+      "name": "Incline push-up",
+      "status": "PASS",
+      "route": "/exercises/incline-push-up",
+      "difficulty": "foundation",
+      "states": ["SETUP", "ACTION", "RESET"],
+      "sourceIds": [
+        "nia_strength_guide_2018",
+        "gray_1918_shoulder_thorax",
+        "gray_1918_upper_arm"
+      ]
+    },
+    {
+      "id": "exercise_one_arm_dumbbell_row",
+      "name": "One-arm dumbbell row",
+      "status": "PASS",
+      "route": "/exercises/one-arm-dumbbell-row",
+      "difficulty": "intermediate",
+      "states": ["SETUP", "ACTION", "RESET"],
+      "sourceIds": [
+        "ace_single_arm_row",
+        "gray_1918_shoulder_thorax",
+        "gray_1918_upper_arm",
+        "nia_strength_guide_2018"
+      ]
+    },
+    {
+      "id": "exercise_seated_dumbbell_shoulder_press",
+      "name": "Seated dumbbell shoulder press",
+      "status": "PASS",
+      "route": "/exercises/seated-dumbbell-shoulder-press",
+      "difficulty": "foundation",
+      "states": ["SETUP", "ACTION", "RESET"],
+      "sourceIds": ["nia_strength_guide_2018", "gray_1918_shoulder_thorax"]
+    },
+    {
+      "id": "exercise_dumbbell_curl",
+      "name": "Dumbbell curl",
+      "status": "PASS",
+      "route": "/exercises/dumbbell-curl",
+      "difficulty": "foundation",
+      "states": ["SETUP", "ACTION", "RESET"],
+      "sourceIds": [
+        "gray_1918_upper_arm",
+        "public_strength_2024",
+        "public_video_safety_2023"
+      ]
+    },
+    {
+      "id": "exercise_standing_calf_raise",
+      "name": "Standing calf raise",
+      "status": "PASS",
+      "route": "/exercises/standing-calf-raise",
+      "difficulty": "foundation",
+      "states": ["SETUP", "ACTION", "RESET"],
+      "sourceIds": ["nia_strength_guide_2018", "gray_1918_lower_limb"]
+    }
+  ],
+  "storage": {
+    "database": "fitness-os-local",
+    "databaseVersion": 1,
+    "store": "records",
+    "module": "plans",
+    "payloadKind": "personal-workout-plan",
+    "payloadVersion": 1,
+    "migrationRequired": false,
+    "maximumSessions": 2
+  },
+  "tests": {
+    "unit": {
+      "status": "PASS",
+      "files": 100,
+      "passed": 404
+    },
+    "pilotUnit": {
+      "status": "PASS",
+      "files": 3,
+      "passed": 33
+    },
+    "focusedBrowser": {
+      "status": "PASS",
+      "passed": 15,
+      "evidence": "artifacts/phase20/focused-ui-final.log"
+    },
+    "browsers": {
+      "status": "PASS",
+      "passed": 1972,
+      "failed": 0,
+      "evidence": "artifacts/phase20/final-cross-browser.log"
+    },
+    "firefox": {
+      "status": "NOT TESTED",
+      "launchProbesFailed": 1,
+      "error": "spawn UNKNOWN",
+      "evidence": "artifacts/phase20/final-firefox-launch.log"
+    },
+    "closure": {
+      "status": "PASS",
+      "passed": 48,
+      "failed": 0,
+      "evidence": "artifacts/phase20/final-closure.log"
+    },
+    "routes": {
+      "status": "PASS",
+      "passed": 703,
+      "failed": 0,
+      "evidence": "artifacts/phase20/final-routes.log"
+    },
+    "coverage": {
+      "statements": 72.79,
+      "branches": 64.96,
+      "functions": 66.89,
+      "lines": 76.5
+    },
+    "audit": {
+      "status": "FAIL",
+      "info": 0,
+      "low": 0,
+      "moderate": 1,
+      "high": 3,
+      "critical": 0,
+      "total": 4,
+      "packages": [
+        {
+          "name": "fast-uri",
+          "severity": "moderate",
+          "range": "3.0.0 - 3.1.8",
+          "advisories": [
+            {
+              "title": "fast-uri vulnerable to URI scheme spoofing via percent-encoded scheme decoding",
+              "url": "https://github.com/advisories/GHSA-w74x-v6f9-j3xg"
+            },
+            {
+              "title": "fast-uri vulnerable to improper path equivalence in relative reference normalization",
+              "url": "https://github.com/advisories/GHSA-xhq7-xmqj-769h"
+            },
+            {
+              "title": "fast-uri vulnerable to host confusion via unchecked WHATWG host canonicalization",
+              "url": "https://github.com/advisories/GHSA-wjr9-j795-jxcr"
+            },
+            {
+              "title": "fast-uri vulnerable to scheme injection via an unescaped first-segment colon in suffix references",
+              "url": "https://github.com/advisories/GHSA-333x-w4r6-6crp"
+            }
+          ]
+        },
+        {
+          "name": "undici",
+          "severity": "high",
+          "range": "8.0.0 - 8.12.1",
+          "advisories": [
+            {
+              "title": "undici vulnerable to Denial of Service via unbounded memory in the EventSource parser",
+              "url": "https://github.com/advisories/GHSA-4qv8-2p9j-2685"
+            },
+            {
+              "title": "undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens",
+              "url": "https://github.com/advisories/GHSA-f72v-6w45-q472"
+            },
+            {
+              "title": "undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
+              "url": "https://github.com/advisories/GHSA-xjj6-f33q-929c"
+            }
+          ]
+        },
+        {
+          "name": "vite",
+          "severity": "high",
+          "range": "8.3.0 - 8.3.2",
+          "advisories": [
+            {
+              "title": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
+              "url": "https://github.com/advisories/GHSA-698v-4r3x-3vcv"
+            },
+            {
+              "title": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
+              "url": "https://github.com/advisories/GHSA-r825-w8mm-5pxw"
+            },
+            {
+              "title": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+              "url": "https://github.com/advisories/GHSA-587h-7wmj-h5pm"
+            },
+            {
+              "title": "Vite: Cross origin script execution through Vite custom middleware",
+              "url": "https://github.com/advisories/GHSA-9jrq-w75r-8gcw"
+            },
+            {
+              "title": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+              "url": "https://github.com/advisories/GHSA-rq7h-c2jc-7f22"
+            },
+            {
+              "title": "Vite: First 4 bytes of files outside of `server.fs` setting is exposed by `?vite-wasm-instance`",
+              "url": "https://github.com/advisories/GHSA-vfpm-58rq-9qcg"
+            }
+          ]
+        },
+        {
+          "name": "zod",
+          "severity": "high",
+          "range": "<4.6.6",
+          "advisories": [
+            {
+              "title": "Zod can exhaust memory while validating oversized constrained collections",
+              "url": "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "performance": {
+    "before": {
+      "jsGzip": 704799,
+      "largestJsGzip": 168652,
+      "cssGzip": 20317,
+      "jsonGzip": 429517,
+      "newMediaFileBytes": 0
+    },
+    "after": {
+      "jsGzip": 716114,
+      "largestJsGzip": 168817,
+      "cssGzip": 20766,
+      "jsonGzip": 429517,
+      "newMediaFileBytes": 0
+    },
+    "budgets": {
+      "jsTotalGzip": 716800,
+      "jsLargestGzip": 204800,
+      "jsonTotalGzip": 524288,
+      "jsonLargestGzip": 65536
+    },
+    "jsHeadroom": 686
+  },
+  "files": {
+    "modified": [
+      "README.md",
+      "docs/README.md",
+      "package.json",
+      "src/data/navigation.ts",
+      "src/domain/schemas/foundation.ts",
+      "src/features/data-management/service.ts",
+      "src/features/exercises/detail.tsx",
+      "src/features/muscles/catalogue.tsx",
+      "src/features/muscles/detail.tsx",
+      "src/features/workout-tracker/start.tsx",
+      "src/routeTree.gen.ts",
+      "src/storage/indexed-db/adapter.ts",
+      "src/styles/app.css"
+    ],
+    "added": [
+      "docs/assets/visual-training-pilot-manifest.json",
+      "docs/decisions/phase-20-personal-plan-contract.md",
+      "docs/phases/phase-20.md",
+      "docs/reports/visual-training-pilot.json",
+      "docs/reports/visual-training-pilot.md",
+      "src/domain/schemas/personal-workout-plan.ts",
+      "src/features/visual-training/exercise-guide.tsx",
+      "src/features/visual-training/plan-editor.tsx",
+      "src/features/visual-training/plans.ts",
+      "src/features/visual-training/schematics.tsx",
+      "src/features/visual-training/scope.ts",
+      "src/routes/workout_.plans.tsx",
+      "src/styles/visual-training.css",
+      "tests/browser/visual-training-pilot.spec.ts",
+      "tests/personal-workout-plans.test.ts",
+      "tests/visual-training-education.test.tsx",
+      "tests/visual-training-portability.test.ts"
+    ],
+    "deleted": [],
+    "moved": [],
+    "renamed": []
+  },
+  "requirements": [
+    {
+      "id": "ARCH-01",
+      "status": "PASS",
+      "requirement": "Inspect architecture, design and relevant archived Phase 02/03/05/06/17 contracts",
+      "evidence": "docs/decisions/phase-20-personal-plan-contract.md",
+      "detail": "Existing stores, tracker, backup and theme system reused."
+    },
+    {
+      "id": "ARCH-02",
+      "status": "PASS",
+      "requirement": "Verify authoritative main checkpoint and preserve local work",
+      "evidence": "artifacts/phase20/baseline.json",
+      "detail": "Started clean and synchronized at 9dd862cbad7fdc33ebcc0086e89ad1e8a19ffd3b. No reset/clean/history rewrite."
+    },
+    {
+      "id": "ARCH-03",
+      "status": "PASS",
+      "requirement": "Inspect preceding Actions runs without indefinite polling",
+      "evidence": "artifacts/phase20/github-9dd862cbad7fdc33ebcc0086e89ad1e8a19ffd3b.json",
+      "detail": "40289217783 and 40289217801 were in_progress at the read-only inspection; no terminal outcome claimed."
+    },
+    {
+      "id": "MUSCLE-muscle_biceps_brachii",
+      "status": "PASS",
+      "requirement": "Original location schematic: Biceps brachii",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Anterior upper arm. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_deltoid",
+      "status": "PASS",
+      "requirement": "Original location schematic: Deltoid",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Superficial muscle around the shoulder. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_rectus_femoris",
+      "status": "PASS",
+      "requirement": "Original location schematic: Rectus femoris",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Middle front of the thigh. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_vastus_lateralis",
+      "status": "PASS",
+      "requirement": "Original location schematic: Vastus lateralis",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Lateral front and side of the thigh. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_vastus_medialis",
+      "status": "PASS",
+      "requirement": "Original location schematic: Vastus medialis",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Medial front of the thigh. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_vastus_intermedius",
+      "status": "PASS",
+      "requirement": "Original location schematic: Vastus intermedius",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Front of the femur beneath rectus femoris. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_gluteus_maximus",
+      "status": "PASS",
+      "requirement": "Original location schematic: Gluteus maximus",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Superficial posterior gluteal region. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_latissimus_dorsi",
+      "status": "PASS",
+      "requirement": "Original location schematic: Latissimus dorsi",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Lower thoracic and lumbar back. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_pectoralis_major",
+      "status": "PASS",
+      "requirement": "Original location schematic: Pectoralis major",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Anterior upper chest. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_triceps_brachii",
+      "status": "PASS",
+      "requirement": "Original location schematic: Triceps brachii",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Posterior upper arm. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_gastrocnemius",
+      "status": "PASS",
+      "requirement": "Original location schematic: Gastrocnemius",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Superficial posterior lower leg. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "MUSCLE-muscle_soleus",
+      "status": "PASS",
+      "requirement": "Original location schematic: Soleus",
+      "evidence": "docs/assets/visual-training-pilot-manifest.json",
+      "detail": "Posterior lower leg, deep to gastrocnemius. Approximate orientation, existing actions/qualifiers/exercise links and sources retained."
+    },
+    {
+      "id": "GUIDE-exercise_bodyweight_squat",
+      "status": "PASS",
+      "requirement": "Three controlled states: Bodyweight squat",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Existing beginner classification, equipment, instructions, checkpoints, roles, mistakes, safety and sources retained; RESET reuses setup geometry."
+    },
+    {
+      "id": "GUIDE-exercise_incline_push_up",
+      "status": "PASS",
+      "requirement": "Three controlled states: Incline push-up",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Existing foundation classification, equipment, instructions, checkpoints, roles, mistakes, safety and sources retained; RESET reuses setup geometry."
+    },
+    {
+      "id": "GUIDE-exercise_one_arm_dumbbell_row",
+      "status": "PASS",
+      "requirement": "Three controlled states: One-arm dumbbell row",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Existing intermediate classification, equipment, instructions, checkpoints, roles, mistakes, safety and sources retained; RESET reuses setup geometry."
+    },
+    {
+      "id": "GUIDE-exercise_seated_dumbbell_shoulder_press",
+      "status": "PASS",
+      "requirement": "Three controlled states: Seated dumbbell shoulder press",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Existing foundation classification, equipment, instructions, checkpoints, roles, mistakes, safety and sources retained; RESET reuses setup geometry."
+    },
+    {
+      "id": "GUIDE-exercise_dumbbell_curl",
+      "status": "PASS",
+      "requirement": "Three controlled states: Dumbbell curl",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Existing foundation classification, equipment, instructions, checkpoints, roles, mistakes, safety and sources retained; RESET reuses setup geometry."
+    },
+    {
+      "id": "GUIDE-exercise_standing_calf_raise",
+      "status": "PASS",
+      "requirement": "Three controlled states: Standing calf raise",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Existing foundation classification, equipment, instructions, checkpoints, roles, mistakes, safety and sources retained; RESET reuses setup geometry."
+    },
+    {
+      "id": "PLAN-01",
+      "status": "PASS",
+      "requirement": "Named plans and Session A / optional B",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "At most two sessions and six unique allowlisted exercise IDs per session; empty drafts can save but cannot start."
+    },
+    {
+      "id": "PLAN-02",
+      "status": "PASS",
+      "requirement": "Edit, reorder and remove exercises",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Stable entry IDs and ordered arrays; remove Session B and delete plan require confirmation."
+    },
+    {
+      "id": "PLAN-03",
+      "status": "PASS",
+      "requirement": "Explicit nullable targets and canonical units",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Nullable intended sets/repetitions/rest. Rest uses whole seconds, optional minutes converted without binary-conversion noise. Zero rest remains distinct from null. No default target load or schedule."
+    },
+    {
+      "id": "PLAN-04",
+      "status": "PASS",
+      "requirement": "Save, reopen, edit and delete",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Commit-based feedback, duplicate-save guard, atomic full-value compare-and-swap, retained failed draft, stale-tab rejection and explicit reload."
+    },
+    {
+      "id": "PLAN-05",
+      "status": "PASS",
+      "requirement": "Existing tracker integration and immutable history",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Start saved A/B through newSession/newSet/createWorkout. Canonical exercise references, copied targets/names, personal/ad_hoc source and provenance snapshots. Later plan edits/deletion do not rewrite workouts."
+    },
+    {
+      "id": "STORE-01",
+      "status": "PASS",
+      "requirement": "Versioned local IndexedDB contract",
+      "evidence": "tests/visual-training-portability.test.ts",
+      "detail": "fitness-os-local v1 / records / module plans / personal-workout-plan payload v1. No store, database migration, competing tracker or new backup format."
+    },
+    {
+      "id": "STORE-02",
+      "status": "PASS",
+      "requirement": "Restore/write coordination",
+      "evidence": "tests/visual-training-portability.test.ts",
+      "detail": "Reuse existing named Web Lock and fallback expiring operational lease; pending recovery journals block plan mutation/start."
+    },
+    {
+      "id": "BACKUP-01",
+      "status": "PASS",
+      "requirement": "Portable inclusion and fresh-profile restoration",
+      "evidence": "tests/visual-training-portability.test.ts",
+      "detail": "Global Phase 17 portable archive includes versioned plan/session/exercise records; fresh-profile owning-store preparation and restore verified."
+    },
+    {
+      "id": "BACKUP-02",
+      "status": "PASS",
+      "requirement": "Zero-write preview and rejected untrusted imports",
+      "evidence": "tests/visual-training-portability.test.ts",
+      "detail": "Correctly hashed malformed, unknown-exercise and future-version plans rejected before writes. Existing records remain unchanged."
+    },
+    {
+      "id": "BACKUP-03",
+      "status": "PASS",
+      "requirement": "Interrupted/failed restore recovery",
+      "evidence": "tests/visual-training-portability.test.ts",
+      "detail": "Resume, rollback and automatic rollback after a later database quota failure preserve plan records and earlier database changes."
+    },
+    {
+      "id": "CSV-01",
+      "status": "PASS",
+      "requirement": "Safe CSV inspection export",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Existing quoting/formula-neutralization and download helpers; plan/session/order/exercise/targets exported. CSV is not a second restore format."
+    },
+    {
+      "id": "CONTENT-01",
+      "status": "PASS",
+      "requirement": "Frozen identity/search/backlog inventory",
+      "evidence": "artifacts/phase20/final-check.log",
+      "detail": "520 published factual identities; 648 search documents; 900 unpublished identities preserved. No canonical data, classifications or factual review dates changed."
+    },
+    {
+      "id": "PRIVACY-01",
+      "status": "PASS",
+      "requirement": "Browser-only private records",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "No personal records in SSR, metadata, URL intent, request bodies/headers or external network calls. Broadcast notices contain only changed; private records remain in IndexedDB."
+    },
+    {
+      "id": "VISUAL-01",
+      "status": "PASS",
+      "requirement": "Original visuals, provenance and evidence limitations",
+      "evidence": "tests/browser/visual-training-pilot.spec.ts",
+      "detail": "Thirty documented states across twelve locations and six three-state guides; zero new media files. Independent human/clinical review is explicitly not performed."
+    },
+    {
+      "id": "GATE-01",
+      "status": "PASS",
+      "requirement": "Strict types, lint, format, foundation/unit tests, content/search/privacy/build/budgets",
+      "evidence": "artifacts/phase20/final-check.log",
+      "detail": "One final npm run check passed; 404 tests / 100 files. Gates, assertions, timeouts and budgets unchanged; format coverage extended."
+    },
+    {
+      "id": "GATE-02",
+      "status": "PASS",
+      "requirement": "Coverage",
+      "evidence": "artifacts/phase20/final-coverage.log",
+      "detail": "404 tests / 100 files; statements 72.79%, branches 64.96%, functions 66.89%, lines 76.5%."
+    },
+    {
+      "id": "REPO-01",
+      "status": "PASS",
+      "requirement": "Non-destructive repository safety",
+      "evidence": "artifacts/phase20/safety-pre.json",
+      "detail": "No tracked deletion/move/rename; original 1337 paths retained, lockfile/dependencies unchanged. Branches/tags/Dependabot are read-only except normal authorized main push."
+    },
+    {
+      "id": "RELEASE-01",
+      "status": "PASS",
+      "requirement": "Production remains untouched",
+      "evidence": "artifacts/phase20/production-readonly.json",
+      "detail": "No deployment/promotion/rollback requested. Existing production deployment and prior source SHA retained; owner approval must bind an exact later commit."
+    },
+    {
+      "id": "A11Y-01",
+      "status": "PASS",
+      "requirement": "Keyboard, names, labels, focus, announcements, confirmations and WCAG 2.2 AA axe checks",
+      "evidence": "artifacts/phase20/final-cross-browser.log",
+      "detail": "New three-screen matrix: seven widths × four Light/Dark/Auto-system configurations, with reduced motion. Physical/aural review remains separate."
+    },
+    {
+      "id": "RESP-01",
+      "status": "PASS",
+      "requirement": "320/375/393/768/1024/1280/1440 px without page overflow",
+      "evidence": "artifacts/phase20/final-cross-browser.log",
+      "detail": "Both available engines; new matrix totals 168 screen/viewport/theme checks when both engine runs complete. Tables retain their existing local scrolling."
+    },
+    {
+      "id": "BROWSER-01",
+      "status": "PASS",
+      "requirement": "Complete Chromium/WebKit regression sweep",
+      "evidence": "artifacts/phase20/final-cross-browser.log",
+      "detail": "1972 passed, 0 failed; inventory 1972 cases (986 per engine)."
+    },
+    {
+      "id": "BROWSER-02",
+      "status": "NOT TESTED",
+      "requirement": "Firefox application assertions",
+      "evidence": "artifacts/phase20/final-firefox-launch.log",
+      "detail": "One selected launch probe failed before assertions: browserType.launch spawn UNKNOWN on this Windows host. Do not count it as an application assertion pass. Hosted Linux exact-SHA results require separate inspection."
+    },
+    {
+      "id": "CLOSURE-01",
+      "status": "PASS",
+      "requirement": "Desktop/mobile persistence/backup/failure closure proxies",
+      "evidence": "artifacts/phase20/final-closure.log",
+      "detail": "48 passed, 0 failed; Firefox excluded only because the launch probe cannot start."
+    },
+    {
+      "id": "ROUTES-01",
+      "status": "PASS",
+      "requirement": "Current-build public-route audit",
+      "evidence": "artifacts/phase20/final-routes.log",
+      "detail": "703 passed, 0 failed. Historical tracked content-completion reports are preserved; current generated evidence stays in the phase artifact directory."
+    },
+    {
+      "id": "SECURITY-01",
+      "status": "FAIL",
+      "requirement": "npm audit high-severity gate",
+      "evidence": "artifacts/phase20/final-audit.json",
+      "detail": "Unchanged lockfile reports 4 affected packages: 3 high, 1 moderate. Zod 4.6.5, Vite 8.3.2, undici 8.11.2 and fast-uri 3.1.8. No upgrade or audit bypass is authorized by Phase 20."
+    },
+    {
+      "id": "CI-01",
+      "status": "NOT TESTED",
+      "requirement": "Containing-commit GitHub CI result",
+      "evidence": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions",
+      "detail": "This report is created before its containing commit exists. Exact-SHA CI is inspected after normal push and reported in the final handoff; no terminal result is invented in the immutable pre-push report. The unchanged required npm audit gate is expected to remain a blocker."
+    },
+    {
+      "id": "HUMAN-01",
+      "status": "NOT TESTED",
+      "requirement": "Independent anatomy/technique visual review and real-device/aural acceptance",
+      "evidence": "Owner checklist below",
+      "detail": "No independent human/clinical attestation or physical-device result is claimed."
+    }
+  ],
+  "ownerChecklist": [
+    {
+      "id": "MAN-01",
+      "status": "NOT TESTED",
+      "check": "Inspect all twelve approximate muscle locations and all six setup/action/reset cues against their linked sources; independent visual expertise is not claimed."
+    },
+    {
+      "id": "MAN-02",
+      "status": "NOT TESTED",
+      "check": "Perform the complete journey by keyboard and with NVDA/VoiceOver, including announcements and confirmation dialogs."
+    },
+    {
+      "id": "MAN-03",
+      "status": "NOT TESTED",
+      "check": "Use real iOS Safari and Android Chrome; check touch, orientation, backgrounding and browser/OS storage behavior."
+    },
+    {
+      "id": "MAN-04",
+      "status": "NOT TESTED",
+      "check": "Create a private backup through the native file picker/download workflow, retain it outside browser storage, and restore it in a disposable profile."
+    },
+    {
+      "id": "MAN-05",
+      "status": "NOT TESTED",
+      "check": "Resolve or explicitly authorize separate work on the dependency audit; inspect exact-SHA Linux Firefox and required CI results."
+    },
+    {
+      "id": "MAN-06",
+      "status": "NOT TESTED",
+      "check": "Review the pushed exact commit and this report, then separately approve any production publication. No deployment is included in Phase 20."
+    }
+  ],
+  "repositorySafety": {
+    "originalTrackedPaths": 1337,
+    "originalPathsLost": 0,
+    "originalFilesModified": 13,
+    "filesAdded": 17,
+    "trackedDeleted": 0,
+    "unintendedMovesRenames": 0,
+    "tagsPreserved": 26,
+    "branches": [
+      {
+        "name": "codex/phase-19-verified-content",
+        "sha": "684345c41207c2d54044e79be52c42a303bfee90"
+      },
+      {
+        "name": "dependabot/github_actions/actions/checkout-7.0.1",
+        "sha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c"
+      },
+      {
+        "name": "dependabot/github_actions/actions/setup-node-7.1.0",
+        "sha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7"
+      },
+      {
+        "name": "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "sha": "707e15ca0dc2615815c09507b273067ac9699145"
+      },
+      {
+        "name": "dependabot/npm_and_yarn/lucide-react-1.55.0",
+        "sha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c"
+      },
+      {
+        "name": "dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+        "sha": "f56a88dedee3f7be6b1647070e3b41b2175f0596"
+      },
+      {
+        "name": "dependabot/npm_and_yarn/types/node-26.6.5",
+        "sha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d"
+      },
+      {
+        "name": "dependabot/npm_and_yarn/typescript-7.0.2",
+        "sha": "638a5294c60407aa02b558725eda126852e3264e"
+      },
+      {
+        "name": "dependabot/npm_and_yarn/vite-8.3.4",
+        "sha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a"
+      },
+      {
+        "name": "main",
+        "sha": "9dd862cbad7fdc33ebcc0086e89ad1e8a19ffd3b"
+      }
+    ],
+    "openDependencyPRs": [
+      {
+        "number": 8,
+        "headRef": "dependabot/npm_and_yarn/types/node-26.6.5",
+        "headSha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/8"
+      },
+      {
+        "number": 7,
+        "headRef": "dependabot/npm_and_yarn/vite-8.3.4",
+        "headSha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/7"
+      },
+      {
+        "number": 6,
+        "headRef": "dependabot/npm_and_yarn/lucide-react-1.55.0",
+        "headSha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/6"
+      },
+      {
+        "number": 5,
+        "headRef": "dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+        "headSha": "f56a88dedee3f7be6b1647070e3b41b2175f0596",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/5"
+      },
+      {
+        "number": 4,
+        "headRef": "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "headSha": "707e15ca0dc2615815c09507b273067ac9699145",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/4"
+      },
+      {
+        "number": 3,
+        "headRef": "dependabot/github_actions/actions/setup-node-7.1.0",
+        "headSha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/3"
+      },
+      {
+        "number": 2,
+        "headRef": "dependabot/github_actions/actions/checkout-7.0.1",
+        "headSha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/2"
+      },
+      {
+        "number": 1,
+        "headRef": "dependabot/npm_and_yarn/typescript-7.0.2",
+        "headSha": "638a5294c60407aa02b558725eda126852e3264e",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/1"
+      }
+    ],
+    "dependencyLockUnchanged": true,
+    "dependabotUntouched": true,
+    "forcePush": false,
+    "historyRewrite": false
+  },
+  "accessibilityMatrix": {
+    "widths": [320, 375, 393, 768, 1024, 1280, 1440],
+    "screens": ["muscle location", "exercise guide", "populated A/B plan"],
+    "themes": ["light", "dark", "Auto/light OS", "Auto/dark OS"],
+    "reducedMotion": true,
+    "availableEngines": ["chromium", "webkit"],
+    "configurations": 168,
+    "axeTags": ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"],
+    "independentHumanReview": "not performed"
+  }
+}

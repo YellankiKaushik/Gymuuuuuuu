@@ -142,6 +142,7 @@ import { Route as SupplementsSettingsRouteImport } from './routes/supplements_.s
 import { Route as SupplementsTrialsRouteImport } from './routes/supplements_.trials'
 import { Route as WarmUpsRoutineSlugRouteImport } from './routes/warm-ups_.$routineSlug'
 import { Route as WorkoutHistoryRouteImport } from './routes/workout_.history'
+import { Route as WorkoutPlansRouteImport } from './routes/workout_.plans'
 import { Route as WorkoutSettingsRouteImport } from './routes/workout_.settings'
 import { Route as CardioCalculatorsIntensityRouteImport } from './routes/cardio_.calculators_.intensity'
 import { Route as CardioCalculatorsPaceRouteImport } from './routes/cardio_.calculators_.pace'
@@ -860,6 +861,11 @@ const WorkoutHistoryRoute = WorkoutHistoryRouteImport.update({
   path: '/workout/history',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkoutPlansRoute = WorkoutPlansRouteImport.update({
+  id: '/workout_/plans',
+  path: '/workout/plans',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkoutSettingsRoute = WorkoutSettingsRouteImport.update({
   id: '/workout_/settings',
   path: '/workout/settings',
@@ -1257,6 +1263,7 @@ export interface FileRoutesByFullPath {
   '/supplements/trials': typeof SupplementsTrialsRoute
   '/warm-ups/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
+  '/workout/plans': typeof WorkoutPlansRoute
   '/workout/settings': typeof WorkoutSettingsRoute
   '/compare/': typeof CompareIndexRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
@@ -1433,6 +1440,7 @@ export interface FileRoutesByTo {
   '/supplements/trials': typeof SupplementsTrialsRoute
   '/warm-ups/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout/history': typeof WorkoutHistoryRoute
+  '/workout/plans': typeof WorkoutPlansRoute
   '/workout/settings': typeof WorkoutSettingsRoute
   '/compare': typeof CompareIndexRoute
   '/diet-planning': typeof DietPlanningIndexRoute
@@ -1618,6 +1626,7 @@ export interface FileRoutesById {
   '/supplements_/trials': typeof SupplementsTrialsRoute
   '/warm-ups_/$routineSlug': typeof WarmUpsRoutineSlugRoute
   '/workout_/history': typeof WorkoutHistoryRoute
+  '/workout_/plans': typeof WorkoutPlansRoute
   '/workout_/settings': typeof WorkoutSettingsRoute
   '/compare/': typeof CompareIndexRoute
   '/diet-planning/': typeof DietPlanningIndexRoute
@@ -1804,6 +1813,7 @@ export interface FileRouteTypes {
     | '/supplements/trials'
     | '/warm-ups/$routineSlug'
     | '/workout/history'
+    | '/workout/plans'
     | '/workout/settings'
     | '/compare/'
     | '/diet-planning/'
@@ -1980,6 +1990,7 @@ export interface FileRouteTypes {
     | '/supplements/trials'
     | '/warm-ups/$routineSlug'
     | '/workout/history'
+    | '/workout/plans'
     | '/workout/settings'
     | '/compare'
     | '/diet-planning'
@@ -2164,6 +2175,7 @@ export interface FileRouteTypes {
     | '/supplements_/trials'
     | '/warm-ups_/$routineSlug'
     | '/workout_/history'
+    | '/workout_/plans'
     | '/workout_/settings'
     | '/compare/'
     | '/diet-planning/'
@@ -2331,6 +2343,7 @@ export interface RootRouteChildren {
   SupplementsTrialsRoute: typeof SupplementsTrialsRoute
   WarmUpsRoutineSlugRoute: typeof WarmUpsRoutineSlugRoute
   WorkoutHistoryRoute: typeof WorkoutHistoryRoute
+  WorkoutPlansRoute: typeof WorkoutPlansRoute
   WorkoutSettingsRoute: typeof WorkoutSettingsRoute
   CardioCalculatorsIntensityRoute: typeof CardioCalculatorsIntensityRoute
   CardioCalculatorsPaceRoute: typeof CardioCalculatorsPaceRoute
@@ -3300,6 +3313,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkoutHistoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/workout_/plans': {
+      id: '/workout_/plans'
+      path: '/workout/plans'
+      fullPath: '/workout/plans'
+      preLoaderRoute: typeof WorkoutPlansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/workout_/settings': {
       id: '/workout_/settings'
       path: '/workout/settings'
@@ -3926,6 +3946,7 @@ const rootRouteChildren: RootRouteChildren = {
   SupplementsTrialsRoute: SupplementsTrialsRoute,
   WarmUpsRoutineSlugRoute: WarmUpsRoutineSlugRoute,
   WorkoutHistoryRoute: WorkoutHistoryRoute,
+  WorkoutPlansRoute: WorkoutPlansRoute,
   WorkoutSettingsRoute: WorkoutSettingsRoute,
   CardioCalculatorsIntensityRoute: CardioCalculatorsIntensityRoute,
   CardioCalculatorsPaceRoute: CardioCalculatorsPaceRoute,

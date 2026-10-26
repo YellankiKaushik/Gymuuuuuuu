@@ -32,6 +32,7 @@ export function WorkoutNav() {
   return (
     <nav className="section-nav" aria-label="Workout">
       <a href="/workout">Start / resume</a>
+      <a href="/workout/plans">Personal plans</a>
       <a href="/workout/history">History</a>
       <a href="/workout/settings">Settings & backup</a>
     </nav>

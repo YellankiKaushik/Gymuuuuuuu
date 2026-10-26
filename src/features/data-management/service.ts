@@ -1252,16 +1252,26 @@ export async function restoreBackup(
   mode: "keep-existing" | "replace",
   selectedStores?: string[],
 ) {
+  return withRestoreCoordination(() =>
+    restoreBackupUnlocked(input, mode, selectedStores),
+  );
+}
+/** Plan writes share this lock; restore owns it exclusively. The existing
+ * localStorage lease remains the fallback when Web Locks are unavailable. */
+export async function withRestoreCoordination<T>(
+  operation: () => Promise<T>,
+  lockMode: "exclusive" | "shared" = "exclusive",
+): Promise<T> {
   if (typeof navigator !== "undefined" && navigator.locks)
     return navigator.locks.request(
       "fitness-os-data-restore",
-      { mode: "exclusive", ifAvailable: true },
+      { mode: lockMode, ifAvailable: true },
       async (lock) => {
         if (!lock)
           throw Error(
             "A restore is already running in another Fitness OS tab. Wait for it to finish, then retry.",
           );
-        return restoreBackupUnlocked(input, mode, selectedStores);
+        return operation();
       },
     );
   if (typeof window === "undefined")
@@ -1306,7 +1316,7 @@ export async function restoreBackup(
         );
   }
   try {
-    return await restoreBackupUnlocked(input, mode, selectedStores);
+    return await operation();
   } finally {
     try {
       const current: unknown = JSON.parse(

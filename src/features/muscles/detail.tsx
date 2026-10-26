@@ -1,3 +1,5 @@
+import { MuscleLocationFigure } from "../visual-training/schematics";
+import { isPilotMuscle } from "../visual-training/scope";
 import type { Muscle } from "./schema";
 import { exercisesForMuscle } from "../exercises/repository";
 import { PageHeader, SectionNav } from "../../components/common/page-header";
@@ -104,6 +106,7 @@ export function MuscleDetail({ record }: { record: Muscle | undefined }) {
         }))}
       />
       <div className="reading-column">
+        <MuscleLocationFigure record={record} />
         <section id="overview">
           <h2>Overview</h2>
           <p>{record.summary}</p>
@@ -240,6 +243,17 @@ export function MuscleDetail({ record }: { record: Muscle | undefined }) {
               <LinkCard
                 key={exercise.id}
                 title={exercise.displayName}
+                description={
+                  isPilotMuscle(record.id)
+                    ? exercise.muscleRoles
+                        ?.filter((role) => role.muscleId === record.id)
+                        .map(
+                          (role) =>
+                            `${role.role.replaceAll("-", " ")}${role.qualifier ? ` · ${role.qualifier}` : ""} · Sources: ${role.sourceIds.join(", ")}`,
+                        )
+                        .join(" · ")
+                    : undefined
+                }
                 href={`/exercises/${exercise.slug}`}
                 icon="target"
               />

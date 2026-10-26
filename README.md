@@ -26,6 +26,8 @@ These are recorded results for that release, not a claim that every future check
 
 Automatic Vercel Git deployment is disabled in `vercel.json`. Releases remain owner-controlled.
 
+The authorized Phase 20 pilot adds approximate location schematics for twelve existing muscles, controlled SETUP/ACTION/RESET guides for six existing exercises, and local personal workout plans with Session A and optional B. Plans support nullable targets, editing, reordering, confirmed deletion, global backup/restore and safe CSV export. Starting a saved session copies its targets into the existing workout tracker. This pilot awaits exact-commit owner approval for production; see the [implementation report](docs/reports/visual-training-pilot.md).
+
 ## What the application includes
 
 Primary navigation offers Home, Learn, Train, Eat, Recover, Progress, Tools and Saved, with Sources and Settings available in the sidebar. Home maps the six major working areas and explains public knowledge, local records and backups. Modules live in `src/features` and are exposed through file-based routes in `src/routes`.
@@ -51,6 +53,8 @@ Primary navigation offers Home, Learn, Train, Eat, Recover, Progress, Tools and 
 | Sources                     | Public source/provenance reference pages                                                                                                     | `/about/sources`                                |
 
 Unknown or unsupported results remain explicit. The application does not invent missing food values, body-fat measurements, calorie burn, VO₂max, one-repetition-max estimates or a composite recovery score. Calculations expose their methods and distinguish estimates from measurements.
+
+Open `/workout/plans` from the workout navigation or an eligible exercise's **Add to personal plan** action. Personal plans are distinct from published source programs and actual workout logs. Blank targets stay unspecified; no personal loads, schedules or training prescription are generated. Use the global data manager for a backup containing both plans and workouts; the workout-only archive remains specific to workout records.
 
 ## Run locally
 
@@ -228,4 +232,4 @@ Keep strict TypeScript without unbounded `any`, immutable factual identities, ex
 
 Preserve browser-only personal storage and validate imports before writes. Destructive actions require confirmation. Use semantic HTML, labelled forms, visible keyboard focus, reduced-motion support and consistent light/dark tokens, targeting WCAG 2.2 AA. Run build, strict typecheck, lint, foundation tests and relevant desktop/mobile checks at each implementation checkpoint.
 
-The frozen release has no authorized Phase 20 or automatic content expansion. Use the [minimal owner checklist](docs/reports/final-owner-required-minimal-checklist.md) for the remaining physical/human work and the [owner deployment runbook](docs/runbooks/vercel-owner-deployment.md) for future releases. Earlier phase reports retain historical evidence; the verified release tag and latest closure reports define the current checkpoint.
+The frozen factual inventory remains unchanged by the authorized Phase 20 visual-training pilot. No subsequent phase or automatic content expansion is authorized. Use the [Phase 20 report](docs/reports/visual-training-pilot.md) for its verification and owner acceptance checklist, the [minimal owner checklist](docs/reports/final-owner-required-minimal-checklist.md) for historical physical/human checks, and the [owner deployment runbook](docs/runbooks/vercel-owner-deployment.md) for approved releases. Earlier reports and tags retain their historical evidence.

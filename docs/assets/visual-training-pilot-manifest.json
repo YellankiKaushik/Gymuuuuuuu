@@ -1,0 +1,919 @@
+{
+  "phase": 20,
+  "externalImagesAdded": 0,
+  "newMediaFileBytes": 0,
+  "muscleCount": 12,
+  "exerciseCount": 6,
+  "statesPerExercise": 3,
+  "assets": [
+    {
+      "id": "visual_location_muscle_biceps_brachii",
+      "kind": "muscle-location",
+      "entityId": "muscle_biceps_brachii",
+      "name": "Biceps brachii",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/biceps-brachii",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Anterior upper arm.",
+        "sourceIds": ["gray_1918_upper_arm"],
+        "existingFactualReviewDate": "2026-10-05"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_deltoid",
+      "kind": "muscle-location",
+      "entityId": "muscle_deltoid",
+      "name": "Deltoid",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/deltoid",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Superficial muscle around the shoulder.",
+        "sourceIds": ["gray_1918_shoulder_thorax"],
+        "existingFactualReviewDate": "2026-10-05"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_rectus_femoris",
+      "kind": "muscle-location",
+      "entityId": "muscle_rectus_femoris",
+      "name": "Rectus femoris",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/rectus-femoris",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Middle front of the thigh.",
+        "sourceIds": ["gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_vastus_lateralis",
+      "kind": "muscle-location",
+      "entityId": "muscle_vastus_lateralis",
+      "name": "Vastus lateralis",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/vastus-lateralis",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Lateral front and side of the thigh.",
+        "sourceIds": ["gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_vastus_medialis",
+      "kind": "muscle-location",
+      "entityId": "muscle_vastus_medialis",
+      "name": "Vastus medialis",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/vastus-medialis",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Medial front of the thigh.",
+        "sourceIds": ["gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_vastus_intermedius",
+      "kind": "muscle-location",
+      "entityId": "muscle_vastus_intermedius",
+      "name": "Vastus intermedius",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/vastus-intermedius",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Front of the femur beneath rectus femoris.",
+        "sourceIds": ["gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_gluteus_maximus",
+      "kind": "muscle-location",
+      "entityId": "muscle_gluteus_maximus",
+      "name": "Gluteus maximus",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/gluteus-maximus",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Superficial posterior gluteal region.",
+        "sourceIds": ["gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_latissimus_dorsi",
+      "kind": "muscle-location",
+      "entityId": "muscle_latissimus_dorsi",
+      "name": "Latissimus dorsi",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/latissimus-dorsi",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Lower thoracic and lumbar back.",
+        "sourceIds": ["gray_1918_shoulder_thorax"],
+        "existingFactualReviewDate": "2026-10-05"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_pectoralis_major",
+      "kind": "muscle-location",
+      "entityId": "muscle_pectoralis_major",
+      "name": "Pectoralis major",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/pectoralis-major",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Anterior upper chest.",
+        "sourceIds": ["gray_1918_shoulder_thorax"],
+        "existingFactualReviewDate": "2026-10-05"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_triceps_brachii",
+      "kind": "muscle-location",
+      "entityId": "muscle_triceps_brachii",
+      "name": "Triceps brachii",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/triceps-brachii",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Posterior upper arm.",
+        "sourceIds": ["gray_1918_upper_arm"],
+        "existingFactualReviewDate": "2026-10-05"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_gastrocnemius",
+      "kind": "muscle-location",
+      "entityId": "muscle_gastrocnemius",
+      "name": "Gastrocnemius",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/gastrocnemius",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Superficial posterior lower leg.",
+        "sourceIds": ["gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_location_muscle_soleus",
+      "kind": "muscle-location",
+      "entityId": "muscle_soleus",
+      "name": "Soleus",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "MuscleLocationFigure",
+      "route": "/muscles/soleus",
+      "purpose": "Approximate broad location on an abstract body, with anterior/posterior and deep-structure distinction",
+      "sourceBasis": {
+        "recordFile": "src/content/muscles/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["locationSummary", "visibility", "regions"],
+        "locationSummary": "Posterior lower leg, deep to gastrocnemius.",
+        "sourceIds": ["gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07"
+      },
+      "limitations": "One broad illustrative region; not exact boundaries, scale, attachments, activation or a new factual record. Deep structures use a dashed zone, not a surface outline.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_bodyweight_squat_setup",
+      "kind": "exercise-cue",
+      "entityId": "exercise_bodyweight_squat",
+      "name": "Bodyweight squat",
+      "state": "SETUP",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/bodyweight-squat",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.setup"],
+        "sourceIds": [
+          "ace_bodyweight_squat",
+          "gray_1918_lower_limb",
+          "nia_strength_guide_2018"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "beginner"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_bodyweight_squat_action",
+      "kind": "exercise-cue",
+      "entityId": "exercise_bodyweight_squat",
+      "name": "Bodyweight squat",
+      "state": "ACTION",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/bodyweight-squat",
+      "purpose": "Source-described action cue",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.executionSteps"],
+        "sourceIds": [
+          "ace_bodyweight_squat",
+          "gray_1918_lower_limb",
+          "nia_strength_guide_2018"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "beginner"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_bodyweight_squat_reset",
+      "kind": "exercise-cue",
+      "entityId": "exercise_bodyweight_squat",
+      "name": "Bodyweight squat",
+      "state": "RESET",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/bodyweight-squat",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.finishOrReset"],
+        "sourceIds": [
+          "ace_bodyweight_squat",
+          "gray_1918_lower_limb",
+          "nia_strength_guide_2018"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "beginner"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_incline_push_up_setup",
+      "kind": "exercise-cue",
+      "entityId": "exercise_incline_push_up",
+      "name": "Incline push-up",
+      "state": "SETUP",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/incline-push-up",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.setup"],
+        "sourceIds": [
+          "nia_strength_guide_2018",
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_incline_push_up_action",
+      "kind": "exercise-cue",
+      "entityId": "exercise_incline_push_up",
+      "name": "Incline push-up",
+      "state": "ACTION",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/incline-push-up",
+      "purpose": "Source-described action cue",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.executionSteps"],
+        "sourceIds": [
+          "nia_strength_guide_2018",
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_incline_push_up_reset",
+      "kind": "exercise-cue",
+      "entityId": "exercise_incline_push_up",
+      "name": "Incline push-up",
+      "state": "RESET",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/incline-push-up",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.finishOrReset"],
+        "sourceIds": [
+          "nia_strength_guide_2018",
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_one_arm_dumbbell_row_setup",
+      "kind": "exercise-cue",
+      "entityId": "exercise_one_arm_dumbbell_row",
+      "name": "One-arm dumbbell row",
+      "state": "SETUP",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/one-arm-dumbbell-row",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.setup"],
+        "sourceIds": [
+          "ace_single_arm_row",
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm",
+          "nia_strength_guide_2018"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "intermediate"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_one_arm_dumbbell_row_action",
+      "kind": "exercise-cue",
+      "entityId": "exercise_one_arm_dumbbell_row",
+      "name": "One-arm dumbbell row",
+      "state": "ACTION",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/one-arm-dumbbell-row",
+      "purpose": "Source-described action cue",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.executionSteps"],
+        "sourceIds": [
+          "ace_single_arm_row",
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm",
+          "nia_strength_guide_2018"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "intermediate"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_one_arm_dumbbell_row_reset",
+      "kind": "exercise-cue",
+      "entityId": "exercise_one_arm_dumbbell_row",
+      "name": "One-arm dumbbell row",
+      "state": "RESET",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/one-arm-dumbbell-row",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.finishOrReset"],
+        "sourceIds": [
+          "ace_single_arm_row",
+          "gray_1918_shoulder_thorax",
+          "gray_1918_upper_arm",
+          "nia_strength_guide_2018"
+        ],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "intermediate"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_seated_dumbbell_shoulder_press_setup",
+      "kind": "exercise-cue",
+      "entityId": "exercise_seated_dumbbell_shoulder_press",
+      "name": "Seated dumbbell shoulder press",
+      "state": "SETUP",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/seated-dumbbell-shoulder-press",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.setup"],
+        "sourceIds": ["nia_strength_guide_2018", "gray_1918_shoulder_thorax"],
+        "existingFactualReviewDate": "2026-10-06",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_seated_dumbbell_shoulder_press_action",
+      "kind": "exercise-cue",
+      "entityId": "exercise_seated_dumbbell_shoulder_press",
+      "name": "Seated dumbbell shoulder press",
+      "state": "ACTION",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/seated-dumbbell-shoulder-press",
+      "purpose": "Source-described action cue",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.executionSteps"],
+        "sourceIds": ["nia_strength_guide_2018", "gray_1918_shoulder_thorax"],
+        "existingFactualReviewDate": "2026-10-06",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_seated_dumbbell_shoulder_press_reset",
+      "kind": "exercise-cue",
+      "entityId": "exercise_seated_dumbbell_shoulder_press",
+      "name": "Seated dumbbell shoulder press",
+      "state": "RESET",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/seated-dumbbell-shoulder-press",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.finishOrReset"],
+        "sourceIds": ["nia_strength_guide_2018", "gray_1918_shoulder_thorax"],
+        "existingFactualReviewDate": "2026-10-06",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_dumbbell_curl_setup",
+      "kind": "exercise-cue",
+      "entityId": "exercise_dumbbell_curl",
+      "name": "Dumbbell curl",
+      "state": "SETUP",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/dumbbell-curl",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.setup"],
+        "sourceIds": [
+          "gray_1918_upper_arm",
+          "public_strength_2024",
+          "public_video_safety_2023"
+        ],
+        "existingFactualReviewDate": "2026-10-05",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_dumbbell_curl_action",
+      "kind": "exercise-cue",
+      "entityId": "exercise_dumbbell_curl",
+      "name": "Dumbbell curl",
+      "state": "ACTION",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/dumbbell-curl",
+      "purpose": "Source-described action cue",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.executionSteps"],
+        "sourceIds": [
+          "gray_1918_upper_arm",
+          "public_strength_2024",
+          "public_video_safety_2023"
+        ],
+        "existingFactualReviewDate": "2026-10-05",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_dumbbell_curl_reset",
+      "kind": "exercise-cue",
+      "entityId": "exercise_dumbbell_curl",
+      "name": "Dumbbell curl",
+      "state": "RESET",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/dumbbell-curl",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.finishOrReset"],
+        "sourceIds": [
+          "gray_1918_upper_arm",
+          "public_strength_2024",
+          "public_video_safety_2023"
+        ],
+        "existingFactualReviewDate": "2026-10-05",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_standing_calf_raise_setup",
+      "kind": "exercise-cue",
+      "entityId": "exercise_standing_calf_raise",
+      "name": "Standing calf raise",
+      "state": "SETUP",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/standing-calf-raise",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.setup"],
+        "sourceIds": ["nia_strength_guide_2018", "gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_standing_calf_raise_action",
+      "kind": "exercise-cue",
+      "entityId": "exercise_standing_calf_raise",
+      "name": "Standing calf raise",
+      "state": "ACTION",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/standing-calf-raise",
+      "purpose": "Source-described action cue",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.executionSteps"],
+        "sourceIds": ["nia_strength_guide_2018", "gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    },
+    {
+      "id": "visual_guide_exercise_standing_calf_raise_reset",
+      "kind": "exercise-cue",
+      "entityId": "exercise_standing_calf_raise",
+      "name": "Standing calf raise",
+      "state": "RESET",
+      "file": "src/features/visual-training/schematics.tsx",
+      "component": "ExercisePose",
+      "route": "/exercises/standing-calf-raise",
+      "purpose": "Source-described starting/returned position",
+      "sourceBasis": {
+        "recordFile": "src/content/exercises/records.json",
+        "recordVersion": "1.0.0",
+        "fields": ["technique.finishOrReset"],
+        "sourceIds": ["nia_strength_guide_2018", "gray_1918_lower_limb"],
+        "existingFactualReviewDate": "2026-10-07",
+        "difficulty": "foundation"
+      },
+      "limitations": "Abstract cue figure; no measured joint angles, complete pose, activation or guarantee of technique. Unspecified details omitted. RESET reuses the starting-position geometry. Incline push-up illustrates the existing wall-supported instructions, not a new variant.",
+      "author": "Fitness OS project; code-native illustrations authored during Phase 20 implementation",
+      "origin": "Original SVG geometry in the repository, not copied or traced from source illustrations",
+      "license": "Original project work; no separate third-party asset license",
+      "externalImageUrl": null,
+      "review": {
+        "status": "Source-grounded implementation; independent human/clinical visual review not performed",
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}
