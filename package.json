@@ -52,7 +52,7 @@
     "@tanstack/react-start": "^1.168.60",
     "@tanstack/start-client-core": "1.170.34",
     "@tanstack/start-storage-context": "^1.167.36",
-    "lucide-react": "^1.52.0",
+    "lucide-react": "^1.61.0",
     "nitro": "^3.0.260903-beta",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
