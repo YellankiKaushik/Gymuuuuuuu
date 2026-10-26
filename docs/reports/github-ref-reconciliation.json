@@ -1,0 +1,2467 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-26",
+  "timezone": "Asia/Calcutta",
+  "repository": "YellankiKaushik/Gymuuuuuuu",
+  "scope": "Remote-ref reconciliation and documentation/roadmap only; no feature implementation, dependency mutation, broad suite or deployment",
+  "repositoryIdentity": {
+    "startingRepositorySha": "a946027b1f3a8754928c393228df696400b6b391",
+    "finalApplicationSha": "a946027b1f3a8754928c393228df696400b6b391",
+    "finalRepositorySha": {
+      "binding": "The documentation commit containing this report, published to main after focused validation",
+      "resolveCommand": "git log -1 --format=%H -- docs/reports/github-ref-reconciliation.json",
+      "exactShaInFinalOwnerHandoff": true,
+      "explanation": "A committed report cannot embed its own future Git commit hash without changing that hash; no future SHA is fabricated."
+    }
+  },
+  "before": {
+    "branches": 13,
+    "tags": 26,
+    "openPRs": 8,
+    "trackedFiles": 1334
+  },
+  "after": {
+    "branches": 10,
+    "tags": 26,
+    "openPRs": 8,
+    "trackedFiles": 1337
+  },
+  "branches": [
+    {
+      "name": "codex/final-pre-vercel-readiness",
+      "ref": "refs/heads/codex/final-pre-vercel-readiness",
+      "sha": "26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 20,
+      "localAheadOfMain": 0,
+      "tipAncestorOfMain": true,
+      "ancestryCommand": "git merge-base --is-ancestor 26281fdb9fa6058eabdbf032336e5e54b2a1da62 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 0,
+      "uniqueCommits": [],
+      "githubCompare": {
+        "status": "behind",
+        "ahead": 0,
+        "behind": 20,
+        "totalCommits": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "26281fdb9fa6058eabdbf032336e5e54b2a1da62"
+      },
+      "associatedPullRequests": [],
+      "disposition": "RETIRED_REDUNDANT_REMOTE_REF",
+      "retirementEvidence": {
+        "tipAncestorOfMain": true,
+        "allCommitsReachableFromMain": true,
+        "uniqueCommits": 0,
+        "notDefault": true,
+        "noOpenPRDepends": true,
+        "noRuntimeOrToolingReference": true,
+        "noActiveDeploymentDepends": true,
+        "noReleaseDepends": true,
+        "noActiveWorkflowRunDepends": true,
+        "workflowEventFilterOnly": true,
+        "workflowExecutionDependency": false
+      }
+    },
+    {
+      "name": "codex/final-security-hygiene-testing",
+      "ref": "refs/heads/codex/final-security-hygiene-testing",
+      "sha": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 16,
+      "localAheadOfMain": 0,
+      "tipAncestorOfMain": true,
+      "ancestryCommand": "git merge-base --is-ancestor 80f06ab2b6b1f6d4da252455efcc71a1daecde09 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 0,
+      "uniqueCommits": [],
+      "githubCompare": {
+        "status": "behind",
+        "ahead": 0,
+        "behind": 16,
+        "totalCommits": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "80f06ab2b6b1f6d4da252455efcc71a1daecde09"
+      },
+      "associatedPullRequests": [],
+      "disposition": "RETIRED_REDUNDANT_REMOTE_REF",
+      "retirementEvidence": {
+        "tipAncestorOfMain": true,
+        "allCommitsReachableFromMain": true,
+        "uniqueCommits": 0,
+        "notDefault": true,
+        "noOpenPRDepends": true,
+        "noRuntimeOrToolingReference": true,
+        "noActiveDeploymentDepends": true,
+        "noReleaseDepends": true,
+        "noActiveWorkflowRunDepends": true,
+        "workflowEventFilterOnly": true,
+        "workflowExecutionDependency": false
+      }
+    },
+    {
+      "name": "codex/phase-18-release-controls",
+      "ref": "refs/heads/codex/phase-18-release-controls",
+      "sha": "0473d0b65acffac51254b4fa07d5ef301e0cd727",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 54,
+      "localAheadOfMain": 0,
+      "tipAncestorOfMain": true,
+      "ancestryCommand": "git merge-base --is-ancestor 0473d0b65acffac51254b4fa07d5ef301e0cd727 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 0,
+      "uniqueCommits": [],
+      "githubCompare": {
+        "status": "behind",
+        "ahead": 0,
+        "behind": 54,
+        "totalCommits": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...0473d0b65acffac51254b4fa07d5ef301e0cd727",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "0473d0b65acffac51254b4fa07d5ef301e0cd727"
+      },
+      "associatedPullRequests": [],
+      "disposition": "RETIRED_REDUNDANT_REMOTE_REF",
+      "retirementEvidence": {
+        "tipAncestorOfMain": true,
+        "allCommitsReachableFromMain": true,
+        "uniqueCommits": 0,
+        "notDefault": true,
+        "noOpenPRDepends": true,
+        "noRuntimeOrToolingReference": true,
+        "noActiveDeploymentDepends": true,
+        "noReleaseDepends": true,
+        "noActiveWorkflowRunDepends": true,
+        "workflowEventFilterOnly": false,
+        "workflowExecutionDependency": false
+      }
+    },
+    {
+      "name": "codex/phase-19-verified-content",
+      "ref": "refs/heads/codex/phase-19-verified-content",
+      "sha": "684345c41207c2d54044e79be52c42a303bfee90",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 22,
+      "localAheadOfMain": 0,
+      "tipAncestorOfMain": true,
+      "ancestryCommand": "git merge-base --is-ancestor 684345c41207c2d54044e79be52c42a303bfee90 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 0,
+      "uniqueCommits": [],
+      "githubCompare": {
+        "status": "behind",
+        "ahead": 0,
+        "behind": 22,
+        "totalCommits": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...684345c41207c2d54044e79be52c42a303bfee90",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "684345c41207c2d54044e79be52c42a303bfee90"
+      },
+      "associatedPullRequests": [],
+      "disposition": "PRESERVED_LIVE_PROVENANCE_REFERENCE",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/github_actions/actions/checkout-7.0.1",
+      "ref": "refs/heads/dependabot/github_actions/actions/checkout-7.0.1",
+      "sha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 5,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor 445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c|Bump actions/checkout from 6.1.0 to 7.0.1"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 5,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "535e2840b92b2a00117477d649747b66b422ff33"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 2,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/github_actions/actions/checkout-7.0.1",
+          "headSha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/2"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/github_actions/actions/setup-node-7.1.0",
+      "ref": "refs/heads/dependabot/github_actions/actions/setup-node-7.1.0",
+      "sha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 5,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor e4db5591d4ba4b27f07880be5988fcedb9fd50b7 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "e4db5591d4ba4b27f07880be5988fcedb9fd50b7|Bump actions/setup-node from 7.0.0 to 7.1.0"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 5,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "535e2840b92b2a00117477d649747b66b422ff33"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 3,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/github_actions/actions/setup-node-7.1.0",
+          "headSha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/3"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/github_actions/actions/upload-artifact-7.0.2",
+      "ref": "refs/heads/dependabot/github_actions/actions/upload-artifact-7.0.2",
+      "sha": "707e15ca0dc2615815c09507b273067ac9699145",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 4,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor 707e15ca0dc2615815c09507b273067ac9699145 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "707e15ca0dc2615815c09507b273067ac9699145|Bump actions/upload-artifact from 7.0.1 to 7.0.2"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 4,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...707e15ca0dc2615815c09507b273067ac9699145",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "87ac86920b37930c6e3e1b9184f5ff181b0b285c"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 4,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/github_actions/actions/upload-artifact-7.0.2",
+          "headSha": "707e15ca0dc2615815c09507b273067ac9699145",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/4"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/npm_and_yarn/lucide-react-1.55.0",
+      "ref": "refs/heads/dependabot/npm_and_yarn/lucide-react-1.55.0",
+      "sha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 8,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor 8a87868b22af73b3b34a95f962b28b98b7bcd49c a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "8a87868b22af73b3b34a95f962b28b98b7bcd49c|Bump lucide-react from 1.52.0 to 1.55.0"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 8,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "976b4b291ed7e33bb3872401fb9be5e73fd9124d"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 6,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/lucide-react-1.55.0",
+          "headSha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/6"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+      "ref": "refs/heads/dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+      "sha": "f56a88dedee3f7be6b1647070e3b41b2175f0596",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 8,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor f56a88dedee3f7be6b1647070e3b41b2175f0596 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "f56a88dedee3f7be6b1647070e3b41b2175f0596|Bump @tanstack/react-start from 1.168.60 to 1.168.61"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 8,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...f56a88dedee3f7be6b1647070e3b41b2175f0596",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "976b4b291ed7e33bb3872401fb9be5e73fd9124d"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 5,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+          "headSha": "f56a88dedee3f7be6b1647070e3b41b2175f0596",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/5"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/npm_and_yarn/types/node-26.6.5",
+      "ref": "refs/heads/dependabot/npm_and_yarn/types/node-26.6.5",
+      "sha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 8,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor 93946b2a4a751c4c1d75d9f8057ba0ac2709398d a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "93946b2a4a751c4c1d75d9f8057ba0ac2709398d|Bump @types/node from 26.6.4 to 26.6.5"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 8,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "976b4b291ed7e33bb3872401fb9be5e73fd9124d"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 8,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/types/node-26.6.5",
+          "headSha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/8"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/npm_and_yarn/typescript-7.0.2",
+      "ref": "refs/heads/dependabot/npm_and_yarn/typescript-7.0.2",
+      "sha": "638a5294c60407aa02b558725eda126852e3264e",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 54,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor 638a5294c60407aa02b558725eda126852e3264e a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "638a5294c60407aa02b558725eda126852e3264e|Bump typescript from 6.0.3 to 7.0.2"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 54,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...638a5294c60407aa02b558725eda126852e3264e",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "0473d0b65acffac51254b4fa07d5ef301e0cd727"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 1,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/typescript-7.0.2",
+          "headSha": "638a5294c60407aa02b558725eda126852e3264e",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/1"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "dependabot/npm_and_yarn/vite-8.3.4",
+      "ref": "refs/heads/dependabot/npm_and_yarn/vite-8.3.4",
+      "sha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 1,
+      "localAheadOfMain": 1,
+      "tipAncestorOfMain": false,
+      "ancestryCommand": "git merge-base --is-ancestor ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 1,
+      "uniqueCommits": [
+        "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a|Bump vite from 8.3.2 to 8.3.4"
+      ],
+      "githubCompare": {
+        "status": "diverged",
+        "ahead": 1,
+        "behind": 1,
+        "totalCommits": 1,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "0bebaec8e9deb489b97e9ea3b54fa9d55e8ef74c"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 7,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/vite-8.3.4",
+          "headSha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/7"
+        }
+      ],
+      "disposition": "PRESERVED_OPEN_DEPENDENCY_PR",
+      "retirementEvidence": null
+    },
+    {
+      "name": "main",
+      "ref": "refs/heads/main",
+      "sha": "a946027b1f3a8754928c393228df696400b6b391",
+      "isDefault": true,
+      "protected": false,
+      "localBehindMain": 0,
+      "localAheadOfMain": 0,
+      "tipAncestorOfMain": true,
+      "ancestryCommand": "git merge-base --is-ancestor a946027b1f3a8754928c393228df696400b6b391 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 0,
+      "uniqueCommits": [],
+      "githubCompare": {
+        "status": "identical",
+        "ahead": 0,
+        "behind": 0,
+        "totalCommits": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...a946027b1f3a8754928c393228df696400b6b391",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "a946027b1f3a8754928c393228df696400b6b391"
+      },
+      "associatedPullRequests": [
+        {
+          "number": 1,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/typescript-7.0.2",
+          "headSha": "638a5294c60407aa02b558725eda126852e3264e",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/1"
+        },
+        {
+          "number": 2,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/github_actions/actions/checkout-7.0.1",
+          "headSha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/2"
+        },
+        {
+          "number": 3,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/github_actions/actions/setup-node-7.1.0",
+          "headSha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/3"
+        },
+        {
+          "number": 4,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/github_actions/actions/upload-artifact-7.0.2",
+          "headSha": "707e15ca0dc2615815c09507b273067ac9699145",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/4"
+        },
+        {
+          "number": 5,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+          "headSha": "f56a88dedee3f7be6b1647070e3b41b2175f0596",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/5"
+        },
+        {
+          "number": 6,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/lucide-react-1.55.0",
+          "headSha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/6"
+        },
+        {
+          "number": 7,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/vite-8.3.4",
+          "headSha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/7"
+        },
+        {
+          "number": 8,
+          "state": "open",
+          "mergedAt": null,
+          "headRef": "dependabot/npm_and_yarn/types/node-26.6.5",
+          "headSha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+          "baseRef": "main",
+          "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/8"
+        }
+      ],
+      "disposition": "AUTHORITATIVE_PERMANENT_DEVELOPMENT",
+      "retirementEvidence": null
+    }
+  ],
+  "tags": [
+    {
+      "ref": "refs/tags/codex-first-manual-test-ready",
+      "name": "codex-first-manual-test-ready",
+      "object": "1d2e8d16ea899151fd208140c2346e65046e96ca",
+      "type": "tag",
+      "peeledObject": "684345c41207c2d54044e79be52c42a303bfee90",
+      "peeledType": "commit",
+      "commit": "684345c41207c2d54044e79be52c42a303bfee90",
+      "group": "owner testing",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/fitness-os-automatable-complete",
+      "name": "fitness-os-automatable-complete",
+      "object": "880c73119fb222b794bc9f1a859656a0f64b6775",
+      "type": "tag",
+      "peeledObject": "e03ab59533f8bbde47807c192adcbf4bfee30b9f",
+      "peeledType": "commit",
+      "commit": "e03ab59533f8bbde47807c192adcbf4bfee30b9f",
+      "group": "engineering completion",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/fitness-os-maximum-autonomy-complete",
+      "name": "fitness-os-maximum-autonomy-complete",
+      "object": "6375a5daecf457a6f1c6971c9dc2403ae9a71b24",
+      "type": "tag",
+      "peeledObject": "976b4b291ed7e33bb3872401fb9be5e73fd9124d",
+      "peeledType": "commit",
+      "commit": "976b4b291ed7e33bb3872401fb9be5e73fd9124d",
+      "group": "engineering completion",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/fitness-os-owner-testing-ready",
+      "name": "fitness-os-owner-testing-ready",
+      "object": "95e8728e17344180a9eab8f35f8aebc4cfe70534",
+      "type": "tag",
+      "peeledObject": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+      "peeledType": "commit",
+      "commit": "dbf72ad557c42daa8c1cbcb98b225cae7bd29c75",
+      "group": "owner testing",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/fitness-os-security-audited",
+      "name": "fitness-os-security-audited",
+      "object": "0e598534ccb239b7c5f379b298920118ffe19956",
+      "type": "tag",
+      "peeledObject": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+      "peeledType": "commit",
+      "commit": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+      "group": "security verification",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-01-shell-complete",
+      "name": "phase-01-shell-complete",
+      "object": "7fde2a56abe59d3565388f3d46cf2119a2418936",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "7fde2a56abe59d3565388f3d46cf2119a2418936",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-02-infrastructure-verified",
+      "name": "phase-02-infrastructure-verified",
+      "object": "4388980e111af35b874d1dde1ac637095294fde0",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "4388980e111af35b874d1dde1ac637095294fde0",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-03-exercise-infrastructure-verified",
+      "name": "phase-03-exercise-infrastructure-verified",
+      "object": "9e4a7d129d9d07acc316d3580c6bb47c2767a1e9",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "9e4a7d129d9d07acc316d3580c6bb47c2767a1e9",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-04-science-infrastructure-verified",
+      "name": "phase-04-science-infrastructure-verified",
+      "object": "3c681ec45c9d18661b241e438a2320905de5f579",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "3c681ec45c9d18661b241e438a2320905de5f579",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-05-program-infrastructure-verified",
+      "name": "phase-05-program-infrastructure-verified",
+      "object": "75795a21d0097f29c4a66dd02acd148387cb3256",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "75795a21d0097f29c4a66dd02acd148387cb3256",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-06-workout-engineering-verified",
+      "name": "phase-06-workout-engineering-verified",
+      "object": "bdc7671e5da4fe573be79bab4fe6f451a8c5052e",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "bdc7671e5da4fe573be79bab4fe6f451a8c5052e",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-07-food-infrastructure-verified",
+      "name": "phase-07-food-infrastructure-verified",
+      "object": "29e3b30a2b4621039f4f893b095838b1a3c8f32a",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "29e3b30a2b4621039f4f893b095838b1a3c8f32a",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-08-nutrient-infrastructure-verified",
+      "name": "phase-08-nutrient-infrastructure-verified",
+      "object": "8e98b93989d87755746a14f180d28ffb78e42e6e",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "8e98b93989d87755746a14f180d28ffb78e42e6e",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-09-diet-planning-complete",
+      "name": "phase-09-diet-planning-complete",
+      "object": "9f19ec9d03235683e389951342b16a3c5fddeab7",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "9f19ec9d03235683e389951342b16a3c5fddeab7",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-10-nutrition-tracker-complete",
+      "name": "phase-10-nutrition-tracker-complete",
+      "object": "17a8f880dd15a7296932f5505a942522672e2f82",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "17a8f880dd15a7296932f5505a942522672e2f82",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-11-recipes-meal-plans-complete",
+      "name": "phase-11-recipes-meal-plans-complete",
+      "object": "45c204cb2f31a1905ff47945e13e01c2d698abc2",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "45c204cb2f31a1905ff47945e13e01c2d698abc2",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-12-recovery-sleep-mobility-complete",
+      "name": "phase-12-recovery-sleep-mobility-complete",
+      "object": "e6d6fcb640fdc8e2048f2a7330971c073d3e1239",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "e6d6fcb640fdc8e2048f2a7330971c073d3e1239",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-13-cardio-conditioning-complete",
+      "name": "phase-13-cardio-conditioning-complete",
+      "object": "19585d57211849359e7abbc5e27e2bcd2bd82c32",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "19585d57211849359e7abbc5e27e2bcd2bd82c32",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-14-supplements-evidence-complete",
+      "name": "phase-14-supplements-evidence-complete",
+      "object": "c89f6918e80b22392664868e061e03fc65009ec0",
+      "type": "tag",
+      "peeledObject": "1039b6e970595b3aab706e696150eed7dc03a189",
+      "peeledType": "commit",
+      "commit": "1039b6e970595b3aab706e696150eed7dc03a189",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-15-body-progress-analytics-complete",
+      "name": "phase-15-body-progress-analytics-complete",
+      "object": "8e2de553f6530f7f9b33ef3a817e8a0a536350be",
+      "type": "tag",
+      "peeledObject": "f121e8b2bc221123f6779b4c695bce865b8a2909",
+      "peeledType": "commit",
+      "commit": "f121e8b2bc221123f6779b4c695bce865b8a2909",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-16-global-search-saved-compare-complete",
+      "name": "phase-16-global-search-saved-compare-complete",
+      "object": "3d0df3876c3107a7437541e15bfea867c7969b92",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "3d0df3876c3107a7437541e15bfea867c7969b92",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/phase-17-local-backup-export-complete",
+      "name": "phase-17-local-backup-export-complete",
+      "object": "88b4efc48fbb77c37e2cd9873fed97d548f6546b",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "88b4efc48fbb77c37e2cd9873fed97d548f6546b",
+      "group": "historical phase checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/pre-repository-structure-cleanup",
+      "name": "pre-repository-structure-cleanup",
+      "object": "b7f332a9ef2344113cf27ff9ff07dd4618c3f785",
+      "type": "commit",
+      "peeledObject": null,
+      "peeledType": null,
+      "commit": "b7f332a9ef2344113cf27ff9ff07dd4618c3f785",
+      "group": "safety checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/pre-security-hygiene-final-test",
+      "name": "pre-security-hygiene-final-test",
+      "object": "aedae89c61955cead25835577359095cf97ddddb",
+      "type": "tag",
+      "peeledObject": "26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+      "peeledType": "commit",
+      "commit": "26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+      "group": "safety checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/pre-vercel-finalization-safety-checkpoint",
+      "name": "pre-vercel-finalization-safety-checkpoint",
+      "object": "11fa811d55dd0a223bc97303dead18ac65e1c4e1",
+      "type": "tag",
+      "peeledObject": "684345c41207c2d54044e79be52c42a303bfee90",
+      "peeledType": "commit",
+      "commit": "684345c41207c2d54044e79be52c42a303bfee90",
+      "group": "safety checkpoints",
+      "disposition": "PRESERVED_UNCHANGED"
+    },
+    {
+      "ref": "refs/tags/pre-vercel-release-ready",
+      "name": "pre-vercel-release-ready",
+      "object": "27fb7596a5fb1c318169a21529153efba134f920",
+      "type": "tag",
+      "peeledObject": "26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+      "peeledType": "commit",
+      "commit": "26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+      "group": "release readiness",
+      "disposition": "PRESERVED_UNCHANGED"
+    }
+  ],
+  "retirement": {
+    "completedAt": "2026-10-26T07:43:29.189Z",
+    "atomic": true,
+    "retired": [
+      {
+        "ref": "refs/heads/codex/final-pre-vercel-readiness",
+        "sha": "26281fdb9fa6058eabdbf032336e5e54b2a1da62",
+        "allCommitsReachableFromMain": true
+      },
+      {
+        "ref": "refs/heads/codex/final-security-hygiene-testing",
+        "sha": "80f06ab2b6b1f6d4da252455efcc71a1daecde09",
+        "allCommitsReachableFromMain": true
+      },
+      {
+        "ref": "refs/heads/codex/phase-18-release-controls",
+        "sha": "0473d0b65acffac51254b4fa07d5ef301e0cd727",
+        "allCommitsReachableFromMain": true
+      }
+    ],
+    "preserved": [
+      {
+        "ref": "refs/heads/codex/phase-19-verified-content",
+        "sha": "684345c41207c2d54044e79be52c42a303bfee90"
+      },
+      {
+        "ref": "refs/heads/dependabot/github_actions/actions/checkout-7.0.1",
+        "sha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c"
+      },
+      {
+        "ref": "refs/heads/dependabot/github_actions/actions/setup-node-7.1.0",
+        "sha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7"
+      },
+      {
+        "ref": "refs/heads/dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "sha": "707e15ca0dc2615815c09507b273067ac9699145"
+      },
+      {
+        "ref": "refs/heads/dependabot/npm_and_yarn/lucide-react-1.55.0",
+        "sha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c"
+      },
+      {
+        "ref": "refs/heads/dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+        "sha": "f56a88dedee3f7be6b1647070e3b41b2175f0596"
+      },
+      {
+        "ref": "refs/heads/dependabot/npm_and_yarn/types/node-26.6.5",
+        "sha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d"
+      },
+      {
+        "ref": "refs/heads/dependabot/npm_and_yarn/typescript-7.0.2",
+        "sha": "638a5294c60407aa02b558725eda126852e3264e"
+      },
+      {
+        "ref": "refs/heads/dependabot/npm_and_yarn/vite-8.3.4",
+        "sha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a"
+      },
+      {
+        "ref": "refs/heads/main",
+        "sha": "a946027b1f3a8754928c393228df696400b6b391"
+      }
+    ],
+    "guards": {
+      "capturedAt": "2026-10-26T07:38:33.087Z",
+      "releases": [],
+      "activeRecentRuns": [],
+      "environments": [
+        {
+          "name": "Production",
+          "deploymentBranchPolicy": null
+        }
+      ],
+      "policies": []
+    },
+    "workflowFilterInterpretation": "Three historical names occur as optional push-event selection patterns. None is a checkout/ref/needs/artifact input; no active runs depend on them. Main/PR/schedule/manual behavior is preserved. Two unused matching refs were retired; workflow files were not edited.",
+    "workflowSemanticsSource": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onpushbranchestagsbranches-ignoretags-ignore",
+    "retainedHistoricalBranch": {
+      "name": "codex/phase-19-verified-content",
+      "ref": "refs/heads/codex/phase-19-verified-content",
+      "sha": "684345c41207c2d54044e79be52c42a303bfee90",
+      "isDefault": false,
+      "protected": false,
+      "localBehindMain": 22,
+      "localAheadOfMain": 0,
+      "tipAncestorOfMain": true,
+      "ancestryCommand": "git merge-base --is-ancestor 684345c41207c2d54044e79be52c42a303bfee90 a946027b1f3a8754928c393228df696400b6b391",
+      "ancestryExitCode": 0,
+      "uniqueCommits": [],
+      "githubCompare": {
+        "status": "behind",
+        "ahead": 0,
+        "behind": 22,
+        "totalCommits": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/compare/a946027b1f3a8754928c393228df696400b6b391...684345c41207c2d54044e79be52c42a303bfee90",
+        "baseCommit": "a946027b1f3a8754928c393228df696400b6b391",
+        "mergeBase": "684345c41207c2d54044e79be52c42a303bfee90"
+      },
+      "associatedPullRequests": [],
+      "disposition": "PRESERVE_LIVE_PROVENANCE_REFERENCE",
+      "reason": "Published provenance URLs use this branch in the runtime source registry. Deleting it would break those citations. Repairing runtime/public source URLs is outside this documentation-only task, so retain the ref.",
+      "runtimeReferenceLocations": [
+        {
+          "path": "src/content/provenance/ace-machine-exercise-sources.json",
+          "line": 79,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/nhs-program-sources.json",
+          "line": 42,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs\","
+        },
+        {
+          "path": "src/content/provenance/nhs-program-sources.json",
+          "line": 60,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs\","
+        },
+        {
+          "path": "src/content/provenance/supported-four-exercise-sources.json",
+          "line": 96,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/three-day-program-snapshot.json",
+          "line": 7,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 439,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 455,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/scripts/compile-original-templates.ts\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 544,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/blob/codex/phase-19-verified-content/scripts/compile-original-recipes.ts\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 652,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 814,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 831,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 1651,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 1669,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 1789,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 1896,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 1984,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 2089,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 2107,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/src/content/programs\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 2236,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        },
+        {
+          "path": "src/content/provenance/verified-sources.json",
+          "line": 2380,
+          "text": "\"url\": \"https://github.com/YellankiKaushik/Gymuuuuuuu/tree/codex/phase-19-verified-content/public/media\","
+        }
+      ]
+    }
+  },
+  "pullRequests": {
+    "reviewDate": "2026-10-26",
+    "baselineMain": "a946027b1f3a8754928c393228df696400b6b391",
+    "metadataFetchedAt": "2026-10-26T07:33:00.114Z",
+    "scope": "Read-only independent review; no merge, close, branch deletion, dependency change or CI trigger",
+    "baselineRuntime": {
+      "node": ">=24.16.0 <25",
+      "npm": ">=11.9.0 <12"
+    },
+    "packageManager": "npm@11.9.0",
+    "mainVersions": {
+      "typescript": "6.0.3",
+      "typescript-eslint": "8.71.0",
+      "@types/node": "26.6.4",
+      "@tanstack/react-start": "1.168.60",
+      "@tanstack/start-client-core": "1.170.34",
+      "lucide-react": "1.52.0",
+      "vite": "8.3.2"
+    },
+    "policy": "Main can be the one permanent human development branch while eight temporary automated dependency branches remain attached to unresolved PRs.",
+    "interpretation": "MERGE_LATER means eligible for a separate authorized update only after current-main validation; it is not merge approval and no PR is fully certified by this read-only review. DEFER means retain PR/branch while a concrete compatibility/policy blocker is unresolved. No CLOSE_AS_UNNECESSARY recommendation is warranted from the reviewed evidence.",
+    "checkLimits": "Check-run totals can include both push and pull-request events; the per-PR workflow conclusions identify actual PR runs. Historical failures/cancellations do not prove current product defects. Metadata mergeability is unknown and is not a merge decision.",
+    "review": [
+      {
+        "number": 1,
+        "dependency": "typescript",
+        "current": "6.0.3",
+        "proposed": "7.0.2",
+        "risk": "HIGH — compiler major/native-port and compiler-API ecosystem compatibility",
+        "recommendation": "DEFER",
+        "securityRelevance": "No security label or specific security fix established for this PR; compiler/tooling change, not a production Node upgrade.",
+        "compatibility": "TypeScript 7.0.2 declares Node >=16.20.0, which Node24 satisfies. But npm11 CI already fails dependency resolution: typescript-eslint8.71.0 requires TypeScript >=4.8.4 <6.1.0. TS7.0 has no compiler API; Microsoft describes a TS6 compatibility alias for API consumers. Replacing one package is not a valid current-toolchain migration.",
+        "justification": "A verified npm ci ERESOLVE blocker exists before application tests. Preserve TS6 and plan a separately authorized compiler/parser/tooling migration with Node24/npm11 validation. Do not use --force or --legacy-peer-deps to bypass it.",
+        "evidence": [
+          "package-lock.json: node_modules/typescript-eslint peerDependencies",
+          "eslint.config.js imports typescript-eslint",
+          "PR1 CI job111808767041 fails at Run npm ci"
+        ],
+        "sources": [
+          "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/",
+          "https://typescript-eslint.io/users/dependency-versions/"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/1",
+        "state": "open",
+        "headRef": "dependabot/npm_and_yarn/typescript-7.0.2",
+        "headSha": "638a5294c60407aa02b558725eda126852e3264e",
+        "baseRef": "main",
+        "apiReportedBaseSha": "0473d0b65acffac51254b4fa07d5ef301e0cd727",
+        "existingPrWorkflows": [
+          {
+            "id": 37323651720,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "638a5294c60407aa02b558725eda126852e3264e",
+            "status": "completed",
+            "conclusion": "failure",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37323651720",
+            "createdAt": "2026-10-05T14:18:33Z",
+            "attempt": 1
+          },
+          {
+            "id": 37323651652,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "638a5294c60407aa02b558725eda126852e3264e",
+            "status": "completed",
+            "conclusion": "failure",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/37323651652",
+            "createdAt": "2026-10-05T14:18:33Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "success": 1,
+          "failure": 5
+        },
+        "changedFiles": ["package-lock.json", "package.json"]
+      },
+      {
+        "number": 2,
+        "dependency": "actions/checkout",
+        "current": "6.1.0 @ d23441a48e516b6c34aea4fa41551a30e30af803",
+        "proposed": "7.0.1 @ 3d3c42e5aac5ba805825da76410c181273ba90b1",
+        "risk": "MEDIUM — Actions major with intentional checkout security behavior changes",
+        "recommendation": "MERGE_LATER",
+        "securityRelevance": "Upstream v7 blocks unsafe fork checkout by default for pull_request_target/workflow_run and updates vulnerable transitive dependencies; v7.0.1 adds input/escaping hardening. Current workflows use pull_request/push/schedule/workflow_dispatch and persist-credentials:false, so the newly blocked pattern was not found here.",
+        "compatibility": "Proposed action.yml uses node24; the Node24 action runtime requires a sufficiently current runner (documented minimum2.327.1). ubuntu-latest is GitHub-hosted; no unsupported self-hosted runner was found. This action runtime is separate from the application Node chosen by setup-node and npm11. Preserve SHA pins and persist-credentials:false.",
+        "justification": "A reasonable security/maintenance upgrade after current-main integration checks. Existing PR CI passes, but cross-browser run fails on the old head; red status alone does not implicate checkout. No merge now.",
+        "evidence": [
+          "All three workflow diffs replace only the checkout SHA/comment and preserve inputs",
+          "Proposed pinned action.yml verified node24",
+          "PR2 CI success; Cross-browser regression failure"
+        ],
+        "sources": [
+          "https://github.com/actions/checkout/releases/tag/v7.0.0",
+          "https://github.com/actions/checkout/releases/tag/v7.0.1",
+          "https://github.com/actions/checkout#checkout-v5",
+          "https://raw.githubusercontent.com/actions/checkout/3d3c42e5aac5ba805825da76410c181273ba90b1/action.yml"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/2",
+        "state": "open",
+        "headRef": "dependabot/github_actions/actions/checkout-7.0.1",
+        "headSha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+        "baseRef": "main",
+        "apiReportedBaseSha": "535e2840b92b2a00117477d649747b66b422ff33",
+        "existingPrWorkflows": [
+          {
+            "id": 38916486803,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+            "status": "completed",
+            "conclusion": "failure",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38916486803",
+            "createdAt": "2026-10-16T14:31:43Z",
+            "attempt": 1
+          },
+          {
+            "id": 38916486782,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "445fbbf08b3bfa32f05221c7c8f3f7f6b5c61b9c",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38916486782",
+            "createdAt": "2026-10-16T14:31:43Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "success": 14,
+          "failure": 6
+        },
+        "changedFiles": [
+          ".github/workflows/ci.yml",
+          ".github/workflows/cross-browser.yml",
+          ".github/workflows/release-evidence.yml"
+        ]
+      },
+      {
+        "number": 3,
+        "dependency": "actions/setup-node",
+        "current": "7.0.0 @ 820762786026740c76f36085b0efc47a31fe5020",
+        "proposed": "7.1.0 @ 949feb2413d6458794dcd2491c4babbbce0c15c1",
+        "risk": "LOW/MEDIUM — minor CI setup/cache and download behavior",
+        "recommendation": "MERGE_LATER",
+        "securityRelevance": "Release lists version-file/retry improvements and transitive dependency updates; no PR-specific advisory or urgent exposure established.",
+        "compatibility": "Pinned action.yml uses node24. Project Node stays .nvmrc24.16.0 and npm11.9.0; setup-node action version7 does not mean application Node7. Current explicit cache:npm and package-manager-cache:false remain intact. The v7 ESM/NODE_AUTH_TOKEN change already exists in baseline7.0.0; current workflows do not set registry-url.",
+        "justification": "Use later as a separate small CI maintenance change after refreshing against current main and verifying exact Node/cache behavior. Existing PR CI passes while cross-browser fails on its old head; do not treat that as proof this setup update is broken.",
+        "evidence": [
+          "Three workflow diffs replace only setup-node SHA/comment",
+          "Proposed pinned action.yml verified node24",
+          "PR3 CI success; Cross-browser regression failure"
+        ],
+        "sources": [
+          "https://github.com/actions/setup-node/releases/tag/v7.1.0",
+          "https://github.com/actions/setup-node#breaking-changes-in-v5",
+          "https://raw.githubusercontent.com/actions/setup-node/949feb2413d6458794dcd2491c4babbbce0c15c1/action.yml"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/3",
+        "state": "open",
+        "headRef": "dependabot/github_actions/actions/setup-node-7.1.0",
+        "headSha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+        "baseRef": "main",
+        "apiReportedBaseSha": "535e2840b92b2a00117477d649747b66b422ff33",
+        "existingPrWorkflows": [
+          {
+            "id": 38916483181,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+            "status": "completed",
+            "conclusion": "failure",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38916483181",
+            "createdAt": "2026-10-16T14:31:41Z",
+            "attempt": 1
+          },
+          {
+            "id": 38916483023,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "e4db5591d4ba4b27f07880be5988fcedb9fd50b7",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38916483023",
+            "createdAt": "2026-10-16T14:31:41Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "failure": 4,
+          "success": 16
+        },
+        "changedFiles": [
+          ".github/workflows/ci.yml",
+          ".github/workflows/cross-browser.yml",
+          ".github/workflows/release-evidence.yml"
+        ]
+      },
+      {
+        "number": 4,
+        "dependency": "actions/upload-artifact",
+        "current": "7.0.1 @ 043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+        "proposed": "7.0.2 @ cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+        "risk": "LOW — patch to diagnostics artifact transport",
+        "recommendation": "MERGE_LATER",
+        "securityRelevance": "Release improves HTTP429 retry/Retry-After handling and updates @actions/artifact6.3.1. Reliability improvement, not an established fix for a product security defect.",
+        "compatibility": "Pinned action.yml uses node24, already used by current artifact major. Does not change application Node24/npm11, upload paths, names, retention, hidden-file inputs or workflow permissions. Action v4+ targets github.com rather than GHES, matching this repository.",
+        "justification": "Best small maintenance candidate: both actual PR workflows pass. Later verify against current main and one bounded artifact-upload check because failure-only upload steps are skipped in green jobs. Do not merge in this task.",
+        "evidence": [
+          "Only ci.yml and cross-browser.yml artifact SHA pins change; all existing upload uses are covered",
+          "PR4 CI and Cross-browser regression both success",
+          "Proposed pinned action.yml verified node24"
+        ],
+        "sources": [
+          "https://github.com/actions/upload-artifact/releases/tag/v7.0.2",
+          "https://raw.githubusercontent.com/actions/upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9/action.yml"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/4",
+        "state": "open",
+        "headRef": "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "headSha": "707e15ca0dc2615815c09507b273067ac9699145",
+        "baseRef": "main",
+        "apiReportedBaseSha": "87ac86920b37930c6e3e1b9184f5ff181b0b285c",
+        "existingPrWorkflows": [
+          {
+            "id": 38922972004,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "707e15ca0dc2615815c09507b273067ac9699145",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38922972004",
+            "createdAt": "2026-10-16T15:19:22Z",
+            "attempt": 1
+          },
+          {
+            "id": 38922972041,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "707e15ca0dc2615815c09507b273067ac9699145",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38922972041",
+            "createdAt": "2026-10-16T15:19:22Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "success": 23
+        },
+        "changedFiles": [
+          ".github/workflows/ci.yml",
+          ".github/workflows/cross-browser.yml"
+        ]
+      },
+      {
+        "number": 5,
+        "dependency": "@tanstack/react-start",
+        "current": "1.168.60",
+        "proposed": "1.168.61",
+        "risk": "HIGH for this application — transitive router/client/server version coherence despite patch number",
+        "recommendation": "DEFER",
+        "securityRelevance": "Official patch notes list dependency updates; no PR-specific security advisory or demonstrated vulnerability established.",
+        "compatibility": "Proposed package engine Node>=22.12.0 and React19/Vite8 peers fit Node24/npm11 baseline. However, release updates router and client/server packages and wants start-client-core1.170.35 while root deliberately pins1.170.34. Existing CI fails strict typing at src/client.tsx(63,31): incompatible AnyRouter types from two router-core installations.",
+        "justification": "Confirmed toolchain/application integration failure, not merely an old red badge. Plan a coherent TanStack family update and validate client hydration, CSP/nonces, SSR and routing in a separately authorized change; no blind patch merge.",
+        "evidence": [
+          "PR5 CI job115640844612 fails Run npm run check with TS2322 at src/client.tsx(63,31)",
+          "PR lock diff upgrades router/core/client/server transitive packages",
+          "Root package.json pins @tanstack/start-client-core1.170.34"
+        ],
+        "sources": [
+          "https://github.com/TanStack/router/releases/tag/%40tanstack%2Freact-start%401.168.61",
+          "https://registry.npmjs.org/%40tanstack%2Freact-start/1.168.61"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/5",
+        "state": "open",
+        "headRef": "dependabot/npm_and_yarn/tanstack/react-start-1.168.61",
+        "headSha": "f56a88dedee3f7be6b1647070e3b41b2175f0596",
+        "baseRef": "main",
+        "apiReportedBaseSha": "976b4b291ed7e33bb3872401fb9be5e73fd9124d",
+        "existingPrWorkflows": [
+          {
+            "id": 38498883535,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "f56a88dedee3f7be6b1647070e3b41b2175f0596",
+            "status": "completed",
+            "conclusion": "failure",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38498883535",
+            "createdAt": "2026-10-14T02:01:51Z",
+            "attempt": 1
+          },
+          {
+            "id": 38498883569,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "f56a88dedee3f7be6b1647070e3b41b2175f0596",
+            "status": "completed",
+            "conclusion": "failure",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38498883569",
+            "createdAt": "2026-10-14T02:01:51Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "failure": 7
+        },
+        "changedFiles": ["package-lock.json", "package.json"]
+      },
+      {
+        "number": 6,
+        "dependency": "lucide-react",
+        "current": "1.52.0",
+        "proposed": "1.55.0",
+        "risk": "LOW/MEDIUM — icon exports and visible geometry/bundle surface",
+        "recommendation": "MERGE_LATER",
+        "securityRelevance": "Release is primarily icon additions and library/test maintenance. No specific security fix for this application established; upstream monorepo dev-dependency changes do not automatically become application dependencies.",
+        "compatibility": "Proposed React peer includes React19; no package Node engine restriction. npm11 can resolve the ordinary React library, and application Node24 stays unchanged. Review used imports, visual changes and retained ISC/Feather notices when updated.",
+        "justification": "Routine future maintenance after fresh current-main type/build/accessibility and representative icon checks. PR CI passes but cross-browser run was cancelled, so complete integration evidence is absent. No present need to change icons during branch reconciliation.",
+        "evidence": [
+          "PR changes only package.json and lockfile lucide version",
+          "Official1.55.0 adds icons and DynamicIcon-related tests",
+          "PR6 CI success; Cross-browser regression cancelled"
+        ],
+        "sources": [
+          "https://github.com/lucide-icons/lucide/releases/tag/1.55.0",
+          "https://registry.npmjs.org/lucide-react/1.55.0"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/6",
+        "state": "open",
+        "headRef": "dependabot/npm_and_yarn/lucide-react-1.55.0",
+        "headSha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+        "baseRef": "main",
+        "apiReportedBaseSha": "976b4b291ed7e33bb3872401fb9be5e73fd9124d",
+        "existingPrWorkflows": [
+          {
+            "id": 38498896041,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38498896041",
+            "createdAt": "2026-10-14T02:01:59Z",
+            "attempt": 1
+          },
+          {
+            "id": 38498896040,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "8a87868b22af73b3b34a95f962b28b98b7bcd49c",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38498896040",
+            "createdAt": "2026-10-14T02:01:59Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "success": 5,
+          "cancelled": 2
+        },
+        "changedFiles": ["package-lock.json", "package.json"]
+      },
+      {
+        "number": 7,
+        "dependency": "vite",
+        "current": "8.3.2",
+        "proposed": "8.3.4",
+        "risk": "MEDIUM — build/dev server and stylesheet/preload/transitive Rolldown changes",
+        "recommendation": "MERGE_LATER",
+        "securityRelevance": "Release lists build/preload/HMR/path fixes and dependency updates. No PR-specific advisory or confirmed vulnerability established; do not label every dev-server patch a security fix.",
+        "compatibility": "Proposed Node engine ^20.19.0 || >=22.12.0 includes24.16.0; npm11 is suitable. Existing CI passes. Cross-browser has one Firefox geometry assertion failure: height43.99998474121094 versus minimum44, which is not evidence that Vite changed application behavior.",
+        "justification": "Reasonable separate patch candidate once refreshed against current main and the existing failed geometry case is resolved/validated without weakening assertions. Compare dev startup, SSR/hydration, build output and budgets. Release notes do not establish a fix for the previously documented AsyncLocalStorage development limitation.",
+        "evidence": [
+          "PR7 CI success; Cross-browser failure only Firefox shard1",
+          "PR7 job117345954863 logs design-system.spec.ts:90 fractional bounding-box failure",
+          "Official patch notes include stylesheets/preload/build and Rolldown updates"
+        ],
+        "sources": [
+          "https://github.com/vitejs/vite/releases/tag/v8.3.4",
+          "https://vite.dev/guide/#scaffolding-your-first-vite-project",
+          "https://registry.npmjs.org/vite/8.3.4"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/7",
+        "state": "open",
+        "headRef": "dependabot/npm_and_yarn/vite-8.3.4",
+        "headSha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+        "baseRef": "main",
+        "apiReportedBaseSha": "0bebaec8e9deb489b97e9ea3b54fa9d55e8ef74c",
+        "existingPrWorkflows": [
+          {
+            "id": 39015262446,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39015262446",
+            "createdAt": "2026-10-17T07:52:33Z",
+            "attempt": 1
+          },
+          {
+            "id": 39015262448,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "ba5dd2afd45d6cc3b132076fcebbbf19cef55e1a",
+            "status": "completed",
+            "conclusion": "failure",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39015262448",
+            "createdAt": "2026-10-17T07:52:33Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "success": 22,
+          "failure": 1
+        },
+        "changedFiles": ["package-lock.json", "package.json"]
+      },
+      {
+        "number": 8,
+        "dependency": "@types/node",
+        "current": "26.6.4",
+        "proposed": "26.6.5",
+        "risk": "MEDIUM policy risk, otherwise small type-definition patch",
+        "recommendation": "DEFER",
+        "securityRelevance": "Types only; this does not patch or upgrade the Node runtime and is not an established runtime security fix.",
+        "compatibility": "npm11 can install declarations, but Node26 declarations describe a newer runtime surface than the project Node24 requirement. Baseline already has this mismatch; the patch neither creates nor resolves it. DefinitelyTyped patch numbers are independent of Node runtime patch releases and can include type changes.",
+        "justification": "Decide the runtime/type-major policy first and review alignment with Node24 types in a separate task. Do not infer that Node26 APIs exist on Node24 merely because strict compilation accepts them. PR CI/cross-browser were cancelled/incomplete and one WebKit check failed; no clean current-main compatibility proof.",
+        "evidence": [
+          "package.json engine >=24.16.0 <25; .nvmrc24.16.0; lock @types/node26.6.4",
+          "PR8 changes only declarations version26.6.5",
+          "PR8 pull-request CI and Cross-browser both cancelled; push CI success is separate"
+        ],
+        "sources": [
+          "https://github.com/DefinitelyTyped/DefinitelyTyped#how-do-definitely-typed-package-versions-relate-to-versions-of-the-corresponding-library",
+          "https://registry.npmjs.org/%40types%2Fnode/26.6.5"
+        ],
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/pull/8",
+        "state": "open",
+        "headRef": "dependabot/npm_and_yarn/types/node-26.6.5",
+        "headSha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+        "baseRef": "main",
+        "apiReportedBaseSha": "976b4b291ed7e33bb3872401fb9be5e73fd9124d",
+        "existingPrWorkflows": [
+          {
+            "id": 38498926210,
+            "name": "CI",
+            "event": "pull_request",
+            "headSha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38498926210",
+            "createdAt": "2026-10-14T02:02:19Z",
+            "attempt": 1
+          },
+          {
+            "id": 38498926282,
+            "name": "Cross-browser regression",
+            "event": "pull_request",
+            "headSha": "93946b2a4a751c4c1d75d9f8057ba0ac2709398d",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/38498926282",
+            "createdAt": "2026-10-14T02:02:19Z",
+            "attempt": 1
+          }
+        ],
+        "allHeadCheckRunConclusions": {
+          "failure": 1,
+          "success": 4,
+          "cancelled": 2
+        },
+        "changedFiles": ["package-lock.json", "package.json"]
+      }
+    ],
+    "officialSources": {
+      "typescript7": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/",
+      "eslintSupport": "https://typescript-eslint.io/users/dependency-versions/",
+      "checkout7": "https://github.com/actions/checkout/releases/tag/v7.0.0",
+      "checkout701": "https://github.com/actions/checkout/releases/tag/v7.0.1",
+      "checkoutRuntime": "https://github.com/actions/checkout#checkout-v5",
+      "setup710": "https://github.com/actions/setup-node/releases/tag/v7.1.0",
+      "setupReadme": "https://github.com/actions/setup-node#breaking-changes-in-v5",
+      "upload702": "https://github.com/actions/upload-artifact/releases/tag/v7.0.2",
+      "start": "https://github.com/TanStack/router/releases/tag/%40tanstack%2Freact-start%401.168.61",
+      "lucide": "https://github.com/lucide-icons/lucide/releases/tag/1.55.0",
+      "vite": "https://github.com/vitejs/vite/releases/tag/v8.3.4",
+      "viteNode": "https://vite.dev/guide/#scaffolding-your-first-vite-project",
+      "nodeTypes": "https://github.com/DefinitelyTyped/DefinitelyTyped#how-do-definitely-typed-package-versions-relate-to-versions-of-the-corresponding-library"
+    },
+    "narrowExistingLogEvidence": [
+      {
+        "pr": 1,
+        "runId": 37323651652,
+        "jobId": 111808767041,
+        "job": "verify",
+        "logStatus": 200,
+        "failedSteps": ["Run npm ci"]
+      },
+      {
+        "pr": 5,
+        "runId": 38498883535,
+        "jobId": 115640844612,
+        "job": "verify",
+        "logStatus": 200,
+        "failedSteps": ["Run npm run check"]
+      },
+      {
+        "pr": 7,
+        "runId": 39015262448,
+        "jobId": 117345954863,
+        "job": "browser (firefox, 1)",
+        "logStatus": 200,
+        "failedSteps": [
+          "Run npm run test:e2e:cross-browser -- --project=firefox --shard=1/4 --reporter=line"
+        ]
+      }
+    ],
+    "registryMetadata": [
+      {
+        "name": "typescript",
+        "version": "7.0.2",
+        "engines": {
+          "node": ">=16.20.0"
+        },
+        "dependencies": {
+          "@typescript/typescript-aix-ppc64": "7.0.2",
+          "@typescript/typescript-linux-arm": "7.0.2",
+          "@typescript/typescript-linux-x64": "7.0.2",
+          "@typescript/typescript-sunos-x64": "7.0.2",
+          "@typescript/typescript-win32-x64": "7.0.2",
+          "@typescript/typescript-darwin-x64": "7.0.2",
+          "@typescript/typescript-netbsd-x64": "7.0.2",
+          "@typescript/typescript-freebsd-x64": "7.0.2",
+          "@typescript/typescript-linux-arm64": "7.0.2",
+          "@typescript/typescript-linux-ppc64": "7.0.2",
+          "@typescript/typescript-linux-s390x": "7.0.2",
+          "@typescript/typescript-openbsd-x64": "7.0.2",
+          "@typescript/typescript-win32-arm64": "7.0.2",
+          "@typescript/typescript-darwin-arm64": "7.0.2",
+          "@typescript/typescript-netbsd-arm64": "7.0.2",
+          "@typescript/typescript-freebsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-loong64": "7.0.2",
+          "@typescript/typescript-linux-riscv64": "7.0.2",
+          "@typescript/typescript-openbsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-mips64el": "7.0.2"
+        },
+        "optionalDependencies": {
+          "@typescript/typescript-aix-ppc64": "7.0.2",
+          "@typescript/typescript-linux-arm": "7.0.2",
+          "@typescript/typescript-linux-x64": "7.0.2",
+          "@typescript/typescript-sunos-x64": "7.0.2",
+          "@typescript/typescript-win32-x64": "7.0.2",
+          "@typescript/typescript-darwin-x64": "7.0.2",
+          "@typescript/typescript-netbsd-x64": "7.0.2",
+          "@typescript/typescript-freebsd-x64": "7.0.2",
+          "@typescript/typescript-linux-arm64": "7.0.2",
+          "@typescript/typescript-linux-ppc64": "7.0.2",
+          "@typescript/typescript-linux-s390x": "7.0.2",
+          "@typescript/typescript-openbsd-x64": "7.0.2",
+          "@typescript/typescript-win32-arm64": "7.0.2",
+          "@typescript/typescript-darwin-arm64": "7.0.2",
+          "@typescript/typescript-netbsd-arm64": "7.0.2",
+          "@typescript/typescript-freebsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-loong64": "7.0.2",
+          "@typescript/typescript-linux-riscv64": "7.0.2",
+          "@typescript/typescript-openbsd-arm64": "7.0.2",
+          "@typescript/typescript-linux-mips64el": "7.0.2"
+        }
+      },
+      {
+        "name": "@tanstack/react-start",
+        "version": "1.168.61",
+        "engines": {
+          "node": ">=22.12.0"
+        },
+        "peerDependencies": {
+          "vite": ">=7.0.0",
+          "react": ">=18.0.0 || >=19.0.0",
+          "react-dom": ">=18.0.0 || >=19.0.0",
+          "@rsbuild/core": "^2.0.0"
+        },
+        "dependencies": {
+          "pathe": "^2.0.3",
+          "@tanstack/react-router": "1.170.42",
+          "@tanstack/router-utils": "1.162.3",
+          "@tanstack/react-start-rsc": "0.1.60",
+          "@tanstack/start-client-core": "1.170.35",
+          "@tanstack/start-plugin-core": "1.171.50",
+          "@tanstack/start-server-core": "1.169.40",
+          "@tanstack/react-start-client": "1.168.40",
+          "@tanstack/react-start-server": "1.167.47"
+        }
+      },
+      {
+        "name": "lucide-react",
+        "version": "1.55.0",
+        "peerDependencies": {
+          "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+          "@types/react": "*"
+        }
+      },
+      {
+        "name": "vite",
+        "version": "8.3.4",
+        "engines": {
+          "node": "^20.19.0 || >=22.12.0"
+        },
+        "peerDependencies": {
+          "tsx": "^4.8.1",
+          "jiti": ">=1.21.0",
+          "less": "^4.0.0",
+          "sass": "^1.70.0",
+          "yaml": "^2.4.2",
+          "stylus": ">=0.54.8",
+          "terser": "^5.16.0",
+          "esbuild": "^0.27.0 || ^0.28.0",
+          "sugarss": "^5.0.0",
+          "@types/node": "^20.19.0 || >=22.12.0",
+          "sass-embedded": "^1.70.0",
+          "@vitejs/devtools": "^0.7.1"
+        },
+        "dependencies": {
+          "postcss": "^8.5.29",
+          "rolldown": "~1.2.12",
+          "picomatch": "^4.0.7",
+          "tinyglobby": "^0.2.17",
+          "lightningcss": "^1.33.0"
+        },
+        "optionalDependencies": {
+          "fsevents": "~2.3.3"
+        }
+      },
+      {
+        "name": "@types/node",
+        "version": "26.6.5",
+        "peerDependencies": {},
+        "dependencies": {
+          "undici-types": "~8.9.0"
+        }
+      }
+    ],
+    "actionRuntimes": [
+      {
+        "repository": "actions/checkout",
+        "sha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+        "url": "https://raw.githubusercontent.com/actions/checkout/3d3c42e5aac5ba805825da76410c181273ba90b1/action.yml",
+        "runtime": "node24"
+      },
+      {
+        "repository": "actions/setup-node",
+        "sha": "949feb2413d6458794dcd2491c4babbbce0c15c1",
+        "url": "https://raw.githubusercontent.com/actions/setup-node/949feb2413d6458794dcd2491c4babbbce0c15c1/action.yml",
+        "runtime": "node24"
+      },
+      {
+        "repository": "actions/upload-artifact",
+        "sha": "cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+        "url": "https://raw.githubusercontent.com/actions/upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9/action.yml",
+        "runtime": "node24"
+      }
+    ]
+  },
+  "scheduledFailure": {
+    "observedAt": "2026-10-26T07:33:07.224Z",
+    "run": {
+      "id": 39271935022,
+      "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022",
+      "name": "Cross-browser regression",
+      "event": "schedule",
+      "headBranch": "main",
+      "headSha": "a946027b1f3a8754928c393228df696400b6b391",
+      "attempt": 1,
+      "createdAt": "2026-10-19T14:46:06Z",
+      "lifecycleStartedAt": "2026-10-19T14:46:06Z",
+      "updatedAt": "2026-10-19T14:46:12Z",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    "classification": "INFRASTRUCTURE_ACCOUNT_BILLING_STARTUP_DENIAL",
+    "executionVerified": false,
+    "startupDenialVerified": true,
+    "conclusion": "Twelve matrix job records were created, but no runner was assigned and no workflow step or application test executed. All twelve failure annotations identify an account payment/spending-limit startup gate.",
+    "logBasedRootCause": "ROOT_CAUSE_UNVERIFIED",
+    "evidenceLimits": "All twelve job log endpoints returned HTTP 404 BlobNotFound and no artifacts are listed. The exact account condition (failed payment versus spending cap), account settings and a log-level trace cannot be independently verified. The launch-denial category itself is verified by check annotations; this is not an inference from the red conclusion.",
+    "annotations": {
+      "checksWithAccountFailure": 12,
+      "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+      "ubuntuMigrationNotice": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+      "ubuntuMigrationInterpretation": "Informational notice only; no evidence that Ubuntu 26 or application behavior caused this denial."
+    },
+    "logs": [
+      {
+        "jobId": 118126204231,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204329,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204333,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204336,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204344,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204413,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204457,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204483,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204564,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204858,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126204865,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      },
+      {
+        "jobId": 118126205382,
+        "httpStatus": 404,
+        "classification": "Unavailable: BlobNotFound"
+      }
+    ],
+    "artifacts": 0,
+    "jobs": [
+      {
+        "id": 118126204231,
+        "name": "browser (chromium, 4)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204231",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204231"
+      },
+      {
+        "id": 118126204329,
+        "name": "browser (chromium, 2)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204329",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204329"
+      },
+      {
+        "id": 118126204333,
+        "name": "browser (chromium, 1)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:11Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204333",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204333"
+      },
+      {
+        "id": 118126204336,
+        "name": "browser (webkit, 4)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204336",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204336"
+      },
+      {
+        "id": 118126204344,
+        "name": "browser (firefox, 4)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:11Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204344",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204344"
+      },
+      {
+        "id": 118126204413,
+        "name": "browser (webkit, 3)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:11Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204413",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204413"
+      },
+      {
+        "id": 118126204457,
+        "name": "browser (firefox, 1)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204457",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204457"
+      },
+      {
+        "id": 118126204483,
+        "name": "browser (webkit, 2)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204483",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204483"
+      },
+      {
+        "id": 118126204564,
+        "name": "browser (firefox, 3)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204564",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204564"
+      },
+      {
+        "id": 118126204858,
+        "name": "browser (chromium, 3)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204858",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204858"
+      },
+      {
+        "id": 118126204865,
+        "name": "browser (webkit, 1)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126204865",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126204865"
+      },
+      {
+        "id": 118126205382,
+        "name": "browser (firefox, 2)",
+        "status": "completed",
+        "conclusion": "failure",
+        "lifecycleStartedAt": "2026-10-19T14:46:07Z",
+        "completedAt": "2026-10-19T14:46:10Z",
+        "runnerId": 0,
+        "runnerName": "",
+        "runnerGroup": "",
+        "steps": 0,
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39271935022/job/118126205382",
+        "checkUrl": "https://api.github.com/repos/YellankiKaushik/Gymuuuuuuu/check-runs/118126205382"
+      }
+    ],
+    "previousSameShaPassing": [
+      {
+        "id": 39016089588,
+        "name": "CI",
+        "sha": "a946027b1f3a8754928c393228df696400b6b391",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "push",
+        "runAttempt": 1,
+        "createdAt": "2026-10-17T08:05:59Z",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39016089588"
+      },
+      {
+        "id": 39016089544,
+        "name": "Cross-browser regression",
+        "sha": "a946027b1f3a8754928c393228df696400b6b391",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "push",
+        "runAttempt": 1,
+        "createdAt": "2026-10-17T08:05:58Z",
+        "url": "https://github.com/YellankiKaushik/Gymuuuuuuu/actions/runs/39016089544"
+      }
+    ],
+    "productImplication": "None established: checkout, npm install, build, harness and tests did not execute in this scheduled run. Earlier passing runs at the same SHA remain separate historical evidence, not a new verification of current production.",
+    "ownerAction": "Owner may inspect GitHub account Billing & plans and Actions spending controls. Do not change billing, purchase capacity or rerun the matrix as part of this reconciliation.",
+    "workflow": {
+      "path": ".github/workflows/cross-browser.yml",
+      "scheduleLine": 14,
+      "schedule": "23 7 * * 1",
+      "runnerLine": 31,
+      "runner": "ubuntu-latest",
+      "timeoutMinutes": 40,
+      "permissions": "contents: read",
+      "matrix": {
+        "browsers": ["chromium", "firefox", "webkit"],
+        "shards": [1, 2, 3, 4]
+      },
+      "historicalBranchPushFilters": [
+        {
+          "name": "codex/phase-19-verified-content",
+          "line": 9
+        },
+        {
+          "name": "codex/final-pre-vercel-readiness",
+          "line": 10
+        },
+        {
+          "name": "codex/final-security-hygiene-testing",
+          "line": 11
+        }
+      ],
+      "notExplicitlyNamed": ["codex/phase-18-release-controls"],
+      "branchReferenceMeaning": "Push selection filters only. There is no checkout ref, reusable-workflow ref or artifact dependency tied to these branches. Under the owner's conservative retirement condition, explicitly preserve them if their listed active trigger cannot be considered verified-independent; do not silently edit workflows in a report-only task."
+    },
+    "diagnosticsLaunched": 0,
+    "rerunsRequested": 0,
+    "trackedFilesChanged": 0
+  },
+  "production": {
+    "id": "dpl_5sLqYJstGvCKQWkMyh3A9vNQqVx7",
+    "url": "https://gymuuuuuuu-qlil6e9d9-kaushik-yellanki-project.vercel.app",
+    "target": "production",
+    "state": "READY",
+    "sha": "a946027b1f3a8754928c393228df696400b6b391",
+    "branch": "main",
+    "aliases": [
+      "kaush-ka-gym.vercel.app",
+      "gymuuuuuuu-kaushik-yellanki-project.vercel.app",
+      "gymuuuuuuu-git-main-kaushik-yellanki-project.vercel.app"
+    ]
+  },
+  "productionContext": {
+    "allSixDeploymentRecordsUseMain": true,
+    "allThreeAliasesTargetCurrentMainDeployment": true,
+    "automaticGitDeploymentEnabled": false,
+    "newDeployments": 0
+  },
+  "visualTrainingInventory": {
+    "readOnly": true,
+    "runtimeChanges": false,
+    "publishedBaseline": {
+      "muscles": 70,
+      "exercises": 32,
+      "scienceTopics": 32,
+      "programs": 4,
+      "muscleSpecificMediaRecords": 0,
+      "musclesLinkedFromExercises": 18,
+      "mediaKinds": {
+        "diagram": 32,
+        "image": 0,
+        "video": 0,
+        "animation": 0
+      },
+      "exercisesWithReviewedMedia": 32,
+      "exercisesWithRole": {
+        "primary": 6,
+        "secondary": 0,
+        "stabilizer": 2,
+        "context-dependent": 26
+      },
+      "roleEntries": {
+        "primary": 16,
+        "context-dependent": 34,
+        "stabilizer": 2
+      },
+      "difficulty": {
+        "foundation": 10,
+        "beginner": 7,
+        "intermediate": 11,
+        "advanced": 3,
+        "not-assessed": 1
+      },
+      "equipmentCategories": 29,
+      "equipmentCategoriesCovered": 8,
+      "movementPatterns": 34,
+      "movementPatternsCovered": 18,
+      "equipment": {
+        "equipment_bodyweight": 10,
+        "equipment_barbell": 4,
+        "equipment_dumbbell": 11,
+        "equipment_kettlebell": 0,
+        "equipment_cable": 2,
+        "equipment_machine_selectorized": 5,
+        "equipment_machine_plate_loaded": 0,
+        "equipment_smith_machine": 0,
+        "equipment_resistance_band": 0,
+        "equipment_suspension_trainer": 0,
+        "equipment_pullup_bar": 0,
+        "equipment_dip_bars": 0,
+        "equipment_bench": 4,
+        "equipment_stability_ball": 1,
+        "equipment_medicine_ball": 0,
+        "equipment_landmine": 0,
+        "equipment_trap_bar": 0,
+        "equipment_sled": 0,
+        "equipment_battle_rope": 0,
+        "equipment_box": 0,
+        "equipment_ab_wheel": 0,
+        "equipment_roman_chair": 0,
+        "equipment_treadmill": 0,
+        "equipment_stationary_bike": 0,
+        "equipment_rower": 0,
+        "equipment_elliptical": 0,
+        "equipment_jump_rope": 0,
+        "equipment_none": 0,
+        "equipment_sturdy_chair": 3
+      },
+      "movement": {
+        "pattern_horizontal_push": 7,
+        "pattern_horizontal_pull": 2,
+        "pattern_vertical_push": 2,
+        "pattern_vertical_pull": 1,
+        "pattern_squat": 3,
+        "pattern_hinge": 5,
+        "pattern_lunge": 1,
+        "pattern_knee_flexion": 3,
+        "pattern_knee_extension": 1,
+        "pattern_hip_abduction": 0,
+        "pattern_hip_adduction": 0,
+        "pattern_elbow_flexion": 1,
+        "pattern_elbow_extension": 2,
+        "pattern_shoulder_abduction": 1,
+        "pattern_shoulder_flexion": 1,
+        "pattern_shoulder_external_rotation": 0,
+        "pattern_scapular_retraction": 0,
+        "pattern_scapular_elevation": 1,
+        "pattern_calf_raise": 2,
+        "pattern_dorsiflexion": 0,
+        "pattern_trunk_flexion": 0,
+        "pattern_trunk_extension": 1,
+        "pattern_anti_extension": 3,
+        "pattern_anti_rotation": 3,
+        "pattern_lateral_flexion": 0,
+        "pattern_rotation": 0,
+        "pattern_carry": 0,
+        "pattern_locomotion": 0,
+        "pattern_jump": 0,
+        "pattern_throw": 0,
+        "pattern_conditioning": 0,
+        "pattern_breathing_bracing": 0,
+        "pattern_mobility": 0,
+        "pattern_flexibility": 0
+      },
+      "anatomyFields": {
+        "location": 70,
+        "structure": 67,
+        "jointActions": 63,
+        "movementPatterns": 60,
+        "trainingRelevance": 0,
+        "misconceptions": 0,
+        "cautions": 70
+      },
+      "acsm2026Topics": 25
+    },
+    "verifiedCapabilities": [
+      "70 published anatomy records with sourced text, named regions/groups, explicit entity types, relationships and ID-linked exercises; approximate front/back body navigation.",
+      "32 exercise records with all written execution sequences, mistakes, programming contexts, source/review metadata, local diagrams and metadata-based filtering.",
+      "32 science topics with evidence/limitations and exercise links; 25 cite ACSM 2026 sources, including the actual position stand (not just older guidance).",
+      "4 published programs: two NIA foundation templates and two NHS general-fitness templates. Finder/comparison/current selection preserve source scope, unknown time, version pins, local weekdays and approved substitutions.",
+      "Existing tracker supports ad hoc/repeated/program-based workouts, personal labels, set/performance edits, exercise reordering, history, timer, backup/restore and CSV."
+    ],
+    "uxGaps": [
+      "Region selector is a navigation cue; no per-muscle visual location/action explanation or muscle-role legend links the abstract body into a guided lesson.",
+      "Users navigate among muscle, exercise, science, program and tracker pages manually; no single bounded learn→choose→save-plan→start flow.",
+      "Static cue SVGs, some predominantly text panels, do not show movement/position changes or provide structured start/middle/end guidance states.",
+      "Role metadata is mostly context-dependent; primary/secondary activation graphics cannot truthfully be auto-filled. Cards show related names; qualifiers are chiefly in detail text.",
+      "The existing program selector customizes a published template; ad hoc/repeat sessions are not a saved editable user-authored multi-session workout-plan builder."
+    ],
+    "educationalGaps": [
+      "0 muscle-specific media bindings; optional trainingRelevance and misconceptions are empty across current raw muscle records.",
+      "Only 18 of 70 muscles have any published exercise role link. This is coverage, not permission to invent the other 52 relationships.",
+      "3 group records omit structure and 7 subdivision records omit joint-action arrays; not automatically defects and do not fill by inference.",
+      "Some taxonomy equipment/movement categories have no published exercises. Keep honest empty states; do not publish backlog to fill filters.",
+      "The Two-Day Foundation source template includes an intermediate-labelled one-arm row; do not describe every component or custom combination as universally beginner-safe."
+    ],
+    "visualAvailability": {
+      "current": "All32 diagrams declare original repository-owned artwork; no existing unlicensed copied asset identified in this read-only inventory.",
+      "missing": "No reviewed video, animation, photograph or anatomically precise per-muscle illustration is attached to published records.",
+      "rights": "No outside asset has been selected or cleared for the pilot. Do not copy ACSM infographic or adapt published figures by assuming article access grants reuse. PMC article states CC BY-NC-ND 4.0. Use original project schematics tied to existing source claims, or obtain explicit compatible rights."
+    },
+    "evidence": [
+      {
+        "file": "src/features/muscles/body-selector.tsx",
+        "line": 10,
+        "finding": "Front/back region selector with keyboard-equivalent text list. SVG identifies itself as abstract approximate navigation, not a precise anatomy diagram."
+      },
+      {
+        "file": "src/features/muscles/detail.tsx",
+        "line": 115,
+        "finding": "Location, structural text, actions, relationships, related exercises and sources render. No muscle-specific diagram renderer."
+      },
+      {
+        "file": "src/features/muscles/detail.tsx",
+        "line": 236,
+        "finding": "Related exercises use exercisesForMuscle(record.id)."
+      },
+      {
+        "file": "src/features/exercises/repository.ts",
+        "line": 75,
+        "finding": "exercisesForMuscle follows explicit ID-based muscleRoles on published exercises, not automatic hierarchy/activation inference."
+      },
+      {
+        "file": "src/features/exercises/catalogue.tsx",
+        "line": 27,
+        "finding": "Cards include primary/context-dependent muscle names, difficulty, movements, equipment and local reviewed image. Role distinctions/qualifiers are fuller on detail page."
+      },
+      {
+        "file": "src/features/exercises/detail.tsx",
+        "line": 15,
+        "finding": "Written setup, execution, checkpoints, breathing/range/tempo/spotting (where provided), muscle-role sources, errors, relations, programming, safety, media, gym mode and print exist."
+      },
+      {
+        "file": "src/features/exercises/media.tsx",
+        "line": 4,
+        "finding": "Reviewed opt-in video player is implemented but no published video data exists. Static local SVG, credits/license/review information and fallback text exist."
+      },
+      {
+        "file": "public/media/bodyweight-squat-cue.svg",
+        "line": 1,
+        "finding": "Representative SVG is three text cue panels/arrows, explicitly a movement sequence and not a complete technique/anatomical demonstration."
+      },
+      {
+        "file": "src/features/programs/query.ts",
+        "line": 157,
+        "finding": "Finder filters reviewed templates by eligibility answer, available days/time/equipment/experience/goals, with explicit no-time-limit handling for unknown durations."
+      },
+      {
+        "file": "src/features/programs/local.ts",
+        "line": 24,
+        "finding": "Selection pins canonical program ID/version; start date/weekday preferences and only reviewed substitution options are mutable locally."
+      },
+      {
+        "file": "src/features/programs/schema.ts",
+        "line": 238,
+        "finding": "LocalProgramInstance models a selected public template, not an arbitrary user-authored multi-session program."
+      },
+      {
+        "file": "src/features/workout-tracker/start.tsx",
+        "line": 207,
+        "finding": "Ad hoc workouts select published exercises or local labels; repeat recent workouts and start current canonical program sessions."
+      },
+      {
+        "file": "src/features/workout-tracker/domain.ts",
+        "line": 120,
+        "finding": "repeatSession and fromProgram create session/set snapshots; canonical program start checks current version and published exercise availability."
+      },
+      {
+        "file": "src/features/workout-tracker/editor.tsx",
+        "line": 999,
+        "finding": "Set adding/removal/duplication and exercise reorder/edit/removal, rest timer and session workflow already exist."
+      },
+      {
+        "file": "src/features/workout-tracker/settings.tsx",
+        "line": 233,
+        "finding": "Workout JSON backup, CSV, preview/restore and destructive confirmations exist. New plan data would need explicit inclusion, not presumed coverage."
+      }
+    ],
+    "pilot": {
+      "title": "One guided six-exercise learn-to-plan pilot",
+      "status": "PROPOSED_ONLY_NOT_AUTHORIZED_IMPLEMENTATION",
+      "scope": "The six already-published exercises used by program_full_body_2_day_foundation; at most two user-authored sessions; twelve currently linked muscle IDs; one existing tracker integration. Do not publish new factual identities or activate the 900-item backlog.",
+      "seedProgramId": "program_full_body_2_day_foundation",
+      "exerciseIds": [
+        "exercise_bodyweight_squat",
+        "exercise_incline_push_up",
+        "exercise_one_arm_dumbbell_row",
+        "exercise_seated_dumbbell_shoulder_press",
+        "exercise_dumbbell_curl",
+        "exercise_standing_calf_raise"
+      ],
+      "muscleIds": [
+        "muscle_biceps_brachii",
+        "muscle_deltoid",
+        "muscle_rectus_femoris",
+        "muscle_vastus_lateralis",
+        "muscle_vastus_medialis",
+        "muscle_vastus_intermedius",
+        "muscle_gluteus_maximus",
+        "muscle_latissimus_dorsi",
+        "muscle_pectoralis_major",
+        "muscle_triceps_brachii",
+        "muscle_gastrocnemius",
+        "muscle_soleus"
+      ],
+      "difficulties": [
+        {
+          "id": "exercise_dumbbell_curl",
+          "difficulty": "foundation"
+        },
+        {
+          "id": "exercise_seated_dumbbell_shoulder_press",
+          "difficulty": "foundation"
+        },
+        {
+          "id": "exercise_bodyweight_squat",
+          "difficulty": "beginner"
+        },
+        {
+          "id": "exercise_one_arm_dumbbell_row",
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "exercise_incline_push_up",
+          "difficulty": "foundation"
+        },
+        {
+          "id": "exercise_standing_calf_raise",
+          "difficulty": "foundation"
+        }
+      ],
+      "priorities": [
+        "First create original labelled location/action schematics for only the twelve existing linked muscle records, with mirrored text and explicit approximate/not-to-scale labels; use existing sourced facts and preserve role qualifiers. Any precision claim beyond those sources requires actual review before publication.",
+        "For the six exercise pages, provide accessible user-controlled setup/action/reset views derived from current execution text/diagrams, visible source links, existing difficulty/equipment and stop signals. No autoplay, video dependency or fabricated posture measurement.",
+        "Add a local-only draft plan capped at two sessions, composed only of the six allowlisted IDs, with title, reorder/edit/delete, user-entered sets/reps/rest (or explicitly attributed canonical targets if cloned) and an explicit reviewed-source/custom-change distinction. Do not generate prescriptions from goals/health data or call a user plan a reviewed canonical program.",
+        "Save in IndexedDB behind an explicitly reviewed local record contract, version/snapshot semantics, validation-before-write and backup/restore/CSV coverage. Start a session through existing tracker primitives; do not fork a second logging system."
+      ],
+      "acceptance": [
+        "Dataset count/hash freeze: 70 muscles,32 exercises,32 science,4 programs and 900 backlog unchanged; no new published fitness entities.",
+        "All six exercise→muscle links resolve by immutable ID. Every existing primary/context-dependent/stabilizer role and source qualifier is preserved; no EMG percentages, secondary roles or isolation claims invented.",
+        "Every new original visual has stable ID, source/author/license/review metadata, useful text alternative and a source-backed scope. No new human-review date without an actual review.",
+        "A keyboard/mobile user can select a taught region, read one of six guides, add exercises to a draft, reorder, explicitly enter targets, save, reload, edit/delete, start in the current tracker and return to the plan without losing records.",
+        "Canonical program content/version and completed workout snapshots remain unchanged when the local plan is edited. Unknown duration/rest stays unavailable until user-supplied, not zero or guessed.",
+        "Plan export/import round trip succeeds, CSV includes plan data, malformed imports cause zero writes, rollback/error feedback preserves old records, and destructive replacement/deletion requires confirmation.",
+        "Personal data stays browser-local and absent from SSR/logs/URLs/metadata/network. No accounts, cloud storage or external fitness runtime API.",
+        "Semantic controls, visible focus, role/state alternatives and reduced motion; desktop/mobile Light/Dark/Auto focused axe/keyboard checks and required app gates after future implementation. Do not run broad suites during this documentation task."
+      ],
+      "outOfScope": [
+        "new exercises/muscles/program identities",
+        "automatic programming or medical suitability decisions",
+        "new image scraping or unlicensed copying",
+        "new video hosting",
+        "body model/EMG/activation heatmaps",
+        "dependency modernization",
+        "social/accounts/cloud sync",
+        "general backlog expansion"
+      ]
+    },
+    "acsm": {
+      "checkedOn": "2026-10-26",
+      "sourceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41843416/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/",
+        "https://acsm.org/resistance-training-guidelines-update-2026/"
+      ],
+      "boundedInterpretation": "The 2026 position stand concerns resistance-training outcomes in healthy adults and differentiates goal-specific variables; the ACSM release emphasizes regular participation and individualized, maintainable plans. This supports a simple user-controlled plan and clear scope, not an automatic universal load/volume prescription. Existing science already references these sources. No new factual content was published and no literature expansion is proposed.",
+      "topicCoverage": {
+        "positionStand": 22,
+        "officialSummary": 3
+      }
+    }
+  },
+  "safety": {
+    "filesDeleted": 0,
+    "filesMoved": 0,
+    "filesRenamed": 0,
+    "originalTrackedFilesLost": 0,
+    "sourceContentLost": 0,
+    "historyRewritten": false,
+    "forcePush": false,
+    "newTags": 0,
+    "tagsDeleted": 0,
+    "dependencyPRsMerged": 0,
+    "dependencyPRsClosed": 0,
+    "dependencyBranchesDeleted": 0,
+    "runtimeChanges": false,
+    "originalTrackedFileCount": 1334,
+    "sourceTreeIds": {
+      "src": "5541277831cdf5d7ac8428ce9cae6802717f22e2",
+      "public": "f759499f7560bb68e72c80afa00341a9995671d6",
+      "docs/archive/original-specifications": "85530d8bc6ad585a56e8a1714b3fa2808431f2d9",
+      ".github": "0e3ff8e4a3b19f595cb1e56e009943cb7c5df976"
+    },
+    "intendedFiles": [
+      "docs/reports/github-ref-reconciliation.md",
+      "docs/reports/github-ref-reconciliation.json",
+      "docs/roadmap/visual-training-next-phase.md"
+    ],
+    "localHistoricalBranchRefs": "Not deleted; retirement scope is the three GitHub remote refs only."
+  },
+  "validation": {
+    "status": "Passed focused documentation/ref/workflow checks",
+    "originalTrackedFilesPreserved": 1334,
+    "originalTrackedFilesModified": 0,
+    "filesDeleted": 0,
+    "filesMoved": 0,
+    "filesRenamed": 0,
+    "intendedAdditions": 3,
+    "jsonSyntax": "passed",
+    "markdown": {
+      "fileLinks": 25,
+      "headingAnchors": 0,
+      "externalSourceLinksRecorded": 117,
+      "brokenInternalLinks": 0
+    },
+    "workflows": {
+      "parsed": 3,
+      "pinnedActionUses": 14,
+      "permissions": "unchanged contents:read",
+      "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "byteIdentical": true,
+          "syntaxValid": true,
+          "events": ["pull_request", "push", "workflow_dispatch"]
+        },
+        {
+          "path": ".github/workflows/cross-browser.yml",
+          "byteIdentical": true,
+          "syntaxValid": true,
+          "events": ["pull_request", "push", "schedule", "workflow_dispatch"]
+        },
+        {
+          "path": ".github/workflows/release-evidence.yml",
+          "byteIdentical": true,
+          "syntaxValid": true,
+          "events": ["workflow_dispatch"]
+        }
+      ]
+    },
+    "refs": {
+      "githubBranches": 10,
+      "retired": 3,
+      "preservedOriginalTags": 26,
+      "annotatedTagsPeeledVerified": 10,
+      "newTags": 0
+    },
+    "pilot": {
+      "publishedMuscles": 70,
+      "publishedExercises": 32,
+      "publishedScience": 32,
+      "publishedPrograms": 4,
+      "exerciseAllowlist": 6,
+      "muscleAllowlist": 12,
+      "idGraph": "valid"
+    },
+    "runtimeChanges": false,
+    "automaticGitDeploymentEnabled": false,
+    "broadBrowserRunsRequested": 0,
+    "securityAuditsRequested": 0,
+    "transientLogsStaged": 0
+  },
+  "ownerDecisions": [
+    "Inspect GitHub Billing & plans / Actions payment and spending controls before a future authorized rerun; account details are not available here.",
+    "Authorize a separate immutable provenance-URL repair before retiring codex/phase-19-verified-content; keep it frozen meanwhile.",
+    "Approve or revise the single bounded pilot before implementation. Dependency updates remain separately authorized work; retain all PRs until resolved."
+  ]
+}
